@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Link } from 'react-router-dom';
 import { Clock, ArrowRight, Star, TrendingUp, Eye } from 'lucide-react';
 import { trackArticleView, trackButtonClick } from '../utils/analytics';
 
@@ -27,15 +26,8 @@ const BlogCard: React.FC<BlogCardProps> = ({
   savings,
   featured = false,
   url,
-  category,
-  articleId,
-  url
+  views
 }) => {
-  const handleClick = () => {
-    trackArticleView(articleId, title);
-    trackButtonClick('read_article', 'blog_card');
-  };
-
   const handleClick = () => {
     trackArticleView(articleId, title);
     trackButtonClick('read_article', 'blog_card');
@@ -103,14 +95,6 @@ const BlogCard: React.FC<BlogCardProps> = ({
           to={url}
           onClick={handleClick}
           className="w-full bg-gradient-to-r from-sky-500 to-emerald-500 hover:from-sky-600 hover:to-emerald-600 text-white font-medium py-2 px-4 rounded-lg transition-all duration-200 flex items-center justify-center space-x-1 shadow-sm text-sm mt-auto"
-        >
-          <span>Leer artículo completo</span>
-          <ArrowRight className="h-3 w-3" />
-        </Link>
-        <Link 
-          to={url}
-          onClick={handleClick}
-          className="mt-4 w-full bg-gradient-to-r from-sky-500 to-emerald-500 hover:from-sky-600 hover:to-emerald-600 text-white font-medium py-2 px-4 rounded-lg transition-all duration-200 flex items-center justify-center space-x-1 shadow-sm text-sm"
         >
           <span>Leer artículo completo</span>
           <ArrowRight className="h-3 w-3" />
