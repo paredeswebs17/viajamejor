@@ -5,10 +5,6 @@ interface TravelCardsArticleProps {
   onBack: () => void;
 }
 
-interface TravelCardsArticleProps {
-  onBack: () => void;
-}
-
 const TravelCardsArticle: React.FC<TravelCardsArticleProps> = ({ onBack }) => {
   return (
     <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 pt-24">
@@ -175,7 +171,7 @@ const TravelCardsArticle: React.FC<TravelCardsArticleProps> = ({ onBack }) => {
               <p className="text-sky-800 text-sm mb-2">
                 👉 <strong>
                   <a href="https://revolut.com/referral/?referral-code=antoni22jf!AUG1-25-AR-CL1H-CRY&geo-redirect" target="_blank" rel="noopener noreferrer">
-                Aquí tienes el enlace a Revolut
+                    Aquí tienes el enlace a Revolut
                   </a>
                 </strong>
               </p>
@@ -215,9 +211,9 @@ const TravelCardsArticle: React.FC<TravelCardsArticleProps> = ({ onBack }) => {
 
             <div className="bg-sky-50 border border-sky-200 rounded-lg p-4">
               <p className="text-sky-800 text-sm mb-2">
-                👉  <strong>
+                👉 <strong>
                   <a href="https://n26.com/es-es" target="_blank" rel="noopener noreferrer">
-                Aquí tienes el enlace a N26
+                    Aquí tienes el enlace a N26
                   </a>
                 </strong>
               </p>
