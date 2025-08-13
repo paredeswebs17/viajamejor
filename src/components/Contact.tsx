@@ -20,7 +20,6 @@ const Contact = () => {
         body: new FormData(e.target as HTMLFormElement),
       });
 
-      // Track form submission
       trackContactFormSubmit({
         name: formData.name,
         email: formData.email
@@ -42,18 +41,18 @@ const Contact = () => {
   };
 
   return (
-    <section id="contacto" className="relative py-8 sm:py-12 bg-gradient-to-br from-blue-50 to-purple-50">
+    <section id="contacto" className="relative py-6 sm:py-8 bg-white">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-6">
-          <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-2">
+        <div className="text-center mb-4">
+          <h2 className="text-lg sm:text-xl font-bold text-gray-900 mb-2">
             ¿Tienes alguna pregunta?
           </h2>
-          <p className="text-base text-gray-600">
-            Me encanta ayudar a otros viajeros. Escríbeme y te responderé lo antes posible.
+          <p className="text-sm text-gray-600">
+            Escríbeme y te responderé en 24h
           </p>
         </div>
 
-        <div className="bg-white rounded-lg shadow-lg p-4 sm:p-6">
+        <div className="bg-gray-50 rounded-lg p-4">
           {isSubmitted ? (
             <div className="text-center py-4">
               <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-3">
@@ -61,7 +60,7 @@ const Contact = () => {
               </div>
               <h3 className="text-lg font-bold text-gray-900 mb-2">¡Mensaje enviado!</h3>
               <p className="text-sm text-gray-600">
-                Gracias por escribirme. Te responderé en las próximas 24 horas.
+                Te responderé en las próximas 24 horas.
               </p>
             </div>
           ) : (
@@ -89,7 +88,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
-                    Correo electrónico
+                    Email
                   </label>
                   <input
                     type="email"
@@ -106,7 +105,7 @@ const Contact = () => {
               
               <div>
                 <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">
-                  Tu mensaje
+                  Mensaje
                 </label>
                 <textarea
                   id="message"
@@ -115,25 +114,25 @@ const Contact = () => {
                   onChange={handleChange}
                   rows={3}
                   className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-sky-500 focus:border-transparent outline-none transition-all resize-none text-sm"
-                  placeholder="Cuéntame sobre tu próximo viaje o qué necesitas saber..."
+                  placeholder="Cuéntame sobre tu próximo viaje..."
                   required
                 ></textarea>
               </div>
 
               <button
                 type="submit"
-                className="w-full btn-primary justify-center text-sm py-2"
+                className="w-full bg-sky-500 text-white font-medium py-2 px-4 rounded-lg hover:bg-sky-600 transition-colors flex items-center justify-center space-x-2 text-sm"
               >
-                <Send className="mr-1 h-4 w-4" />
-                Enviar mensaje
+                <Send className="h-4 w-4" />
+                <span>Enviar mensaje</span>
               </button>
             </form>
           )}
 
-          <div className="mt-4 pt-4 border-t border-gray-200">
+          <div className="mt-3 pt-3 border-t border-gray-200">
             <div className="flex items-center justify-center">
               <MessageCircle className="h-4 w-4 text-sky-500 mr-1" />
-              <span className="text-sm text-gray-600">Respuesta en 24h</span>
+              <span className="text-xs text-gray-600">Respuesta en 24h</span>
             </div>
           </div>
         </div>

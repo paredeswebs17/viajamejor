@@ -98,6 +98,16 @@ button:focus {
   
   /* Mejoras específicas para móvil */
   @media (max-width: 768px) {
+    /* Hide scrollbar for horizontal scroll */
+    .scrollbar-hide {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+    
+    .scrollbar-hide::-webkit-scrollbar {
+      display: none;
+    }
+    
     .btn-primary {
       @apply px-4 py-3 text-base;
       min-height: 44px; /* Tamaño mínimo recomendado para touch */
