@@ -9,22 +9,6 @@ const TravelEssentialsPage = () => {
     navigate('/');
   };
 
-  const handleArticleSelect = (articleId: string) => {
-    const routes: Record<string, string> = {
-      'cheap-flights': '/vuelos/vuelos-baratos',
-      'accommodation': '/alojamiento/booking-vs-airbnb',
-      'travel-cards': '/finanzas/tarjetas-sin-comisiones',
-      'cheap-destinations': '/destinos/paises-baratos-2025',
-      'travel-insurance': '/seguros/iati-experiencia',
-      'travel-apps': '/tecnologia/apps-viaje'
-    };
-    
-    const route = routes[articleId];
-    if (route) {
-      navigate(route);
-    }
-  };
-
   return (
     <>
       <Helmet>

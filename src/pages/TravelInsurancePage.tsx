@@ -9,22 +9,6 @@ const TravelInsurancePage = () => {
     navigate('/');
   };
 
-  const handleArticleSelect = (articleId: string) => {
-    const routes: Record<string, string> = {
-      'travel-essentials': '/equipaje/8-objetos-imprescindibles',
-      'cheap-flights': '/vuelos/vuelos-baratos',
-      'accommodation': '/alojamiento/booking-vs-airbnb',
-      'travel-cards': '/finanzas/tarjetas-sin-comisiones',
-      'cheap-destinations': '/destinos/paises-baratos-2025',
-      'travel-apps': '/tecnologia/apps-viaje'
-    };
-    
-    const route = routes[articleId];
-    if (route) {
-      navigate(route);
-    }
-  };
-
   return (
     <>
       <Helmet>
