@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import BlogCard from './BlogCard';
 import MobileCollapsible from './MobileCollapsible';
 
@@ -32,7 +33,8 @@ const BlogSection: React.FC<BlogSectionProps> = ({ onArticleSelect }) => {
       image: 'https://images.pexels.com/photos/1008155/pexels-photo-1008155.jpeg?auto=compress&cs=tinysrgb&w=800',
       readTime: '12 min',
       category: 'Equipaje',
-      featured: true
+      featured: true,
+      url: '/equipaje/8-objetos-imprescindibles'
     },
     {
       id: 'cheap-flights',
@@ -40,7 +42,8 @@ const BlogSection: React.FC<BlogSectionProps> = ({ onArticleSelect }) => {
       excerpt: 'Te enseño paso a paso cómo uso Skyscanner y Kiwi.com para conseguir vuelos hasta 70% más baratos. Incluye mis fechas secretas, alertas automáticas y la estrategia que me ha ahorrado miles de euros.',
       image: 'https://images.pexels.com/photos/2026324/pexels-photo-2026324.jpeg?auto=compress&cs=tinysrgb&w=800',
       readTime: '8 min',
-      category: 'Vuelos'
+      category: 'Vuelos',
+      url: '/vuelos/vuelos-baratos'
     },
     {
       id: 'accommodation',
@@ -49,7 +52,8 @@ const BlogSection: React.FC<BlogSectionProps> = ({ onArticleSelect }) => {
       image: 'https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&w=800',
       readTime: '6 min',
       category: 'Alojamiento',
-      featured: true
+      featured: true,
+      url: '/alojamiento/booking-vs-airbnb'
     },
     {
       id: 'cheap-destinations',
@@ -57,7 +61,8 @@ const BlogSection: React.FC<BlogSectionProps> = ({ onArticleSelect }) => {
       excerpt: 'Países donde tu euro rinde al máximo. Te cuento cuánto gasté realmente en cada destino, dónde reservé los vuelos más baratos y mis alojamientos favoritos. Incluye presupuestos detallados y enlaces a las mejores ofertas.',
       image: 'https://images.pexels.com/photos/1371360/pexels-photo-1371360.jpeg?auto=compress&cs=tinysrgb&w=800',
       readTime: '10 min',
-      category: 'Destinos'
+      category: 'Destinos',
+      url: '/destinos/paises-baratos-2025'
     },
     {
       id: 'premium-destinations',
@@ -66,7 +71,8 @@ const BlogSection: React.FC<BlogSectionProps> = ({ onArticleSelect }) => {
       image: 'https://images.pexels.com/photos/1024993/pexels-photo-1024993.jpeg?auto=compress&cs=tinysrgb&w=800',
       readTime: '18 min',
       category: 'Destinos Premium',
-      featured: true
+      featured: true,
+      url: '/destinos/premium-2025'
     },
     {
       id: 'travel-insurance',
@@ -74,7 +80,8 @@ const BlogSection: React.FC<BlogSectionProps> = ({ onArticleSelect }) => {
       excerpt: 'Te cuento mi experiencia con una emergencia médica en Tailandia que me costó 3.000€ y cómo IATI me lo cubrió todo. Comparativa real entre IATI, Mondo y Chapka. Incluye mi descuento exclusivo.',
       image: 'https://images.pexels.com/photos/1010657/pexels-photo-1010657.jpeg?auto=compress&cs=tinysrgb&w=800',
       readTime: '7 min',
-      category: 'Seguros'
+      category: 'Seguros',
+      url: '/seguros/iati-experiencia'
     },
     {
       id: 'travel-cards',
@@ -82,7 +89,8 @@ const BlogSection: React.FC<BlogSectionProps> = ({ onArticleSelect }) => {
       excerpt: 'Una de las formas más tontas de perder dinero viajando es con comisiones bancarias. Te cuento qué tarjetas uso yo para no pagar ni un euro extra: Revolut, Wise, N26... Todas gratuitas y perfectas para viajar.',
       image: 'https://images.pexels.com/photos/4386321/pexels-photo-4386321.jpeg?auto=compress&cs=tinysrgb&w=800',
       readTime: '9 min',
-      category: 'Finanzas'
+      category: 'Finanzas',
+      url: '/finanzas/tarjetas-sin-comisiones'
     },
     {
       id: 'travel-apps',
@@ -90,7 +98,8 @@ const BlogSection: React.FC<BlogSectionProps> = ({ onArticleSelect }) => {
       excerpt: 'Olvídate de listas interminables. Estas son las 10 apps que realmente uso: desde NordVPN para navegar seguro, hasta Civitatis para reservar excursiones. Te explico para qué uso cada una y por qué las recomiendo.',
       image: 'https://images.pexels.com/photos/607812/pexels-photo-607812.jpeg?auto=compress&cs=tinysrgb&w=800',
       readTime: '5 min',
-      category: 'Tecnología'
+      category: 'Tecnología',
+      url: '/tecnologia/apps-viaje'
     }
   ];
 
@@ -123,7 +132,6 @@ const BlogSection: React.FC<BlogSectionProps> = ({ onArticleSelect }) => {
               key={article.id}
               {...article}
               articleId={article.id}
-              onArticleSelect={onArticleSelect}
             />
           ))}
         </div>
@@ -151,7 +159,6 @@ const BlogSection: React.FC<BlogSectionProps> = ({ onArticleSelect }) => {
                             key={article.id}
                             {...article}
                             articleId={article.id}
-                            onArticleSelect={onArticleSelect}
                           />
                         ))}
                       </div>

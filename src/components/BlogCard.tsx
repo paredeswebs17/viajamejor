@@ -1,4 +1,5 @@
 import { trackArticleView, trackButtonClick } from '../utils/analytics';
+import { Link } from 'react-router-dom';
 
 // Define props interface
 interface BlogCardProps {
@@ -8,7 +9,7 @@ interface BlogCardProps {
   category: string;
   featured?: boolean;
   articleId: string;
-  onArticleSelect: (articleId: string) => void;
+  url: string;
 }
 
 const BlogCard: React.FC<BlogCardProps> = ({ 
@@ -17,14 +18,12 @@ const BlogCard: React.FC<BlogCardProps> = ({
   image, 
   category, 
   articleId, 
-  onArticleSelect
+  url
 }) => {
   const handleClick = () => {
     // Track article view
     trackArticleView(articleId, title);
     trackButtonClick('read_article', 'blog_card');
-    
-    onArticleSelect(articleId);
   };
 
   return (
@@ -39,20 +38,23 @@ const BlogCard: React.FC<BlogCardProps> = ({
       </div>
       
       <div className="p-6">
-        <h3 id={`article-title-${articleId}`} className="text-xl font-bold text-gray-900 mb-3 line-clamp-2 hover:text-sky-500 transition-colors cursor-pointer" onClick={handleClick}>
-          {title}
-        </h3>
+        <Link to={url} onClick={handleClick}>
+          <h3 id={`article-title-${articleId}`} className="text-xl font-bold text-gray-900 mb-3 line-clamp-2 hover:text-sky-500 transition-colors cursor-pointer">
+            {title}
+          </h3>
+        </Link>
         <p className="text-gray-600 mb-4 line-clamp-3">
           {excerpt}
         </p>
         
-        <button 
+        <Link
+          to={url}
           onClick={handleClick}
           className="w-full bg-gradient-to-r from-blue-500 to-emerald-500 text-white font-medium py-2 px-4 rounded-lg hover:from-blue-600 hover:to-emerald-600 transition-all duration-200"
           aria-label={`Leer artículo completo sobre ${title}`}
         >
           Leer artículo completo
-        </button>
+        </Link>
       </div>
     </article>
   );

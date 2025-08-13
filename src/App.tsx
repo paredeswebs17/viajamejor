@@ -1,26 +1,21 @@
+import React, { Suspense, lazy } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HelmetProvider } from 'react-helmet-async';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import Hero from './components/Hero';
-import Recommendations from './components/Recommendations';
-import About from './components/About';
-import Contact from './components/Contact';
-import BlogSection from './components/BlogSection';
-import FAQ from './components/FAQ';
 import BackToTop from './components/BackToTop';
-import { Suspense, lazy, useState } from 'react';
-import EditorialBlock from './components/EditorialBlock';
+import ScrollToTop from './components/ScrollToTop';
 
-// Lazy load articles for better performance
-const TravelEssentialsArticle = lazy(() => import('./components/TravelEssentialsArticle'));
-const CheapFlightsArticle = lazy(() => import('./components/CheapFlightsArticle'));
-const AccommodationArticle = lazy(() => import('./components/AccommodationArticle'));
-const CheapDestinationsArticle = lazy(() => import('./components/CheapDestinationsArticle'));
-const PremiumDestinationsArticle = lazy(() => import('./components/PremiumDestinationsArticle'));
-const TravelInsuranceArticle = lazy(() => import('./components/TravelInsuranceArticle'));
-const TravelCardsArticle = lazy(() => import('./components/TravelCardsArticle'));
-const TravelAppsArticle = lazy(() => import('./components/TravelAppsArticle'));
+// Lazy load pages
+const HomePage = lazy(() => import('./pages/HomePage'));
+const TravelEssentialsPage = lazy(() => import('./pages/TravelEssentialsPage'));
+const CheapFlightsPage = lazy(() => import('./pages/CheapFlightsPage'));
+const AccommodationPage = lazy(() => import('./pages/AccommodationPage'));
+const TravelCardsPage = lazy(() => import('./pages/TravelCardsPage'));
+const CheapDestinationsPage = lazy(() => import('./pages/CheapDestinationsPage'));
+const TravelInsurancePage = lazy(() => import('./pages/TravelInsurancePage'));
 
-// Loading component for Suspense
+// Loading component
 const Loading = () => (
   <div className="flex items-center justify-center min-h-screen">
     <div className="animate-pulse flex space-x-4">
@@ -37,102 +32,36 @@ const Loading = () => (
 );
 
 function App() {
-  const [selectedArticle, setSelectedArticle] = useState<string | null>(null);
-
-  const handleNavigateHome = () => {
-    setSelectedArticle(null);
-    // Use setTimeout to ensure the new component is rendered before scrolling
-    setTimeout(() => {
-      window.scrollTo(0, 0);
-    }, 100);
-  };
-
-  const handleArticleSelect = (articleId: string) => {
-    console.log('App: Selecting article:', articleId);
-    setSelectedArticle(articleId);
-    // Use setTimeout to ensure the new component is rendered before scrolling
-    setTimeout(() => {
-      window.scrollTo(0, 0);
-    }, 100);
-  };
-
-  // Función para manejar la navegación entre artículos relacionados
-  const handleRelatedArticleSelect = (articleId: string) => {
-    setSelectedArticle(articleId);
-    // Use setTimeout to ensure the new component is rendered before scrolling
-    setTimeout(() => {
-      window.scrollTo(0, 0);
-    }, 100);
-  };
-  // Render article component based on selection
-  const renderArticle = () => {
-    return (
-      <div className="min-h-screen bg-white">
-        <Header currentView="article" onNavigateHome={handleNavigateHome} />
-        <Suspense fallback={<Loading />}>
-          {selectedArticle === 'travel-essentials' && <TravelEssentialsArticle onBack={handleNavigateHome} onArticleSelect={handleRelatedArticleSelect} />}
-          {selectedArticle === 'cheap-flights' && <CheapFlightsArticle onBack={handleNavigateHome} onArticleSelect={handleRelatedArticleSelect} />}
-          {selectedArticle === 'accommodation' && <AccommodationArticle onBack={handleNavigateHome} onArticleSelect={handleRelatedArticleSelect} />}
-          {selectedArticle === 'cheap-destinations' && <CheapDestinationsArticle onBack={handleNavigateHome} onArticleSelect={handleRelatedArticleSelect} />}
-          {selectedArticle === 'premium-destinations' && <PremiumDestinationsArticle onBack={handleNavigateHome} onArticleSelect={handleRelatedArticleSelect} />}
-          {selectedArticle === 'travel-insurance' && <TravelInsuranceArticle onBack={handleNavigateHome} onArticleSelect={handleRelatedArticleSelect} />}
-          {selectedArticle === 'travel-cards' && <TravelCardsArticle onBack={handleNavigateHome} onArticleSelect={handleRelatedArticleSelect} />}
-          {selectedArticle === 'travel-apps' && <TravelAppsArticle onBack={handleNavigateHome} onArticleSelect={handleRelatedArticleSelect} />}
-        </Suspense>
-        <Footer />
-      </div>
-    );
-  };
-
-  // Renderizar artículo específico
-  if (selectedArticle === 'travel-essentials') {
-    return renderArticle();
-  }
-
-  if (selectedArticle === 'cheap-flights') {
-    return renderArticle();
-  }
-
-  if (selectedArticle === 'accommodation') {
-    return renderArticle();
-  }
-
-  if (selectedArticle === 'cheap-destinations') {
-    return renderArticle();
-  }
-
-  if (selectedArticle === 'premium-destinations') {
-    return renderArticle();
-  }
-
-  if (selectedArticle === 'travel-insurance') {
-    return renderArticle();
-  }
-
-  if (selectedArticle === 'travel-cards') {
-    return renderArticle();
-  }
-
-  if (selectedArticle === 'travel-apps') {
-    return renderArticle();
-  }
-
-  // Vista principal (home)
   return (
-    <div className="min-h-screen bg-white">
-      <Header currentView="home" onNavigateHome={handleNavigateHome} />
-      <BackToTop />
-      <main>
-        <Hero />
-        <EditorialBlock />
-        <BlogSection onArticleSelect={handleArticleSelect} />
-        <Recommendations />
-        <FAQ />
-        <About />
-        <Contact />
-      </main>
-      <Footer />
-    </div>
+    <HelmetProvider>
+      <Router>
+        <ScrollToTop />
+        <div className="min-h-screen bg-white">
+          <Header />
+          <BackToTop />
+          <main>
+            <Suspense fallback={<Loading />}>
+              <Routes>
+                {/* HOME */}
+                <Route path="/" element={<HomePage />} />
+                
+                {/* ARTÍCULOS ESPECÍFICOS */}
+                <Route path="/equipaje/8-objetos-imprescindibles" element={<TravelEssentialsPage />} />
+                <Route path="/vuelos/vuelos-baratos" element={<CheapFlightsPage />} />
+                <Route path="/alojamiento/booking-vs-airbnb" element={<AccommodationPage />} />
+                <Route path="/finanzas/tarjetas-sin-comisiones" element={<TravelCardsPage />} />
+                <Route path="/destinos/paises-baratos-2025" element={<CheapDestinationsPage />} />
+                <Route path="/seguros/iati-experiencia" element={<TravelInsurancePage />} />
+                
+                {/* 404 - Redirige a home */}
+                <Route path="*" element={<HomePage />} />
+              </Routes>
+            </Suspense>
+          </main>
+          <Footer />
+        </div>
+      </Router>
+    </HelmetProvider>
   );
 }
 
