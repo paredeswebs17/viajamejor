@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
 import BlogCard from './BlogCard';
-import { trackArticleView, trackButtonClick } from '../utils/analytics';
 
 interface BlogSectionProps {
   showTitle?: boolean;
@@ -80,11 +79,6 @@ const BlogSection: React.FC<BlogSectionProps> = ({ showTitle = true }) => {
       views: '19.4k'
     }
   ];
-
-  const handleClick = (articleId: string, title: string) => {
-    trackArticleView(articleId);
-    trackButtonClick('article_read', title);
-  };
 
   return (
     <section id="consejos" className="relative py-6 sm:py-8 bg-white">
