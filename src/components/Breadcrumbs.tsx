@@ -1,0 +1,32 @@
+import React from 'react';
+import { Link } from 'react-router-dom';
+
+interface BreadcrumbItem {
+  label: string;
+  href?: string;
+}
+
+interface BreadcrumbsProps {
+  items: BreadcrumbItem[];
+}
+
+const Breadcrumbs: React.FC<BreadcrumbsProps> = ({ items }) => {
+  return (
+    <nav className="flex text-sm text-gray-500 mb-6" aria-label="Breadcrumb">
+      {items.map((item, index) => (
+        <div key={index} className="flex items-center">
+          {index > 0 && <span className="mx-2">/</span>}
+          {item.href ? (
+            <Link to={item.href} className="hover:text-sky-600 transition-colors">
+              {item.label}
+            </Link>
+          ) : (
+            <span className="text-gray-900">{item.label}</span>
+          )}
+        </div>
+      ))}
+    </nav>
+  );
+};
+
+export default Breadcrumbs;

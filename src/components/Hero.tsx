@@ -1,79 +1,83 @@
-import { Star, Users, MapPin } from 'lucide-react';
+import React from 'react';
+import { ArrowRight, Star, Users, MapPin } from 'lucide-react';
 import { trackButtonClick } from '../utils/analytics';
 
 const Hero = () => {
-  return (
-    <section id="inicio" className="relative bg-gradient-to-br from-blue-50 via-white to-purple-50 py-20 lg:py-32">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <div className="text-center lg:text-left">
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
-              <span className="gradient-text">Viaja más, gasta menos.</span>
-              <br />
-              Consejos y herramientas para tu próxima aventura.
-            </h1>
-            <p className="mt-6 text-xl text-gray-600 leading-relaxed">
-              Hola, somos tus compañeros de viajes. Te ayudamos a descubrir el mundo de forma inteligente, 
-              ahorrando dinero y evitando los errores que nosotros ya cometimos. Aquí encontrarás todo lo que 
-              necesitas para viajar como un experto.
-            </p>
-            
-            <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <button
-                onClick={() => {
-                  trackButtonClick('ver_consejos', 'hero_section');
-                  document.getElementById('consejos')?.scrollIntoView({ behavior: 'smooth' });
-                }}
-                className="btn-primary text-lg px-8 py-4 justify-center" 
-                aria-label="Ver consejos de viaje"
-              >
-                Ver Mis Consejos de Viaje
-              </button>
-            </div>
+  const scrollToSection = (sectionId: string) => {
+    trackButtonClick('hero_cta', 'hero_section');
+    document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' });
+  };
 
-            <div className="mt-12 grid grid-cols-3 gap-8 text-center">
-              <div className="flex flex-col items-center">
-                <div className="w-12 h-12 bg-sky-100 rounded-full flex items-center justify-center mb-2">
-                  <MapPin className="h-6 w-6 text-sky-500" />
-                </div>
-                <span className="text-2xl font-bold text-gray-900">40+</span>
-                <span className="text-sm text-gray-600">Países visitados</span>
-              </div>
-              <div className="flex flex-col items-center">
-                <div className="w-12 h-12 bg-emerald-100 rounded-full flex items-center justify-center mb-2">
-                  <Users className="h-6 w-6 text-emerald-500" />
-                </div>
-                <span className="text-2xl font-bold text-gray-900">5K+</span>
-                <span className="text-sm text-gray-600">Lectores mensuales</span>
-              </div>
-              <div className="flex flex-col items-center">
-                <div className="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center mb-2">
-                  <Star className="h-6 w-6 text-orange-500" />
-                </div>
-                <span className="text-2xl font-bold text-gray-900">4.9</span>
-                <span className="text-sm text-gray-600">Valoración</span>
-              </div>
+  return (
+    <section className="relative bg-gradient-to-br from-sky-500 via-sky-600 to-emerald-500 text-white pt-24 pb-16">
+      {/* Background Pattern */}
+      <div className="absolute inset-0 bg-gradient-to-r from-black/10 to-transparent"></div>
+      <div className="absolute inset-0" style={{
+        backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.1'%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
+      }}></div>
+      
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-4xl mx-auto text-center">
+          {/* Badge */}
+          <div className="inline-flex items-center bg-white/20 backdrop-blur-sm rounded-full px-4 py-2 mb-6">
+            <Star className="h-4 w-4 mr-2" />
+            <span className="text-sm font-medium">40+ países visitados</span>
+          </div>
+
+          {/* Headline */}
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+            Viaja <span className="text-amber-300">más</span>,
+            <br />
+            gasta <span className="text-emerald-300">menos</span>
+          </h1>
+
+          {/* Subtitle */}
+          <p className="text-xl sm:text-2xl text-sky-100 mb-8 max-w-3xl mx-auto leading-relaxed">
+            Consejos prácticos, herramientas probadas y trucos reales para viajar 
+            inteligente con cualquier presupuesto.
+          </p>
+
+          {/* Stats */}
+          <div className="flex flex-wrap justify-center gap-6 mb-8 text-sm">
+            <div className="flex items-center bg-white/10 backdrop-blur-sm rounded-lg px-4 py-2">
+              <Users className="h-4 w-4 mr-2" />
+              <span>+50k lectores</span>
+            </div>
+            <div className="flex items-center bg-white/10 backdrop-blur-sm rounded-lg px-4 py-2">
+              <MapPin className="h-4 w-4 mr-2" />
+              <span>40+ países</span>
+            </div>
+            <div className="flex items-center bg-white/10 backdrop-blur-sm rounded-lg px-4 py-2">
+              <Star className="h-4 w-4 mr-2" />
+              <span>Ahorro promedio: 400€</span>
             </div>
           </div>
 
-          <div className="relative">
-            <div className="aspect-w-4 aspect-h-3 rounded-2xl overflow-hidden shadow-2xl">
-              <img
-                src="https://images.pexels.com/photos/723240/pexels-photo-723240.jpeg?auto=compress&cs=tinysrgb&w=800"
-                alt="Paisaje tropical paradisíaco con aguas cristalinas"
-                className="w-full h-full object-cover" 
-                loading="eager"
-                fetchPriority="high"
-              />
-            </div>
-            <div className="absolute -bottom-6 -right-6 bg-white p-6 rounded-xl shadow-lg">
-              <div className="flex items-center space-x-3">
-                <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
-                <span className="text-sm font-medium text-gray-900">Viajando ahora mismo</span>
-              </div>
-            </div>
+          {/* CTAs */}
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <button
+              onClick={() => scrollToSection('consejos')}
+              className="bg-white text-sky-600 font-semibold px-8 py-4 rounded-xl hover:bg-sky-50 transition-all duration-200 transform hover:scale-105 shadow-lg flex items-center justify-center space-x-2"
+            >
+              <span>Ver consejos de viaje</span>
+              <ArrowRight className="h-5 w-5" />
+            </button>
+            
+            <button
+              onClick={() => scrollToSection('recomendaciones')}
+              className="border-2 border-white text-white font-semibold px-8 py-4 rounded-xl hover:bg-white/10 transition-all duration-200 backdrop-blur-sm"
+            >
+              Herramientas que uso
+            </button>
           </div>
         </div>
+      </div>
+
+      {/* Wave Bottom */}
+      <div className="absolute bottom-0 left-0 right-0">
+        <svg viewBox="0 0 1200 120" className="w-full h-12 fill-gray-50">
+          <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"></path>
+        </svg>
       </div>
     </section>
   );
