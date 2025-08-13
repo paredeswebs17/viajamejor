@@ -41,15 +41,13 @@ const Recommendations = () => {
       name: "Revolut",
       description: "Tarjeta sin comisiones para viajar",
       price: "Gratis",
-      affiliate: "https://revolut.com/referral/?referral-code=antoni22jf!JUL1-25-AR-CB-CRY&geo-redirect",
-      featured: true
+      affiliate: "https://revolut.com/referral/?referral-code=antoni22jf!JUL1-25-AR-CB-CRY&geo-redirect"
     },
     {
-      name: "Adaptador TESSAN",
-      description: "Adaptador universal para 150+ países",
-      price: "Desde 15€",
-      affiliate: "https://www.amazon.es/TESSAN-Adaptador-Universal-Internacional-Americano/dp/B0B2DRC76L?tag=viajamejor-21",
-      featured: true
+      name: "Batería Externa INIU",
+      description: "Power bank 10000mAh compacta y rápida",
+      price: "Desde 20€",
+      affiliate: "https://www.amazon.es/INIU-10000mAh-Cargador-Portatil-Tel%C3%A9fono/dp/B08VD632WJ?tag=viajamejor-21"
     },
     {
       name: "Mochila Cabina",
@@ -58,10 +56,10 @@ const Recommendations = () => {
       affiliate: "https://www.amazon.es/Hayayu-40x20x25-Mochilas-Senderismo-Impermeable/dp/B0CBVFL64Z?tag=viajamejor-21"
     },
     {
-      name: "NordVPN",
-      description: "VPN para vuelos baratos y seguridad",
-      price: "Desde 3€/mes",
-      affiliate: "https://go.nordvpn.net/aff_c?offer_id=15&aff_id=127437&url_id=902"
+      name: "Almohada Viscoelástica",
+      description: "Almohada de viaje con antifaz incluido",
+      price: "Desde 25€",
+      affiliate: "https://www.amazon.es/SOMLAW-Almohada-Viscoel%C3%A1stica-Memoria-Viajando/dp/B0B96TP1WX?tag=viajamejor-21"
     }
   ];
 
@@ -101,11 +99,6 @@ const Recommendations = () => {
                 <div className="flex-1">
                   <div className="flex items-center space-x-2">
                     <h4 className="font-semibold text-gray-900 text-sm">{product.name}</h4>
-                    {product.featured && (
-                      <span className="bg-orange-100 text-orange-700 px-1 py-0.5 rounded text-xs font-medium">
-                        TOP
-                      </span>
-                    )}
                   </div>
                   <p className="text-xs text-gray-600 mt-0.5">{product.description}</p>
                   <span className="text-sm font-semibold text-emerald-600">{product.price}</span>
