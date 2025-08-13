@@ -1,4 +1,3 @@
-import React from 'react';
 import { ExternalLink, Plane, Shield, CreditCard, Backpack } from 'lucide-react';
 
 const Recommendations = () => {

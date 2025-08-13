@@ -1,4 +1,4 @@
-import { ArrowRight, Star, Users, MapPin } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import { trackButtonClick } from '../utils/analytics';
 
 const Hero = () => {
