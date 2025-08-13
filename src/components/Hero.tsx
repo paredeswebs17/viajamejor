@@ -1,4 +1,3 @@
-import React from 'react';
 import { ArrowRight, Star, Users, MapPin } from 'lucide-react';
 import { trackButtonClick } from '../utils/analytics';
 

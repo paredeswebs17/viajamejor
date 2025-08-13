@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
 import BlogCard from './BlogCard';
-import AffiliateBox from './AffiliateBox';
 
 interface BlogSectionProps {
   showTitle?: boolean;
