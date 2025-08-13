@@ -1,4 +1,4 @@
-import { ExternalLink, Plane, Shield, Backpack } from 'lucide-react';
+import { ExternalLink, Plane, Shield, Backpack, Hotel } from 'lucide-react';
 
 const Recommendations = () => {
   const quickCategories = [
@@ -12,7 +12,7 @@ const Recommendations = () => {
     },
     {
       title: "Alojamiento", 
-      icon: <Shield className="h-8 w-8" />,
+      icon: <Hotel className="h-8 w-8" />,
       color: "bg-pink-500",
       textColor: "text-white",
       description: "Hoteles baratos",
@@ -45,10 +45,10 @@ const Recommendations = () => {
       featured: true
     },
     {
-      name: "IATI Seguros",
-      description: "Seguro de viaje con 5% descuento",
-      price: "Desde 20€",
-      affiliate: "https://www.iatiseguros.com?r=37344279073491",
+      name: "Adaptador TESSAN",
+      description: "Adaptador universal para 150+ países",
+      price: "Desde 15€",
+      affiliate: "https://www.amazon.es/TESSAN-Adaptador-Universal-Internacional-Americano/dp/B0B2DRC76L?tag=viajamejor-21",
       featured: true
     },
     {
