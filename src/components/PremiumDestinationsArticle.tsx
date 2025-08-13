@@ -556,7 +556,7 @@ const PremiumDestinationsArticle: React.FC<PremiumDestinationsArticleProps> = ({
       </div>
       
       {/* Artículos relacionados */}
-      <RelatedArticles currentArticleId="premium-destinations" onArticleSelect={onArticleSelect || onBack} />
+      <RelatedArticles currentCategory="Destinos" currentArticleId="premium-destinations" />
     </article>
   );
 };

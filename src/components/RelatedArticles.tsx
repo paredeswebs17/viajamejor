@@ -13,16 +13,11 @@ interface RelatedArticle {
 interface RelatedArticlesProps {
   currentCategory: string;
   currentArticleId: string;
-  // Hacer estas props opcionales para compatibilidad
-  onArticleSelect?: (articleId: string) => void;
-  onBack?: () => void;
 }
 
 const RelatedArticles: React.FC<RelatedArticlesProps> = ({ 
   currentCategory, 
-  currentArticleId,
-  onArticleSelect,
-  onBack 
+  currentArticleId
 }) => {
   const allArticles: RelatedArticle[] = [
     {

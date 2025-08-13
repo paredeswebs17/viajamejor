@@ -370,7 +370,7 @@ const TravelAppsArticle: React.FC<TravelAppsArticleProps> = ({ onBack, onArticle
       </div>
       
       {/* Artículos relacionados */}
-      <RelatedArticles currentArticleId="travel-apps" onArticleSelect={onArticleSelect || onBack} />
+      <RelatedArticles currentCategory="Tecnología" currentArticleId="travel-apps" />
     </article>
   );
 };
