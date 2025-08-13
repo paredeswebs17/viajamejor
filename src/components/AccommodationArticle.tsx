@@ -283,7 +283,7 @@ const AccommodationArticle: React.FC<AccommodationArticleProps> = ({ onBack, onA
       </div>
       
       {/* Artículos relacionados */}
-      <RelatedArticles currentCategory="Alojamiento" currentArticleId="booking-vs-airbnb" onArticleSelect={onArticleSelect} onBack={onBack} />
+      <RelatedArticles currentCategory="Alojamiento" currentArticleId="booking-vs-airbnb" />
     </article>
   );
 };

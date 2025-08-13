@@ -98,7 +98,7 @@ const TravelEssentialsPage = () => {
         </script>
       </Helmet>
 
-      <TravelEssentialsArticle onBack={handleBack} onArticleSelect={handleArticleSelect} />
+      <TravelEssentialsArticle onBack={handleBack} />
     </>
   );
 };

@@ -339,7 +339,7 @@ const CheapFlightsArticle: React.FC<CheapFlightsArticleProps> = ({ onBack, onArt
       </div>
       
       {/* Artículos relacionados */}
-      <RelatedArticles currentCategory="Vuelos" currentArticleId="vuelos-baratos" onArticleSelect={onArticleSelect} onBack={onBack} />
+      <RelatedArticles currentCategory="Vuelos" currentArticleId="vuelos-baratos" />
     </article>
   );
 };

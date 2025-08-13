@@ -3,10 +3,9 @@ import RelatedArticles from './RelatedArticles';
 
 interface PremiumDestinationsArticleProps {
   onBack: () => void;
-  onArticleSelect?: (articleId: string) => void;
 }
 
-const PremiumDestinationsArticle: React.FC<PremiumDestinationsArticleProps> = ({ onBack, onArticleSelect }) => {
+const PremiumDestinationsArticle: React.FC<PremiumDestinationsArticleProps> = ({ onBack }) => {
 
   return (
     <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 pt-24">

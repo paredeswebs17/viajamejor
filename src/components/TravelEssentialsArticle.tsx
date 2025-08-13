@@ -3,10 +3,9 @@ import RelatedArticles from './RelatedArticles';
 
 interface TravelEssentialsArticleProps {
   onBack: () => void;
-}
 
 const TravelEssentialsArticle: React.FC<TravelEssentialsArticleProps> = ({ onBack }) => {
-
+const TravelEssentialsArticle: React.FC<TravelEssentialsArticleProps> = ({ onBack }) => {
   return (
     <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 pt-24">
       <div className="mb-8">

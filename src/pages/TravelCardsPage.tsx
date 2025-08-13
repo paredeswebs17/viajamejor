@@ -65,7 +65,7 @@ const TravelCardsPage = () => {
         </script>
       </Helmet>
 
-      <TravelCardsArticle onBack={handleBack} onArticleSelect={handleArticleSelect} />
+      <TravelCardsArticle onBack={handleBack} />
     </>
   );
 };

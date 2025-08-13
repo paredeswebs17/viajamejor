@@ -712,7 +712,7 @@ const CheapDestinationsArticle: React.FC<CheapDestinationsArticleProps> = ({ onB
       </div>
       
       {/* Artículos relacionados */}
-      <RelatedArticles currentCategory="Destinos" currentArticleId="paises-baratos-2025" onArticleSelect={onArticleSelect} onBack={onBack} />
+      <RelatedArticles currentCategory="Destinos" currentArticleId="paises-baratos-2025" />
     </article>
   );
 };

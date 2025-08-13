@@ -65,7 +65,7 @@ const TravelInsurancePage = () => {
         </script>
       </Helmet>
 
-      <TravelInsuranceArticle onBack={handleBack} onArticleSelect={handleArticleSelect} />
+      <TravelInsuranceArticle onBack={handleBack} />
     </>
   );
 };
