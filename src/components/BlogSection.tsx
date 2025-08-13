@@ -94,44 +94,39 @@ const BlogSection: React.FC<BlogSectionProps> = ({ showTitle = true }) => {
           </div>
         )}
 
-        {/* Horizontal scroll for mobile, grid for desktop */}
+        {/* Horizontal scroll for mobile */}
         <div className="block sm:hidden">
-          <div className="flex space-x-3 overflow-x-auto pb-4 scrollbar-hide">
-            {articles.map((article) => (
-              <div key={article.id} className="flex-shrink-0 w-72">
-                <Link to={article.url} className="block">
-                  <div className="bg-white rounded-lg shadow-sm border border-gray-100 overflow-hidden h-32">
-                    <div className="flex h-full">
-                      <img 
-                        src={article.image} 
-                        alt={article.title} 
-                        className="w-24 h-full object-cover flex-shrink-0" 
-                      />
-                      <div className="p-3 flex-1 flex flex-col justify-between">
-                        <div>
-                          <span className="bg-sky-500 text-white px-2 py-0.5 rounded text-xs font-medium">
-                            {article.category}
-                          </span>
-                          <h3 className="text-sm font-bold text-gray-900 mt-1 line-clamp-2">
-                            {article.title}
-                          </h3>
-                        </div>
-                        <div className="flex items-center justify-between text-xs text-gray-500 mt-auto">
-                          <span>{article.readTime}</span>
-                          {article.savings && (
-                            <span className="bg-emerald-100 text-emerald-700 px-1 py-0.5 rounded">
-                              {article.savings}
-                            </span>
-                          )}
-                        </div>
-                      </div>
+          <div className="overflow-x-auto">
+            <div className="flex gap-4 pb-4 px-4">
+              {articles.map(article => (
+                <Link 
+                  key={article.id}
+                  to={article.url}
+                  className="min-w-[280px] max-w-[280px] flex-shrink-0 bg-white rounded-lg shadow-sm border border-gray-100 overflow-hidden"
+                >
+                  <img 
+                    className="w-full h-24 object-cover rounded-t-lg" 
+                    src={article.image} 
+                    alt={article.title} 
+                  />
+                  <div className="p-3">
+                    <span className="text-xs bg-sky-500 text-white px-2 py-1 rounded font-medium">
+                      {article.category}
+                    </span>
+                    <h3 className="text-sm font-semibold mt-2 line-clamp-2 text-gray-900">
+                      {article.title}
+                    </h3>
+                    <div className="flex justify-between items-center mt-2">
+                      <span className="text-xs text-gray-500">{article.readTime}</span>
+                      {article.savings && (
+                        <span className="text-xs bg-emerald-100 text-emerald-600 px-2 py-1 rounded font-medium">
+                          {article.savings}
+                        </span>
+                      )}
                     </div>
                   </div>
                 </Link>
-              </div>
-            ))}
-            <div className="flex-shrink-0 w-16 flex items-center justify-center">
-              <ArrowRight className="h-5 w-5 text-gray-400" />
+              ))}
             </div>
           </div>
         </div>
