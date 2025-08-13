@@ -14,6 +14,7 @@ interface RelatedLinksProps {
 }
 
 const RelatedLinks: React.FC<RelatedLinksProps> = ({ links, title = "Sigue leyendo" }) => {
+  return (
     <div className="bg-gray-50 rounded-lg p-3 my-4">
       <h3 className="font-bold text-gray-900 mb-2 flex items-center text-sm">
         <BookOpen className="h-4 w-4 mr-1 text-sky-500" />
