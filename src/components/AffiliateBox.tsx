@@ -45,28 +45,28 @@ const AffiliateBox: React.FC<AffiliateBoxProps> = ({
   };
 
   return (
-    <div className={`${bgClass} rounded-xl p-6 my-6`}>
+    <div className={`${bgClass} rounded-lg p-3 sm:p-4 my-3`}>
       {/* Disclosure */}
-      <div className="text-xs text-gray-500 mb-3">
+      <div className="text-xs text-gray-500 mb-2">
         📝 <em>Enlace de afiliado - Sin coste extra para ti</em>
       </div>
       
-      <div className="flex items-start space-x-4">
+      <div className="flex items-start space-x-3">
         {image && (
-          <div className="w-16 h-16 bg-white rounded-lg shadow-sm flex-shrink-0 flex items-center justify-center">
-            <img src={image} alt={title} className="w-12 h-12 object-contain" />
+          <div className="w-12 h-12 bg-white rounded-lg shadow-sm flex-shrink-0 flex items-center justify-center">
+            <img src={image} alt={title} className="w-8 h-8 object-contain" />
           </div>
         )}
         
         <div className="flex-1">
-          <h3 className="font-bold text-gray-900 text-lg mb-2">{title}</h3>
-          <p className="text-gray-600 text-sm mb-3">{description}</p>
+          <h3 className="font-bold text-gray-900 text-base mb-1">{title}</h3>
+          <p className="text-gray-600 text-sm mb-2">{description}</p>
           
           {bullets && (
-            <ul className="text-sm text-gray-600 mb-4 space-y-1">
+            <ul className="text-xs text-gray-600 mb-2 space-y-0.5">
               {bullets.map((bullet, index) => (
                 <li key={index} className="flex items-start">
-                  <CheckCircle className="h-4 w-4 text-emerald-500 mr-2 mt-0.5 flex-shrink-0" />
+                  <CheckCircle className="h-3 w-3 text-emerald-500 mr-1 mt-0.5 flex-shrink-0" />
                   <span>{bullet}</span>
                 </li>
               ))}
@@ -74,17 +74,17 @@ const AffiliateBox: React.FC<AffiliateBoxProps> = ({
           )}
           
           <div className="flex items-center justify-between">
-            <div className="flex items-center space-x-3">
+            <div className="flex items-center space-x-2">
               {discount && (
-                <span className="bg-red-500 text-white px-2 py-1 rounded text-xs font-medium">
+                <span className="bg-red-500 text-white px-1.5 py-0.5 rounded text-xs font-medium">
                   -{discount}
                 </span>
               )}
               {price && (
                 <div>
-                  <span className="font-bold text-emerald-600 text-lg">{price}</span>
+                  <span className="font-bold text-emerald-600 text-base">{price}</span>
                   {originalPrice && (
-                    <span className="text-gray-400 line-through text-sm ml-2">{originalPrice}</span>
+                    <span className="text-gray-400 line-through text-xs ml-1">{originalPrice}</span>
                   )}
                 </div>
               )}
@@ -92,15 +92,15 @@ const AffiliateBox: React.FC<AffiliateBoxProps> = ({
             
             <button
               onClick={handleClick}
-              className="bg-emerald-500 hover:bg-emerald-600 text-white font-medium px-6 py-2 rounded-lg transition-colors flex items-center space-x-2"
+              className="bg-emerald-500 hover:bg-emerald-600 text-white font-medium px-4 py-1.5 rounded-lg transition-colors flex items-center space-x-1 text-sm"
             >
               <span>{ctaText}</span>
-              {url && <ExternalLink className="h-4 w-4" />}
+              {url && <ExternalLink className="h-3 w-3" />}
             </button>
           </div>
           
           {platform && (
-            <div className="text-xs text-gray-500 mt-2">
+            <div className="text-xs text-gray-500 mt-1">
               Disponible en {platform}
             </div>
           )}

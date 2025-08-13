@@ -1,15 +1,14 @@
 import { MapPin, Camera, Heart, Award } from 'lucide-react';
 
 const About = () => {
-  return (
-    <section id="sobre-nosotros" className="relative py-20 bg-white">
+    <section id="sobre-nosotros" className="relative py-8 sm:py-12 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="grid lg:grid-cols-2 gap-6 items-center">
           <div>
-            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">
+            <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-3">
               Hola, somos tus compañeros de viajes
             </h2>
-            <div className="space-y-4 text-lg text-gray-600">
+            <div className="space-y-2 text-sm sm:text-base text-gray-600">
               <p>
                 Somos una pareja viajera apasionada que llevamos más de 8 años 
                 recorriendo el mundo. Hemos visitado 40+ países con presupuestos 
@@ -25,42 +24,42 @@ const About = () => {
                 cada momento sin el estrés de la mala planificación.
               </p>
             </div>
-      <div className="mt-8">
-        <h3 className="text-xl font-bold text-gray-900 mb-4">Nuestra experiencia en números:</h3>
-            <div className="mt-8 grid grid-cols-2 gap-6">
+      <div className="mt-4">
+        <h3 className="text-lg font-bold text-gray-900 mb-2">Nuestra experiencia en números:</h3>
+            <div className="mt-3 grid grid-cols-2 gap-3">
               <div className="flex items-center">
-                <div className="w-12 h-12 bg-sky-100 rounded-full flex items-center justify-center mr-4">
-                  <MapPin className="h-6 w-6 text-sky-500" />
+                <div className="w-8 h-8 bg-sky-100 rounded-full flex items-center justify-center mr-2">
+                  <MapPin className="h-4 w-4 text-sky-500" />
                 </div>
                 <div>
-                  <div className="font-semibold text-gray-900">40+ países</div>
+                  <div className="font-semibold text-gray-900 text-sm">40+ países</div>
                   <div className="text-sm text-gray-600">Y contando...</div>
                 </div>
               </div>
               <div className="flex items-center">
-                <div className="w-12 h-12 bg-emerald-100 rounded-full flex items-center justify-center mr-4">
-                  <Camera className="h-6 w-6 text-emerald-500" />
+                <div className="w-8 h-8 bg-emerald-100 rounded-full flex items-center justify-center mr-2">
+                  <Camera className="h-4 w-4 text-emerald-500" />
                 </div>
                 <div>
-                  <div className="font-semibold text-gray-900">8 años</div>
+                  <div className="font-semibold text-gray-900 text-sm">8 años</div>
                   <div className="text-sm text-gray-600">Viajando</div>
                 </div>
               </div>
               <div className="flex items-center">
-                <div className="w-12 h-12 bg-emerald-100 rounded-full flex items-center justify-center mr-4">
-                  <Heart className="h-6 w-6 text-emerald-500" />
+                <div className="w-8 h-8 bg-emerald-100 rounded-full flex items-center justify-center mr-2">
+                  <Heart className="h-4 w-4 text-emerald-500" />
                 </div>
                 <div>
-                  <div className="font-semibold text-gray-900">5K+</div>
+                  <div className="font-semibold text-gray-900 text-sm">5K+</div>
                   <div className="text-sm text-gray-600">Lectores felices</div>
                 </div>
               </div>
               <div className="flex items-center">
-                <div className="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center mr-4">
-                  <Award className="h-6 w-6 text-orange-500" />
+                <div className="w-8 h-8 bg-orange-100 rounded-full flex items-center justify-center mr-2">
+                  <Award className="h-4 w-4 text-orange-500" />
                 </div>
                 <div>
-                  <div className="font-semibold text-gray-900">100+</div>
+                  <div className="font-semibold text-gray-900 text-sm">100+</div>
                   <div className="text-sm text-gray-600">Artículos útiles</div>
                 </div>
               </div>
@@ -68,7 +67,7 @@ const About = () => {
           </div>
         </div>
           <div className="relative">
-            <div className="aspect-w-4 aspect-h-5 rounded-2xl overflow-hidden shadow-2xl">
+            <div className="aspect-w-4 aspect-h-5 rounded-lg overflow-hidden shadow-lg">
               <img
                 src="https://images.pexels.com/photos/1024993/pexels-photo-1024993.jpeg?auto=compress&cs=tinysrgb&w=600"
                 alt="Equipamiento de viaje y mochila en paisaje natural"
@@ -76,9 +75,9 @@ const About = () => {
                 loading="lazy"
               />
             </div>
-            <div className="absolute -bottom-6 -left-6 bg-white p-4 rounded-xl shadow-lg">
+            <div className="absolute -bottom-3 -left-3 bg-white p-2 rounded-lg shadow-md">
               <div className="text-center">
-                <div className="text-2xl font-bold text-gray-900">€15/día</div>
+                <div className="text-lg font-bold text-gray-900">€15/día</div>
                 <div className="text-sm text-gray-600">Nuestro récord en Tailandia</div>
               </div>
             </div>

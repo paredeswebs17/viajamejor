@@ -41,26 +41,25 @@ const Contact = () => {
     });
   };
 
-  return (
-    <section id="contacto" className="relative py-20 bg-gradient-to-br from-blue-50 to-purple-50">
+    <section id="contacto" className="relative py-8 sm:py-12 bg-gradient-to-br from-blue-50 to-purple-50">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+        <div className="text-center mb-6">
+          <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-2">
             ¿Tienes alguna pregunta?
           </h2>
-          <p className="text-xl text-gray-600">
+          <p className="text-base text-gray-600">
             Me encanta ayudar a otros viajeros. Escríbeme y te responderé lo antes posible.
           </p>
         </div>
 
-        <div className="bg-white rounded-2xl shadow-xl p-8">
+        <div className="bg-white rounded-lg shadow-lg p-4 sm:p-6">
           {isSubmitted ? (
-            <div className="text-center py-8">
-              <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Send className="h-8 w-8 text-green-600" />
+            <div className="text-center py-4">
+              <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                <Send className="h-6 w-6 text-green-600" />
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-2">¡Mensaje enviado!</h3>
-              <p className="text-gray-600">
+              <h3 className="text-lg font-bold text-gray-900 mb-2">¡Mensaje enviado!</h3>
+              <p className="text-sm text-gray-600">
                 Gracias por escribirme. Te responderé en las próximas 24 horas.
               </p>
             </div>
@@ -69,11 +68,11 @@ const Contact = () => {
               onSubmit={handleSubmit} 
               method="POST" 
               action="https://formspree.io/f/mwpqebpb"
-              className="space-y-6"
+              className="space-y-3"
             >
-              <div className="grid md:grid-cols-2 gap-6">
+              <div className="grid md:grid-cols-2 gap-3">
                 <div>
-                  <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
+                  <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
                     Nombre
                   </label>
                   <input
@@ -82,13 +81,13 @@ const Contact = () => {
                     name="name"
                     value={formData.name}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-sky-500 focus:border-transparent outline-none transition-all"
+                    className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-sky-500 focus:border-transparent outline-none transition-all text-sm"
                     placeholder="¿Cómo te llamas?"
                     required
                   />
                 </div>
                 <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
+                  <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
                     Correo electrónico
                   </label>
                   <input
@@ -97,7 +96,7 @@ const Contact = () => {
                     name="email"
                     value={formData.email}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-sky-500 focus:border-transparent outline-none transition-all"
+                    className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-sky-500 focus:border-transparent outline-none transition-all text-sm"
                     placeholder="tu@email.com"
                     required
                   />
@@ -105,7 +104,7 @@ const Contact = () => {
               </div>
               
               <div>
-                <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
+                <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">
                   Tu mensaje
                 </label>
                 <textarea
@@ -113,8 +112,8 @@ const Contact = () => {
                   name="message"
                   value={formData.message}
                   onChange={handleChange}
-                  rows={5}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-sky-500 focus:border-transparent outline-none transition-all resize-none"
+                  rows={3}
+                  className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-sky-500 focus:border-transparent outline-none transition-all resize-none text-sm"
                   placeholder="Cuéntame sobre tu próximo viaje o qué necesitas saber..."
                   required
                 ></textarea>
@@ -122,18 +121,18 @@ const Contact = () => {
 
               <button
                 type="submit"
-                className="w-full btn-primary justify-center"
+                className="w-full btn-primary justify-center text-sm py-2"
               >
-                <Send className="mr-2 h-5 w-5" />
+                <Send className="mr-1 h-4 w-4" />
                 Enviar mensaje
               </button>
             </form>
           )}
 
-          <div className="mt-8 pt-8 border-t border-gray-200">
+          <div className="mt-4 pt-4 border-t border-gray-200">
             <div className="flex items-center justify-center">
-              <MessageCircle className="h-5 w-5 text-sky-500 mr-2" />
-              <span className="text-gray-600">Respuesta en 24h</span>
+              <MessageCircle className="h-4 w-4 text-sky-500 mr-1" />
+              <span className="text-sm text-gray-600">Respuesta en 24h</span>
             </div>
           </div>
           </div>

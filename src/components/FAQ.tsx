@@ -64,19 +64,18 @@ const FAQ = () => {
     }
   ];
 
-  return (
-    <section id="preguntas-frecuentes" className="py-20 bg-white">
+    <section id="preguntas-frecuentes" className="py-8 sm:py-12 bg-white">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+        <div className="text-center mb-6">
+          <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-2">
             Preguntas Frecuentes
           </h2>
-          <p className="text-xl text-gray-600">
+          <p className="text-base text-gray-600">
             Las dudas más comunes sobre viajar barato y consejos de viaje
           </p>
         </div>
 
-        <div className="space-y-4">
+        <div className="space-y-2">
           {!isMobile && faqs.map((faq, index) => (
             <div 
               key={index}
@@ -84,26 +83,26 @@ const FAQ = () => {
             >
               <button
                 onClick={() => toggleItem(index)}
-                className="w-full px-6 py-4 text-left flex items-center justify-between hover:bg-gray-100 focus:outline-none"
+                className="w-full px-4 py-3 text-left flex items-center justify-between hover:bg-gray-100 focus:outline-none"
                 aria-expanded={openItems.includes(index)}
                 aria-controls={`faq-answer-${index}`}
               >
-                <h3 className="text-lg font-semibold text-gray-900 pr-4">
+                <h3 className="text-base font-semibold text-gray-900 pr-3">
                   {faq.question}
                 </h3>
                 {openItems.includes(index) ? (
-                  <ChevronUp className="h-5 w-5 text-gray-500 flex-shrink-0" />
+                  <ChevronUp className="h-4 w-4 text-gray-500 flex-shrink-0" />
                 ) : (
-                  <ChevronDown className="h-5 w-5 text-gray-500 flex-shrink-0" />
+                  <ChevronDown className="h-4 w-4 text-gray-500 flex-shrink-0" />
                 )}
               </button>
               
               {openItems.includes(index) && (
                 <div 
                   id={`faq-answer-${index}`}
-                  className="px-6 pb-4"
+                  className="px-4 pb-3"
                 >
-                  <p className="text-gray-700 leading-relaxed">
+                  <p className="text-sm text-gray-700 leading-relaxed">
                     {faq.answer}
                   </p>
                 </div>
@@ -117,12 +116,12 @@ const FAQ = () => {
               defaultOpen={false}
               noBorder={true} 
               noHighlight={true}
-              titleClassName="text-lg font-bold"
+              titleClassName="text-base font-bold"
             >
-              <div className="space-y-4">
+              <div className="space-y-2">
                 {faqs.map((faq, index) => (
-                  <div key={index} className="bg-gray-50 rounded-lg p-4">
-                    <p className="font-semibold mb-2">{faq.question}</p>
+                  <div key={index} className="bg-gray-50 rounded-lg p-3">
+                    <p className="font-semibold mb-1 text-sm">{faq.question}</p>
                     <p className="text-gray-700 text-sm">{faq.answer}</p>
                   </div>
                 ))}
@@ -131,13 +130,13 @@ const FAQ = () => {
           )}
         </div>
 
-        <div className="mt-12 text-center">
-          <p className="text-gray-600 mb-4">
+        <div className="mt-6 text-center">
+          <p className="text-sm text-gray-600 mb-3">
             ¿No encuentras la respuesta que buscas?
           </p>
           <button
             onClick={() => document.getElementById('contacto')?.scrollIntoView({ behavior: 'smooth' })}
-            className="btn-primary"
+            className="btn-primary text-sm px-4 py-2"
           >
             Pregúntanos directamente
           </button>

@@ -179,50 +179,49 @@ const Recommendations = () => {
     return "Ver oferta";
   };
 
-  return (
-    <section id="recomendaciones" className="relative py-20 bg-white">
+    <section id="recomendaciones" className="relative py-8 sm:py-12 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+        <div className="text-center mb-6">
+          <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-2">
             Mis Herramientas y Recomendaciones
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-base text-gray-600 max-w-3xl mx-auto">
             Después de 8 años viajando, estas son las herramientas, productos y servicios que realmente uso 
             y recomiendo. Solo incluyo cosas que he probado personalmente y que me han funcionado bien.
           </p>
         </div>
 
-        <div className="space-y-12">
+        <div className="space-y-6">
           {!isMobile && categories.map((category, categoryIndex) => (
-            <div key={categoryIndex} className="bg-gray-50 rounded-2xl p-8">
-              <div className="flex items-center mb-8">
-                <div className="w-12 h-12 bg-sky-500 rounded-full flex items-center justify-center text-white mr-4">
+            <div key={categoryIndex} className="bg-gray-50 rounded-lg p-4">
+              <div className="flex items-center mb-4">
+                <div className="w-8 h-8 bg-sky-500 rounded-full flex items-center justify-center text-white mr-3">
                   {category.icon}
                 </div>
-                <h3 className="text-2xl font-bold text-gray-900">{category.title}</h3>
+                <h3 className="text-lg font-bold text-gray-900">{category.title}</h3>
               </div>
 
-              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
                 {category.items.map((item, itemIndex) => (
                   <div 
                     key={itemIndex} 
-                    className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 ring-2 ring-sky-500"
+                    className="bg-white rounded-lg p-3 shadow-sm hover:shadow-md transition-all duration-200 ring-1 ring-sky-300"
                     style={{ display: 'flex', flexDirection: 'column', height: '100%' }}
                   >
-                    <h4 className="text-lg font-bold text-gray-900 mb-2">{item.name}</h4>
-                    <p className="text-gray-600 mb-4 text-sm leading-relaxed flex-1">{item.description}</p>
+                    <h4 className="text-base font-bold text-gray-900 mb-1">{item.name}</h4>
+                    <p className="text-gray-600 mb-2 text-xs leading-relaxed flex-1">{item.description}</p>
                     
-                    <div className="flex items-center justify-between mb-4 mt-auto">
-                      <span className="text-lg font-semibold text-emerald-600">{item.price}</span>
+                    <div className="flex items-center justify-between mb-2 mt-auto">
+                      <span className="text-sm font-semibold text-emerald-600">{item.price}</span>
                     </div>
                     
                     <a
                       href={item.affiliate}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="w-full text-center bg-gradient-to-r from-sky-500 to-emerald-500 text-white font-medium py-3 px-4 rounded-lg hover:from-sky-600 hover:to-emerald-600 transition-all duration-200 mt-auto block flex items-center justify-center"
+                      className="w-full text-center bg-gradient-to-r from-sky-500 to-emerald-500 text-white font-medium py-2 px-3 rounded-lg hover:from-sky-600 hover:to-emerald-600 transition-all duration-200 mt-auto block flex items-center justify-center text-sm"
                     >
-                      <ExternalLink className="h-4 w-4 mr-2" />
+                      <ExternalLink className="h-3 w-3 mr-1" />
                       {getButtonText(item.affiliate)}
                     </a>
                   </div>
@@ -238,27 +237,27 @@ const Recommendations = () => {
               defaultOpen={categoryIndex === 0 ? true : false}
               noBorder={true}
               noHighlight={true}
-              titleClassName="text-lg font-bold flex items-center"
+              titleClassName="text-base font-bold flex items-center"
             >
-              <div className="space-y-4">
+              <div className="space-y-2">
                 {category.items.map((item, itemIndex) => (
                   <div 
                     key={itemIndex} 
-                    className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 ring-2 ring-sky-500">
-                    <h4 className="text-lg font-bold text-gray-900 mb-2">{item.name}</h4>
-                    <p className="text-gray-600 mb-4 text-sm leading-relaxed">{item.description}</p>
+                    className="bg-white rounded-lg p-3 shadow-sm hover:shadow-md transition-all duration-200 ring-1 ring-sky-300">
+                    <h4 className="text-base font-bold text-gray-900 mb-1">{item.name}</h4>
+                    <p className="text-gray-600 mb-2 text-xs leading-relaxed">{item.description}</p>
                     
-                    <div className="flex items-center justify-between mb-4 mt-auto">
-                      <span className="text-lg font-semibold text-emerald-600">{item.price}</span>
+                    <div className="flex items-center justify-between mb-2 mt-auto">
+                      <span className="text-sm font-semibold text-emerald-600">{item.price}</span>
                     </div>
                     
                     <a
                       href={item.affiliate}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="w-full text-center bg-gradient-to-r from-sky-500 to-emerald-500 text-white font-medium py-3 px-4 rounded-lg hover:from-sky-600 hover:to-emerald-600 transition-all duration-200 block flex items-center justify-center"
+                      className="w-full text-center bg-gradient-to-r from-sky-500 to-emerald-500 text-white font-medium py-2 px-3 rounded-lg hover:from-sky-600 hover:to-emerald-600 transition-all duration-200 block flex items-center justify-center text-sm"
                     >
-                      <ExternalLink className="h-4 w-4 mr-2" />
+                      <ExternalLink className="h-3 w-3 mr-1" />
                       {getButtonText(item.affiliate)}
                     </a>
                   </div>
@@ -268,15 +267,15 @@ const Recommendations = () => {
           ))}
         </div>
 
-        <div className="mt-16 bg-gradient-to-r from-sky-500 to-emerald-500 rounded-2xl p-8 text-center text-white">
-          <h3 className="text-2xl font-bold mb-4">¿Tienes alguna pregunta sobre estos productos?</h3>
-          <p className="text-lg mb-6 opacity-90">
+        <div className="mt-6 bg-gradient-to-r from-sky-500 to-emerald-500 rounded-lg p-4 text-center text-white">
+          <h3 className="text-lg font-bold mb-2">¿Tienes alguna pregunta sobre estos productos?</h3>
+          <p className="text-sm mb-3 opacity-90">
             He usado todo lo que recomiendo aquí. Si tienes dudas sobre algún producto o servicio, 
             escríbeme y te cuento mi experiencia personal.
           </p>
           <button 
             onClick={() => document.getElementById('contacto')?.scrollIntoView({ behavior: 'smooth' })}
-            className="bg-white text-sky-500 font-semibold px-8 py-3 rounded-lg hover:bg-gray-100 transition-colors"
+            className="bg-white text-sky-500 font-semibold px-6 py-2 rounded-lg hover:bg-gray-100 transition-colors text-sm"
           >
             Pregúntame lo que quieras
           </button>

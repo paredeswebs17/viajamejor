@@ -76,38 +76,38 @@ const ArticleLayout: React.FC<ArticleLayoutProps> = ({
         </script>
       </Helmet>
 
-      <article className="max-w-4xl mx-auto px-4 py-8 pt-24">
+      <article className="max-w-4xl mx-auto px-4 py-4 pt-20">
         <Breadcrumbs items={breadcrumbs} />
         
         {/* Featured Image */}
-        <div className="relative h-64 sm:h-80 lg:h-96 rounded-2xl overflow-hidden mb-8">
+        <div className="relative h-32 sm:h-48 lg:h-64 rounded-lg overflow-hidden mb-4">
           <img 
             src={featuredImage} 
             alt={title}
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
         </div>
         
-        <header className="mb-8">
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight">
+        <header className="mb-4">
+          <h1 className="text-xl sm:text-2xl lg:text-3xl font-bold text-gray-900 mb-3 leading-tight">
             {title}
           </h1>
           
-          <div className="flex flex-wrap items-center gap-4 text-gray-600 text-sm">
-            <span className="flex items-center bg-gray-100 px-3 py-1 rounded-full">
-              <Clock className="h-4 w-4 mr-1" />
+          <div className="flex flex-wrap items-center gap-2 text-gray-600 text-xs">
+            <span className="flex items-center bg-gray-100 px-2 py-0.5 rounded-full">
+              <Clock className="h-3 w-3 mr-1" />
               {readTime} lectura
             </span>
             {views && (
-              <span className="flex items-center bg-gray-100 px-3 py-1 rounded-full">
-                <Eye className="h-4 w-4 mr-1" />
+              <span className="hidden sm:flex items-center bg-gray-100 px-2 py-0.5 rounded-full">
+                <Eye className="h-3 w-3 mr-1" />
                 {views} vistas
               </span>
             )}
             {publishDate && (
-              <span className="flex items-center bg-gray-100 px-3 py-1 rounded-full">
-                <Calendar className="h-4 w-4 mr-1" />
+              <span className="hidden sm:flex items-center bg-gray-100 px-2 py-0.5 rounded-full">
+                <Calendar className="h-3 w-3 mr-1" />
                 {publishDate}
               </span>
             )}
@@ -116,7 +116,7 @@ const ArticleLayout: React.FC<ArticleLayoutProps> = ({
 
         <TableOfContents sections={tocSections} />
 
-        <div className="prose prose-lg max-w-none">
+        <div className="prose prose-sm sm:prose-base max-w-none">
           {children}
         </div>
 

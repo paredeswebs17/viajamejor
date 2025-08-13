@@ -82,7 +82,7 @@ const BlogSection: React.FC<BlogSectionProps> = ({ showTitle = true }) => {
   ];
 
   return (
-    <section id="consejos" className="relative py-20 bg-gray-50">
+    <section id="consejos" className="relative py-8 sm:py-12 bg-gray-50">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute inset-0" style={{
@@ -92,41 +92,41 @@ const BlogSection: React.FC<BlogSectionProps> = ({ showTitle = true }) => {
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {showTitle && (
-          <div className="text-center mb-16">
+          <div className="text-center mb-6 sm:mb-8">
             {/* Badge */}
-            <div className="inline-flex items-center bg-gradient-to-r from-sky-100 to-emerald-100 rounded-full px-4 py-2 mb-6">
-              <Target className="h-4 w-4 mr-2 text-sky-600" />
-              <span className="text-sm font-medium text-gray-700">Consejos probados en 40+ países</span>
+            <div className="inline-flex items-center bg-gradient-to-r from-sky-100 to-emerald-100 rounded-full px-3 py-1 mb-3">
+              <Target className="h-3 w-3 mr-1 text-sky-600" />
+              <span className="text-xs font-medium text-gray-700">Consejos probados en 40+ países</span>
             </div>
 
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+            <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold text-gray-900 mb-3">
               Mis Consejos de <span className="text-sky-600">Viaje</span>
             </h2>
             
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed mb-8">
+            <p className="text-base sm:text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed mb-4">
               Todo lo que he aprendido viajando por más de 40 países. Consejos prácticos, 
               herramientas útiles y productos que realmente funcionan para viajar más gastando menos.
             </p>
 
             {/* Stats */}
-            <div className="flex flex-wrap justify-center gap-6 text-sm">
-              <div className="flex items-center bg-white rounded-lg px-4 py-2 shadow-sm">
-                <Users className="h-4 w-4 mr-2 text-sky-500" />
+            <div className="hidden sm:flex flex-wrap justify-center gap-3 text-xs">
+              <div className="flex items-center bg-white rounded-lg px-3 py-1 shadow-sm">
+                <Users className="h-3 w-3 mr-1 text-sky-500" />
                 <span className="text-gray-700">+50k lectores</span>
               </div>
-              <div className="flex items-center bg-white rounded-lg px-4 py-2 shadow-sm">
-                <Star className="h-4 w-4 mr-2 text-amber-500" />
+              <div className="flex items-center bg-white rounded-lg px-3 py-1 shadow-sm">
+                <Star className="h-3 w-3 mr-1 text-amber-500" />
                 <span className="text-gray-700">+244k vistas</span>
               </div>
-              <div className="flex items-center bg-white rounded-lg px-4 py-2 shadow-sm">
-                <TrendingUp className="h-4 w-4 mr-2 text-emerald-500" />
+              <div className="flex items-center bg-white rounded-lg px-3 py-1 shadow-sm">
+                <TrendingUp className="h-3 w-3 mr-1 text-emerald-500" />
                 <span className="text-gray-700">Ahorro promedio: 400€</span>
               </div>
             </div>
           </div>
         )}
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {articles.map((article) => (
             <BlogCard
               key={article.id}
@@ -138,7 +138,7 @@ const BlogSection: React.FC<BlogSectionProps> = ({ showTitle = true }) => {
 
         {/* CTA intercalado */}
         {showTitle && (
-          <div className="mt-16">
+          <div className="mt-6">
             <AffiliateBox
               title="🎯 ¿Empezando a planificar tu viaje?"
               description="Te recomiendo empezar con estas herramientas que uso en cada viaje para ahorrar tiempo y dinero"

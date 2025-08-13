@@ -11,11 +11,10 @@ interface BreadcrumbsProps {
 }
 
 const Breadcrumbs: React.FC<BreadcrumbsProps> = ({ items }) => {
-  return (
-    <nav className="flex text-sm text-gray-500 mb-6" aria-label="Breadcrumb">
+    <nav className="flex text-xs text-gray-500 mb-3" aria-label="Breadcrumb">
       {items.map((item, index) => (
         <div key={index} className="flex items-center">
-          {index > 0 && <span className="mx-2">/</span>}
+          {index > 0 && <span className="mx-1">/</span>}
           {item.href ? (
             <Link to={item.href} className="hover:text-sky-600 transition-colors">
               {item.label}
