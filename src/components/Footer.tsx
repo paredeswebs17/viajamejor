@@ -15,14 +15,13 @@ const Footer = () => {
               Consejos reales para viajar más gastando menos
             </p>
             <div className="flex justify-center space-x-4 mb-4">
-              <a href="#" className="text-gray-400 hover:text-sky-400 transition-colors">
-                <Instagram className="h-4 w-4" />
-              </a>
-              <a href="#" className="text-gray-400 hover:text-sky-400 transition-colors">
-                <Youtube className="h-4 w-4" />
-              </a>
-              <a href="#" className="text-gray-400 hover:text-sky-400 transition-colors">
-                <Twitter className="h-4 w-4" />
+              <a 
+                href="https://instagram.com/viajamejor_net" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-gray-400 hover:text-sky-400 transition-colors"
+              >
+                <Instagram className="h-6 w-6" />
               </a>
             </div>
             <p className="text-gray-500 text-xs">
@@ -43,14 +42,13 @@ const Footer = () => {
               Consejos reales de alguien que realmente viaja.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-gray-400 hover:text-sky-400 transition-colors">
-                <Instagram className="h-5 w-5" />
-              </a>
-              <a href="#" className="text-gray-400 hover:text-sky-400 transition-colors">
-                <Youtube className="h-5 w-5" />
-              </a>
-              <a href="#" className="text-gray-400 hover:text-sky-400 transition-colors">
-                <Twitter className="h-5 w-5" />
+              <a 
+                href="https://instagram.com/viajamejor_net" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-gray-400 hover:text-sky-400 transition-colors"
+              >
+                <Instagram className="h-6 w-6" />
               </a>
             </div>
           </div>
