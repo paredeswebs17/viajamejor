@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 interface BlogSectionProps {
   showTitle?: boolean;
@@ -7,6 +8,20 @@ interface BlogSectionProps {
 }
 
 const BlogSection: React.FC<BlogSectionProps> = ({ showTitle = true }) => {
+  const scrollRef = React.useRef<HTMLDivElement>(null);
+
+  const scrollLeft = () => {
+    if (scrollRef.current) {
+      scrollRef.current.scrollBy({ left: -400, behavior: 'smooth' });
+    }
+  };
+
+  const scrollRight = () => {
+    if (scrollRef.current) {
+      scrollRef.current.scrollBy({ left: 400, behavior: 'smooth' });
+    }
+  };
+
   const articles = [
     {
       id: 'travel-essentials',
@@ -86,31 +101,50 @@ const BlogSection: React.FC<BlogSectionProps> = ({ showTitle = true }) => {
             <h2 className="text-lg sm:text-xl font-bold text-gray-900 mb-2">
               Empieza por aquí
             </h2>
-            <p className="text-sm text-gray-600 mb-4">
-            Desliza para ver más →
-            </p>
+            <div className="flex items-center justify-between">
+              <p className="text-sm text-gray-600">
+                Desliza para ver más →
+              </p>
+              {/* Navigation arrows for desktop */}
+              <div className="hidden lg:flex items-center space-x-2">
+                <button
+                  onClick={scrollLeft}
+                  className="p-2 rounded-full bg-white border border-gray-200 hover:bg-gray-50 transition-colors"
+                  aria-label="Scroll left"
+                >
+                  <ChevronLeft className="h-4 w-4 text-gray-600" />
+                </button>
+                <button
+                  onClick={scrollRight}
+                  className="p-2 rounded-full bg-white border border-gray-200 hover:bg-gray-50 transition-colors"
+                  aria-label="Scroll right"
+                >
+                  <ChevronRight className="h-4 w-4 text-gray-600" />
+                </button>
+              </div>
+            </div>
           </div>
         )}
 
-        {/* Horizontal scroll for all devices */}
-        <div className="overflow-x-auto">
-          <div className="flex gap-4 pb-4 px-4">
+        {/* Horizontal scroll with larger cards for desktop */}
+        <div className="overflow-x-auto scrollbar-hide" ref={scrollRef}>
+          <div className="flex gap-4 lg:gap-6 pb-4 px-4">
             {articles.map(article => (
               <Link 
                 key={article.id}
                 to={article.url}
-                className="min-w-[280px] max-w-[280px] flex-shrink-0 bg-white rounded-lg shadow-sm border border-gray-100 overflow-hidden"
+                className="min-w-[280px] sm:min-w-[320px] lg:min-w-[380px] max-w-[280px] sm:max-w-[320px] lg:max-w-[380px] flex-shrink-0 bg-white rounded-lg shadow-sm border border-gray-100 overflow-hidden hover:shadow-md transition-shadow"
               >
                 <img 
-                  className="w-full h-24 object-cover rounded-t-lg" 
+                  className="w-full h-24 sm:h-32 lg:h-40 object-cover rounded-t-lg" 
                   src={article.image} 
                   alt={article.title} 
                 />
-                <div className="p-3">
+                <div className="p-3 lg:p-4">
                   <span className="text-xs bg-sky-500 text-white px-2 py-1 rounded font-medium">
                     {article.category}
                   </span>
-                  <h3 className="text-sm font-semibold mt-2 line-clamp-2 text-gray-900">
+                  <h3 className="text-sm sm:text-base lg:text-lg font-semibold mt-2 line-clamp-2 text-gray-900">
                     {article.title}
                   </h3>
                   <div className="flex justify-between items-center mt-2">

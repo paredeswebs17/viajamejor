@@ -107,6 +107,24 @@ button:focus {
     .scrollbar-hide::-webkit-scrollbar {
       display: none;
     }
+  }
+  
+  /* Hide scrollbar for all devices */
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Smooth scrolling for horizontal containers */
+  .overflow-x-auto {
+    scroll-behavior: smooth;
+  }
+  
+  @media (max-width: 768px) {
     
     .btn-primary {
       @apply px-4 py-3 text-base;
