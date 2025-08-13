@@ -11,6 +11,7 @@ interface BreadcrumbsProps {
 }
 
 const Breadcrumbs: React.FC<BreadcrumbsProps> = ({ items }) => {
+  return (
     <nav className="flex text-xs text-gray-500 mb-3" aria-label="Breadcrumb">
       {items.map((item, index) => (
         <div key={index} className="flex items-center">
