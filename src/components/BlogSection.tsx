@@ -28,7 +28,7 @@ const BlogSection: React.FC<BlogSectionProps> = ({ showTitle = true }) => {
       id: 'travel-essentials',
       title: '8 objetos imprescindibles para tu próximo viaje',
       excerpt: 'La mochila perfecta, adaptadores universales, power banks que duran...',
-      image: 'https://images.pexels.com/photos/1008155/pexels-photo-1008155.jpeg?auto=compress&cs=tinysrgb&w=800',
+      image: 'https://via.placeholder.com/800x400/0ea5e9/ffffff?text=Equipaje+de+Viaje',
       readTime: '12 min',
       category: 'Equipaje',
       featured: true,
@@ -40,7 +40,7 @@ const BlogSection: React.FC<BlogSectionProps> = ({ showTitle = true }) => {
       id: 'cheap-flights',
       title: 'Cómo encontrar vuelos baratos: 10 trucos infalibles',
       excerpt: 'Skyscanner, fechas flexibles, VPN y más secretos para conseguir vuelos...',
-      image: 'https://images.pexels.com/photos/2026324/pexels-photo-2026324.jpeg?auto=compress&cs=tinysrgb&w=800',
+      image: 'https://via.placeholder.com/800x400/10b981/ffffff?text=Vuelos+Baratos',
       readTime: '8 min',
       category: 'Vuelos',
       savings: 'Ahorra 300€+',
@@ -51,7 +51,7 @@ const BlogSection: React.FC<BlogSectionProps> = ({ showTitle = true }) => {
       id: 'accommodation',
       title: 'Booking vs Airbnb vs Hostelworld',
       excerpt: 'Comparativa real de las tres plataformas que uso...',
-      image: 'https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&w=800',
+      image: 'https://via.placeholder.com/800x400/f59e0b/ffffff?text=Alojamiento',
       readTime: '6 min',
       category: 'Alojamiento',
       featured: true,
@@ -63,7 +63,7 @@ const BlogSection: React.FC<BlogSectionProps> = ({ showTitle = true }) => {
       id: 'travel-cards',
       title: 'Mejores tarjetas para viajar sin comisiones',
       excerpt: 'Revolut, N26, Wise... Comparativa completa para no pagar ni un euro extra...',
-      image: 'https://images.pexels.com/photos/4386321/pexels-photo-4386321.jpeg?auto=compress&cs=tinysrgb&w=800',
+      image: 'https://via.placeholder.com/800x400/8b5cf6/ffffff?text=Tarjetas+Viaje',
       readTime: '9 min',
       category: 'Finanzas',
       savings: '0€ comisiones',
@@ -74,7 +74,7 @@ const BlogSection: React.FC<BlogSectionProps> = ({ showTitle = true }) => {
       id: 'cheap-destinations',
       title: 'Destinos baratos para 2025: 15 favoritos',
       excerpt: 'Países increíbles con presupuestos detallados. Albania, Vietnam, Georgia...',
-      image: 'https://images.pexels.com/photos/1371360/pexels-photo-1371360.jpeg?auto=compress&cs=tinysrgb&w=800',
+      image: 'https://via.placeholder.com/800x400/ef4444/ffffff?text=Destinos+Baratos',
       readTime: '10 min',
       category: 'Destinos',
       savings: '20-30€/día',
@@ -85,7 +85,7 @@ const BlogSection: React.FC<BlogSectionProps> = ({ showTitle = true }) => {
       id: 'travel-insurance',
       title: 'Seguro de viaje: por qué uso IATI',
       excerpt: 'Mi experiencia con una emergencia médica de 3.000€ en Tailandia...',
-      image: 'https://images.pexels.com/photos/1010657/pexels-photo-1010657.jpeg?auto=compress&cs=tinysrgb&w=800',
+      image: 'https://via.placeholder.com/800x400/06b6d4/ffffff?text=Seguro+Viaje',
       readTime: '7 min',
       category: 'Seguros',
       savings: '5% descuento',
@@ -136,11 +136,19 @@ const BlogSection: React.FC<BlogSectionProps> = ({ showTitle = true }) => {
                 to={article.url}
                 className="min-w-[280px] sm:min-w-[320px] lg:min-w-[380px] max-w-[280px] sm:max-w-[320px] lg:max-w-[380px] flex-shrink-0 bg-white rounded-lg shadow-sm border border-gray-100 overflow-hidden hover:shadow-md transition-shadow"
               >
-                <OptimizedImage
+                <img 
                   src={article.image}
-                 alt={`${article.title} - ${article.category} - Viaja Mejor`}
-                  className="w-full h-24 sm:h-32 lg:h-40 object-cover rounded-t-lg" 
-                 loading="lazy"
+                  alt={`${article.title} - ${article.category} - Viaja Mejor`}
+                  className="w-full h-24 sm:h-32 lg:h-40 object-cover rounded-t-lg"
+                  loading="lazy"
+                  onError={(e) => {
+                    console.error('Error loading image:', article.image);
+                    e.currentTarget.style.backgroundColor = '#f3f4f6';
+                    e.currentTarget.style.display = 'flex';
+                    e.currentTarget.style.alignItems = 'center';
+                    e.currentTarget.style.justifyContent = 'center';
+                    e.currentTarget.innerHTML = '📷';
+                  }}
                 />
                 <div className="p-3 lg:p-4">
                   <span className="text-xs bg-sky-500 text-white px-2 py-1 rounded font-medium">
