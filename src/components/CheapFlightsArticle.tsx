@@ -3,9 +3,10 @@ import RelatedArticles from './RelatedArticles';
 
 interface CheapFlightsArticleProps {
   onBack: () => void;
+  onArticleSelect?: (articleId: string) => void;
 }
 
-const CheapFlightsArticle: React.FC<CheapFlightsArticleProps> = ({ onBack }) => {
+const CheapFlightsArticle: React.FC<CheapFlightsArticleProps> = ({ onBack, onArticleSelect }) => {
 
   return (
     <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 pt-24">
@@ -338,7 +339,7 @@ const CheapFlightsArticle: React.FC<CheapFlightsArticleProps> = ({ onBack }) => 
       </div>
       
       {/* Artículos relacionados */}
-      <RelatedArticles currentCategory="Vuelos" currentArticleId="vuelos-baratos" />
+      <RelatedArticles currentCategory="Vuelos" currentArticleId="vuelos-baratos" onArticleSelect={onArticleSelect} onBack={onBack} />
     </article>
   );
 };

@@ -3,9 +3,10 @@ import RelatedArticles from './RelatedArticles';
 
 interface AccommodationArticleProps {
   onBack: () => void;
+  onArticleSelect?: (articleId: string) => void;
 }
 
-const AccommodationArticle: React.FC<AccommodationArticleProps> = ({ onBack }) => {
+const AccommodationArticle: React.FC<AccommodationArticleProps> = ({ onBack, onArticleSelect }) => {
 
   return (
     <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 pt-24">
@@ -282,7 +283,7 @@ const AccommodationArticle: React.FC<AccommodationArticleProps> = ({ onBack }) =
       </div>
       
       {/* Artículos relacionados */}
-      <RelatedArticles currentCategory="Alojamiento" currentArticleId="booking-vs-airbnb" />
+      <RelatedArticles currentCategory="Alojamiento" currentArticleId="booking-vs-airbnb" onArticleSelect={onArticleSelect} onBack={onBack} />
     </article>
   );
 };

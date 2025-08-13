@@ -13,9 +13,17 @@ interface RelatedArticle {
 interface RelatedArticlesProps {
   currentCategory: string;
   currentArticleId: string;
+  // Hacer estas props opcionales para compatibilidad
+  onArticleSelect?: (articleId: string) => void;
+  onBack?: () => void;
 }
 
-const RelatedArticles: React.FC<RelatedArticlesProps> = ({ currentCategory, currentArticleId }) => {
+const RelatedArticles: React.FC<RelatedArticlesProps> = ({ 
+  currentCategory, 
+  currentArticleId,
+  onArticleSelect,
+  onBack 
+}) => {
   const allArticles: RelatedArticle[] = [
     {
       title: 'Cómo encontrar vuelos baratos: 10 trucos infalibles',
