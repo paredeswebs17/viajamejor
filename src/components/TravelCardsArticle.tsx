@@ -323,6 +323,7 @@ const TravelCardsArticle: React.FC<TravelCardsArticleProps> = ({ onBack }) => {
       {/* Artículos relacionados */}
       <RelatedArticles currentCategory="Finanzas" currentArticleId="tarjetas-sin-comisiones" />
     </article>
+  )
   );
 };
 
