@@ -9,22 +9,6 @@ const CheapDestinationsPage = () => {
     navigate('/');
   };
 
-  const handleArticleSelect = (articleId: string) => {
-    const routes: Record<string, string> = {
-      'travel-essentials': '/equipaje/8-objetos-imprescindibles',
-      'cheap-flights': '/vuelos/vuelos-baratos',
-      'accommodation': '/alojamiento/booking-vs-airbnb',
-      'travel-cards': '/finanzas/tarjetas-sin-comisiones',
-      'travel-insurance': '/seguros/iati-experiencia',
-      'travel-apps': '/tecnologia/apps-viaje'
-    };
-    
-    const route = routes[articleId];
-    if (route) {
-      navigate(route);
-    }
-  };
-
   return (
     <>
       <Helmet>
@@ -65,7 +49,7 @@ const CheapDestinationsPage = () => {
         </script>
       </Helmet>
 
-      <CheapDestinationsArticle onBack={handleBack} onArticleSelect={handleArticleSelect} />
+      <CheapDestinationsArticle onBack={handleBack} />
     </>
   );
 };
