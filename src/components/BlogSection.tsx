@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import BlogCard from './BlogCard';
 
 interface BlogSectionProps {
   showTitle?: boolean;
