@@ -138,7 +138,7 @@ const BlogSection: React.FC<BlogSectionProps> = ({ showTitle = true }) => {
                 <img 
                   className="w-full h-24 sm:h-32 lg:h-40 object-cover rounded-t-lg" 
                   src={article.image} 
-                  alt={article.title} 
+                  alt={`${article.title} - ${article.category} - Viaja Mejor`}
                 />
                 <div className="p-3 lg:p-4">
                   <span className="text-xs bg-sky-500 text-white px-2 py-1 rounded font-medium">
