@@ -12,7 +12,6 @@ const Header = () => {
     { id: 'inicio', label: 'Inicio', href: '/' },
     { id: 'consejos', label: 'Consejos de Viaje', href: '/#consejos' },
     { id: 'recomendaciones', label: 'Recomendaciones', href: '/#recomendaciones' },
-    { id: 'sobre-nosotros', label: 'Sobre Nosotros', href: '/#sobre-nosotros' },
     { id: 'contacto', label: 'Contacto', href: '/#contacto' }
   ];
 
