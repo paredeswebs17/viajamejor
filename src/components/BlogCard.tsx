@@ -81,20 +81,20 @@ const BlogCard: React.FC<BlogCardProps> = ({
         </div>
       </div>
       
-      <div className="p-3 sm:p-4">
+      <div className="p-3 sm:p-4 flex flex-col h-full">
         <Link to={url} onClick={handleClick}>
           <h3 className="text-base sm:text-lg font-bold text-gray-900 mb-2 line-clamp-2 hover:text-sky-600 transition-colors cursor-pointer group-hover:text-sky-600">
             {title}
           </h3>
         </Link>
-        <p className="text-sm text-gray-600 mb-3 line-clamp-2 leading-relaxed">
+        <p className="text-sm text-gray-600 mb-3 line-clamp-2 leading-relaxed flex-1">
           {excerpt}
         </p>
         
         <Link 
           to={url}
           onClick={handleClick}
-          className="w-full bg-gradient-to-r from-sky-500 to-emerald-500 hover:from-sky-600 hover:to-emerald-600 text-white font-medium py-2 px-4 rounded-lg transition-all duration-200 flex items-center justify-center space-x-1 shadow-sm text-sm"
+          className="w-full bg-gradient-to-r from-sky-500 to-emerald-500 hover:from-sky-600 hover:to-emerald-600 text-white font-medium py-2 px-4 rounded-lg transition-all duration-200 flex items-center justify-center space-x-1 shadow-sm text-sm mt-auto"
         >
           <span>Leer artículo completo</span>
           <ArrowRight className="h-3 w-3" />

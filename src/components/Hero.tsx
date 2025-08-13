@@ -22,22 +22,6 @@ const Hero = () => {
             Consejos y recursos para tu próxima aventura
           </p>
 
-          {/* Stats - Hidden on mobile */}
-          <div className="hidden sm:flex flex-wrap justify-center gap-3 mb-4 text-sm">
-            <div className="flex items-center bg-white rounded-lg px-3 py-1 shadow-sm">
-              <Users className="h-3 w-3 mr-1 text-sky-500" />
-              <span className="text-gray-700">+50k lectores</span>
-            </div>
-            <div className="flex items-center bg-white rounded-lg px-3 py-1 shadow-sm">
-              <Star className="h-3 w-3 mr-1 text-amber-500" />
-              <span className="text-gray-700">+244k vistas</span>
-            </div>
-            <div className="flex items-center bg-white rounded-lg px-3 py-1 shadow-sm">
-              <MapPin className="h-3 w-3 mr-1 text-emerald-500" />
-              <span className="text-gray-700">40+ países</span>
-            </div>
-          </div>
-
           {/* Compact CTA */}
           <button
             onClick={() => scrollToSection('consejos')}

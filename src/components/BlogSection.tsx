@@ -117,7 +117,7 @@ const BlogSection: React.FC<BlogSectionProps> = ({ showTitle = true }) => {
                             {article.title}
                           </h3>
                         </div>
-                        <div className="flex items-center justify-between text-xs text-gray-500">
+                        <div className="flex items-center justify-between text-xs text-gray-500 mt-auto">
                           <span>{article.readTime}</span>
                           {article.savings && (
                             <span className="bg-emerald-100 text-emerald-700 px-1 py-0.5 rounded">
