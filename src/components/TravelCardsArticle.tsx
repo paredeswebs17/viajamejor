@@ -326,3 +326,8 @@ const TravelCardsArticle: React.FC<TravelCardsArticleProps> = ({ onBack }) => {
 };
 
 export default TravelCardsArticle;
+    </article>
+  );
+};
+
+export default TravelCardsArticle;
