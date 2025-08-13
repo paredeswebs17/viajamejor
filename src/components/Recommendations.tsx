@@ -125,15 +125,6 @@ const Recommendations = () => {
           </div>
         </div>
 
-        {/* CTA to full recommendations */}
-        <div className="mt-4 text-center">
-          <button
-            onClick={() => document.getElementById('sobre-nosotros')?.scrollIntoView({ behavior: 'smooth' })}
-            className="text-sky-600 font-medium text-sm hover:text-sky-700 transition-colors"
-          >
-            Ver todas las recomendaciones →
-          </button>
-        </div>
       </div>
     </section>
   );

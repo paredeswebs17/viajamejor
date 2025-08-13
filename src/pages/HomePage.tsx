@@ -1,11 +1,9 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
 import Hero from '../components/Hero';
-import EditorialBlock from '../components/EditorialBlock';
 import BlogSection from '../components/BlogSection';
 import Recommendations from '../components/Recommendations';
 import FAQ from '../components/FAQ';
-import About from '../components/About';
 import Contact from '../components/Contact';
 
 const HomePage = () => {
@@ -26,11 +24,9 @@ const HomePage = () => {
       </Helmet>
 
       <Hero />
-      <EditorialBlock />
       <BlogSection onArticleSelect={() => {}} />
       <Recommendations />
       <FAQ />
-      <About />
       <Contact />
     </>
   );

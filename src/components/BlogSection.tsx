@@ -148,18 +148,6 @@ const BlogSection: React.FC<BlogSectionProps> = ({ showTitle = true }) => {
           ))}
         </div>
 
-        {/* CTA intercalado */}
-        {showTitle && (
-          <div className="mt-4">
-            <AffiliateBox
-              title="🎯 ¿Empezando a planificar tu viaje?"
-              description="Te recomiendo empezar con estas herramientas que uso en cada viaje para ahorrar tiempo y dinero"
-              variant="highlight"
-              ctaText="Ver herramientas esenciales"
-              onClick={() => document.getElementById('recomendaciones')?.scrollIntoView({ behavior: 'smooth' })}
-            />
-          </div>
-        )}
       </div>
     </section>
   );
