@@ -24,6 +24,7 @@ const FAQSection: React.FC<FAQSectionProps> = ({ faqs, title = "Preguntas frecue
     setOpenItems(newOpenItems);
   };
 
+  return (
     <div className="my-4">
       <h2 className="text-lg font-bold text-gray-900 mb-3">{title}</h2>
       <div className="space-y-2">

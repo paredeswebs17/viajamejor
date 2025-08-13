@@ -22,6 +22,7 @@ const TableOfContents: React.FC<TableOfContentsProps> = ({ sections, onSectionCl
     }
   };
 
+  return (
     <div className="bg-sky-50 border border-sky-200 rounded-lg p-3 my-3">
       <button
         onClick={() => setIsOpen(!isOpen)}
