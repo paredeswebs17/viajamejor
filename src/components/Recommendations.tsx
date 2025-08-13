@@ -32,7 +32,7 @@ const Recommendations = () => {
       color: "bg-blue-500",
       textColor: "text-white", 
       description: "Productos útiles",
-      url: "#recomendaciones"
+      url: "/equipaje/8-objetos-imprescindibles"
     }
   ];
 
