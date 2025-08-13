@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
-import OptimizedImage from './OptimizedImage';
 
 interface BlogSectionProps {
   showTitle?: boolean;
@@ -28,7 +27,7 @@ const BlogSection: React.FC<BlogSectionProps> = ({ showTitle = true }) => {
       id: 'travel-essentials',
       title: '8 objetos imprescindibles para tu próximo viaje',
       excerpt: 'La mochila perfecta, adaptadores universales, power banks que duran...',
-      image: 'https://via.placeholder.com/800x400/0ea5e9/ffffff?text=Equipaje+de+Viaje',
+      image: 'https://picsum.photos/800/400?random=1',
       readTime: '12 min',
       category: 'Equipaje',
       featured: true,
@@ -40,7 +39,7 @@ const BlogSection: React.FC<BlogSectionProps> = ({ showTitle = true }) => {
       id: 'cheap-flights',
       title: 'Cómo encontrar vuelos baratos: 10 trucos infalibles',
       excerpt: 'Skyscanner, fechas flexibles, VPN y más secretos para conseguir vuelos...',
-      image: 'https://via.placeholder.com/800x400/10b981/ffffff?text=Vuelos+Baratos',
+      image: 'https://picsum.photos/800/400?random=2',
       readTime: '8 min',
       category: 'Vuelos',
       savings: 'Ahorra 300€+',
@@ -51,7 +50,7 @@ const BlogSection: React.FC<BlogSectionProps> = ({ showTitle = true }) => {
       id: 'accommodation',
       title: 'Booking vs Airbnb vs Hostelworld',
       excerpt: 'Comparativa real de las tres plataformas que uso...',
-      image: 'https://via.placeholder.com/800x400/f59e0b/ffffff?text=Alojamiento',
+      image: 'https://picsum.photos/800/400?random=3',
       readTime: '6 min',
       category: 'Alojamiento',
       featured: true,
@@ -63,7 +62,7 @@ const BlogSection: React.FC<BlogSectionProps> = ({ showTitle = true }) => {
       id: 'travel-cards',
       title: 'Mejores tarjetas para viajar sin comisiones',
       excerpt: 'Revolut, N26, Wise... Comparativa completa para no pagar ni un euro extra...',
-      image: 'https://via.placeholder.com/800x400/8b5cf6/ffffff?text=Tarjetas+Viaje',
+      image: 'https://picsum.photos/800/400?random=4',
       readTime: '9 min',
       category: 'Finanzas',
       savings: '0€ comisiones',
@@ -74,7 +73,7 @@ const BlogSection: React.FC<BlogSectionProps> = ({ showTitle = true }) => {
       id: 'cheap-destinations',
       title: 'Destinos baratos para 2025: 15 favoritos',
       excerpt: 'Países increíbles con presupuestos detallados. Albania, Vietnam, Georgia...',
-      image: 'https://via.placeholder.com/800x400/ef4444/ffffff?text=Destinos+Baratos',
+      image: 'https://picsum.photos/800/400?random=5',
       readTime: '10 min',
       category: 'Destinos',
       savings: '20-30€/día',
@@ -85,7 +84,7 @@ const BlogSection: React.FC<BlogSectionProps> = ({ showTitle = true }) => {
       id: 'travel-insurance',
       title: 'Seguro de viaje: por qué uso IATI',
       excerpt: 'Mi experiencia con una emergencia médica de 3.000€ en Tailandia...',
-      image: 'https://via.placeholder.com/800x400/06b6d4/ffffff?text=Seguro+Viaje',
+      image: 'https://picsum.photos/800/400?random=6',
       readTime: '7 min',
       category: 'Seguros',
       savings: '5% descuento',
