@@ -138,11 +138,9 @@ const BlogSection: React.FC<BlogSectionProps> = ({ showTitle = true }) => {
               >
                 <OptimizedImage
                   src={article.image}
-                  alt={`${article.title} - ${article.category} - Viaja Mejor`}
+                 alt={`${article.title} - ${article.category} - Viaja Mejor`}
                   className="w-full h-24 sm:h-32 lg:h-40 object-cover rounded-t-lg" 
-                  width={380}
-                  height={160}
-                  loading="lazy"
+                 loading="lazy"
                 />
                 <div className="p-3 lg:p-4">
                   <span className="text-xs bg-sky-500 text-white px-2 py-1 rounded font-medium">
