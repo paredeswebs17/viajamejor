@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
 import BlogCard from './BlogCard';
+import { trackArticleView, trackButtonClick } from '../utils/analytics';
 
 interface BlogSectionProps {
   showTitle?: boolean;
@@ -80,6 +81,11 @@ const BlogSection: React.FC<BlogSectionProps> = ({ showTitle = true }) => {
     }
   ];
 
+  const handleClick = (articleId: string, title: string) => {
+    trackArticleView(articleId);
+    trackButtonClick('article_read', title);
+  };
+
   return (
     <section id="consejos" className="relative py-6 sm:py-8 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -125,14 +131,13 @@ const BlogSection: React.FC<BlogSectionProps> = ({ showTitle = true }) => {
                           )}
                         </div>
                         
-                        <Link 
-                          to={article.url}
-                          onClick={handleClick}
+                        <div
+                          onClick={() => handleClick(article.id, article.title)}
                           className="w-full bg-gradient-to-r from-sky-500 to-emerald-500 hover:from-sky-600 hover:to-emerald-600 text-white font-medium py-2 px-3 rounded-lg transition-all duration-200 flex items-center justify-center space-x-1 shadow-sm text-xs mt-2"
                         >
                           <span>Leer artículo completo</span>
                           <ArrowRight className="h-3 w-3" />
-                        </Link>
+                        </div>
                       </div>
                     </div>
                   </div>
