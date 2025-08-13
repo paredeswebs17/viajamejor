@@ -181,7 +181,6 @@ const TravelCardsArticle: React.FC<TravelCardsArticleProps> = ({ onBack }) => {
               </p>
             </div>
           </div>
-        </div>
 
           {/* N26 */}
           <div className="bg-white border border-gray-200 rounded-2xl p-8 shadow-sm">
@@ -223,8 +222,8 @@ const TravelCardsArticle: React.FC<TravelCardsArticleProps> = ({ onBack }) => {
                 </strong>
               </p>
             </div>
-          </div> 
-
+          </div>
+        </div>
 
         {/* Comparativa rápida */}
         <div className="bg-gray-50 rounded-2xl p-8 mb-12">
@@ -323,7 +322,6 @@ const TravelCardsArticle: React.FC<TravelCardsArticleProps> = ({ onBack }) => {
       {/* Artículos relacionados */}
       <RelatedArticles currentCategory="Finanzas" currentArticleId="tarjetas-sin-comisiones" />
     </article>
-  )
   );
 };
 
