@@ -1,5 +1,3 @@
-import { MapPin, Camera, Heart, Award } from 'lucide-react';
-
 const About = () => {
   return (
     <section id="sobre-nosotros" className="relative py-6 sm:py-8 bg-white">
