@@ -88,57 +88,44 @@ const BlogSection: React.FC<BlogSectionProps> = ({ showTitle = true }) => {
               Empieza por aquí
             </h2>
             <p className="text-sm text-gray-600 mb-4">
-              Desliza para ver todos los consejos →
+            Desliza para ver más →
             </p>
           </div>
         )}
 
-        {/* Horizontal scroll for mobile */}
-        <div className="block sm:hidden">
-          <div className="overflow-x-auto">
-            <div className="flex gap-4 pb-4 px-4">
-              {articles.map(article => (
-                <Link 
-                  key={article.id}
-                  to={article.url}
-                  className="min-w-[280px] max-w-[280px] flex-shrink-0 bg-white rounded-lg shadow-sm border border-gray-100 overflow-hidden"
-                >
-                  <img 
-                    className="w-full h-24 object-cover rounded-t-lg" 
-                    src={article.image} 
-                    alt={article.title} 
-                  />
-                  <div className="p-3">
-                    <span className="text-xs bg-sky-500 text-white px-2 py-1 rounded font-medium">
-                      {article.category}
-                    </span>
-                    <h3 className="text-sm font-semibold mt-2 line-clamp-2 text-gray-900">
-                      {article.title}
-                    </h3>
-                    <div className="flex justify-between items-center mt-2">
-                      <span className="text-xs text-gray-500">{article.readTime}</span>
-                      {article.savings && (
-                        <span className="text-xs bg-emerald-100 text-emerald-600 px-2 py-1 rounded font-medium">
-                          {article.savings}
-                        </span>
-                      )}
-                    </div>
+        {/* Horizontal scroll for all devices */}
+        <div className="overflow-x-auto">
+          <div className="flex gap-4 pb-4 px-4">
+            {articles.map(article => (
+              <Link 
+                key={article.id}
+                to={article.url}
+                className="min-w-[280px] max-w-[280px] flex-shrink-0 bg-white rounded-lg shadow-sm border border-gray-100 overflow-hidden"
+              >
+                <img 
+                  className="w-full h-24 object-cover rounded-t-lg" 
+                  src={article.image} 
+                  alt={article.title} 
+                />
+                <div className="p-3">
+                  <span className="text-xs bg-sky-500 text-white px-2 py-1 rounded font-medium">
+                    {article.category}
+                  </span>
+                  <h3 className="text-sm font-semibold mt-2 line-clamp-2 text-gray-900">
+                    {article.title}
+                  </h3>
+                  <div className="flex justify-between items-center mt-2">
+                    <span className="text-xs text-gray-500">{article.readTime}</span>
+                    {article.savings && (
+                      <span className="text-xs bg-emerald-100 text-emerald-600 px-2 py-1 rounded font-medium">
+                        {article.savings}
+                      </span>
+                    )}
                   </div>
-                </Link>
-              ))}
-            </div>
+                </div>
+              </Link>
+            ))}
           </div>
-        </div>
-
-        {/* Grid for tablet and desktop */}
-        <div className="hidden sm:grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-          {articles.map((article) => (
-            <BlogCard
-              key={article.id}
-              {...article}
-              articleId={article.id}
-            />
-          ))}
         </div>
 
       </div>
