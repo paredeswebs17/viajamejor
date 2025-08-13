@@ -1,90 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://viajamejor.net/</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
-    <lastmod>2024-06-01</lastmod>
+    <lastmod>2024-12-01</lastmod>
   </url>
   <url>
-    <loc>https://viajamejor.net/#preguntas-frecuentes</loc>
+    <loc>https://viajamejor.net/equipaje/8-objetos-imprescindibles</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <lastmod>2024-06-01</lastmod>
-  </url>
-  <url>
-    <loc>https://viajamejor.net/#travel-essentials</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <lastmod>2024-06-01</lastmod>
-  </url>
-  <url>
-    <loc>https://viajamejor.net/#cheap-flights</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <lastmod>2024-06-01</lastmod>
-  </url>
-  <url>
-    <loc>https://viajamejor.net/#accommodation</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <lastmod>2024-06-01</lastmod>
-  </url>
-  <url>
-    <loc>https://viajamejor.net/#cheap-destinations</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <lastmod>2024-06-01</lastmod>
-  </url>
-  <url>
-    <loc>https://viajamejor.net/#premium-destinations</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <lastmod>2024-06-01</lastmod>
-  </url>
-  <url>
-    <loc>https://viajamejor.net/#travel-insurance</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <lastmod>2024-06-01</lastmod>
-  </url>
-  <url>
-    <loc>https://viajamejor.net/#travel-cards</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <lastmod>2024-06-01</lastmod>
-  </url>
-  <url>
-    <loc>https://viajamejor.net/#travel-apps</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <lastmod>2024-06-01</lastmod>
-  </url>
-  <url>
-    <loc>https://viajamejor.net/#consejos</loc>
-    <changefreq>weekly</changefreq>
     <priority>0.9</priority>
-    <lastmod>2024-06-01</lastmod>
+    <lastmod>2024-12-01</lastmod>
   </url>
   <url>
-    <loc>https://viajamejor.net/#recomendaciones</loc>
-    <changefreq>weekly</changefreq>
+    <loc>https://viajamejor.net/vuelos/vuelos-baratos</loc>
+    <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-    <lastmod>2024-06-01</lastmod>
+    <lastmod>2024-12-01</lastmod>
   </url>
   <url>
-    <loc>https://viajamejor.net/#sobre-nosotros</loc>
+    <loc>https://viajamejor.net/alojamiento/booking-vs-airbnb</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <lastmod>2024-06-01</lastmod>
+    <priority>0.9</priority>
+    <lastmod>2024-12-01</lastmod>
   </url>
   <url>
-    <loc>https://viajamejor.net/#contacto</loc>
+    <loc>https://viajamejor.net/finanzas/tarjetas-sin-comisiones</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <lastmod>2024-06-01</lastmod>
+    <priority>0.9</priority>
+    <lastmod>2024-12-01</lastmod>
+  </url>
+  <url>
+    <loc>https://viajamejor.net/destinos/paises-baratos-2025</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <lastmod>2024-12-01</lastmod>
+  </url>
+  <url>
+    <loc>https://viajamejor.net/seguros/iati-experiencia</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <lastmod>2024-12-01</lastmod>
   </url>
 </urlset>
