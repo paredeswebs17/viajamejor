@@ -311,7 +311,7 @@ const CheapFlightsArticle: React.FC<CheapFlightsArticleProps> = ({ onBack, onArt
           <p className="text-lg text-gray-700 mb-4">
             <strong>No hay una fórmula mágica, pero si combinas varios de estos trucos seguro que consigues vuelos 
             mucho más baratos.</strong> Yo suelo usar 4-5 de estos consejos en cada búsqueda, y rara vez pago el 
-            precio "normal" de un vuelo.
+            precio "normal\" de un vuelo.
           </p>
           <p className="text-lg text-gray-700 mb-4">
             Lo más importante es ser paciente y flexible. A veces encontrar el vuelo perfecto lleva tiempo, pero 
