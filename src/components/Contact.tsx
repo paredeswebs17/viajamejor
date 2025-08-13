@@ -41,6 +41,7 @@ const Contact = () => {
     });
   };
 
+  return (
     <section id="contacto" className="relative py-8 sm:py-12 bg-gradient-to-br from-blue-50 to-purple-50">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-6">
@@ -135,8 +136,8 @@ const Contact = () => {
               <span className="text-sm text-gray-600">Respuesta en 24h</span>
             </div>
           </div>
-          </div>
         </div>
+      </div>
     </section>
   );
 };
