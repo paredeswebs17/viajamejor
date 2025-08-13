@@ -319,7 +319,7 @@ const TravelCardsArticle: React.FC<TravelCardsArticleProps> = ({ onBack, onArtic
       </div>
       
       {/* Artículos relacionados */}
-      <RelatedArticles currentArticleId="travel-cards" onArticleSelect={onArticleSelect || onBack} />
+      <RelatedArticles currentCategory="Finanzas" currentArticleId="tarjetas-sin-comisiones" />
     </article>
   );
 };

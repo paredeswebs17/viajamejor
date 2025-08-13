@@ -62,3 +62,33 @@ export const trackButtonClick = (buttonName: string, location: string) => {
     value: 1
   });
 };
+
+export const trackScrollDepth = (percentage: number) => {
+  if (typeof window !== 'undefined' && window.gtag) {
+    window.gtag('event', 'scroll_depth', {
+      event_category: 'engagement',
+      event_label: `${percentage}%`,
+      value: percentage
+    });
+  }
+};
+
+export const trackTimeOnPage = (seconds: number, pageName: string) => {
+  if (typeof window !== 'undefined' && window.gtag) {
+    window.gtag('event', 'time_on_page', {
+      event_category: 'engagement',
+      event_label: pageName,
+      value: seconds
+    });
+  }
+};
+
+export const trackAffiliateClickAdvanced = (productName: string, position: string) => {
+  if (typeof window !== 'undefined' && window.gtag) {
+    window.gtag('event', 'affiliate_click', {
+      event_category: 'monetization',
+      event_label: productName,
+      custom_parameter_1: position
+    });
+  }
+};

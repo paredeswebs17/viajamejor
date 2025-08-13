@@ -388,7 +388,7 @@ Volver al blog
 
   
       {/* Artículos relacionados */}
-    <RelatedArticles currentArticleId="travel-insurance" onArticleSelect={onArticleSelect || onBack} />
+    <RelatedArticles currentCategory="Seguros" currentArticleId="iati-experiencia" />
     </div>
   </article>
   );

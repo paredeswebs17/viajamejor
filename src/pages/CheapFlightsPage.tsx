@@ -63,6 +63,41 @@ const CheapFlightsPage = () => {
             "url": "https://viajamejor.net/vuelos/vuelos-baratos"
           })}
         </script>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "HowTo",
+            "name": "Cómo encontrar vuelos baratos",
+            "description": "Guía paso a paso para encontrar vuelos hasta 70% más baratos",
+            "image": "https://images.pexels.com/photos/2026324/pexels-photo-2026324.jpeg",
+            "totalTime": "PT15M",
+            "estimatedCost": {
+              "@type": "MonetaryAmount",
+              "currency": "EUR",
+              "value": "0"
+            },
+            "step": [
+              {
+                "@type": "HowToStep",
+                "name": "Usar fechas flexibles",
+                "text": "Busca vuelos con ±3 días de flexibilidad para encontrar mejores precios",
+                "image": "https://images.pexels.com/photos/2026324/pexels-photo-2026324.jpeg"
+              },
+              {
+                "@type": "HowToStep", 
+                "name": "Usar VPN para cambiar ubicación",
+                "text": "Busca desde diferentes países para aprovechar diferencias de precio geográficas",
+                "image": "https://images.pexels.com/photos/177598/pexels-photo-177598.jpeg"
+              },
+              {
+                "@type": "HowToStep",
+                "name": "Comparar en múltiples buscadores",
+                "text": "Usa Skyscanner, Kiwi y buscadores de aerolíneas directamente",
+                "image": "https://images.pexels.com/photos/265087/pexels-photo-265087.jpeg"
+              }
+            ]
+          })}
+        </script>
       </Helmet>
 
       <CheapFlightsArticle onBack={handleBack} onArticleSelect={handleArticleSelect} />

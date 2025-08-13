@@ -1,242 +1,110 @@
 import React from 'react';
-import { ArrowRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import { BookOpen, ArrowRight } from 'lucide-react';
 
 interface RelatedArticle {
-  id: string;
   title: string;
-  excerpt: string;
+  url: string;
   category: string;
   readTime: string;
+  description: string;
 }
 
 interface RelatedArticlesProps {
+  currentCategory: string;
   currentArticleId: string;
-  onArticleSelect: (articleId: string) => void;
 }
 
-const RelatedArticles: React.FC<RelatedArticlesProps> = ({ currentArticleId, onArticleSelect }) => {
-  // Mapeo de artículos relacionados
-  const relatedArticlesMap: Record<string, RelatedArticle[]> = {
-    'travel-essentials': [
-      {
-        id: 'travel-apps',
-        title: 'Apps imprescindibles para viajeros',
-        excerpt: 'Las mejores aplicaciones que uso en cada viaje',
-        category: 'Tecnología',
-        readTime: '8 min'
-      },
-      {
-        id: 'travel-cards',
-        title: 'Mejores tarjetas para viajar sin comisiones',
-        excerpt: 'Revolut, Wise y otras tarjetas que te ahorran dinero',
-        category: 'Finanzas',
-        readTime: '9 min'
-      },
-      {
-        id: 'travel-insurance',
-        title: 'Seguro de viaje: por qué uso IATI',
-        excerpt: 'Mi experiencia real usando el seguro en emergencias',
-        category: 'Seguros',
-        readTime: '7 min'
-      }
-    ],
-    'cheap-flights': [
-      {
-        id: 'travel-cards',
-        title: 'Tarjetas sin comisiones para viajar',
-        excerpt: 'Ahorra también en pagos durante el viaje',
-        category: 'Finanzas',
-        readTime: '9 min'
-      },
-      {
-        id: 'cheap-destinations',
-        title: 'Destinos baratos para 2025',
-        excerpt: 'Países donde tu dinero rinde al máximo',
-        category: 'Destinos',
-        readTime: '15 min'
-      },
-      {
-        id: 'travel-apps',
-        title: 'Apps para encontrar vuelos baratos',
-        excerpt: 'Herramientas digitales que uso para buscar ofertas',
-        category: 'Tecnología',
-        readTime: '8 min'
-      }
-    ],
-    'accommodation': [
-      {
-        id: 'cheap-destinations',
-        title: 'Destinos donde el alojamiento es barato',
-        excerpt: 'Países con excelente relación calidad-precio',
-        category: 'Destinos',
-        readTime: '15 min'
-      },
-      {
-        id: 'travel-cards',
-        title: 'Pagar alojamiento sin comisiones',
-        excerpt: 'Las mejores tarjetas para reservas internacionales',
-        category: 'Finanzas',
-        readTime: '9 min'
-      },
-      {
-        id: 'travel-insurance',
-        title: 'Seguro de viaje para alojamientos',
-        excerpt: 'Protección ante cancelaciones y problemas',
-        category: 'Seguros',
-        readTime: '7 min'
-      }
-    ],
-    'cheap-destinations': [
-      {
-        id: 'cheap-flights',
-        title: 'Vuelos baratos a estos destinos',
-        excerpt: 'Cómo encontrar las mejores ofertas de vuelos',
-        category: 'Vuelos',
-        readTime: '8 min'
-      },
-      {
-        id: 'travel-insurance',
-        title: 'Seguro de viaje para destinos económicos',
-        excerpt: 'Protección esencial para países baratos',
-        category: 'Seguros',
-        readTime: '7 min'
-      },
-      {
-        id: 'travel-essentials',
-        title: 'Qué llevar a destinos baratos',
-        excerpt: 'Equipaje esencial para viajes económicos',
-        category: 'Equipaje',
-        readTime: '12 min'
-      }
-    ],
-    'premium-destinations': [
-      {
-        id: 'travel-insurance',
-        title: 'Seguro de viaje para destinos caros',
-        excerpt: 'Protección esencial en países premium',
-        category: 'Seguros',
-        readTime: '7 min'
-      },
-      {
-        id: 'travel-cards',
-        title: 'Mejores tarjetas para destinos premium',
-        excerpt: 'Evita comisiones en países caros',
-        category: 'Finanzas',
-        readTime: '9 min'
-      },
-      {
-        id: 'cheap-destinations',
-        title: 'Alternativas baratas a destinos premium',
-        excerpt: 'Experiencias similares a menor precio',
-        category: 'Destinos',
-        readTime: '15 min'
-      }
-    ],
-    'travel-insurance': [
-      {
-        id: 'travel-cards',
-        title: 'Tarjetas con seguro de viaje incluido',
-        excerpt: 'Comparativa de seguros de tarjetas vs IATI',
-        category: 'Finanzas',
-        readTime: '9 min'
-      },
-      {
-        id: 'travel-essentials',
-        title: 'Botiquín de viaje esencial',
-        excerpt: 'Qué llevar para emergencias médicas',
-        category: 'Equipaje',
-        readTime: '12 min'
-      },
-      {
-        id: 'premium-destinations',
-        title: 'Destinos donde el seguro es crucial',
-        excerpt: 'Países donde no puedes viajar sin seguro',
-        category: 'Destinos Premium',
-        readTime: '18 min'
-      }
-    ],
-    'travel-cards': [
-      {
-        id: 'cheap-flights',
-        title: 'Pagar vuelos sin comisiones',
-        excerpt: 'Ahorra en comisiones al comprar billetes',
-        category: 'Vuelos',
-        readTime: '8 min'
-      },
-      {
-        id: 'travel-apps',
-        title: 'Apps de bancos digitales',
-        excerpt: 'Revolut, Wise y otras apps financieras',
-        category: 'Tecnología',
-        readTime: '8 min'
-      },
-      {
-        id: 'travel-insurance',
-        title: 'Seguros incluidos en tarjetas',
-        excerpt: 'Qué cubren realmente los seguros de tarjetas',
-        category: 'Seguros',
-        readTime: '7 min'
-      }
-    ],
-    'travel-apps': [
-      {
-        id: 'travel-cards',
-        title: 'Apps de tarjetas para viajar',
-        excerpt: 'Revolut, Wise y otras apps financieras',
-        category: 'Finanzas',
-        readTime: '9 min'
-      },
-      {
-        id: 'cheap-flights',
-        title: 'Apps para vuelos baratos',
-        excerpt: 'Skyscanner, Kiwi y otras herramientas',
-        category: 'Vuelos',
-        readTime: '8 min'
-      },
-      {
-        id: 'travel-essentials',
-        title: 'Gadgets tecnológicos para viajar',
-        excerpt: 'Power banks, adaptadores y más',
-        category: 'Equipaje',
-        readTime: '12 min'
-      }
-    ]
-  };
+const RelatedArticles: React.FC<RelatedArticlesProps> = ({ currentCategory, currentArticleId }) => {
+  const allArticles: RelatedArticle[] = [
+    {
+      title: 'Cómo encontrar vuelos baratos: 10 trucos infalibles',
+      url: '/vuelos/vuelos-baratos',
+      category: 'Vuelos',
+      readTime: '8 min',
+      description: 'Aprende a ahorrar hasta 300€ en billetes'
+    },
+    {
+      title: 'Mejores tarjetas para viajar sin comisiones',
+      url: '/finanzas/tarjetas-sin-comisiones', 
+      category: 'Finanzas',
+      readTime: '9 min',
+      description: 'Revolut, N26, Wise comparados'
+    },
+    {
+      title: 'Booking vs Airbnb vs Hostelworld',
+      url: '/alojamiento/booking-vs-airbnb',
+      category: 'Alojamiento', 
+      readTime: '6 min',
+      description: 'Cuándo usar cada plataforma'
+    },
+    {
+      title: 'Destinos baratos para 2025: 15 favoritos',
+      url: '/destinos/paises-baratos-2025',
+      category: 'Destinos',
+      readTime: '10 min', 
+      description: 'Países donde gasté menos de 30€/día'
+    },
+    {
+      title: 'Seguro de viaje: por qué uso IATI',
+      url: '/seguros/iati-experiencia',
+      category: 'Seguros',
+      readTime: '7 min',
+      description: 'Mi experiencia real con emergencia médica'
+    },
+    {
+      title: '8 objetos imprescindibles para tu próximo viaje',
+      url: '/equipaje/8-objetos-imprescindibles',
+      category: 'Equipaje',
+      readTime: '12 min',
+      description: 'Equipaje esencial y dónde comprarlo barato'
+    }
+  ];
 
-  const relatedArticles = relatedArticlesMap[currentArticleId] || [];
+  // Filtrar artículos relacionados por categoría y excluir el actual
+  const relatedByCategory = allArticles.filter(article => 
+    article.category === currentCategory && !article.url.includes(currentArticleId)
+  );
+  
+  // Si no hay suficientes de la misma categoría, añadir otros populares
+  const otherArticles = allArticles.filter(article => 
+    article.category !== currentCategory && !article.url.includes(currentArticleId)
+  );
+  
+  const finalRelated = [...relatedByCategory, ...otherArticles].slice(0, 3);
 
-  if (relatedArticles.length === 0) {
-    return null;
-  }
+  if (finalRelated.length === 0) return null;
 
   return (
-    <section className="bg-gray-50 rounded-2xl p-8 mt-12">
-      <h2 className="text-2xl font-bold text-gray-900 mb-6">Artículos relacionados</h2>
-      <div className="grid md:grid-cols-3 gap-6">
-        {relatedArticles.map((article) => (
-          <article 
-            key={article.id}
-            className="bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow cursor-pointer"
-            onClick={() => onArticleSelect(article.id)}
+    <div className="bg-gradient-to-r from-sky-50 to-blue-50 rounded-xl p-6 my-8 border border-sky-200">
+      <div className="flex items-center mb-4">
+        <BookOpen className="h-5 w-5 text-sky-600 mr-2" />
+        <h3 className="text-xl font-bold text-gray-900">También te puede interesar</h3>
+      </div>
+      <div className="space-y-4">
+        {finalRelated.map((article, index) => (
+          <Link
+            key={index}
+            to={article.url}
+            className="block bg-white p-4 rounded-lg hover:shadow-md transition-all group border border-gray-100"
           >
-            <div className="mb-3">
-              <span className="bg-sky-100 text-sky-800 px-2 py-1 rounded text-xs font-medium">
-                {article.category}
-              </span>
+            <div className="flex items-start justify-between">
+              <div className="flex-1">
+                <h4 className="font-semibold text-gray-900 group-hover:text-sky-600 transition-colors mb-1">
+                  {article.title}
+                </h4>
+                <p className="text-sm text-gray-600 mb-2">{article.description}</p>
+                <div className="flex items-center text-xs text-gray-500">
+                  <span className="bg-gray-100 px-2 py-1 rounded mr-2">{article.category}</span>
+                  <span>{article.readTime}</span>
+                </div>
+              </div>
+              <ArrowRight className="h-5 w-5 text-gray-400 group-hover:text-sky-500 transition-colors ml-4 flex-shrink-0" />
             </div>
-            <h3 className="font-bold text-gray-900 mb-2 line-clamp-2">
-              {article.title}
-            </h3>
-            <p className="text-gray-600 text-sm mb-4 line-clamp-2">
-              {article.excerpt}
-            </p>
-            <div className="flex justify-end">
-              <ArrowRight className="h-4 w-4 text-sky-500" />
-            </div>
-          </article>
+          </Link>
         ))}
       </div>
-    </section>
+    </div>
   );
 };
 

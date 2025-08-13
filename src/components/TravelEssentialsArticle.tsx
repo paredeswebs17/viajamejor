@@ -135,7 +135,7 @@ const TravelEssentialsArticle: React.FC<TravelEssentialsArticleProps> = ({ onBac
         </div>
       </div>
 
-      <RelatedArticles currentArticleId="travel-essentials" onArticleSelect={onArticleSelect || onBack} />
+      <RelatedArticles currentCategory="Equipaje" currentArticleId="8-objetos-imprescindibles" />
     </article>
   );
 };

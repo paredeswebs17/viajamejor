@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
+import OptimizedImage from './OptimizedImage';
 
 interface BlogSectionProps {
   showTitle?: boolean;
@@ -135,10 +136,13 @@ const BlogSection: React.FC<BlogSectionProps> = ({ showTitle = true }) => {
                 to={article.url}
                 className="min-w-[280px] sm:min-w-[320px] lg:min-w-[380px] max-w-[280px] sm:max-w-[320px] lg:max-w-[380px] flex-shrink-0 bg-white rounded-lg shadow-sm border border-gray-100 overflow-hidden hover:shadow-md transition-shadow"
               >
-                <img 
-                  className="w-full h-24 sm:h-32 lg:h-40 object-cover rounded-t-lg" 
-                  src={article.image} 
+                <OptimizedImage
+                  src={article.image}
                   alt={`${article.title} - ${article.category} - Viaja Mejor`}
+                  className="w-full h-24 sm:h-32 lg:h-40 object-cover rounded-t-lg" 
+                  width={380}
+                  height={160}
+                  loading="lazy"
                 />
                 <div className="p-3 lg:p-4">
                   <span className="text-xs bg-sky-500 text-white px-2 py-1 rounded font-medium">
