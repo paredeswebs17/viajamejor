@@ -27,8 +27,15 @@ const BlogCard: React.FC<BlogCardProps> = ({
   savings,
   featured = false,
   url,
-  views
+  category,
+  articleId,
+  url
 }) => {
+  const handleClick = () => {
+    trackArticleView(articleId, title);
+    trackButtonClick('read_article', 'blog_card');
+  };
+
   const handleClick = () => {
     trackArticleView(articleId, title);
     trackButtonClick('read_article', 'blog_card');
