@@ -124,6 +124,15 @@ const BlogSection: React.FC<BlogSectionProps> = ({ showTitle = true }) => {
                             </span>
                           )}
                         </div>
+                        
+                        <Link 
+                          to={article.url}
+                          onClick={handleClick}
+                          className="w-full bg-gradient-to-r from-sky-500 to-emerald-500 hover:from-sky-600 hover:to-emerald-600 text-white font-medium py-2 px-3 rounded-lg transition-all duration-200 flex items-center justify-center space-x-1 shadow-sm text-xs mt-2"
+                        >
+                          <span>Leer artículo completo</span>
+                          <ArrowRight className="h-3 w-3" />
+                        </Link>
                       </div>
                     </div>
                   </div>
