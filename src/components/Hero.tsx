@@ -23,10 +23,6 @@ const Hero = () => {
             <span>40+ países</span>
           </div>
           <div className="flex items-center bg-white/10 backdrop-blur-sm rounded-lg px-3 py-1">
-            <Users className="h-3 w-3 mr-1" />
-            <span>+50k lectores</span>
-          </div>
-          <div className="flex items-center bg-white/10 backdrop-blur-sm rounded-lg px-3 py-1">
             <TrendingUp className="h-3 w-3 mr-1" />
             <span>Ahorro: 400€</span>
           </div>
