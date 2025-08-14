@@ -167,6 +167,10 @@
       .text-gradient { background: linear-gradient(135deg, #0ea5e9 0%, #10b981 100%); -webkit-background-clip: text; background-clip: text; color: transparent; }
       html { scroll-behavior: smooth; }
       .card-hover { transform: translateZ(0); will-change: transform; }
+      @media (max-width: 768px) {
+        img { max-width: 100%; height: auto; }
+        .hero { min-height: 400px; }
+      }
     </style>
     
     <!-- Favicon -->

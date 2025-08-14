@@ -130,7 +130,7 @@ const BlogSection: React.FC<BlogSectionProps> = ({ showTitle = true }) => {
                 <div className="relative overflow-hidden">
                   <img 
                     className="w-full h-24 sm:h-32 lg:h-40 object-cover" 
-                    src={article.image} 
+                    src={article.image + '?auto=compress&cs=tinysrgb&w=600'} 
                     alt={`${article.title} - ${article.category} - Viaja Mejor`}
                     loading="lazy"
                     onError={(e) => {
