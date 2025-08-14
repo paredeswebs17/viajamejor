@@ -5,9 +5,11 @@ const About = () => {
         {/* Compact about section */}
         <div className="flex items-center space-x-4 mb-4">
           <img
-            src="https://images.pexels.com/photos/1024993/pexels-photo-1024993.jpeg?auto=compress&cs=tinysrgb&w=200"
+            src="https://images.pexels.com/photos/1024993/pexels-photo-1024993.jpeg?auto=compress&cs=tinysrgb&w=200&fm=webp"
             alt="Viajeros con equipaje"
             className="w-16 h-16 rounded-full object-cover flex-shrink-0"
+            loading="lazy"
+            decoding="async"
           />
           <div className="flex-1">
             <h2 className="text-lg font-bold text-gray-900 mb-1">

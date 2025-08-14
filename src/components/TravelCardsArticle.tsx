@@ -53,9 +53,11 @@ const TravelCardsArticle: React.FC<TravelCardsArticleProps> = ({ onBack }) => {
       {/* Imagen destacada */}
       <div className="mb-12">
         <img
-          src="https://images.pexels.com/photos/4386321/pexels-photo-4386321.jpeg?auto=compress&cs=tinysrgb&w=1200"
+          src="https://images.pexels.com/photos/4386321/pexels-photo-4386321.jpeg?auto=compress&cs=tinysrgb&w=1200&fm=webp"
           alt="Tarjetas de crédito y dinero en efectivo para viajar"
           className="w-full h-64 sm:h-80 object-cover rounded-2xl shadow-lg"
+          loading="lazy"
+          decoding="async"
         />
       </div>
 

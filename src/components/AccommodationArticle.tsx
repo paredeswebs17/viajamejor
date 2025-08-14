@@ -54,9 +54,11 @@ const AccommodationArticle: React.FC<AccommodationArticleProps> = ({ onBack }) =
       {/* Imagen destacada */}
       <div className="mb-12">
         <img
-          src="https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&w=1200"
+          src="https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&w=1200&fm=webp"
           alt="Diferentes tipos de alojamiento: hotel, apartamento y hostel"
           className="w-full h-64 sm:h-80 object-cover rounded-2xl shadow-lg"
+          loading="lazy"
+          decoding="async"
         />
       </div>
 

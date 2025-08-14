@@ -54,9 +54,11 @@ const CheapDestinationsArticle: React.FC<CheapDestinationsArticleProps> = ({ onB
       {/* Imagen destacada */}
       <div className="mb-12">
         <img
-          src="https://images.pexels.com/photos/1371360/pexels-photo-1371360.jpeg?auto=compress&cs=tinysrgb&w=1200"
+          src="https://images.pexels.com/photos/1371360/pexels-photo-1371360.jpeg?auto=compress&cs=tinysrgb&w=1200&fm=webp"
           alt="Mochilero explorando destino económico con paisaje montañoso"
           className="w-full h-64 sm:h-80 object-cover rounded-2xl shadow-lg"
+          loading="lazy"
+          decoding="async"
         />
       </div>
 

@@ -54,9 +54,11 @@ const CheapFlightsArticle: React.FC<CheapFlightsArticleProps> = ({ onBack }) => 
       {/* Imagen destacada */}
       <div className="mb-12">
         <img
-          src="https://images.pexels.com/photos/2026324/pexels-photo-2026324.jpeg?auto=compress&cs=tinysrgb&w=1200"
+          src="https://images.pexels.com/photos/2026324/pexels-photo-2026324.jpeg?auto=compress&cs=tinysrgb&w=1200&fm=webp"
           alt="Persona buscando vuelos baratos en laptop con billetes de avión"
           className="w-full h-64 sm:h-80 object-cover rounded-2xl shadow-lg"
+          loading="lazy"
+          decoding="async"
         />
       </div>
 

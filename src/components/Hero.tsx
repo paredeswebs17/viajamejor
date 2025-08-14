@@ -2,14 +2,14 @@ import { MapPin } from 'lucide-react';
 
 const Hero = () => {
   return (
-    <section className="relative bg-gradient-to-br from-sky-500 to-emerald-500 text-white pt-24 pb-16">
+    <section className="relative hero-section hero-text pt-24 pb-16">
       {/* Background Pattern */}
       <div className="absolute inset-0 bg-black/5"></div>
       
       <div className="relative max-w-6xl mx-auto text-center px-4">
         {/* Título principal */}
         <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4 leading-tight">
-          Viaja <span className="text-amber-300">más</span>, gasta <span className="text-emerald-300">menos</span>
+          Viaja <span className="hero-accent">más</span>, gasta <span className="hero-emerald">menos</span>
         </h1>
         
         <p className="text-base text-sky-100 mb-3">

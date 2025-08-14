@@ -52,9 +52,11 @@ Volver al blog
   {/* Imagen destacada */}
   <div className="mb-12">
     <img
-      src="https://images.pexels.com/photos/1010657/pexels-photo-1010657.jpeg?auto=compress&cs=tinysrgb&w=1200"
+      src="https://images.pexels.com/photos/1010657/pexels-photo-1010657.jpeg?auto=compress&cs=tinysrgb&w=1200&fm=webp"
       alt="Viajero en hospital o situación de emergencia médica"
       className="w-full h-64 sm:h-80 object-cover rounded-2xl shadow-lg"
+      loading="lazy"
+      decoding="async"
     />
   </div>
 
