@@ -1,10 +1,6 @@
-import { Star, MapPin, Users, TrendingUp } from 'lucide-react';
+import { MapPin, Users, TrendingUp } from 'lucide-react';
 
 const Hero = () => {
-  const scrollToSection = (sectionId: string) => {
-    document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' });
-  };
-
   return (
     <section className="relative bg-gradient-to-br from-sky-500 to-emerald-500 text-white pt-24 pb-16">
       {/* Background Pattern */}

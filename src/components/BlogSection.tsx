@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Clock, Star, TrendingUp, Eye, ChevronLeft, ChevronRight } from 'lucide-react';
+import { Clock, Star, TrendingUp, ChevronLeft, ChevronRight } from 'lucide-react';
 
 interface BlogSectionProps {
   showTitle?: boolean;
