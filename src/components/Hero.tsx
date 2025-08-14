@@ -22,10 +22,6 @@ const Hero = () => {
             <MapPin className="h-3 w-3 mr-1" />
             <span>40+ países</span>
           </div>
-          <div className="flex items-center bg-white/10 backdrop-blur-sm rounded-lg px-3 py-1">
-            <TrendingUp className="h-3 w-3 mr-1" />
-            <span>Ahorro: 400€</span>
-          </div>
           <div className="flex items-center bg-orange-500/90 backdrop-blur-sm rounded-lg px-3 py-1 animate-pulse border border-orange-400">
             <span className="mr-1">🗺️</span>
             <span className="font-semibold">Guías próximamente</span>
