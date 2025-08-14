@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Clock } from 'lucide-react';
+import { Clock, ChevronLeft, ChevronRight } from 'lucide-react';
 
 interface BlogSectionProps {
   showTitle?: boolean;
@@ -87,55 +87,72 @@ const BlogSection: React.FC<BlogSectionProps> = ({ showTitle = true }) => {
         
         {showTitle && (
           <div className="mb-4">
+            <h2 className="text-lg sm:text-xl font-bold text-gray-900 mb-2">Empieza por aquí</h2>
             <div className="flex items-center justify-between">
-              <h2 className="text-xl font-bold text-gray-900">
-                Empieza por aquí
-              </h2>
-              <p className="text-sm text-gray-500">
-                Desliza para ver más →
-              </p>
+              <p className="text-sm text-gray-600">Desliza para ver más →</p>
+              <div className="hidden lg:flex items-center space-x-2">
+                <button
+                  onClick={() => {
+                    if (scrollRef.current) {
+                      scrollRef.current.scrollBy({ left: -400, behavior: 'smooth' });
+                    }
+                  }}
+                  className="p-2 rounded-full bg-white border border-gray-200 hover:bg-gray-50 transition-colors"
+                  aria-label="Scroll left"
+                >
+                  <ChevronLeft className="h-4 w-4 text-gray-600" />
+                </button>
+                <button
+                  onClick={() => {
+                    if (scrollRef.current) {
+                      scrollRef.current.scrollBy({ left: 400, behavior: 'smooth' });
+                    }
+                  }}
+                  className="p-2 rounded-full bg-white border border-gray-200 hover:bg-gray-50 transition-colors"
+                  aria-label="Scroll right"
+                >
+                  <ChevronRight className="h-4 w-4 text-gray-600" />
+                </button>
+              </div>
             </div>
           </div>
         )}
 
         {/* Scroll horizontal optimizado */}
         <div className="overflow-x-auto scrollbar-hide" ref={scrollRef}>
-          <div className="flex gap-4 pb-4 px-2 items-stretch">
+          <div className="flex gap-4 lg:gap-6 pb-4 px-4">
             {articles.map(article => (
               <Link 
                 key={article.id}
                 to={article.url}
-                className="min-w-[260px] max-w-[260px] flex-shrink-0 bg-white rounded-lg shadow-sm border border-gray-100 overflow-hidden hover:shadow-lg transition-all duration-200 hover:-translate-y-1 flex flex-col h-full"
+                className="min-w-[280px] sm:min-w-[320px] lg:min-w-[380px] max-w-[280px] sm:max-w-[320px] lg:max-w-[380px] flex-shrink-0 bg-white rounded-lg shadow-sm border border-gray-100 overflow-hidden hover:shadow-md transition-shadow"
               >
                 <img 
-                  className="w-full h-20 object-cover" 
                   src={article.image}
                   alt={`${article.title} - ${article.category} - Viaja Mejor`}
+                  className="w-full h-24 sm:h-32 lg:h-40 object-cover rounded-t-lg"
                   loading="lazy"
+                  onError={(e) => {
+                    e.currentTarget.style.backgroundColor = '#f3f4f6';
+                    e.currentTarget.style.display = 'flex';
+                    e.currentTarget.style.alignItems = 'center';
+                    e.currentTarget.style.justifyContent = 'center';
+                    e.currentTarget.innerHTML = '📷';
+                  }}
                 />
-                <div className="p-3 flex flex-col flex-1">
-                  <div className="flex justify-between items-center mb-2">
-                    <span className="text-xs bg-sky-500 text-white px-2 py-1 rounded font-medium">
-                      {article.category}
-                    </span>
-                    {article.featured && (
-                      <span className="text-xs bg-orange-500 text-white px-2 py-1 rounded font-bold">
-                        🌟 DESTACADO
-                      </span>
-                    )}
-                  </div>
-                  
-                  <h3 className="text-sm font-semibold mb-2 line-clamp-2 text-gray-900 flex-1">
+                <div className="p-3 lg:p-4">
+                  <span className="text-xs bg-sky-500 text-white px-2 py-1 rounded font-medium">
+                    {article.category}
+                  </span>
+                  <h3 className="text-sm sm:text-base lg:text-lg font-semibold mt-2 line-clamp-2 text-gray-900">
                     {article.title}
                   </h3>
-                  
                   <div className="flex justify-between items-center mt-auto">
-                    <div className="flex items-center text-xs text-gray-500">
-                      <Clock className="h-3 w-3 mr-1" />
+                    <span className="text-xs text-gray-500">
                       <span>{article.readTime}</span>
-                    </div>
+                    </span>
                     {article.savings && (
-                      <span className="text-xs bg-gradient-to-r from-emerald-500 to-green-500 text-white px-2 py-1 rounded font-bold">
+                      <span className="text-xs bg-emerald-100 text-emerald-600 px-2 py-1 rounded font-medium">
                         {article.savings}
                       </span>
                     )}
