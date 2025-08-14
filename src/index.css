@@ -181,6 +181,18 @@ button:focus {
     }
   }
   
+  /* Optimización de hover effects para reducir reflows */
+  .hover\:shadow-md:hover,
+  .hover\:shadow-lg:hover,
+  .hover\:shadow-xl:hover {
+    transform: translateZ(0);
+    will-change: transform, box-shadow;
+  }
+  
+  .hover\:scale-105:hover {
+    will-change: transform;
+  }
+  
   /* Mejoras de contraste para accesibilidad */
   @media (prefers-contrast: high) {
     .btn-primary {
