@@ -6,7 +6,7 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative bg-gradient-to-br from-sky-500 to-emerald-500 text-white py-16">
+    <section className="relative bg-gradient-to-br from-sky-500 to-emerald-500 text-white pt-24 pb-16">
       {/* Background Pattern */}
       <div className="absolute inset-0 bg-black/5"></div>
       
