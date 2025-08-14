@@ -1,4 +1,4 @@
-import { MapPin, TrendingUp } from 'lucide-react';
+import { MapPin } from 'lucide-react';
 
 const Hero = () => {
   return (
