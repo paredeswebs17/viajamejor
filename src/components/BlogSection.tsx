@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Clock, Star, TrendingUp, Eye } from 'lucide-react';
+import { Clock, Star, TrendingUp, Eye, ChevronLeft, ChevronRight } from 'lucide-react';
 
 interface BlogSectionProps {
   showTitle?: boolean;
@@ -124,6 +124,9 @@ const BlogSection: React.FC<BlogSectionProps> = ({ showTitle = true }) => {
             {articles.map(article => (
               <Link 
                 key={article.id}
+                to={article.url}
+                className="flex-none w-64 sm:w-72 lg:w-80 bg-white rounded-lg shadow-sm border border-gray-200 hover:shadow-md transition-shadow duration-200 overflow-hidden group"
+              >
                 <div className="relative overflow-hidden">
                   <img 
                     className="w-full h-24 sm:h-32 lg:h-40 object-cover" 
