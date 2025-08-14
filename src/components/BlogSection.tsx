@@ -85,13 +85,6 @@ const BlogSection: React.FC<BlogSectionProps> = ({ showTitle = true }) => {
     <section id="consejos" className="relative py-8 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        {/* Breadcrumbs mejorados */}
-        <nav className="flex text-sm text-gray-600 font-medium mb-4 bg-gray-50 p-3 rounded-lg border border-gray-200">
-          <span>Inicio</span> 
-          <span className="mx-2 text-gray-400">/</span> 
-          <span className="text-gray-900 font-semibold">Consejos de Viaje</span>
-        </nav>
-        
         {showTitle && (
           <div className="mb-4">
             <div className="flex items-center justify-between">
@@ -107,12 +100,12 @@ const BlogSection: React.FC<BlogSectionProps> = ({ showTitle = true }) => {
 
         {/* Scroll horizontal optimizado */}
         <div className="overflow-x-auto scrollbar-hide" ref={scrollRef}>
-          <div className="flex gap-4 pb-4 px-2">
+          <div className="flex gap-4 pb-4 px-2 items-stretch">
             {articles.map(article => (
               <Link 
                 key={article.id}
                 to={article.url}
-                className="min-w-[260px] max-w-[260px] flex-shrink-0 bg-white rounded-lg shadow-sm border border-gray-100 overflow-hidden hover:shadow-lg transition-all duration-200 hover:-translate-y-1"
+                className="min-w-[260px] max-w-[260px] flex-shrink-0 bg-white rounded-lg shadow-sm border border-gray-100 overflow-hidden hover:shadow-lg transition-all duration-200 hover:-translate-y-1 flex flex-col h-full"
               >
                 <img 
                   className="w-full h-20 object-cover" 
@@ -120,7 +113,7 @@ const BlogSection: React.FC<BlogSectionProps> = ({ showTitle = true }) => {
                   alt={`${article.title} - ${article.category} - Viaja Mejor`}
                   loading="lazy"
                 />
-                <div className="p-3">
+                <div className="p-3 flex flex-col flex-1">
                   <div className="flex justify-between items-center mb-2">
                     <span className="text-xs bg-sky-500 text-white px-2 py-1 rounded font-medium">
                       {article.category}
@@ -132,11 +125,11 @@ const BlogSection: React.FC<BlogSectionProps> = ({ showTitle = true }) => {
                     )}
                   </div>
                   
-                  <h3 className="text-sm font-semibold mb-2 line-clamp-2 text-gray-900">
+                  <h3 className="text-sm font-semibold mb-2 line-clamp-2 text-gray-900 flex-1">
                     {article.title}
                   </h3>
                   
-                  <div className="flex justify-between items-center">
+                  <div className="flex justify-between items-center mt-auto">
                     <div className="flex items-center text-xs text-gray-500">
                       <Clock className="h-3 w-3 mr-1" />
                       <span>{article.readTime}</span>

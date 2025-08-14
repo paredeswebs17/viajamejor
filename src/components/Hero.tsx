@@ -11,13 +11,7 @@ const Hero = () => {
       <div className="absolute inset-0 bg-black/5"></div>
       
       <div className="relative max-w-6xl mx-auto text-center px-4">
-        {/* Badge compacto */}
-        <div className="inline-flex items-center bg-white/20 backdrop-blur-sm rounded-full px-4 py-2 mb-4">
-          <Star className="h-4 w-4 mr-2" />
-          <span className="text-sm font-medium">40+ países | +50k lectores</span>
-        </div>
-
-        {/* Título más compacto */}
+        {/* Título principal */}
         <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4 leading-tight">
           Viaja <span className="text-amber-300">más</span>, gasta <span className="text-emerald-300">menos</span>
         </h1>
