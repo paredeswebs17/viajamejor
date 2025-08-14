@@ -48,38 +48,6 @@ const TravelEssentialsPage = () => {
             "url": "https://viajamejor.net/equipaje/8-objetos-imprescindibles"
           })}
         </script>
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            "mainEntity": [
-              {
-                "@type": "Question",
-                "name": "¿Puedo llevar power bank en equipaje de mano?",
-                "acceptedAnswer": {
-                  "@type": "Answer", 
-                  "text": "Sí, los power banks DEBEN ir en equipaje de mano, nunca en bodega. Asegúrate de que sea menor a 27.000 mAh (100Wh) para cumplir con las regulaciones de aerolíneas."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "¿Qué tamaño de mochila es ideal para cabina?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Las dimensiones estándar son 55x40x20cm, pero recomiendo 40-45L de capacidad. Siempre verifica con tu aerolínea ya que pueden variar."
-                }
-              },
-              {
-                "@type": "Question", 
-                "name": "¿El adaptador universal funciona en todos los países?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Un buen adaptador universal cubre más del 95% de países. Los que recomiendo incluyen EU, UK, US, AU y otros enchufes menos comunes."
-                }
-              }
-            ]
-          })}
-        </script>
       </Helmet>
 
       <TravelEssentialsArticle onBack={handleBack} />
