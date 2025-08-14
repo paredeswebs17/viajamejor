@@ -164,12 +164,8 @@ const BlogSection: React.FC<BlogSectionProps> = ({ showTitle = true }) => {
                     {article.title}
                   </h3>
                   
-                  <p className="text-xs text-gray-600 mb-3 line-clamp-2 leading-relaxed">
-                    {article.excerpt}
-                  </p>
-                  
                   {/* Stats en la parte inferior */}
-                  <div className="flex justify-between items-center mt-auto pt-2">
+                  <div className="flex justify-between items-center mt-auto">
                     <div className="flex items-center space-x-1 bg-gray-100 rounded-full px-2 py-1">
                       <Clock className="h-3 w-3 text-gray-500" />
                       <span className="text-xs text-gray-600">{article.readTime}</span>
