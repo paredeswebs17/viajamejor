@@ -108,7 +108,7 @@ const BlogSection: React.FC<BlogSectionProps> = ({ showTitle = true }) => {
                       scrollRef.current.scrollBy({ left: 400, behavior: 'smooth' });
                     }
                   }}
-          {article.id === 'travel-essentials' && (
+                  className="p-2 rounded-full bg-white border border-gray-200 hover:bg-gray-50 transition-colors"
                   aria-label="Scroll right"
                 >
                   <ChevronRight className="h-4 w-4 text-gray-600" />
@@ -151,7 +151,6 @@ const BlogSection: React.FC<BlogSectionProps> = ({ showTitle = true }) => {
                       </span>
                     </div>
                   )}
-
 
                   <div className="absolute top-2 right-2">
                     <span className="bg-sky-500 text-white px-2 py-0.5 rounded-full text-xs font-medium shadow-sm">
