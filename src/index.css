@@ -179,6 +179,7 @@ button:focus {
     html {
       scroll-behavior: smooth;
     }
+    .card-hover { transform: translateZ(0); will-change: transform; }
   }
   
   /* Optimización de hover effects para reducir reflows */
