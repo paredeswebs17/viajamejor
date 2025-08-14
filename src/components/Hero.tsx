@@ -1,18 +1,48 @@
+import { Star, MapPin, Users, TrendingUp } from 'lucide-react';
+
 const Hero = () => {
+  const scrollToSection = (sectionId: string) => {
+    document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
-    <div className="relative bg-gradient-to-br from-sky-500 to-emerald-500 text-white pt-20 pb-16">
-      <div className="max-w-4xl mx-auto text-center px-4">
-        <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-6">
+    <section className="relative bg-gradient-to-br from-sky-500 to-emerald-500 text-white pt-16 pb-8">
+      {/* Background Pattern */}
+      <div className="absolute inset-0 bg-black/5"></div>
+      
+      <div className="relative max-w-6xl mx-auto text-center px-4">
+        {/* Badge compacto */}
+        <div className="inline-flex items-center bg-white/20 backdrop-blur-sm rounded-full px-4 py-2 mb-4">
+          <Star className="h-4 w-4 mr-2" />
+          <span className="text-sm font-medium">40+ países | +50k lectores</span>
+        </div>
+
+        {/* Título más compacto */}
+        <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4 leading-tight">
           Viaja <span className="text-amber-300">más</span>, gasta <span className="text-emerald-300">menos</span>
         </h1>
-        <p className="text-lg text-sky-100 mb-4">
+        
+        <p className="text-base text-sky-100 mb-3">
           Consejos y recursos para tu próxima aventura
         </p>
-        <div className="text-sky-200 text-sm">
-          ✈️ Tu compañero de viajes
+        
+        {/* Stats compactos */}
+        <div className="flex flex-wrap justify-center gap-3 text-xs">
+          <div className="flex items-center bg-white/10 backdrop-blur-sm rounded-lg px-3 py-1">
+            <MapPin className="h-3 w-3 mr-1" />
+            <span>40+ países</span>
+          </div>
+          <div className="flex items-center bg-white/10 backdrop-blur-sm rounded-lg px-3 py-1">
+            <Users className="h-3 w-3 mr-1" />
+            <span>+50k lectores</span>
+          </div>
+          <div className="flex items-center bg-white/10 backdrop-blur-sm rounded-lg px-3 py-1">
+            <TrendingUp className="h-3 w-3 mr-1" />
+            <span>Ahorro: 400€</span>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

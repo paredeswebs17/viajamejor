@@ -64,7 +64,7 @@ const Recommendations = () => {
   ];
 
   return (
-    <section id="recomendaciones" className="relative py-6 sm:py-8 bg-gray-50">
+    <section id="recomendaciones" className="relative py-8 sm:py-10 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Quick categories - 2x2 grid on mobile */}
         <div className="mb-6">

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ChevronLeft, ChevronRight } from 'lucide-react';
+import { ChevronLeft, ChevronRight, Clock } from 'lucide-react';
 
 interface BlogSectionProps {
   showTitle?: boolean;
@@ -94,72 +94,67 @@ const BlogSection: React.FC<BlogSectionProps> = ({ showTitle = true }) => {
   ];
 
   return (
-    <section id="consejos" className="relative py-6 sm:py-8 bg-white">
+    <section id="consejos" className="relative py-8 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        {/* Breadcrumbs mejorados */}
+        <nav className="flex text-sm text-gray-600 font-medium mb-4 bg-gray-50 p-3 rounded-lg border border-gray-200">
+          <span>Inicio</span> 
+          <span className="mx-2 text-gray-400">/</span> 
+          <span className="text-gray-900 font-semibold">Consejos de Viaje</span>
+        </nav>
+        
         {showTitle && (
           <div className="mb-4">
-            <h2 className="text-lg sm:text-xl font-bold text-gray-900 mb-2">
-              Empieza por aquí
-            </h2>
             <div className="flex items-center justify-between">
-              <p className="text-sm text-gray-600">
+              <h2 className="text-xl font-bold text-gray-900">
+                Empieza por aquí
+              </h2>
+              <p className="text-sm text-gray-500">
                 Desliza para ver más →
               </p>
-              {/* Navigation arrows for desktop */}
-              <div className="hidden lg:flex items-center space-x-2">
-                <button
-                  onClick={scrollLeft}
-                  className="p-2 rounded-full bg-white border border-gray-200 hover:bg-gray-50 transition-colors"
-                  aria-label="Scroll left"
-                >
-                  <ChevronLeft className="h-4 w-4 text-gray-600" />
-                </button>
-                <button
-                  onClick={scrollRight}
-                  className="p-2 rounded-full bg-white border border-gray-200 hover:bg-gray-50 transition-colors"
-                  aria-label="Scroll right"
-                >
-                  <ChevronRight className="h-4 w-4 text-gray-600" />
-                </button>
-              </div>
             </div>
           </div>
         )}
 
-        {/* Horizontal scroll with larger cards for desktop */}
+        {/* Scroll horizontal optimizado */}
         <div className="overflow-x-auto scrollbar-hide" ref={scrollRef}>
-          <div className="flex gap-4 lg:gap-6 pb-4 px-4">
+          <div className="flex gap-4 pb-4 px-2">
             {articles.map(article => (
               <Link 
                 key={article.id}
                 to={article.url}
-                className="min-w-[280px] sm:min-w-[320px] lg:min-w-[380px] max-w-[280px] sm:max-w-[320px] lg:max-w-[380px] flex-shrink-0 bg-white rounded-lg shadow-sm border border-gray-100 overflow-hidden hover:shadow-md transition-shadow"
+                className="min-w-[260px] max-w-[260px] flex-shrink-0 bg-white rounded-lg shadow-sm border border-gray-100 overflow-hidden hover:shadow-lg transition-all duration-200 hover:-translate-y-1"
               >
                 <img 
+                  className="w-full h-20 object-cover" 
                   src={article.image}
                   alt={`${article.title} - ${article.category} - Viaja Mejor`}
-                  className="w-full h-24 sm:h-32 lg:h-40 object-cover rounded-t-lg"
                   loading="lazy"
-                  onError={(e) => {
-                    console.error('Error loading image:', article.image);
-                    e.currentTarget.style.backgroundColor = '#f3f4f6';
-                    e.currentTarget.style.display = 'flex';
-                    e.currentTarget.style.alignItems = 'center';
-                    e.currentTarget.style.justifyContent = 'center';
-                    e.currentTarget.innerHTML = '📷';
-                  }}
                 />
-                <div className="p-3 lg:p-4">
-                  <span className="text-xs bg-sky-500 text-white px-2 py-1 rounded font-medium">
-                    {article.category}
-                  </span>
-                  <h3 className="text-sm sm:text-base lg:text-lg font-semibold mt-2 line-clamp-2 text-gray-900">
+                <div className="p-3">
+                  <div className="flex justify-between items-center mb-2">
+                    <span className="text-xs bg-sky-500 text-white px-2 py-1 rounded font-medium">
+                      {article.category}
+                    </span>
+                    {article.featured && (
+                      <span className="text-xs bg-orange-500 text-white px-2 py-1 rounded font-bold">
+                        🌟 DESTACADO
+                      </span>
+                    )}
+                  </div>
+                  
+                  <h3 className="text-sm font-semibold mb-2 line-clamp-2 text-gray-900">
                     {article.title}
                   </h3>
-                  <div className="flex justify-between items-center mt-2">
-                    <span className="text-xs text-gray-500">{article.readTime}</span>
+                  
+                  <div className="flex justify-between items-center">
+                    <div className="flex items-center text-xs text-gray-500">
+                      <Clock className="h-3 w-3 mr-1" />
+                      <span>{article.readTime}</span>
+                    </div>
                     {article.savings && (
-                      <span className="text-xs bg-emerald-100 text-emerald-600 px-2 py-1 rounded font-medium">
+                      <span className="text-xs bg-gradient-to-r from-emerald-500 to-green-500 text-white px-2 py-1 rounded font-bold">
                         {article.savings}
                       </span>
                     )}
