@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ChevronLeft, ChevronRight, Clock } from 'lucide-react';
+import { Clock } from 'lucide-react';
 
 interface BlogSectionProps {
   showTitle?: boolean;
@@ -9,18 +9,6 @@ interface BlogSectionProps {
 
 const BlogSection: React.FC<BlogSectionProps> = ({ showTitle = true }) => {
   const scrollRef = React.useRef<HTMLDivElement>(null);
-
-  const scrollLeft = () => {
-    if (scrollRef.current) {
-      scrollRef.current.scrollBy({ left: -400, behavior: 'smooth' });
-    }
-  };
-
-  const scrollRight = () => {
-    if (scrollRef.current) {
-      scrollRef.current.scrollBy({ left: 400, behavior: 'smooth' });
-    }
-  };
 
   const articles = [
     {
