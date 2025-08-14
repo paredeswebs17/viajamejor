@@ -107,9 +107,9 @@ const Recommendations = () => {
                   href={product.affiliate}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-sky-500 text-white px-3 py-1 rounded text-xs font-medium hover:bg-sky-600 transition-colors flex items-center space-x-1"
+                  className="bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white font-bold py-3 px-6 rounded-xl shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-200 flex items-center space-x-1"
                 >
-                  <span>Ver</span>
+                  <span>🚀 VER OFERTA</span>
                   <ExternalLink className="h-3 w-3" />
                 </a>
               </div>
