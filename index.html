@@ -1,193 +1,508 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
-    <!-- SEO Meta Tags -->
-    <title>Viaja Mejor - Consejos de Viaje para Viajar Más y Gastar Menos</title>
-    <meta name="description" content="Guías de viaje, herramientas y consejos para viajar más, gastar menos y disfrutar cada destino. 40+ países, experiencia real." />
-    <meta name="keywords" content="consejos de viaje, viajar barato, vuelos baratos, alojamiento económico, seguro de viaje IATI, equipaje de viaje, destinos baratos, guías de viaje" />
-    <meta name="author" content="Viaja Mejor" />
-    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-    <link rel="canonical" href="https://viajamejor.net/" />
-    <meta name="google-site-verification" content="Gy_Oa-7lWt8-Ck9UZjlYcO5EgLIl0XnGrzl9-9FZRWM" />
-    <meta name="format-detection" content="telephone=no" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="language" content="es" />
-    <meta name="revisit-after" content="7 days" />
-    <meta name="rating" content="general" />
-    <meta name="theme-color" content="#0ea5e9" />
-    
-    <!-- Open Graph Meta Tags -->
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Viaja Mejor - Consejos de Viaje para Viajar Más y Gastar Menos" />
-    <meta property="og:description" content="Descubre consejos prácticos de viaje, herramientas útiles y guías detalladas para viajar más, gastar menos y disfrutar cada momento. 40+ países visitados, 8 años de experiencia viajera real." />
-    <meta property="og:image" content="https://viajamejor.net/og-image.jpg" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
-    <meta property="og:image:alt" content="Viaja Mejor - Tu compañero de viajes para descubrir el mundo gastando menos" />
-    <meta property="og:url" content="https://viajamejor.net/" />
-    <meta property="og:site_name" content="Viaja Mejor" />
-    <meta property="og:locale" content="es_ES" />
-    
-    <!-- Twitter Card Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Viaja Mejor - Consejos de Viaje para Viajar Más y Gastar Menos" />
-    <meta name="twitter:description" content="Descubre consejos prácticos de viaje, herramientas útiles y guías detalladas para viajar más, gastar menos y disfrutar cada momento. 40+ países visitados, 8 años de experiencia viajera real." />
-    <meta name="twitter:image" content="https://viajamejor.net/og-image.jpg" />
-    <meta name="twitter:image:alt" content="Viaja Mejor - Tu compañero de viajes para descubrir el mundo gastando menos" />
-    <meta name="twitter:site" content="@viajamejor" />
-    <meta name="twitter:creator" content="@viajamejor" />
-
-    <!-- Structured Data -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "TravelBlog",
-      "name": "Viaja Mejor",
-      "url": "https://viajamejor.net/",
-      "description": "Consejos prácticos de viaje, herramientas útiles y guías detalladas para viajar más, gastar menos y disfrutar cada momento.",
-      "author": {
-        "@type": "Person",
-        "name": "Viaja Mejor"
-      },
-      "potentialAction": {
-        "@type": "SearchAction",
-        "target": "https://viajamejor.net/search?q={search_term_string}",
-        "query-input": "required name=search_term_string"
-      }
-    }
-    </script>
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "Viaja Mejor",
-      "url": "https://viajamejor.net",
-      "logo": "https://viajamejor.net/apple-touch-icon.png",
-      "foundingDate": "2023",
-      "sameAs": [
-        "https://twitter.com/viajamejor",
-        "https://instagram.com/viajamejor",
-        "https://youtube.com/viajamejor"
-      ]
-    }
-    </script>
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "¿Cuál es la mejor época para encontrar vuelos baratos?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "La mejor época para encontrar vuelos baratos es entre 6-8 semanas antes del viaje para vuelos europeos, y 8-12 semanas para vuelos intercontinentales. Los martes y miércoles suelen tener los precios más bajos, y evita las fechas de alta demanda como Navidad, Semana Santa y puentes largos."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "¿Necesito seguro de viaje para todos mis viajes?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Sí, recomiendo contratar seguro de viaje para todos los viajes al extranjero. Una emergencia médica puede costar miles de euros. Yo uso IATI Seguros porque ofrece cobertura mundial, atención 24/7 en español y no necesitas adelantar dinero en caso de emergencia."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "¿Qué tarjeta es mejor para viajar sin comisiones?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Revolut es mi favorita para viajar. Permite retirar hasta 200€ al mes sin comisiones, cambio de divisa al tipo real, y pagos sin comisiones en cualquier moneda. Como alternativa, Wise es excelente para transferencias internacionales y N26 para viajes por Europa."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "¿Cuánto dinero necesito para viajar por el Sudeste Asiático?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "En el Sudeste Asiático puedes viajar cómodamente con 25-35€ al día incluyendo alojamiento, comida y transporte local. En Tailandia he llegado a gastar solo 15€/día durmiendo en hostels y comiendo comida local. Los vuelos suelen costar entre 400-600€ desde España."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "¿Qué debo llevar en mi equipaje de mano para un viaje largo?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Los imprescindibles son: adaptador universal, power bank de 20.000 mAh, auriculares con cancelación de ruido, almohada de viaje, botella reutilizable, organizador de cables, tapones para oídos, antifaz, y una muda de ropa de repuesto. Todo debe caber en una mochila de 40L máximo."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "¿Es seguro usar Airbnb o es mejor reservar hoteles?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Ambos son seguros si eliges bien. Uso Booking para estancias cortas y cuando quiero cancelación flexible. Airbnb es ideal para estancias largas (una semana o más) o viajes en grupo. Siempre leo las reseñas y verifico que el anfitrión tenga buena puntuación y responda rápido."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "¿Cómo puedo viajar barato por Europa?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Para viajar barato por Europa: usa aerolíneas low-cost como Ryanair, reserva hostels o apartamentos en Airbnb, come en supermercados, usa transporte público, viaja en temporada baja (octubre-marzo excepto Navidad), y considera destinos menos turísticos como Albania, Polonia o Rumanía."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "¿Qué apps necesito para viajar?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Las apps esenciales son: Skyscanner (vuelos baratos), Google Maps y Maps.me (navegación offline), Google Translate (traducción offline), Revolut/Wise (pagos sin comisiones), NordVPN (seguridad), XE Currency (cambio de divisas), y las apps de tu seguro de viaje y aerolíneas."
-          }
-        }
-      ]
-    }
-    </script>
-
-    <!-- Preconnect para optimizar fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://images.pexels.com">
-    <link rel="dns-prefetch" href="https://www.google-analytics.com">
-    
-    <!-- Google Fonts: Inter -->
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" as="style">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-
-    <!-- Critical CSS inline -->
-    <style>
-      .hero-gradient { background: linear-gradient(135deg, #0ea5e9 0%, #10b981 100%); }
-      .text-gradient { background: linear-gradient(135deg, #0ea5e9 0%, #10b981 100%); -webkit-background-clip: text; background-clip: text; color: transparent; }
-    </style>
-    
-    <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <link rel="manifest" href="/site.webmanifest" />
-    
-    <!-- Additional SEO -->
-    <meta name="format-detection" content="telephone=no" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-L1ZJ6QKGKN"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viaja Mejor - Tu Compañero de Viajes</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-L1ZJ6QKGKN');
+        tailwind.config = {
+            theme: {
+                extend: {
+                    animation: {
+                        'pulse-slow': 'pulse 3s infinite',
+                        'bounce-gentle': 'bounce 2s infinite',
+                    }
+                }
+            }
+        }
     </script>
-    <script src="https://emrldco.com/NDM2NjQ4.js?t=436648" async></script>
-  </head>
-  <body class="antialiased">
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+    <style>
+        .scrollbar-hide {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        .scrollbar-hide::-webkit-scrollbar {
+            display: none;
+        }
+        .animate-glow {
+            animation: glow 2s ease-in-out infinite alternate;
+        }
+        @keyframes glow {
+            from { box-shadow: 0 0 10px rgba(249, 115, 22, 0.5); }
+            to { box-shadow: 0 0 20px rgba(249, 115, 22, 0.8); }
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="bg-white shadow-sm sticky top-0 z-40">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <div class="bg-gradient-to-r from-sky-500 to-emerald-500 p-2 rounded-xl">
+                        <div class="w-8 h-8 bg-white rounded-lg flex items-center justify-center">
+                            <span class="text-sky-500 font-bold text-lg">@</span>
+                        </div>
+                    </div>
+                    <div class="ml-3">
+                        <h1 class="text-xl font-bold text-gray-900">Viaja Mejor</h1>
+                        <p class="text-xs text-gray-500">TU COMPAÑERO DE VIAJES</p>
+                    </div>
+                </div>
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#" class="text-gray-700 hover:text-sky-600 font-medium">Inicio</a>
+                    <a href="#consejos" class="text-gray-700 hover:text-sky-600 font-medium">Consejos de Viaje</a>
+                    <a href="#recomendaciones" class="text-gray-700 hover:text-sky-600 font-medium">Recomendaciones</a>
+                    <a href="#contacto" class="text-gray-700 hover:text-sky-600 font-medium">Contacto</a>
+                </nav>
+                <button class="md:hidden">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section - Limpio y profesional -->
+    <section class="relative bg-gradient-to-br from-sky-500 to-emerald-500 text-white pt-16 pb-8">
+        <div class="absolute inset-0 bg-black/5"></div>
+        
+        <div class="relative max-w-6xl mx-auto text-center px-4">
+            <!-- Badge compacto sin números -->
+            <div class="inline-flex items-center bg-white/20 backdrop-blur-sm rounded-full px-4 py-2 mb-4">
+                <span class="text-amber-300 mr-2">⭐</span>
+                <span class="text-sm font-medium">Viajero experimentado | Experto en ahorro</span>
+            </div>
+
+            <!-- Título más compacto -->
+            <h1 class="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4 leading-tight">
+                Viaja <span class="text-amber-300">más</span>, gasta <span class="text-emerald-300">menos</span>
+            </h1>
+            
+            <p class="text-base text-sky-100 mb-4">
+                Consejos probados y recursos para tu próxima aventura
+            </p>
+            
+            <!-- Stats compactos sin números específicos -->
+            <div class="flex flex-wrap justify-center gap-3 text-xs mb-4">
+                <div class="flex items-center bg-white/10 backdrop-blur-sm rounded-lg px-3 py-1">
+                    <span class="mr-1">🌍</span>
+                    <span>Múltiples países</span>
+                </div>
+                <div class="flex items-center bg-white/10 backdrop-blur-sm rounded-lg px-3 py-1">
+                    <span class="mr-1">💰</span>
+                    <span>Ahorro garantizado</span>
+                </div>
+                <div class="flex items-center bg-white/10 backdrop-blur-sm rounded-lg px-3 py-1">
+                    <span class="mr-1">📝</span>
+                    <span>Consejos actualizados</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="consejos" class="relative py-8 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <!-- Breadcrumbs con CTA -->
+            <nav class="flex items-center justify-between text-sm text-gray-600 font-medium mb-6 bg-gradient-to-r from-gray-50 to-blue-50 p-3 rounded-lg border border-gray-200">
+                <div class="flex items-center">
+                    <span>Inicio</span> 
+                    <span class="mx-2 text-gray-400">/</span> 
+                    <span class="text-gray-900 font-semibold">Consejos de Viaje</span>
+                </div>
+                <button class="text-xs bg-gradient-to-r from-orange-500 to-red-500 text-white px-3 py-1 rounded-full font-bold hover:from-orange-600 hover:to-red-600 transform hover:scale-105 transition-all animate-pulse">
+                    💰 Ver Ofertas
+                </button>
+            </nav>
+            
+            <div class="mb-4">
+                <div class="flex items-center justify-between">
+                    <h2 class="text-xl font-bold text-gray-900">
+                        Empieza por aquí
+                    </h2>
+                    <p class="text-sm text-gray-500">
+                        Desliza para ver más →
+                    </p>
+                </div>
+            </div>
+
+            <!-- Cards horizontales limpias -->
+            <div class="overflow-x-auto scrollbar-hide">
+                <div class="flex gap-4 pb-4 px-2">
+                    <!-- Card 1 - Destacada -->
+                    <div class="min-w-[280px] max-w-[280px] flex-shrink-0 bg-white rounded-lg shadow-sm border border-gray-100 overflow-hidden hover:shadow-lg transition-all duration-200 hover:-translate-y-1 relative">
+                        <!-- Badge destacado -->
+                        <div class="absolute top-2 right-2 bg-orange-500 text-white px-2 py-1 rounded-full text-xs font-bold z-10">
+                            DESTACADO
+                        </div>
+                        
+                        <img class="w-full h-24 object-cover" src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=400&h=200&fit=crop" alt="8 objetos imprescindibles">
+                        <div class="p-4">
+                            <div class="flex justify-between items-center mb-3">
+                                <span class="text-xs bg-sky-500 text-white px-2 py-1 rounded font-medium">
+                                    Equipaje
+                                </span>
+                                <span class="text-xs bg-gradient-to-r from-emerald-500 to-green-500 text-white px-2 py-1 rounded font-bold">
+                                    Ahorro garantizado
+                                </span>
+                            </div>
+                            
+                            <h3 class="text-sm font-semibold mb-3 text-gray-900 leading-tight">
+                                8 objetos imprescindibles para tu próximo viaje
+                            </h3>
+                            
+                            <div class="flex justify-between items-center">
+                                <div class="flex items-center text-xs text-gray-500">
+                                    <span class="mr-1">⏱️</span>
+                                    <span>12 min</span>
+                                </div>
+                                <span class="text-xs text-green-600 font-semibold">
+                                    ✅ Probado
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="min-w-[280px] max-w-[280px] flex-shrink-0 bg-white rounded-lg shadow-sm border border-gray-100 overflow-hidden hover:shadow-lg transition-all duration-200 hover:-translate-y-1">
+                        <img class="w-full h-24 object-cover" src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=400&h=200&fit=crop" alt="Vuelos baratos">
+                        <div class="p-4">
+                            <div class="flex justify-between items-center mb-3">
+                                <span class="text-xs bg-blue-500 text-white px-2 py-1 rounded font-medium">
+                                    Vuelos
+                                </span>
+                                <span class="text-xs bg-gradient-to-r from-emerald-500 to-green-500 text-white px-2 py-1 rounded font-bold">
+                                    Método probado
+                                </span>
+                            </div>
+                            
+                            <h3 class="text-sm font-semibold mb-3 text-gray-900 leading-tight">
+                                Cómo encontrar vuelos baratos: 10 trucos infalibles
+                            </h3>
+                            
+                            <div class="flex justify-between items-center">
+                                <div class="flex items-center text-xs text-gray-500">
+                                    <span class="mr-1">⏱️</span>
+                                    <span>8 min</span>
+                                </div>
+                                <span class="text-xs text-green-600 font-semibold">
+                                    ✅ Efectivo
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="min-w-[280px] max-w-[280px] flex-shrink-0 bg-white rounded-lg shadow-sm border border-gray-100 overflow-hidden hover:shadow-lg transition-all duration-200 hover:-translate-y-1">
+                        <img class="w-full h-24 object-cover" src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=400&h=200&fit=crop" alt="Alojamiento">
+                        <div class="p-4">
+                            <div class="flex justify-between items-center mb-3">
+                                <span class="text-xs bg-purple-500 text-white px-2 py-1 rounded font-medium">
+                                    Alojamiento
+                                </span>
+                                <span class="text-xs bg-gradient-to-r from-emerald-500 to-green-500 text-white px-2 py-1 rounded font-bold">
+                                    Comparativa real
+                                </span>
+                            </div>
+                            
+                            <h3 class="text-sm font-semibold mb-3 text-gray-900 leading-tight">
+                                Booking vs Airbnb vs Hostelworld: ¿Cuál elegir?
+                            </h3>
+                            
+                            <div class="flex justify-between items-center">
+                                <div class="flex items-center text-xs text-gray-500">
+                                    <span class="mr-1">⏱️</span>
+                                    <span>6 min</span>
+                                </div>
+                                <span class="text-xs text-green-600 font-semibold">
+                                    ✅ Actualizado
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="min-w-[280px] max-w-[280px] flex-shrink-0 bg-white rounded-lg shadow-sm border border-gray-100 overflow-hidden hover:shadow-lg transition-all duration-200 hover:-translate-y-1">
+                        <img class="w-full h-24 object-cover" src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=400&h=200&fit=crop" alt="Tarjetas">
+                        <div class="p-4">
+                            <div class="flex justify-between items-center mb-3">
+                                <span class="text-xs bg-green-500 text-white px-2 py-1 rounded font-medium">
+                                    Finanzas
+                                </span>
+                                <span class="text-xs bg-gradient-to-r from-emerald-500 to-green-500 text-white px-2 py-1 rounded font-bold">
+                                    Sin comisiones
+                                </span>
+                            </div>
+                            
+                            <h3 class="text-sm font-semibold mb-3 text-gray-900 leading-tight">
+                                Mejores tarjetas para viajar sin comisiones
+                            </h3>
+                            
+                            <div class="flex justify-between items-center">
+                                <div class="flex items-center text-xs text-gray-500">
+                                    <span class="mr-1">⏱️</span>
+                                    <span>9 min</span>
+                                </div>
+                                <span class="text-xs text-green-600 font-semibold">
+                                    ✅ Verificado
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CTA Newsletter -->
+            <div class="text-center mt-8 p-6 bg-gradient-to-r from-sky-50 to-emerald-50 rounded-xl border border-sky-200">
+                <p class="text-gray-700 mb-3">
+                    💡 <strong>¿Quieres consejos personalizados para tu próximo viaje?</strong>
+                </p>
+                <button class="bg-gradient-to-r from-sky-500 to-emerald-500 text-white px-8 py-3 rounded-lg font-semibold hover:shadow-lg transform hover:scale-105 transition-all">
+                    📧 Únete al Newsletter Gratis
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ofertas y recomendaciones -->
+    <section id="recomendaciones" class="py-8 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-xl font-bold mb-6">Ofertas y recomendaciones</h2>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+                <div class="bg-green-500 text-white p-6 rounded-xl text-center hover:bg-green-600 transition-colors cursor-pointer">
+                    <div class="text-2xl mb-2">✈️</div>
+                    <h3 class="font-bold mb-1">Vuelos</h3>
+                    <p class="text-sm opacity-90">Encuentra ofertas</p>
+                </div>
+                <div class="bg-pink-500 text-white p-6 rounded-xl text-center hover:bg-pink-600 transition-colors cursor-pointer">
+                    <div class="text-2xl mb-2">🏨</div>
+                    <h3 class="font-bold mb-1">Alojamiento</h3>
+                    <p class="text-sm opacity-90">Hoteles baratos</p>
+                </div>
+                <div class="bg-purple-500 text-white p-6 rounded-xl text-center hover:bg-purple-600 transition-colors cursor-pointer">
+                    <div class="text-2xl mb-2">🛡️</div>
+                    <h3 class="font-bold mb-1">Seguros</h3>
+                    <p class="text-sm opacity-90">IATI 5% dto</p>
+                </div>
+                <div class="bg-blue-500 text-white p-6 rounded-xl text-center hover:bg-blue-600 transition-colors cursor-pointer">
+                    <div class="text-2xl mb-2">🎒</div>
+                    <h3 class="font-bold mb-1">Equipaje</h3>
+                    <p class="text-sm opacity-90">Productos útiles</p>
+                </div>
+            </div>
+
+            <!-- Productos que uso - LIMPIOS -->
+            <h3 class="text-xl font-bold mb-6">Productos que uso</h3>
+            
+            <!-- Producto 1 - Revolut -->
+            <div class="bg-gradient-to-r from-emerald-50 to-sky-50 border-2 border-emerald-300 rounded-xl p-6 my-6 shadow-lg hover:shadow-xl transition-all duration-200">
+                <div class="flex flex-col md:flex-row items-start md:items-center space-y-4 md:space-y-0 md:space-x-6">
+                    <div class="w-20 h-20 bg-white rounded-lg shadow-sm flex-shrink-0 flex items-center justify-center">
+                        <div class="w-16 h-16 bg-gradient-to-r from-blue-500 to-purple-500 rounded-lg flex items-center justify-center text-white font-bold text-xl">R</div>
+                    </div>
+                    
+                    <div class="flex-1">
+                        <h3 class="font-bold text-gray-900 text-2xl mb-2">
+                            🔥 Revolut
+                        </h3>
+                        <p class="text-gray-700 mb-3 font-medium">Tarjeta sin comisiones para viajar</p>
+                        
+                        <ul class="text-sm text-gray-600 mb-4 space-y-2">
+                            <li class="flex items-start">
+                                <span class="text-emerald-500 mr-2 text-lg">✓</span>
+                                <span>Sin comisiones en el extranjero</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-emerald-500 mr-2 text-lg">✓</span>
+                                <span>Cambio de divisa al tipo real</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-emerald-500 mr-2 text-lg">✓</span>
+                                <span>Activación instantánea</span>
+                            </li>
+                        </ul>
+                        
+                        <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between space-y-3 sm:space-y-0">
+                            <div class="flex items-center space-x-3">
+                                <span class="bg-green-500 text-white px-4 py-2 rounded-full font-bold">
+                                    GRATIS
+                                </span>
+                                <span class="text-sm text-emerald-600 font-semibold">⭐ Recomendado</span>
+                            </div>
+                            
+                            <button class="w-full sm:w-auto bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white font-bold py-4 px-8 rounded-xl shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-200 text-lg animate-glow">
+                                🚀 VER OFERTA
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Producto 2 - Batería -->
+            <div class="bg-white rounded-xl p-6 my-6 shadow-lg hover:shadow-xl transition-all duration-200 border border-gray-200">
+                <div class="flex flex-col md:flex-row items-start md:items-center space-y-4 md:space-y-0 md:space-x-6">
+                    <div class="w-20 h-20 bg-gray-100 rounded-lg shadow-sm flex-shrink-0 flex items-center justify-center">
+                        <span class="text-4xl">🔋</span>
+                    </div>
+                    
+                    <div class="flex-1">
+                        <h3 class="font-bold text-gray-900 text-2xl mb-2">
+                            Batería Externa INIU
+                        </h3>
+                        <p class="text-gray-700 mb-3 font-medium">Power bank 10000mAh compacta y rápida</p>
+                        
+                        <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between space-y-3 sm:space-y-0">
+                            <div class="flex items-center space-x-3">
+                                <span class="font-bold text-emerald-600 text-xl">Desde 20€</span>
+                                <span class="text-sm text-emerald-600 font-semibold">⭐ Calidad probada</span>
+                            </div>
+                            
+                            <button class="w-full sm:w-auto bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white font-bold py-4 px-8 rounded-xl shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-200 text-lg">
+                                🚀 VER OFERTA
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Producto 3 - Mochila -->
+            <div class="bg-white rounded-xl p-6 my-6 shadow-lg hover:shadow-xl transition-all duration-200 border border-gray-200">
+                <div class="flex flex-col md:flex-row items-start md:items-center space-y-4 md:space-y-0 md:space-x-6">
+                    <div class="w-20 h-20 bg-gray-100 rounded-lg shadow-sm flex-shrink-0 flex items-center justify-center">
+                        <span class="text-4xl">🎒</span>
+                    </div>
+                    
+                    <div class="flex-1">
+                        <h3 class="font-bold text-gray-900 text-2xl mb-2">
+                            Mochila Cabina
+                        </h3>
+                        <p class="text-gray-700 mb-3 font-medium">Compatible Ryanair 40×20×25</p>
+                        
+                        <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between space-y-3 sm:space-y-0">
+                            <div class="flex items-center space-x-3">
+                                <span class="font-bold text-emerald-600 text-xl">Desde 28€</span>
+                                <span class="text-sm text-emerald-600 font-semibold">✅ Certificada</span>
+                            </div>
+                            
+                            <button class="w-full sm:w-auto bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white font-bold py-4 px-8 rounded-xl shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-200 text-lg">
+                                🚀 VER OFERTA
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Producto 4 - Almohada -->
+            <div class="bg-white rounded-xl p-6 my-6 shadow-lg hover:shadow-xl transition-all duration-200 border border-gray-200">
+                <div class="flex flex-col md:flex-row items-start md:items-center space-y-4 md:space-y-0 md:space-x-6">
+                    <div class="w-20 h-20 bg-gray-100 rounded-lg shadow-sm flex-shrink-0 flex items-center justify-center">
+                        <span class="text-4xl">💤</span>
+                    </div>
+                    
+                    <div class="flex-1">
+                        <h3 class="font-bold text-gray-900 text-2xl mb-2">
+                            Almohada Viscoelástica
+                        </h3>
+                        <p class="text-gray-700 mb-3 font-medium">Almohada de viaje con antifaz incluido</p>
+                        
+                        <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between space-y-3 sm:space-y-0">
+                            <div class="flex items-center space-x-3">
+                                <span class="font-bold text-emerald-600 text-xl">Desde 25€</span>
+                                <span class="text-sm text-emerald-600 font-semibold">💤 Confort máximo</span>
+                            </div>
+                            
+                            <button class="w-full sm:w-auto bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white font-bold py-4 px-8 rounded-xl shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-200 text-lg">
+                                🚀 VER OFERTA
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-8 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-xl font-bold mb-6">Preguntas Frecuentes</h2>
+            
+            <div class="space-y-4">
+                <div class="border border-gray-200 rounded-lg p-4 hover:bg-gray-50 transition-colors cursor-pointer">
+                    <div class="flex justify-between items-center">
+                        <h3 class="font-semibold text-gray-900">¿Cuál es la mejor época para encontrar vuelos baratos?</h3>
+                        <svg class="w-5 h-5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </div>
+                </div>
+                
+                <div class="border border-gray-200 rounded-lg p-4 hover:bg-gray-50 transition-colors cursor-pointer">
+                    <div class="flex justify-between items-center">
+                        <h3 class="font-semibold text-gray-900">¿Necesito seguro de viaje para todos mis viajes?</h3>
+                        <svg class="w-5 h-5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="border border-gray-200 rounded-lg p-4 hover:bg-gray-50 transition-colors cursor-pointer">
+                    <div class="flex justify-between items-center">
+                        <h3 class="font-semibold text-gray-900">¿Cómo puedo ahorrar en alojamiento?</h3>
+                        <svg class="w-5 h-5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Floating Action Button -->
+    <div class="fixed bottom-6 right-6 z-50">
+        <button class="bg-gradient-to-r from-red-500 to-pink-500 text-white px-6 py-4 rounded-full shadow-2xl hover:shadow-3xl transform hover:scale-110 transition-all duration-200 animate-bounce">
+            <span class="font-bold text-sm">🎯 OFERTAS</span>
+        </button>
+    </div>
+
+    <!-- Botón scroll to top -->
+    <div class="fixed bottom-6 left-6 z-50">
+        <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})" class="bg-sky-500 text-white p-3 rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
+            </svg>
+        </button>
+    </div>
+
+    <script>
+        // Smooth scroll para navegación
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Tracking de clicks en botones de afiliado
+        document.querySelectorAll('button').forEach(button => {
+            if (button.textContent.includes('VER OFERTA')) {
+                button.addEventListener('click', function() {
+                    const productName = this.closest('.bg-gradient-to-r, .bg-white').querySelector('h3').textContent;
+                    console.log('Click en producto:', productName);
+                    // Aquí irían los eventos de tracking reales
+                });
+            }
+        });
+    </script>
+</body>
 </html>
