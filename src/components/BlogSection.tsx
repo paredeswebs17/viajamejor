@@ -82,7 +82,7 @@ const BlogSection: React.FC<BlogSectionProps> = ({ showTitle = true }) => {
   ];
 
   return (
-    <section id="consejos" className="relative py-8 bg-white">
+    <section id="consejos" className="relative py-6 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {showTitle && (
