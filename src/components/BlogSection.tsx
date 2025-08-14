@@ -108,7 +108,7 @@ const BlogSection: React.FC<BlogSectionProps> = ({ showTitle = true }) => {
                       scrollRef.current.scrollBy({ left: 400, behavior: 'smooth' });
                     }
                   }}
-                  className="p-2 rounded-full bg-white border border-gray-200 hover:bg-gray-50 transition-colors"
+          {article.id === 'travel-essentials' && (
                   aria-label="Scroll right"
                 >
                   <ChevronRight className="h-4 w-4 text-gray-600" />
