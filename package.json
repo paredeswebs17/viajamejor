@@ -1,0 +1,11 @@
+{
+  "name": "viaja-mejor",
+  "version": "1.0.0",
+  "description": "Blog de viajes optimizado para conversión",
+  "scripts": {
+    "dev": "python3 -m http.server 3000",
+    "build": "node inject-assets.js",
+    "preview": "python3 -m http.server 4173 --directory ."
+  },
+  "type": "module"
+}
