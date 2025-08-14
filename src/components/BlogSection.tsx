@@ -130,10 +130,9 @@ const BlogSection: React.FC<BlogSectionProps> = ({ showTitle = true }) => {
                 <div className="relative overflow-hidden">
                   <img 
                     className="w-full h-24 sm:h-32 lg:h-40 object-cover" 
-                    src={article.image.replace(/\.(jpg|jpeg|png)/, '.webp').replace(/w=800/, 'w=800&fm=webp')} 
+                    src={article.image} 
                     alt={`${article.title} - ${article.category} - Viaja Mejor`}
                     loading="lazy"
-                    decoding="async"
                     onError={(e) => {
                       e.currentTarget.style.backgroundColor = '#f3f4f6';
                       e.currentTarget.style.display = 'flex';
