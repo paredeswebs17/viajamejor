@@ -141,7 +141,6 @@ const BlogSection: React.FC<BlogSectionProps> = ({ showTitle = true }) => {
                       e.currentTarget.innerHTML = '📷';
                     }}
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
                   
                   {/* Badge destacado */}
                   {article.featured && (
@@ -153,25 +152,6 @@ const BlogSection: React.FC<BlogSectionProps> = ({ showTitle = true }) => {
                     </div>
                   )}
 
-                  {/* Stats overlay */}
-                  <div className="absolute bottom-1 left-2 flex items-center space-x-2 text-white text-xs">
-                    <div className="flex items-center space-x-1 bg-black/40 backdrop-blur-sm rounded-full px-1.5 py-0.5">
-                      <Clock className="h-2 w-2" />
-                      <span className="text-xs">{article.readTime}</span>
-                    </div>
-                    {article.views && (
-                      <div className="hidden sm:flex items-center space-x-1 bg-black/40 backdrop-blur-sm rounded-full px-1.5 py-0.5">
-                        <Eye className="h-2 w-2" />
-                        <span className="text-xs">{article.views}</span>
-                      </div>
-                    )}
-                    {article.savings && (
-                      <div className="flex items-center space-x-1 bg-gradient-to-r from-emerald-500 to-green-500 rounded-full px-1.5 py-0.5 shadow-sm">
-                        <TrendingUp className="h-2 w-2" />
-                        <span className="text-xs font-medium">{article.savings}</span>
-                      </div>
-                    )}
-                  </div>
 
                   <div className="absolute top-2 right-2">
                     <span className="bg-sky-500 text-white px-2 py-0.5 rounded-full text-xs font-medium shadow-sm">
@@ -184,6 +164,20 @@ const BlogSection: React.FC<BlogSectionProps> = ({ showTitle = true }) => {
                   <h3 className="text-sm sm:text-base lg:text-lg font-semibold mb-2 line-clamp-2 text-gray-900 flex-1">
                     {article.title}
                   </h3>
+                  
+                  {/* Stats en la parte inferior */}
+                  <div className="flex justify-between items-center mt-auto">
+                    <div className="flex items-center space-x-1 bg-gray-100 rounded-full px-2 py-1">
+                      <Clock className="h-3 w-3 text-gray-500" />
+                      <span className="text-xs text-gray-600">{article.readTime}</span>
+                    </div>
+                    {article.savings && (
+                      <div className="flex items-center space-x-1 bg-gradient-to-r from-emerald-500 to-green-500 text-white rounded-full px-2 py-1">
+                        <TrendingUp className="h-3 w-3" />
+                        <span className="text-xs font-medium">{article.savings}</span>
+                      </div>
+                    )}
+                  </div>
                 </div>
               </Link>
             ))}
