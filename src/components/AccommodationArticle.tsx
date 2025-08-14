@@ -13,7 +13,7 @@ const AccommodationArticle: React.FC<AccommodationArticleProps> = ({ onBack }) =
       <div className="mb-8">
         <button 
           onClick={onBack}
-          className="flex items-center text-sky-500 hover:text-sky-600 mb-6 transition-colors"
+          className="inline-flex items-center text-sky-600 hover:text-sky-700 hover:bg-sky-50 px-3 py-2 rounded-lg transition-all duration-200 font-medium border border-sky-200 hover:border-sky-300 mb-6"
         >
           <ArrowLeft className="h-4 w-4 mr-2" />
           Volver al blog
