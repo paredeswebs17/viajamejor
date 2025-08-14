@@ -40,10 +40,14 @@ const CheapFlightsArticle: React.FC<CheapFlightsArticleProps> = ({ onBack }) => 
                 })
                 .catch((error) => console.log('Error sharing', error));
               } else {
-                window.open(`https://twitter.com/intent/tweet?text=Cómo encontrar vuelos baratos: mis 10 trucos infalibles&url=${encodeURIComponent(window.location.href)}`, '_blank');
+               navigator.clipboard.writeText(window.location.href).then(() => {
+                 alert('¡Enlace copiado al portapapeles!');
+               }).catch(() => {
+                 window.open(`https://twitter.com/intent/tweet?text=Cómo encontrar vuelos baratos: mis 10 trucos infalibles&url=${encodeURIComponent(window.location.href)}`, '_blank');
+               });
               }
             }}
-            className="flex items-center hover:text-sky-500 transition-colors"
+           className="inline-flex items-center text-gray-600 hover:text-sky-600 bg-gray-50 hover:bg-sky-50 px-4 py-2 rounded-lg transition-all duration-200 font-medium border border-gray-200 hover:border-sky-300"
           >
             <Share2 className="h-4 w-4 mr-2" />
             <span>Compartir</span>

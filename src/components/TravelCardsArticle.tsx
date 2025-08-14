@@ -39,10 +39,16 @@ const TravelCardsArticle: React.FC<TravelCardsArticleProps> = ({ onBack }) => {
                 })
                 .catch((error) => console.log('Error sharing', error));
               } else {
-                window.open(`https://twitter.com/intent/tweet?text=Las mejores tarjetas para viajar sin comisiones&url=${encodeURIComponent(window.location.href)}`, '_blank');
+               navigator.clipboard.writeText(window.location.href).then(() => {
+                 // Simple feedback - could be enhanced with toast notification
+                 alert('¡Enlace copiado al portapapeles!');
+               }).catch(() => {
+                 // Fallback to Twitter
+                 window.open(`https://twitter.com/intent/tweet?text=Las mejores tarjetas para viajar sin comisiones&url=${encodeURIComponent(window.location.href)}`, '_blank');
+               });
               }
             }}
-            className="flex items-center hover:text-sky-500 transition-colors"
+           className="inline-flex items-center text-gray-600 hover:text-sky-600 bg-gray-50 hover:bg-sky-50 px-4 py-2 rounded-lg transition-all duration-200 font-medium border border-gray-200 hover:border-sky-300"
           >
             <Share2 className="h-4 w-4 mr-2" />
             <span>Compartir</span>
