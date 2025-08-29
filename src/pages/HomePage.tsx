@@ -1,12 +1,22 @@
 import { Helmet } from 'react-helmet-async';
+import { useNewsletterPopup } from '../hooks/useNewsletterPopup';
+import NewsletterPopup from '../components/NewsletterPopup';
 import Hero from '../components/Hero';
 import BlogSection from '../components/BlogSection';
 import About from '../components/About';
 import Recommendations from '../components/Recommendations';
 import FAQ from '../components/FAQ';
+import Newsletter from '../components/Newsletter';
 import Contact from '../components/Contact';
 
 const HomePage = () => {
+  const { isOpen: isNewsletterOpen, closePopup: closeNewsletter } = useNewsletterPopup({
+    delayMs: 25000, // 25 segundos
+    scrollPercentage: 40, // 40% de scroll
+    exitIntent: true,
+    timeOnPage: 30000 // 30 segundos
+  });
+
   return (
     <>
       <Helmet>
@@ -69,7 +79,13 @@ const HomePage = () => {
       <About />
       <Recommendations />
       <FAQ />
+      <Newsletter />
       <Contact />
+      
+      <NewsletterPopup 
+        isOpen={isNewsletterOpen} 
+        onClose={closeNewsletter} 
+      />
     </>
   );
 };

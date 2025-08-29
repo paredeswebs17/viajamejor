@@ -92,3 +92,29 @@ export const trackAffiliateClickAdvanced = (productName: string, position: strin
     });
   }
 };
+
+export const trackNewsletterSignup = (source: string) => {
+  trackEvent('newsletter_signup', {
+    event_category: 'engagement',
+    event_label: source,
+    value: 10 // Alto valor para suscripciones
+  });
+};
+
+export const trackSearch = (query: string, resultsCount: number) => {
+  trackEvent('search', {
+    event_category: 'engagement',
+    event_label: query,
+    search_term: query,
+    results_count: resultsCount,
+    value: 3
+  });
+};
+
+export const trackPopupView = (popupType: string) => {
+  trackEvent('popup_view', {
+    event_category: 'engagement',
+    event_label: popupType,
+    value: 2
+  });
+};

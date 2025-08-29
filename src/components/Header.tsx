@@ -1,10 +1,12 @@
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Compass } from 'lucide-react';
+import { Menu, X, Compass, Search } from 'lucide-react';
 import { trackMenuClick } from '../utils/analytics';
+import SearchBar from './SearchBar';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isSearchOpen, setIsSearchOpen] = useState(false);
   const location = useLocation();
   const isHomePage = location.pathname === '/';
 
@@ -97,16 +99,32 @@ const Header = () => {
           
           <nav className="hidden md:flex space-x-8" role="navigation">
             {navigationItems.map(renderNavItem)}
+            <button
+              onClick={() => setIsSearchOpen(true)}
+              className="text-gray-700 hover:text-sky-500 transition-colors font-medium flex items-center"
+              aria-label="Buscar"
+            >
+              <Search className="h-4 w-4 mr-1" />
+              Buscar
+            </button>
           </nav>
 
-          <button
-            className="md:hidden"
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-            aria-expanded={isMenuOpen}
-            aria-label={isMenuOpen ? "Cerrar menú" : "Abrir menú"}
-          >
-            {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-          </button>
+          <div className="flex items-center space-x-2 md:hidden">
+            <button
+              onClick={() => setIsSearchOpen(true)}
+              className="p-2 text-gray-700 hover:text-sky-500 transition-colors"
+              aria-label="Buscar"
+            >
+              <Search className="h-5 w-5" />
+            </button>
+            <button
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+              aria-expanded={isMenuOpen}
+              aria-label={isMenuOpen ? "Cerrar menú" : "Abrir menú"}
+            >
+              {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+            </button>
+          </div>
         </div>
 
         {isMenuOpen && (  
@@ -145,6 +163,8 @@ const Header = () => {
           </div>
         )}
       </div>
+      
+      <SearchBar isOpen={isSearchOpen} onClose={() => setIsSearchOpen(false)} />
     </header>
   );
 };
