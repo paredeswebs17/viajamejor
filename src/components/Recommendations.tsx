@@ -91,7 +91,7 @@ const Recommendations = () => {
         {/* Top products - Compact list */}
         <div>
           <h3 className="text-lg font-bold text-gray-900 mb-3">
-            Productos que uso
+            Productos que uso y recomiendo
           </h3>
           <div className="space-y-2">
             {topProducts.map((product, index) => (
@@ -99,6 +99,11 @@ const Recommendations = () => {
                 <div className="flex-1">
                   <div className="flex items-center space-x-2">
                     <h4 className="font-semibold text-gray-900 text-sm">{product.name}</h4>
+                    {index === 0 && (
+                      <span className="bg-green-100 text-green-700 px-2 py-0.5 rounded-full text-xs font-bold">
+                        ⭐ TOP
+                      </span>
+                    )}
                   </div>
                   <p className="text-xs text-gray-600 mt-0.5">{product.description}</p>
                   <span className="text-sm font-semibold text-emerald-600">{product.price}</span>

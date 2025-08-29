@@ -143,7 +143,7 @@ const BlogSection: React.FC<BlogSectionProps> = ({ showTitle = true }) => {
                   />
                   
                   {/* Badge destacado */}
-                  {article.id === 'travel-essentials' && (
+                  {article.featured && (
                     <div className="absolute top-2 left-2 z-10">
                       <span className="bg-gradient-to-r from-orange-500 to-red-500 text-white px-2 py-0.5 rounded-full text-xs font-bold flex items-center shadow-sm">
                         <Star className="h-2 w-2 mr-1" />

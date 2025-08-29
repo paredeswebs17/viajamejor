@@ -121,7 +121,7 @@ const Contact = () => {
 
               <button
                 type="submit"
-                className="w-full bg-sky-500 text-white font-medium py-2 px-4 rounded-lg hover:bg-sky-600 transition-colors flex items-center justify-center space-x-2 text-sm"
+                className="w-full bg-gradient-to-r from-sky-500 to-emerald-500 hover:from-sky-600 hover:to-emerald-600 text-white font-medium py-3 px-4 rounded-lg transition-all duration-200 flex items-center justify-center space-x-2 text-sm shadow-lg hover:shadow-xl transform hover:scale-105"
               >
                 <Send className="h-4 w-4" />
                 <span>Enviar mensaje</span>

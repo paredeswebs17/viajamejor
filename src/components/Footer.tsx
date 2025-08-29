@@ -109,6 +109,10 @@ const Footer = () => {
               Si compras algo a través de estos enlaces, puedo recibir una pequeña comisión sin costo adicional para ti. 
               Solo recomiendo productos y servicios que uso personalmente y que realmente me han funcionado bien en mis viajes.
             </p>
+            <p className="text-gray-500 text-xs mt-2">
+              <strong>Política de cookies:</strong> Este sitio usa cookies para mejorar tu experiencia y analizar el tráfico. 
+              Al continuar navegando, aceptas nuestro uso de cookies.
+            </p>
           </div>
         </div>
       </div>
