@@ -46,7 +46,6 @@ const HomePage = () => {
 
       <Hero />
       <BlogSection onArticleSelect={() => {}} />
-      <About />
       <Recommendations />
       <FAQ />
       <Contact />
