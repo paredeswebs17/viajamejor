@@ -8,6 +8,7 @@ import ScrollToTop from './components/ScrollToTop';
 
 // Lazy load pages
 const HomePage = lazy(() => import('./pages/HomePage'));
+const GuidesPage = lazy(() => import('./pages/GuidesPage'));
 const TravelEssentialsPage = lazy(() => import('./pages/TravelEssentialsPage'));
 const CheapFlightsPage = lazy(() => import('./pages/CheapFlightsPage'));
 const AccommodationPage = lazy(() => import('./pages/AccommodationPage'));
@@ -44,6 +45,9 @@ function App() {
               <Routes>
                 {/* HOME */}
                 <Route path="/" element={<HomePage />} />
+                
+                {/* GUÍAS */}
+                <Route path="/guias" element={<GuidesPage />} />
                 
                 {/* ARTÍCULOS ESPECÍFICOS */}
                 <Route path="/equipaje/8-objetos-imprescindibles" element={<TravelEssentialsPage />} />

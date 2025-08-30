@@ -1,4 +1,5 @@
 import { MapPin } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Hero = () => {
   return (
@@ -22,10 +23,13 @@ const Hero = () => {
             <MapPin className="h-3 w-3 mr-1" />
             <span>40+ países</span>
           </div>
-          <div className="flex items-center bg-orange-500/90 backdrop-blur-sm rounded-lg px-3 py-1 animate-pulse border border-orange-400">
+          <Link 
+            to="/guias"
+            className="flex items-center bg-orange-500/90 hover:bg-orange-600/90 backdrop-blur-sm rounded-lg px-3 py-1 animate-pulse border border-orange-400 hover:border-orange-500 transition-all duration-200 transform hover:scale-105"
+          >
             <span className="mr-1">🗺️</span>
-            <span className="font-semibold">Guías próximamente</span>
-          </div>
+            <span className="font-semibold">Ver Guías</span>
+          </Link>
         </div>
       </div>
     </section>
