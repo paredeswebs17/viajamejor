@@ -22,7 +22,8 @@ const GuidesPage = () => {
       budget: '€€',
       featured: true,
       available: true,
-      badge: '🔥 Popular'
+      badge: '🔥 Popular',
+      url: '/budapest-4-dias'
     },
     {
       id: 'berlin',
@@ -34,7 +35,8 @@ const GuidesPage = () => {
       continent: 'Europa',
       budget: '€€',
       available: false,
-      badge: '🆕 Nuevo'
+      badge: '🆕 Nuevo',
+      url: '#'
     },
     {
       id: 'prague',
@@ -45,7 +47,8 @@ const GuidesPage = () => {
       rating: 4.7,
       continent: 'Europa',
       budget: '€',
-      available: false
+      available: false,
+      url: '#'
     },
     {
       id: 'santorini',
@@ -56,7 +59,8 @@ const GuidesPage = () => {
       rating: 4.9,
       continent: 'Europa',
       budget: '€€€',
-      available: false
+      available: false,
+      url: '#'
     },
     {
       id: 'istanbul',
@@ -67,7 +71,8 @@ const GuidesPage = () => {
       rating: 4.6,
       continent: 'Asia',
       budget: '€',
-      available: false
+      available: false,
+      url: '#'
     },
     {
       id: 'amsterdam',
@@ -78,7 +83,8 @@ const GuidesPage = () => {
       rating: 4.8,
       continent: 'Europa',
       budget: '€€€',
-      available: false
+      available: false,
+      url: '#'
     },
     {
       id: 'riviera-maya',
@@ -89,7 +95,8 @@ const GuidesPage = () => {
       rating: 4.7,
       continent: 'América',
       budget: '€€',
-      available: false
+      available: false,
+      url: '#'
     },
     {
       id: 'croatia',
@@ -100,7 +107,8 @@ const GuidesPage = () => {
       rating: 4.8,
       continent: 'Europa',
       budget: '€€',
-      available: false
+      available: false,
+      url: '#'
     },
     {
       id: 'sardinia',
@@ -111,7 +119,8 @@ const GuidesPage = () => {
       rating: 4.6,
       continent: 'Europa',
       budget: '€€€',
-      available: false
+      available: false,
+      url: '#'
     },
     {
       id: 'sri-lanka',
@@ -122,7 +131,8 @@ const GuidesPage = () => {
       rating: 4.9,
       continent: 'Asia',
       budget: '€',
-      available: false
+      available: false,
+      url: '#'
     }
   ];
 
@@ -323,6 +333,13 @@ const GuidesPage = () => {
                   <button className="w-full bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white font-bold py-4 px-8 rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200 text-lg">
                     📖 Ver Guía Completa
                   </button>
+                  {featuredGuide.url && (
+                    <a 
+                      href={featuredGuide.url}
+                      className="absolute inset-0 z-10"
+                      aria-label={`Ver guía de ${featuredGuide.title}`}
+                    />
+                  )}
                 </div>
               </div>
             </div>
@@ -386,10 +403,11 @@ const GuidesPage = () => {
                   </div>
                   
                   <button
+                    onClick={() => guide.available && guide.url ? window.location.href = guide.url : null}
                     disabled={!guide.available}
                     className={`w-full font-semibold py-3 px-4 rounded-lg transition-all duration-200 ${
                       guide.available
-                        ? 'bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white transform hover:scale-105 shadow-lg hover:shadow-xl'
+                        ? 'bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white transform hover:scale-105 shadow-lg hover:shadow-xl cursor-pointer'
                         : 'bg-gray-300 text-gray-500 cursor-not-allowed'
                     }`}
                   >

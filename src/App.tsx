@@ -15,6 +15,7 @@ const AccommodationPage = lazy(() => import('./pages/AccommodationPage'));
 const TravelCardsPage = lazy(() => import('./pages/TravelCardsPage'));
 const CheapDestinationsPage = lazy(() => import('./pages/CheapDestinationsPage'));
 const TravelInsurancePage = lazy(() => import('./pages/TravelInsurancePage'));
+const BudapestGuidePage = lazy(() => import('./pages/BudapestGuidePage'));
 
 // Loading component
 const Loading = () => (
@@ -56,6 +57,9 @@ function App() {
                 <Route path="/finanzas/tarjetas-sin-comisiones" element={<TravelCardsPage />} />
                 <Route path="/destinos/paises-baratos-2025" element={<CheapDestinationsPage />} />
                 <Route path="/seguros/iati-experiencia" element={<TravelInsurancePage />} />
+                
+                {/* GUÍAS ESPECÍFICAS */}
+                <Route path="/budapest-4-dias" element={<BudapestGuidePage />} />
                 
                 {/* 404 - Redirige a home */}
                 <Route path="*" element={<HomePage />} />
