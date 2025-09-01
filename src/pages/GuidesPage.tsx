@@ -239,13 +239,13 @@ const GuidesPage = () => {
             </div>
 
             {/* Filters */}
-            <div className="flex flex-col sm:flex-row gap-3 w-full sm:w-auto">
+            <div className="flex flex-col gap-3 w-full sm:w-auto">
               <div className="relative">
                 <Filter className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-gray-400" />
                 <select
                   value={continentFilter}
                   onChange={(e) => setContinentFilter(e.target.value)}
-                  className="w-full sm:w-auto pl-9 pr-8 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-sky-500 focus:border-transparent outline-none transition-all appearance-none bg-white"
+                  className="w-full pl-9 pr-8 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-sky-500 focus:border-transparent outline-none transition-all appearance-none bg-white"
                 >
                   <option value="all">Todos los continentes</option>
                   <option value="Europa">Europa</option>
@@ -257,7 +257,7 @@ const GuidesPage = () => {
               <select
                 value={budgetFilter}
                 onChange={(e) => setBudgetFilter(e.target.value)}
-                className="w-full sm:w-auto px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-sky-500 focus:border-transparent outline-none transition-all appearance-none bg-white"
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-sky-500 focus:border-transparent outline-none transition-all appearance-none bg-white"
               >
                 <option value="all">Todos los presupuestos</option>
                 <option value="€">€ Económico</option>
