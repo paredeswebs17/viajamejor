@@ -83,17 +83,19 @@ const BudapestGuideArticle: React.FC<BudapestGuideArticleProps> = ({ onBack }) =
         </h1>
 
         <div className="flex items-center justify-between text-gray-600 text-sm mb-8">
-          <div className="flex items-center space-x-4">
-            <span className="flex items-center bg-gray-100 px-2 py-1 rounded-full">
+          <div className="flex flex-col sm:flex-row items-start sm:items-center gap-2 sm:gap-4">
+            <span className="flex items-center text-xs sm:text-sm">
               <Clock className="h-3 w-3 mr-1" />
-              15 min lectura
+              <span className="sm:hidden">15 min</span>
+              <span className="hidden sm:inline">15 min lectura</span>
             </span>
-            <span className="flex items-center bg-gray-100 px-2 py-1 rounded-full">
+            <span className="flex items-center text-xs sm:text-sm">
               <MapPin className="h-3 w-3 mr-1" />
-              Budapest, Hungría
+              <span className="sm:hidden">Budapest</span>
+              <span className="hidden sm:inline">Budapest, Hungría</span>
             </span>
           </div>
-          <button 
+          <button
             onClick={() => {
               if (navigator.share) {
                 navigator.share({

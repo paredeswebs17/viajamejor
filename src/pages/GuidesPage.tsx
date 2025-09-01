@@ -155,7 +155,7 @@ const GuidesPage = () => {
             </div>
 
             {/* Filters - Stack vertically */}
-            <div className="flex flex-col gap-3 max-w-md mx-auto w-full">
+            <div className="flex flex-col gap-4 max-w-md mx-auto w-full">
               <div className="relative">
                 <Filter className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-gray-400" />
                 <select
@@ -169,7 +169,7 @@ const GuidesPage = () => {
                   <option value="América">América</option>
                 </select>
               </div>
-
+              
               <select
                 value={budgetFilter}
                 onChange={(e) => setBudgetFilter(e.target.value)}
