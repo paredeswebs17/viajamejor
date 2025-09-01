@@ -28,17 +28,15 @@ const BudapestGuideArticle: React.FC<BudapestGuideArticleProps> = ({ onBack }) =
         </h1>
 
         {/* Info compacta para móvil */}
-        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 mb-6">
+        <div className="flex flex-col gap-4 mb-6">
           <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 text-sm text-gray-600">
             <div className="flex items-center">
               <Clock className="h-4 w-4 mr-1 text-sky-500" />
-              <span className="block sm:hidden">15 min</span>
-              <span className="hidden sm:block">15 min lectura</span>
+              <span>15 min</span>
             </div>
             <div className="flex items-center">
               <MapPin className="h-4 w-4 mr-1 text-emerald-500" />
-              <span className="block sm:hidden">Budapest</span>
-              <span className="hidden sm:block">Budapest, Hungría</span>
+              <span>Budapest</span>
             </div>
           </div>
           
@@ -121,7 +119,7 @@ const BudapestGuideArticle: React.FC<BudapestGuideArticleProps> = ({ onBack }) =
         {/* Mejor época */}
         <div className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-sm mb-8">
           <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-4">🌞 Mejor época para visitar</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-center">
             <div className="bg-gradient-to-r from-orange-50 to-red-50 border border-orange-200 rounded-lg p-4 text-center">
               <h3 className="font-semibold text-orange-800 mb-2">Época Ideal</h3>
               <p className="text-sm text-orange-700">Mayo - Septiembre</p>
@@ -316,28 +314,24 @@ const BudapestGuideArticle: React.FC<BudapestGuideArticleProps> = ({ onBack }) =
 
             {/* Seguro IATI */}
             <div className="bg-gradient-to-r from-emerald-50 to-green-50 rounded-lg p-4 border border-emerald-200">
-              <div className="flex items-start justify-between">
-                <div className="flex-1">
-                  <h3 className="font-bold text-gray-900 text-lg mb-2">
-                    🛡️ IATI Seguros - Viaja tranquilo
-                  </h3>
-                  <p className="text-gray-700 text-sm mb-3">
-                    Seguro médico para Europa con cobertura completa. Atención 24/7 en español.
-                  </p>
-                  <div className="space-y-1 text-xs text-gray-600 mb-4">
-                    <div className="flex items-center">
-                      <CheckCircle className="h-3 w-3 text-emerald-500 mr-2" />
-                      <span>Cobertura médica hasta 50.000€</span>
-                    </div>
-                    <div className="flex items-center">
-                      <CheckCircle className="h-3 w-3 text-emerald-500 mr-2" />
-                      <span>Atención 24/7 en español</span>
-                    </div>
-                    <div className="flex items-center">
-                      <CheckCircle className="h-3 w-3 text-emerald-500 mr-2" />
-                      <span>5% descuento exclusivo</span>
-                    </div>
-                  </div>
+              <h3 className="font-bold text-gray-900 text-lg mb-2 text-center">
+                🛡️ IATI Seguros - Viaja tranquilo
+              </h3>
+              <p className="text-gray-700 text-sm mb-3 text-center">
+                Seguro médico para Europa con cobertura completa. Atención 24/7 en español. 5% descuento exclusivo.
+              </p>
+              <div className="space-y-1 text-xs text-gray-600 mb-4">
+                <div className="flex items-center justify-center">
+                  <CheckCircle className="h-3 w-3 text-emerald-500 mr-2" />
+                  <span>Cobertura médica hasta 50.000€</span>
+                </div>
+                <div className="flex items-center justify-center">
+                  <CheckCircle className="h-3 w-3 text-emerald-500 mr-2" />
+                  <span>Atención 24/7 en español</span>
+                </div>
+                <div className="flex items-center justify-center">
+                  <CheckCircle className="h-3 w-3 text-emerald-500 mr-2" />
+                  <span>5% descuento exclusivo</span>
                 </div>
               </div>
               <div className="text-center">
@@ -347,7 +341,7 @@ const BudapestGuideArticle: React.FC<BudapestGuideArticleProps> = ({ onBack }) =
                   rel="noopener noreferrer"
                   className="inline-flex items-center bg-gradient-to-r from-emerald-500 to-green-500 hover:from-emerald-600 hover:to-green-600 text-white font-bold py-3 px-6 rounded-lg transition-all duration-200 transform hover:scale-105 shadow-lg hover:shadow-xl"
                 >
-                  <span>Conseguir IATI</span>
+                  <span>Conseguir IATI con 5% descuento</span>
                   <ExternalLink className="h-4 w-4 ml-2" />
                 </a>
               </div>
