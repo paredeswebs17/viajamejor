@@ -1,6 +1,6 @@
 import { Helmet } from 'react-helmet-async';
 import { useState } from 'react';
-import { Search, Filter, MapPin, Euro, Star, Clock, CheckCircle, Mail } from 'lucide-react';
+import { Search, Filter, MapPin, Euro, Star, CheckCircle, Mail } from 'lucide-react';
 
 const GuidesPage = () => {
   const [searchTerm, setSearchTerm] = useState('');
@@ -46,90 +46,6 @@ const GuidesPage = () => {
       price: '€85',
       rating: 4.7,
       continent: 'Europa',
-      budget: '€',
-      available: false,
-      url: '#'
-    },
-    {
-      id: 'santorini',
-      title: 'Santorini en 5 días',
-      description: 'Atardeceres épicos y arquitectura cicládica en las islas griegas',
-      image: 'https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?auto=format&fit=crop&w=600&q=80',
-      price: '€160',
-      rating: 4.9,
-      continent: 'Europa',
-      budget: '€€€',
-      available: false,
-      url: '#'
-    },
-    {
-      id: 'istanbul',
-      title: 'Estambul en 4 días',
-      description: 'Puente entre Europa y Asia con historia milenaria',
-      image: 'https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?auto=format&fit=crop&w=600&q=80',
-      price: '€75',
-      rating: 4.6,
-      continent: 'Asia',
-      budget: '€',
-      available: false,
-      url: '#'
-    },
-    {
-      id: 'amsterdam',
-      title: 'Amsterdam en 3 días',
-      description: 'Canales, museos y la cultura más liberal de Europa',
-      image: 'https://images.unsplash.com/photo-1534351590666-13e3e96b5017?auto=format&fit=crop&w=600&q=80',
-      price: '€135',
-      rating: 4.8,
-      continent: 'Europa',
-      budget: '€€€',
-      available: false,
-      url: '#'
-    },
-    {
-      id: 'riviera-maya',
-      title: 'Riviera Maya en 7 días',
-      description: 'Playas paradisíacas, cenotes y ruinas mayas en México',
-      image: 'https://images.unsplash.com/photo-1518105779142-d975f22f1b0a?auto=format&fit=crop&w=600&q=80',
-      price: '€90',
-      rating: 4.7,
-      continent: 'América',
-      budget: '€€',
-      available: false,
-      url: '#'
-    },
-    {
-      id: 'croatia',
-      title: 'Croacia en 8 días',
-      description: 'Costa dálmata, parques nacionales y ciudades medievales',
-      image: 'https://images.unsplash.com/photo-1555990538-c673de4b2ba3?auto=format&fit=crop&w=600&q=80',
-      price: '€120',
-      rating: 4.8,
-      continent: 'Europa',
-      budget: '€€',
-      available: false,
-      url: '#'
-    },
-    {
-      id: 'sardinia',
-      title: 'Cerdeña en 6 días',
-      description: 'Playas de ensueño y cultura italiana en el Mediterráneo',
-      image: 'https://images.unsplash.com/photo-1566737236500-c8ac43014a8e?auto=format&fit=crop&w=600&q=80',
-      price: '€140',
-      rating: 4.6,
-      continent: 'Europa',
-      budget: '€€€',
-      available: false,
-      url: '#'
-    },
-    {
-      id: 'sri-lanka',
-      title: 'Sri Lanka en 10 días',
-      description: 'Templos antiguos, plantaciones de té y playas vírgenes',
-      image: 'https://images.unsplash.com/photo-1566552881560-0be862a7c445?auto=format&fit=crop&w=600&q=80',
-      price: '€55',
-      rating: 4.9,
-      continent: 'Asia',
       budget: '€',
       available: false,
       url: '#'
@@ -225,9 +141,9 @@ const GuidesPage = () => {
       {/* Search and Filters */}
       <section className="py-8 bg-white border-b border-gray-200">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col lg:flex-row gap-4 items-center">
+          <div className="flex flex-col gap-4">
             {/* Search */}
-            <div className="relative flex-1 max-w-md">
+            <div className="relative max-w-md mx-auto w-full">
               <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 h-5 w-5 text-gray-400" />
               <input
                 type="text"
@@ -238,8 +154,8 @@ const GuidesPage = () => {
               />
             </div>
 
-            {/* Filters */}
-            <div className="flex flex-col gap-3 w-full sm:w-auto">
+            {/* Filters - Stack vertically */}
+            <div className="flex flex-col gap-3 max-w-md mx-auto w-full">
               <div className="relative">
                 <Filter className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-gray-400" />
                 <select
@@ -330,16 +246,12 @@ const GuidesPage = () => {
                     </div>
                   </div>
 
-                  <button className="w-full bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white font-bold py-4 px-8 rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200 text-lg">
+                  <a 
+                    href={featuredGuide.url}
+                    className="block w-full bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white font-bold py-4 px-8 rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200 text-lg text-center"
+                  >
                     📖 Ver Guía Completa
-                  </button>
-                  {featuredGuide.url && (
-                    <a 
-                      href={featuredGuide.url}
-                      className="absolute inset-0 z-10"
-                      aria-label={`Ver guía de ${featuredGuide.title}`}
-                    />
-                  )}
+                  </a>
                 </div>
               </div>
             </div>
