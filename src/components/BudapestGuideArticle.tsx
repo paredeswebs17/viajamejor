@@ -27,7 +27,7 @@ const BudapestGuideArticle: React.FC<BudapestGuideArticleProps> = ({ onBack }) =
           Budapest en 4 Días: Tu Aventura Húngara Completa
         </h1>
 
-        {/* Info compacta para móvil */}
+        <div className="flex justify-end mb-6">
         <div className="flex flex-col gap-4 mb-6">
           <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 text-sm text-gray-600">
             <div className="flex items-center">
@@ -57,9 +57,9 @@ const BudapestGuideArticle: React.FC<BudapestGuideArticleProps> = ({ onBack }) =
                 });
               }
             }}
-            className="inline-flex items-center text-gray-600 hover:text-sky-600 bg-gray-50 hover:bg-sky-50 px-4 py-2 rounded-lg transition-all duration-200 font-medium border border-gray-200 hover:border-sky-300"
+            className="inline-flex items-center text-gray-500 hover:text-sky-600 bg-gray-100 hover:bg-sky-50 px-3 py-1.5 rounded-md transition-all duration-200 text-sm border border-gray-200 hover:border-sky-300"
           >
-            <Share2 className="h-4 w-4 mr-2" />
+            <Share2 className="h-3 w-3 mr-1" />
             <span>Compartir</span>
           </button>
         </div>
