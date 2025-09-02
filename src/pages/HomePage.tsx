@@ -46,6 +46,27 @@ const HomePage = () => {
 
       <Hero />
       <BlogSection onArticleSelect={() => {}} />
+      
+      {/* Enlace a Guías */}
+      <section className="py-6 bg-gradient-to-r from-emerald-50 to-sky-50">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <div className="bg-white rounded-2xl p-6 shadow-sm border border-emerald-200">
+            <h2 className="text-xl font-bold text-gray-900 mb-3">
+              🗺️ ¿Buscas itinerarios completos?
+            </h2>
+            <p className="text-gray-600 mb-4">
+              Descubre nuestras guías detalladas con itinerarios día por día, presupuestos reales y mapas para aprovechar al máximo tu viaje
+            </p>
+            <Link 
+              to="/guias"
+              className="inline-flex items-center bg-gradient-to-r from-emerald-500 to-sky-500 hover:from-emerald-600 hover:to-sky-600 text-white font-bold py-3 px-6 rounded-lg transition-all duration-200 transform hover:scale-105 shadow-lg hover:shadow-xl"
+            >
+              📖 Ver Todas las Guías
+            </Link>
+          </div>
+        </div>
+      </section>
+      
       <Recommendations />
       <FAQ />
       <Contact />
