@@ -415,7 +415,8 @@ const BudapestGuideArticle: React.FC<BudapestGuideArticleProps> = ({ onBack }) =
               <div>
                 <h5 className="font-semibold text-gray-900 mb-2">Guía completa:</h5>
                 <ul className="text-sm text-gray-700 space-y-1">
-                  <li>• <strong>Precio:</strong> 6.800 HUF (≈ 18€) día completo</li>
+                  <li>• <strong>Días laborables:</strong> 10.500 HUF (≈ 25€) día completo</li>
+                  <li>• <strong>Fines de semana:</strong> 12.000 HUF (≈ 29€) día completo</li>
                   <li>• <strong>Piscinas:</strong> 18 diferentes</li>
                   <li>• <strong>Temperaturas:</strong> 18°C a 38°C</li>
                   <li>• <strong>Tiempo ideal:</strong> 3-4 horas</li>
@@ -430,6 +431,13 @@ const BudapestGuideArticle: React.FC<BudapestGuideArticleProps> = ({ onBack }) =
                   <li>• Vestuarios con taquillas incluidas</li>
                 </ul>
               </div>
+            </div>
+            
+            <div className="bg-orange-50 border border-orange-200 rounded-lg p-4 mb-4">
+              <h3 className="font-semibold text-orange-800 mb-2">⚠️ IMPORTANTE - Nueva restricción</h3>
+              <p className="text-orange-700 text-sm">
+                <strong>Desde agosto 2025, solo se permite entrada a mayores de 14 años en los balnearios Széchenyi.</strong>
+              </p>
             </div>
             <div className="bg-white border border-gray-200 rounded-lg p-4">
               <h5 className="font-semibold text-gray-900 mb-2">🛁 Alternativa Elegante: Balneario Gellért</h5>
@@ -704,7 +712,7 @@ const BudapestGuideArticle: React.FC<BudapestGuideArticleProps> = ({ onBack }) =
           <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-4">
             <ul className="text-sm text-gray-700 space-y-2">
               <li>• <strong>Divisa:</strong> Florín húngaro (HUF)</li>
-              <li>• <strong>Cambio aproximado:</strong> 1€ = 380 HUF (variable)</li>
+              <li>• <strong>Cambio aproximado:</strong> 1€ = 395 HUF (variable)</li>
               <li>• <strong>Regla de oro:</strong> SIEMPRE pagar en florines cuando te pregunten</li>
             </ul>
           </div>
@@ -1203,7 +1211,7 @@ const BudapestGuideArticle: React.FC<BudapestGuideArticleProps> = ({ onBack }) =
       {/* Footer de la guía */}
       <div className="text-center text-gray-600 text-sm">
         <p className="mb-2">
-          <strong>Guía actualizada en Diciembre 2024</strong> | Información verificada y precios actuales
+          <strong>Guía actualizada en Septiembre 2025</strong> | Información verificada y precios actuales
         </p>
         <p>
           ¡Que disfrutes Budapest al máximo! 🇭🇺
