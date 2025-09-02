@@ -31,8 +31,8 @@ const Footer = () => {
         </div>
 
         {/* Desktop full footer */}
-        <div className="hidden sm:grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-          <div className="lg:col-span-1">
+        <div className="hidden sm:grid grid-cols-3 gap-8">
+          <div>
             <div className="flex items-center mb-4">
               <Compass className="h-8 w-8 text-sky-400 mr-2" />
               <span className="text-xl font-bold">Viaja Mejor</span>
@@ -41,16 +41,6 @@ const Footer = () => {
               Tu compañero de confianza para viajar más, gastar menos y disfrutar cada momento. 
               Consejos reales de alguien que realmente viaja.
             </p>
-            <div className="flex space-x-4">
-              <a 
-                href="https://instagram.com/viajamejor_net" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="text-gray-400 hover:text-sky-400 transition-colors"
-              >
-                <Instagram className="h-6 w-6" />
-              </a>
-            </div>
           </div>
 
           <div>
@@ -61,12 +51,6 @@ const Footer = () => {
               <li><a href="#recomendaciones" className="text-gray-400 hover:text-white transition-colors">Recomendaciones</a></li>
               <li><a href="#sobre-nosotros" className="text-gray-400 hover:text-white transition-colors">Sobre Nosotros</a></li>
               <li><a href="#contacto" className="text-gray-400 hover:text-white transition-colors">Contacto</a></li>
-            </ul>
-          </div>
-
-          <div>
-            <h3 className="text-lg font-semibold mb-4">Categorías</h3>
-            <ul className="space-y-2">
               <li><a href="#consejos" className="text-gray-400 hover:text-white transition-colors">Vuelos Baratos</a></li>
               <li><a href="#consejos" className="text-gray-400 hover:text-white transition-colors">Alojamiento</a></li>
               <li><a href="#consejos" className="text-gray-400 hover:text-white transition-colors">Equipaje</a></li>
@@ -82,6 +66,17 @@ const Footer = () => {
               <li><a href="#recomendaciones" className="text-gray-400 hover:text-white transition-colors">Herramientas</a></li>
               <li><a href="#recomendaciones" className="text-gray-400 hover:text-white transition-colors">Enlaces Útiles</a></li>
               <li><a href="#consejos" className="text-gray-400 hover:text-white transition-colors">Guías de Destinos</a></li>
+              <li>
+                <a 
+                  href="https://instagram.com/viajamejor_net" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-gray-400 hover:text-sky-400 transition-colors flex items-center"
+                >
+                  <Instagram className="h-4 w-4 mr-2" />
+                  Instagram
+                </a>
+              </li>
             </ul>
           </div>
         </div>
