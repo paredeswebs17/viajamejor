@@ -119,7 +119,7 @@ const GuidesPage = () => {
               <span>💰 Presupuestos Reales</span>
             </div>
             <div className="flex items-center bg-white/10 backdrop-blur-sm rounded-lg px-4 py-2">
-              <span>🗺️ Mapas Detallados</span>
+              <span>📋 Itinerarios Detallados</span>
             </div>
           </div>
         </div>
@@ -202,6 +202,15 @@ const GuidesPage = () => {
       {/* Other Guides Grid */}
       <section className="py-12 bg-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="mb-8 text-center">
+            <a 
+              href="/"
+              className="inline-flex items-center text-sky-600 hover:text-sky-700 bg-white hover:bg-sky-50 px-4 py-2 rounded-lg transition-all duration-200 font-medium border border-sky-200 hover:border-sky-300 shadow-sm"
+            >
+              ← Volver al inicio
+            </a>
+          </div>
+          
           <h2 className="text-2xl font-bold text-gray-900 mb-8 text-center">
             Más destinos increíbles
           </h2>
