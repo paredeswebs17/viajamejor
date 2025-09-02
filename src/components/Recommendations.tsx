@@ -41,7 +41,7 @@ const Recommendations = () => {
       name: "Revolut",
       description: "Tarjeta sin comisiones para viajar",
       price: "Gratis",
-      affiliate: "https://revolut.com/referral/?referral-code=antoni22jf!AUG1-25-AR-CL1H-CRY&geo-redirect"
+      affiliate: "https://revolut.com/referral/?referral-code=antoni22jf!AUG2-25-AR-CH1H2-CRY&geo-redirect"
     },
     {
       name: "Batería Externa INIU",
