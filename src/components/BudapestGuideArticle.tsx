@@ -39,7 +39,7 @@ const BudapestGuideArticle: React.FC<BudapestGuideArticleProps> = ({ onBack }) =
               <span>Budapest</span>
             </div>
           </div>
-            <button 
+            <button
               onClick={() => {
                 if (navigator.share) {
                   navigator.share({
@@ -56,7 +56,7 @@ const BudapestGuideArticle: React.FC<BudapestGuideArticleProps> = ({ onBack }) =
                   });
                 }
               }}
-              className="inline-flex items-center text-gray-600 hover:text-sky-600 bg-gray-50 hover:bg-sky-50 px-2 py-1 rounded-lg transition-all duration-200 font-medium border border-gray-200 hover:border-sky-300 text-sm"
+              className="inline-flex items-center text-gray-600 hover:text-sky-600 bg-gray-100 hover:bg-sky-50 px-2 py-1 rounded-full transition-all duration-200 border border-gray-200 hover:border-sky-300 text-xs"
             >
               <Share2 className="h-3 w-3 mr-1" />
               <span>Compartir</span>
