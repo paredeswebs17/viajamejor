@@ -1,11 +1,8 @@
 import { Helmet } from 'react-helmet-async';
 import { useState } from 'react';
-import { Search, Filter, MapPin, Euro, Star, CheckCircle, Mail } from 'lucide-react';
+import { MapPin, Euro, Star, CheckCircle, Mail } from 'lucide-react';
 
 const GuidesPage = () => {
-  const [searchTerm, setSearchTerm] = useState('');
-  const [continentFilter, setContinentFilter] = useState('all');
-  const [budgetFilter, setBudgetFilter] = useState('all');
   const [email, setEmail] = useState('');
   const [isSubscribed, setIsSubscribed] = useState(false);
   const [expandedFaq, setExpandedFaq] = useState<number | null>(null);
@@ -67,18 +64,8 @@ const GuidesPage = () => {
     }
   ];
 
-  // Filter guides based on search and filters
-  const filteredGuides = guides.filter(guide => {
-    const matchesSearch = guide.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
-                         guide.description.toLowerCase().includes(searchTerm.toLowerCase());
-    const matchesContinent = continentFilter === 'all' || guide.continent === continentFilter;
-    const matchesBudget = budgetFilter === 'all' || guide.budget === budgetFilter;
-    
-    return matchesSearch && matchesContinent && matchesBudget;
-  });
-
-  const featuredGuide = filteredGuides.find(guide => guide.featured);
-  const otherGuides = filteredGuides.filter(guide => !guide.featured);
+  const featuredGuide = guides.find(guide => guide.featured);
+  const otherGuides = guides.filter(guide => !guide.featured);
 
   const handleNewsletterSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -138,53 +125,6 @@ const GuidesPage = () => {
         </div>
       </section>
 
-      {/* Search and Filters */}
-      <section className="py-8 bg-white border-b border-gray-200">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col gap-4">
-            {/* Search */}
-            <div className="relative max-w-md mx-auto w-full">
-              <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 h-5 w-5 text-gray-400" />
-              <input
-                type="text"
-                placeholder="Buscar destino..."
-                value={searchTerm}
-                onChange={(e) => setSearchTerm(e.target.value)}
-                className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-sky-500 focus:border-transparent outline-none transition-all"
-              />
-            </div>
-
-            {/* Filters - Stack vertically */}
-            <div className="flex flex-col gap-4 max-w-md mx-auto w-full">
-              <div className="relative">
-                <Filter className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-gray-400" />
-                <select
-                  value={continentFilter}
-                  onChange={(e) => setContinentFilter(e.target.value)}
-                  className="w-full pl-9 pr-8 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-sky-500 focus:border-transparent outline-none transition-all appearance-none bg-white"
-                >
-                  <option value="all">Todos los continentes</option>
-                  <option value="Europa">Europa</option>
-                  <option value="Asia">Asia</option>
-                  <option value="América">América</option>
-                </select>
-              </div>
-              
-              <select
-                value={budgetFilter}
-                onChange={(e) => setBudgetFilter(e.target.value)}
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-sky-500 focus:border-transparent outline-none transition-all appearance-none bg-white"
-              >
-                <option value="all">Todos los presupuestos</option>
-                <option value="€">€ Económico</option>
-                <option value="€€">€€ Medio</option>
-                <option value="€€€">€€€ Premium</option>
-              </select>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Featured Guide */}
       {featuredGuide && (
         <section className="py-12 bg-gray-50">
@@ -216,7 +156,7 @@ const GuidesPage = () => {
                   <div className="flex items-center gap-6 mb-6">
                     <div className="flex items-center">
                       <Euro className="h-5 w-5 text-emerald-500 mr-2" />
-                      <span className="text-2xl font-bold text-emerald-600">{featuredGuide.price}</span>
+                      <span className="text-2xl font-bold text-emerald-600">{featuredGuide.price.replace('€', '')}</span>
                       <span className="text-gray-500 ml-1">por día</span>
                     </div>
                     
@@ -304,7 +244,7 @@ const GuidesPage = () => {
                   <div className="flex items-center justify-between mb-4">
                     <div className="flex items-center">
                       <Euro className="h-4 w-4 text-emerald-500 mr-1" />
-                      <span className="font-bold text-emerald-600">{guide.price}</span>
+                      <span className="font-bold text-emerald-600">{guide.price.replace('€', '')}</span>
                       <span className="text-gray-500 text-sm ml-1">por día</span>
                     </div>
                     

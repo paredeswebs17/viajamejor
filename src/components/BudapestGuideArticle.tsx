@@ -44,8 +44,8 @@ const BudapestGuideArticle: React.FC<BudapestGuideArticleProps> = ({ onBack }) =
             onClick={() => {
               if (navigator.share) {
                 navigator.share({
-                  title: 'Budapest en 4 Días: Tu Aventura Húngara Completa',
-                  text: 'Descubre Budapest con esta guía súper detallada',
+                  title: 'Budapest en 4 Días: Guía Completa con Itinerario y Presupuesto',
+                  text: 'Descubre la perla del Danubio con nuestro itinerario optimizado',
                   url: window.location.href,
                 })
                 .catch((error) => console.log('Error sharing', error));
@@ -53,13 +53,13 @@ const BudapestGuideArticle: React.FC<BudapestGuideArticleProps> = ({ onBack }) =
                 navigator.clipboard.writeText(window.location.href).then(() => {
                   alert('¡Enlace copiado al portapapeles!');
                 }).catch(() => {
-                  window.open(`https://twitter.com/intent/tweet?text=Budapest en 4 Días: Tu Aventura Húngara Completa&url=${encodeURIComponent(window.location.href)}`, '_blank');
+                  window.open(`https://twitter.com/intent/tweet?text=Budapest en 4 Días: Guía Completa&url=${encodeURIComponent(window.location.href)}`, '_blank');
                 });
               }
             }}
-            className="inline-flex items-center text-gray-600 hover:text-sky-600 bg-gray-50 hover:bg-sky-50 px-4 py-2 rounded-lg transition-all duration-200 font-medium border border-gray-200 hover:border-sky-300"
+            className="inline-flex items-center text-gray-600 hover:text-sky-600 bg-gray-50 hover:bg-sky-50 px-2 py-1 rounded-lg transition-all duration-200 text-sm border border-gray-200 hover:border-sky-300"
           >
-            <Share2 className="h-4 w-4 mr-2" />
+            <Share2 className="h-3 w-3 mr-1" />
             <span>Compartir</span>
           </button>
         </div>
