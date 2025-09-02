@@ -587,5 +587,3 @@ const BudapestGuideArticle: React.FC<BudapestGuideArticleProps> = ({ onBack }) =
 };
 
 export default BudapestGuideArticle;
-
-export default BudapestGuideArticle
