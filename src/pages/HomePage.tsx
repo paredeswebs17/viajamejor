@@ -1,4 +1,5 @@
 import { Helmet } from 'react-helmet-async';
+import { Link } from 'react-router-dom';
 import Hero from '../components/Hero';
 import BlogSection from '../components/BlogSection';
 import About from '../components/About';
