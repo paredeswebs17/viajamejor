@@ -39,29 +39,29 @@ const BudapestGuideArticle: React.FC<BudapestGuideArticleProps> = ({ onBack }) =
               <span>Budapest</span>
             </div>
           </div>
+            <button 
+              onClick={() => {
+                if (navigator.share) {
+                  navigator.share({
+                    title: 'Budapest en 4 Días: Guía Completa con Itinerario y Presupuesto',
+                    text: 'Descubre Budapest con nuestro itinerario optimizado día por día',
+                    url: window.location.href,
+                  })
+                  .catch((error) => console.log('Error sharing', error));
+                } else {
+                  navigator.clipboard.writeText(window.location.href).then(() => {
+                    alert('¡Enlace copiado al portapapeles!');
+                  }).catch(() => {
+                    window.open(`https://twitter.com/intent/tweet?text=Budapest en 4 Días: Guía Completa&url=${encodeURIComponent(window.location.href)}`, '_blank');
+                  });
+                }
+              }}
+              className="flex items-center text-gray-500 hover:text-sky-600 transition-colors"
+            >
+              <Share2 className="h-3 w-3 mr-1" />
+              <span className="text-xs">Compartir</span>
+            </button>
           
-          <button 
-            onClick={() => {
-              if (navigator.share) {
-                navigator.share({
-                  title: 'Budapest en 4 Días: Guía Completa con Itinerario y Presupuesto',
-                  text: 'Descubre la perla del Danubio con nuestro itinerario optimizado',
-                  url: window.location.href,
-                })
-                .catch((error) => console.log('Error sharing', error));
-              } else {
-                navigator.clipboard.writeText(window.location.href).then(() => {
-                  alert('¡Enlace copiado al portapapeles!');
-                }).catch(() => {
-                  window.open(`https://twitter.com/intent/tweet?text=Budapest en 4 Días: Guía Completa&url=${encodeURIComponent(window.location.href)}`, '_blank');
-                });
-              }
-            }}
-            className="inline-flex items-center text-gray-600 hover:text-sky-600 bg-gray-50 hover:bg-sky-50 px-2 py-1 rounded-lg transition-all duration-200 text-sm border border-gray-200 hover:border-sky-300"
-          >
-            <Share2 className="h-3 w-3 mr-1" />
-            <span>Compartir</span>
-          </button>
         </div>
       </div>
 
