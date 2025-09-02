@@ -833,7 +833,7 @@ const BudapestGuideArticle: React.FC<BudapestGuideArticleProps> = ({ onBack }) =
           <div className="bg-sky-50 border border-sky-200 rounded-lg p-4">
             <h3 className="font-semibold text-gray-900 mb-2">BKK Info</h3>
             <ul className="text-sm text-gray-700 space-y-1">
-              <li>• Transporte público oficial</li>
+              <li>• Google Maps (mapas offline)</li>
               <li>• Horarios en tiempo real</li>
               <li>• Planificador de rutas</li>
             </ul>
