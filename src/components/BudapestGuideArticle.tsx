@@ -1,7 +1,7 @@
-import { ArrowLeft, Share2, Clock, MapPin, Euro, Calendar, Star, CheckCircle, ExternalLink, AlertTriangle } from ‘lucide-react’;
+import { ArrowLeft, Share2, Clock, MapPin, Euro, Calendar, Star, CheckCircle, ExternalLink, AlertTriangle } from 'lucide-react';
 
 interface BudapestGuideArticleProps {
-onBack: () => void;
+  onBack: () => void;
 }
 
 const BudapestGuideArticle: React.FC<BudapestGuideArticleProps> = ({ onBack }) => {
