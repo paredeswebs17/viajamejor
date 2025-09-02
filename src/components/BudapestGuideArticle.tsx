@@ -27,7 +27,7 @@ const BudapestGuideArticle: React.FC<BudapestGuideArticleProps> = ({ onBack }) =
           Budapest en 4 Días: Tu Aventura Húngara Completa
         </h1>
 
-        {/* Info compacta para móvil */}
+        <div className="flex items-center justify-end text-gray-600 text-sm mb-8">
         <div className="flex flex-col gap-4 mb-6">
           <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 text-sm text-gray-600">
             <div className="flex items-center">
