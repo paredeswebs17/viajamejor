@@ -46,6 +46,102 @@ const GuidesPage = () => {
       budget: '€',
       available: false,
       url: '#'
+    },
+    {
+      id: 'santorini',
+      title: 'Santorini en 5 días',
+      description: 'Atardeceres únicos, pueblos blancos y vinos volcánicos en las Cícladas',
+      image: 'https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?auto=format&fit=crop&w=600&q=80',
+      price: '€140',
+      rating: 4.9,
+      continent: 'Europa',
+      budget: '€€€',
+      available: false,
+      url: '#'
+    },
+    {
+      id: 'istanbul',
+      title: 'Estambul en 4 días',
+      description: 'Puente entre Europa y Asia, mezquitas históricas y bazares milenarios',
+      image: 'https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?auto=format&fit=crop&w=600&q=80',
+      price: '€75',
+      rating: 4.8,
+      continent: 'Europa/Asia',
+      budget: '€€',
+      available: false,
+      url: '#'
+    },
+    {
+      id: 'azores',
+      title: 'Azores en 6 días',
+      description: 'Islas volcánicas, lagos de cráter y aguas termales en el Atlántico',
+      image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?auto=format&fit=crop&w=600&q=80',
+      price: '€95',
+      rating: 4.7,
+      continent: 'Europa',
+      budget: '€€',
+      available: false,
+      url: '#'
+    },
+    {
+      id: 'lisboa',
+      title: 'Lisboa en 3 días',
+      description: 'Tranvías históricos, fado auténtico y pastéis de nata irresistibles',
+      image: 'https://images.unsplash.com/photo-1555881400-74d7acaacd8b?auto=format&fit=crop&w=600&q=80',
+      price: '€80',
+      rating: 4.6,
+      continent: 'Europa',
+      budget: '€€',
+      available: false,
+      url: '#'
+    },
+    {
+      id: 'amsterdam',
+      title: 'Ámsterdam en 4 días',
+      description: 'Canales románticos, museos de clase mundial y cultura liberal única',
+      image: 'https://images.unsplash.com/photo-1534351590666-13e3e96b5017?auto=format&fit=crop&w=600&q=80',
+      price: '€125',
+      rating: 4.8,
+      continent: 'Europa',
+      budget: '€€€',
+      available: false,
+      url: '#'
+    },
+    {
+      id: 'sardinia',
+      title: 'Cerdeña en 7 días',
+      description: 'Playas paradisíacas, cultura nuraghi y gastronomía mediterránea auténtica',
+      image: 'https://images.unsplash.com/photo-1566737236500-c8ac43014a8e?auto=format&fit=crop&w=600&q=80',
+      price: '€105',
+      rating: 4.7,
+      continent: 'Europa',
+      budget: '€€',
+      available: false,
+      url: '#'
+    },
+    {
+      id: 'croatia',
+      title: 'Croacia en 8 días',
+      description: 'Costa dálmata, parques nacionales y ciudades medievales junto al Adriático',
+      image: 'https://images.unsplash.com/photo-1555990538-c673de4e2cd0?auto=format&fit=crop&w=600&q=80',
+      price: '€90',
+      rating: 4.8,
+      continent: 'Europa',
+      budget: '€€',
+      available: false,
+      url: '#'
+    },
+    {
+      id: 'sri-lanka',
+      title: 'Sri Lanka en 10 días',
+      description: 'Templos budistas, plantaciones de té, safaris y playas vírgenes',
+      image: 'https://images.unsplash.com/photo-1566552881560-0be862a7c445?auto=format&fit=crop&w=600&q=80',
+      price: '€45',
+      rating: 4.6,
+      continent: 'Asia',
+      budget: '€',
+      available: false,
+      url: '#'
     }
   ];
 
