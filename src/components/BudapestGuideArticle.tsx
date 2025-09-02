@@ -111,7 +111,7 @@ const BudapestGuideArticle: React.FC<BudapestGuideArticleProps> = ({ onBack }) =
       {/* DÍA 1 */}
       <div className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-sm mb-8">
         <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6 flex items-center">
-          <span className="bg-sky-500 text-white w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold mr-3">1</span>
+          <span className="bg-gradient-to-br from-sky-500 to-emerald-500 text-white w-12 h-12 rounded-2xl flex items-center justify-center text-lg font-bold mr-4 shadow-lg">1</span>
           🏛️ DÍA 1: Poder Imperial y Herencia Cultural
         </h2>
         
@@ -299,7 +299,7 @@ const BudapestGuideArticle: React.FC<BudapestGuideArticleProps> = ({ onBack }) =
       {/* DÍA 2 */}
       <div className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-sm mb-8">
         <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6 flex items-center">
-          <span className="bg-sky-500 text-white w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold mr-3">2</span>
+          <span className="bg-gradient-to-br from-emerald-500 to-sky-500 text-white w-12 h-12 rounded-2xl flex items-center justify-center text-lg font-bold mr-4 shadow-lg">2</span>
           🏰 DÍA 2: Realeza Medieval y Romance Danubiano
         </h2>
 
@@ -400,7 +400,7 @@ const BudapestGuideArticle: React.FC<BudapestGuideArticleProps> = ({ onBack }) =
       {/* DÍA 3 */}
       <div className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-sm mb-8">
         <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6 flex items-center">
-          <span className="bg-sky-500 text-white w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold mr-3">3</span>
+          <span className="bg-gradient-to-br from-purple-500 to-pink-500 text-white w-12 h-12 rounded-2xl flex items-center justify-center text-lg font-bold mr-4 shadow-lg">3</span>
           🌊 DÍA 3: Aguas Milenarias y Esplendor Imperial
         </h2>
 
@@ -513,7 +513,7 @@ const BudapestGuideArticle: React.FC<BudapestGuideArticleProps> = ({ onBack }) =
       {/* DÍA 4 */}
       <div className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-sm mb-8">
         <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6 flex items-center">
-          <span className="bg-sky-500 text-white w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold mr-3">4</span>
+          <span className="bg-gradient-to-br from-orange-500 to-red-500 text-white w-12 h-12 rounded-2xl flex items-center justify-center text-lg font-bold mr-4 shadow-lg">4</span>
           🌅 DÍA 4: Autenticidad Local y Despedida Panorámica
         </h2>
 
