@@ -787,7 +787,7 @@ const BudapestGuideArticle: React.FC<BudapestGuideArticleProps> = ({ onBack }) =
           <h4 className="font-semibold text-gray-900 mb-3">Seguro IATI Estándar</h4>
           <p className="text-gray-700 text-sm mb-4">
             Cobertura médica: 200.000€ en Europa. Precio 4 días: 12-15€ aproximadamente. 
-            Incluye: COVID-19 + deportes + robo equipaje + cancelación.
+            Última actualización: Septiembre 2025
           </p>
           <div className="space-y-2 text-xs text-gray-600 mb-6">
             <div className="flex items-center justify-center">
