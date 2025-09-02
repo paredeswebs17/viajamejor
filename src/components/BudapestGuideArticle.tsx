@@ -858,7 +858,7 @@ const BudapestGuideArticle: React.FC<BudapestGuideArticleProps> = ({ onBack }) =
           </div>
           
           <div className="bg-orange-50 border border-orange-200 rounded-lg p-4">
-            <h3 className="font-semibold text-gray-900 mb-2">Maps.me</h3>
+            <h3 className="font-semibold text-gray-900 mb-2">Google Maps</h3>
             <ul className="text-sm text-gray-700 space-y-1">
               <li>• Mapas offline detallados</li>
               <li>• Funciona sin internet</li>
