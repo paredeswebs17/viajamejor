@@ -1,5 +1,4 @@
 import { ArrowLeft, Share2, Clock, MapPin, Euro, Calendar, Star, CheckCircle, ExternalLink, AlertTriangle } from 'lucide-react';
-import InteractiveMap from './InteractiveMap';
 
 interface BudapestGuideArticleProps {
   onBack: () => void;
@@ -74,8 +73,6 @@ const BudapestGuideArticle: React.FC<BudapestGuideArticleProps> = ({ onBack }) =
           className="w-full h-48 sm:h-64 lg:h-80 object-cover rounded-2xl shadow-lg"
         />
       </div>
-
-      <InteractiveMap />
 
       {/* Planning Estratégico */}
       <div className="bg-gradient-to-r from-sky-50 to-emerald-50 rounded-2xl p-6 sm:p-8 mb-8">
