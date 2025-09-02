@@ -270,11 +270,11 @@ const GuidesPage = () => {
                     </div>
                     <div className="flex items-center text-sm text-gray-700">
                       <CheckCircle className="h-4 w-4 text-emerald-500 mr-2" />
-                      <span>✓ Mapa interactivo</span>
+                     <span>✓ Enlaces de reservas</span>
                     </div>
                     <div className="flex items-center text-sm text-gray-700">
                       <CheckCircle className="h-4 w-4 text-emerald-500 mr-2" />
-                      <span>✓ Presupuesto detallado</span>
+                     <span>✓ Consejos locales</span>
                     </div>
                     <div className="flex items-center text-sm text-gray-700">
                       <CheckCircle className="h-4 w-4 text-emerald-500 mr-2" />
