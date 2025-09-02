@@ -1313,45 +1313,16 @@ Volver a guías
     <div className="space-y-4">
       <div className="bg-white rounded-lg p-4 border border-gray-200">
         <p className="text-gray-700 text-sm italic mb-2">
+          "Seguimos la guía al pie de la letra y Budapest nos enamoró. Los tips de las tarjetas nos ahorraron 25€!"
+        </p>
+        <p className="text-gray-600 text-xs">- María, Madrid</p>
+      </div>
+      
+      <div className="bg-white rounded-lg p-4 border border-gray-200">
+        <p className="text-gray-700 text-sm italic mb-2">
           "La información de los balnearios fue perfecta. Fuimos en enero con nieve y fue mágico."
         </p>
         <p className="text-gray-600 text-xs">- Carlos, Barcelona</p>
       </div>
     </div>
-    
-    <div className="mt-6 text-center">
-      <p className="text-gray-600 text-sm mb-4">¿Has usado esta guía? Comparte tu experiencia:</p>
-      <button
-        onClick={() => document.getElementById('contacto')?.scrollIntoView({ behavior: 'smooth' })}
-        className="bg-sky-500 hover:bg-sky-600 text-white font-medium py-2 px-6 rounded-lg transition-colors"
-      >
-        Dejar comentario
-      </button>
-    </div>
-  </div>
-
-  {/* Footer de la guía */}
-  <div className="text-center text-gray-600 text-sm">
-    <p className="mb-2">
-      <strong>Guía actualizada en Septiembre 2025</strong> | Información verificada y precios actuales
-    </p>
-    <p>
-      ¡Que disfrutes Budapest al máximo! 🇭🇺
-    </p>
-  </div>
-</article>
-```
-
-);
-};
-
-export default BudapestGuideArticle;700 text-sm italic mb-2”>
-“Seguimos la guía al pie de la letra y Budapest nos enamoró. Los tips de las tarjetas nos ahorraron 25€!”
-</p>
-<p className="text-gray-600 text-xs">- María, Madrid</p>
-</div>
-
-```
-      <div className="bg-white rounded-lg p-4 border border-gray-200">
-        <p className="text-gray-
 ```
