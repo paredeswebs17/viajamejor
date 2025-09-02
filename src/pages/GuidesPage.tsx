@@ -1,11 +1,8 @@
 import { Helmet } from 'react-helmet-async';
 import { useState } from 'react';
-import { Search, Filter, MapPin, Euro, Star, CheckCircle, Mail } from 'lucide-react';
+import { MapPin, Euro, Star, CheckCircle, Mail } from 'lucide-react';
 
 const GuidesPage = () => {
-  const [searchTerm, setSearchTerm] = useState('');
-  const [continentFilter, setContinentFilter] = useState('all');
-  const [budgetFilter, setBudgetFilter] = useState('all');
   const [email, setEmail] = useState('');
   const [isSubscribed, setIsSubscribed] = useState(false);
   const [expandedFaq, setExpandedFaq] = useState<number | null>(null);
@@ -67,18 +64,8 @@ const GuidesPage = () => {
     }
   ];
 
-  // Filter guides based on search and filters
-  const filteredGuides = guides.filter(guide => {
-    const matchesSearch = guide.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
-                         guide.description.toLowerCase().includes(searchTerm.toLowerCase());
-    const matchesContinent = continentFilter === 'all' || guide.continent === continentFilter;
-    const matchesBudget = budgetFilter === 'all' || guide.budget === budgetFilter;
-    
-    return matchesSearch && matchesContinent && matchesBudget;
-  });
-
-  const featuredGuide = filteredGuides.find(guide => guide.featured);
-  const otherGuides = filteredGuides.filter(guide => !guide.featured);
+  const featuredGuide = guides.find(guide => guide.featured);
+  const otherGuides = guides.filter(guide => !guide.featured);
 
   const handleNewsletterSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -132,54 +119,7 @@ const GuidesPage = () => {
               <span>💰 Presupuestos Reales</span>
             </div>
             <div className="flex items-center bg-white/10 backdrop-blur-sm rounded-lg px-4 py-2">
-              <span>🗺️ Mapas Detallados</span>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Search and Filters */}
-      <section className="py-8 bg-white border-b border-gray-200">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col gap-4">
-            {/* Search */}
-            <div className="relative max-w-md mx-auto w-full">
-              <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 h-5 w-5 text-gray-400" />
-              <input
-                type="text"
-                placeholder="Buscar destino..."
-                value={searchTerm}
-                onChange={(e) => setSearchTerm(e.target.value)}
-                className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-sky-500 focus:border-transparent outline-none transition-all"
-              />
-            </div>
-
-            {/* Filters - Stack vertically */}
-            <div className="flex flex-col gap-4 max-w-md mx-auto w-full">
-              <div className="relative">
-                <Filter className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-gray-400" />
-                <select
-                  value={continentFilter}
-                  onChange={(e) => setContinentFilter(e.target.value)}
-                  className="w-full pl-9 pr-8 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-sky-500 focus:border-transparent outline-none transition-all appearance-none bg-white"
-                >
-                  <option value="all">Todos los continentes</option>
-                  <option value="Europa">Europa</option>
-                  <option value="Asia">Asia</option>
-                  <option value="América">América</option>
-                </select>
-              </div>
-              
-              <select
-                value={budgetFilter}
-                onChange={(e) => setBudgetFilter(e.target.value)}
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-sky-500 focus:border-transparent outline-none transition-all appearance-none bg-white"
-              >
-                <option value="all">Todos los presupuestos</option>
-                <option value="€">€ Económico</option>
-                <option value="€€">€€ Medio</option>
-                <option value="€€€">€€€ Premium</option>
-              </select>
+              <span>📋 Itinerarios Detallados</span>
             </div>
           </div>
         </div>
@@ -216,7 +156,7 @@ const GuidesPage = () => {
                   <div className="flex items-center gap-6 mb-6">
                     <div className="flex items-center">
                       <Euro className="h-5 w-5 text-emerald-500 mr-2" />
-                      <span className="text-2xl font-bold text-emerald-600">{featuredGuide.price}</span>
+                      <span className="text-2xl font-bold text-emerald-600">{featuredGuide.price.replace('€', '')}</span>
                       <span className="text-gray-500 ml-1">por día</span>
                     </div>
                     
@@ -234,7 +174,7 @@ const GuidesPage = () => {
                     </div>
                     <div className="flex items-center text-sm text-gray-700">
                       <CheckCircle className="h-4 w-4 text-emerald-500 mr-2" />
-                      <span>✓ Mapa interactivo</span>
+                      <span>✓ Ubicaciones detalladas</span>
                     </div>
                     <div className="flex items-center text-sm text-gray-700">
                       <CheckCircle className="h-4 w-4 text-emerald-500 mr-2" />
@@ -262,6 +202,15 @@ const GuidesPage = () => {
       {/* Other Guides Grid */}
       <section className="py-12 bg-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="mb-8 text-center">
+            <a 
+              href="/"
+              className="inline-flex items-center text-sky-600 hover:text-sky-700 bg-white hover:bg-sky-50 px-4 py-2 rounded-lg transition-all duration-200 font-medium border border-sky-200 hover:border-sky-300 shadow-sm"
+            >
+              ← Volver al inicio
+            </a>
+          </div>
+          
           <h2 className="text-2xl font-bold text-gray-900 mb-8 text-center">
             Más destinos increíbles
           </h2>
@@ -270,7 +219,7 @@ const GuidesPage = () => {
             {otherGuides.map((guide) => (
               <div
                 key={guide.id}
-                className="bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden hover:shadow-lg hover:-translate-y-1 transition-all duration-300 group"
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-sky-500 focus:border-transparent outline-none transition-all appearance-none bg-white"
               >
                 <div className="relative">
                   <img
@@ -304,7 +253,7 @@ const GuidesPage = () => {
                   <div className="flex items-center justify-between mb-4">
                     <div className="flex items-center">
                       <Euro className="h-4 w-4 text-emerald-500 mr-1" />
-                      <span className="font-bold text-emerald-600">{guide.price}</span>
+                      <span className="font-bold text-emerald-600">{guide.price.replace('€', '')}</span>
                       <span className="text-gray-500 text-sm ml-1">por día</span>
                     </div>
                     
@@ -388,13 +337,12 @@ const GuidesPage = () => {
           <h2 className="text-2xl font-bold text-gray-900 mb-8 text-center">
             Preguntas frecuentes sobre nuestras guías
           </h2>
-          
           <div className="space-y-4">
             {faqs.map((faq, index) => (
               <div key={index} className="bg-white rounded-lg border border-gray-200 overflow-hidden">
                 <button
                   onClick={() => setExpandedFaq(expandedFaq === index ? null : index)}
-                  className="w-full px-6 py-4 text-left flex items-center justify-between hover:bg-gray-50 focus:outline-none transition-colors"
+                  className="w-full flex items-center justify-between px-6 py-4 text-left hover:bg-gray-50 transition-colors"
                 >
                   <h3 className="font-semibold text-gray-900 pr-4">
                     {faq.question}
