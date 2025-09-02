@@ -28,39 +28,40 @@ const BudapestGuideArticle: React.FC<BudapestGuideArticleProps> = ({ onBack }) =
         </h1>
 
         {/* Info compacta para móvil */}
-        <div className="flex flex-col gap-4 mb-6">
-          <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 text-sm text-gray-600">
-            <div className="flex items-center">
-              <Clock className="h-4 w-4 mr-1 text-sky-500" />
-              <span>15 min</span>
-            </div>
-            <div className="flex items-center">
-              <MapPin className="h-4 w-4 mr-1 text-emerald-500" />
-              <span>Budapest</span>
-            </div>
+        <div className="flex flex-col gap-4 mb-6 items-start">
+          <div className="flex flex-wrap items-center gap-2 text-gray-600 text-xs">
+            <span className="flex items-center bg-gray-100 px-2 py-1 rounded-full">
+              <Clock className="h-3 w-3 mr-1" />
+              15 min
+            </span>
+            <span className="flex items-center bg-gray-100 px-2 py-1 rounded-full">
+              <MapPin className="h-3 w-3 mr-1" />
+              Budapest
+            </span>
           </div>
-            <button
-              onClick={() => {
-                if (navigator.share) {
-                  navigator.share({
-                    title: 'Budapest en 4 Días: Guía Completa con Itinerario y Presupuesto',
-                    text: 'Descubre Budapest con nuestro itinerario optimizado',
-                    url: window.location.href,
-                  })
-                  .catch((error) => console.log('Error sharing', error));
-                } else {
-                  navigator.clipboard.writeText(window.location.href).then(() => {
-                    alert('¡Enlace copiado al portapapeles!');
-                  }).catch(() => {
-                    window.open(`https://twitter.com/intent/tweet?text=Budapest en 4 Días: Guía Completa&url=${encodeURIComponent(window.location.href)}`, '_blank');
-                  });
-                }
-              }}
-              className="inline-flex items-center text-gray-600 hover:text-sky-600 bg-gray-100 hover:bg-sky-50 px-2 py-1 rounded-full transition-all duration-200 border border-gray-200 hover:border-sky-300 text-xs"
-            >
-              <Share2 className="h-3 w-3 mr-1" />
-              <span>Compartir</span>
-            </button>
+          
+          <button
+            onClick={() => {
+              if (navigator.share) {
+                navigator.share({
+                  title: 'Budapest en 4 Días: Guía Completa con Itinerario y Presupuesto',
+                  text: 'Descubre Budapest con nuestro itinerario optimizado',
+                  url: window.location.href,
+                })
+                .catch((error) => console.log('Error sharing', error));
+              } else {
+                navigator.clipboard.writeText(window.location.href).then(() => {
+                  alert('¡Enlace copiado al portapapeles!');
+                }).catch(() => {
+                  window.open(`https://twitter.com/intent/tweet?text=Budapest en 4 Días: Guía Completa&url=${encodeURIComponent(window.location.href)}`, '_blank');
+                });
+              }
+            }}
+            className="inline-flex items-center text-gray-600 hover:text-sky-600 bg-gray-100 hover:bg-sky-50 px-2 py-1 rounded-full transition-all duration-200 text-xs border border-gray-200 hover:border-sky-300 self-start"
+          >
+            <Share2 className="h-3 w-3 mr-1" />
+            <span>Compartir</span>
+          </button>
           
         </div>
       </div>
