@@ -44,7 +44,7 @@ const BudapestGuideArticle: React.FC<BudapestGuideArticleProps> = ({ onBack }) =
                 if (navigator.share) {
                   navigator.share({
                     title: 'Budapest en 4 Días: Guía Completa con Itinerario y Presupuesto',
-                    text: 'Descubre Budapest con nuestro itinerario optimizado día por día',
+                    text: 'Descubre Budapest con nuestro itinerario optimizado',
                     url: window.location.href,
                   })
                   .catch((error) => console.log('Error sharing', error));
@@ -56,10 +56,10 @@ const BudapestGuideArticle: React.FC<BudapestGuideArticleProps> = ({ onBack }) =
                   });
                 }
               }}
-              className="flex items-center text-gray-500 hover:text-sky-600 transition-colors"
+              className="inline-flex items-center text-gray-600 hover:text-sky-600 bg-gray-50 hover:bg-sky-50 px-4 py-2 rounded-lg transition-all duration-200 font-medium border border-gray-200 hover:border-sky-300"
             >
-              <Share2 className="h-3 w-3 mr-1" />
-              <span className="text-xs">Compartir</span>
+              <Share2 className="h-4 w-4 mr-2" />
+              <span>Compartir</span>
             </button>
           
         </div>
