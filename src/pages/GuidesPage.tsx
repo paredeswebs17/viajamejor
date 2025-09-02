@@ -219,7 +219,7 @@ const GuidesPage = () => {
             {otherGuides.map((guide) => (
               <div
                 key={guide.id}
-                className="bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden hover:shadow-lg hover:-translate-y-1 transition-all duration-300 group"
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-sky-500 focus:border-transparent outline-none transition-all appearance-none bg-white"
               >
                 <div className="relative">
                   <img
@@ -337,13 +337,12 @@ const GuidesPage = () => {
           <h2 className="text-2xl font-bold text-gray-900 mb-8 text-center">
             Preguntas frecuentes sobre nuestras guías
           </h2>
-          
           <div className="space-y-4">
             {faqs.map((faq, index) => (
               <div key={index} className="bg-white rounded-lg border border-gray-200 overflow-hidden">
                 <button
                   onClick={() => setExpandedFaq(expandedFaq === index ? null : index)}
-                  className="w-full px-6 py-4 text-left flex items-center justify-between hover:bg-gray-50 focus:outline-none transition-colors"
+                  className="w-full flex items-center justify-between px-6 py-4 text-left hover:bg-gray-50 transition-colors"
                 >
                   <h3 className="font-semibold text-gray-900 pr-4">
                     {faq.question}
