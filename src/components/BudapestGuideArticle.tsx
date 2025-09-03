@@ -139,7 +139,7 @@ const BudapestGuideArticle: React.FC<BudapestGuideArticleProps> = ({ onBack }) =
             <div className="bg-white rounded-lg p-3 border border-gray-200">
               <a href="https://gyg.me/gMPSGtKr" target="_blank" rel="noopener noreferrer"
                  className="text-sky-600 hover:text-sky-800 underline text-sm font-medium">
-                Reservar entradas oficiales del Párlamento
+                Reservar entradas oficiales del Parlamento
               </a>
             </div>
           </div>
@@ -1152,15 +1152,15 @@ const BudapestGuideArticle: React.FC<BudapestGuideArticleProps> = ({ onBack }) =
           <div className="bg-white rounded-lg p-4 border border-gray-200">
             <h3 className="font-semibold text-gray-900 mb-3">Atracciones Principales</h3>
             <div className="space-y-2 text-sm">
-              <a href="https://jegymester.hu/eng/Program/3/Hungarian-Parliament-Tour" target="_blank" rel="noopener noreferrer"
+              <a href="https://gyg.me/gMPSGtKr" target="_blank" rel="noopener noreferrer"
                  className="block text-sky-600 hover:text-sky-800 underline">
                 Parlamento - Entradas
               </a>
-              <a href="https://gyg.me/gMPSGtKr" target="_blank" rel="noopener noreferrer"
+              <a href="https://gyg.me/cTU7N3tH" target="_blank" rel="noopener noreferrer"
                  className="block text-sky-600 hover:text-sky-800 underline">
                 Balnearios Széchenyi
               </a>
-              <a href="https://gyg.me/cTU7N3tH" target="_blank" rel="noopener noreferrer"
+              <a href="https://gyg.me/vbht7C3s" target="_blank" rel="noopener noreferrer"
                  className="block text-sky-600 hover:text-sky-800 underline">
                 Gran Sinagoga
               </a>
