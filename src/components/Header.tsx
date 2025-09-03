@@ -11,7 +11,7 @@ const Header = () => {
   const navigationItems = [
     { id: 'inicio', label: 'Inicio', href: '/' },
     { id: 'guias', label: 'Guías', href: '/guias' },
-    { id: 'consejos', label: 'Consejos de Viaje', href: '/#consejos' },
+    { id: 'consejos', label: 'Consejos', href: '/#consejos' },
     { id: 'recomendaciones', label: 'Recomendaciones', href: '/#recomendaciones' },
     { id: 'contacto', label: 'Contacto', href: '/#contacto' }
   ];
