@@ -1,4 +1,4 @@
-import { ArrowLeft, Share2, MapPin, Clock, Euro, Star, Calendar, Users, Camera, Utensils, Train, Plane, Hotel, Coffee, Spa, Castle, Church, Building, Mountain, Waves, Sun, Moon, Heart, Gift, CheckCircle, AlertTriangle, Info, ExternalLink } from 'lucide-react';
+import { ArrowLeft, Share2, MapPin, Clock, Euro, Star, Calendar, Users, Camera, Utensils, Train, Plane, Hotel, Coffee, Space as Spa, Castle, Church, Building, Mountain, Waves, Sun, Moon, Heart, Gift, CheckCircle, AlertTriangle, Info, ExternalLink } from 'lucide-react';
 import RelatedArticles from './RelatedArticles';
 
 interface BudapestGuideArticleProps {
