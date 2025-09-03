@@ -13,7 +13,7 @@ const GuidesPage = () => {
       title: 'Budapest en 4 Días',
       description: 'La perla del Danubio te espera. Descubre castillos, balnearios termales únicos y la vibrante vida nocturna de la capital húngara.',
       image: 'https://images.unsplash.com/photo-1541849546-216549ae216d?auto=format&fit=crop&w=800&q=80',
-      price: '€70',
+      price: '70€',
       rating: 4.9,
       continent: 'Europa',
       budget: '€€',
@@ -228,7 +228,7 @@ const GuidesPage = () => {
                     <div className="flex items-center">
                       <Euro className="h-5 w-5 text-emerald-500 mr-2" />
                       <span className="text-2xl font-bold text-emerald-600">{featuredGuide.price.replace('€', '')}</span>
-                      <span className="text-gray-500 ml-1">por día</span>
+                      <span className="text-gray-500 ml-1">aprox./día</span>
                     </div>
                     
                     <div className="flex items-center">
@@ -317,7 +317,7 @@ const GuidesPage = () => {
                       <div className="flex items-center">
                         <Euro className="h-4 w-4 text-emerald-500 mr-1" />
                         <span className="font-bold text-emerald-600">{guide.price.replace('€', '')}</span>
-                        <span className="text-gray-500 text-sm ml-1">por día</span>
+                        <span className="text-gray-500 text-sm ml-1">aprox./día</span>
                       </div>
                       
                       <div className="flex items-center">
