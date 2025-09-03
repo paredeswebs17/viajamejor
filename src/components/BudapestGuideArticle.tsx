@@ -1293,12 +1293,17 @@ const BudapestGuideArticle: React.FC<BudapestGuideArticleProps> = ({ onBack }) =
           <p className="text-gray-600 text-sm mb-4">¿Has usado esta guía? Comparte tu experiencia:</p>
           <button
   onClick={() => {
+    // Navegar al formulario de contacto
     document.getElementById('contacto')?.scrollIntoView({ behavior: 'smooth' });
-    // Preseleccionar el asunto
+    
+    // Pre-completar el campo de mensaje después de un pequeño delay
     setTimeout(() => {
-      const subjectField = document.querySelector('select[name="subject"]');
-      if (subjectField) {
-        subjectField.value = 'Comentario sobre guía de Budapest';
+      const messageField = document.querySelector('#message') as HTMLTextAreaElement;
+      if (messageField && messageField.value === '') {
+        messageField.value = 'Hola! Quería compartir mi experiencia sobre la guía de Budapest:\n\n';
+        messageField.focus();
+        // Posicionar el cursor al final
+        messageField.setSelectionRange(messageField.value.length, messageField.value.length);
       }
     }, 500);
   }}
