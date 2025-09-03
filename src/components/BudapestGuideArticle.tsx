@@ -938,7 +938,6 @@ const BudapestGuideArticle: React.FC<BudapestGuideArticleProps> = ({ onBack }) =
           </a>
         </div>
       </div>
-
       <div className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-sm mb-8">
         <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">Kit de Supervivencia Digital</h2>
         <p className="text-gray-700 mb-6">Apps que salvarán tu viaje:</p>
