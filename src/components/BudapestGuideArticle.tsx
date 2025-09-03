@@ -272,13 +272,13 @@ const BudapestGuideArticle: React.FC<BudapestGuideArticleProps> = ({ onBack }) =
                 </ul>
               </div>
             </div>
-            <div className="bg-white rounded-lg p-3 border border-gray-200">
+           <div className="bg-white rounded-lg p-3 border border-gray-200">
               <a href="https://gyg.me/gMPSGtKr" target="_blank" rel="noopener noreferrer"
                  className="text-sky-600 hover:text-sky-800 underline text-sm font-medium">
                 Reservar entradas oficiales del Parlamento
               </a>
-            </div>
-            <div className="bg-orange-100 border border-orange-300 rounded-lg p-4">
+          </div>
+          <div className="bg-orange-100 border border-orange-300 rounded-lg p-4">
               <p className="text-orange-800 text-sm">
                 Consejo de experto: Sube 2 horas antes del atardecer para ver la transformación de la ciudad de día a noche.
               </p>
