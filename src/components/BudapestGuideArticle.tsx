@@ -423,7 +423,7 @@ const BudapestGuideArticle: React.FC<BudapestGuideArticleProps> = ({ onBack }) =
                 Reservar tour para conocer la ciudad con guía
               </a>
             </div>
-            <div className="bg-orange-100 border border-orange-300 rounded-lg p-4">
+            <div className="bg-orange-100 border border-orange-300 rounded-lg p-4 mt-8">
               <p className="text-orange-800 text-sm">
                 SE AGOTA: Reserva con anticipación, especialmente fines de semana.
               </p>
