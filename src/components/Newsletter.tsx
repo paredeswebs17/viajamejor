@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Mail, Gift, CheckCircle, TrendingUp } from 'lucide-react';
+import { Gift, CheckCircle, TrendingUp } from 'lucide-react';
 
 const Newsletter = () => {
   const [email, setEmail] = useState('');
