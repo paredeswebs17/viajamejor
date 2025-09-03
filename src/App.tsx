@@ -19,14 +19,17 @@ const BudapestGuidePage = lazy(() => import('./pages/BudapestGuidePage'));
 
 // Loading component
 const Loading = () => (
-  <div className="flex items-center justify-center min-h-screen">
-    <div className="animate-pulse flex space-x-4">
-      <div className="rounded-full bg-sky-400 h-12 w-12"></div>
-      <div className="flex-1 space-y-4 py-1">
-        <div className="h-4 bg-sky-400 rounded w-3/4"></div>
-        <div className="space-y-2">
-          <div className="h-4 bg-sky-400 rounded"></div>
-          <div className="h-4 bg-sky-400 rounded w-5/6"></div>
+  <div className="flex items-center justify-center min-h-screen bg-white">
+    <div className="text-center">
+      <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-sky-500 mx-auto mb-4"></div>
+      <div className="text-gray-600">
+        <p className="text-lg font-medium">Cargando...</p>
+        <div className="mt-2">
+          <div className="animate-pulse flex space-x-1 justify-center">
+            <div className="h-2 w-2 bg-sky-400 rounded-full"></div>
+            <div className="h-2 w-2 bg-sky-400 rounded-full"></div>
+            <div className="h-2 w-2 bg-sky-400 rounded-full"></div>
+          </div>
         </div>
       </div>
     </div>
@@ -40,7 +43,6 @@ function App() {
         <ScrollToTop />
         <div className="min-h-screen bg-white">
           <Header />
-          <BackToTop />
           <main>
             <Suspense fallback={<Loading />}>
               <Routes>
@@ -66,6 +68,7 @@ function App() {
               </Routes>
             </Suspense>
           </main>
+          <BackToTop />
           <Footer />
         </div>
       </Router>
