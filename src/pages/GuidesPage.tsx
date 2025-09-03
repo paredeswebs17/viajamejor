@@ -138,7 +138,12 @@ const GuidesPage = () => {
     if (!email) return;
 
     try {
-      await new Promise(resolve => setTimeout(resolve, 1000));
+      await fetch('https://formspree.io/f/mwpqebpb', {
+        method: 'POST',
+        headers: { 'Accept': 'application/json' },
+        body: new FormData(e.target as HTMLFormElement),
+      });
+
       setIsSubscribed(true);
       setEmail('');
       setTimeout(() => setIsSubscribed(false), 5000);
@@ -371,12 +376,15 @@ const GuidesPage = () => {
                 <form onSubmit={handleNewsletterSubmit} className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
                   <input
                     type="email"
+                    name="email"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     placeholder="tu@email.com"
                     className="flex-1 px-6 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-sky-500 focus:border-transparent outline-none"
                     required
                   />
+                  <input type="hidden" name="subject" value="Suscripción Newsletter - Guías de Viaje" />
+                  <input type="hidden" name="message" value="Nueva suscripción al newsletter desde la página de guías" />
                   <button
                     type="submit"
                     className="bg-gradient-to-r from-sky-500 to-emerald-500 hover:from-sky-600 hover:to-emerald-600 text-white font-bold py-3 px-6 rounded-lg transition-all duration-200 transform hover:scale-105 shadow-lg hover:shadow-xl"
