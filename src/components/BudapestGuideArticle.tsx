@@ -627,12 +627,12 @@ const BudapestGuideArticle: React.FC<BudapestGuideArticleProps> = ({ onBack }) =
         
         <div className="mb-6">
           <div className="bg-emerald-50 border border-emerald-200 rounded-lg p-6">
-            <h3 className="text-lg font-bold text-emerald-800 mb-4">ESTILO MOCHILERO - 100 euros/día</h3>
+            <h3 className="text-lg font-bold text-emerald-800 mb-4">ESTILO MOCHILERO - 75 euros/día</h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div>
-                <h4 className="font-semibold text-gray-900 mb-2">Alojamiento (20 euros/noche):</h4>
+                <h4 className="font-semibold text-gray-900 mb-2">Alojamiento (50 euros/noche):</h4>
                 <ul className="text-sm text-gray-700 space-y-1">
-                  <li>• Hostales céntricos: Maverick City Lodge</li>
+                  <li>• Hostales céntricos: Budapest Citi Guesthouse</li>
                   <li>• Ubicación: Distrito V o VII</li>
                   <li>• Incluye: WiFi + cocina compartida</li>
                 </ul>
@@ -648,7 +648,7 @@ const BudapestGuideArticle: React.FC<BudapestGuideArticleProps> = ({ onBack }) =
             </div>
             <div className="bg-white rounded-lg p-4 mt-4">
               <p className="text-emerald-800 font-semibold text-center">
-                Total 4 días: aproximadamente 400 euros
+                Total 4 días: aproximadamente 300 euros
               </p>
             </div>
           </div>
