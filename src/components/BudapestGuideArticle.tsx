@@ -239,7 +239,6 @@ const BudapestGuideArticle: React.FC<BudapestGuideArticleProps> = ({ onBack }) =
                    className="text-sky-600 hover:text-sky-800 underline text-xs">
                   Web oficial y reservas
                 </a>
-                <p className="text-xs text-blue-600 mt-1">Reservas: +36 70 626 4280</p>
               </div>
             </div>
             <p className="text-sm text-gray-600 mt-4">
