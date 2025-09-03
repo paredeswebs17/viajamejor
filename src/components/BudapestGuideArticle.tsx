@@ -540,7 +540,7 @@ const BudapestGuideArticle: React.FC<BudapestGuideArticleProps> = ({ onBack }) =
               <div>
                 <h5 className="font-semibold text-gray-900 mb-2">Consejos prácticos:</h5>
                 <ul className="text-sm text-gray-700 space-y-1">
-                  <li>• Reservas: Solo cenas después 18:00h</li>
+                  <li>• Reservas: Solo necesario para cenas después 18:00h</li>
                   <li>• Valor: Es experiencia, no solo café</li>
                   <li>• Música live: Desde 11:00h</li>
                 </ul>
