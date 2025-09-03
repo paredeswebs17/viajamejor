@@ -16,7 +16,6 @@ className="inline-flex items-center text-sky-600 hover:text-sky-700 hover:bg-sky
 Volver a guías
 </button>
 
-```
     <div className="mb-6">
       <span className="bg-sky-500 text-white px-3 py-1 rounded-full text-sm font-medium">
         Guía Completa
