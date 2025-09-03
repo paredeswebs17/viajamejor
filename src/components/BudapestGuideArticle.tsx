@@ -634,7 +634,7 @@ const BudapestGuideArticle: React.FC<BudapestGuideArticleProps> = ({ onBack }) =
                 <ul className="text-sm text-gray-700 space-y-1">
                   <li>• Hostales céntricos: Budapest Citi Guesthouse</li>
                   <li>• Ubicación: Distrito V o VII</li>
-                  <li>• Incluye: WiFi + cocina compartida</li>
+                  <li>• Incluye: WiFi + baño privado</li>
                 </ul>
               </div>
               <div>
