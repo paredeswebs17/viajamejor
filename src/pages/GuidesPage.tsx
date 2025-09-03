@@ -227,7 +227,7 @@ const GuidesPage = () => {
                   <div className="flex items-center gap-6 mb-6">
                     <div className="flex items-center">
                       <Euro className="h-5 w-5 text-emerald-500 mr-2" />
-                      <span className="text-2xl font-bold text-emerald-600">{featuredGuide.price.replace('€', '')}</span>
+                      <span className="text-2xl font-bold text-emerald-600">{featuredGuide.price?.replace('€', '') || 'N/A'}</span>
                       <span className="text-gray-500 ml-1">aprox./día</span>
                     </div>
                     
@@ -314,16 +314,20 @@ const GuidesPage = () => {
                   
                   {guide.available && (
                     <div className="flex items-center justify-between mb-4">
-                      <div className="flex items-center">
-                        <Euro className="h-4 w-4 text-emerald-500 mr-1" />
-                        <span className="font-bold text-emerald-600">{guide.price.replace('€', '')}</span>
-                        <span className="text-gray-500 text-sm ml-1">aprox./día</span>
-                      </div>
+                      {guide.price && (
+                        <div className="flex items-center">
+                          <Euro className="h-4 w-4 text-emerald-500 mr-1" />
+                          <span className="font-bold text-emerald-600">{guide.price.replace('€', '')}</span>
+                          <span className="text-gray-500 text-sm ml-1">aprox./día</span>
+                        </div>
+                      )}
                       
-                      <div className="flex items-center">
-                        <Star className="h-4 w-4 text-orange-500 mr-1" />
-                        <span className="font-semibold text-gray-900 text-sm">{guide.rating}</span>
-                      </div>
+                      {guide.rating && (
+                        <div className="flex items-center">
+                          <Star className="h-4 w-4 text-orange-500 mr-1" />
+                          <span className="font-semibold text-gray-900 text-sm">{guide.rating}</span>
+                        </div>
+                      )}
                     </div>
                   )}
                   
