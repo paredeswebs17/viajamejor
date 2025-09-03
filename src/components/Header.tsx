@@ -20,8 +20,12 @@ const Header = () => {
     trackMenuClick(itemId);
     setIsMenuOpen(false);
     
+    // Si es inicio, ir arriba del todo
+    if (itemId === 'inicio') {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
     // Si es un enlace con ancla y estamos en home, hacer scroll
-    if (href.startsWith('/#') && isHomePage) {
+    else if (href.startsWith('/#') && isHomePage) {
       const sectionId = href.substring(2);
       setTimeout(() => {
         document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' });
@@ -30,7 +34,19 @@ const Header = () => {
   };
 
   const renderNavItem = (item: { id: string, label: string, href: string }) => {
-    if (item.href.startsWith('/#') && !isHomePage) {
+    if (item.id === 'guias') {
+      // Para guías, siempre usar Link
+      return (
+        <Link
+          key={item.id}
+          to={item.href}
+          className="text-gray-700 hover:text-sky-500 transition-colors font-medium"
+          onClick={() => handleMenuClick(item.id, item.href)}
+        >
+          {item.label}
+        </Link>
+      );
+    } else if (item.href.startsWith('/#') && !isHomePage) {
       // Si no estamos en home y es un enlace con ancla, usar Link
       return (
         <Link
@@ -42,7 +58,7 @@ const Header = () => {
           {item.label}
         </Link>
       );
-    } else if (item.href === '/') {
+    } else if (item.id === 'inicio') {
       // Para el enlace de inicio, siempre usar Link
       return (
         <Link
@@ -114,7 +130,7 @@ const Header = () => {
           <div className="md:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t shadow-lg" style={{ backgroundColor: 'rgba(245, 250, 255, 0.95)', backdropFilter: 'blur(4px)' }}>
               {navigationItems.map((item) => (
-                item.href.startsWith('/#') && !isHomePage ? (
+                item.id === 'guias' ? (
                   <Link
                     key={item.id}
                     to={item.href}
@@ -123,7 +139,16 @@ const Header = () => {
                   >
                     {item.label}
                   </Link>
-                ) : item.href === '/' ? (
+                ) : item.href.startsWith('/#') && !isHomePage ? (
+                  <Link
+                    key={item.id}
+                    to={item.href}
+                    className="block px-3 py-2 text-gray-700 hover:text-sky-500 hover:bg-sky-50 font-medium rounded-lg transition-colors"
+                    onClick={() => handleMenuClick(item.id, item.href)}
+                  >
+                    {item.label}
+                  </Link>
+                ) : item.id === 'inicio' ? (
                   <Link
                     key={item.id}
                     to={item.href}
