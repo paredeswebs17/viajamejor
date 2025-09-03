@@ -170,7 +170,6 @@ const BudapestGuideArticle: React.FC<BudapestGuideArticleProps> = ({ onBack }) =
                   <li>• Idioma: Español disponible</li>
                 </ul>
               </div>
-            </div>
             <div className="bg-white rounded-lg p-3 border border-gray-200">
               <a href="https://gyg.me/gMPSGtKr" target="_blank" rel="noopener noreferrer"
                  className="text-sky-600 hover:text-sky-800 underline text-sm font-medium">
