@@ -121,7 +121,7 @@ const BudapestGuideArticle: React.FC<BudapestGuideArticleProps> = ({ onBack }) =
                 <h5 className="font-semibold text-gray-900 mb-2">Información esencial:</h5>
                 <ul className="text-sm text-gray-700 space-y-1">
                   <li>• Inversión: 10.000 HUF (Aprox. 27 €)</li>
-                  <li>• Duración: 90 minutos con audioguía</li>
+                  <li>• Duración: 90 Min. con audioguía</li>
                   <li>• Reserva: OBLIGATORIA con 24-48h anticipación</li>
                   <li>• Consejo: Llega 15 min antes para controles</li>
                 </ul>
@@ -192,7 +192,7 @@ const BudapestGuideArticle: React.FC<BudapestGuideArticleProps> = ({ onBack }) =
                 <h5 className="font-semibold text-gray-900 mb-2">Experiencia completa:</h5>
                 <ul className="text-sm text-gray-700 space-y-1">
                   <li>• Entrada: 13.000 HUF (Aprox. 33 €)</li>
-                  <li>• Tiempo: 75-90 minutos</li>
+                  <li>• Tiempo: 75-90 Min.</li>
                   <li>• Arquitectura: Estilo morisco-bizantino único</li>
                 </ul>
               </div>
@@ -408,7 +408,7 @@ const BudapestGuideArticle: React.FC<BudapestGuideArticleProps> = ({ onBack }) =
               <div>
                 <h5 className="font-semibold text-gray-900 mb-2">Detalles del crucero:</h5>
                 <ul className="text-sm text-gray-700 space-y-1">
-                  <li>• Duración: 70 minutos de pura magia</li>
+                  <li>• Duración: 70 Min. de pura magia</li>
                   <li>• Precio: 4.000 HUF (Aprox. 12 €)</li>
                   <li>• Incluye: Audio-guía español + bebida</li>
                 </ul>
