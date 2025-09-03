@@ -22,16 +22,7 @@ const Loading = () => (
   <div className="flex items-center justify-center min-h-screen bg-white">
     <div className="text-center">
       <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-sky-500 mx-auto mb-4"></div>
-      <div className="text-gray-600">
-        <p className="text-lg font-medium">Cargando...</p>
-        <div className="mt-2">
-          <div className="animate-pulse flex space-x-1 justify-center">
-            <div className="h-2 w-2 bg-sky-400 rounded-full"></div>
-            <div className="h-2 w-2 bg-sky-400 rounded-full"></div>
-            <div className="h-2 w-2 bg-sky-400 rounded-full"></div>
-          </div>
-        </div>
-      </div>
+      <p className="text-gray-600 text-lg font-medium">Cargando...</p>
     </div>
   </div>
 );
@@ -46,30 +37,21 @@ function App() {
           <main>
             <Suspense fallback={<Loading />}>
               <Routes>
-                {/* HOME */}
                 <Route path="/" element={<HomePage />} />
-                
-                {/* GUÍAS */}
                 <Route path="/guias" element={<GuidesPage />} />
-                
-                {/* ARTÍCULOS ESPECÍFICOS */}
                 <Route path="/equipaje/8-objetos-imprescindibles" element={<TravelEssentialsPage />} />
                 <Route path="/vuelos/vuelos-baratos" element={<CheapFlightsPage />} />
                 <Route path="/alojamiento/booking-vs-airbnb" element={<AccommodationPage />} />
                 <Route path="/finanzas/tarjetas-sin-comisiones" element={<TravelCardsPage />} />
                 <Route path="/destinos/paises-baratos-2025" element={<CheapDestinationsPage />} />
                 <Route path="/seguros/iati-experiencia" element={<TravelInsurancePage />} />
-                
-                {/* GUÍAS ESPECÍFICAS */}
                 <Route path="/budapest-4-dias" element={<BudapestGuidePage />} />
-                
-                {/* 404 - Redirige a home */}
                 <Route path="*" element={<HomePage />} />
               </Routes>
             </Suspense>
           </main>
-          <BackToTop />
           <Footer />
+          <BackToTop />
         </div>
       </Router>
     </HelmetProvider>
