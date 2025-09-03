@@ -656,7 +656,7 @@ const BudapestGuideArticle: React.FC<BudapestGuideArticleProps> = ({ onBack }) =
 
         <div className="mb-6">
           <div className="bg-sky-50 border border-sky-200 rounded-lg p-6">
-            <h3 className="text-lg font-bold text-sky-800 mb-4">ESTILO CONFORT - 180 euros/día</h3>
+            <h3 className="text-lg font-bold text-sky-800 mb-4">ESTILO CONFORT - 100 euros/día</h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div>
                 <h4 className="font-semibold text-gray-900 mb-2">Alojamiento (70 euros/noche):</h4>
@@ -667,7 +667,7 @@ const BudapestGuideArticle: React.FC<BudapestGuideArticleProps> = ({ onBack }) =
                 </ul>
               </div>
               <div>
-                <h4 className="font-semibold text-gray-900 mb-2">Alimentación (45 euros/día):</h4>
+                <h4 className="font-semibold text-gray-900 mb-2">Alimentación (30 euros/día):</h4>
                 <ul className="text-sm text-gray-700 space-y-1">
                   <li>• Desayuno: Hotel incluido</li>
                   <li>• Almuerzo: Restaurantes locales (12-18 euros)</li>
@@ -677,7 +677,7 @@ const BudapestGuideArticle: React.FC<BudapestGuideArticleProps> = ({ onBack }) =
             </div>
             <div className="bg-white rounded-lg p-4 mt-4">
               <p className="text-sky-800 font-semibold text-center">
-                Total 4 días: aproximadamente 720 euros
+                Total 4 días: aproximadamente 400 euros
               </p>
             </div>
           </div>
@@ -690,7 +690,7 @@ const BudapestGuideArticle: React.FC<BudapestGuideArticleProps> = ({ onBack }) =
               <div>
                 <h4 className="font-semibold text-gray-900 mb-2">Alojamiento (130 euros/noche):</h4>
                 <ul className="text-sm text-gray-700 space-y-1">
-                  <li>• Hoteles 4*/5*: Four Seasons, Aria Hotel</li>
+                  <li>• Hoteles 4*/5*: Hotel Vision Budapest, Hotel Clark Budapest</li>
                   <li>• Ubicación: Frente al Danubio</li>
                   <li>• Incluye: Spa + vistas + servicios premium</li>
                 </ul>
