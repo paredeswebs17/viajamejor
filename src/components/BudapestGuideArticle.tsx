@@ -627,7 +627,7 @@ const BudapestGuideArticle: React.FC<BudapestGuideArticleProps> = ({ onBack }) =
         
         <div className="mb-6">
           <div className="bg-emerald-50 border border-emerald-200 rounded-lg p-6">
-            <h3 className="text-lg font-bold text-emerald-800 mb-4">ESTILO MOCHILERO - 75 euros/día</h3>
+            <h3 className="text-lg font-bold text-emerald-800 mb-4">ESTILO MOCHILERO - 70 euros/día</h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div>
                 <h4 className="font-semibold text-gray-900 mb-2">Alojamiento (50 euros/noche):</h4>
@@ -648,7 +648,7 @@ const BudapestGuideArticle: React.FC<BudapestGuideArticleProps> = ({ onBack }) =
             </div>
             <div className="bg-white rounded-lg p-4 mt-4">
               <p className="text-emerald-800 font-semibold text-center">
-                Total 4 días: aproximadamente 300 euros
+                Total 4 días: aproximadamente 250 euros
               </p>
             </div>
           </div>
@@ -685,10 +685,10 @@ const BudapestGuideArticle: React.FC<BudapestGuideArticleProps> = ({ onBack }) =
 
         <div className="mb-6">
           <div className="bg-purple-50 border border-purple-200 rounded-lg p-6">
-            <h3 className="text-lg font-bold text-purple-800 mb-4">ESTILO PREMIUM - 300 euros/día</h3>
+            <h3 className="text-lg font-bold text-purple-800 mb-4">ESTILO PREMIUM - 200 euros/día</h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div>
-                <h4 className="font-semibold text-gray-900 mb-2">Alojamiento (130 euros/noche):</h4>
+                <h4 className="font-semibold text-gray-900 mb-2">Alojamiento (150 euros/noche):</h4>
                 <ul className="text-sm text-gray-700 space-y-1">
                   <li>• Hoteles 4*/5*: Hotel Vision Budapest, Hotel Clark Budapest</li>
                   <li>• Ubicación: Frente al Danubio</li>
@@ -696,7 +696,7 @@ const BudapestGuideArticle: React.FC<BudapestGuideArticleProps> = ({ onBack }) =
                 </ul>
               </div>
               <div>
-                <h4 className="font-semibold text-gray-900 mb-2">Alimentación (70 euros/día):</h4>
+                <h4 className="font-semibold text-gray-900 mb-2">Alimentación (80 euros/día):</h4>
                 <ul className="text-sm text-gray-700 space-y-1">
                   <li>• Restaurantes top: Onyx, Costes</li>
                   <li>• Experiencias culinarias + maridajes</li>
@@ -706,7 +706,7 @@ const BudapestGuideArticle: React.FC<BudapestGuideArticleProps> = ({ onBack }) =
             </div>
             <div className="bg-white rounded-lg p-4 mt-4">
               <p className="text-purple-800 font-semibold text-center">
-                Total 4 días: aproximadamente 1.200 euros
+                Total 4 días: aproximadamente 800 euros
               </p>
             </div>
           </div>
