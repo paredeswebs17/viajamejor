@@ -1309,26 +1309,6 @@ Volver a guías
       </a>
     </div>
   </div>
-
-  <div className="mt-6 text-center">
-    <p className="text-gray-600 text-sm mb-4">¿Has usado esta guía? Comparte tu experiencia:</p>
-    <button
-      onClick={() => {
-        document.getElementById('contacto')?.scrollIntoView({ behavior: 'smooth' });
-        setTimeout(() => {
-          const messageField = document.querySelector('#message') as HTMLTextAreaElement;
-          if (messageField && messageField.value === '') {
-            messageField.value = '¡Hola! Quería compartir mi experiencia sobre la guía de Budapest:\n\n';
-            messageField.focus();
-            messageField.setSelectionRange(messageField.value.length, messageField.value.length);
-          }
-        }, 500);
-      }}
-      className="inline-flex items-center bg-gradient-to-r from-sky-500 to-emerald-500 hover:from-sky-600 hover:to-emerald-600 text-white font-semibold px-6 py-3 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300"
-    >
-      💬 Dejar comentario
-    </button>
-  </div>
   
   <div className="text-center text-gray-600 text-sm mt-8">
     <p className="mb-2">
