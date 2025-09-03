@@ -120,7 +120,7 @@ const BudapestGuideArticle: React.FC<BudapestGuideArticleProps> = ({ onBack }) =
               <div>
                 <h5 className="font-semibold text-gray-900 mb-2">Información esencial:</h5>
                 <ul className="text-sm text-gray-700 space-y-1">
-                  <li>• Inversión: 10.000 HUF (aproximadamente 27 €)</li>
+                  <li>• Inversión: 10.000 HUF (Aprox. 27 €)</li>
                   <li>• Duración: 90 minutos con audioguía</li>
                   <li>• Reserva: OBLIGATORIA con 24-48h anticipación</li>
                   <li>• Consejo: Llega 15 min antes para controles</li>
@@ -191,7 +191,7 @@ const BudapestGuideArticle: React.FC<BudapestGuideArticleProps> = ({ onBack }) =
               <div>
                 <h5 className="font-semibold text-gray-900 mb-2">Experiencia completa:</h5>
                 <ul className="text-sm text-gray-700 space-y-1">
-                  <li>• Entrada: 13.000 HUF (aproximadamente 33 €)</li>
+                  <li>• Entrada: 13.000 HUF (Aprox. 33 €)</li>
                   <li>• Tiempo: 75-90 minutos</li>
                   <li>• Arquitectura: Estilo morisco-bizantino único</li>
                 </ul>
@@ -270,8 +270,8 @@ const BudapestGuideArticle: React.FC<BudapestGuideArticleProps> = ({ onBack }) =
               <div>
                 <h5 className="font-semibold text-gray-900 mb-2">Opciones de visita:</h5>
                 <ul className="text-sm text-gray-700 space-y-1">
-                  <li>• Solo basílica: 600 HUF (aproximadamente 2 €)</li>
-                  <li>• Combo completo: 2.900 HUF (aproximadamente 8 €)</li>
+                  <li>• Solo basílica: 600 HUF (Aprox. 2 €)</li>
+                  <li>• Combo completo: 2.900 HUF (Aprox. 8 €)</li>
                   <li>• Recomendación: Combo completo al atardecer</li>
                 </ul>
               </div>
@@ -352,7 +352,7 @@ const BudapestGuideArticle: React.FC<BudapestGuideArticleProps> = ({ onBack }) =
               <div>
                 <h5 className="font-semibold text-gray-900 mb-2">Opciones de subida:</h5>
                 <ul className="text-sm text-gray-700 space-y-1">
-                  <li>• Funicular: 1.500 HUF (aproximadamente 4 €) ida/vuelta</li>
+                  <li>• Funicular: 1.500 HUF (Aprox. 4 €) ida/vuelta</li>
                   <li>• Caminata: Gratis + 15 min subida</li>
                   <li>• Recomendación: Sube en funicular, baja andando</li>
                 </ul>
@@ -361,8 +361,8 @@ const BudapestGuideArticle: React.FC<BudapestGuideArticleProps> = ({ onBack }) =
                 <h5 className="font-semibold text-gray-900 mb-2">Complejo del Castillo:</h5>
                 <ul className="text-sm text-gray-700 space-y-1">
                   <li>• Exterior gratis: Jardines + vistas</li>
-                  <li>• Galería Nacional: 3.200 HUF (aproximadamente 9 €)</li>
-                  <li>• Museo Historia: 2.800 HUF (aproximadamente 7 €)</li>
+                  <li>• Galería Nacional: 3.200 HUF (Aprox. 9 €)</li>
+                  <li>• Museo Historia: 2.800 HUF (Aprox. 7 €)</li>
                 </ul>
               </div>
             </div>
@@ -381,7 +381,7 @@ const BudapestGuideArticle: React.FC<BudapestGuideArticleProps> = ({ onBack }) =
                 <h5 className="font-semibold text-gray-900 mb-2">Niveles de acceso:</h5>
                 <ul className="text-sm text-gray-700 space-y-1">
                   <li>• Terrazas inferiores: GRATIS</li>
-                  <li>• Torres superiores: 1.000 HUF (aproximadamente 3 €)</li>
+                  <li>• Torres superiores: 1.000 HUF (Aprox. 3 €)</li>
                   <li>• Mejor momento: 10:30-11:30h</li>
                 </ul>
               </div>
@@ -409,7 +409,7 @@ const BudapestGuideArticle: React.FC<BudapestGuideArticleProps> = ({ onBack }) =
                 <h5 className="font-semibold text-gray-900 mb-2">Detalles del crucero:</h5>
                 <ul className="text-sm text-gray-700 space-y-1">
                   <li>• Duración: 70 minutos de pura magia</li>
-                  <li>• Precio: 4.000 HUF (aproximadamente 12 €)</li>
+                  <li>• Precio: 4.000 HUF (Aprox. 12 €)</li>
                   <li>• Incluye: Audio-guía español + bebida</li>
                 </ul>
               </div>
@@ -455,8 +455,8 @@ const BudapestGuideArticle: React.FC<BudapestGuideArticleProps> = ({ onBack }) =
               <div>
                 <h5 className="font-semibold text-gray-900 mb-2">Guía completa:</h5>
                 <ul className="text-sm text-gray-700 space-y-1">
-                  <li>• Días laborables: 5.900 HUF (aproximadamente 16 €) día completo</li>
-                  <li>• Fines de semana: 6.400 HUF (aproximadamente 17 €) día completo</li>
+                  <li>• Días laborables: 5.900 HUF (Aprox. 16 €) día completo</li>
+                  <li>• Fines de semana: 6.400 HUF (Aprox. 17 €) día completo</li>
                   <li>• Piscinas: 18 diferentes</li>
                   <li>• Temperaturas: 18°C a 38°C</li>
                   <li>• Tiempo ideal: 3-4 horas</li>
@@ -519,7 +519,7 @@ const BudapestGuideArticle: React.FC<BudapestGuideArticleProps> = ({ onBack }) =
                 <h5 className="font-semibold text-gray-900 mb-2">Castillo Vajdahunyad:</h5>
                 <ul className="text-sm text-gray-700 space-y-1">
                   <li>• Historia: Exposición Universal 1896</li>
-                  <li>• Precio: 2.000 HUF (aproximadamente 5 €) interior</li>
+                  <li>• Precio: 2.000 HUF (Aprox. 5 €) interior</li>
                   <li>• Foto obligada: Con Escultura del Anónimo</li>
                 </ul>
               </div>
@@ -611,8 +611,8 @@ const BudapestGuideArticle: React.FC<BudapestGuideArticleProps> = ({ onBack }) =
                 <h5 className="font-semibold text-gray-900 mb-2">Opciones de ascenso:</h5>
                 <ul className="text-sm text-gray-700 space-y-1">
                   <li>• Caminata: 35-40 min, gratis</li>
-                  <li>• Autobús 27: 530 HUF (aproximadamente 1.5 €)</li>
-                  <li>• Taxi: 2.500 HUF (aproximadamente 7 €)</li>
+                  <li>• Autobús 27: 530 HUF (Aprox. 1.5 €)</li>
+                  <li>• Taxi: 2.500 HUF (Aprox. 7 €)</li>
                 </ul>
               </div>
               <div>
@@ -654,7 +654,7 @@ const BudapestGuideArticle: React.FC<BudapestGuideArticleProps> = ({ onBack }) =
             </div>
             <div className="bg-white rounded-lg p-4 mt-4">
               <p className="text-emerald-800 font-semibold text-center">
-                Total 4 días: aproximadamente 240 €
+                Total 4 días: Aprox. 240 €
               </p>
             </div>
           </div>
@@ -683,7 +683,7 @@ const BudapestGuideArticle: React.FC<BudapestGuideArticleProps> = ({ onBack }) =
             </div>
             <div className="bg-white rounded-lg p-4 mt-4">
               <p className="text-sky-800 font-semibold text-center">
-                Total 4 días: aproximadamente 400 €
+                Total 4 días: Aprox. 400 €
               </p>
             </div>
           </div>
@@ -712,7 +712,7 @@ const BudapestGuideArticle: React.FC<BudapestGuideArticleProps> = ({ onBack }) =
             </div>
             <div className="bg-white rounded-lg p-4 mt-4">
               <p className="text-purple-800 font-semibold text-center">
-                Total 4 días: aproximadamente 800 €
+                Total 4 días: Aprox. 800 €
               </p>
             </div>
           </div>
@@ -836,7 +836,7 @@ const BudapestGuideArticle: React.FC<BudapestGuideArticleProps> = ({ onBack }) =
           </h3>
           <h4 className="font-semibold text-gray-900 mb-3">Seguro IATI Estándar</h4>
           <p className="text-gray-700 text-sm mb-4">
-            Cobertura médica: 200.000 € en Europa. Precio 4 días: 12-15 € aproximadamente. 
+            Cobertura médica: 200.000 € en Europa. Precio 4 días: 12-15 € Aprox.. 
             Última actualización: Septiembre 2025
           </p>
           <div className="space-y-2 text-xs text-gray-600 mb-6">
