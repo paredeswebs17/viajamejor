@@ -1344,5 +1344,3 @@ Volver a guías
 };
 
 export default BudapestGuideArticle;
-
-export default BudapestGuideArticle
