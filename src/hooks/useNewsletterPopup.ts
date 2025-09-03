@@ -28,7 +28,7 @@ export const useNewsletterPopup = (options: UseNewsletterPopupOptions = {}) => {
       return;
     }
 
-    let timeoutId: NodeJS.Timeout;
+    let timeoutId: number;
     let scrollListener: () => void;
     let mouseListener: (e: MouseEvent) => void;
 
