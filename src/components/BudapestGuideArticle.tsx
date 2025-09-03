@@ -137,9 +137,9 @@ const BudapestGuideArticle: React.FC<BudapestGuideArticleProps> = ({ onBack }) =
               </div>
             </div>
             <div className="bg-white rounded-lg p-3 border border-gray-200">
-              <a href="https://jegymester.hu/eng/Program/3/Hungarian-Parliament-Tour" target="_blank" rel="noopener noreferrer"
+              <a href="https://gyg.me/gMPSGtKr" target="_blank" rel="noopener noreferrer"
                  className="text-sky-600 hover:text-sky-800 underline text-sm font-medium">
-                Reservar entradas oficiales del Parlamento
+                Reservar entradas oficiales del Párlamento
               </a>
             </div>
           </div>
@@ -1156,7 +1156,7 @@ const BudapestGuideArticle: React.FC<BudapestGuideArticleProps> = ({ onBack }) =
                  className="block text-sky-600 hover:text-sky-800 underline">
                 Parlamento - Entradas
               </a>
-              <a href="https://szechenyibath.com/" target="_blank" rel="noopener noreferrer"
+              <a href="https://gyg.me/gMPSGtKr" target="_blank" rel="noopener noreferrer"
                  className="block text-sky-600 hover:text-sky-800 underline">
                 Balnearios Széchenyi
               </a>
