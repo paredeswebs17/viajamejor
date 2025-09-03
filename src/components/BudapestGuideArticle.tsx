@@ -172,9 +172,9 @@ const BudapestGuideArticle: React.FC<BudapestGuideArticleProps> = ({ onBack }) =
               </div>
             </div>
             <div className="bg-white rounded-lg p-3 border border-gray-200 mt-4">
-              <a href="https://gyg.me/gMPSGtKr" target="_blank" rel="noopener noreferrer"
+              <a href="https://gyg.me/RzYQ9OzH" target="_blank" rel="noopener noreferrer"
                  className="text-sky-600 hover:text-sky-800 underline text-sm font-medium">
-                Reservar entradas oficiales del Parlamento
+                Reservar tour para conocer la ciudad con guía
               </a>
             </div>
           </div>
