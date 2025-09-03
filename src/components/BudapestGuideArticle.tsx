@@ -1267,26 +1267,6 @@ const BudapestGuideArticle: React.FC<BudapestGuideArticleProps> = ({ onBack }) =
           </a>
         </div>
       </div>
-
-      <div className="bg-gray-50 rounded-2xl p-6 sm:p-8 mb-8">
-        <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">Comentarios de Viajeros</h2>
-        
-        <div className="space-y-4">
-          <div className="bg-white rounded-lg p-4 border border-gray-200">
-            <p className="text-gray-700 text-sm italic mb-2">
-              Seguimos la guía al pie de la letra y Budapest nos enamoró. Los tips de las tarjetas nos ahorraron 25 euros!
-            </p>
-            <p className="text-gray-600 text-xs">- María, Madrid</p>
-          </div>
-          
-          <div className="bg-white rounded-lg p-4 border border-gray-200">
-            <p className="text-gray-700 text-sm italic mb-2">
-              La información de los balnearios fue perfecta. Fuimos en enero con nieve y fue mágico.
-            </p>
-            <p className="text-gray-600 text-xs">- Carlos, Barcelona</p>
-          </div>
-        </div>
-        
         <div className="mt-6 text-center">
           <p className="text-gray-600 text-sm mb-4">¿Has usado esta guía? Comparte tu experiencia:</p>
           <button
