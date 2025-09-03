@@ -120,7 +120,7 @@ const BudapestGuideArticle: React.FC<BudapestGuideArticleProps> = ({ onBack }) =
               <div>
                 <h5 className="font-semibold text-gray-900 mb-2">Información esencial:</h5>
                 <ul className="text-sm text-gray-700 space-y-1">
-                  <li>• Inversión: 10.000 HUF (aproximadamente 27 euros)</li>
+                  <li>• Inversión: 10.000 HUF (aproximadamente 27 €)</li>
                   <li>• Duración: 90 minutos con audioguía</li>
                   <li>• Reserva: OBLIGATORIA con 24-48h anticipación</li>
                   <li>• Consejo: Llega 15 min antes para controles</li>
@@ -191,7 +191,7 @@ const BudapestGuideArticle: React.FC<BudapestGuideArticleProps> = ({ onBack }) =
               <div>
                 <h5 className="font-semibold text-gray-900 mb-2">Experiencia completa:</h5>
                 <ul className="text-sm text-gray-700 space-y-1">
-                  <li>• Entrada: 13.000 HUF (aproximadamente 33 euros)</li>
+                  <li>• Entrada: 13.000 HUF (aproximadamente 33 €)</li>
                   <li>• Tiempo: 75-90 minutos</li>
                   <li>• Arquitectura: Estilo morisco-bizantino único</li>
                 </ul>
@@ -228,7 +228,7 @@ const BudapestGuideArticle: React.FC<BudapestGuideArticleProps> = ({ onBack }) =
             <div className="space-y-3">
               <div className="bg-white rounded-lg p-3 border border-gray-200">
                 <h5 className="font-semibold text-gray-900">Frici Papa</h5>
-                <p className="text-sm text-gray-700 mb-1">Goulash tradicional de la abuela (8-12 euros)</p>
+                <p className="text-sm text-gray-700 mb-1">Goulash tradicional de la abuela (8-12 €)</p>
                 <a href="https://www.fricipapa.hu/" target="_blank" rel="noopener noreferrer" 
                    className="text-sky-600 hover:text-sky-800 underline text-xs">
                   Web oficial
@@ -237,7 +237,7 @@ const BudapestGuideArticle: React.FC<BudapestGuideArticleProps> = ({ onBack }) =
               </div>
               <div className="bg-white rounded-lg p-3 border border-gray-200">
                 <h5 className="font-semibold text-gray-900">Spinoza Café</h5>
-                <p className="text-sm text-gray-700 mb-1">Ambiente bohemio, menú completo 10-15 euros</p>
+                <p className="text-sm text-gray-700 mb-1">Ambiente bohemio, menú completo 10-15 €</p>
                 <a href="https://spinoza-szinhaz.hu/en" target="_blank" rel="noopener noreferrer"
                    className="text-sky-600 hover:text-sky-800 underline text-xs">
                   Reservas y menú
@@ -246,7 +246,7 @@ const BudapestGuideArticle: React.FC<BudapestGuideArticleProps> = ({ onBack }) =
               </div>
               <div className="bg-white rounded-lg p-3 border border-gray-200">
                 <h5 className="font-semibold text-gray-900">Mazel Tov</h5>
-                <p className="text-sm text-gray-700 mb-1">Mediterráneo en patio histórico (12-18 euros)</p>
+                <p className="text-sm text-gray-700 mb-1">Mediterráneo en patio histórico (12-18 €)</p>
                 <a href="https://mazeltov.hu/en" target="_blank" rel="noopener noreferrer"
                    className="text-sky-600 hover:text-sky-800 underline text-xs">
                   Web oficial y reservas
@@ -270,8 +270,8 @@ const BudapestGuideArticle: React.FC<BudapestGuideArticleProps> = ({ onBack }) =
               <div>
                 <h5 className="font-semibold text-gray-900 mb-2">Opciones de visita:</h5>
                 <ul className="text-sm text-gray-700 space-y-1">
-                  <li>• Solo basílica: 600 HUF (aproximadamente 2 euros)</li>
-                  <li>• Combo completo: 2.900 HUF (aproximadamente 8 euros)</li>
+                  <li>• Solo basílica: 600 HUF (aproximadamente 2 €)</li>
+                  <li>• Combo completo: 2.900 HUF (aproximadamente 8 €)</li>
                   <li>• Recomendación: Combo completo al atardecer</li>
                 </ul>
               </div>
@@ -311,7 +311,7 @@ const BudapestGuideArticle: React.FC<BudapestGuideArticleProps> = ({ onBack }) =
                 <ul className="text-sm text-gray-700 space-y-1">
                   <li>• Concepto: Edificios en ruinas convertidos en bares</li>
                   <li>• Entrada: Gratuita</li>
-                  <li>• Bebidas: Cervezas 3-5 euros, cócteles 6-8 euros</li>
+                  <li>• Bebidas: Cervezas 3-5 €, cócteles 6-8 €</li>
                 </ul>
               </div>
               <div>
@@ -352,7 +352,7 @@ const BudapestGuideArticle: React.FC<BudapestGuideArticleProps> = ({ onBack }) =
               <div>
                 <h5 className="font-semibold text-gray-900 mb-2">Opciones de subida:</h5>
                 <ul className="text-sm text-gray-700 space-y-1">
-                  <li>• Funicular: 1.500 HUF (aproximadamente 4 euros) ida/vuelta</li>
+                  <li>• Funicular: 1.500 HUF (aproximadamente 4 €) ida/vuelta</li>
                   <li>• Caminata: Gratis + 15 min subida</li>
                   <li>• Recomendación: Sube en funicular, baja andando</li>
                 </ul>
@@ -361,8 +361,8 @@ const BudapestGuideArticle: React.FC<BudapestGuideArticleProps> = ({ onBack }) =
                 <h5 className="font-semibold text-gray-900 mb-2">Complejo del Castillo:</h5>
                 <ul className="text-sm text-gray-700 space-y-1">
                   <li>• Exterior gratis: Jardines + vistas</li>
-                  <li>• Galería Nacional: 3.200 HUF (aproximadamente 9 euros)</li>
-                  <li>• Museo Historia: 2.800 HUF (aproximadamente 7 euros)</li>
+                  <li>• Galería Nacional: 3.200 HUF (aproximadamente 9 €)</li>
+                  <li>• Museo Historia: 2.800 HUF (aproximadamente 7 €)</li>
                 </ul>
               </div>
             </div>
@@ -381,7 +381,7 @@ const BudapestGuideArticle: React.FC<BudapestGuideArticleProps> = ({ onBack }) =
                 <h5 className="font-semibold text-gray-900 mb-2">Niveles de acceso:</h5>
                 <ul className="text-sm text-gray-700 space-y-1">
                   <li>• Terrazas inferiores: GRATIS</li>
-                  <li>• Torres superiores: 1.000 HUF (aproximadamente 3 euros)</li>
+                  <li>• Torres superiores: 1.000 HUF (aproximadamente 3 €)</li>
                   <li>• Mejor momento: 10:30-11:30h</li>
                 </ul>
               </div>
@@ -409,7 +409,7 @@ const BudapestGuideArticle: React.FC<BudapestGuideArticleProps> = ({ onBack }) =
                 <h5 className="font-semibold text-gray-900 mb-2">Detalles del crucero:</h5>
                 <ul className="text-sm text-gray-700 space-y-1">
                   <li>• Duración: 70 minutos de pura magia</li>
-                  <li>• Precio: 4.000 HUF (aproximadamente 12 euros)</li>
+                  <li>• Precio: 4.000 HUF (aproximadamente 12 €)</li>
                   <li>• Incluye: Audio-guía español + bebida</li>
                 </ul>
               </div>
@@ -455,8 +455,8 @@ const BudapestGuideArticle: React.FC<BudapestGuideArticleProps> = ({ onBack }) =
               <div>
                 <h5 className="font-semibold text-gray-900 mb-2">Guía completa:</h5>
                 <ul className="text-sm text-gray-700 space-y-1">
-                  <li>• Días laborables: 5.900 HUF (aproximadamente 16 euros) día completo</li>
-                  <li>• Fines de semana: 6.400 HUF (aproximadamente 17 euros) día completo</li>
+                  <li>• Días laborables: 5.900 HUF (aproximadamente 16 €) día completo</li>
+                  <li>• Fines de semana: 6.400 HUF (aproximadamente 17 €) día completo</li>
                   <li>• Piscinas: 18 diferentes</li>
                   <li>• Temperaturas: 18°C a 38°C</li>
                   <li>• Tiempo ideal: 3-4 horas</li>
@@ -519,7 +519,7 @@ const BudapestGuideArticle: React.FC<BudapestGuideArticleProps> = ({ onBack }) =
                 <h5 className="font-semibold text-gray-900 mb-2">Castillo Vajdahunyad:</h5>
                 <ul className="text-sm text-gray-700 space-y-1">
                   <li>• Historia: Exposición Universal 1896</li>
-                  <li>• Precio: 2.000 HUF (aproximadamente 5 euros) interior</li>
+                  <li>• Precio: 2.000 HUF (aproximadamente 5 €) interior</li>
                   <li>• Foto obligada: Con Escultura del Anónimo</li>
                 </ul>
               </div>
@@ -539,7 +539,7 @@ const BudapestGuideArticle: React.FC<BudapestGuideArticleProps> = ({ onBack }) =
                 <h5 className="font-semibold text-gray-900 mb-2">La experiencia completa:</h5>
                 <ul className="text-sm text-gray-700 space-y-1">
                   <li>• Ambiente: Techos dorados + espejos</li>
-                  <li>• Precios: 8-15 euros café + pastel</li>
+                  <li>• Precios: 8-15 € café + pastel</li>
                   <li>• Historia: Inaugurado 1894</li>
                 </ul>
               </div>
@@ -580,18 +580,18 @@ const BudapestGuideArticle: React.FC<BudapestGuideArticleProps> = ({ onBack }) =
               <div>
                 <h5 className="font-semibold text-gray-900 mb-2">Planta baja - Productos locales:</h5>
                 <ul className="text-sm text-gray-700 space-y-1">
-                  <li>• Páprika húngara: Desde 2 euros</li>
+                  <li>• Páprika húngara: Desde 2 €</li>
                   <li>• Salami de Szeged: Calidad mundial</li>
-                  <li>• Vinos Tokaj: Desde 12 euros</li>
+                  <li>• Vinos Tokaj: Desde 12 €</li>
                   <li>• Foie gras húngaro: Especialidad nacional</li>
                 </ul>
               </div>
               <div>
                 <h5 className="font-semibold text-gray-900 mb-2">Primera planta - Gastronomía:</h5>
                 <ul className="text-sm text-gray-700 space-y-1">
-                  <li>• Lángos: Pan frito tradicional (3-4 euros)</li>
-                  <li>• Goulash auténtico: Puestos familiares (6-8 euros)</li>
-                  <li>• Chimney cake: Kürtőskalács (2-3 euros)</li>
+                  <li>• Lángos: Pan frito tradicional (3-4 €)</li>
+                  <li>• Goulash auténtico: Puestos familiares (6-8 €)</li>
+                  <li>• Chimney cake: Kürtőskalács (2-3 €)</li>
                   <li>• Tiempo: 1-2 horas explorando</li>
                 </ul>
               </div>
@@ -611,8 +611,8 @@ const BudapestGuideArticle: React.FC<BudapestGuideArticleProps> = ({ onBack }) =
                 <h5 className="font-semibold text-gray-900 mb-2">Opciones de ascenso:</h5>
                 <ul className="text-sm text-gray-700 space-y-1">
                   <li>• Caminata: 35-40 min, gratis</li>
-                  <li>• Autobús 27: 530 HUF (aproximadamente 1.5 euros)</li>
-                  <li>• Taxi: 2.500 HUF (aproximadamente 7 euros)</li>
+                  <li>• Autobús 27: 530 HUF (aproximadamente 1.5 €)</li>
+                  <li>• Taxi: 2.500 HUF (aproximadamente 7 €)</li>
                 </ul>
               </div>
               <div>
@@ -633,10 +633,10 @@ const BudapestGuideArticle: React.FC<BudapestGuideArticleProps> = ({ onBack }) =
         
         <div className="mb-6">
           <div className="bg-emerald-50 border border-emerald-200 rounded-lg p-6">
-            <h3 className="text-lg font-bold text-emerald-800 mb-4">ESTILO MOCHILERO - 70 euros/día</h3>
+            <h3 className="text-lg font-bold text-emerald-800 mb-4">ESTILO MOCHILERO - 70 €/día</h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div>
-                <h4 className="font-semibold text-gray-900 mb-2">Alojamiento (50 euros/noche):</h4>
+                <h4 className="font-semibold text-gray-900 mb-2">Alojamiento (50 €/noche):</h4>
                 <ul className="text-sm text-gray-700 space-y-1">
                   <li>• Hostales céntricos: Budapest Citi Guesthouse</li>
                   <li>• Ubicación: Distrito V o VII</li>
@@ -644,17 +644,17 @@ const BudapestGuideArticle: React.FC<BudapestGuideArticleProps> = ({ onBack }) =
                 </ul>
               </div>
               <div>
-                <h4 className="font-semibold text-gray-900 mb-2">Alimentación (20 euros/día):</h4>
+                <h4 className="font-semibold text-gray-900 mb-2">Alimentación (20 €/día):</h4>
                 <ul className="text-sm text-gray-700 space-y-1">
-                  <li>• Desayuno: Mercados + panadería (3-5 euros)</li>
-                  <li>• Almuerzo: Puestos callejeros (5-8 euros)</li>
-                  <li>• Cena: Supermercado + cocina (8-12 euros)</li>
+                  <li>• Desayuno: Mercados + panadería (3-5 €)</li>
+                  <li>• Almuerzo: Puestos callejeros (5-8 €)</li>
+                  <li>• Cena: Supermercado + cocina (8-12 €)</li>
                 </ul>
               </div>
             </div>
             <div className="bg-white rounded-lg p-4 mt-4">
               <p className="text-emerald-800 font-semibold text-center">
-                Total 4 días: aproximadamente 240 euros
+                Total 4 días: aproximadamente 240 €
               </p>
             </div>
           </div>
@@ -662,10 +662,10 @@ const BudapestGuideArticle: React.FC<BudapestGuideArticleProps> = ({ onBack }) =
 
         <div className="mb-6">
           <div className="bg-sky-50 border border-sky-200 rounded-lg p-6">
-            <h3 className="text-lg font-bold text-sky-800 mb-4">ESTILO CONFORT - 100 euros/día</h3>
+            <h3 className="text-lg font-bold text-sky-800 mb-4">ESTILO CONFORT - 100 €/día</h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div>
-                <h4 className="font-semibold text-gray-900 mb-2">Alojamiento (70 euros/noche):</h4>
+                <h4 className="font-semibold text-gray-900 mb-2">Alojamiento (70 €/noche):</h4>
                 <ul className="text-sm text-gray-700 space-y-1">
                   <li>• Hoteles 3*: T62 Hotel, THREE Corners Hotel Anna</li>
                   <li>• Ubicación: Centro absoluto</li>
@@ -673,17 +673,17 @@ const BudapestGuideArticle: React.FC<BudapestGuideArticleProps> = ({ onBack }) =
                 </ul>
               </div>
               <div>
-                <h4 className="font-semibold text-gray-900 mb-2">Alimentación (30 euros/día):</h4>
+                <h4 className="font-semibold text-gray-900 mb-2">Alimentación (30 €/día):</h4>
                 <ul className="text-sm text-gray-700 space-y-1">
                   <li>• Desayuno: Hotel incluido</li>
-                  <li>• Almuerzo: Restaurantes locales (12-18 euros)</li>
-                  <li>• Cena: Experiencias gastronómicas (15-25 euros)</li>
+                  <li>• Almuerzo: Restaurantes locales (12-18 €)</li>
+                  <li>• Cena: Experiencias gastronómicas (15-25 €)</li>
                 </ul>
               </div>
             </div>
             <div className="bg-white rounded-lg p-4 mt-4">
               <p className="text-sky-800 font-semibold text-center">
-                Total 4 días: aproximadamente 400 euros
+                Total 4 días: aproximadamente 400 €
               </p>
             </div>
           </div>
@@ -691,10 +691,10 @@ const BudapestGuideArticle: React.FC<BudapestGuideArticleProps> = ({ onBack }) =
 
         <div className="mb-6">
           <div className="bg-purple-50 border border-purple-200 rounded-lg p-6">
-            <h3 className="text-lg font-bold text-purple-800 mb-4">ESTILO PREMIUM - 200 euros/día</h3>
+            <h3 className="text-lg font-bold text-purple-800 mb-4">ESTILO PREMIUM - 200 €/día</h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div>
-                <h4 className="font-semibold text-gray-900 mb-2">Alojamiento (130 euros/noche):</h4>
+                <h4 className="font-semibold text-gray-900 mb-2">Alojamiento (130 €/noche):</h4>
                 <ul className="text-sm text-gray-700 space-y-1">
                   <li>• Hoteles 4*/5*: Hotel Vision Budapest, Hotel Clark Budapest</li>
                   <li>• Ubicación: Frente al Danubio</li>
@@ -702,7 +702,7 @@ const BudapestGuideArticle: React.FC<BudapestGuideArticleProps> = ({ onBack }) =
                 </ul>
               </div>
               <div>
-                <h4 className="font-semibold text-gray-900 mb-2">Alimentación (70 euros/día):</h4>
+                <h4 className="font-semibold text-gray-900 mb-2">Alimentación (70 €/día):</h4>
                 <ul className="text-sm text-gray-700 space-y-1">
                   <li>• Restaurantes top: Onyx, Costes</li>
                   <li>• Experiencias culinarias + maridajes</li>
@@ -712,7 +712,7 @@ const BudapestGuideArticle: React.FC<BudapestGuideArticleProps> = ({ onBack }) =
             </div>
             <div className="bg-white rounded-lg p-4 mt-4">
               <p className="text-purple-800 font-semibold text-center">
-                Total 4 días: aproximadamente 800 euros
+                Total 4 días: aproximadamente 800 €
               </p>
             </div>
           </div>
@@ -772,7 +772,7 @@ const BudapestGuideArticle: React.FC<BudapestGuideArticleProps> = ({ onBack }) =
                 Revolut - Tarjeta sin comisiones
               </h4>
               <p className="text-gray-700 text-sm mb-4">
-                Perfecto para sacar efectivo sin comisiones. Ahorro real: 15-25 euros en cambio de divisa. Cambio al tipo interbancario real.
+                Perfecto para sacar efectivo sin comisiones. Ahorro real: 15-25 € en cambio de divisa. Cambio al tipo interbancario real.
               </p>
               <div className="space-y-2 text-xs text-gray-600 mb-6">
                 <div className="flex items-center justify-center">
@@ -781,7 +781,7 @@ const BudapestGuideArticle: React.FC<BudapestGuideArticleProps> = ({ onBack }) =
                 </div>
                 <div className="flex items-center justify-center">
                   <CheckCircle className="h-3 w-3 text-emerald-500 mr-2" />
-                  <span>Retiros gratis hasta 200 euros/mes</span>
+                  <span>Retiros gratis hasta 200 €/mes</span>
                 </div>
                 <div className="flex items-center justify-center">
                   <CheckCircle className="h-3 w-3 text-emerald-500 mr-2" />
@@ -810,7 +810,7 @@ const BudapestGuideArticle: React.FC<BudapestGuideArticleProps> = ({ onBack }) =
             <h3 className="font-semibold text-red-800 mb-2">Error #1: Gestión de dinero</h3>
             <p className="text-red-700 text-sm mb-2">Problema: Usar tarjetas con comisiones altas</p>
             <p className="text-red-700 text-sm mb-2">Solución: Revolut gratis</p>
-            <p className="text-red-700 text-sm font-semibold">Ahorro: 20-30 euros en 4 días</p>
+            <p className="text-red-700 text-sm font-semibold">Ahorro: 20-30 € en 4 días</p>
           </div>
 
           <div className="bg-orange-50 border border-orange-200 rounded-lg p-4">
@@ -836,13 +836,13 @@ const BudapestGuideArticle: React.FC<BudapestGuideArticleProps> = ({ onBack }) =
           </h3>
           <h4 className="font-semibold text-gray-900 mb-3">Seguro IATI Estándar</h4>
           <p className="text-gray-700 text-sm mb-4">
-            Cobertura médica: 200.000 euros en Europa. Precio 4 días: 12-15 euros aproximadamente. 
+            Cobertura médica: 200.000 € en Europa. Precio 4 días: 12-15 € aproximadamente. 
             Última actualización: Septiembre 2025
           </p>
           <div className="space-y-2 text-xs text-gray-600 mb-6">
             <div className="flex items-center justify-center">
               <CheckCircle className="h-3 w-3 text-emerald-500 mr-2" />
-              <span>Cobertura médica hasta 200.000 euros</span>
+              <span>Cobertura médica hasta 200.000 €</span>
             </div>
             <div className="flex items-center justify-center">
               <CheckCircle className="h-3 w-3 text-emerald-500 mr-2" />
@@ -921,9 +921,9 @@ const BudapestGuideArticle: React.FC<BudapestGuideArticleProps> = ({ onBack }) =
         
         <div className="space-y-4">
           <div className="bg-gray-50 rounded-lg p-4">
-            <h3 className="font-semibold text-gray-900 mb-2">¿Es mejor pagar en euros o florines?</h3>
+            <h3 className="font-semibold text-gray-900 mb-2">¿Es mejor pagar en € o florines?</h3>
             <p className="text-gray-700 text-sm">
-              Siempre florines. Cuando te ofrezcan pagar en euros, di NO - te cobrarán 8-12% más.
+              Siempre florines. Cuando te ofrezcan pagar en €, di NO - te cobrarán 8-12% más.
             </p>
           </div>
 
@@ -939,7 +939,7 @@ const BudapestGuideArticle: React.FC<BudapestGuideArticleProps> = ({ onBack }) =
           <div className="bg-gray-50 rounded-lg p-4">
             <h3 className="font-semibold text-gray-900 mb-2">¿Merece la pena Budapest Card?</h3>
             <p className="text-gray-700 text-sm">
-              Para 4 días SÍ. Precio: 85 euros para 4 días. Ahorro: 15-25 euros si visitas 4+ atracciones. 
+              Para 4 días SÍ. Precio: 85 € para 4 días. Ahorro: 15-25 € si visitas 4+ atracciones. 
               Incluye transporte ilimitado + entradas gratuitas.
             </p>
           </div>
@@ -954,8 +954,8 @@ const BudapestGuideArticle: React.FC<BudapestGuideArticleProps> = ({ onBack }) =
           <div className="bg-gray-50 rounded-lg p-4">
             <h3 className="font-semibold text-gray-900 mb-2">¿Cuánto cuestan las bebidas?</h3>
             <p className="text-gray-700 text-sm">
-              Cerveza local: 2-4 euros en bares normales. Ruin bars: 3-6 euros. 
-              Cócteles: 6-10 euros normales, 12-18 euros en terrazas premium.
+              Cerveza local: 2-4 € en bares normales. Ruin bars: 3-6 €. 
+              Cócteles: 6-10 € normales, 12-18 € en terrazas premium.
             </p>
           </div>
         </div>
@@ -971,7 +971,7 @@ const BudapestGuideArticle: React.FC<BudapestGuideArticleProps> = ({ onBack }) =
                 Vuelos a Budapest
               </h3>
               <p className="text-gray-700 text-sm mb-4">
-                Encuentra los mejores precios para volar a Budapest desde España. Vuelos desde 80 euros ida y vuelta.
+                Encuentra los mejores precios para volar a Budapest desde España. Vuelos desde 80 € ida y vuelta.
               </p>
               <div className="space-y-2 text-xs text-gray-600 mb-6">
                 <div className="flex items-center justify-center">
@@ -1018,7 +1018,7 @@ const BudapestGuideArticle: React.FC<BudapestGuideArticleProps> = ({ onBack }) =
                 </div>
                 <div className="flex items-center justify-center">
                   <CheckCircle className="h-3 w-3 text-emerald-500 mr-2" />
-                  <span>Desde 25 euros/noche</span>
+                  <span>Desde 25 €/noche</span>
                 </div>
               </div>
               <a
@@ -1043,7 +1043,7 @@ const BudapestGuideArticle: React.FC<BudapestGuideArticleProps> = ({ onBack }) =
             <div className="flex-1">
               <h4 className="font-semibold text-gray-900 text-sm mb-1">Mochila Cabina Ryanair</h4>
               <p className="text-xs text-gray-600 mb-1">40x25x20cm exactos</p>
-              <span className="text-sm font-semibold text-emerald-600">Desde 35 euros</span>
+              <span className="text-sm font-semibold text-emerald-600">Desde 35 €</span>
             </div>
             <a
               href="https://www.amazon.es/Hayayu-40x20x25-Mochilas-Senderismo-Impermeable/dp/B0CBVFL64Z?tag=viajamejor-21"
@@ -1060,7 +1060,7 @@ const BudapestGuideArticle: React.FC<BudapestGuideArticleProps> = ({ onBack }) =
             <div className="flex-1">
               <h4 className="font-semibold text-gray-900 text-sm mb-1">Power Bank 10000mAh</h4>
               <p className="text-xs text-gray-600 mb-1">Fotos todo el día</p>
-              <span className="text-sm font-semibold text-emerald-600">Desde 20 euros</span>
+              <span className="text-sm font-semibold text-emerald-600">Desde 20 €</span>
             </div>
             <a
               href="https://www.amazon.es/INIU-10000mAh-Cargador-Portatil-Tel%C3%A9fono/dp/B08VD632WJ?tag=viajamejor-21"
@@ -1077,7 +1077,7 @@ const BudapestGuideArticle: React.FC<BudapestGuideArticleProps> = ({ onBack }) =
             <div className="flex-1">
               <h4 className="font-semibold text-gray-900 text-sm mb-1">Adaptador Universal</h4>
               <p className="text-xs text-gray-600 mb-1">Enchufe tipo C/F</p>
-              <span className="text-sm font-semibold text-emerald-600">Desde 15 euros</span>
+              <span className="text-sm font-semibold text-emerald-600">Desde 15 €</span>
             </div>
             <a
               href="https://www.amazon.es/TESSAN-Adaptador-Universal-Internacional-Americano/dp/B0B2DRC76L?tag=viajamejor-21"
@@ -1102,7 +1102,7 @@ const BudapestGuideArticle: React.FC<BudapestGuideArticleProps> = ({ onBack }) =
               <h4 className="font-semibold text-gray-900 mb-2">Goulash (Gulyás)</h4>
               <ul className="text-sm text-gray-700 space-y-1">
                 <li>• Sopa nacional con carne + páprika</li>
-                <li>• Precio: 6-12 euros según restaurante</li>
+                <li>• Precio: 6-12 € según restaurante</li>
                 <li>• Mejor en: Frici Papa, Menza</li>
               </ul>
             </div>
@@ -1111,7 +1111,7 @@ const BudapestGuideArticle: React.FC<BudapestGuideArticleProps> = ({ onBack }) =
               <h4 className="font-semibold text-gray-900 mb-2">Lángos</h4>
               <ul className="text-sm text-gray-700 space-y-1">
                 <li>• Pan frito con crema agria + queso</li>
-                <li>• Precio: 3-5 euros en puestos callejeros</li>
+                <li>• Precio: 3-5 € en puestos callejeros</li>
                 <li>• Mejor en: Mercado Central planta superior</li>
               </ul>
             </div>
@@ -1120,7 +1120,7 @@ const BudapestGuideArticle: React.FC<BudapestGuideArticleProps> = ({ onBack }) =
               <h4 className="font-semibold text-gray-900 mb-2">Schnitzel húngaro</h4>
               <ul className="text-sm text-gray-700 space-y-1">
                 <li>• Versión local más especiada</li>
-                <li>• Precio: 8-15 euros</li>
+                <li>• Precio: 8-15 €</li>
                 <li>• Acompañamiento: Patatas + ensalada</li>
               </ul>
             </div>
@@ -1129,7 +1129,7 @@ const BudapestGuideArticle: React.FC<BudapestGuideArticleProps> = ({ onBack }) =
               <h4 className="font-semibold text-gray-900 mb-2">Kürtőskalács (Chimney Cake)</h4>
               <ul className="text-sm text-gray-700 space-y-1">
                 <li>• Postre cilíndrico dulce con canela</li>
-                <li>• Precio: 2-4 euros</li>
+                <li>• Precio: 2-4 €</li>
                 <li>• Dónde: Puestos callejeros zona turística</li>
               </ul>
             </div>
@@ -1144,7 +1144,7 @@ const BudapestGuideArticle: React.FC<BudapestGuideArticleProps> = ({ onBack }) =
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
                 <div className="bg-gray-50 rounded-lg p-3">
                   <h5 className="font-semibold text-gray-900 text-sm">Frici Papa</h5>
-                  <p className="text-xs text-gray-600 mb-1">Comida de abuela (8-12 euros)</p>
+                  <p className="text-xs text-gray-600 mb-1">Comida de abuela (8-12 €)</p>
                   <a href="https://www.fricipapa.hu/" target="_blank" rel="noopener noreferrer"
                      className="text-sky-600 hover:text-sky-800 underline text-xs">
                     Web oficial
@@ -1152,7 +1152,7 @@ const BudapestGuideArticle: React.FC<BudapestGuideArticleProps> = ({ onBack }) =
                 </div>
                 <div className="bg-gray-50 rounded-lg p-3">
                   <h5 className="font-semibold text-gray-900 text-sm">Menza</h5>
-                  <p className="text-xs text-gray-600 mb-1">Húngara moderna (12-18 euros)</p>
+                  <p className="text-xs text-gray-600 mb-1">Húngara moderna (12-18 €)</p>
                   <a href="https://www.menzaetterem.hu/en/" target="_blank" rel="noopener noreferrer"
                      className="text-sky-600 hover:text-sky-800 underline text-xs">
                     Web oficial
@@ -1160,7 +1160,7 @@ const BudapestGuideArticle: React.FC<BudapestGuideArticleProps> = ({ onBack }) =
                 </div>
                 <div className="bg-gray-50 rounded-lg p-3">
                   <h5 className="font-semibold text-gray-900 text-sm">Gundel</h5>
-                  <p className="text-xs text-gray-600">Histórico de lujo (25-40 euros)</p>
+                  <p className="text-xs text-gray-600">Histórico de lujo (25-40 €)</p>
                   <a href="https://gundel.hu/en/" target="_blank" rel="noopener noreferrer"
                      className="text-sky-600 hover:text-sky-800 underline text-xs">
                     Web oficial
@@ -1239,8 +1239,8 @@ const BudapestGuideArticle: React.FC<BudapestGuideArticleProps> = ({ onBack }) =
           <div className="bg-white rounded-lg p-4 border border-gray-200">
             <h3 className="font-semibold text-gray-900 mb-2">Para Aventureros:</h3>
             <ul className="text-sm text-gray-700 space-y-1">
-              <li>• Cuevas del Castillo: Laberinto (8 euros)</li>
-              <li>• Isla Margarita en bici: 5 euros/día</li>
+              <li>• Cuevas del Castillo: Laberinto (8 €)</li>
+              <li>• Isla Margarita en bici: 5 €/día</li>
               <li>• Mercadillo Ecseri: Sábados</li>
             </ul>
           </div>
@@ -1248,7 +1248,7 @@ const BudapestGuideArticle: React.FC<BudapestGuideArticleProps> = ({ onBack }) =
           <div className="bg-white rounded-lg p-4 border border-gray-200">
             <h3 className="font-semibold text-gray-900 mb-2">Para Románticos:</h3>
             <ul className="text-sm text-gray-700 space-y-1">
-              <li>• Cena en Danubio: Cruceros (35-50 euros)</li>
+              <li>• Cena en Danubio: Cruceros (35-50 €)</li>
               <li>• Atardecer Bastión: Sin multitudes 19:00h</li>
               <li>• Paseo nocturno puentes iluminados</li>
             </ul>
@@ -1257,9 +1257,9 @@ const BudapestGuideArticle: React.FC<BudapestGuideArticleProps> = ({ onBack }) =
           <div className="bg-white rounded-lg p-4 border border-gray-200">
             <h3 className="font-semibold text-gray-900 mb-2">Para Gourmets:</h3>
             <ul className="text-sm text-gray-700 space-y-1">
-              <li>• Tour gastronómico: 6 especialidades (45 euros)</li>
+              <li>• Tour gastronómico: 6 especialidades (45 €)</li>
               <li>• Mercado productores: Sábados Hold utca</li>
-              <li>• Clases cocina húngara: Goulash (35 euros)</li>
+              <li>• Clases cocina húngara: Goulash (35 €)</li>
             </ul>
           </div>
         </div>
