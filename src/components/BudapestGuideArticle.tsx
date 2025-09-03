@@ -298,7 +298,6 @@ Volver a guías
             <ExternalLink className="h-3 w-3 ml-2" />
           </a>
       </div>
-```
 
 <div className="bg-orange-100 border border-orange-300 rounded-lg p-4 mt-4">
               <p className="text-orange-800 text-sm">
@@ -308,7 +307,6 @@ Volver a guías
           </div>
         </div>
 
-```
     <div className="mb-8">
       <h3 className="text-lg font-bold text-gray-900 mb-4">Vida Nocturna Alternativa (21:00h)</h3>
       <div className="bg-red-50 border border-red-200 rounded-lg p-6">
