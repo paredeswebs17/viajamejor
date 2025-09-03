@@ -1289,29 +1289,7 @@ const BudapestGuideArticle: React.FC<BudapestGuideArticleProps> = ({ onBack }) =
           </a>
         </div>
       </div>
-        <div className="mt-6 text-center">
-          <p className="text-gray-600 text-sm mb-4">¿Has usado esta guía? Comparte tu experiencia:</p>
-          <button
-  onClick={() => {
-    // Navegar al formulario de contacto
-    document.getElementById('contacto')?.scrollIntoView({ behavior: 'smooth' });
-    
-    // Pre-completar el campo de mensaje después de un pequeño delay
-    setTimeout(() => {
-      const messageField = document.querySelector('#message') as HTMLTextAreaElement;
-      if (messageField && messageField.value === '') {
-        messageField.value = 'Hola! Quería compartir mi experiencia sobre la guía de Budapest:\n\n';
-        messageField.focus();
-        // Posicionar el cursor al final
-        messageField.setSelectionRange(messageField.value.length, messageField.value.length);
-      }
-    }, 500);
-  }}
-  className="bg-sky-500 hover:bg-sky-600 text-white font-medium py-2 px-6 rounded-lg transition-colors"
->
-  Dejar comentario
-</button>
-        </div>
+      
       <div className="text-center text-gray-600 text-sm mt-8">
         <p className="mb-2">
           Guía actualizada en Septiembre 2025 | Información verificada y precios actuales
