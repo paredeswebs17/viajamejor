@@ -201,7 +201,7 @@ const BudapestGuideArticle: React.FC<BudapestGuideArticleProps> = ({ onBack }) =
               </div>
             </div>
             <div className="bg-white rounded-lg p-3 border border-gray-200">
-              <a href="https://synagogue.hu/" target="_blank" rel="noopener noreferrer"
+              <a href="https://gyg.me/vbht7C3s" target="_blank" rel="noopener noreferrer"
                  className="text-sky-600 hover:text-sky-800 underline text-sm font-medium">
                 Entradas oficiales Gran Sinagoga
               </a>
