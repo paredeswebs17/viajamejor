@@ -149,7 +149,7 @@ Volver a guías
     <div className="mb-8">
       <h3 className="text-lg font-bold text-gray-900 mb-4">Inmersión Local (11:00h)</h3>
       <div className="bg-emerald-50 border border-emerald-200 rounded-lg p-6">
-        <h4 className="text-lg font-bold text-gray-900 mb-3">Recorrido Histórico Gratuito</h4>
+        <h4 className="text-lg font-bold text-gray-900 mb-3">Recorrido Histórico</h4>
         <p className="text-gray-700 mb-4">
           Conecta con la auténtica Budapest a través de guías locales apasionados.
         </p>
@@ -157,8 +157,8 @@ Volver a guías
           <div>
             <h5 className="font-semibold text-gray-900 mb-2">Detalles del tour:</h5>
             <ul className="text-sm text-gray-700 space-y-1">
-              <li>• Costo: Completamente gratis (propina opcional)</li>
-              <li>• Duración: 2h 30min</li>
+              <li>• Costo: Según recorrido</li>
+              <li>• Duración: 2h 30min aprox.</li>
               <li>• Inicio: Plaza Vörösmarty (punto céntrico)</li>
             </ul>
           </div>
@@ -175,7 +175,7 @@ Volver a guías
         <div className="bg-white rounded-lg p-3 border border-gray-200 mt-4">
           <a href="https://gyg.me/RzYQ9OzH" target="_blank" rel="noopener noreferrer"
              className="inline-flex items-center bg-gradient-to-r from-emerald-500 to-green-500 hover:from-emerald-600 hover:to-green-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm">
-            🚶‍♂️ Reservar tour gratuito con guía local
+            🚶‍♂️ Reservar tour con guía local
             <ExternalLink className="h-3 w-3 ml-2" />
           </a>
         </div>
