@@ -418,9 +418,9 @@ const BudapestGuideArticle: React.FC<BudapestGuideArticleProps> = ({ onBack }) =
               </div>
             </div>
             <div className="bg-white rounded-lg p-3 border border-gray-200 mt-4">
-              <a href="https://gyg.me/RzYQ9OzH" target="_blank" rel="noopener noreferrer"
+              <a href="https://gyg.me/YnvSUuzy" target="_blank" rel="noopener noreferrer"
                  className="text-sky-600 hover:text-sky-800 underline text-sm font-medium">
-                Reservar tour para conocer la ciudad con guía
+                Reservar Crucero Nocturno por el Danubio
               </a>
             </div>
             <div className="bg-orange-100 border border-orange-300 rounded-lg p-4 mt-4">
