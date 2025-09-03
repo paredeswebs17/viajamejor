@@ -661,7 +661,7 @@ const BudapestGuideArticle: React.FC<BudapestGuideArticleProps> = ({ onBack }) =
               <div>
                 <h4 className="font-semibold text-gray-900 mb-2">Alojamiento (70 euros/noche):</h4>
                 <ul className="text-sm text-gray-700 space-y-1">
-                  <li>• Hoteles 3*: Roombach Hotel</li>
+                  <li>• Hoteles 3*: T62 Hotel, THREE Corners Hotel Anna</li>
                   <li>• Ubicación: Centro absoluto</li>
                   <li>• Incluye: Desayuno + ubicación premium</li>
                 </ul>
