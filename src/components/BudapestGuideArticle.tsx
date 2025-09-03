@@ -1276,8 +1276,6 @@ const BudapestGuideArticle: React.FC<BudapestGuideArticleProps> = ({ onBack }) =
             Dejar comentario
           </button>
         </div>
-      </div>
-
       <div className="text-center text-gray-600 text-sm">
         <p className="mb-2">
           Guía actualizada en Septiembre 2025 | Información verificada y precios actuales
