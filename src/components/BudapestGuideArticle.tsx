@@ -1187,6 +1187,10 @@ const BudapestGuideArticle: React.FC<BudapestGuideArticleProps> = ({ onBack }) =
                  className="block text-sky-600 hover:text-sky-800 underline">
                 Spinoza Café
               </a>
+              <a href="https://szimpla.hu/" target="_blank" rel="noopener noreferrer"
+                 className="block text-sky-600 hover:text-sky-800 underline">
+                Szimpla Kert
+              </a>
             </div>
           </div>
           
@@ -1200,10 +1204,6 @@ const BudapestGuideArticle: React.FC<BudapestGuideArticleProps> = ({ onBack }) =
               <a href="https://bolt.eu/" target="_blank" rel="noopener noreferrer"
                  className="block text-sky-600 hover:text-sky-800 underline">
                 Bolt Taxi
-              </a>
-              <a href="https://szimpla.hu/" target="_blank" rel="noopener noreferrer"
-                 className="block text-sky-600 hover:text-sky-800 underline">
-                Szimpla Kert
               </a>
             </div>
           </div>
