@@ -30,16 +30,8 @@ const FAQ = () => {
       answer: "En el Sudeste Asiático puedes viajar cómodamente con 25-35€ al día incluyendo alojamiento, comida y transporte local. En Tailandia he llegado a gastar solo 15€/día."
     },
     {
-      question: "¿Qué debo llevar en mi equipaje de mano para un viaje largo?",
-      answer: "Los imprescindibles son: adaptador universal, power bank de 20.000 mAh, auriculares con cancelación de ruido, almohada de viaje, botella reutilizable, organizador de cables, tapones para oídos, antifaz, y una muda de ropa de repuesto. Todo debe caber en una mochila de 40L máximo."
-    },
-    {
       question: "¿Es seguro usar Airbnb o es mejor reservar hoteles?",
       answer: "Ambos son seguros si eliges bien. Uso Booking para estancias cortas y cuando quiero cancelación flexible. Airbnb es ideal para estancias largas (una semana o más) o viajes en grupo. Siempre leo las reseñas y verifico que el anfitrión tenga buena puntuación y responda rápido."
-    },
-    {
-      question: "¿Cómo puedo viajar barato por Europa?",
-      answer: "Para viajar barato por Europa: usa aerolíneas low-cost como Ryanair, reserva hostels o apartamentos en Airbnb, come en supermercados, usa transporte público, viaja en temporada baja (octubre-marzo excepto Navidad), y considera destinos menos turísticos como Albania, Polonia o Rumanía."
     },
     {
       question: "¿Qué apps necesito para viajar?",
