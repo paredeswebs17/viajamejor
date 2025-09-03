@@ -120,7 +120,7 @@ const BudapestGuideArticle: React.FC<BudapestGuideArticleProps> = ({ onBack }) =
               <div>
                 <h5 className="font-semibold text-gray-900 mb-2">Información esencial:</h5>
                 <ul className="text-sm text-gray-700 space-y-1">
-                  <li>• Inversión: 6.000 HUF (aproximadamente 15 euros)</li>
+                  <li>• Inversión: 10.000 HUF (aproximadamente 27 euros)</li>
                   <li>• Duración: 90 minutos con audioguía</li>
                   <li>• Reserva: OBLIGATORIA con 24-48h anticipación</li>
                   <li>• Consejo: Llega 15 min antes para controles</li>
