@@ -1161,7 +1161,7 @@ const BudapestGuideArticle: React.FC<BudapestGuideArticleProps> = ({ onBack }) =
                 <div className="bg-gray-50 rounded-lg p-3">
                   <h5 className="font-semibold text-gray-900 text-sm">Gundel</h5>
                   <p className="text-xs text-gray-600">Histórico de lujo (25-40 euros)</p>
-                  <a href="https://www.menzaetterem.hu/en/" target="_blank" rel="noopener noreferrer"
+                  <a href="https://gundel.hu/en/" target="_blank" rel="noopener noreferrer"
                      className="text-sky-600 hover:text-sky-800 underline text-xs">
                     Web oficial
                   </a>
