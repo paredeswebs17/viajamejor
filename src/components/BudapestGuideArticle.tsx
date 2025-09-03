@@ -226,7 +226,7 @@ const BudapestGuideArticle: React.FC<BudapestGuideArticleProps> = ({ onBack }) =
               <div className="bg-white rounded-lg p-3 border border-gray-200">
                 <h5 className="font-semibold text-gray-900">Spinoza Café</h5>
                 <p className="text-sm text-gray-700 mb-1">Ambiente bohemio, menú completo 10-15 euros</p>
-                <a href="http://spinoza.hu/?lang=en" target="_blank" rel="noopener noreferrer"
+                <a href="https://spinoza-szinhaz.hu/en" target="_blank" rel="noopener noreferrer"
                    className="text-sky-600 hover:text-sky-800 underline text-xs">
                   Reservas y menú
                 </a>
@@ -1178,7 +1178,7 @@ const BudapestGuideArticle: React.FC<BudapestGuideArticleProps> = ({ onBack }) =
                  className="block text-sky-600 hover:text-sky-800 underline">
                 Mazel Tov
               </a>
-              <a href="http://spinoza.hu/?lang=en" target="_blank" rel="noopener noreferrer"
+              <a href="https://spinoza-szinhaz.hu/en" target="_blank" rel="noopener noreferrer"
                  className="block text-sky-600 hover:text-sky-800 underline">
                 Spinoza Café
               </a>
