@@ -84,7 +84,7 @@ Volver a guías
         <tbody>
           <tr>
             <td className="border border-gray-300 px-4 py-3 font-bold">DÍA 1</td>
-            <td className="border border-gray-300 px-4 py-3">Parlamento + Recorrido histórico gratuito + Sinagoga Principal + Basílica de San Esteban</td>
+            <td className="border border-gray-300 px-4 py-3">Parlamento + Recorrido histórico + Sinagoga Principal + Basílica de San Esteban</td>
           </tr>
           <tr className="bg-gray-50">
             <td className="border border-gray-300 px-4 py-3 font-bold">DÍA 2</td>
