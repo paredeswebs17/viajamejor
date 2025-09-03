@@ -1,4 +1,4 @@
-import { ArrowLeft, Share2, Clock, MapPin, Euro, Calendar, Star, CheckCircle, ExternalLink, AlertTriangle } from ‘lucide-react’;
+import { ArrowLeft, Share2, Clock, MapPin, Euro, Calendar, Star, CheckCircle, ExternalLink, AlertTriangle } from 'lucide-react';
 
 interface BudapestGuideArticleProps {
 onBack: () => void;
@@ -16,7 +16,6 @@ className="inline-flex items-center text-sky-600 hover:text-sky-700 hover:bg-sky
 Volver a guías
 </button>
 
-```
     <div className="mb-6">
       <span className="bg-sky-500 text-white px-3 py-1 rounded-full text-sm font-medium">
         Guía Completa
@@ -52,7 +51,7 @@ Volver a guías
             navigator.clipboard.writeText(window.location.href).then(() => {
               alert('Enlace copiado al portapapeles');
             }).catch(() => {
-              window.open(\`https://twitter.com/intent/tweet?text=Budapest en 4 Días: Guía Completa&url=${encodeURIComponent(window.location.href)}`, '_blank');
+              window.open(`https://twitter.com/intent/tweet?text=Budapest en 4 Días: Guía Completa&url=${encodeURIComponent(window.location.href)}`, '_blank');
             });
           }
         }}
@@ -1303,8 +1302,6 @@ Volver a guías
     </p>
   </div>
 </article>
-```
-
 );
 };
 
