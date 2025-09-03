@@ -191,7 +191,7 @@ const BudapestGuideArticle: React.FC<BudapestGuideArticleProps> = ({ onBack }) =
               <div>
                 <h5 className="font-semibold text-gray-900 mb-2">Experiencia completa:</h5>
                 <ul className="text-sm text-gray-700 space-y-1">
-                  <li>• Entrada: 5.000 HUF (aproximadamente 14 euros)</li>
+                  <li>• Entrada: 13.000 HUF (aproximadamente 33 euros)</li>
                   <li>• Tiempo: 75-90 minutos</li>
                   <li>• Arquitectura: Estilo morisco-bizantino único</li>
                 </ul>
@@ -207,9 +207,15 @@ const BudapestGuideArticle: React.FC<BudapestGuideArticleProps> = ({ onBack }) =
               </div>
             </div>
             <div className="bg-white rounded-lg p-3 border border-gray-200">
-              <a href="https://gyg.me/vbht7C3s" target="_blank" rel="noopener noreferrer"
+              <a href="https://jewishtourhungary.com/es/cart" target="_blank" rel="noopener noreferrer"
                  className="text-sky-600 hover:text-sky-800 underline text-sm font-medium">
                 Entradas oficiales Gran Sinagoga
+              </a>
+            </div>
+            <div className="bg-white rounded-lg p-3 border border-gray-200">
+              <a href="https://gyg.me/vbht7C3s" target="_blank" rel="noopener noreferrer"
+                 className="text-sky-600 hover:text-sky-800 underline text-sm font-medium">
+                Tour zona Patrimonio Judío y Gran Sinagoga
               </a>
             </div>
           </div>
