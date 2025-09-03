@@ -1,10 +1,28 @@
+import { useState } from 'react';
 import { ArrowLeft, Share2, Clock, MapPin, Euro, Calendar, Star, CheckCircle, ExternalLink, AlertTriangle } from 'lucide-react';
+import { trackContactFormSubmit } from '../utils/analytics';
 
 interface BudapestGuideArticleProps {
   onBack: () => void;
 }
 
 const BudapestGuideArticle: React.FC<BudapestGuideArticleProps> = ({ onBack }) => {
+  const [commentData, setCommentData] = useState({
+    name: '',
+    email: '',
+    message: ''
+  });
+  const [isCommentSubmitted, setIsCommentSubmitted] = useState(false);
+
+  const handleCommentSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+
+    try {
+      await fetch('https://formspree.io/f/mwpqebpb', {
+        method: 'POST',
+        headers: { 'Accept': 'application/json' },
+        body: new FormData(e.target as HTMLFormElement),
+      });
   return (
     <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 pt-24">
       <div className="mb-8">
@@ -816,15 +834,89 @@ const BudapestGuideArticle: React.FC<BudapestGuideArticleProps> = ({ onBack }) =
           <h3 className="font-bold text-gray-900 text-lg mb-3">
             Protección Total de Viaje
           </h3>
-          <h4 className="font-semibold text-gray-900 mb-3">Seguro IATI Estándar</h4>
-          <p className="text-gray-700 text-sm mb-4">
-            Cobertura médica: 200.000 euros en Europa. Precio 4 días: 12-15 euros aproximadamente. 
-            Última actualización: Septiembre 2025
+        <div className="bg-gradient-to-r from-sky-50 to-emerald-50 rounded-2xl p-8">
+          <h3 className="text-2xl font-bold text-gray-900 mb-4 text-center">¿Has estado en Budapest?</h3>
+          <p className="text-lg text-gray-600 mb-6 text-center">
+            Comparte tu experiencia y ayuda a otros viajeros con tus consejos
           </p>
-          <div className="space-y-2 text-xs text-gray-600 mb-6">
-            <div className="flex items-center justify-center">
-              <CheckCircle className="h-3 w-3 text-emerald-500 mr-2" />
+          
+          {isCommentSubmitted ? (
+            <div className="text-center py-4">
+              <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                <Send className="h-6 w-6 text-green-600" />
+              </div>
+              <h4 className="text-lg font-bold text-gray-900 mb-2">¡Comentario enviado!</h4>
+              <p className="text-sm text-gray-600">
+                Gracias por compartir tu experiencia. Tu comentario nos ayuda a mejorar nuestras guías.
+              </p>
+            </div>
+          ) : (
+            <form 
+              onSubmit={handleCommentSubmit} 
+              method="POST" 
+              action="https://formspree.io/f/mwpqebpb"
+              className="space-y-4"
+            >
+              <input type="hidden" name="subject" value="Comentario sobre guía de Budapest" />
+              
+              <div className="grid md:grid-cols-2 gap-4">
+                <div>
+                  <label htmlFor="comment-name" className="block text-sm font-medium text-gray-700 mb-1">
+                    Nombre
+                  </label>
+                  <input
+                    type="text"
+                    id="comment-name"
+                    name="name"
+                    value={commentData.name}
+                    onChange={handleCommentChange}
+                    className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-sky-500 focus:border-transparent outline-none transition-all text-sm"
+                    placeholder="¿Cómo te llamas?"
+                    required
+                  />
+                </div>
+                <div>
+                  <label htmlFor="comment-email" className="block text-sm font-medium text-gray-700 mb-1">
+                    Email
+                  </label>
+                  <input
+                    type="email"
+                    id="comment-email"
+                    name="email"
+                    value={commentData.email}
+                    onChange={handleCommentChange}
+                    className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-sky-500 focus:border-transparent outline-none transition-all text-sm"
+                    placeholder="tu@email.com"
+                    required
+                  />
+                </div>
+              </div>
+              
+              <div>
+                <label htmlFor="comment-message" className="block text-sm font-medium text-gray-700 mb-1">
+                  Tu experiencia en Budapest
+                </label>
+                <textarea
+                  id="comment-message"
+                  name="message"
+                  value={commentData.message}
+                  onChange={handleCommentChange}
+                  rows={4}
+                  className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-sky-500 focus:border-transparent outline-none transition-all resize-none text-sm"
+                  placeholder="Comparte tus consejos, lugares favoritos, restaurantes recomendados, o cualquier tip útil para otros viajeros..."
+                  required
+                ></textarea>
+              </div>
               <span>Cobertura médica hasta 200.000 euros</span>
+              <button
+                type="submit"
+                className="w-full bg-gradient-to-r from-sky-500 to-emerald-500 hover:from-sky-600 hover:to-emerald-600 text-white font-bold py-3 px-6 rounded-lg transition-all duration-200 transform hover:scale-105 shadow-lg hover:shadow-xl flex items-center justify-center space-x-2"
+              >
+                <Send className="h-4 w-4" />
+                <span>💬 Compartir mi experiencia</span>
+              </button>
+            </form>
+          )}
             </div>
             <div className="flex items-center justify-center">
               <CheckCircle className="h-3 w-3 text-emerald-500 mr-2" />
