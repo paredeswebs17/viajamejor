@@ -212,7 +212,7 @@ const BudapestGuideArticle: React.FC<BudapestGuideArticleProps> = ({ onBack }) =
                 Entradas oficiales Gran Sinagoga
               </a>
             </div>
-            <div className="bg-white rounded-lg p-3 border border-gray-200">
+            <div className="bg-white rounded-lg p-3 border border-gray-200 mt-4">
               <a href="https://gyg.me/vbht7C3s" target="_blank" rel="noopener noreferrer"
                  className="text-sky-600 hover:text-sky-800 underline text-sm font-medium">
                 Tour zona Patrimonio Judío y Gran Sinagoga
