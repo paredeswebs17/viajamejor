@@ -458,7 +458,7 @@ const BudapestGuideArticle: React.FC<BudapestGuideArticleProps> = ({ onBack }) =
             </div>
             
             <div className="bg-white rounded-lg p-3 border border-gray-200 mb-4">
-              <a href="https://szechenyibath.com/" target="_blank" rel="noopener noreferrer"
+              <a href="https://gyg.me/cTU7N3tH" target="_blank" rel="noopener noreferrer"
                  className="text-sky-600 hover:text-sky-800 underline text-sm font-medium">
                 Entradas oficiales Széchenyi
               </a>
@@ -1160,7 +1160,7 @@ const BudapestGuideArticle: React.FC<BudapestGuideArticleProps> = ({ onBack }) =
                  className="block text-sky-600 hover:text-sky-800 underline">
                 Balnearios Széchenyi
               </a>
-              <a href="https://synagogue.hu/" target="_blank" rel="noopener noreferrer"
+              <a href="https://gyg.me/cTU7N3tH" target="_blank" rel="noopener noreferrer"
                  className="block text-sky-600 hover:text-sky-800 underline">
                 Gran Sinagoga
               </a>
