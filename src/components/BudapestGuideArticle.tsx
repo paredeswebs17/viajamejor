@@ -1342,7 +1342,6 @@ Volver a guías
     </p>
   </div>
 </article>
-```
 
 );
 };
