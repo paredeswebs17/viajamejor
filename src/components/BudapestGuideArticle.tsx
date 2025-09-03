@@ -1,4 +1,4 @@
-import { ArrowLeft, Share2, Clock, MapPin, CheckCircle, ExternalLink } from ‘lucide-react’;
+import { ArrowLeft, Share2, Clock, MapPin, CheckCircle, ExternalLink } from 'lucide-react';
 
 interface BudapestGuideArticleProps {
 onBack: () => void;
