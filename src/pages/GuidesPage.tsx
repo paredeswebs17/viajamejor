@@ -27,10 +27,7 @@ const GuidesPage = () => {
       title: 'Berlín en 4 días',
       description: 'Historia, arte urbano y vida nocturna en la capital alemana',
       image: 'https://images.unsplash.com/photo-1560969184-10fe8719e047?auto=format&fit=crop&w=600&q=80',
-      price: '€110',
-      rating: 4.8,
       continent: 'Europa',
-      budget: '€€',
       available: false,
       badge: '🆕 Nuevo',
       url: '#'
@@ -40,10 +37,7 @@ const GuidesPage = () => {
       title: 'Praga en 3 días',
       description: 'Ciudad de cuento con arquitectura medieval y cerveza increíble',
       image: 'https://images.unsplash.com/photo-1541849546-216549ae216d?auto=format&fit=crop&w=600&q=80',
-      price: '€85',
-      rating: 4.7,
       continent: 'Europa',
-      budget: '€',
       available: false,
       url: '#'
     },
@@ -52,10 +46,7 @@ const GuidesPage = () => {
       title: 'Santorini en 5 días',
       description: 'Atardeceres únicos, pueblos blancos y vinos volcánicos en las Cícladas',
       image: 'https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?auto=format&fit=crop&w=600&q=80',
-      price: '€140',
-      rating: 4.9,
       continent: 'Europa',
-      budget: '€€€',
       available: false,
       url: '#'
     },
@@ -64,10 +55,7 @@ const GuidesPage = () => {
       title: 'Estambul en 4 días',
       description: 'Puente entre Europa y Asia, mezquitas históricas y bazares milenarios',
       image: 'https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?auto=format&fit=crop&w=600&q=80',
-      price: '€75',
-      rating: 4.8,
       continent: 'Europa/Asia',
-      budget: '€€',
       available: false,
       url: '#'
     },
@@ -76,10 +64,7 @@ const GuidesPage = () => {
       title: 'Azores en 6 días',
       description: 'Islas volcánicas, lagos de cráter y aguas termales en el Atlántico',
       image: 'https://images.pexels.com/photos/4825701/pexels-photo-4825701.jpeg?auto=compress&cs=tinysrgb&w=600',
-      price: '€95',
-      rating: 4.7,
       continent: 'Europa',
-      budget: '€€',
       available: false,
       url: '#'
     },
@@ -88,10 +73,7 @@ const GuidesPage = () => {
       title: 'Lisboa en 3 días',
       description: 'Tranvías históricos, fado auténtico y pastéis de nata irresistibles',
       image: 'https://images.unsplash.com/photo-1555881400-74d7acaacd8b?auto=format&fit=crop&w=600&q=80',
-      price: '€80',
-      rating: 4.6,
       continent: 'Europa',
-      budget: '€€',
       available: false,
       url: '#'
     },
@@ -100,10 +82,7 @@ const GuidesPage = () => {
       title: 'Ámsterdam en 4 días',
       description: 'Canales románticos, museos de clase mundial y cultura liberal única',
       image: 'https://images.unsplash.com/photo-1534351590666-13e3e96b5017?auto=format&fit=crop&w=600&q=80',
-      price: '€125',
-      rating: 4.8,
       continent: 'Europa',
-      budget: '€€€',
       available: false,
       url: '#'
     },
@@ -112,10 +91,7 @@ const GuidesPage = () => {
       title: 'Cerdeña en 7 días',
       description: 'Playas paradisíacas, cultura nuraghi y gastronomía mediterránea auténtica',
       image: 'https://images.pexels.com/photos/3225531/pexels-photo-3225531.jpeg?auto=compress&cs=tinysrgb&w=600',
-      price: '€105',
-      rating: 4.7,
       continent: 'Europa',
-      budget: '€€',
       available: false,
       url: '#'
     },
@@ -124,10 +100,7 @@ const GuidesPage = () => {
       title: 'Croacia en 8 días',
       description: 'Costa dálmata, parques nacionales y ciudades medievales junto al Adriático',
       image: 'https://images.pexels.com/photos/2104152/pexels-photo-2104152.jpeg?auto=compress&cs=tinysrgb&w=600',
-      price: '€90',
-      rating: 4.8,
       continent: 'Europa',
-      budget: '€€',
       available: false,
       url: '#'
     },
@@ -136,10 +109,7 @@ const GuidesPage = () => {
       title: 'Sri Lanka en 10 días',
       description: 'Templos budistas, plantaciones de té, safaris y playas vírgenes',
       image: 'https://images.unsplash.com/photo-1566552881560-0be862a7c445?auto=format&fit=crop&w=600&q=80',
-      price: '€45',
-      rating: 4.6,
       continent: 'Asia',
-      budget: '€',
       available: false,
       url: '#'
     }
@@ -337,18 +307,20 @@ const GuidesPage = () => {
                     {guide.description}
                   </p>
                   
-                  <div className="flex items-center justify-between mb-4">
-                    <div className="flex items-center">
-                      <Euro className="h-4 w-4 text-emerald-500 mr-1" />
-                      <span className="font-bold text-emerald-600">{guide.price.replace('€', '')}</span>
-                      <span className="text-gray-500 text-sm ml-1">por día</span>
+                  {guide.available && (
+                    <div className="flex items-center justify-between mb-4">
+                      <div className="flex items-center">
+                        <Euro className="h-4 w-4 text-emerald-500 mr-1" />
+                        <span className="font-bold text-emerald-600">{guide.price.replace('€', '')}</span>
+                        <span className="text-gray-500 text-sm ml-1">por día</span>
+                      </div>
+                      
+                      <div className="flex items-center">
+                        <Star className="h-4 w-4 text-orange-500 mr-1" />
+                        <span className="font-semibold text-gray-900 text-sm">{guide.rating}</span>
+                      </div>
                     </div>
-                    
-                    <div className="flex items-center">
-                      <Star className="h-4 w-4 text-orange-500 mr-1" />
-                      <span className="font-semibold text-gray-900 text-sm">{guide.rating}</span>
-                    </div>
-                  </div>
+                  )}
                   
                   <button
                     onClick={() => guide.available && guide.url ? window.location.href = guide.url : null}
