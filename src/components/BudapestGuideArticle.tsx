@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import { ArrowLeft, Share2, Clock, MapPin, CheckCircle, ExternalLink, ArrowUp } from ‘lucide-react’;
+import { ArrowLeft, Share2, Clock, MapPin, CheckCircle, ExternalLink, ArrowUp } from 'lucide-react';
 
 interface BudapestGuideArticleProps {
-onBack: () => void;
+  onBack: () => void;
 }
 
 const BudapestGuideArticle: React.FC<BudapestGuideArticleProps> = ({ onBack }) => {
