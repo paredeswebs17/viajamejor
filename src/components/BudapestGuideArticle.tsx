@@ -806,7 +806,7 @@ return (
 
   <div className="mb-6">
     <div className="bg-purple-50 border border-purple-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
-      <h3 className="text-lg font-bold text-purple-800 mb-4">ESTILO PREMIUM - 190 €/día</h3>
+      <h3 className="text-lg font-bold text-purple-800 mb-4">ESTILO PREMIUM - 200 €/día</h3>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         <div>
           <h4 className="font-semibold text-gray-900 mb-2">Alojamiento (3 noches):</h4>
