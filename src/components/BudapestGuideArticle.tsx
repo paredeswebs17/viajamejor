@@ -733,7 +733,6 @@ return (
     </div>
   </div>
 
-  <div className="bg-gray-50 rounded-2xl p-6 sm:p-8 mb-8 shadow-md">
     <div className="bg-gray-50 rounded-2xl p-6 sm:p-8 mb-8 shadow-md">
   <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6 text-center">Presupuestos Reales y Detallados</h2>
   
