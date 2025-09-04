@@ -550,8 +550,8 @@ className="fixed bottom-8 right-8 bg-gradient-to-r from-sky-500 to-blue-500 text
           <div>
             <h5 className="font-semibold text-gray-900 mb-2">Guía completa:</h5>
             <ul className="text-sm text-gray-700 space-y-1 list-none">
-              <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Días laborables: 5.900 HUF (Aprox. 16 €) día completo</li>
-              <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Fines de semana: 6.400 HUF (Aprox. 17 €) día completo</li>
+              <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Días laborables: 15.000 HUF (Aprox. 39€) día completo</li>
+              <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Fines de semana: 16.500 HUF (Aprox. 42€) día completo</li>
               <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>Piscinas: 18 diferentes</li>
               <li className="flex items-center"><span className="w-2 h-2 bg-yellow-400 rounded-full mr-3"></span>Temperaturas: 18°C a 38°C</li>
               <li className="flex items-center"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3"></span>Tiempo ideal: 3-4 horas</li>
