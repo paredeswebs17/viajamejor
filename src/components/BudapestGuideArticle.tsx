@@ -1,38 +1,16 @@
 import React, { useState, useEffect } from 'react';
-import { ArrowLeft, Share2, Clock, MapPin, CheckCircle, ExternalLink, ArrowUp } from 'lucide-react';
+import { ArrowLeft, Share2, Clock, MapPin, CheckCircle, ExternalLink } from 'lucide-react';
 
 interface BudapestGuideArticleProps {
   onBack: () => void;
 }
 
 const BudapestGuideArticle: React.FC<BudapestGuideArticleProps> = ({ onBack }) => {
-const [showScrollTop, setShowScrollTop] = useState(false);
 
-useEffect(() => {
-const handleScroll = () => {
-setShowScrollTop(window.scrollY > 400);
-};
-
-window.addEventListener('scroll', handleScroll);
-return () => window.removeEventListener('scroll', handleScroll);
-
-}, []);
-
-const scrollToTop = () => {
-window.scrollTo({ top: 0, behavior: 'smooth' });
-};
+  
 
 return (
 <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 pt-24">
-{/* Botón flotante scroll to top */}
-{showScrollTop && (
-<button
-onClick={scrollToTop}
-className="fixed bottom-8 right-8 bg-gradient-to-r from-sky-500 to-blue-500 text-white p-3 rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 z-50"
->
-<ArrowUp className="h-5 w-5" />
-</button>
-)}
 
   <div className="mb-8">
     <button 
