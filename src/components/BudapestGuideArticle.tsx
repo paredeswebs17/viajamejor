@@ -19,7 +19,7 @@ return () => window.removeEventListener('scroll', handleScroll);
 }, []);
 
 const scrollToTop = () => {
-window.scrollTo({ top: 0, behavior: ‘smooth’ });
+window.scrollTo({ top: 0, behavior: 'smooth' });
 };
 
 return (
