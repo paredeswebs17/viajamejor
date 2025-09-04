@@ -734,95 +734,111 @@ return (
   </div>
 
   <div className="bg-gray-50 rounded-2xl p-6 sm:p-8 mb-8 shadow-md">
-    <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6 text-center">Presupuestos Reales y Detallados</h2>
-    
-    <div className="mb-6">
-      <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
-        <h3 className="text-lg font-bold text-emerald-800 mb-4">ESTILO MOCHILERO - 70 €/día</h3>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          <div>
-            <h4 className="font-semibold text-gray-900 mb-2">Alojamiento (50 €/noche):</h4>
-            <ul className="text-sm text-gray-700 space-y-1 list-none">
-              <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Hostales céntricos: Budapest Citi Guesthouse</li>
-              <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Ubicación: Distrito V o VII</li>
-              <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>Incluye: WiFi + baño privado</li>
-            </ul>
-          </div>
-          <div>
-            <h4 className="font-semibold text-gray-900 mb-2">Alimentación (20 €/día):</h4>
-            <ul className="text-sm text-gray-700 space-y-1 list-none">
-              <li className="flex items-center"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3"></span>Desayuno: Mercados + panadería (3-5 €)</li>
-              <li className="flex items-center"><span className="w-2 h-2 bg-pink-400 rounded-full mr-3"></span>Almuerzo: Puestos callejeros (5-8 €)</li>
-              <li className="flex items-center"><span className="w-2 h-2 bg-indigo-400 rounded-full mr-3"></span>Cena: Supermercado + cocina (8-12 €)</li>
-            </ul>
-          </div>
+    <div className="bg-gray-50 rounded-2xl p-6 sm:p-8 mb-8 shadow-md">
+  <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6 text-center">Presupuestos Reales y Detallados</h2>
+  
+  <div className="mb-6">
+    <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
+      <h3 className="text-lg font-bold text-emerald-800 mb-4">ESTILO MOCHILERO - 85 €/día</h3>
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div>
+          <h4 className="font-semibold text-gray-900 mb-2">Alojamiento (3 noches):</h4>
+          <ul className="text-sm text-gray-700 space-y-1 list-none">
+            <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Hostales céntricos: Budapest Citi Guesthouse</li>
+            <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Ubicación: Distrito V o VII</li>
+            <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>Precio: 40€/noche</li>
+          </ul>
         </div>
-        <div className="bg-white rounded-xl p-4 mt-4 shadow-sm">
-          <p className="text-emerald-800 font-semibold text-center">
-            Total 4 días: Aprox. 240 €
-          </p>
+        <div>
+          <h4 className="font-semibold text-gray-900 mb-2">Alimentación (4 días):</h4>
+          <ul className="text-sm text-gray-700 space-y-1 list-none">
+            <li className="flex items-center"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3"></span>Desayuno: Mercados + panadería (3-5 €)</li>
+            <li className="flex items-center"><span className="w-2 h-2 bg-pink-400 rounded-full mr-3"></span>Almuerzo: Puestos callejeros (5-8 €)</li>
+            <li className="flex items-center"><span className="w-2 h-2 bg-indigo-400 rounded-full mr-3"></span>Cena: Supermercado + cocina (8-12 €)</li>
+          </ul>
         </div>
       </div>
-    </div>
-
-    <div className="mb-6">
-      <div className="bg-sky-50 border border-sky-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
-        <h3 className="text-lg font-bold text-sky-800 mb-4">ESTILO CONFORT - 100 €/día</h3>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          <div>
-            <h4 className="font-semibold text-gray-900 mb-2">Alojamiento (70 €/noche):</h4>
-            <ul className="text-sm text-gray-700 space-y-1 list-none">
-              <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Hoteles 3*: T62 Hotel, THREE Corners Hotel Anna</li>
-              <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Ubicación: Centro absoluto</li>
-              <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>Incluye: Desayuno + ubicación premium</li>
-            </ul>
-          </div>
-          <div>
-            <h4 className="font-semibold text-gray-900 mb-2">Alimentación (30 €/día):</h4>
-            <ul className="text-sm text-gray-700 space-y-1 list-none">
-              <li className="flex items-center"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3"></span>Desayuno: Hotel incluido</li>
-              <li className="flex items-center"><span className="w-2 h-2 bg-pink-400 rounded-full mr-3"></span>Almuerzo: Restaurantes locales (12-18 €)</li>
-              <li className="flex items-center"><span className="w-2 h-2 bg-indigo-400 rounded-full mr-3"></span>Cena: Experiencias gastronómicas (15-25 €)</li>
-            </ul>
-          </div>
-        </div>
-        <div className="bg-white rounded-xl p-4 mt-4 shadow-sm">
-          <p className="text-sky-800 font-semibold text-center">
-            Total 4 días: Aprox. 400 €
-          </p>
-        </div>
+      <div className="bg-gray-100 rounded-xl p-3 mt-4 text-xs text-gray-600">
+        <p className="text-center">
+          <span className="font-medium">El precio total incluye:</span> Media aproximada de gastos en atracciones principales, transporte público, y experiencias básicas según este estilo de viaje
+        </p>
       </div>
-    </div>
-
-    <div className="mb-6">
-      <div className="bg-purple-50 border border-purple-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
-        <h3 className="text-lg font-bold text-purple-800 mb-4">ESTILO PREMIUM - 200 €/día</h3>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          <div>
-            <h4 className="font-semibold text-gray-900 mb-2">Alojamiento (130 €/noche):</h4>
-            <ul className="text-sm text-gray-700 space-y-1 list-none">
-              <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Hoteles 4*/5*: Hotel Vision Budapest, Hotel Clark Budapest</li>
-              <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Ubicación: Frente al Danubio</li>
-              <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>Incluye: Spa + vistas + servicios premium</li>
-            </ul>
-          </div>
-          <div>
-            <h4 className="font-semibold text-gray-900 mb-2">Alimentación (70 €/día):</h4>
-            <ul className="text-sm text-gray-700 space-y-1 list-none">
-              <li className="flex items-center"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3"></span>Restaurantes top: Onyx, Costes</li>
-              <li className="flex items-center"><span className="w-2 h-2 bg-pink-400 rounded-full mr-3"></span>Experiencias culinarias + maridajes</li>
-              <li className="flex items-center"><span className="w-2 h-2 bg-indigo-400 rounded-full mr-3"></span>New York Café + cafés históricos</li>
-            </ul>
-          </div>
-        </div>
-        <div className="bg-white rounded-xl p-4 mt-4 shadow-sm">
-          <p className="text-purple-800 font-semibold text-center">
-            Total 4 días: Aprox. 800 €
-          </p>
-        </div>
+      <div className="bg-white rounded-xl p-4 mt-4 shadow-sm">
+        <p className="text-emerald-800 font-semibold text-center">
+          Total 4 días: 340€ por persona
+        </p>
       </div>
     </div>
   </div>
+
+  <div className="mb-6">
+    <div className="bg-sky-50 border border-sky-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
+      <h3 className="text-lg font-bold text-sky-800 mb-4">ESTILO CONFORT - 125 €/día</h3>
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div>
+          <h4 className="font-semibold text-gray-900 mb-2">Alojamiento (3 noches):</h4>
+          <ul className="text-sm text-gray-700 space-y-1 list-none">
+            <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Hoteles 3*: T62 Hotel, THREE Corners Hotel Anna</li>
+            <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Ubicación: Centro absoluto</li>
+            <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>Precio: 70€/noche (incluye desayuno)</li>
+          </ul>
+        </div>
+        <div>
+          <h4 className="font-semibold text-gray-900 mb-2">Alimentación (4 días):</h4>
+          <ul className="text-sm text-gray-700 space-y-1 list-none">
+            <li className="flex items-center"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3"></span>Desayuno: Hotel incluido</li>
+            <li className="flex items-center"><span className="w-2 h-2 bg-pink-400 rounded-full mr-3"></span>Almuerzo: Restaurantes locales (12-18 €)</li>
+            <li className="flex items-center"><span className="w-2 h-2 bg-indigo-400 rounded-full mr-3"></span>Cena: Experiencias gastronómicas (15-25 €)</li>
+          </ul>
+        </div>
+      </div>
+      <div className="bg-gray-100 rounded-xl p-3 mt-4 text-xs text-gray-600">
+        <p className="text-center">
+          <span className="font-medium">El precio total incluye:</span> Media aproximada de gastos en todas las atracciones, tours con guía, transporte variado, y experiencias de nivel medio
+        </p>
+      </div>
+      <div className="bg-white rounded-xl p-4 mt-4 shadow-sm">
+        <p className="text-sky-800 font-semibold text-center">
+          Total 4 días: 500€ por persona
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div className="mb-6">
+    <div className="bg-purple-50 border border-purple-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
+      <h3 className="text-lg font-bold text-purple-800 mb-4">ESTILO PREMIUM - 190 €/día</h3>
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div>
+          <h4 className="font-semibold text-gray-900 mb-2">Alojamiento (3 noches):</h4>
+          <ul className="text-sm text-gray-700 space-y-1 list-none">
+            <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Hoteles 4*/5*: Hotel Vision Budapest, Hotel Clark Budapest</li>
+            <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Ubicación: Frente al Danubio</li>
+            <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>Precio: 150€/noche (spa + servicios premium)</li>
+          </ul>
+        </div>
+        <div>
+          <h4 className="font-semibold text-gray-900 mb-2">Alimentación (4 días):</h4>
+          <ul className="text-sm text-gray-700 space-y-1 list-none">
+            <li className="flex items-center"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3"></span>Restaurantes top: Onyx, Costes</li>
+            <li className="flex items-center"><span className="w-2 h-2 bg-pink-400 rounded-full mr-3"></span>Experiencias culinarias + maridajes</li>
+            <li className="flex items-center"><span className="w-2 h-2 bg-indigo-400 rounded-full mr-3"></span>New York Café + cafés históricos</li>
+          </ul>
+        </div>
+      </div>
+      <div className="bg-gray-100 rounded-xl p-3 mt-4 text-xs text-gray-600">
+        <p className="text-center">
+          <span className="font-medium">El precio total incluye:</span> Media aproximada de gastos en tours privados VIP, experiencias exclusivas, transporte privado, y actividades de lujo
+        </p>
+      </div>
+      <div className="bg-white rounded-xl p-4 mt-4 shadow-sm">
+        <p className="text-purple-800 font-semibold text-center">
+          Total 4 días: 800€ por persona
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
 
   <div className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
     <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">Cuándo Ir - Timing Perfecto</h2>
