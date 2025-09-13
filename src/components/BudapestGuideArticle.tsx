@@ -328,6 +328,141 @@ return (
           </a>
         </div>
 
+        <div className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
+          <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6 flex items-center">
+            <span className="text-2xl mr-3">🚗</span>
+            Llegada y Conexiones Inteligentes
+          </h2>
+
+          <div className="mb-8">
+            <h3 className="text-lg font-bold text-gray-900 mb-4 flex items-center">
+              <span className="text-xl mr-2">✈️</span>
+              Desde Aeropuerto Ferenc Liszt
+            </h3>
+            
+            <div className="mb-6">
+              <h4 className="text-md font-bold text-gray-900 mb-4 flex items-center">
+                <span className="text-lg mr-2">🚌</span>
+                Bus 100E Airport Express - La Conexión Más Directa
+              </h4>
+              
+              <div className="bg-gradient-to-r from-blue-50 to-sky-50 border border-blue-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                  <div>
+                    <h5 className="font-semibold text-gray-900 mb-3">Información esencial:</h5>
+                    <ul className="text-sm text-gray-700 space-y-2 list-none">
+                      <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span><strong>Precio:</strong> 2.200 HUF (≈ 5,5€) por trayecto</li>
+                      <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span><strong>Horario:</strong> 24 horas al día, 7 días a la semana</li>
+                      <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span><strong>Frecuencia:</strong> Cada 6-10 min (día) / 20-40 min (noche)</li>
+                      <li className="flex items-center"><span className="w-2 h-2 bg-yellow-400 rounded-full mr-3"></span><strong>Tiempo de viaje:</strong> 40-45 minutos hasta el centro</li>
+                    </ul>
+                  </div>
+                  
+                  <div>
+                    <h5 className="font-semibold text-gray-900 mb-3">Paradas en la ciudad:</h5>
+                    <ul className="text-sm text-gray-700 space-y-2 list-none">
+                      <li className="flex items-center"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3"></span>Deák Ferenc tér (centro neurálgico)</li>
+                      <li className="flex items-center"><span className="w-2 h-2 bg-pink-400 rounded-full mr-3"></span>Astoria (conexión metro)</li>
+                      <li className="flex items-center"><span className="w-2 h-2 bg-indigo-400 rounded-full mr-3"></span>Kálvin tér (conexión metro)</li>
+                    </ul>
+                  </div>
+                </div>
+                
+                <div className="mt-6">
+                  <h5 className="font-semibold text-gray-900 mb-3">Cómo comprar:</h5>
+                  <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                    <div className="bg-white rounded-xl p-4 border border-gray-200 shadow-sm">
+                      <h6 className="font-semibold text-gray-900 text-sm mb-1">En el bus:</h6>
+                      <p className="text-xs text-gray-600">Pago directo con tarjeta (Pay&GO)</p>
+                    </div>
+                    <div className="bg-white rounded-xl p-4 border border-gray-200 shadow-sm">
+                      <h6 className="font-semibold text-gray-900 text-sm mb-1">BudapestGO app:</h6>
+                      <p className="text-xs text-gray-600">"Airport shuttle bus single ticket"</p>
+                    </div>
+                    <div className="bg-white rounded-xl p-4 border border-gray-200 shadow-sm">
+                      <h6 className="font-semibold text-gray-900 text-sm mb-1">En el aeropuerto:</h6>
+                      <p className="text-xs text-gray-600">Oficinas BKK o máquinas expendedoras</p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div className="bg-green-100 border border-green-300 rounded-xl p-4 mt-4">
+                  <p className="text-green-800 text-sm mb-2">
+                    <span className="font-semibold">💡 Consejo:</span> El pago con tarjeta en el bus es lo más rápido - compras y validas al mismo tiempo.
+                  </p>
+                  <p className="text-orange-800 text-sm">
+                    <span className="font-semibold">⚠️ Importante:</span> Este billete SOLO funciona en el 100E. No es válido para otros transportes públicos.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="mb-6">
+              <h4 className="text-md font-bold text-gray-900 mb-4 flex items-center">
+                <span className="text-lg mr-2">🚗</span>
+                Transfer Privado - Opción Premium
+              </h4>
+              
+              <div className="bg-gradient-to-r from-purple-50 to-pink-50 border border-purple-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+                  <div>
+                    <ul className="text-sm text-gray-700 space-y-2 list-none">
+                      <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span><strong>Precio:</strong> 8.000 HUF (≈ 22€)</li>
+                      <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span><strong>Ventaja:</strong> Te esperan con cartel + equipaje incluido</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <ul className="text-sm text-gray-700 space-y-2 list-none">
+                      <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span><strong>Duración:</strong> 25-30 minutos</li>
+                      <li className="flex items-center"><span className="w-2 h-2 bg-yellow-400 rounded-full mr-3"></span><strong>Reservar:</strong> Transfer Budapest</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="mb-8">
+            <h3 className="text-lg font-bold text-gray-900 mb-4 flex items-center">
+              <span className="text-xl mr-2">🚊</span>
+              Moverse por Budapest
+            </h3>
+            
+            <div className="bg-gradient-to-r from-emerald-50 to-green-50 border border-emerald-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
+              <div className="mb-6">
+                <h4 className="font-semibold text-gray-900 mb-3">Lo más eficiente:</h4>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div>
+                    <ul className="text-sm text-gray-700 space-y-2 list-none">
+                      <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span><strong>A pie:</strong> Centro histórico completamente caminable</li>
+                      <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span><strong>Tranvía 2:</strong> Bordea el Danubio, muy pintoresco</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <ul className="text-sm text-gray-700 space-y-2 list-none">
+                      <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span><strong>Metro M1:</strong> Línea histórica (1896) hacia Andrássy</li>
+                      <li className="flex items-center"><span className="w-2 h-2 bg-yellow-400 rounded-full mr-3"></span><strong>Precio:</strong> 450 HUF (≈ 1,2€) por trayecto</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              
+              <div>
+                <h4 className="font-semibold text-gray-900 mb-3">Apps imprescindibles:</h4>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div className="bg-white rounded-xl p-4 border border-gray-200 shadow-sm">
+                    <h5 className="font-semibold text-gray-900 mb-2">BudapestGO</h5>
+                    <p className="text-sm text-gray-700">Oficial de transporte público</p>
+                  </div>
+                  <div className="bg-white rounded-xl p-4 border border-gray-200 shadow-sm">
+                    <h5 className="font-semibold text-gray-900 mb-2">Bolt</h5>
+                    <p className="text-sm text-gray-700">Taxis más baratos que Uber en Budapest</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         <div className="bg-orange-100 border border-orange-300 rounded-xl p-4 mt-4">
           <p className="text-orange-800 text-sm">
             Consejo de experto: Sube 2 horas antes del atardecer para ver la transformación de la ciudad de día a noche.
