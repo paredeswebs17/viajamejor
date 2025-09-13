@@ -23,6 +23,19 @@ const GuidesPage = () => {
       url: '/budapest-4-dias'
     },
     {
+      id: 'prague',
+      title: 'Praga en 3 días',
+      description: 'Ciudad de cuento con arquitectura medieval y cerveza increíble',
+      image: 'https://images.unsplash.com/photo-1541849546-216549ae216d?auto=format&fit=crop&w=600&q=80',
+      price: '60€',
+      rating: 4.8,
+      continent: 'Europa',
+      budget: '€€',
+      available: true,
+      badge: '🆕 Nuevo',
+      url: '/praga-3-dias'
+    },
+    {
       id: 'berlin',
       title: 'Berlín en 4 días',
       description: 'Historia, arte urbano y vida nocturna en la capital alemana',
@@ -32,15 +45,6 @@ const GuidesPage = () => {
       badge: '🆕 Nuevo',
       url: '#'
     },
-    {
-      id: 'prague',
-      title: 'Praga en 3 días',
-      description: 'Ciudad de cuento con arquitectura medieval y cerveza increíble',
-      image: 'https://images.unsplash.com/photo-1541849546-216549ae216d?auto=format&fit=crop&w=600&q=80',
-      price: '60€',
-      rating: 4.8,
-      continent: 'Europa',
-      budget: '€€',
       available: true,
       badge: '🆕 Nuevo',
       url: '/praga-3-dias'
