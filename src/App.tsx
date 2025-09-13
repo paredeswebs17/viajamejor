@@ -16,6 +16,7 @@ const TravelCardsPage = lazy(() => import('./pages/TravelCardsPage'));
 const CheapDestinationsPage = lazy(() => import('./pages/CheapDestinationsPage'));
 const TravelInsurancePage = lazy(() => import('./pages/TravelInsurancePage'));
 const BudapestGuidePage = lazy(() => import('./pages/BudapestGuidePage'));
+const PragueGuidePage = lazy(() => import('./pages/PragueGuidePage'));
 
 // Loading component
 const Loading = () => (
