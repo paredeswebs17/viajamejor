@@ -36,20 +36,6 @@ const GuidesPage = () => {
       url: '/praga-3-dias'
     },
     {
-      id: 'berlin',
-      title: 'Berlín en 4 días',
-      description: 'Historia, arte urbano y vida nocturna en la capital alemana',
-      image: 'https://images.unsplash.com/photo-1560969184-10fe8719e047?auto=format&fit=crop&w=600&q=80',
-      continent: 'Europa',
-      available: false,
-      badge: '🆕 Nuevo',
-      url: '#'
-    },
-      available: true,
-      badge: '🆕 Nuevo',
-      url: '/praga-3-dias'
-    },
-    {
       id: 'santorini',
       title: 'Santorini en 5 días',
       description: 'Atardeceres únicos, pueblos blancos y vinos volcánicos en las Cícladas',
