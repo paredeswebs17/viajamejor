@@ -108,6 +108,47 @@ return (
     </div>
   </div>
 
+  <div className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
+    <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">🚗 Llegada y Conexiones Inteligentes</h2>
+    
+    <div className="mb-6">
+      <h3 className="text-lg font-bold text-gray-900 mb-4">✈️ Desde Aeropuerto Ferenc Liszt</h3>
+      
+      <div className="bg-blue-50 border border-blue-200 rounded-xl p-6 mb-4">
+        <h4 className="font-bold text-gray-900 mb-3">🚌 Bus 100E Airport Express</h4>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div>
+            <p className="text-sm text-gray-700 mb-2"><strong>Precio:</strong> 2.200 HUF (≈ 5,5€)</p>
+            <p className="text-sm text-gray-700 mb-2"><strong>Horario:</strong> 24h/7 días</p>
+            <p className="text-sm text-gray-700"><strong>Duración:</strong> 40-45 min</p>
+          </div>
+          <div>
+            <p className="text-sm text-gray-700 mb-2"><strong>Paradas:</strong> Deák Ferenc tér, Astoria, Kálvin tér</p>
+            <p className="text-sm text-gray-700"><strong>Compra:</strong> Tarjeta en el bus o BudapestGO app</p>
+          </div>
+        </div>
+        <div className="bg-green-100 rounded-lg p-3 mt-4">
+          <p className="text-green-800 text-sm">💡 Pago con tarjeta en el bus es lo más rápido</p>
+        </div>
+      </div>
+      
+      <div className="bg-purple-50 border border-purple-200 rounded-xl p-4">
+        <h4 className="font-bold text-gray-900 mb-2">🚗 Transfer Privado</h4>
+        <p className="text-sm text-gray-700">Precio: 8.000 HUF (≈ 22€) | Duración: 25-30 min</p>
+      </div>
+    </div>
+    
+    <div>
+      <h3 className="text-lg font-bold text-gray-900 mb-4">🚊 Moverse por Budapest</h3>
+      <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-4">
+        <p className="text-sm text-gray-700 mb-2"><strong>A pie:</strong> Centro completamente caminable</p>
+        <p className="text-sm text-gray-700 mb-2"><strong>Tranvía 2:</strong> Bordea el Danubio</p>
+        <p className="text-sm text-gray-700 mb-2"><strong>Precio:</strong> 450 HUF (≈ 1,2€) por trayecto</p>
+        <p className="text-sm text-gray-700"><strong>Apps:</strong> BudapestGO (oficial) y Bolt (taxis)</p>
+      </div>
+    </div>
+  </div>
+
   {/* Separador decorativo */}
   <div className="flex items-center justify-center mb-8">
     <div className="flex space-x-2">
@@ -327,47 +368,6 @@ return (
             <ExternalLink className="h-3 w-3 ml-2" />
           </a>
         </div>
-
-  <div className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
-    <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">🚗 Llegada y Conexiones Inteligentes</h2>
-    
-    <div className="mb-6">
-      <h3 className="text-lg font-bold text-gray-900 mb-4">✈️ Desde Aeropuerto Ferenc Liszt</h3>
-      
-      <div className="bg-blue-50 border border-blue-200 rounded-xl p-6 mb-4">
-        <h4 className="font-bold text-gray-900 mb-3">🚌 Bus 100E Airport Express</h4>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          <div>
-            <p className="text-sm text-gray-700 mb-2"><strong>Precio:</strong> 2.200 HUF (≈ 5,5€)</p>
-            <p className="text-sm text-gray-700 mb-2"><strong>Horario:</strong> 24h/7 días</p>
-            <p className="text-sm text-gray-700"><strong>Duración:</strong> 40-45 min</p>
-          </div>
-          <div>
-            <p className="text-sm text-gray-700 mb-2"><strong>Paradas:</strong> Deák Ferenc tér, Astoria, Kálvin tér</p>
-            <p className="text-sm text-gray-700"><strong>Compra:</strong> Tarjeta en el bus o BudapestGO app</p>
-          </div>
-        </div>
-        <div className="bg-green-100 rounded-lg p-3 mt-4">
-          <p className="text-green-800 text-sm">💡 Pago con tarjeta en el bus es lo más rápido</p>
-        </div>
-      </div>
-      
-      <div className="bg-purple-50 border border-purple-200 rounded-xl p-4">
-        <h4 className="font-bold text-gray-900 mb-2">🚗 Transfer Privado</h4>
-        <p className="text-sm text-gray-700">Precio: 8.000 HUF (≈ 22€) | Duración: 25-30 min</p>
-      </div>
-    </div>
-    
-    <div>
-      <h3 className="text-lg font-bold text-gray-900 mb-4">🚊 Moverse por Budapest</h3>
-      <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-4">
-        <p className="text-sm text-gray-700 mb-2"><strong>A pie:</strong> Centro completamente caminable</p>
-        <p className="text-sm text-gray-700 mb-2"><strong>Tranvía 2:</strong> Bordea el Danubio</p>
-        <p className="text-sm text-gray-700 mb-2"><strong>Precio:</strong> 450 HUF (≈ 1,2€) por trayecto</p>
-        <p className="text-sm text-gray-700"><strong>Apps:</strong> BudapestGO (oficial) y Bolt (taxis)</p>
-      </div>
-    </div>
-  </div>
 
         <div className="bg-orange-100 border border-orange-300 rounded-xl p-4 mt-4">
           <p className="text-orange-800 text-sm">
