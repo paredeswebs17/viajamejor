@@ -60,6 +60,7 @@ function App() {
                 
                 {/* GUÍAS ESPECÍFICAS */}
                 <Route path="/budapest-4-dias" element={<BudapestGuidePage />} />
+               <Route path="/praga-3-dias" element={<PragueGuidePage />} />
                 
                 {/* 404 - Redirige a home */}
                 <Route path="*" element={<HomePage />} />
