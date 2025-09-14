@@ -31,7 +31,7 @@ const GuidesPage = () => {
       rating: 4.8,
       continent: 'Europa',
       budget: '€€',
-      available: true,
+      available: false,
       badge: '🆕 Nuevo',
       url: '/praga-3-dias'
     },
