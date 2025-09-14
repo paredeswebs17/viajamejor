@@ -20,7 +20,6 @@ return (
       Volver a guías
     </button>
 
-```
 <div className="mb-6">
   <span className="bg-gradient-to-r from-emerald-500 to-green-500 text-white px-4 py-2 rounded-full text-sm font-medium shadow-md">
     Guía Esencial
@@ -66,7 +65,6 @@ return (
     <span>Compartir</span>
   </button>
 </div>
-```
 
   </div>
 
@@ -112,7 +110,6 @@ return (
       Llegada y Conexiones Inteligentes
     </h2>
 
-```
 <div className="mb-8">
   <h3 className="text-lg font-bold text-gray-900 mb-4 flex items-center">
     <span className="text-xl mr-2">✈️</span>
@@ -206,7 +203,6 @@ return (
     </div>
   </div>
 </div>
-```
 
   </div>
 
@@ -226,7 +222,6 @@ return (
       DÍA 1: Corazón Medieval y Herencia Judía
     </h2>
 
-```
 <div className="mb-8">
   <h3 className="text-lg font-bold text-gray-900 mb-4 flex items-center">
     <div className="w-1 h-6 bg-gradient-to-b from-blue-400 to-purple-400 rounded-full mr-3"></div>
@@ -459,7 +454,6 @@ return (
     </div>
   </div>
 </div>
-```
 
   </div>
 
@@ -478,8 +472,6 @@ return (
       <span className="bg-gradient-to-br from-blue-500 to-purple-500 text-white w-14 h-14 rounded-2xl flex items-center justify-center text-xl font-bold mr-4 shadow-lg">2</span>
       DÍA 2: Castillo Imperial y Romance Bohemio
     </h2>
-
-```
 <div className="mb-8">
   <h3 className="text-lg font-bold text-gray-900 mb-4 flex items-center">
     <div className="w-1 h-6 bg-gradient-to-b from-red-400 to-pink-400 rounded-full mr-3"></div>
@@ -659,7 +651,6 @@ return (
     </div>
   </div>
 </div>
-```
 
   </div>
 
@@ -678,8 +669,6 @@ return (
       <span className="bg-gradient-to-br from-orange-500 to-red-500 text-white w-14 h-14 rounded-2xl flex items-center justify-center text-xl font-bold mr-4 shadow-lg">3</span>
       DÍA 3: Historia Profunda y Vistas Panorámicas
     </h2>
-
-```
 <div className="mb-8">
   <h3 className="text-lg font-bold text-gray-900 mb-4">Elige tu Aventura del Día Completo</h3>
   
@@ -787,7 +776,6 @@ return (
     </div>
   </div>
 </div>
-```
 
   </div>
 
@@ -803,8 +791,6 @@ return (
 
   <div className="bg-gray-50 rounded-2xl p-6 sm:p-8 mb-8 shadow-md">
     <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6 text-center">Presupuestos Reales para Praga</h2>
-
-```
 <div className="mb-6">
   <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
     <h3 className="text-lg font-bold text-emerald-800 mb-4">ESTILO MOCHILERO - 70 €/día</h3>
@@ -891,14 +877,11 @@ return (
     </div>
   </div>
 </div>
-```
 
   </div>
 
   <div className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
     <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">Estrategia Financiera Inteligente</h2>
-
-```
 <div className="mb-6">
   <h3 className="text-lg font-bold text-gray-900 mb-4">Moneda y Pagos</h3>
   <div className="bg-yellow-50 border border-yellow-200 rounded-xl p-4 shadow-sm">
@@ -948,14 +931,11 @@ return (
     </div>
   </div>
 </div>
-```
 
   </div>
 
   <div className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
     <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">Cuándo Visitar Praga</h2>
-
-```
 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
   <div className="bg-gradient-to-r from-pink-50 to-purple-50 border border-pink-200 rounded-xl p-4 text-center shadow-sm hover:shadow-md transition-all duration-300">
     <h3 className="font-semibold text-pink-800 mb-2">Primavera (Abril-Mayo) - IDEAL</h3>
@@ -981,14 +961,11 @@ return (
     <p className="text-xs text-blue-600">Mercados navideños + nieve romántica + menos gente</p>
   </div>
 </div>
-```
 
   </div>
 
   <div className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
     <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">Gastronomía Checa Auténtica</h2>
-
-```
 <div className="mb-6">
   <h3 className="text-lg font-bold text-gray-900 mb-4">Platos Imprescindibles:</h3>
   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -1145,7 +1122,6 @@ return (
     </ul>
   </div>
 </div>
-```
 
   </div>
 
@@ -1187,8 +1163,6 @@ return (
 
   <div className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
     <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">Apps Esenciales para Praga</h2>
-
-```
 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
   <div className="bg-blue-50 border border-blue-200 rounded-xl p-4 shadow-sm hover:shadow-md transition-all duration-300">
     <h3 className="font-semibold text-gray-900 mb-2">PID Lítačka</h3>
@@ -1226,14 +1200,11 @@ return (
     </ul>
   </div>
 </div>
-```
 
   </div>
 
   <div className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
     <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">Errores Costosos que Evitar</h2>
-
-```
 <div className="space-y-4">
   <div className="bg-red-50 border border-red-200 rounded-xl p-4 shadow-sm hover:shadow-md transition-all duration-300">
     <h3 className="font-semibold text-red-800 mb-2">Error #1: Pagar en euros</h3>
@@ -1263,14 +1234,11 @@ return (
     <p className="text-purple-700 text-sm font-semibold">Ahorro: Evitar estafas de 20-50€</p>
   </div>
 </div>
-```
 
   </div>
 
   <div className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
     <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">Herramientas para tu viaje</h2>
-
-```
 <div className="space-y-6">
   <div className="bg-gradient-to-r from-sky-50 to-blue-50 rounded-xl p-6 border border-sky-200 shadow-sm hover:shadow-md transition-all duration-300">
     <div className="text-center">
@@ -1340,14 +1308,11 @@ return (
     </div>
   </div>
 </div>
-```
 
   </div>
 
   <div className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
     <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">Productos Esenciales para Praga</h2>
-
-```
 <div className="space-y-4">
   <div className="bg-white rounded-xl p-4 shadow-sm border border-gray-100 flex items-center justify-between hover:shadow-md transition-all duration-300">
     <div className="flex-1">
@@ -1400,14 +1365,11 @@ return (
     </a>
   </div>
 </div>
-```
 
   </div>
 
   <div className="bg-gray-50 rounded-2xl p-6 sm:p-8 mb-8 shadow-md">
     <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">Enlaces Oficiales Útiles</h2>
-
-```
 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
   <div className="bg-white rounded-xl p-4 border border-gray-200 shadow-sm hover:shadow-md transition-all duration-300">
     <h3 className="font-semibold text-gray-900 mb-3">Atracciones Principales</h3>
@@ -1455,14 +1417,11 @@ return (
     </div>
   </div>
 </div>
-```
 
   </div>
 
   <div className="bg-gradient-to-r from-purple-50 to-pink-50 rounded-2xl p-6 sm:p-8 mb-8 shadow-md hover:shadow-lg transition-all duration-300">
     <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">Bonus: Experiencias Secretas</h2>
-
-```
 <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
   <div className="bg-white rounded-xl p-4 border border-gray-200 shadow-sm hover:shadow-md transition-all duration-300">
     <h3 className="font-semibold text-gray-900 mb-2">Para Aventureros:</h3>
@@ -1491,7 +1450,6 @@ return (
     </ul>
   </div>
 </div>
-```
 
   </div>
 
