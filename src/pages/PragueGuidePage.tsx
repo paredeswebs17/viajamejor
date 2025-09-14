@@ -66,29 +66,12 @@ const PragueGuidePage = () => {
                 "name": "Día 3: Vistas Panorámicas y Despedida", 
                 "description": "Colina Petřín + Mercado Havelské + Última vuelta"
               }
-            ]
+            ],
             "about": {
               "@type": "Place",
               "name": "Praga",
               "@id": "https://www.wikidata.org/wiki/Q1085"
-            },
-            "itinerary": [
-              {
-                "@type": "TouristTrip",
-                "name": "Día 1: Castillo Imperial y Ciudad Vieja",
-                "description": "Castillo de Praga + Catedral + Puente de Carlos + Plaza Ciudad Vieja"
-              },
-              {
-                "@type": "TouristTrip", 
-                "name": "Día 2: Barrio Judío y Cerveza Tradicional",
-                "description": "Josefov + Plaza Wenceslao + Cervecerías históricas"
-              },
-              {
-                "@type": "TouristTrip",
-                "name": "Día 3: Vistas Panorámicas y Despedida", 
-                "description": "Colina Petřín + Mercado Havelské + Última vuelta"
-              }
-            ]
+            }
           })}
         </script>
       </Helmet>
