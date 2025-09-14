@@ -872,6 +872,11 @@ Volver a guías
             </ul>
           </div>
         </div>
+        <div className="bg-gray-100 rounded-xl p-3 mt-4 text-xs text-gray-600">
+        <p className="text-center">
+          <span className="font-medium">El precio total incluye:</span> Media aproximada de gastos en atracciones principales, transporte público, y experiencias básicas según este estilo de viaje
+        </p>
+      </div>
         <div className="bg-white rounded-xl p-4 mt-4 shadow-sm">
           <p className="text-emerald-800 font-semibold text-center">
             Total 3 días: 210€ por persona
