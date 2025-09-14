@@ -19,7 +19,6 @@ className="inline-flex items-center text-sky-600 hover:text-sky-700 hover:bg-sky
 Volver a guías
 </button>
 
-```
     <div className="mb-6">
       <span className="bg-gradient-to-r from-emerald-500 to-green-500 text-white px-4 py-2 rounded-full text-sm font-medium shadow-md">
         Guía Esencial
