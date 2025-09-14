@@ -887,7 +887,7 @@ Volver a guías
           <div>
             <h4 className="font-semibold text-gray-900 mb-2">Alojamiento (2 noches):</h4>
             <ul className="text-sm text-gray-700 space-y-1 list-none">
-              <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Hoteles 3*: 60-80€/noche</li>
+              <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Hoteles 4*: Hotel Karlova Prague, Hotel Hastal Prague Old Town</li>
               <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Ubicación: Ciudad Vieja o Nueva</li>
               <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>Desayuno incluido + habitación privada</li>
             </ul>
