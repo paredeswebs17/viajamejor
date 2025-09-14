@@ -858,9 +858,9 @@ Volver a guías
           <div>
             <h4 className="font-semibold text-gray-900 mb-2">Alojamiento (2 noches):</h4>
             <ul className="text-sm text-gray-700 space-y-1 list-none">
-              <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Hostales centro: 25-35€/noche</li>
-              <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Ubicación: Distrito 1 o cerca del metro</li>
-              <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>Dormitorios compartidos con baño</li>
+              <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Hostales centro: Pensión SKLEP, Libero Residence </li>
+              <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Ubicación: Cerca del centro</li>
+              <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>Habitaciones a precios económicos</li>
             </ul>
           </div>
           <div>
