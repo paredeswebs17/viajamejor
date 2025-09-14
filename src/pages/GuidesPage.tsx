@@ -45,10 +45,6 @@ const GuidesPage = () => {
       badge: '🆕 Nuevo',
       url: '#'
     },
-      available: true,
-      badge: '🆕 Nuevo',
-      url: '/praga-3-dias'
-    },
     {
       id: 'santorini',
       title: 'Santorini en 5 días',
