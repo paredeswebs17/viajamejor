@@ -13,10 +13,10 @@ const PragueGuideArticle: React.FC<PragueGuideArticleProps> = ({ onBack }) => {
       <div className="mb-8">
         <button 
           onClick={onBack}
-          className="inline-flex items-center text-emerald-600 hover:text-emerald-700 hover:bg-emerald-50 px-3 py-2 rounded-xl transition-all duration-200 font-medium border border-emerald-200 hover:border-emerald-300 mb-6 shadow-sm hover:shadow-md"
+          className="inline-flex items-center text-sky-600 hover:text-sky-700 hover:bg-sky-50 px-3 py-2 rounded-lg transition-all duration-200 font-medium border border-sky-200 hover:border-sky-300 mb-6"
         >
           <ArrowLeft className="h-4 w-4 mr-2" />
-          Volver a guías
+          Volver a Guías
         </button>
 
         <div className="mb-6">
