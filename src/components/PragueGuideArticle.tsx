@@ -1362,10 +1362,6 @@ Volver a guías
                  className="block bg-gradient-to-r from-purple-500 to-indigo-500 hover:from-purple-600 hover:to-indigo-600 text-white font-medium px-3 py-2 rounded-lg shadow-sm hover:shadow-md transform hover:scale-105 transition-all duration-200">
                 🕍 Museo Judío Praga
               </a>
-              <a href="https://www.klementinum.com/en/" target="_blank" rel="noopener noreferrer"
-                 className="block bg-gradient-to-r from-yellow-500 to-orange-500 hover:from-yellow-600 hover:to-orange-600 text-white font-medium px-3 py-2 rounded-lg shadow-sm hover:shadow-md transform hover:scale-105 transition-all duration-200">
-                📚 Clementinum Oficial
-              </a>
             </div>
           </div>
           
