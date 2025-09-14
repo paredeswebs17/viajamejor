@@ -906,6 +906,11 @@ Volver a guías
             </ul>
           </div>
         </div>
+        <div className="bg-gray-100 rounded-xl p-3 mt-4 text-xs text-gray-600">
+        <p className="text-center">
+          <span className="font-medium">El precio total incluye:</span> Media aproximada de gastos en todas las atracciones, tours con guía, transporte variado, y experiencias de nivel medio
+        </p>
+      </div>
         <div className="bg-white rounded-xl p-4 mt-4 shadow-sm">
           <p className="text-blue-800 font-semibold text-center">
             Total 3 días: 330€ por persona
