@@ -127,33 +127,31 @@ manualUrl: 'https://www.amazon.es/Auriculares-Inal%C3%A1mbricos-Controlador-Impe
 
 // Cargar datos de productos de Amazon API
 useEffect(() => {
-const loadProductData = async () => {
-try {
-const asins = products.map(p => p.asin);
-const response = await fetch('/api/amazon/get-products', {
-method: 'POST',
-headers: {
-'Content-Type': 'application/json',
-},
-body: JSON.stringify({ asins }),
-});
-
-```
-    if (response.ok) {
-      const data = await response.json();
-      setProductData(data.products || {});
+  const loadProductData = async () => {
+    try {
+      const asins = products.map(p => p.asin);
+      const response = await fetch('/api/amazon/get-products', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ asins }),
+      });
+      
+      if (response.ok) {
+        const data = await response.json();
+        setProductData(data.products || {});
+      }
+    } catch (error) {
+      console.error('Error loading product data:', error);
+    } finally {
+      setLoading(false);
     }
-  } catch (error) {
-    console.error('Error loading product data:', error);
-  } finally {
-    setLoading(false);
-  }
-};
+  };
 
-loadProductData();
-```
-
+  loadProductData();
 }, []);
+
 
 // Función para trackear clicks
 const trackProductClick = async (product: TravelProduct, actualPrice?: string) => {
@@ -169,7 +167,6 @@ currency: 'EUR'
 });
 }
 
-```
   // Analytics propios
   await fetch('/api/analytics/track-click', {
     method: 'POST',
@@ -188,7 +185,6 @@ currency: 'EUR'
 } catch (error) {
   console.error('Error tracking click:', error);
 }
-```
 
 };
 
@@ -202,7 +198,6 @@ return baseUrl;
 const PriceDisplay = ({ product }: { product: TravelProduct }) => {
 const data = productData[product.asin];
 
-```
 if (loading) {
   return (
     <div className="flex items-center space-x-3">
@@ -229,7 +224,6 @@ return (
     </span>
   </div>
 );
-```
 
 };
 
@@ -251,8 +245,6 @@ className="inline-flex items-center text-sky-600 hover:text-sky-700 hover:bg-sky
 <ArrowLeft className="h-4 w-4 mr-2" />
 Volver al blog
 </button>
-
-```
     <div className="mb-6 flex items-center justify-between">
       <span className="bg-sky-500 text-white px-3 py-1 rounded-full text-sm font-medium">
         Equipaje
@@ -373,7 +365,6 @@ Volver al blog
 
   <RelatedArticles currentCategory="Equipaje" currentArticleId="8-objetos-imprescindibles" />
 </article>
-```
 
 );
 };
