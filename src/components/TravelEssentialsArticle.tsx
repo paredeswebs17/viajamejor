@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from ‘react’;
-import { ArrowLeft, Share2, TrendingUp, Eye } from ‘lucide-react’;
-import RelatedArticles from ‘./RelatedArticles’;
+import React, { useState, useEffect } from 'react';
+import { ArrowLeft, Share2, TrendingUp, Eye } from ‘lucide-react';
+import RelatedArticles from './RelatedArticles';
 
 interface TravelEssentialsArticleProps {
 onBack: () => void;
@@ -38,91 +38,91 @@ const [viewCount, setViewCount] = useState(1247); // Contador de vistas inicial
 const products: TravelProduct[] = [
 {
 id: 1,
-emoji: ‘🎒’,
-title: ‘Mochila Cabina 40x20x25 (Ryanair)’,
-asin: ‘B0CBVFL64Z’,
-description: ‘Viajar ligero es un arte, y esta mochila es tu mejor aliada si quieres evitar cargos extra y colas de facturación. Es perfecta para aerolíneas como Ryanair porque cumple exactamente las medidas de equipaje de mano permitido. Sus compartimentos están pensados para aprovechar cada centímetro, y detalles como el puerto USB o el bolsillo antirrobo me han resultado comodísimos en viajes urbanos.’,
-basePrice: ‘35€’,
-badge: ‘✅ Certificada cabina’,
-badgeIcon: ‘🌍’,
-manualUrl: ‘https://www.amazon.es/Hayayu-40x20x25-Mochilas-Senderismo-Impermeable/dp/B0CBVFL64Z?tag=viajamejor-21’
+emoji: ‘🎒',
+title: ‘Mochila Cabina 40x20x25 (Ryanair)',
+asin: ‘B0CBVFL64Z',
+description: ‘Viajar ligero es un arte, y esta mochila es tu mejor aliada si quieres evitar cargos extra y colas de facturación. Es perfecta para aerolíneas como Ryanair porque cumple exactamente las medidas de equipaje de mano permitido. Sus compartimentos están pensados para aprovechar cada centímetro, y detalles como el puerto USB o el bolsillo antirrobo me han resultado comodísimos en viajes urbanos.',
+basePrice: ‘35€',
+badge: ‘✅ Certificada cabina',
+badgeIcon: ‘🌍',
+manualUrl: ‘https://www.amazon.es/Hayayu-40x20x25-Mochilas-Senderismo-Impermeable/dp/B0CBVFL64Z?tag=viajamejor-21'
 },
 {
 id: 2,
-emoji: ‘🔌’,
-title: ‘Adaptador Universal TESSAN’,
-asin: ‘B0B2DRC76L’,
-description: ‘No hay peor sensación que llegar a tu destino y darte cuenta de que tu enchufe no encaja. Este adaptador te cubre en más de 150 países. Es ligero, compacto y me ha sacado de más de un apuro, sobre todo por sus puertos USB y su velocidad de carga. Viajar sin este gadget ya no es una opción para mí.’,
-basePrice: ‘15€’,
-badge: ‘🌍 +150 países’,
-badgeIcon: ‘⚡’,
-manualUrl: ‘https://www.amazon.es/TESSAN-Adaptador-Universal-Internacional-Americano/dp/B0B2DRC76L?tag=viajamejor-21’
+emoji: ‘🔌',
+title: ‘Adaptador Universal TESSAN',
+asin: ‘B0B2DRC76L',
+description: ‘No hay peor sensación que llegar a tu destino y darte cuenta de que tu enchufe no encaja. Este adaptador te cubre en más de 150 países. Es ligero, compacto y me ha sacado de más de un apuro, sobre todo por sus puertos USB y su velocidad de carga. Viajar sin este gadget ya no es una opción para mí.',
+basePrice: ‘15€',
+badge: ‘🌍 +150 países',
+badgeIcon: ‘⚡',
+manualUrl: ‘https://www.amazon.es/TESSAN-Adaptador-Universal-Internacional-Americano/dp/B0B2DRC76L?tag=viajamejor-21'
 },
 {
 id: 3,
-emoji: ‘🔋’,
-title: ‘Batería Externa INIU 10000mAh’,
-asin: ‘B08VD632WJ’,
-description: ‘Nada te arruina más un viaje que quedarte sin batería cuando más lo necesitas. Esta powerbank es pequeña y ligera, pero potente. Me permite recargar el móvil un par de veces sin problemas. Además, es rápida y cabe en cualquier bolsillo de la mochila o pantalón.’,
-basePrice: ‘20€’,
-badge: ‘⚡ Carga rápida’,
-badgeIcon: ‘🔋’,
-manualUrl: ‘https://www.amazon.es/INIU-10000mAh-Cargador-Portatil-Tel%C3%A9fono/dp/B08VD632WJ?tag=viajamejor-21’
+emoji: ‘🔋',
+title: ‘Batería Externa INIU 10000mAh',
+asin: ‘B08VD632WJ',
+description: ‘Nada te arruina más un viaje que quedarte sin batería cuando más lo necesitas. Esta powerbank es pequeña y ligera, pero potente. Me permite recargar el móvil un par de veces sin problemas. Además, es rápida y cabe en cualquier bolsillo de la mochila o pantalón.',
+basePrice: ‘20€',
+badge: ‘⚡ Carga rápida',
+badgeIcon: ‘🔋',
+manualUrl: ‘https://www.amazon.es/INIU-10000mAh-Cargador-Portatil-Tel%C3%A9fono/dp/B08VD632WJ?tag=viajamejor-21'
 },
 {
 id: 4,
-emoji: ‘⚖️’,
-title: ‘Báscula Digital MYCARBON’,
-asin: ‘B01IDJM8OA’,
-description: ‘Si eres de los que siempre duda en el aeropuerto si tu maleta pasará el control de peso, esta báscula es imprescindible. Compacta, ligera y precisa, me ha ahorrado pagar sobrecostes más veces de las que puedo contar. Su pantalla iluminada es especialmente útil si pesas de noche o en habitaciones poco iluminadas.’,
-basePrice: ‘10€’,
-badge: ‘💰 Ahorra sobrecostes’,
-badgeIcon: ‘⚖️’,
-manualUrl: ‘https://www.amazon.es/MYCARBON-Equipaje-Port%C3%A1til-Electr%C3%B3nica-Retroiluminada/dp/B01IDJM8OA?tag=viajamejor-21’
+emoji: ‘⚖️',
+title: ‘Báscula Digital MYCARBON',
+asin: ‘B01IDJM8OA',
+description: ‘Si eres de los que siempre duda en el aeropuerto si tu maleta pasará el control de peso, esta báscula es imprescindible. Compacta, ligera y precisa, me ha ahorrado pagar sobrecostes más veces de las que puedo contar. Su pantalla iluminada es especialmente útil si pesas de noche o en habitaciones poco iluminadas.',
+basePrice: ‘10€',
+badge: ‘💰 Ahorra sobrecostes',
+badgeIcon: ‘⚖️',
+manualUrl: ‘https://www.amazon.es/MYCARBON-Equipaje-Port%C3%A1til-Electr%C3%B3nica-Retroiluminada/dp/B01IDJM8OA?tag=viajamejor-21'
 },
 {
 id: 5,
-emoji: ‘💤’,
-title: ‘Almohada Viscoelástica de Viaje’,
-asin: ‘B0B96TP1WX’,
-description: ‘El descanso en ruta es vital, y esta almohada ha sido un descubrimiento. Nada que ver con las hinchables. Es viscoelástica, se adapta perfectamente y viene con antifaz y tapones para crear tu pequeño oasis incluso en el asiento más incómodo del mundo. Tras probar varias, esta es la que repito en cada viaje.’,
-basePrice: ‘25€’,
-badge: ‘😴 Incluye antifaz’,
-badgeIcon: ‘💤’,
-manualUrl: ‘https://www.amazon.es/SOMLAW-Almohada-Viscoel%C3%A1stica-Memoria-Viajando/dp/B0B96TP1WX?tag=viajamejor-21’
+emoji: ‘💤',
+title: ‘Almohada Viscoelástica de Viaje',
+asin: ‘B0B96TP1WX',
+description: ‘El descanso en ruta es vital, y esta almohada ha sido un descubrimiento. Nada que ver con las hinchables. Es viscoelástica, se adapta perfectamente y viene con antifaz y tapones para crear tu pequeño oasis incluso en el asiento más incómodo del mundo. Tras probar varias, esta es la que repito en cada viaje.',
+basePrice: ‘25€',
+badge: ‘😴 Incluye antifaz',
+badgeIcon: ‘💤',
+manualUrl: ‘https://www.amazon.es/SOMLAW-Almohada-Viscoel%C3%A1stica-Memoria-Viajando/dp/B0B96TP1WX?tag=viajamejor-21'
 },
 {
 id: 6,
-emoji: ‘🧳’,
-title: ‘Maleta Amazon Basics Mediana’,
-asin: ‘B071VG5N9D’,
-description: ‘Ligera, robusta y con ruedas que giran 360º, es perfecta para viajes de una o dos semanas. No es la más cara ni la más llamativa, pero su relación calidad-precio es difícil de superar. Llevo años usándola y aguanta el trote sin problema.’,
-basePrice: ‘50€’,
-badge: ‘🔄 Ruedas 360º’,
-badgeIcon: ‘🧳’,
-manualUrl: ‘https://www.amazon.es/Amazon-Basics-Expandible-Equipaje-Giratorias/dp/B071VG5N9D?tag=viajamejor-21’
+emoji: ‘🧳',
+title: ‘Maleta Amazon Basics Mediana',
+asin: ‘B071VG5N9D',
+description: ‘Ligera, robusta y con ruedas que giran 360º, es perfecta para viajes de una o dos semanas. No es la más cara ni la más llamativa, pero su relación calidad-precio es difícil de superar. Llevo años usándola y aguanta el trote sin problema.',
+basePrice: ‘50€',
+badge: ‘🔄 Ruedas 360º',
+badgeIcon: ‘🧳',
+manualUrl: ‘https://www.amazon.es/Amazon-Basics-Expandible-Equipaje-Giratorias/dp/B071VG5N9D?tag=viajamejor-21'
 },
 {
 id: 7,
-emoji: ‘🧳’,
-title: ‘Maleta Amazon Basics Grande’,
-asin: ‘B071HHX6VF’,
-description: ‘Si necesitas espacio para viajes largos o para compartir maleta, esta es una apuesta segura. Carcasa dura, ruedas que facilitan el traslado y un interior muy bien pensado para mantener todo en orden. Para el precio que tiene, pocas pegas se le pueden poner.’,
-basePrice: ‘70€’,
-badge: ‘🛡️ Carcasa dura’,
-badgeIcon: ‘🧳’,
-manualUrl: ‘https://www.amazon.es/AmazonBasics-Maleta-r%C3%ADgida-giratoria-Negro/dp/B071HHX6VF?tag=viajamejor-21’
+emoji: ‘🧳',
+title: ‘Maleta Amazon Basics Grande',
+asin: ‘B071HHX6VF',
+description: ‘Si necesitas espacio para viajes largos o para compartir maleta, esta es una apuesta segura. Carcasa dura, ruedas que facilitan el traslado y un interior muy bien pensado para mantener todo en orden. Para el precio que tiene, pocas pegas se le pueden poner.',
+basePrice: ‘70€',
+badge: ‘🛡️ Carcasa dura',
+badgeIcon: ‘🧳',
+manualUrl: ‘https://www.amazon.es/AmazonBasics-Maleta-r%C3%ADgida-giratoria-Negro/dp/B071HHX6VF?tag=viajamejor-21'
 },
 {
 id: 8,
-emoji: ‘🎧’,
-title: ‘Auriculares Cancelación de Ruido’,
-asin: ‘B0BCKHQGJN’,
-description: ‘No sé cómo viajaba antes sin ellos. Elimina ese ruido de motor de avión, niños llorando o charlas ajenas. Además, son ligeros, cómodos y la batería dura lo suficiente para un vuelo largo. Un pequeño lujo que mejora mucho la experiencia viajera.’,
-basePrice: ‘30€’,
-badge: ‘🔇 Cancelación activa’,
-badgeIcon: ‘🎧’,
-manualUrl: ‘https://www.amazon.es/Auriculares-Inal%C3%A1mbricos-Controlador-Impermeable-Inalambricos/dp/B0BCKHQGJN?tag=viajamejor-21’
+emoji: ‘🎧',
+title: ‘Auriculares Cancelación de Ruido',
+asin: ‘B0BCKHQGJN',
+description: ‘No sé cómo viajaba antes sin ellos. Elimina ese ruido de motor de avión, niños llorando o charlas ajenas. Además, son ligeros, cómodos y la batería dura lo suficiente para un vuelo largo. Un pequeño lujo que mejora mucho la experiencia viajera.',
+basePrice: ‘30€',
+badge: ‘🔇 Cancelación activa',
+badgeIcon: ‘🎧',
+manualUrl: ‘https://www.amazon.es/Auriculares-Inal%C3%A1mbricos-Controlador-Impermeable-Inalambricos/dp/B0BCKHQGJN?tag=viajamejor-21'
 }
 ];
 
@@ -131,10 +131,10 @@ useEffect(() => {
 const loadProductData = async () => {
 try {
 const asins = products.map(p => p.asin);
-const response = await fetch(’/api/amazon/get-products’, {
-method: ‘POST’,
+const response = await fetch('/api/amazon/get-products', {
+method: ‘POST',
 headers: {
-‘Content-Type’: ‘application/json’,
+‘Content-Type': ‘application/json',
 },
 body: JSON.stringify({ asins }),
 });
@@ -160,13 +160,13 @@ loadProductData();
 const trackProductClick = async (product: TravelProduct, actualPrice?: string) => {
 try {
 // Google Analytics
-if (typeof gtag !== ‘undefined’) {
-gtag(‘event’, ‘affiliate_click’, {
-event_category: ‘Amazon Affiliate’,
+if (typeof gtag !== ‘undefined') {
+gtag(‘event', ‘affiliate_click', {
+event_category: ‘Amazon Affiliate',
 event_label: product.title,
 item_id: product.asin,
-value: actualPrice ? parseFloat(actualPrice.replace(/[^0-9.]/g, ‘’)) : 0,
-currency: ‘EUR’
+value: actualPrice ? parseFloat(actualPrice.replace(/[^0-9.]/g, ‘')) : 0,
+currency: ‘EUR'
 });
 }
 
