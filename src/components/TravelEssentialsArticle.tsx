@@ -330,7 +330,7 @@ Volver al blog
             <div className="flex items-center mb-4 text-sm text-gray-600">
               <span className="flex items-center mr-4">
                 {'★'.repeat(Math.floor(productData[product.asin].rating!))}
-                <span className="ml-1">{productData[product.asin].rating}/5</span>
+                <span className="ml-1">{productData[product.asin].rating!.toFixed(1)}/5</span>
               </span>
               {productData[product.asin].reviewCount && (
                 <span>({productData[product.asin].reviewCount} reseñas)</span>
@@ -363,13 +363,12 @@ Volver al blog
       ))}
     </div>
 
-    {/* Disclaimer de afiliados */}
-    <div className="mt-12 p-6 bg-blue-50 border border-blue-200 rounded-2xl">
-      <h3 className="font-semibold text-blue-900 mb-2">💡 Transparencia total</h3>
-      <p className="text-blue-800 text-sm">
-        Como participante del Programa de Afiliados de Amazon, obtengo ingresos por compras calificadas. 
-        Todos los productos están probados personalmente y las recomendaciones son 100% honestas. 
-        Los precios pueden cambiar sin previo aviso.
+    {/* Disclaimer de precios */}
+    <div className="mt-12 p-6 bg-gray-50 border border-gray-200 rounded-2xl">
+      <h3 className="font-semibold text-gray-900 mb-2">ℹ️ Información sobre precios</h3>
+      <p className="text-gray-700 text-sm">
+        Los precios mostrados pueden cambiar según las actualizaciones de Amazon y la disponibilidad de productos. 
+        Te recomendamos verificar el precio final en Amazon antes de realizar tu compra.
       </p>
     </div>
   </div>
