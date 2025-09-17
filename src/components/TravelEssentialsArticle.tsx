@@ -129,36 +129,58 @@ manualUrl: 'https://www.amazon.es/Auriculares-Inal%C3%A1mbricos-Controlador-Impe
 useEffect(() => {
   const loadProductData = async () => {
     try {
-      // Mock data para desarrollo (simula respuesta de Amazon API)
-      const mockProducts = {};
+      // Intentar usar API real primero, fallback a mock si falla
+      const asins = products.map(p => p.asin);
       
-      products.forEach(product => {
-        const mockPrices = {
-          'B0CBVFL64Z': { price: '39.99', originalPrice: '49.99' },
-          'B0B2DRC76L': { price: '18.95', originalPrice: null },
-          'B08VD632WJ': { price: '22.99', originalPrice: '27.99' },
-          'B01IDJM8OA': { price: '12.99', originalPrice: null },
-          'B0B96TP1WX': { price: '28.50', originalPrice: '35.00' },
-          'B071VG5N9D': { price: '54.99', originalPrice: null },
-          'B071HHX6VF': { price: '74.99', originalPrice: '89.99' },
-          'B0BCKHQGJN': { price: '32.99', originalPrice: null }
-        };
-
-        const mock = mockPrices[product.asin] || { price: '29.99', originalPrice: null };
+      try {
+        const response = await fetch('/api/amazon/get-products', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({ asins })
+        });
         
-        mockProducts[product.asin] = {
-          asin: product.asin,
-          title: `Producto actualizado - ${product.asin}`,
-          currentPrice: `€${mock.price}`,
-          originalPrice: mock.originalPrice ? `€${mock.originalPrice}` : null,
-          availability: 'En stock',
-          rating: 4.2 + Math.random() * 0.8,
-          reviewCount: Math.floor(Math.random() * 1000) + 100,
-          imageUrl: null
-        };
-      });
-      
-      setProductData(mockProducts);
+        if (response.ok) {
+          const data = await response.json();
+          setProductData(data.products);
+        } else {
+          throw new Error('API not available');
+        }
+      } catch (apiError) {
+        console.log('API no disponible en desarrollo, usando datos mock');
+        
+        // Fallback a datos mock para desarrollo
+        const mockProducts = {};
+        
+        products.forEach(product => {
+          const mockPrices = {
+            'B0CBVFL64Z': { price: '39.99', originalPrice: '49.99' },
+            'B0B2DRC76L': { price: '18.95', originalPrice: null },
+            'B08VD632WJ': { price: '22.99', originalPrice: '27.99' },
+            'B01IDJM8OA': { price: '12.99', originalPrice: null },
+            'B0B96TP1WX': { price: '28.50', originalPrice: '35.00' },
+            'B071VG5N9D': { price: '54.99', originalPrice: null },
+            'B071HHX6VF': { price: '74.99', originalPrice: '89.99' },
+            'B0BCKHQGJN': { price: '32.99', originalPrice: null }
+          };
+
+          const mock = mockPrices[product.asin] || { price: '29.99', originalPrice: null };
+          
+          mockProducts[product.asin] = {
+            asin: product.asin,
+            title: `Producto actualizado - ${product.asin}`,
+            currentPrice: `€${mock.price}`,
+            originalPrice: mock.originalPrice ? `€${mock.originalPrice}` : null,
+            availability: 'En stock',
+            rating: 4.2 + Math.random() * 0.8,
+            reviewCount: Math.floor(Math.random() * 1000) + 100,
+            imageUrl: null
+          };
+        });
+        
+        setProductData(mockProducts);
+      }
     } catch (error) {
       console.error('Error loading product data:', error);
     } finally {
