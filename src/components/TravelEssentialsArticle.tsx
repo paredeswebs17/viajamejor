@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { ArrowLeft, Share2, TrendingUp, Eye } from ‘lucide-react';
+import { ArrowLeft, Share2, TrendingUp, Eye } from 'lucide-react';
 import RelatedArticles from './RelatedArticles';
 
 interface TravelEssentialsArticleProps {
