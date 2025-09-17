@@ -95,6 +95,7 @@ export default async function handler(req, res) {
   } catch (error) {
     console.error('API Error:', error);
     
+    // Fallback con datos simulados para que no falle
     const fallbackProducts = {};
     asins.forEach(asin => {
       fallbackProducts[asin] = {

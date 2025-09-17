@@ -13,6 +13,7 @@ export default async function handler(req, res) {
   } = req.body;
 
   try {
+    // Log para debugging
     console.log('📊 Click Analytics:', {
       event,
       product_asin,
