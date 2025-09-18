@@ -12,7 +12,7 @@ const GuidesPage = () => {
       id: 'budapest',
       title: 'Budapest en 4 Días',
       description: 'La perla del Danubio te espera. Descubre castillos, balnearios termales únicos y la vibrante vida nocturna de la capital húngara.',
-      image: 'https://images.pexels.com/photos/18670174/pexels-photo-18670174.jpeg?auto=compress&cs=tinysrgb&w=1200&h=800&dpr=1',
+      image: 'https://images.pexels.com/photos/73796/budapest-hungary-parliament-building-73796.jpeg',
       price: '70€',
       rating: 4.9,
       continent: 'Europa',
