@@ -170,7 +170,7 @@ const BlogSection: React.FC<BlogSectionProps> = ({ showTitle = true }) => {
                 </div>
                 
                 <div className="p-3 flex flex-col h-full">
-                  <p className="text-sm text-gray-600 mb-3 line-clamp-3 leading-relaxed flex-1">
+                  <div className="flex items-center gap-2 mb-3">
                     <div className="flex items-center space-x-1 bg-gray-100 rounded-full px-2 py-1">
                       <Clock className="h-3 w-3 text-gray-500" />
                       <span className="text-xs text-gray-600">{article.readTime}</span>
@@ -182,6 +182,9 @@ const BlogSection: React.FC<BlogSectionProps> = ({ showTitle = true }) => {
                       </div>
                     )}
                   </div>
+                  <p className="text-sm text-gray-600 line-clamp-3 leading-relaxed flex-1">
+                    {article.excerpt}
+                  </p>
                 </div>
               </Link>
             ))}
