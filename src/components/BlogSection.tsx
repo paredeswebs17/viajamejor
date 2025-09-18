@@ -142,9 +142,12 @@ const BlogSection: React.FC<BlogSectionProps> = ({ showTitle = true }) => {
                     }}
                   />
                   
+                  {/* Degradado para texto */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
+                  
                   {/* Badge destacado */}
                   {article.featured && (
-                    <div className="absolute top-2 left-2 z-10">
+                    <div className="absolute top-2 left-2 z-20">
                       <span className="bg-gradient-to-r from-orange-500 to-red-500 text-white px-2 py-0.5 rounded-full text-xs font-bold flex items-center shadow-sm">
                         <Star className="h-2 w-2 mr-1" />
                         DESTACADO
@@ -152,20 +155,22 @@ const BlogSection: React.FC<BlogSectionProps> = ({ showTitle = true }) => {
                     </div>
                   )}
 
-                  <div className="absolute top-2 right-2">
+                  <div className="absolute top-2 right-2 z-20">
                     <span className="bg-sky-500 text-white px-2 py-0.5 rounded-full text-xs font-medium shadow-sm">
                       {article.category}
                     </span>
                   </div>
+                  
+                  {/* Título sobre la imagen */}
+                  <div className="absolute bottom-2 left-2 right-2 z-20">
+                    <h3 className="text-white font-bold text-sm sm:text-base lg:text-lg leading-tight line-clamp-2 drop-shadow-lg">
+                      {article.title}
+                    </h3>
+                  </div>
                 </div>
                 
                 <div className="p-3 flex flex-col h-full">
-                  <h3 className="text-sm sm:text-base lg:text-lg font-semibold mb-2 line-clamp-2 text-gray-900 flex-1">
-                    {article.title}
-                  </h3>
-                  
-                  {/* Stats en la parte inferior */}
-                  <div className="flex justify-between items-center mt-auto">
+                  <p className="text-sm text-gray-600 mb-3 line-clamp-3 leading-relaxed flex-1">
                     <div className="flex items-center space-x-1 bg-gray-100 rounded-full px-2 py-1">
                       <Clock className="h-3 w-3 text-gray-500" />
                       <span className="text-xs text-gray-600">{article.readTime}</span>
