@@ -21,7 +21,7 @@ const ViennaGuidePage = () => {
         <meta property="og:description" content="Descubre Viena en 3 días con nuestro itinerario imperial. Palacios, ópera, conciertos clásicos y presupuestos desde 75€/día." />
         <meta property="og:type" content="article" />
         <meta property="og:url" content="https://viajamejor.net/viena-3-dias" />
-        <meta property="og:image" content="https://images.unsplash.com/photo-1578662996442-48f60103fc96?auto=format&fit=crop&w=1200&q=80" />
+        <meta property="og:image" content="https://images.unsplash.com/photo-1516550893923-42d28e5677af?auto=format&fit=crop&w=1200&q=80" />
         
         <script type="application/ld+json">
           {JSON.stringify({
@@ -43,7 +43,7 @@ const ViennaGuidePage = () => {
             },
             "datePublished": "2024-12-01",
             "dateModified": "2024-12-01",
-            "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?auto=format&fit=crop&w=1200&q=80",
+            "image": "https://images.unsplash.com/photo-1516550893923-42d28e5677af?auto=format&fit=crop&w=1200&q=80",
             "url": "https://viajamejor.net/viena-3-dias",
             "about": {
               "@type": "Place",
