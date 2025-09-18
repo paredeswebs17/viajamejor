@@ -21,7 +21,7 @@ const BudapestGuidePage = () => {
         <meta property="og:description" content="Descubre Budapest en 4 días con nuestro itinerario optimizado. Parlamento, Castillo, balnearios Széchenyi y mucho más. Presupuestos desde 100€/día." />
         <meta property="og:type" content="article" />
         <meta property="og:url" content="https://viajamejor.net/budapest-4-dias" />
-        <meta property="og:image" content="https://images.unsplash.com/photo-1541849546-216549ae216d?auto=format&fit=crop&w=1200&q=80" />
+        <meta property="og:image" content="https://unsplash.com/es/fotos/un-gran-edificio-iluminado-por-la-noche-sobre-el-agua-KiUE0O5pVeI" />
         
         <script type="application/ld+json">
           {JSON.stringify({
