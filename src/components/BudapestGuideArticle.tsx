@@ -70,7 +70,7 @@ return (
 
   <div className="mb-8">
     <img
-      src="https://images.unsplash.com/photo-1518604666860-9ed391f76460?auto=format&fit=crop&w=1200&q=80"
+      src="https://images.unsplash.com/photo-1541849546-216549ae216d?auto=format&fit=crop&w=1200&q=80"
       alt="Parlamento de Budapest iluminado al atardecer reflejándose en el río Danubio"
       className="w-full h-48 sm:h-64 lg:h-80 object-cover rounded-2xl shadow-lg"
     />
