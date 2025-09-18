@@ -427,7 +427,7 @@ const BudapestGuideArticle: React.FC<BudapestGuideArticleProps> = ({ onBack }) =
             <div className="bg-sky-50 border border-sky-200 rounded-lg p-4">
               <p className="text-sky-800 text-sm mb-0">
                 <strong>🍻 Vida nocturna:</strong> Budapest tiene una de las mejores vidas nocturnas de Europa. 
-                Los "ruin pubs" son únicos en el mundo y muy económicos.
+                Los "ruin pubs\" son únicos en el mundo y muy económicos.
               </p>
             </div>
           </div>
