@@ -43,7 +43,7 @@ const BudapestGuidePage = () => {
             },
             "datePublished": "2024-12-01",
             "dateModified": "2024-12-01",
-            "image": "https://images.pexels.com/photos/18670174/pexels-photo-18670174.jpeg?auto=compress&cs=tinysrgb&w=1200&h=800&dpr=1",
+            "image": "https://images.pexels.com/photos/73796/budapest-hungary-parliament-building-73796.jpeg",
             "url": "https://viajamejor.net/budapest-4-dias",
             "about": {
               "@type": "Place",
