@@ -36,6 +36,19 @@ const GuidesPage = () => {
       url: '/praga-3-dias'
     },
     {
+      id: 'vienna',
+      title: 'Viena en 3 días',
+      description: 'Capital imperial de la música clásica, palacios Habsburgo y cultura cafetera',
+      image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?auto=format&fit=crop&w=600&q=80',
+      price: '85€',
+      rating: 4.9,
+      continent: 'Europa',
+      budget: '€€€',
+      available: true,
+      badge: '🎼 Musical',
+      url: '/viena-3-dias'
+    },
+    {
       id: 'berlin',
       title: 'Berlín en 4 días',
       description: 'Historia, arte urbano y vida nocturna en la capital alemana',
