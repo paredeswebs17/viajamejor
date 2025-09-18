@@ -44,7 +44,7 @@ const GuidesPage = () => {
       rating: 4.9,
       continent: 'Europa',
       budget: '€€€',
-      available: true,
+      available: false,
       badge: '🎼 Musical',
       url: '/viena-3-dias'
     },
