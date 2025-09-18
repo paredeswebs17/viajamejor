@@ -69,8 +69,8 @@ Volver a guías
   {/* Imagen destacada */}
   <div className="mb-8">
     <img
-      src="https://images.unsplash.com/photo-1519677100203-a0e668c92439?auto=format&fit=crop&w=1200&q=80"
-      alt="Vista panorámica del Puente de Carlos y el Castillo de Praga al amanecer"
+      src="https://images.pexels.com/photos/1845331/pexels-photo-1845331.jpeg?auto=compress&cs=tinysrgb&w=1200"
+      alt="Castillo de Praga y el Puente de Carlos con la Ciudad Vieja al fondo"
       className="w-full h-48 sm:h-64 lg:h-80 object-cover rounded-2xl shadow-lg"
     />
   </div>
