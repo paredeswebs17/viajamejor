@@ -39,7 +39,7 @@ const GuidesPage = () => {
       id: 'vienna',
       title: 'Viena en 3 días',
       description: 'Capital imperial de la música clásica, palacios Habsburgo y cultura cafetera',
-      image: 'https://images.pexels.com/photos/1701595/pexels-photo-1701595.jpeg?auto=compress&cs=tinysrgb&w=600',
+      image: 'https://images.pexels.com/photos/2901209/pexels-photo-2901209.jpeg?auto=compress&cs=tinysrgb&w=600',
       price: '85€',
       rating: 4.9,
       continent: 'Europa',
