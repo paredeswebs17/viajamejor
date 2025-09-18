@@ -1474,3 +1474,5 @@ return (
 };
 
 export default BudapestGuideArticle;
+
+export default BudapestGuideArticle
