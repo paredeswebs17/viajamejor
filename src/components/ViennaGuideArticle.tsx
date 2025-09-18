@@ -67,8 +67,8 @@ const ViennaGuideArticle: React.FC<ViennaGuideArticleProps> = ({ onBack }) => {
 
       <div className="mb-8">
         <img
-          src="https://images.pexels.com/photos/161901/vienna-schoenbrunn-palace-park-161901.jpeg?auto=compress&cs=tinysrgb&w=1200"
-          alt="Palacio Schönbrunn de Viena con su fachada amarilla imperial y jardines barrocos"
+          src="https://images.unsplash.com/photo-1516550893923-42d28e5677af?auto=format&fit=crop&w=1200&q=80"
+          alt="Vista panorámica del Palacio Schönbrunn con sus jardines imperiales al atardecer"
           className="w-full h-48 sm:h-64 lg:h-80 object-cover rounded-2xl shadow-lg"
         />
       </div>
