@@ -21,7 +21,7 @@ const PragueGuidePage = () => {
         <meta property="og:description" content="Descubre Praga en 3 días con nuestro itinerario optimizado. Castillo, Puente de Carlos, barrio judío y mucho más. Presupuestos desde 60€/día." />
         <meta property="og:type" content="article" />
         <meta property="og:url" content="https://viajamejor.net/praga-3-dias" />
-        <meta property="og:image" content="https://images.pexels.com/photos/16922751/pexels-photo-16922751.jpeg?auto=compress&cs=tinysrgb&w=1200&h=800&dpr=1" />
+        <meta property="og:image" content="https://images.pexels.com/photos/753337/pexels-photo-753337.jpeg" />
         
         <script type="application/ld+json">
           {JSON.stringify({
