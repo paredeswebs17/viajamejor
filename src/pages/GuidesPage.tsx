@@ -26,7 +26,7 @@ const GuidesPage = () => {
       id: 'prague',
       title: 'Praga en 3 días',
       description: 'Ciudad de cuento con arquitectura medieval y cerveza increíble',
-      image: 'https://images.pexels.com/photos/16922751/pexels-photo-16922751.jpeg?auto=compress&cs=tinysrgb&w=1200&h=800&dpr=1',
+      image: 'https://images.pexels.com/photos/753337/pexels-photo-753337.jpeg',
       price: '60€',
       rating: 4.8,
       continent: 'Europa',
