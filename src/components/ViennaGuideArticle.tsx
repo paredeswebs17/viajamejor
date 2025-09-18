@@ -1355,5 +1355,3 @@ const ViennaGuideArticle: React.FC<ViennaGuideArticleProps> = ({ onBack }) => {
 };
 
 export default ViennaGuideArticle;
-
-export default ViennaGuideArticle
