@@ -127,9 +127,9 @@ const BlogSection: React.FC<BlogSectionProps> = ({ showTitle = true }) => {
                 to={article.url}
                 className="flex-none w-64 sm:w-72 lg:w-80 bg-white rounded-lg shadow-sm border border-gray-200 hover:shadow-md transition-shadow duration-200 overflow-hidden group"
               >
-                <div className="relative overflow-hidden">
+                <div className="relative overflow-hidden h-full">
                   <img 
-                    className="w-full h-24 sm:h-32 lg:h-40 object-cover" 
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" 
                     src={article.image.includes('?') ? article.image + '&auto=compress&cs=tinysrgb&w=600' : article.image + '?auto=compress&cs=tinysrgb&w=600'} 
                     alt={`${article.title} - ${article.category} - Viaja Mejor`}
                     loading="lazy"
@@ -142,8 +142,8 @@ const BlogSection: React.FC<BlogSectionProps> = ({ showTitle = true }) => {
                     }}
                   />
                   
-                  {/* Degradado para texto */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
+                  {/* Degradado más fuerte para mejor legibilidad */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
                   
                   {/* Badge destacado */}
                   {article.featured && (
@@ -161,30 +161,39 @@ const BlogSection: React.FC<BlogSectionProps> = ({ showTitle = true }) => {
                     </span>
                   </div>
                   
-                  {/* Título sobre la imagen */}
-                  <div className="absolute bottom-2 left-2 right-2 z-20">
+                  {/* Todo el contenido superpuesto en la imagen */}
+                  <div className="absolute bottom-0 left-0 right-0 p-3 z-20">
                     <h3 className="text-white font-bold text-sm sm:text-base lg:text-lg leading-tight line-clamp-2 drop-shadow-lg">
                       {article.title}
                     </h3>
-                  </div>
-                </div>
-                
-                <div className="p-3 flex flex-col h-full">
-                  <div className="flex items-center gap-2 mb-3">
-                    <div className="flex items-center space-x-1 bg-gray-100 rounded-full px-2 py-1">
-                      <Clock className="h-3 w-3 text-gray-500" />
-                      <span className="text-xs text-gray-600">{article.readTime}</span>
-                    </div>
-                    {article.savings && (
-                      <div className="flex items-center space-x-1 bg-gradient-to-r from-emerald-500 to-green-500 text-white rounded-full px-2 py-1">
-                        <TrendingUp className="h-3 w-3" />
-                        <span className="text-xs font-medium">{article.savings}</span>
+                    
+                    {/* Excerpt superpuesto */}
+                    <p className="text-white/90 text-xs sm:text-sm leading-relaxed line-clamp-2 drop-shadow-md mb-3">
+                      {article.excerpt}
+                    </p>
+                    
+                    {/* Stats en la parte inferior */}
+                    <div className="flex items-center justify-between">
+                      <div className="flex items-center gap-2">
+                        <div className="flex items-center space-x-1 bg-black/40 backdrop-blur-sm rounded-full px-2 py-1">
+                          <Clock className="h-3 w-3 text-white" />
+                          <span className="text-xs text-white">{article.readTime}</span>
+                        </div>
+                        {article.views && (
+                          <div className="hidden sm:flex items-center space-x-1 bg-black/40 backdrop-blur-sm rounded-full px-2 py-1">
+                            <span className="text-xs text-white">{article.views}</span>
+                          </div>
+                        )}
                       </div>
-                    )}
+                      
+                      {article.savings && (
+                        <div className="flex items-center space-x-1 bg-gradient-to-r from-emerald-500 to-green-500 rounded-full px-2 py-1 shadow-sm">
+                          <TrendingUp className="h-3 w-3 text-white" />
+                          <span className="text-xs font-medium text-white">{article.savings}</span>
+                        </div>
+                      )}
+                    </div>
                   </div>
-                  <p className="text-sm text-gray-600 line-clamp-3 leading-relaxed flex-1">
-                    {article.excerpt}
-                  </p>
                 </div>
               </Link>
             ))}
