@@ -127,9 +127,9 @@ const BlogSection: React.FC<BlogSectionProps> = ({ showTitle = true }) => {
                 to={article.url}
                 className="flex-none w-64 sm:w-72 lg:w-80 bg-white rounded-lg shadow-sm border border-gray-200 hover:shadow-md transition-shadow duration-200 overflow-hidden group"
               >
-                <div className="relative overflow-hidden h-24 sm:h-32 lg:h-40">
+                <div className="relative overflow-hidden">
                   <img 
-                    className="w-full h-24 sm:h-32 lg:h-40 object-cover group-hover:scale-105 transition-transform duration-300" 
+                    className="w-full h-24 sm:h-32 lg:h-40 object-cover" 
                     src={article.image.includes('?') ? article.image + '&auto=compress&cs=tinysrgb&w=600' : article.image + '?auto=compress&cs=tinysrgb&w=600'} 
                     alt={`${article.title} - ${article.category} - Viaja Mejor`}
                     loading="lazy"
@@ -142,12 +142,9 @@ const BlogSection: React.FC<BlogSectionProps> = ({ showTitle = true }) => {
                     }}
                   />
                   
-                  {/* Degradado más fuerte para mejor legibilidad */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
-                  
                   {/* Badge destacado */}
                   {article.featured && (
-                    <div className="absolute top-2 left-2 z-20">
+                    <div className="absolute top-2 left-2 z-10">
                       <span className="bg-gradient-to-r from-orange-500 to-red-500 text-white px-2 py-0.5 rounded-full text-xs font-bold flex items-center shadow-sm">
                         <Star className="h-2 w-2 mr-1" />
                         DESTACADO
@@ -155,44 +152,30 @@ const BlogSection: React.FC<BlogSectionProps> = ({ showTitle = true }) => {
                     </div>
                   )}
 
-                  <div className="absolute top-2 right-2 z-20">
+                  <div className="absolute top-2 right-2">
                     <span className="bg-sky-500 text-white px-2 py-0.5 rounded-full text-xs font-medium shadow-sm">
                       {article.category}
                     </span>
                   </div>
+                </div>
+                
+                <div className="p-3 flex flex-col h-full">
+                  <h3 className="text-sm sm:text-base lg:text-lg font-semibold mb-2 line-clamp-2 text-gray-900 flex-1">
+                    {article.title}
+                  </h3>
                   
-                  {/* Todo el contenido superpuesto en la imagen */}
-                  <div className="absolute bottom-0 left-0 right-0 p-3 z-20">
-                    <h3 className="text-white font-bold text-sm sm:text-base lg:text-lg leading-tight line-clamp-2 drop-shadow-lg">
-                      {article.title}
-                    </h3>
-                    
-                    {/* Excerpt superpuesto */}
-                    <p className="text-white/90 text-xs sm:text-sm leading-relaxed line-clamp-2 drop-shadow-md mb-3">
-                      {article.excerpt}
-                    </p>
-                    
-                    {/* Stats en la parte inferior */}
-                    <div className="flex items-center justify-between">
-                      <div className="flex items-center gap-2">
-                        <div className="flex items-center space-x-1 bg-black/40 backdrop-blur-sm rounded-full px-2 py-1">
-                          <Clock className="h-3 w-3 text-white" />
-                          <span className="text-xs text-white">{article.readTime}</span>
-                        </div>
-                        {article.views && (
-                          <div className="hidden sm:flex items-center space-x-1 bg-black/40 backdrop-blur-sm rounded-full px-2 py-1">
-                            <span className="text-xs text-white">{article.views}</span>
-                          </div>
-                        )}
-                      </div>
-                      
-                      {article.savings && (
-                        <div className="flex items-center space-x-1 bg-gradient-to-r from-emerald-500 to-green-500 rounded-full px-2 py-1 shadow-sm">
-                          <TrendingUp className="h-3 w-3 text-white" />
-                          <span className="text-xs font-medium text-white">{article.savings}</span>
-                        </div>
-                      )}
+                  {/* Stats en la parte inferior */}
+                  <div className="flex justify-between items-center mt-auto">
+                    <div className="flex items-center space-x-1 bg-gray-100 rounded-full px-2 py-1">
+                      <Clock className="h-3 w-3 text-gray-500" />
+                      <span className="text-xs text-gray-600">{article.readTime}</span>
                     </div>
+                    {article.savings && (
+                      <div className="flex items-center space-x-1 bg-gradient-to-r from-emerald-500 to-green-500 text-white rounded-full px-2 py-1">
+                        <TrendingUp className="h-3 w-3" />
+                        <span className="text-xs font-medium">{article.savings}</span>
+                      </div>
+                    )}
                   </div>
                 </div>
               </Link>
