@@ -69,7 +69,7 @@ const BudapestGuideArticle: React.FC<BudapestGuideArticleProps> = ({ onBack }) =
       {/* Imagen destacada */}
       <div className="mb-12">
         <img
-          src="https://images.unsplash.com/photo-1583758707438-803b7d37d0e7?auto=format&fit=crop&w=1200&q=80"
+          src="https://unsplash.com/es/fotos/un-gran-edificio-iluminado-por-la-noche-sobre-el-agua-KiUE0O5pVeI"
           alt="Parlamento de Budapest iluminado reflejándose en el río Danubio al atardecer"
           className="w-full h-64 sm:h-80 object-cover rounded-2xl shadow-lg"
         />
