@@ -70,7 +70,7 @@ return (
 
   <div className="mb-8">
     <img
-      src="https://images.pexels.com/photos/18670174/pexels-photo-18670174.jpeg?auto=compress&cs=tinysrgb&w=1200&h=800&dpr=1"
+      src="https://images.pexels.com/photos/73796/budapest-hungary-parliament-building-73796.jpeg"
       alt="Vista panorámica del Parlamento de Budapest al atardecer con el río Danubio"
       className="w-full h-48 sm:h-64 lg:h-80 object-cover rounded-2xl shadow-lg"
     />
