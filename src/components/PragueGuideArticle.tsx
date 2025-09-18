@@ -69,7 +69,7 @@ Volver a guías
   {/* Imagen destacada */}
   <div className="mb-8">
     <img
-      src="https://images.pexels.com/photos/753337/pexels-photo-753337.jpeg"
+      src="https://images.pexels.com/photos/3046347/pexels-photo-3046347.jpeg"
       alt="Vista panorámica del Puente de Carlos y el Castillo de Praga al amanecer"
       className="w-full h-48 sm:h-64 lg:h-80 object-cover rounded-2xl shadow-lg"
     />
