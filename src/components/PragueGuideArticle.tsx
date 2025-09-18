@@ -70,7 +70,7 @@ Volver a guías
   <div className="mb-8">
     <img
       src="https://images.unsplash.com/photo-1519677100203-a0e668c92439?auto=format&fit=crop&w=1200&q=80"
-      alt="Castillo de Praga y el Puente de Carlos con la Ciudad Vieja al fondo"
+      alt="Vista panorámica del Puente de Carlos y el Castillo de Praga al amanecer"
       className="w-full h-48 sm:h-64 lg:h-80 object-cover rounded-2xl shadow-lg"
     />
   </div>
