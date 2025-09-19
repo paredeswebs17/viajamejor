@@ -225,7 +225,7 @@ const ViennaGuideArticle: React.FC<ViennaGuideArticleProps> = ({ onBack }) => {
               </div>
             </div>
             <div className="mt-4">
-              <a href="https://www.getyourguide.com/vienna-l16/vienna-airport-private-transfer-t12345/" target="_blank" rel="noopener noreferrer"
+              <a href="https://gyg.me/vHQMITYm" target="_blank" rel="noopener noreferrer"
                  className="inline-flex items-center bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm">
                 🚕 Reservar traslado privado
                 <ExternalLink className="h-3 w-3 ml-2" />
@@ -524,7 +524,7 @@ const ViennaGuideArticle: React.FC<ViennaGuideArticleProps> = ({ onBack }) => {
                 <h5 className="font-semibold text-gray-900 mb-2">☕ Especialidades de Café Vienés (con pronunciación):</h5>
                 <ul className="text-sm text-gray-700 space-y-2 list-none">
                   <li className="flex items-start">
-                    <span className="w-2 h-2 bg-brown-400 rounded-full mr-3 mt-2"></span>
+                    <span className="w-2 h-2 bg-amber-600 rounded-full mr-3 mt-2"></span>
                     <div>
                       <strong>Melange</strong> [me-LAHN-sheh]: Mitad café, mitad leche caliente con espuma. El equivalente vienés del cappuccino.
                     </div>
@@ -636,15 +636,11 @@ const ViennaGuideArticle: React.FC<ViennaGuideArticleProps> = ({ onBack }) => {
                   <ExternalLink className="h-3 w-3 ml-2" />
                 </a>
               </div>
-              <p className="text-xs text-orange-600 mt-2">
-                💡 Consejo: Reserva online para evitar esperar. Si está lleno, Café Demel (confitería imperial desde 1786) está a 3 minutos y es igual de auténtico.
-              </p>
+              <p className="text-xs text-orange-600 mt-2">💡 Tip: Reserva online para evitar esperar. Si está lleno, Café Demel (confitería imperial desde 1786) está a 3 minutos y es igual de auténtico.</p>
             </div>
           </div>
         </div>
 
-        {/* Continúa con el resto del Día 1... */}
-        
         {/* Corazón Histórico + Reloj Mágico */}
         <div className="mb-8">
           <h3 className="text-lg font-bold text-gray-900 mb-4 flex items-center">
@@ -710,7 +706,7 @@ const ViennaGuideArticle: React.FC<ViennaGuideArticleProps> = ({ onBack }) => {
               </div>
             </div>
 
-            <div className="bg-gradient-to-r from-gold-50 to-amber-50 border border-gold-200 rounded-xl p-4 mb-4">
+            <div className="bg-gradient-to-r from-yellow-50 to-amber-50 border border-yellow-200 rounded-xl p-4 mb-4">
               <h5 className="font-semibold text-gray-900 mb-3">🕐 El Reloj Anker - Obra Maestra Mecánica de 1914:</h5>
               <div className="space-y-3 text-sm text-gray-700">
                 <p className="font-medium text-gray-900">
@@ -755,33 +751,10 @@ const ViennaGuideArticle: React.FC<ViennaGuideArticleProps> = ({ onBack }) => {
               </div>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
-              <div>
-                <h5 className="font-semibold text-gray-900 mb-2">🛍️ Calle Graben - Compras y Ambiente:</h5>
-                <ul className="text-sm text-gray-700 space-y-1 list-none">
-                  <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>100% peatonal, perfecta para pasear</li>
-                  <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Tiendas de lujo y marcas internacionales</li>
-                  <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>Arquitectura barroca y art nouveau</li>
-                  <li className="flex items-center"><span className="w-2 h-2 bg-yellow-400 rounded-full mr-3"></span>Artistas callejeros de alta calidad</li>
-                  <li className="flex items-center"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3"></span>Iglesia de San Pedro (entrada gratuita)</li>
-                </ul>
-              </div>
-              <div>
-                <h5 className="font-semibold text-gray-900 mb-2">📍 Hoher Markt - Plaza Histórica:</h5>
-                <ul className="text-sm text-gray-700 space-y-1 list-none">
-                  <li className="flex items-center"><span className="w-2 h-2 bg-amber-400 rounded-full mr-3"></span>Plaza más antigua de Viena (época romana)</li>
-                  <li className="flex items-center"><span className="w-2 h-2 bg-orange-400 rounded-full mr-3"></span>Restos romanos bajo el suelo (museo subterráneo)</li>
-                  <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>Mercado histórico hasta siglo XIX</li>
-                  <li className="flex items-center"><span className="w-2 h-2 bg-pink-400 rounded-full mr-3"></span>Fuente barroca con Sposalizio (matrimonio de María)</li>
-                  <li className="flex items-center"><span className="w-2 h-2 bg-indigo-400 rounded-full mr-3"></span>Acceso directo desde Graben (3 minutos)</li>
-                </ul>
-              </div>
-            </div>
-
             <div className="bg-white rounded-xl p-4 border border-gray-200 shadow-sm">
-              <div className="flex flex-col sm:flex-row gap-2 mb-2">
+              <div className="flex flex-col sm:flex-row gap-2">
                 <a href="https://www.wien.info/en/sightseeing/sights/from-a-to-z/ankeruhr-clock" target="_blank" rel="noopener noreferrer"
-                   className="inline-flex items-center bg-gradient-to-r from-gold-500 to-amber-500 hover:from-gold-600 hover:to-amber-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm">
+                   className="inline-flex items-center bg-gradient-to-r from-yellow-500 to-amber-500 hover:from-yellow-600 hover:to-amber-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm">
                   🕐 Información oficial Reloj Anker
                   <ExternalLink className="h-3 w-3 ml-2" />
                 </a>
@@ -799,10 +772,157 @@ const ViennaGuideArticle: React.FC<ViennaGuideArticleProps> = ({ onBack }) => {
           </div>
         </div>
 
-        {/* Continúa con más secciones del Día 1 hasta completar unas 15.000 líneas... */}
+        {/* Catedral de San Esteban */}
+        <div className="mb-8">
+          <h3 className="text-lg font-bold text-gray-900 mb-4 flex items-center">
+            <div className="w-1 h-6 bg-gradient-to-b from-green-400 to-emerald-400 rounded-full mr-3"></div>
+            Catedral de San Esteban - Corazón Espiritual (13:00h)
+          </h3>
+          <div className="bg-green-50 border border-green-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
+            <h4 className="text-lg font-bold text-gray-900 mb-3">Stephansdom - 800 Años de Historia Vienesa</h4>
+            <p className="text-gray-700 mb-4">
+              La Catedral de San Esteban es el símbolo más reconocible de Viena y el corazón espiritual de Austria. 
+              Con más de 800 años de historia, ha sido testigo de coronaciones imperiales, bodas reales y momentos cruciales de la historia europea.
+            </p>
 
-        {/* Por brevedad, aquí está un ejemplo de cómo continuaría pero para llegar a 15.000 líneas necesitaríamos expandir cada sección mucho más */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+              <div>
+                <h5 className="font-semibold text-gray-900 mb-2">🏰 Arquitectura y Dimensiones:</h5>
+                <ul className="text-sm text-gray-700 space-y-1 list-none">
+                  <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Torre Sur: 136,44 metros (la más alta)</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Longitud: 107 metros</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>Tejado: 250.000 tejas de colores</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-yellow-400 rounded-full mr-3"></span>Estilo: Gótico y románico</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3"></span>Construcción: 1137-1511</li>
+                </ul>
+              </div>
+              <div>
+                <h5 className="font-semibold text-gray-900 mb-2">⛪ Visitas y Horarios:</h5>
+                <ul className="text-sm text-gray-700 space-y-1 list-none">
+                  <li className="flex items-center"><span className="w-2 h-2 bg-emerald-400 rounded-full mr-3"></span>Entrada libre: Lun-Sáb 6:00-22:00, Dom 7:00-22:00</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-orange-400 rounded-full mr-3"></span>Torre Sur: 6 € (343 escalones)</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-pink-400 rounded-full mr-3"></span>Torre Norte: 6 € (ascensor + vistas)</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-indigo-400 rounded-full mr-3"></span>Catacumbas: 7 € (visita guiada)</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-cyan-400 rounded-full mr-3"></span>Audioguía: 5 € (muy recomendada)</li>
+                </ul>
+              </div>
+            </div>
 
+            <div className="bg-white rounded-xl p-4 border border-gray-200 shadow-sm">
+              <div className="flex flex-col sm:flex-row gap-2">
+                <a href="https://www.stephanskirche.at/" target="_blank" rel="noopener noreferrer"
+                   className="inline-flex items-center bg-gradient-to-r from-green-500 to-emerald-500 hover:from-green-600 hover:to-emerald-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm">
+                  ⛪ Web oficial Catedral San Esteban
+                  <ExternalLink className="h-3 w-3 ml-2" />
+                </a>
+                <a href="https://gyg.me/vHQMITYm" target="_blank" rel="noopener noreferrer"
+                   className="inline-flex items-center bg-gradient-to-r from-blue-500 to-indigo-500 hover:from-blue-600 hover:to-indigo-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm">
+                  🎫 Tour guiado con subida a torres
+                  <ExternalLink className="h-3 w-3 ml-2" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Casa de Mozart */}
+        <div className="mb-8">
+          <h3 className="text-lg font-bold text-gray-900 mb-4 flex items-center">
+            <div className="w-1 h-6 bg-gradient-to-b from-yellow-400 to-orange-400 rounded-full mr-3"></div>
+            Casa de Mozart - Genio Musical (14:30h)
+          </h3>
+          <div className="bg-yellow-50 border border-yellow-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
+            <h4 className="text-lg font-bold text-gray-900 mb-3">Mozarthaus Vienna - Donde Vivió el Genio</h4>
+            <p className="text-gray-700 mb-4">
+              En el número 5 de Domgasse, a solo 2 minutos de la Catedral, se encuentra la única vivienda conservada de Mozart en Viena. 
+              Aquí compuso "Las Bodas de Fígaro" y vivió sus años más prósperos (1784-1787).
+            </p>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+              <div>
+                <h5 className="font-semibold text-gray-900 mb-2">🎼 Información Práctica:</h5>
+                <ul className="text-sm text-gray-700 space-y-1 list-none">
+                  <li className="flex items-center"><span className="w-2 h-2 bg-yellow-400 rounded-full mr-3"></span>Entrada: 12 € adultos</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-orange-400 rounded-full mr-3"></span>Horario: 10:00-19:00 diario</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>Duración: 45-60 minutos</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Audioguía incluida</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>3 plantas de exposición</li>
+                </ul>
+              </div>
+              <div>
+                <h5 className="font-semibold text-gray-900 mb-2">🎵 Obras Compuestas Aquí:</h5>
+                <ul className="text-sm text-gray-700 space-y-1 list-none">
+                  <li className="flex items-center"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3"></span>Las Bodas de Fígaro (1786)</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-pink-400 rounded-full mr-3"></span>Conciertos para piano K. 482, 488</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-indigo-400 rounded-full mr-3"></span>Cuartetos de cuerda "Haydn"</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-emerald-400 rounded-full mr-3"></span>Sonatas para piano</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-cyan-400 rounded-full mr-3"></span>Música de cámara diversa</li>
+                </ul>
+              </div>
+            </div>
+
+            <div className="bg-white rounded-xl p-4 border border-gray-200 shadow-sm">
+              <a href="https://www.mozarthausvienna.at/" target="_blank" rel="noopener noreferrer"
+                 className="inline-flex items-center bg-gradient-to-r from-yellow-500 to-orange-500 hover:from-yellow-600 hover:to-orange-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm">
+                🎼 Entradas Casa de Mozart
+                <ExternalLink className="h-3 w-3 ml-2" />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        {/* Schönbrunn Tarde */}
+        <div className="mb-8">
+          <h3 className="text-lg font-bold text-gray-900 mb-4 flex items-center">
+            <div className="w-1 h-6 bg-gradient-to-b from-purple-400 to-pink-400 rounded-full mr-3"></div>
+            Palacio Schönbrunn - Versalles Austriaco (16:00h)
+          </h3>
+          <div className="bg-purple-50 border border-purple-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
+            <h4 className="text-lg font-bold text-gray-900 mb-3">El Versalles de los Habsburgo</h4>
+            <p className="text-gray-700 mb-4">
+              Schönbrunn, residencia de verano de los emperadores austriacos, es uno de los palacios barrocos más importantes de Europa. 
+              Con 1.441 habitaciones, fue el centro del poder del Imperio Austro-Húngaro y hogar de María Teresa y Sisí.
+            </p>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+              <div>
+                <h5 className="font-semibold text-gray-900 mb-2">🏰 Opciones de Visita:</h5>
+                <ul className="text-sm text-gray-700 space-y-1 list-none">
+                  <li className="flex items-center"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3"></span>Imperial Tour: 18 € (22 habitaciones)</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-pink-400 rounded-full mr-3"></span>Grand Tour: 22 € (40 habitaciones)</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Jardines: Gratuitos</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Gloriette: 5 € (vistas panorámicas)</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-orange-400 rounded-full mr-3"></span>Zoo: 25 € (el más antiguo del mundo)</li>
+                </ul>
+              </div>
+              <div>
+                <h5 className="font-semibold text-gray-900 mb-2">⏰ Horarios y Consejos:</h5>
+                <ul className="text-sm text-gray-700 space-y-1 list-none">
+                  <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>Palacio: 8:00-17:30 (invierno), 8:00-18:30 (verano)</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-yellow-400 rounded-full mr-3"></span>Jardines: 6:30-17:30 (invierno), 6:30-21:00 (verano)</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-indigo-400 rounded-full mr-3"></span>Mejor momento: 16:00-17:00 (menos gente)</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-emerald-400 rounded-full mr-3"></span>Duración: 2-3 horas completo</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-cyan-400 rounded-full mr-3"></span>Transporte: U4 Schönbrunn (15 min desde centro)</li>
+                </ul>
+              </div>
+            </div>
+
+            <div className="bg-white rounded-xl p-4 border border-gray-200 shadow-sm">
+              <div className="flex flex-col sm:flex-row gap-2">
+                <a href="https://www.schoenbrunn.at/" target="_blank" rel="noopener noreferrer"
+                   className="inline-flex items-center bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm">
+                  🏰 Entradas Palacio Schönbrunn
+                  <ExternalLink className="h-3 w-3 ml-2" />
+                </a>
+                <a href="https://gyg.me/vHQMITYm" target="_blank" rel="noopener noreferrer"
+                   className="inline-flex items-center bg-gradient-to-r from-gold-500 to-yellow-500 hover:from-gold-600 hover:to-yellow-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm">
+                  👑 Tour privado con guía
+                  <ExternalLink className="h-3 w-3 ml-2" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
       {/* DÍA 2 */}
@@ -811,7 +931,165 @@ const ViennaGuideArticle: React.FC<ViennaGuideArticleProps> = ({ onBack }) => {
           <span className="bg-gradient-to-br from-blue-500 to-indigo-500 text-white w-14 h-14 rounded-2xl flex items-center justify-center text-xl font-bold mr-4 shadow-lg">2</span>
           DÍA 2: Arte, Diversión y Arquitectura Única
         </h2>
-        {/* Aquí continuarían todas las secciones detalladas del Día 2 */}
+
+        {/* Prater */}
+        <div className="mb-8">
+          <h3 className="text-lg font-bold text-gray-900 mb-4 flex items-center">
+            <div className="w-1 h-6 bg-gradient-to-b from-green-400 to-emerald-400 rounded-full mr-3"></div>
+            Prater - Diversión Imperial (9:30h)
+          </h3>
+          <div className="bg-green-50 border border-green-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
+            <h4 className="text-lg font-bold text-gray-900 mb-3">Wiener Prater - Parque de Atracciones Histórico</h4>
+            <p className="text-gray-700 mb-4">
+              El Prater es mucho más que un parque de atracciones: es una institución vienesa desde 1766. 
+              Su famosa noria gigante (Wiener Riesenrad) de 1897 es uno de los símbolos más reconocibles de Viena y aparece en innumerables películas.
+            </p>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+              <div>
+                <h5 className="font-semibold text-gray-900 mb-2">🎡 La Noria Gigante (Riesenrad):</h5>
+                <ul className="text-sm text-gray-700 space-y-1 list-none">
+                  <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Altura: 64,75 metros</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Construida: 1897</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>Precio: 13,50 € adultos</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-yellow-400 rounded-full mr-3"></span>Duración: 15-20 minutos</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3"></span>Vistas: 360° de Viena</li>
+                </ul>
+              </div>
+              <div>
+                <h5 className="font-semibold text-gray-900 mb-2">🎠 Otras Atracciones del Prater:</h5>
+                <ul className="text-sm text-gray-700 space-y-1 list-none">
+                  <li className="flex items-center"><span className="w-2 h-2 bg-orange-400 rounded-full mr-3"></span>Entrada al parque: Gratuita</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-pink-400 rounded-full mr-3"></span>Atracciones individuales: 2-8 €</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-indigo-400 rounded-full mr-3"></span>Restaurantes tradicionales</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-emerald-400 rounded-full mr-3"></span>Museo de cera Madame Tussauds</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-cyan-400 rounded-full mr-3"></span>Planetario de Viena</li>
+                </ul>
+              </div>
+            </div>
+
+            <div className="bg-white rounded-xl p-4 border border-gray-200 shadow-sm">
+              <div className="flex flex-col sm:flex-row gap-2">
+                <a href="https://www.wienerriesenrad.com/" target="_blank" rel="noopener noreferrer"
+                   className="inline-flex items-center bg-gradient-to-r from-green-500 to-emerald-500 hover:from-green-600 hover:to-emerald-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm">
+                  🎡 Entradas Noria Gigante
+                  <ExternalLink className="h-3 w-3 ml-2" />
+                </a>
+                <a href="https://www.prater.at/" target="_blank" rel="noopener noreferrer"
+                   className="inline-flex items-center bg-gradient-to-r from-blue-500 to-indigo-500 hover:from-blue-600 hover:to-indigo-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm">
+                  🎠 Información Prater completo
+                  <ExternalLink className="h-3 w-3 ml-2" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Hundertwasserhaus */}
+        <div className="mb-8">
+          <h3 className="text-lg font-bold text-gray-900 mb-4 flex items-center">
+            <div className="w-1 h-6 bg-gradient-to-b from-rainbow-400 to-multicolor-400 rounded-full mr-3"></div>
+            Hundertwasserhaus - Arquitectura Única (11:30h)
+          </h3>
+          <div className="bg-gradient-to-r from-rainbow-50 to-multicolor-50 border border-rainbow-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
+            <h4 className="text-lg font-bold text-gray-900 mb-3">Casa Hundertwasser - Arquitectura Revolucionaria</h4>
+            <p className="text-gray-700 mb-4">
+              La Hundertwasserhaus es una de las obras arquitectónicas más fotografiadas de Viena. Diseñada por Friedensreich Hundertwasser entre 1983-1985, 
+              representa una revolución contra la arquitectura "racional" con sus líneas onduladas, colores vibrantes y ventanas asimétricas.
+            </p>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+              <div>
+                <h5 className="font-semibold text-gray-900 mb-2">🏠 Características Únicas:</h5>
+                <ul className="text-sm text-gray-700 space-y-1 list-none">
+                  <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>52 apartamentos de vivienda social</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>250 ventanas todas diferentes</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Jardines en terrazas y tejados</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-yellow-400 rounded-full mr-3"></span>Suelos ondulados (no hay líneas rectas)</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3"></span>Fachada multicolor única</li>
+                </ul>
+              </div>
+              <div>
+                <h5 className="font-semibold text-gray-900 mb-2">🎨 Filosofía Arquitectónica:</h5>
+                <ul className="text-sm text-gray-700 space-y-1 list-none">
+                  <li className="flex items-center"><span className="w-2 h-2 bg-orange-400 rounded-full mr-3"></span>"Las líneas rectas son impías"</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-pink-400 rounded-full mr-3"></span>Integración con la naturaleza</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-indigo-400 rounded-full mr-3"></span>Derecho a la ventana personal</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-emerald-400 rounded-full mr-3"></span>Arquitectura ecológica pionera</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-cyan-400 rounded-full mr-3"></span>Arte como forma de vida</li>
+                </ul>
+              </div>
+            </div>
+
+            <div className="bg-white rounded-xl p-4 border border-gray-200 shadow-sm">
+              <div className="flex flex-col sm:flex-row gap-2">
+                <a href="https://www.hundertwasserhaus.info/" target="_blank" rel="noopener noreferrer"
+                   className="inline-flex items-center bg-gradient-to-r from-rainbow-500 to-multicolor-500 hover:from-rainbow-600 hover:to-multicolor-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm">
+                  🎨 Información Hundertwasserhaus
+                  <ExternalLink className="h-3 w-3 ml-2" />
+                </a>
+                <a href="https://www.kunsthauswien.com/" target="_blank" rel="noopener noreferrer"
+                   className="inline-flex items-center bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm">
+                  🖼️ Museo Hundertwasser
+                  <ExternalLink className="h-3 w-3 ml-2" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Belvedere */}
+        <div className="mb-8">
+          <h3 className="text-lg font-bold text-gray-900 mb-4 flex items-center">
+            <div className="w-1 h-6 bg-gradient-to-b from-gold-400 to-amber-400 rounded-full mr-3"></div>
+            Palacio Belvedere - "El Beso" de Klimt (14:00h)
+          </h3>
+          <div className="bg-gold-50 border border-gold-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
+            <h4 className="text-lg font-bold text-gray-900 mb-3">Belvedere - Arte y Jardines Barrocos</h4>
+            <p className="text-gray-700 mb-4">
+              El Palacio Belvedere alberga la colección de arte austriaco más importante del mundo, incluyendo "El Beso" de Gustav Klimt. 
+              Construido como residencia de verano del Príncipe Eugenio de Saboya, es una obra maestra del barroco austriaco.
+            </p>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+              <div>
+                <h5 className="font-semibold text-gray-900 mb-2">🎨 Obras Maestras Imprescindibles:</h5>
+                <ul className="text-sm text-gray-700 space-y-1 list-none">
+                  <li className="flex items-center"><span className="w-2 h-2 bg-gold-400 rounded-full mr-3"></span>"El Beso" - Gustav Klimt (1907-1908)</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-yellow-400 rounded-full mr-3"></span>"Judith I" - Gustav Klimt (1901)</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-orange-400 rounded-full mr-3"></span>Obras de Egon Schiele</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>Colección de arte medieval</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3"></span>Esculturas barrocas</li>
+                </ul>
+              </div>
+              <div>
+                <h5 className="font-semibold text-gray-900 mb-2">🏛️ Información Práctica:</h5>
+                <ul className="text-sm text-gray-700 space-y-1 list-none">
+                  <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Entrada: 17 € (Belvedere Superior)</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Horario: 10:00-18:00 diario</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-pink-400 rounded-full mr-3"></span>Duración: 2-3 horas</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-indigo-400 rounded-full mr-3"></span>Jardines: Entrada gratuita</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-emerald-400 rounded-full mr-3"></span>Audioguía: 5 € (recomendada)</li>
+                </ul>
+              </div>
+            </div>
+
+            <div className="bg-white rounded-xl p-4 border border-gray-200 shadow-sm">
+              <div className="flex flex-col sm:flex-row gap-2">
+                <a href="https://www.belvedere.at/" target="_blank" rel="noopener noreferrer"
+                   className="inline-flex items-center bg-gradient-to-r from-gold-500 to-amber-500 hover:from-gold-600 hover:to-amber-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm">
+                  🎨 Entradas Palacio Belvedere
+                  <ExternalLink className="h-3 w-3 ml-2" />
+                </a>
+                <a href="https://gyg.me/vHQMITYm" target="_blank" rel="noopener noreferrer"
+                   className="inline-flex items-center bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm">
+                  👨‍🎨 Tour arte austriaco con guía
+                  <ExternalLink className="h-3 w-3 ml-2" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
       {/* DÍA 3 */}
@@ -820,25 +1098,392 @@ const ViennaGuideArticle: React.FC<ViennaGuideArticleProps> = ({ onBack }) => {
           <span className="bg-gradient-to-br from-emerald-500 to-green-500 text-white w-14 h-14 rounded-2xl flex items-center justify-center text-xl font-bold mr-4 shadow-lg">3</span>
           DÍA 3: Hofburg, Sacher y Gran Final Musical
         </h2>
-        {/* Aquí continuarían todas las secciones detalladas del Día 3 */}
+
+        {/* Palacio Hofburg */}
+        <div className="mb-8">
+          <h3 className="text-lg font-bold text-gray-900 mb-4 flex items-center">
+            <div className="w-1 h-6 bg-gradient-to-b from-gold-400 to-amber-400 rounded-full mr-3"></div>
+            Palacio Hofburg - Poder Imperial (9:00h)
+          </h3>
+          <div className="bg-gold-50 border border-gold-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
+            <h4 className="text-lg font-bold text-gray-900 mb-3">Hofburg - Centro del Imperio Austro-Húngaro</h4>
+            <p className="text-gray-700 mb-4">
+              El Palacio Hofburg fue la residencia principal de los emperadores austriacos durante más de 600 años. 
+              Este complejo palaciego alberga los Apartamentos Imperiales, el Museo Sisí y la famosa Escuela Española de Equitación.
+            </p>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+              <div>
+                <h5 className="font-semibold text-gray-900 mb-2">👑 Apartamentos Imperiales + Museo Sisí:</h5>
+                <ul className="text-sm text-gray-700 space-y-1 list-none">
+                  <li className="flex items-center"><span className="w-2 h-2 bg-gold-400 rounded-full mr-3"></span>Entrada: 16 € (incluye audioguía)</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-yellow-400 rounded-full mr-3"></span>Horario: 9:00-17:30 diario</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-orange-400 rounded-full mr-3"></span>Duración: 1,5-2 horas</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>19 habitaciones históricas</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3"></span>Objetos personales de Sisí</li>
+                </ul>
+              </div>
+              <div>
+                <h5 className="font-semibold text-gray-900 mb-2">🐎 Escuela Española de Equitación:</h5>
+                <ul className="text-sm text-gray-700 space-y-1 list-none">
+                  <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Espectáculos: 29-179 € (según asiento)</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Entrenamientos matutinos: 15 €</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-pink-400 rounded-full mr-3"></span>Caballos Lipizzanos únicos</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-indigo-400 rounded-full mr-3"></span>Tradición desde 1572</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-emerald-400 rounded-full mr-3"></span>Reserva obligatoria</li>
+                </ul>
+              </div>
+            </div>
+
+            <div className="bg-white rounded-xl p-4 border border-gray-200 shadow-sm">
+              <div className="flex flex-col sm:flex-row gap-2">
+                <a href="https://www.hofburg-wien.at/" target="_blank" rel="noopener noreferrer"
+                   className="inline-flex items-center bg-gradient-to-r from-gold-500 to-amber-500 hover:from-gold-600 hover:to-amber-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm">
+                  👑 Entradas Palacio Hofburg
+                  <ExternalLink className="h-3 w-3 ml-2" />
+                </a>
+                <a href="https://www.srs.at/" target="_blank" rel="noopener noreferrer"
+                   className="inline-flex items-center bg-gradient-to-r from-brown-500 to-amber-600 hover:from-brown-600 hover:to-amber-700 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm">
+                  🐎 Escuela Española Equitación
+                  <ExternalLink className="h-3 w-3 ml-2" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Café Sacher */}
+        <div className="mb-8">
+          <h3 className="text-lg font-bold text-gray-900 mb-4 flex items-center">
+            <div className="w-1 h-6 bg-gradient-to-b from-brown-400 to-amber-400 rounded-full mr-3"></div>
+            Café Sacher - Dulce Imperial (15:30h)
+          </h3>
+          <div className="bg-brown-50 border border-brown-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
+            <h4 className="text-lg font-bold text-gray-900 mb-3">Hotel Sacher - La Sachertorte Original</h4>
+            <p className="text-gray-700 mb-4">
+              El Hotel Sacher es una institución vienesa desde 1876. Su famosa Sachertorte, creada en 1832 por Franz Sacher, 
+              es el postre más famoso de Austria y solo aquí se sirve la receta original y secreta.
+            </p>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+              <div>
+                <h5 className="font-semibold text-gray-900 mb-2">🍰 La Sachertorte Original:</h5>
+                <ul className="text-sm text-gray-700 space-y-1 list-none">
+                  <li className="flex items-center"><span className="w-2 h-2 bg-brown-400 rounded-full mr-3"></span>Precio: 8,50 € (porción + café)</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-amber-400 rounded-full mr-3"></span>Receta secreta desde 1832</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-orange-400 rounded-full mr-3"></span>Bizcocho de chocolate + mermelada albaricoque</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>Cobertura de chocolate negro</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-yellow-400 rounded-full mr-3"></span>Se sirve con crema batida sin azúcar</li>
+                </ul>
+              </div>
+              <div>
+                <h5 className="font-semibold text-gray-900 mb-2">🏨 Ambiente del Hotel Sacher:</h5>
+                <ul className="text-sm text-gray-700 space-y-1 list-none">
+                  <li className="flex items-center"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3"></span>Decoración imperial auténtica</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-pink-400 rounded-full mr-3"></span>Clientela internacional de lujo</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Servicio de guante blanco</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Ubicación frente a la Ópera</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-indigo-400 rounded-full mr-3"></span>Tradición familiar desde 1876</li>
+                </ul>
+              </div>
+            </div>
+
+            <div className="bg-white rounded-xl p-4 border border-gray-200 shadow-sm">
+              <div className="flex flex-col sm:flex-row gap-2">
+                <a href="https://www.sacher.com/" target="_blank" rel="noopener noreferrer"
+                   className="inline-flex items-center bg-gradient-to-r from-brown-500 to-amber-500 hover:from-brown-600 hover:to-amber-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm">
+                  🍰 Reservar mesa Café Sacher
+                  <ExternalLink className="h-3 w-3 ml-2" />
+                </a>
+                <a href="https://shop.sacher.com/" target="_blank" rel="noopener noreferrer"
+                   className="inline-flex items-center bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm">
+                  📦 Comprar Sachertorte para llevar
+                  <ExternalLink className="h-3 w-3 ml-2" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Ópera Final */}
+        <div className="mb-8">
+          <h3 className="text-lg font-bold text-gray-900 mb-4 flex items-center">
+            <div className="w-1 h-6 bg-gradient-to-b from-red-400 to-pink-400 rounded-full mr-3"></div>
+            Ópera de Viena - Gran Final Musical (19:30h)
+          </h3>
+          <div className="bg-red-50 border border-red-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
+            <h4 className="text-lg font-bold text-gray-900 mb-3">Wiener Staatsoper - Templo de la Música Clásica</h4>
+            <p className="text-gray-700 mb-4">
+              La Ópera Estatal de Viena es considerada una de las casas de ópera más importantes del mundo. 
+              Inaugurada en 1869, ha sido el escenario de los mejores cantantes y directores de la historia de la música clásica.
+            </p>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+              <div>
+                <h5 className="font-semibold text-gray-900 mb-2">🎭 Opciones para Asistir:</h5>
+                <ul className="text-sm text-gray-700 space-y-1 list-none">
+                  <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>Entradas de pie: 3-4 € (¡increíble!)</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-orange-400 rounded-full mr-3"></span>Asientos económicos: 15-40 €</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-yellow-400 rounded-full mr-3"></span>Palcos premium: 100-300 €</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Visitas guiadas: 12 € (sin función)</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Temporada: Sep-Jun</li>
+                </ul>
+              </div>
+              <div>
+                <h5 className="font-semibold text-gray-900 mb-2">🎼 Consejos para Conseguir Entradas:</h5>
+                <ul className="text-sm text-gray-700 space-y-1 list-none">
+                  <li className="flex items-center"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3"></span>Entradas de pie: 80 min antes del espectáculo</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-pink-400 rounded-full mr-3"></span>Online: 60 días antes de la función</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-indigo-400 rounded-full mr-3"></span>Taquilla: 1 hora antes (si quedan)</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-emerald-400 rounded-full mr-3"></span>Dress code: Elegante (no obligatorio)</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-cyan-400 rounded-full mr-3"></span>Duración: 2,5-4 horas (con intermedio)</li>
+                </ul>
+              </div>
+            </div>
+
+            <div className="bg-white rounded-xl p-4 border border-gray-200 shadow-sm">
+              <div className="flex flex-col sm:flex-row gap-2">
+                <a href="https://www.wiener-staatsoper.at/" target="_blank" rel="noopener noreferrer"
+                   className="inline-flex items-center bg-gradient-to-r from-red-500 to-pink-500 hover:from-red-600 hover:to-pink-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm">
+                  🎭 Entradas Ópera de Viena
+                  <ExternalLink className="h-3 w-3 ml-2" />
+                </a>
+                <a href="https://www.musikverein.at/" target="_blank" rel="noopener noreferrer"
+                   className="inline-flex items-center bg-gradient-to-r from-gold-500 to-yellow-500 hover:from-gold-600 hover:to-yellow-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm">
+                  🎼 Alternativa: Musikverein
+                  <ExternalLink className="h-3 w-3 ml-2" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
       {/* PRESUPUESTOS */}
       <div className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
-        <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">Presupuestos Detallados por Estilo - Septiembre 2025</h2>
-        {/* Aquí continuarían las secciones detalladas de presupuestos */}
+        <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">💰 Presupuestos Detallados por Estilo - Septiembre 2025</h2>
+        
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-6">
+          <div className="bg-green-50 border border-green-200 rounded-xl p-6 shadow-sm">
+            <h3 className="text-lg font-bold text-green-800 mb-3">🎒 Mochilero</h3>
+            <div className="text-2xl font-bold text-green-600 mb-2">65-85€/día</div>
+            <ul className="text-sm text-green-700 space-y-1">
+              <li>• Hostel: 25-35€</li>
+              <li>• Comida: 20-25€</li>
+              <li>• Transporte: 8€ (72h)</li>
+              <li>• Atracciones: 12-17€</li>
+            </ul>
+          </div>
+          
+          <div className="bg-blue-50 border border-blue-200 rounded-xl p-6 shadow-sm">
+            <h3 className="text-lg font-bold text-blue-800 mb-3">🏨 Estándar</h3>
+            <div className="text-2xl font-bold text-blue-600 mb-2">120-160€/día</div>
+            <ul className="text-sm text-blue-700 space-y-1">
+              <li>• Hotel 3*: 70-90€</li>
+              <li>• Comida: 35-45€</li>
+              <li>• Transporte: 8€</li>
+              <li>• Atracciones: 15-25€</li>
+            </ul>
+          </div>
+          
+          <div className="bg-purple-50 border border-purple-200 rounded-xl p-6 shadow-sm">
+            <h3 className="text-lg font-bold text-purple-800 mb-3">👑 Lujo</h3>
+            <div className="text-2xl font-bold text-purple-600 mb-2">250-400€/día</div>
+            <ul className="text-sm text-purple-700 space-y-1">
+              <li>• Hotel 5*: 150-250€</li>
+              <li>• Comida: 80-120€</li>
+              <li>• Transporte: 20€</li>
+              <li>• Atracciones: 30-50€</li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="bg-yellow-50 border border-yellow-200 rounded-xl p-4">
+          <h4 className="font-semibold text-yellow-800 mb-2">💡 Consejos para Ahorrar en Viena:</h4>
+          <ul className="text-sm text-yellow-700 space-y-1">
+            <li>• Vienna City Card: Descuentos en atracciones + transporte incluido</li>
+            <li>• Supermercados: Billa, Spar, Hofer para comida económica</li>
+            <li>• Entradas de pie en Ópera: Solo 3-4€ para espectáculos de 100€+</li>
+            <li>• Jardines de palacios: Gratuitos y espectaculares</li>
+            <li>• Iglesias históricas: Entrada libre en la mayoría</li>
+          </ul>
+        </div>
       </div>
 
       {/* RESTAURANTES */}
       <div className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
-        <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">Guía Gastronómica Completa - Probado Personalmente</h2>
-        {/* Aquí continuarían las secciones detalladas de restaurantes */}
+        <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">🍽️ Guía Gastronómica Completa - Probado Personalmente</h2>
+        
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-6">
+          <div className="bg-red-50 border border-red-200 rounded-xl p-4">
+            <h3 className="text-lg font-bold text-red-800 mb-3">🥩 Cocina Tradicional Austriaca</h3>
+            <div className="space-y-3">
+              <div className="bg-white rounded-lg p-3 shadow-sm">
+                <h4 className="font-semibold text-gray-900 mb-1">Figlmüller (Schnitzel Original)</h4>
+                <p className="text-xs text-gray-600 mb-1">Wollzeile 5 • €€ • Reserva obligatoria</p>
+                <p className="text-sm text-gray-700">El schnitzel más famoso de Viena. Enorme, crujiente y auténtico. Precio: 18-22€</p>
+              </div>
+              
+              <div className="bg-white rounded-lg p-3 shadow-sm">
+                <h4 className="font-semibold text-gray-900 mb-1">Plachutta (Tafelspitz Imperial)</h4>
+                <p className="text-xs text-gray-600 mb-1">Wollzeile 38 • €€€ • Elegante</p>
+                <p className="text-sm text-gray-700">El mejor tafelspitz (carne hervida) de Viena. Plato favorito del emperador Francisco José. Precio: 24-28€</p>
+              </div>
+              
+              <div className="bg-white rounded-lg p-3 shadow-sm">
+                <h4 className="font-semibold text-gray-900 mb-1">Gasthaus Pöschl</h4>
+                <p className="text-xs text-gray-600 mb-1">Weihburggasse 17 • €€ • Auténtico</p>
+                <p className="text-sm text-gray-700">Ambiente local genuino. Goulash, schnitzel y cervezas austriacas. Precio: 12-18€</p>
+              </div>
+            </div>
+          </div>
+          
+          <div className="bg-blue-50 border border-blue-200 rounded-xl p-4">
+            <h3 className="text-lg font-bold text-blue-800 mb-3">🌍 Cocina Internacional</h3>
+            <div className="space-y-3">
+              <div className="bg-white rounded-lg p-3 shadow-sm">
+                <h4 className="font-semibold text-gray-900 mb-1">Motto am Fluss</h4>
+                <p className="text-xs text-gray-600 mb-1">Franz-Josefs-Kai 2 • €€€ • Vistas al Danubio</p>
+                <p className="text-sm text-gray-700">Cocina moderna con vistas espectaculares. Perfecto para cenas románticas. Precio: 25-35€</p>
+              </div>
+              
+              <div className="bg-white rounded-lg p-3 shadow-sm">
+                <h4 className="font-semibold text-gray-900 mb-1">Labstelle Wien</h4>
+                <p className="text-xs text-gray-600 mb-1">Lugeck 6 • €€ • Moderno</p>
+                <p className="text-sm text-gray-700">Fusión austriaca-asiática innovadora. Ambiente joven y creativo. Precio: 15-22€</p>
+              </div>
+              
+              <div className="bg-white rounded-lg p-3 shadow-sm">
+                <h4 className="font-semibold text-gray-900 mb-1">Naschmarkt</h4>
+                <p className="text-xs text-gray-600 mb-1">Linke Wienzeile • € • Mercado</p>
+                <p className="text-sm text-gray-700">Mercado con comida internacional. Perfecto para almorzar variado y económico. Precio: 8-15€</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="bg-white rounded-xl p-4 border border-gray-200 shadow-sm">
+          <div className="flex flex-col sm:flex-row gap-2">
+            <a href="https://www.figlmueller.at/" target="_blank" rel="noopener noreferrer"
+               className="inline-flex items-center bg-gradient-to-r from-red-500 to-orange-500 hover:from-red-600 hover:to-orange-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm">
+              🥩 Reservar Figlmüller
+              <ExternalLink className="h-3 w-3 ml-2" />
+            </a>
+            <a href="https://www.plachutta.at/" target="_blank" rel="noopener noreferrer"
+               className="inline-flex items-center bg-gradient-to-r from-blue-500 to-indigo-500 hover:from-blue-600 hover:to-indigo-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm">
+              👑 Reservar Plachutta
+              <ExternalLink className="h-3 w-3 ml-2" />
+            </a>
+          </div>
+        </div>
       </div>
 
       {/* ALOJAMIENTOS */}
       <div className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
-        <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">Dónde Alojarse - Análisis Completo por Zonas</h2>
-        {/* Aquí continuarían las secciones detalladas de alojamientos */}
+        <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">🏨 Dónde Alojarse - Análisis Completo por Zonas</h2>
+        
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-6">
+          <div className="bg-gold-50 border border-gold-200 rounded-xl p-4">
+            <h3 className="text-lg font-bold text-gold-800 mb-3">👑 Distrito 1 - Centro Histórico</h3>
+            <div className="space-y-3">
+              <div className="bg-white rounded-lg p-3 shadow-sm">
+                <h4 className="font-semibold text-gray-900 mb-1">Hotel Sacher Wien</h4>
+                <p className="text-xs text-gray-600 mb-1">Philharmoniker Str. 4 • €€€€€ • Lujo histórico</p>
+                <p className="text-sm text-gray-700">El hotel más famoso de Viena. Frente a la Ópera. Desde 400€/noche</p>
+              </div>
+              
+              <div className="bg-white rounded-lg p-3 shadow-sm">
+                <h4 className="font-semibold text-gray-900 mb-1">Hotel Am Konzerthaus</h4>
+                <p className="text-xs text-gray-600 mb-1">Am Heumarkt 35-37 • €€€ • Boutique</p>
+                <p className="text-sm text-gray-700">Diseño moderno en edificio histórico. Desde 120€/noche</p>
+              </div>
+              
+              <div className="bg-white rounded-lg p-3 shadow-sm">
+                <h4 className="font-semibold text-gray-900 mb-1">Wombats City Hostel</h4>
+                <p className="text-xs text-gray-600 mb-1">Grangasse 6 • € • Mochileros</p>
+                <p className="text-sm text-gray-700">Hostel moderno y limpio. Desde 25€/noche en dormitorio</p>
+              </div>
+            </div>
+          </div>
+          
+          <div className="bg-blue-50 border border-blue-200 rounded-xl p-4">
+            <h3 className="text-lg font-bold text-blue-800 mb-3">🚇 Distritos 2-9 - Bien Conectados</h3>
+            <div className="space-y-3">
+              <div className="bg-white rounded-lg p-3 shadow-sm">
+                <h4 className="font-semibold text-gray-900 mb-1">25hours Hotel</h4>
+                <p className="text-xs text-gray-600 mb-1">Lerchenfelder Str. 1-3 • €€€ • Diseño</p>
+                <p className="text-sm text-gray-700">Hotel de diseño con vistas al Danubio. Desde 95€/noche</p>
+              </div>
+              
+              <div className="bg-white rounded-lg p-3 shadow-sm">
+                <h4 className="font-semibold text-gray-900 mb-1">Hotel Kärntnerhof</h4>
+                <p className="text-xs text-gray-600 mb-1">Grashofgasse 4 • €€ • Familiar</p>
+                <p className="text-sm text-gray-700">Hotel familiar cerca de la Ópera. Desde 80€/noche</p>
+              </div>
+              
+              <div className="bg-white rounded-lg p-3 shadow-sm">
+                <h4 className="font-semibold text-gray-900 mb-1">Hostel Ruthensteiner</h4>
+                <p className="text-xs text-gray-600 mb-1">Robert-Hamerling-Gasse 24 • € • Económico</p>
+                <p className="text-sm text-gray-700">Hostel histórico con jardín. Desde 22€/noche</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="bg-white rounded-xl p-4 border border-gray-200 shadow-sm">
+          <div className="flex flex-col sm:flex-row gap-2">
+            <a href="https://www.booking.com/city/at/vienna.html" target="_blank" rel="noopener noreferrer"
+               className="inline-flex items-center bg-gradient-to-r from-blue-500 to-indigo-500 hover:from-blue-600 hover:to-indigo-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm">
+              🏨 Buscar hoteles en Booking
+              <ExternalLink className="h-3 w-3 ml-2" />
+            </a>
+            <a href="https://www.hostelworld.com/hostels/Vienna" target="_blank" rel="noopener noreferrer"
+               className="inline-flex items-center bg-gradient-to-r from-green-500 to-emerald-500 hover:from-green-600 hover:to-emerald-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm">
+              🎒 Hostels en Hostelworld
+              <ExternalLink className="h-3 w-3 ml-2" />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      {/* CONSEJOS FINALES */}
+      <div className="bg-gradient-to-r from-purple-50 to-pink-50 rounded-2xl p-6 sm:p-8 shadow-md mb-8">
+        <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">🎯 Consejos Finales para tu Viaje Imperial</h2>
+        
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <div>
+            <h3 className="text-lg font-bold text-gray-900 mb-3">✅ Imprescindibles que NO puedes perderte:</h3>
+            <ul className="text-sm text-gray-700 space-y-2 list-none">
+              <li className="flex items-center"><span className="w-2 h-2 bg-gold-400 rounded-full mr-3"></span>Reloj Anker a las 12:00h (espectáculo completo)</li>
+              <li className="flex items-center"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3"></span>"El Beso" de Klimt en Belvedere</li>
+              <li className="flex items-center"><span className="w-2 h-2 bg-brown-400 rounded-full mr-3"></span>Sachertorte original en Hotel Sacher</li>
+              <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>Entradas de pie en la Ópera (3€)</li>
+              <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Café vienés auténtico en Café Central</li>
+              <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Jardines de Schönbrunn al atardecer</li>
+            </ul>
+          </div>
+          
+          <div>
+            <h3 className="text-lg font-bold text-gray-900 mb-3">💡 Consejos de Viajero Experimentado:</h3>
+            <ul className="text-sm text-gray-700 space-y-2 list-none">
+              <li className="flex items-center"><span className="w-2 h-2 bg-yellow-400 rounded-full mr-3"></span>Compra Vienna City Card si visitas 4+ atracciones</li>
+              <li className="flex items-center"><span className="w-2 h-2 bg-orange-400 rounded-full mr-3"></span>Reserva restaurantes con 1-2 días de antelación</li>
+              <li className="flex items-center"><span className="w-2 h-2 bg-pink-400 rounded-full mr-3"></span>Lleva efectivo: muchos sitios no aceptan tarjeta</li>
+              <li className="flex items-center"><span className="w-2 h-2 bg-indigo-400 rounded-full mr-3"></span>Aprende "Danke" y "Bitte" - los vieneses lo aprecian</li>
+              <li className="flex items-center"><span className="w-2 h-2 bg-emerald-400 rounded-full mr-3"></span>Domingo: muchas tiendas cerradas, museos abiertos</li>
+              <li className="flex items-center"><span className="w-2 h-2 bg-cyan-400 rounded-full mr-3"></span>Propina: 5-10% en restaurantes, redondear en cafés</li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="bg-white rounded-xl p-4 mt-6 border border-purple-200 shadow-sm">
+          <h4 className="font-semibold text-purple-800 mb-2">🎼 El Secreto de Viena:</h4>
+          <p className="text-sm text-purple-700">
+            Viena no es solo un destino turístico, es una experiencia cultural total. Tómate tiempo para sentarte en un café, 
+            escuchar música clásica en vivo, y caminar sin prisa por sus calles imperiales. La magia de Viena está en los detalles 
+            y en vivir el ritmo pausado y elegante que la caracteriza desde hace siglos.
+          </p>
+        </div>
       </div>
 
       {/* Footer */}
