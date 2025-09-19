@@ -390,7 +390,7 @@ Volver a guías
         <h4 className="text-lg font-bold text-gray-900 mb-3">Rathausplatz y Ayuntamiento de Viena - Majestuosidad Neogótica</h4>
         <div className="mb-4">
           <img
-            src="https://images.unsplash.com/photo-1578681994506-b8f463449011?auto=format&fit=crop&w=1200&q=80"
+            src="https://www.canva.com/design/DAGzd_qrSYc/xEoyJNeD8yo_E2bZMg6XLw/edit?utm_content=DAGzd_qrSYc&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
             alt="Ayuntamiento de Viena (Rathaus) con su impresionante arquitectura neogótica"
             className="w-full h-48 sm:h-64 object-cover rounded-xl shadow-lg mb-4"
           />
