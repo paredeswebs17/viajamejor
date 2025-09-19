@@ -18,7 +18,6 @@ className="inline-flex items-center text-sky-600 hover:text-sky-700 hover:bg-sky
 Volver a guías
 </button>
 
-```
     <div className="mb-6">
       <span className="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-4 py-2 rounded-full text-sm font-medium shadow-md">
         Guía Imperial
@@ -1582,7 +1581,6 @@ Volver a guías
     </p>
   </div>
 </article>
-```
 
 );
 };
