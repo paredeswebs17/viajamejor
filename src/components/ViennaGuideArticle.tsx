@@ -389,8 +389,7 @@ Volver a guías
       <div className="bg-gradient-to-r from-red-50 to-pink-50 border border-red-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
         <h4 className="text-lg font-bold text-gray-900 mb-3">Rathausplatz y Ayuntamiento de Viena - Majestuosidad Neogótica</h4>
         <div className="mb-4">
-          <img
-            src="https://www.canva.com/design/DAGzd_qrSYc/xEoyJNeD8yo_E2bZMg6XLw/edit?utm_content=DAGzd_qrSYc&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+          <img   src="https://www.canva.com/design/DAGzd5K1RpE/lSgb6iDuvuqM0LHRMkz2Vw/view?utm_content=DAGzd5K1RpE&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h38774c7a54"
             alt="Ayuntamiento de Viena (Rathaus) con su impresionante arquitectura neogótica"
             className="w-full h-48 sm:h-64 object-cover rounded-xl shadow-lg mb-4"
           />
