@@ -1092,13 +1092,13 @@ Volver a guías
         <h3 className="text-lg font-bold text-red-800 mb-3">🥩 Cocina Tradicional Austriaca</h3>
         <div className="space-y-3">
           <div className="bg-white rounded-lg p-3 shadow-sm">
-            <h4 className="font-semibold text-gray-900 mb-1">Figlmüller (Schnitzel Original)</h4>
+            <h4 className="font-semibold text-gray-900 mb-1">Figlmüller</h4>
             <p className="text-xs text-gray-600 mb-1">Wollzeile 5 • €€ • Reserva obligatoria</p>
             <p className="text-sm text-gray-700">El schnitzel más famoso de Viena. Enorme, crujiente y auténtico.</p>
           </div>
           
           <div className="bg-white rounded-lg p-3 shadow-sm">
-            <h4 className="font-semibold text-gray-900 mb-1">Plachutta (Tafelspitz Imperial)</h4>
+            <h4 className="font-semibold text-gray-900 mb-1">Plachutta</h4>
             <p className="text-xs text-gray-600 mb-1">Wollzeile 38 • €€€ • Elegante</p>
             <p className="text-sm text-gray-700">El mejor tafelspitz (carne hervida) de Viena.</p>
           </div>
