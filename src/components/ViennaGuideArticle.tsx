@@ -768,7 +768,7 @@ Volver a guías
         <h4 className="text-lg font-bold text-gray-900 mb-3">Belvedere - Arte y Jardines Barrocos</h4>
         <div className="mb-4">
           <img
-            src="https://images.unsplash.com/photo-1598968106670-d8c0c54dce6f?auto=format&fit=crop&w=1200&q=80"
+            src="https://images.pexels.com/photos/5997778/pexels-photo-5997778.jpeg"
             alt="Palacio Belvedere Superior con sus jardines barrocos y arquitectura imperial austriaca"
             className="w-full h-48 sm:h-64 object-cover rounded-xl shadow-lg mb-4"
           />
