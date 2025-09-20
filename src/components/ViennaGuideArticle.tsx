@@ -474,7 +474,6 @@ Volver a guías
           </p>
         </div>
       </div>
-    </div>
 
     {/* Catedral de San Esteban */}
     <div className="mb-8">
