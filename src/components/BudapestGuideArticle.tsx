@@ -599,7 +599,7 @@ return (
         <h4 className="text-lg font-bold text-gray-900 mb-3">Balnearios Széchenyi - Ritual Húngaro Milenario</h4>
         <div className="mb-6">
           <img
-            src="https://images.pexels.com/photos/6069112/pexels-photo-6069112.jpeg?auto=compress&cs=tinysrgb&w=800"
+            src="https://images.pexels.com/photos/20519158/pexels-photo-20519158.jpeg"
             alt="Balnearios Széchenyi con sus piscinas termales al aire libre y arquitectura neobarroca"
             className="w-full h-48 sm:h-64 object-cover rounded-lg shadow-md"
           />
