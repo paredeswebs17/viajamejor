@@ -693,7 +693,6 @@ Volver a guías
           <div>
             <h5 className="font-semibold text-gray-900 mb-2">🎨 Filosofía Arquitectónica:</h5>
             <ul className="text-sm text-gray-700 space-y-1 list-none">
-              <li className="flex items-center"><span className="w-2 h-2 bg-orange-400 rounded-full mr-3"></span>"Las líneas rectas son impías"</li>
               <li className="flex items-center"><span className="w-2 h-2 bg-pink-400 rounded-full mr-3"></span>Integración con la naturaleza</li>
               <li className="flex items-center"><span className="w-2 h-2 bg-indigo-400 rounded-full mr-3"></span>Derecho a la ventana personal</li>
               <li className="flex items-center"><span className="w-2 h-2 bg-emerald-400 rounded-full mr-3"></span>Arquitectura ecológica pionera</li>
