@@ -532,13 +532,6 @@ Volver a guías
       </h3>
       <div className="bg-yellow-50 border border-yellow-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
         <h4 className="text-lg font-bold text-gray-900 mb-3">Mozarthaus Vienna - Donde Vivió el Genio</h4>
-        <div className="mb-4">
-          <img
-            src="https://images.unsplash.com/photo-1598899134739-24c46f58b8c0?auto=format&fit=crop&w=1200&q=80"
-            alt="Casa de Mozart en Domgasse donde el compositor escribió Las Bodas de Fígaro"
-            className="w-full h-48 sm:h-64 object-cover rounded-xl shadow-lg mb-4"
-          />
-        </div>
         <p className="text-gray-700 mb-4">
           En el número 5 de Domgasse, a solo 2 minutos de la Catedral, se encuentra la única vivienda conservada de Mozart en Viena. 
           Aquí compuso "Las Bodas de Fígaro" y vivió sus años más prósperos (1784-1787).
