@@ -836,7 +836,7 @@ Volver a guías
         <h4 className="text-lg font-bold text-gray-900 mb-3">Hofburg - Centro del Imperio Austro-Húngaro</h4>
         <div className="mb-4">
           <img
-            src="https://images.unsplash.com/photo-1571104508999-893933ded431?auto=format&fit=crop&w=1200&q=80"
+            src="https://images.pexels.com/photos/15488513/pexels-photo-15488513.jpeg"
             alt="Palacio Hofburg con la majestuosa cúpula de la Biblioteca Nacional y arquitectura imperial"
             className="w-full h-48 sm:h-64 object-cover rounded-xl shadow-lg mb-4"
           />
