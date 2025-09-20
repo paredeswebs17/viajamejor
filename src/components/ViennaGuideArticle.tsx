@@ -644,7 +644,7 @@ Volver a guías
 
         <div className="bg-white rounded-xl p-4 border border-gray-200 shadow-sm">
           <div className="flex flex-col sm:flex-row gap-2">
-            <a href="https://www.wienerriesenrad.com/" target="_blank" rel="noopener noreferrer"
+            <a href="https://gyg.me/iCPMo7F4" target="_blank" rel="noopener noreferrer"
                className="inline-flex items-center bg-gradient-to-r from-green-500 to-emerald-500 hover:from-green-600 hover:to-emerald-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm">
               🎡 Entradas Noria Gigante
               <ExternalLink className="h-3 w-3 ml-2" />
