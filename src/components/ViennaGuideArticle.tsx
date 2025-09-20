@@ -758,6 +758,66 @@ Volver a guías
       </div>
     </div>
 
+{/* Stadtpark + San Carlos Borromeo */}
+    <div className="mb-8">
+      <h3 className="text-lg font-bold text-gray-900 mb-4 flex items-center">
+        <div className="w-1 h-6 bg-gradient-to-b from-emerald-400 to-green-400 rounded-full mr-3"></div>
+        Stadtpark + Iglesia San Carlos Borromeo (12:30h)
+      </h3>
+      <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
+        <h4 className="text-lg font-bold text-gray-900 mb-3">Stadtpark - El Parque de los Músicos y la Iglesia Barroca más Bella</h4>
+        <div className="mb-4">
+          <img
+            src="https://images.pexels.com/photos/8644618/pexels-photo-8644618.jpeg"
+            alt="Stadtpark con la famosa estatua dorada de Johann Strauss II y la majestuosa Iglesia de San Carlos Borromeo"
+            className="w-full h-48 sm:h-64 object-cover rounded-xl shadow-lg mb-4"
+          />
+        </div>
+        <p className="text-gray-700 mb-4">
+          El Stadtpark alberga la estatua más fotografiada de Viena: Johann Strauss II bañado en oro. A pocos minutos caminando, 
+          la Iglesia de San Carlos Borromeo (Karlskirche) te deslumbrará con su impresionante cúpula y columnas barrocas.
+        </p>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+          <div>
+            <h5 className="font-semibold text-gray-900 mb-2">🎼 Stadtpark - Parque de los Músicos:</h5>
+            <ul className="text-sm text-gray-700 space-y-1 list-none">
+              <li className="flex items-center"><span className="w-2 h-2 bg-gold-400 rounded-full mr-3"></span>Estatua dorada de Johann Strauss II (1921)</li>
+              <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Estatuas de Schubert, Bruckner, Lehar</li>
+              <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Kursalon: salón de conciertos histórico</li>
+              <li className="flex items-center"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3"></span>Jardines románticos y senderos</li>
+              <li className="flex items-center"><span className="w-2 h-2 bg-pink-400 rounded-full mr-3"></span>Entrada gratuita las 24h</li>
+            </ul>
+          </div>
+          <div>
+            <h5 className="font-semibold text-gray-900 mb-2">⛪ Iglesia San Carlos Borromeo (Karlskirche):</h5>
+            <ul className="text-sm text-gray-700 space-y-1 list-none">
+              <li className="flex items-center"><span className="w-2 h-2 bg-emerald-400 rounded-full mr-3"></span>Obra maestra del barroco austriaco (1737)</li>
+              <li className="flex items-center"><span className="w-2 h-2 bg-orange-400 rounded-full mr-3"></span>Entrada: 8 € (incluye subida a cúpula)</li>
+              <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>Frescos espectaculares en la cúpula</li>
+              <li className="flex items-center"><span className="w-2 h-2 bg-yellow-400 rounded-full mr-3"></span>Columnas inspiradas en la de Trajano</li>
+              <li className="flex items-center"><span className="w-2 h-2 bg-indigo-400 rounded-full mr-3"></span>Vistas panorámicas desde arriba</li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="bg-white rounded-xl p-4 border border-gray-200 shadow-sm">
+          <div className="flex flex-col sm:flex-row gap-2">
+            <a href="https://www.karlskirche.at/" target="_blank" rel="noopener noreferrer"
+               className="inline-flex items-center bg-gradient-to-r from-emerald-500 to-green-500 hover:from-emerald-600 hover:to-green-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm">
+              ⛪ Entradas Karlskirche
+              <ExternalLink className="h-3 w-3 ml-2" />
+            </a>
+            <a href="https://www.kursalon.at/" target="_blank" rel="noopener noreferrer"
+               className="inline-flex items-center bg-gradient-to-r from-gold-500 to-amber-500 hover:from-gold-600 hover:to-amber-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm">
+              🎼 Conciertos en Kursalon
+              <ExternalLink className="h-3 w-3 ml-2" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
     {/* Belvedere */}
     <div className="mb-8">
       <h3 className="text-lg font-bold text-gray-900 mb-4 flex items-center">
