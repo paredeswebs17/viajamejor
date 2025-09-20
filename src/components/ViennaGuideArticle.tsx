@@ -436,37 +436,11 @@ Volver a guías
               Construido entre 1911 y 1914, conecta dos edificios de la compañía de seguros Anker.
             </p>
             
-            <div className="bg-white rounded-lg p-3 shadow-sm">
-              <h6 className="font-medium text-gray-900 mb-2">⏰ Programa Horario del Reloj (IMPRESCINDIBLE VER A LAS 12:00):</h6>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
-                <div>
-                  <p className="font-medium mb-1">Figuras por Horas:</p>
-                  <ul className="space-y-1">
-                    <li>• <strong>01:00 - Marco Aurelio:</strong> Emperador romano</li>
-                    <li>• <strong>02:00 - Carlomagno:</strong> Emperador del Sacro Imperio</li>
-                    <li>• <strong>03:00 - Leopold III:</strong> Patrón de Austria</li>
-                    <li>• <strong>04:00 - Walter von Vogelweide:</strong> Trovador medieval</li>
-                    <li>• <strong>05:00 - Rudolf IV:</strong> Duque de Austria</li>
-                    <li>• <strong>06:00 - Emperador Maximilian I:</strong> "Último caballero"</li>
-                  </ul>
-                </div>
-                <div>
-                  <ul className="space-y-1 text-xs">
-                    <li>• <strong>07:00 - María Teresa:</strong> Emperatriz de Austria</li>
-                    <li>• <strong>08:00 - Joseph Haydn:</strong> Compositor clásico</li>
-                    <li>• <strong>09:00 - Conde Rüdiger von Starhemberg:</strong> Defensor de Viena</li>
-                    <li>• <strong>10:00 - Wolfgang Amadeus Mozart:</strong> Genio musical</li>
-                    <li>• <strong>11:00 - Beethoven:</strong> Compositor romántico</li>
-                    <li>• <strong>12:00 - TODAS LAS FIGURAS:</strong> ¡El gran espectáculo completo!</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
 
             <div className="bg-amber-100 border border-amber-300 rounded-lg p-3">
               <p className="font-medium text-amber-800 mb-1">🎭 Espectáculo de las 12:00h - ¡No te lo pierdas!</p>
               <p className="text-amber-700 text-xs">
-                Al mediodía, las 12 figuras desfilan durante 15 minutos acompañadas de música especial. Es el momento más mágico y fotogénico. 
+                Cada hora sale una figura y al mediodía, las 12 figuras desfilan durante 15 minutos acompañadas de música especial. Es el momento más mágico y fotogénico. 
                 Llega 10 minutos antes para conseguir buen sitio y prepara la cámara.
               </p>
             </div>
