@@ -1067,14 +1067,14 @@ Volver a guías
       </div>
     </div>
 
-    {/* Ópera Final */}
+   {/* Ópera Final + Concierto */}
     <div className="mb-8">
       <h3 className="text-lg font-bold text-gray-900 mb-4 flex items-center">
         <div className="w-1 h-6 bg-gradient-to-b from-red-400 to-pink-400 rounded-full mr-3"></div>
-        Ópera de Viena - Gran Final Musical (19:30h)
+        Ópera de Viena + Concierto Final (19:30h)
       </h3>
       <div className="bg-red-50 border border-red-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
-        <h4 className="text-lg font-bold text-gray-900 mb-3">Wiener Staatsoper - Templo de la Música Clásica</h4>
+        <h4 className="text-lg font-bold text-gray-900 mb-3">Wiener Staatsoper - Gran Final Musical de tu Viaje Imperial</h4>
         <div className="mb-4">
           <img
             src="https://images.pexels.com/photos/8568542/pexels-photo-8568542.jpeg"
@@ -1084,7 +1084,8 @@ Volver a guías
         </div>
         <p className="text-gray-700 mb-4">
           La Ópera Estatal de Viena es considerada una de las casas de ópera más importantes del mundo. 
-          Inaugurada en 1869, ha sido el escenario de los mejores cantantes y directores de la historia de la música clásica.
+          Inaugurada en 1869, ha sido el escenario de los mejores cantantes y directores de la historia de la música clásica. 
+          Cerrar tu viaje imperial con un concierto aquí es la experiencia perfecta para culminar tus 3 días en la capital musical de Europa.
         </p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
@@ -1099,13 +1100,13 @@ Volver a guías
             </ul>
           </div>
           <div>
-            <h5 className="font-semibold text-gray-900 mb-2">🎼 Consejos para Conseguir Entradas:</h5>
+            <h5 className="font-semibold text-gray-900 mb-2">🎼 Alternativas para el Concierto Final:</h5>
             <ul className="text-sm text-gray-700 space-y-1 list-none">
-              <li className="flex items-center"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3"></span>Entradas de pie: 80 min antes del espectáculo</li>
-              <li className="flex items-center"><span className="w-2 h-2 bg-pink-400 rounded-full mr-3"></span>Online: 60 días antes de la función</li>
-              <li className="flex items-center"><span className="w-2 h-2 bg-indigo-400 rounded-full mr-3"></span>Taquilla: 1 hora antes (si quedan)</li>
-              <li className="flex items-center"><span className="w-2 h-2 bg-emerald-400 rounded-full mr-3"></span>Dress code: Elegante (no obligatorio)</li>
-              <li className="flex items-center"><span className="w-2 h-2 bg-cyan-400 rounded-full mr-3"></span>Duración: 2,5-4 horas (con intermedio)</li>
+              <li className="flex items-center"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3"></span>Musikverein: Sala Dorada (conciertos clásicos)</li>
+              <li className="flex items-center"><span className="w-2 h-2 bg-pink-400 rounded-full mr-3"></span>Konzerthaus: Música de cámara</li>
+              <li className="flex items-center"><span className="w-2 h-2 bg-indigo-400 rounded-full mr-3"></span>Kursalon: Conciertos de Strauss</li>
+              <li className="flex items-center"><span className="w-2 h-2 bg-emerald-400 rounded-full mr-3"></span>Iglesias: Conciertos de música sacra</li>
+              <li className="flex items-center"><span className="w-2 h-2 bg-cyan-400 rounded-full mr-3"></span>Palacio Schönbrunn: Conciertos en salones imperiales</li>
             </ul>
           </div>
         </div>
@@ -1119,7 +1120,12 @@ Volver a guías
             </a>
             <a href="https://www.musikverein.at/" target="_blank" rel="noopener noreferrer"
                className="inline-flex items-center bg-gradient-to-r from-gold-500 to-yellow-500 hover:from-gold-600 hover:to-yellow-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm">
-              🎼 Alternativa: Musikverein
+              🎼 Musikverein (Sala Dorada)
+              <ExternalLink className="h-3 w-3 ml-2" />
+            </a>
+            <a href="https://www.wien.info/en/music-stage-shows/music-venues" target="_blank" rel="noopener noreferrer"
+               className="inline-flex items-center bg-gradient-to-r from-purple-500 to-indigo-500 hover:from-purple-600 hover:to-indigo-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm">
+              🎵 Todos los conciertos disponibles
               <ExternalLink className="h-3 w-3 ml-2" />
             </a>
           </div>
