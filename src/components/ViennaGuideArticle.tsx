@@ -866,7 +866,6 @@ Volver a guías
           <div>
             <h5 className="font-semibold text-gray-900 mb-2">🐎 Escuela Española de Equitación:</h5>
             <ul className="text-sm text-gray-700 space-y-1 list-none">
-              <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Espectáculos: 29-179 € (según asiento)</li>
               <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Visita guiada: 24 €</li>
               <li className="flex items-center"><span className="w-2 h-2 bg-pink-400 rounded-full mr-3"></span>Caballos Lipizzanos únicos</li>
               <li className="flex items-center"><span className="w-2 h-2 bg-indigo-400 rounded-full mr-3"></span>Tradición desde 1572</li>
