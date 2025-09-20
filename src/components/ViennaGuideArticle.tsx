@@ -501,7 +501,7 @@ Volver a guías
     <div className="mb-8">
       <h3 className="text-lg font-bold text-gray-900 mb-4 flex items-center">
         <div className="w-1 h-6 bg-gradient-to-b from-purple-400 to-pink-400 rounded-full mr-3"></div>
-        Palacio Schönbrunn - Versalles Austriaco (16:00h)
+        Palacio Schönbrunn - Versalles Austriaco (14:00h)
       </h3>
       <div className="bg-purple-50 border border-purple-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
         <h4 className="text-lg font-bold text-gray-900 mb-3">El Versalles de los Habsburgo</h4>
@@ -543,7 +543,7 @@ Volver a guías
     <div className="mb-8">
       <h3 className="text-lg font-bold text-gray-900 mb-4 flex items-center">
         <div className="w-1 h-6 bg-gradient-to-b from-yellow-400 to-orange-400 rounded-full mr-3"></div>
-        Casa de Mozart - Genio Musical (14:30h)
+        Casa de Mozart - Genio Musical (17:30h)
       </h3>
       <div className="bg-yellow-50 border border-yellow-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
         <h4 className="text-lg font-bold text-gray-900 mb-3">Mozarthaus Vienna - Donde Vivió el Genio</h4>
