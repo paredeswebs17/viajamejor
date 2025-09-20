@@ -67,7 +67,7 @@ Volver a guías
 
   <div className="mb-8">
     <img
-      src="https://images.pexels.com/photos/11932444/pexels-photo-11932444.jpeg?auto=compress&cs=tinysrgb&w=1200"
+      src="https://images.pexels.com/photos/8568542/pexels-photo-8568542.jpeg"
       alt="Vista panorámica del Palacio Schönbrunn con sus jardines imperiales al atardecer"
       className="w-full h-48 sm:h-64 lg:h-80 object-cover rounded-2xl shadow-lg"
     />
