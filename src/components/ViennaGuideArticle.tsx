@@ -74,7 +74,7 @@ Volver a guías
   </div>
 
   <div className="bg-gradient-to-r from-purple-50 to-pink-50 rounded-2xl p-6 sm:p-8 mb-8 shadow-md">
-    <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">Itinerario Imperial - Actualizado Septiembre 2025</h2>
+    <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">Itinerario Imperial</h2>
     <div className="overflow-x-auto">
       <table className="w-full border-collapse bg-white rounded-xl shadow-sm">
         <thead>
@@ -220,7 +220,7 @@ Volver a guías
           </div>
         </div>
         <div className="mt-4">
-          <a href="https://gyg.me/vHQMITYm" target="_blank" rel="noopener noreferrer"
+          <a href="https://gyg.me/8wpM6c41" target="_blank" rel="noopener noreferrer"
              className="inline-flex items-center bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm">
             🚕 Reservar traslado privado
             <ExternalLink className="h-3 w-3 ml-2" />
