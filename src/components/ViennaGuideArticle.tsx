@@ -1199,6 +1199,7 @@ Volver a guías
   </div>
 
   {/* CONSEJOS FINALES */}
+  <div className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
   <div className="bg-gradient-to-r from-purple-50 to-pink-50 rounded-2xl p-6 sm:p-8 shadow-md mb-8">
     <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">🎯 Consejos Finales para tu Viaje Imperial</h2>
     
@@ -1228,7 +1229,7 @@ Volver a guías
       </div>
     </div>
   </div>
-
+</div>
   {/* Sistema de Transporte Público */}
   <div className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
     <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">🚇 Sistema de Transporte Público de Viena</h2>
