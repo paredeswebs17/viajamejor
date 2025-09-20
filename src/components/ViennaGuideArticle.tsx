@@ -1248,15 +1248,6 @@ Volver a guías
         </ul>
       </div>
     </div>
-
-    <div className="bg-white rounded-xl p-4 mt-6 border border-purple-200 shadow-sm">
-      <h4 className="font-semibold text-purple-800 mb-2">🎼 El Secreto de Viena:</h4>
-      <p className="text-sm text-purple-700">
-        Viena no es solo un destino turístico, es una experiencia cultural total. Tómate tiempo para sentarte en un café, 
-        escuchar música clásica en vivo, y caminar sin prisa por sus calles imperiales. La magia de Viena está en los detalles 
-        y en vivir el ritmo pausado y elegante que la caracteriza desde hace siglos.
-      </p>
-    </div>
   </div>
 
   {/* Sistema de Transporte Público */}
