@@ -665,7 +665,7 @@ Volver a guías
         <h4 className="text-lg font-bold text-gray-900 mb-3">Graben, Columna de la Peste y el Famoso Reloj Anker</h4>
         <div className="mb-4">
           <img
-            src="https://images.unsplash.com/photo-1564594985645-4427056e22e2?auto=format&fit=crop&w=1200&q=80"
+            src="https://images.pexels.com/photos/24355655/pexels-photo-24355655.jpeg"
             alt="Famoso Reloj Anker en Hoher Markt con sus figuras históricas y mecanismo art nouveau"
             className="w-full h-48 sm:h-64 object-cover rounded-xl shadow-lg mb-4"
           />
