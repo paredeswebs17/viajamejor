@@ -1352,7 +1352,7 @@ Volver a guías
       Guía actualizada en Septiembre 2025 | Información verificada y precios actuales
     </p>
     <p>
-      Que disfrutes Budapest al máximo!
+      Que disfrutes Viena al máximo!
     </p>
   </div>
 </article>
