@@ -209,8 +209,8 @@ Volver a guías
         <h4 className="font-bold text-gray-900 mb-3">🚕 Traslado Privado - Máximo Confort</h4>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <div>
-            <p className="text-sm text-gray-700 mb-1"><strong>Precio:</strong> 35-55 € (hasta 4 personas)</p>
-            <p className="text-sm text-gray-700 mb-1"><strong>Duración:</strong> 25-40 min (según tráfico)</p>
+            <p className="text-sm text-gray-700 mb-1"><strong>Precio:</strong> Desde 75 € (hasta 3 personas)</p>
+            <p className="text-sm text-gray-700 mb-1"><strong>Duración:</strong> 30-50 min (según tráfico)</p>
             <p className="text-sm text-gray-700 mb-1"><strong>Ventajas:</strong> Puerta a puerta</p>
           </div>
           <div>
