@@ -665,7 +665,7 @@ return (
         <h4 className="text-lg font-bold text-gray-900 mb-3">Plaza de los Héroes - Epicentro Húngaro</h4>
         <div className="mb-6">
           <img
-            src="https://images.pexels.com/photos/8112090/pexels-photo-8112090.jpeg?auto=compress&cs=tinysrgb&w=800"
+            src="https://images.pexels.com/photos/5687558/pexels-photo-5687558.jpeg"
             alt="Plaza de los Héroes con el Monumento del Milenio y las columnatas semicirculares"
             className="w-full h-48 sm:h-64 object-cover rounded-lg shadow-md"
           />
