@@ -804,7 +804,7 @@ Volver a guías
     {/* Palacio Hofburg */}
     <div className="mb-8">
       <h3 className="text-lg font-bold text-gray-900 mb-4 flex items-center">
-        <div className="w-1 h-6 bg-gradient-to-b from-gold-400 to-amber-400 rounded-full mr-3"></div>
+        <div className="w-1 h-6 bg-gradient-to-b from-red-400 to-amber-400 rounded-full mr-3"></div>
         Palacio Hofburg - Poder Imperial (9:00h)
       </h3>
       <div className="bg-red-50 border border-red-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
