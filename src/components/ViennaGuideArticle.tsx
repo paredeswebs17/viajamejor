@@ -790,11 +790,10 @@ Volver a guías
           <div>
             <h5 className="font-semibold text-gray-900 mb-2">🏛️ Información Práctica:</h5>
             <ul className="text-sm text-gray-700 space-y-1 list-none">
-              <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Entrada: 17 € (Belvedere Superior)</li>
+              <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Entrada: 20 € (Belvedere Superior)</li>
               <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Horario: 10:00-18:00 diario</li>
               <li className="flex items-center"><span className="w-2 h-2 bg-pink-400 rounded-full mr-3"></span>Duración: 2-3 horas</li>
               <li className="flex items-center"><span className="w-2 h-2 bg-indigo-400 rounded-full mr-3"></span>Jardines: Entrada gratuita</li>
-              <li className="flex items-center"><span className="w-2 h-2 bg-emerald-400 rounded-full mr-3"></span>Audioguía: 5 € (recomendada)</li>
             </ul>
           </div>
         </div>
