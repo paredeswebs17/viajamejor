@@ -513,7 +513,7 @@ Volver a guías
           <div>
             <h5 className="font-semibold text-gray-900 mb-2">🎼 Información Práctica:</h5>
             <ul className="text-sm text-gray-700 space-y-1 list-none">
-              <li className="flex items-center"><span className="w-2 h-2 bg-yellow-400 rounded-full mr-3"></span>Entrada: 12 € adultos</li>
+              <li className="flex items-center"><span className="w-2 h-2 bg-yellow-400 rounded-full mr-3"></span>Entrada: 14 € adultos</li>
               <li className="flex items-center"><span className="w-2 h-2 bg-orange-400 rounded-full mr-3"></span>Horario: 10:00-19:00 diario</li>
               <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>Duración: 45-60 minutos</li>
               <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Audioguía incluida</li>
