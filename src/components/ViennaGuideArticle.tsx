@@ -479,10 +479,7 @@ Volver a guías
             <h5 className="font-semibold text-gray-900 mb-2">⛪ Visitas y Horarios:</h5>
             <ul className="text-sm text-gray-700 space-y-1 list-none">
               <li className="flex items-center"><span className="w-2 h-2 bg-emerald-400 rounded-full mr-3"></span>Entrada libre: Lun-Sáb 6:00-22:00, Dom 7:00-22:00</li>
-              <li className="flex items-center"><span className="w-2 h-2 bg-orange-400 rounded-full mr-3"></span>Torre Sur: 6 € (343 escalones)</li>
-              <li className="flex items-center"><span className="w-2 h-2 bg-pink-400 rounded-full mr-3"></span>Torre Norte: 6 € (ascensor + vistas)</li>
-              <li className="flex items-center"><span className="w-2 h-2 bg-indigo-400 rounded-full mr-3"></span>Catacumbas: 7 € (visita guiada)</li>
-              <li className="flex items-center"><span className="w-2 h-2 bg-cyan-400 rounded-full mr-3"></span>Audioguía: 5 € (muy recomendada)</li>
+              <li className="flex items-center"><span className="w-2 h-2 bg-orange-400 rounded-full mr-3"></span>Horario para visitas: Lun-Sáb 9:00-11:30 y 13:00-16:30, Dom 13:00-16:30</li>
             </ul>
           </div>
         </div>
