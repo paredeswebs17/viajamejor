@@ -906,16 +906,6 @@ Volver a guías
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
           <div>
-            <h5 className="font-semibold text-gray-900 mb-2">🍰 La Sachertorte Original:</h5>
-            <ul className="text-sm text-gray-700 space-y-1 list-none">
-              <li className="flex items-center"><span className="w-2 h-2 bg-brown-400 rounded-full mr-3"></span>Precio: 8,50 € (porción + café)</li>
-              <li className="flex items-center"><span className="w-2 h-2 bg-amber-400 rounded-full mr-3"></span>Receta secreta desde 1832</li>
-              <li className="flex items-center"><span className="w-2 h-2 bg-orange-400 rounded-full mr-3"></span>Bizcocho de chocolate + mermelada albaricoque</li>
-              <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>Cobertura de chocolate negro</li>
-              <li className="flex items-center"><span className="w-2 h-2 bg-yellow-400 rounded-full mr-3"></span>Se sirve con crema batida sin azúcar</li>
-            </ul>
-          </div>
-          <div>
             <h5 className="font-semibold text-gray-900 mb-2">🏨 Ambiente del Hotel Sacher:</h5>
             <ul className="text-sm text-gray-700 space-y-1 list-none">
               <li className="flex items-center"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3"></span>Decoración imperial auténtica</li>
