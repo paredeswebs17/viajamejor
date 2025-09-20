@@ -805,9 +805,9 @@ Volver a guías
               🎨 Entradas Palacio Belvedere
               <ExternalLink className="h-3 w-3 ml-2" />
             </a>
-            <a href="https://gyg.me/vHQMITYm" target="_blank" rel="noopener noreferrer"
+            <a href="https://gyg.me/7y5TyzcF" target="_blank" rel="noopener noreferrer"
                className="inline-flex items-center bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm">
-              👨‍🎨 Tour arte austriaco con guía
+              👨‍🎨 Tour con guía
               <ExternalLink className="h-3 w-3 ml-2" />
             </a>
           </div>
