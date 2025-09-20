@@ -265,25 +265,6 @@ Volver a guías
           Comenzamos nuestra aventura imperial en una de las plazas más emblemáticas de Viena, donde se alza majestuoso el Wiener Rathaus (Ayuntamiento de Viena). 
           Este edificio neogótico, construido entre 1872 y 1883, es una obra maestra arquitectónica que rivaliza con los mejores ayuntamientos europeos.
         </p>
-        
-        <div className="bg-white rounded-xl p-4 mb-4 shadow-sm border border-gray-100">
-          <h5 className="font-semibold text-gray-900 mb-2">🏛️ Historia y Arquitectura del Rathaus:</h5>
-          <p className="text-sm text-gray-700 mb-2">
-            Diseñado por Friedrich von Schmidt, el edificio combina elementos góticos flamencos con toques renacentistas. 
-            Su torre central alcanza 105 metros de altura y está coronada por el "Rathausmann", una figura de hierro de 3,4 metros que se ha convertido en símbolo de la ciudad.
-          </p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs text-gray-600">
-            <div>
-              <p>• <strong>Arquitecto:</strong> Friedrich von Schmidt</p>
-              <p>• <strong>Estilo:</strong> Neogótico flamenco</p>
-              <p>• <strong>Construcción:</strong> 1872-1883</p>
-            </div>
-            <div>
-              <p>• <strong>Torre:</strong> 105 metros de altura</p>
-              <p>• <strong>Salas:</strong> Más de 1,500 habitaciones</p>
-              <p>• <strong>Función:</strong> Sede del gobierno municipal</p>
-            </div>
-          </div>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
