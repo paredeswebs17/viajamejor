@@ -1094,19 +1094,19 @@ Volver a guías
           <div className="bg-white rounded-lg p-3 shadow-sm">
             <h4 className="font-semibold text-gray-900 mb-1">Figlmüller (Schnitzel Original)</h4>
             <p className="text-xs text-gray-600 mb-1">Wollzeile 5 • €€ • Reserva obligatoria</p>
-            <p className="text-sm text-gray-700">El schnitzel más famoso de Viena. Enorme, crujiente y auténtico. Precio: 18-22€</p>
+            <p className="text-sm text-gray-700">El schnitzel más famoso de Viena. Enorme, crujiente y auténtico.</p>
           </div>
           
           <div className="bg-white rounded-lg p-3 shadow-sm">
             <h4 className="font-semibold text-gray-900 mb-1">Plachutta (Tafelspitz Imperial)</h4>
             <p className="text-xs text-gray-600 mb-1">Wollzeile 38 • €€€ • Elegante</p>
-            <p className="text-sm text-gray-700">El mejor tafelspitz (carne hervida) de Viena. Plato favorito del emperador Francisco José. Precio: 24-28€</p>
+            <p className="text-sm text-gray-700">El mejor tafelspitz (carne hervida) de Viena.</p>
           </div>
           
           <div className="bg-white rounded-lg p-3 shadow-sm">
             <h4 className="font-semibold text-gray-900 mb-1">Gasthaus Pöschl</h4>
             <p className="text-xs text-gray-600 mb-1">Weihburggasse 17 • €€ • Auténtico</p>
-            <p className="text-sm text-gray-700">Ambiente local genuino. Goulash, schnitzel y cervezas austriacas. Precio: 12-18€</p>
+            <p className="text-sm text-gray-700">Ambiente local genuino. Goulash, schnitzel y cervezas austriacas.</p>
           </div>
         </div>
       </div>
