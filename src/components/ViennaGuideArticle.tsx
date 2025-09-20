@@ -708,7 +708,7 @@ Volver a guías
         <h4 className="text-lg font-bold text-gray-900 mb-3">Casa Hundertwasser - Arquitectura Revolucionaria</h4>
         <div className="mb-4">
           <img
-            src="https://images.unsplash.com/photo-1568732159032-2baff6d07fb4?auto=format&fit=crop&w=1200&q=80"
+            src="https://images.pexels.com/photos/16632436/pexels-photo-16632436.jpeg"
             alt="Hundertwasserhaus con su fachada multicolor, ventanas asimétricas y diseño arquitectónico único"
             className="w-full h-48 sm:h-64 object-cover rounded-xl shadow-lg mb-4"
           />
