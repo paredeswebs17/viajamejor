@@ -803,6 +803,13 @@ src="https://images.pexels.com/photos/28994573/pexels-photo-28994573.jpeg"
       </h3>
       <div className="bg-orange-50 border border-orange-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
         <h4 className="text-lg font-bold text-gray-900 mb-3">Colina Gellért - Mirador Supremo de Budapest</h4>
+        <div className="mb-6">
+          <img
+src="https://images.pexels.com/photos/30734949/pexels-photo-30734949.jpeg"
+            alt="Las vistas más impresionantes de toda la capital húngara"
+            className="w-full h-48 sm:h-64 object-cover rounded-lg shadow-md"
+          />
+        </div>
         <p className="text-gray-700 mb-4">
           Las vistas más impresionantes de toda la capital húngara.
         </p>
