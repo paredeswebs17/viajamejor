@@ -1117,19 +1117,19 @@ Volver a guías
           <div className="bg-white rounded-lg p-3 shadow-sm">
             <h4 className="font-semibold text-gray-900 mb-1">Motto am Fluss</h4>
             <p className="text-xs text-gray-600 mb-1">Franz-Josefs-Kai 2 • €€€ • Vistas al Danubio</p>
-            <p className="text-sm text-gray-700">Cocina moderna con vistas espectaculares. Perfecto para cenas románticas. Precio: 25-35€</p>
+            <p className="text-sm text-gray-700">Cocina moderna con vistas espectaculares. Perfecto para cenas románticas.</p>
           </div>
           
           <div className="bg-white rounded-lg p-3 shadow-sm">
             <h4 className="font-semibold text-gray-900 mb-1">Labstelle Wien</h4>
             <p className="text-xs text-gray-600 mb-1">Lugeck 6 • €€ • Moderno</p>
-            <p className="text-sm text-gray-700">Fusión austriaca-asiática innovadora. Ambiente joven y creativo. Precio: 15-22€</p>
+            <p className="text-sm text-gray-700">Fusión austriaca-asiática innovadora. Ambiente joven y creativo.</p>
           </div>
           
           <div className="bg-white rounded-lg p-3 shadow-sm">
             <h4 className="font-semibold text-gray-900 mb-1">Naschmarkt</h4>
             <p className="text-xs text-gray-600 mb-1">Linke Wienzeile • € • Mercado</p>
-            <p className="text-sm text-gray-700">Mercado con comida internacional. Perfecto para almorzar variado y económico. Precio: 8-15€</p>
+            <p className="text-sm text-gray-700">Mercado con comida internacional. Perfecto para almorzar variado y económico.</p>
           </div>
         </div>
       </div>
