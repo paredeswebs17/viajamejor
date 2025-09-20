@@ -532,7 +532,7 @@ Volver a guías
           </div>
         </div>
 
-        <div className="bg-white rounded-xl p-4 border border-gray-200 shadow-sm">
+        <div className="bg-white rounded-x2 p-4 border border-gray-200 shadow-sm">
           <a href="https://gyg.me/WsBGbqro" target="_blank" rel="noopener noreferrer"
              className="inline-flex items-center bg-gradient-to-r from-yellow-500 to-orange-500 hover:from-yellow-600 hover:to-orange-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm">
             🎼 Entradas Casa de Mozart
