@@ -228,133 +228,136 @@ Volver a guías
         </div>
       </div>
     </div>
+  </div>
 
-    <div className="mb-8">
-      <h3 className="text-lg font-bold text-gray-900 mb-4">🚇 Sistema de Transporte Público de Viena</h3>
+  {/* Sistema de Transporte Público */}
+  <div className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
+    <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">🚇 Sistema de Transporte Público de Viena</h2>
+    
+    <div className="bg-gradient-to-r from-blue-50 to-indigo-50 border border-blue-200 rounded-xl p-6">
+      <h4 className="font-bold text-gray-900 mb-4">Red Integrada de Transporte</h4>
       
-      <div className="bg-gradient-to-r from-blue-50 to-indigo-50 border border-blue-200 rounded-xl p-6">
-        <h4 className="font-bold text-gray-900 mb-4">Red Integrada de Transporte</h4>
-        
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">
-          <div className="bg-white rounded-lg p-4 shadow-sm">
-            <h5 className="font-semibold text-blue-600 mb-2">🚇 Metro (U-Bahn)</h5>
-            <ul className="text-sm text-gray-700 space-y-1">
-              <li>• 5 líneas principales (U1-U6)</li>
-              <li>• Frecuencia: 2-5 minutos</li>
-              <li>• Horario: 05:00-00:30</li>
-              <li>• Fines semana: 24h</li>
-            </ul>
-          </div>
-          
-          <div className="bg-white rounded-lg p-4 shadow-sm">
-            <h5 className="font-semibold text-red-600 mb-2">🚊 Tranvías</h5>
-            <ul className="text-sm text-gray-700 space-y-1">
-              <li>• Red histórica extensa</li>
-              <li>• Conecta todos los distritos</li>
-              <li>• Frecuencia: 5-10 minutos</li>
-              <li>• Acceso a atracciones turísticas</li>
-            </ul>
-          </div>
-          
-          <div className="bg-white rounded-lg p-4 shadow-sm">
-            <h5 className="font-semibold text-green-600 mb-2">🚌 Autobuses</h5>
-            <ul className="text-sm text-gray-700 space-y-1">
-              <li>• Complementa metro y tranvías</li>
-              <li>• Líneas nocturnas disponibles</li>
-              <li>• Zonas periféricas</li>
-              <li>• Mismos billetes</li>
-            </ul>
-          </div>
-        </div>
-
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">
         <div className="bg-white rounded-lg p-4 shadow-sm">
-          <h5 className="font-semibold text-gray-900 mb-3">Información Práctica del Sistema:</h5>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm text-gray-700">
-            <div>
-              <p className="mb-2"><strong>Billete sencillo:</strong> 2,40 € (válido 1 hora)</p>
-              <p className="mb-2"><strong>Billete 24h:</strong> 8,00 € (viajes ilimitados)</p>
-              <p className="mb-2"><strong>Billete 48h:</strong> 14,10 € (muy popular)</p>
-              <p className="mb-2"><strong>Billete 72h:</strong> 17,10 € (ideal 3 días)</p>
-            </div>
-            <div>
-              <p className="mb-2"><strong>Validación:</strong> Obligatoria antes de viajar</p>
-              <p className="mb-2"><strong>Controles:</strong> Multa 103 € sin billete</p>
-              <p className="mb-2"><strong>App oficial:</strong> WienMobil (compra digital)</p>
-              <p className="mb-2"><strong>Zonas:</strong> Centro cubierto por zona 100</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div className="mb-8">
-      <h3 className="text-lg font-bold text-gray-900 mb-4">🚶‍♂️ Caminar por Viena - La Mejor Opción</h3>
-      <div className="bg-green-50 border border-green-200 rounded-xl p-6">
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          <div>
-            <h4 className="font-semibold text-gray-900 mb-3">Ventajas de ir a pie:</h4>
-            <ul className="text-sm text-gray-700 space-y-2">
-              <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Centro histórico completamente peatonal</li>
-              <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Distancias muy cortas entre atracciones principales</li>
-              <li className="flex items-center"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3"></span>Calles seguras las 24 horas</li>
-              <li className="flex items-center"><span className="w-2 h-2 bg-orange-400 rounded-full mr-3"></span>Señalización excelente en varios idiomas</li>
-              <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>Perfectos para fotografías urbanas</li>
-            </ul>
-          </div>
-          <div>
-            <h4 className="font-semibold text-gray-900 mb-3">Distancias a pie desde Stephansplatz:</h4>
-            <ul className="text-sm text-gray-700 space-y-2">
-              <li className="flex items-center"><span className="w-2 h-2 bg-yellow-400 rounded-full mr-3"></span>Ópera de Viena: 5 minutos</li>
-              <li className="flex items-center"><span className="w-2 h-2 bg-pink-400 rounded-full mr-3"></span>Palacio Hofburg: 8 minutos</li>
-              <li className="flex items-center"><span className="w-2 h-2 bg-indigo-400 rounded-full mr-3"></span>Graben: 2 minutos</li>
-              <li className="flex items-center"><span className="w-2 h-2 bg-emerald-400 rounded-full mr-3"></span>Café Central: 6 minutos</li>
-              <li className="flex items-center"><span className="w-2 h-2 bg-cyan-400 rounded-full mr-3"></span>Reloj Anker: 3 minutos</li>
-            </ul>
-          </div>
+          <h5 className="font-semibold text-blue-600 mb-2">🚇 Metro (U-Bahn)</h5>
+          <ul className="text-sm text-gray-700 space-y-1">
+            <li>• 5 líneas principales (U1-U6)</li>
+            <li>• Frecuencia: 2-5 minutos</li>
+            <li>• Horario: 05:00-00:30</li>
+            <li>• Fines semana: 24h</li>
+          </ul>
         </div>
         
-        <div className="bg-white rounded-lg p-4 mt-4 shadow-sm">
-          <h4 className="font-semibold text-gray-900 mb-2">💡 Consejo Pro:</h4>
-          <p className="text-sm text-gray-700">
-            El 80% de las atracciones principales de Viena están en un radio de 15 minutos a pie desde la Catedral de San Esteban. 
-            Solo necesitarás transporte público para ir a Schönbrunn, Belvedere y el Prater.
-          </p>
+        <div className="bg-white rounded-lg p-4 shadow-sm">
+          <h5 className="font-semibold text-red-600 mb-2">🚊 Tranvías</h5>
+          <ul className="text-sm text-gray-700 space-y-1">
+            <li>• Red histórica extensa</li>
+            <li>• Conecta todos los distritos</li>
+            <li>• Frecuencia: 5-10 minutos</li>
+            <li>• Acceso a atracciones turísticas</li>
+          </ul>
+        </div>
+        
+        <div className="bg-white rounded-lg p-4 shadow-sm">
+          <h5 className="font-semibold text-green-600 mb-2">🚌 Autobuses</h5>
+          <ul className="text-sm text-gray-700 space-y-1">
+            <li>• Complementa metro y tranvías</li>
+            <li>• Líneas nocturnas disponibles</li>
+            <li>• Zonas periféricas</li>
+            <li>• Mismos billetes</li>
+          </ul>
+        </div>
+      </div>
+
+      <div className="bg-white rounded-lg p-4 shadow-sm">
+        <h5 className="font-semibold text-gray-900 mb-3">Información Práctica del Sistema:</h5>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm text-gray-700">
+          <div>
+            <p className="mb-2"><strong>Billete sencillo:</strong> 2,40 € (válido 1 hora)</p>
+            <p className="mb-2"><strong>Billete 24h:</strong> 8,00 € (viajes ilimitados)</p>
+            <p className="mb-2"><strong>Billete 48h:</strong> 14,10 € (muy popular)</p>
+            <p className="mb-2"><strong>Billete 72h:</strong> 17,10 € (ideal 3 días)</p>
+          </div>
+          <div>
+            <p className="mb-2"><strong>Validación:</strong> Obligatoria antes de viajar</p>
+            <p className="mb-2"><strong>Controles:</strong> Multa 103 € sin billete</p>
+            <p className="mb-2"><strong>App oficial:</strong> WienMobil (compra digital)</p>
+            <p className="mb-2"><strong>Zonas:</strong> Centro cubierto por zona 100</p>
+          </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <div>
-      <h3 className="text-lg font-bold text-gray-900 mb-4">📱 Apps Esenciales para el Transporte</h3>
+  {/* Caminar por Viena */}
+  <div className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
+    <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">🚶‍♂️ Caminar por Viena - La Mejor Opción</h2>
+    <div className="bg-green-50 border border-green-200 rounded-xl p-6">
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-        <div className="bg-blue-50 border border-blue-200 rounded-xl p-4">
-          <h4 className="font-semibold text-gray-900 mb-3">WienMobil (Oficial)</h4>
-          <ul className="text-sm text-gray-700 space-y-1 mb-3">
-            <li>• Compra billetes digitales</li>
-            <li>• Rutas en tiempo real</li>
-            <li>• Información de retrasos</li>
-            <li>• Mapa interactivo de líneas</li>
+        <div>
+          <h4 className="font-semibold text-gray-900 mb-3">Ventajas de ir a pie:</h4>
+          <ul className="text-sm text-gray-700 space-y-2">
+            <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Centro histórico completamente peatonal</li>
+            <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Distancias muy cortas entre atracciones principales</li>
+            <li className="flex items-center"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3"></span>Calles seguras las 24 horas</li>
+            <li className="flex items-center"><span className="w-2 h-2 bg-orange-400 rounded-full mr-3"></span>Señalización excelente en varios idiomas</li>
+            <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>Perfectos para fotografías urbanas</li>
           </ul>
-          <a href="https://www.wienerlinien.at/eportal3/ep/channelView.do?channelId=-4677" target="_blank" rel="noopener noreferrer"
-             className="inline-flex items-center bg-blue-500 hover:bg-blue-600 text-white font-medium px-3 py-2 rounded-lg transition-all duration-200 text-sm">
-            📱 Descargar WienMobil
-            <ExternalLink className="h-3 w-3 ml-2" />
-          </a>
         </div>
-        
-        <div className="bg-purple-50 border border-purple-200 rounded-xl p-4">
-          <h4 className="font-semibold text-gray-900 mb-3">Citymapper</h4>
-          <ul className="text-sm text-gray-700 space-y-1 mb-3">
-            <li>• Rutas optimizadas multimodal</li>
-            <li>• Tiempo real de llegadas</li>
-            <li>• Alternativas de ruta</li>
-            <li>• Funciona sin internet</li>
+        <div>
+          <h4 className="font-semibold text-gray-900 mb-3">Distancias a pie desde Stephansplatz:</h4>
+          <ul className="text-sm text-gray-700 space-y-2">
+            <li className="flex items-center"><span className="w-2 h-2 bg-yellow-400 rounded-full mr-3"></span>Ópera de Viena: 5 minutos</li>
+            <li className="flex items-center"><span className="w-2 h-2 bg-pink-400 rounded-full mr-3"></span>Palacio Hofburg: 8 minutos</li>
+            <li className="flex items-center"><span className="w-2 h-2 bg-indigo-400 rounded-full mr-3"></span>Graben: 2 minutos</li>
+            <li className="flex items-center"><span className="w-2 h-2 bg-emerald-400 rounded-full mr-3"></span>Café Central: 6 minutos</li>
+            <li className="flex items-center"><span className="w-2 h-2 bg-cyan-400 rounded-full mr-3"></span>Reloj Anker: 3 minutos</li>
           </ul>
-          <a href="https://citymapper.com/vienna" target="_blank" rel="noopener noreferrer"
-             className="inline-flex items-center bg-purple-500 hover:bg-purple-600 text-white font-medium px-3 py-2 rounded-lg transition-all duration-200 text-sm">
-            🗺️ Usar Citymapper
-            <ExternalLink className="h-3 w-3 ml-2" />
-          </a>
         </div>
+      </div>
+      
+      <div className="bg-white rounded-lg p-4 mt-4 shadow-sm">
+        <h4 className="font-semibold text-gray-900 mb-2">💡 Consejo Pro:</h4>
+        <p className="text-sm text-gray-700">
+          El 80% de las atracciones principales de Viena están en un radio de 15 minutos a pie desde la Catedral de San Esteban. 
+          Solo necesitarás transporte público para ir a Schönbrunn, Belvedere y el Prater.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  {/* Apps Esenciales */}
+  <div className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
+    <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">📱 Apps Esenciales para el Transporte</h2>
+    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+      <div className="bg-blue-50 border border-blue-200 rounded-xl p-4">
+        <h4 className="font-semibold text-gray-900 mb-3">WienMobil (Oficial)</h4>
+        <ul className="text-sm text-gray-700 space-y-1 mb-3">
+          <li>• Compra billetes digitales</li>
+          <li>• Rutas en tiempo real</li>
+          <li>• Información de retrasos</li>
+          <li>• Mapa interactivo de líneas</li>
+        </ul>
+        <a href="https://www.wienerlinien.at/eportal3/ep/channelView.do?channelId=-4677" target="_blank" rel="noopener noreferrer"
+           className="inline-flex items-center bg-blue-500 hover:bg-blue-600 text-white font-medium px-3 py-2 rounded-lg transition-all duration-200 text-sm">
+          📱 Descargar WienMobil
+          <ExternalLink className="h-3 w-3 ml-2" />
+        </a>
+      </div>
+      
+      <div className="bg-purple-50 border border-purple-200 rounded-xl p-4">
+        <h4 className="font-semibold text-gray-900 mb-3">Citymapper</h4>
+        <ul className="text-sm text-gray-700 space-y-1 mb-3">
+          <li>• Rutas optimizadas multimodal</li>
+          <li>• Tiempo real de llegadas</li>
+          <li>• Alternativas de ruta</li>
+          <li>• Funciona sin internet</li>
+        </ul>
+        <a href="https://citymapper.com/vienna" target="_blank" rel="noopener noreferrer"
+           className="inline-flex items-center bg-purple-500 hover:bg-purple-600 text-white font-medium px-4 py-2 rounded-lg transition-all duration-200 text-sm">
+          🗺️ Usar Citymapper
+          <ExternalLink className="h-3 w-3 ml-2" />
+        </a>
       </div>
     </div>
   </div>
