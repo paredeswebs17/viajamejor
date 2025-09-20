@@ -396,6 +396,13 @@ Volver a guías
       </h3>
       <div className="bg-yellow-50 border border-yellow-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
         <h4 className="text-lg font-bold text-gray-900 mb-3">Clementinum - La Biblioteca Más Bella del Mundo</h4>
+        <div className="mb-6">
+          <img
+            src="https://images.pexels.com/photos/5426128/pexels-photo-5426128.jpeg"
+            alt="Reloj Astronómico de Praga con sus intrincados mecanismos medievales y figuras en movimiento"
+            className="w-full h-48 sm:h-64 object-cover rounded-lg shadow-md"
+          />
+        </div>
         <p className="text-gray-700 mb-4">
           Descubre la joya barroca que ha permanecido intacta desde el siglo XVIII.
         </p>
