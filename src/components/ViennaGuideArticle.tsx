@@ -946,6 +946,11 @@ Volver a guías
               👑 Entradas Palacio Hofburg
               <ExternalLink className="h-3 w-3 ml-2" />
             </a>
+            <a href="https://www.onb.ac.at/en/museums/state-hall/" target="_blank" rel="noopener noreferrer"
+               className="inline-flex items-center bg-gradient-to-r from-blue-500 to-indigo-500 hover:from-blue-600 hover:to-indigo-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm">
+              📚 Biblioteca Nacional
+              <ExternalLink className="h-3 w-3 ml-2" />
+            </a>
             <a href="https://www.srs.at/" target="_blank" rel="noopener noreferrer"
                className="inline-flex items-center bg-gradient-to-r from-brown-500 to-amber-600 hover:from-brown-600 hover:to-amber-700 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm">
               🐎 Escuela Española Equitación
