@@ -158,12 +158,12 @@ Volver a guías
             <h5 className="font-semibold text-gray-900 mb-2">VAL2: Línea Morzinplatz/Schwedenplatz</h5>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-gray-700">
               <div>
-                <p><strong>Precio:</strong> 8 € adulto</p>
+                <p><strong>Precio:</strong> 11 € adulto</p>
                 <p><strong>Duración:</strong> 20-30 min</p>
               </div>
               <div>
                 <p><strong>Destino:</strong> Centro histórico directo</p>
-                <p><strong>Horario:</strong> 05:00-00:30</p>
+                <p><strong>Horario:</strong> 03:00-23:30</p>
               </div>
             </div>
           </div>
@@ -172,7 +172,7 @@ Volver a guías
             <h5 className="font-semibold text-gray-900 mb-2">VAL1: Línea Westbahnhof</h5>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-gray-700">
               <div>
-                <p><strong>Precio:</strong> 8 € adulto</p>
+                <p><strong>Precio:</strong> 11 € adulto</p>
                 <p><strong>Duración:</strong> 35-45 min</p>
               </div>
               <div>
@@ -186,7 +186,7 @@ Volver a guías
             <h5 className="font-semibold text-gray-900 mb-2">VAL3: Línea Estación Central</h5>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-gray-700">
               <div>
-                <p><strong>Precio:</strong> 8 € adulto</p>
+                <p><strong>Precio:</strong> 11 € adulto</p>
                 <p><strong>Duración:</strong> 25-35 min</p>
               </div>
               <div>
