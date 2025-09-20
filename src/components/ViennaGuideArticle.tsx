@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowLeft, Share2, Clock, MapPin, CheckCircle, ExternalLink } from 'lucide-react';
+import { ArrowLeft, Share2, Clock, MapPin, ExternalLink } from 'lucide-react';
 
 interface ViennaGuideArticleProps {
 onBack: () => void;
