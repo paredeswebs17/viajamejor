@@ -1161,19 +1161,19 @@ Volver a guías
         <div className="space-y-3">
           <div className="bg-white rounded-lg p-3 shadow-sm">
             <h4 className="font-semibold text-gray-900 mb-1">Hotel Sacher Wien</h4>
-            <p className="text-xs text-gray-600 mb-1">Philharmoniker Str. 4 • €€€€€ • Lujo histórico</p>
+            <p className="text-xs text-gray-600 mb-1">Philharmoniker Str. 4 • €€€€€ </p>
             <p className="text-sm text-gray-700">El hotel más famoso de Viena. Frente a la Ópera. Desde 400€/noche</p>
           </div>
           
           <div className="bg-white rounded-lg p-3 shadow-sm">
-            <h4 className="font-semibold text-gray-900 mb-1">Hotel Am Konzerthaus</h4>
-            <p className="text-xs text-gray-600 mb-1">Am Heumarkt 35-37 • €€€ • Boutique</p>
-            <p className="text-sm text-gray-700">Diseño moderno en edificio histórico. Desde 120€/noche</p>
+            <h4 className="font-semibold text-gray-900 mb-1">Hotel Capricornio</h4>
+            <p className="text-xs text-gray-600 mb-1">Schwedenplatz 3-4 • €€€ </p>
+            <p className="text-sm text-gray-700">Diseño moderno en el centro de Viena. Desde 150€/noche</p>
           </div>
           
           <div className="bg-white rounded-lg p-3 shadow-sm">
             <h4 className="font-semibold text-gray-900 mb-1">Wombats City Hostel</h4>
-            <p className="text-xs text-gray-600 mb-1">Grangasse 6 • € • Mochileros</p>
+            <p className="text-xs text-gray-600 mb-1">Grangasse 6 • € </p>
             <p className="text-sm text-gray-700">Hostel moderno y limpio. Desde 25€/noche en dormitorio</p>
           </div>
         </div>
