@@ -229,6 +229,13 @@ Volver a guías
       </h3>
       <div className="bg-gradient-to-r from-blue-50 to-purple-50 border border-blue-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
         <h4 className="text-lg font-bold text-gray-900 mb-3">Plaza de la Ciudad Vieja - El Salón de Europa</h4>
+        <div className="mb-6">
+          <img
+            src="https://images.pexels.com/photos/3046347/pexels-photo-3046347.jpeg?auto=compress&cs=tinysrgb&w=800"
+            alt="Plaza de la Ciudad Vieja de Praga con el famoso Reloj Astronómico y arquitectura gótica"
+            className="w-full h-48 sm:h-64 object-cover rounded-lg shadow-md"
+          />
+        </div>
         <p className="text-gray-700 mb-4">
           Comienza tu aventura en el corazón histórico de Praga, donde cada edificio cuenta siglos de historia.
         </p>
@@ -268,6 +275,13 @@ Volver a guías
       </h3>
       <div className="bg-orange-50 border border-orange-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
         <h4 className="text-lg font-bold text-gray-900 mb-3">Ascenso a las Mejores Vistas del Centro</h4>
+        <div className="mb-6">
+          <img
+            src="https://images.pexels.com/photos/2363/france-landmark-lights-night.jpg?auto=compress&cs=tinysrgb&w=800"
+            alt="Reloj Astronómico de Praga con sus intrincados mecanismos medievales y figuras en movimiento"
+            className="w-full h-48 sm:h-64 object-cover rounded-lg shadow-md"
+          />
+        </div>
         <p className="text-gray-700 mb-4">
           Sube 70 metros para contemplar la Ciudad Dorada desde las alturas.
         </p>
@@ -501,6 +515,13 @@ Volver a guías
       </h3>
       <div className="bg-red-50 border border-red-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
         <h4 className="text-lg font-bold text-gray-900 mb-3">Castillo de Praga - El Castillo Más Grande del Mundo</h4>
+        <div className="mb-6">
+          <img
+            src="https://images.pexels.com/photos/16922751/pexels-photo-16922751.jpeg?auto=compress&cs=tinysrgb&w=800"
+            alt="Castillo de Praga con la Catedral de San Vito dominando el complejo real"
+            className="w-full h-48 sm:h-64 object-cover rounded-lg shadow-md"
+          />
+        </div>
         <p className="text-gray-700 mb-4">
           Comienza temprano en el complejo real que definió la historia de Bohemia.
         </p>
@@ -557,6 +578,13 @@ Volver a guías
       </h3>
       <div className="bg-yellow-50 border border-yellow-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
         <h4 className="text-lg font-bold text-gray-900 mb-3">Callejón del Oro - Donde Vivió Kafka</h4>
+        <div className="mb-6">
+          <img
+            src="https://images.pexels.com/photos/10562463/pexels-photo-10562463.jpeg?auto=compress&cs=tinysrgb&w=800"
+            alt="Callejón del Oro con sus características casitas coloridas medievales"
+            className="w-full h-48 sm:h-64 object-cover rounded-lg shadow-md"
+          />
+        </div>
         <p className="text-gray-700 mb-4">
           La calle más famosa del castillo, hogar de orfebres y después de artistas.
         </p>
@@ -588,6 +616,13 @@ Volver a guías
       </h3>
       <div className="bg-green-50 border border-green-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
         <h4 className="text-lg font-bold text-gray-900 mb-3">Puente de Carlos - El Corazón de Praga</h4>
+        <div className="mb-6">
+          <img
+            src="https://images.pexels.com/photos/1701595/pexels-photo-1701595.jpeg?auto=compress&cs=tinysrgb&w=800"
+            alt="Puente de Carlos con sus estatuas barrocas y vista al Castillo de Praga"
+            className="w-full h-48 sm:h-64 object-cover rounded-lg shadow-md"
+          />
+        </div>
         <p className="text-gray-700 mb-4">
           Baja del castillo hacia el puente más famoso de Europa Central.
         </p>
