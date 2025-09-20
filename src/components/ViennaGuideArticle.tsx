@@ -389,7 +389,7 @@ Volver a guías
 
         <div className="bg-yellow-50 border border-yellow-200 rounded-xl p-4 mb-4">
           <h5 className="font-semibold text-gray-900 mb-3">⛪ Columna de la Peste (Pestsäule) - Monumento Barroco Único:</h5>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm text-gray-700">
+          <div className="grid grid-cols-1 sm:grid-cols-1 gap-4 text-sm text-gray-700">
             <div>
               <p className="mb-2">
                 Erigida en 1693 por orden del emperador Leopoldo I como agradecimiento por el fin de la peste de 1679 que mató a un tercio de la población vienesa. 
@@ -397,13 +397,6 @@ Volver a guías
               </p>
             </div>
             <div>
-              <h6 className="font-medium text-gray-900 mb-1">Simbología y Relieves:</h6>
-              <ul className="space-y-1 text-xs">
-                <li>• <strong>Cima:</strong> Trinidad con el emperador arrodillado</li>
-                <li>• <strong>Centro:</strong> Ángeles expulsando la peste (anciana con serpientes)</li>
-                <li>• <strong>Base:</strong> Escenas bíblicas de liberación</li>
-                <li>• <strong>Inscripción:</strong> En latín, agradeciendo la liberación divina</li>
-              </ul>
             </div>
           </div>
         </div>
