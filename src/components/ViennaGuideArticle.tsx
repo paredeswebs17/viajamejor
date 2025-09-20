@@ -294,21 +294,11 @@ Volver a guías
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm text-gray-700">
             <div>
               <h6 className="font-medium text-gray-900 mb-1">Burgtheater (Teatro Nacional):</h6>
-              <p className="mb-2">Considerado uno de los teatros más importantes del mundo germanohablante. Su fachada neoclásica contrasta beautifully con el ayuntamiento.</p>
-              <ul className="text-xs space-y-1">
-                <li>• Fundado en 1741 por María Teresa</li>
-                <li>• Reconstruido después de la WWII</li>
-                <li>• Repertorio clásico y contemporáneo</li>
-              </ul>
+              <p className="mb-2">Considerado uno de los teatros más importantes del mundo germanohablante. Su fachada neoclásica contrasta con el ayuntamiento.</p>
             </div>
             <div>
               <h6 className="font-medium text-gray-900 mb-1">Parlamento de Austria:</h6>
               <p className="mb-2">Edificio neoclásico inaugurado en 1883, sede del poder legislativo austriaco. Destaca la fuente de Pallas Atenea en su entrada.</p>
-              <ul className="text-xs space-y-1">
-                <li>• Visitas guiadas gratuitas disponibles</li>
-                <li>• Arquitectura inspirada en Grecia clásica</li>
-                <li>• Fuente de Atenea: símbolo de sabiduría</li>
-              </ul>
             </div>
           </div>
         </div>
