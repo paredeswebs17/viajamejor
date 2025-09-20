@@ -488,7 +488,7 @@ Volver a guías
           <div className="flex flex-col sm:flex-row gap-2">
             <a href="https://gyg.me/EH2OPBYr" target="_blank" rel="noopener noreferrer"
                className="inline-flex items-center bg-gradient-to-r from-blue-500 to-indigo-500 hover:from-blue-600 hover:to-indigo-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm">
-              🎫 Tour guiado con subida a torres
+              🎫 Tour guiado con subida a torres y museo Dom
               <ExternalLink className="h-3 w-3 ml-2" />
             </a>
           </div>
