@@ -265,7 +265,6 @@ Volver a guías
           Comenzamos nuestra aventura imperial en una de las plazas más emblemáticas de Viena, donde se alza majestuoso el Wiener Rathaus (Ayuntamiento de Viena). 
           Este edificio neogótico, construido entre 1872 y 1883, es una obra maestra arquitectónica que rivaliza con los mejores ayuntamientos europeos.
         </p>
-        </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
           <div>
