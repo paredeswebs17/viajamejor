@@ -495,7 +495,7 @@ Volver a guías
         <h4 className="text-lg font-bold text-gray-900 mb-3">Café Central - Patrimonio Cultural UNESCO desde 2011</h4>
         <div className="mb-4">
           <img
-            src="https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?auto=format&fit=crop&w=1200&q=80"
+      src="https://images.pexels.com/photos/19599495/pexels-photo-19599495.jpeg"
             alt="Interior histórico del Café Central con sus características bóvedas y ambiente imperial"
             className="w-full h-48 sm:h-64 object-cover rounded-xl shadow-lg mb-4"
           />
