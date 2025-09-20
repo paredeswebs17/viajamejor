@@ -906,7 +906,7 @@ Volver a guías
           Este complejo palaciego alberga los Apartamentos Imperiales, el Museo Sisí y la famosa Escuela Española de Equitación.
         </p>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-4">
           <div>
             <h5 className="font-semibold text-gray-900 mb-2">👑 Apartamentos Imperiales + Museo Sisí:</h5>
             <ul className="text-sm text-gray-700 space-y-1 list-none">
@@ -916,6 +916,16 @@ Volver a guías
               <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>19 habitaciones históricas</li>
               <li className="flex items-center"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3"></span>Objetos personales de Sisí</li>
             </ul>
+            <div>
+            <h5 className="font-semibold text-gray-900 mb-2">📚 Biblioteca Nacional (Prunksaal):</h5>
+            <ul className="text-sm text-gray-700 space-y-1 list-none">
+              <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Entrada: 8 € (biblioteca más bella del mundo)</li>
+              <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Horario: 10:00-18:00 (mar-dom)</li>
+              <li className="flex items-center"><span className="w-2 h-2 bg-brown-400 rounded-full mr-3"></span>200.000 volúmenes históricos</li>
+              <li className="flex items-center"><span className="w-2 h-2 bg-pink-400 rounded-full mr-3"></span>Frescos barrocos espectaculares</li>
+              <li className="flex items-center"><span className="w-2 h-2 bg-indigo-400 rounded-full mr-3"></span>Globos terrestres históricos únicos</li>
+            </ul>
+          </div>
           </div>
           <div>
             <h5 className="font-semibold text-gray-900 mb-2">🐎 Escuela Española de Equitación:</h5>
