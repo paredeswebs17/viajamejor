@@ -903,7 +903,7 @@ Volver a guías
         </div>
         <p className="text-gray-700 mb-4">
           El Palacio Hofburg fue la residencia principal de los emperadores austriacos durante más de 600 años. 
-          Este complejo palaciego alberga los Apartamentos Imperiales, el Museo Sisí y la famosa Escuela Española de Equitación.
+          Este complejo palaciego alberga los Apartamentos Imperiales, el Museo Sisí , la Biblioteca Nacional y la famosa Escuela Española de Equitación.
         </p>
 
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-4">
