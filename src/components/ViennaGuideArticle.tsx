@@ -197,7 +197,7 @@ Volver a guías
           </div>
         </div>
         <div className="mt-4">
-          <a href="https://www.viennaairportlines.at/en/" target="_blank" rel="noopener noreferrer"
+          <a href="https://www.viennaairportlines.at/en/informationen/unser-streckennetz" target="_blank" rel="noopener noreferrer"
              className="inline-flex items-center bg-gradient-to-r from-yellow-500 to-orange-500 hover:from-yellow-600 hover:to-orange-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm">
             🚌 Horarios y rutas Vienna Airport Lines
             <ExternalLink className="h-3 w-3 ml-2" />
