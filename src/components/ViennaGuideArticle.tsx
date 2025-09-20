@@ -401,31 +401,6 @@ Volver a guías
           Hoy es una de las calles comerciales más elegantes de Europa, que nos lleva hasta el fascinante Reloj Anker en Hoher Markt, la plaza más antigua de Viena.
         </p>
 
-        <div className="bg-white rounded-xl p-4 mb-4 shadow-sm border border-gray-100">
-          <h5 className="font-semibold text-gray-900 mb-3">🏛️ Historia de la Calle Graben:</h5>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm text-gray-700">
-            <div>
-              <h6 className="font-medium text-gray-900 mb-2">Evolución Histórica:</h6>
-              <ul className="space-y-1 text-xs">
-                <li>• <strong>Época Romana:</strong> Foso defensivo del campamento Vindobona</li>
-                <li>• <strong>Edad Media:</strong> Relleno y conversión en mercado</li>
-                <li>• <strong>Siglo XVII:</strong> Zona aristocrática tras la peste</li>
-                <li>• <strong>Siglo XIX:</strong> Peatonalización y embellecimiento</li>
-                <li>• <strong>Siglo XXI:</strong> Zona comercial de lujo premium</li>
-              </ul>
-            </div>
-            <div>
-              <h6 className="font-medium text-gray-900 mb-2">Tiendas y Marcas Destacadas:</h6>
-              <ul className="space-y-1 text-xs">
-                <li>• <strong>Demel:</strong> Confitería imperial desde 1786</li>
-                <li>• <strong>Loden-Plankl:</strong> Ropa tradicional austriaca</li>
-                <li>• <strong>Knize:</strong> Sastrería de lujo (clientes: Freud, Churchill)</li>
-                <li>• <strong>J. & L. Lobmeyr:</strong> Cristalería artesanal</li>
-                <li>• <strong>Marcas internacionales:</strong> Louis Vuitton, Hermès, etc.</li>
-              </ul>
-            </div>
-          </div>
-        </div>
 
         <div className="bg-yellow-50 border border-yellow-200 rounded-xl p-4 mb-4">
           <h5 className="font-semibold text-gray-900 mb-3">⛪ Columna de la Peste (Pestsäule) - Monumento Barroco Único:</h5>
