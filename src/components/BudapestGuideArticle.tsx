@@ -171,6 +171,13 @@ return (
       </h3>
       <div className="bg-gradient-to-r from-orange-50 to-red-50 border border-orange-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
         <h4 className="text-lg font-bold text-gray-900 mb-3">Parlamento Húngaro - Símbolo Nacional</h4>
+        <div className="mb-6">
+          <img
+            src="https://images.pexels.com/photos/73796/budapest-hungary-parliament-building-73796.jpeg?auto=compress&cs=tinysrgb&w=800"
+            alt="Parlamento Húngaro desde el Danubio con su imponente cúpula neogótica"
+            className="w-full h-48 sm:h-64 object-cover rounded-lg shadow-md"
+          />
+        </div>
         <p className="text-gray-700 mb-4">
           Inicia tu aventura húngara en el edificio gubernamental más espectacular de Europa. Sus cúpulas doradas y arquitectura neogótica te transportarán a la época imperial.
         </p>
@@ -250,6 +257,13 @@ return (
       </h3>
       <div className="bg-purple-50 border border-purple-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
         <h4 className="text-lg font-bold text-gray-900 mb-3">Gran Sinagoga - Memoria Viva</h4>
+        <div className="mb-6">
+          <img
+            src="https://images.pexels.com/photos/8112089/pexels-photo-8112089.jpeg?auto=compress&cs=tinysrgb&w=800"
+            alt="Gran Sinagoga de Budapest con su arquitectura morisca y torres gemelas"
+            className="w-full h-48 sm:h-64 object-cover rounded-lg shadow-md"
+          />
+        </div>
         <p className="text-gray-700 mb-4">
           La segunda sinagoga más grande del planeta y centro de la comunidad judía europea.
         </p>
@@ -340,6 +354,13 @@ return (
       </h3>
       <div className="bg-blue-50 border border-blue-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
         <h4 className="text-lg font-bold text-gray-900 mb-3">Basílica de San Esteban + Mirador Panorámico</h4>
+        <div className="mb-6">
+          <img
+            src="https://images.pexels.com/photos/10562463/pexels-photo-10562463.jpeg?auto=compress&cs=tinysrgb&w=800"
+            alt="Basílica de San Esteban con su imponente cúpula neoclásica dominando el skyline"
+            className="w-full h-48 sm:h-64 object-cover rounded-lg shadow-md"
+          />
+        </div>
         <p className="text-gray-700 mb-4">
           Termina el día en las alturas con vistas que quitan el aliento.
         </p>
@@ -440,6 +461,13 @@ return (
       </h3>
       <div className="bg-sky-50 border border-sky-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
         <h4 className="text-lg font-bold text-gray-900 mb-3">Funicular Histórico al Castillo</h4>
+        <div className="mb-6">
+          <img
+            src="https://images.pexels.com/photos/2363/france-landmark-lights-night.jpg?auto=compress&cs=tinysrgb&w=800"
+            alt="Castillo de Buda iluminado por la noche reflejándose en el Danubio"
+            className="w-full h-48 sm:h-64 object-cover rounded-lg shadow-md"
+          />
+        </div>
         <p className="text-gray-700 mb-4">
           Comienza como la realeza húngara, ascendiendo en el funicular centenario.
         </p>
@@ -471,6 +499,13 @@ return (
       </h3>
       <div className="bg-purple-50 border border-purple-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
         <h4 className="text-lg font-bold text-gray-900 mb-3">Bastión de los Pescadores - El Mirador Más Famoso</h4>
+        <div className="mb-6">
+          <img
+            src="https://images.pexels.com/photos/1701595/pexels-photo-1701595.jpeg?auto=compress&cs=tinysrgb&w=800"
+            alt="Bastión de los Pescadores con sus torres neorrománicas y vistas al Parlamento"
+            className="w-full h-48 sm:h-64 object-cover rounded-lg shadow-md"
+          />
+        </div>
         <p className="text-gray-700 mb-4">
           El lugar más fotografiado de Budapest por una razón poderosa.
         </p>
@@ -562,6 +597,13 @@ return (
       </h3>
       <div className="bg-gradient-to-r from-emerald-50 to-green-50 border border-emerald-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
         <h4 className="text-lg font-bold text-gray-900 mb-3">Balnearios Széchenyi - Ritual Húngaro Milenario</h4>
+        <div className="mb-6">
+          <img
+            src="https://images.pexels.com/photos/6069112/pexels-photo-6069112.jpeg?auto=compress&cs=tinysrgb&w=800"
+            alt="Balnearios Széchenyi con sus piscinas termales al aire libre y arquitectura neobarroca"
+            className="w-full h-48 sm:h-64 object-cover rounded-lg shadow-md"
+          />
+        </div>
         <p className="text-gray-700 mb-4">
           Sumérgete en la tradición termal más auténtica de Europa. Funciona incluso con nieve!
         </p>
@@ -621,6 +663,13 @@ return (
       </h3>
       <div className="bg-yellow-50 border border-yellow-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
         <h4 className="text-lg font-bold text-gray-900 mb-3">Plaza de los Héroes - Epicentro Húngaro</h4>
+        <div className="mb-6">
+          <img
+            src="https://images.pexels.com/photos/8112090/pexels-photo-8112090.jpeg?auto=compress&cs=tinysrgb&w=800"
+            alt="Plaza de los Héroes con el Monumento del Milenio y las columnatas semicirculares"
+            className="w-full h-48 sm:h-64 object-cover rounded-lg shadow-md"
+          />
+        </div>
         <p className="text-gray-700 mb-4">
           El monumento más patriótico de Hungría te cuenta mil años de historia.
         </p>
