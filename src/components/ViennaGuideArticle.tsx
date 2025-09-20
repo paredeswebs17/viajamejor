@@ -320,11 +320,6 @@ Volver a guías
               🏛️ Reservar visita guiada Ayuntamiento
               <ExternalLink className="h-3 w-3 ml-2" />
             </a>
-            <a href="https://www.burgtheater.at/en/" target="_blank" rel="noopener noreferrer"
-               className="inline-flex items-center bg-gradient-to-r from-purple-500 to-indigo-500 hover:from-purple-600 hover:to-indigo-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm">
-              🎭 Entradas Burgtheater
-              <ExternalLink className="h-3 w-3 ml-2" />
-            </a>
           </div>
           <p className="text-xs text-red-600 mt-2">💡 Tip: Llega temprano para evitar grupos turísticos y conseguir las mejores fotos de la plaza vacía.</p>
         </div>
