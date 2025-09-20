@@ -399,7 +399,7 @@ Volver a guías
         <div className="mb-6">
           <img
             src="https://images.pexels.com/photos/5426128/pexels-photo-5426128.jpeg"
-            alt="Reloj Astronómico de Praga con sus intrincados mecanismos medievales y figuras en movimiento"
+            alt="La Biblioteca Más Bella del Mundo"
             className="w-full h-48 sm:h-64 object-cover rounded-lg shadow-md"
           />
         </div>
