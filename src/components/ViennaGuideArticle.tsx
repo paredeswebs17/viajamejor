@@ -768,7 +768,7 @@ Volver a guías
         <h4 className="text-lg font-bold text-gray-900 mb-3">Stadtpark - El Parque de los Músicos y la Iglesia Barroca más Bella</h4>
         <div className="mb-4">
           <img
-            src="https://images.pexels.com/photos/8644618/pexels-photo-8644618.jpeg"
+            src="https://images.pexels.com/photos/27442550/pexels-photo-27442550.jpeg"
             alt="Stadtpark con la famosa estatua dorada de Johann Strauss II y la majestuosa Iglesia de San Carlos Borromeo"
             className="w-full h-48 sm:h-64 object-cover rounded-xl shadow-lg mb-4"
           />
