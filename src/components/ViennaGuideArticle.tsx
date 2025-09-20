@@ -404,7 +404,7 @@ Volver a guías
         <div className="bg-gradient-to-r from-yellow-50 to-amber-50 border border-yellow-200 rounded-xl p-4 mb-4">
           <h5 className="font-semibold text-gray-900 mb-3">🕐 El Reloj Anker - Obra Maestra Mecánica de 1914:</h5>
           <div className="space-y-3 text-sm text-gray-700">
-            <p className="font-medium text-gray-900">
+            <p className="mb-2">
               Situado en Hoher Markt (la plaza más antigua de Viena), el Ankeruhr es una obra maestra del art nouveau creada por Franz von Matsch. 
               Construido entre 1911 y 1914, conecta dos edificios de la compañía de seguros Anker.
             </p>
