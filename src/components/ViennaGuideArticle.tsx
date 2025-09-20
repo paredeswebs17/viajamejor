@@ -980,7 +980,7 @@ Volver a guías
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
           <div>
-            <h5 className="font-semibold text-gray-900 mb-2">🎭 Opciones para Asistir:</h5>
+            <h5 className="font-semibold text-gray-900 mb-2">🎭 Opciones para Asistir en taquilla:</h5>
             <ul className="text-sm text-gray-700 space-y-1 list-none">
               <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>Entradas de pie: 3-4 € (¡increíble!)</li>
               <li className="flex items-center"><span className="w-2 h-2 bg-orange-400 rounded-full mr-3"></span>Asientos económicos: 15-40 €</li>
