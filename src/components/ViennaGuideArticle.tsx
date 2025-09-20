@@ -1014,6 +1014,59 @@ Volver a guías
       </div>
     </div>
 
+    {/* Kärntner Straße */}
+    <div className="mb-8">
+      <h3 className="text-lg font-bold text-gray-900 mb-4 flex items-center">
+        <div className="w-1 h-6 bg-gradient-to-b from-blue-400 to-indigo-400 rounded-full mr-3"></div>
+        Kärntner Straße - Elegancia y Compras (17:00h)
+      </h3>
+      <div className="bg-blue-50 border border-blue-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
+        <h4 className="text-lg font-bold text-gray-900 mb-3">Kärntner Straße - La Quinta Avenida de Viena</h4>
+        <p className="text-gray-700 mb-4">
+          La Kärntner Straße es la calle comercial más famosa de Viena, que conecta la Ópera con la Catedral de San Esteban. 
+          Esta elegante avenida peatonal combina boutiques de lujo, cafés tradicionales y arquitectura imperial en un paseo único.
+        </p>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+          <div>
+            <h5 className="font-semibold text-gray-900 mb-2">🛍️ Compras y Boutiques:</h5>
+            <ul className="text-sm text-gray-700 space-y-1 list-none">
+              <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Swarovski: cristales austriacos famosos</li>
+              <li className="flex items-center"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3"></span>Tiendas de moda internacional</li>
+              <li className="flex items-center"><span className="w-2 h-2 bg-pink-400 rounded-full mr-3"></span>Souvenirs típicos austriacos</li>
+              <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Librería Morawa (multiidioma)</li>
+              <li className="flex items-center"><span className="w-2 h-2 bg-orange-400 rounded-full mr-3"></span>Perfumerías y joyas tradicionales</li>
+            </ul>
+          </div>
+          <div>
+            <h5 className="font-semibold text-gray-900 mb-2">☕ Cafés y Ambiente:</h5>
+            <ul className="text-sm text-gray-700 space-y-1 list-none">
+              <li className="flex items-center"><span className="w-2 h-2 bg-brown-400 rounded-full mr-3"></span>Ambiente peatonal y relajado</li>
+              <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>Música callejera de calidad</li>
+              <li className="flex items-center"><span className="w-2 h-2 bg-yellow-400 rounded-full mr-3"></span>Terrazas para observar gente</li>
+              <li className="flex items-center"><span className="w-2 h-2 bg-indigo-400 rounded-full mr-3"></span>Arquitectura histórica preservada</li>
+              <li className="flex items-center"><span className="w-2 h-2 bg-emerald-400 rounded-full mr-3"></span>Perfecto para pasear antes del concierto</li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="bg-white rounded-xl p-4 border border-gray-200 shadow-sm">
+          <div className="flex flex-col sm:flex-row gap-2">
+            <a href="https://www.swarovski.com/" target="_blank" rel="noopener noreferrer"
+               className="inline-flex items-center bg-gradient-to-r from-blue-500 to-indigo-500 hover:from-blue-600 hover:to-indigo-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm">
+              💎 Tienda Swarovski
+              <ExternalLink className="h-3 w-3 ml-2" />
+            </a>
+            <a href="https://www.wien.info/en/shopping" target="_blank" rel="noopener noreferrer"
+               className="inline-flex items-center bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm">
+              🛍️ Guía de compras Viena
+              <ExternalLink className="h-3 w-3 ml-2" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
     {/* Ópera Final */}
     <div className="mb-8">
       <h3 className="text-lg font-bold text-gray-900 mb-4 flex items-center">
