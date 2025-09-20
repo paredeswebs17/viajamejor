@@ -648,8 +648,8 @@ Volver a guías
         <h4 className="text-lg font-bold text-gray-900 mb-3">Wiener Prater - Parque de Atracciones Histórico</h4>
         <div className="mb-4">
           <img
-            src="https://images.unsplash.com/photo-1566552913236-95b8a99d0273?auto=format&fit=crop&w=1200&q=80"
-            alt="La famosa Noria Gigante (Riesenrad) del Prater de Viena contra el cielo azul"
+            src="https://images.pexels.com/photos/5734998/pexels-photo-5734998.jpeg"
+            alt="La famosa Noria Gigante (Riesenrad) del Prater de Viena"
             className="w-full h-48 sm:h-64 object-cover rounded-xl shadow-lg mb-4"
           />
         </div>
