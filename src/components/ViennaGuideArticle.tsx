@@ -803,7 +803,7 @@ Volver a guías
         <h4 className="text-lg font-bold text-gray-900 mb-3">Stephansdom - 800 Años de Historia Vienesa</h4>
         <div className="mb-4">
           <img
-            src="https://images.unsplash.com/photo-1520986606214-8b456906c813?auto=format&fit=crop&w=1200&q=80"
+      src="https://images.pexels.com/photos/10621005/pexels-photo-10621005.jpeg"
             alt="Catedral de San Esteban (Stephansdom) con su icónica torre gótica y tejado de tejas coloridas"
             className="w-full h-48 sm:h-64 object-cover rounded-xl shadow-lg mb-4"
           />
