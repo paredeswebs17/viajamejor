@@ -356,7 +356,7 @@ return (
         <h4 className="text-lg font-bold text-gray-900 mb-3">Basílica de San Esteban + Mirador Panorámico</h4>
         <div className="mb-6">
           <img
-            src="https://images.pexels.com/photos/10562463/pexels-photo-10562463.jpeg?auto=compress&cs=tinysrgb&w=800"
+            src="https://images.pexels.com/photos/2984324/pexels-photo-2984324.jpeg"
             alt="Basílica de San Esteban con su imponente cúpula neoclásica dominando el skyline"
             className="w-full h-48 sm:h-64 object-cover rounded-lg shadow-md"
           />
