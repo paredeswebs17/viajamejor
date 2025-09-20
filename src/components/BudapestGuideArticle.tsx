@@ -463,7 +463,7 @@ return (
         <h4 className="text-lg font-bold text-gray-900 mb-3">Funicular Histórico al Castillo</h4>
         <div className="mb-6">
           <img
-            src="https://images.pexels.com/photos/2363/france-landmark-lights-night.jpg?auto=compress&cs=tinysrgb&w=800"
+            src="https://images.pexels.com/photos/19310795/pexels-photo-19310795.jpeg"
             alt="Castillo de Buda iluminado por la noche reflejándose en el Danubio"
             className="w-full h-48 sm:h-64 object-cover rounded-lg shadow-md"
           />
