@@ -701,6 +701,13 @@ return (
       </h3>
       <div className="bg-gradient-to-r from-yellow-50 to-orange-50 border border-yellow-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
         <h4 className="text-lg font-bold text-gray-900 mb-3">New York Café - El Más Hermoso del Mundo</h4>
+        <div className="mb-6">
+          <img
+src="https://images.pexels.com/photos/20763018/pexels-photo-20763018.jpeg"
+            alt="New York Café"
+            className="w-full h-48 sm:h-64 object-cover rounded-lg shadow-md"
+          />
+        </div>
         <p className="text-gray-700 mb-4">
           Donde se reunía la élite intelectual de Budapest en la Belle Époque.
         </p>
