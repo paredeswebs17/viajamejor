@@ -1349,25 +1349,10 @@ Volver a guías
   {/* Footer */}
   <div className="text-center text-gray-600 text-sm mt-8">
     <p className="mb-2">
-      <strong>Guía completamente actualizada a Septiembre 2025</strong> | Información verificada con experiencias de múltiples viajes
+      Guía actualizada en Septiembre 2025 | Información verificada y precios actuales
     </p>
-    <p className="mb-2">
-      Incluye: Itinerario optimizado con Reloj Anker • Restaurantes probados personalmente • Precios actualizados 2025 • Apps y enlaces verificados
-    </p>
-    <p className="mb-4">
-      Basado en múltiples visitas a Viena y fuentes verificadas de viajeros experimentados
-    </p>
-    <div className="bg-gradient-to-r from-purple-100 to-pink-100 rounded-xl p-4 mb-4">
-      <p className="text-purple-800 text-sm font-medium">
-        🎼 Que disfrutes de la experiencia musical y cultural más auténtica de Europa Central. 
-        <br />
-        Viena te espera con sus palacios imperiales, cafés históricos y la mejor música clásica del mundo.
-      </p>
-    </div>
-    <p className="text-xs text-gray-500">
-      Esta guía incluye enlaces de afiliación que nos ayudan a mantener el contenido actualizado sin coste adicional para ti.
-      <br />
-      Todos los consejos y recomendaciones están basados en experiencias reales de viaje.
+    <p>
+      Que disfrutes Budapest al máximo!
     </p>
   </div>
 </article>
