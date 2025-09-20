@@ -867,7 +867,7 @@ Volver a guías
             <h5 className="font-semibold text-gray-900 mb-2">🐎 Escuela Española de Equitación:</h5>
             <ul className="text-sm text-gray-700 space-y-1 list-none">
               <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Espectáculos: 29-179 € (según asiento)</li>
-              <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Entrenamientos matutinos: 15 €</li>
+              <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Visita guiada: 24 €</li>
               <li className="flex items-center"><span className="w-2 h-2 bg-pink-400 rounded-full mr-3"></span>Caballos Lipizzanos únicos</li>
               <li className="flex items-center"><span className="w-2 h-2 bg-indigo-400 rounded-full mr-3"></span>Tradición desde 1572</li>
               <li className="flex items-center"><span className="w-2 h-2 bg-emerald-400 rounded-full mr-3"></span>Reserva obligatoria</li>
@@ -887,7 +887,7 @@ Volver a guías
               📚 Biblioteca Nacional
               <ExternalLink className="h-3 w-3 ml-2" />
             </a>
-            <a href="https://www.srs.at/" target="_blank" rel="noopener noreferrer"
+            <a href="https://gyg.me/SQGXoIHF" target="_blank" rel="noopener noreferrer"
                className="inline-flex items-center bg-gradient-to-r from-amber-600 to-orange-600 hover:from-amber-700 hover:to-orange-700 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm">
               🐎 Escuela Española Equitación
               <ExternalLink className="h-3 w-3 ml-2" />
