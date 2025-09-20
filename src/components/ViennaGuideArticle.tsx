@@ -448,7 +448,7 @@ Volver a guías
             <div className="bg-amber-100 border border-amber-300 rounded-lg p-3">
               <p className="font-medium text-amber-800 mb-1">🎭 Espectáculo de las 12:00h - ¡No te lo pierdas!</p>
               <p className="text-amber-700 text-xs">
-                Al mediodía, las 12 figuras desfilan durante 15 minutos acompañadas de música especial. Es el momento más mágico y fotogénico. 
+                Cada hora sale una figura y al mediodía, las 12 figuras desfilan durante 15 minutos acompañadas de música especial. Es el momento más mágico y fotogénico. 
                 Llega 10 minutos antes para conseguir buen sitio y prepara la cámara.
               </p>
             </div>
