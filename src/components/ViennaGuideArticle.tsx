@@ -700,21 +700,6 @@ Volver a guías
             </ul>
           </div>
         </div>
-
-        <div className="bg-white rounded-xl p-4 border border-gray-200 shadow-sm">
-          <div className="flex flex-col sm:flex-row gap-2">
-            <a href="https://www.hundertwasserhaus.info/" target="_blank" rel="noopener noreferrer"
-               className="inline-flex items-center bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm">
-              🎨 Información Hundertwasserhaus
-              <ExternalLink className="h-3 w-3 ml-2" />
-            </a>
-            <a href="https://www.kunsthauswien.com/" target="_blank" rel="noopener noreferrer"
-               className="inline-flex items-center bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm">
-              🖼️ Museo Hundertwasser
-              <ExternalLink className="h-3 w-3 ml-2" />
-            </a>
-          </div>
-        </div>
       </div>
     </div>
 
