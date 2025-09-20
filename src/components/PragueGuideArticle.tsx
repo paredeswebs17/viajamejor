@@ -231,7 +231,7 @@ Volver a guías
         <h4 className="text-lg font-bold text-gray-900 mb-3">Plaza de la Ciudad Vieja - El Salón de Europa</h4>
         <div className="mb-6">
           <img
-            src="https://images.pexels.com/photos/3046347/pexels-photo-3046347.jpeg?auto=compress&cs=tinysrgb&w=800"
+            src="https://images.pexels.com/photos/7245230/pexels-photo-7245230.jpeg"
             alt="Plaza de la Ciudad Vieja de Praga con el famoso Reloj Astronómico y arquitectura gótica"
             className="w-full h-48 sm:h-64 object-cover rounded-lg shadow-md"
           />
