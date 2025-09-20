@@ -573,7 +573,7 @@ Volver a guías
           <div>
             <h5 className="font-semibold text-gray-900 mb-2">⏰ Horarios y Consejos:</h5>
             <ul className="text-sm text-gray-700 space-y-1 list-none">
-              <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>Horarios: 8:30-17:00 (invierno), 8:30-7:30 (verano)</li>
+              <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>Horarios: 8:30-17:00 (invierno), 8:30-17:30 (verano)</li>
               <li className="flex items-center"><span className="w-2 h-2 bg-emerald-400 rounded-full mr-3"></span>Duración: 2-3 horas completo</li>
               <li className="flex items-center"><span className="w-2 h-2 bg-cyan-400 rounded-full mr-3"></span>Transporte: U4 Schönbrunn (15 min desde centro)</li>
             </ul>
