@@ -1346,42 +1346,6 @@ Volver a guías
     </div>
   </div>
 
-  {/* Apps Esenciales */}
-  <div className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
-    <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">📱 Apps Esenciales para el Transporte</h2>
-    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-      <div className="bg-blue-50 border border-blue-200 rounded-xl p-4">
-        <h4 className="font-semibold text-gray-900 mb-3">WienMobil (Oficial)</h4>
-        <ul className="text-sm text-gray-700 space-y-1 mb-3">
-          <li>• Compra billetes digitales</li>
-          <li>• Rutas en tiempo real</li>
-          <li>• Información de retrasos</li>
-          <li>• Mapa interactivo de líneas</li>
-        </ul>
-        <a href="https://www.wienerlinien.at/eportal3/ep/channelView.do?channelId=-4677" target="_blank" rel="noopener noreferrer"
-           className="inline-flex items-center bg-blue-500 hover:bg-blue-600 text-white font-medium px-3 py-2 rounded-lg transition-all duration-200 text-sm">
-          📱 Descargar WienMobil
-          <ExternalLink className="h-3 w-3 ml-2" />
-        </a>
-      </div>
-      
-      <div className="bg-purple-50 border border-purple-200 rounded-xl p-4">
-        <h4 className="font-semibold text-gray-900 mb-3">Citymapper</h4>
-        <ul className="text-sm text-gray-700 space-y-1 mb-3">
-          <li>• Rutas optimizadas multimodal</li>
-          <li>• Tiempo real de llegadas</li>
-          <li>• Alternativas de ruta</li>
-          <li>• Funciona sin internet</li>
-        </ul>
-        <a href="https://citymapper.com/vienna" target="_blank" rel="noopener noreferrer"
-           className="inline-flex items-center bg-purple-500 hover:bg-purple-600 text-white font-medium px-4 py-2 rounded-lg transition-all duration-200 text-sm">
-          🗺️ Usar Citymapper
-          <ExternalLink className="h-3 w-3 ml-2" />
-        </a>
-      </div>
-    </div>
-  </div>
-
   {/* Footer */}
   <div className="text-center text-gray-600 text-sm mt-8">
     <p className="mb-2">
