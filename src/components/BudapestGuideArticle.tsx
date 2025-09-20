@@ -173,7 +173,7 @@ return (
         <h4 className="text-lg font-bold text-gray-900 mb-3">Parlamento Húngaro - Símbolo Nacional</h4>
         <div className="mb-6">
           <img
-            src="https://images.pexels.com/photos/73796/budapest-hungary-parliament-building-73796.jpeg?auto=compress&cs=tinysrgb&w=800"
+            src="https://images.pexels.com/photos/12165534/pexels-photo-12165534.jpeg"
             alt="Parlamento Húngaro desde el Danubio con su imponente cúpula neogótica"
             className="w-full h-48 sm:h-64 object-cover rounded-lg shadow-md"
           />
