@@ -496,7 +496,50 @@ Volver a guías
       </div>
     </div>
 
-    {/* Casa de Mozart */}
+
+    {/* Schönbrunn Tarde */}
+    <div className="mb-8">
+      <h3 className="text-lg font-bold text-gray-900 mb-4 flex items-center">
+        <div className="w-1 h-6 bg-gradient-to-b from-purple-400 to-pink-400 rounded-full mr-3"></div>
+        Palacio Schönbrunn - Versalles Austriaco (16:00h)
+      </h3>
+      <div className="bg-purple-50 border border-purple-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
+        <h4 className="text-lg font-bold text-gray-900 mb-3">El Versalles de los Habsburgo</h4>
+        <div className="mb-4">
+          <img
+            src="https://images.pexels.com/photos/29689489/pexels-photo-29689489.jpeg"
+            alt="Palacio Schönbrunn"
+            className="w-full h-48 sm:h-64 object-cover rounded-xl shadow-lg mb-4"
+          />
+        </div>
+        <p className="text-gray-700 mb-4">
+          Schönbrunn, residencia de verano de los emperadores austriacos, es uno de los palacios barrocos más importantes de Europa. 
+          Con 1.441 habitaciones, fue el centro del poder del Imperio Austro-Húngaro y hogar de María Teresa y Sisí.
+        </p>
+
+        <div className="grid grid-cols-1 sm:grid-cols-1 gap-4 mb-4">
+          <div>
+            <h5 className="font-semibold text-gray-900 mb-2">⏰ Horarios y Consejos:</h5>
+            <ul className="text-sm text-gray-700 space-y-1 list-none">
+              <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>Horarios: 8:30-17:00 (invierno), 8:30-17:30 (verano)</li>
+              <li className="flex items-center"><span className="w-2 h-2 bg-emerald-400 rounded-full mr-3"></span>Duración: 2-3 horas completo</li>
+              <li className="flex items-center"><span className="w-2 h-2 bg-cyan-400 rounded-full mr-3"></span>Transporte: U4 Schönbrunn (15 min desde centro)</li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="bg-white rounded-xl p-4 border border-gray-200 shadow-sm">
+            <a href="https://gyg.me/E0OqaGOy" target="_blank" rel="noopener noreferrer"
+               className="inline-flex items-center bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm">
+              🏰 Tour con guía a Palacio y Jardines
+              <ExternalLink className="h-3 w-3 ml-2" />
+            </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+   {/* Casa de Mozart */}
     <div className="mb-8">
       <h3 className="text-lg font-bold text-gray-900 mb-4 flex items-center">
         <div className="w-1 h-6 bg-gradient-to-b from-yellow-400 to-orange-400 rounded-full mr-3"></div>
@@ -548,48 +591,6 @@ Volver a guías
         </div>
       </div>
     </div>
-
-    {/* Schönbrunn Tarde */}
-    <div className="mb-8">
-      <h3 className="text-lg font-bold text-gray-900 mb-4 flex items-center">
-        <div className="w-1 h-6 bg-gradient-to-b from-purple-400 to-pink-400 rounded-full mr-3"></div>
-        Palacio Schönbrunn - Versalles Austriaco (16:00h)
-      </h3>
-      <div className="bg-purple-50 border border-purple-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
-        <h4 className="text-lg font-bold text-gray-900 mb-3">El Versalles de los Habsburgo</h4>
-        <div className="mb-4">
-          <img
-            src="https://images.pexels.com/photos/29689489/pexels-photo-29689489.jpeg"
-            alt="Palacio Schönbrunn"
-            className="w-full h-48 sm:h-64 object-cover rounded-xl shadow-lg mb-4"
-          />
-        </div>
-        <p className="text-gray-700 mb-4">
-          Schönbrunn, residencia de verano de los emperadores austriacos, es uno de los palacios barrocos más importantes de Europa. 
-          Con 1.441 habitaciones, fue el centro del poder del Imperio Austro-Húngaro y hogar de María Teresa y Sisí.
-        </p>
-
-        <div className="grid grid-cols-1 sm:grid-cols-1 gap-4 mb-4">
-          <div>
-            <h5 className="font-semibold text-gray-900 mb-2">⏰ Horarios y Consejos:</h5>
-            <ul className="text-sm text-gray-700 space-y-1 list-none">
-              <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>Horarios: 8:30-17:00 (invierno), 8:30-17:30 (verano)</li>
-              <li className="flex items-center"><span className="w-2 h-2 bg-emerald-400 rounded-full mr-3"></span>Duración: 2-3 horas completo</li>
-              <li className="flex items-center"><span className="w-2 h-2 bg-cyan-400 rounded-full mr-3"></span>Transporte: U4 Schönbrunn (15 min desde centro)</li>
-            </ul>
-          </div>
-        </div>
-
-        <div className="bg-white rounded-xl p-4 border border-gray-200 shadow-sm">
-            <a href="https://gyg.me/E0OqaGOy" target="_blank" rel="noopener noreferrer"
-               className="inline-flex items-center bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm">
-              🏰 Tour con guía a Palacio y Jardines
-              <ExternalLink className="h-3 w-3 ml-2" />
-            </a>
-        </div>
-      </div>
-    </div>
-  </div>
 
   {/* DÍA 2 */}
   <div className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
