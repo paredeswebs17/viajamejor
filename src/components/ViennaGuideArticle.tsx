@@ -395,11 +395,6 @@ Volver a guías
                 Erigida en 1693 por orden del emperador Leopoldo I como agradecimiento por el fin de la peste de 1679 que mató a un tercio de la población vienesa. 
                 Es una de las columnas votivas barrocas más impresionantes de Europa.
               </p>
-              <ul className="space-y-1 text-xs">
-                <li>• <strong>Altura:</strong> 21 metros</li>
-                <li>• <strong>Material:</strong> Mármol blanco de Carrara</li>
-                <li>• <strong>Estilo:</strong> Barroco alto austriaco</li>
-              </ul>
             </div>
             <div>
               <h6 className="font-medium text-gray-900 mb-1">Simbología y Relieves:</h6>
