@@ -727,7 +727,7 @@ Volver a guías
           <div>
             <h5 className="font-semibold text-gray-900 mb-2">🎼 Stadtpark - Parque de los Músicos:</h5>
             <ul className="text-sm text-gray-700 space-y-1 list-none">
-              <li className="flex items-center"><span className="w-2 h-2 bg-gold-400 rounded-full mr-3"></span>Estatua dorada de Johann Strauss II (1921)</li>
+              <li className="flex items-center"><span className="w-2 h-2 bg-orange-400 rounded-full mr-3"></span>Estatua dorada de Johann Strauss II (1921)</li>
               <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Estatuas de Schubert, Bruckner, Lehar</li>
               <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Kursalon: salón de conciertos histórico</li>
               <li className="flex items-center"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3"></span>Jardines románticos y senderos</li>
