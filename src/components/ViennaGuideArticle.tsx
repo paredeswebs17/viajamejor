@@ -377,6 +377,8 @@ Volver a guías
               </div>
             </div>
           </div>
+        </div>
+      </div>
 
     {/* Corazón Histórico + Reloj Mágico */}
     <div className="mb-8">
