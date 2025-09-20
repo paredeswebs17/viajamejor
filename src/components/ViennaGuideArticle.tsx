@@ -99,11 +99,6 @@ Volver a guías
         </tbody>
       </table>
     </div>
-    <div className="bg-white rounded-xl p-4 mt-4 border border-purple-200">
-      <p className="text-purple-800 text-sm font-medium">
-        💡 Itinerario optimizado: Incluye el espectacular Reloj Anker a las 12:00h del día 1, arquitectura única de Hundertwasserhaus y las mejores recomendaciones gastronómicas verificadas personalmente.
-      </p>
-    </div>
   </div>
 
   <div className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
