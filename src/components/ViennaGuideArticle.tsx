@@ -1183,21 +1183,21 @@ Volver a guías
         <h3 className="text-lg font-bold text-blue-800 mb-3">🚇 Distritos 2-9 - Bien Conectados</h3>
         <div className="space-y-3">
           <div className="bg-white rounded-lg p-3 shadow-sm">
-            <h4 className="font-semibold text-gray-900 mb-1">25hours Hotel</h4>
-            <p className="text-xs text-gray-600 mb-1">Lerchenfelder Str. 1-3 • €€€ • Diseño</p>
-            <p className="text-sm text-gray-700">Hotel de diseño con vistas al Danubio. Desde 95€/noche</p>
+            <h4 className="font-semibold text-gray-900 mb-1">Best Western Plus Hotel Arcadia</h4>
+            <p className="text-xs text-gray-600 mb-1">Max-Winter-Platz 5, 02 • €€€</p>
+            <p className="text-sm text-gray-700">Hotel a 10 min del centro</p>
           </div>
           
           <div className="bg-white rounded-lg p-3 shadow-sm">
-            <h4 className="font-semibold text-gray-900 mb-1">Hotel Kärntnerhof</h4>
-            <p className="text-xs text-gray-600 mb-1">Grashofgasse 4 • €€ • Familiar</p>
-            <p className="text-sm text-gray-700">Hotel familiar cerca de la Ópera. Desde 80€/noche</p>
+            <h4 className="font-semibold text-gray-900 mb-1">SO/ Vienna</h4>
+            <p className="text-xs text-gray-600 mb-1">Praterstraße 1, 02 • €€€€</p>
+            <p className="text-sm text-gray-700">Este hotel elegante ofrece vistas panorámicas a Viena</p>
           </div>
           
           <div className="bg-white rounded-lg p-3 shadow-sm">
             <h4 className="font-semibold text-gray-900 mb-1">Hostel Ruthensteiner</h4>
-            <p className="text-xs text-gray-600 mb-1">Robert-Hamerling-Gasse 24 • € • Económico</p>
-            <p className="text-sm text-gray-700">Hostel histórico con jardín. Desde 22€/noche</p>
+            <p className="text-xs text-gray-600 mb-1">Robert-Hamerling-Gasse 24 • €</p>
+            <p className="text-sm text-gray-700">Hostel histórico con jardín.</p>
           </div>
         </div>
       </div>
