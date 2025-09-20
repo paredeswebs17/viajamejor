@@ -277,7 +277,7 @@ Volver a guías
         <h4 className="text-lg font-bold text-gray-900 mb-3">Ascenso a las Mejores Vistas del Centro</h4>
         <div className="mb-6">
           <img
-            src="https://images.pexels.com/photos/2363/france-landmark-lights-night.jpg?auto=compress&cs=tinysrgb&w=800"
+            src="https://images.pexels.com/photos/17307596/pexels-photo-17307596.jpeg"
             alt="Reloj Astronómico de Praga con sus intrincados mecanismos medievales y figuras en movimiento"
             className="w-full h-48 sm:h-64 object-cover rounded-lg shadow-md"
           />
