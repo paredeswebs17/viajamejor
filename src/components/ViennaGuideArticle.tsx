@@ -875,7 +875,7 @@ Volver a guías
         <div className="w-1 h-6 bg-gradient-to-b from-blue-400 to-amber-400 rounded-full mr-3"></div>
         Café Sacher - Dulce Imperial (15:30h)
       </h3>
-      <div className="bg-brown-50 border border-brown-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
+      <div className="bg-blue-50 border border-blue-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
         <h4 className="text-lg font-bold text-gray-900 mb-3">Hotel Sacher - La Sachertorte Original</h4>
         <p className="text-gray-700 mb-4">
           El Hotel Sacher es una institución vienesa desde 1876. Su famosa Sachertorte, creada en 1832 por Franz Sacher, 
