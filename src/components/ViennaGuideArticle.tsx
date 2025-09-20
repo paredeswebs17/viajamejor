@@ -533,6 +533,7 @@ Volver a guías
         </div>
 
         <div className="bg-white rounded-x1 p-4 border border-gray-200 shadow-sm">
+          <div className="flex flex-col sm:flex-row gap-2">
           <a href="https://gyg.me/WsBGbqro" target="_blank" rel="noopener noreferrer"
              className="inline-flex items-center bg-gradient-to-r from-yellow-500 to-orange-500 hover:from-yellow-600 hover:to-orange-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm">
             🎼 Entradas Casa de Mozart
@@ -543,6 +544,7 @@ Volver a guías
               👑 Concierto clásico en la casa de Mozart
               <ExternalLink className="h-3 w-3 ml-2" />
             </a>
+          </div>
         </div>
       </div>
     </div>
