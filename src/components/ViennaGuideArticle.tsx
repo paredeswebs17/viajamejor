@@ -1073,9 +1073,10 @@ Volver a guías
         <li>• Iglesias históricas: Entrada libre en la mayoría</li>
       </ul>
       <div className="bg-white rounded-xl p-4 border border-gray-200 shadow-sm">
-            <a href="https://gyg.me/ghHUAcrV" target="_blank" rel="noopener noreferrer"
+            <a href="https://gyg.me/MTSmqRRG" target="_blank" rel="noopener noreferrer"
                className="inline-flex items-center bg-gradient-to-r from-emerald-500 to-green-500 hover:from-emerald-600 hover:to-green-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm">
-              ⛪ Concierto las Cuatro Estaciones de Vivaldi en Karlskirche
+              ⛪ Vienna PASS: 1, 2, 3 o 6 días de visitas turísticas
+
               <ExternalLink className="h-3 w-3 ml-2" />
             </a>
         </div>
