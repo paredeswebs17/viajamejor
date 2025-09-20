@@ -740,7 +740,7 @@ Volver a guías
         <div className="w-1 h-6 bg-gradient-to-b from-gold-400 to-amber-400 rounded-full mr-3"></div>
         Palacio Belvedere - "El Beso" de Klimt (14:00h)
       </h3>
-      <div className="bg-gold-50 border border-gold-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
+      <div className="bg-blue-50 border border-blue-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
         <h4 className="text-lg font-bold text-gray-900 mb-3">Belvedere - Arte y Jardines Barrocos</h4>
         <div className="mb-4">
           <img
