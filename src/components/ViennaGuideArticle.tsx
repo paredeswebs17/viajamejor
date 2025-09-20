@@ -847,9 +847,8 @@ Volver a guías
           <div>
             <h5 className="font-semibold text-gray-900 mb-2">👑 Apartamentos Imperiales + Museo Sisí:</h5>
             <ul className="text-sm text-gray-700 space-y-1 list-none">
-              <li className="flex items-center"><span className="w-2 h-2 bg-gold-400 rounded-full mr-3"></span>Entrada: 16 € (incluye audioguía)</li>
               <li className="flex items-center"><span className="w-2 h-2 bg-yellow-400 rounded-full mr-3"></span>Horario: 9:00-17:30 diario</li>
-              <li className="flex items-center"><span className="w-2 h-2 bg-orange-400 rounded-full mr-3"></span>Duración: 1,5-2 horas</li>
+              <li className="flex items-center"><span className="w-2 h-2 bg-orange-400 rounded-full mr-3"></span>Duración: 2-2,30 horas</li>
               <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>19 habitaciones históricas</li>
               <li className="flex items-center"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3"></span>Objetos personales de Sisí</li>
             </ul>
