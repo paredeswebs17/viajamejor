@@ -593,18 +593,11 @@ Volver a guías
         </div>
 
         <div className="bg-white rounded-xl p-4 border border-gray-200 shadow-sm">
-          <div className="flex flex-col sm:flex-row gap-2">
             <a href="https://gyg.me/E0OqaGOy" target="_blank" rel="noopener noreferrer"
                className="inline-flex items-center bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm">
-              🏰 Entradas Palacio Schönbrunn
+              🏰 Tour con guía a Palacio y Jardines
               <ExternalLink className="h-3 w-3 ml-2" />
             </a>
-            <a href="https://gyg.me/vHQMITYm" target="_blank" rel="noopener noreferrer"
-               className="inline-flex items-center bg-gradient-to-r from-blue-500 to-indigo-500 hover:from-blue-600 hover:to-indigo-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm">
-              👑 Tour privado con guía
-              <ExternalLink className="h-3 w-3 ml-2" />
-            </a>
-          </div>
         </div>
       </div>
     </div>
