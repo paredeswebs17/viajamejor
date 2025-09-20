@@ -916,7 +916,8 @@ Volver a guías
               <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>19 habitaciones históricas</li>
               <li className="flex items-center"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3"></span>Objetos personales de Sisí</li>
             </ul>
-            <div>
+          </div>
+          <div>
             <h5 className="font-semibold text-gray-900 mb-2">📚 Biblioteca Nacional (Prunksaal):</h5>
             <ul className="text-sm text-gray-700 space-y-1 list-none">
               <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Entrada: 8 € (biblioteca más bella del mundo)</li>
@@ -925,7 +926,6 @@ Volver a guías
               <li className="flex items-center"><span className="w-2 h-2 bg-pink-400 rounded-full mr-3"></span>Frescos barrocos espectaculares</li>
               <li className="flex items-center"><span className="w-2 h-2 bg-indigo-400 rounded-full mr-3"></span>Globos terrestres históricos únicos</li>
             </ul>
-          </div>
           </div>
           <div>
             <h5 className="font-semibold text-gray-900 mb-2">🐎 Escuela Española de Equitación:</h5>
