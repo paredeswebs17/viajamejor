@@ -856,7 +856,7 @@ Volver a guías
           <div>
             <h5 className="font-semibold text-gray-900 mb-2">📚 Biblioteca Nacional (Prunksaal):</h5>
             <ul className="text-sm text-gray-700 space-y-1 list-none">
-              <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Entrada: 8 € (biblioteca más bella del mundo)</li>
+              <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Entrada: 12 € (biblioteca más bella del mundo)</li>
               <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Horario: 10:00-18:00 (mar-dom)</li>
               <li className="flex items-center"><span className="w-2 h-2 bg-brown-400 rounded-full mr-3"></span>200.000 volúmenes históricos</li>
               <li className="flex items-center"><span className="w-2 h-2 bg-pink-400 rounded-full mr-3"></span>Frescos barrocos espectaculares</li>
