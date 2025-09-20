@@ -515,7 +515,7 @@ Volver a guías
         </div>
       </div>
     </div>
-  </div>
+ 
 
    {/* Casa de Mozart */}
     <div className="mb-8">
@@ -569,6 +569,7 @@ Volver a guías
         </div>
       </div>
     </div>
+  </div>
 
   {/* DÍA 2 */}
   <div className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
