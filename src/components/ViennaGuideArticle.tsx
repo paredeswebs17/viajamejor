@@ -569,23 +569,12 @@ Volver a guías
           Con 1.441 habitaciones, fue el centro del poder del Imperio Austro-Húngaro y hogar de María Teresa y Sisí.
         </p>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+        <div className="grid grid-cols-1 sm:grid-cols-1 gap-4 mb-4">
           <div>
-            <h5 className="font-semibold text-gray-900 mb-2">🏰 Opciones de Visita:</h5>
-            <ul className="text-sm text-gray-700 space-y-1 list-none">
-              <li className="flex items-center"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3"></span>Imperial Tour: 18 € (22 habitaciones)</li>
-              <li className="flex items-center"><span className="w-2 h-2 bg-pink-400 rounded-full mr-3"></span>Grand Tour: 22 € (40 habitaciones)</li>
-              <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Jardines: Gratuitos</li>
-              <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Gloriette: 5 € (vistas panorámicas)</li>
-              <li className="flex items-center"><span className="w-2 h-2 bg-orange-400 rounded-full mr-3"></span>Zoo: 25 € (el más antiguo del mundo)</li>
-            </ul>
-          </div>
           <div>
             <h5 className="font-semibold text-gray-900 mb-2">⏰ Horarios y Consejos:</h5>
             <ul className="text-sm text-gray-700 space-y-1 list-none">
-              <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>Palacio: 8:00-17:30 (invierno), 8:00-18:30 (verano)</li>
-              <li className="flex items-center"><span className="w-2 h-2 bg-yellow-400 rounded-full mr-3"></span>Jardines: 6:30-17:30 (invierno), 6:30-21:00 (verano)</li>
-              <li className="flex items-center"><span className="w-2 h-2 bg-indigo-400 rounded-full mr-3"></span>Mejor momento: 16:00-17:00 (menos gente)</li>
+              <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>Horarios: 8:30-17:00 (invierno), 8:30-7:30 (verano)</li>
               <li className="flex items-center"><span className="w-2 h-2 bg-emerald-400 rounded-full mr-3"></span>Duración: 2-3 horas completo</li>
               <li className="flex items-center"><span className="w-2 h-2 bg-cyan-400 rounded-full mr-3"></span>Transporte: U4 Schönbrunn (15 min desde centro)</li>
             </ul>
