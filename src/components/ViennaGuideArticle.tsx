@@ -68,7 +68,7 @@ Volver a guías
   <div className="mb-8">
     <img
       src="https://images.pexels.com/photos/8568542/pexels-photo-8568542.jpeg"
-      alt="Vista panorámica del Palacio Schönbrunn con sus jardines imperiales al atardecer"
+      alt="Ópera Estatal de Viena iluminada por la noche con su majestuosa fachada neorrenacentista"
       className="w-full h-48 sm:h-64 lg:h-80 object-cover rounded-2xl shadow-lg"
     />
   </div>
