@@ -949,7 +949,7 @@ Volver a guías
         <h4 className="text-lg font-bold text-gray-900 mb-3">Wiener Staatsoper - Templo de la Música Clásica</h4>
         <div className="mb-4">
           <img
-            src="https://images.unsplash.com/photo-1566653030764-2e1d78dd1de4?auto=format&fit=crop&w=1200&q=80"
+            src="https://images.pexels.com/photos/8568542/pexels-photo-8568542.jpeg"
             alt="Ópera Estatal de Viena iluminada por la noche con su majestuosa fachada neorrenacentista"
             className="w-full h-48 sm:h-64 object-cover rounded-xl shadow-lg mb-4"
           />
