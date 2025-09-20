@@ -460,10 +460,6 @@ Volver a guías
               <ExternalLink className="h-3 w-3 ml-2" />
             </a>
           </div>
-          <p className="text-xs text-blue-600">
-            🎯 <strong>Timing perfecto:</strong> Sal del Café Central a las 11:20, camina por Graben (10 min) admirando la Columna de la Peste, 
-            y llega al Reloj Anker a las 11:50 para presenciar el espectáculo completo del mediodía.
-          </p>
         </div>
       </div>
     </div>
