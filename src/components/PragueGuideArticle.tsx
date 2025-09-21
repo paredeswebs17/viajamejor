@@ -832,6 +832,13 @@ src="https://images.pexels.com/photos/2930357/pexels-photo-2930357.jpeg"
             <span className="text-xl mr-2">💎</span>
             Opción B: Karlovy Vary - Ciudad Balneario
           </h4>
+          <div className="mb-6">
+          <img
+src="https://images.pexels.com/photos/32795906/pexels-photo-32795906.jpeg"
+            alt="Ciudad Balneario"
+            className="w-full h-48 sm:h-64 object-cover rounded-lg shadow-md"
+          />
+        </div>
           <p className="text-gray-700 mb-4">
             Descubre la elegante ciudad termal donde la realeza europea tomaba las aguas.
           </p>
