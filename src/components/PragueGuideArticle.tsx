@@ -676,6 +676,13 @@ src="https://images.pexels.com/photos/2930357/pexels-photo-2930357.jpeg"
       </h3>
       <div className="bg-pink-50 border border-pink-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
         <h4 className="text-lg font-bold text-gray-900 mb-3">Muro de John Lennon - Libertad en Color</h4>
+        <div className="mb-6">
+          <img
+            src="https://images.pexels.com/photos/10133414/pexels-photo-10133414.jpeg"
+            alt="Un símbolo de paz y libertad que resistió al comunismo."
+            className="w-full h-48 sm:h-64 object-cover rounded-lg shadow-md"
+          />
+        </div>
         <p className="text-gray-700 mb-4">
           Un símbolo de paz y libertad que resistió al comunismo.
         </p>
