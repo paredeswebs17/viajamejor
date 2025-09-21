@@ -531,7 +531,7 @@ src="https://images.pexels.com/photos/2930357/pexels-photo-2930357.jpeg"
         <h4 className="text-lg font-bold text-gray-900 mb-3">Castillo de Praga - El Castillo Más Grande del Mundo</h4>
         <div className="mb-6">
           <img
-            src="https://images.pexels.com/photos/16922751/pexels-photo-16922751.jpeg?auto=compress&cs=tinysrgb&w=800"
+            src="hhttps://images.pexels.com/photos/16285135/pexels-photo-16285135.jpeg"
             alt="Castillo de Praga con la Catedral de San Vito dominando el complejo real"
             className="w-full h-48 sm:h-64 object-cover rounded-lg shadow-md"
           />
