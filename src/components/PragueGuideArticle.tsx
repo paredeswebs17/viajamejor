@@ -1126,7 +1126,7 @@ src="https://images.pexels.com/photos/32795906/pexels-photo-32795906.jpeg"
       <div className="mb-6">
           <img
 src="https://images.pexels.com/photos/10875122/pexels-photo-10875122.jpeg"
-            alt="Ciudad Balneario"
+            alt="Trdelník"
             className="w-full h-48 sm:h-64 object-cover rounded-lg shadow-md"
           />
         </div>
