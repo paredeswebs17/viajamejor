@@ -1123,6 +1123,13 @@ src="https://images.pexels.com/photos/32795906/pexels-photo-32795906.jpeg"
 
     <div className="mb-6">
       <h3 className="text-lg font-bold text-gray-900 mb-4">Platos Imprescindibles:</h3>
+      <div className="mb-6">
+          <img
+src="https://images.pexels.com/photos/10875122/pexels-photo-10875122.jpeg"
+            alt="Ciudad Balneario"
+            className="w-full h-48 sm:h-64 object-cover rounded-lg shadow-md"
+          />
+        </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         <div className="bg-red-50 border border-red-200 rounded-xl p-4 shadow-sm hover:shadow-md transition-all duration-300">
           <h4 className="font-semibold text-gray-900 mb-2">Goulash Bohemio</h4>
