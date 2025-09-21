@@ -714,6 +714,13 @@ src="https://images.pexels.com/photos/2930357/pexels-photo-2930357.jpeg"
       </h3>
       <div className="bg-gradient-to-r from-blue-50 to-indigo-50 border border-blue-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
         <h4 className="text-lg font-bold text-gray-900 mb-3">Crucero por el Moldava - EXPERIENCIA CULMINANTE</h4>
+        <div className="mb-6">
+          <img
+            src="https://images.pexels.com/photos/16351151/pexels-photo-16351151.jpeg"
+            alt="Crucero por el Moldava."
+            className="w-full h-48 sm:h-64 object-cover rounded-lg shadow-md"
+          />
+        </div>
         <p className="text-gray-700 mb-4">
           Contempla Praga desde el río mientras el sol se pone sobre la Ciudad Dorada.
         </p>
