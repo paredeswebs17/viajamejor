@@ -443,7 +443,7 @@ src="https://images.pexels.com/photos/5426128/pexels-photo-5426128.jpeg"
       </h3>
       <div className="bg-pink-50 border border-pink-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
         <h4 className="text-lg font-bold text-gray-900 mb-3">Casa Danzante - Fred y Ginger en Piedra</h4>
-        div className="mb-6">
+        <div className="mb-6">
           <img
 src="https://images.pexels.com/photos/2930357/pexels-photo-2930357.jpeg"
             alt="Casa danzante"
