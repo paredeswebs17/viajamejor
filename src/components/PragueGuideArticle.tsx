@@ -787,6 +787,13 @@ src="https://images.pexels.com/photos/2930357/pexels-photo-2930357.jpeg"
             <span className="text-xl mr-2">🕯️</span>
             Opción A: Terezín - Memoria Histórica
           </h4>
+          <div className="mb-6">
+          <img
+            src="https://images.pexels.com/photos/949081/pexels-photo-949081.jpeg"
+            alt="Campo de concentración"
+            className="w-full h-48 sm:h-64 object-cover rounded-lg shadow-md"
+          />
+        </div>
           <p className="text-gray-700 mb-4">
             Una excursión conmovedora al campo de concentración que no debemos olvidar.
           </p>
