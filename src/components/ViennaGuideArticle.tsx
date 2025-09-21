@@ -1135,8 +1135,8 @@ Volver a guías
     <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">🏨 Dónde Alojarse - Análisis Completo por Zonas</h2>
     
     <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-6">
-      <div className="bg-gold-50 border border-gold-200 rounded-xl p-4">
-        <h3 className="text-lg font-bold text-gold-800 mb-3">👑 Distrito 1 - Centro Histórico</h3>
+      <div className="bg-gold-50 border border-red-200 rounded-xl p-4">
+        <h3 className="text-lg font-bold text-red-800 mb-3">👑 Distrito 1 - Centro Histórico</h3>
         <div className="space-y-3">
           <div className="bg-white rounded-lg p-3 shadow-sm">
             <h4 className="font-semibold text-gray-900 mb-1">Hotel Sacher Wien</h4>
