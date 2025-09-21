@@ -632,7 +632,7 @@ src="https://images.pexels.com/photos/2930357/pexels-photo-2930357.jpeg"
         <h4 className="text-lg font-bold text-gray-900 mb-3">Puente de Carlos - El Corazón de Praga</h4>
         <div className="mb-6">
           <img
-            src="https://images.pexels.com/photos/1701595/pexels-photo-1701595.jpeg?auto=compress&cs=tinysrgb&w=800"
+            src="https://images.pexels.com/photos/126292/pexels-photo-126292.jpeg"
             alt="Puente de Carlos con sus estatuas barrocas y vista al Castillo de Praga"
             className="w-full h-48 sm:h-64 object-cover rounded-lg shadow-md"
           />
