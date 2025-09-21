@@ -594,7 +594,7 @@ src="https://images.pexels.com/photos/2930357/pexels-photo-2930357.jpeg"
         <h4 className="text-lg font-bold text-gray-900 mb-3">Callejón del Oro - Donde Vivió Kafka</h4>
         <div className="mb-6">
           <img
-            src="https://images.pexels.com/photos/10562463/pexels-photo-10562463.jpeg?auto=compress&cs=tinysrgb&w=800"
+            src="https://images.pexels.com/photos/31687789/pexels-photo-31687789.jpeg"
             alt="Callejón del Oro con sus características casitas coloridas medievales"
             className="w-full h-48 sm:h-64 object-cover rounded-lg shadow-md"
           />
