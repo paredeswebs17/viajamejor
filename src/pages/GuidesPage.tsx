@@ -96,12 +96,16 @@ const GuidesPage = () => {
     },
     {
       id: 'amsterdam',
-      title: 'Ámsterdam en 4 días',
-      description: 'Canales románticos, museos de clase mundial y cultura liberal única',
-      image: 'https://images.unsplash.com/photo-1534351590666-13e3e96b5017?auto=format&fit=crop&w=600&q=80',
+      title: 'Ámsterdam en 3 días',
+      description: 'Canales UNESCO, arte holandés y cultura única. Descubre los museos más importantes y pueblos con molinos.',
+      image: 'https://images.pexels.com/photos/1853542/pexels-photo-1853542.jpeg',
+      price: '90€',
+      rating: 4.8,
       continent: 'Europa',
-      available: false,
-      url: '#'
+      budget: '€€€',
+      available: true,
+      badge: '🆕 Nuevo',
+      url: '/amsterdam-3-dias'
     },
     {
       id: 'sardinia',
