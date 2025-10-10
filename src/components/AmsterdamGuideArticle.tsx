@@ -9,7 +9,7 @@ const AmsterdamGuideArticle: React.FC<AmsterdamGuideArticleProps> = ({ onBack })
   return (
     <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 pt-24">
       <div className="mb-8">
-        <button
+        <button 
           onClick={onBack}
           className="inline-flex items-center text-sky-600 hover:text-sky-700 hover:bg-sky-50 px-3 py-2 rounded-xl transition-all duration-200 font-medium border border-sky-200 hover:border-sky-300 mb-6 shadow-sm hover:shadow-md"
         >
@@ -38,7 +38,7 @@ const AmsterdamGuideArticle: React.FC<AmsterdamGuideArticleProps> = ({ onBack })
               Ámsterdam
             </span>
           </div>
-
+          
           <button
             onClick={() => {
               if (navigator.share) {
@@ -52,7 +52,8 @@ const AmsterdamGuideArticle: React.FC<AmsterdamGuideArticleProps> = ({ onBack })
                 navigator.clipboard.writeText(window.location.href).then(() => {
                   alert('Enlace copiado al portapapeles');
                 }).catch(() => {
-                  window.open(`https://twitter.com/intent/tweet?text=Ámsterdam en 3 Días: Guía Completa&url=${encodeURIComponent(window.location.href)}`, '_blank');
+                  const encodedUrl = encodeURIComponent(window.location.href);
+                  window.open(`https://twitter.com/intent/tweet?text=Ámsterdam en 3 Días: Guía Completa&url=${encodedUrl}`, '_blank');
                 });
               }
             }}
