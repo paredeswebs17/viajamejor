@@ -49,6 +49,19 @@ const GuidesPage = () => {
       url: '/viena-3-dias'
     },
     {
+      id: 'amsterdam',
+      title: 'Ámsterdam en 3 días',
+      description: 'Canales UNESCO, arte holandés y cultura única. Descubre los museos más importantes y pueblos con molinos.',
+      image: 'https://images.pexels.com/photos/1853542/pexels-photo-1853542.jpeg',
+      price: '90€',
+      rating: 4.8,
+      continent: 'Europa',
+      budget: '€€€',
+      available: true,
+      badge: '🆕 Nuevo',
+      url: '/amsterdam-3-dias'
+    },
+    {
       id: 'berlin',
       title: 'Berlín en 4 días',
       description: 'Historia, arte urbano y vida nocturna en la capital alemana',
@@ -93,19 +106,6 @@ const GuidesPage = () => {
       continent: 'Europa',
       available: false,
       url: '#'
-    },
-    {
-      id: 'amsterdam',
-      title: 'Ámsterdam en 3 días',
-      description: 'Canales UNESCO, arte holandés y cultura única. Descubre los museos más importantes y pueblos con molinos.',
-      image: 'https://images.pexels.com/photos/1853542/pexels-photo-1853542.jpeg',
-      price: '90€',
-      rating: 4.8,
-      continent: 'Europa',
-      budget: '€€€',
-      available: true,
-      badge: '🆕 Nuevo',
-      url: '/amsterdam-3-dias'
     },
     {
       id: 'sardinia',
