@@ -253,7 +253,7 @@ Volver a guías
         <h4 className="text-lg font-bold text-gray-900 mb-3">Canales Históricos y el Mercado Flotante</h4>
         <div className="mb-4">
           <img
-            src="https://images.pexels.com/photos/1285625/pexels-photo-1285625.jpeg"
+            src="https://images.pexels.com/photos/17345883/pexels-photo-17345883.jpeg"
             alt="Mercado de las Flores de Ámsterdam con tulipanes de colores"
             className="w-full h-48 sm:h-64 object-cover rounded-xl shadow-lg mb-4"
           />
