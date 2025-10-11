@@ -208,7 +208,7 @@ Volver a guías
         <h4 className="text-lg font-bold text-gray-900 mb-3">Estación Central y Plaza Dam</h4>
         <div className="mb-4">
           <img
-            src="https://images.pexels.com/photos/3850060/pexels-photo-3850060.jpeg"
+            src="https://images.pexels.com/photos/12705132/pexels-photo-12705132.jpeg"
             alt="Estación Central de Ámsterdam con su arquitectura renacentista holandesa"
             className="w-full h-48 sm:h-64 object-cover rounded-xl shadow-lg mb-4"
           />
