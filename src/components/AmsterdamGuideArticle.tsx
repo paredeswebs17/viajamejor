@@ -67,7 +67,7 @@ Volver a guías
 
   <div className="mb-8">
     <img
-      src="https://images.pexels.com/photos/16980404/pexels-photo-16980404.jpeg"
+      src="https://images.pexels.com/photos/2031706/pexels-photo-2031706.jpeg"
       alt="Canales de Ámsterdam con casas tradicionales holandesas y bicicletas"
       className="w-full h-48 sm:h-64 lg:h-80 object-cover rounded-2xl shadow-lg"
     />
