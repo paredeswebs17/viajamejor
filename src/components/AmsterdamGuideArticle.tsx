@@ -910,8 +910,8 @@ Volver a guías
           </div>
           
           <div className="bg-white rounded-lg p-3 shadow-sm">
-            <h4 className="font-semibold text-gray-900 mb-1">Cafe Sonneveld</h4>
-            <p className="text-xs text-gray-600 mb-1">Zeedijk 93 • €€ • Ambiente local</p>
+            <h4 className="font-semibold text-gray-900 mb-1">Cafe Soñéveld</h4>
+            <p className="text-xs text-gray-600 mb-1">Egelantiersgracht 72 • €€ • Ambiente local</p>
             <p className="text-sm text-gray-700">Bar tradicional holandés. Cervezas locales y bocadillos típicos.</p>
           </div>
           
