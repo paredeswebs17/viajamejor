@@ -502,7 +502,7 @@ Volver a guías
           <h5 className="font-semibold text-gray-900 mb-2">🕯️ Opción Romántica:</h5>
           <p className="text-sm text-gray-700 mb-3">
             <strong>Crucero a la luz de las velas:</strong> Por la noche, con velas, vino y quesos holandeses.
-            Una experiencia mágica para parejas (desde 20 € por persona).
+            Una experiencia mágica para parejas, selecciona la opción que quieres con o sin aperitivos (desde 20 € por persona).
           </p>
           <div className="flex flex-wrap gap-2">
             <a href="https://gyg.me/LFQhpJql" target="_blank" rel="noopener noreferrer"
