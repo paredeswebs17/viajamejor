@@ -1002,21 +1002,21 @@ Volver a guías
         <h3 className="text-lg font-bold text-blue-800 mb-3">🚇 Zuid (Zona Museos - Bien Conectado)</h3>
         <div className="space-y-3">
           <div className="bg-white rounded-lg p-3 shadow-sm">
-            <h4 className="font-semibold text-gray-900 mb-1">Leonardo Royal Hotel</h4>
-            <p className="text-xs text-gray-600 mb-1">Paul van Vlissingenstraat 24 • €€€ • Metro directo</p>
-            <p className="text-sm text-gray-700">Excelente hotel junto al metro. 10 minutos al centro. Muy recomendado.</p>
+            <h4 className="font-semibold text-gray-900 mb-1">Catalonia Vondel Amsterdam</h4>
+            <p className="text-xs text-gray-600 mb-1">Vondelstraat 18-26 • €€€ • Boutique</p>
+            <p className="text-sm text-gray-700">Excelente hotel junto al Rijksmuseum.</p>
           </div>
           
           <div className="bg-white rounded-lg p-3 shadow-sm">
-            <h4 className="font-semibold text-gray-900 mb-1">Conscious Hotel Vondelpark</h4>
-            <p className="text-xs text-gray-600 mb-1">Overtoom 519 • €€€ • Sostenible</p>
-            <p className="text-sm text-gray-700">Hotel eco-friendly junto al parque Vondelpark y museos.</p>
+            <h4 className="font-semibold text-gray-900 mb-1">NH Amsterdam Leidseplein</h4>
+            <p className="text-xs text-gray-600 mb-1">Stadhouderskade 7 • €€€ • Elegante</p>
+            <p className="text-sm text-gray-700">Hotel cerca de la famosa plaza Leidseplein</p>
           </div>
           
           <div className="bg-white rounded-lg p-3 shadow-sm">
-            <h4 className="font-semibold text-gray-900 mb-1">Generator Amsterdam</h4>
-            <p className="text-xs text-gray-600 mb-1">Mauritskade 57 • €€ • Hostel moderno</p>
-            <p className="text-sm text-gray-700">Hostel design con bar y terraza. Ambiente joven e internacional.</p>
+            <h4 className="font-semibold text-gray-900 mb-1">Huygens Place Amsterdam</h4>
+            <p className="text-xs text-gray-600 mb-1">1e Constantijn Huygensstraat 103-105 • €€€ • Cerca de museo</p>
+            <p className="text-sm text-gray-700">Hotel a 8 min andando del Museo Van Gogh.</p>
           </div>
         </div>
       </div>
