@@ -20,7 +20,7 @@ Volver a guías
 
     <div className="mb-6">
       <span className="bg-gradient-to-r from-orange-500 to-red-500 text-white px-4 py-2 rounded-full text-sm font-medium shadow-md">
-        Guía Holandesa
+        Guía Completa
       </span>
     </div>
 
