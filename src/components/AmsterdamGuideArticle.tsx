@@ -395,7 +395,7 @@ Volver a guías
         <h4 className="text-lg font-bold text-gray-900 mb-3">Zaanse Schans, Edam, Volendam y Marken</h4>
         <div className="mb-4">
           <img
-            src="https://images.pexels.com/photos/13927484/pexels-photo-13927484.jpeg"
+            src="https://images.pexels.com/photos/13059436/pexels-photo-13059436.jpeg"
             alt="Molinos de viento tradicionales en Zaanse Schans"
             className="w-full h-48 sm:h-64 object-cover rounded-xl shadow-lg mb-4"
           />
