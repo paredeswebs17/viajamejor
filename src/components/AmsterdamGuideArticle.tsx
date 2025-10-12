@@ -501,8 +501,8 @@ Volver a guías
         <div className="bg-white rounded-xl p-4 mb-4 shadow-sm border border-gray-100">
           <h5 className="font-semibold text-gray-900 mb-2">🕯️ Opción Romántica:</h5>
           <p className="text-sm text-gray-700 mb-3">
-            <strong>Crucero a la luz de las velas:</strong> Por la noche, con velas, vino y quesos holandeses.
-            Una experiencia mágica para parejas (desde 25 € por persona).
+            <strong>Crucero a la luz de las velas:</strong> Por la noche, con velas y cena.
+            Una experiencia mágica para parejas (desde 80€ por persona).
           </p>
           <div className="flex flex-wrap gap-2">
             <a href="https://gyg.me/LFQhpJql" target="_blank" rel="noopener noreferrer"
@@ -510,9 +510,9 @@ Volver a guías
               ⛵ Crucero Clásico por Canales
               <ExternalLink className="h-3 w-3 ml-2" />
             </a>
-            <a href="#" target="_blank" rel="noopener noreferrer"
+            <a href="https://gyg.me/NecJ0Q0x" target="_blank" rel="noopener noreferrer"
                className="inline-flex items-center bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm">
-              🕯️ Crucero Romántico con Vino
+              🕯️ Crucero Romántico con Cena
               <ExternalLink className="h-3 w-3 ml-2" />
             </a>
           </div>
