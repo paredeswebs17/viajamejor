@@ -54,7 +54,7 @@ const GuidesPage = () => {
       id: 'amsterdam',
       title: 'Ámsterdam en 3 días',
       description: 'Canales UNESCO, arte holandés y cultura única. Descubre los museos más importantes y pueblos con molinos.',
-      image: 'https://images.pexels.com/photos/1853542/pexels-photo-1853542.jpeg',
+      image: 'https://images.pexels.com/photos/2031706/pexels-photo-2031706.jpeg',
       price: '90€',
       rating: 4.8,
       continent: 'Europa',
