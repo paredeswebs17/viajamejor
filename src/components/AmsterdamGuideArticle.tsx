@@ -605,11 +605,10 @@ Volver a guías
           <div>
             <h5 className="font-semibold text-gray-900 mb-2">🏛️ Información Práctica:</h5>
             <ul className="text-sm text-gray-700 space-y-1 list-none">
-              <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>Precio: 27€ adultos / 8 € (6-17 años)</li>
+              <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>Precio: 27 € adultos</li>
               <li className="flex items-center"><span className="w-2 h-2 bg-pink-400 rounded-full mr-3"></span>Horario: 9:00-17:00 diario</li>
               <li className="flex items-center"><span className="w-2 h-2 bg-indigo-400 rounded-full mr-3"></span>Duración: 2-3 horas recomendado</li>
               <li className="flex items-center"><span className="w-2 h-2 bg-emerald-400 rounded-full mr-3"></span>Reserva: Obligatoria con hora de entrada</li>
-              <li className="flex items-center"><span className="w-2 h-2 bg-cyan-400 rounded-full mr-3"></span>Audioguía: 5 € o app gratuita</li>
             </ul>
           </div>
         </div>
