@@ -940,7 +940,7 @@ Volver a guías
           
           <div className="bg-white rounded-lg p-3 shadow-sm">
             <h4 className="font-semibold text-gray-900 mb-1">Takumi Ramen Kitchen</h4>
-            <p className="text-xs text-gray-600 mb-1">Stadhouderskade 47 • €€ • Asiático</p>
+            <p className="text-xs text-gray-600 mb-1">Ferdinand Bolstraat 36 H, • €€ • Asiático</p>
             <p className="text-sm text-gray-700">Ramen de alta calidad cerca de Museumplein.</p>
           </div>
         </div>
