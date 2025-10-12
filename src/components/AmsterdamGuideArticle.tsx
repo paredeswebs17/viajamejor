@@ -928,7 +928,7 @@ Volver a guías
         <div className="space-y-3">
           <div className="bg-white rounded-lg p-3 shadow-sm">
             <h4 className="font-semibold text-gray-900 mb-1">Ramen Ya</h4>
-            <p className="text-xs text-gray-600 mb-1">Warmoesstraat 56 • €€ • Japonés</p>
+            <p className="text-xs text-gray-600 mb-1">Oudezijds Voorburgwal 236 • €€ • Japonés</p>
             <p className="text-sm text-gray-700">Ramen japonés auténtico en el Barrio Rojo. Siempre hay cola.</p>
           </div>
           
