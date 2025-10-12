@@ -424,7 +424,7 @@ Volver a guías
           <div>
             <h5 className="font-semibold text-gray-900 mb-2">🏘️ Pueblos que Visitarás:</h5>
             <ul className="text-sm text-gray-700 space-y-1 list-none">
-              <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span><strong>Zaanse Schans:</strong> Molinos de viento históricos</li>
+              <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Zaanse Schans: Molinos de viento históricos</li>
               <li className="flex items-center"><span className="w-2 h-2 bg-yellow-400 rounded-full mr-3"></span><strong>Edam:</strong> Famoso por su queso redondo</li>
               <li className="flex items-center"><span className="w-2 h-2 bg-orange-400 rounded-full mr-3"></span><strong>Volendam:</strong> Puerto pesquero tradicional</li>
               <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span><strong>Marken:</strong> Isla con casas de madera pintadas</li>
