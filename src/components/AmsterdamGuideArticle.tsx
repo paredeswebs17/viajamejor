@@ -681,7 +681,7 @@ Volver a guías
         <h4 className="text-lg font-bold text-gray-900 mb-3">Heineken Experience - La Fábrica Histórica</h4>
         <div className="mb-4">
           <img
-            src="https://images.pexels.com/photos/8853466/pexels-photo-8853466.jpeg"
+            src="https://images.pexels.com/photos/18984692/pexels-photo-18984692.jpeg"
             alt="Entrada a Heineken Experience en Ámsterdam"
             className="w-full h-48 sm:h-64 object-cover rounded-xl shadow-lg mb-4"
           />
