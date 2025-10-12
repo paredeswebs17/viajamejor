@@ -833,7 +833,7 @@ Volver a guías
 
   {/* PRESUPUESTOS */}
   <div className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
-    <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">💰 Presupuestos Detallados por Estilo - Septiembre 2025</h2>
+    <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">💰 Presupuestos Detallados por Estilo</h2>
     
     <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-6">
       <div className="bg-green-50 border border-green-200 rounded-xl p-6 shadow-sm">
