@@ -662,7 +662,6 @@ Volver a guías
               <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>Horario: 9:00-18:00 (viernes hasta 21:00)</li>
               <li className="flex items-center"><span className="w-2 h-2 bg-indigo-400 rounded-full mr-3"></span>Duración: 2-3 horas</li>
               <li className="flex items-center"><span className="w-2 h-2 bg-emerald-400 rounded-full mr-3"></span>Reserva: Obligatoria online</li>
-              <li className="flex items-center"><span className="w-2 h-2 bg-cyan-400 rounded-full mr-3"></span>Audioguía: Opcional (+5 €)</li>
             </ul>
           </div>
         </div>
