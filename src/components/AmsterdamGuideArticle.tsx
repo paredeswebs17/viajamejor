@@ -528,6 +528,13 @@ Volver a guías
       </h3>
       <div className="bg-purple-50 border border-purple-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
         <h4 className="text-lg font-bold text-gray-900 mb-3">Rembrandtplein - Vida Nocturna de Ámsterdam</h4>
+        <div className="mb-4">
+          <img
+            src="https://images.pexels.com/photos/34217700/pexels-photo-34217700.jpeg"
+            alt="Puente Magere Brug"
+            className="w-full h-48 sm:h-64 object-cover rounded-xl shadow-lg mb-4"
+          />
+        </div>
         <p className="text-gray-700 mb-4">
           La plaza más animada de Ámsterdam. Repleta de terrazas, restaurantes, coffeeshops y bares. 
           Perfecta para cenar y tomar algo mientras ves el ambiente nocturno holandés. Cerca está el famoso puente Magere Brug iluminado.
