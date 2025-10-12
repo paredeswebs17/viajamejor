@@ -31,6 +31,7 @@ const GuidesPage = () => {
       rating: 4.8,
       continent: 'Europa',
       budget: '€€',
+      featured: true,
       available: true,
       badge: '🆕 Nuevo',
       url: '/praga-3-dias'
@@ -44,6 +45,7 @@ const GuidesPage = () => {
       rating: 4.9,
       continent: 'Europa',
       budget: '€€€',
+      featured: true,
       available: true,
       badge: '🎼 Musical',
       url: '/viena-3-dias'
@@ -152,7 +154,7 @@ const GuidesPage = () => {
     }
   ];
 
-  const featuredGuide = guides.find(guide => guide.featured);
+  const featuredGuides = guides.filter(guide => guide.featured);
   const otherGuides = guides.filter(guide => !guide.featured);
 
   const handleNewsletterSubmit = async (e: React.FormEvent) => {
@@ -218,75 +220,76 @@ const GuidesPage = () => {
         </div>
       </section>
 
-      {/* Featured Guide */}
-      {featuredGuide && (
+      {/* Featured Guides */}
+      {featuredGuides.length > 0 && (
         <section className="py-12 bg-gray-50">
           <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
-              <div className="lg:flex">
-                <div className="lg:w-1/2 relative">
-                  <img
-                    src={featuredGuide.image}
-                    alt={featuredGuide.title}
-                    className="w-full h-64 lg:h-full object-cover"
-                  />
-                  <div className="absolute top-4 left-4">
-                    <span className="bg-gradient-to-r from-orange-500 to-red-500 text-white px-3 py-1 rounded-full text-sm font-bold">
-                      {featuredGuide.badge}
-                    </span>
+            <h2 className="text-2xl font-bold text-gray-900 mb-8 text-center">
+              Guías Completas Disponibles
+            </h2>
+            <div className="grid md:grid-cols-2 gap-8">
+              {featuredGuides.map((guide) => (
+                <div key={guide.id} className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                  <div className="relative">
+                    <img
+                      src={guide.image}
+                      alt={guide.title}
+                      className="w-full h-64 object-cover"
+                    />
+                    <div className="absolute top-4 left-4">
+                      <span className="bg-gradient-to-r from-orange-500 to-red-500 text-white px-3 py-1 rounded-full text-sm font-bold">
+                        {guide.badge}
+                      </span>
+                    </div>
+                  </div>
+
+                  <div className="p-6">
+                    <h3 className="text-2xl font-bold text-gray-900 mb-3">
+                      {guide.title}
+                    </h3>
+
+                    <p className="text-gray-600 mb-4 leading-relaxed">
+                      {guide.description}
+                    </p>
+
+                    <div className="flex items-center gap-6 mb-4">
+                      <div className="flex items-center">
+                        <Euro className="h-5 w-5 text-emerald-500 mr-2" />
+                        <span className="text-xl font-bold text-emerald-600">{guide.price?.replace('€', '') || 'N/A'}</span>
+                        <span className="text-gray-500 ml-1 text-sm">aprox./día</span>
+                      </div>
+
+                      <div className="flex items-center">
+                        <Star className="h-5 w-5 text-orange-500 mr-1" />
+                        <span className="font-semibold text-gray-900">{guide.rating}</span>
+                        <span className="text-orange-500 ml-1">★★★★★</span>
+                      </div>
+                    </div>
+
+                    <div className="space-y-2 mb-6">
+                      <div className="flex items-center text-sm text-gray-700">
+                        <CheckCircle className="h-4 w-4 text-emerald-500 mr-2" />
+                        <span>✓ Itinerario hora por hora</span>
+                      </div>
+                      <div className="flex items-center text-sm text-gray-700">
+                        <CheckCircle className="h-4 w-4 text-emerald-500 mr-2" />
+                       <span>✓ Enlaces de reservas</span>
+                      </div>
+                      <div className="flex items-center text-sm text-gray-700">
+                        <CheckCircle className="h-4 w-4 text-emerald-500 mr-2" />
+                       <span>✓ Consejos locales</span>
+                      </div>
+                    </div>
+
+                    <a
+                      href={guide.url}
+                      className="block w-full bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white font-bold py-3 px-6 rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200 text-center"
+                    >
+                      📖 Ver Guía
+                    </a>
                   </div>
                 </div>
-                
-                <div className="lg:w-1/2 p-8">
-                  <h2 className="text-3xl font-bold text-gray-900 mb-4">
-                    {featuredGuide.title}
-                  </h2>
-                  
-                  <p className="text-gray-600 mb-6 leading-relaxed">
-                    {featuredGuide.description}
-                  </p>
-
-                  <div className="flex items-center gap-6 mb-6">
-                    <div className="flex items-center">
-                      <Euro className="h-5 w-5 text-emerald-500 mr-2" />
-                      <span className="text-2xl font-bold text-emerald-600">{featuredGuide.price?.replace('€', '') || 'N/A'}</span>
-                      <span className="text-gray-500 ml-1">aprox./día</span>
-                    </div>
-                    
-                    <div className="flex items-center">
-                      <Star className="h-5 w-5 text-orange-500 mr-1" />
-                      <span className="font-semibold text-gray-900">{featuredGuide.rating}</span>
-                      <span className="text-orange-500 ml-1">★★★★★</span>
-                    </div>
-                  </div>
-
-                  <div className="space-y-2 mb-8">
-                    <div className="flex items-center text-sm text-gray-700">
-                      <CheckCircle className="h-4 w-4 text-emerald-500 mr-2" />
-                      <span>✓ Itinerario hora por hora</span>
-                    </div>
-                    <div className="flex items-center text-sm text-gray-700">
-                      <CheckCircle className="h-4 w-4 text-emerald-500 mr-2" />
-                     <span>✓ Enlaces de reservas</span>
-                    </div>
-                    <div className="flex items-center text-sm text-gray-700">
-                      <CheckCircle className="h-4 w-4 text-emerald-500 mr-2" />
-                     <span>✓ Consejos locales</span>
-                    </div>
-                    <div className="flex items-center text-sm text-gray-700">
-                      <CheckCircle className="h-4 w-4 text-emerald-500 mr-2" />
-                      <span>✓ Enlaces de reservas</span>
-                    </div>
-                  </div>
-
-                  <a 
-                    href={featuredGuide.url}
-                    className="block w-full bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white font-bold py-4 px-8 rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200 text-lg text-center"
-                  >
-                    📖 Ver Guía Completa
-                  </a>
-                </div>
-              </div>
+              ))}
             </div>
           </div>
         </section>
