@@ -202,7 +202,7 @@ Volver a guías
     <div className="mb-8">
       <h3 className="text-lg font-bold text-gray-900 mb-4 flex items-center">
         <div className="w-1 h-6 bg-gradient-to-b from-red-400 to-orange-400 rounded-full mr-3"></div>
-        Despertar Holandés - Free Tour (9:00h)
+        Despertar Holandés - Tour (9:00h)
       </h3>
       <div className="bg-gradient-to-r from-red-50 to-orange-50 border border-red-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
         <h4 className="text-lg font-bold text-gray-900 mb-3">Estación Central y Plaza Dam</h4>
@@ -231,17 +231,17 @@ Volver a guías
           <div>
             <h5 className="font-semibold text-gray-900 mb-2">📸 Foto Icónica en Damrak:</h5>
             <p className="text-sm text-gray-700 mb-2">
-              Antes del free tour, ve a Damrak Waterkant para conseguir una de las fotos más bonitas de Ámsterdam: 
+              Antes del tour, ve a Damrak Waterkant para conseguir una de las fotos más bonitas de Ámsterdam: 
               los canales con las casas tradicionales de fondo. ¡Es un spot fotogénico imprescindible!
             </p>
           </div>
         </div>
 
         <div className="bg-white rounded-xl p-4 border border-gray-200 shadow-sm">
-          <p className="text-xs text-orange-600 mb-3">💡 Tip: El free tour suele durar 2-3 horas y es la mejor forma de conocer la historia y curiosidades de Ámsterdam con un guía local.</p>
+          <p className="text-xs text-orange-600 mb-3">💡 Tip: El tour suele durar 2-3 horas y es la mejor forma de conocer la historia y curiosidades de Ámsterdam con un guía local.</p>
           <a href="https://gyg.me/9muAs4RI" target="_blank" rel="noopener noreferrer"
              className="inline-flex items-center bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm">
-            🚶 Reservar Free Tour en español
+            🚶 Reservar Tour en español
             <ExternalLink className="h-3 w-3 ml-2" />
           </a>
         </div>
