@@ -763,7 +763,7 @@ Volver a guías
 
         <div className="bg-white rounded-xl p-4 border border-gray-200 shadow-sm">
           <p className="text-xs text-green-600 mb-3">💡 Tip: Si reservas online con antelación ahorras dinero y te saltas las colas. Los menores de 18 años reciben bebidas sin alcohol.</p>
-          <a href="#" target="_blank" rel="noopener noreferrer"
+          <a href="https://gyg.me/3m6llUkk" target="_blank" rel="noopener noreferrer"
              className="inline-flex items-center bg-gradient-to-r from-green-500 to-emerald-500 hover:from-green-600 hover:to-emerald-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm">
             🍺 Entradas Heineken Experience
             <ExternalLink className="h-3 w-3 ml-2" />
