@@ -340,8 +340,8 @@ Volver a guías
         <h4 className="text-lg font-bold text-gray-900 mb-3">Shopping en las 9 Straatjes y Atardecer con Vistas</h4>
          <div className="mb-4">
           <img
-            src="https://images.pexels.com/photos/13927484/pexels-photo-13927484.jpeg"
-            alt="Molinos de viento tradicionales en Zaanse Schans"
+            src="https://images.pexels.com/photos/2366108/pexels-photo-2366108.jpeg"
+            alt="Las 9 calles de Straatjes"
             className="w-full h-48 sm:h-64 object-cover rounded-xl shadow-lg mb-4"
           />
         </div>
