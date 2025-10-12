@@ -673,7 +673,7 @@ Volver a guías
             "La Noche Estrellada" NO está aquí (está en el MoMA de Nueva York). "Terraza de Café por la Noche"
             está en el Museo Kröller-Müller en Otterlo. Pero las obras de Ámsterdam son igual de impresionantes.
           </p>
-          <a href="#" target="_blank" rel="noopener noreferrer"
+          <a href="https://gyg.me/kgd4hkJI" target="_blank" rel="noopener noreferrer"
              className="inline-flex items-center bg-gradient-to-r from-yellow-500 to-orange-500 hover:from-yellow-600 hover:to-orange-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm">
             🌻 Entradas Van Gogh Museum
             <ExternalLink className="h-3 w-3 ml-2" />
