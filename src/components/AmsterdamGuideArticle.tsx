@@ -338,6 +338,13 @@ Volver a guías
       </h3>
       <div className="bg-green-50 border border-green-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
         <h4 className="text-lg font-bold text-gray-900 mb-3">Shopping en las 9 Straatjes y Atardecer con Vistas</h4>
+         <div className="mb-4">
+          <img
+            src="https://images.pexels.com/photos/13927484/pexels-photo-13927484.jpeg"
+            alt="Molinos de viento tradicionales en Zaanse Schans"
+            className="w-full h-48 sm:h-64 object-cover rounded-xl shadow-lg mb-4"
+          />
+        </div>
         <p className="text-gray-700 mb-4">
           Las "9 Straatjes" (9 calles) son un barrio pintoresco con boutiques vintage, galerías de arte, cafés acogedores y tiendas únicas. 
           Perfecto para pasear y comprar souvenirs especiales. Después, ferry gratuito al Mirador A'Dam.
