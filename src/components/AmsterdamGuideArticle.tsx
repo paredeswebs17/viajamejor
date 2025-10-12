@@ -755,13 +755,14 @@ Volver a guías
               <li className="flex items-center"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3"></span>Precio: 25 € (compra online)</li>
               <li className="flex items-center"><span className="w-2 h-2 bg-pink-400 rounded-full mr-3"></span>Duración: 1,5-2 horas</li>
               <li className="flex items-center"><span className="w-2 h-2 bg-indigo-400 rounded-full mr-3"></span>Horario: 10:30-19:30</li>
+              <li className="flex items-center"><span className="w-2 h-2 bg-emerald-400 rounded-full mr-3"></span>Edad mínima: 18 años (se pide ID)</li>
               <li className="flex items-center"><span className="w-2 h-2 bg-cyan-400 rounded-full mr-3"></span>Reserva: Obligatoria online</li>
             </ul>
           </div>
         </div>
 
         <div className="bg-white rounded-xl p-4 border border-gray-200 shadow-sm">
-          <p className="text-xs text-green-600 mb-3">💡 Tip: Si reservas online con antelación ahorras dinero y te saltas las colas. Los menores de 18 años reciben bebidas sin alcohol.</p>
+          <p className="text-xs text-green-600 mb-3">💡 Tip: Si reservas online con antelación ahorras dinero y te saltas las colas</p>
           <a href="https://gyg.me/3m6llUkk" target="_blank" rel="noopener noreferrer"
              className="inline-flex items-center bg-gradient-to-r from-green-500 to-emerald-500 hover:from-green-600 hover:to-emerald-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm">
             🍺 Entradas Heineken Experience
