@@ -731,7 +731,7 @@ Volver a guías
         <div className="mb-4">
           <img
             src="https://images.pexels.com/photos/9320/pexels-photo.jpg"
-            alt="Entrada a Heineken Experience en Ámsterdam"
+            alt="Barrio rojo de Ámsterdam"
             className="w-full h-48 sm:h-64 object-cover rounded-xl shadow-lg mb-4"
           />
         </div>
