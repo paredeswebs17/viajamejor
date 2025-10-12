@@ -542,7 +542,7 @@ Volver a guías
         <h4 className="text-lg font-bold text-gray-900 mb-3">Rijksmuseum - El Museo Nacional de los Países Bajos</h4>
         <div className="mb-4">
           <img
-            src="https://images.pexels.com/photos/5264917/pexels-photo-5264917.jpeg"
+            src="https://images.pexels.com/photos/208733/pexels-photo-208733.jpeg"
             alt="Fachada del Rijksmuseum en Museumplein"
             className="w-full h-48 sm:h-64 object-cover rounded-xl shadow-lg mb-4"
           />
