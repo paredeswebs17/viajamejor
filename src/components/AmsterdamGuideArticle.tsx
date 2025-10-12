@@ -808,7 +808,7 @@ Volver a guías
           <div>
             <h5 className="font-semibold text-gray-900 mb-2">🍜 Restaurantes Recomendados:</h5>
             <ul className="text-sm text-gray-700 space-y-1 list-none">
-              <li className="flex items-center"><span className="w-2 h-2 bg-yellow-400 rounded-full mr-3"></span><strong>Ramen Ya:</strong> Ramen japonés excelente</li>
+              <li className="flex items-center"><span className="w-2 h-2 bg-yellow-400 rounded-full mr-3"></span>Ramen Ya: Ramen japonés excelente</li>
               <li className="flex items-center"><span className="w-2 h-2 bg-pink-400 rounded-full mr-3"></span>Numerosos restaurantes asiáticos</li>
               <li className="flex items-center"><span className="w-2 h-2 bg-indigo-400 rounded-full mr-3"></span>Pubs tradicionales holandeses</li>
               <li className="flex items-center"><span className="w-2 h-2 bg-emerald-400 rounded-full mr-3"></span>Cafés con terraza junto al canal</li>
