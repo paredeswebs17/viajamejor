@@ -874,7 +874,7 @@ Volver a guías
         <li>• Amsterdam Travel Ticket: 3 días 30€ (transporte ilimitado + aeropuerto)</li>
         <li>• Febo: Cadena de comida rápida holandesa económica (automats de croquetas)</li>
       </ul>
-      <a href="https://gyg.me/hhPSPkwx" target="_blank" rel="noopener noreferrer"
+      <a href="https://www.iamsterdam.com/es/i-am/i-amsterdam-city-card" target="_blank" rel="noopener noreferrer"
          className="inline-flex items-center bg-gradient-to-r from-red-500 to-orange-500 hover:from-red-600 hover:to-orange-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm">
         🎫 Comprar I Amsterdam City Card
         <ExternalLink className="h-3 w-3 ml-2" />
@@ -1288,13 +1288,19 @@ Volver a guías
         </p>
       </div>
 
-      <div className="bg-green-100 border border-green-300 rounded-lg p-3">
+      <div className="bg-green-100 border border-green-300 rounded-lg p-3 mb-4">
         <p className="font-medium text-green-800 mb-1">💡 ¿Cuándo merece la pena?</p>
         <p className="text-green-700 text-xs">
-          Si visitas 3-4 museos + usas mucho transporte público + haces el crucero por canales, 
+          Si visitas 3-4 museos + usas mucho transporte público + haces el crucero por canales,
           la tarjeta se amortiza. Si solo vas a ver 1-2 museos, mejor comprar entradas individuales.
         </p>
       </div>
+
+      <a href="https://www.iamsterdam.com/es/i-am/i-amsterdam-city-card" target="_blank" rel="noopener noreferrer"
+         className="inline-flex items-center bg-gradient-to-r from-blue-500 to-indigo-500 hover:from-blue-600 hover:to-indigo-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm">
+        🎫 Comprar I Amsterdam City Card
+        <ExternalLink className="h-3 w-3 ml-2" />
+      </a>
     </div>
   </div>
 
