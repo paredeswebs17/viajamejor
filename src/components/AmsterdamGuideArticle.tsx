@@ -448,7 +448,7 @@ Volver a guías
             <p><strong>Por libre en autobús:</strong> Buses desde Estación Noord. Compra Amsterdam & Region Travel Ticket (día completo ~18 €).</p>
             <p><strong>Coche de alquiler:</strong> Máxima flexibilidad pero parking puede ser complicado en algunos pueblos.</p>
           </div>
-          <a href="#" target="_blank" rel="noopener noreferrer"
+          <a href="https://gyg.me/k0fpVtxB" target="_blank" rel="noopener noreferrer"
              className="inline-flex items-center bg-gradient-to-r from-green-500 to-emerald-500 hover:from-green-600 hover:to-emerald-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm">
             🏘️ Tour guiado Zaanse Schans + Pueblos
             <ExternalLink className="h-3 w-3 ml-2" />
