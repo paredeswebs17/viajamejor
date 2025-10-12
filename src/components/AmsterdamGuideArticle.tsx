@@ -867,7 +867,7 @@ Volver a guías
     <div className="bg-yellow-50 border border-yellow-200 rounded-xl p-4">
       <h4 className="font-semibold text-yellow-800 mb-2">💡 Consejos para Ahorrar en Ámsterdam:</h4>
       <ul className="text-sm text-yellow-700 space-y-1 mb-3">
-        <li>• I Amsterdam City Card: Descuentos + transporte incluido (no incluye Van Gogh desde 2022)</li>
+        <li>• I Amsterdam City Card: Descuentos + transporte incluido (no incluye Van Gogh desde 2022 ni Museo Ana Frank)</li>
         <li>• Supermercados: Albert Heijn, Jumbo para comida económica</li>
         <li>• Free walking tours: Excelente forma de conocer la ciudad</li>
         <li>• Bicicletas: Alquiler desde 10€/día (la forma más auténtica de moverse)</li>
