@@ -728,6 +728,13 @@ Volver a guías
       </h3>
       <div className="bg-red-50 border border-red-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
         <h4 className="text-lg font-bold text-gray-900 mb-3">Red Light District - El Barrio Más Famoso</h4>
+        <div className="mb-4">
+          <img
+            src="https://images.pexels.com/photos/9320/pexels-photo.jpg"
+            alt="Entrada a Heineken Experience en Ámsterdam"
+            className="w-full h-48 sm:h-64 object-cover rounded-xl shadow-lg mb-4"
+          />
+        </div>
         <p className="text-gray-700 mb-4">
           El barrio más conocido y controvertido de Ámsterdam. A pesar de su fama, es un barrio histórico muy animado, 
           repleto de restaurantes, bares y cafés. La zona es completamente segura y está llena de gente a todas horas.
