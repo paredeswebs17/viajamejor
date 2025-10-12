@@ -591,7 +591,7 @@ Volver a guías
         <h4 className="text-lg font-bold text-gray-900 mb-3">Van Gogh Museum - La Mayor Colección del Mundo</h4>
         <div className="mb-4">
           <img
-            src="https://images.pexels.com/photos/20837969/pexels-photo-20837969.jpeg"
+            src="https://images.pexels.com/photos/11951240/pexels-photo-11951240.jpeg"
             alt="Museo Van Gogh en Museumplein Ámsterdam"
             className="w-full h-48 sm:h-64 object-cover rounded-xl shadow-lg mb-4"
           />
