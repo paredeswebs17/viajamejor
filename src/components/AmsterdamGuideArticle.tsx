@@ -1267,6 +1267,19 @@ Volver a guías
         </ul>
       </div>
     </div>
+
+    <div className="mt-6 flex flex-col sm:flex-row gap-3 justify-center items-center">
+      <a href="https://gyg.me/EMjp5KUQ" target="_blank" rel="noopener noreferrer"
+         className="inline-flex items-center bg-gradient-to-r from-purple-500 to-indigo-500 hover:from-purple-600 hover:to-indigo-600 text-white font-semibold px-6 py-3 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm">
+        🎟️ Ver Entradas a Museos
+        <ExternalLink className="h-4 w-4 ml-2" />
+      </a>
+      <a href="https://gyg.me/NsnWg5zb" target="_blank" rel="noopener noreferrer"
+         className="inline-flex items-center bg-gradient-to-r from-orange-500 to-amber-500 hover:from-orange-600 hover:to-amber-600 text-white font-semibold px-6 py-3 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm">
+        🏰 Excursión a Brujas
+        <ExternalLink className="h-4 w-4 ml-2" />
+      </a>
+    </div>
   </div>
 
   {/* TARJETAS TURÍSTICAS */}
