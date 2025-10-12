@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowLeft, Share2, Clock, MapPin } from 'lucide-react';
+import { ArrowLeft, Share2, Clock, MapPin, ExternalLink } from 'lucide-react';
 
 interface AmsterdamGuideArticleProps {
 onBack: () => void;
@@ -238,7 +238,12 @@ Volver a guías
         </div>
 
         <div className="bg-white rounded-xl p-4 border border-gray-200 shadow-sm">
-          <p className="text-xs text-orange-600 mt-2">💡 Tip: El free tour suele durar 2-3 horas y es la mejor forma de conocer la historia y curiosidades de Ámsterdam con un guía local.</p>
+          <p className="text-xs text-orange-600 mb-3">💡 Tip: El free tour suele durar 2-3 horas y es la mejor forma de conocer la historia y curiosidades de Ámsterdam con un guía local.</p>
+          <a href="#" target="_blank" rel="noopener noreferrer"
+             className="inline-flex items-center bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm">
+            🚶 Reservar Free Tour en español
+            <ExternalLink className="h-3 w-3 ml-2" />
+          </a>
         </div>
       </div>
     </div>
@@ -322,10 +327,15 @@ Volver a guías
 
         <div className="bg-red-100 border border-red-300 rounded-lg p-3 mb-4">
           <p className="font-medium text-red-800 mb-1">🚨 IMPORTANTE - Compra con Antelación</p>
-          <p className="text-red-700 text-xs">
-            Las entradas se agotan rapidísimo. Debes reservar EXACTAMENTE 6 semanas antes de tu visita, 
+          <p className="text-red-700 text-xs mb-3">
+            Las entradas se agotan rapidísimo. Debes reservar EXACTAMENTE 6 semanas antes de tu visita,
             los martes a las 10:00h (hora de Ámsterdam). Pon alarma y prepara tu tarjeta de crédito. ¡NO se venden entradas en taquilla!
           </p>
+          <a href="#" target="_blank" rel="noopener noreferrer"
+             className="inline-flex items-center bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm">
+            🏠 Reservar Casa de Ana Frank (Web Oficial)
+            <ExternalLink className="h-3 w-3 ml-2" />
+          </a>
         </div>
       </div>
     </div>
@@ -372,7 +382,12 @@ Volver a guías
         </div>
 
         <div className="bg-white rounded-xl p-4 border border-gray-200 shadow-sm">
-          <p className="text-xs text-green-600">💡 Tip: El atardecer desde el Mirador A'Dam es espectacular. Llega 30 minutos antes del sunset para conseguir el mejor sitio.</p>
+          <p className="text-xs text-green-600 mb-3">💡 Tip: El atardecer desde el Mirador A'Dam es espectacular. Llega 30 minutos antes del sunset para conseguir el mejor sitio.</p>
+          <a href="#" target="_blank" rel="noopener noreferrer"
+             className="inline-flex items-center bg-gradient-to-r from-green-500 to-emerald-500 hover:from-green-600 hover:to-emerald-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm">
+            🌅 Entradas Mirador A'Dam Tower
+            <ExternalLink className="h-3 w-3 ml-2" />
+          </a>
         </div>
       </div>
     </div>
@@ -428,11 +443,16 @@ Volver a guías
 
         <div className="bg-yellow-50 border border-yellow-200 rounded-xl p-4 mb-4">
           <h5 className="font-semibold text-yellow-800 mb-2">🚌 Opciones para Hacer la Excursión:</h5>
-          <div className="space-y-2 text-sm text-gray-700">
+          <div className="space-y-2 text-sm text-gray-700 mb-3">
             <p><strong>Tour guiado en español:</strong> La opción más cómoda y completa (45-55 €). Incluye transporte, guía experto y todas las visitas.</p>
             <p><strong>Por libre en autobús:</strong> Buses desde Estación Noord. Compra Amsterdam & Region Travel Ticket (día completo ~18 €).</p>
             <p><strong>Coche de alquiler:</strong> Máxima flexibilidad pero parking puede ser complicado en algunos pueblos.</p>
           </div>
+          <a href="#" target="_blank" rel="noopener noreferrer"
+             className="inline-flex items-center bg-gradient-to-r from-green-500 to-emerald-500 hover:from-green-600 hover:to-emerald-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm">
+            🏘️ Tour guiado Zaanse Schans + Pueblos
+            <ExternalLink className="h-3 w-3 ml-2" />
+          </a>
         </div>
       </div>
     </div>
@@ -480,10 +500,22 @@ Volver a guías
 
         <div className="bg-white rounded-xl p-4 mb-4 shadow-sm border border-gray-100">
           <h5 className="font-semibold text-gray-900 mb-2">🕯️ Opción Romántica:</h5>
-          <p className="text-sm text-gray-700">
-            <strong>Crucero a la luz de las velas:</strong> Por la noche, con velas, vino y quesos holandeses. 
+          <p className="text-sm text-gray-700 mb-3">
+            <strong>Crucero a la luz de las velas:</strong> Por la noche, con velas, vino y quesos holandeses.
             Una experiencia mágica para parejas (desde 25 € por persona).
           </p>
+          <div className="flex flex-wrap gap-2">
+            <a href="#" target="_blank" rel="noopener noreferrer"
+               className="inline-flex items-center bg-gradient-to-r from-blue-500 to-indigo-500 hover:from-blue-600 hover:to-indigo-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm">
+              ⛵ Crucero Clásico por Canales
+              <ExternalLink className="h-3 w-3 ml-2" />
+            </a>
+            <a href="#" target="_blank" rel="noopener noreferrer"
+               className="inline-flex items-center bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm">
+              🕯️ Crucero Romántico con Vino
+              <ExternalLink className="h-3 w-3 ml-2" />
+            </a>
+          </div>
         </div>
       </div>
     </div>
@@ -576,7 +608,12 @@ Volver a guías
         </div>
 
         <div className="bg-white rounded-xl p-4 border border-gray-200 shadow-sm">
-          <p className="text-xs text-red-600 mt-2">💡 Tip: Llega cuando abren (9:00) para evitar multitudes. La "Galería de Honor" con las obras maestras se llena mucho a partir de las 11:00.</p>
+          <p className="text-xs text-red-600 mb-3">💡 Tip: Llega cuando abren (9:00) para evitar multitudes. La "Galería de Honor" con las obras maestras se llena mucho a partir de las 11:00.</p>
+          <a href="#" target="_blank" rel="noopener noreferrer"
+             className="inline-flex items-center bg-gradient-to-r from-red-500 to-amber-500 hover:from-red-600 hover:to-amber-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm">
+            🎨 Entradas Rijksmuseum
+            <ExternalLink className="h-3 w-3 ml-2" />
+          </a>
         </div>
       </div>
     </div>
@@ -626,10 +663,15 @@ Volver a guías
 
         <div className="bg-orange-100 border border-orange-300 rounded-lg p-3">
           <p className="font-medium text-orange-800 mb-1">⚠️ Nota Importante</p>
-          <p className="text-orange-700 text-xs">
-            "La Noche Estrellada" NO está aquí (está en el MoMA de Nueva York). "Terraza de Café por la Noche" 
+          <p className="text-orange-700 text-xs mb-3">
+            "La Noche Estrellada" NO está aquí (está en el MoMA de Nueva York). "Terraza de Café por la Noche"
             está en el Museo Kröller-Müller en Otterlo. Pero las obras de Ámsterdam son igual de impresionantes.
           </p>
+          <a href="#" target="_blank" rel="noopener noreferrer"
+             className="inline-flex items-center bg-gradient-to-r from-yellow-500 to-orange-500 hover:from-yellow-600 hover:to-orange-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm">
+            🌻 Entradas Van Gogh Museum
+            <ExternalLink className="h-3 w-3 ml-2" />
+          </a>
         </div>
       </div>
     </div>
@@ -715,7 +757,12 @@ Volver a guías
         </div>
 
         <div className="bg-white rounded-xl p-4 border border-gray-200 shadow-sm">
-          <p className="text-xs text-green-600">💡 Tip: Si reservas online con antelación ahorras dinero y te saltas las colas. Los menores de 18 años reciben bebidas sin alcohol.</p>
+          <p className="text-xs text-green-600 mb-3">💡 Tip: Si reservas online con antelación ahorras dinero y te saltas las colas. Los menores de 18 años reciben bebidas sin alcohol.</p>
+          <a href="#" target="_blank" rel="noopener noreferrer"
+             className="inline-flex items-center bg-gradient-to-r from-green-500 to-emerald-500 hover:from-green-600 hover:to-emerald-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm">
+            🍺 Entradas Heineken Experience
+            <ExternalLink className="h-3 w-3 ml-2" />
+          </a>
         </div>
       </div>
     </div>
