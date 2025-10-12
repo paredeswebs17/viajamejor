@@ -331,7 +331,7 @@ Volver a guías
             Las entradas se agotan rapidísimo. Debes reservar EXACTAMENTE 6 semanas antes de tu visita,
             los martes a las 10:00h (hora de Ámsterdam). Pon alarma y prepara tu tarjeta de crédito. ¡NO se venden entradas en taquilla!
           </p>
-          <a href="www.annefrank.org" target="_blank" rel="noopener noreferrer"
+          <a href="https://www.annefrank.org/es/museo/entradas/" target="_blank" rel="noopener noreferrer"
              className="inline-flex items-center bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm">
             🏠 Reservar Casa de Ana Frank (Web Oficial)
             <ExternalLink className="h-3 w-3 ml-2" />
