@@ -442,9 +442,9 @@ Volver a guías
         </div>
 
         <div className="bg-yellow-50 border border-yellow-200 rounded-xl p-4 mb-4">
-          <h5 className="font-semibold text-yellow-800 mb-2">🚌 Opciones para Hacer la Excursión:</h5>
+          <h5 className="font-semibold text-yellow-800 mb-2">🚌 Opciones para hacer la Excursión:</h5>
           <div className="space-y-2 text-sm text-gray-700 mb-3">
-            <p><strong>Tour guiado en español:</strong> La opción más cómoda y completa (45-55 €). Incluye transporte, guía experto y todas las visitas.</p>
+            <p><strong>Tour guiado en español:</strong> La opción más cómoda y completa (34-50€). Incluye transporte, guía experto y todas las visitas.</p>
             <p><strong>Por libre en autobús:</strong> Buses desde Estación Noord. Compra Amsterdam & Region Travel Ticket (día completo ~18 €).</p>
             <p><strong>Coche de alquiler:</strong> Máxima flexibilidad pero parking puede ser complicado en algunos pueblos.</p>
           </div>
