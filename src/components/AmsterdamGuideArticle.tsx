@@ -985,15 +985,15 @@ Volver a guías
           </div>
           
           <div className="bg-white rounded-lg p-3 shadow-sm">
-            <h4 className="font-semibold text-gray-900 mb-1">The Hoxton, Amsterdam</h4>
-            <p className="text-xs text-gray-600 mb-1">Herengracht 255 • €€€€ • Boutique</p>
+            <h4 className="font-semibold text-gray-900 mb-1">Monet Garden Hotel Amsterdam</h4>
+            <p className="text-xs text-gray-600 mb-1">Valkenburgerstraat 76 • €€€ • Boutique</p>
             <p className="text-sm text-gray-700">Hotel boutique en canal histórico. Diseño impecable.</p>
           </div>
           
           <div className="bg-white rounded-lg p-3 shadow-sm">
-            <h4 className="font-semibold text-gray-900 mb-1">ClinkNOORD Hostel</h4>
-            <p className="text-xs text-gray-600 mb-1">Badhuiskade 3 • € • Social</p>
-            <p className="text-sm text-gray-700">Hostel moderno y limpio al otro lado del río (ferry gratuito).</p>
+            <h4 className="font-semibold text-gray-900 mb-1">Tourist Inn Hotel Amsterdam</h4>
+            <p className="text-xs text-gray-600 mb-1">Spuistraat 52-b • €€ • Bien ubicado</p>
+            <p className="text-sm text-gray-700">Hotel bien ubicado y cerca de la estación central.</p>
           </div>
         </div>
       </div>
