@@ -373,7 +373,7 @@ Volver a guías
           <div>
             <h5 className="font-semibold text-gray-900 mb-2">🌅 Mirador A'Dam Tower:</h5>
             <ul className="text-sm text-gray-700 space-y-1 list-none">
-              <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>Precio: 15-17 € (compra online)</li>
+              <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>Precio: 20€ (compra online)</li>
               <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Altura: 100 metros de altura</li>
               <li className="flex items-center"><span className="w-2 h-2 bg-yellow-400 rounded-full mr-3"></span>Columpio: El más alto de Europa</li>
               <li className="flex items-center"><span className="w-2 h-2 bg-indigo-400 rounded-full mr-3"></span>Ferry: Gratis desde Estación Central</li>
