@@ -239,7 +239,7 @@ Volver a guías
 
         <div className="bg-white rounded-xl p-4 border border-gray-200 shadow-sm">
           <p className="text-xs text-orange-600 mb-3">💡 Tip: El free tour suele durar 2-3 horas y es la mejor forma de conocer la historia y curiosidades de Ámsterdam con un guía local.</p>
-          <a href="#" target="_blank" rel="noopener noreferrer"
+          <a href="https://gyg.me/9muAs4RI" target="_blank" rel="noopener noreferrer"
              className="inline-flex items-center bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm">
             🚶 Reservar Free Tour en español
             <ExternalLink className="h-3 w-3 ml-2" />
