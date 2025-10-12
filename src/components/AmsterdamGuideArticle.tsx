@@ -934,7 +934,7 @@ Volver a guías
           
           <div className="bg-white rounded-lg p-3 shadow-sm">
             <h4 className="font-semibold text-gray-900 mb-1">Blue Amsterdam</h4>
-            <p className="text-xs text-gray-600 mb-1">Kalverstraat 92 • €€€ • Vistas panorámicas</p>
+            <p className="text-xs text-gray-600 mb-1">Winkelcentrum Kalverpassage, Singel 457 • €€€ • Vistas panorámicas</p>
             <p className="text-sm text-gray-700">Cocina moderna con vistas a la ciudad. Perfecto para ocasiones especiales.</p>
           </div>
           
