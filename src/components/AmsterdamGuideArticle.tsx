@@ -294,13 +294,6 @@ Volver a guías
       </h3>
       <div className="bg-purple-50 border border-purple-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
         <h4 className="text-lg font-bold text-gray-900 mb-3">Casa Museo de Ana Frank - Patrimonio de la Humanidad</h4>
-        <div className="mb-4">
-          <img
-            src="https://images.pexels.com/photos/2845014/pexels-photo-2845014.jpeg"
-            alt="Exterior de la Casa de Ana Frank en Ámsterdam"
-            className="w-full h-48 sm:h-64 object-cover rounded-xl shadow-lg mb-4"
-          />
-        </div>
         <p className="text-gray-700 mb-4">
           Visita imprescindible en Ámsterdam. Aquí Ana Frank y su familia se ocultaron durante más de 2 años (1942-1944) de la invasión nazi. 
           El museo conserva el escondite tras la estantería giratoria y expone su famoso diario original.
