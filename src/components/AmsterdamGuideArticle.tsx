@@ -979,7 +979,7 @@ Volver a guías
         <h3 className="text-lg font-bold text-orange-800 mb-3">👑 Centrum (Centro Histórico)</h3>
         <div className="space-y-3">
           <div className="bg-white rounded-lg p-3 shadow-sm">
-            <h4 className="font-semibold text-gray-900 mb-1">Motel One Amsterdam</h4>
+            <h4 className="font-semibold text-gray-900 mb-1">Ambassade Hotel</h4>
             <p className="text-xs text-gray-600 mb-1">Europaplein • €€€ • Moderno</p>
             <p className="text-sm text-gray-700">Hotel moderno y nuevo a pocos metros del centro. Muy recomendable.</p>
           </div>
