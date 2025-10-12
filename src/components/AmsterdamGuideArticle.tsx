@@ -571,7 +571,7 @@ Volver a guías
       DÍA 3: Arte Holandés, Cerveza y Vida Nocturna
     </h2>
 
-    {/* Rijksmuseum */}
+    {/* Rilkesmuseum */}
     <div className="mb-8">
       <h3 className="text-lg font-bold text-gray-900 mb-4 flex items-center">
         <div className="w-1 h-6 bg-gradient-to-b from-red-400 to-amber-400 rounded-full mr-3"></div>
@@ -616,7 +616,7 @@ Volver a guías
 
         <div className="bg-white rounded-xl p-4 border border-gray-200 shadow-sm">
           <p className="text-xs text-red-600 mb-3">💡 Tip: Llega cuando abren (9:00) para evitar multitudes. La "Galería de Honor" con las obras maestras se llena mucho a partir de las 11:00.</p>
-          <a href="#" target="_blank" rel="noopener noreferrer"
+          <a href="https://gyg.me/qMlozUdI" target="_blank" rel="noopener noreferrer"
              className="inline-flex items-center bg-gradient-to-r from-red-500 to-amber-500 hover:from-red-600 hover:to-amber-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm">
             🎨 Entradas Rijksmuseum
             <ExternalLink className="h-3 w-3 ml-2" />
