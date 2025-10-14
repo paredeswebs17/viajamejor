@@ -269,7 +269,7 @@ Volver a guías
         <h4 className="text-lg font-bold text-gray-900 mb-3">El Panteón y la Plaza Más Bonita</h4>
         <div className="mb-4">
           <img
-            src="https://images.pexels.com/photos/2225439/pexels-photo-2225439.jpeg"
+            src="https://images.pexels.com/photos/2676602/pexels-photo-2676602.jpeg"
             alt="Panteón de Agripa en Roma"
             className="w-full h-48 sm:h-64 object-cover rounded-xl shadow-lg mb-4"
           />
