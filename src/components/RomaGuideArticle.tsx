@@ -216,7 +216,7 @@ Volver a guías
         <h4 className="text-lg font-bold text-gray-900 mb-3">Plaza de España y Fontana di Trevi</h4>
         <div className="mb-4">
           <img
-            src="https://images.pexels.com/photos/1797161/pexels-photo-1797161.jpeg"
+            src="https://images.pexels.com/photos/5067076/pexels-photo-5067076.jpeg"
             alt="Plaza de España con sus famosas escalinatas"
             className="w-full h-48 sm:h-64 object-cover rounded-xl shadow-lg mb-4"
           />
