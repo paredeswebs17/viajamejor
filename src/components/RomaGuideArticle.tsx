@@ -18,7 +18,6 @@ className="inline-flex items-center text-red-600 hover:text-red-700 hover:bg-red
 Volver a guías
 </button>
 
-```
     <div className="mb-6">
       <span className="bg-gradient-to-r from-red-500 to-amber-500 text-white px-4 py-2 rounded-full text-sm font-medium shadow-md">
         Guía Completa
@@ -1264,7 +1263,6 @@ Volver a guías
     </p>
   </div>
 </article>
-```
 
 );
 };
