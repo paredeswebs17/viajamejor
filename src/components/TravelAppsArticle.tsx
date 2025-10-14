@@ -247,7 +247,7 @@ const TravelAppsArticle: React.FC<TravelAppsArticleProps> = ({ onBack }) => {
             <div className="bg-indigo-50 border border-indigo-200 rounded-lg p-4">
               <p className="text-indigo-800 text-sm mb-2">
                 👉 <strong>
-              <a href="https://www.revolut.com/es-ES/referral/?referral-code=antoni22jf%21AUG2-25-AR-CH1H2-CRY" target="_blank" rel="noopener noreferrer">
+              <a href="https://revolut.com/referral/?referral-code=antoni22jf!OCT1-25-AR-CH1H2-CRY&geo-redirect" target="_blank" rel="noopener noreferrer">
                 Aquí tienes el enlace a Revolut
               </a>
             </strong>

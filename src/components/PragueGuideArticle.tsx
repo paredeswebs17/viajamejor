@@ -1073,7 +1073,7 @@ src="https://images.pexels.com/photos/32795906/pexels-photo-32795906.jpeg"
             </div>
           </div>
           <a
-            href="https://revolut.com/referral/?referral-code=antoni22jf!AUG2-25-AR-CH1H2-CRY&geo-redirect"
+            href="https://revolut.com/referral/?referral-code=antoni22jf!OCT1-25-AR-CH1H2-CRY&geo-redirect"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600 text-white font-bold py-3 px-6 rounded-lg transition-all duration-200 transform hover:scale-105 shadow-lg hover:shadow-xl"

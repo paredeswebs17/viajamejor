@@ -176,7 +176,7 @@ const TravelCardsArticle: React.FC<TravelCardsArticleProps> = ({ onBack }) => {
             <div className="bg-sky-50 border border-sky-200 rounded-lg p-4">
               <p className="text-sky-800 text-sm mb-2">
                 👉 <strong>
-                  <a href="https://www.revolut.com/es-ES/referral/?referral-code=antoni22jf%21AUG2-25-AR-CH1H2-CRY" target="_blank" rel="noopener noreferrer">
+                  <a href="https://revolut.com/referral/?referral-code=antoni22jf!OCT1-25-AR-CH1H2-CRY&geo-redirect" target="_blank" rel="noopener noreferrer">
                     Aquí tienes el enlace a Revolut
                   </a>
                 </strong>
@@ -304,7 +304,7 @@ const TravelCardsArticle: React.FC<TravelCardsArticleProps> = ({ onBack }) => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a 
-              href="https://www.revolut.com/es-ES/referral/?referral-code=antoni22jf%21AUG2-25-AR-CH1H2-CRY"
+              href="https://revolut.com/referral/?referral-code=antoni22jf!OCT1-25-AR-CH1H2-CRY&geo-redirect"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-white text-emerald-500 font-semibold px-8 py-3 rounded-lg hover:bg-gray-100 transition-colors inline-block text-center"
