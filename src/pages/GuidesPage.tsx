@@ -61,8 +61,22 @@ const GuidesPage = () => {
       budget: '€€€',
       featured: true,
       available: true,
-      badge: '🆕 Nuevo',
+      badge: '🚲 Bici',
       url: '/amsterdam-3-dias'
+    },
+    {
+      id: 'roma',
+      title: 'Roma en 3 días',
+      description: 'Ciudad Eterna con Coliseo, Vaticano, Fontana di Trevi y Trastevere. Historia milenaria y gastronomía italiana.',
+      image: 'https://images.pexels.com/photos/2064827/pexels-photo-2064827.jpeg',
+      price: '80€',
+      rating: 4.9,
+      continent: 'Europa',
+      budget: '€€€',
+      featured: true,
+      available: true,
+      badge: '🆕 Nuevo',
+      url: '/roma-3-dias'
     },
     {
       id: 'berlin',
