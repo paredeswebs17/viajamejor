@@ -266,7 +266,7 @@ Volver a guías
         Panteón de Agripa y Piazza Navona (11:30h)
       </h3>
       <div className="bg-blue-50 border border-blue-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
-        <h4 className="text-lg font-bold text-gray-900 mb-3">El Panteón y la Plaza Más Bonita</h4>
+        <h4 className="text-lg font-bold text-gray-900 mb-3">El Panteón y la Piazza Navona</h4>
         <div className="mb-4">
           <img
             src="https://images.pexels.com/photos/2676602/pexels-photo-2676602.jpeg"
