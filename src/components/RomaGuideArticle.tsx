@@ -810,6 +810,13 @@ Volver a guías
       </h3>
       <div className="bg-red-50 border border-red-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
         <h4 className="text-lg font-bold text-gray-900 mb-3">La Plaza del Pueblo y Terraza Pincio</h4>
+        <div className="mb-4">
+          <img
+            src="https://images.pexels.com/photos/28238173/pexels-photo-28238173.jpeg"
+            alt="Castillo Sant'Angelo y puente en Roma"
+            className="w-full h-48 sm:h-64 object-cover rounded-xl shadow-lg mb-4"
+          />
+        </div>
         <p className="text-gray-700 mb-4">
           Piazza del Popolo es una de las plazas más grandes y espectaculares de Roma. En su centro destaca el 
           Obelisco Flaminio egipcio de 3.200 años de antigüedad dedicado a Ramsés II.
