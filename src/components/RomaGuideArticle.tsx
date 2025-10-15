@@ -327,6 +327,13 @@ Volver a guías
       </h3>
       <div className="bg-purple-50 border border-purple-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
         <h4 className="text-lg font-bold text-gray-900 mb-3">Arte Clásico y las Mejores Vistas del Foro</h4>
+        <div className="mb-4">
+          <img
+            src="https://images.pexels.com/photos/9386106/pexels-photo-9386106.jpeg"
+            alt="Museo Capitolino"
+            className="w-full h-48 sm:h-64 object-cover rounded-xl shadow-lg mb-4"
+          />
+        </div>
         <p className="text-gray-700 mb-4">
           Los Museos Capitolinos (Musei Capitolini) son los museos públicos más antiguos del mundo (1471). 
           Albergan la famosa Loba Capitolina amamantando a Rómulo y Remo, símbolo de Roma.
