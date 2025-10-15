@@ -706,6 +706,13 @@ Volver a guías
       </h3>
       <div className="bg-blue-50 border border-blue-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
         <h4 className="text-lg font-bold text-gray-900 mb-3">La Iglesia Más Grande del Mundo</h4>
+        <div className="mb-4">
+          <img
+            src="https://images.pexels.com/photos/12044711/pexels-photo-12044711.jpeg"
+            alt="Museos Vaticanos interior"
+            className="w-full h-48 sm:h-64 object-cover rounded-xl shadow-lg mb-4"
+          />
+        </div>
         <p className="text-gray-700 mb-4">
           La Basílica de San Pedro es la iglesia más grande del cristianismo (22.000 m²). Construida sobre la tumba del apóstol Pedro, 
           fue diseñada por Bramante, Miguel Ángel, Bernini y otros genios del Renacimiento y Barroco.
