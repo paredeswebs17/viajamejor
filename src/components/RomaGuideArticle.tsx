@@ -67,7 +67,7 @@ Volver a guías
 
   <div className="mb-8">
     <img
-      src="https://images.pexels.com/photos/2064827/pexels-photo-2064827.jpeg"
+      src="https://images.pexels.com/photos/6199223/pexels-photo-6199223.jpeg"
       alt="Coliseo Romano al atardecer con turistas"
       className="w-full h-48 sm:h-64 lg:h-80 object-cover rounded-2xl shadow-lg"
     />
