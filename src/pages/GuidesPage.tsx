@@ -68,7 +68,7 @@ const GuidesPage = () => {
       id: 'roma',
       title: 'Roma en 3 días',
       description: 'Ciudad Eterna con Coliseo, Vaticano, Fontana di Trevi y Trastevere. Historia milenaria y gastronomía italiana.',
-      image: 'https://images.pexels.com/photos/2064827/pexels-photo-2064827.jpeg',
+      image: 'https://images.pexels.com/photos/6199223/pexels-photo-6199223.jpeg',
       price: '80€',
       rating: 4.9,
       continent: 'Europa',
