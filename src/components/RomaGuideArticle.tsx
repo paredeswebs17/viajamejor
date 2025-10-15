@@ -547,7 +547,7 @@ Volver a guías
         <h4 className="text-lg font-bold text-gray-900 mb-3">La Boca de la Verdad y el Barrio Más Auténtico</h4>
         <div className="mb-4">
           <img
-            src="https://images.pexels.com/photos/3367434/pexels-photo-3367434.jpeg"
+            src="https://images.pexels.com/photos/34010785/pexels-photo-34010785.jpeg"
             alt="Calles del barrio Trastevere en Roma"
             className="w-full h-48 sm:h-64 object-cover rounded-xl shadow-lg mb-4"
           />
@@ -557,7 +557,7 @@ Volver a guías
           <h5 className="font-semibold text-gray-900 mb-2">👄 Bocca della Verità (Boca de la Verdad):</h5>
           <p className="text-sm text-gray-700 mb-2">
             Máscara de mármol (siglo I) en el pórtico de la iglesia Santa Maria in Cosmedin. 
-            La leyenda dice que quien miente pierde la mano al introducirla en la boca. ¡Apareció en "Vacaciones en Roma" con Audrey Hepburn!
+            La leyenda dice que quien miente pierde la mano al introducirla en la boca.
           </p>
           <ul className="text-sm text-gray-700 space-y-1">
             <li>• <strong>Entrada:</strong> Gratuita</li>
