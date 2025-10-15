@@ -759,7 +759,7 @@ Volver a guías
         <h4 className="text-lg font-bold text-gray-900 mb-3">De Mausoleo a Fortaleza Papal</h4>
         <div className="mb-4">
           <img
-            src="https://images.pexels.com/photos/2422259/pexels-photo-2422259.jpeg"
+            src="https://images.pexels.com/photos/31077446/pexels-photo-31077446.jpeg"
             alt="Castillo Sant'Angelo y puente en Roma"
             className="w-full h-48 sm:h-64 object-cover rounded-xl shadow-lg mb-4"
           />
