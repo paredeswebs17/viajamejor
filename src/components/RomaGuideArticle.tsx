@@ -813,7 +813,7 @@ Volver a guías
         <div className="mb-4">
           <img
             src="https://images.pexels.com/photos/28238173/pexels-photo-28238173.jpeg"
-            alt="Castillo Sant'Angelo y puente en Roma"
+            alt="Piazza del Popolo"
             className="w-full h-48 sm:h-64 object-cover rounded-xl shadow-lg mb-4"
           />
         </div>
