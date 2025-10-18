@@ -376,8 +376,8 @@ Volver a guías
           <div>
             <h5 className="font-semibold text-gray-900 mb-2">📋 Info Práctica:</h5>
             <ul className="text-sm text-gray-700 space-y-1 list-none">
-              <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Precio: 15-16€</li>
-              <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Duración: 2-3 horas</li>
+              <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Precio: Desde 36€</li>
+              <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Duración: 3-5 horas</li>
               <li className="flex items-center"><span className="w-2 h-2 bg-yellow-400 rounded-full mr-3"></span>Horario: 9:30-19:30 diario</li>
               <li className="flex items-center"><span className="w-2 h-2 bg-indigo-400 rounded-full mr-3"></span>Ubicación: Plaza del Campidoglio</li>
             </ul>
@@ -406,7 +406,7 @@ Volver a guías
 
         <div className="bg-white rounded-xl p-4 border border-gray-200 shadow-sm">
           <p className="text-xs text-purple-600 mb-3">💡 Tip: El atardecer desde esta terraza es mágico. Llega con tiempo para conseguir buen sitio y ver cómo la luz dorada baña Roma.</p>
-          <a href="https://gyg.me/def789Capitolinos" target="_blank" rel="noopener noreferrer"
+          <a href="https://gyg.me/Kpaf4B2q" target="_blank" rel="noopener noreferrer"
              className="inline-flex items-center bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm">
             🏛️ Visita Guiada Museos Capitolinos
             <ExternalLink className="h-3 w-3 ml-2" />
