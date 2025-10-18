@@ -187,15 +187,26 @@ Volver a guías
             <p className="text-sm text-gray-700 mb-1"><strong>Reserva:</strong> Online con antelación recomendado</p>
           </div>
         </div>
-        <a
-          href="https://gyg.me/BLaJgf2A"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm"
-        >
-          <span>🚕 Reservar Traslado Privado</span>
-          <ExternalLink className="h-3 w-3 ml-2" />
-        </a>
+        <div className="flex flex-wrap gap-3">
+          <a
+            href="https://gyg.me/BLaJgf2A"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm"
+          >
+            <span>🚕 Reservar Traslado Privado</span>
+            <ExternalLink className="h-3 w-3 ml-2" />
+          </a>
+          <a
+            href="https://gyg.me/cUNjsEYp"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center bg-gradient-to-r from-blue-500 to-cyan-500 hover:from-blue-600 hover:to-cyan-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm"
+          >
+            <span>🚶 Tour a Pie con Guía</span>
+            <ExternalLink className="h-3 w-3 ml-2" />
+          </a>
+        </div>
       </div>
 
       <div className="bg-red-100 border border-red-300 rounded-lg p-3">
