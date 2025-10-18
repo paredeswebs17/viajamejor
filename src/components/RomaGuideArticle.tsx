@@ -266,7 +266,7 @@ Volver a guías
         </div>
 
         <div className="bg-white rounded-xl p-4 border border-gray-200 shadow-sm">
-          <p className="text-xs text-red-600 mb-3">💡 Tip: Comienza el día con un tour en carrito de golf por el centro histórico para conocer la historia y curiosidades de Roma con guía local en español que os recogerá en el hotel.</p>
+          <p className="text-xs text-red-600 mb-3">💡 Tip: Comienza el día con un tour en carrito de golf por el centro histórico, para conocer la historia y curiosidades de Roma con guía local en español que os recogerá en el hotel.</p>
           <a href="https://gyg.me/S6R141kJ" target="_blank" rel="noopener noreferrer"
              className="inline-flex items-center bg-gradient-to-r from-red-500 to-amber-500 hover:from-red-600 hover:to-amber-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm">
             🚶 Reservar Tour Centro Histórico en carrito de golf
