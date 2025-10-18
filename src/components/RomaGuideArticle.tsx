@@ -179,7 +179,7 @@ Volver a guías
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
           <div>
             <p className="text-sm text-gray-700 mb-1"><strong>Taxi tarifa fija:</strong> 48-50 € (hasta 4 pasajeros)</p>
-            <p className="text-sm text-gray-700 mb-1"><strong>Traslado privado:</strong> 60-70 € (hasta 3 personas)</p>
+            <p className="text-sm text-gray-700 mb-1"><strong>Traslado privado:</strong> Desde 28 € por persona</p>
             <p className="text-sm text-gray-700 mb-1"><strong>Duración:</strong> 40 min (según tráfico)</p>
           </div>
           <div>
