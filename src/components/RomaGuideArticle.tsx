@@ -148,12 +148,12 @@ Volver a guías
         <h4 className="font-bold text-gray-900 mb-3">🚌 Autobuses - Alternativa Económica</h4>
         <div className="space-y-3">
           <div className="bg-white rounded-lg p-3 shadow-sm">
-            <p className="text-sm font-semibold text-gray-900 mb-2">Terravision Bus Shuttle</p>
+            <p className="text-sm font-semibold text-gray-900 mb-2">Bus Shuttle</p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-gray-700 mb-3">
               <div>
-                <p><strong>Precio:</strong> 6€ online / 7€ a bordo</p>
+                <p><strong>Precio:</strong> 7€ online</p>
                 <p><strong>Duración:</strong> 55 minutos (según tráfico)</p>
-                <p><strong>Horario:</strong> 05:35 - 23:00</p>
+                <p><strong>Horario:</strong> 04:45 - 01:15</p>
               </div>
               <div>
                 <p><strong>Destino:</strong> Roma Termini</p>
