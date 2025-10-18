@@ -690,14 +690,6 @@ Volver a guías
           </p>
         </div>
 
-        <div className="bg-yellow-100 border border-yellow-300 rounded-lg p-3 mb-4">
-          <p className="font-medium text-yellow-800 mb-1">⛪ CAMBIO 2025: Basílica desde Capilla Sixtina</p>
-          <p className="text-yellow-700 text-xs">
-            Desde marzo 2025, el acceso directo desde la Capilla Sixtina a la Basílica de San Pedro ES DE PAGO. 
-            Antes estaba incluido pero ya no. Si entras por la Plaza de San Pedro, la Basílica sigue siendo gratuita.
-          </p>
-        </div>
-
         <div className="bg-white rounded-xl p-4 mb-4 shadow-sm border border-gray-100">
           <h5 className="font-semibold text-gray-900 mb-2">💡 Formas de Visitar el Vaticano:</h5>
           <div className="space-y-2 text-sm text-gray-700 mb-3">
