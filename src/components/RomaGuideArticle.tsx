@@ -149,7 +149,7 @@ Volver a guías
         <div className="space-y-3">
           <div className="bg-white rounded-lg p-3 shadow-sm">
             <p className="text-sm font-semibold text-gray-900 mb-2">Terravision Bus Shuttle</p>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-gray-700">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-gray-700 mb-3">
               <div>
                 <p><strong>Precio:</strong> 6€ online / 7€ a bordo</p>
                 <p><strong>Duración:</strong> 55 minutos (según tráfico)</p>
@@ -161,6 +161,15 @@ Volver a guías
                 <p><strong>Parada:</strong> Terminal 3 (bien señalizado)</p>
               </div>
             </div>
+            <a
+              href="https://gyg.me/30nhyxKT"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center bg-gradient-to-r from-yellow-500 to-orange-500 hover:from-yellow-600 hover:to-orange-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm"
+            >
+              <span>🚌 Reservar Bus Aeropuerto</span>
+              <ExternalLink className="h-3 w-3 ml-2" />
+            </a>
           </div>
         </div>
       </div>
