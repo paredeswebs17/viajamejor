@@ -151,7 +151,7 @@ Volver a guías
             <p className="text-sm font-semibold text-gray-900 mb-2">Bus Shuttle</p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-gray-700 mb-3">
               <div>
-                <p><strong>Precio:</strong> 7€ online</p>
+                <p><strong>Precio:</strong> 7 € online</p>
                 <p><strong>Duración:</strong> 55 minutos (según tráfico)</p>
                 <p><strong>Horario:</strong> 04:45 - 01:15</p>
               </div>
