@@ -550,12 +550,20 @@ Volver a guías
           </p>
         </div>
 
-        <div className="bg-white rounded-xl p-4 shadow-sm border border-gray-100">
+        <div className="bg-white rounded-xl p-4 shadow-sm border border-gray-100 mb-4">
           <h5 className="font-semibold text-gray-900 mb-2">🍝 Restaurante con vistas al Coliseo:</h5>
           <p className="text-sm text-gray-700">
-            <strong>Royal Art Cafè Roma:</strong> Terraza preciosa con vistas directas al Coliseo. 
+            <strong>Royal Art Cafè Roma:</strong> Terraza preciosa con vistas directas al Coliseo.
             Perfecto para comer después de la visita. Reserva mesa con antelación, especialmente la terraza.
           </p>
+        </div>
+
+        <div className="bg-white rounded-xl p-4 border border-gray-200 shadow-sm">
+          <a href="https://gyg.me/x7n9VjY6" target="_blank" rel="noopener noreferrer"
+             className="inline-flex items-center bg-gradient-to-r from-green-500 to-emerald-500 hover:from-green-600 hover:to-emerald-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm">
+            🏛️ Reservar Entrada al Foro Romano y Palatino
+            <ExternalLink className="h-3 w-3 ml-2" />
+          </a>
         </div>
       </div>
     </div>
