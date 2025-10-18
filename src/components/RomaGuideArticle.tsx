@@ -1328,9 +1328,6 @@ Volver a guías
     <p className="mb-2">
       Guía actualizada en Octubre 2025 | Información verificada y precios actuales
     </p>
-    <p className="mb-2">
-      Precios Coliseo: 18-24€ | Vaticano: 25€ | Tren aeropuerto: 14-15€
-    </p>
     <p>
       ¡Que disfrutes Roma al máximo! 🇮🇹
     </p>
