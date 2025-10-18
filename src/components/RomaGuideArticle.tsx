@@ -626,8 +626,16 @@ Volver a guías
           </div>
         </div>
 
-        <div className="bg-white rounded-xl p-4 border border-gray-200 shadow-sm">
+        <div className="bg-white rounded-xl p-4 border border-gray-200 shadow-sm mb-4">
           <p className="text-xs text-purple-600 mb-3">💡 Tip: Trastevere es perfecto para cenar. Reserva mesa en Cambio Trastevere, Ivo a Trastevere o Santo Trastevere.</p>
+        </div>
+
+        <div className="bg-white rounded-xl p-4 border border-gray-200 shadow-sm">
+          <a href="https://gyg.me/GTN3t260" target="_blank" rel="noopener noreferrer"
+             className="inline-flex items-center bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm">
+            🍕 Tour a Pie de Comida Callejera en Trastevere
+            <ExternalLink className="h-3 w-3 ml-2" />
+          </a>
         </div>
       </div>
     </div>
