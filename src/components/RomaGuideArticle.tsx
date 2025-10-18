@@ -1033,16 +1033,16 @@ Volver a guías
     
     <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-6">
       <div className="bg-red-50 border border-red-200 rounded-xl p-4">
-        <h3 className="text-lg font-bold text-red-800 mb-3">🏛️ Centro Histórico / Navona</h3>
+        <h3 className="text-lg font-bold text-red-800 mb-3">🏛️ Centro Histórico</h3>
         <div className="space-y-3">
           <div className="bg-white rounded-lg p-3 shadow-sm">
-            <h4 className="font-semibold text-gray-900 mb-1">Viminale View</h4>
-            <p className="text-xs text-gray-600 mb-1">Via Nazionale área • €€€ • Muy bien ubicado</p>
+            <h4 className="font-semibold text-gray-900 mb-1">Hotel Smeraldo</h4>
+            <p className="text-xs text-gray-600 mb-1">Via dei Chiavari 20 • €€ • Muy bien ubicado</p>
             <p className="text-sm text-gray-700">Hotel super bonito, puedes recorrer Roma andando desde aquí.</p>
           </div>
           
           <div className="bg-white rounded-lg p-3 shadow-sm">
-            <h4 className="font-semibold text-gray-900 mb-1">Zona Piazza Navona</h4>
+            <h4 className="font-semibold text-gray-900 mb-1">Terrace Pantheon Relais</h4>
             <p className="text-xs text-gray-600 mb-1">Centro histórico • €€€ • Premium</p>
             <p className="text-sm text-gray-700">Lo mejor para estar en pleno corazón de Roma. Más caro pero ubicación perfecta.</p>
           </div>
@@ -1050,18 +1050,18 @@ Volver a guías
       </div>
       
       <div className="bg-purple-50 border border-purple-200 rounded-xl p-4">
-        <h3 className="text-lg font-bold text-purple-800 mb-3">⛪ Vaticano / Prati</h3>
+        <h3 className="text-lg font-bold text-purple-800 mb-3">⛪ Vaticano</h3>
         <div className="space-y-3">
           <div className="bg-white rounded-lg p-3 shadow-sm">
-            <h4 className="font-semibold text-gray-900 mb-1">Hotel Roma Vaticano</h4>
-            <p className="text-xs text-gray-600 mb-1">Barrio Prati • €€€ • Recomendado</p>
-            <p className="text-sm text-gray-700">Barrio con ambiente local, repleto de restaurantes y cafeterías bonitas.</p>
+            <h4 className="font-semibold text-gray-900 mb-1">Donna Laura Palace by OMNIA hotels</h4>
+            <p className="text-xs text-gray-600 mb-1">Lungotevere Delle Armi 21 • €€€ • Recomendado</p>
+            <p className="text-sm text-gray-700">Barrio con ambiente local y tranquilo.</p>
           </div>
           
           <div className="bg-white rounded-lg p-3 shadow-sm">
-            <h4 className="font-semibold text-gray-900 mb-1">Zona Prati</h4>
-            <p className="text-xs text-gray-600 mb-1">Cerca Vaticano • €€-€€€ • Descubrimiento</p>
-            <p className="text-sm text-gray-700">Mejor relación calidad-precio que el centro. Metro directo y ambiente auténtico.</p>
+            <h4 className="font-semibold text-gray-900 mb-1">Hotel Isa</h4>
+            <p className="text-xs text-gray-600 mb-1">Via Cicerone 39 • €€-€€€ • Descubrimiento</p>
+            <p className="text-sm text-gray-700">Muy buena ubicación</p>
           </div>
         </div>
       </div>
