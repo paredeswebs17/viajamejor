@@ -306,7 +306,7 @@ Volver a guías
         <div className="bg-yellow-50 border border-yellow-200 rounded-xl p-4 mb-4">
           <h5 className="font-semibold text-gray-900 mb-3">🏛️ Panteón de Agripa:</h5>
           <div className="space-y-2 text-sm text-gray-700">
-            <p><strong>Entrada:</strong> GRATUITA (antes había que pagar 5€, ahora es gratis de nuevo)</p>
+            <p><strong>Entrada:</strong> 5 €</p>
             <p><strong>Horario:</strong> 9:00-19:00 (lunes a sábado) / 9:00-18:00 (domingo)</p>
             <p><strong>Interior:</strong> Cúpula con óculo central de 9 metros, tumbas de Rafael y reyes italianos</p>
             <p><strong>Recomendación:</strong> Visita guiada para entender su historia arquitectónica única</p>
