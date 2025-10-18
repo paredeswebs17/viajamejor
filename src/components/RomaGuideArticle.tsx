@@ -821,7 +821,7 @@ Volver a guías
 
         <div className="bg-white rounded-xl p-4 border border-gray-200 shadow-sm">
           <p className="text-xs text-amber-600 mb-3">💡 Tip: Sube a la terraza al atardecer para vistas espectaculares de Roma y el Vaticano. El puente Sant'Angelo es uno de los más fotogénicos.</p>
-          <a href="https://gyg.me/mno678Castello" target="_blank" rel="noopener noreferrer"
+          <a href="https://gyg.me/kzz9A7do" target="_blank" rel="noopener noreferrer"
              className="inline-flex items-center bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm">
             🏰 Visita Guiada Castillo Sant'Angelo
             <ExternalLink className="h-3 w-3 ml-2" />
