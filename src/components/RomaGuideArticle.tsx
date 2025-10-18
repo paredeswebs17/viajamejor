@@ -679,15 +679,6 @@ Volver a guías
               <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>Torso del Belvedere (inspiró a Miguel Ángel)</li>
             </ul>
           </div>
-          <div>
-            <h5 className="font-semibold text-gray-900 mb-2">💰 Precios 2025:</h5>
-            <ul className="text-sm text-gray-700 space-y-1 list-none">
-              <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Entrada general: 20€ + 5€ reserva = 25€</li>
-              <li className="flex items-center"><span className="w-2 h-2 bg-yellow-400 rounded-full mr-3"></span>Reducida (6-18 años): 8€ + 5€ = 13€</li>
-              <li className="flex items-center"><span className="w-2 h-2 bg-indigo-400 rounded-full mr-3"></span>Menores de 6 años: GRATIS</li>
-              <li className="flex items-center"><span className="w-2 h-2 bg-emerald-400 rounded-full mr-3"></span>Audioguía: +7€ adicionales</li>
-            </ul>
-          </div>
         </div>
 
         <div className="bg-red-100 border border-red-300 rounded-lg p-3 mb-4">
