@@ -1313,6 +1313,14 @@ Volver a guías
         <ExternalLink className="h-3 w-3 ml-2" />
       </a>
     </div>
+
+    <div className="bg-white rounded-xl p-4 border border-gray-200 shadow-sm mt-4">
+      <a href="https://gyg.me/kqtptdDS" target="_blank" rel="noopener noreferrer"
+         className="inline-flex items-center bg-gradient-to-r from-green-500 to-teal-500 hover:from-green-600 hover:to-teal-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm">
+        🍷 Excursión a la Toscana y Montepulciano con almuerzo y vinos
+        <ExternalLink className="h-3 w-3 ml-2" />
+      </a>
+    </div>
   </div>
 
   {/* Footer */}
