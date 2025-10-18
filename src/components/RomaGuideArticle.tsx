@@ -111,7 +111,7 @@ Volver a guías
         <h4 className="font-bold text-gray-900 mb-3">🚄 Tren Leonardo Express - La Opción Más Rápida</h4>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <div>
-            <p className="text-sm text-gray-700 mb-2"><strong>Precio:</strong> 14-15 € por persona</p>
+            <p className="text-sm text-gray-700 mb-2"><strong>Precio:</strong> 17 € por persona</p>
             <p className="text-sm text-gray-700 mb-2"><strong>Horario:</strong> 06:08 - 23:23</p>
             <p className="text-sm text-gray-700 mb-2"><strong>Duración:</strong> 32 minutos directo</p>
             <p className="text-sm text-gray-700"><strong>Frecuencia:</strong> Cada 15-30 minutos</p>
@@ -266,10 +266,10 @@ Volver a guías
         </div>
 
         <div className="bg-white rounded-xl p-4 border border-gray-200 shadow-sm">
-          <p className="text-xs text-red-600 mb-3">💡 Tip: Comienza el día con un free tour por el centro histórico para conocer la historia y curiosidades de Roma con guía local en español.</p>
-          <a href="https://gyg.me/xYz123Roma" target="_blank" rel="noopener noreferrer"
+          <p className="text-xs text-red-600 mb-3">💡 Tip: Comienza el día con un tour en carrito de golf por el centro histórico para conocer la historia y curiosidades de Roma con guía local en español que os recogerá en el hotel.</p>
+          <a href="https://gyg.me/S6R141kJ" target="_blank" rel="noopener noreferrer"
              className="inline-flex items-center bg-gradient-to-r from-red-500 to-amber-500 hover:from-red-600 hover:to-amber-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm">
-            🚶 Reservar Free Tour Centro Histórico
+            🚶 Reservar Tour Centro Histórico en carrito de golf
             <ExternalLink className="h-3 w-3 ml-2" />
           </a>
         </div>
