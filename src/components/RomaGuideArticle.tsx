@@ -176,7 +176,7 @@ Volver a guías
 
       <div className="bg-purple-50 border border-purple-200 rounded-xl p-4 mb-4">
         <h4 className="font-bold text-gray-900 mb-3">🚕 Taxi / Traslado Privado - Máximo Confort</h4>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
           <div>
             <p className="text-sm text-gray-700 mb-1"><strong>Taxi tarifa fija:</strong> 48-50 € (hasta 4 pasajeros)</p>
             <p className="text-sm text-gray-700 mb-1"><strong>Traslado privado:</strong> 60-70 € (hasta 3 personas)</p>
@@ -188,6 +188,15 @@ Volver a guías
             <p className="text-sm text-gray-700 mb-1"><strong>Reserva:</strong> Online con antelación recomendado</p>
           </div>
         </div>
+        <a
+          href="https://gyg.me/BLaJgf2A"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm"
+        >
+          <span>🚕 Reservar Traslado Privado</span>
+          <ExternalLink className="h-3 w-3 ml-2" />
+        </a>
       </div>
 
       <div className="bg-red-100 border border-red-300 rounded-lg p-3">
