@@ -175,10 +175,9 @@ Volver a guías
       </div>
 
       <div className="bg-purple-50 border border-purple-200 rounded-xl p-4 mb-4">
-        <h4 className="font-bold text-gray-900 mb-3">🚕 Taxi / Traslado Privado - Máximo Confort</h4>
+        <h4 className="font-bold text-gray-900 mb-3">🚕 Traslado Privado - Máximo Confort</h4>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
           <div>
-            <p className="text-sm text-gray-700 mb-1"><strong>Taxi tarifa fija:</strong> 48-50 € (hasta 4 pasajeros)</p>
             <p className="text-sm text-gray-700 mb-1"><strong>Traslado privado:</strong> Desde 28 € por persona</p>
             <p className="text-sm text-gray-700 mb-1"><strong>Duración:</strong> 40 min (según tráfico)</p>
           </div>
