@@ -270,7 +270,7 @@ Volver a guías
           <div className="flex flex-wrap gap-3">
             <a href="https://gyg.me/S6R141kJ" target="_blank" rel="noopener noreferrer"
                className="inline-flex items-center bg-gradient-to-r from-red-500 to-amber-500 hover:from-red-600 hover:to-amber-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm">
-              🚶 Reservar Tour Centro Histórico en carrito de golf
+              🚎 Reservar Tour Centro Histórico en carrito de golf
               <ExternalLink className="h-3 w-3 ml-2" />
             </a>
             <a href="https://gyg.me/cUNjsEYp" target="_blank" rel="noopener noreferrer"
