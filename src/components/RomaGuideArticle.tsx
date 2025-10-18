@@ -954,13 +954,13 @@ Volver a guías
           
           <div className="bg-white rounded-lg p-3 shadow-sm">
             <h4 className="font-semibold text-gray-900 mb-1">Rifugio Romano</h4>
-            <p className="text-xs text-gray-600 mb-1">Via Goffredo Mameli, 31 • €€ • Trattoria</p>
+            <p className="text-xs text-gray-600 mb-1">Via Volturno, 39/41 • €€ • Trattoria</p>
             <p className="text-sm text-gray-700">Trattoria genial de precio. Carbonara y amatriciana auténticas.</p>
           </div>
           
           <div className="bg-white rounded-lg p-3 shadow-sm">
-            <h4 className="font-semibold text-gray-900 mb-1">Santo Trastevere</h4>
-            <p className="text-xs text-gray-600 mb-1">Piazza di San Callisto, 7 • €€ • Ambiente</p>
+            <h4 className="font-semibold text-gray-900 mb-1">Tonnarello</h4>
+            <p className="text-xs text-gray-600 mb-1">V. della Paglia, 1/2/3 • €€ • Ambiente</p>
             <p className="text-sm text-gray-700">Restaurante chulo en Trastevere, ideal para cenar con buena ubicación.</p>
           </div>
         </div>
@@ -971,19 +971,19 @@ Volver a guías
         <div className="space-y-3">
           <div className="bg-white rounded-lg p-3 shadow-sm">
             <h4 className="font-semibold text-gray-900 mb-1">Coromandel</h4>
-            <p className="text-xs text-gray-600 mb-1">Via di Ripetta, 16 • €€ • Brunch</p>
+            <p className="text-xs text-gray-600 mb-1">Via di Monte Giordano, 60/61 • €€ • Brunch</p>
             <p className="text-sm text-gray-700">Genial para brunch cerca Plaza Navona. Reserva mesa imprescindible.</p>
           </div>
           
           <div className="bg-white rounded-lg p-3 shadow-sm">
-            <h4 className="font-semibold text-gray-900 mb-1">Casa & Bottega</h4>
-            <p className="text-xs text-gray-600 mb-1">Via del Corallo, 1 • €€ • Café/Brunch</p>
-            <p className="text-sm text-gray-700">Muy cerca del anterior, también perfecto para desayunar o brunch.</p>
+            <h4 className="font-semibold text-gray-900 mb-1">Pane e Salame</h4>
+            <p className="text-xs text-gray-600 mb-1">Via Santa Maria in Via, 19 • €€ • Queso/Vinos</p>
+            <p className="text-sm text-gray-700">Restaurante moderno, famoso por los platos de carne y queso, que se maridan con vinos italianos.</p>
           </div>
           
           <div className="bg-white rounded-lg p-3 shadow-sm">
             <h4 className="font-semibold text-gray-900 mb-1">Cambio Trastevere</h4>
-            <p className="text-xs text-gray-600 mb-1">Via del Moro, 53 • €€ • Todo el día</p>
+            <p className="text-xs text-gray-600 mb-1">Via di S. Francesco a Ripa, 141 • €€ • Todo el día</p>
             <p className="text-sm text-gray-700">Local muy chulo para brunch, comer o cenar en Trastevere.</p>
           </div>
         </div>
