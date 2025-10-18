@@ -711,8 +711,7 @@ Volver a guías
           <h5 className="font-semibold text-gray-900 mb-2">💡 Formas de Visitar el Vaticano:</h5>
           <div className="space-y-2 text-sm text-gray-700 mb-3">
             <p><strong>1. Web Oficial:</strong> La más barata (25€ total) pero difícil de conseguir entrada</p>
-            <p><strong>2. Visita Guiada en Español:</strong> La más recomendada. Sin colas + explicaciones (65-95€)</p>
-            <p><strong>3. Primer Acceso (antes apertura):</strong> Entrada exclusiva sin multitudes (95-99€)</p>
+            <p><strong>2. Visita Guiada en Español:</strong> La más recomendada. Sin colas + explicaciones (65-120€)</p>
           </div>
           <p className="text-xs text-purple-600 mb-3">🎯 Recomendación: Visita guiada de 3 horas en español. Los Museos Vaticanos son inabarcables sin guía que te explique qué ver.</p>
           <div className="flex flex-wrap gap-2">
