@@ -477,8 +477,7 @@ Volver a guías
           <h5 className="font-semibold text-gray-900 mb-2">💡 Formas de Visitar el Coliseo:</h5>
           <div className="space-y-2 text-sm text-gray-700 mb-3">
             <p><strong>1. Web Oficial:</strong> La más barata (18€) pero entradas limitadas, se agotan rápido</p>
-            <p><strong>2. Visita Guiada:</strong> La más recomendada. Sin colas + guía experto (50-75€)</p>
-            <p><strong>3. Proveedores autorizados:</strong> Si web oficial agotada (25-30€)</p>
+            <p><strong>2. Visita Guiada:</strong> La más recomendada. Sin colas + guía experto. Desde 59 € </p>
           </div>
           <p className="text-xs text-amber-600 mb-3">🎯 Recomendación: Visita guiada en español que incluye Coliseo + Arena + Foro + Palatino. Mucho más interesante con explicaciones.</p>
           <div className="flex flex-wrap gap-2">
