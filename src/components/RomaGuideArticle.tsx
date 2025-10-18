@@ -766,14 +766,14 @@ Volver a guías
             La entrada a la Basílica por la Plaza suele tener colas largas (1-2 horas). 
             Llega temprano (antes de las 9am) o última hora de la tarde. El control de seguridad es estricto.
           </p>
-          <div className="flex flex-wrap gap-2">
+        </div>
+        <div className="flex flex-wrap gap-2">
             <a href="https://gyg.me/wIqPOyE9" target="_blank" rel="noopener noreferrer"
                className="inline-flex items-center bg-gradient-to-r from-purple-500 to-indigo-500 hover:from-purple-600 hover:to-indigo-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm">
               🎨 Tour Guiado Museos Vaticanos + Sixtina
               <ExternalLink className="h-3 w-3 ml-2" />
             </a>
           </div>
-        </div>
       </div>
     </div>
 
