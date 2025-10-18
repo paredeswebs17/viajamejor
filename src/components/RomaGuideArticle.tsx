@@ -561,7 +561,7 @@ Volver a guías
         <div className="bg-white rounded-xl p-4 border border-gray-200 shadow-sm">
           <a href="https://gyg.me/x7n9VjY6" target="_blank" rel="noopener noreferrer"
              className="inline-flex items-center bg-gradient-to-r from-green-500 to-emerald-500 hover:from-green-600 hover:to-emerald-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm">
-            🏛️ Reservar Entrada al Foro Romano y Palatino
+            🏛️ Tour Guiado Coliseo + Foro + Palatino
             <ExternalLink className="h-3 w-3 ml-2" />
           </a>
         </div>
