@@ -294,7 +294,7 @@ Volver a guías
 
     <div className="mb-6">
       <img
-        src="https://images.pexels.com/photos/3990429/pexels-photo-3990429.jpeg"
+        src="https://images.pexels.com/photos/19099388/pexels-photo-19099388.jpeg"
         alt="Mercado navideño en Praga"
         className="w-full h-48 sm:h-64 object-cover rounded-xl shadow-lg mb-4"
       />
