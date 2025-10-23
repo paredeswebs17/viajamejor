@@ -476,7 +476,7 @@ Volver a guías
 
     <div className="mb-6">
       <img
-        src="https://images.pexels.com/photos/3990379/pexels-photo-3990379.jpeg"
+        src="https://images.pexels.com/photos/29925925/pexels-photo-29925925.jpeg"
         alt="Mercado navideño en Viena"
         className="w-full h-48 sm:h-64 object-cover rounded-xl shadow-lg mb-4"
       />
