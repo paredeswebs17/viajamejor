@@ -12,7 +12,7 @@ const GuidesPage = () => {
       id: 'christmas',
       title: 'Mercados Navideños de Europa 2025-2026',
       description: 'Descubre los mejores mercados navideños de Budapest, Praga, Viena, Roma y Amsterdam. Fechas, horarios, precios y consejos prácticos.',
-      image: 'https://images.pexels.com/photos/3990359/pexels-photo-3990359.jpeg',
+      image: 'https://images.pexels.com/photos/19361199/pexels-photo-19361199.jpeg',
       continent: 'Europa',
       featured: true,
       available: true,
