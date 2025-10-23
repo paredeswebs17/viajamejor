@@ -667,7 +667,7 @@ Volver a guías
 
     <div className="mb-6">
       <img
-        src="https://images.pexels.com/photos/1797161/pexels-photo-1797161.jpeg"
+        src="https://images.pexels.com/photos/2787074/pexels-photo-2787074.jpeg"
         alt="Roma en Navidad"
         className="w-full h-48 sm:h-64 object-cover rounded-xl shadow-lg mb-4"
       />
