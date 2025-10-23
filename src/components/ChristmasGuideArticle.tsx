@@ -115,7 +115,7 @@ Volver a guías
 
     <div className="mb-6">
       <img
-        src="https://images.pexels.com/photos/19361199/pexels-photo-19361199.jpeg"
+        src="https://images.pexels.com/photos/6430090/pexels-photo-6430090.jpeg"
         alt="Mercado navideño en Budapest"
         className="w-full h-48 sm:h-64 object-cover rounded-xl shadow-lg mb-4"
       />
