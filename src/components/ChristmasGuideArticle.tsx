@@ -71,7 +71,7 @@ Volver a guías
 
   <div className="mb-8">
     <img
-      src="https://images.pexels.com/photos/3990359/pexels-photo-3990359.jpeg"
+      src="https://images.pexels.com/photos/19361199/pexels-photo-19361199.jpeg"
       alt="Mercado navideño europeo iluminado"
       className="w-full h-48 sm:h-64 lg:h-80 object-cover rounded-2xl shadow-lg"
     />
