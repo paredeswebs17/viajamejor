@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowLeft, Share2, Clock, MapPin, ExternalLink, Calendar, Snowflake } from 'lucide-react';
+import { ArrowLeft, Share2, Clock, MapPin, Calendar, Snowflake } from 'lucide-react';
 
 interface GuiaNavidadEuropaProps {
 onBack: () => void;
@@ -271,9 +271,9 @@ Volver a guías
     <div className="bg-gradient-to-r from-red-500 to-amber-500 rounded-xl p-6 text-center shadow-lg">
       <h3 className="text-white font-bold text-lg mb-3">🗺️ ¿Quieres Conocer Más de Budapest?</h3>
       <p className="text-white text-sm mb-4">Descubre qué ver, dónde comer, mejores zonas de alojamiento y todos los imprescindibles de la ciudad</p>
-      <button className="bg-white text-red-600 hover:bg-gray-100 font-semibold px-6 py-3 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300">
+      <a href="/budapest-4-dias" className="inline-block bg-white text-red-600 hover:bg-gray-100 font-semibold px-6 py-3 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300">
         Ver Guía Completa de Budapest →
-      </button>
+      </a>
     </div>
   </div>
 
@@ -453,9 +453,9 @@ Volver a guías
     <div className="bg-gradient-to-r from-blue-500 to-red-500 rounded-xl p-6 text-center shadow-lg">
       <h3 className="text-white font-bold text-lg mb-3">🗺️ ¿Quieres Conocer Más de Praga?</h3>
       <p className="text-white text-sm mb-4">Descubre el Castillo, el Puente de Carlos, el barrio judío y todos los imprescindibles</p>
-      <button className="bg-white text-blue-600 hover:bg-gray-100 font-semibold px-6 py-3 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300">
+      <a href="/praga-3-dias" className="inline-block bg-white text-blue-600 hover:bg-gray-100 font-semibold px-6 py-3 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300">
         Ver Guía Completa de Praga →
-      </button>
+      </a>
     </div>
   </div>
 
@@ -644,9 +644,9 @@ Volver a guías
     <div className="bg-gradient-to-r from-red-500 via-white to-red-500 rounded-xl p-6 text-center shadow-lg">
       <h3 className="text-red-600 font-bold text-lg mb-3">🗺️ ¿Quieres Conocer Más de Viena?</h3>
       <p className="text-gray-700 text-sm mb-4">Palacios imperiales, cafés históricos, la Ópera y todos los tesoros de la capital austríaca</p>
-      <button className="bg-red-600 text-white hover:bg-red-700 font-semibold px-6 py-3 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300">
+      <a href="/viena-3-dias" className="inline-block bg-red-600 text-white hover:bg-red-700 font-semibold px-6 py-3 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300">
         Ver Guía Completa de Viena →
-      </button>
+      </a>
     </div>
   </div>
 
@@ -831,9 +831,9 @@ Volver a guías
     <div className="bg-gradient-to-r from-green-500 via-white to-red-500 rounded-xl p-6 text-center shadow-lg">
       <h3 className="text-green-600 font-bold text-lg mb-3">🗺️ ¿Quieres Conocer Más de Roma?</h3>
       <p className="text-gray-700 text-sm mb-4">Coliseo, Vaticano, Fontana di Trevi, Trastevere y todos los imprescindibles de la Ciudad Eterna</p>
-      <button className="bg-green-600 text-white hover:bg-green-700 font-semibold px-6 py-3 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300">
+      <a href="/roma-3-dias" className="inline-block bg-green-600 text-white hover:bg-green-700 font-semibold px-6 py-3 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300">
         Ver Guía Completa de Roma →
-      </button>
+      </a>
     </div>
   </div>
 
