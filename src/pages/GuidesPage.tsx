@@ -277,34 +277,53 @@ const GuidesPage = () => {
                       {guide.description}
                     </p>
 
-                    <div className="flex items-center gap-6 mb-4">
-                      <div className="flex items-center">
-                        <Euro className="h-5 w-5 text-emerald-500 mr-2" />
-                        <span className="text-xl font-bold text-emerald-600">{guide.price?.replace('€', '') || 'N/A'}</span>
-                        <span className="text-gray-500 ml-1 text-sm">aprox./día</span>
+                    {guide.id === 'christmas' ? (
+                      <div className="space-y-2 mb-6">
+                        <div className="flex items-center text-sm text-gray-700">
+                          <CheckCircle className="h-4 w-4 text-emerald-500 mr-2" />
+                          <span>✓ 5 ciudades europeas</span>
+                        </div>
+                        <div className="flex items-center text-sm text-gray-700">
+                          <CheckCircle className="h-4 w-4 text-emerald-500 mr-2" />
+                          <span>✓ Fechas y horarios 2025-2026</span>
+                        </div>
+                        <div className="flex items-center text-sm text-gray-700">
+                          <CheckCircle className="h-4 w-4 text-emerald-500 mr-2" />
+                          <span>✓ Mejores mercados y especialidades</span>
+                        </div>
                       </div>
+                    ) : (
+                      <>
+                        <div className="flex items-center gap-6 mb-4">
+                          <div className="flex items-center">
+                            <Euro className="h-5 w-5 text-emerald-500 mr-2" />
+                            <span className="text-xl font-bold text-emerald-600">{guide.price?.replace('€', '') || 'N/A'}</span>
+                            <span className="text-gray-500 ml-1 text-sm">aprox./día</span>
+                          </div>
 
-                      <div className="flex items-center">
-                        <Star className="h-5 w-5 text-orange-500 mr-1" />
-                        <span className="font-semibold text-gray-900">{guide.rating}</span>
-                        <span className="text-orange-500 ml-1">★★★★★</span>
-                      </div>
-                    </div>
+                          <div className="flex items-center">
+                            <Star className="h-5 w-5 text-orange-500 mr-1" />
+                            <span className="font-semibold text-gray-900">{guide.rating}</span>
+                            <span className="text-orange-500 ml-1">★★★★★</span>
+                          </div>
+                        </div>
 
-                    <div className="space-y-2 mb-6">
-                      <div className="flex items-center text-sm text-gray-700">
-                        <CheckCircle className="h-4 w-4 text-emerald-500 mr-2" />
-                        <span>✓ Itinerario hora por hora</span>
-                      </div>
-                      <div className="flex items-center text-sm text-gray-700">
-                        <CheckCircle className="h-4 w-4 text-emerald-500 mr-2" />
-                       <span>✓ Enlaces de reservas</span>
-                      </div>
-                      <div className="flex items-center text-sm text-gray-700">
-                        <CheckCircle className="h-4 w-4 text-emerald-500 mr-2" />
-                       <span>✓ Consejos locales</span>
-                      </div>
-                    </div>
+                        <div className="space-y-2 mb-6">
+                          <div className="flex items-center text-sm text-gray-700">
+                            <CheckCircle className="h-4 w-4 text-emerald-500 mr-2" />
+                            <span>✓ Itinerario hora por hora</span>
+                          </div>
+                          <div className="flex items-center text-sm text-gray-700">
+                            <CheckCircle className="h-4 w-4 text-emerald-500 mr-2" />
+                            <span>✓ Enlaces de reservas</span>
+                          </div>
+                          <div className="flex items-center text-sm text-gray-700">
+                            <CheckCircle className="h-4 w-4 text-emerald-500 mr-2" />
+                            <span>✓ Consejos locales</span>
+                          </div>
+                        </div>
+                      </>
+                    )}
 
                     <a
                       href={guide.url}
