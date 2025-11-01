@@ -259,7 +259,7 @@ Volver a guías
     <div className="bg-yellow-50 border border-yellow-200 rounded-xl p-6 mb-6">
       <h3 className="text-lg font-bold text-gray-900 mb-4">💡 Consejos Prácticos para Budapest</h3>
       <ul className="text-sm text-gray-700 space-y-2">
-        <li>• <strong>Moneda:</strong> Florín húngaro (HUF). En Vörösmarty solo aceptan tarjeta. Lleva una tarjeta sin comisiones como N26.</li>
+        <li>• <strong>Moneda:</strong> Florín húngaro (HUF). En Vörösmarty solo aceptan tarjeta. Lleva una <a href="/finanzas/tarjetas-sin-comisiones" className="text-sky-600 hover:text-sky-700 underline font-semibold">tarjeta sin comisiones como Revolut</a>.</li>
         <li>• <strong>Precios:</strong> Similares o más altos que en Alemania/Austria. Un vino caliente cuesta unos 2,80-3€.</li>
         <li>• <strong>Mejor momento:</strong> Entre semana por las mañanas para evitar aglomeraciones</li>
         <li>• <strong>Iluminación:</strong> Fashion Street, Váci utca y Gran Boulevard tienen las mejores luces navideñas</li>
