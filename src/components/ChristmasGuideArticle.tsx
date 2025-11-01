@@ -92,7 +92,7 @@ Volver a guías
     <div className="bg-white rounded-xl p-4 border border-green-200">
       <p className="text-sm text-gray-700">
         <strong>💡 Consejo Pro:</strong> Los mercados navideños son muy populares y los alojamientos se agotan rápido. 
-        Reserva vuelos y hoteles con al menos 2-3 meses de antelación para conseguir mejores precios.
+        Reserva vuelos y hoteles con tiempo para conseguir mejores precios.
       </p>
     </div>
   </div>
@@ -899,7 +899,7 @@ Volver a guías
       <div>
         <h3 className="text-lg font-bold text-gray-900 mb-3">💰 Ahorra Dinero:</h3>
         <ul className="text-sm text-gray-700 space-y-2">
-          <li>• <strong>Vuelos:</strong> Busca con 2-3 meses de antelación. Usa Skyscanner en modo incógnito</li>
+          <li>• <strong>Vuelos:</strong> Busca con antelación. Usa Skyscanner en modo incógnito</li>
           <li>• <strong>Alojamiento:</strong> Barrios algo alejados del centro suelen ser más económicos</li>
           <li>• <strong>Comida:</strong> Come en puestos de mercados navideños y supermercados. Evita restaurantes muy turísticos</li>
           <li>• <strong>Transporte:</strong> Compra bonos de varios días de transporte público</li>
