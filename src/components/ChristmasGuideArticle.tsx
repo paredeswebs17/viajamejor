@@ -547,7 +547,6 @@ Volver a guías
         </div>
         <div>
           <ul className="text-sm text-gray-700 space-y-1 list-none">
-            <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Certificado de Excelencia Tripadvisor</li>
             <li className="flex items-center"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3"></span>Más de 1 millón de visitantes/año</li>
             <li className="flex items-center"><span className="w-2 h-2 bg-pink-400 rounded-full mr-3"></span>Conciertos y coros en vivo</li>
             <li className="flex items-center"><span className="w-2 h-2 bg-yellow-400 rounded-full mr-3"></span>Palacio iluminado de fondo</li>
