@@ -240,7 +240,7 @@ Volver a guías
             <li>• <strong>Kürtőskalács:</strong> Pastel en forma de chimenea, calientito y crujiente</li>
             <li>• <strong>Lángos:</strong> Masa frita con queso, ajo y crema agria</li>
             <li>• <strong>Goulash:</strong> Estofado de carne con pimentón</li>
-            <li>• <strong>Forralt bor:</strong> Vino caliente especiado (≈900 HUF / 2,80€)</li>
+            <li>• <strong>Forralt bor:</strong> Vino caliente especiado</li>
           </ul>
         </div>
         <div>
