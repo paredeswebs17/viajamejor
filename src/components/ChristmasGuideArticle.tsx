@@ -25,18 +25,18 @@ Volver a guías
     </div>
 
     <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-4 leading-tight">
-      Mercados Navideños de Europa 2025-2026: Budapest, Praga, Viena, Roma y Amsterdam
+      Mercados Navideños de Europa 2025-2026: Budapest, Praga, Viena y Roma
     </h1>
 
     <div className="flex flex-col gap-4 mb-6 items-start">
       <div className="flex flex-wrap items-center gap-2 text-gray-600 text-xs">
         <span className="flex items-center bg-gray-100 px-3 py-2 rounded-full shadow-sm">
           <Clock className="h-3 w-3 mr-1" />
-          25 min
+          20 min
         </span>
         <span className="flex items-center bg-gray-100 px-3 py-2 rounded-full shadow-sm">
           <MapPin className="h-3 w-3 mr-1" />
-          5 Ciudades Europeas
+          4 Ciudades Europeas
         </span>
         <span className="flex items-center bg-gray-100 px-3 py-2 rounded-full shadow-sm">
           <Calendar className="h-3 w-3 mr-1" />
@@ -49,7 +49,7 @@ Volver a guías
           if (navigator.share) {
             navigator.share({
               title: 'Mercados Navideños Europa 2025-2026 | Guía Completa',
-              text: 'Descubre los mejores mercados navideños de Budapest, Praga, Viena, Roma y Amsterdam',
+              text: 'Descubre los mejores mercados navideños de Budapest, Praga, Viena y Roma',
               url: window.location.href,
             })
             .catch((error) => console.log('Error sharing', error));
@@ -86,7 +86,7 @@ Volver a guías
     </p>
     <p className="text-gray-700 mb-4">
       En esta guía encontrarás información actualizada y contrastada sobre los mejores mercados navideños de 
-      <strong> Budapest, Praga, Viena, Roma y Amsterdam</strong> para la temporada 2025-2026, con fechas oficiales, 
+      <strong> Budapest, Praga, Viena y Roma</strong> para la temporada 2025-2026, con fechas oficiales, 
       horarios, ubicaciones y consejos para disfrutar al máximo de esta experiencia única.
     </p>
     <div className="bg-white rounded-xl p-4 border border-green-200">
@@ -123,7 +123,8 @@ Volver a guías
 
     <p className="text-gray-700 mb-6">
       Budapest brilla con especial intensidad durante la Navidad. Sus mercados navideños, especialmente 
-      el de la Plaza Vörösmarty y la Basílica de San Esteban, han sido votados como los mejores de Europa en 2020, 2022, 2023 y 2024.
+      el de la Plaza Vörösmarty y la Basílica de San Esteban, han sido reconocidos múltiples veces como los mejores de Europa 
+      por European Best Destinations, siendo el Advent Basilica nombrado "Mejor Mercado Navideño de Todos los Tiempos".
     </p>
 
     <div className="bg-red-50 border border-red-200 rounded-xl p-6 mb-6">
@@ -224,7 +225,7 @@ Volver a guías
           <p className="text-sm text-gray-700 mb-2">
             La pista de patinaje sobre hielo más grande de Europa. Abierta desde 1870. Ubicada entre la Plaza de los Héroes y el Castillo de Vajdahunyad.
           </p>
-          <p className="text-xs text-gray-600">Fechas: 15 nov 2025 - 25 feb 2026</p>
+          <p className="text-xs text-gray-600">Fechas estimadas: Med. nov 2025 - Feb 2026 (por confirmar)</p>
         </div>
       </div>
     </div>
@@ -331,7 +332,7 @@ Volver a guías
         <div>
           <h4 className="font-semibold text-gray-900 mb-2">🎄 Lo Más Destacado:</h4>
           <ul className="text-sm text-gray-700 space-y-1 list-none">
-            <li className="flex items-center"><span className="w-2 h-2 bg-yellow-400 rounded-full mr-3"></span>Árbol de 22m con 110.000 luces LED</li>
+            <li className="flex items-center"><span className="w-2 h-2 bg-yellow-400 rounded-full mr-3"></span>Árbol gigante iluminado</li>
             <li className="flex items-center"><span className="w-2 h-2 bg-orange-400 rounded-full mr-3"></span>Espectáculos de música clásica (Smetana)</li>
             <li className="flex items-center"><span className="w-2 h-2 bg-pink-400 rounded-full mr-3"></span>Más de 50 puestos artesanales</li>
             <li className="flex items-center"><span className="w-2 h-2 bg-cyan-400 rounded-full mr-3"></span>Escenario con actuaciones en vivo</li>
@@ -695,8 +696,8 @@ Volver a guías
         <div>
           <h4 className="font-semibold text-gray-900 mb-2">📍 Info Práctica:</h4>
           <ul className="text-sm text-gray-700 space-y-1 list-none">
-            <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>Fechas: 1 dic 2025 - 6 ene 2026</li>
-            <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Horario: 18:00-22:00 (pico)</li>
+            <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>Fechas: Principios dic 2025 - 6 ene 2026</li>
+            <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Horario: 10:00-22:00 (orientativo)</li>
             <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Ubicación: Piazza Navona</li>
             <li className="flex items-center"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3"></span>Entrada: Gratuita</li>
           </ul>
@@ -729,9 +730,9 @@ Volver a guías
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
         <div>
           <ul className="text-sm text-gray-700 space-y-1 list-none">
-            <li className="flex items-center"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3"></span>Fechas: 1 dic 2025 - 7 ene 2026</li>
+            <li className="flex items-center"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3"></span>Fechas: 30 nov 2025 - 6 ene 2026</li>
             <li className="flex items-center"><span className="w-2 h-2 bg-pink-400 rounded-full mr-3"></span>Ubicación: Villa Borghese</li>
-            <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Entrada: ≈15€ por persona</li>
+            <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Entrada: ≈12-15€ por persona</li>
           </ul>
         </div>
         <div>
@@ -760,7 +761,7 @@ Volver a guías
           <p className="text-sm text-gray-700 mb-2">
             Belén monumental en Plaza de San Pedro (desde diciembre). Misa del Gallo el 24 de diciembre a las 19:30 y bendición Urbi et Orbi el 25 de diciembre a las 12:00. Entrada gratuita pero hay que solicitar invitaciones.
           </p>
-          <p className="text-xs text-gray-600">💡 Llegarmuy temprano para conseguir sitio</p>
+          <p className="text-xs text-gray-600">💡 Llegar muy temprano para conseguir sitio</p>
         </div>
 
         <div className="bg-white rounded-lg p-4 shadow-sm">
@@ -836,222 +837,9 @@ Volver a guías
     </div>
   </div>
 
-  {/* Separador */}
-  <div className="flex items-center justify-center mb-8">
-    <div className="flex space-x-2">
-      <Snowflake className="h-5 w-5 text-blue-400" />
-      <Snowflake className="h-5 w-5 text-blue-300" />
-      <Snowflake className="h-5 w-5 text-blue-400" />
-    </div>
-  </div>
-
-  {/* AMSTERDAM */}
-  <div className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
-    <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6 flex items-center">
-      <span className="bg-gradient-to-br from-red-500 via-white to-blue-500 text-red-600 w-14 h-14 rounded-2xl flex items-center justify-center text-xl font-bold mr-4 shadow-lg">🇳🇱</span>
-      Amsterdam - Luces y Canales en Navidad
-    </h2>
-
-    <div className="mb-6">
-      <img
-        src="https://images.pexels.com/photos/1853542/pexels-photo-1853542.jpeg"
-        alt="Amsterdam en Navidad"
-        className="w-full h-48 sm:h-64 object-cover rounded-xl shadow-lg mb-4"
-      />
-    </div>
-
-    <p className="text-gray-700 mb-6">
-      Amsterdam en Navidad es pura magia. Los canales se iluminan con el famoso Festival de Luces, las plazas se llenan de mercados navideños y las calles se adornan con miles de luces creando un ambiente acogedor único.
-    </p>
-
-    <div className="bg-blue-50 border border-blue-200 rounded-xl p-6 mb-6">
-      <h3 className="text-lg font-bold text-gray-900 mb-4">📅 Fechas Oficiales 2025-2026</h3>
-      <p className="text-gray-700 mb-2">
-        El Amsterdam Light Festival se celebra del <strong>27 de noviembre de 2025 al 18 de enero de 2026</strong>. Los mercados navideños abren <strong>desde principios de diciembre</strong>, principalmente del 4 al 28 de diciembre.
-      </p>
-    </div>
-
-    {/* Festival de Luces */}
-    <div className="bg-purple-50 border border-purple-200 rounded-xl p-6 mb-6">
-      <h3 className="text-lg font-bold text-gray-900 mb-4">✨ Amsterdam Light Festival - El Gran Protagonista</h3>
-      <p className="text-gray-700 mb-4">
-        El evento estrella del invierno amsterdamés. Artistas de todo el mundo crean impresionantes instalaciones de luz en los canales, transformando la ciudad en un museo de arte lumínico al aire libre. Cada año tiene un tema diferente.
-      </p>
-      
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
-        <div>
-          <h4 className="font-semibold text-gray-900 mb-2">📍 Info Práctica:</h4>
-          <ul className="text-sm text-gray-700 space-y-1 list-none">
-            <li className="flex items-center"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3"></span>Fechas: 27 nov 2025 - 18 ene 2026</li>
-            <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Horario: 16:30-22:00 diario</li>
-            <li className="flex items-center"><span className="w-2 h-2 bg-pink-400 rounded-full mr-3"></span>Ubicación: Canales del centro</li>
-            <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>≈30 instalaciones artísticas</li>
-          </ul>
-        </div>
-        <div>
-          <h4 className="font-semibold text-gray-900 mb-2">🚤 Cómo Verlo:</h4>
-          <ul className="text-sm text-gray-700 space-y-1 list-none">
-            <li className="flex items-center"><span className="w-2 h-2 bg-yellow-400 rounded-full mr-3"></span>Tour en barco nocturno (recomendado)</li>
-            <li className="flex items-center"><span className="w-2 h-2 bg-orange-400 rounded-full mr-3"></span>Caminando por el canal Keizersgracht</li>
-            <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>Reserva con antelación los cruceros</li>
-            <li className="flex items-center"><span className="w-2 h-2 bg-cyan-400 rounded-full mr-3"></span>Temática anual diferente</li>
-          </ul>
-        </div>
-      </div>
-
-      <div className="bg-white rounded-lg p-3 shadow-sm border border-purple-100">
-        <p className="text-xs text-purple-700">
-          <strong>🎨 Arte con Mensaje:</strong> Las instalaciones no son solo decorativas, muchas transmiten mensajes sobre tecnología, sostenibilidad, sociedad o historia. Un festival artístico único en Europa.
-        </p>
-      </div>
-    </div>
-
-    {/* Ice Village Museumplein */}
-    <div className="bg-red-50 border border-red-200 rounded-xl p-6 mb-6">
-      <h3 className="text-lg font-bold text-gray-900 mb-4">⛸️ Ice Village - Museumplein</h3>
-      <p className="text-gray-700 mb-3">
-        El mercado navideño más tradicional y popular de Amsterdam, ubicado en la plaza de los museos frente al Rijksmuseum. Combina mercado navideño con una gran pista de patinaje sobre hielo.
-      </p>
-      
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
-        <div>
-          <ul className="text-sm text-gray-700 space-y-1 list-none">
-            <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>Fechas: 4-28 diciembre 2025</li>
-            <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Horario: 11:00-20:00 diario</li>
-            <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>24-25 dic: hasta 17:00</li>
-          </ul>
-        </div>
-        <div>
-          <ul className="text-sm text-gray-700 space-y-1 list-none">
-            <li className="flex items-center"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3"></span>Cabañas de madera típicas</li>
-            <li className="flex items-center"><span className="w-2 h-2 bg-yellow-400 rounded-full mr-3"></span>Pista de patinaje grande</li>
-            <li className="flex items-center"><span className="w-2 h-2 bg-pink-400 rounded-full mr-3"></span>Frente al Rijksmuseum</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    {/* Amsterdam Winter Paradise */}
-    <div className="bg-green-50 border border-green-200 rounded-xl p-6 mb-6">
-      <h3 className="text-lg font-bold text-gray-900 mb-4">🎡 Amsterdam Winter Paradise (Winterparadijs)</h3>
-      <p className="text-gray-700 mb-3">
-        El mayor evento navideño de Amsterdam en el centro de convenciones RAI. Similar al Winter Wonderland de Londres: pista de patinaje enorme, mercado navideño, toboganes, noria gigante y actividades para todas las edades.
-      </p>
-      
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
-        <div>
-          <ul className="text-sm text-gray-700 space-y-1 list-none">
-            <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Fechas: 17 dic 2025 - 3 ene 2026</li>
-            <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Horario: 09:00-01:00 diario</li>
-            <li className="flex items-center"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3"></span>Ubicación: Amsterdam RAI</li>
-          </ul>
-        </div>
-        <div>
-          <ul className="text-sm text-gray-700 space-y-1 list-none">
-            <li className="flex items-center"><span className="w-2 h-2 bg-yellow-400 rounded-full mr-3"></span>Mercado con 100+ puestos</li>
-            <li className="flex items-center"><span className="w-2 h-2 bg-orange-400 rounded-full mr-3"></span>Pista de patinaje gigante</li>
-            <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>Noria y toboganes</li>
-          </ul>
-        </div>
-      </div>
-
-      <div className="bg-white rounded-lg p-3 shadow-sm border border-green-100">
-        <p className="text-xs text-green-700">
-          <strong>🎫 Entrada de pago:</strong> Compra tickets online con antelación en www.hetamsterdamsewinterparadijs.nl. El ambiente es espectacular y familiar.
-        </p>
-      </div>
-    </div>
-
-    {/* Otros mercados */}
-    <div className="bg-amber-50 border border-amber-200 rounded-xl p-6 mb-6">
-      <h3 className="text-lg font-bold text-gray-900 mb-4">🎪 Otros Mercados y Eventos</h3>
-      
-      <div className="space-y-4">
-        <div className="bg-white rounded-lg p-4 shadow-sm">
-          <h4 className="font-semibold text-gray-900 mb-2">🌲 Árbol de Navidad Plaza Dam</h4>
-          <p className="text-sm text-gray-700 mb-2">
-            Árbol de 20 metros decorado con miles de luces LED frente al Palacio Real. El encendido es una ceremonia especial con villancicos, actuaciones musicales y puestos de comida. También se encienden los escaparates de De Bijenkorf.
-          </p>
-          <p className="text-xs text-gray-600">Encendido: 13 diciembre 2025 (por confirmar)</p>
-        </div>
-
-        <div className="bg-white rounded-lg p-4 shadow-sm">
-          <h4 className="font-semibold text-gray-900 mb-2">🎨 Funky Xmas Market</h4>
-          <p className="text-sm text-gray-700 mb-2">
-            Mercado alternativo en Westergas. Diseñadores locales venden ropa, arte y joyería artesanal. Ambiente muy local con música en vivo y puestos de comida. Se celebra el tercer domingo de diciembre.
-          </p>
-          <p className="text-xs text-gray-600">Fecha: 21 diciembre 2025</p>
-        </div>
-
-        <div className="bg-white rounded-lg p-4 shadow-sm">
-          <h4 className="font-semibold text-gray-900 mb-2">🎅 Desfile de Sinterklaas</h4>
-          <p className="text-sm text-gray-700 mb-2">
-            Tradición holandesa muy querida. San Nicolás y sus ayudantes llegan desde España (según la tradición) navegando por los canales y recorriendo las calles principales de Amsterdam. Muy especial para los niños.
-          </p>
-          <p className="text-xs text-gray-600">Mediados de noviembre (antes de la Navidad oficial)</p>
-        </div>
-
-        <div className="bg-white rounded-lg p-4 shadow-sm">
-          <h4 className="font-semibold text-gray-900 mb-2">⛸️ Pista Rembrandtplein</h4>
-          <p className="text-sm text-gray-700 mb-2">
-            Pista de patinaje de más de 400m² en el corazón de la vida nocturna amsterdamesa. Con puestos de comida alrededor. Ten en cuenta que no se refrigera artificialmente, así que si no hace frío puede estar mojada.
-          </p>
-        </div>
-      </div>
-    </div>
-
-    {/* Comida típica */}
-    <div className="bg-yellow-50 border border-yellow-200 rounded-xl p-6 mb-6">
-      <h3 className="text-lg font-bold text-gray-900 mb-4">🍷 Delicias Holandesas de Navidad</h3>
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-        <div>
-          <h4 className="font-semibold text-gray-900 mb-2">🍽️ Dulces Navideños:</h4>
-          <ul className="text-sm text-gray-700 space-y-1">
-            <li>• <strong>Oliebollen:</strong> Buñuelos esponjosos espolvoreados con azúcar glas. Típicos de Año Nuevo</li>
-            <li>• <strong>Poffertjes:</strong> Mini tortitas esponjosas con mantequilla y azúcar</li>
-            <li>• <strong>Stroopwafels:</strong> Galletas rellenas de caramelo (se comen calientes)</li>
-            <li>• <strong>Appelflappen:</strong> Tartas de manzana típicas holandesas</li>
-          </ul>
-        </div>
-        <div>
-          <h4 className="font-semibold text-gray-900 mb-2">☕ Bebidas Calientes:</h4>
-          <ul className="text-sm text-gray-700 space-y-1">
-            <li>• <strong>Glühwein:</strong> Vino caliente especiado</li>
-            <li>• <strong>Warme chocolademelk:</strong> Chocolate caliente holandés denso</li>
-            <li>• <strong>Chocomel caliente:</strong> Bebida de chocolate típica</li>
-            <li>• <strong>Bisschopswijn:</strong> Vino episcopal con especias y naranja</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    {/* Consejos */}
-    <div className="bg-cyan-50 border border-cyan-200 rounded-xl p-6 mb-6">
-      <h3 className="text-lg font-bold text-gray-900 mb-4">💡 Consejos Prácticos para Amsterdam</h3>
-      <ul className="text-sm text-gray-700 space-y-2">
-        <li>• <strong>Temporada navideña:</strong> Comienza oficialmente en noviembre con la pista de patinaje, pero los mercados no abren hasta principios de diciembre. Consulta fechas específicas</li>
-        <li>• <strong>Días cortos:</strong> Anochece muy temprano en invierno (sobre las 16:00). Aprovecha las mañanas y disfruta las luces por la tarde-noche</li>
-        <li>• <strong>Festival de Luces:</strong> Mejor verlo en barco nocturno. Reserva cruceros con antelación porque se llenan. Canal Keizersgracht tiene muchas instalaciones</li>
-        <li>• <strong>Lluvia frecuente:</strong> Lleva paraguas y ropa impermeable. El clima holandés es muy cambiante</li>
-        <li>• <strong>Bicicletas:</strong> Cuidado al caminar por los carriles bici. Los ciclistas tienen prioridad absoluta</li>
-        <li>• <strong>Nochevieja:</strong> Fuegos artificiales sobre el río Amstel desde Museumplein. Ambiente festivo en toda la ciudad</li>
-        <li>• <strong>Alojamiento:</strong> Reserva con mínimo 3-4 días para aprovechar bien la ciudad. Las zonas de Rembrandtplein y Leidseplein son muy animadas</li>
-      </ul>
-    </div>
-
-    {/* Enlace guía */}
-    <div className="bg-gradient-to-r from-red-500 via-white to-blue-500 rounded-xl p-6 text-center shadow-lg">
-      <h3 className="text-red-600 font-bold text-lg mb-3">🗺️ ¿Quieres Conocer Más de Amsterdam?</h3>
-      <p className="text-gray-700 text-sm mb-4">Canales, museos (Van Gogh, Rijksmuseum), Casa de Ana Frank, barrio Jordaan y todos los imprescindibles</p>
-      <button className="bg-red-600 text-white hover:bg-red-700 font-semibold px-6 py-3 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300">
-        Ver Guía Completa de Amsterdam →
-      </button>
-    </div>
-  </div>
-
   {/* TABLA COMPARATIVA FINAL */}
   <div className="bg-gradient-to-r from-red-50 via-green-50 to-blue-50 rounded-2xl p-6 sm:p-8 mb-8 shadow-md">
-    <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">📊 Comparativa Rápida: 5 Ciudades</h2>
+    <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">📊 Comparativa Rápida: 4 Ciudades</h2>
     <div className="overflow-x-auto">
       <table className="w-full border-collapse bg-white rounded-xl shadow-sm text-sm">
         <thead>
@@ -1083,15 +871,9 @@ Volver a guías
           </tr>
           <tr className="bg-gray-50">
             <td className="border border-gray-300 px-3 py-2 font-bold">🇮🇹 Roma</td>
-            <td className="border border-gray-300 px-3 py-2">1 dic - 6 ene</td>
+            <td className="border border-gray-300 px-3 py-2">Principios dic - 6 ene</td>
             <td className="border border-gray-300 px-3 py-2">Centro del catolicismo. Piazza Navona + Befana. Clima suave</td>
             <td className="border border-gray-300 px-3 py-2">Suave 8-15°C</td>
-          </tr>
-          <tr>
-            <td className="border border-gray-300 px-3 py-2 font-bold">🇳🇱 Amsterdam</td>
-            <td className="border border-gray-300 px-3 py-2">Festival Luces: 27 nov - 18 ene</td>
-            <td className="border border-gray-300 px-3 py-2">Light Festival único. Canales iluminados. Sinterklaas</td>
-            <td className="border border-gray-300 px-3 py-2">Frío húmedo 3-8°C</td>
           </tr>
         </tbody>
       </table>
@@ -1132,7 +914,6 @@ Volver a guías
         <li>• <strong>Primera vez en mercados navideños:</strong> Viena o Praga (tradición pura)</li>
         <li>• <strong>Busco el mejor mercado:</strong> Budapest (ganador múltiple)</li>
         <li>• <strong>Clima más suave:</strong> Roma (8-15°C)</li>
-        <li>• <strong>Experiencia única:</strong> Amsterdam (Festival de Luces en canales)</li>
         <li>• <strong>Combinación perfecta:</strong> Viena + Budapest + Praga (están cerca, fácil combinar)</li>
       </ul>
     </div>
