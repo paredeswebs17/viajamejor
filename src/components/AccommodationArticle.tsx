@@ -108,7 +108,7 @@ const AccommodationArticle: React.FC<AccommodationArticleProps> = ({ onBack }) =
 
           <div className="mt-6">
             <a
-              href="https://www.booking.com/"
+              href="https://booking.tpk.lv/UianlEEu"
               target="_blank"
               rel="noopener noreferrer"
               className="block w-full bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white font-bold py-3 px-6 rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200 text-center"
