@@ -96,14 +96,15 @@ const CheapFlightsArticle: React.FC<CheapFlightsArticleProps> = ({ onBack }) => 
             <p className="text-gray-700 mb-4">
              Lo que hago:<strong>busco directamente en Kiwi.com para comparar precios, explorar rutas alternativas y, si es necesario, añadir escalas.</strong> A veces la              diferencia puede ser de 100-200€ respecto a buscar solo vuelos directos.
             </p>
-            <div className="bg-sky-50 border border-sky-200 rounded-lg p-4">
-              <p className="text-sky-800 text-sm mb-0">
-                👉 <strong>
-                  <a href="https://kiwi.tpk.lv/z2gZyZ3E" target="_blank" rel="noopener noreferrer">
-                  Aquí tienes el enlace a Kiwi.com
-                  </a>
-                </strong>
-              </p>
+            <div className="mt-6">
+              <a
+                href="https://kiwi.tpk.lv/z2gZyZ3E"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block w-full bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white font-bold py-3 px-6 rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200 text-center"
+              >
+                Ver Kiwi.com
+              </a>
             </div>
           </div>
 
@@ -142,17 +143,18 @@ const CheapFlightsArticle: React.FC<CheapFlightsArticleProps> = ({ onBack }) => 
               modo incógnito para evitar esto.
             </p>
             <p className="text-gray-700 mb-4">
-              Pero el truco definitivo es usar una VPN para cambiar tu ubicación. Los precios pueden variar según 
+              Pero el truco definitivo es usar una VPN para cambiar tu ubicación. Los precios pueden variar según
               el país desde donde busques. He encontrado vuelos 200€ más baratos buscando desde Argentina que desde España.
             </p>
-            <div className="bg-sky-50 border border-sky-200 rounded-lg p-4">
-              <p className="text-sky-800 text-sm mb-0">
-                👉 <strong>
-                  <a href="https://nordvpn.com/es/?ref=viajamejor" target="_blank" rel="noopener noreferrer">
-                  Aquí tienes el enlace a NordVPN
-                  </a>
-               </strong>
-              </p>
+            <div className="mt-6">
+              <a
+                href="https://nordvpn.com/es/?ref=viajamejor"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block w-full bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white font-bold py-3 px-6 rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200 text-center"
+              >
+                Ver NordVPN
+              </a>
             </div>
           </div>
 
@@ -175,13 +177,16 @@ const CheapFlightsArticle: React.FC<CheapFlightsArticleProps> = ({ onBack }) => 
               <p className="text-orange-800 text-sm mb-0">
                 <strong>⚠️ Excepción:</strong> En temporada alta (Navidad, verano) sí que conviene reservar antes.
               </p>
-              <p className="text-orange-800 text-sm mb-0">
-                👉 <strong>
-                  <a href="https://kiwi.tpk.lv/z2gZyZ3E" target="_blank" rel="noopener noreferrer">
-                  Aquí tienes el enlace a Kiwi.com
-                  </a>
-                </strong>
-              </p>
+              <div className="mt-4">
+                <a
+                  href="https://kiwi.tpk.lv/z2gZyZ3E"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block w-full bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white font-bold py-3 px-6 rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200 text-center"
+                >
+                  Ver Kiwi.com
+                </a>
+              </div>
             </div>
           </div>
 
@@ -292,18 +297,19 @@ const CheapFlightsArticle: React.FC<CheapFlightsArticleProps> = ({ onBack }) => 
               tus búsquedas y pueden subir los precios si ven que vuelves varias veces a la misma ruta.
             </p>
             <p className="text-gray-700 mb-4">
-              Cada vez que busco vuelos, lo hago en modo incógnito. Y si veo un precio que me gusta pero no estoy 
-              seguro, borro las cookies antes de volver a buscar. También uso VPN para buscar desde diferentes países 
+              Cada vez que busco vuelos, lo hago en modo incógnito. Y si veo un precio que me gusta pero no estoy
+              seguro, borro las cookies antes de volver a buscar. También uso VPN para buscar desde diferentes países
               - a veces los precios cambian radicalmente.
             </p>
-            <div className="bg-sky-50 border border-sky-200 rounded-lg p-4">
-              <p className="text-sky-800 text-sm mb-0">
-                👉 <strong>
-                  <a href="https://nordvpn.com/es/?ref=viajamejor" target="_blank" rel="noopener noreferrer">
-                  Aquí tienes el enlace a NordVPN
-                  </a>
-               </strong>
-              </p>
+            <div className="mt-6">
+              <a
+                href="https://nordvpn.com/es/?ref=viajamejor"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block w-full bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white font-bold py-3 px-6 rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200 text-center"
+              >
+                Ver NordVPN
+              </a>
             </div>
           </div>
         </div>

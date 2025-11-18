@@ -106,14 +106,15 @@ const AccommodationArticle: React.FC<AccommodationArticleProps> = ({ onBack }) =
             </ul>
           </div>
 
-          <div className="bg-sky-50 border border-sky-200 rounded-lg p-4">
-            <p className="text-sky-800 text-sm mb-0">
-              👉 <strong>
-                <a href="https://www.booking.com/" target="_blank" rel="noopener noreferrer">
-                Aquí tienes el enlace a Booking
-              </a>
-            </strong>
-            </p>
+          <div className="mt-6">
+            <a
+              href="https://www.booking.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block w-full bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white font-bold py-3 px-6 rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200 text-center"
+            >
+              Ver Booking
+            </a>
           </div>
         </div>
 
@@ -154,14 +155,15 @@ const AccommodationArticle: React.FC<AccommodationArticleProps> = ({ onBack }) =
             </ul>
           </div>
 
-          <div className="bg-sky-50 border border-sky-200 rounded-lg p-4">
-            <p className="text-sky-800 text-sm mb-0">
-              👉 <strong>
-                <a href="https://www.airbnb.es/" target="_blank" rel="noopener noreferrer">
-                Aquí tienes el enlace a Airbnb
-              </a>
-            </strong>
-            </p>
+          <div className="mt-6">
+            <a
+              href="https://www.airbnb.es/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block w-full bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white font-bold py-3 px-6 rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200 text-center"
+            >
+              Ver Airbnb
+            </a>
           </div>
         </div>
 
@@ -202,14 +204,15 @@ const AccommodationArticle: React.FC<AccommodationArticleProps> = ({ onBack }) =
             </ul>
           </div>
 
-          <div className="bg-sky-50 border border-sky-200 rounded-lg p-4">
-            <p className="text-sky-800 text-sm mb-0">
-              👉 <strong>
-                <a href="https://www.hostelworld.com/" target="_blank" rel="noopener noreferrer">
-                Aquí tienes el enlace a Hostelworld
-              </a>
-            </strong>
-            </p>
+          <div className="mt-6">
+            <a
+              href="https://www.hostelworld.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block w-full bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white font-bold py-3 px-6 rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200 text-center"
+            >
+              Ver Hostelworld
+            </a>
           </div>
         </div>
 

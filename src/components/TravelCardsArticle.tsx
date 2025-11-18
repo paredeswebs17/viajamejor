@@ -173,14 +173,15 @@ const TravelCardsArticle: React.FC<TravelCardsArticleProps> = ({ onBack }) => {
                 <li>• App móvil completa</li>
               </ul>
             </div>
-            <div className="bg-sky-50 border border-sky-200 rounded-lg p-4">
-              <p className="text-sky-800 text-sm mb-2">
-                👉 <strong>
-                  <a href="https://revolut.com/referral/?referral-code=antoni22jf!OCT1-25-AR-CH1H2-CRY&geo-redirect" target="_blank" rel="noopener noreferrer">
-                    Aquí tienes el enlace a Revolut
-                  </a>
-                </strong>
-              </p>
+            <div className="mt-6">
+              <a
+                href="https://revolut.com/referral/?referral-code=antoni22jf!OCT1-25-AR-CH1H2-CRY&geo-redirect"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block w-full bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white font-bold py-3 px-6 rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200 text-center"
+              >
+                Ver Revolut
+              </a>
             </div>
           </div>
 
@@ -215,14 +216,15 @@ const TravelCardsArticle: React.FC<TravelCardsArticleProps> = ({ onBack }) => {
               </ul>
             </div>
 
-            <div className="bg-sky-50 border border-sky-200 rounded-lg p-4">
-              <p className="text-sky-800 text-sm mb-2">
-                👉 <strong>
-                  <a href="https://n26.com/es-es" target="_blank" rel="noopener noreferrer">
-                    Aquí tienes el enlace a N26
-                  </a>
-                </strong>
-              </p>
+            <div className="mt-6">
+              <a
+                href="https://n26.com/es-es"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block w-full bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white font-bold py-3 px-6 rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200 text-center"
+              >
+                Ver N26
+              </a>
             </div>
           </div>
         </div>

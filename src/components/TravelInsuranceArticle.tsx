@@ -199,14 +199,15 @@ Volver al blog
           </div>
         </div>
       </div>
-    <div className="bg-emerald-50 border border-emerald-200 rounded-lg p-4">
-        <p className="text-emerald-800 text-sm mb-0">
-          👉 <strong>
-            <a href="https://www.iatiseguros.com?r=37344279073491" target="_blank" rel="noopener noreferrer">
-              Aquí tienes el enlace de IATI con mi 5% de descuento
-            </a>
-          </strong>
-        </p>
+    <div className="mt-6">
+        <a
+          href="https://www.iatiseguros.com?r=37344279073491"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="block w-full bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white font-bold py-3 px-6 rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200 text-center"
+        >
+          Ver IATI (5% descuento)
+        </a>
       </div>
     </div>
 
@@ -274,15 +275,16 @@ Volver al blog
     </div>
   </div>
 
-  <div className="bg-sky-50 border border-sky-200 rounded-lg p-4 mt-6">
-  <p className="text-sky-800 text-sm mb-0">
-    👉 <strong>
-      <a href="https://www.iatiseguros.com?r=37344279073491" target="_blank" rel="noopener noreferrer">
-        Aquí tienes el enlace de seguros IATI con mi 5% de descuento
-      </a>
-    </strong>
-  </p>
-</div>
+  <div className="mt-6">
+    <a
+      href="https://www.iatiseguros.com?r=37344279073491"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="block w-full bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white font-bold py-3 px-6 rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200 text-center"
+    >
+      Ver IATI (5% descuento)
+    </a>
+  </div>
 </div>
 
 
@@ -342,14 +344,15 @@ Volver al blog
           Si contratas desde aquí, tienes un 5% de descuento automático en cualquier seguro IATI. 
           Es mi forma de agradecerte que confíes en mi recomendación.
         </p>
-        <div className="space-y-2">
-          <p className="text-emerald-800 text-sm">
-            👉 <strong>
-              <a href="https://www.iatiseguros.com?r=37344279073491" target="_blank" rel="noopener noreferrer">
-                Aquí tienes el enlace a IATI con mi 5% de descuento
-              </a>
-            </strong>
-          </p>
+        <div className="mt-6">
+          <a
+            href="https://www.iatiseguros.com?r=37344279073491"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block w-full bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white font-bold py-3 px-6 rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200 text-center"
+          >
+            Ver IATI (5% descuento)
+          </a>
         </div>
       </div>
     </div>
