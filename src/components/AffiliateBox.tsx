@@ -99,9 +99,9 @@ const AffiliateBox: React.FC<AffiliateBoxProps> = ({
             
             <button
               onClick={handleClick}
-              className="bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white font-bold py-4 px-8 rounded-xl shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-200 text-lg flex items-center space-x-2"
+              className="bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white font-bold py-3 px-6 rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200 flex items-center space-x-2"
             >
-              <span>🚀 {ctaText.toUpperCase()}</span>
+              <span>{ctaText}</span>
               {url && <ExternalLink className="h-5 w-5" />}
             </button>
           </div>
