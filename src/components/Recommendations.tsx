@@ -16,7 +16,7 @@ const Recommendations = () => {
       color: "bg-pink-500",
       textColor: "text-white",
       description: "Hoteles baratos",
-      url: "https://www.booking.com/"
+      url: "https://booking.tpk.lv/UianlEEu"
     },
     {
       title: "Seguros",

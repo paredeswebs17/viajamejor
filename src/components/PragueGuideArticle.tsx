@@ -1359,7 +1359,7 @@ src="https://images.pexels.com/photos/10875122/pexels-photo-10875122.jpeg"
                 </div>
               </div>
               <a
-                href="https://www.booking.com/"
+                href="https://booking.tpk.lv/UianlEEu"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center bg-gradient-to-r from-emerald-500 to-green-500 hover:from-emerald-600 hover:to-green-600 text-white font-bold py-3 px-6 rounded-lg transition-all duration-200 transform hover:scale-105 shadow-lg hover:shadow-xl"
@@ -1529,8 +1529,8 @@ src="https://images.pexels.com/photos/10875122/pexels-photo-10875122.jpeg"
             ✈️ Buscar vuelos
             <ExternalLink className="h-4 w-4 ml-2" />
           </a>
-          <a 
-            href="https://www.booking.com/"
+          <a
+            href="https://booking.tpk.lv/UianlEEu"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center bg-transparent border-2 border-white text-white font-semibold px-6 py-3 rounded-lg hover:bg-white hover:text-emerald-500 transition-colors shadow-lg hover:shadow-xl transform hover:scale-105"

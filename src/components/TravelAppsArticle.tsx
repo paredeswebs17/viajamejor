@@ -121,7 +121,7 @@ const TravelAppsArticle: React.FC<TravelAppsArticleProps> = ({ onBack }) => {
             <div className="bg-emerald-50 border border-emerald-200 rounded-lg p-4">
               <p className="text-emerald-800 text-sm mb-2">
                 👉 <strong>
-                  <a href="https://www.booking.com/" target="_blank" rel="noopener noreferrer">
+                  <a href="https://booking.tpk.lv/UianlEEu" target="_blank" rel="noopener noreferrer">
                   Aquí tienes el enlace a Booking
                   </a>
                 </strong>
