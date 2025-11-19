@@ -250,9 +250,6 @@ const GuidesPage = () => {
               <Euro className="h-4 w-4 mr-2" />
               <span>💰 Presupuestos Reales</span>
             </div>
-            <div className="flex items-center bg-white/10 backdrop-blur-sm rounded-lg px-4 py-2">
-              <span>🗺️ Mapas Detallados</span>
-            </div>
           </div>
         </div>
 
