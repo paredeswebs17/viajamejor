@@ -56,24 +56,20 @@ const ExploreDestinations = () => {
   ];
 
   return (
-    <section className="py-16 bg-white">
+    <section className="relative py-6 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between mb-8">
-          <div>
-            <h2 className="text-3xl font-bold text-gray-900 mb-2">
-              Explora Destinos
-            </h2>
-            <p className="text-gray-600">
-              Guías completas con itinerarios detallados para tu próximo viaje
-            </p>
+        <div className="mb-4">
+          <h2 className="text-lg sm:text-xl font-bold text-gray-900 mb-2">Explora Destinos</h2>
+          <div className="flex items-center justify-between">
+            <p className="text-sm text-gray-600">Desliza para ver más →</p>
+            <Link
+              to="/guias"
+              className="hidden sm:flex items-center text-sky-600 hover:text-sky-700 font-semibold transition-colors group text-sm"
+            >
+              Ver todas
+              <ChevronRight className="h-4 w-4 ml-1 transform group-hover:translate-x-1 transition-transform" />
+            </Link>
           </div>
-          <Link
-            to="/guias"
-            className="hidden sm:flex items-center text-sky-600 hover:text-sky-700 font-semibold transition-colors group"
-          >
-            Ver todas
-            <ChevronRight className="h-5 w-5 ml-1 transform group-hover:translate-x-1 transition-transform" />
-          </Link>
         </div>
 
         <div className="relative">
