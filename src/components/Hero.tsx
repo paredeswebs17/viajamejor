@@ -5,12 +5,13 @@ const Hero = () => {
     <section className="relative overflow-hidden text-white pt-24 pb-12">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
-        <img
-          src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=1920&q=80"
-          alt="Airplane travel"
-          className="w-full h-full object-cover"
+        <div
+          className="w-full h-full bg-cover bg-center bg-no-repeat"
+          style={{
+            backgroundImage: 'url(https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=1920&q=80)'
+          }}
         />
-        <div className="absolute inset-0 bg-gradient-to-br from-teal-500/95 to-teal-600/95"></div>
+        <div className="absolute inset-0 bg-[#14B8A6] opacity-95"></div>
       </div>
 
       {/* Floating Circles */}
