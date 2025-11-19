@@ -8,7 +8,7 @@ const Hero = () => {
         <div
           className="w-full h-full bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: 'url(https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=1920&q=80)'
+            backgroundImage: 'https://images.pexels.com/photos/1004584/pexels-photo-1004584.jpeg'
           }}
         />
         <div className="absolute inset-0 bg-[#14B8A6] opacity-95"></div>
