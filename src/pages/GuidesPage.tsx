@@ -244,7 +244,7 @@ const GuidesPage = () => {
           <div className="flex flex-wrap justify-center gap-4 text-sm">
             <div className="flex items-center bg-white/10 backdrop-blur-sm rounded-lg px-4 py-2">
               <MapPin className="h-4 w-4 mr-2" />
-              <span>📍 40+ Destinos</span>
+              <span>📍 20+ Destinos</span>
             </div>
             <div className="flex items-center bg-white/10 backdrop-blur-sm rounded-lg px-4 py-2">
               <Euro className="h-4 w-4 mr-2" />
