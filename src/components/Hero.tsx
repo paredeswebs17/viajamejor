@@ -5,20 +5,19 @@ const Hero = () => {
     <section className="relative overflow-hidden text-white pt-24 pb-12">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
-        <div
-          className="absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat"
-          style={{
-            backgroundImage: 'url(https://images.pexels.com/photos/1004584/pexels-photo-1004584.jpeg)'
-          }}
+        <img 
+          src="https://images.pexels.com/photos/1004584/pexels-photo-1004584.jpeg?auto=compress&cs=tinysrgb&w=1920" 
+          alt="Travel background"
+          className="absolute inset-0 w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-br from-[#14B8A6]/95 to-[#0d9488]/95"></div>
       </div>
 
       {/* Floating Circles */}
-      <div className="absolute top-10 left-20 w-64 h-64 bg-white/30 rounded-full blur-3xl animate-float"></div>
-      <div className="absolute bottom-10 right-20 w-80 h-80 bg-white/20 rounded-full blur-3xl animate-float" style={{ animationDelay: '2s' }}></div>
+      <div className="absolute top-10 left-20 w-64 h-64 bg-white/30 rounded-full blur-3xl animate-float z-10"></div>
+      <div className="absolute bottom-10 right-20 w-80 h-80 bg-white/20 rounded-full blur-3xl animate-float z-10" style={{ animationDelay: '2s' }}></div>
 
-      <div className="relative z-10 max-w-6xl mx-auto text-center px-4">
+      <div className="relative z-20 max-w-6xl mx-auto text-center px-4">
         {/* Título principal */}
         <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-2 leading-tight">
           Viaja <span className="text-amber-300">más</span>, gasta <span className="text-emerald-300">menos</span>
