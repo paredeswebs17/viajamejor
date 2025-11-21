@@ -9,6 +9,19 @@ const GuidesPage = () => {
 
   const guides = [
     {
+      id: 'demo',
+      title: 'Guía Demo - Prueba de Formato',
+      description: 'Guía de ejemplo para probar el formato y estructura de las guías de viaje. Basada en Roma con toda la información práctica.',
+      image: 'https://images.pexels.com/photos/6199223/pexels-photo-6199223.jpeg',
+      continent: 'Europa',
+      featured: true,
+      available: true,
+      badge: '🧪 Demo',
+      price: '0€',
+      rating: 5.0,
+      url: '/guia-demo'
+    },
+    {
       id: 'christmas',
       title: 'Mercados Navideños de Europa 2025-2026',
       description: 'Descubre los mejores mercados navideños de Budapest, Praga, Viena y Roma. Fechas, horarios, precios y consejos prácticos.',
