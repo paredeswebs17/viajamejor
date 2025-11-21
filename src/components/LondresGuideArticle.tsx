@@ -769,9 +769,7 @@ const LondresGuideArticle: React.FC<LondresGuideArticleProps> = ({ onBack }) => 
           <div className="w-3 h-3 bg-gradient-to-r from-red-400 to-blue-400 rounded-full"></div>
           <div className="w-3 h-3 bg-gradient-to-r from-blue-400 to-red-400 rounded-full"></div>
         </div>
-      </div>
-// MAPA DEL DÍA 1 - COPIA Y PEGA ESTE CÓDIGO DIRECTAMENTE EN TU COMPONENTE
-// Colócalo después del contenido de Camden y antes del separador decorativo
+      </div
 
 {/* Mapa del Día 1 */}
 
