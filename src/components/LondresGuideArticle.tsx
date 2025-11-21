@@ -795,7 +795,7 @@ const LondresGuideArticle: React.FC<LondresGuideArticleProps> = ({ onBack }) => 
       </div>
       <div className="flex items-center space-x-2">
         <div className="w-8 h-8 bg-gradient-to-br from-blue-500 to-purple-500 text-white rounded-full flex items-center justify-center text-sm font-bold shadow-md">3</div>
-        <span className="text-xs sm:text-sm font-medium text-gray-700">St. James's Park</span>
+        <span className="text-xs sm:text-sm font-medium text-gray-700">St. James Park</span>
       </div>
       <div className="flex items-center space-x-2">
         <div className="w-8 h-8 bg-gradient-to-br from-blue-500 to-purple-500 text-white rounded-full flex items-center justify-center text-sm font-bold shadow-md">4</div>
@@ -821,13 +821,15 @@ const LondresGuideArticle: React.FC<LondresGuideArticleProps> = ({ onBack }) => 
   </div>
 
 <a
-href="https://www.google.com/maps/dir/Covent+Garden,+London/Trafalgar+Square,+London/St+James’s+Park,+London/Buckingham+Palace,+London/Westminster+Abbey,+London/Big+Ben,+London/London+Eye,+London/Camden+Town,+London/@51.5243,-0.1428,13z/data=!3m1!4b1!4m50!4m49!1m5!1m1!1s0x487604ce176ac979:0x42af85654e23a0b4!2m2!1d-0.1237!2d51.5119!1m5!1m1!1s0x487604ce3941eb1f:0x1a5342fdf089c627!2m2!1d-0.1281!2d51.508!1m5!1m1!1s0x48760520cd5b5eb5:0xa26abf514d902a7!2m2!1d-0.1357!2d51.5023!1m5!1m1!1s0x48760520cd5b5eb5:0xa26abf514d902a7!2m2!1d-0.1419!2d51.5014!1m5!1m1!1s0x487604c4e4f1c0d1:0xd3d9e5f8ba7c83b0!2m2!1d-0.1275!2d51.4993!1m5!1m1!1s0x487604c38c8cd1d9:0xb78f2474b9a45aa9!2m2!1d-0.1246!2d51.5007!1m5!1m1!1s0x487604c7c7eb9be3:0x3918653583725b56!2m2!1d-0.1195!2d51.5033!1m5!1m1!1s0x48761b31e3777385:0xab60ff1847025329!2m2!1d-0.1428!2d51.5414!3e2"
-target="_blank"
-rel="noopener noreferrer"
-className="block relative w-full rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 group h-[500px]"
+href=“https://www.google.com/maps/dir/Covent+Garden,+London/Trafalgar+Square,+London/St+James+Park,+London/Buckingham+Palace,+London/Westminster+Abbey,+London/Big+Ben,+London/London+Eye,+London/Camden+Town,+London/@51.5243,-0.1428,13z”
+target=”_blank”
+rel=“noopener noreferrer”
+className=“block relative w-full rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 group h-[500px]”
+
+```
 <img 
   src="https://maps.googleapis.com/maps/api/staticmap?size=1200x800&maptype=roadmap&markers=color:blue%7Clabel:1%7C51.5119,-0.1237&markers=color:blue%7Clabel:2%7C51.508,-0.1281&markers=color:blue%7Clabel:3%7C51.5023,-0.1357&markers=color:blue%7Clabel:4%7C51.5014,-0.1419&markers=color:blue%7Clabel:5%7C51.4993,-0.1275&markers=color:blue%7Clabel:6%7C51.5007,-0.1246&markers=color:blue%7Clabel:7%7C51.5033,-0.1195&markers=color:blue%7Clabel:8%7C51.5414,-0.1428&path=color:0x4285F4%7Cweight:3%7C51.5119,-0.1237%7C51.508,-0.1281%7C51.5023,-0.1357%7C51.5014,-0.1419%7C51.4993,-0.1275%7C51.5007,-0.1246%7C51.5033,-0.1195%7C51.5414,-0.1428&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
-  alt="Mapa de la ruta del día 1"
+  alt="Mapa de la ruta del dia 1"
   className="w-full h-full object-cover"
 />
 <div className="absolute inset-0 bg-blue-600 bg-opacity-0 group-hover:bg-opacity-10 transition-all duration-300 flex items-center justify-center">
@@ -838,6 +840,7 @@ className="block relative w-full rounded-xl overflow-hidden shadow-lg hover:shad
     <span>Ver Ruta Interactiva</span>
   </div>
 </div>
+```
 
   </a>
 
@@ -849,13 +852,14 @@ className="block relative w-full rounded-xl overflow-hidden shadow-lg hover:shad
       <span className="font-semibold text-blue-900">⏱️ Tiempo de recorrido:</span> Todo el día (9:00h - 20:00h)
     </p>
     <p className="text-sm text-gray-700 mb-2">
-      <span className="font-semibold text-blue-900">🚇 Transporte:</span> Metro desde London Eye hasta Camden (Jubilee Line hasta Waterloo, luego Northern Line)
+      <span className="font-semibold text-blue-900">🚇 Transporte:</span> Metro desde London Eye hasta Camden
     </p>
     <p className="text-xs text-blue-600 italic mt-3">
       💡 Haz clic en el mapa para ver la ruta interactiva en Google Maps
     </p>
   </div>
 </div>
+    
       {/* DÍA 2 */}
       <div className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
         <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6 flex items-center">
