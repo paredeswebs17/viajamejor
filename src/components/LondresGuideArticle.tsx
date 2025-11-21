@@ -822,9 +822,9 @@ const LondresGuideArticle: React.FC<LondresGuideArticleProps> = ({ onBack }) => 
 
 <a
 href="https://www.google.com/maps/dir/Covent+Garden,+London/Trafalgar+Square,+London/St+James’s+Park,+London/Buckingham+Palace,+London/Westminster+Abbey,+London/Big+Ben,+London/London+Eye,+London/Camden+Town,+London/@51.5243,-0.1428,13z/data=!3m1!4b1!4m50!4m49!1m5!1m1!1s0x487604ce176ac979:0x42af85654e23a0b4!2m2!1d-0.1237!2d51.5119!1m5!1m1!1s0x487604ce3941eb1f:0x1a5342fdf089c627!2m2!1d-0.1281!2d51.508!1m5!1m1!1s0x48760520cd5b5eb5:0xa26abf514d902a7!2m2!1d-0.1357!2d51.5023!1m5!1m1!1s0x48760520cd5b5eb5:0xa26abf514d902a7!2m2!1d-0.1419!2d51.5014!1m5!1m1!1s0x487604c4e4f1c0d1:0xd3d9e5f8ba7c83b0!2m2!1d-0.1275!2d51.4993!1m5!1m1!1s0x487604c38c8cd1d9:0xb78f2474b9a45aa9!2m2!1d-0.1246!2d51.5007!1m5!1m1!1s0x487604c7c7eb9be3:0x3918653583725b56!2m2!1d-0.1195!2d51.5033!1m5!1m1!1s0x48761b31e3777385:0xab60ff1847025329!2m2!1d-0.1428!2d51.5414!3e2"
-target=“_blank“
-rel=“noopener noreferrer“
-className=“block relative w-full rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 group“
+target="_blank"
+rel="noopener noreferrer"
+className="block relative w-full rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 group"
 style={{ height: ‘500px’ }}
 
 <img 
