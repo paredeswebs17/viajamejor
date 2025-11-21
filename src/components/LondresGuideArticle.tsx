@@ -770,15 +770,79 @@ const LondresGuideArticle: React.FC<LondresGuideArticleProps> = ({ onBack }) => 
           <div className="w-3 h-3 bg-gradient-to-r from-blue-400 to-red-400 rounded-full"></div>
         </div>
       </div>
-{/* AQUÍ VA EL MAPA DEL DÍA 1 */}
-<MapaDia1 />
+// MAPA DEL DÍA 1 - COPIA Y PEGA ESTE CÓDIGO DIRECTAMENTE EN TU COMPONENTE
+// Colócalo después del contenido de Camden y antes del separador decorativo
 
-{/* Separador decorativo */}
-<div className="flex items-center justify-center mb-8">
-  <div className="flex space-x-2">
-    <div className="w-3 h-3 bg-gradient-to-r from-blue-400 to-red-400 rounded-full"></div>
-    <div className="w-3 h-3 bg-gradient-to-r from-red-400 to-blue-400 rounded-full"></div>
-    <div className="w-3 h-3 bg-gradient-to-r from-blue-400 to-red-400 rounded-full"></div>
+{/* Mapa del Día 1 */}
+
+<div className="bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50 border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-lg hover:shadow-xl transition-all duration-300 mb-8">
+  <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6 flex items-center">
+    <svg xmlns="http://www.w3.org/2000/svg" className="w-7 h-7 mr-3 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+    </svg>
+    Mapa del Día 1: Ruta Completa
+  </h3>
+
+  <div className="bg-white rounded-xl p-4 mb-6 shadow-md border border-gray-100">
+    <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
+      <div className="flex items-center space-x-2">
+        <div className="w-8 h-8 bg-gradient-to-br from-blue-500 to-purple-500 text-white rounded-full flex items-center justify-center text-sm font-bold shadow-md">1</div>
+        <span className="text-xs sm:text-sm font-medium text-gray-700">Covent Garden</span>
+      </div>
+      <div className="flex items-center space-x-2">
+        <div className="w-8 h-8 bg-gradient-to-br from-blue-500 to-purple-500 text-white rounded-full flex items-center justify-center text-sm font-bold shadow-md">2</div>
+        <span className="text-xs sm:text-sm font-medium text-gray-700">Trafalgar Square</span>
+      </div>
+      <div className="flex items-center space-x-2">
+        <div className="w-8 h-8 bg-gradient-to-br from-blue-500 to-purple-500 text-white rounded-full flex items-center justify-center text-sm font-bold shadow-md">3</div>
+        <span className="text-xs sm:text-sm font-medium text-gray-700">St. James's Park</span>
+      </div>
+      <div className="flex items-center space-x-2">
+        <div className="w-8 h-8 bg-gradient-to-br from-blue-500 to-purple-500 text-white rounded-full flex items-center justify-center text-sm font-bold shadow-md">4</div>
+        <span className="text-xs sm:text-sm font-medium text-gray-700">Buckingham Palace</span>
+      </div>
+      <div className="flex items-center space-x-2">
+        <div className="w-8 h-8 bg-gradient-to-br from-blue-500 to-purple-500 text-white rounded-full flex items-center justify-center text-sm font-bold shadow-md">5</div>
+        <span className="text-xs sm:text-sm font-medium text-gray-700">Westminster Abbey</span>
+      </div>
+      <div className="flex items-center space-x-2">
+        <div className="w-8 h-8 bg-gradient-to-br from-blue-500 to-purple-500 text-white rounded-full flex items-center justify-center text-sm font-bold shadow-md">6</div>
+        <span className="text-xs sm:text-sm font-medium text-gray-700">Big Ben</span>
+      </div>
+      <div className="flex items-center space-x-2">
+        <div className="w-8 h-8 bg-gradient-to-br from-blue-500 to-purple-500 text-white rounded-full flex items-center justify-center text-sm font-bold shadow-md">7</div>
+        <span className="text-xs sm:text-sm font-medium text-gray-700">London Eye</span>
+      </div>
+      <div className="flex items-center space-x-2">
+        <div className="w-8 h-8 bg-gradient-to-br from-blue-500 to-purple-500 text-white rounded-full flex items-center justify-center text-sm font-bold shadow-md">8</div>
+        <span className="text-xs sm:text-sm font-medium text-gray-700">Camden Town</span>
+      </div>
+    </div>
+  </div>
+
+  <div className="relative w-full bg-gray-200 rounded-xl overflow-hidden shadow-inner" style={{ height: '500px' }}>
+    <iframe
+      width="100%"
+      height="100%"
+      style={{ border: 0 }}
+      loading="lazy"
+      allowFullScreen
+      referrerPolicy="no-referrer-when-downgrade"
+      src="https://www.google.com/maps/embed/v1/directions?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8&origin=Covent+Garden+London&destination=Camden+Town+London&waypoints=Trafalgar+Square+London|St+James+Park+London|Buckingham+Palace+London|Westminster+Abbey+London|Big+Ben+London|London+Eye+London&mode=walking"
+    />
+  </div>
+
+  <div className="mt-6 bg-gradient-to-r from-blue-100 to-purple-100 border border-blue-200 rounded-xl p-4">
+    <p className="text-sm text-gray-700 mb-2">
+      <span className="font-semibold text-blue-900">📍 Distancia total:</span> Aproximadamente 7-8 km caminando
+    </p>
+    <p className="text-sm text-gray-700 mb-2">
+      <span className="font-semibold text-blue-900">⏱️ Tiempo de recorrido:</span> Todo el día (9:00h - 20:00h)
+    </p>
+    <p className="text-sm text-gray-700">
+      <span className="font-semibold text-blue-900">🚇 Transporte:</span> Metro desde London Eye hasta Camden (Jubilee Line hasta Waterloo, luego Northern Line)
+    </p>
   </div>
 </div>
       {/* DÍA 2 */}
