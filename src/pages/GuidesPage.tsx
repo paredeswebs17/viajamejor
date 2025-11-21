@@ -90,6 +90,20 @@ const GuidesPage = () => {
       url: '/roma-3-dias'
     },
     {
+      id: 'londres',
+      title: 'Londres en 3 días',
+      description: 'Capital británica con Big Ben, Torre de Londres, museos gratuitos y palacios reales. Historia y modernidad.',
+      image: 'https://images.pexels.com/photos/460672/pexels-photo-460672.jpeg',
+      price: '100€',
+      rating: 4.9,
+      continent: 'Europa',
+      budget: '€€€',
+      featured: true,
+      available: true,
+      badge: '🇬🇧 Británica',
+      url: '/londres-3-dias'
+    },
+    {
       id: 'berlin',
       title: 'Berlín en 4 días',
       description: 'Historia, arte urbano y vida nocturna en la capital alemana',
