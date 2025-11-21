@@ -821,12 +821,11 @@ const LondresGuideArticle: React.FC<LondresGuideArticleProps> = ({ onBack }) => 
   </div>
 
 <a
-href=“https://www.google.com/maps/dir/Covent+Garden,+London/Trafalgar+Square,+London/St+James+Park,+London/Buckingham+Palace,+London/Westminster+Abbey,+London/Big+Ben,+London/London+Eye,+London/Camden+Town,+London/@51.5243,-0.1428,13z”
-target=”_blank”
-rel=“noopener noreferrer”
-className=“block relative w-full rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 group h-[500px]”
+href="https://www.google.com/maps/dir/Covent+Garden,+London/Trafalgar+Square,+London/St+James+Park,+London/Buckingham+Palace,+London/Westminster+Abbey,+London/Big+Ben,+London/London+Eye,+London/Camden+Town,+London/@51.5243,-0.1428,13z"
+target="_blank"
+rel="noopener noreferrer"
+className="block relative w-full rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 group h-[500px]"
 
-```
 <img 
   src="https://maps.googleapis.com/maps/api/staticmap?size=1200x800&maptype=roadmap&markers=color:blue%7Clabel:1%7C51.5119,-0.1237&markers=color:blue%7Clabel:2%7C51.508,-0.1281&markers=color:blue%7Clabel:3%7C51.5023,-0.1357&markers=color:blue%7Clabel:4%7C51.5014,-0.1419&markers=color:blue%7Clabel:5%7C51.4993,-0.1275&markers=color:blue%7Clabel:6%7C51.5007,-0.1246&markers=color:blue%7Clabel:7%7C51.5033,-0.1195&markers=color:blue%7Clabel:8%7C51.5414,-0.1428&path=color:0x4285F4%7Cweight:3%7C51.5119,-0.1237%7C51.508,-0.1281%7C51.5023,-0.1357%7C51.5014,-0.1419%7C51.4993,-0.1275%7C51.5007,-0.1246%7C51.5033,-0.1195%7C51.5414,-0.1428&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
   alt="Mapa de la ruta del dia 1"
