@@ -770,7 +770,17 @@ const LondresGuideArticle: React.FC<LondresGuideArticleProps> = ({ onBack }) => 
           <div className="w-3 h-3 bg-gradient-to-r from-blue-400 to-red-400 rounded-full"></div>
         </div>
       </div>
+{/* AQUÍ VA EL MAPA DEL DÍA 1 */}
+<MapaDia1 />
 
+{/* Separador decorativo */}
+<div className="flex items-center justify-center mb-8">
+  <div className="flex space-x-2">
+    <div className="w-3 h-3 bg-gradient-to-r from-blue-400 to-red-400 rounded-full"></div>
+    <div className="w-3 h-3 bg-gradient-to-r from-red-400 to-blue-400 rounded-full"></div>
+    <div className="w-3 h-3 bg-gradient-to-r from-blue-400 to-red-400 rounded-full"></div>
+  </div>
+</div>
       {/* DÍA 2 */}
       <div className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
         <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6 flex items-center">
