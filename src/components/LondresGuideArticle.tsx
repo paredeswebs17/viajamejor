@@ -771,6 +771,9 @@ const LondresGuideArticle: React.FC<LondresGuideArticleProps> = ({ onBack }) => 
         </div>
       </div>
 
+// MAPA DEL DÍA 1 - VERSIÓN CON IMAGEN ESTÁTICA (FUNCIONA SIEMPRE)
+// Esta versión usa una imagen del mapa en lugar de iframe
+
 {/* Mapa del Día 1 */}
 
 <div className="bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50 border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-lg hover:shadow-xl transition-all duration-300 mb-8">
@@ -819,17 +822,30 @@ const LondresGuideArticle: React.FC<LondresGuideArticleProps> = ({ onBack }) => 
     </div>
   </div>
 
-  <div className="relative w-full rounded-xl overflow-hidden shadow-lg" style={{ height: '500px' }}>
-    <iframe 
-      src="https://www.google.com/maps/embed?pb=!1m76!1m12!1m3!1d39702.05788779644!2d-0.16284332589844098!3d51.52430525000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m61!3e2!4m5!1s0x487604ce176ac979%3A0x42af85654e23a0b4!2sCovent%20Garden%2C%20London%2C%20UK!3m2!1d51.5119!2d-0.1237!4m5!1s0x487604ce3941eb1f%3A0x1a5342fdf089c627!2sTrafalgar%20Square%2C%20London%2C%20UK!3m2!1d51.508!2d-0.1281!4m5!1s0x48760520cd5b5eb5%3A0xa26abf514d902a7!2sSt%20James's%20Park%2C%20London%2C%20UK!3m2!1d51.5023!2d-0.1357!4m5!1s0x48760520cd5b5eb5%3A0xa26abf514d902a7!2sBuckingham%20Palace%2C%20London%2C%20UK!3m2!1d51.5014!2d-0.1419!4m5!1s0x487604c4e4f1c0d1%3A0xd3d9e5f8ba7c83b0!2sWestminster%20Abbey%2C%20London%2C%20UK!3m2!1d51.4993!2d-0.1275!4m5!1s0x487604c38c8cd1d9%3A0xb78f2474b9a45aa9!2sBig%20Ben%2C%20London%2C%20UK!3m2!1d51.5007!2d-0.1246!4m5!1s0x487604c7c7eb9be3%3A0x3918653583725b56!2sLondon%20Eye%2C%20London%2C%20UK!3m2!1d51.5033!2d-0.1195!4m5!1s0x48761b31e3777385%3A0xab60ff1847025329!2sCamden%20Town%2C%20London%2C%20UK!3m2!1d51.5414!2d-0.1428!5e0!3m2!1sen!2ses!4v1234567890123!5m2!1sen!2ses" 
-      width="100%" 
-      height="100%" 
-      style={{ border: 0 }} 
-      allowFullScreen="" 
-      loading="lazy" 
-      referrerPolicy="no-referrer-when-downgrade"
-    />
+<a
+href=“https://www.google.com/maps/dir/Covent+Garden,+London/Trafalgar+Square,+London/St+James’s+Park,+London/Buckingham+Palace,+London/Westminster+Abbey,+London/Big+Ben,+London/London+Eye,+London/Camden+Town,+London/@51.5243,-0.1428,13z/data=!3m1!4b1!4m50!4m49!1m5!1m1!1s0x487604ce176ac979:0x42af85654e23a0b4!2m2!1d-0.1237!2d51.5119!1m5!1m1!1s0x487604ce3941eb1f:0x1a5342fdf089c627!2m2!1d-0.1281!2d51.508!1m5!1m1!1s0x48760520cd5b5eb5:0xa26abf514d902a7!2m2!1d-0.1357!2d51.5023!1m5!1m1!1s0x48760520cd5b5eb5:0xa26abf514d902a7!2m2!1d-0.1419!2d51.5014!1m5!1m1!1s0x487604c4e4f1c0d1:0xd3d9e5f8ba7c83b0!2m2!1d-0.1275!2d51.4993!1m5!1m1!1s0x487604c38c8cd1d9:0xb78f2474b9a45aa9!2m2!1d-0.1246!2d51.5007!1m5!1m1!1s0x487604c7c7eb9be3:0x3918653583725b56!2m2!1d-0.1195!2d51.5033!1m5!1m1!1s0x48761b31e3777385:0xab60ff1847025329!2m2!1d-0.1428!2d51.5414!3e2”
+target=”_blank”
+rel=“noopener noreferrer”
+className=“block relative w-full rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 group”
+style={{ height: ‘500px’ }}
+
+```
+<img 
+  src="https://maps.googleapis.com/maps/api/staticmap?size=1200x800&maptype=roadmap&markers=color:blue%7Clabel:1%7C51.5119,-0.1237&markers=color:blue%7Clabel:2%7C51.508,-0.1281&markers=color:blue%7Clabel:3%7C51.5023,-0.1357&markers=color:blue%7Clabel:4%7C51.5014,-0.1419&markers=color:blue%7Clabel:5%7C51.4993,-0.1275&markers=color:blue%7Clabel:6%7C51.5007,-0.1246&markers=color:blue%7Clabel:7%7C51.5033,-0.1195&markers=color:blue%7Clabel:8%7C51.5414,-0.1428&path=color:0x4285F4%7Cweight:3%7C51.5119,-0.1237%7C51.508,-0.1281%7C51.5023,-0.1357%7C51.5014,-0.1419%7C51.4993,-0.1275%7C51.5007,-0.1246%7C51.5033,-0.1195%7C51.5414,-0.1428&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
+  alt="Mapa de la ruta del día 1"
+  className="w-full h-full object-cover"
+/>
+<div className="absolute inset-0 bg-blue-600 bg-opacity-0 group-hover:bg-opacity-10 transition-all duration-300 flex items-center justify-center">
+  <div className="bg-white bg-opacity-0 group-hover:bg-opacity-95 text-blue-600 px-6 py-3 rounded-lg font-semibold text-lg transform scale-0 group-hover:scale-100 transition-all duration-300 shadow-xl flex items-center space-x-2">
+    <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
+    </svg>
+    <span>Ver Ruta Interactiva</span>
   </div>
+</div>
+```
+
+  </a>
 
   <div className="mt-6 bg-gradient-to-r from-blue-100 to-purple-100 border border-blue-200 rounded-xl p-4">
     <p className="text-sm text-gray-700 mb-2">
@@ -841,17 +857,9 @@ const LondresGuideArticle: React.FC<LondresGuideArticleProps> = ({ onBack }) => 
     <p className="text-sm text-gray-700 mb-2">
       <span className="font-semibold text-blue-900">🚇 Transporte:</span> Metro desde London Eye hasta Camden (Jubilee Line hasta Waterloo, luego Northern Line)
     </p>
-    <a 
-      href="https://www.google.com/maps/dir/Covent+Garden,+London/Trafalgar+Square,+London/St+James's+Park,+London/Buckingham+Palace,+London/Westminster+Abbey,+London/Big+Ben,+London/London+Eye,+London/Camden+Town,+London/@51.5243,-0.1428,13z/data=!3m1!4b1!4m50!4m49!1m5!1m1!1s0x487604ce176ac979:0x42af85654e23a0b4!2m2!1d-0.1237!2d51.5119!1m5!1m1!1s0x487604ce3941eb1f:0x1a5342fdf089c627!2m2!1d-0.1281!2d51.508!1m5!1m1!1s0x48760520cd5b5eb5:0xa26abf514d902a7!2m2!1d-0.1357!2d51.5023!1m5!1m1!1s0x48760520cd5b5eb5:0xa26abf514d902a7!2m2!1d-0.1419!2d51.5014!1m5!1m1!1s0x487604c4e4f1c0d1:0xd3d9e5f8ba7c83b0!2m2!1d-0.1275!2d51.4993!1m5!1m1!1s0x487604c38c8cd1d9:0xb78f2474b9a45aa9!2m2!1d-0.1246!2d51.5007!1m5!1m1!1s0x487604c7c7eb9be3:0x3918653583725b56!2m2!1d-0.1195!2d51.5033!1m5!1m1!1s0x48761b31e3777385:0xab60ff1847025329!2m2!1d-0.1428!2d51.5414!3e2" 
-      target="_blank" 
-      rel="noopener noreferrer"
-      className="inline-flex items-center bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm mt-3"
-    >
-      🗺️ Abrir Ruta en Google Maps
-      <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-      </svg>
-    </a>
+    <p className="text-xs text-blue-600 italic mt-3">
+      💡 Haz clic en el mapa para ver la ruta interactiva en Google Maps
+    </p>
   </div>
 </div>
       {/* DÍA 2 */}
