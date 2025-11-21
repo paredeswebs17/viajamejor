@@ -771,8 +771,6 @@ const LondresGuideArticle: React.FC<LondresGuideArticleProps> = ({ onBack }) => 
         </div>
       </div>
 
-// MAPA DEL DÍA 1 - VERSIÓN CON IMAGEN ESTÁTICA (FUNCIONA SIEMPRE)
-// Esta versión usa una imagen del mapa en lugar de iframe
 
 {/* Mapa del Día 1 */}
 
