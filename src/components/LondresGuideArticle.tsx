@@ -769,7 +769,8 @@ const LondresGuideArticle: React.FC<LondresGuideArticleProps> = ({ onBack }) => 
           <div className="w-3 h-3 bg-gradient-to-r from-red-400 to-blue-400 rounded-full"></div>
           <div className="w-3 h-3 bg-gradient-to-r from-blue-400 to-red-400 rounded-full"></div>
         </div>
-      </div
+      </div>
+
 
 {/* Mapa del Día 1 */}
 
