@@ -769,8 +769,7 @@ const LondresGuideArticle: React.FC<LondresGuideArticleProps> = ({ onBack }) => 
           <div className="w-3 h-3 bg-gradient-to-r from-red-400 to-blue-400 rounded-full"></div>
           <div className="w-3 h-3 bg-gradient-to-r from-blue-400 to-red-400 rounded-full"></div>
         </div>
-      </div>
-
+      </di
 
 {/* Mapa del Día 1 */}
 
@@ -820,15 +819,15 @@ const LondresGuideArticle: React.FC<LondresGuideArticleProps> = ({ onBack }) => 
     </div>
   </div>
 
-  <div className="relative w-full bg-gray-200 rounded-xl overflow-hidden shadow-inner" style={{ height: '500px' }}>
-    <iframe
-      width="100%"
-      height="100%"
-      style={{ border: 0 }}
-      loading="lazy"
-      allowFullScreen
+  <div className="relative w-full rounded-xl overflow-hidden shadow-lg" style={{ height: '500px' }}>
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m76!1m12!1m3!1d39702.05788779644!2d-0.16284332589844098!3d51.52430525000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m61!3e2!4m5!1s0x487604ce176ac979%3A0x42af85654e23a0b4!2sCovent%20Garden%2C%20London%2C%20UK!3m2!1d51.5119!2d-0.1237!4m5!1s0x487604ce3941eb1f%3A0x1a5342fdf089c627!2sTrafalgar%20Square%2C%20London%2C%20UK!3m2!1d51.508!2d-0.1281!4m5!1s0x48760520cd5b5eb5%3A0xa26abf514d902a7!2sSt%20James's%20Park%2C%20London%2C%20UK!3m2!1d51.5023!2d-0.1357!4m5!1s0x48760520cd5b5eb5%3A0xa26abf514d902a7!2sBuckingham%20Palace%2C%20London%2C%20UK!3m2!1d51.5014!2d-0.1419!4m5!1s0x487604c4e4f1c0d1%3A0xd3d9e5f8ba7c83b0!2sWestminster%20Abbey%2C%20London%2C%20UK!3m2!1d51.4993!2d-0.1275!4m5!1s0x487604c38c8cd1d9%3A0xb78f2474b9a45aa9!2sBig%20Ben%2C%20London%2C%20UK!3m2!1d51.5007!2d-0.1246!4m5!1s0x487604c7c7eb9be3%3A0x3918653583725b56!2sLondon%20Eye%2C%20London%2C%20UK!3m2!1d51.5033!2d-0.1195!4m5!1s0x48761b31e3777385%3A0xab60ff1847025329!2sCamden%20Town%2C%20London%2C%20UK!3m2!1d51.5414!2d-0.1428!5e0!3m2!1sen!2ses!4v1234567890123!5m2!1sen!2ses" 
+      width="100%" 
+      height="100%" 
+      style={{ border: 0 }} 
+      allowFullScreen="" 
+      loading="lazy" 
       referrerPolicy="no-referrer-when-downgrade"
-      src="https://www.google.com/maps/embed/v1/directions?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8&origin=Covent+Garden+London&destination=Camden+Town+London&waypoints=Trafalgar+Square+London|St+James+Park+London|Buckingham+Palace+London|Westminster+Abbey+London|Big+Ben+London|London+Eye+London&mode=walking"
     />
   </div>
 
@@ -839,9 +838,20 @@ const LondresGuideArticle: React.FC<LondresGuideArticleProps> = ({ onBack }) => 
     <p className="text-sm text-gray-700 mb-2">
       <span className="font-semibold text-blue-900">⏱️ Tiempo de recorrido:</span> Todo el día (9:00h - 20:00h)
     </p>
-    <p className="text-sm text-gray-700">
+    <p className="text-sm text-gray-700 mb-2">
       <span className="font-semibold text-blue-900">🚇 Transporte:</span> Metro desde London Eye hasta Camden (Jubilee Line hasta Waterloo, luego Northern Line)
     </p>
+    <a 
+      href="https://www.google.com/maps/dir/Covent+Garden,+London/Trafalgar+Square,+London/St+James's+Park,+London/Buckingham+Palace,+London/Westminster+Abbey,+London/Big+Ben,+London/London+Eye,+London/Camden+Town,+London/@51.5243,-0.1428,13z/data=!3m1!4b1!4m50!4m49!1m5!1m1!1s0x487604ce176ac979:0x42af85654e23a0b4!2m2!1d-0.1237!2d51.5119!1m5!1m1!1s0x487604ce3941eb1f:0x1a5342fdf089c627!2m2!1d-0.1281!2d51.508!1m5!1m1!1s0x48760520cd5b5eb5:0xa26abf514d902a7!2m2!1d-0.1357!2d51.5023!1m5!1m1!1s0x48760520cd5b5eb5:0xa26abf514d902a7!2m2!1d-0.1419!2d51.5014!1m5!1m1!1s0x487604c4e4f1c0d1:0xd3d9e5f8ba7c83b0!2m2!1d-0.1275!2d51.4993!1m5!1m1!1s0x487604c38c8cd1d9:0xb78f2474b9a45aa9!2m2!1d-0.1246!2d51.5007!1m5!1m1!1s0x487604c7c7eb9be3:0x3918653583725b56!2m2!1d-0.1195!2d51.5033!1m5!1m1!1s0x48761b31e3777385:0xab60ff1847025329!2m2!1d-0.1428!2d51.5414!3e2" 
+      target="_blank" 
+      rel="noopener noreferrer"
+      className="inline-flex items-center bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm mt-3"
+    >
+      🗺️ Abrir Ruta en Google Maps
+      <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+      </svg>
+    </a>
   </div>
 </div>
       {/* DÍA 2 */}
