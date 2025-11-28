@@ -192,12 +192,6 @@ Volver a guías
         </a>
       </div>
 
-      <div className="bg-red-100 border border-red-300 rounded-lg p-3">
-        <p className="font-medium text-red-800 mb-1">🎉 JUBILEO 2025 - Año Santo</p>
-        <p className="text-red-700 text-xs">
-          Roma está celebrando el Año Jubilar 2025 con gran afluencia de peregrinos. Reserva transporte, alojamiento y entradas con MÁXIMA antelación. Habrá más turistas de lo habitual durante todo el año.
-        </p>
-      </div>
     </div>
   </div>
 
@@ -223,12 +217,12 @@ Volver a guías
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
           <div className="bg-gradient-to-br from-red-50 to-amber-50 rounded-xl p-4 border border-red-200">
             <h4 className="font-bold text-gray-900 mb-2">Hotel Smeraldo ⭐⭐⭐</h4>
-            <p className="text-xs text-gray-600 mb-2">📍 Via dei Chiavari 20</p>
+            <p className="text-xs text-gray-600 mb-2">📍 Cerca de Plaza Campo de' Fiori</p>
             <p className="text-sm text-gray-700 mb-3">Hotel encantador en pleno centro, puedes recorrer Roma andando desde aquí. Excelente relación calidad-precio.</p>
             <div className="flex items-center justify-between flex-wrap gap-2">
               <span className="text-lg font-bold text-red-600">€€</span>
               <a
-                href="https://www.booking.com/hotel/it/smeraldo.es.html?aid=7956794&no_rooms=1&group_adults=2"
+                href="https://booking.tpk.lv/IHfFpFIB"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm"
@@ -246,7 +240,7 @@ Volver a guías
             <div className="flex items-center justify-between flex-wrap gap-2">
               <span className="text-lg font-bold text-amber-600">€€€</span>
               <a
-                href="https://www.booking.com/hotel/it/terrace-pantheon-relais.es.html?aid=7956794&no_rooms=1&group_adults=2"
+                href="https://booking.tpk.lv/AD5vS3Hf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm"
@@ -285,7 +279,7 @@ Volver a guías
             <div className="flex items-center justify-between flex-wrap gap-2">
               <span className="text-lg font-bold text-purple-600">€€€</span>
               <a
-                href="https://www.booking.com/hotel/it/donna-laura-palace-by-omnia-hotels.es.html?aid=7956794&no_rooms=1&group_adults=2"
+                href="https://booking.tpk.lv/jd418WFK"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm"
@@ -303,7 +297,7 @@ Volver a guías
             <div className="flex items-center justify-between flex-wrap gap-2">
               <span className="text-lg font-bold text-indigo-600">€€</span>
               <a
-                href="https://www.booking.com/hotel/it/isa-design-rome.es.html?aid=7956794&no_rooms=1&group_adults=2"
+                href="https://booking.tpk.lv/58AldYai"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm"
@@ -359,7 +353,7 @@ Volver a guías
         </div>
 
         <a
-          href="https://www.booking.com/searchresults.es.html?ss=Trastevere%2C+Roma%2C+Lacio%2C+Italia&aid=7956794"
+          href="https://booking.tpk.lv/91nRuLrC"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center bg-gradient-to-r from-green-500 to-emerald-500 hover:from-green-600 hover:to-emerald-600 text-white font-semibold px-5 py-3 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm"
@@ -370,23 +364,6 @@ Volver a guías
       </div>
     </div>
 
-    <div className="bg-yellow-50 border-2 border-yellow-300 rounded-xl p-5 mt-6">
-      <h4 className="font-bold text-yellow-900 mb-3 flex items-center text-lg">
-        <span className="mr-2">💡</span> Consejos Importantes sobre Alojamiento
-      </h4>
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm text-yellow-800">
-        <div>
-          <p className="mb-2"><strong>❌ Evita zona Termini:</strong> Algo conflictiva de noche, no la recomendamos para turistas</p>
-          <p className="mb-2"><strong>📅 Reserva con antelación:</strong> Jubileo 2025 = alta ocupación y precios elevados todo el año</p>
-          <p><strong>🚇 Transporte:</strong> Roma tiene buen metro/bus, no es imprescindible alojarse en el centro absoluto</p>
-        </div>
-        <div>
-          <p className="mb-2"><strong>💰 Centro vs Prati:</strong> Centro más caro pero andando a todo. Prati mejor precio y metro directo</p>
-          <p className="mb-2"><strong>🌙 Trastevere:</strong> Encantador pero ruidoso por la noche (terrazas, bares)</p>
-          <p><strong>🎯 Mejor ubicación:</strong> Entre Navona, Panteón y Trevi para máxima comodidad</p>
-        </div>
-      </div>
-    </div>
   </div>
 
   <div className="bg-gradient-to-r from-red-50 to-amber-50 rounded-2xl p-6 sm:p-8 mb-8 shadow-md">
@@ -895,7 +872,7 @@ Volver a guías
           <p className="text-red-700 text-xs mb-3">
             ⚠️ Solo se puede reservar con 60 DÍAS de antelación máximo • Web oficial solo en italiano e inglés • 
             Los domingos están CERRADOS (excepto último domingo del mes gratuito con colas enormes) • 
-            Con el Jubileo 2025 hay más demanda que nunca, reserva cuanto antes
+            Reserva con antelación para asegurar tu entrada
           </p>
         </div>
 
