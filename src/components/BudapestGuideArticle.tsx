@@ -121,11 +121,11 @@ return (
         </div>
       </div>
 
-      <div className="bg-purple-50 border border-purple-200 rounded-xl p-4 mb-4">
+      <div className="bg-purple-50 border border-purple-200 rounded-xl p-6 mb-4 shadow-sm hover:shadow-md transition-all duration-300">
         <h4 className="font-bold text-gray-900 mb-3">🚗 Transfer Privado - Máximo Confort</h4>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
           <div>
-            <p className="text-sm text-gray-700 mb-2"><strong>Precio:</strong> Desde 8.000 HUF (≈ 22€)</p>
+            <p className="text-sm text-gray-700 mb-2"><strong>Precio:</strong> Desde 18€</p>
             <p className="text-sm text-gray-700"><strong>Duración:</strong> 25-30 minutos</p>
           </div>
           <div>
@@ -133,6 +133,15 @@ return (
             <p className="text-sm text-gray-700"><strong>Ventajas:</strong> Puerta a puerta, sin esperas</p>
           </div>
         </div>
+        <a
+          href="https://gyg.me/zzfjHbKu"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white font-bold py-3 px-6 rounded-lg transition-all duration-200 transform hover:scale-105 shadow-lg hover:shadow-xl"
+        >
+          <span>🚗 Reservar Transfer Privado</span>
+          <ExternalLink className="h-4 w-4 ml-2" />
+        </a>
       </div>
     </div>
   </div>
