@@ -130,22 +130,6 @@ Volver a guías
           <ExternalLink className="h-3 w-3 ml-2" />
         </a>
       </div>
-      
-      <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-4 mb-4">
-        <h4 className="font-bold text-gray-900 mb-3">🚆 Tren Regional FL1 - Opción Económica</h4>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          <div>
-            <p className="text-sm text-gray-700 mb-1"><strong>Precio:</strong> 8 € por trayecto</p>
-            <p className="text-sm text-gray-700 mb-1"><strong>Duración:</strong> 30-48 minutos (según destino)</p>
-            <p className="text-sm text-gray-700 mb-1"><strong>Frecuencia:</strong> Cada hora aproximadamente</p>
-          </div>
-          <div>
-            <p className="text-sm text-gray-700 mb-1"><strong>Paradas:</strong> Trastevere, Ostiense, Tiburtina</p>
-            <p className="text-sm text-gray-700 mb-1"><strong>Ideal para:</strong> Hoteles cerca Trastevere</p>
-            <p className="text-sm text-gray-700 mb-1"><strong>Horario:</strong> 06:00-23:30</p>
-          </div>
-        </div>
-      </div>
 
       <div className="bg-yellow-50 border border-yellow-200 rounded-xl p-4 mb-4">
         <h4 className="font-bold text-gray-900 mb-3">🚌 Autobuses - Alternativa Económica</h4>
