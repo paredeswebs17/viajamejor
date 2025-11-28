@@ -1259,53 +1259,6 @@ Volver a guías
   </div>
 
   <div className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
-    <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">🌤️ Mejor Época para Visitar Roma</h2>
-    
-    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-      <div className="bg-pink-50 border border-pink-200 rounded-xl p-4">
-        <h3 className="font-semibold text-gray-900 mb-3">🌸 Primavera (Marzo-Mayo)</h3>
-        <p className="text-sm text-gray-700 mb-2"><strong>Lo mejor:</strong> Clima agradable, flores, menos calor</p>
-        <p className="text-sm text-gray-700 mb-2"><strong>Temperatura:</strong> 12-22°C</p>
-        <p className="text-sm text-gray-700 mb-2"><strong>Lluvia:</strong> Moderada en abril</p>
-        <p className="text-sm text-gray-700"><strong>Época muy popular</strong> - Reserva con mucha antelación</p>
-      </div>
-      
-      <div className="bg-yellow-50 border border-yellow-200 rounded-xl p-4">
-        <h3 className="font-semibold text-gray-900 mb-3">☀️ Verano (Junio-Agosto)</h3>
-        <p className="text-sm text-gray-700 mb-2"><strong>Lo mejor:</strong> Días largos, terrazas, eventos</p>
-        <p className="text-sm text-gray-700 mb-2"><strong>Temperatura:</strong> 20-35°C (¡muy caluroso!)</p>
-        <p className="text-sm text-gray-700 mb-2"><strong>Lluvia:</strong> Poca</p>
-        <p className="text-sm text-gray-700"><strong>Agosto sofocante</strong> - Muchos romanos se van de vacaciones</p>
-      </div>
-      
-      <div className="bg-orange-50 border border-orange-200 rounded-xl p-4">
-        <h3 className="font-semibold text-gray-900 mb-3">🍂 Otoño (Septiembre-Noviembre)</h3>
-        <p className="text-sm text-gray-700 mb-2"><strong>Lo mejor:</strong> Menos turistas, temperaturas suaves, precios moderados</p>
-        <p className="text-sm text-gray-700 mb-2"><strong>Temperatura:</strong> 12-24°C</p>
-        <p className="text-sm text-gray-700 mb-2"><strong>Lluvia:</strong> Aumenta en octubre/noviembre</p>
-        <p className="text-sm text-gray-700"><strong>Septiembre/octubre ideal</strong> - Mejor clima y menos gente</p>
-      </div>
-      
-      <div className="bg-blue-50 border border-blue-200 rounded-xl p-4">
-        <h3 className="font-semibold text-gray-900 mb-3">❄️ Invierno (Diciembre-Febrero)</h3>
-        <p className="text-sm text-gray-700 mb-2"><strong>Lo mejor:</strong> Pocos turistas, Navidad mágica, precios bajos</p>
-        <p className="text-sm text-gray-700 mb-2"><strong>Temperatura:</strong> 3-15°C</p>
-        <p className="text-sm text-gray-700 mb-2"><strong>Lluvia:</strong> Frecuente</p>
-        <p className="text-sm text-gray-700"><strong>Diciembre encantador</strong> - Belenes, luces navideñas</p>
-      </div>
-    </div>
-
-    <div className="bg-red-100 border border-red-300 rounded-lg p-3 mt-4">
-      <p className="font-medium text-red-800 mb-1">🎉 JUBILEO 2025 - Año Santo</p>
-      <p className="text-red-700 text-xs">
-        Durante todo 2025, Roma estará más concurrida que nunca por peregrinos del Año Jubilar. 
-        Reserva TODO con máxima antelación: hoteles, vuelos, entradas a museos y restaurantes. 
-        Los precios pueden ser más altos de lo habitual.
-      </p>
-    </div>
-  </div>
-
-<div className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
     <div className="bg-gradient-to-r from-red-50 to-amber-50 rounded-2xl p-6 sm:p-8 shadow-md mb-8">
       <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">🎯 Consejos Finales para tu Viaje a Roma</h2>
       
@@ -1334,81 +1287,6 @@ Volver a guías
           </ul>
         </div>
       </div>
-    </div>
-  </div>
-
-  {/* MÁS LUGARES */}
-  <div className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
-    <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">➕ Más Lugares que Ver en Roma</h2>
-    
-    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-      <div className="bg-purple-50 border border-purple-200 rounded-xl p-4">
-        <h3 className="font-semibold text-gray-900 mb-3">🏛️ Otros Lugares Históricos:</h3>
-        <ul className="text-sm text-gray-700 space-y-2">
-          <li><strong>Termas de Caracalla:</strong> Enormes termas romanas del año 216 d.C.</li>
-          <li><strong>Villa Borghese:</strong> Parque enorme con museo Galería Borghese (reserva obligatoria)</li>
-          <li><strong>Basílica San Juan de Letrán:</strong> Catedral de Roma, sede del Papa</li>
-          <li><strong>Circo Máximo:</strong> Donde se celebraban las carreras de cuadrigas</li>
-          <li><strong>Campo dei Fiori:</strong> Mercado local diurno, vida nocturna por la noche</li>
-        </ul>
-      </div>
-      
-      <div className="bg-green-50 border border-green-200 rounded-xl p-4">
-        <h3 className="font-semibold text-gray-900 mb-3">⛪ Iglesias y Catacumbas:</h3>
-        <ul className="text-sm text-gray-700 space-y-2">
-          <li><strong>Catacumbas:</strong> Túneles subterráneos de los primeros cristianos (Via Appia)</li>
-          <li><strong>Basílica Santa Maria Maggiore:</strong> Una de las 4 basílicas mayores</li>
-          <li><strong>San Pietro in Vincoli:</strong> Moisés de Miguel Ángel (gratis)</li>
-          <li><strong>Santa Maria in Cosmedin:</strong> Bocca della Verità</li>
-          <li><strong>Scala Santa:</strong> Las escaleras que subió Jesús (se suben de rodillas)</li>
-        </ul>
-      </div>
-      
-      <div className="bg-yellow-50 border border-yellow-200 rounded-xl p-4">
-        <h3 className="font-semibold text-gray-900 mb-3">🎭 Experiencias Únicas:</h3>
-        <ul className="text-sm text-gray-700 space-y-2">
-          <li><strong>Welcome to Rome:</strong> Museo interactivo sobre historia de Roma</li>
-          <li><strong>Ghetto Judío:</strong> Barrio histórico con mejor comida kosher</li>
-          <li><strong>Aventino:</strong> Mirar por cerradura = vista San Pedro perfecta</li>
-          <li><strong>Testaccio:</strong> Barrio gourmet con mercado y vida nocturna</li>
-          <li><strong>Appian Way:</strong> Calzada romana antigua para pasear/bici</li>
-        </ul>
-      </div>
-      
-      <div className="bg-orange-50 border border-orange-200 rounded-xl p-4">
-        <h3 className="font-semibold text-gray-900 mb-3">🚂 Excursiones de un Día:</h3>
-        <ul className="text-sm text-gray-700 space-y-2">
-          <li><strong>Tivoli:</strong> Villa d'Este y Villa Adriana (30 min tren)</li>
-          <li><strong>Ostia Antica:</strong> Pompeya sin turistas (25 min tren)</li>
-          <li><strong>Florencia:</strong> Arte renacentista (1h30 tren alta velocidad)</li>
-          <li><strong>Nápoles + Pompeya:</strong> Ciudad vibrante + ruinas (1h tren)</li>
-          <li><strong>Castelgandolfo:</strong> Residencia verano del Papa con jardines</li>
-        </ul>
-      </div>
-    </div>
-
-    <div className="bg-white rounded-xl p-4 border border-gray-200 shadow-sm mt-6">
-      <a href="https://gyg.me/dqdnZ6xS" target="_blank" rel="noopener noreferrer"
-         className="inline-flex items-center bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm">
-        🌊 Excursión a Pompeya, Costa Amalfitana y Positano
-        <ExternalLink className="h-3 w-3 ml-2" />
-      </a>
-    </div>
-
-    <div className="bg-white rounded-xl p-4 border border-gray-200 shadow-sm mt-4">
-      <a href="https://gyg.me/p48HIjTK" target="_blank" rel="noopener noreferrer"
-         className="inline-flex items-center bg-gradient-to-r from-blue-500 to-indigo-500 hover:from-blue-600 hover:to-indigo-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm">
-        🏛️ Excursión a Florencia y Pisa
-        <ExternalLink className="h-3 w-3 ml-2" />
-      </a>
-    </div>
-
-    <div className="bg-white rounded-xl p-4 border border-gray-200 shadow-sm mt-4">
-      <a href="https://gyg.me/kqtptdDS" target="_blank" rel="noopener noreferrer"
-         className="inline-flex items-center bg-gradient-to-r from-green-500 to-teal-500 hover:from-green-600 hover:to-teal-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm">
-        🍷 Excursión a la Toscana y Montepulciano con almuerzo y vinos
-        <ExternalLink className="h-3 w-3 ml-2" />
-      </a>
     </div>
   </div>
 
