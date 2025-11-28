@@ -120,6 +120,15 @@ Volver a guías
         <div className="bg-green-100 rounded-lg p-3 mt-4">
           <p className="text-green-800 text-sm font-medium">💡 La opción más eficiente y rápida. Evitas el tráfico romano y llegas directo al centro en media hora.</p>
         </div>
+        <a
+          href="https://gyg.me/Oz7nP1yy"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center bg-gradient-to-r from-blue-500 to-cyan-500 hover:from-blue-600 hover:to-cyan-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm mt-4"
+        >
+          <span>🚄 Reservar Leonardo Express</span>
+          <ExternalLink className="h-3 w-3 ml-2" />
+        </a>
       </div>
       
       <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-4 mb-4">
