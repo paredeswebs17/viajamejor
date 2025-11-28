@@ -1014,6 +1014,61 @@ src="https://images.pexels.com/photos/30734949/pexels-photo-30734949.jpeg"
     </div>
   </div>
 
+  {/* SECCIÓN: MÁS LUGARES QUE VER */}
+  <div className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
+    <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">➕ Más Lugares que Ver en Budapest</h2>
+
+    <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+      <div className="bg-gradient-to-r from-blue-50 to-sky-50 rounded-xl p-5 border border-blue-200 shadow-sm hover:shadow-md transition-all duration-300">
+        <h3 className="text-lg font-bold text-gray-900 mb-3">🏝️ Isla Margarita</h3>
+        <p className="text-sm text-gray-700 mb-3">
+          Oasis verde en medio del Danubio. Perfecta para pasear, hacer running o alquilar bicicletas.
+        </p>
+        <ul className="text-sm text-gray-700 space-y-1 list-none mb-3">
+          <li className="flex items-center"><span className="w-2 h-2 bg-emerald-400 rounded-full mr-3"></span>Entrada: Gratuita</li>
+          <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Bici: 5 €/día</li>
+          <li className="flex items-center"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3"></span>Tiempo: 2-3 horas</li>
+        </ul>
+      </div>
+
+      <div className="bg-gradient-to-r from-purple-50 to-pink-50 rounded-xl p-5 border border-purple-200 shadow-sm hover:shadow-md transition-all duration-300">
+        <h3 className="text-lg font-bold text-gray-900 mb-3">🎭 Ópera Nacional</h3>
+        <p className="text-sm text-gray-700 mb-3">
+          Una de las óperas más hermosas de Europa. Puedes visitarla con tour guiado o asistir a un espectáculo.
+        </p>
+        <ul className="text-sm text-gray-700 space-y-1 list-none mb-3">
+          <li className="flex items-center"><span className="w-2 h-2 bg-emerald-400 rounded-full mr-3"></span>Tour: 10-12 €</li>
+          <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Espectáculos: desde 15 €</li>
+          <li className="flex items-center"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3"></span>Duración tour: 50 min</li>
+        </ul>
+      </div>
+
+      <div className="bg-gradient-to-r from-emerald-50 to-green-50 rounded-xl p-5 border border-emerald-200 shadow-sm hover:shadow-md transition-all duration-300">
+        <h3 className="text-lg font-bold text-gray-900 mb-3">🌉 Puente de las Cadenas</h3>
+        <p className="text-sm text-gray-700 mb-3">
+          El puente más icónico de Budapest. Cruza andando para fotos espectaculares.
+        </p>
+        <ul className="text-sm text-gray-700 space-y-1 list-none mb-3">
+          <li className="flex items-center"><span className="w-2 h-2 bg-emerald-400 rounded-full mr-3"></span>Entrada: Gratuita</li>
+          <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Mejor momento: Atardecer</li>
+          <li className="flex items-center"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3"></span>Iluminación nocturna impresionante</li>
+        </ul>
+      </div>
+
+      <div className="bg-gradient-to-r from-orange-50 to-red-50 rounded-xl p-5 border border-orange-200 shadow-sm hover:shadow-md transition-all duration-300">
+        <h3 className="text-lg font-bold text-gray-900 mb-3">🏛️ Avenida Andrássy</h3>
+        <p className="text-sm text-gray-700 mb-3">
+          Los Campos Elíseos de Budapest. Patrimonio UNESCO con elegantes edificios y tiendas de lujo.
+        </p>
+        <ul className="text-sm text-gray-700 space-y-1 list-none mb-3">
+          <li className="flex items-center"><span className="w-2 h-2 bg-emerald-400 rounded-full mr-3"></span>Entrada: Gratuita</li>
+          <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Longitud: 2,5 km</li>
+          <li className="flex items-center"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3"></span>Conecta Centro con Plaza Héroes</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
     <div className="bg-gray-50 rounded-2xl p-6 sm:p-8 mb-8 shadow-md">
   <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6 text-center">Presupuestos Reales y Detallados</h2>
   
@@ -1399,6 +1454,72 @@ src="https://images.pexels.com/photos/30734949/pexels-photo-30734949.jpeg"
           </div>
         </div>
       </div>
+    </div>
+  </div>
+
+  {/* SECCIÓN: SISTEMA DE TRANSPORTE PÚBLICO */}
+  <div className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
+    <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">🚇 Sistema de Transporte Público de Budapest</h2>
+
+    <div className="mb-6">
+      <div className="bg-gradient-to-r from-blue-50 to-sky-50 rounded-xl p-5 border border-blue-200 shadow-sm">
+        <h3 className="text-lg font-bold text-gray-900 mb-4">Billetes y Precios</h3>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm text-gray-700">
+          <div>
+            <h4 className="font-semibold mb-2">Billete Sencillo:</h4>
+            <ul className="space-y-1 list-none">
+              <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>1 viaje: 1,20 €</li>
+              <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Válido 80 min sin transbordo</li>
+            </ul>
+          </div>
+          <div>
+            <h4 className="font-semibold mb-2">Pases Turísticos:</h4>
+            <ul className="space-y-1 list-none">
+              <li className="flex items-center"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3"></span>24h: 6 € (ilimitado)</li>
+              <li className="flex items-center"><span className="w-2 h-2 bg-pink-400 rounded-full mr-3"></span>72h: 15 € (ilimitado)</li>
+              <li className="flex items-center"><span className="w-2 h-2 bg-orange-400 rounded-full mr-3"></span>7 días: 18 € (ilimitado)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">
+      <div className="bg-blue-50 border border-blue-200 rounded-xl p-4 shadow-sm">
+        <h3 className="font-semibold text-gray-900 mb-2">🚇 Metro</h3>
+        <ul className="text-sm text-gray-700 space-y-1 list-none">
+          <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>4 líneas (M1, M2, M3, M4)</li>
+          <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>M1: Patrimonio UNESCO</li>
+          <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>Horario: 4:30-23:00h</li>
+        </ul>
+      </div>
+
+      <div className="bg-green-50 border border-green-200 rounded-xl p-4 shadow-sm">
+        <h3 className="font-semibold text-gray-900 mb-2">🚊 Tranvía</h3>
+        <ul className="text-sm text-gray-700 space-y-1 list-none">
+          <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Línea 2: Panorámica del Danubio</li>
+          <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Línea 4 y 6: Principales avenidas</li>
+          <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>Frecuencia: 5-10 min</li>
+        </ul>
+      </div>
+
+      <div className="bg-yellow-50 border border-yellow-200 rounded-xl p-4 shadow-sm">
+        <h3 className="font-semibold text-gray-900 mb-2">🚌 Autobús</h3>
+        <ul className="text-sm text-gray-700 space-y-1 list-none">
+          <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Red extensa por toda la ciudad</li>
+          <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Líneas nocturnas disponibles</li>
+          <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>Bus 100E: Aeropuerto-Centro</li>
+        </ul>
+      </div>
+    </div>
+
+    <div className="bg-yellow-50 border border-yellow-200 rounded-xl p-4 shadow-sm">
+      <p className="text-sm text-yellow-800 font-semibold mb-2">⚠️ Importante:</p>
+      <ul className="text-sm text-yellow-700 space-y-1 list-none">
+        <li className="flex items-center"><span className="w-2 h-2 bg-yellow-600 rounded-full mr-3"></span>Valida SIEMPRE tu billete al subir</li>
+        <li className="flex items-center"><span className="w-2 h-2 bg-yellow-600 rounded-full mr-3"></span>Inspecciones frecuentes: Multa 60 €</li>
+        <li className="flex items-center"><span className="w-2 h-2 bg-yellow-600 rounded-full mr-3"></span>App BKK Futár: Horarios en tiempo real</li>
+      </ul>
     </div>
   </div>
 
