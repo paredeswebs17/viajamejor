@@ -73,33 +73,7 @@ Volver a guías
     />
   </div>
 
-  <div className="bg-gradient-to-r from-red-50 to-amber-50 rounded-2xl p-6 sm:p-8 mb-8 shadow-md">
-    <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">Itinerario Romano</h2>
-    <div className="overflow-x-auto">
-      <table className="w-full border-collapse bg-white rounded-xl shadow-sm">
-        <thead>
-          <tr className="bg-gradient-to-r from-red-500 to-amber-500 text-white">
-            <th className="border border-gray-300 px-4 py-3 text-left font-semibold">JORNADA</th>
-            <th className="border border-gray-300 px-4 py-3 text-left font-semibold">EXPERIENCIAS ROMANAS</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td className="border border-gray-300 px-4 py-3 font-bold">DÍA 1</td>
-            <td className="border border-gray-300 px-4 py-3">Plaza de España + Fontana di Trevi + Panteón + Piazza Navona + Museos Capitolinos + Monumento Vittorio Emanuele II</td>
-          </tr>
-          <tr className="bg-gray-50">
-            <td className="border border-gray-300 px-4 py-3 font-bold">DÍA 2</td>
-            <td className="border border-gray-300 px-4 py-3">Coliseo + Arco de Constantino + Palatino + Foro Romano + Circo Máximo + Bocca della Verità + Trastevere</td>
-          </tr>
-          <tr>
-            <td className="border border-gray-300 px-4 py-3 font-bold">DÍA 3</td>
-            <td className="border border-gray-300 px-4 py-3">Museos Vaticanos + Capilla Sixtina + Basílica San Pedro + Castillo Sant'Angelo + Piazza del Popolo</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
+  
 
   <div className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
     <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">✈️ Llegada y Conexiones desde el Aeropuerto</h2>
@@ -207,6 +181,97 @@ Volver a guías
     </div>
   </div>
 
+  <div className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
+    <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">🏨 Dónde Alojarse - Mejores Zonas de Roma</h2>
+    
+    <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-6">
+      <div className="bg-red-50 border border-red-200 rounded-xl p-4">
+        <h3 className="text-lg font-bold text-red-800 mb-3">🏛️ Centro Histórico</h3>
+        <div className="space-y-3">
+          <div className="bg-white rounded-lg p-3 shadow-sm">
+            <h4 className="font-semibold text-gray-900 mb-1">Hotel Smeraldo</h4>
+            <p className="text-xs text-gray-600 mb-1">Via dei Chiavari 20 • €€ • Muy bien ubicado</p>
+            <p className="text-sm text-gray-700">Hotel super bonito, puedes recorrer Roma andando desde aquí.</p>
+          </div>
+          
+          <div className="bg-white rounded-lg p-3 shadow-sm">
+            <h4 className="font-semibold text-gray-900 mb-1">Terrace Pantheon Relais</h4>
+            <p className="text-xs text-gray-600 mb-1">Centro histórico • €€€ • Premium</p>
+            <p className="text-sm text-gray-700">Lo mejor para estar en pleno corazón de Roma. Más caro pero ubicación perfecta.</p>
+          </div>
+        </div>
+      </div>
+      
+      <div className="bg-purple-50 border border-purple-200 rounded-xl p-4">
+        <h3 className="text-lg font-bold text-purple-800 mb-3">⛪ Vaticano</h3>
+        <div className="space-y-3">
+          <div className="bg-white rounded-lg p-3 shadow-sm">
+            <h4 className="font-semibold text-gray-900 mb-1">Donna Laura Palace by OMNIA hotels</h4>
+            <p className="text-xs text-gray-600 mb-1">Lungotevere Delle Armi 21 • €€€ • Recomendado</p>
+            <p className="text-sm text-gray-700">Barrio con ambiente local y tranquilo.</p>
+          </div>
+          
+          <div className="bg-white rounded-lg p-3 shadow-sm">
+            <h4 className="font-semibold text-gray-900 mb-1">Hotel Isa</h4>
+            <p className="text-xs text-gray-600 mb-1">Via Cicerone 39 • €€-€€€ • Descubrimiento</p>
+            <p className="text-sm text-gray-700">Muy buena ubicación</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div className="bg-green-50 border border-green-200 rounded-xl p-4 mb-6">
+      <h3 className="text-lg font-bold text-green-800 mb-3">🌿 Trastevere - Bohemio y con Encanto</h3>
+      <p className="text-sm text-gray-700 mb-2">
+        Barrio pintoresco con calles adoquinadas, ambiente bohemio y los mejores restaurantes. 
+        Por la noche cobra vida con terrazas y trattorias. Algo alejado del centro pero con mucho encanto.
+      </p>
+      <ul className="text-sm text-gray-700 space-y-1">
+        <li>• Perfecto si buscas ambiente auténtico y vida nocturna</li>
+        <li>• Bien conectado con tranvía 8 y autobuses</li>
+        <li>• Más económico que Centro/Navona</li>
+      </ul>
+    </div>
+
+    <div className="bg-yellow-50 border border-yellow-200 rounded-xl p-4">
+      <h4 className="font-semibold text-yellow-800 mb-2">💡 Consejos sobre Alojamiento:</h4>
+      <ul className="text-sm text-yellow-700 space-y-1">
+        <li>• <strong>Evita zona Termini:</strong> Algo conflictiva de noche, no la recomendamos</li>
+        <li>• <strong>Reserva con antelación:</strong> Jubileo 2025 = alta ocupación todo el año</li>
+        <li>• <strong>Centro vs Prati:</strong> Centro más caro pero andando a todo. Prati mejor precio y metro directo</li>
+        <li>• <strong>Trastevere:</strong> Encantador pero ruidoso por la noche (terrazas, bares)</li>
+        <li>• <strong>Transporte:</strong> Roma tiene buen metro/bus, no es necesario centro absoluto</li>
+      </ul>
+    </div>
+  </div>
+
+  <div className="bg-gradient-to-r from-red-50 to-amber-50 rounded-2xl p-6 sm:p-8 mb-8 shadow-md">
+    <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">Itinerario Romano</h2>
+    <div className="overflow-x-auto">
+      <table className="w-full border-collapse bg-white rounded-xl shadow-sm">
+        <thead>
+          <tr className="bg-gradient-to-r from-red-500 to-amber-500 text-white">
+            <th className="border border-gray-300 px-4 py-3 text-left font-semibold">JORNADA</th>
+            <th className="border border-gray-300 px-4 py-3 text-left font-semibold">EXPERIENCIAS ROMANAS</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td className="border border-gray-300 px-4 py-3 font-bold">DÍA 1</td>
+            <td className="border border-gray-300 px-4 py-3">Plaza de España + Fontana di Trevi + Panteón + Piazza Navona + Museos Capitolinos + Monumento Vittorio Emanuele II</td>
+          </tr>
+          <tr className="bg-gray-50">
+            <td className="border border-gray-300 px-4 py-3 font-bold">DÍA 2</td>
+            <td className="border border-gray-300 px-4 py-3">Coliseo + Arco de Constantino + Palatino + Foro Romano + Circo Máximo + Bocca della Verità + Trastevere</td>
+          </tr>
+          <tr>
+            <td className="border border-gray-300 px-4 py-3 font-bold">DÍA 3</td>
+            <td className="border border-gray-300 px-4 py-3">Museos Vaticanos + Capilla Sixtina + Basílica San Pedro + Castillo Sant'Angelo + Piazza del Popolo</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
   {/* Separador decorativo */}
   <div className="flex items-center justify-center mb-8">
     <div className="flex space-x-2">
@@ -885,60 +950,80 @@ Volver a guías
     </div>
   </div>
 
-  {/* PRESUPUESTOS */}
   <div className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
-    <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">💰 Presupuestos Detallados por Estilo</h2>
+    <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">➕ Más Lugares que Ver en Roma</h2>
     
-    <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-6">
-      <div className="bg-green-50 border border-green-200 rounded-xl p-6 shadow-sm">
-        <h3 className="text-lg font-bold text-green-800 mb-3">🎒 Mochilero</h3>
-        <div className="text-2xl font-bold text-green-600 mb-2">60-80€/día</div>
-        <ul className="text-sm text-green-700 space-y-1">
-          <li>• Hostel: 25-35€</li>
-          <li>• Comida: 20-25€</li>
-          <li>• Transporte: 5-10€</li>
-          <li>• Atracciones: 10-15€</li>
+    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+      <div className="bg-purple-50 border border-purple-200 rounded-xl p-4">
+        <h3 className="font-semibold text-gray-900 mb-3">🏛️ Otros Lugares Históricos:</h3>
+        <ul className="text-sm text-gray-700 space-y-2">
+          <li><strong>Termas de Caracalla:</strong> Enormes termas romanas del año 216 d.C.</li>
+          <li><strong>Villa Borghese:</strong> Parque enorme con museo Galería Borghese (reserva obligatoria)</li>
+          <li><strong>Basílica San Juan de Letrán:</strong> Catedral de Roma, sede del Papa</li>
+          <li><strong>Circo Máximo:</strong> Donde se celebraban las carreras de cuadrigas</li>
+          <li><strong>Campo dei Fiori:</strong> Mercado local diurno, vida nocturna por la noche</li>
         </ul>
       </div>
       
-      <div className="bg-blue-50 border border-blue-200 rounded-xl p-6 shadow-sm">
-        <h3 className="text-lg font-bold text-blue-800 mb-3">🏨 Estándar</h3>
-        <div className="text-2xl font-bold text-blue-600 mb-2">120-160€/día</div>
-        <ul className="text-sm text-blue-700 space-y-1">
-          <li>• Hotel 3*: 70-90€</li>
-          <li>• Comida: 30-45€</li>
-          <li>• Transporte: 10€</li>
-          <li>• Atracciones: 15-25€</li>
+      <div className="bg-green-50 border border-green-200 rounded-xl p-4">
+        <h3 className="font-semibold text-gray-900 mb-3">⛪ Iglesias y Catacumbas:</h3>
+        <ul className="text-sm text-gray-700 space-y-2">
+          <li><strong>Catacumbas:</strong> Túneles subterráneos de los primeros cristianos (Via Appia)</li>
+          <li><strong>Basílica Santa Maria Maggiore:</strong> Una de las 4 basílicas mayores</li>
+          <li><strong>San Pietro in Vincoli:</strong> Moisés de Miguel Ángel (gratis)</li>
+          <li><strong>Santa Maria in Cosmedin:</strong> Bocca della Verità</li>
+          <li><strong>Scala Santa:</strong> Las escaleras que subió Jesús (se suben de rodillas)</li>
         </ul>
       </div>
       
-      <div className="bg-purple-50 border border-purple-200 rounded-xl p-6 shadow-sm">
-        <h3 className="text-lg font-bold text-purple-800 mb-3">👑 Lujo</h3>
-        <div className="text-2xl font-bold text-purple-600 mb-2">250-400€/día</div>
-        <ul className="text-sm text-purple-700 space-y-1">
-          <li>• Hotel 5*: 150-250€</li>
-          <li>• Comida: 70-100€</li>
-          <li>• Transporte: 20€</li>
-          <li>• Atracciones: 30-50€</li>
+      <div className="bg-yellow-50 border border-yellow-200 rounded-xl p-4">
+        <h3 className="font-semibold text-gray-900 mb-3">🎭 Experiencias Únicas:</h3>
+        <ul className="text-sm text-gray-700 space-y-2">
+          <li><strong>Welcome to Rome:</strong> Museo interactivo sobre historia de Roma</li>
+          <li><strong>Ghetto Judío:</strong> Barrio histórico con mejor comida kosher</li>
+          <li><strong>Aventino:</strong> Mirar por cerradura = vista San Pedro perfecta</li>
+          <li><strong>Testaccio:</strong> Barrio gourmet con mercado y vida nocturna</li>
+          <li><strong>Appian Way:</strong> Calzada romana antigua para pasear/bici</li>
+        </ul>
+      </div>
+      
+      <div className="bg-orange-50 border border-orange-200 rounded-xl p-4">
+        <h3 className="font-semibold text-gray-900 mb-3">🚂 Excursiones de un Día:</h3>
+        <ul className="text-sm text-gray-700 space-y-2">
+          <li><strong>Tivoli:</strong> Villa d'Este y Villa Adriana (30 min tren)</li>
+          <li><strong>Ostia Antica:</strong> Pompeya sin turistas (25 min tren)</li>
+          <li><strong>Florencia:</strong> Arte renacentista (1h30 tren alta velocidad)</li>
+          <li><strong>Nápoles + Pompeya:</strong> Ciudad vibrante + ruinas (1h tren)</li>
+          <li><strong>Castelgandolfo:</strong> Residencia verano del Papa con jardines</li>
         </ul>
       </div>
     </div>
 
-    <div className="bg-yellow-50 border border-yellow-200 rounded-xl p-4">
-      <h4 className="font-semibold text-yellow-800 mb-2">💡 Consejos para Ahorrar en Roma:</h4>
-      <ul className="text-sm text-yellow-700 space-y-1 mb-3">
-        <li>• Evita restaurantes en zonas turísticas (cerca Coliseo, Trevi, Vaticano)</li>
-        <li>• Come aperitivo (spritz + buffet libre) en lugar de cena (18:00-21:00)</li>
-        <li>• Supermercados: Conad, Carrefour Express para comida económica</li>
-        <li>• Agua: Rellena botellas en las fuentes públicas (nasone) ¡Es gratis y potable!</li>
-        <li>• Museos gratis: Primer domingo del mes (Coliseo, Museos Capitolinos)</li>
-        <li>• Mercado Central Termini: Gran variedad de comida a buen precio</li>
-        <li>• Pizza al taglio: Pizza por trozos, económica y deliciosa</li>
-      </ul>
+    <div className="bg-white rounded-xl p-4 border border-gray-200 shadow-sm mt-6">
+      <a href="https://gyg.me/dqdnZ6xS" target="_blank" rel="noopener noreferrer"
+         className="inline-flex items-center bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm">
+        🌊 Excursión a Pompeya, Costa Amalfitana y Positano
+        <ExternalLink className="h-3 w-3 ml-2" />
+      </a>
+    </div>
+
+    <div className="bg-white rounded-xl p-4 border border-gray-200 shadow-sm mt-4">
+      <a href="https://gyg.me/p48HIjTK" target="_blank" rel="noopener noreferrer"
+         className="inline-flex items-center bg-gradient-to-r from-blue-500 to-indigo-500 hover:from-blue-600 hover:to-indigo-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm">
+        🏛️ Excursión a Florencia y Pisa
+        <ExternalLink className="h-3 w-3 ml-2" />
+      </a>
+    </div>
+
+    <div className="bg-white rounded-xl p-4 border border-gray-200 shadow-sm mt-4">
+      <a href="https://gyg.me/kqtptdDS" target="_blank" rel="noopener noreferrer"
+         className="inline-flex items-center bg-gradient-to-r from-green-500 to-teal-500 hover:from-green-600 hover:to-teal-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm">
+        🍷 Excursión a la Toscana y Montepulciano con almuerzo y vinos
+        <ExternalLink className="h-3 w-3 ml-2" />
+      </a>
     </div>
   </div>
 
-  {/* RESTAURANTES */}
   <div className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
     <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">🍝 Guía Gastronómica - Probado y Recomendado</h2>
     
@@ -1027,72 +1112,58 @@ Volver a guías
     </div>
   </div>
 
-  {/* ALOJAMIENTOS */}
   <div className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
-    <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">🏨 Dónde Alojarse - Mejores Zonas de Roma</h2>
+    <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">💰 Presupuestos Detallados por Estilo</h2>
     
-    <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-6">
-      <div className="bg-red-50 border border-red-200 rounded-xl p-4">
-        <h3 className="text-lg font-bold text-red-800 mb-3">🏛️ Centro Histórico</h3>
-        <div className="space-y-3">
-          <div className="bg-white rounded-lg p-3 shadow-sm">
-            <h4 className="font-semibold text-gray-900 mb-1">Hotel Smeraldo</h4>
-            <p className="text-xs text-gray-600 mb-1">Via dei Chiavari 20 • €€ • Muy bien ubicado</p>
-            <p className="text-sm text-gray-700">Hotel super bonito, puedes recorrer Roma andando desde aquí.</p>
-          </div>
-          
-          <div className="bg-white rounded-lg p-3 shadow-sm">
-            <h4 className="font-semibold text-gray-900 mb-1">Terrace Pantheon Relais</h4>
-            <p className="text-xs text-gray-600 mb-1">Centro histórico • €€€ • Premium</p>
-            <p className="text-sm text-gray-700">Lo mejor para estar en pleno corazón de Roma. Más caro pero ubicación perfecta.</p>
-          </div>
-        </div>
+    <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-6">
+      <div className="bg-green-50 border border-green-200 rounded-xl p-6 shadow-sm">
+        <h3 className="text-lg font-bold text-green-800 mb-3">🎒 Mochilero</h3>
+        <div className="text-2xl font-bold text-green-600 mb-2">60-80€/día</div>
+        <ul className="text-sm text-green-700 space-y-1">
+          <li>• Hostel: 25-35€</li>
+          <li>• Comida: 20-25€</li>
+          <li>• Transporte: 5-10€</li>
+          <li>• Atracciones: 10-15€</li>
+        </ul>
       </div>
       
-      <div className="bg-purple-50 border border-purple-200 rounded-xl p-4">
-        <h3 className="text-lg font-bold text-purple-800 mb-3">⛪ Vaticano</h3>
-        <div className="space-y-3">
-          <div className="bg-white rounded-lg p-3 shadow-sm">
-            <h4 className="font-semibold text-gray-900 mb-1">Donna Laura Palace by OMNIA hotels</h4>
-            <p className="text-xs text-gray-600 mb-1">Lungotevere Delle Armi 21 • €€€ • Recomendado</p>
-            <p className="text-sm text-gray-700">Barrio con ambiente local y tranquilo.</p>
-          </div>
-          
-          <div className="bg-white rounded-lg p-3 shadow-sm">
-            <h4 className="font-semibold text-gray-900 mb-1">Hotel Isa</h4>
-            <p className="text-xs text-gray-600 mb-1">Via Cicerone 39 • €€-€€€ • Descubrimiento</p>
-            <p className="text-sm text-gray-700">Muy buena ubicación</p>
-          </div>
-        </div>
+      <div className="bg-blue-50 border border-blue-200 rounded-xl p-6 shadow-sm">
+        <h3 className="text-lg font-bold text-blue-800 mb-3">🏨 Estándar</h3>
+        <div className="text-2xl font-bold text-blue-600 mb-2">120-160€/día</div>
+        <ul className="text-sm text-blue-700 space-y-1">
+          <li>• Hotel 3*: 70-90€</li>
+          <li>• Comida: 30-45€</li>
+          <li>• Transporte: 10€</li>
+          <li>• Atracciones: 15-25€</li>
+        </ul>
       </div>
-    </div>
-
-    <div className="bg-green-50 border border-green-200 rounded-xl p-4 mb-6">
-      <h3 className="text-lg font-bold text-green-800 mb-3">🌿 Trastevere - Bohemio y con Encanto</h3>
-      <p className="text-sm text-gray-700 mb-2">
-        Barrio pintoresco con calles adoquinadas, ambiente bohemio y los mejores restaurantes. 
-        Por la noche cobra vida con terrazas y trattorias. Algo alejado del centro pero con mucho encanto.
-      </p>
-      <ul className="text-sm text-gray-700 space-y-1">
-        <li>• Perfecto si buscas ambiente auténtico y vida nocturna</li>
-        <li>• Bien conectado con tranvía 8 y autobuses</li>
-        <li>• Más económico que Centro/Navona</li>
-      </ul>
+      
+      <div className="bg-purple-50 border border-purple-200 rounded-xl p-6 shadow-sm">
+        <h3 className="text-lg font-bold text-purple-800 mb-3">👑 Lujo</h3>
+        <div className="text-2xl font-bold text-purple-600 mb-2">250-400€/día</div>
+        <ul className="text-sm text-purple-700 space-y-1">
+          <li>• Hotel 5*: 150-250€</li>
+          <li>• Comida: 70-100€</li>
+          <li>• Transporte: 20€</li>
+          <li>• Atracciones: 30-50€</li>
+        </ul>
+      </div>
     </div>
 
     <div className="bg-yellow-50 border border-yellow-200 rounded-xl p-4">
-      <h4 className="font-semibold text-yellow-800 mb-2">💡 Consejos sobre Alojamiento:</h4>
-      <ul className="text-sm text-yellow-700 space-y-1">
-        <li>• <strong>Evita zona Termini:</strong> Algo conflictiva de noche, no la recomendamos</li>
-        <li>• <strong>Reserva con antelación:</strong> Jubileo 2025 = alta ocupación todo el año</li>
-        <li>• <strong>Centro vs Prati:</strong> Centro más caro pero andando a todo. Prati mejor precio y metro directo</li>
-        <li>• <strong>Trastevere:</strong> Encantador pero ruidoso por la noche (terrazas, bares)</li>
-        <li>• <strong>Transporte:</strong> Roma tiene buen metro/bus, no es necesario centro absoluto</li>
+      <h4 className="font-semibold text-yellow-800 mb-2">💡 Consejos para Ahorrar en Roma:</h4>
+      <ul className="text-sm text-yellow-700 space-y-1 mb-3">
+        <li>• Evita restaurantes en zonas turísticas (cerca Coliseo, Trevi, Vaticano)</li>
+        <li>• Come aperitivo (spritz + buffet libre) en lugar de cena (18:00-21:00)</li>
+        <li>• Supermercados: Conad, Carrefour Express para comida económica</li>
+        <li>• Agua: Rellena botellas en las fuentes públicas (nasone) ¡Es gratis y potable!</li>
+        <li>• Museos gratis: Primer domingo del mes (Coliseo, Museos Capitolinos)</li>
+        <li>• Mercado Central Termini: Gran variedad de comida a buen precio</li>
+        <li>• Pizza al taglio: Pizza por trozos, económica y deliciosa</li>
       </ul>
     </div>
   </div>
 
-  {/* TRANSPORTE PÚBLICO */}
   <div className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
     <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">🚇 Sistema de Transporte Público de Roma</h2>
     
@@ -1167,7 +1238,6 @@ Volver a guías
     </div>
   </div>
 
-  {/* MEJOR ÉPOCA */}
   <div className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
     <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">🌤️ Mejor Época para Visitar Roma</h2>
     
@@ -1215,8 +1285,7 @@ Volver a guías
     </div>
   </div>
 
-  {/* CONSEJOS FINALES */}
-  <div className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
+<div className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
     <div className="bg-gradient-to-r from-red-50 to-amber-50 rounded-2xl p-6 sm:p-8 shadow-md mb-8">
       <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">🎯 Consejos Finales para tu Viaje a Roma</h2>
       
@@ -1333,7 +1402,6 @@ Volver a guías
     </p>
   </div>
 </article>
-
 );
 };
 
