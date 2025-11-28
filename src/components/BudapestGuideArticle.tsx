@@ -1164,16 +1164,16 @@ src="https://images.pexels.com/photos/30734949/pexels-photo-30734949.jpeg"
           <div>
             <h4 className="font-semibold mb-2">Billete Sencillo:</h4>
             <ul className="space-y-1 list-none">
-              <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>1 viaje: 1,20 €</li>
+              <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>1 viaje: 1,30 €</li>
               <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Válido 80 min sin transbordo</li>
             </ul>
           </div>
           <div>
             <h4 className="font-semibold mb-2">Pases Turísticos:</h4>
             <ul className="space-y-1 list-none">
-              <li className="flex items-center"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3"></span>24h: 6 € (ilimitado)</li>
-              <li className="flex items-center"><span className="w-2 h-2 bg-pink-400 rounded-full mr-3"></span>72h: 15 € (ilimitado)</li>
-              <li className="flex items-center"><span className="w-2 h-2 bg-orange-400 rounded-full mr-3"></span>7 días: 18 € (ilimitado)</li>
+              <li className="flex items-center"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3"></span>24h: 7 € (ilimitado)</li>
+              <li className="flex items-center"><span className="w-2 h-2 bg-pink-400 rounded-full mr-3"></span>72h: 14 € (ilimitado)</li>
+              <li className="flex items-center"><span className="w-2 h-2 bg-orange-400 rounded-full mr-3"></span>7 días: 19 € (ilimitado)</li>
             </ul>
           </div>
         </div>
