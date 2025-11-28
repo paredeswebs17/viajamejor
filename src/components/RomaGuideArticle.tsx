@@ -312,7 +312,7 @@ Volver a guías
         <div className="bg-blue-50 border border-blue-200 rounded-lg p-3">
           <p className="text-sm text-blue-800">
             <strong>✅ Por qué elegir esta zona:</strong> Barrio elegante y auténtico con restaurantes locales.
-            Metro directo al centro. Perfecto para visitar el Vaticano sin colas.
+            Metro directo al centro. Perfecto para visitar el Vaticano.
           </p>
         </div>
       </div>
