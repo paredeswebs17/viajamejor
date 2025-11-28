@@ -73,7 +73,32 @@ Volver a guías
     />
   </div>
 
-  
+  <div className="bg-gradient-to-r from-amber-50 to-red-50 border border-amber-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
+    <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">¿Por qué visitar Roma?</h2>
+
+    <div className="space-y-4 text-gray-700">
+      <p className="text-base leading-relaxed">
+        Roma no es solo una ciudad, es un museo al aire libre donde cada esquina cuenta una historia de más de 2.500 años.
+        Pocas ciudades en el mundo pueden presumir de tener el Coliseo, el Vaticano y la Fontana di Trevi a pocos kilómetros de distancia.
+      </p>
+
+      <p className="text-base leading-relaxed">
+        Pero Roma es mucho más que monumentos antiguos. Es perderte por el barrio de Trastevere y descubrir una trattoria familiar
+        donde comer auténtica pasta carbonara por 12€. Es tomar un helado artesanal mientras paseas por plazas barrocas.
+        Es sentir que viajas en el tiempo sin necesidad de museos caros, porque la historia está literalmente bajo tus pies.
+      </p>
+
+      <p className="text-base leading-relaxed">
+        Y lo mejor: Roma es una ciudad que se puede disfrutar con cualquier presupuesto. Muchas iglesias y plazas son gratuitas,
+        el transporte público es eficiente y económico, y comer bien no tiene por qué vaciar tu cartera.
+      </p>
+
+      <p className="text-base leading-relaxed font-medium text-gray-900">
+        Si buscas una ciudad que combine historia, cultura, gastronomía y ese encanto italiano que no se encuentra en ningún otro lugar,
+        Roma te está esperando.
+      </p>
+    </div>
+  </div>
 
   <div className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
     <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">✈️ Llegada y Conexiones desde el Aeropuerto</h2>
