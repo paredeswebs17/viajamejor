@@ -1199,7 +1199,11 @@ Volver a guías
         </a>
       </div>
 
-      <div className="bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300">
+      <div className="bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300 relative overflow-hidden">
+        <div className="absolute top-4 right-4 bg-gradient-to-r from-red-500 to-orange-500 text-white font-bold px-4 py-2 rounded-full shadow-lg transform rotate-12 z-10">
+          <span className="text-sm">-5% DESCUENTO</span>
+        </div>
+
         <div className="flex items-center mb-4">
           <div className="w-12 h-12 bg-gradient-to-br from-green-500 to-emerald-500 rounded-xl flex items-center justify-center mr-4">
             <span className="text-2xl">🛡️</span>
@@ -1226,13 +1230,19 @@ Volver a guías
           </ul>
         </div>
 
+        <div className="bg-gradient-to-r from-orange-100 to-red-100 border-2 border-orange-300 rounded-lg p-3 mb-4">
+          <p className="text-center font-bold text-orange-800 text-sm">
+            🎁 ¡Descuento exclusivo del 5% ya aplicado en el enlace!
+          </p>
+        </div>
+
         <a
           href="https://www.iatiseguros.com/?r=37344279073491"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center bg-gradient-to-r from-green-500 to-emerald-500 hover:from-green-600 hover:to-emerald-600 text-white font-semibold px-5 py-3 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm w-full justify-center"
         >
-          🛡️ Contratar Seguro IATI
+          🛡️ Contratar Seguro IATI con 5% Descuento
           <ExternalLink className="h-3 w-3 ml-2" />
         </a>
       </div>
