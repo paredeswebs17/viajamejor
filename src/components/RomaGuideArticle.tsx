@@ -291,11 +291,11 @@ Volver a guías
           </div>
 
           <div className="bg-gradient-to-br from-indigo-50 to-blue-50 rounded-xl p-4 border border-indigo-200">
-            <h4 className="font-bold text-gray-900 mb-2">Hotel Isa Design ⭐⭐⭐</h4>
+            <h4 className="font-bold text-gray-900 mb-2">Hotel Isa Design ⭐⭐⭐⭐</h4>
             <p className="text-xs text-gray-600 mb-2">📍 Via Cicerone 39</p>
             <p className="text-sm text-gray-700 mb-3">Excelente ubicación cerca del Vaticano. Diseño moderno y muy buena relación calidad-precio.</p>
             <div className="flex items-center justify-between flex-wrap gap-2">
-              <span className="text-lg font-bold text-indigo-600">€€</span>
+              <span className="text-lg font-bold text-indigo-600">€€€</span>
               <a
                 href="https://booking.tpk.lv/58AldYai"
                 target="_blank"
