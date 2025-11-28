@@ -112,9 +112,6 @@ Volver a guías
           </div>
           <div>
             <p className="text-sm text-gray-700 mb-2"><strong>Destino:</strong> Roma Termini (centro ciudad)</p>
-            <p className="text-sm text-gray-700 mb-2"><strong>Compra:</strong> Máquinas, online o quioscos</p>
-            <p className="text-sm text-gray-700 mb-2"><strong>Comodidad:</strong> Sin paradas intermedias</p>
-            <p className="text-sm text-gray-700"><strong>Importante:</strong> Validar billete antes de subir</p>
           </div>
         </div>
         <div className="bg-green-100 rounded-lg p-3 mt-4">
