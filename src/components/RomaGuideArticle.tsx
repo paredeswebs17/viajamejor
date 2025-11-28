@@ -1133,58 +1133,6 @@ Volver a guías
   </div>
 
   <div className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
-    <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">💰 Presupuestos Detallados por Estilo</h2>
-    
-    <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-6">
-      <div className="bg-green-50 border border-green-200 rounded-xl p-6 shadow-sm">
-        <h3 className="text-lg font-bold text-green-800 mb-3">🎒 Mochilero</h3>
-        <div className="text-2xl font-bold text-green-600 mb-2">60-80€/día</div>
-        <ul className="text-sm text-green-700 space-y-1">
-          <li>• Hostel: 25-35€</li>
-          <li>• Comida: 20-25€</li>
-          <li>• Transporte: 5-10€</li>
-          <li>• Atracciones: 10-15€</li>
-        </ul>
-      </div>
-      
-      <div className="bg-blue-50 border border-blue-200 rounded-xl p-6 shadow-sm">
-        <h3 className="text-lg font-bold text-blue-800 mb-3">🏨 Estándar</h3>
-        <div className="text-2xl font-bold text-blue-600 mb-2">120-160€/día</div>
-        <ul className="text-sm text-blue-700 space-y-1">
-          <li>• Hotel 3*: 70-90€</li>
-          <li>• Comida: 30-45€</li>
-          <li>• Transporte: 10€</li>
-          <li>• Atracciones: 15-25€</li>
-        </ul>
-      </div>
-      
-      <div className="bg-purple-50 border border-purple-200 rounded-xl p-6 shadow-sm">
-        <h3 className="text-lg font-bold text-purple-800 mb-3">👑 Lujo</h3>
-        <div className="text-2xl font-bold text-purple-600 mb-2">250-400€/día</div>
-        <ul className="text-sm text-purple-700 space-y-1">
-          <li>• Hotel 5*: 150-250€</li>
-          <li>• Comida: 70-100€</li>
-          <li>• Transporte: 20€</li>
-          <li>• Atracciones: 30-50€</li>
-        </ul>
-      </div>
-    </div>
-
-    <div className="bg-yellow-50 border border-yellow-200 rounded-xl p-4">
-      <h4 className="font-semibold text-yellow-800 mb-2">💡 Consejos para Ahorrar en Roma:</h4>
-      <ul className="text-sm text-yellow-700 space-y-1 mb-3">
-        <li>• Evita restaurantes en zonas turísticas (cerca Coliseo, Trevi, Vaticano)</li>
-        <li>• Come aperitivo (spritz + buffet libre) en lugar de cena (18:00-21:00)</li>
-        <li>• Supermercados: Conad, Carrefour Express para comida económica</li>
-        <li>• Agua: Rellena botellas en las fuentes públicas (nasone) ¡Es gratis y potable!</li>
-        <li>• Museos gratis: Primer domingo del mes (Coliseo, Museos Capitolinos)</li>
-        <li>• Mercado Central Termini: Gran variedad de comida a buen precio</li>
-        <li>• Pizza al taglio: Pizza por trozos, económica y deliciosa</li>
-      </ul>
-    </div>
-  </div>
-
-  <div className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
     <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">🚇 Sistema de Transporte Público de Roma</h2>
     
     <div className="bg-gradient-to-r from-red-50 to-amber-50 border border-red-200 rounded-xl p-6">
@@ -1286,6 +1234,58 @@ Volver a guías
             <li className="flex items-center"><span className="w-2 h-2 bg-rose-400 rounded-full mr-3"></span>Los romanos cenan tarde (21:00-22:00)</li>
           </ul>
         </div>
+      </div>
+
+      <div className="bg-yellow-50 border border-yellow-200 rounded-xl p-4 mt-6">
+        <h3 className="text-lg font-bold text-yellow-800 mb-3">💡 Consejos para Ahorrar en Roma:</h3>
+        <ul className="text-sm text-yellow-700 space-y-2 list-none">
+          <li className="flex items-center"><span className="w-2 h-2 bg-yellow-400 rounded-full mr-3"></span>Evita restaurantes en zonas turísticas (cerca Coliseo, Trevi, Vaticano)</li>
+          <li className="flex items-center"><span className="w-2 h-2 bg-yellow-400 rounded-full mr-3"></span>Come aperitivo (spritz + buffet libre) en lugar de cena (18:00-21:00)</li>
+          <li className="flex items-center"><span className="w-2 h-2 bg-yellow-400 rounded-full mr-3"></span>Supermercados: Conad, Carrefour Express para comida económica</li>
+          <li className="flex items-center"><span className="w-2 h-2 bg-yellow-400 rounded-full mr-3"></span>Agua: Rellena botellas en las fuentes públicas (nasone) ¡Es gratis y potable!</li>
+          <li className="flex items-center"><span className="w-2 h-2 bg-yellow-400 rounded-full mr-3"></span>Museos gratis: Primer domingo del mes (Coliseo, Museos Capitolinos)</li>
+          <li className="flex items-center"><span className="w-2 h-2 bg-yellow-400 rounded-full mr-3"></span>Mercado Central Termini: Gran variedad de comida a buen precio</li>
+          <li className="flex items-center"><span className="w-2 h-2 bg-yellow-400 rounded-full mr-3"></span>Pizza al taglio: Pizza por trozos, económica y deliciosa</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
+    <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">💰 Presupuestos Detallados por Estilo</h2>
+
+    <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+      <div className="bg-green-50 border border-green-200 rounded-xl p-6 shadow-sm">
+        <h3 className="text-lg font-bold text-green-800 mb-3">🎒 Mochilero</h3>
+        <div className="text-2xl font-bold text-green-600 mb-2">60-80€/día</div>
+        <ul className="text-sm text-green-700 space-y-1">
+          <li>• Hostel: 25-35€</li>
+          <li>• Comida: 20-25€</li>
+          <li>• Transporte: 5-10€</li>
+          <li>• Atracciones: 10-15€</li>
+        </ul>
+      </div>
+
+      <div className="bg-blue-50 border border-blue-200 rounded-xl p-6 shadow-sm">
+        <h3 className="text-lg font-bold text-blue-800 mb-3">🏨 Estándar</h3>
+        <div className="text-2xl font-bold text-blue-600 mb-2">120-160€/día</div>
+        <ul className="text-sm text-blue-700 space-y-1">
+          <li>• Hotel 3*: 70-90€</li>
+          <li>• Comida: 30-45€</li>
+          <li>• Transporte: 10€</li>
+          <li>• Atracciones: 15-25€</li>
+        </ul>
+      </div>
+
+      <div className="bg-purple-50 border border-purple-200 rounded-xl p-6 shadow-sm">
+        <h3 className="text-lg font-bold text-purple-800 mb-3">👑 Lujo</h3>
+        <div className="text-2xl font-bold text-purple-600 mb-2">250-400€/día</div>
+        <ul className="text-sm text-purple-700 space-y-1">
+          <li>• Hotel 5*: 150-250€</li>
+          <li>• Comida: 70-100€</li>
+          <li>• Transporte: 20€</li>
+          <li>• Atracciones: 30-50€</li>
+        </ul>
       </div>
     </div>
   </div>
