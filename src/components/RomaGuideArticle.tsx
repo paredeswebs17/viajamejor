@@ -88,11 +88,6 @@ Volver a guías
         Es sentir que viajas en el tiempo sin necesidad de museos caros, porque la historia está literalmente bajo tus pies.
       </p>
 
-      <p className="text-base leading-relaxed">
-        Y lo mejor: Roma es una ciudad que se puede disfrutar con cualquier presupuesto. Muchas iglesias y plazas son gratuitas,
-        el transporte público es eficiente y económico, y comer bien no tiene por qué vaciar tu cartera.
-      </p>
-
       <p className="text-base leading-relaxed font-medium text-gray-900">
         Si buscas una ciudad que combine historia, cultura, gastronomía y ese encanto italiano que no se encuentra en ningún otro lugar,
         Roma te está esperando.
