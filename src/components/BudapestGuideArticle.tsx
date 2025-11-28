@@ -1069,6 +1069,156 @@ src="https://images.pexels.com/photos/30734949/pexels-photo-30734949.jpeg"
     </div>
   </div>
 
+  {/* SECCIÓN: GASTRONOMÍA HÚNGARA */}
+  <div className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
+    <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">🍝 Gastronomía Húngara - Sabores Auténticos</h2>
+
+    <div className="mb-6">
+      <h3 className="text-lg font-bold text-gray-900 mb-4">Platos que Debes Probar:</h3>
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div className="bg-red-50 border border-red-200 rounded-xl p-4 shadow-sm hover:shadow-md transition-all duration-300">
+          <h4 className="font-semibold text-gray-900 mb-2">Goulash (Gulyás)</h4>
+          <ul className="text-sm text-gray-700 space-y-1 list-none">
+            <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Sopa nacional con carne + páprika</li>
+            <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Precio: 6-12 € según restaurante</li>
+            <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>Mejor en: Frici Papa, Menza</li>
+          </ul>
+        </div>
+
+        <div className="bg-yellow-50 border border-yellow-200 rounded-xl p-4 shadow-sm hover:shadow-md transition-all duration-300">
+          <h4 className="font-semibold text-gray-900 mb-2">Lángos</h4>
+          <ul className="text-sm text-gray-700 space-y-1 list-none">
+            <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Pan frito con crema agria + queso</li>
+            <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Precio: 3-5 € en puestos callejeros</li>
+            <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>Mejor en: Mercado Central planta superior</li>
+          </ul>
+        </div>
+
+        <div className="bg-orange-50 border border-orange-200 rounded-xl p-4 shadow-sm hover:shadow-md transition-all duration-300">
+          <h4 className="font-semibold text-gray-900 mb-2">Schnitzel húngaro</h4>
+          <ul className="text-sm text-gray-700 space-y-1 list-none">
+            <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Versión local más especiada</li>
+            <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Precio: 8-15 €</li>
+            <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>Acompañamiento: Patatas + ensalada</li>
+          </ul>
+        </div>
+
+        <div className="bg-purple-50 border border-purple-200 rounded-xl p-4 shadow-sm hover:shadow-md transition-all duration-300">
+          <h4 className="font-semibold text-gray-900 mb-2">Kürtőskalács (Chimney Cake)</h4>
+          <ul className="text-sm text-gray-700 space-y-1 list-none">
+            <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Postre cilíndrico dulce con canela</li>
+            <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Precio: 2-4 €</li>
+            <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>Dónde: Puestos callejeros zona turística</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <h3 className="text-lg font-bold text-gray-900 mb-4">Restaurantes Verificados:</h3>
+      <div className="space-y-3">
+        <div>
+          <h4 className="font-semibold text-gray-900 mb-2">COMIDA TRADICIONAL:</h4>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+            <div className="bg-gray-50 rounded-xl p-3 shadow-sm hover:shadow-md transition-all duration-300">
+              <h5 className="font-semibold text-gray-900 text-sm">Frici Papa</h5>
+              <p className="text-xs text-gray-600 mb-1">Comida de abuela (8-12 €)</p>
+              <a href="https://www.fricipapa.hu/" target="_blank" rel="noopener noreferrer"
+                 className="inline-flex items-center bg-gradient-to-r from-orange-400 to-red-400 hover:from-orange-500 hover:to-red-500 text-white font-medium px-2 py-1 rounded-md shadow-sm hover:shadow-md transform hover:scale-105 transition-all duration-200 text-xs">
+                🍽️ Web oficial
+                <ExternalLink className="h-2 w-2 ml-1" />
+              </a>
+            </div>
+            <div className="bg-gray-50 rounded-xl p-3 shadow-sm hover:shadow-md transition-all duration-300">
+              <h5 className="font-semibold text-gray-900 text-sm">Menza</h5>
+              <p className="text-xs text-gray-600 mb-1">Húngara moderna (12-18 €)</p>
+              <a href="https://www.menzaetterem.hu/en/" target="_blank" rel="noopener noreferrer"
+                 className="inline-flex items-center bg-gradient-to-r from-teal-400 to-blue-400 hover:from-teal-500 hover:to-blue-500 text-white font-medium px-2 py-1 rounded-md shadow-sm hover:shadow-md transform hover:scale-105 transition-all duration-200 text-xs">
+                🏛️ Web oficial
+                <ExternalLink className="h-2 w-2 ml-1" />
+              </a>
+            </div>
+            <div className="bg-gray-50 rounded-xl p-3 shadow-sm hover:shadow-md transition-all duration-300">
+              <h5 className="font-semibold text-gray-900 text-sm">Gundel</h5>
+              <p className="text-xs text-gray-600">Histórico de lujo (25-40 €)</p>
+              <a href="https://gundel.hu/en/" target="_blank" rel="noopener noreferrer"
+                 className="inline-flex items-center bg-gradient-to-r from-purple-400 to-pink-400 hover:from-purple-500 hover:to-pink-500 text-white font-medium px-2 py-1 rounded-md shadow-sm hover:shadow-md transform hover:scale-105 transition-all duration-200 text-xs">
+                👑 Web oficial
+                <ExternalLink className="h-2 w-2 ml-1" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {/* SECCIÓN: SISTEMA DE TRANSPORTE PÚBLICO */}
+  <div className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
+    <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">🚇 Sistema de Transporte Público de Budapest</h2>
+
+    <div className="mb-6">
+      <div className="bg-gradient-to-r from-blue-50 to-sky-50 rounded-xl p-5 border border-blue-200 shadow-sm">
+        <h3 className="text-lg font-bold text-gray-900 mb-4">Billetes y Precios</h3>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm text-gray-700">
+          <div>
+            <h4 className="font-semibold mb-2">Billete Sencillo:</h4>
+            <ul className="space-y-1 list-none">
+              <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>1 viaje: 1,20 €</li>
+              <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Válido 80 min sin transbordo</li>
+            </ul>
+          </div>
+          <div>
+            <h4 className="font-semibold mb-2">Pases Turísticos:</h4>
+            <ul className="space-y-1 list-none">
+              <li className="flex items-center"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3"></span>24h: 6 € (ilimitado)</li>
+              <li className="flex items-center"><span className="w-2 h-2 bg-pink-400 rounded-full mr-3"></span>72h: 15 € (ilimitado)</li>
+              <li className="flex items-center"><span className="w-2 h-2 bg-orange-400 rounded-full mr-3"></span>7 días: 18 € (ilimitado)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">
+      <div className="bg-blue-50 border border-blue-200 rounded-xl p-4 shadow-sm">
+        <h3 className="font-semibold text-gray-900 mb-2">🚇 Metro</h3>
+        <ul className="text-sm text-gray-700 space-y-1 list-none">
+          <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>4 líneas (M1, M2, M3, M4)</li>
+          <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>M1: Patrimonio UNESCO</li>
+          <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>Horario: 4:30-23:00h</li>
+        </ul>
+      </div>
+
+      <div className="bg-green-50 border border-green-200 rounded-xl p-4 shadow-sm">
+        <h3 className="font-semibold text-gray-900 mb-2">🚊 Tranvía</h3>
+        <ul className="text-sm text-gray-700 space-y-1 list-none">
+          <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Línea 2: Panorámica del Danubio</li>
+          <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Línea 4 y 6: Principales avenidas</li>
+          <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>Frecuencia: 5-10 min</li>
+        </ul>
+      </div>
+
+      <div className="bg-yellow-50 border border-yellow-200 rounded-xl p-4 shadow-sm">
+        <h3 className="font-semibold text-gray-900 mb-2">🚌 Autobús</h3>
+        <ul className="text-sm text-gray-700 space-y-1 list-none">
+          <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Red extensa por toda la ciudad</li>
+          <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Líneas nocturnas disponibles</li>
+          <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>Bus 100E: Aeropuerto-Centro</li>
+        </ul>
+      </div>
+    </div>
+
+    <div className="bg-yellow-50 border border-yellow-200 rounded-xl p-4 shadow-sm">
+      <p className="text-sm text-yellow-800 font-semibold mb-2">⚠️ Importante:</p>
+      <ul className="text-sm text-yellow-700 space-y-1 list-none">
+        <li className="flex items-center"><span className="w-2 h-2 bg-yellow-600 rounded-full mr-3"></span>Valida SIEMPRE tu billete al subir</li>
+        <li className="flex items-center"><span className="w-2 h-2 bg-yellow-600 rounded-full mr-3"></span>Inspecciones frecuentes: Multa 60 €</li>
+        <li className="flex items-center"><span className="w-2 h-2 bg-yellow-600 rounded-full mr-3"></span>App BKK Futár: Horarios en tiempo real</li>
+      </ul>
+    </div>
+  </div>
+
     <div className="bg-gray-50 rounded-2xl p-6 sm:p-8 mb-8 shadow-md">
   <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6 text-center">Presupuestos Reales y Detallados</h2>
   
