@@ -1527,7 +1527,6 @@ Volver a guías
             <p>• Multa sin billete: 105€ (pago inmediato)</p>
             <p>• App oficial: WienMobil (compra digital)</p>
             <p>• Zona: Centro cubierto por zona 100</p>
-            <p>• Sistema de honor: sin torniquetes</p>
           </div>
         </div>
       </div>
