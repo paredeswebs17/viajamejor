@@ -105,25 +105,33 @@ Volver a guías
         <h4 className="text-md font-bold text-gray-900 mb-4">🚌 Airport Express - La Conexión Más Directa</h4>
 
         <div className="bg-gradient-to-r from-green-50 to-emerald-50 border border-green-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+          <div className="space-y-6">
             <div>
               <h5 className="font-semibold text-gray-900 mb-3">Información esencial:</h5>
-              <ul className="text-sm text-gray-700 space-y-2 list-none">
-                <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span><strong>Precio:</strong> 100 CZK (≈ 4€) por trayecto</li>
-                <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span><strong>Horario:</strong> 5:30-22:30h, cada 30 min</li>
-                <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span><strong>Duración:</strong> 40 minutos directos</li>
-                <li className="flex items-center"><span className="w-2 h-2 bg-yellow-400 rounded-full mr-3"></span><strong>Destino:</strong> Estación Central (metro línea C)</li>
-              </ul>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <ul className="text-sm text-gray-700 space-y-2 list-none">
+                  <li className="flex items-start"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3 mt-1.5 flex-shrink-0"></span><span><strong>Precio:</strong> 100 CZK (≈ 4€) por trayecto</span></li>
+                  <li className="flex items-start"><span className="w-2 h-2 bg-green-400 rounded-full mr-3 mt-1.5 flex-shrink-0"></span><span><strong>Horario:</strong> 5:30-22:30h, cada 30 min</span></li>
+                </ul>
+                <ul className="text-sm text-gray-700 space-y-2 list-none">
+                  <li className="flex items-start"><span className="w-2 h-2 bg-red-400 rounded-full mr-3 mt-1.5 flex-shrink-0"></span><span><strong>Duración:</strong> 40 minutos directos</span></li>
+                  <li className="flex items-start"><span className="w-2 h-2 bg-yellow-400 rounded-full mr-3 mt-1.5 flex-shrink-0"></span><span><strong>Destino:</strong> Estación Central (metro línea C)</span></li>
+                </ul>
+              </div>
             </div>
 
             <div>
               <h5 className="font-semibold text-gray-900 mb-3">Ventajas:</h5>
-              <ul className="text-sm text-gray-700 space-y-2 list-none">
-                <li className="flex items-center"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3"></span>Sin paradas intermedias</li>
-                <li className="flex items-center"><span className="w-2 h-2 bg-pink-400 rounded-full mr-3"></span>Espacio para equipaje</li>
-                <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Pago con tarjeta al conductor</li>
-                <li className="flex items-center"><span className="w-2 h-2 bg-emerald-400 rounded-full mr-3"></span>Sale de ambas terminales</li>
-              </ul>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <ul className="text-sm text-gray-700 space-y-2 list-none">
+                  <li className="flex items-start"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3 mt-1.5 flex-shrink-0"></span><span>Sin paradas intermedias</span></li>
+                  <li className="flex items-start"><span className="w-2 h-2 bg-pink-400 rounded-full mr-3 mt-1.5 flex-shrink-0"></span><span>Espacio para equipaje</span></li>
+                </ul>
+                <ul className="text-sm text-gray-700 space-y-2 list-none">
+                  <li className="flex items-start"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3 mt-1.5 flex-shrink-0"></span><span>Pago con tarjeta al conductor</span></li>
+                  <li className="flex items-start"><span className="w-2 h-2 bg-emerald-400 rounded-full mr-3 mt-1.5 flex-shrink-0"></span><span>Sale de ambas terminales</span></li>
+                </ul>
+              </div>
             </div>
           </div>
 
