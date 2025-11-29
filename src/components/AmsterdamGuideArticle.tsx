@@ -79,15 +79,15 @@ Volver a guías
 
     <div className="space-y-4 text-gray-700">
       <p className="text-base leading-relaxed">
-        Ámsterdam es la Venecia del Norte, una ciudad donde los canales son las calles principales y las bicicletas superan a los coches. Con su arquitectura del Siglo de Oro, museos de talla mundial y una cultura liberal única, es el destino perfecto para quienes buscan arte, historia y una atmósfera cosmopolita inolvidable.
+        Imagina una ciudad donde más de 100 kilómetros de canales se entrelazan formando un laberinto acuático del siglo XVII, donde hay más bicicletas que habitantes, y donde las casas inclinadas del Siglo de Oro cuentan historias de comerciantes y artistas. Ámsterdam es todo esto y mucho más: museos de talla mundial, una cultura liberal única y una atmósfera cosmopolita que enamora desde el primer momento.
       </p>
 
       <p className="text-base leading-relaxed">
-        Pero Ámsterdam es mucho más que sus canales y coffeeshops. Es disfrutar de un stroopwafel recién hecho en el mercado de las flores mientras observas las coloridas casas flotantes. Es recorrer en bicicleta sus calles empedradas como un auténtico local. Es contemplar obras maestras de Van Gogh y Rembrandt en museos espectaculares. Es perderse en las nueve callejuelas del barrio Jordaan mientras descubres cafés acogedores y boutiques vintage.
+        Pero Ámsterdam va más allá de sus icónicos canales y su fama internacional. Aquí disfrutarás de un stroopwafel recién hecho en el mercado de las flores mientras observas las coloridas casas flotantes. Recorrerás en bicicleta calles empedradas como un auténtico local, contemplarás obras maestras de Van Gogh y Rembrandt, y te perderás en las nueve callejuelas del barrio Jordaan descubriendo cafés acogedores y boutiques vintage que pocos turistas conocen.
       </p>
 
       <p className="text-base leading-relaxed font-medium text-gray-900">
-        Si buscas una ciudad que combine arte de clase mundial, arquitectura histórica impresionante, cultura tolerante y progresista, y un ambiente único entre canales y bicicletas, Ámsterdam es tu destino perfecto.
+        Una ciudad compacta y perfecta para explorar a pie o en bici, donde cada rincón esconde una sorpresa.
       </p>
     </div>
   </div>
