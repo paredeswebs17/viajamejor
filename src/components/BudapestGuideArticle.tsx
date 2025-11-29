@@ -1353,6 +1353,58 @@ src="https://images.pexels.com/photos/30734949/pexels-photo-30734949.jpeg"
     </div>
   </div>
 
+  {/* SECCIÓN: CONSEJOS FINALES */}
+  <div className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
+    <div className="bg-gradient-to-r from-blue-50 to-cyan-50 rounded-2xl p-6 sm:p-8 shadow-md mb-8">
+      <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">🎯 Consejos Finales para tu Viaje a Budapest</h2>
+
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+        <div>
+          <h3 className="text-lg font-bold text-gray-900 mb-3">✅ Imprescindibles que NO puedes perderte:</h3>
+          <ul className="text-sm text-gray-700 space-y-2 list-none">
+            <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Parlamento iluminado de noche desde Bastión de los Pescadores</li>
+            <li className="flex items-center"><span className="w-2 h-2 bg-cyan-400 rounded-full mr-3"></span>Baños termales Széchenyi (reserva online)</li>
+            <li className="flex items-center"><span className="w-2 h-2 bg-sky-400 rounded-full mr-3"></span>Crucero nocturno por el Danubio</li>
+            <li className="flex items-center"><span className="w-2 h-2 bg-teal-400 rounded-full mr-3"></span>Ruin bars en Barrio Judío (Szimpla Kert)</li>
+            <li className="flex items-center"><span className="w-2 h-2 bg-emerald-400 rounded-full mr-3"></span>Probar goulash auténtico y lángos recién hecho</li>
+            <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Caminar por el Puente de las Cadenas al atardecer</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 className="text-lg font-bold text-gray-900 mb-3">💡 Consejos de Viajero Experimentado:</h3>
+          <ul className="text-sm text-gray-700 space-y-2 list-none">
+            <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>Valida SIEMPRE tu billete de transporte (multas 60 €)</li>
+            <li className="flex items-center"><span className="w-2 h-2 bg-orange-400 rounded-full mr-3"></span>Cuidado con carteristas en metro, Váci Street y zonas turísticas</li>
+            <li className="flex items-center"><span className="w-2 h-2 bg-amber-400 rounded-full mr-3"></span>Usa solo taxis amarillos oficiales o apps (Bolt, Főtaxi)</li>
+            <li className="flex items-center"><span className="w-2 h-2 bg-yellow-400 rounded-full mr-3"></span>Agua del grifo es potable y gratis - lleva botella reutilizable</li>
+            <li className="flex items-center"><span className="w-2 h-2 bg-lime-400 rounded-full mr-3"></span>Evita restaurantes sin precios en el menú</li>
+            <li className="flex items-center"><span className="w-2 h-2 bg-rose-400 rounded-full mr-3"></span>Propinas 10-15% (muchos incluyen cargo por servicio - revisa cuenta)</li>
+            <li className="flex items-center"><span className="w-2 h-2 bg-pink-400 rounded-full mr-3"></span>No cambies dinero en la calle ni uses cajeros Euronet</li>
+          </ul>
+        </div>
+      </div>
+
+      <div className="bg-yellow-50 border border-yellow-200 rounded-xl p-4 mt-6">
+        <h3 className="text-lg font-bold text-yellow-800 mb-3">💡 Consejos para Ahorrar en Budapest:</h3>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <ul className="text-sm text-yellow-700 space-y-2 list-none">
+            <li className="flex items-center"><span className="w-2 h-2 bg-yellow-600 rounded-full mr-3"></span>Menú del día (Napi Menü): 2 platos por 6-9 € al mediodía</li>
+            <li className="flex items-center"><span className="w-2 h-2 bg-yellow-600 rounded-full mr-3"></span>Street food: Karavan, Bors GasztroBár, lángos desde 2-5 €</li>
+            <li className="flex items-center"><span className="w-2 h-2 bg-yellow-600 rounded-full mr-3"></span>Mercado Central: Comida local económica en piso superior</li>
+            <li className="flex items-center"><span className="w-2 h-2 bg-yellow-600 rounded-full mr-3"></span>Supermercados: Aldi, Lidl, Spar para comida barata</li>
+          </ul>
+          <ul className="text-sm text-yellow-700 space-y-2 list-none">
+            <li className="flex items-center"><span className="w-2 h-2 bg-yellow-600 rounded-full mr-3"></span>Agua: Pide del grifo en restaurantes (csapvíz - "chop-veez") ¡Gratis!</li>
+            <li className="flex items-center"><span className="w-2 h-2 bg-yellow-600 rounded-full mr-3"></span>Museos gratis: Días nacionales (15 marzo, 20 agosto, 23 octubre)</li>
+            <li className="flex items-center"><span className="w-2 h-2 bg-yellow-600 rounded-full mr-3"></span>Happy hours ruin bars (16:00-19:00): Bebidas mitad de precio</li>
+            <li className="flex items-center"><span className="w-2 h-2 bg-yellow-600 rounded-full mr-3"></span>Cerveza local: 1,50-3 € (vs importada 4-6 €)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
     <div className="bg-gray-50 rounded-2xl p-6 sm:p-8 mb-8 shadow-md">
   <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6 text-center">Presupuestos Reales y Detallados</h2>
   
