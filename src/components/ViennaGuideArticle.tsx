@@ -1468,23 +1468,24 @@ Volver a guías
         <div className="bg-white rounded-lg p-4 shadow-sm">
           <h5 className="font-semibold text-blue-600 mb-2">🚇 Metro (U-Bahn)</h5>
           <ul className="text-sm text-gray-700 space-y-1">
-            <li>• 5 líneas principales (U1-U6)</li>
-            <li>• Frecuencia: 2-5 minutos</li>
+            <li>• 5 líneas activas: U1, U2, U3, U4, U6</li>
+            <li>• Nota: U5 en construcción (apertura 2030)</li>
+            <li>• Frecuencia: 2-5 minutos (2-4 en hora punta)</li>
             <li>• Horario: 05:00-00:30</li>
-            <li>• Fines semana: 24h</li>
+            <li>• Viernes y sábados: servicio 24h</li>
           </ul>
         </div>
-        
+
         <div className="bg-white rounded-lg p-4 shadow-sm">
           <h5 className="font-semibold text-red-600 mb-2">🚊 Tranvías</h5>
           <ul className="text-sm text-gray-700 space-y-1">
-            <li>• Red histórica extensa</li>
+            <li>• Red histórica extensa (225 km)</li>
             <li>• Conecta todos los distritos</li>
-            <li>• Frecuencia: 5-10 minutos</li>
+            <li>• Frecuencia: 4-8 minutos</li>
             <li>• Acceso a atracciones turísticas</li>
           </ul>
         </div>
-        
+
         <div className="bg-white rounded-lg p-4 shadow-sm">
           <h5 className="font-semibold text-green-600 mb-2">🚌 Autobuses</h5>
           <ul className="text-sm text-gray-700 space-y-1">
@@ -1498,18 +1499,35 @@ Volver a guías
 
       <div className="bg-white rounded-lg p-4 shadow-sm">
         <h5 className="font-semibold text-gray-900 mb-3">Información Práctica del Sistema:</h5>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm text-gray-700">
-          <div>
-            <p className="mb-2"><strong>Billete sencillo:</strong> 2,40 € (válido 1 hora)</p>
-            <p className="mb-2"><strong>Billete 24h:</strong> 8,00 € (viajes ilimitados)</p>
-            <p className="mb-2"><strong>Billete 48h:</strong> 14,10 € (muy popular)</p>
-            <p className="mb-2"><strong>Billete 72h:</strong> 17,10 € (ideal 3 días)</p>
+
+        <div className="mb-4">
+          <h6 className="font-semibold text-blue-700 mb-2">Billetes disponibles hasta 31 dic 2025:</h6>
+          <div className="text-sm text-gray-700 space-y-1 ml-3">
+            <p>• Billete sencillo: 2,40€ (válido 80 min)</p>
+            <p>• Billete 24h: 8,00€</p>
+            <p>• Billete 48h: 14,10€</p>
+            <p>• Billete 72h: 17,10€</p>
           </div>
-          <div>
-            <p className="mb-2"><strong>Validación:</strong> Obligatoria antes de viajar</p>
-            <p className="mb-2"><strong>Controles:</strong> Multa 103 € sin billete</p>
-            <p className="mb-2"><strong>App oficial:</strong> WienMobil (compra digital)</p>
-            <p className="mb-2"><strong>Zonas:</strong> Centro cubierto por zona 100</p>
+        </div>
+
+        <div className="mb-4 bg-yellow-50 border border-yellow-200 rounded-lg p-3">
+          <h6 className="font-semibold text-yellow-800 mb-2">⚠️ A partir de 1 enero 2026:</h6>
+          <div className="text-sm text-yellow-900 space-y-1 ml-3">
+            <p>• Billete sencillo: 2,40€ (válido 80 min)</p>
+            <p>• Billete 24h: 8,00€</p>
+            <p>• Billete 7 días: información por confirmar</p>
+            <p className="font-semibold mt-2">⚠️ NOTA: Los billetes de 48h y 72h desaparecen</p>
+          </div>
+        </div>
+
+        <div>
+          <h6 className="font-semibold text-gray-900 mb-2">Información General:</h6>
+          <div className="text-sm text-gray-700 space-y-1 ml-3">
+            <p>• Validación: Obligatoria antes de viajar</p>
+            <p>• Multa sin billete: 105€ (pago inmediato)</p>
+            <p>• App oficial: WienMobil (compra digital)</p>
+            <p>• Zona: Centro cubierto por zona 100</p>
+            <p>• Sistema de honor: sin torniquetes</p>
           </div>
         </div>
       </div>
