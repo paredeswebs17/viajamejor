@@ -109,10 +109,10 @@ Volver a guías
             <div>
               <h5 className="font-semibold text-gray-900 mb-3">Información esencial:</h5>
               <ul className="text-sm text-gray-700 space-y-2 list-none">
-                <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span><strong>Precio: </strong> 100 CZK (≈ 4€) por trayecto</li>
-                <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span><strong>Horario: </strong> 5:30-22:30h, cada 30 min</li>
-                <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span><strong>Duración: </strong> 40 minutos directos</li>
-                <li className="flex items-center"><span className="w-2 h-2 bg-yellow-400 rounded-full mr-3"></span><strong>Destino: </strong> Estación Central (metro línea C)</li>
+                <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span><strong>Precio:</strong> 100 CZK (≈ 4€) por trayecto</li>
+                <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span><strong>Horario:</strong> 5:30-22:30h, cada 30 min</li>
+                <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span><strong>Duración:</strong> 40 minutos directos</li>
+                <li className="flex items-center"><span className="w-2 h-2 bg-yellow-400 rounded-full mr-3"></span><strong>Destino:</strong> Estación Central (metro línea C)</li>
               </ul>
             </div>
 
