@@ -1008,9 +1008,9 @@ src="https://images.pexels.com/photos/32795906/pexels-photo-32795906.jpeg"
           <div className="bg-green-50 border border-green-200 rounded-xl p-4 shadow-sm hover:shadow-md transition-all duration-300">
             <h4 className="font-semibold text-gray-900 mb-2">Monasterio de Strahov</h4>
             <ul className="text-sm text-gray-700 space-y-1 list-none">
-              <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Biblioteca medieval espectacular</li>
-              <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Cervecería del monasterio (desde 1400)</li>
-              <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>Precio: 150 CZK (≈ 6€)</li>
+              <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Biblioteca barroca espectacular (150 CZK / 6€)</li>
+              <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Cervecería artesanal renovada en 2000</li>
+              <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>Mejor cerveza de Praga según locales</li>
             </ul>
           </div>
 
@@ -1029,39 +1029,31 @@ src="https://images.pexels.com/photos/32795906/pexels-photo-32795906.jpeg"
         <h3 className="text-lg font-bold text-gray-900 mb-4">Excursiones de un Día:</h3>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <div className="bg-orange-50 border border-orange-200 rounded-xl p-4 shadow-sm hover:shadow-md transition-all duration-300">
-            <h4 className="font-semibold text-gray-900 mb-2">Kutná Hora</h4>
-            <ul className="text-sm text-gray-700 space-y-1 list-none">
-              <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Ciudad medieval Patrimonio UNESCO</li>
-              <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Capilla de huesos (Osario Sedlec)</li>
-              <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>1h en tren desde Praga</li>
-            </ul>
+            <h4 className="font-semibold text-gray-900 mb-2">Suiza Bohemia y Sajona</h4>
+            <p className="text-sm text-gray-700 mb-3">Tour de día completo por paisajes naturales espectaculares con formaciones rocosas únicas.</p>
+            <a
+              href="https://gyg.me/6riRFPCy"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm w-full justify-center"
+            >
+              Ver Tour Suiza Bohemia
+              <ExternalLink className="h-3 w-3 ml-2" />
+            </a>
           </div>
 
           <div className="bg-pink-50 border border-pink-200 rounded-xl p-4 shadow-sm hover:shadow-md transition-all duration-300">
             <h4 className="font-semibold text-gray-900 mb-2">Český Krumlov</h4>
-            <ul className="text-sm text-gray-700 space-y-1 list-none">
-              <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Pueblo de cuento medieval perfecto</li>
-              <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Castillo con torre panorámica</li>
-              <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>3h en bus (día largo pero vale la pena)</li>
-            </ul>
-          </div>
-
-          <div className="bg-red-50 border border-red-200 rounded-xl p-4 shadow-sm hover:shadow-md transition-all duration-300">
-            <h4 className="font-semibold text-gray-900 mb-2">Karlštejn</h4>
-            <ul className="text-sm text-gray-700 space-y-1 list-none">
-              <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Castillo gótico del siglo XIV</li>
-              <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>40 min en tren + 30 min caminata</li>
-              <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>Entrada: 300 CZK (≈ 12€)</li>
-            </ul>
-          </div>
-
-          <div className="bg-cyan-50 border border-cyan-200 rounded-xl p-4 shadow-sm hover:shadow-md transition-all duration-300">
-            <h4 className="font-semibold text-gray-900 mb-2">Terezín</h4>
-            <ul className="text-sm text-gray-700 space-y-1 list-none">
-              <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Campo de concentración WWII</li>
-              <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Visita histórica profunda</li>
-              <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>1h en bus desde Praga</li>
-            </ul>
+            <p className="text-sm text-gray-700 mb-3">Viaje de un día completo al pueblo medieval más bonito de República Checa, Patrimonio UNESCO.</p>
+            <a
+              href="https://gyg.me/pdXWAUmz"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center bg-gradient-to-r from-pink-500 to-rose-500 hover:from-pink-600 hover:to-rose-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm w-full justify-center"
+            >
+              Ver Tour Český Krumlov
+              <ExternalLink className="h-3 w-3 ml-2" />
+            </a>
           </div>
         </div>
       </div>
