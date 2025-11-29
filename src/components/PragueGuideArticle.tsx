@@ -126,30 +126,17 @@ Volver a guías
               </ul>
             </div>
           </div>
-        </div>
-      </div>
 
-      <div className="mb-6">
-        <h4 className="text-md font-bold text-gray-900 mb-4">🚇 Transporte Público Económico</h4>
-
-        <div className="bg-gradient-to-r from-blue-50 to-sky-50 border border-blue-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
-            <div>
-              <h5 className="font-semibold text-gray-900 mb-2">Bus 119 + Metro:</h5>
-              <ul className="text-sm text-gray-700 space-y-1 list-none">
-                <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Precio: 40 CZK (≈ 1,60€)</li>
-                <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Conecta con línea A (verde)</li>
-                <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>Parada: Nádraží Veleslavín</li>
-              </ul>
-            </div>
-            <div>
-              <h5 className="font-semibold text-gray-900 mb-2">Bus 100 + Metro:</h5>
-              <ul className="text-sm text-gray-700 space-y-1 list-none">
-                <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Precio: 40 CZK (≈ 1,60€)</li>
-                <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Conecta con línea B (amarilla)</li>
-                <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>Parada: Zličín</li>
-              </ul>
-            </div>
+          <div className="mt-6 flex justify-center">
+            <a
+              href="https://gyg.me/7aSOnLE7"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center bg-gradient-to-r from-green-500 to-emerald-500 hover:from-green-600 hover:to-emerald-600 text-white font-semibold px-6 py-3 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300"
+            >
+              🚌 Reservar Traslado desde el Aeropuerto
+              <ExternalLink className="h-4 w-4 ml-2" />
+            </a>
           </div>
         </div>
       </div>
