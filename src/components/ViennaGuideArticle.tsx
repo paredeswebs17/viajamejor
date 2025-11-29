@@ -127,20 +127,20 @@ Volver a guías
                 </ul>
                 <ul className="text-sm text-gray-700 space-y-2 list-none">
                   <li className="flex items-start"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3 mt-1.5 flex-shrink-0"></span><span>Sin restricciones de equipaje</span></li>
-                  <li className="flex items-start"><span className="w-2 h-2 bg-emerald-400 rounded-full mr-3 mt-1.5 flex-shrink-0"></span><span>Compra online con descuento</span></li>
+                  <li className="flex items-start"><span className="w-2 h-2 bg-emerald-400 rounded-full mr-3 mt-1.5 flex-shrink-0"></span><span>Compra online anticipada</span></li>
                 </ul>
               </div>
             </div>
           </div>
 
-          <div className="mt-6 flex justify-center">
+          <div className="mt-6">
             <a
               href="https://gyg.me/fLZy1uTy"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center bg-gradient-to-r from-blue-500 to-indigo-500 hover:from-blue-600 hover:to-indigo-600 text-white font-semibold px-6 py-3 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300"
             >
-              🚄 Comprar CAT online con descuento
+              🚄 Comprar CAT online
               <ExternalLink className="h-4 w-4 ml-2" />
             </a>
           </div>
