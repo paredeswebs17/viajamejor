@@ -1107,6 +1107,105 @@ Volver a guías
     </div>
   </div>
 
+  {/* SECCIÓN: HERRAMIENTAS DE VIAJE */}
+  <div className="bg-gradient-to-br from-blue-50 via-sky-50 to-cyan-50 border border-blue-200 rounded-2xl p-6 sm:p-8 shadow-lg mb-8">
+    <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3 flex items-center">
+      💳 Herramientas de Viaje
+    </h2>
+    <p className="text-gray-600 mb-6">Servicios esenciales para viajar sin preocupaciones</p>
+
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div className="bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300">
+        <div className="flex items-center mb-4">
+          <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-xl flex items-center justify-center mr-4">
+            <span className="text-2xl">💳</span>
+          </div>
+          <div>
+            <h3 className="text-xl font-bold text-gray-900">Revolut</h3>
+            <p className="text-sm text-gray-600">Tarjeta sin comisiones para viajar</p>
+          </div>
+        </div>
+
+        <p className="text-gray-700 mb-4">
+          Viaja sin preocuparte por las comisiones bancarias. Revolut te permite pagar en euros sin cargos adicionales,
+          retirar efectivo sin comisiones y cambiar divisas al mejor tipo de cambio.
+        </p>
+
+        <div className="bg-blue-50 rounded-lg p-4 mb-4">
+          <h4 className="font-semibold text-gray-900 mb-2">✅ Ventajas para tu viaje:</h4>
+          <ul className="text-sm text-gray-700 space-y-1">
+            <li>• Sin comisiones por pago en el extranjero</li>
+            <li>• Cambio de divisa al tipo real</li>
+            <li>• Retiros gratuitos en cajeros</li>
+            <li>• Control total desde la app</li>
+            <li>• Tarjetas virtuales desechables</li>
+          </ul>
+        </div>
+
+        <a
+          href="https://revolut.com/referral/?referral-code=antoni22jf!DEC1-25-AR-CH1H-CRY&geo-redirect"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center bg-gradient-to-r from-blue-500 to-cyan-500 hover:from-blue-600 hover:to-cyan-600 text-white font-semibold px-5 py-3 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm w-full justify-center"
+        >
+          💳 Consigue tu Tarjeta Revolut
+          <ExternalLink className="h-3 w-3 ml-2" />
+        </a>
+      </div>
+
+      <div className="bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300">
+        <div className="flex items-center mb-4">
+          <div className="w-12 h-12 bg-gradient-to-br from-green-500 to-emerald-500 rounded-xl flex items-center justify-center mr-4">
+            <span className="text-2xl">🛡️</span>
+          </div>
+          <div>
+            <h3 className="text-xl font-bold text-gray-900">IATI Seguros</h3>
+            <p className="text-sm text-gray-600">Seguro de viaje con cobertura completa</p>
+          </div>
+        </div>
+
+        <p className="text-gray-700 mb-4">
+          Viaja tranquilo con un seguro que te cubre ante cualquier imprevisto. IATI ofrece asistencia médica 24/7,
+          cobertura de cancelación, pérdida de equipaje y mucho más.
+        </p>
+
+        <div className="bg-green-50 rounded-lg p-4 mb-4">
+          <h4 className="font-semibold text-gray-900 mb-2">✅ Por qué contratar seguro:</h4>
+          <ul className="text-sm text-gray-700 space-y-1">
+            <li>• Asistencia médica en el extranjero</li>
+            <li>• Cobertura de cancelación de viaje</li>
+            <li>• Pérdida o robo de equipaje</li>
+            <li>• Asistencia 24/7 en español</li>
+            <li>• Repatriación incluida</li>
+          </ul>
+        </div>
+
+        <div className="bg-gradient-to-r from-orange-100 to-red-100 border-2 border-orange-300 rounded-lg p-3 mb-4">
+          <p className="text-center font-bold text-orange-800 text-sm">
+            🎁 ¡Descuento exclusivo del 5% ya aplicado en el enlace!
+          </p>
+        </div>
+
+        <a
+          href="https://www.iatiseguros.com/?r=37344279073491"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center bg-gradient-to-r from-green-500 to-emerald-500 hover:from-green-600 hover:to-emerald-600 text-white font-semibold px-5 py-3 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm w-full justify-center"
+        >
+          🛡️ Contratar Seguro IATI con 5% Descuento
+          <ExternalLink className="h-3 w-3 ml-2" />
+        </a>
+      </div>
+    </div>
+
+    <div className="bg-amber-50 border border-amber-200 rounded-lg p-4 mt-6">
+      <p className="text-sm text-amber-800">
+        <strong>💡 Consejo:</strong> Prepara estos dos elementos antes de tu viaje. La tarjeta Revolut te ahorrará dinero en cada pago,
+        y el seguro IATI te dará tranquilidad durante todo el viaje.
+      </p>
+    </div>
+  </div>
+
   {/* RESTAURANTES */}
   <div className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
     <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">🍽️ Guía Gastronómica - Probado y Recomendado</h2>
