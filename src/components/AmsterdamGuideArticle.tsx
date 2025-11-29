@@ -73,6 +73,25 @@ Volver a guías
     />
   </div>
 
+  {/* SECCIÓN: ¿POR QUÉ VISITAR ÁMSTERDAM? */}
+  <div className="bg-gradient-to-r from-orange-50 to-red-50 border border-orange-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
+    <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">¿Por qué visitar Ámsterdam?</h2>
+
+    <div className="space-y-4 text-gray-700">
+      <p className="text-base leading-relaxed">
+        Ámsterdam es la Venecia del Norte, una ciudad donde los canales son las calles principales y las bicicletas superan a los coches. Con su arquitectura del Siglo de Oro, museos de talla mundial y una cultura liberal única, es el destino perfecto para quienes buscan arte, historia y una atmósfera cosmopolita inolvidable.
+      </p>
+
+      <p className="text-base leading-relaxed">
+        Pero Ámsterdam es mucho más que sus canales y coffeeshops. Es disfrutar de un stroopwafel recién hecho en el mercado de las flores mientras observas las coloridas casas flotantes. Es recorrer en bicicleta sus calles empedradas como un auténtico local. Es contemplar obras maestras de Van Gogh y Rembrandt en museos espectaculares. Es perderse en las nueve callejuelas del barrio Jordaan mientras descubres cafés acogedores y boutiques vintage.
+      </p>
+
+      <p className="text-base leading-relaxed font-medium text-gray-900">
+        Si buscas una ciudad que combine arte de clase mundial, arquitectura histórica impresionante, cultura tolerante y progresista, y un ambiente único entre canales y bicicletas, Ámsterdam es tu destino perfecto.
+      </p>
+    </div>
+  </div>
+
   <div className="bg-gradient-to-r from-orange-50 to-red-50 rounded-2xl p-6 sm:p-8 mb-8 shadow-md">
     <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">Itinerario Holandés</h2>
     <div className="overflow-x-auto">
@@ -177,6 +196,154 @@ Volver a guías
             <p className="text-sm text-gray-700 mb-1"><strong>Reserva:</strong> Online con antelación</p>
             <p className="text-sm text-gray-700 mb-1"><strong>Incluye:</strong> Espera + ayuda equipaje</p>
           </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {/* SECCIÓN: ALOJAMIENTO */}
+  <div className="bg-gradient-to-br from-emerald-50 via-teal-50 to-cyan-50 border border-emerald-200 rounded-2xl p-6 sm:p-8 shadow-lg mb-8">
+    <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3 flex items-center">
+      🏨 Dónde Alojarse en Ámsterdam
+    </h2>
+    <p className="text-gray-600 mb-6">Las mejores zonas y hoteles recomendados para tu estancia</p>
+
+    <div className="space-y-6">
+      {/* Centro Histórico */}
+      <div className="bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300">
+        <div className="flex items-center mb-4">
+          <div className="w-12 h-12 bg-gradient-to-br from-orange-500 to-red-500 rounded-xl flex items-center justify-center mr-4">
+            <span className="text-2xl">🏛️</span>
+          </div>
+          <div>
+            <h3 className="text-xl font-bold text-gray-900">Centro Histórico (Grachtengordel)</h3>
+            <p className="text-sm text-gray-600">La ubicación perfecta junto a los canales</p>
+          </div>
+        </div>
+
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-4">
+          <div className="bg-gradient-to-br from-orange-50 to-red-50 rounded-xl p-4 border border-orange-200 flex flex-col">
+            <div className="flex-grow">
+              <h4 className="font-bold text-gray-900 mb-2">Hotel Sebastian's ⭐⭐⭐⭐</h4>
+              <p className="text-xs text-gray-600 mb-2">📍 Canales Centro</p>
+              <p className="text-sm text-gray-700 mb-3">Hotel boutique en el corazón de los canales. Ubicación excepcional cerca de las 9 calles y la Casa de Ana Frank.</p>
+            </div>
+            <div className="flex items-center justify-between flex-wrap gap-2 mt-auto">
+              <span className="text-lg font-bold text-orange-600">€€</span>
+              <a href="https://www.booking.com" target="_blank" rel="noopener noreferrer"
+                 className="inline-flex items-center bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm">
+                Ver en Booking
+                <ExternalLink className="h-3 w-3 ml-2" />
+              </a>
+            </div>
+          </div>
+
+          <div className="bg-gradient-to-br from-cyan-50 to-blue-50 rounded-xl p-4 border border-cyan-200 flex flex-col">
+            <div className="flex-grow">
+              <h4 className="font-bold text-gray-900 mb-2">INK Hotel Amsterdam ⭐⭐⭐⭐</h4>
+              <p className="text-xs text-gray-600 mb-2">📍 Plaza Dam</p>
+              <p className="text-sm text-gray-700 mb-3">Hotel moderno con diseño único en pleno centro histórico. A pasos del Palacio Real y Damrak.</p>
+            </div>
+            <div className="flex items-center justify-between flex-wrap gap-2 mt-auto">
+              <span className="text-lg font-bold text-cyan-600">€€€</span>
+              <a href="https://www.booking.com" target="_blank" rel="noopener noreferrer"
+                 className="inline-flex items-center bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm">
+                Ver en Booking
+                <ExternalLink className="h-3 w-3 ml-2" />
+              </a>
+            </div>
+          </div>
+
+          <div className="bg-gradient-to-br from-indigo-50 to-purple-50 rounded-xl p-4 border border-indigo-200 flex flex-col">
+            <div className="flex-grow">
+              <h4 className="font-bold text-gray-900 mb-2">The Hoxton Amsterdam ⭐⭐⭐⭐</h4>
+              <p className="text-xs text-gray-600 mb-2">📍 Herengracht Canal</p>
+              <p className="text-sm text-gray-700 mb-3">Hotel con encanto en edificio histórico de los canales. Perfecto para una experiencia auténtica.</p>
+            </div>
+            <div className="flex items-center justify-between flex-wrap gap-2 mt-auto">
+              <span className="text-lg font-bold text-indigo-600">€€€</span>
+              <a href="https://www.booking.com" target="_blank" rel="noopener noreferrer"
+                 className="inline-flex items-center bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm">
+                Ver en Booking
+                <ExternalLink className="h-3 w-3 ml-2" />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div className="bg-green-50 border border-green-200 rounded-lg p-3">
+          <p className="text-sm text-green-800">
+            <strong>✅ Por qué elegir esta zona:</strong> Ubicación ideal entre canales, cerca de la Casa de Ana Frank, el Jordaan y las 9 calles. Todo accesible a pie, restaurantes y cafés en cada esquina, zona segura y pintoresca.
+          </p>
+        </div>
+      </div>
+
+      {/* Museumplein */}
+      <div className="bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300">
+        <div className="flex items-center mb-4">
+          <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-indigo-500 rounded-xl flex items-center justify-center mr-4">
+            <span className="text-2xl">🎨</span>
+          </div>
+          <div>
+            <h3 className="text-xl font-bold text-gray-900">Museumplein (Zona de Museos)</h3>
+            <p className="text-sm text-gray-600">Ideal para amantes del arte y la cultura</p>
+          </div>
+        </div>
+
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-4">
+          <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl p-4 border border-blue-200 flex flex-col">
+            <div className="flex-grow">
+              <h4 className="font-bold text-gray-900 mb-2">XO Hotels Park West ⭐⭐⭐</h4>
+              <p className="text-xs text-gray-600 mb-2">📍 Cerca Museumplein</p>
+              <p className="text-sm text-gray-700 mb-3">Hotel práctico cerca de museos principales. Excelente relación calidad-precio para explorar la zona cultural.</p>
+            </div>
+            <div className="flex items-center justify-between flex-wrap gap-2 mt-auto">
+              <span className="text-lg font-bold text-blue-600">€€</span>
+              <a href="https://www.booking.com" target="_blank" rel="noopener noreferrer"
+                 className="inline-flex items-center bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm">
+                Ver en Booking
+                <ExternalLink className="h-3 w-3 ml-2" />
+              </a>
+            </div>
+          </div>
+
+          <div className="bg-gradient-to-br from-emerald-50 to-teal-50 rounded-xl p-4 border border-emerald-200 flex flex-col">
+            <div className="flex-grow">
+              <h4 className="font-bold text-gray-900 mb-2">Hotel Okura Amsterdam ⭐⭐⭐⭐⭐</h4>
+              <p className="text-xs text-gray-600 mb-2">📍 De Pijp</p>
+              <p className="text-sm text-gray-700 mb-3">Hotel de lujo con restaurantes michelin. Para quienes buscan máximo confort cerca de los museos.</p>
+            </div>
+            <div className="flex items-center justify-between flex-wrap gap-2 mt-auto">
+              <span className="text-lg font-bold text-emerald-600">€€€€</span>
+              <a href="https://www.booking.com" target="_blank" rel="noopener noreferrer"
+                 className="inline-flex items-center bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm">
+                Ver en Booking
+                <ExternalLink className="h-3 w-3 ml-2" />
+              </a>
+            </div>
+          </div>
+
+          <div className="bg-gradient-to-br from-purple-50 to-pink-50 rounded-xl p-4 border border-purple-200 flex flex-col">
+            <div className="flex-grow">
+              <h4 className="font-bold text-gray-900 mb-2">Hotel Cornelisz ⭐⭐⭐</h4>
+              <p className="text-xs text-gray-600 mb-2">📍 Museumplein</p>
+              <p className="text-sm text-gray-700 mb-3">Hotel familiar a pocos minutos del Rijksmuseum y Van Gogh. Zona tranquila y bien conectada.</p>
+            </div>
+            <div className="flex items-center justify-between flex-wrap gap-2 mt-auto">
+              <span className="text-lg font-bold text-purple-600">€€</span>
+              <a href="https://www.booking.com" target="_blank" rel="noopener noreferrer"
+                 className="inline-flex items-center bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm">
+                Ver en Booking
+                <ExternalLink className="h-3 w-3 ml-2" />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div className="bg-blue-50 border border-blue-200 rounded-lg p-3">
+          <p className="text-sm text-blue-800">
+            <strong>✅ Por qué elegir esta zona:</strong> Acceso directo al Rijksmuseum, Van Gogh y Stedelijk. Vondelpark cerca para paseos, zona tranquila, tram directo al centro, ambiente residencial elegante.
+          </p>
         </div>
       </div>
     </div>
