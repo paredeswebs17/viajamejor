@@ -1177,10 +1177,10 @@ src="https://images.pexels.com/photos/32795906/pexels-photo-32795906.jpeg"
           <h3 className="text-lg font-bold text-gray-900 mb-4">Cerveza - Rey de Europa:</h3>
           <div className="bg-amber-50 border border-amber-200 rounded-xl p-4 shadow-sm">
             <ul className="text-sm text-gray-700 space-y-2 list-none">
-              <li className="flex items-center"><span className="w-2 h-2 bg-amber-400 rounded-full mr-3"></span><strong>Pilsner Urquell:</strong> La cerveza pilsner original del mundo</li>
-              <li className="flex items-center"><span className="w-2 h-2 bg-amber-400 rounded-full mr-3"></span><strong>Budweiser Budvar:</strong> La auténtica Budweiser checa</li>
-              <li className="flex items-center"><span className="w-2 h-2 bg-amber-400 rounded-full mr-3"></span><strong>Precio:</strong> 1-3 € por cerveza (¡más barata que el agua!)</li>
-              <li className="flex items-center"><span className="w-2 h-2 bg-amber-400 rounded-full mr-3"></span><strong>Dato:</strong> República Checa consume más cerveza per cápita que cualquier país</li>
+              <li className="flex items-start"><span className="w-2 h-2 bg-amber-400 rounded-full mr-3 mt-1.5 flex-shrink-0"></span><span><strong>Pilsner Urquell:</strong> La cerveza pilsner original del mundo</span></li>
+              <li className="flex items-start"><span className="w-2 h-2 bg-amber-400 rounded-full mr-3 mt-1.5 flex-shrink-0"></span><span><strong>Budweiser Budvar:</strong> La auténtica Budweiser checa</span></li>
+              <li className="flex items-start"><span className="w-2 h-2 bg-amber-400 rounded-full mr-3 mt-1.5 flex-shrink-0"></span><span><strong>Precio:</strong> 1-3 € por cerveza (¡más barata que el agua!)</span></li>
+              <li className="flex items-start"><span className="w-2 h-2 bg-amber-400 rounded-full mr-3 mt-1.5 flex-shrink-0"></span><span><strong>Dato:</strong> República Checa consume más cerveza per cápita que cualquier país</span></li>
             </ul>
           </div>
         </div>
