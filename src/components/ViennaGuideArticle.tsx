@@ -1224,6 +1224,20 @@ Volver a guías
             </ul>
           </div>
 
+          <div className="bg-gradient-to-br from-indigo-50 to-purple-50 border border-indigo-200 rounded-xl p-4 shadow-sm hover:shadow-md transition-all duration-300">
+            <h4 className="font-semibold text-gray-900 mb-2">Light of Creation - Iglesia Votiva</h4>
+            <p className="text-sm text-gray-700 mb-3">Espectáculo de luz inmersivo que transforma el interior de la histórica Iglesia Votiva en una experiencia visual única.</p>
+            <a
+              href="https://gyg.me/oyQziOhd"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center bg-gradient-to-r from-indigo-500 to-purple-500 hover:from-indigo-600 hover:to-purple-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm w-full justify-center"
+            >
+              Ver Espectáculo de Luz
+              <ExternalLink className="h-3 w-3 ml-2" />
+            </a>
+          </div>
+
         </div>
       </div>
 
