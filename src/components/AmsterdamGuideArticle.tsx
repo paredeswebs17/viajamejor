@@ -203,13 +203,24 @@ Volver a guías
             </div>
           </div>
         </div>
+        <div className="mt-4">
+          <a
+            href="https://gyg.me/bftVdMgA"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center bg-gradient-to-r from-yellow-500 to-orange-500 hover:from-yellow-600 hover:to-orange-600 text-white font-semibold px-6 py-3 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300"
+          >
+            🎫 Comprar Amsterdam Travel Ticket
+            <ExternalLink className="h-4 w-4 ml-2" />
+          </a>
+        </div>
       </div>
 
       <div className="bg-purple-50 border border-purple-200 rounded-xl p-4">
         <h4 className="font-bold text-gray-900 mb-3">🚕 Traslado Privado - Máximo Confort</h4>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <div>
-            <p className="text-sm text-gray-700 mb-1"><strong>Precio:</strong> Desde 55-70 € (hasta 3 personas)</p>
+            <p className="text-sm text-gray-700 mb-1"><strong>Precio:</strong> desde 56 €</p>
             <p className="text-sm text-gray-700 mb-1"><strong>Duración:</strong> 20-30 min (según tráfico)</p>
             <p className="text-sm text-gray-700 mb-1"><strong>Ventajas:</strong> Puerta a puerta</p>
           </div>
@@ -218,6 +229,17 @@ Volver a guías
             <p className="text-sm text-gray-700 mb-1"><strong>Reserva:</strong> Online con antelación</p>
             <p className="text-sm text-gray-700 mb-1"><strong>Incluye:</strong> Espera + ayuda equipaje</p>
           </div>
+        </div>
+        <div className="mt-4">
+          <a
+            href="https://gyg.me/5ZYfAmX8"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white font-semibold px-6 py-3 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300"
+          >
+            🚕 Reservar traslado privado
+            <ExternalLink className="h-4 w-4 ml-2" />
+          </a>
         </div>
       </div>
     </div>
