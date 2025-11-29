@@ -1224,23 +1224,6 @@ Volver a guías
             </ul>
           </div>
 
-          <div className="bg-green-50 border border-green-200 rounded-xl p-4 shadow-sm hover:shadow-md transition-all duration-300">
-            <h4 className="font-semibold text-gray-900 mb-2">Ringstrasse</h4>
-            <ul className="text-sm text-gray-700 space-y-1 list-none">
-              <li className="flex items-start"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3 mt-1.5 flex-shrink-0"></span><span>Boulevard circular histórico</span></li>
-              <li className="flex items-start"><span className="w-2 h-2 bg-green-400 rounded-full mr-3 mt-1.5 flex-shrink-0"></span><span>Tour en tranvía 1 o 2 (5,80€)</span></li>
-              <li className="flex items-start"><span className="w-2 h-2 bg-red-400 rounded-full mr-3 mt-1.5 flex-shrink-0"></span><span>Pasa por todos los monumentos principales</span></li>
-            </ul>
-          </div>
-
-          <div className="bg-yellow-50 border border-yellow-200 rounded-xl p-4 shadow-sm hover:shadow-md transition-all duration-300">
-            <h4 className="font-semibold text-gray-900 mb-2">Casa de la Música</h4>
-            <ul className="text-sm text-gray-700 space-y-1 list-none">
-              <li className="flex items-start"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3 mt-1.5 flex-shrink-0"></span><span>Museo interactivo sobre música</span></li>
-              <li className="flex items-start"><span className="w-2 h-2 bg-green-400 rounded-full mr-3 mt-1.5 flex-shrink-0"></span><span>Dirije tu propia orquesta virtual</span></li>
-              <li className="flex items-start"><span className="w-2 h-2 bg-red-400 rounded-full mr-3 mt-1.5 flex-shrink-0"></span><span>Entrada: 16€, ideal para familias</span></li>
-            </ul>
-          </div>
         </div>
       </div>
 
