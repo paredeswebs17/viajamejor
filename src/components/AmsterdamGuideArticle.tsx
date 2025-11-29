@@ -1381,29 +1381,6 @@ Volver a guías
       </div>
     </div>
 
-    <div className="bg-yellow-50 border border-yellow-200 rounded-xl p-4">
-      <h4 className="font-semibold text-yellow-800 mb-2">💡 Consejos para Ahorrar en Ámsterdam:</h4>
-      <ul className="text-sm text-yellow-700 space-y-1 mb-3">
-        <li>• I Amsterdam City Card: Descuentos + transporte incluido (no incluye Van Gogh desde 2022 ni Museo Ana Frank)</li>
-        <li>• Supermercados: Albert Heijn, Jumbo para comida económica</li>
-        <li>• Free walking tours: Excelente forma de conocer la ciudad</li>
-        <li>• Bicicletas: Alquiler desde 10€/día (la forma más auténtica de moverse)</li>
-        <li>• Amsterdam Travel Ticket: 3 días 30€ (transporte ilimitado + aeropuerto)</li>
-        <li>• Febo: Cadena de comida rápida holandesa económica (automats de croquetas)</li>
-      </ul>
-      <div className="flex flex-wrap gap-2">
-        <a href="https://gyg.me/hhPSPkwx" target="_blank" rel="noopener noreferrer"
-           className="inline-flex items-center bg-gradient-to-r from-red-500 to-orange-500 hover:from-red-600 hover:to-orange-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm">
-          🎫 Comprar I Amsterdam City Card
-          <ExternalLink className="h-3 w-3 ml-2" />
-        </a>
-        <a href="https://gyg.me/bftVdMgA" target="_blank" rel="noopener noreferrer"
-           className="inline-flex items-center bg-gradient-to-r from-blue-500 to-indigo-500 hover:from-blue-600 hover:to-indigo-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm">
-          🚇 Comprar Amsterdam Travel Ticket
-          <ExternalLink className="h-3 w-3 ml-2" />
-        </a>
-      </div>
-    </div>
   </div>
 
   {/* Footer */}
