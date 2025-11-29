@@ -146,22 +146,6 @@ Volver a guías
           </div>
         </div>
       </div>
-      
-      <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-4 mb-4">
-        <h4 className="font-bold text-gray-900 mb-3">🚊 Tren Regional ÖBB - Opción Económica</h4>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          <div>
-            <p className="text-sm text-gray-700 mb-1"><strong>Precio:</strong> 4,20 € (muy económico)</p>
-            <p className="text-sm text-gray-700 mb-1"><strong>Duración:</strong> 25 minutos con paradas</p>
-            <p className="text-sm text-gray-700 mb-1"><strong>Frecuencia:</strong> Cada 30 minutos</p>
-          </div>
-          <div>
-            <p className="text-sm text-gray-700 mb-1"><strong>Destinos:</strong> Wien Mitte, Rennweg</p>
-            <p className="text-sm text-gray-700 mb-1"><strong>Ideal para:</strong> Viajeros con presupuesto ajustado</p>
-            <p className="text-sm text-gray-700 mb-1"><strong>Conecta:</strong> Múltiples líneas de metro</p>
-          </div>
-        </div>
-      </div>
 
       <div className="bg-yellow-50 border border-yellow-200 rounded-xl p-4 mb-4">
         <h4 className="font-bold text-gray-900 mb-3">🚌 Vienna Airport Lines - Autobús Directo</h4>
