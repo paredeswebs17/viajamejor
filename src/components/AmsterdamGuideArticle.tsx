@@ -897,7 +897,7 @@ Volver a guías
     <div className="mb-8">
       <h3 className="text-lg font-bold text-gray-900 mb-4 flex items-center">
         <div className="w-1 h-6 bg-gradient-to-b from-orange-400 to-red-400 rounded-full mr-3"></div>
-        Comida Típica Holandesa (14:30h)
+        Parada para Comida Típica Holandesa (14:30h)
       </h3>
       <div className="bg-orange-50 border border-orange-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
         <h4 className="text-lg font-bold text-gray-900 mb-3">The Pantry - Gastronomía Tradicional</h4>
