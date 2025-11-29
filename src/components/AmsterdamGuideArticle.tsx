@@ -130,7 +130,7 @@ Volver a guías
         <h4 className="font-bold text-gray-900 mb-3">🚄 Tren Directo a Estación Central - La Opción Más Rápida</h4>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <div>
-            <p className="text-sm text-gray-700 mb-2"><strong>Precio:</strong> 6,20 € (incluye tarjeta OV)</p>
+            <p className="text-sm text-gray-700 mb-2"><strong>Precio:</strong> desde 6 €</p>
             <p className="text-sm text-gray-700 mb-2"><strong>Horario:</strong> Cada 10-15 minutos</p>
             <p className="text-sm text-gray-700 mb-2"><strong>Duración:</strong> 16-18 minutos sin paradas</p>
             <p className="text-sm text-gray-700"><strong>Frecuencia:</strong> Servicio continuo todo el día</p>
@@ -144,6 +144,17 @@ Volver a guías
         </div>
         <div className="bg-green-100 rounded-lg p-3 mt-4">
           <p className="text-green-800 text-sm font-medium">💡 La opción más eficiente para llegar al centro. Los trenes salen cada 10-15 minutos y son muy puntuales.</p>
+        </div>
+        <div className="mt-4">
+          <a
+            href="https://gyg.me/a32mXL4w"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center bg-gradient-to-r from-blue-500 to-indigo-500 hover:from-blue-600 hover:to-indigo-600 text-white font-semibold px-6 py-3 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300"
+          >
+            🚄 Comprar billetes de tren
+            <ExternalLink className="h-4 w-4 ml-2" />
+          </a>
         </div>
       </div>
       
