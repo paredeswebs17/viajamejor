@@ -75,54 +75,35 @@ Volver a guías
     />
   </div>
 
-  {/* Planning Estratégico */}
-  <div className="bg-gradient-to-r from-emerald-50 to-green-50 rounded-2xl p-6 sm:p-8 mb-8 shadow-md">
-    <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">Planning Estratégico</h2>
-    <div className="overflow-x-auto">
-      <table className="w-full border-collapse bg-white rounded-xl shadow-sm">
-        <thead>
-          <tr className="bg-gradient-to-r from-emerald-500 to-green-500 text-white">
-            <th className="border border-gray-300 px-4 py-3 text-left font-semibold">JORNADA</th>
-            <th className="border border-gray-300 px-4 py-3 text-left font-semibold">EXPERIENCIAS DEL DÍA</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td className="border border-gray-300 px-4 py-3 font-bold">DÍA 1</td>
-            <td className="border border-gray-300 px-4 py-3">Plaza de la Ciudad Vieja + Reloj Astronómico + Barrio Judío + Clementinum + Casa Danzante + Teatro Negro</td>
-          </tr>
-          <tr className="bg-gray-50">
-            <td className="border border-gray-300 px-4 py-3 font-bold">DÍA 2</td>
-            <td className="border border-gray-300 px-4 py-3">Castillo de Praga + Callejón del Oro + Puente de Carlos + Muro de John Lennon + Crucero por el Moldava</td>
-          </tr>
-          <tr>
-            <td className="border border-gray-300 px-4 py-3 font-bold">DÍA 3</td>
-            <td className="border border-gray-300 px-4 py-3">Excursión a Terezín o Karlovy Vary + Torre Petřín + Exploración libre</td>
-          </tr>
-        </tbody>
-      </table>
+  {/* SECCIÓN 1: ¿POR QUÉ VISITAR PRAGA? */}
+  <div className="bg-gradient-to-r from-emerald-50 to-green-50 border border-emerald-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
+    <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">¿Por qué visitar Praga?</h2>
+
+    <div className="space-y-4 text-gray-700">
+      <p className="text-base leading-relaxed">
+        Praga es la Ciudad Dorada de Europa, un destino de cuento de hadas donde cada calle empedrada cuenta mil años de historia. Con su arquitectura medieval perfectamente conservada y precios que siguen siendo accesibles, es uno de los destinos más mágicos del continente.
+      </p>
+
+      <p className="text-base leading-relaxed">
+        Pero Praga es mucho más que el famoso Puente de Carlos y el Castillo en la colina. Es caminar por el Barrio Judío sintiendo el peso de la historia. Es perderte en callejones medievales que parecen sacados de un libro. Es disfrutar de la mejor cerveza del mundo por menos de 2€ en pubs centenarios y sentir que has viajado en el tiempo.
+      </p>
+
+      <p className="text-base leading-relaxed font-medium text-gray-900">
+        Si buscas una ciudad que combine arquitectura gótica impresionante, historia fascinante, cerveza legendaria y precios razonables, Praga es tu destino perfecto.
+      </p>
     </div>
   </div>
 
-  {/* Llegada y Conexiones */}
+  {/* SECCIÓN 2: LLEGADA Y CONEXIONES */}
   <div className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
-    <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6 flex items-center">
-      <span className="text-2xl mr-3">🚗</span>
-      Llegada y Conexiones Inteligentes
-    </h2>
+    <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">✈️ Llegada y Conexiones desde el Aeropuerto</h2>
 
     <div className="mb-8">
-      <h3 className="text-lg font-bold text-gray-900 mb-4 flex items-center">
-        <span className="text-xl mr-2">✈️</span>
-        Desde Aeropuerto Václav Havel
-      </h3>
-      
+      <h3 className="text-lg font-bold text-gray-900 mb-4">Desde Aeropuerto Václav Havel</h3>
+
       <div className="mb-6">
-        <h4 className="text-md font-bold text-gray-900 mb-4 flex items-center">
-          <span className="text-lg mr-2">🚌</span>
-          Airport Express - La Conexión Más Directa
-        </h4>
-        
+        <h4 className="text-md font-bold text-gray-900 mb-4">🚌 Airport Express - La Conexión Más Directa</h4>
+
         <div className="bg-gradient-to-r from-green-50 to-emerald-50 border border-green-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
             <div>
@@ -134,13 +115,13 @@ Volver a guías
                 <li className="flex items-center"><span className="w-2 h-2 bg-yellow-400 rounded-full mr-3"></span><strong>Destino:</strong> Estación Central (metro línea C)</li>
               </ul>
             </div>
-            
+
             <div>
               <h5 className="font-semibold text-gray-900 mb-3">Ventajas:</h5>
               <ul className="text-sm text-gray-700 space-y-2 list-none">
                 <li className="flex items-center"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3"></span>Sin paradas intermedias</li>
                 <li className="flex items-center"><span className="w-2 h-2 bg-pink-400 rounded-full mr-3"></span>Espacio para equipaje</li>
-                <li className="flex items-center"><span className="w-2 h-2 bg-indigo-400 rounded-full mr-3"></span>Pago con tarjeta al conductor</li>
+                <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Pago con tarjeta al conductor</li>
                 <li className="flex items-center"><span className="w-2 h-2 bg-emerald-400 rounded-full mr-3"></span>Sale de ambas terminales</li>
               </ul>
             </div>
@@ -149,11 +130,8 @@ Volver a guías
       </div>
 
       <div className="mb-6">
-        <h4 className="text-md font-bold text-gray-900 mb-4 flex items-center">
-          <span className="text-lg mr-2">🚇</span>
-          Transporte Público Económico
-        </h4>
-        
+        <h4 className="text-md font-bold text-gray-900 mb-4">🚇 Transporte Público Económico</h4>
+
         <div className="bg-gradient-to-r from-blue-50 to-sky-50 border border-blue-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
             <div>
@@ -178,11 +156,8 @@ Volver a guías
     </div>
 
     <div className="mb-8">
-      <h3 className="text-lg font-bold text-gray-900 mb-4 flex items-center">
-        <span className="text-xl mr-2">🚊</span>
-        Moverse por Praga
-      </h3>
-      
+      <h3 className="text-lg font-bold text-gray-900 mb-4">🚊 Moverse por Praga</h3>
+
       <div className="bg-gradient-to-r from-purple-50 to-pink-50 border border-purple-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
         <div className="mb-6">
           <h4 className="font-semibold text-gray-900 mb-3">Sistema integrado:</h4>
@@ -203,6 +178,173 @@ Volver a guías
           <p className="text-sm text-gray-600 mt-3">Un billete vale para metro, tranvía, autobús y funicular</p>
         </div>
       </div>
+    </div>
+  </div>
+
+  {/* SECCIÓN 3: DÓNDE ALOJARSE EN PRAGA */}
+  <div className="bg-gradient-to-br from-emerald-50 via-teal-50 to-cyan-50 border border-emerald-200 rounded-2xl p-6 sm:p-8 shadow-lg mb-8">
+    <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3 flex items-center">
+      🏨 Dónde Alojarse en Praga
+    </h2>
+    <p className="text-gray-600 mb-6">Las mejores zonas y hoteles recomendados para tu estancia</p>
+
+    <div className="space-y-6">
+      <div className="bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300">
+        <div className="flex items-center mb-4">
+          <div className="w-12 h-12 bg-gradient-to-br from-emerald-500 to-green-500 rounded-xl flex items-center justify-center mr-4">
+            <span className="text-2xl">🏛️</span>
+          </div>
+          <div>
+            <h3 className="text-xl font-bold text-gray-900">Ciudad Vieja (Staré Město)</h3>
+            <p className="text-sm text-gray-600">La ubicación más céntrica y cómoda</p>
+          </div>
+        </div>
+
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-4">
+          <div className="bg-gradient-to-br from-emerald-50 to-green-50 rounded-xl p-4 border border-emerald-200 flex flex-col">
+            <div className="flex-grow">
+              <h4 className="font-bold text-gray-900 mb-2">Hotel Kings Court ⭐⭐⭐⭐⭐</h4>
+              <p className="text-xs text-gray-600 mb-2">📍 Ciudad Vieja</p>
+              <p className="text-sm text-gray-700 mb-3">Hotel de lujo en edificio art nouveau. A 2 minutos de la Plaza de la Ciudad Vieja.</p>
+            </div>
+            <div className="flex items-center justify-between flex-wrap gap-2 mt-auto">
+              <span className="text-lg font-bold text-emerald-600">€€€</span>
+              <a
+                href="https://booking.tpk.lv/UianlEEu"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center bg-gradient-to-r from-emerald-500 to-green-600 hover:from-emerald-600 hover:to-green-700 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm"
+              >
+                Ver en Booking
+                <ExternalLink className="h-3 w-3 ml-2" />
+              </a>
+            </div>
+          </div>
+
+          <div className="bg-gradient-to-br from-cyan-50 to-teal-50 rounded-xl p-4 border border-cyan-200 flex flex-col">
+            <div className="flex-grow">
+              <h4 className="font-bold text-gray-900 mb-2">Cosmopolitan Hotel Prague ⭐⭐⭐⭐</h4>
+              <p className="text-xs text-gray-600 mb-2">📍 Ciudad Vieja</p>
+              <p className="text-sm text-gray-700 mb-3">Boutique hotel céntrico. Ubicación perfecta para explorar Praga a pie.</p>
+            </div>
+            <div className="flex items-center justify-between flex-wrap gap-2 mt-auto">
+              <span className="text-lg font-bold text-cyan-600">€€</span>
+              <a
+                href="https://booking.tpk.lv/UianlEEu"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center bg-gradient-to-r from-emerald-500 to-green-600 hover:from-emerald-600 hover:to-green-700 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm"
+              >
+                Ver en Booking
+                <ExternalLink className="h-3 w-3 ml-2" />
+              </a>
+            </div>
+          </div>
+
+          <div className="bg-gradient-to-br from-blue-50 to-sky-50 rounded-xl p-4 border border-blue-200 flex flex-col">
+            <div className="flex-grow">
+              <h4 className="font-bold text-gray-900 mb-2">Hotel Century Old Town ⭐⭐⭐⭐</h4>
+              <p className="text-xs text-gray-600 mb-2">📍 Ciudad Vieja</p>
+              <p className="text-sm text-gray-700 mb-3">Hotel familiar bien ubicado. Excelente relación calidad-precio en zona premium.</p>
+            </div>
+            <div className="flex items-center justify-between flex-wrap gap-2 mt-auto">
+              <span className="text-lg font-bold text-blue-600">€€</span>
+              <a
+                href="https://booking.tpk.lv/UianlEEu"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center bg-gradient-to-r from-emerald-500 to-green-600 hover:from-emerald-600 hover:to-green-700 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm"
+              >
+                Ver en Booking
+                <ExternalLink className="h-3 w-3 ml-2" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300">
+        <div className="flex items-center mb-4">
+          <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-pink-500 rounded-xl flex items-center justify-center mr-4">
+            <span className="text-2xl">🏰</span>
+          </div>
+          <div>
+            <h3 className="text-xl font-bold text-gray-900">Malá Strana (Barrio Pequeño)</h3>
+            <p className="text-sm text-gray-600">Zona tranquila junto al Castillo</p>
+          </div>
+        </div>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+          <div className="bg-gradient-to-br from-purple-50 to-pink-50 rounded-xl p-4 border border-purple-200 flex flex-col">
+            <div className="flex-grow">
+              <h4 className="font-bold text-gray-900 mb-2">Hotel Neruda ⭐⭐⭐⭐</h4>
+              <p className="text-xs text-gray-600 mb-2">📍 Malá Strana</p>
+              <p className="text-sm text-gray-700 mb-3">Hotel boutique en edificio histórico. Zona romántica y menos turística.</p>
+            </div>
+            <div className="flex items-center justify-between flex-wrap gap-2 mt-auto">
+              <span className="text-lg font-bold text-purple-600">€€</span>
+              <a
+                href="https://booking.tpk.lv/UianlEEu"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center bg-gradient-to-r from-emerald-500 to-green-600 hover:from-emerald-600 hover:to-green-700 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm"
+              >
+                Ver en Booking
+                <ExternalLink className="h-3 w-3 ml-2" />
+              </a>
+            </div>
+          </div>
+
+          <div className="bg-gradient-to-br from-pink-50 to-rose-50 rounded-xl p-4 border border-pink-200 flex flex-col">
+            <div className="flex-grow">
+              <h4 className="font-bold text-gray-900 mb-2">Golden Well Hotel ⭐⭐⭐⭐⭐</h4>
+              <p className="text-xs text-gray-600 mb-2">📍 Malá Strana</p>
+              <p className="text-sm text-gray-700 mb-3">Hotel de lujo con vistas al Castillo. Experiencia premium en Praga.</p>
+            </div>
+            <div className="flex items-center justify-between flex-wrap gap-2 mt-auto">
+              <span className="text-lg font-bold text-pink-600">€€€</span>
+              <a
+                href="https://booking.tpk.lv/UianlEEu"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center bg-gradient-to-r from-emerald-500 to-green-600 hover:from-emerald-600 hover:to-green-700 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm"
+              >
+                Ver en Booking
+                <ExternalLink className="h-3 w-3 ml-2" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {/* SECCIÓN 4: ITINERARIO DE PRAGA */}
+  <div className="bg-gradient-to-r from-emerald-50 to-green-50 rounded-2xl p-6 sm:p-8 mb-8 shadow-md">
+    <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">Itinerario de Praga</h2>
+    <div className="overflow-x-auto">
+      <table className="w-full border-collapse bg-white rounded-xl shadow-sm">
+        <thead>
+          <tr className="bg-gradient-to-r from-emerald-500 to-green-500 text-white">
+            <th className="border border-gray-300 px-4 py-3 text-left font-semibold">JORNADA</th>
+            <th className="border border-gray-300 px-4 py-3 text-left font-semibold">EXPERIENCIAS DEL DÍA</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td className="border border-gray-300 px-4 py-3 font-bold">DÍA 1</td>
+            <td className="border border-gray-300 px-4 py-3">Plaza de la Ciudad Vieja + Reloj Astronómico + Barrio Judío + Clementinum + Casa Danzante + Teatro Negro</td>
+          </tr>
+          <tr className="bg-gray-50">
+            <td className="border border-gray-300 px-4 py-3 font-bold">DÍA 2</td>
+            <td className="border border-gray-300 px-4 py-3">Castillo de Praga + Callejón del Oro + Puente de Carlos + Muro de John Lennon + Crucero por el Moldava</td>
+          </tr>
+          <tr>
+            <td className="border border-gray-300 px-4 py-3 font-bold">DÍA 3</td>
+            <td className="border border-gray-300 px-4 py-3">Excursión a Terezín o Karlovy Vary + Torre Petřín + Exploración libre</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   </div>
 
