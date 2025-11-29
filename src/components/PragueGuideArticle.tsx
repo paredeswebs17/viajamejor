@@ -1066,109 +1066,194 @@ src="https://images.pexels.com/photos/32795906/pexels-photo-32795906.jpeg"
     </div>
   </div>
 
-  {/* Presupuestos */}
-  <div className="bg-gray-50 rounded-2xl p-6 sm:p-8 mb-8 shadow-md">
-    <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6 text-center">Presupuestos Reales para Praga</h2>
+  {/* MÁS COSAS QUE VER EN PRAGA Y ALREDEDORES */}
+  <div className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
+    <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">🗺️ Más Cosas que Ver en Praga y Alrededores</h2>
 
-    <div className="mb-6">
-      <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
-        <h3 className="text-lg font-bold text-emerald-800 mb-4">ESTILO MOCHILERO - 70 €/día</h3>
+    <div className="space-y-6">
+      <div>
+        <h3 className="text-lg font-bold text-gray-900 mb-4">En la Ciudad:</h3>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          <div>
-            <h4 className="font-semibold text-gray-900 mb-2">Alojamiento (2 noches):</h4>
+          <div className="bg-blue-50 border border-blue-200 rounded-xl p-4 shadow-sm hover:shadow-md transition-all duration-300">
+            <h4 className="font-semibold text-gray-900 mb-2">Vyšehrad</h4>
             <ul className="text-sm text-gray-700 space-y-1 list-none">
-              <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Hostales centro: Pensión SKLEP, Libero Residence </li>
-              <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Ubicación: Cerca del centro</li>
-              <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>Habitaciones a precios económicos</li>
+              <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Fortaleza histórica con vistas panorámicas</li>
+              <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Cementerio de personalidades checas</li>
+              <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>Entrada gratuita, perfecto para el atardecer</li>
             </ul>
           </div>
-          <div>
-            <h4 className="font-semibold text-gray-900 mb-2">Alimentación (3 días):</h4>
+
+          <div className="bg-purple-50 border border-purple-200 rounded-xl p-4 shadow-sm hover:shadow-md transition-all duration-300">
+            <h4 className="font-semibold text-gray-900 mb-2">Letná Park</h4>
             <ul className="text-sm text-gray-700 space-y-1 list-none">
-              <li className="flex items-center"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3"></span>Desayuno: Hostal incluido o panadería (2-4 €)</li>
-              <li className="flex items-center"><span className="w-2 h-2 bg-pink-400 rounded-full mr-3"></span>Almuerzo: Comedores locales (4-8 €)</li>
-              <li className="flex items-center"><span className="w-2 h-2 bg-indigo-400 rounded-full mr-3"></span>Cena: Supermercado + cerveza (6-10 €)</li>
+              <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Mejores vistas de Praga gratis</li>
+              <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Beer garden con ambiente local</li>
+              <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>Metrónomo gigante icónico</li>
+            </ul>
+          </div>
+
+          <div className="bg-green-50 border border-green-200 rounded-xl p-4 shadow-sm hover:shadow-md transition-all duration-300">
+            <h4 className="font-semibold text-gray-900 mb-2">Monasterio de Strahov</h4>
+            <ul className="text-sm text-gray-700 space-y-1 list-none">
+              <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Biblioteca medieval espectacular</li>
+              <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Cervecería del monasterio (desde 1400)</li>
+              <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>Precio: 150 CZK (≈ 6€)</li>
+            </ul>
+          </div>
+
+          <div className="bg-yellow-50 border border-yellow-200 rounded-xl p-4 shadow-sm hover:shadow-md transition-all duration-300">
+            <h4 className="font-semibold text-gray-900 mb-2">Žižkov TV Tower</h4>
+            <ul className="text-sm text-gray-700 space-y-1 list-none">
+              <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Torre más alta de Praga (216m)</li>
+              <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Bebés gigantes escalando (escultura)</li>
+              <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>Bar/Restaurante con vistas 360°</li>
             </ul>
           </div>
         </div>
-        <div className="bg-gray-100 rounded-xl p-3 mt-4 text-xs text-gray-600">
-        <p className="text-center">
-          <span className="font-medium">El precio total incluye:</span> Media aproximada de gastos en atracciones principales, transporte público, y experiencias básicas según este estilo de viaje
-        </p>
       </div>
-        <div className="bg-white rounded-xl p-4 mt-4 shadow-sm">
-          <p className="text-emerald-800 font-semibold text-center">
-            Total 3 días: 210€ por persona
-          </p>
+
+      <div>
+        <h3 className="text-lg font-bold text-gray-900 mb-4">Excursiones de un Día:</h3>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div className="bg-orange-50 border border-orange-200 rounded-xl p-4 shadow-sm hover:shadow-md transition-all duration-300">
+            <h4 className="font-semibold text-gray-900 mb-2">Kutná Hora</h4>
+            <ul className="text-sm text-gray-700 space-y-1 list-none">
+              <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Ciudad medieval Patrimonio UNESCO</li>
+              <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Capilla de huesos (Osario Sedlec)</li>
+              <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>1h en tren desde Praga</li>
+            </ul>
+          </div>
+
+          <div className="bg-pink-50 border border-pink-200 rounded-xl p-4 shadow-sm hover:shadow-md transition-all duration-300">
+            <h4 className="font-semibold text-gray-900 mb-2">Český Krumlov</h4>
+            <ul className="text-sm text-gray-700 space-y-1 list-none">
+              <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Pueblo de cuento medieval perfecto</li>
+              <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Castillo con torre panorámica</li>
+              <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>3h en bus (día largo pero vale la pena)</li>
+            </ul>
+          </div>
+
+          <div className="bg-red-50 border border-red-200 rounded-xl p-4 shadow-sm hover:shadow-md transition-all duration-300">
+            <h4 className="font-semibold text-gray-900 mb-2">Karlštejn</h4>
+            <ul className="text-sm text-gray-700 space-y-1 list-none">
+              <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Castillo gótico del siglo XIV</li>
+              <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>40 min en tren + 30 min caminata</li>
+              <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>Entrada: 300 CZK (≈ 12€)</li>
+            </ul>
+          </div>
+
+          <div className="bg-cyan-50 border border-cyan-200 rounded-xl p-4 shadow-sm hover:shadow-md transition-all duration-300">
+            <h4 className="font-semibold text-gray-900 mb-2">Terezín</h4>
+            <ul className="text-sm text-gray-700 space-y-1 list-none">
+              <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Campo de concentración WWII</li>
+              <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Visita histórica profunda</li>
+              <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>1h en bus desde Praga</li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <div className="mb-6">
-      <div className="bg-blue-50 border border-blue-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
-        <h3 className="text-lg font-bold text-blue-800 mb-4">ESTILO CONFORT - 110 €/día</h3>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          <div>
-            <h4 className="font-semibold text-gray-900 mb-2">Alojamiento (2 noches):</h4>
-            <ul className="text-sm text-gray-700 space-y-1 list-none">
-              <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Hoteles 4*: Hotel Karlova Prague, Hotel Hastal Prague Old Town</li>
-              <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Ubicación: Ciudad Vieja o Nueva</li>
-              <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>Desayuno incluido + habitación privada</li>
-            </ul>
-          </div>
-          <div>
-            <h4 className="font-semibold text-gray-900 mb-2">Alimentación (3 días):</h4>
-            <ul className="text-sm text-gray-700 space-y-1 list-none">
-              <li className="flex items-center"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3"></span>Desayuno: Hotel incluido</li>
-              <li className="flex items-center"><span className="w-2 h-2 bg-pink-400 rounded-full mr-3"></span>Almuerzo: Restaurantes tradicionales (10-15 €)</li>
-              <li className="flex items-center"><span className="w-2 h-2 bg-indigo-400 rounded-full mr-3"></span>Cena: Experiencias gastronómicas (15-25 €)</li>
-            </ul>
-          </div>
-        </div>
-        <div className="bg-gray-100 rounded-xl p-3 mt-4 text-xs text-gray-600">
-        <p className="text-center">
-          <span className="font-medium">El precio total incluye:</span> Media aproximada de gastos en todas las atracciones, tours con guía, transporte variado, y experiencias de nivel medio
-        </p>
-      </div>
-        <div className="bg-white rounded-xl p-4 mt-4 shadow-sm">
-          <p className="text-blue-800 font-semibold text-center">
-            Total 3 días: 330€ por persona
-          </p>
-        </div>
-      </div>
-    </div>
+  {/* HERRAMIENTAS DE VIAJE ESENCIALES */}
+  <div className="bg-gradient-to-br from-blue-50 via-sky-50 to-cyan-50 border border-blue-200 rounded-2xl p-6 sm:p-8 shadow-lg mb-8">
+    <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3">🛠️ Herramientas de Viaje Esenciales</h2>
+    <p className="text-gray-600 mb-6">Todo lo que necesitas para tu viaje a Praga</p>
 
-    <div className="mb-6">
-      <div className="bg-purple-50 border border-purple-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
-        <h3 className="text-lg font-bold text-purple-800 mb-4">ESTILO PREMIUM - 180 €/día</h3>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          <div>
-            <h4 className="font-semibold text-gray-900 mb-2">Alojamiento (2 noches):</h4>
-            <ul className="text-sm text-gray-700 space-y-1 list-none">
-              <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Hoteles 5*: Hotel Kings Court, Hotel The President</li>
-              <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Ubicación: Vista al castillo o río</li>
-              <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>Spa + servicios de lujo incluidos</li>
-            </ul>
+    <div className="space-y-6">
+      <div className="bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <div className="bg-gradient-to-r from-sky-50 to-blue-50 rounded-xl p-5 border border-sky-200 shadow-sm">
+            <div className="flex items-center mb-3">
+              <div className="w-10 h-10 bg-gradient-to-br from-sky-500 to-blue-500 rounded-lg flex items-center justify-center mr-3">
+                <span className="text-xl">✈️</span>
+              </div>
+              <h3 className="font-bold text-gray-900 text-lg">Vuelos Baratos</h3>
+            </div>
+            <p className="text-sm text-gray-700 mb-4">
+              Encuentra vuelos desde 60 € ida y vuelta. Compara todas las aerolíneas y fechas flexibles.
+            </p>
+            <a
+              href="https://kiwi.tpk.lv/z2gZyZ3E"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center bg-gradient-to-r from-sky-500 to-blue-500 hover:from-sky-600 hover:to-blue-600 text-white font-semibold px-5 py-3 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm w-full justify-center"
+            >
+              Buscar Vuelos
+              <ExternalLink className="h-3 w-3 ml-2" />
+            </a>
           </div>
-          <div>
-            <h4 className="font-semibold text-gray-900 mb-2">Alimentación (3 días):</h4>
-            <ul className="text-sm text-gray-700 space-y-1 list-none">
-              <li className="flex items-center"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3"></span>Restaurantes gourmet: 30-50€ por comida</li>
-              <li className="flex items-center"><span className="w-2 h-2 bg-pink-400 rounded-full mr-3"></span>Café Savoy + New York Café elegancia</li>
-              <li className="flex items-center"><span className="w-2 h-2 bg-indigo-400 rounded-full mr-3"></span>Maridajes + experiencias culinarias</li>
-            </ul>
+
+          <div className="bg-gradient-to-r from-emerald-50 to-green-50 rounded-xl p-5 border border-emerald-200 shadow-sm">
+            <div className="flex items-center mb-3">
+              <div className="w-10 h-10 bg-gradient-to-br from-emerald-500 to-green-500 rounded-lg flex items-center justify-center mr-3">
+                <span className="text-xl">🏨</span>
+              </div>
+              <h3 className="font-bold text-gray-900 text-lg">Alojamiento</h3>
+            </div>
+            <p className="text-sm text-gray-700 mb-4">
+              Hoteles desde 20 €/noche en Ciudad Vieja. Cancelación gratuita en la mayoría.
+            </p>
+            <a
+              href="https://booking.tpk.lv/UianlEEu"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center bg-gradient-to-r from-emerald-500 to-green-500 hover:from-emerald-600 hover:to-green-600 text-white font-semibold px-5 py-3 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm w-full justify-center"
+            >
+              Ver Hoteles
+              <ExternalLink className="h-3 w-3 ml-2" />
+            </a>
+          </div>
+
+          <div className="bg-gradient-to-r from-purple-50 to-pink-50 rounded-xl p-5 border border-purple-200 shadow-sm">
+            <div className="flex items-center mb-3">
+              <div className="w-10 h-10 bg-gradient-to-br from-purple-500 to-pink-500 rounded-lg flex items-center justify-center mr-3">
+                <span className="text-xl">💳</span>
+              </div>
+              <h3 className="font-bold text-gray-900 text-lg">Tarjeta Sin Comisiones</h3>
+            </div>
+            <p className="text-sm text-gray-700 mb-4">
+              Revolut: 0% comisiones en pagos. Ahorra 10-20 € en cambio de divisa CZK.
+            </p>
+            <a
+              href="https://revolut.com/referral/?referral-code=antoni22jf!OCT1-25-AR-CH1H2-CRY&geo-redirect"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white font-semibold px-5 py-3 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm w-full justify-center"
+            >
+              Pedir Revolut Gratis
+              <ExternalLink className="h-3 w-3 ml-2" />
+            </a>
+          </div>
+
+          <div className="bg-gradient-to-r from-green-50 to-emerald-50 rounded-xl p-5 border border-green-200 shadow-sm">
+            <div className="flex items-center mb-3">
+              <div className="w-10 h-10 bg-gradient-to-br from-green-500 to-emerald-500 rounded-lg flex items-center justify-center mr-3">
+                <span className="text-xl">🛡️</span>
+              </div>
+              <h3 className="font-bold text-gray-900 text-lg">Seguro de Viaje</h3>
+            </div>
+            <p className="text-sm text-gray-700 mb-4">
+              IATI: Cobertura 200.000 € en Europa. 9-12 € para 3 días. 5% descuento.
+            </p>
+            <a
+              href="https://www.iatiseguros.com?r=37344279073491"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center bg-gradient-to-r from-green-500 to-emerald-500 hover:from-green-600 hover:to-emerald-600 text-white font-semibold px-5 py-3 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm w-full justify-center"
+            >
+              Contratar Seguro IATI con 5% Descuento
+              <ExternalLink className="h-3 w-3 ml-2" />
+            </a>
           </div>
         </div>
-        <div className="bg-gray-100 rounded-xl p-3 mt-4 text-xs text-gray-600">
-        <p className="text-center">
-          <span className="font-medium">El precio total incluye:</span> Media aproximada de gastos en tours privados VIP, experiencias exclusivas, transporte privado, y actividades de lujo
-        </p>
       </div>
-        <div className="bg-white rounded-xl p-4 mt-4 shadow-sm">
-          <p className="text-purple-800 font-semibold text-center">
-            Total 3 días: 540€ por persona
-          </p>
-        </div>
+
+      <div className="bg-amber-50 border border-amber-200 rounded-lg p-4">
+        <p className="text-sm text-amber-800">
+          <strong>💡 Consejo:</strong> Prepara estos elementos antes de tu viaje. La tarjeta Revolut te ahorrará dinero en cada pago,
+          y el seguro IATI te dará tranquilidad durante todo el viaje.
+        </p>
       </div>
     </div>
   </div>
@@ -1234,6 +1319,230 @@ src="https://images.pexels.com/photos/10875122/pexels-photo-10875122.jpeg"
               <li className="flex items-center"><span className="w-2 h-2 bg-amber-400 rounded-full mr-3"></span><strong>Precio:</strong> 1-3 € por cerveza (¡más barata que el agua!)</li>
               <li className="flex items-center"><span className="w-2 h-2 bg-amber-400 rounded-full mr-3"></span><strong>Dato:</strong> República Checa consume más cerveza per cápita que cualquier país</li>
             </ul>
+          </div>
+        </div>
+      </div>
+
+      {/* SISTEMA DE TRANSPORTE PÚBLICO */}
+      <div className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
+        <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">🚇 Sistema de Transporte Público de Praga</h2>
+
+        <div className="mb-6">
+          <div className="bg-gradient-to-r from-blue-50 to-sky-50 rounded-xl p-5 border border-blue-200 shadow-sm">
+            <h3 className="text-lg font-bold text-gray-900 mb-4">Billetes y Precios</h3>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm text-gray-700">
+              <div>
+                <h4 className="font-semibold mb-2">Billetes Sencillos:</h4>
+                <ul className="space-y-1 list-none">
+                  <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>30 min: 30 CZK (≈ 1,20€)</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>90 min: 40 CZK (≈ 1,60€)</li>
+                </ul>
+              </div>
+              <div>
+                <h4 className="font-semibold mb-2">Pases Turísticos:</h4>
+                <ul className="space-y-1 list-none">
+                  <li className="flex items-center"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3"></span>24h: 120 CZK (≈ 4,80€) ilimitado</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-pink-400 rounded-full mr-3"></span>72h: 330 CZK (≈ 13,20€) ilimitado</li>
+                </ul>
+              </div>
+            </div>
+            <p className="text-sm text-gray-600 mt-3">Un billete vale para metro, tranvía, autobús y funicular</p>
+          </div>
+        </div>
+
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">
+          <div className="bg-blue-50 border border-blue-200 rounded-xl p-4 shadow-sm">
+            <h3 className="font-semibold text-gray-900 mb-2">🚇 Metro</h3>
+            <ul className="text-sm text-gray-700 space-y-1 list-none">
+              <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>3 líneas (A verde, B amarilla, C roja)</li>
+              <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Conecta todos los puntos principales</li>
+              <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>Horario: 5:00-24:00h</li>
+            </ul>
+          </div>
+
+          <div className="bg-green-50 border border-green-200 rounded-xl p-4 shadow-sm">
+            <h3 className="font-semibold text-gray-900 mb-2">🚊 Tranvía</h3>
+            <ul className="text-sm text-gray-700 space-y-1 list-none">
+              <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Línea 22: Al castillo de Praga</li>
+              <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Red extensa por toda la ciudad</li>
+              <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>Frecuencia: 5-10 min</li>
+            </ul>
+          </div>
+
+          <div className="bg-yellow-50 border border-yellow-200 rounded-xl p-4 shadow-sm">
+            <h3 className="font-semibold text-gray-900 mb-2">🚌 Autobús</h3>
+            <ul className="text-sm text-gray-700 space-y-1 list-none">
+              <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Bus 119/100: Aeropuerto-Metro</li>
+              <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Airport Express: Directo al centro</li>
+              <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>Líneas nocturnas disponibles</li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="bg-yellow-50 border border-yellow-200 rounded-xl p-4 shadow-sm">
+          <p className="text-sm text-yellow-800 font-semibold mb-2">⚠️ Importante:</p>
+          <ul className="text-sm text-yellow-700 space-y-1 list-none">
+            <li className="flex items-center"><span className="w-2 h-2 bg-yellow-600 rounded-full mr-3"></span>Valida SIEMPRE tu billete al subir (validadoras amarillas)</li>
+            <li className="flex items-center"><span className="w-2 h-2 bg-yellow-600 rounded-full mr-3"></span>Inspecciones frecuentes: Multa hasta 1.000 CZK (≈ 40€)</li>
+            <li className="flex items-center"><span className="w-2 h-2 bg-yellow-600 rounded-full mr-3"></span>App PID Lítačka: Compra billetes y horarios en tiempo real</li>
+          </ul>
+        </div>
+      </div>
+
+      {/* CONSEJOS FINALES */}
+      <div className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
+        <div className="bg-gradient-to-r from-emerald-50 to-green-50 rounded-2xl p-6 sm:p-8 shadow-md mb-8">
+          <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">🎯 Consejos Finales para tu Viaje a Praga</h2>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <div>
+              <h3 className="text-lg font-bold text-gray-900 mb-3">✅ Imprescindibles que NO puedes perderte:</h3>
+              <ul className="text-sm text-gray-700 space-y-2 list-none">
+                <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Castillo de Praga de noche iluminado desde Puente de Carlos</li>
+                <li className="flex items-center"><span className="w-2 h-2 bg-cyan-400 rounded-full mr-3"></span>Reloj Astronómico a las 12:00h (hora punta de espectáculo)</li>
+                <li className="flex items-center"><span className="w-2 h-2 bg-sky-400 rounded-full mr-3"></span>Barrio Judío completo con todas las sinagogas</li>
+                <li className="flex items-center"><span className="w-2 h-2 bg-teal-400 rounded-full mr-3"></span>Biblioteca del Clementinum (la más bella del mundo)</li>
+                <li className="flex items-center"><span className="w-2 h-2 bg-emerald-400 rounded-full mr-3"></span>Probar goulash bohemio y cerveza Pilsner Urquell</li>
+                <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Paseo por el Puente de Carlos al amanecer (6:00h sin gente)</li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 className="text-lg font-bold text-gray-900 mb-3">💡 Consejos de Viajero Experimentado:</h3>
+              <ul className="text-sm text-gray-700 space-y-2 list-none">
+                <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>Paga SIEMPRE en coronas checas (nunca euros - pierdes 15-25%)</li>
+                <li className="flex items-center"><span className="w-2 h-2 bg-amber-400 rounded-full mr-3"></span>Usa solo Bolt o taxis del hotel (evita taxis de calle)</li>
+                <li className="flex items-center"><span className="w-2 h-2 bg-yellow-400 rounded-full mr-3"></span>Sinagogas cerradas los sábados - visita domingo a viernes</li>
+                <li className="flex items-center"><span className="w-2 h-2 bg-lime-400 rounded-full mr-3"></span>Castillo: llega a las 9:00h para evitar colas</li>
+                <li className="flex items-center"><span className="w-2 h-2 bg-rose-400 rounded-full mr-3"></span>Propinas 10% (no obligatorias pero apreciadas)</li>
+                <li className="flex items-center"><span className="w-2 h-2 bg-pink-400 rounded-full mr-3"></span>Agua del grifo potable - lleva botella reutilizable</li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="bg-yellow-50 border border-yellow-200 rounded-xl p-4 mt-6">
+            <h3 className="text-lg font-bold text-yellow-800 mb-3">💡 Consejos para Ahorrar en Praga:</h3>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <ul className="text-sm text-yellow-700 space-y-2 list-none">
+                <li className="flex items-center"><span className="w-2 h-2 bg-yellow-600 rounded-full mr-3"></span>Menú del día (Denní Menu): 2 platos por 5-8 € al mediodía</li>
+                <li className="flex items-center"><span className="w-2 h-2 bg-yellow-600 rounded-full mr-3"></span>Pubs locales fuera de zona turística: Cerveza desde 1€</li>
+                <li className="flex items-center"><span className="w-2 h-2 bg-yellow-600 rounded-full mr-3"></span>Supermercados: Billa, Albert, Tesco para comida barata</li>
+                <li className="flex items-center"><span className="w-2 h-2 bg-yellow-600 rounded-full mr-3"></span>Free walking tours: Propina voluntaria (8-10 €)</li>
+              </ul>
+              <ul className="text-sm text-yellow-700 space-y-2 list-none">
+                <li className="flex items-center"><span className="w-2 h-2 bg-yellow-600 rounded-full mr-3"></span>Pase transporte 72h: Más barato que billetes sueltos</li>
+                <li className="flex items-center"><span className="w-2 h-2 bg-yellow-600 rounded-full mr-3"></span>Vistas gratis: Letná Park, Vyšehrad, Torre Petřín</li>
+                <li className="flex items-center"><span className="w-2 h-2 bg-yellow-600 rounded-full mr-3"></span>Picnic en parques: Ahorra en comidas</li>
+                <li className="flex items-center"><span className="w-2 h-2 bg-yellow-600 rounded-full mr-3"></span>Cerveza local: 1-3 € (vs importada 4-6 €)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* PRESUPUESTOS REALES */}
+      <div className="bg-gray-50 rounded-2xl p-6 sm:p-8 mb-8 shadow-md">
+        <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6 text-center">Presupuestos Reales y Detallados</h2>
+
+        <div className="mb-6">
+          <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
+            <h3 className="text-lg font-bold text-emerald-800 mb-4">ESTILO MOCHILERO - 70 €/día</h3>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <h4 className="font-semibold text-gray-900 mb-2">Alojamiento (2 noches):</h4>
+                <ul className="text-sm text-gray-700 space-y-1 list-none">
+                  <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Hostales centro: Pensión SKLEP, Libero Residence</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Ubicación: Cerca del centro</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>Habitaciones a precios económicos</li>
+                </ul>
+              </div>
+              <div>
+                <h4 className="font-semibold text-gray-900 mb-2">Alimentación (3 días):</h4>
+                <ul className="text-sm text-gray-700 space-y-1 list-none">
+                  <li className="flex items-center"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3"></span>Desayuno: Hostal incluido o panadería (2-4 €)</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-pink-400 rounded-full mr-3"></span>Almuerzo: Comedores locales (4-8 €)</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-indigo-400 rounded-full mr-3"></span>Cena: Supermercado + cerveza (6-10 €)</li>
+                </ul>
+              </div>
+            </div>
+            <div className="bg-gray-100 rounded-xl p-3 mt-4 text-xs text-gray-600">
+              <p className="text-center">
+                <span className="font-medium">El precio total incluye:</span> Media aproximada de gastos en atracciones principales, transporte público, y experiencias básicas según este estilo de viaje
+              </p>
+            </div>
+            <div className="bg-white rounded-xl p-4 mt-4 shadow-sm">
+              <p className="text-emerald-800 font-semibold text-center">
+                Total 3 días: 210€ por persona
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div className="mb-6">
+          <div className="bg-blue-50 border border-blue-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
+            <h3 className="text-lg font-bold text-blue-800 mb-4">ESTILO CONFORT - 110 €/día</h3>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <h4 className="font-semibold text-gray-900 mb-2">Alojamiento (2 noches):</h4>
+                <ul className="text-sm text-gray-700 space-y-1 list-none">
+                  <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Hoteles 4*: Hotel Karlova Prague, Hotel Hastal Prague Old Town</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Ubicación: Ciudad Vieja o Nueva</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>Desayuno incluido + habitación privada</li>
+                </ul>
+              </div>
+              <div>
+                <h4 className="font-semibold text-gray-900 mb-2">Alimentación (3 días):</h4>
+                <ul className="text-sm text-gray-700 space-y-1 list-none">
+                  <li className="flex items-center"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3"></span>Desayuno: Hotel incluido</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-pink-400 rounded-full mr-3"></span>Almuerzo: Restaurantes tradicionales (10-15 €)</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-indigo-400 rounded-full mr-3"></span>Cena: Experiencias gastronómicas (15-25 €)</li>
+                </ul>
+              </div>
+            </div>
+            <div className="bg-gray-100 rounded-xl p-3 mt-4 text-xs text-gray-600">
+              <p className="text-center">
+                <span className="font-medium">El precio total incluye:</span> Media aproximada de gastos en todas las atracciones, tours con guía, transporte variado, y experiencias de nivel medio
+              </p>
+            </div>
+            <div className="bg-white rounded-xl p-4 mt-4 shadow-sm">
+              <p className="text-blue-800 font-semibold text-center">
+                Total 3 días: 330€ por persona
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div className="mb-6">
+          <div className="bg-purple-50 border border-purple-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
+            <h3 className="text-lg font-bold text-purple-800 mb-4">ESTILO PREMIUM - 180 €/día</h3>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <h4 className="font-semibold text-gray-900 mb-2">Alojamiento (2 noches):</h4>
+                <ul className="text-sm text-gray-700 space-y-1 list-none">
+                  <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Hoteles 5*: Hotel Kings Court, Hotel The President</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Ubicación: Vista al castillo o río</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>Spa + servicios de lujo incluidos</li>
+                </ul>
+              </div>
+              <div>
+                <h4 className="font-semibold text-gray-900 mb-2">Alimentación (3 días):</h4>
+                <ul className="text-sm text-gray-700 space-y-1 list-none">
+                  <li className="flex items-center"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3"></span>Restaurantes gourmet: 30-50€ por comida</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-pink-400 rounded-full mr-3"></span>Café Savoy + New York Café elegancia</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-indigo-400 rounded-full mr-3"></span>Maridajes + experiencias culinarias</li>
+                </ul>
+              </div>
+            </div>
+            <div className="bg-gray-100 rounded-xl p-3 mt-4 text-xs text-gray-600">
+              <p className="text-center">
+                <span className="font-medium">El precio total incluye:</span> Media aproximada de gastos en tours privados VIP, experiencias exclusivas, transporte privado, y actividades de lujo
+              </p>
+            </div>
+            <div className="bg-white rounded-xl p-4 mt-4 shadow-sm">
+              <p className="text-purple-800 font-semibold text-center">
+                Total 3 días: 540€ por persona
+              </p>
+            </div>
           </div>
         </div>
       </div>
