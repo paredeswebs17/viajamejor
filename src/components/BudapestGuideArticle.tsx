@@ -1367,7 +1367,6 @@ src="https://images.pexels.com/photos/30734949/pexels-photo-30734949.jpeg"
           <h3 className="text-lg font-bold text-gray-900 mb-3">💡 Consejos de Viajero Experimentado:</h3>
           <ul className="text-sm text-gray-700 space-y-2 list-none">
             <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>Valida SIEMPRE tu billete de transporte (multas 60 €)</li>
-            <li className="flex items-center"><span className="w-2 h-2 bg-orange-400 rounded-full mr-3"></span>Cuidado con carteristas en metro, Váci Street y zonas turísticas</li>
             <li className="flex items-center"><span className="w-2 h-2 bg-amber-400 rounded-full mr-3"></span>Usa solo taxis amarillos oficiales o apps (Bolt, Főtaxi)</li>
             <li className="flex items-center"><span className="w-2 h-2 bg-yellow-400 rounded-full mr-3"></span>Agua del grifo es potable y gratis - lleva botella reutilizable</li>
             <li className="flex items-center"><span className="w-2 h-2 bg-lime-400 rounded-full mr-3"></span>Evita restaurantes sin precios en el menú</li>
