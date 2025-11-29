@@ -92,33 +92,6 @@ Volver a guías
     </div>
   </div>
 
-  <div className="bg-gradient-to-r from-orange-50 to-red-50 rounded-2xl p-6 sm:p-8 mb-8 shadow-md">
-    <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">Itinerario Holandés</h2>
-    <div className="overflow-x-auto">
-      <table className="w-full border-collapse bg-white rounded-xl shadow-sm">
-        <thead>
-          <tr className="bg-gradient-to-r from-orange-500 to-red-500 text-white">
-            <th className="border border-gray-300 px-4 py-3 text-left font-semibold">JORNADA</th>
-            <th className="border border-gray-300 px-4 py-3 text-left font-semibold">EXPERIENCIAS HOLANDESAS</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td className="border border-gray-300 px-4 py-3 font-bold">DÍA 1</td>
-            <td className="border border-gray-300 px-4 py-3">Estación Central + Plaza Dam + Canales + Mercado de las Flores + Casa de Ana Frank + 9 Calles + Mirador A'Dam</td>
-          </tr>
-          <tr className="bg-gray-50">
-            <td className="border border-gray-300 px-4 py-3 font-bold">DÍA 2</td>
-            <td className="border border-gray-300 px-4 py-3">Excursión a Zaanse Schans, Edam, Volendam y Marken + Tour en barco por canales + Rembrandtplein</td>
-          </tr>
-          <tr>
-            <td className="border border-gray-300 px-4 py-3 font-bold">DÍA 3</td>
-            <td className="border border-gray-300 px-4 py-3">Rijksmuseum + Museo Van Gogh + Heineken Experience + Barrio Rojo</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
 
   <div className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
     <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">🚗 Llegada y Conexiones Eficientes</h2>
@@ -399,6 +372,34 @@ Volver a guías
       <div className="w-3 h-3 bg-gradient-to-r from-orange-400 to-red-400 rounded-full"></div>
       <div className="w-3 h-3 bg-gradient-to-r from-blue-400 to-indigo-400 rounded-full"></div>
       <div className="w-3 h-3 bg-gradient-to-r from-emerald-400 to-green-400 rounded-full"></div>
+    </div>
+  </div>
+
+  <div className="bg-gradient-to-r from-orange-50 to-red-50 rounded-2xl p-6 sm:p-8 mb-8 shadow-md">
+    <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">Itinerario Holandés</h2>
+    <div className="overflow-x-auto">
+      <table className="w-full border-collapse bg-white rounded-xl shadow-sm">
+        <thead>
+          <tr className="bg-gradient-to-r from-orange-500 to-red-500 text-white">
+            <th className="border border-gray-300 px-4 py-3 text-left font-semibold">JORNADA</th>
+            <th className="border border-gray-300 px-4 py-3 text-left font-semibold">EXPERIENCIAS HOLANDESAS</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td className="border border-gray-300 px-4 py-3 font-bold">DÍA 1</td>
+            <td className="border border-gray-300 px-4 py-3">Estación Central + Plaza Dam + Canales + Mercado de las Flores + Casa de Ana Frank + 9 Calles + Mirador A'Dam</td>
+          </tr>
+          <tr className="bg-gray-50">
+            <td className="border border-gray-300 px-4 py-3 font-bold">DÍA 2</td>
+            <td className="border border-gray-300 px-4 py-3">Excursión a Zaanse Schans, Edam, Volendam y Marken + Tour en barco por canales + Rembrandtplein</td>
+          </tr>
+          <tr>
+            <td className="border border-gray-300 px-4 py-3 font-bold">DÍA 3</td>
+            <td className="border border-gray-300 px-4 py-3">Rijksmuseum + Museo Van Gogh + Heineken Experience + Barrio Rojo</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   </div>
 
