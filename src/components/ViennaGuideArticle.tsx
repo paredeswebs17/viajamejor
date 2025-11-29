@@ -108,7 +108,7 @@ Volver a guías
               <h5 className="font-semibold text-gray-900 mb-3">Información esencial:</h5>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <ul className="text-sm text-gray-700 space-y-2 list-none">
-                  <li className="flex items-start"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3 mt-1.5 flex-shrink-0"></span><span><strong>Precio:</strong> 12 € online / 14 € taquilla</span></li>
+                  <li className="flex items-start"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3 mt-1.5 flex-shrink-0"></span><span><strong>Precio:</strong> desde 14€</span></li>
                   <li className="flex items-start"><span className="w-2 h-2 bg-green-400 rounded-full mr-3 mt-1.5 flex-shrink-0"></span><span><strong>Horario:</strong> 06:09-23:39 cada 30 min</span></li>
                 </ul>
                 <ul className="text-sm text-gray-700 space-y-2 list-none">
@@ -135,7 +135,7 @@ Volver a guías
 
           <div className="mt-6 flex justify-center">
             <a
-              href="https://www.cityairporttrain.com/"
+              href="https://gyg.me/fLZy1uTy"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center bg-gradient-to-r from-blue-500 to-indigo-500 hover:from-blue-600 hover:to-indigo-600 text-white font-semibold px-6 py-3 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300"
