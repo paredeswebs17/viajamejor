@@ -160,14 +160,14 @@ return (
             <span className="text-2xl">🏛️</span>
           </div>
           <div>
-            <h3 className="text-xl font-bold text-gray-900">Distrito V - Centro de Pest</h3>
+            <h3 className="text-xl font-bold text-gray-900">Centro de Pest</h3>
             <p className="text-sm text-gray-600">La ubicación más cómoda para visitar Budapest</p>
           </div>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-4">
           <div className="bg-gradient-to-br from-sky-50 to-blue-50 rounded-xl p-4 border border-sky-200">
-            <h4 className="font-bold text-gray-900 mb-2">Callas House ⭐⭐⭐</h4>
+            <h4 className="font-bold text-gray-900 mb-2">Callas House ⭐⭐⭐⭐</h4>
             <p className="text-xs text-gray-600 mb-2">📍 Centro de Pest</p>
             <p className="text-sm text-gray-700 mb-3">Hotel moderno en pleno corazón de Budapest. Perfecto para explorar la ciudad a pie.</p>
             <div className="flex items-center justify-between flex-wrap gap-2">
@@ -189,7 +189,7 @@ return (
             <p className="text-xs text-gray-600 mb-2">📍 Centro de Pest</p>
             <p className="text-sm text-gray-700 mb-3">Hotel de cadena internacional con todas las comodidades. Excelente ubicación céntrica.</p>
             <div className="flex items-center justify-between flex-wrap gap-2">
-              <span className="text-lg font-bold text-cyan-600">€€€</span>
+              <span className="text-lg font-bold text-cyan-600">€€</span>
               <a
                 href="https://booking.tpk.lv/qi1gAX1t"
                 target="_blank"
@@ -207,7 +207,7 @@ return (
             <p className="text-xs text-gray-600 mb-2">📍 Oktogon, Centro de Pest</p>
             <p className="text-sm text-gray-700 mb-3">Hotel elegante junto a la Avenida Andrássy. Ubicación premium con excelente transporte.</p>
             <div className="flex items-center justify-between flex-wrap gap-2">
-              <span className="text-lg font-bold text-indigo-600">€€€</span>
+              <span className="text-lg font-bold text-indigo-600">€€</span>
               <a
                 href="https://booking.tpk.lv/hTegcgZC"
                 target="_blank"
@@ -234,7 +234,7 @@ return (
             <span className="text-2xl">🏰</span>
           </div>
           <div>
-            <h3 className="text-xl font-bold text-gray-900">Distrito I - Castillo de Buda</h3>
+            <h3 className="text-xl font-bold text-gray-900">Castillo de Buda</h3>
             <p className="text-sm text-gray-600">Zona histórica con encanto y vistas panorámicas</p>
           </div>
         </div>
@@ -245,7 +245,7 @@ return (
             <p className="text-xs text-gray-600 mb-2">📍 Castillo de Buda</p>
             <p className="text-sm text-gray-700 mb-3">Hotel boutique en zona histórica de Buda. Ambiente elegante y tranquilo con vistas al Danubio.</p>
             <div className="flex items-center justify-between flex-wrap gap-2">
-              <span className="text-lg font-bold text-emerald-600">€€€</span>
+              <span className="text-lg font-bold text-emerald-600">€€</span>
               <a
                 href="https://booking.tpk.lv/qZFhW1kp"
                 target="_blank"
@@ -263,7 +263,7 @@ return (
             <p className="text-xs text-gray-600 mb-2">📍 Castillo de Buda</p>
             <p className="text-sm text-gray-700 mb-3">Hotel boutique único en edificio histórico. Diseño exclusivo en la zona del Castillo de Buda.</p>
             <div className="flex items-center justify-between flex-wrap gap-2">
-              <span className="text-lg font-bold text-teal-600">€€€</span>
+              <span className="text-lg font-bold text-teal-600">€€</span>
               <a
                 href="https://booking.tpk.lv/q3Q85yF6"
                 target="_blank"
