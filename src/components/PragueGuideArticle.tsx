@@ -174,7 +174,7 @@ Volver a guías
           <div className="flex-grow">
             <h4 className="font-bold text-gray-900 mb-2">THE MANES Boutique Hotel Prague ⭐⭐⭐⭐</h4>
             <p className="text-xs text-gray-600 mb-2">📍 Centro Ciudad</p>
-            <p className="text-sm text-gray-700 mb-3">Hotel boutique de lujo junto al río Moldava con vistas espectaculares.</p>
+            <p className="text-sm text-gray-700 mb-3">Hotel boutique de lujo junto al río Moldava.</p>
           </div>
           <div className="flex items-center justify-between flex-wrap gap-2 mt-auto">
             <span className="text-lg font-bold text-emerald-600">€€</span>
