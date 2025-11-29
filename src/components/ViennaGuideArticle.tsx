@@ -1285,6 +1285,20 @@ Volver a guías
               <ExternalLink className="h-3 w-3 ml-2" />
             </a>
           </div>
+
+          <div className="bg-blue-50 border border-blue-200 rounded-xl p-4 shadow-sm hover:shadow-md transition-all duration-300">
+            <h4 className="font-semibold text-gray-900 mb-2">Tour Guiado de Praga</h4>
+            <p className="text-sm text-gray-700 mb-3">Descubre la Ciudad de las Cien Torres en una excursión de día completo desde Viena. Explora el casco histórico, el Puente de Carlos y el Castillo de Praga.</p>
+            <a
+              href="https://gyg.me/qVUeP4MV"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center bg-gradient-to-r from-blue-500 to-sky-500 hover:from-blue-600 hover:to-sky-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm w-full justify-center"
+            >
+              Ver Tour a Praga
+              <ExternalLink className="h-3 w-3 ml-2" />
+            </a>
+          </div>
         </div>
       </div>
     </div>
