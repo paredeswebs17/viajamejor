@@ -1043,70 +1043,6 @@ Volver a guías
     </div>
   </div>
 
-  {/* PRESUPUESTOS */}
-  <div className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
-    <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">💰 Presupuestos Detallados por Estilo</h2>
-    
-    <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-6">
-      <div className="bg-green-50 border border-green-200 rounded-xl p-6 shadow-sm">
-        <h3 className="text-lg font-bold text-green-800 mb-3">🎒 Mochilero</h3>
-        <div className="text-2xl font-bold text-green-600 mb-2">70-90€/día</div>
-        <ul className="text-sm text-green-700 space-y-1">
-          <li>• Hostel: 30-40€</li>
-          <li>• Comida: 25-30€</li>
-          <li>• Transporte: 8-10€</li>
-          <li>• Atracciones: 10-15€</li>
-        </ul>
-      </div>
-      
-      <div className="bg-blue-50 border border-blue-200 rounded-xl p-6 shadow-sm">
-        <h3 className="text-lg font-bold text-blue-800 mb-3">🏨 Estándar</h3>
-        <div className="text-2xl font-bold text-blue-600 mb-2">130-170€/día</div>
-        <ul className="text-sm text-blue-700 space-y-1">
-          <li>• Hotel 3*: 80-100€</li>
-          <li>• Comida: 35-45€</li>
-          <li>• Transporte: 10€</li>
-          <li>• Atracciones: 15-25€</li>
-        </ul>
-      </div>
-      
-      <div className="bg-purple-50 border border-purple-200 rounded-xl p-6 shadow-sm">
-        <h3 className="text-lg font-bold text-purple-800 mb-3">👑 Lujo</h3>
-        <div className="text-2xl font-bold text-purple-600 mb-2">280-450€/día</div>
-        <ul className="text-sm text-purple-700 space-y-1">
-          <li>• Hotel 5*: 180-300€</li>
-          <li>• Comida: 80-120€</li>
-          <li>• Transporte: 20€</li>
-          <li>• Atracciones: 30-50€</li>
-        </ul>
-      </div>
-    </div>
-
-    <div className="bg-yellow-50 border border-yellow-200 rounded-xl p-4">
-      <h4 className="font-semibold text-yellow-800 mb-2">💡 Consejos para Ahorrar en Ámsterdam:</h4>
-      <ul className="text-sm text-yellow-700 space-y-1 mb-3">
-        <li>• I Amsterdam City Card: Descuentos + transporte incluido (no incluye Van Gogh desde 2022 ni Museo Ana Frank)</li>
-        <li>• Supermercados: Albert Heijn, Jumbo para comida económica</li>
-        <li>• Free walking tours: Excelente forma de conocer la ciudad</li>
-        <li>• Bicicletas: Alquiler desde 10€/día (la forma más auténtica de moverse)</li>
-        <li>• Amsterdam Travel Ticket: 3 días 30€ (transporte ilimitado + aeropuerto)</li>
-        <li>• Febo: Cadena de comida rápida holandesa económica (automats de croquetas)</li>
-      </ul>
-      <div className="flex flex-wrap gap-2">
-        <a href="https://gyg.me/hhPSPkwx" target="_blank" rel="noopener noreferrer"
-           className="inline-flex items-center bg-gradient-to-r from-red-500 to-orange-500 hover:from-red-600 hover:to-orange-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm">
-          🎫 Comprar I Amsterdam City Card
-          <ExternalLink className="h-3 w-3 ml-2" />
-        </a>
-        <a href="https://gyg.me/bftVdMgA" target="_blank" rel="noopener noreferrer"
-           className="inline-flex items-center bg-gradient-to-r from-blue-500 to-indigo-500 hover:from-blue-600 hover:to-indigo-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm">
-          🚇 Comprar Amsterdam Travel Ticket
-          <ExternalLink className="h-3 w-3 ml-2" />
-        </a>
-      </div>
-    </div>
-  </div>
-
   {/* RESTAURANTES */}
   <div className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
     <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">🍽️ Guía Gastronómica - Probado y Recomendado</h2>
@@ -1553,6 +1489,70 @@ Volver a guías
             <li><strong>Objetos perdidos transporte:</strong> 0900-8011</li>
           </ul>
         </div>
+      </div>
+    </div>
+  </div>
+
+  {/* PRESUPUESTOS */}
+  <div className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
+    <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">💰 Presupuestos Detallados por Estilo</h2>
+
+    <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-6">
+      <div className="bg-green-50 border border-green-200 rounded-xl p-6 shadow-sm">
+        <h3 className="text-lg font-bold text-green-800 mb-3">🎒 Mochilero</h3>
+        <div className="text-2xl font-bold text-green-600 mb-2">70-90€/día</div>
+        <ul className="text-sm text-green-700 space-y-1">
+          <li>• Hostel: 30-40€</li>
+          <li>• Comida: 25-30€</li>
+          <li>• Transporte: 8-10€</li>
+          <li>• Atracciones: 10-15€</li>
+        </ul>
+      </div>
+
+      <div className="bg-blue-50 border border-blue-200 rounded-xl p-6 shadow-sm">
+        <h3 className="text-lg font-bold text-blue-800 mb-3">🏨 Estándar</h3>
+        <div className="text-2xl font-bold text-blue-600 mb-2">130-170€/día</div>
+        <ul className="text-sm text-blue-700 space-y-1">
+          <li>• Hotel 3*: 80-100€</li>
+          <li>• Comida: 35-45€</li>
+          <li>• Transporte: 10€</li>
+          <li>• Atracciones: 15-25€</li>
+        </ul>
+      </div>
+
+      <div className="bg-purple-50 border border-purple-200 rounded-xl p-6 shadow-sm">
+        <h3 className="text-lg font-bold text-purple-800 mb-3">👑 Lujo</h3>
+        <div className="text-2xl font-bold text-purple-600 mb-2">280-450€/día</div>
+        <ul className="text-sm text-purple-700 space-y-1">
+          <li>• Hotel 5*: 180-300€</li>
+          <li>• Comida: 80-120€</li>
+          <li>• Transporte: 20€</li>
+          <li>• Atracciones: 30-50€</li>
+        </ul>
+      </div>
+    </div>
+
+    <div className="bg-yellow-50 border border-yellow-200 rounded-xl p-4">
+      <h4 className="font-semibold text-yellow-800 mb-2">💡 Consejos para Ahorrar en Ámsterdam:</h4>
+      <ul className="text-sm text-yellow-700 space-y-1 mb-3">
+        <li>• I Amsterdam City Card: Descuentos + transporte incluido (no incluye Van Gogh desde 2022 ni Museo Ana Frank)</li>
+        <li>• Supermercados: Albert Heijn, Jumbo para comida económica</li>
+        <li>• Free walking tours: Excelente forma de conocer la ciudad</li>
+        <li>• Bicicletas: Alquiler desde 10€/día (la forma más auténtica de moverse)</li>
+        <li>• Amsterdam Travel Ticket: 3 días 30€ (transporte ilimitado + aeropuerto)</li>
+        <li>• Febo: Cadena de comida rápida holandesa económica (automats de croquetas)</li>
+      </ul>
+      <div className="flex flex-wrap gap-2">
+        <a href="https://gyg.me/hhPSPkwx" target="_blank" rel="noopener noreferrer"
+           className="inline-flex items-center bg-gradient-to-r from-red-500 to-orange-500 hover:from-red-600 hover:to-orange-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm">
+          🎫 Comprar I Amsterdam City Card
+          <ExternalLink className="h-3 w-3 ml-2" />
+        </a>
+        <a href="https://gyg.me/bftVdMgA" target="_blank" rel="noopener noreferrer"
+           className="inline-flex items-center bg-gradient-to-r from-blue-500 to-indigo-500 hover:from-blue-600 hover:to-indigo-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm">
+          🚇 Comprar Amsterdam Travel Ticket
+          <ExternalLink className="h-3 w-3 ml-2" />
+        </a>
       </div>
     </div>
   </div>
