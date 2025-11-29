@@ -172,12 +172,12 @@ Volver a guías
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-4">
         <div className="bg-gradient-to-br from-emerald-50 to-green-50 rounded-xl p-4 border border-emerald-200 flex flex-col">
           <div className="flex-grow">
-            <h4 className="font-bold text-gray-900 mb-2">THE MANES Boutique Hotel Prague ⭐⭐⭐⭐⭐</h4>
+            <h4 className="font-bold text-gray-900 mb-2">THE MANES Boutique Hotel Prague ⭐⭐⭐⭐</h4>
             <p className="text-xs text-gray-600 mb-2">📍 Centro Ciudad</p>
             <p className="text-sm text-gray-700 mb-3">Hotel boutique de lujo junto al río Moldava con vistas espectaculares.</p>
           </div>
           <div className="flex items-center justify-between flex-wrap gap-2 mt-auto">
-            <span className="text-lg font-bold text-emerald-600">€€€</span>
+            <span className="text-lg font-bold text-emerald-600">€€</span>
             <a
               href="https://booking.tpk.lv/rx4UJa7s"
               target="_blank"
@@ -217,7 +217,7 @@ Volver a guías
             <p className="text-sm text-gray-700 mb-3">Hotel céntrico a pocos pasos de la Plaza de la Ciudad Vieja y el Puente de Carlos.</p>
           </div>
           <div className="flex items-center justify-between flex-wrap gap-2 mt-auto">
-            <span className="text-lg font-bold text-blue-600">€€</span>
+            <span className="text-lg font-bold text-blue-600">€</span>
             <a
               href="https://booking.tpk.lv/uT7oiUGu"
               target="_blank"
