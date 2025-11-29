@@ -1545,6 +1545,24 @@ Volver a guías
           <li className="flex items-center"><span className="w-2 h-2 bg-cyan-400 rounded-full mr-3"></span>Propina: 5-10% en restaurantes, redondear en cafés</li>
         </ul>
       </div>
+
+      <div>
+        <h3 className="text-lg font-bold text-gray-900 mb-3">💡 Consejos para Ahorrar en Viena:</h3>
+        <ul className="text-sm text-gray-700 space-y-2 list-none">
+          <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Vienna City Card: Descuentos en atracciones + transporte incluido</li>
+          <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Supermercados: Billa, Spar, Hofer para comida económica</li>
+          <li className="flex items-center"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3"></span>Entradas de pie en Ópera: Solo 3-4€ para espectáculos de 100€+</li>
+          <li className="flex items-center"><span className="w-2 h-2 bg-emerald-400 rounded-full mr-3"></span>Jardines de palacios: Gratuitos y espectaculares</li>
+          <li className="flex items-center"><span className="w-2 h-2 bg-cyan-400 rounded-full mr-3"></span>Iglesias históricas: Entrada libre en la mayoría</li>
+        </ul>
+        <div className="bg-white rounded-xl p-4 border border-gray-200 shadow-sm mt-4">
+          <a href="https://gyg.me/MTSmqRRG" target="_blank" rel="noopener noreferrer"
+             className="inline-flex items-center bg-gradient-to-r from-emerald-500 to-green-500 hover:from-emerald-600 hover:to-green-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm">
+            ⛪ Vienna PASS: 1, 2, 3 o 6 días de visitas turísticas
+            <ExternalLink className="h-3 w-3 ml-2" />
+          </a>
+        </div>
+      </div>
     </div>
   </div>
 </div>
@@ -1588,24 +1606,6 @@ Volver a guías
       </div>
     </div>
 
-    <div className="bg-yellow-50 border border-yellow-200 rounded-xl p-4">
-      <h4 className="font-semibold text-yellow-800 mb-2">💡 Consejos para Ahorrar en Viena:</h4>
-      <ul className="text-sm text-yellow-700 space-y-1">
-        <li>• Vienna City Card: Descuentos en atracciones + transporte incluido</li>
-        <li>• Supermercados: Billa, Spar, Hofer para comida económica</li>
-        <li>• Entradas de pie en Ópera: Solo 3-4€ para espectáculos de 100€+</li>
-        <li>• Jardines de palacios: Gratuitos y espectaculares</li>
-        <li>• Iglesias históricas: Entrada libre en la mayoría</li>
-      </ul>
-      <div className="bg-white rounded-xl p-4 border border-gray-200 shadow-sm">
-            <a href="https://gyg.me/MTSmqRRG" target="_blank" rel="noopener noreferrer"
-               className="inline-flex items-center bg-gradient-to-r from-emerald-500 to-green-500 hover:from-emerald-600 hover:to-green-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm">
-              ⛪ Vienna PASS: 1, 2, 3 o 6 días de visitas turísticas
-
-              <ExternalLink className="h-3 w-3 ml-2" />
-            </a>
-        </div>
-    </div>
   </div>
 
   {/* Footer */}
