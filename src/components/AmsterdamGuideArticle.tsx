@@ -162,7 +162,7 @@ Volver a guías
         <h4 className="font-bold text-gray-900 mb-3">🚌 Amsterdam Airport Express Bus 397</h4>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <div>
-            <p className="text-sm text-gray-700 mb-1"><strong>Precio:</strong> 6,50 €</p>
+            <p className="text-sm text-gray-700 mb-1"><strong>Precio:</strong> desde 6 €</p>
             <p className="text-sm text-gray-700 mb-1"><strong>Duración:</strong> 30-40 minutos</p>
             <p className="text-sm text-gray-700 mb-1"><strong>Frecuencia:</strong> Cada 10-15 minutos</p>
           </div>
@@ -171,6 +171,17 @@ Volver a guías
             <p className="text-sm text-gray-700 mb-1"><strong>Ideal para:</strong> Hoteles cerca de museos</p>
             <p className="text-sm text-gray-700 mb-1"><strong>Horario:</strong> 05:00-00:30</p>
           </div>
+        </div>
+        <div className="mt-4">
+          <a
+            href="https://gyg.me/nHnMYLIe"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-600 hover:to-teal-600 text-white font-semibold px-6 py-3 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300"
+          >
+            🚌 Comprar billetes de bus
+            <ExternalLink className="h-4 w-4 ml-2" />
+          </a>
         </div>
       </div>
 
