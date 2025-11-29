@@ -1043,169 +1043,6 @@ Volver a guías
     </div>
   </div>
 
-  {/* MÁS LUGARES */}
-  <div className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
-    <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">➕ Más Lugares que Ver en Ámsterdam</h2>
-    
-    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-      <div className="bg-purple-50 border border-purple-200 rounded-xl p-4">
-        <h3 className="font-semibold text-gray-900 mb-3">🏛️ Otros Museos Interesantes:</h3>
-        <ul className="text-sm text-gray-700 space-y-2">
-          <li><strong>Moco Museum:</strong> Arte moderno y contemporáneo (Banksy, Warhol)</li>
-          <li><strong>Casa de Rembrandt:</strong> Donde vivió y trabajó el artista</li>
-          <li><strong>Museo de Ámsterdam:</strong> Historia de la ciudad</li>
-          <li><strong>NEMO Science Museum:</strong> Ciencia interactiva (ideal familias)</li>
-          <li><strong>Museo Marítimo:</strong> Historia naval holandesa</li>
-        </ul>
-      </div>
-      
-      <div className="bg-green-50 border border-green-200 rounded-xl p-4">
-        <h3 className="font-semibold text-gray-900 mb-3">🌳 Espacios al Aire Libre:</h3>
-        <ul className="text-sm text-gray-700 space-y-2">
-          <li><strong>Vondelpark:</strong> El Central Park de Ámsterdam (47 hectáreas)</li>
-          <li><strong>Jardín Botánico:</strong> Uno de los más antiguos del mundo (1638)</li>
-          <li><strong>Begijnhof:</strong> Jardín secreto histórico (entrada gratuita)</li>
-          <li><strong>Westerpark:</strong> Parque moderno con mercadillos los fines de semana</li>
-          <li><strong>Terraza NEMO:</strong> Vistas gratuitas desde la terraza del museo</li>
-        </ul>
-      </div>
-      
-      <div className="bg-yellow-50 border border-yellow-200 rounded-xl p-4">
-        <h3 className="font-semibold text-gray-900 mb-3">🎭 Experiencias Únicas:</h3>
-        <ul className="text-sm text-gray-700 space-y-2">
-          <li><strong>ICEBAR:</strong> Bar completamente de hielo a -10°C</li>
-          <li><strong>Wondr Experience:</strong> Museo instagrameable con sets surrealistas</li>
-          <li><strong>Estadio Johan Cruyff Arena:</strong> Tour del estadio del Ajax</li>
-          <li><strong>Mercado Albert Cuyp:</strong> Mayor mercado al aire libre de Europa</li>
-          <li><strong>Biblioteca OBA:</strong> Terraza gratuita con vistas panorámicas</li>
-        </ul>
-      </div>
-      
-      <div className="bg-orange-50 border border-orange-200 rounded-xl p-4">
-        <h3 className="font-semibold text-gray-900 mb-3">🏰 Excursiones de un Día:</h3>
-        <ul className="text-sm text-gray-700 space-y-2">
-          <li><strong>Brujas (Bélgica):</strong> Ciudad medieval (3h en tren)</li>
-          <li><strong>Róterdam + La Haya:</strong> Arquitectura moderna + política</li>
-          <li><strong>Utrecht:</strong> Canales menos turísticos, muy auténtico</li>
-          <li><strong>Keukenhof (primavera):</strong> Jardín de tulipanes (marzo-mayo)</li>
-          <li><strong>Giethoorn:</strong> Pueblo sin carreteras, solo canales</li>
-        </ul>
-      </div>
-    </div>
-
-    <div className="mt-6 flex flex-col sm:flex-row gap-3 justify-center items-center">
-      <a href="https://gyg.me/EMjp5KUQ" target="_blank" rel="noopener noreferrer"
-         className="inline-flex items-center bg-gradient-to-r from-purple-500 to-indigo-500 hover:from-purple-600 hover:to-indigo-600 text-white font-semibold px-6 py-3 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm">
-        🎟️ Ver Entradas a Museos
-        <ExternalLink className="h-4 w-4 ml-2" />
-      </a>
-      <a href="https://gyg.me/NsnWg5zb" target="_blank" rel="noopener noreferrer"
-         className="inline-flex items-center bg-gradient-to-r from-orange-500 to-amber-500 hover:from-orange-600 hover:to-amber-600 text-white font-semibold px-6 py-3 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm">
-        🏰 Excursión a Brujas
-        <ExternalLink className="h-4 w-4 ml-2" />
-      </a>
-    </div>
-  </div>
-
-  {/* SECCIÓN: HERRAMIENTAS DE VIAJE */}
-  <div className="bg-gradient-to-br from-blue-50 via-sky-50 to-cyan-50 border border-blue-200 rounded-2xl p-6 sm:p-8 shadow-lg mb-8">
-    <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3 flex items-center">
-      💳 Herramientas de Viaje
-    </h2>
-    <p className="text-gray-600 mb-6">Servicios esenciales para viajar sin preocupaciones</p>
-
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-      <div className="bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300">
-        <div className="flex items-center mb-4">
-          <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-xl flex items-center justify-center mr-4">
-            <span className="text-2xl">💳</span>
-          </div>
-          <div>
-            <h3 className="text-xl font-bold text-gray-900">Revolut</h3>
-            <p className="text-sm text-gray-600">Tarjeta sin comisiones para viajar</p>
-          </div>
-        </div>
-
-        <p className="text-gray-700 mb-4">
-          Viaja sin preocuparte por las comisiones bancarias. Revolut te permite pagar en euros sin cargos adicionales,
-          retirar efectivo sin comisiones y cambiar divisas al mejor tipo de cambio.
-        </p>
-
-        <div className="bg-blue-50 rounded-lg p-4 mb-4">
-          <h4 className="font-semibold text-gray-900 mb-2">✅ Ventajas para tu viaje:</h4>
-          <ul className="text-sm text-gray-700 space-y-1">
-            <li>• Sin comisiones por pago en el extranjero</li>
-            <li>• Cambio de divisa al tipo real</li>
-            <li>• Retiros gratuitos en cajeros</li>
-            <li>• Control total desde la app</li>
-            <li>• Tarjetas virtuales desechables</li>
-          </ul>
-        </div>
-
-        <a
-          href="https://revolut.com/referral/?referral-code=antoni22jf!DEC1-25-AR-CH1H-CRY&geo-redirect"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center bg-gradient-to-r from-blue-500 to-cyan-500 hover:from-blue-600 hover:to-cyan-600 text-white font-semibold px-5 py-3 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm w-full justify-center"
-        >
-          💳 Consigue tu Tarjeta Revolut
-          <ExternalLink className="h-3 w-3 ml-2" />
-        </a>
-      </div>
-
-      <div className="bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300">
-        <div className="flex items-center mb-4">
-          <div className="w-12 h-12 bg-gradient-to-br from-green-500 to-emerald-500 rounded-xl flex items-center justify-center mr-4">
-            <span className="text-2xl">🛡️</span>
-          </div>
-          <div>
-            <h3 className="text-xl font-bold text-gray-900">IATI Seguros</h3>
-            <p className="text-sm text-gray-600">Seguro de viaje con cobertura completa</p>
-          </div>
-        </div>
-
-        <p className="text-gray-700 mb-4">
-          Viaja tranquilo con un seguro que te cubre ante cualquier imprevisto. IATI ofrece asistencia médica 24/7,
-          cobertura de cancelación, pérdida de equipaje y mucho más.
-        </p>
-
-        <div className="bg-green-50 rounded-lg p-4 mb-4">
-          <h4 className="font-semibold text-gray-900 mb-2">✅ Por qué contratar seguro:</h4>
-          <ul className="text-sm text-gray-700 space-y-1">
-            <li>• Asistencia médica en el extranjero</li>
-            <li>• Cobertura de cancelación de viaje</li>
-            <li>• Pérdida o robo de equipaje</li>
-            <li>• Asistencia 24/7 en español</li>
-            <li>• Repatriación incluida</li>
-          </ul>
-        </div>
-
-        <div className="bg-gradient-to-r from-orange-100 to-red-100 border-2 border-orange-300 rounded-lg p-3 mb-4">
-          <p className="text-center font-bold text-orange-800 text-sm">
-            🎁 ¡Descuento exclusivo del 5% ya aplicado en el enlace!
-          </p>
-        </div>
-
-        <a
-          href="https://www.iatiseguros.com/?r=37344279073491"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center bg-gradient-to-r from-green-500 to-emerald-500 hover:from-green-600 hover:to-emerald-600 text-white font-semibold px-5 py-3 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm w-full justify-center"
-        >
-          🛡️ Contratar Seguro IATI con 5% Descuento
-          <ExternalLink className="h-3 w-3 ml-2" />
-        </a>
-      </div>
-    </div>
-
-    <div className="bg-amber-50 border border-amber-200 rounded-lg p-4 mt-6">
-      <p className="text-sm text-amber-800">
-        <strong>💡 Consejo:</strong> Prepara estos dos elementos antes de tu viaje. La tarjeta Revolut te ahorrará dinero en cada pago,
-        y el seguro IATI te dará tranquilidad durante todo el viaje.
-      </p>
-    </div>
-  </div>
-
   {/* RESTAURANTES */}
   <div className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
     <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">🍽️ Guía Gastronómica - Probado y Recomendado</h2>
@@ -1276,39 +1113,6 @@ Volver a guías
         <div>
           <h4 className="font-semibold text-gray-900 mb-1">Van Stapele Koekmakerij</h4>
           <p className="text-xs text-gray-700">Galletas de chocolate rellenas. Dicen que son las mejores del mundo.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  {/* CONSEJOS FINALES */}
-  <div className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
-    <div className="bg-gradient-to-r from-orange-50 to-red-50 rounded-2xl p-6 sm:p-8 shadow-md mb-8">
-      <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">🎯 Consejos Finales para tu Viaje a Ámsterdam</h2>
-      
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-        <div>
-          <h3 className="text-lg font-bold text-gray-900 mb-3">✅ Imprescindibles que NO puedes perderte:</h3>
-          <ul className="text-sm text-gray-700 space-y-2 list-none">
-            <li className="flex items-center"><span className="w-2 h-2 bg-orange-400 rounded-full mr-3"></span>Paseo en barco por los canales al atardecer</li>
-            <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>Casa de Ana Frank (reserva con 6 semanas)</li>
-            <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>"La Ronda de Noche" de Rembrandt en Rijksmuseum</li>
-            <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Excursión a molinos de Zaanse Schans</li>
-            <li className="flex items-center"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3"></span>Probar stroopwafels recién hechos</li>
-            <li className="flex items-center"><span className="w-2 h-2 bg-yellow-400 rounded-full mr-3"></span>Alquilar bici al menos medio día (¡es la forma local!)</li>
-          </ul>
-        </div>
-        
-        <div>
-          <h3 className="text-lg font-bold text-gray-900 mb-3">💡 Consejos de Viajero Experimentado:</h3>
-          <ul className="text-sm text-gray-700 space-y-2 list-none">
-            <li className="flex items-center"><span className="w-2 h-2 bg-pink-400 rounded-full mr-3"></span>Compra entradas a museos SIEMPRE online y con antelación</li>
-            <li className="flex items-center"><span className="w-2 h-2 bg-indigo-400 rounded-full mr-3"></span>Las bicicletas tienen prioridad SIEMPRE. ¡Cuidado al cruzar!</li>
-            <li className="flex items-center"><span className="w-2 h-2 bg-emerald-400 rounded-full mr-3"></span>No camines por los carriles bici (líneas rojas)</li>
-            <li className="flex items-center"><span className="w-2 h-2 bg-cyan-400 rounded-full mr-3"></span>Casi todo se paga con tarjeta, lleva poco efectivo</li>
-            <li className="flex items-center"><span className="w-2 h-2 bg-amber-400 rounded-full mr-3"></span>Respeta las normas sobre fotografía (especialmente Barrio Rojo)</li>
-            <li className="flex items-center"><span className="w-2 h-2 bg-rose-400 rounded-full mr-3"></span>Los holandeses hablan inglés perfectamente</li>
-          </ul>
         </div>
       </div>
     </div>
@@ -1387,6 +1191,70 @@ Volver a guías
     </div>
   </div>
 
+  {/* MÁS LUGARES */}
+  <div className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
+    <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">➕ Más Lugares que Ver en Ámsterdam</h2>
+    
+    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+      <div className="bg-purple-50 border border-purple-200 rounded-xl p-4">
+        <h3 className="font-semibold text-gray-900 mb-3">🏛️ Otros Museos Interesantes:</h3>
+        <ul className="text-sm text-gray-700 space-y-2">
+          <li><strong>Moco Museum:</strong> Arte moderno y contemporáneo (Banksy, Warhol)</li>
+          <li><strong>Casa de Rembrandt:</strong> Donde vivió y trabajó el artista</li>
+          <li><strong>Museo de Ámsterdam:</strong> Historia de la ciudad</li>
+          <li><strong>NEMO Science Museum:</strong> Ciencia interactiva (ideal familias)</li>
+          <li><strong>Museo Marítimo:</strong> Historia naval holandesa</li>
+        </ul>
+      </div>
+      
+      <div className="bg-green-50 border border-green-200 rounded-xl p-4">
+        <h3 className="font-semibold text-gray-900 mb-3">🌳 Espacios al Aire Libre:</h3>
+        <ul className="text-sm text-gray-700 space-y-2">
+          <li><strong>Vondelpark:</strong> El Central Park de Ámsterdam (47 hectáreas)</li>
+          <li><strong>Jardín Botánico:</strong> Uno de los más antiguos del mundo (1638)</li>
+          <li><strong>Begijnhof:</strong> Jardín secreto histórico (entrada gratuita)</li>
+          <li><strong>Westerpark:</strong> Parque moderno con mercadillos los fines de semana</li>
+          <li><strong>Terraza NEMO:</strong> Vistas gratuitas desde la terraza del museo</li>
+        </ul>
+      </div>
+      
+      <div className="bg-yellow-50 border border-yellow-200 rounded-xl p-4">
+        <h3 className="font-semibold text-gray-900 mb-3">🎭 Experiencias Únicas:</h3>
+        <ul className="text-sm text-gray-700 space-y-2">
+          <li><strong>ICEBAR:</strong> Bar completamente de hielo a -10°C</li>
+          <li><strong>Wondr Experience:</strong> Museo instagrameable con sets surrealistas</li>
+          <li><strong>Estadio Johan Cruyff Arena:</strong> Tour del estadio del Ajax</li>
+          <li><strong>Mercado Albert Cuyp:</strong> Mayor mercado al aire libre de Europa</li>
+          <li><strong>Biblioteca OBA:</strong> Terraza gratuita con vistas panorámicas</li>
+        </ul>
+      </div>
+      
+      <div className="bg-orange-50 border border-orange-200 rounded-xl p-4">
+        <h3 className="font-semibold text-gray-900 mb-3">🏰 Excursiones de un Día:</h3>
+        <ul className="text-sm text-gray-700 space-y-2">
+          <li><strong>Brujas (Bélgica):</strong> Ciudad medieval (3h en tren)</li>
+          <li><strong>Róterdam + La Haya:</strong> Arquitectura moderna + política</li>
+          <li><strong>Utrecht:</strong> Canales menos turísticos, muy auténtico</li>
+          <li><strong>Keukenhof (primavera):</strong> Jardín de tulipanes (marzo-mayo)</li>
+          <li><strong>Giethoorn:</strong> Pueblo sin carreteras, solo canales</li>
+        </ul>
+      </div>
+    </div>
+
+    <div className="mt-6 flex flex-col sm:flex-row gap-3 justify-center items-center">
+      <a href="https://gyg.me/EMjp5KUQ" target="_blank" rel="noopener noreferrer"
+         className="inline-flex items-center bg-gradient-to-r from-purple-500 to-indigo-500 hover:from-purple-600 hover:to-indigo-600 text-white font-semibold px-6 py-3 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm">
+        🎟️ Ver Entradas a Museos
+        <ExternalLink className="h-4 w-4 ml-2" />
+      </a>
+      <a href="https://gyg.me/NsnWg5zb" target="_blank" rel="noopener noreferrer"
+         className="inline-flex items-center bg-gradient-to-r from-orange-500 to-amber-500 hover:from-orange-600 hover:to-amber-600 text-white font-semibold px-6 py-3 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm">
+        🏰 Excursión a Brujas
+        <ExternalLink className="h-4 w-4 ml-2" />
+      </a>
+    </div>
+  </div>
+
   {/* TARJETAS TURÍSTICAS */}
   <div className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
     <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">🎫 Tarjetas Turísticas - ¿Merece la Pena?</h2>
@@ -1438,6 +1306,39 @@ Volver a guías
         🎫 Comprar I Amsterdam City Card
         <ExternalLink className="h-3 w-3 ml-2" />
       </a>
+    </div>
+  </div>
+
+  {/* CONSEJOS FINALES */}
+  <div className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
+    <div className="bg-gradient-to-r from-orange-50 to-red-50 rounded-2xl p-6 sm:p-8 shadow-md mb-8">
+      <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">🎯 Consejos Finales para tu Viaje a Ámsterdam</h2>
+      
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+        <div>
+          <h3 className="text-lg font-bold text-gray-900 mb-3">✅ Imprescindibles que NO puedes perderte:</h3>
+          <ul className="text-sm text-gray-700 space-y-2 list-none">
+            <li className="flex items-center"><span className="w-2 h-2 bg-orange-400 rounded-full mr-3"></span>Paseo en barco por los canales al atardecer</li>
+            <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>Casa de Ana Frank (reserva con 6 semanas)</li>
+            <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>"La Ronda de Noche" de Rembrandt en Rijksmuseum</li>
+            <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Excursión a molinos de Zaanse Schans</li>
+            <li className="flex items-center"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3"></span>Probar stroopwafels recién hechos</li>
+            <li className="flex items-center"><span className="w-2 h-2 bg-yellow-400 rounded-full mr-3"></span>Alquilar bici al menos medio día (¡es la forma local!)</li>
+          </ul>
+        </div>
+        
+        <div>
+          <h3 className="text-lg font-bold text-gray-900 mb-3">💡 Consejos de Viajero Experimentado:</h3>
+          <ul className="text-sm text-gray-700 space-y-2 list-none">
+            <li className="flex items-center"><span className="w-2 h-2 bg-pink-400 rounded-full mr-3"></span>Compra entradas a museos SIEMPRE online y con antelación</li>
+            <li className="flex items-center"><span className="w-2 h-2 bg-indigo-400 rounded-full mr-3"></span>Las bicicletas tienen prioridad SIEMPRE. ¡Cuidado al cruzar!</li>
+            <li className="flex items-center"><span className="w-2 h-2 bg-emerald-400 rounded-full mr-3"></span>No camines por los carriles bici (líneas rojas)</li>
+            <li className="flex items-center"><span className="w-2 h-2 bg-cyan-400 rounded-full mr-3"></span>Casi todo se paga con tarjeta, lleva poco efectivo</li>
+            <li className="flex items-center"><span className="w-2 h-2 bg-amber-400 rounded-full mr-3"></span>Respeta las normas sobre fotografía (especialmente Barrio Rojo)</li>
+            <li className="flex items-center"><span className="w-2 h-2 bg-rose-400 rounded-full mr-3"></span>Los holandeses hablan inglés perfectamente</li>
+          </ul>
+        </div>
+      </div>
     </div>
   </div>
 
