@@ -1245,57 +1245,43 @@ Volver a guías
         <h3 className="text-lg font-bold text-gray-900 mb-4">Excursiones de un Día:</h3>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <div className="bg-orange-50 border border-orange-200 rounded-xl p-4 shadow-sm hover:shadow-md transition-all duration-300">
-            <h4 className="font-semibold text-gray-900 mb-2">Salzburgo</h4>
-            <p className="text-sm text-gray-700 mb-3">Ciudad natal de Mozart y escenario de Sonrisas y Lágrimas. Tour de día completo con visita al centro histórico UNESCO.</p>
+            <h4 className="font-semibold text-gray-900 mb-2">Tour Guiado a Hallstatt y Salzburgo</h4>
+            <p className="text-sm text-gray-700 mb-3">Descubre dos de los lugares más emblemáticos de Austria en un solo día. Visita el pintoresco pueblo de Hallstatt junto al lago y la ciudad natal de Mozart.</p>
             <a
-              href="https://gyg.me/9V7kIcC8"
+              href="https://gyg.me/R9CKgxH7"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm w-full justify-center"
             >
-              Ver Tour a Salzburgo
+              Ver Tour a Hallstatt y Salzburgo
               <ExternalLink className="h-3 w-3 ml-2" />
             </a>
           </div>
 
           <div className="bg-pink-50 border border-pink-200 rounded-xl p-4 shadow-sm hover:shadow-md transition-all duration-300">
-            <h4 className="font-semibold text-gray-900 mb-2">Hallstatt</h4>
-            <p className="text-sm text-gray-700 mb-3">El pueblo más bonito de Austria. Excursión de día completo al pueblo alpino junto al lago, patrimonio UNESCO.</p>
+            <h4 className="font-semibold text-gray-900 mb-2">Hallstatt, Salzburgo, Melk, Alpes y Lagos</h4>
+            <p className="text-sm text-gray-700 mb-3">Excursión completa que combina lo mejor de Austria: pueblos alpinos, la abadía de Melk, lagos cristalinos y las majestuosas montañas de los Alpes.</p>
             <a
-              href="https://gyg.me/fRiMtd0J"
+              href="https://gyg.me/E6a2Ta7o"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center bg-gradient-to-r from-pink-500 to-rose-500 hover:from-pink-600 hover:to-rose-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm w-full justify-center"
             >
-              Ver Tour a Hallstatt
-              <ExternalLink className="h-3 w-3 ml-2" />
-            </a>
-          </div>
-
-          <div className="bg-indigo-50 border border-indigo-200 rounded-xl p-4 shadow-sm hover:shadow-md transition-all duration-300">
-            <h4 className="font-semibold text-gray-900 mb-2">Valle del Danubio</h4>
-            <p className="text-sm text-gray-700 mb-3">Crucero por el Danubio visitando Wachau Valley, pueblos medievales y abadía de Melk. Tour con degustación de vinos.</p>
-            <a
-              href="https://gyg.me/B6G0N5sR"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center bg-gradient-to-r from-indigo-500 to-purple-500 hover:from-indigo-600 hover:to-purple-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm w-full justify-center"
-            >
-              Ver Tour Valle del Danubio
+              Ver Tour Completo
               <ExternalLink className="h-3 w-3 ml-2" />
             </a>
           </div>
 
           <div className="bg-teal-50 border border-teal-200 rounded-xl p-4 shadow-sm hover:shadow-md transition-all duration-300">
-            <h4 className="font-semibold text-gray-900 mb-2">Bratislava</h4>
-            <p className="text-sm text-gray-700 mb-3">Capital de Eslovaquia a solo 1h de Viena. Excursión de medio día o día completo con crucero por el Danubio opcional.</p>
+            <h4 className="font-semibold text-gray-900 mb-2">Excursión Guiada a Bratislava y Budapest</h4>
+            <p className="text-sm text-gray-700 mb-3">Visita dos capitales europeas en un día: Bratislava, la joya de Eslovaquia, y Budapest, la perla del Danubio. Una experiencia única entre tres países.</p>
             <a
-              href="https://gyg.me/8V5kL4pN"
+              href="https://gyg.me/UYIdvdFi"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center bg-gradient-to-r from-teal-500 to-cyan-500 hover:from-teal-600 hover:to-cyan-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm w-full justify-center"
             >
-              Ver Tour a Bratislava
+              Ver Tour a Bratislava y Budapest
               <ExternalLink className="h-3 w-3 ml-2" />
             </a>
           </div>
