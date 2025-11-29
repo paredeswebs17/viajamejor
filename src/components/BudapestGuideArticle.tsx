@@ -1023,57 +1023,76 @@ src="https://images.pexels.com/photos/30734949/pexels-photo-30734949.jpeg"
     </div>
   </div>
 
-  {/* SECCIÓN: MÁS LUGARES QUE VER */}
+  {/* SECCIÓN: EXCURSIONES DESDE BUDAPEST */}
   <div className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
-    <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">➕ Más Lugares que Ver en Budapest</h2>
+    <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">🚌 Excursiones desde Budapest</h2>
+    <p className="text-gray-600 mb-6">Descubre los alrededores de Budapest con estas excursiones guiadas en español</p>
 
-    <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-      <div className="bg-gradient-to-r from-blue-50 to-sky-50 rounded-xl p-5 border border-blue-200 shadow-sm hover:shadow-md transition-all duration-300">
-        <h3 className="text-lg font-bold text-gray-900 mb-3">🏝️ Isla Margarita</h3>
-        <p className="text-sm text-gray-700 mb-3">
-          Oasis verde en medio del Danubio. Perfecta para pasear, hacer running o alquilar bicicletas.
+    <div className="space-y-6">
+      <div className="bg-gradient-to-r from-blue-50 to-sky-50 rounded-xl p-6 border border-blue-200 shadow-sm hover:shadow-lg transition-all duration-300">
+        <h3 className="text-lg font-bold text-gray-900 mb-3">⛵ Recodo del Danubio - Excursión de un día</h3>
+        <p className="text-sm text-gray-700 mb-4">
+          Descubre tres pueblos pintorescos a orillas del Danubio: Szentendre, Visegrád y Esztergom.
+          Visita la Basílica más grande de Hungría, un castillo medieval y un encantador pueblo de artistas.
         </p>
-        <ul className="text-sm text-gray-700 space-y-1 list-none mb-3">
-          <li className="flex items-center"><span className="w-2 h-2 bg-emerald-400 rounded-full mr-3"></span>Entrada: Gratuita</li>
-          <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Bici: 5 €/día</li>
-          <li className="flex items-center"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3"></span>Tiempo: 2-3 horas</li>
+        <ul className="text-sm text-gray-700 space-y-2 list-none mb-4">
+          <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Duración: Día completo</li>
+          <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Incluye: Transporte + Guía en español</li>
+          <li className="flex items-center"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3"></span>Pueblos: Szentendre, Visegrád, Esztergom</li>
         </ul>
+        <a
+          href="https://gyg.me/7hpr6KGa"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center bg-gradient-to-r from-blue-500 to-sky-500 hover:from-blue-600 hover:to-sky-600 text-white font-bold py-3 px-6 rounded-lg transition-all duration-200 transform hover:scale-105 shadow-lg hover:shadow-xl"
+        >
+          <span>⛵ Reservar Excursión al Danubio</span>
+          <ExternalLink className="h-4 w-4 ml-2" />
+        </a>
       </div>
 
-      <div className="bg-gradient-to-r from-purple-50 to-pink-50 rounded-xl p-5 border border-purple-200 shadow-sm hover:shadow-md transition-all duration-300">
-        <h3 className="text-lg font-bold text-gray-900 mb-3">🎭 Ópera Nacional</h3>
-        <p className="text-sm text-gray-700 mb-3">
-          Una de las óperas más hermosas de Europa. Puedes visitarla con tour guiado o asistir a un espectáculo.
+      <div className="bg-gradient-to-r from-purple-50 to-pink-50 rounded-xl p-6 border border-purple-200 shadow-sm hover:shadow-lg transition-all duration-300">
+        <h3 className="text-lg font-bold text-gray-900 mb-3">👑 Palacio Real de Gödöllő - Tour Sissi Emperatriz</h3>
+        <p className="text-sm text-gray-700 mb-4">
+          Visita el palacio barroco favorito de la Emperatriz Sissi, uno de los más grandes de Hungría.
+          Descubre la vida de la realeza austro-húngara en este impresionante palacio real.
         </p>
-        <ul className="text-sm text-gray-700 space-y-1 list-none mb-3">
-          <li className="flex items-center"><span className="w-2 h-2 bg-emerald-400 rounded-full mr-3"></span>Tour: 10-12 €</li>
-          <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Espectáculos: desde 15 €</li>
-          <li className="flex items-center"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3"></span>Duración tour: 50 min</li>
+        <ul className="text-sm text-gray-700 space-y-2 list-none mb-4">
+          <li className="flex items-center"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3"></span>Duración: Medio día</li>
+          <li className="flex items-center"><span className="w-2 h-2 bg-pink-400 rounded-full mr-3"></span>Incluye: Transporte + Guía + Entrada</li>
+          <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Historia: Emperatriz Sissi y Francisco José</li>
         </ul>
+        <a
+          href="https://gyg.me/UgxQq7sn"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white font-bold py-3 px-6 rounded-lg transition-all duration-200 transform hover:scale-105 shadow-lg hover:shadow-xl"
+        >
+          <span>👑 Reservar Tour Palacio Gödöllő</span>
+          <ExternalLink className="h-4 w-4 ml-2" />
+        </a>
       </div>
 
-      <div className="bg-gradient-to-r from-emerald-50 to-green-50 rounded-xl p-5 border border-emerald-200 shadow-sm hover:shadow-md transition-all duration-300">
-        <h3 className="text-lg font-bold text-gray-900 mb-3">🌉 Puente de las Cadenas</h3>
-        <p className="text-sm text-gray-700 mb-3">
-          El puente más icónico de Budapest. Cruza andando para fotos espectaculares.
+      <div className="bg-gradient-to-r from-emerald-50 to-green-50 rounded-xl p-6 border border-emerald-200 shadow-sm hover:shadow-lg transition-all duration-300">
+        <h3 className="text-lg font-bold text-gray-900 mb-3">🍷 Pueblo Vinícola de Páty con Degustaciones</h3>
+        <p className="text-sm text-gray-700 mb-4">
+          Escapa a la campiña húngara y descubre la cultura vinícola local.
+          Visita bodegas tradicionales, degusta vinos locales y disfruta de la gastronomía típica.
         </p>
-        <ul className="text-sm text-gray-700 space-y-1 list-none mb-3">
-          <li className="flex items-center"><span className="w-2 h-2 bg-emerald-400 rounded-full mr-3"></span>Entrada: Gratuita</li>
-          <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Mejor momento: Atardecer</li>
-          <li className="flex items-center"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3"></span>Iluminación nocturna impresionante</li>
+        <ul className="text-sm text-gray-700 space-y-2 list-none mb-4">
+          <li className="flex items-center"><span className="w-2 h-2 bg-emerald-400 rounded-full mr-3"></span>Duración: Medio día</li>
+          <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Incluye: Transporte + Degustaciones</li>
+          <li className="flex items-center"><span className="w-2 h-2 bg-yellow-400 rounded-full mr-3"></span>Experiencia: Bodegas + Vinos locales</li>
         </ul>
-      </div>
-
-      <div className="bg-gradient-to-r from-orange-50 to-red-50 rounded-xl p-5 border border-orange-200 shadow-sm hover:shadow-md transition-all duration-300">
-        <h3 className="text-lg font-bold text-gray-900 mb-3">🏛️ Avenida Andrássy</h3>
-        <p className="text-sm text-gray-700 mb-3">
-          Los Campos Elíseos de Budapest. Patrimonio UNESCO con elegantes edificios y tiendas de lujo.
-        </p>
-        <ul className="text-sm text-gray-700 space-y-1 list-none mb-3">
-          <li className="flex items-center"><span className="w-2 h-2 bg-emerald-400 rounded-full mr-3"></span>Entrada: Gratuita</li>
-          <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Longitud: 2,5 km</li>
-          <li className="flex items-center"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3"></span>Conecta Centro con Plaza Héroes</li>
-        </ul>
+        <a
+          href="https://gyg.me/2Ben0KFS"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center bg-gradient-to-r from-emerald-500 to-green-500 hover:from-emerald-600 hover:to-green-600 text-white font-bold py-3 px-6 rounded-lg transition-all duration-200 transform hover:scale-105 shadow-lg hover:shadow-xl"
+        >
+          <span>🍷 Reservar Tour Vinícola</span>
+          <ExternalLink className="h-4 w-4 ml-2" />
+        </a>
       </div>
     </div>
   </div>
