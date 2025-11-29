@@ -239,39 +239,49 @@ return (
           </div>
         </div>
 
-        <p className="text-gray-700 mb-3">
-          Zona tranquila y pintoresca en la colina de Buda, con el Castillo, Bastión de los Pescadores
-          y vistas espectaculares del Danubio. Ideal para quienes buscan ambiente más relajado.
-        </p>
-
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-4">
-          <div className="bg-emerald-50 rounded-lg p-3">
-            <p className="text-sm text-gray-700"><strong>✅ Ventajas:</strong></p>
-            <ul className="text-sm text-gray-600 space-y-1 mt-2">
-              <li>• Zona histórica y tranquila</li>
-              <li>• Vistas panorámicas</li>
-              <li>• Ambiente romántico</li>
-            </ul>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+          <div className="bg-gradient-to-br from-emerald-50 to-green-50 rounded-xl p-4 border border-emerald-200">
+            <h4 className="font-bold text-gray-900 mb-2">Leon Hotel & Lounge ⭐⭐⭐⭐</h4>
+            <p className="text-xs text-gray-600 mb-2">📍 Castillo de Buda</p>
+            <p className="text-sm text-gray-700 mb-3">Hotel boutique en zona histórica de Buda. Ambiente elegante y tranquilo con vistas al Danubio.</p>
+            <div className="flex items-center justify-between flex-wrap gap-2">
+              <span className="text-lg font-bold text-emerald-600">€€€</span>
+              <a
+                href="https://booking.tpk.lv/qZFhW1kp"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm"
+              >
+                Ver en Booking
+                <ExternalLink className="h-3 w-3 ml-2" />
+              </a>
+            </div>
           </div>
-          <div className="bg-orange-50 rounded-lg p-3">
-            <p className="text-sm text-gray-700"><strong>⚠️ Considera:</strong></p>
-            <ul className="text-sm text-gray-600 space-y-1 mt-2">
-              <li>• Más alejado del centro</li>
-              <li>• Cuestas empinadas</li>
-              <li>• Menos opciones gastronómicas</li>
-            </ul>
+
+          <div className="bg-gradient-to-br from-teal-50 to-cyan-50 rounded-xl p-4 border border-teal-200">
+            <h4 className="font-bold text-gray-900 mb-2">Monastery Boutique Hotel ⭐⭐⭐⭐</h4>
+            <p className="text-xs text-gray-600 mb-2">📍 Castillo de Buda</p>
+            <p className="text-sm text-gray-700 mb-3">Hotel boutique único en edificio histórico. Diseño exclusivo en la zona del Castillo de Buda.</p>
+            <div className="flex items-center justify-between flex-wrap gap-2">
+              <span className="text-lg font-bold text-teal-600">€€€</span>
+              <a
+                href="https://booking.tpk.lv/q3Q85yF6"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm"
+              >
+                Ver en Booking
+                <ExternalLink className="h-3 w-3 ml-2" />
+              </a>
+            </div>
           </div>
         </div>
 
-        <a
-          href="https://booking.tpk.lv/91nRuLrC"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center bg-gradient-to-r from-emerald-500 to-green-500 hover:from-emerald-600 hover:to-green-600 text-white font-semibold px-5 py-3 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm"
-        >
-          🏨 Ver Hoteles en Castillo de Buda
-          <ExternalLink className="h-3 w-3 ml-2" />
-        </a>
+        <div className="bg-green-50 border border-green-200 rounded-lg p-3">
+          <p className="text-sm text-green-800">
+            <strong>✅ Por qué elegir esta zona:</strong> Zona tranquila y pintoresca en la colina de Buda, con el Castillo, Bastión de los Pescadores y vistas espectaculares del Danubio. Ideal para ambiente más relajado y romántico.
+          </p>
+        </div>
       </div>
     </div>
   </div>
