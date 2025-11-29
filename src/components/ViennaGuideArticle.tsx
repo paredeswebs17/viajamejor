@@ -226,70 +226,152 @@ Volver a guías
     </div>
   </div>
 
-  {/* SECCIÓN 4: DÓNDE ALOJARSE */}
-  <div className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
-    <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">🏨 Dónde Alojarse - Análisis Completo por Zonas</h2>
+  {/* SECCIÓN 3: DÓNDE ALOJARSE */}
+  <div className="bg-gradient-to-br from-emerald-50 via-teal-50 to-cyan-50 border border-emerald-200 rounded-2xl p-6 sm:p-8 shadow-lg mb-8">
+    <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3 flex items-center">
+      🏨 Dónde Alojarse en Viena
+    </h2>
+    <p className="text-gray-600 mb-6">Las mejores zonas y hoteles recomendados para tu estancia</p>
 
-    <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-6">
-      <div className="bg-red-50 border border-red-200 rounded-xl p-4">
-        <h3 className="text-lg font-bold text-red-800 mb-3">👑 Distrito 1 - Centro Histórico</h3>
-        <div className="space-y-3">
-          <div className="bg-white rounded-lg p-3 shadow-sm">
-            <h4 className="font-semibold text-gray-900 mb-1">Hotel Sacher Wien</h4>
-            <p className="text-xs text-gray-600 mb-1">Philharmoniker Str. 4 • €€€€€ </p>
-            <p className="text-sm text-gray-700">El hotel más famoso de Viena. Frente a la Ópera.</p>
+    <div className="space-y-6">
+      <div className="bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300">
+        <div className="flex items-center mb-4">
+          <div className="w-12 h-12 bg-gradient-to-br from-sky-500 to-blue-500 rounded-xl flex items-center justify-center mr-4">
+            <span className="text-2xl">🏛️</span>
+          </div>
+          <div>
+            <h3 className="text-xl font-bold text-gray-900">Centro Histórico</h3>
+            <p className="text-sm text-gray-600">La ubicación más cómoda para visitar Viena</p>
+          </div>
+        </div>
+
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-4">
+          <div className="bg-gradient-to-br from-sky-50 to-blue-50 rounded-xl p-4 border border-sky-200 flex flex-col">
+            <div className="flex-grow">
+              <h4 className="font-bold text-gray-900 mb-2">Buxbaum Beletage Design & Boutique Hotel ⭐⭐⭐⭐</h4>
+              <p className="text-xs text-gray-600 mb-2">📍 Centro Histórico</p>
+              <p className="text-sm text-gray-700 mb-3">Hotel boutique con diseño elegante en pleno corazón de Viena. Perfecto para explorar la ciudad a pie.</p>
+            </div>
+            <div className="flex items-center justify-between flex-wrap gap-2 mt-auto">
+              <span className="text-lg font-bold text-sky-600">€€</span>
+              <a
+                href="https://booking.tpk.lv/02HJo6CR"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm"
+              >
+                Ver en Booking
+                <ExternalLink className="h-3 w-3 ml-2" />
+              </a>
+            </div>
           </div>
 
-          <div className="bg-white rounded-lg p-3 shadow-sm">
-            <h4 className="font-semibold text-gray-900 mb-1">Hotel Capricornio</h4>
-            <p className="text-xs text-gray-600 mb-1">Schwedenplatz 3-4 • €€€ </p>
-            <p className="text-sm text-gray-700">Diseño moderno en el centro de Viena.</p>
+          <div className="bg-gradient-to-br from-cyan-50 to-teal-50 rounded-xl p-4 border border-cyan-200 flex flex-col">
+            <div className="flex-grow">
+              <h4 className="font-bold text-gray-900 mb-2">Hotel Royal ⭐⭐⭐⭐</h4>
+              <p className="text-xs text-gray-600 mb-2">📍 Centro Histórico</p>
+              <p className="text-sm text-gray-700 mb-3">Hotel clásico con todas las comodidades. Excelente ubicación céntrica cerca de las principales atracciones.</p>
+            </div>
+            <div className="flex items-center justify-between flex-wrap gap-2 mt-auto">
+              <span className="text-lg font-bold text-cyan-600">€€</span>
+              <a
+                href="https://booking.tpk.lv/E1u4RhD6"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm"
+              >
+                Ver en Booking
+                <ExternalLink className="h-3 w-3 ml-2" />
+              </a>
+            </div>
           </div>
 
-          <div className="bg-white rounded-lg p-3 shadow-sm">
-            <h4 className="font-semibold text-gray-900 mb-1">Wombats City Hostel</h4>
-            <p className="text-xs text-gray-600 mb-1">Grangasse 6 • €€ </p>
-            <p className="text-sm text-gray-700">Hostel moderno y limpio.</p>
+          <div className="bg-gradient-to-br from-indigo-50 to-blue-50 rounded-xl p-4 border border-indigo-200 flex flex-col">
+            <div className="flex-grow">
+              <h4 className="font-bold text-gray-900 mb-2">Hotel Capricorno ⭐⭐⭐⭐</h4>
+              <p className="text-xs text-gray-600 mb-2">📍 Centro Histórico</p>
+              <p className="text-sm text-gray-700 mb-3">Diseño moderno en ubicación premium. Ideal para disfrutar de Viena con estilo y confort.</p>
+            </div>
+            <div className="flex items-center justify-between flex-wrap gap-2 mt-auto">
+              <span className="text-lg font-bold text-indigo-600">€€</span>
+              <a
+                href="https://booking.tpk.lv/RVD7nB3P"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm"
+              >
+                Ver en Booking
+                <ExternalLink className="h-3 w-3 ml-2" />
+              </a>
+            </div>
           </div>
+        </div>
+
+        <div className="bg-green-50 border border-green-200 rounded-lg p-3">
+          <p className="text-sm text-green-800">
+            <strong>✅ Por qué elegir esta zona:</strong> El corazón de Viena, cerca del Palacio Hofburg, Catedral de San Esteban y la Ópera. Todo a pie o metro cercano, muchos restaurantes y cafés, zona segura y animada.
+          </p>
         </div>
       </div>
 
-      <div className="bg-blue-50 border border-blue-200 rounded-xl p-4">
-        <h3 className="text-lg font-bold text-blue-800 mb-3">🚇 Distritos 2-9 - Bien Conectados</h3>
-        <div className="space-y-3">
-          <div className="bg-white rounded-lg p-3 shadow-sm">
-            <h4 className="font-semibold text-gray-900 mb-1">Best Western Plus Hotel Arcadia</h4>
-            <p className="text-xs text-gray-600 mb-1">Max-Winter-Platz 5, 02 • €€€</p>
-            <p className="text-sm text-gray-700">Hotel a 10 min del centro</p>
+      <div className="bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300">
+        <div className="flex items-center mb-4">
+          <div className="w-12 h-12 bg-gradient-to-br from-emerald-500 to-green-500 rounded-xl flex items-center justify-center mr-4">
+            <span className="text-2xl">🚇</span>
           </div>
-
-          <div className="bg-white rounded-lg p-3 shadow-sm">
-            <h4 className="font-semibold text-gray-900 mb-1">SO/ Vienna</h4>
-            <p className="text-xs text-gray-600 mb-1">Praterstraße 1, 02 • €€€€</p>
-            <p className="text-sm text-gray-700">Este hotel elegante ofrece vistas panorámicas a Viena</p>
-          </div>
-
-          <div className="bg-white rounded-lg p-3 shadow-sm">
-            <h4 className="font-semibold text-gray-900 mb-1">Hostel Ruthensteiner</h4>
-            <p className="text-xs text-gray-600 mb-1">Robert-Hamerling-Gasse 24 • €</p>
-            <p className="text-sm text-gray-700">Hostel histórico con jardín.</p>
+          <div>
+            <h3 className="text-xl font-bold text-gray-900">Leopoldstadt y Landstraße</h3>
+            <p className="text-sm text-gray-600">Zonas bien conectadas con excelente relación calidad-precio</p>
           </div>
         </div>
-      </div>
-    </div>
 
-    <div className="bg-white rounded-xl p-4 border border-gray-200 shadow-sm">
-      <div className="flex flex-col sm:flex-row gap-2">
-        <a href="https://booking.tpk.lv/UianlEEu" target="_blank" rel="noopener noreferrer"
-           className="inline-flex items-center bg-gradient-to-r from-blue-500 to-indigo-500 hover:from-blue-600 hover:to-indigo-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm">
-          🏨 Buscar hoteles en Booking
-          <ExternalLink className="h-3 w-3 ml-2" />
-        </a>
-        <a href="https://www.hostelworld.com/hostels/Vienna" target="_blank" rel="noopener noreferrer"
-           className="inline-flex items-center bg-gradient-to-r from-green-500 to-emerald-500 hover:from-green-600 hover:to-emerald-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm">
-          🎒 Hostels en Hostelworld
-          <ExternalLink className="h-3 w-3 ml-2" />
-        </a>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+          <div className="bg-gradient-to-br from-emerald-50 to-green-50 rounded-xl p-4 border border-emerald-200 flex flex-col">
+            <div className="flex-grow">
+              <h4 className="font-bold text-gray-900 mb-2">Henriette Stadthotel Vienna ⭐⭐⭐⭐</h4>
+              <p className="text-xs text-gray-600 mb-2">📍 Leopoldstadt</p>
+              <p className="text-sm text-gray-700 mb-3">Hotel urbano con estilo contemporáneo. Excelente conexión con el centro y ambiente local auténtico.</p>
+            </div>
+            <div className="flex items-center justify-between flex-wrap gap-2 mt-auto">
+              <span className="text-lg font-bold text-emerald-600">€€</span>
+              <a
+                href="https://booking.tpk.lv/is1dcdUr"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm"
+              >
+                Ver en Booking
+                <ExternalLink className="h-3 w-3 ml-2" />
+              </a>
+            </div>
+          </div>
+
+          <div className="bg-gradient-to-br from-teal-50 to-cyan-50 rounded-xl p-4 border border-teal-200 flex flex-col">
+            <div className="flex-grow">
+              <h4 className="font-bold text-gray-900 mb-2">Hotel Spiess & Spiess ⭐⭐⭐⭐</h4>
+              <p className="text-xs text-gray-600 mb-2">📍 Landstraße</p>
+              <p className="text-sm text-gray-700 mb-3">Hotel familiar con encanto vienés. Zona tranquila con fácil acceso al centro y al Palacio Belvedere.</p>
+            </div>
+            <div className="flex items-center justify-between flex-wrap gap-2 mt-auto">
+              <span className="text-lg font-bold text-teal-600">€€</span>
+              <a
+                href="https://booking.tpk.lv/JHRNWZHd"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm"
+              >
+                Ver en Booking
+                <ExternalLink className="h-3 w-3 ml-2" />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div className="bg-green-50 border border-green-200 rounded-lg p-3">
+          <p className="text-sm text-green-800">
+            <strong>✅ Por qué elegir esta zona:</strong> Distritos bien conectados al centro con ambiente más local y auténtico. Perfectos para quienes buscan mejor relación calidad-precio sin renunciar a la comodidad.
+          </p>
+        </div>
       </div>
     </div>
   </div>
