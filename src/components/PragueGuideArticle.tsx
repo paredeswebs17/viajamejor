@@ -156,133 +156,77 @@ Volver a guías
     <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3 flex items-center">
       🏨 Dónde Alojarse en Praga
     </h2>
-    <p className="text-gray-600 mb-6">Las mejores zonas y hoteles recomendados para tu estancia</p>
+    <p className="text-gray-600 mb-6">Los mejores hoteles en el centro de la ciudad</p>
 
-    <div className="space-y-6">
-      <div className="bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300">
-        <div className="flex items-center mb-4">
-          <div className="w-12 h-12 bg-gradient-to-br from-emerald-500 to-green-500 rounded-xl flex items-center justify-center mr-4">
-            <span className="text-2xl">🏛️</span>
-          </div>
-          <div>
-            <h3 className="text-xl font-bold text-gray-900">Ciudad Vieja (Staré Město)</h3>
-            <p className="text-sm text-gray-600">La ubicación más céntrica y cómoda</p>
-          </div>
+    <div className="bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300">
+      <div className="flex items-center mb-4">
+        <div className="w-12 h-12 bg-gradient-to-br from-emerald-500 to-green-500 rounded-xl flex items-center justify-center mr-4">
+          <span className="text-2xl">🏛️</span>
         </div>
-
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-4">
-          <div className="bg-gradient-to-br from-emerald-50 to-green-50 rounded-xl p-4 border border-emerald-200 flex flex-col">
-            <div className="flex-grow">
-              <h4 className="font-bold text-gray-900 mb-2">Hotel Kings Court ⭐⭐⭐⭐⭐</h4>
-              <p className="text-xs text-gray-600 mb-2">📍 Ciudad Vieja</p>
-              <p className="text-sm text-gray-700 mb-3">Hotel de lujo en edificio art nouveau. A 2 minutos de la Plaza de la Ciudad Vieja.</p>
-            </div>
-            <div className="flex items-center justify-between flex-wrap gap-2 mt-auto">
-              <span className="text-lg font-bold text-emerald-600">€€€</span>
-              <a
-                href="https://booking.tpk.lv/UianlEEu"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center bg-gradient-to-r from-emerald-500 to-green-600 hover:from-emerald-600 hover:to-green-700 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm"
-              >
-                Ver en Booking
-                <ExternalLink className="h-3 w-3 ml-2" />
-              </a>
-            </div>
-          </div>
-
-          <div className="bg-gradient-to-br from-cyan-50 to-teal-50 rounded-xl p-4 border border-cyan-200 flex flex-col">
-            <div className="flex-grow">
-              <h4 className="font-bold text-gray-900 mb-2">Cosmopolitan Hotel Prague ⭐⭐⭐⭐</h4>
-              <p className="text-xs text-gray-600 mb-2">📍 Ciudad Vieja</p>
-              <p className="text-sm text-gray-700 mb-3">Boutique hotel céntrico. Ubicación perfecta para explorar Praga a pie.</p>
-            </div>
-            <div className="flex items-center justify-between flex-wrap gap-2 mt-auto">
-              <span className="text-lg font-bold text-cyan-600">€€</span>
-              <a
-                href="https://booking.tpk.lv/UianlEEu"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center bg-gradient-to-r from-emerald-500 to-green-600 hover:from-emerald-600 hover:to-green-700 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm"
-              >
-                Ver en Booking
-                <ExternalLink className="h-3 w-3 ml-2" />
-              </a>
-            </div>
-          </div>
-
-          <div className="bg-gradient-to-br from-blue-50 to-sky-50 rounded-xl p-4 border border-blue-200 flex flex-col">
-            <div className="flex-grow">
-              <h4 className="font-bold text-gray-900 mb-2">Hotel Century Old Town ⭐⭐⭐⭐</h4>
-              <p className="text-xs text-gray-600 mb-2">📍 Ciudad Vieja</p>
-              <p className="text-sm text-gray-700 mb-3">Hotel familiar bien ubicado. Excelente relación calidad-precio en zona premium.</p>
-            </div>
-            <div className="flex items-center justify-between flex-wrap gap-2 mt-auto">
-              <span className="text-lg font-bold text-blue-600">€€</span>
-              <a
-                href="https://booking.tpk.lv/UianlEEu"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center bg-gradient-to-r from-emerald-500 to-green-600 hover:from-emerald-600 hover:to-green-700 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm"
-              >
-                Ver en Booking
-                <ExternalLink className="h-3 w-3 ml-2" />
-              </a>
-            </div>
-          </div>
+        <div>
+          <h3 className="text-xl font-bold text-gray-900">Centro Ciudad</h3>
+          <p className="text-sm text-gray-600">La ubicación más céntrica y cómoda para explorar Praga</p>
         </div>
       </div>
 
-      <div className="bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300">
-        <div className="flex items-center mb-4">
-          <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-pink-500 rounded-xl flex items-center justify-center mr-4">
-            <span className="text-2xl">🏰</span>
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-4">
+        <div className="bg-gradient-to-br from-emerald-50 to-green-50 rounded-xl p-4 border border-emerald-200 flex flex-col">
+          <div className="flex-grow">
+            <h4 className="font-bold text-gray-900 mb-2">THE MANES Boutique Hotel Prague ⭐⭐⭐⭐⭐</h4>
+            <p className="text-xs text-gray-600 mb-2">📍 Centro Ciudad</p>
+            <p className="text-sm text-gray-700 mb-3">Hotel boutique de lujo junto al río Moldava con vistas espectaculares.</p>
           </div>
-          <div>
-            <h3 className="text-xl font-bold text-gray-900">Malá Strana (Barrio Pequeño)</h3>
-            <p className="text-sm text-gray-600">Zona tranquila junto al Castillo</p>
+          <div className="flex items-center justify-between flex-wrap gap-2 mt-auto">
+            <span className="text-lg font-bold text-emerald-600">€€€</span>
+            <a
+              href="https://booking.tpk.lv/rx4UJa7s"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center bg-gradient-to-r from-emerald-500 to-green-600 hover:from-emerald-600 hover:to-green-700 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm"
+            >
+              Ver en Booking
+              <ExternalLink className="h-3 w-3 ml-2" />
+            </a>
           </div>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
-          <div className="bg-gradient-to-br from-purple-50 to-pink-50 rounded-xl p-4 border border-purple-200 flex flex-col">
-            <div className="flex-grow">
-              <h4 className="font-bold text-gray-900 mb-2">Hotel Neruda ⭐⭐⭐⭐</h4>
-              <p className="text-xs text-gray-600 mb-2">📍 Malá Strana</p>
-              <p className="text-sm text-gray-700 mb-3">Hotel boutique en edificio histórico. Zona romántica y menos turística.</p>
-            </div>
-            <div className="flex items-center justify-between flex-wrap gap-2 mt-auto">
-              <span className="text-lg font-bold text-purple-600">€€</span>
-              <a
-                href="https://booking.tpk.lv/UianlEEu"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center bg-gradient-to-r from-emerald-500 to-green-600 hover:from-emerald-600 hover:to-green-700 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm"
-              >
-                Ver en Booking
-                <ExternalLink className="h-3 w-3 ml-2" />
-              </a>
-            </div>
+        <div className="bg-gradient-to-br from-cyan-50 to-teal-50 rounded-xl p-4 border border-cyan-200 flex flex-col">
+          <div className="flex-grow">
+            <h4 className="font-bold text-gray-900 mb-2">Allure Hotel & Residence Prague ⭐⭐⭐⭐</h4>
+            <p className="text-xs text-gray-600 mb-2">📍 Centro Ciudad</p>
+            <p className="text-sm text-gray-700 mb-3">Hotel elegante con apartamentos y ubicación perfecta para explorar Praga.</p>
           </div>
+          <div className="flex items-center justify-between flex-wrap gap-2 mt-auto">
+            <span className="text-lg font-bold text-cyan-600">€€</span>
+            <a
+              href="https://booking.tpk.lv/Sykxeva1"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center bg-gradient-to-r from-emerald-500 to-green-600 hover:from-emerald-600 hover:to-green-700 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm"
+            >
+              Ver en Booking
+              <ExternalLink className="h-3 w-3 ml-2" />
+            </a>
+          </div>
+        </div>
 
-          <div className="bg-gradient-to-br from-pink-50 to-rose-50 rounded-xl p-4 border border-pink-200 flex flex-col">
-            <div className="flex-grow">
-              <h4 className="font-bold text-gray-900 mb-2">Golden Well Hotel ⭐⭐⭐⭐⭐</h4>
-              <p className="text-xs text-gray-600 mb-2">📍 Malá Strana</p>
-              <p className="text-sm text-gray-700 mb-3">Hotel de lujo con vistas al Castillo. Experiencia premium en Praga.</p>
-            </div>
-            <div className="flex items-center justify-between flex-wrap gap-2 mt-auto">
-              <span className="text-lg font-bold text-pink-600">€€€</span>
-              <a
-                href="https://booking.tpk.lv/UianlEEu"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center bg-gradient-to-r from-emerald-500 to-green-600 hover:from-emerald-600 hover:to-green-700 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm"
-              >
-                Ver en Booking
-                <ExternalLink className="h-3 w-3 ml-2" />
-              </a>
-            </div>
+        <div className="bg-gradient-to-br from-blue-50 to-sky-50 rounded-xl p-4 border border-blue-200 flex flex-col">
+          <div className="flex-grow">
+            <h4 className="font-bold text-gray-900 mb-2">Hotel Karlova Prague ⭐⭐⭐⭐</h4>
+            <p className="text-xs text-gray-600 mb-2">📍 Centro Ciudad</p>
+            <p className="text-sm text-gray-700 mb-3">Hotel céntrico a pocos pasos de la Plaza de la Ciudad Vieja y el Puente de Carlos.</p>
+          </div>
+          <div className="flex items-center justify-between flex-wrap gap-2 mt-auto">
+            <span className="text-lg font-bold text-blue-600">€€</span>
+            <a
+              href="https://booking.tpk.lv/uT7oiUGu"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center bg-gradient-to-r from-emerald-500 to-green-600 hover:from-emerald-600 hover:to-green-700 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm"
+            >
+              Ver en Booking
+              <ExternalLink className="h-3 w-3 ml-2" />
+            </a>
           </div>
         </div>
       </div>
