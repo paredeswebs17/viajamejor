@@ -165,39 +165,67 @@ return (
           </div>
         </div>
 
-        <p className="text-gray-700 mb-4">
-          El corazón de Budapest, cerca del Parlamento, Basílica de San Esteban y la Avenida Andrássy.
-          Perfecto para moverse a pie y tener todo cerca.
-        </p>
-
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-4">
-          <div className="bg-sky-50 rounded-lg p-3">
-            <p className="text-sm text-gray-700"><strong>✅ Ventajas:</strong></p>
-            <ul className="text-sm text-gray-600 space-y-1 mt-2">
-              <li>• Todo a pie o metro cercano</li>
-              <li>• Muchos restaurantes y cafés</li>
-              <li>• Zona segura y animada</li>
-            </ul>
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-4">
+          <div className="bg-gradient-to-br from-sky-50 to-blue-50 rounded-xl p-4 border border-sky-200">
+            <h4 className="font-bold text-gray-900 mb-2">Callas House ⭐⭐⭐</h4>
+            <p className="text-xs text-gray-600 mb-2">📍 Centro de Pest</p>
+            <p className="text-sm text-gray-700 mb-3">Hotel moderno en pleno corazón de Budapest. Perfecto para explorar la ciudad a pie.</p>
+            <div className="flex items-center justify-between flex-wrap gap-2">
+              <span className="text-lg font-bold text-sky-600">€€</span>
+              <a
+                href="https://booking.tpk.lv/wmbhJqcN"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm"
+              >
+                Ver en Booking
+                <ExternalLink className="h-3 w-3 ml-2" />
+              </a>
+            </div>
           </div>
-          <div className="bg-amber-50 rounded-lg p-3">
-            <p className="text-sm text-gray-700"><strong>💰 Precio medio:</strong></p>
-            <ul className="text-sm text-gray-600 space-y-1 mt-2">
-              <li>• Hostels: 15-25€/noche</li>
-              <li>• Hoteles 3*: 50-80€/noche</li>
-              <li>• Hoteles 4*: 80-120€/noche</li>
-            </ul>
+
+          <div className="bg-gradient-to-br from-cyan-50 to-teal-50 rounded-xl p-4 border border-cyan-200">
+            <h4 className="font-bold text-gray-900 mb-2">Barceló Budapest ⭐⭐⭐⭐</h4>
+            <p className="text-xs text-gray-600 mb-2">📍 Centro de Pest</p>
+            <p className="text-sm text-gray-700 mb-3">Hotel de cadena internacional con todas las comodidades. Excelente ubicación céntrica.</p>
+            <div className="flex items-center justify-between flex-wrap gap-2">
+              <span className="text-lg font-bold text-cyan-600">€€€</span>
+              <a
+                href="https://booking.tpk.lv/qi1gAX1t"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm"
+              >
+                Ver en Booking
+                <ExternalLink className="h-3 w-3 ml-2" />
+              </a>
+            </div>
+          </div>
+
+          <div className="bg-gradient-to-br from-indigo-50 to-blue-50 rounded-xl p-4 border border-indigo-200">
+            <h4 className="font-bold text-gray-900 mb-2">Hotel Oktogon Haggenmacher ⭐⭐⭐⭐</h4>
+            <p className="text-xs text-gray-600 mb-2">📍 Oktogon, Centro de Pest</p>
+            <p className="text-sm text-gray-700 mb-3">Hotel elegante junto a la Avenida Andrássy. Ubicación premium con excelente transporte.</p>
+            <div className="flex items-center justify-between flex-wrap gap-2">
+              <span className="text-lg font-bold text-indigo-600">€€€</span>
+              <a
+                href="https://booking.tpk.lv/hTegcgZC"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm"
+              >
+                Ver en Booking
+                <ExternalLink className="h-3 w-3 ml-2" />
+              </a>
+            </div>
           </div>
         </div>
 
-        <a
-          href="https://booking.tpk.lv/91nRuLrC"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center bg-gradient-to-r from-sky-500 to-blue-500 hover:from-sky-600 hover:to-blue-600 text-white font-semibold px-5 py-3 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm"
-        >
-          🏨 Ver Hoteles en Centro de Pest
-          <ExternalLink className="h-3 w-3 ml-2" />
-        </a>
+        <div className="bg-green-50 border border-green-200 rounded-lg p-3">
+          <p className="text-sm text-green-800">
+            <strong>✅ Por qué elegir esta zona:</strong> El corazón de Budapest, cerca del Parlamento, Basílica de San Esteban y la Avenida Andrássy. Todo a pie o metro cercano, muchos restaurantes y cafés, zona segura y animada.
+          </p>
+        </div>
       </div>
 
       <div className="bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300">
@@ -211,7 +239,7 @@ return (
           </div>
         </div>
 
-        <p className="text-gray-700 mb-4">
+        <p className="text-gray-700 mb-3">
           Zona tranquila y pintoresca en la colina de Buda, con el Castillo, Bastión de los Pescadores
           y vistas espectaculares del Danubio. Ideal para quienes buscan ambiente más relajado.
         </p>
@@ -242,52 +270,6 @@ return (
           className="inline-flex items-center bg-gradient-to-r from-emerald-500 to-green-500 hover:from-emerald-600 hover:to-green-600 text-white font-semibold px-5 py-3 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm"
         >
           🏨 Ver Hoteles en Castillo de Buda
-          <ExternalLink className="h-3 w-3 ml-2" />
-        </a>
-      </div>
-
-      <div className="bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300">
-        <div className="flex items-center mb-4">
-          <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-pink-500 rounded-xl flex items-center justify-center mr-4">
-            <span className="text-2xl">🎭</span>
-          </div>
-          <div>
-            <h3 className="text-xl font-bold text-gray-900">Distrito VII - Barrio Judío</h3>
-            <p className="text-sm text-gray-600">Zona alternativa con vida nocturna y ruin bars</p>
-          </div>
-        </div>
-
-        <p className="text-gray-700 mb-4">
-          El barrio más alternativo y vibrante de Budapest, famoso por sus ruin pubs, arte urbano
-          y ambiente bohemio. Perfecto para jóvenes viajeros.
-        </p>
-
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-4">
-          <div className="bg-purple-50 rounded-lg p-3">
-            <p className="text-sm text-gray-700"><strong>✅ Ventajas:</strong></p>
-            <ul className="text-sm text-gray-600 space-y-1 mt-2">
-              <li>• Vida nocturna animada</li>
-              <li>• Ruin bars únicos</li>
-              <li>• Ambiente alternativo</li>
-            </ul>
-          </div>
-          <div className="bg-orange-50 rounded-lg p-3">
-            <p className="text-sm text-gray-700"><strong>⚠️ Considera:</strong></p>
-            <ul className="text-sm text-gray-600 space-y-1 mt-2">
-              <li>• Ruidoso por las noches</li>
-              <li>• Calles menos cuidadas</li>
-              <li>• Más turístico que local</li>
-            </ul>
-          </div>
-        </div>
-
-        <a
-          href="https://booking.tpk.lv/91nRuLrC"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white font-semibold px-5 py-3 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm"
-        >
-          🏨 Ver Hoteles en Barrio Judío
           <ExternalLink className="h-3 w-3 ml-2" />
         </a>
       </div>
