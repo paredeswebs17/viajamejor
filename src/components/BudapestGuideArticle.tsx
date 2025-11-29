@@ -584,6 +584,13 @@ return (
       </h3>
       <div className="bg-red-50 border border-red-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
         <h4 className="text-lg font-bold text-gray-900 mb-3">Szimpla Kert - Revolución de los Ruin Bars</h4>
+        <div className="mb-6">
+          <img
+            src="https://images.pexels.com/photos/33980771/pexels-photo-33980771.jpeg"
+            alt="Interior de Szimpla Kert, el famoso ruin bar de Budapest con decoración ecléctica"
+            className="w-full h-48 sm:h-64 object-cover rounded-lg shadow-md"
+          />
+        </div>
         <p className="text-gray-700 mb-4">
           Experimenta el concepto que Budapest exportó al mundo entero.
         </p>
