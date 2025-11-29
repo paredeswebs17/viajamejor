@@ -325,7 +325,7 @@ Volver a guías
           </div>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-4">
           <div className="bg-gradient-to-br from-emerald-50 to-green-50 rounded-xl p-4 border border-emerald-200 flex flex-col">
             <div className="flex-grow">
               <h4 className="font-bold text-gray-900 mb-2">Henriette Stadthotel Vienna ⭐⭐⭐⭐</h4>
@@ -356,6 +356,26 @@ Volver a guías
               <span className="text-lg font-bold text-teal-600">€€</span>
               <a
                 href="https://booking.tpk.lv/JHRNWZHd"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm"
+              >
+                Ver en Booking
+                <ExternalLink className="h-3 w-3 ml-2" />
+              </a>
+            </div>
+          </div>
+
+          <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl p-4 border border-blue-200 flex flex-col">
+            <div className="flex-grow">
+              <h4 className="font-bold text-gray-900 mb-2">ibis Styles Wien Messe Prater ⭐⭐⭐</h4>
+              <p className="text-xs text-gray-600 mb-2">📍 Leopoldstadt</p>
+              <p className="text-sm text-gray-700 mb-3">Hotel moderno y económico junto al Prater. Perfecto para presupuestos ajustados sin renunciar a la calidad.</p>
+            </div>
+            <div className="flex items-center justify-between flex-wrap gap-2 mt-auto">
+              <span className="text-lg font-bold text-blue-600">€</span>
+              <a
+                href="https://booking.tpk.lv/mNvXHjff"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm"
