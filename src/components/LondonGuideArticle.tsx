@@ -10,7 +10,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
   return (
     <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 pt-24">
       <div className="mb-8">
-        <button
+        <button 
           onClick={onBack}
           className="inline-flex items-center text-sky-600 hover:text-sky-700 hover:bg-sky-50 px-3 py-2 rounded-xl transition-all duration-200 font-medium border border-sky-200 hover:border-sky-300 mb-6 shadow-sm hover:shadow-md"
         >
@@ -19,8 +19,8 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
         </button>
 
         <div className="mb-6">
-          <span className="bg-gradient-to-r from-red-500 to-blue-600 text-white px-4 py-2 rounded-full text-sm font-medium shadow-md">
-            Guía Capital
+          <span className="bg-gradient-to-r from-red-600 to-blue-600 text-white px-4 py-2 rounded-full text-sm font-medium shadow-md">
+            Guía Británica
           </span>
         </div>
 
@@ -39,13 +39,13 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
               Londres
             </span>
           </div>
-
+          
           <button
             onClick={() => {
               if (navigator.share) {
                 navigator.share({
-                  title: 'Londres en 3 Días: Guía Completa con Itinerario Optimizado',
-                  text: 'Descubre la capital británica con historia, cultura y modernidad',
+                  title: 'Londres en 3 Días: Guía Completa con Big Ben, Palacios y Museos',
+                  text: 'Descubre la capital británica con nuestro itinerario optimizado',
                   url: window.location.href,
                 })
                 .catch((error) => console.log('Error sharing', error));
@@ -53,7 +53,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
                 navigator.clipboard.writeText(window.location.href).then(() => {
                   alert('Enlace copiado al portapapeles');
                 }).catch(() => {
-                  window.open(`https://twitter.com/intent/tweet?text=Londres en 3 Días&url=${encodeURIComponent(window.location.href)}`, '_blank');
+                  window.open(`https://twitter.com/intent/tweet?text=Londres en 3 Días: Guía Completa&url=${encodeURIComponent(window.location.href)}`, '_blank');
                 });
               }
             }}
@@ -68,7 +68,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
       <div className="mb-8">
         <img
           src="https://images.pexels.com/photos/460672/pexels-photo-460672.jpeg"
-          alt="Tower Bridge y el skyline de Londres al atardecer con el río Támesis"
+          alt="Big Ben y el Palacio de Westminster iluminados al atardecer junto al río Támesis"
           className="w-full h-48 sm:h-64 lg:h-80 object-cover rounded-2xl shadow-lg"
         />
       </div>
@@ -83,7 +83,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
           </p>
 
           <p className="text-base leading-relaxed">
-            Pero Londres es mucho más que el Big Ben y la Reina. Es perderte en los pasillos del Museo Británico contemplando la Piedra de Rosetta. Es cruzar el Millennium Bridge mientras el sol se refleja en la cúpula de St Paul's. Es descubrir que un fish & chips de verdad no tiene nada que ver con lo que sirven en otros países. Es sentir el subidón de adrenalina al ver la ciudad iluminarse desde el London Eye al anochecer.
+            Pero Londres es mucho más que el Big Ben y la Reina. Es perderte en los pasillos del Museo Británico contemplando la Piedra de Rosetta. Es cruzar el Millennium Bridge mientras el sol se refleja en la cúpula de St Paul's. Es descubrir que un fish & chips de verdad no tiene nada que ver con lo que sirven en otros países. Es sentir el subidón de adrenalina al ver la ciudad iluminarse desde el London Eye al anochecer. Es caminar por mercados como Borough Market rodeado de quesos artesanales, panes recién horneados y vendedores que te ofrecen probar de todo.
           </p>
 
           <p className="text-base leading-relaxed font-medium text-gray-900">
@@ -98,9 +98,8 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
 
         <p className="text-gray-700 mb-6">Londres cuenta con 6 aeropuertos, pero los 4 principales son:</p>
 
-        {/* Heathrow */}
         <div className="mb-8">
-          <h3 className="text-lg font-bold text-gray-900 mb-4">Desde Aeropuerto de Heathrow (LHR)</h3>
+          <h3 className="text-lg font-bold text-gray-900 mb-4">📍 Desde Aeropuerto de Heathrow (LHR)</h3>
 
           <div className="mb-6">
             <h4 className="text-md font-bold text-gray-900 mb-4">🚄 Elizabeth Line - La Opción Moderna (Recomendada)</h4>
@@ -112,11 +111,11 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <ul className="text-sm text-gray-700 space-y-2 list-none">
                       <li className="flex items-start"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3 mt-1.5 flex-shrink-0"></span><span><strong>Precio:</strong> £12.80 (zona 1)</span></li>
-                      <li className="flex items-start"><span className="w-2 h-2 bg-green-400 rounded-full mr-3 mt-1.5 flex-shrink-0"></span><span><strong>Horario:</strong> 05:12-23:48 cada 5-10 min</span></li>
+                      <li className="flex items-start"><span className="w-2 h-2 bg-green-400 rounded-full mr-3 mt-1.5 flex-shrink-0"></span><span><strong>Horario:</strong> 05:12-23:48 (cada 5-10 min)</span></li>
                     </ul>
                     <ul className="text-sm text-gray-700 space-y-2 list-none">
                       <li className="flex items-start"><span className="w-2 h-2 bg-red-400 rounded-full mr-3 mt-1.5 flex-shrink-0"></span><span><strong>Duración:</strong> 30-40 minutos directos</span></li>
-                      <li className="flex items-start"><span className="w-2 h-2 bg-yellow-400 rounded-full mr-3 mt-1.5 flex-shrink-0"></span><span><strong>Destino:</strong> Paddington, Bond Street, Liverpool Street</span></li>
+                      <li className="flex items-start"><span className="w-2 h-2 bg-yellow-400 rounded-full mr-3 mt-1.5 flex-shrink-0"></span><span><strong>Destino:</strong> Paddington, Bond Street, Tottenham Court Road</span></li>
                     </ul>
                   </div>
                 </div>
@@ -138,517 +137,863 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
             </div>
           </div>
 
-          <div className="mb-6">
-            <h4 className="text-md font-bold text-gray-900 mb-4">🚇 Piccadilly Line (Metro) - La Más Económica</h4>
-
-            <div className="bg-gradient-to-r from-purple-50 to-pink-50 border border-purple-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <ul className="text-sm text-gray-700 space-y-2 list-none">
-                  <li className="flex items-start"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3 mt-1.5 flex-shrink-0"></span><span><strong>Precio:</strong> £5.60 con Oyster/Contactless</span></li>
-                  <li className="flex items-start"><span className="w-2 h-2 bg-pink-400 rounded-full mr-3 mt-1.5 flex-shrink-0"></span><span><strong>Duración:</strong> 50-60 minutos</span></li>
-                </ul>
-                <ul className="text-sm text-gray-700 space-y-2 list-none">
-                  <li className="flex items-start"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3 mt-1.5 flex-shrink-0"></span><span><strong>Destino:</strong> Covent Garden, Leicester Square</span></li>
-                  <li className="flex items-start"><span className="w-2 h-2 bg-green-400 rounded-full mr-3 mt-1.5 flex-shrink-0"></span><span><strong>Ventajas:</strong> Económico y directo</span></li>
-                </ul>
+          <div className="bg-yellow-50 border border-yellow-200 rounded-xl p-4 mb-4">
+            <h4 className="font-bold text-gray-900 mb-3">🚇 Piccadilly Line (Metro) - La Más Económica</h4>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-gray-700">
+              <div>
+                <p><strong>Precio:</strong> £5.60 con Oyster/Contactless</p>
+                <p><strong>Duración:</strong> 50-60 minutos</p>
+              </div>
+              <div>
+                <p><strong>Destino:</strong> Covent Garden, Leicester Square, Piccadilly Circus</p>
+                <p><strong>Ventajas:</strong> Económico y directo</p>
               </div>
             </div>
           </div>
 
-          <div className="mb-6">
-            <h4 className="text-md font-bold text-gray-900 mb-4">🚌 National Express - Autobús Económico</h4>
-
-            <div className="bg-gradient-to-r from-green-50 to-emerald-50 border border-green-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <ul className="text-sm text-gray-700 space-y-2 list-none">
-                  <li className="flex items-start"><span className="w-2 h-2 bg-green-400 rounded-full mr-3 mt-1.5 flex-shrink-0"></span><span><strong>Precio:</strong> Desde £6</span></li>
-                  <li className="flex items-start"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3 mt-1.5 flex-shrink-0"></span><span><strong>Duración:</strong> 40-90 min (según tráfico)</span></li>
-                </ul>
-                <ul className="text-sm text-gray-700 space-y-2 list-none">
-                  <li className="flex items-start"><span className="w-2 h-2 bg-yellow-400 rounded-full mr-3 mt-1.5 flex-shrink-0"></span><span><strong>Destino:</strong> Victoria Coach Station</span></li>
-                  <li className="flex items-start"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3 mt-1.5 flex-shrink-0"></span><span><strong>Ventajas:</strong> Muy barato si reservas con tiempo</span></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* Gatwick */}
-        <div className="mb-8">
-          <h3 className="text-lg font-bold text-gray-900 mb-4">Desde Aeropuerto de Gatwick (LGW)</h3>
-
-          <div className="mb-6">
-            <h4 className="text-md font-bold text-gray-900 mb-4">🚄 Gatwick Express - Rápido al Centro</h4>
-
-            <div className="bg-gradient-to-r from-red-50 to-orange-50 border border-red-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <ul className="text-sm text-gray-700 space-y-2 list-none">
-                  <li className="flex items-start"><span className="w-2 h-2 bg-red-400 rounded-full mr-3 mt-1.5 flex-shrink-0"></span><span><strong>Precio:</strong> £19.90 (online adelantado)</span></li>
-                  <li className="flex items-start"><span className="w-2 h-2 bg-orange-400 rounded-full mr-3 mt-1.5 flex-shrink-0"></span><span><strong>Duración:</strong> 30 minutos sin paradas</span></li>
-                </ul>
-                <ul className="text-sm text-gray-700 space-y-2 list-none">
-                  <li className="flex items-start"><span className="w-2 h-2 bg-yellow-400 rounded-full mr-3 mt-1.5 flex-shrink-0"></span><span><strong>Destino:</strong> London Victoria Station</span></li>
-                  <li className="flex items-start"><span className="w-2 h-2 bg-green-400 rounded-full mr-3 mt-1.5 flex-shrink-0"></span><span><strong>Frecuencia:</strong> Cada 15 minutos</span></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* Stansted */}
-        <div className="mb-8">
-          <h3 className="text-lg font-bold text-gray-900 mb-4">Desde Aeropuerto de Stansted (STN)</h3>
-
-          <div className="bg-gradient-to-r from-orange-50 to-amber-50 border border-orange-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
+          <div className="bg-purple-50 border border-purple-200 rounded-xl p-4">
+            <h4 className="font-bold text-gray-900 mb-3">🚕 Traslado Privado - Máximo Confort</h4>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <ul className="text-sm text-gray-700 space-y-2 list-none">
-                <li className="flex items-start"><span className="w-2 h-2 bg-orange-400 rounded-full mr-3 mt-1.5 flex-shrink-0"></span><span><strong>Precio:</strong> £19-23 (online adelantado)</span></li>
-                <li className="flex items-start"><span className="w-2 h-2 bg-amber-400 rounded-full mr-3 mt-1.5 flex-shrink-0"></span><span><strong>Duración:</strong> 47 minutos</span></li>
-              </ul>
-              <ul className="text-sm text-gray-700 space-y-2 list-none">
-                <li className="flex items-start"><span className="w-2 h-2 bg-yellow-400 rounded-full mr-3 mt-1.5 flex-shrink-0"></span><span><strong>Destino:</strong> Liverpool Street Station</span></li>
-                <li className="flex items-start"><span className="w-2 h-2 bg-green-400 rounded-full mr-3 mt-1.5 flex-shrink-0"></span><span><strong>Frecuencia:</strong> Cada 15-30 minutos</span></li>
-              </ul>
+              <div>
+                <p className="text-sm text-gray-700 mb-1"><strong>Precio:</strong> Desde £65-85 (hasta 4 personas)</p>
+                <p className="text-sm text-gray-700 mb-1"><strong>Duración:</strong> 45-90 min (según tráfico)</p>
+              </div>
+              <div>
+                <p className="text-sm text-gray-700 mb-1"><strong>Ideal para:</strong> Familias, grupos, mucho equipaje</p>
+                <p className="text-sm text-gray-700 mb-1"><strong>Ventajas:</strong> Puerta a puerta, sin esperas</p>
+              </div>
             </div>
           </div>
         </div>
 
-        {/* Luton */}
-        <div>
-          <h3 className="text-lg font-bold text-gray-900 mb-4">Desde Aeropuerto de Luton (LTN)</h3>
+        <div className="mb-8">
+          <h3 className="text-lg font-bold text-gray-900 mb-4">📍 Desde Aeropuerto de Gatwick (LGW)</h3>
+          
+          <div className="bg-gradient-to-r from-green-50 to-emerald-50 border border-green-200 rounded-xl p-4 mb-4">
+            <h4 className="font-bold text-gray-900 mb-3">🚄 Gatwick Express - Rápido al Centro</h4>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-gray-700">
+              <div>
+                <p><strong>Precio:</strong> £19.90 (online adelantado)</p>
+                <p><strong>Duración:</strong> 30 minutos sin paradas</p>
+              </div>
+              <div>
+                <p><strong>Destino:</strong> London Victoria Station</p>
+                <p><strong>Frecuencia:</strong> Cada 15 minutos</p>
+              </div>
+            </div>
+          </div>
+        </div>
 
-          <div className="bg-gradient-to-r from-cyan-50 to-teal-50 border border-cyan-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <ul className="text-sm text-gray-700 space-y-2 list-none">
-                <li className="flex items-start"><span className="w-2 h-2 bg-cyan-400 rounded-full mr-3 mt-1.5 flex-shrink-0"></span><span><strong>Precio:</strong> £17-20</span></li>
-                <li className="flex items-start"><span className="w-2 h-2 bg-teal-400 rounded-full mr-3 mt-1.5 flex-shrink-0"></span><span><strong>Duración:</strong> 55 minutos total</span></li>
-              </ul>
-              <ul className="text-sm text-gray-700 space-y-2 list-none">
-                <li className="flex items-start"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3 mt-1.5 flex-shrink-0"></span><span><strong>Destino:</strong> St Pancras International</span></li>
-                <li className="flex items-start"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3 mt-1.5 flex-shrink-0"></span><span><strong>Nota:</strong> Shuttle bus obligatorio (5 min)</span></li>
-              </ul>
+        <div className="mb-8">
+          <h3 className="text-lg font-bold text-gray-900 mb-4">📍 Desde Aeropuerto de Stansted (STN)</h3>
+          
+          <div className="bg-gradient-to-r from-blue-50 to-sky-50 border border-blue-200 rounded-xl p-4">
+            <h4 className="font-bold text-gray-900 mb-3">🚄 Stansted Express</h4>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-gray-700">
+              <div>
+                <p><strong>Precio:</strong> £19-23 (online adelantado)</p>
+                <p><strong>Duración:</strong> 47 minutos</p>
+              </div>
+              <div>
+                <p><strong>Destino:</strong> Liverpool Street Station</p>
+                <p><strong>Horario:</strong> 05:30-00:30</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
 
       {/* SECCIÓN 3: DÓNDE ALOJARSE */}
-      <div className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
-        <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">🏨 Dónde Alojarse en Londres</h2>
+      <div className="bg-gradient-to-br from-emerald-50 via-teal-50 to-cyan-50 border border-emerald-200 rounded-2xl p-6 sm:p-8 shadow-lg mb-8">
+        <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3 flex items-center">
+          🏨 Dónde Alojarse en Londres
+        </h2>
+        <p className="text-gray-600 mb-6">Las mejores zonas y hoteles recomendados para tu estancia</p>
 
-        {/* Covent Garden */}
-        <div className="bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300 mb-6">
-          <div className="flex items-center mb-4">
-            <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-indigo-500 rounded-xl flex items-center justify-center mr-4">
-              <span className="text-2xl">🏛️</span>
-            </div>
-            <div>
-              <h3 className="text-xl font-bold text-gray-900">Covent Garden</h3>
-              <p className="text-sm text-gray-600">Centro Turístico Premium - La ubicación perfecta</p>
-            </div>
-          </div>
-
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-4">
-            <div className="bg-gradient-to-br from-sky-50 to-blue-50 rounded-xl p-4 border border-sky-200 flex flex-col">
-              <div className="flex-grow">
-                <h4 className="font-bold text-gray-900 mb-2">The Z Hotel Covent Garden ⭐⭐⭐</h4>
-                <p className="text-xs text-gray-600 mb-2">📍 Covent Garden</p>
-                <p className="text-sm text-gray-700 mb-3">Hotel boutique compacto pero perfecto. A pasos de todo lo importante.</p>
+        <div className="space-y-6">
+          <div className="bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300">
+            <div className="flex items-center mb-4">
+              <div className="w-12 h-12 bg-gradient-to-br from-sky-500 to-blue-500 rounded-xl flex items-center justify-center mr-4">
+                <span className="text-2xl">🎭</span>
               </div>
-              <div className="mt-auto">
-                <span className="text-lg font-bold text-sky-600">€€</span>
+              <div>
+                <h3 className="text-xl font-bold text-gray-900">Covent Garden - Centro Turístico Premium</h3>
+                <p className="text-sm text-gray-600">La ubicación perfecta para tu primera vez en Londres</p>
               </div>
             </div>
 
-            <div className="bg-gradient-to-br from-cyan-50 to-teal-50 rounded-xl p-4 border border-cyan-200 flex flex-col">
-              <div className="flex-grow">
-                <h4 className="font-bold text-gray-900 mb-2">Hub by Premier Inn ⭐⭐⭐</h4>
-                <p className="text-xs text-gray-600 mb-2">📍 Covent Garden</p>
-                <p className="text-sm text-gray-700 mb-3">Moderno, funcional, céntrico. Diseño inteligente en espacios pequeños.</p>
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-4">
+              <div className="bg-gradient-to-br from-sky-50 to-blue-50 rounded-xl p-4 border border-sky-200 flex flex-col">
+                <div className="flex-grow">
+                  <h4 className="font-bold text-gray-900 mb-2">The Z Hotel Covent Garden ⭐⭐⭐</h4>
+                  <p className="text-xs text-gray-600 mb-2">📍 Covent Garden</p>
+                  <p className="text-sm text-gray-700 mb-3">Hotel boutique compacto pero perfecto. A pasos de todo lo importante.</p>
+                </div>
+                <div className="flex items-center justify-between flex-wrap gap-2 mt-auto">
+                  <span className="text-lg font-bold text-sky-600">€€</span>
+                  <a
+                    href="https://booking.tpk.lv/jQQDRGEV"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm"
+                  >
+                    Ver en Booking
+                    <ExternalLink className="h-3 w-3 ml-2" />
+                  </a>
+                </div>
               </div>
-              <div className="mt-auto">
-                <span className="text-lg font-bold text-cyan-600">€€</span>
+
+              <div className="bg-gradient-to-br from-cyan-50 to-teal-50 rounded-xl p-4 border border-cyan-200 flex flex-col">
+                <div className="flex-grow">
+                  <h4 className="font-bold text-gray-900 mb-2">Hub by Premier Inn Covent Garden ⭐⭐⭐</h4>
+                  <p className="text-xs text-gray-600 mb-2">📍 Covent Garden</p>
+                  <p className="text-sm text-gray-700 mb-3">Moderno, funcional, céntrico. Diseño inteligente en espacios pequeños.</p>
+                </div>
+                <div className="flex items-center justify-between flex-wrap gap-2 mt-auto">
+                  <span className="text-lg font-bold text-cyan-600">€€</span>
+                  <a
+                    href="https://booking.tpk.lv/0H9SyaZT"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm"
+                  >
+                    Ver en Booking
+                    <ExternalLink className="h-3 w-3 ml-2" />
+                  </a>
+                </div>
+              </div>
+
+              <div className="bg-gradient-to-br from-indigo-50 to-blue-50 rounded-xl p-4 border border-indigo-200 flex flex-col">
+                <div className="flex-grow">
+                  <h4 className="font-bold text-gray-900 mb-2">Strand Palace Hotel ⭐⭐⭐</h4>
+                  <p className="text-xs text-gray-600 mb-2">📍 Covent Garden/Strand</p>
+                  <p className="text-sm text-gray-700 mb-3">Hotel histórico renovado. Ubicación inmejorable cerca Trafalgar.</p>
+                </div>
+                <div className="flex items-center justify-between flex-wrap gap-2 mt-auto">
+                  <span className="text-lg font-bold text-indigo-600">€€€</span>
+                  <a
+                    href="https://booking.tpk.lv/TWEebJLj"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm"
+                  >
+                    Ver en Booking
+                    <ExternalLink className="h-3 w-3 ml-2" />
+                  </a>
+                </div>
               </div>
             </div>
 
-            <div className="bg-gradient-to-br from-indigo-50 to-blue-50 rounded-xl p-4 border border-indigo-200 flex flex-col">
-              <div className="flex-grow">
-                <h4 className="font-bold text-gray-900 mb-2">Strand Palace Hotel ⭐⭐⭐</h4>
-                <p className="text-xs text-gray-600 mb-2">📍 Covent Garden/Strand</p>
-                <p className="text-sm text-gray-700 mb-3">Hotel histórico renovado. Ubicación inmejorable cerca Trafalgar.</p>
-              </div>
-              <div className="mt-auto">
-                <span className="text-lg font-bold text-indigo-600">€€€</span>
-              </div>
-            </div>
-          </div>
-
-          <div className="bg-green-50 border border-green-200 rounded-lg p-3">
-            <p className="text-sm text-green-800">
-              <strong>✅ Por qué elegir esta zona:</strong> El corazón absoluto de Londres turístico. A 5-10 minutos andando de: Trafalgar Square, Big Ben, London Eye, West End, Museo Británico. Zona peatonal llena de restaurantes, cafés, tiendas. Ambiente vibrante día y noche.
-            </p>
-          </div>
-        </div>
-
-        {/* King's Cross */}
-        <div className="bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300 mb-6">
-          <div className="flex items-center mb-4">
-            <div className="w-12 h-12 bg-gradient-to-br from-emerald-500 to-green-500 rounded-xl flex items-center justify-center mr-4">
-              <span className="text-2xl">🚇</span>
-            </div>
-            <div>
-              <h3 className="text-xl font-bold text-gray-900">King's Cross / St Pancras</h3>
-              <p className="text-sm text-gray-600">Hub de Transporte - Perfecta conexión</p>
-            </div>
-          </div>
-
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-4">
-            <div className="bg-gradient-to-br from-emerald-50 to-green-50 rounded-xl p-4 border border-emerald-200 flex flex-col">
-              <div className="flex-grow">
-                <h4 className="font-bold text-gray-900 mb-2">The Standard London ⭐⭐⭐⭐</h4>
-                <p className="text-xs text-gray-600 mb-2">📍 King's Cross</p>
-                <p className="text-sm text-gray-700 mb-3">Diseño moderno espectacular. En la estación St Pancras.</p>
-              </div>
-              <div className="mt-auto">
-                <span className="text-lg font-bold text-emerald-600">€€€</span>
-              </div>
-            </div>
-
-            <div className="bg-gradient-to-br from-teal-50 to-cyan-50 rounded-xl p-4 border border-teal-200 flex flex-col">
-              <div className="flex-grow">
-                <h4 className="font-bold text-gray-900 mb-2">Megaro Hotel ⭐⭐⭐</h4>
-                <p className="text-xs text-gray-600 mb-2">📍 King's Cross</p>
-                <p className="text-sm text-gray-700 mb-3">Boutique con carácter. Excelente desayuno incluido.</p>
-              </div>
-              <div className="mt-auto">
-                <span className="text-lg font-bold text-teal-600">€€</span>
-              </div>
-            </div>
-
-            <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl p-4 border border-blue-200 flex flex-col">
-              <div className="flex-grow">
-                <h4 className="font-bold text-gray-900 mb-2">Travelodge Kings Cross ⭐⭐</h4>
-                <p className="text-xs text-gray-600 mb-2">📍 King's Cross</p>
-                <p className="text-sm text-gray-700 mb-3">Económico y funcional. Perfecto presupuestos ajustados.</p>
-              </div>
-              <div className="mt-auto">
-                <span className="text-lg font-bold text-blue-600">€</span>
-              </div>
+            <div className="bg-green-50 border border-green-200 rounded-lg p-3">
+              <p className="text-sm text-green-800">
+                <strong>✅ Por qué elegir esta zona:</strong> El corazón absoluto de Londres turístico. A 5-10 minutos andando de: Trafalgar Square, Big Ben, London Eye, West End (teatros), Museo Británico. Zona peatonal llena de restaurantes, cafés, tiendas.
+              </p>
             </div>
           </div>
 
-          <div className="bg-green-50 border border-green-200 rounded-lg p-3">
-            <p className="text-sm text-green-800">
-              <strong>✅ Por qué elegir esta zona:</strong> Conexión directa con 6 líneas de metro. Eurostar a París/Bruselas desde aquí. A 10 min del centro en metro. Andén 9¾ de Harry Potter. Más económico que Covent Garden.
-            </p>
+          <div className="bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300">
+            <div className="flex items-center mb-4">
+              <div className="w-12 h-12 bg-gradient-to-br from-emerald-500 to-green-500 rounded-xl flex items-center justify-center mr-4">
+                <span className="text-2xl">🚇</span>
+              </div>
+              <div>
+                <h3 className="text-xl font-bold text-gray-900">King's Cross / St Pancras - Hub de Transporte</h3>
+                <p className="text-sm text-gray-600">Perfecta conexión con todo Londres y Europa</p>
+              </div>
+            </div>
+
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-4">
+              <div className="bg-gradient-to-br from-emerald-50 to-green-50 rounded-xl p-4 border border-emerald-200 flex flex-col">
+                <div className="flex-grow">
+                  <h4 className="font-bold text-gray-900 mb-2">The Standard London ⭐⭐⭐⭐</h4>
+                  <p className="text-xs text-gray-600 mb-2">📍 King's Cross</p>
+                  <p className="text-sm text-gray-700 mb-3">Diseño moderno espectacular en la estación St Pancras.</p>
+                </div>
+                <div className="flex items-center justify-between flex-wrap gap-2 mt-auto">
+                  <span className="text-lg font-bold text-emerald-600">€€€</span>
+                  <a
+                    href="https://booking.tpk.lv/xbg7sSQv"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm"
+                  >
+                    Ver en Booking
+                    <ExternalLink className="h-3 w-3 ml-2" />
+                  </a>
+                </div>
+              </div>
+
+              <div className="bg-gradient-to-br from-teal-50 to-cyan-50 rounded-xl p-4 border border-teal-200 flex flex-col">
+                <div className="flex-grow">
+                  <h4 className="font-bold text-gray-900 mb-2">Megaro Hotel ⭐⭐⭐</h4>
+                  <p className="text-xs text-gray-600 mb-2">📍 King's Cross</p>
+                  <p className="text-sm text-gray-700 mb-3">Boutique con carácter. Excelente desayuno incluido.</p>
+                </div>
+                <div className="flex items-center justify-between flex-wrap gap-2 mt-auto">
+                  <span className="text-lg font-bold text-teal-600">€€</span>
+                  <a
+                    href="https://booking.tpk.lv/dXJgWO4A"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm"
+                  >
+                    Ver en Booking
+                    <ExternalLink className="h-3 w-3 ml-2" />
+                  </a>
+                </div>
+              </div>
+
+              <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl p-4 border border-blue-200 flex flex-col">
+                <div className="flex-grow">
+                  <h4 className="font-bold text-gray-900 mb-2">Travelodge London Kings Cross ⭐⭐</h4>
+                  <p className="text-xs text-gray-600 mb-2">📍 King's Cross</p>
+                  <p className="text-sm text-gray-700 mb-3">Económico y funcional. Perfecto presupuestos ajustados.</p>
+                </div>
+                <div className="flex items-center justify-between flex-wrap gap-2 mt-auto">
+                  <span className="text-lg font-bold text-blue-600">€</span>
+                  <a
+                    href="https://booking.tpk.lv/gn16EI6z"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm"
+                  >
+                    Ver en Booking
+                    <ExternalLink className="h-3 w-3 ml-2" />
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-green-50 border border-green-200 rounded-lg p-3">
+              <p className="text-sm text-green-800">
+                <strong>✅ Por qué elegir esta zona:</strong> Conexión directa con 6 líneas de metro. Eurostar a París/Bruselas desde aquí. A 10 min del centro en metro. Andén 9¾ de Harry Potter en King's Cross.
+              </p>
+            </div>
           </div>
-        </div>
 
-        {/* Southwark */}
-        <div className="bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300">
-          <div className="flex items-center mb-4">
-            <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-pink-500 rounded-xl flex items-center justify-center mr-4">
-              <span className="text-2xl">🌉</span>
-            </div>
-            <div>
-              <h3 className="text-xl font-bold text-gray-900">Southwark / London Bridge</h3>
-              <p className="text-sm text-gray-600">Orilla Sur Moderna - Vistas al Támesis</p>
-            </div>
-          </div>
-
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-4">
-            <div className="bg-gradient-to-br from-purple-50 to-pink-50 rounded-xl p-4 border border-purple-200 flex flex-col">
-              <div className="flex-grow">
-                <h4 className="font-bold text-gray-900 mb-2">Hilton London Bankside ⭐⭐⭐⭐</h4>
-                <p className="text-xs text-gray-600 mb-2">📍 Southwark</p>
-                <p className="text-sm text-gray-700 mb-3">Moderno con vistas al río. Cerca Borough Market y Tate Modern.</p>
+          <div className="bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300">
+            <div className="flex items-center mb-4">
+              <div className="w-12 h-12 bg-gradient-to-br from-orange-500 to-red-500 rounded-xl flex items-center justify-center mr-4">
+                <span className="text-2xl">🌉</span>
               </div>
-              <div className="mt-auto">
-                <span className="text-lg font-bold text-purple-600">€€€</span>
+              <div>
+                <h3 className="text-xl font-bold text-gray-900">Southwark / London Bridge - Orilla Sur Moderna</h3>
+                <p className="text-sm text-gray-600">Vistas al Támesis y ambiente auténtico</p>
               </div>
             </div>
 
-            <div className="bg-gradient-to-br from-pink-50 to-rose-50 rounded-xl p-4 border border-pink-200 flex flex-col">
-              <div className="flex-grow">
-                <h4 className="font-bold text-gray-900 mb-2">citizenM London Bankside ⭐⭐⭐</h4>
-                <p className="text-xs text-gray-600 mb-2">📍 Southwark</p>
-                <p className="text-sm text-gray-700 mb-3">Diseño holandés innovador. Tecnología de última generación.</p>
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-4">
+              <div className="bg-gradient-to-br from-orange-50 to-amber-50 rounded-xl p-4 border border-orange-200 flex flex-col">
+                <div className="flex-grow">
+                  <h4 className="font-bold text-gray-900 mb-2">Hilton London Bankside ⭐⭐⭐⭐</h4>
+                  <p className="text-xs text-gray-600 mb-2">📍 Southwark</p>
+                  <p className="text-sm text-gray-700 mb-3">Moderno con vistas al río. Cerca Borough Market y Tate Modern.</p>
+                </div>
+                <div className="flex items-center justify-between flex-wrap gap-2 mt-auto">
+                  <span className="text-lg font-bold text-orange-600">€€€</span>
+                  <a
+                    href="https://booking.tpk.lv/0u1aLCCU"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm"
+                  >
+                    Ver en Booking
+                    <ExternalLink className="h-3 w-3 ml-2" />
+                  </a>
+                </div>
               </div>
-              <div className="mt-auto">
-                <span className="text-lg font-bold text-pink-600">€€</span>
+
+              <div className="bg-gradient-to-br from-pink-50 to-rose-50 rounded-xl p-4 border border-pink-200 flex flex-col">
+                <div className="flex-grow">
+                  <h4 className="font-bold text-gray-900 mb-2">citizenM London Bankside ⭐⭐⭐</h4>
+                  <p className="text-xs text-gray-600 mb-2">📍 Southwark</p>
+                  <p className="text-sm text-gray-700 mb-3">Diseño holandés innovador. Tecnología de última generación.</p>
+                </div>
+                <div className="flex items-center justify-between flex-wrap gap-2 mt-auto">
+                  <span className="text-lg font-bold text-pink-600">€€</span>
+                  <a
+                    href="https://booking.tpk.lv/lD32rUSE"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm"
+                  >
+                    Ver en Booking
+                    <ExternalLink className="h-3 w-3 ml-2" />
+                  </a>
+                </div>
+              </div>
+
+              <div className="bg-gradient-to-br from-purple-50 to-violet-50 rounded-xl p-4 border border-purple-200 flex flex-col">
+                <div className="flex-grow">
+                  <h4 className="font-bold text-gray-900 mb-2">Premier Inn London Southwark ⭐⭐⭐</h4>
+                  <p className="text-xs text-gray-600 mb-2">📍 Southwark</p>
+                  <p className="text-sm text-gray-700 mb-3">Cadena confiable británica. Desayuno buffet excelente.</p>
+                </div>
+                <div className="flex items-center justify-between flex-wrap gap-2 mt-auto">
+                  <span className="text-lg font-bold text-purple-600">€</span>
+                  <a
+                    href="https://booking.tpk.lv/XrBYkB5u"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm"
+                  >
+                    Ver en Booking
+                    <ExternalLink className="h-3 w-3 ml-2" />
+                  </a>
+                </div>
               </div>
             </div>
 
-            <div className="bg-gradient-to-br from-rose-50 to-red-50 rounded-xl p-4 border border-rose-200 flex flex-col">
-              <div className="flex-grow">
-                <h4 className="font-bold text-gray-900 mb-2">Premier Inn Southwark ⭐⭐⭐</h4>
-                <p className="text-xs text-gray-600 mb-2">📍 Southwark</p>
-                <p className="text-sm text-gray-700 mb-3">Cadena confiable británica. Desayuno buffet excelente.</p>
-              </div>
-              <div className="mt-auto">
-                <span className="text-lg font-bold text-rose-600">€</span>
-              </div>
+            <div className="bg-green-50 border border-green-200 rounded-lg p-3">
+              <p className="text-sm text-green-800">
+                <strong>✅ Por qué elegir esta zona:</strong> A pasos de Borough Market, Tate Modern, Shakespeare's Globe. Vistas increíbles del Támesis y skyline. Más local y menos turístico que Westminster.
+              </p>
             </div>
-          </div>
-
-          <div className="bg-green-50 border border-green-200 rounded-lg p-3">
-            <p className="text-sm text-green-800">
-              <strong>✅ Por qué elegir esta zona:</strong> A pasos de Borough Market, Tate Modern, Shakespeare's Globe. Vistas increíbles del Támesis y skyline. Más local y menos turístico que Westminster. Excelente gastronomía.
-            </p>
           </div>
         </div>
       </div>
 
       {/* SECCIÓN 4: ITINERARIO */}
-      <div className="bg-gradient-to-r from-red-50 to-blue-50 border border-red-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
+      <div className="bg-gradient-to-r from-red-50 to-blue-50 rounded-2xl p-6 sm:p-8 mb-8 shadow-md">
         <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">📅 Itinerario de 3 Días por Londres</h2>
-
         <div className="overflow-x-auto">
-          <table className="w-full border-collapse">
+          <table className="w-full border-collapse bg-white rounded-xl shadow-sm">
             <thead>
-              <tr className="bg-gray-100">
-                <th className="border border-gray-300 px-4 py-3 text-left font-bold text-gray-900">DÍA</th>
-                <th className="border border-gray-300 px-4 py-3 text-left font-bold text-gray-900">EXPERIENCIAS LONDINENSES</th>
+              <tr className="bg-gradient-to-r from-red-600 to-blue-600 text-white">
+                <th className="border border-gray-300 px-4 py-3 text-left font-semibold">DÍA</th>
+                <th className="border border-gray-300 px-4 py-3 text-left font-semibold">EXPERIENCIAS LONDINENSES</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td className="border border-gray-300 px-4 py-3 font-bold text-gray-900">DÍA 1</td>
-                <td className="border border-gray-300 px-4 py-3 text-gray-700">Big Ben + Westminster Abbey + St James's Park + Buckingham Palace + Trafalgar Square + Covent Garden + Neal's Yard + London Eye + South Bank nocturno</td>
+                <td className="border border-gray-300 px-4 py-3 font-bold">DÍA 1</td>
+                <td className="border border-gray-300 px-4 py-3">Big Ben + Westminster Abbey + St James's Park + Buckingham Palace + Trafalgar Square + Covent Garden + Neal's Yard + London Eye + South Bank nocturno</td>
               </tr>
               <tr className="bg-gray-50">
-                <td className="border border-gray-300 px-4 py-3 font-bold text-gray-900">DÍA 2</td>
-                <td className="border border-gray-300 px-4 py-3 text-gray-700">Borough Market + Tower Bridge + Torre de Londres + Sky Garden + The Shard + Catedral San Pablo + Millennium Bridge + Crucero Támesis</td>
+                <td className="border border-gray-300 px-4 py-3 font-bold">DÍA 2</td>
+                <td className="border border-gray-300 px-4 py-3">Borough Market + Tower Bridge + Torre de Londres + Sky Garden + The Shard + Catedral San Pablo + Millennium Bridge + Paseo en barco Támesis</td>
               </tr>
               <tr>
-                <td className="border border-gray-300 px-4 py-3 font-bold text-gray-900">DÍA 3</td>
-                <td className="border border-gray-300 px-4 py-3 text-gray-700">Museo Británico + Piccadilly Circus + Chinatown + Oxford Street + Carnaby Street + Notting Hill + Hyde Park al atardecer</td>
+                <td className="border border-gray-300 px-4 py-3 font-bold">DÍA 3</td>
+                <td className="border border-gray-300 px-4 py-3">Museo Británico + Piccadilly Circus + Chinatown + Oxford Street + Carnaby Street + Notting Hill + Hyde Park al atardecer</td>
               </tr>
             </tbody>
           </table>
         </div>
       </div>
 
-      {/* DÍA 1 */}
+      {/* Separador decorativo */}
+      <div className="flex items-center justify-center mb-8">
+        <div className="flex space-x-2">
+          <div className="w-3 h-3 bg-gradient-to-r from-red-400 to-pink-400 rounded-full"></div>
+          <div className="w-3 h-3 bg-gradient-to-r from-blue-400 to-indigo-400 rounded-full"></div>
+          <div className="w-3 h-3 bg-gradient-to-r from-emerald-400 to-green-400 rounded-full"></div>
+        </div>
+      </div>
+
+      {/* DÍA 1 - COMPLETO Y DETALLADO */}
       <div className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
-        <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">📍 DÍA 1: Del Parlamento al Cielo de Londres</h2>
+        <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6 flex items-center">
+          <span className="bg-gradient-to-br from-red-600 to-pink-500 text-white w-14 h-14 rounded-2xl flex items-center justify-center text-xl font-bold mr-4 shadow-lg">1</span>
+          DÍA 1: Del Parlamento al Cielo de Londres
+        </h2>
 
-        <div className="space-y-8">
-          {/* Big Ben */}
-          <div>
-            <h3 className="text-lg font-bold text-gray-900 mb-4 flex items-center">
-              <div className="w-1 h-6 bg-gradient-to-b from-red-400 to-blue-400 rounded-full mr-3"></div>
-              Big Ben y Palacio de Westminster (9:00h)
-            </h3>
-            <div className="bg-red-50 border border-red-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
-              <p className="text-gray-700 mb-4">
-                Comenzamos nuestra aventura londinense frente al símbolo más reconocible de la ciudad. El Big Ben (oficialmente Torre Elizabeth) no es el reloj, sino la campana de 13 toneladas que repica dentro. La torre data de 1859 y sus 96 metros han dominado el skyline de Westminster durante más de 160 años.
-              </p>
+        {/* Despertar Parlamentario */}
+        <div className="mb-8">
+          <h3 className="text-lg font-bold text-gray-900 mb-4 flex items-center">
+            <div className="w-1 h-6 bg-gradient-to-b from-red-400 to-pink-400 rounded-full mr-3"></div>
+            Despertar Parlamentario (9:00h)
+          </h3>
+          <div className="bg-gradient-to-r from-red-50 to-pink-50 border border-red-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
+            <h4 className="text-lg font-bold text-gray-900 mb-3">Big Ben y Palacio de Westminster - El Icono Británico</h4>
+            <div className="mb-4">
+              <img
+                src="https://images.pexels.com/photos/460672/pexels-photo-460672.jpeg"
+                alt="Big Ben y Palacio de Westminster junto al Támesis"
+                className="w-full h-48 sm:h-64 object-cover rounded-xl shadow-lg mb-4"
+              />
+            </div>
+            <p className="text-gray-700 mb-4">
+              Comenzamos nuestra aventura londinense frente al símbolo más reconocible de la ciudad. El Big Ben (oficialmente Torre Elizabeth desde 2012) no es el reloj, sino la campana de 13 toneladas que repica dentro. La torre data de 1859 y sus 96 metros de altura han dominado el skyline de Westminster durante más de 160 años.
+            </p>
 
-              <div className="bg-blue-50 border border-blue-200 rounded-xl p-4 mb-4">
-                <h4 className="font-semibold text-gray-900 mb-3">📋 Información Práctica:</h4>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  <ul className="text-sm text-gray-700 space-y-2 list-none">
-                    <li className="flex items-start"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3 mt-1.5 flex-shrink-0"></span><span><strong>Visita Interior:</strong> Reabierta tras restauración</span></li>
-                    <li className="flex items-start"><span className="w-2 h-2 bg-green-400 rounded-full mr-3 mt-1.5 flex-shrink-0"></span><span><strong>Tours:</strong> Solo guía inglés, muy limitados</span></li>
-                  </ul>
-                  <ul className="text-sm text-gray-700 space-y-2 list-none">
-                    <li className="flex items-start"><span className="w-2 h-2 bg-red-400 rounded-full mr-3 mt-1.5 flex-shrink-0"></span><span><strong>Precio:</strong> £30-35 por persona</span></li>
-                    <li className="flex items-start"><span className="w-2 h-2 bg-yellow-400 rounded-full mr-3 mt-1.5 flex-shrink-0"></span><span><strong>Duración:</strong> 90 min, 334 escalones</span></li>
-                  </ul>
-                </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+              <div>
+                <h5 className="font-semibold text-gray-900 mb-2">📋 Información Práctica:</h5>
+                <ul className="text-sm text-gray-700 space-y-1 list-none">
+                  <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Visita Interior: Reabierta tras restauración</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Tours: Solo con guía en inglés</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>Precio: £30-35 por persona</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-yellow-400 rounded-full mr-3"></span>Duración: 90 minutos, 334 escalones</li>
+                </ul>
               </div>
-
-              <div className="bg-green-50 border border-green-200 rounded-xl p-4">
-                <h4 className="font-semibold text-gray-900 mb-3">🏛️ Palacio de Westminster:</h4>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  <ul className="text-sm text-gray-700 space-y-2 list-none">
-                    <li className="flex items-start"><span className="w-2 h-2 bg-green-400 rounded-full mr-3 mt-1.5 flex-shrink-0"></span><span><strong>Visitas:</strong> Sábados + días laborables</span></li>
-                    <li className="flex items-start"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3 mt-1.5 flex-shrink-0"></span><span><strong>Precio:</strong> £28 adultos (audio español)</span></li>
-                  </ul>
-                  <ul className="text-sm text-gray-700 space-y-2 list-none">
-                    <li className="flex items-start"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3 mt-1.5 flex-shrink-0"></span><span><strong>Duración:</strong> 75-90 minutos</span></li>
-                    <li className="flex items-start"><span className="w-2 h-2 bg-pink-400 rounded-full mr-3 mt-1.5 flex-shrink-0"></span><span><strong>Incluye:</strong> Audioguía en español</span></li>
-                  </ul>
-                </div>
+              <div>
+                <h5 className="font-semibold text-gray-900 mb-2">📸 Mejores Fotos:</h5>
+                <ul className="text-sm text-gray-700 space-y-1 list-none">
+                  <li className="flex items-center"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3"></span>Desde Westminster Bridge (vista clásica)</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-pink-400 rounded-full mr-3"></span>South Bank (frente, con London Eye)</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-indigo-400 rounded-full mr-3"></span>Cabina roja en Parliament Street</li>
+                </ul>
               </div>
             </div>
           </div>
+        </div>
 
-          {/* Westminster Abbey */}
-          <div>
-            <h3 className="text-lg font-bold text-gray-900 mb-4 flex items-center">
-              <div className="w-1 h-6 bg-gradient-to-b from-purple-400 to-pink-400 rounded-full mr-3"></div>
-              Westminster Abbey (9:45h)
-            </h3>
-            <div className="bg-purple-50 border border-purple-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
-              <p className="text-gray-700 mb-4">
-                A solo 5 minutos andando del Big Ben se encuentra una de las iglesias más importantes del mundo. Desde 1066, todas las coronaciones británicas (excepto dos) han tenido lugar aquí. La última fue la del Rey Carlos III en mayo de 2023.
-              </p>
+        {/* Westminster Abbey */}
+        <div className="mb-8">
+          <h3 className="text-lg font-bold text-gray-900 mb-4 flex items-center">
+            <div className="w-1 h-6 bg-gradient-to-b from-orange-400 to-red-400 rounded-full mr-3"></div>
+            Abadía de Westminster (9:45h)
+          </h3>
+          <div className="bg-gradient-to-r from-orange-50 to-red-50 border border-orange-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
+            <h4 className="text-lg font-bold text-gray-900 mb-3">Westminster Abbey - Donde se Corona a los Reyes</h4>
+            <p className="text-gray-700 mb-4">
+              A solo 5 minutos andando del Big Ben se encuentra una de las iglesias más importantes del mundo. Desde 1066, todas las coronaciones británicas (excepto dos) han tenido lugar aquí. La última fue la del Rey Carlos III en mayo de 2023.
+            </p>
 
-              <div className="bg-amber-50 border border-amber-200 rounded-xl p-4 mb-4">
-                <h4 className="font-semibold text-gray-900 mb-3">⭐ Imprescindibles que Ver:</h4>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  <ul className="text-sm text-gray-700 space-y-2 list-none">
-                    <li className="flex items-start"><span className="w-2 h-2 bg-amber-400 rounded-full mr-3 mt-1.5 flex-shrink-0"></span><span><strong>Coronation Chair:</strong> Trono desde 1308</span></li>
-                    <li className="flex items-start"><span className="w-2 h-2 bg-yellow-400 rounded-full mr-3 mt-1.5 flex-shrink-0"></span><span><strong>Poets' Corner:</strong> Chaucer, Dickens</span></li>
-                    <li className="flex items-start"><span className="w-2 h-2 bg-orange-400 rounded-full mr-3 mt-1.5 flex-shrink-0"></span><span><strong>Capilla Enrique VII:</strong> Gótico perpendicular</span></li>
-                  </ul>
-                  <ul className="text-sm text-gray-700 space-y-2 list-none">
-                    <li className="flex items-start"><span className="w-2 h-2 bg-red-400 rounded-full mr-3 mt-1.5 flex-shrink-0"></span><span><strong>Guerrero Desconocido:</strong> Único que no se pisa</span></li>
-                    <li className="flex items-start"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3 mt-1.5 flex-shrink-0"></span><span><strong>Tumbas Reales:</strong> Isabel I, María I</span></li>
-                  </ul>
-                </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+              <div>
+                <h5 className="font-semibold text-gray-900 mb-2">⭐ Imprescindibles que Ver:</h5>
+                <ul className="text-sm text-gray-700 space-y-1 list-none">
+                  <li className="flex items-center"><span className="w-2 h-2 bg-gold-400 rounded-full mr-3"></span>Coronation Chair (trono desde 1308)</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Poets' Corner (Chaucer, Dickens)</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Tumba del Guerrero Desconocido</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3"></span>Capilla de Enrique VII</li>
+                </ul>
               </div>
-
-              <div className="bg-yellow-50 border border-yellow-200 rounded-xl p-4">
-                <h4 className="font-semibold text-gray-900 mb-3">🎫 Información Práctica:</h4>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  <ul className="text-sm text-gray-700 space-y-2 list-none">
-                    <li className="flex items-start"><span className="w-2 h-2 bg-yellow-400 rounded-full mr-3 mt-1.5 flex-shrink-0"></span><span><strong>Horario:</strong> Lun-Vie 9:30-15:30</span></li>
-                    <li className="flex items-start"><span className="w-2 h-2 bg-green-400 rounded-full mr-3 mt-1.5 flex-shrink-0"></span><span><strong>Entrada:</strong> £29 adultos (online)</span></li>
-                  </ul>
-                  <ul className="text-sm text-gray-700 space-y-2 list-none">
-                    <li className="flex items-start"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3 mt-1.5 flex-shrink-0"></span><span><strong>Incluye:</strong> Audioguía español</span></li>
-                    <li className="flex items-start"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3 mt-1.5 flex-shrink-0"></span><span><strong>Duración:</strong> 1.5-2 horas</span></li>
-                  </ul>
-                </div>
+              <div>
+                <h5 className="font-semibold text-gray-900 mb-2">🎫 Información Práctica:</h5>
+                <ul className="text-sm text-gray-700 space-y-1 list-none">
+                  <li className="flex items-center"><span className="w-2 h-2 bg-emerald-400 rounded-full mr-3"></span>Entrada: £29 adultos (online)</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-orange-400 rounded-full mr-3"></span>Incluye: Audioguía en español</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>Duración: 1.5-2 horas</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-yellow-400 rounded-full mr-3"></span>⚠️ No se permiten fotos interior</li>
+                </ul>
               </div>
             </div>
           </div>
+        </div>
 
-          {/* Buckingham Palace */}
-          <div>
-            <h3 className="text-lg font-bold text-gray-900 mb-4 flex items-center">
-              <div className="w-1 h-6 bg-gradient-to-b from-yellow-400 to-amber-400 rounded-full mr-3"></div>
-              St James's Park y Buckingham Palace (12:00h)
-            </h3>
-            <div className="bg-yellow-50 border border-yellow-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
-              <p className="text-gray-700 mb-4">
-                Cruzamos hacia el parque real más antiguo de Londres (1532). Este oasis verde de 23 hectáreas conecta Westminster con Buckingham Palace. Al final del parque emerge la fachada más fotografiada de Londres con sus 775 habitaciones.
-              </p>
+        {/* St James's Park + Buckingham */}
+        <div className="mb-8">
+          <h3 className="text-lg font-bold text-gray-900 mb-4 flex items-center">
+            <div className="w-1 h-6 bg-gradient-to-b from-green-400 to-emerald-400 rounded-full mr-3"></div>
+            St James's Park + Palacio de Buckingham (12:00h)
+          </h3>
+          <div className="bg-green-50 border border-green-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
+            <h4 className="text-lg font-bold text-gray-900 mb-3">Paseo Real por el Parque + Residencia del Rey Carlos III</h4>
+            <p className="text-gray-700 mb-4">
+              Dejamos la Abadía y cruzamos hacia el parque real más antiguo de Londres (1532). Este oasis verde de 23 hectáreas fue jardín privado de Enrique VIII y hoy conecta Westminster con Buckingham Palace. Al final del parque emerge la fachada más fotografiada de Londres, con 775 habitaciones.
+            </p>
 
-              <div className="bg-red-50 border border-red-200 rounded-xl p-4 mb-4">
-                <h4 className="font-semibold text-gray-900 mb-3">👑 Changing of the Guard - GRATUITO:</h4>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  <ul className="text-sm text-gray-700 space-y-2 list-none">
-                    <li className="flex items-start"><span className="w-2 h-2 bg-red-400 rounded-full mr-3 mt-1.5 flex-shrink-0"></span><span><strong>Horario:</strong> 11:00h (10:00h domingos)</span></li>
-                    <li className="flex items-start"><span className="w-2 h-2 bg-orange-400 rounded-full mr-3 mt-1.5 flex-shrink-0"></span><span><strong>Frecuencia:</strong> Lun/Mié/Vie/Dom (verano)</span></li>
-                  </ul>
-                  <ul className="text-sm text-gray-700 space-y-2 list-none">
-                    <li className="flex items-start"><span className="w-2 h-2 bg-yellow-400 rounded-full mr-3 mt-1.5 flex-shrink-0"></span><span><strong>Duración:</strong> 45 minutos</span></li>
-                    <li className="flex items-start"><span className="w-2 h-2 bg-green-400 rounded-full mr-3 mt-1.5 flex-shrink-0"></span><span><strong>Mejor lugar:</strong> Rejas principales</span></li>
-                  </ul>
-                </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+              <div>
+                <h5 className="font-semibold text-gray-900 mb-2">🦆 Highlights del Parque:</h5>
+                <ul className="text-sm text-gray-700 space-y-1 list-none">
+                  <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Lago con pelícanos desde 1664</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Blue Bridge con vistas simultáneas</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-pink-400 rounded-full mr-3"></span>60.000 flores en primavera/verano</li>
+                </ul>
               </div>
-
-              <div className="bg-blue-50 border border-blue-200 rounded-xl p-4">
-                <h4 className="font-semibold text-gray-900 mb-3">🎫 Visita Interior del Palacio:</h4>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  <ul className="text-sm text-gray-700 space-y-2 list-none">
-                    <li className="flex items-start"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3 mt-1.5 flex-shrink-0"></span><span><strong>Temporada:</strong> Julio - Septiembre</span></li>
-                    <li className="flex items-start"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3 mt-1.5 flex-shrink-0"></span><span><strong>Entrada:</strong> £33 adultos</span></li>
-                  </ul>
-                  <ul className="text-sm text-gray-700 space-y-2 list-none">
-                    <li className="flex items-start"><span className="w-2 h-2 bg-pink-400 rounded-full mr-3 mt-1.5 flex-shrink-0"></span><span><strong>Incluye:</strong> State Rooms, jardines</span></li>
-                    <li className="flex items-start"><span className="w-2 h-2 bg-green-400 rounded-full mr-3 mt-1.5 flex-shrink-0"></span><span><strong>Duración:</strong> 2-2.5 horas</span></li>
-                  </ul>
-                </div>
+              <div>
+                <h5 className="font-semibold text-gray-900 mb-2">🎭 Cambio de Guardia:</h5>
+                <ul className="text-sm text-gray-700 space-y-1 list-none">
+                  <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>Horario: 11:00h (10:00h domingos)</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-yellow-400 rounded-full mr-3"></span>Frecuencia: Lun/Mié/Vie/Dom (verano)</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3"></span>Duración: 45 minutos</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-orange-400 rounded-full mr-3"></span>¡Completamente GRATUITO!</li>
+                </ul>
               </div>
             </div>
           </div>
+        </div>
 
-          {/* Trafalgar Square */}
-          <div>
-            <h3 className="text-lg font-bold text-gray-900 mb-4 flex items-center">
-              <div className="w-1 h-6 bg-gradient-to-b from-blue-400 to-cyan-400 rounded-full mr-3"></div>
-              Trafalgar Square (14:30h)
-            </h3>
-            <div className="bg-blue-50 border border-blue-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
-              <p className="text-gray-700 mb-4">
-                Considerada el "centro" de Londres, desde aquí se miden todas las distancias oficiales del Reino Unido. Esta plaza monumental fue diseñada en 1830 para conmemorar la victoria del Almirante Nelson en la Batalla de Trafalgar (1805).
-              </p>
+        {/* Trafalgar Square */}
+        <div className="mb-8">
+          <h3 className="text-lg font-bold text-gray-900 mb-4 flex items-center">
+            <div className="w-1 h-6 bg-gradient-to-b from-blue-400 to-indigo-400 rounded-full mr-3"></div>
+            Trafalgar Square (14:30h)
+          </h3>
+          <div className="bg-blue-50 border border-blue-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
+            <h4 className="text-lg font-bold text-gray-900 mb-3">El Corazón de Londres</h4>
+            <p className="text-gray-700 mb-4">
+              Considerada el "centro" de Londres, desde aquí se miden todas las distancias oficiales del Reino Unido. Esta plaza monumental fue diseñada en 1830 para conmemorar la victoria del Almirante Nelson en la Batalla de Trafalgar (1805).
+            </p>
 
-              <div className="bg-teal-50 border border-teal-200 rounded-xl p-4">
-                <h4 className="font-semibold text-gray-900 mb-3">🎨 National Gallery - GRATIS:</h4>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  <ul className="text-sm text-gray-700 space-y-2 list-none">
-                    <li className="flex items-start"><span className="w-2 h-2 bg-teal-400 rounded-full mr-3 mt-1.5 flex-shrink-0"></span><span>Más de 2.300 pinturas (1250-1900)</span></li>
-                    <li className="flex items-start"><span className="w-2 h-2 bg-cyan-400 rounded-full mr-3 mt-1.5 flex-shrink-0"></span><span>Van Gogh, Da Vinci, Velázquez</span></li>
-                  </ul>
-                  <ul className="text-sm text-gray-700 space-y-2 list-none">
-                    <li className="flex items-start"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3 mt-1.5 flex-shrink-0"></span><span><strong>Horario:</strong> 10:00-18:00</span></li>
-                    <li className="flex items-start"><span className="w-2 h-2 bg-green-400 rounded-full mr-3 mt-1.5 flex-shrink-0"></span><span><strong>Visita rápida:</strong> 1 hora</span></li>
-                  </ul>
-                </div>
+            <div className="bg-white rounded-xl p-4 mb-4 shadow-sm border border-gray-100">
+              <h5 className="font-semibold text-gray-900 mb-2">🎨 National Gallery - Galería Nacional:</h5>
+              <div className="text-sm text-gray-700 space-y-2">
+                <p>Uno de los museos de arte más importantes del mundo, ¡con entrada GRATUITA!</p>
+                <ul className="space-y-1 list-none">
+                  <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Más de 2.300 pinturas (1250-1900)</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Van Gogh, Da Vinci, Velázquez, Monet</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>Horario: 10:00-18:00 (viernes hasta 21:00)</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-yellow-400 rounded-full mr-3"></span>Entrada: GRATIS</li>
+                </ul>
               </div>
             </div>
           </div>
+        </div>
 
-          {/* Covent Garden */}
-          <div>
-            <h3 className="text-lg font-bold text-gray-900 mb-4 flex items-center">
-              <div className="w-1 h-6 bg-gradient-to-b from-pink-400 to-rose-400 rounded-full mr-3"></div>
-              Covent Garden y Neal's Yard (15:00h)
-            </h3>
-            <div className="bg-pink-50 border border-pink-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
-              <p className="text-gray-700 mb-4">
-                Desde 1654 este fue el mercado de frutas y verduras más importante de Londres. Hoy es un vibrante centro de tiendas, restaurantes y artistas callejeros.
-              </p>
+        {/* Covent Garden + Neal's Yard */}
+        <div className="mb-8">
+          <h3 className="text-lg font-bold text-gray-900 mb-4 flex items-center">
+            <div className="w-1 h-6 bg-gradient-to-b from-purple-400 to-pink-400 rounded-full mr-3"></div>
+            Covent Garden + Neal's Yard (15:00h)
+          </h3>
+          <div className="bg-purple-50 border border-purple-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
+            <h4 className="text-lg font-bold text-gray-900 mb-3">Mercado Histórico con Encanto + Callejón Mágico de Colores</h4>
+            <p className="text-gray-700 mb-4">
+              Desde 1654 este fue el mercado de frutas y verduras más importante de Londres. Hoy es un vibrante centro de tiendas, restaurantes, artistas callejeros y el Apple Market con artesanía británica. A solo 2 minutos andando se esconde Neal's Yard: un pequeño callejón de edificios pintados en colores vibrantes.
+            </p>
 
-              <div className="bg-gradient-to-r from-rose-50 to-pink-50 border-2 border-rose-300 rounded-xl p-4">
-                <h4 className="font-semibold text-gray-900 mb-3">🌈 Neal's Yard - El Rincón Secreto de Colores:</h4>
-                <p className="text-sm text-gray-700 mb-2">
-                  ¡A solo 2 minutos andando! Un pequeño callejón de edificios pintados en colores vibrantes (amarillo, fucsia, azul, verde) que contrasta totalmente con el gris londinense.
-                </p>
-                <p className="text-sm font-medium text-rose-800">
-                  📸 Foto Perfecta: Colócate en el centro del patio para capturar los 4 edificios de colores. Mejor hora: 14:00-16:00h.
-                </p>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+              <div>
+                <h5 className="font-semibold text-gray-900 mb-2">🏛️ Qué Ver en Covent Garden:</h5>
+                <ul className="text-sm text-gray-700 space-y-1 list-none">
+                  <li className="flex items-center"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3"></span>Apple Market: Artesanía británica</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-pink-400 rounded-full mr-3"></span>Artistas callejeros de calidad</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Royal Opera House</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Arquitectura victoriana impresionante</li>
+                </ul>
+              </div>
+              <div>
+                <h5 className="font-semibold text-gray-900 mb-2">🌈 Neal's Yard:</h5>
+                <ul className="text-sm text-gray-700 space-y-1 list-none">
+                  <li className="flex items-center"><span className="w-2 h-2 bg-yellow-400 rounded-full mr-3"></span>Fachadas de colores Instagram-friendly</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-orange-400 rounded-full mr-3"></span>Neal's Yard Remedies (cosmética)</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-emerald-400 rounded-full mr-3"></span>Cafés orgánicos</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>📸 Mejor hora: 14:00-16:00h</li>
+                </ul>
               </div>
             </div>
           </div>
+        </div>
 
-          {/* London Eye */}
-          <div>
-            <h3 className="text-lg font-bold text-gray-900 mb-4 flex items-center">
-              <div className="w-1 h-6 bg-gradient-to-b from-indigo-400 to-purple-400 rounded-full mr-3"></div>
-              London Eye al Atardecer (17:00h)
-            </h3>
-            <div className="bg-indigo-50 border border-indigo-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
-              <p className="text-gray-700 mb-4">
-                Cerramos el día subiendo a 135 metros de altura en la noria de observación más icónica del mundo. Inaugurada en el año 2000, el London Eye se ha convertido en el monumento de pago más visitado del Reino Unido.
-              </p>
+        {/* London Eye */}
+        <div className="mb-8">
+          <h3 className="text-lg font-bold text-gray-900 mb-4 flex items-center">
+            <div className="w-1 h-6 bg-gradient-to-b from-sky-400 to-blue-400 rounded-full mr-3"></div>
+            London Eye - Cielo de Londres al Atardecer (17:00h)
+          </h3>
+          <div className="bg-sky-50 border border-sky-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
+            <h4 className="text-lg font-bold text-gray-900 mb-3">La Noria Más Alta de Europa</h4>
+            <div className="mb-4">
+              <img
+                src="https://images.pexels.com/photos/672532/pexels-photo-672532.jpeg"
+                alt="London Eye iluminado al atardecer junto al río Támesis"
+                className="w-full h-48 sm:h-64 object-cover rounded-xl shadow-lg mb-4"
+              />
+            </div>
+            <p className="text-gray-700 mb-4">
+              Cerramos el día subiendo a 135 metros de altura en la noria de observación más icónica del mundo. Inaugurada en el año 2000, el London Eye se ha convertido en el monumento de pago más visitado del Reino Unido.
+            </p>
 
-              <div className="bg-blue-50 border border-blue-200 rounded-xl p-4 mb-4">
-                <h4 className="font-semibold text-gray-900 mb-3">🎫 Tipos de Entradas (2025):</h4>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  <ul className="text-sm text-gray-700 space-y-2 list-none">
-                    <li className="flex items-start"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3 mt-1.5 flex-shrink-0"></span><span><strong>Standard:</strong> £28-35 online (ahorra 25%)</span></li>
-                    <li className="flex items-start"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3 mt-1.5 flex-shrink-0"></span><span><strong>Fast Track:</strong> £40-48 (ahorra 45 min)</span></li>
-                  </ul>
-                  <ul className="text-sm text-gray-700 space-y-2 list-none">
-                    <li className="flex items-start"><span className="w-2 h-2 bg-pink-400 rounded-full mr-3 mt-1.5 flex-shrink-0"></span><span><strong>Flexible:</strong> £53 (cualquier hora)</span></li>
-                    <li className="flex items-start"><span className="w-2 h-2 bg-green-400 rounded-full mr-3 mt-1.5 flex-shrink-0"></span><span><strong>Duración:</strong> 30 minutos</span></li>
-                  </ul>
-                </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+              <div>
+                <h5 className="font-semibold text-gray-900 mb-2">🎡 Datos Fascinantes:</h5>
+                <ul className="text-sm text-gray-700 space-y-1 list-none">
+                  <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Altura: 135 metros</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>32 cápsulas (25 personas cada una)</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>Duración: 30 minutos rotación</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-yellow-400 rounded-full mr-3"></span>Pasajeros/año: 3.75 millones</li>
+                </ul>
               </div>
+              <div>
+                <h5 className="font-semibold text-gray-900 mb-2">🎫 Tipos de Entradas:</h5>
+                <ul className="text-sm text-gray-700 space-y-1 list-none">
+                  <li className="flex items-center"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3"></span>Standard: £28-35 (online adelantado)</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-pink-400 rounded-full mr-3"></span>Fast Track: £40-48 (cola prioritaria)</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-indigo-400 rounded-full mr-3"></span>Ahorro online: hasta 25%</li>
+                </ul>
+              </div>
+            </div>
 
-              <div className="bg-orange-50 border border-orange-200 rounded-xl p-4">
-                <p className="text-sm font-medium text-orange-800">
-                  💡 Mejor Momento: Atardecer (16:00-16:30h en noviembre). Ves la ciudad de día y de noche en misma vuelta. Luces de Londres encendiéndose = mágico.
-                </p>
+            <div className="bg-white rounded-xl p-4 border border-gray-200 shadow-sm">
+              <p className="text-xs text-sky-600 mb-2">💡 Mejor momento: Atardecer (16:00-16:30h en noviembre). Ves la ciudad de día y de noche en la misma vuelta.</p>
+            </div>
+          </div>
+        </div>
+
+        {/* South Bank nocturno */}
+        <div className="mb-8">
+          <h3 className="text-lg font-bold text-gray-900 mb-4 flex items-center">
+            <div className="w-1 h-6 bg-gradient-to-b from-indigo-400 to-purple-400 rounded-full mr-3"></div>
+            South Bank - Paseo Nocturno Mágico (18:30h)
+          </h3>
+          <div className="bg-indigo-50 border border-indigo-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
+            <h4 className="text-lg font-bold text-gray-900 mb-3">La Orilla Cultural del Támesis</h4>
+            <p className="text-gray-700 mb-4">
+              Desde el London Eye hasta el Puente de Westminster se extiende el paseo peatonal más vibrante de Londres. De noche, con todo iluminado, es simplemente mágico.
+            </p>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+              <div>
+                <h5 className="font-semibold text-gray-900 mb-2">🌉 Qué Verás:</h5>
+                <ul className="text-sm text-gray-700 space-y-1 list-none">
+                  <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Golden Jubilee Bridges iluminados</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Southbank Centre (conciertos gratis)</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3"></span>Street performers y artistas</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-pink-400 rounded-full mr-3"></span>Skate park bajo el puente</li>
+                </ul>
+              </div>
+              <div>
+                <h5 className="font-semibold text-gray-900 mb-2">📸 Fotos Nocturnas:</h5>
+                <ul className="text-sm text-gray-700 space-y-1 list-none">
+                  <li className="flex items-center"><span className="w-2 h-2 bg-yellow-400 rounded-full mr-3"></span>London Eye reflejado en el Támesis</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-orange-400 rounded-full mr-3"></span>Big Ben iluminado desde South Bank</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>Westminster Bridge con luces doradas</li>
+                </ul>
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      {/* Simplified rest of content for size constraints - will continue with key sections */}
+      {/* DÍA 2 */}
+      <div className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
+        <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6 flex items-center">
+          <span className="bg-gradient-to-br from-blue-500 to-indigo-500 text-white w-14 h-14 rounded-2xl flex items-center justify-center text-xl font-bold mr-4 shadow-lg">2</span>
+          DÍA 2: De la Torre Medieval a las Alturas del Shard
+        </h2>
+
+        {/* Borough Market */}
+        <div className="mb-8">
+          <h3 className="text-lg font-bold text-gray-900 mb-4 flex items-center">
+            <div className="w-1 h-6 bg-gradient-to-b from-green-400 to-emerald-400 rounded-full mr-3"></div>
+            Borough Market - Desayuno Gastronómico (9:00h)
+          </h3>
+          <div className="bg-green-50 border border-green-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
+            <h4 className="text-lg font-bold text-gray-900 mb-3">El Paraíso Gastronómico de Londres</h4>
+            <p className="text-gray-700 mb-4">
+              Comenzamos el día en el mercado de comida más antiguo de Londres (1014 d.C.). Hoy es el epicentro de la gastronomía gourmet, orgánica y artesanal de la ciudad.
+            </p>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <h5 className="font-semibold text-gray-900 mb-2">🧀 Qué Encontrarás:</h5>
+                <ul className="text-sm text-gray-700 space-y-1 list-none">
+                  <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Más de 100 puestos de comida</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Bread Ahead (donuts £4)</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>Ostras frescas desde £1.50</li>
+                </ul>
+              </div>
+              <div>
+                <h5 className="font-semibold text-gray-900 mb-2">📅 Horarios:</h5>
+                <ul className="text-sm text-gray-700 space-y-1 list-none">
+                  <li className="flex items-center"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3"></span>Lun-Jue: 10:00-17:00</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-pink-400 rounded-full mr-3"></span>Sáb: 8:00-17:00 (más ambiente)</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-orange-400 rounded-full mr-3"></span>Dom: Cerrado</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Tower Bridge + Torre Londres - Versión Compacta */}
+        <div className="mb-8">
+          <h3 className="text-lg font-bold text-gray-900 mb-4 flex items-center">
+            <div className="w-1 h-6 bg-gradient-to-b from-blue-400 to-cyan-400 rounded-full mr-3"></div>
+            Tower Bridge + Torre de Londres (10:00h - 13:00h)
+          </h3>
+          <div className="bg-blue-50 border border-blue-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
+            <h4 className="text-lg font-bold text-gray-900 mb-3">El Puente Más Famoso + 1000 Años de Historia Real</h4>
+            <div className="mb-4">
+              <img
+                src="https://images.pexels.com/photos/726484/pexels-photo-726484.jpeg"
+                alt="Tower Bridge y Torre de Londres"
+                className="w-full h-48 sm:h-64 object-cover rounded-xl shadow-lg mb-4"
+              />
+            </div>
+            <p className="text-gray-700 mb-4">
+              El puente basculante más fotografiado de Londres (1894) te lleva a la fortaleza normanda que alberga las Joyas de la Corona Británica.
+            </p>
+            <div className="bg-white rounded-xl p-4 mb-4 shadow-sm">
+              <h5 className="font-semibold text-gray-900 mb-2">💎 Torre de Londres - Imprescindibles:</h5>
+              <ul className="text-sm text-gray-700 space-y-1 list-none">
+                <li className="flex items-center"><span className="w-2 h-2 bg-gold-400 rounded-full mr-3"></span>Crown Jewels: Imperial State Crown con 2.868 diamantes</li>
+                <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Precio: £33.20 (online adelantado)</li>
+                <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>Duración: 2.5-3 horas MÍNIMO</li>
+                <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Yeoman Tours GRATIS incluidos</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        {/* Sky Garden + Shard + St Paul's - Compacto */}
+        <div className="mb-8">
+          <h3 className="text-lg font-bold text-gray-900 mb-4 flex items-center">
+            <div className="w-1 h-6 bg-gradient-to-b from-emerald-400 to-amber-400 rounded-full mr-3"></div>
+            Vistas Aéreas + Catedral (14:00h - 17:30h)
+          </h3>
+          <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
+            <h4 className="text-lg font-bold text-gray-900 mb-3">Sky Garden (GRATIS) → The Shard → St Paul's</h4>
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+              <div className="bg-white rounded-lg p-3 shadow-sm">
+                <h5 className="font-semibold text-gray-900 mb-1">🌿 Sky Garden</h5>
+                <p className="text-xs text-gray-700">Piso 35, 155m altura. ¡GRATIS! (reserva online).</p>
+              </div>
+              <div className="bg-white rounded-lg p-3 shadow-sm">
+                <h5 className="font-semibold text-gray-900 mb-1">🏙️ The Shard</h5>
+                <p className="text-xs text-gray-700">310m, vistas hasta 64km. £28-32 online.</p>
+              </div>
+              <div className="bg-white rounded-lg p-3 shadow-sm">
+                <h5 className="font-semibold text-gray-900 mb-1">⛪ St Paul's</h5>
+                <p className="text-xs text-gray-700">Cúpula 111m. £23 entrada. 528 escalones.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Crucero Támesis */}
+        <div className="mb-8">
+          <h3 className="text-lg font-bold text-gray-900 mb-4 flex items-center">
+            <div className="w-1 h-6 bg-gradient-to-b from-cyan-400 to-blue-400 rounded-full mr-3"></div>
+            Crucero por el Támesis (18:30h)
+          </h3>
+          <div className="bg-cyan-50 border border-cyan-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
+            <h4 className="text-lg font-bold text-gray-900 mb-3">Londres desde el Agua - Cierre Perfecto del Día</h4>
+            <p className="text-gray-700 mb-4">
+              Termina el día navegando por el río que ha sido testigo de 2.000 años de historia. Ver la ciudad iluminada desde el agua es inolvidable.
+            </p>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <h5 className="font-semibold text-gray-900 mb-2">🚤 City Cruises:</h5>
+                <ul className="text-sm text-gray-700 space-y-1 list-none">
+                  <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Precio: £19 (online)</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Duración: 40-50 minutos</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-yellow-400 rounded-full mr-3"></span>Audio guía español incluida</li>
+                </ul>
+              </div>
+              <div>
+                <h5 className="font-semibold text-gray-900 mb-2">🌉 Qué Verás:</h5>
+                <ul className="text-sm text-gray-700 space-y-1 list-none">
+                  <li className="flex items-center"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3"></span>Tower Bridge iluminado</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-pink-400 rounded-full mr-3"></span>The Shard rascacielos</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-orange-400 rounded-full mr-3"></span>Big Ben + Westminster</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* DÍA 3 */}
+      <div className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
+        <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6 flex items-center">
+          <span className="bg-gradient-to-br from-emerald-500 to-green-500 text-white w-14 h-14 rounded-2xl flex items-center justify-center text-xl font-bold mr-4 shadow-lg">3</span>
+          DÍA 3: De los Tesoros del Mundo a los Parques Reales
+        </h2>
+
+        {/* British Museum + Piccadilly + Shopping - Compacto */}
+        <div className="mb-8">
+          <h3 className="text-lg font-bold text-gray-900 mb-4 flex items-center">
+            <div className="w-1 h-6 bg-gradient-to-b from-amber-400 to-yellow-400 rounded-full mr-3"></div>
+            British Museum + Piccadilly + Shopping (9:00h - 15:30h)
+          </h3>
+          <div className="bg-amber-50 border border-amber-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
+            <h4 className="text-lg font-bold text-gray-900 mb-3">Tesoros de la Humanidad + Centro Comercial</h4>
+            <div className="mb-4">
+              <img
+                src="https://images.pexels.com/photos/6061618/pexels-photo-6061618.jpeg"
+                alt="British Museum Great Court"
+                className="w-full h-48 sm:h-64 object-cover rounded-xl shadow-lg mb-4"
+              />
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <h5 className="font-semibold text-gray-900 mb-2">🏛️ British Museum (GRATIS):</h5>
+                <ul className="text-sm text-gray-700 space-y-1 list-none">
+                  <li className="flex items-center"><span className="w-2 h-2 bg-gold-400 rounded-full mr-3"></span>Piedra de Rosetta (Room 4)</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Momias Egipcias (62-63)</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Horario: 10:00-17:00</li>
+                </ul>
+              </div>
+              <div>
+                <h5 className="font-semibold text-gray-900 mb-2">🛍️ Shopping:</h5>
+                <ul className="text-sm text-gray-700 space-y-1 list-none">
+                  <li className="flex items-center"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3"></span>Carnaby St: Tiendas vintage</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-pink-400 rounded-full mr-3"></span>Oxford St: Selfridges, Primark</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-orange-400 rounded-full mr-3"></span>Chinatown: Almuerzo £8-15</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Notting Hill */}
+        <div className="mb-8">
+          <h3 className="text-lg font-bold text-gray-900 mb-4 flex items-center">
+            <div className="w-1 h-6 bg-gradient-to-b from-pink-400 to-rose-400 rounded-full mr-3"></div>
+            Notting Hill - Barrio Instagrameable (15:30h)
+          </h3>
+          <div className="bg-pink-50 border border-pink-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
+            <h4 className="text-lg font-bold text-gray-900 mb-3">Casitas de Colores + Portobello Market</h4>
+            <div className="mb-4">
+              <img
+                src="https://images.pexels.com/photos/12705658/pexels-photo-12705658.jpeg"
+                alt="Notting Hill casas coloridas"
+                className="w-full h-48 sm:h-64 object-cover rounded-xl shadow-lg mb-4"
+              />
+            </div>
+            <p className="text-gray-700 mb-4">
+              El barrio residencial más bonito de Londres. Casas victorianas de colores pastel y el mercadillo de antigüedades más famoso del mundo.
+            </p>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <h5 className="font-semibold text-gray-900 mb-2">🛍️ Portobello Market:</h5>
+                <ul className="text-sm text-gray-700 space-y-1 list-none">
+                  <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Sábado: Día completo (8:00-19:00)</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Antigüedades, vintage, comida</li>
+                </ul>
+              </div>
+              <div>
+                <h5 className="font-semibold text-gray-900 mb-2">📸 Fotos Instagram:</h5>
+                <ul className="text-sm text-gray-700 space-y-1 list-none">
+                  <li className="flex items-center"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3"></span>St Luke's Mews (colores pastel)</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-pink-400 rounded-full mr-3"></span>Notting Hill Bookshop (película)</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Hyde Park */}
+        <div className="mb-8">
+          <h3 className="text-lg font-bold text-gray-900 mb-4 flex items-center">
+            <div className="w-1 h-6 bg-gradient-to-b from-green-400 to-emerald-400 rounded-full mr-3"></div>
+            Hyde Park - Paseo Real al Atardecer (17:30h)
+          </h3>
+          <div className="bg-green-50 border border-green-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
+            <h4 className="text-lg font-bold text-gray-900 mb-3">Los Pulmones Verdes de Londres</h4>
+            <p className="text-gray-700 mb-4">
+              Terminamos el viaje con un paseo relajado por el parque real más famoso. 253 hectáreas de naturaleza en pleno centro.
+            </p>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <h5 className="font-semibold text-gray-900 mb-2">⭐ Puntos Imprescindibles:</h5>
+                <ul className="text-sm text-gray-700 space-y-1 list-none">
+                  <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Serpentine Lake</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Diana Memorial Fountain</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3"></span>Estatua Peter Pan</li>
+                </ul>
+              </div>
+              <div>
+                <h5 className="font-semibold text-gray-900 mb-2">🎄 Winter Wonderland:</h5>
+                <ul className="text-sm text-gray-700 space-y-1 list-none">
+                  <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>21 Nov - 5 Ene</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-yellow-400 rounded-full mr-3"></span>Entrada gratis (atracciones se pagan)</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-pink-400 rounded-full mr-3"></span>Mercado navideño + pista hielo</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
       {/* HERRAMIENTAS DE VIAJE */}
       <div className="bg-gradient-to-br from-blue-50 via-sky-50 to-cyan-50 border border-blue-200 rounded-2xl p-6 sm:p-8 shadow-lg mb-8">
-        <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3 flex items-center">
-          💳 Herramientas de Viaje
+        <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3">
+          💳 Herramientas de Viaje Esenciales
         </h2>
         <p className="text-gray-600 mb-6">Servicios esenciales para viajar sin preocupaciones</p>
 
@@ -663,23 +1008,17 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
                 <p className="text-sm text-gray-600">Tarjeta sin comisiones para viajar</p>
               </div>
             </div>
-
             <p className="text-gray-700 mb-4">
-              Viaja sin preocuparte por las comisiones bancarias. Revolut te permite pagar en libras sin cargos adicionales,
-              retirar efectivo sin comisiones y cambiar divisas al mejor tipo de cambio.
+              Viaja sin preocuparte por las comisiones bancarias. Paga en libras sin cargos adicionales, retira efectivo sin comisiones.
             </p>
-
             <div className="bg-blue-50 rounded-lg p-4 mb-4">
-              <h4 className="font-semibold text-gray-900 mb-2">✅ Ventajas para tu viaje:</h4>
+              <h4 className="font-semibold text-gray-900 mb-2">✅ Ventajas para Londres:</h4>
               <ul className="text-sm text-gray-700 space-y-1">
-                <li>• Sin comisiones por pago en el extranjero</li>
-                <li>• Cambio de divisa al tipo real</li>
+                <li>• Sin comisiones por pago en libras</li>
                 <li>• Retiros gratuitos en cajeros</li>
                 <li>• Control total desde la app</li>
-                <li>• Tarjetas virtuales desechables</li>
               </ul>
             </div>
-
             <a
               href="https://revolut.com/referral/?referral-code=antoni22jf!DEC1-25-AR-CH1H-CRY&geo-redirect"
               target="_blank"
@@ -698,59 +1037,120 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
               </div>
               <div>
                 <h3 className="text-xl font-bold text-gray-900">IATI Seguros</h3>
-                <p className="text-sm text-gray-600">Seguro de viaje con cobertura completa</p>
+                <p className="text-sm text-gray-600">Seguro de viaje completo</p>
               </div>
             </div>
-
             <p className="text-gray-700 mb-4">
-              Viaja tranquilo con un seguro que te cubre ante cualquier imprevisto. IATI ofrece asistencia médica 24/7,
-              cobertura de cancelación, pérdida de equipaje y mucho más.
+              Viaja tranquilo con asistencia médica 24/7, cobertura de cancelación y pérdida de equipaje.
             </p>
-
             <div className="bg-green-50 rounded-lg p-4 mb-4">
-              <h4 className="font-semibold text-gray-900 mb-2">✅ Por qué contratar seguro:</h4>
+              <h4 className="font-semibold text-gray-900 mb-2">✅ Cobertura:</h4>
               <ul className="text-sm text-gray-700 space-y-1">
                 <li>• Asistencia médica en el extranjero</li>
-                <li>• Cobertura de cancelación de viaje</li>
-                <li>• Pérdida o robo de equipaje</li>
+                <li>• Cobertura de cancelación</li>
                 <li>• Asistencia 24/7 en español</li>
-                <li>• Repatriación incluida</li>
               </ul>
             </div>
-
             <div className="bg-gradient-to-r from-orange-100 to-red-100 border-2 border-orange-300 rounded-lg p-3 mb-4">
               <p className="text-center font-bold text-orange-800 text-sm">
-                🎁 ¡Descuento exclusivo del 5% ya aplicado en el enlace!
+                🎁 ¡Descuento 5% ya aplicado!
               </p>
             </div>
-
             <a
               href="https://www.iatiseguros.com/?r=37344279073491"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center bg-gradient-to-r from-green-500 to-emerald-500 hover:from-green-600 hover:to-emerald-600 text-white font-semibold px-5 py-3 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm w-full justify-center"
             >
-              🛡️ Contratar Seguro IATI con 5% Descuento
+              🛡️ Contratar IATI con 5% Descuento
               <ExternalLink className="h-3 w-3 ml-2" />
             </a>
           </div>
         </div>
+      </div>
 
-        <div className="bg-amber-50 border border-amber-200 rounded-lg p-4 mt-6">
-          <p className="text-sm text-amber-800">
-            <strong>💡 Consejo:</strong> Prepara estos dos elementos antes de tu viaje. La tarjeta Revolut te ahorrará dinero en cada pago,
-            y el seguro IATI te dará tranquilidad durante todo el viaje.
-          </p>
+      {/* TRANSPORTE */}
+      <div className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
+        <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">🚇 Sistema de Transporte Público</h2>
+        <div className="bg-gradient-to-r from-blue-50 to-indigo-50 border border-blue-200 rounded-xl p-6">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">
+            <div className="bg-white rounded-lg p-4 shadow-sm">
+              <h5 className="font-semibold text-blue-600 mb-2">🚇 Metro ("The Tube")</h5>
+              <ul className="text-sm text-gray-700 space-y-1">
+                <li>• 11 líneas de colores</li>
+                <li>• Frecuencia: 2-5 minutos</li>
+                <li>• Night Tube Vie-Sáb: 24h</li>
+              </ul>
+            </div>
+            <div className="bg-white rounded-lg p-4 shadow-sm">
+              <h5 className="font-semibold text-red-600 mb-2">🚌 Autobuses Rojos</h5>
+              <ul className="text-sm text-gray-700 space-y-1">
+                <li>• 700+ líneas</li>
+                <li>• Horario: 24 horas</li>
+                <li>• Piso superior = vistas</li>
+              </ul>
+            </div>
+            <div className="bg-white rounded-lg p-4 shadow-sm">
+              <h5 className="font-semibold text-green-600 mb-2">💳 Pago</h5>
+              <ul className="text-sm text-gray-700 space-y-1">
+                <li>• Contactless (recomendado)</li>
+                <li>• Tope: £8.50/día</li>
+                <li>• Autobús: £1.75/viaje</li>
+              </ul>
+            </div>
+          </div>
+          <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-3">
+            <p className="text-sm text-yellow-800">
+              <strong>💡 Truco:</strong> Usa autobuses cuando puedas (£5.25 día ilimitado vs £8.50 metro). Evita hora pico (6:30-9:30, 16:00-19:00).
+            </p>
+          </div>
         </div>
       </div>
 
-      {/* NOTA: Por limitaciones de espacio, se simplifican las secciones restantes */}
-      <div className="bg-gray-50 border border-gray-200 rounded-xl p-6 text-center">
-        <p className="text-gray-700">
-          La guía completa incluye: DÍA 2 (Torre de Londres, The Shard, Borough Market), DÍA 3 (Museo Británico, Notting Hill, Hyde Park), Guía Gastronómica, Transporte Público, Consejos Finales y Presupuestos 2025.
-        </p>
+      {/* PRESUPUESTOS */}
+      <div className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
+        <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">💰 Presupuestos Detallados - Noviembre 2025</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+          <div className="bg-green-50 border border-green-200 rounded-xl p-6 shadow-sm">
+            <h3 className="text-lg font-bold text-green-800 mb-3">🎒 Mochilero</h3>
+            <div className="text-2xl font-bold text-green-600 mb-2">£60-85/día</div>
+            <ul className="text-sm text-green-700 space-y-1">
+              <li>• Hostel: £25-35</li>
+              <li>• Comida: £20-25</li>
+              <li>• Transporte: £5-8</li>
+              <li>• Atracciones: £12-17</li>
+            </ul>
+          </div>
+          <div className="bg-blue-50 border border-blue-200 rounded-xl p-6 shadow-sm">
+            <h3 className="text-lg font-bold text-blue-800 mb-3">🏨 Estándar</h3>
+            <div className="text-2xl font-bold text-blue-600 mb-2">£120-160/día</div>
+            <ul className="text-sm text-blue-700 space-y-1">
+              <li>• Hotel 3*: £70-95</li>
+              <li>• Comida: £35-45</li>
+              <li>• Transporte: £8-10</li>
+              <li>• Atracciones: £15-30</li>
+            </ul>
+          </div>
+          <div className="bg-purple-50 border border-purple-200 rounded-xl p-6 shadow-sm">
+            <h3 className="text-lg font-bold text-purple-800 mb-3">👑 Lujo</h3>
+            <div className="text-2xl font-bold text-purple-600 mb-2">£250-400+/día</div>
+            <ul className="text-sm text-purple-700 space-y-1">
+              <li>• Hotel 5*: £150-250</li>
+              <li>• Comida: £80-130</li>
+              <li>• Transporte: £20-40</li>
+              <li>• Atracciones: £40-80</li>
+            </ul>
+          </div>
+        </div>
       </div>
 
+      {/* Footer */}
+      <div className="text-center text-gray-600 text-sm mt-8">
+        <p className="mb-2">
+          Guía actualizada Noviembre 2025 | Información verificada y precios actuales
+        </p>
+        <p>¡Que disfrutes Londres al máximo!</p>
+      </div>
     </article>
   );
 };
