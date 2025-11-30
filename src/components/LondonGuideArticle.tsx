@@ -358,7 +358,6 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
               </ul>
             </div>
 
-            <p className="text-sm text-gray-600 mt-3">⏰ <strong>Tiempo recomendado:</strong> 30-45 minutos (exterior + fotos)</p>
           </div>
 
           <div>
@@ -388,7 +387,6 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
               </ul>
             </div>
 
-            <p className="text-sm text-gray-600 mt-3">⏰ <strong>Tiempo recomendado:</strong> 1.5-2 horas</p>
           </div>
 
           <div>
@@ -418,7 +416,6 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
               </ul>
             </div>
 
-            <p className="text-sm text-gray-600 mt-3">⏰ <strong>Tiempo recomendado:</strong> 45 minutos - 1 hora</p>
           </div>
 
           <div>
@@ -459,7 +456,6 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
               </ul>
             </div>
 
-            <p className="text-sm text-gray-600 mt-3">⏰ <strong>Tiempo recomendado:</strong> 30-45 minutos</p>
           </div>
 
           <div>
@@ -488,7 +484,6 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
               </p>
             </div>
 
-            <p className="text-sm text-gray-600 mt-3">⏰ <strong>Tiempo total:</strong> 1-1.5 horas</p>
           </div>
 
           <div>
@@ -524,7 +519,6 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
               </p>
             </div>
 
-            <p className="text-sm text-gray-600 mt-3">⏰ <strong>Tiempo total:</strong> 1.5 horas (cola + vuelta)</p>
           </div>
 
           <div>
@@ -544,7 +538,6 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
               </ul>
             </div>
 
-            <p className="text-sm text-gray-600 mt-3">⏰ <strong>Tiempo:</strong> 30-45 minutos paseando</p>
           </div>
         </div>
       </div>
@@ -572,7 +565,6 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
               </ul>
             </div>
 
-            <p className="text-sm text-gray-600 mt-3">⏰ <strong>Tiempo:</strong> 45 min - 1 hora</p>
           </div>
 
           <div>
@@ -591,7 +583,6 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
               </ul>
             </div>
 
-            <p className="text-sm text-gray-600 mt-3">⏰ <strong>Tiempo:</strong> 30 min exterior / +45 min si entras</p>
           </div>
 
           <div>
@@ -636,7 +627,6 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
               </p>
             </div>
 
-            <p className="text-sm text-gray-600 mt-3">⏰ <strong>Tiempo total:</strong> 2.5-3 horas</p>
           </div>
 
           <div>
@@ -656,7 +646,6 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
               </ul>
             </div>
 
-            <p className="text-sm text-gray-600 mt-3">⏰ <strong>Tiempo:</strong> 1-1.5 horas</p>
           </div>
 
           <div>
@@ -676,7 +665,6 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
               </ul>
             </div>
 
-            <p className="text-sm text-gray-600 mt-3">⏰ <strong>Tiempo:</strong> 45-60 minutos</p>
           </div>
 
           <div>
@@ -705,7 +693,6 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
               </ul>
             </div>
 
-            <p className="text-sm text-gray-600 mt-3">⏰ <strong>Tiempo:</strong> 45-60 min (exterior) / +45 min si subes cúpulas</p>
           </div>
 
           <div>
@@ -736,7 +723,6 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
               </ul>
             </div>
 
-            <p className="text-sm text-gray-600 mt-3">⏰ <strong>Tiempo:</strong> 40-50 minutos</p>
           </div>
         </div>
       </div>
@@ -785,7 +771,6 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
               </p>
             </div>
 
-            <p className="text-sm text-gray-600 mt-3">⏰ <strong>Tiempo recomendado:</strong> 2-2.5 horas</p>
           </div>
 
           <div>
@@ -804,7 +789,6 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
               </ul>
             </div>
 
-            <p className="text-sm text-gray-600 mt-3">⏰ <strong>Tiempo:</strong> 15-20 minutos</p>
           </div>
 
           <div>
@@ -824,7 +808,6 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
               </ul>
             </div>
 
-            <p className="text-sm text-gray-600 mt-3">⏰ <strong>Tiempo:</strong> 45 min - 1 hora</p>
           </div>
 
           <div>
@@ -874,7 +857,6 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
               </p>
             </div>
 
-            <p className="text-sm text-gray-600 mt-3">⏰ <strong>Tiempo total:</strong> 1-1.5 horas</p>
           </div>
 
           <div>
@@ -903,7 +885,6 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
               </ul>
             </div>
 
-            <p className="text-sm text-gray-600 mt-3">⏰ <strong>Tiempo:</strong> 1.5-2 horas</p>
           </div>
 
           <div>
@@ -942,7 +923,6 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
               </p>
             </div>
 
-            <p className="text-sm text-gray-600 mt-3">⏰ <strong>Tiempo:</strong> 1 hora de paseo relajado</p>
           </div>
         </div>
       </div>
