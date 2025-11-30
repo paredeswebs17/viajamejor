@@ -20,6 +20,7 @@ const PragueGuidePage = lazy(() => import('./pages/PragueGuidePage'));
 const ViennaGuidePage = lazy(() => import('./pages/ViennaGuidePage'));
 const AmsterdamGuidePage = lazy(() => import('./pages/AmsterdamGuidePage'));
 const RomaGuidePage = lazy(() => import('./pages/RomaGuidePage'));
+const LondonGuidePage = lazy(() => import('./pages/LondonGuidePage'));
 const ChristmasMarketsPage = lazy(() => import('./pages/ChristmasMarketsPage'));
 
 // Loading component
@@ -69,6 +70,7 @@ function App() {
                 <Route path="/viena-3-dias" element={<ViennaGuidePage />} />
                 <Route path="/amsterdam-3-dias" element={<AmsterdamGuidePage />} />
                 <Route path="/roma-3-dias" element={<RomaGuidePage />} />
+                <Route path="/londres-3-dias" element={<LondonGuidePage />} />
                 <Route path="/mercados-navidenos-europa" element={<ChristmasMarketsPage />} />
 
                 {/* 404 - Redirige a home */}
