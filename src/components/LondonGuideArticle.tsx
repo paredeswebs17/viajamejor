@@ -83,7 +83,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
           </p>
 
           <p className="text-base leading-relaxed">
-            Pero Londres es mucho más que el Big Ben y la Reina. Es perderte en los pasillos del Museo Británico contemplando la Piedra de Rosetta. Es cruzar el Millennium Bridge mientras el sol se refleja en la cúpula de St Paul's. Es descubrir que un fish & chips de verdad no tiene nada que ver con lo que sirven en otros países. Es sentir el subidón de adrenalina al ver la ciudad iluminarse desde el London Eye al anochecer. Es caminar por mercados como Borough Market rodeado de quesos artesanales, panes recién horneados y vendedores que te ofrecen probar de todo.
+            Pero Londres es mucho más que el Big Ben y la realeza británica. Es perderte en los pasillos del Museo Británico contemplando la Piedra de Rosetta. Es cruzar el Millennium Bridge mientras el sol se refleja en la cúpula de St Paul's. Es descubrir que un fish & chips de verdad no tiene nada que ver con lo que sirven en otros países. Es sentir el subidón de adrenalina al ver la ciudad iluminarse desde el London Eye al anochecer. Es caminar por mercados como Borough Market rodeado de quesos artesanales, panes recién horneados y vendedores que te ofrecen probar de todo.
           </p>
 
           <p className="text-base leading-relaxed font-medium text-gray-900">
@@ -106,7 +106,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
               <h4 className="font-bold text-gray-900 mb-3">🚄 Elizabeth Line - La Opción Moderna (Recomendada)</h4>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-gray-700">
                 <div>
-                  <p><strong>Precio:</strong> £12.80 (zona 1)</p>
+                  <p><strong>Precio:</strong> £13.30 (zona 1)</p>
                   <p><strong>Horario:</strong> 05:12-23:48 (cada 5-10 min)</p>
                   <p><strong>Duración:</strong> 30-40 minutos directos</p>
                 </div>
@@ -545,7 +545,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
               <div>
                 <h5 className="font-semibold text-gray-900 mb-2">🎫 Información Práctica:</h5>
                 <ul className="text-sm text-gray-700 space-y-1 list-none">
-                  <li className="flex items-center"><span className="w-2 h-2 bg-emerald-400 rounded-full mr-3"></span>Entrada: £29 adultos (online)</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-emerald-400 rounded-full mr-3"></span>Entrada: £31 adultos (online)</li>
                   <li className="flex items-center"><span className="w-2 h-2 bg-orange-400 rounded-full mr-3"></span>Incluye: Audioguía en español</li>
                   <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>Duración: 1.5-2 horas</li>
                   <li className="flex items-center"><span className="w-2 h-2 bg-yellow-400 rounded-full mr-3"></span>⚠️ No se permiten fotos interior</li>
@@ -579,8 +579,8 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
               <div>
                 <h5 className="font-semibold text-gray-900 mb-2">🎭 Cambio de Guardia:</h5>
                 <ul className="text-sm text-gray-700 space-y-1 list-none">
-                  <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>Horario: 11:00h (10:00h domingos)</li>
-                  <li className="flex items-center"><span className="w-2 h-2 bg-yellow-400 rounded-full mr-3"></span>Frecuencia: Lun/Mié/Vie/Dom (verano)</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>Frecuencia: Lun/Mié/Vie a las 11:00h</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-yellow-400 rounded-full mr-3"></span>Domingos: Sunday Parade a las 10:00h</li>
                   <li className="flex items-center"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3"></span>Duración: 45 minutos</li>
                   <li className="flex items-center"><span className="w-2 h-2 bg-orange-400 rounded-full mr-3"></span>¡Completamente GRATUITO!</li>
                 </ul>
@@ -792,7 +792,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
               <h5 className="font-semibold text-gray-900 mb-2">💎 Torre de Londres - Imprescindibles:</h5>
               <ul className="text-sm text-gray-700 space-y-1 list-none">
                 <li className="flex items-center"><span className="w-2 h-2 bg-gold-400 rounded-full mr-3"></span>Crown Jewels: Imperial State Crown con 2.868 diamantes</li>
-                <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Precio: £33.20 (online adelantado)</li>
+                <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Precio: £34.80 (online adelantado)</li>
                 <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>Duración: 2.5-3 horas MÍNIMO</li>
                 <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Yeoman Tours GRATIS incluidos</li>
               </ul>
