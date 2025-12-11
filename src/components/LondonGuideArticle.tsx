@@ -148,7 +148,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
             <h4 className="font-bold text-gray-900 mb-3">🚕 Traslado Privado - Máximo Confort</h4>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div>
-                <p className="text-sm text-gray-700 mb-1"><strong>Precio:</strong> Desde 76-100 € (hasta 4 personas)</p>
+                <p className="text-sm text-gray-700 mb-1"><strong>Precio:</strong> Desde 46 € por persona</p>
                 <p className="text-sm text-gray-700 mb-1"><strong>Duración:</strong> 45-90 min (según tráfico)</p>
               </div>
               <div>
