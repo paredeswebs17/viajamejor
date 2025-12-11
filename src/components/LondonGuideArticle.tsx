@@ -134,7 +134,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
             <h4 className="font-bold text-gray-900 mb-3">🚇 Piccadilly Line (Metro) - La Más Económica</h4>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-gray-700">
               <div>
-                <p><strong>Precio:</strong> £5.60 con Oyster/Contactless</p>
+                <p><strong>Precio:</strong> €6.60 con Oyster/Contactless</p>
                 <p><strong>Duración:</strong> 50-60 minutos</p>
               </div>
               <div>
@@ -148,7 +148,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
             <h4 className="font-bold text-gray-900 mb-3">🚕 Traslado Privado - Máximo Confort</h4>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div>
-                <p className="text-sm text-gray-700 mb-1"><strong>Precio:</strong> Desde £65-85 (hasta 4 personas)</p>
+                <p className="text-sm text-gray-700 mb-1"><strong>Precio:</strong> Desde €76-100 (hasta 4 personas)</p>
                 <p className="text-sm text-gray-700 mb-1"><strong>Duración:</strong> 45-90 min (según tráfico)</p>
               </div>
               <div>
@@ -177,7 +177,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
             <h4 className="font-bold text-gray-900 mb-3">🚄 Gatwick Express - Rápido al Centro</h4>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-gray-700">
               <div>
-                <p><strong>Precio:</strong> £19.90 (online adelantado)</p>
+                <p><strong>Precio:</strong> €23 (online adelantado)</p>
                 <p><strong>Duración:</strong> 30 minutos sin paradas</p>
               </div>
               <div>
@@ -195,7 +195,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
             <h4 className="font-bold text-gray-900 mb-3">🚄 Stansted Express</h4>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-gray-700">
               <div>
-                <p><strong>Precio:</strong> £19-23 (online adelantado)</p>
+                <p><strong>Precio:</strong> €22-27 (online adelantado)</p>
                 <p><strong>Duración:</strong> 47 minutos</p>
               </div>
               <div>
@@ -224,7 +224,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
             <h4 className="font-bold text-gray-900 mb-3">🚄 Luton Airport Express + Thameslink</h4>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-gray-700">
               <div>
-                <p><strong>Precio:</strong> £17-20 (online adelantado)</p>
+                <p><strong>Precio:</strong> €20-23 (online adelantado)</p>
                 <p><strong>Duración:</strong> 40-50 minutos total</p>
               </div>
               <div>
@@ -238,7 +238,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
             <h4 className="font-bold text-gray-900 mb-3">🚌 National Express / easyBus - Económico</h4>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-gray-700">
               <div>
-                <p><strong>Precio:</strong> Desde £8-12 (online)</p>
+                <p><strong>Precio:</strong> Desde €9-14 (online)</p>
                 <p><strong>Duración:</strong> 60-90 minutos</p>
               </div>
               <div>
@@ -570,7 +570,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
                 <ul className="text-sm text-gray-700 space-y-1 list-none">
                   <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Visita Interior: Reabierta tras restauración</li>
                   <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Tours: Solo con guía en inglés</li>
-                  <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>Precio: £30-35 por persona</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>Precio: €35-41 por persona</li>
                   <li className="flex items-center"><span className="w-2 h-2 bg-yellow-400 rounded-full mr-3"></span>Duración: 90 minutos, 334 escalones</li>
                 </ul>
               </div>
@@ -611,7 +611,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
               <div>
                 <h5 className="font-semibold text-gray-900 mb-2">🎫 Información Práctica:</h5>
                 <ul className="text-sm text-gray-700 space-y-1 list-none">
-                  <li className="flex items-center"><span className="w-2 h-2 bg-emerald-400 rounded-full mr-3"></span>Entrada: £31 adultos (online)</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-emerald-400 rounded-full mr-3"></span>Entrada: €36 adultos (online)</li>
                   <li className="flex items-center"><span className="w-2 h-2 bg-orange-400 rounded-full mr-3"></span>Incluye: Audioguía en español</li>
                   <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>Duración: 1.5-2 horas</li>
                   <li className="flex items-center"><span className="w-2 h-2 bg-yellow-400 rounded-full mr-3"></span>⚠️ No se permiten fotos interior</li>
@@ -749,8 +749,8 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
               <div>
                 <h5 className="font-semibold text-gray-900 mb-2">🎫 Tipos de Entradas:</h5>
                 <ul className="text-sm text-gray-700 space-y-1 list-none">
-                  <li className="flex items-center"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3"></span>Standard: £28-35 (online adelantado)</li>
-                  <li className="flex items-center"><span className="w-2 h-2 bg-pink-400 rounded-full mr-3"></span>Fast Track: £40-48 (cola prioritaria)</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3"></span>Standard: €33-41 (online adelantado)</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-pink-400 rounded-full mr-3"></span>Fast Track: €47-56 (cola prioritaria)</li>
                   <li className="flex items-center"><span className="w-2 h-2 bg-indigo-400 rounded-full mr-3"></span>Ahorro online: hasta 25%</li>
                 </ul>
               </div>
@@ -820,8 +820,8 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
                 <h5 className="font-semibold text-gray-900 mb-2">🧀 Qué Encontrarás:</h5>
                 <ul className="text-sm text-gray-700 space-y-1 list-none">
                   <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Más de 100 puestos de comida</li>
-                  <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Bread Ahead (donuts £4)</li>
-                  <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>Ostras frescas desde £1.50</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Bread Ahead (donuts €4.70)</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>Ostras frescas desde €1.80</li>
                 </ul>
               </div>
               <div>
@@ -858,7 +858,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
               <h5 className="font-semibold text-gray-900 mb-2">💎 Torre de Londres - Imprescindibles:</h5>
               <ul className="text-sm text-gray-700 space-y-1 list-none">
                 <li className="flex items-center"><span className="w-2 h-2 bg-gold-400 rounded-full mr-3"></span>Crown Jewels: Imperial State Crown con 2.868 diamantes</li>
-                <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Precio: £34.80 (online adelantado)</li>
+                <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Precio: €41 (online adelantado)</li>
                 <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>Duración: 2.5-3 horas MÍNIMO</li>
                 <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Yeoman Tours GRATIS incluidos</li>
               </ul>
@@ -881,11 +881,11 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
               </div>
               <div className="bg-white rounded-lg p-3 shadow-sm">
                 <h5 className="font-semibold text-gray-900 mb-1">🏙️ The Shard</h5>
-                <p className="text-xs text-gray-700">310m, vistas hasta 64km. £28-32 online.</p>
+                <p className="text-xs text-gray-700">310m, vistas hasta 64km. €33-37 online.</p>
               </div>
               <div className="bg-white rounded-lg p-3 shadow-sm">
                 <h5 className="font-semibold text-gray-900 mb-1">⛪ St Paul's</h5>
-                <p className="text-xs text-gray-700">Cúpula 111m. £23 entrada. 528 escalones.</p>
+                <p className="text-xs text-gray-700">Cúpula 111m. €27 entrada. 528 escalones.</p>
               </div>
             </div>
           </div>
@@ -906,7 +906,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
               <div>
                 <h5 className="font-semibold text-gray-900 mb-2">🚤 City Cruises:</h5>
                 <ul className="text-sm text-gray-700 space-y-1 list-none">
-                  <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Precio: £19 (online)</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Precio: €22 (online)</li>
                   <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Duración: 40-50 minutos</li>
                   <li className="flex items-center"><span className="w-2 h-2 bg-yellow-400 rounded-full mr-3"></span>Audio guía español incluida</li>
                 </ul>
@@ -960,7 +960,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
                 <ul className="text-sm text-gray-700 space-y-1 list-none">
                   <li className="flex items-center"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3"></span>Carnaby St: Tiendas vintage</li>
                   <li className="flex items-center"><span className="w-2 h-2 bg-pink-400 rounded-full mr-3"></span>Oxford St: Selfridges, Primark</li>
-                  <li className="flex items-center"><span className="w-2 h-2 bg-orange-400 rounded-full mr-3"></span>Chinatown: Almuerzo £8-15</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-orange-400 rounded-full mr-3"></span>Chinatown: Almuerzo €9-18</li>
                 </ul>
               </div>
             </div>
@@ -1047,7 +1047,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
             <h3 className="text-lg font-bold text-purple-800 mb-3">🏰 Castillo de Windsor</h3>
             <p className="text-sm text-gray-700 mb-2">El castillo habitado más antiguo del mundo. Residencia oficial de la Reina.</p>
             <div className="text-xs text-gray-600">
-              <p><strong>Precio:</strong> £28-30 | <strong>Duración:</strong> Día completo</p>
+              <p><strong>Precio:</strong> €33-35 | <strong>Duración:</strong> Día completo</p>
               <p><strong>Cómo llegar:</strong> Tren desde Paddington (50 min)</p>
             </div>
           </div>
@@ -1056,7 +1056,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
             <h3 className="text-lg font-bold text-purple-800 mb-3">🎭 Teatro del West End</h3>
             <p className="text-sm text-gray-700 mb-2">El equivalente británico de Broadway. Más de 40 teatros con musicales y obras.</p>
             <div className="text-xs text-gray-600">
-              <p><strong>Precio:</strong> £25-150 | <strong>Duración:</strong> 2-3 horas</p>
+              <p><strong>Precio:</strong> €29-176 | <strong>Duración:</strong> 2-3 horas</p>
               <p><strong>Shows populares:</strong> El Rey León, Wicked, Hamilton</p>
             </div>
           </div>
@@ -1076,7 +1076,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
             <h3 className="text-lg font-bold text-purple-800 mb-3">🌳 Kew Gardens</h3>
             <p className="text-sm text-gray-700 mb-2">Jardín botánico Patrimonio de la UNESCO. 121 hectáreas de belleza natural.</p>
             <div className="text-xs text-gray-600">
-              <p><strong>Precio:</strong> £18-20 | <strong>Duración:</strong> 3-4 horas</p>
+              <p><strong>Precio:</strong> €21-23 | <strong>Duración:</strong> 3-4 horas</p>
               <p><strong>Highlights:</strong> Palm House, Treetop Walkway</p>
             </div>
           </div>
@@ -1094,7 +1094,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
             <h3 className="text-lg font-bold text-purple-800 mb-3">🏟️ Estadio de Wembley</h3>
             <p className="text-sm text-gray-700 mb-2">El estadio más icónico del fútbol. Tours detrás de escena disponibles.</p>
             <div className="text-xs text-gray-600">
-              <p><strong>Tour:</strong> £24 | <strong>Duración:</strong> 75 minutos</p>
+              <p><strong>Tour:</strong> €28 | <strong>Duración:</strong> 75 minutos</p>
               <p>Incluye vestuarios, túnel, Copa FA</p>
             </div>
           </div>
@@ -1192,22 +1192,22 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
               <div className="bg-orange-50 rounded-lg p-4">
                 <h4 className="font-bold text-gray-900 mb-2">Fish & Chips</h4>
                 <p className="text-sm text-gray-700 mb-2">El plato nacional británico. Pescado rebozado + patatas fritas.</p>
-                <p className="text-xs text-orange-700"><strong>Dónde:</strong> Poppies (Spitalfields) | <strong>Precio:</strong> £12-16</p>
+                <p className="text-xs text-orange-700"><strong>Dónde:</strong> Poppies (Spitalfields) | <strong>Precio:</strong> €14-19</p>
               </div>
               <div className="bg-orange-50 rounded-lg p-4">
                 <h4 className="font-bold text-gray-900 mb-2">Sunday Roast</h4>
                 <p className="text-sm text-gray-700 mb-2">Carne asada + Yorkshire pudding + verduras + gravy. Solo domingos.</p>
-                <p className="text-xs text-orange-700"><strong>Dónde:</strong> The Harwood Arms | <strong>Precio:</strong> £20-30</p>
+                <p className="text-xs text-orange-700"><strong>Dónde:</strong> The Harwood Arms | <strong>Precio:</strong> €23-35</p>
               </div>
               <div className="bg-orange-50 rounded-lg p-4">
                 <h4 className="font-bold text-gray-900 mb-2">Afternoon Tea</h4>
                 <p className="text-sm text-gray-700 mb-2">Té + sándwiches + scones + pasteles. Experiencia muy británica.</p>
-                <p className="text-xs text-orange-700"><strong>Dónde:</strong> Sketch | <strong>Precio:</strong> £35-75</p>
+                <p className="text-xs text-orange-700"><strong>Dónde:</strong> Sketch | <strong>Precio:</strong> €41-88</p>
               </div>
               <div className="bg-orange-50 rounded-lg p-4">
                 <h4 className="font-bold text-gray-900 mb-2">Pub Food</h4>
                 <p className="text-sm text-gray-700 mb-2">Bangers & mash, pies, ploughman's lunch en ambiente de pub.</p>
-                <p className="text-xs text-orange-700"><strong>Dónde:</strong> The Churchill Arms | <strong>Precio:</strong> £12-18</p>
+                <p className="text-xs text-orange-700"><strong>Dónde:</strong> The Churchill Arms | <strong>Precio:</strong> €14-21</p>
               </div>
             </div>
           </div>
@@ -1219,32 +1219,32 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
               <div className="bg-red-50 rounded-lg p-3">
                 <h4 className="font-semibold text-gray-900 mb-1">🍛 India</h4>
                 <p className="text-xs text-gray-700">Brick Lane: La mejor comida india fuera de India.</p>
-                <p className="text-xs text-red-700"><strong>£8-15</strong></p>
+                <p className="text-xs text-red-700"><strong>€9-18</strong></p>
               </div>
               <div className="bg-red-50 rounded-lg p-3">
                 <h4 className="font-semibold text-gray-900 mb-1">🍜 China</h4>
                 <p className="text-xs text-gray-700">Chinatown: Dim sum, pato pequinés, hot pot auténtico.</p>
-                <p className="text-xs text-red-700"><strong>£10-25</strong></p>
+                <p className="text-xs text-red-700"><strong>€12-29</strong></p>
               </div>
               <div className="bg-red-50 rounded-lg p-3">
                 <h4 className="font-semibold text-gray-900 mb-1">🍕 Italia</h4>
                 <p className="text-xs text-gray-700">Soho: Pizzas napolitanas y pasta fresca.</p>
-                <p className="text-xs text-red-700"><strong>£12-20</strong></p>
+                <p className="text-xs text-red-700"><strong>€14-23</strong></p>
               </div>
               <div className="bg-red-50 rounded-lg p-3">
                 <h4 className="font-semibold text-gray-900 mb-1">🌮 México</h4>
                 <p className="text-xs text-gray-700">Wahaca, Chilango: Tacos y burritos auténticos.</p>
-                <p className="text-xs text-red-700"><strong>£8-15</strong></p>
+                <p className="text-xs text-red-700"><strong>€9-18</strong></p>
               </div>
               <div className="bg-red-50 rounded-lg p-3">
                 <h4 className="font-semibold text-gray-900 mb-1">🍱 Japón</h4>
                 <p className="text-xs text-gray-700">Ramen, sushi, katsu curry de alta calidad.</p>
-                <p className="text-xs text-red-700"><strong>£12-30</strong></p>
+                <p className="text-xs text-red-700"><strong>€14-35</strong></p>
               </div>
               <div className="bg-red-50 rounded-lg p-3">
                 <h4 className="font-semibold text-gray-900 mb-1">🥙 Medio Oriente</h4>
                 <p className="text-xs text-gray-700">Edgware Road: Shawarma, falafel, mezze libanés.</p>
-                <p className="text-xs text-red-700"><strong>£6-12</strong></p>
+                <p className="text-xs text-red-700"><strong>€7-14</strong></p>
               </div>
             </div>
           </div>
@@ -1255,17 +1255,17 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
               <div className="bg-pink-50 rounded-lg p-4">
                 <h4 className="font-bold text-gray-900 mb-2">Borough Market</h4>
                 <p className="text-sm text-gray-700">El mercado gourmet por excelencia. Ostras, quesos, panes artesanales.</p>
-                <p className="text-xs text-gray-600">Lun-Jue 10:00-17:00 | Sáb 8:00-17:00 | Presupuesto: £10-20</p>
+                <p className="text-xs text-gray-600">Lun-Jue 10:00-17:00 | Sáb 8:00-17:00 | Presupuesto: €12-23</p>
               </div>
               <div className="bg-pink-50 rounded-lg p-4">
                 <h4 className="font-bold text-gray-900 mb-2">Camden Market</h4>
                 <p className="text-sm text-gray-700">Street food internacional. Thai, indio, mexicano, vegano.</p>
-                <p className="text-xs text-gray-600">Todos los días 10:00-18:00 | Presupuesto: £8-15</p>
+                <p className="text-xs text-gray-600">Todos los días 10:00-18:00 | Presupuesto: €9-18</p>
               </div>
               <div className="bg-pink-50 rounded-lg p-4">
                 <h4 className="font-bold text-gray-900 mb-2">Old Spitalfields Market</h4>
                 <p className="text-sm text-gray-700">Mix de comida y moda. Los jueves mercado de antigüedades.</p>
-                <p className="text-xs text-gray-600">Lun-Vie 10:00-20:00 | Presupuesto: £8-15</p>
+                <p className="text-xs text-gray-600">Lun-Vie 10:00-20:00 | Presupuesto: €9-18</p>
               </div>
             </div>
           </div>
@@ -1273,9 +1273,9 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
           <div className="bg-gradient-to-r from-yellow-100 to-orange-100 border-2 border-orange-300 rounded-xl p-4">
             <h4 className="font-bold text-gray-900 mb-2">💡 Consejos para Comer Barato en Londres:</h4>
             <ul className="text-sm text-gray-800 space-y-1">
-              <li>• Pret A Manger: Sándwiches £4-6 (calidad-precio excelente)</li>
-              <li>• Greggs: Bakery británica económica (salchichas rolls £2)</li>
-              <li>• Tesco Meal Deal: Sándwich + bebida + snack = £3.90</li>
+              <li>• Pret A Manger: Sándwiches €4.70-7 (calidad-precio excelente)</li>
+              <li>• Greggs: Bakery británica económica (salchichas rolls €2.35)</li>
+              <li>• Tesco Meal Deal: Sándwich + bebida + snack = €4.60</li>
               <li>• Mercados: Siempre más barato que restaurantes</li>
               <li>• Lunch deals: Muchos restaurantes ofrecen menú 12:00-15:00 (50% off)</li>
             </ul>
@@ -1308,14 +1308,14 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
               <h5 className="font-semibold text-green-600 mb-2">💳 Pago</h5>
               <ul className="text-sm text-gray-700 space-y-1">
                 <li>• Contactless (recomendado)</li>
-                <li>• Tope: £8.50/día</li>
-                <li>• Autobús: £1.75/viaje</li>
+                <li>• Tope: €10/día</li>
+                <li>• Autobús: €2.05/viaje</li>
               </ul>
             </div>
           </div>
           <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-3">
             <p className="text-sm text-yellow-800">
-              <strong>💡 Truco:</strong> Usa autobuses cuando puedas (£5.25 día ilimitado vs £8.50 metro). Evita hora pico (6:30-9:30, 16:00-19:00).
+              <strong>💡 Truco:</strong> Usa autobuses cuando puedas (€6.15 día ilimitado vs €10 metro). Evita hora pico (6:30-9:30, 16:00-19:00).
             </p>
           </div>
         </div>
@@ -1339,7 +1339,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
           <div className="bg-white rounded-xl p-5 shadow-sm">
             <h3 className="font-bold text-sky-800 mb-3">📱 Internet y Conectividad</h3>
             <ul className="text-sm text-gray-700 space-y-1">
-              <li>• <strong>SIM:</strong> EE, Vodafone, Three (desde £10/mes con datos ilimitados)</li>
+              <li>• <strong>SIM:</strong> EE, Vodafone, Three (desde €12/mes con datos ilimitados)</li>
               <li>• <strong>WiFi:</strong> Todos los cafés, pubs y museos tienen WiFi gratuito</li>
               <li>• <strong>Metro:</strong> WiFi gratuito en todas las estaciones (pero no en túneles)</li>
               <li>• <strong>Apps útiles:</strong> Citymapper (transporte), Google Maps offline</li>
@@ -1359,7 +1359,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
           <div className="bg-white rounded-xl p-5 shadow-sm">
             <h3 className="font-bold text-sky-800 mb-3">💷 Dinero</h3>
             <ul className="text-sm text-gray-700 space-y-1">
-              <li>• <strong>Moneda:</strong> Libra esterlina (£). 1£ ≈ 1.17€ (Nov 2025)</li>
+              <li>• <strong>Moneda:</strong> Libra esterlina. Precios en esta guía ya convertidos a € (tasa 1£ ≈ 1.17€)</li>
               <li>• <strong>Pago:</strong> Contactless EVERYWHERE. Apenas necesitas efectivo</li>
               <li>• <strong>Propinas:</strong> 10-12.5% en restaurantes. No obligatorio en pubs</li>
               <li>• <strong>Cajeros:</strong> Evita Euronet/Travelex (comisiones altas). Usa bancos</li>
@@ -1410,32 +1410,32 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
           <div className="bg-green-50 border border-green-200 rounded-xl p-6 shadow-sm">
             <h3 className="text-lg font-bold text-green-800 mb-3">🎒 Mochilero</h3>
-            <div className="text-2xl font-bold text-green-600 mb-2">£60-85/día</div>
+            <div className="text-2xl font-bold text-green-600 mb-2">€70-100/día</div>
             <ul className="text-sm text-green-700 space-y-1">
-              <li>• Hostel: £25-35</li>
-              <li>• Comida: £20-25</li>
-              <li>• Transporte: £5-8</li>
-              <li>• Atracciones: £12-17</li>
+              <li>• Hostel: €29-41</li>
+              <li>• Comida: €23-29</li>
+              <li>• Transporte: €6-9</li>
+              <li>• Atracciones: €14-20</li>
             </ul>
           </div>
           <div className="bg-blue-50 border border-blue-200 rounded-xl p-6 shadow-sm">
             <h3 className="text-lg font-bold text-blue-800 mb-3">🏨 Estándar</h3>
-            <div className="text-2xl font-bold text-blue-600 mb-2">£120-160/día</div>
+            <div className="text-2xl font-bold text-blue-600 mb-2">€140-187/día</div>
             <ul className="text-sm text-blue-700 space-y-1">
-              <li>• Hotel 3*: £70-95</li>
-              <li>• Comida: £35-45</li>
-              <li>• Transporte: £8-10</li>
-              <li>• Atracciones: £15-30</li>
+              <li>• Hotel 3*: €82-111</li>
+              <li>• Comida: €41-53</li>
+              <li>• Transporte: €9-12</li>
+              <li>• Atracciones: €18-35</li>
             </ul>
           </div>
           <div className="bg-purple-50 border border-purple-200 rounded-xl p-6 shadow-sm">
             <h3 className="text-lg font-bold text-purple-800 mb-3">👑 Lujo</h3>
-            <div className="text-2xl font-bold text-purple-600 mb-2">£250-400+/día</div>
+            <div className="text-2xl font-bold text-purple-600 mb-2">€293-470+/día</div>
             <ul className="text-sm text-purple-700 space-y-1">
-              <li>• Hotel 5*: £150-250</li>
-              <li>• Comida: £80-130</li>
-              <li>• Transporte: £20-40</li>
-              <li>• Atracciones: £40-80</li>
+              <li>• Hotel 5*: €176-293</li>
+              <li>• Comida: €94-152</li>
+              <li>• Transporte: €23-47</li>
+              <li>• Atracciones: €47-94</li>
             </ul>
           </div>
         </div>
