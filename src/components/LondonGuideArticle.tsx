@@ -1125,6 +1125,360 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
         </div>
       </div>
 
+      {/* MÁS LUGARES QUE VER */}
+      <div className="bg-gradient-to-r from-purple-50 to-pink-50 border border-purple-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
+        <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">🎯 Más Lugares Imprescindibles en Londres</h2>
+        <p className="text-gray-700 mb-6">Si tienes más días o quieres profundizar en la ciudad, estos lugares también merecen tu visita:</p>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="bg-white rounded-xl p-5 shadow-sm hover:shadow-md transition-all duration-300">
+            <h3 className="text-lg font-bold text-purple-800 mb-3">🏰 Castillo de Windsor</h3>
+            <p className="text-sm text-gray-700 mb-2">El castillo habitado más antiguo del mundo. Residencia oficial de la Reina.</p>
+            <div className="text-xs text-gray-600">
+              <p><strong>Precio:</strong> £28-30 | <strong>Duración:</strong> Día completo</p>
+              <p><strong>Cómo llegar:</strong> Tren desde Paddington (50 min)</p>
+            </div>
+          </div>
+
+          <div className="bg-white rounded-xl p-5 shadow-sm hover:shadow-md transition-all duration-300">
+            <h3 className="text-lg font-bold text-purple-800 mb-3">🎭 Teatro del West End</h3>
+            <p className="text-sm text-gray-700 mb-2">El equivalente británico de Broadway. Más de 40 teatros con musicales y obras.</p>
+            <div className="text-xs text-gray-600">
+              <p><strong>Precio:</strong> £25-150 | <strong>Duración:</strong> 2-3 horas</p>
+              <p><strong>Shows populares:</strong> El Rey León, Wicked, Hamilton</p>
+            </div>
+          </div>
+
+          <div className="bg-white rounded-xl p-5 shadow-sm hover:shadow-md transition-all duration-300">
+            <h3 className="text-lg font-bold text-purple-800 mb-3">🏛️ Museos Gratuitos</h3>
+            <p className="text-sm text-gray-700 mb-2">Londres tiene los mejores museos del mundo ¡y son GRATIS!</p>
+            <div className="text-xs text-gray-600">
+              <p>• Natural History Museum (dinosaurios)</p>
+              <p>• Science Museum (interactivo)</p>
+              <p>• V&A Museum (arte y diseño)</p>
+              <p>• Tate Modern (arte contemporáneo)</p>
+            </div>
+          </div>
+
+          <div className="bg-white rounded-xl p-5 shadow-sm hover:shadow-md transition-all duration-300">
+            <h3 className="text-lg font-bold text-purple-800 mb-3">🌳 Kew Gardens</h3>
+            <p className="text-sm text-gray-700 mb-2">Jardín botánico Patrimonio de la UNESCO. 121 hectáreas de belleza natural.</p>
+            <div className="text-xs text-gray-600">
+              <p><strong>Precio:</strong> £18-20 | <strong>Duración:</strong> 3-4 horas</p>
+              <p><strong>Highlights:</strong> Palm House, Treetop Walkway</p>
+            </div>
+          </div>
+
+          <div className="bg-white rounded-xl p-5 shadow-sm hover:shadow-md transition-all duration-300">
+            <h3 className="text-lg font-bold text-purple-800 mb-3">🎨 Camden Market</h3>
+            <p className="text-sm text-gray-700 mb-2">Mercado alternativo con arte urbano, comida internacional y moda vintage.</p>
+            <div className="text-xs text-gray-600">
+              <p><strong>Precio:</strong> Gratis | <strong>Mejor día:</strong> Sábado-Domingo</p>
+              <p><strong>Ambiente:</strong> Punk, rock, alternativo</p>
+            </div>
+          </div>
+
+          <div className="bg-white rounded-xl p-5 shadow-sm hover:shadow-md transition-all duration-300">
+            <h3 className="text-lg font-bold text-purple-800 mb-3">🏟️ Estadio de Wembley</h3>
+            <p className="text-sm text-gray-700 mb-2">El estadio más icónico del fútbol. Tours detrás de escena disponibles.</p>
+            <div className="text-xs text-gray-600">
+              <p><strong>Tour:</strong> £24 | <strong>Duración:</strong> 75 minutos</p>
+              <p>Incluye vestuarios, túnel, Copa FA</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* EXCURSIONES DE UN DÍA */}
+      <div className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
+        <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">🚂 Excursiones de Un Día desde Londres</h2>
+        <p className="text-gray-700 mb-6">Si tienes tiempo extra, estas escapadas cercanas son perfectas para un día:</p>
+
+        <div className="space-y-6">
+          <div className="bg-gradient-to-r from-blue-50 to-sky-50 border border-blue-200 rounded-xl p-6">
+            <div className="flex items-start mb-3">
+              <span className="text-3xl mr-4">🪨</span>
+              <div className="flex-1">
+                <h3 className="text-lg font-bold text-gray-900 mb-2">Stonehenge + Bath</h3>
+                <p className="text-sm text-gray-700 mb-3">El círculo de piedras más misterioso del mundo + ciudad georgiana romana.</p>
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 text-xs">
+                  <div>
+                    <p><strong>Distancia:</strong> 140 km</p>
+                    <p><strong>Transporte:</strong> Tour organizado</p>
+                  </div>
+                  <div>
+                    <p><strong>Precio:</strong> £75-95</p>
+                    <p><strong>Duración:</strong> 11-12 horas</p>
+                  </div>
+                  <div>
+                    <p><strong>Incluye:</strong> Entrada + guía</p>
+                    <p><strong>Mejor:</strong> Verano (hasta 21:00h)</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="bg-gradient-to-r from-emerald-50 to-green-50 border border-emerald-200 rounded-xl p-6">
+            <div className="flex items-start mb-3">
+              <span className="text-3xl mr-4">🏰</span>
+              <div className="flex-1">
+                <h3 className="text-lg font-bold text-gray-900 mb-2">Oxford</h3>
+                <p className="text-sm text-gray-700 mb-3">La ciudad universitaria más famosa del mundo. Escenario de Harry Potter.</p>
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 text-xs">
+                  <div>
+                    <p><strong>Distancia:</strong> 90 km</p>
+                    <p><strong>Transporte:</strong> Tren (1 hora)</p>
+                  </div>
+                  <div>
+                    <p><strong>Precio:</strong> £25-40 ida/vuelta</p>
+                    <p><strong>Duración:</strong> 6-8 horas</p>
+                  </div>
+                  <div>
+                    <p><strong>Ver:</strong> Christ Church, Bodleian</p>
+                    <p><strong>Ambiente:</strong> Académico histórico</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="bg-gradient-to-r from-yellow-50 to-amber-50 border border-yellow-200 rounded-xl p-6">
+            <div className="flex items-start mb-3">
+              <span className="text-3xl mr-4">🎓</span>
+              <div className="flex-1">
+                <h3 className="text-lg font-bold text-gray-900 mb-2">Cambridge</h3>
+                <p className="text-sm text-gray-700 mb-3">Rival histórica de Oxford. Paseos en punt por el río Cam.</p>
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 text-xs">
+                  <div>
+                    <p><strong>Distancia:</strong> 80 km</p>
+                    <p><strong>Transporte:</strong> Tren (50 min)</p>
+                  </div>
+                  <div>
+                    <p><strong>Precio:</strong> £20-35 ida/vuelta</p>
+                    <p><strong>Duración:</strong> 6-8 horas</p>
+                  </div>
+                  <div>
+                    <p><strong>Ver:</strong> King's College Chapel</p>
+                    <p><strong>Actividad:</strong> Punting £15-20</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="bg-gradient-to-r from-purple-50 to-pink-50 border border-purple-200 rounded-xl p-6">
+            <div className="flex items-start mb-3">
+              <span className="text-3xl mr-4">🏖️</span>
+              <div className="flex-1">
+                <h3 className="text-lg font-bold text-gray-900 mb-2">Brighton</h3>
+                <p className="text-sm text-gray-700 mb-3">Ciudad costera bohemia. Playa, muelle victoriano y ambiente LGBT+.</p>
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 text-xs">
+                  <div>
+                    <p><strong>Distancia:</strong> 85 km</p>
+                    <p><strong>Transporte:</strong> Tren (1 hora)</p>
+                  </div>
+                  <div>
+                    <p><strong>Precio:</strong> £15-25 ida/vuelta</p>
+                    <p><strong>Duración:</strong> 6-8 horas</p>
+                  </div>
+                  <div>
+                    <p><strong>Ver:</strong> Royal Pavilion, Pier</p>
+                    <p><strong>Mejor:</strong> Verano (playa)</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* GUÍA GASTRONÓMICA */}
+      <div className="bg-gradient-to-br from-orange-50 via-red-50 to-pink-50 border border-orange-200 rounded-2xl p-6 sm:p-8 shadow-lg mb-8">
+        <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3">🍽️ Guía Gastronómica de Londres</h2>
+        <p className="text-gray-600 mb-6">Londres es una de las capitales gastronómicas del mundo. Aquí encontrarás de todo:</p>
+
+        <div className="space-y-6">
+          <div className="bg-white rounded-2xl p-6 shadow-md">
+            <h3 className="text-xl font-bold text-orange-800 mb-4">🇬🇧 Comida Británica Tradicional</h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div className="bg-orange-50 rounded-lg p-4">
+                <h4 className="font-bold text-gray-900 mb-2">Fish & Chips</h4>
+                <p className="text-sm text-gray-700 mb-2">El plato nacional británico. Pescado rebozado + patatas fritas.</p>
+                <p className="text-xs text-orange-700"><strong>Dónde:</strong> Poppies (Spitalfields) | <strong>Precio:</strong> £12-16</p>
+              </div>
+              <div className="bg-orange-50 rounded-lg p-4">
+                <h4 className="font-bold text-gray-900 mb-2">Sunday Roast</h4>
+                <p className="text-sm text-gray-700 mb-2">Carne asada + Yorkshire pudding + verduras + gravy. Solo domingos.</p>
+                <p className="text-xs text-orange-700"><strong>Dónde:</strong> The Harwood Arms | <strong>Precio:</strong> £20-30</p>
+              </div>
+              <div className="bg-orange-50 rounded-lg p-4">
+                <h4 className="font-bold text-gray-900 mb-2">Afternoon Tea</h4>
+                <p className="text-sm text-gray-700 mb-2">Té + sándwiches + scones + pasteles. Experiencia muy británica.</p>
+                <p className="text-xs text-orange-700"><strong>Dónde:</strong> Sketch | <strong>Precio:</strong> £35-75</p>
+              </div>
+              <div className="bg-orange-50 rounded-lg p-4">
+                <h4 className="font-bold text-gray-900 mb-2">Pub Food</h4>
+                <p className="text-sm text-gray-700 mb-2">Bangers & mash, pies, ploughman's lunch en ambiente de pub.</p>
+                <p className="text-xs text-orange-700"><strong>Dónde:</strong> The Churchill Arms | <strong>Precio:</strong> £12-18</p>
+              </div>
+            </div>
+          </div>
+
+          <div className="bg-white rounded-2xl p-6 shadow-md">
+            <h3 className="text-xl font-bold text-red-800 mb-4">🌍 Comida Internacional</h3>
+            <p className="text-sm text-gray-700 mb-4">Londres es una de las ciudades más multiculturales. Gastronomía de 180+ países:</p>
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+              <div className="bg-red-50 rounded-lg p-3">
+                <h4 className="font-semibold text-gray-900 mb-1">🍛 India</h4>
+                <p className="text-xs text-gray-700">Brick Lane: La mejor comida india fuera de India.</p>
+                <p className="text-xs text-red-700"><strong>£8-15</strong></p>
+              </div>
+              <div className="bg-red-50 rounded-lg p-3">
+                <h4 className="font-semibold text-gray-900 mb-1">🍜 China</h4>
+                <p className="text-xs text-gray-700">Chinatown: Dim sum, pato pequinés, hot pot auténtico.</p>
+                <p className="text-xs text-red-700"><strong>£10-25</strong></p>
+              </div>
+              <div className="bg-red-50 rounded-lg p-3">
+                <h4 className="font-semibold text-gray-900 mb-1">🍕 Italia</h4>
+                <p className="text-xs text-gray-700">Soho: Pizzas napolitanas y pasta fresca.</p>
+                <p className="text-xs text-red-700"><strong>£12-20</strong></p>
+              </div>
+              <div className="bg-red-50 rounded-lg p-3">
+                <h4 className="font-semibold text-gray-900 mb-1">🌮 México</h4>
+                <p className="text-xs text-gray-700">Wahaca, Chilango: Tacos y burritos auténticos.</p>
+                <p className="text-xs text-red-700"><strong>£8-15</strong></p>
+              </div>
+              <div className="bg-red-50 rounded-lg p-3">
+                <h4 className="font-semibold text-gray-900 mb-1">🍱 Japón</h4>
+                <p className="text-xs text-gray-700">Ramen, sushi, katsu curry de alta calidad.</p>
+                <p className="text-xs text-red-700"><strong>£12-30</strong></p>
+              </div>
+              <div className="bg-red-50 rounded-lg p-3">
+                <h4 className="font-semibold text-gray-900 mb-1">🥙 Medio Oriente</h4>
+                <p className="text-xs text-gray-700">Edgware Road: Shawarma, falafel, mezze libanés.</p>
+                <p className="text-xs text-red-700"><strong>£6-12</strong></p>
+              </div>
+            </div>
+          </div>
+
+          <div className="bg-white rounded-2xl p-6 shadow-md">
+            <h3 className="text-xl font-bold text-pink-800 mb-4">🏪 Mercados Gastronómicos</h3>
+            <div className="space-y-3">
+              <div className="bg-pink-50 rounded-lg p-4">
+                <h4 className="font-bold text-gray-900 mb-2">Borough Market</h4>
+                <p className="text-sm text-gray-700">El mercado gourmet por excelencia. Ostras, quesos, panes artesanales.</p>
+                <p className="text-xs text-gray-600">Lun-Jue 10:00-17:00 | Sáb 8:00-17:00 | Presupuesto: £10-20</p>
+              </div>
+              <div className="bg-pink-50 rounded-lg p-4">
+                <h4 className="font-bold text-gray-900 mb-2">Camden Market</h4>
+                <p className="text-sm text-gray-700">Street food internacional. Thai, indio, mexicano, vegano.</p>
+                <p className="text-xs text-gray-600">Todos los días 10:00-18:00 | Presupuesto: £8-15</p>
+              </div>
+              <div className="bg-pink-50 rounded-lg p-4">
+                <h4 className="font-bold text-gray-900 mb-2">Old Spitalfields Market</h4>
+                <p className="text-sm text-gray-700">Mix de comida y moda. Los jueves mercado de antigüedades.</p>
+                <p className="text-xs text-gray-600">Lun-Vie 10:00-20:00 | Presupuesto: £8-15</p>
+              </div>
+            </div>
+          </div>
+
+          <div className="bg-gradient-to-r from-yellow-100 to-orange-100 border-2 border-orange-300 rounded-xl p-4">
+            <h4 className="font-bold text-gray-900 mb-2">💡 Consejos para Comer Barato en Londres:</h4>
+            <ul className="text-sm text-gray-800 space-y-1">
+              <li>• Pret A Manger: Sándwiches £4-6 (calidad-precio excelente)</li>
+              <li>• Greggs: Bakery británica económica (salchichas rolls £2)</li>
+              <li>• Tesco Meal Deal: Sándwich + bebida + snack = £3.90</li>
+              <li>• Mercados: Siempre más barato que restaurantes</li>
+              <li>• Lunch deals: Muchos restaurantes ofrecen menú 12:00-15:00 (50% off)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      {/* CONSEJOS FINALES */}
+      <div className="bg-gradient-to-r from-sky-50 to-blue-50 border border-sky-200 rounded-2xl p-6 sm:p-8 shadow-md mb-8">
+        <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">💡 Consejos Finales para tu Viaje a Londres</h2>
+
+        <div className="space-y-4">
+          <div className="bg-white rounded-xl p-5 shadow-sm">
+            <h3 className="font-bold text-sky-800 mb-3">🌧️ Clima y Qué Llevar</h3>
+            <ul className="text-sm text-gray-700 space-y-1">
+              <li>• <strong>Paraguas:</strong> IMPRESCINDIBLE todo el año. Llueve sin previo aviso</li>
+              <li>• <strong>Capas:</strong> El tiempo cambia cada hora. Lleva chaqueta ligera incluso en verano</li>
+              <li>• <strong>Calzado:</strong> Zapatillas cómodas. Caminarás 15-20km diarios</li>
+              <li>• <strong>Noviembre:</strong> 8-12°C. Frío pero no extremo. Abrigo medio + bufanda</li>
+            </ul>
+          </div>
+
+          <div className="bg-white rounded-xl p-5 shadow-sm">
+            <h3 className="font-bold text-sky-800 mb-3">📱 Internet y Conectividad</h3>
+            <ul className="text-sm text-gray-700 space-y-1">
+              <li>• <strong>SIM:</strong> EE, Vodafone, Three (desde £10/mes con datos ilimitados)</li>
+              <li>• <strong>WiFi:</strong> Todos los cafés, pubs y museos tienen WiFi gratuito</li>
+              <li>• <strong>Metro:</strong> WiFi gratuito en todas las estaciones (pero no en túneles)</li>
+              <li>• <strong>Apps útiles:</strong> Citymapper (transporte), Google Maps offline</li>
+            </ul>
+          </div>
+
+          <div className="bg-white rounded-xl p-5 shadow-sm">
+            <h3 className="font-bold text-sky-800 mb-3">🚨 Seguridad</h3>
+            <ul className="text-sm text-gray-700 space-y-1">
+              <li>• Londres es MUY segura, pero vigila tus pertenencias en metro (hora punta)</li>
+              <li>• Carteristas en zonas turísticas: Oxford Street, Piccadilly, Leicester Square</li>
+              <li>• No dejes el móvil en mesas de terrazas (hurto frecuente)</li>
+              <li>• Emergencias: Llama al 999 (policía, bomberos, ambulancia)</li>
+            </ul>
+          </div>
+
+          <div className="bg-white rounded-xl p-5 shadow-sm">
+            <h3 className="font-bold text-sky-800 mb-3">💷 Dinero</h3>
+            <ul className="text-sm text-gray-700 space-y-1">
+              <li>• <strong>Moneda:</strong> Libra esterlina (£). 1£ ≈ 1.17€ (Nov 2025)</li>
+              <li>• <strong>Pago:</strong> Contactless EVERYWHERE. Apenas necesitas efectivo</li>
+              <li>• <strong>Propinas:</strong> 10-12.5% en restaurantes. No obligatorio en pubs</li>
+              <li>• <strong>Cajeros:</strong> Evita Euronet/Travelex (comisiones altas). Usa bancos</li>
+            </ul>
+          </div>
+
+          <div className="bg-white rounded-xl p-5 shadow-sm">
+            <h3 className="font-bold text-sky-800 mb-3">🗣️ Idioma</h3>
+            <ul className="text-sm text-gray-700 space-y-1">
+              <li>• El inglés británico es DIFERENTE al americano (lift=ascensor, tube=metro)</li>
+              <li>• "Queue" = hacer cola. Los británicos son OBSESIVOS con las colas</li>
+              <li>• "Cheers" = gracias / salud / adiós (palabra comodín)</li>
+              <li>• Casi nadie habla español, pero todo está señalizado claramente</li>
+            </ul>
+          </div>
+
+          <div className="bg-white rounded-xl p-5 shadow-sm">
+            <h3 className="font-bold text-sky-800 mb-3">⚡ Trucos de Locales</h3>
+            <ul className="text-sm text-gray-700 space-y-1">
+              <li>• En escaleras mecánicas: Derecha quieto, izquierda caminar (REGLA SAGRADA)</li>
+              <li>• Free museums: Llega temprano (10:00) para evitar colas</li>
+              <li>• Evita comer en Leicester Square / Piccadilly (trampas turísticas)</li>
+              <li>• Pubs: Pides en barra, pagas al momento, llevas tu bebida</li>
+              <li>• Atardecer: Ve a Primrose Hill o Parliament Hill (vistas gratis)</li>
+              <li>• West End: Entradas de último minuto en TKTS Leicester Square (hasta 50% off)</li>
+            </ul>
+          </div>
+
+          <div className="bg-gradient-to-r from-green-100 to-emerald-100 border-2 border-green-300 rounded-xl p-4">
+            <h4 className="font-bold text-green-900 mb-2">✅ Checklist Final Antes de Viajar:</h4>
+            <ul className="text-sm text-green-900 space-y-1">
+              <li>☐ Pasaporte válido (6 meses mínimo)</li>
+              <li>☐ Seguro de viaje contratado (IATI recomendado)</li>
+              <li>☐ Tarjeta sin comisiones (Revolut, N26, Wise)</li>
+              <li>☐ Reservas de hotel confirmadas</li>
+              <li>☐ Entradas principales compradas online (London Eye, Torre)</li>
+              <li>☐ App Citymapper descargada</li>
+              <li>☐ Adaptador de enchufe UK (tipo G)</li>
+              <li>☐ Lista offline de direcciones importantes</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
       {/* Footer */}
       <div className="text-center text-gray-600 text-sm mt-8">
         <p className="mb-2">
