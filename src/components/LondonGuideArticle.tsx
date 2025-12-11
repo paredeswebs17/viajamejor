@@ -102,35 +102,17 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
           <h3 className="text-lg font-bold text-gray-900 mb-4">📍 Desde Aeropuerto de Heathrow (LHR)</h3>
 
           <div className="mb-6">
-            <div className="bg-gradient-to-r from-blue-50 to-indigo-50 border border-blue-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
-              <h4 className="text-lg font-bold text-gray-900 mb-6">🚄 Elizabeth Line - La Opción Moderna (Recomendada)</h4>
-              <div className="space-y-6">
+            <div className="bg-gradient-to-r from-blue-50 to-indigo-50 border border-blue-200 rounded-xl p-4 shadow-sm hover:shadow-md transition-all duration-300">
+              <h4 className="font-bold text-gray-900 mb-3">🚄 Elizabeth Line - La Opción Moderna (Recomendada)</h4>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-gray-700">
                 <div>
-                  <h5 className="font-semibold text-gray-900 mb-3">Información esencial:</h5>
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                    <ul className="text-sm text-gray-700 space-y-2 list-none">
-                      <li className="flex items-start"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3 mt-1.5 flex-shrink-0"></span><span><strong>Precio:</strong> £12.80 (zona 1)</span></li>
-                      <li className="flex items-start"><span className="w-2 h-2 bg-green-400 rounded-full mr-3 mt-1.5 flex-shrink-0"></span><span><strong>Horario:</strong> 05:12-23:48 (cada 5-10 min)</span></li>
-                    </ul>
-                    <ul className="text-sm text-gray-700 space-y-2 list-none">
-                      <li className="flex items-start"><span className="w-2 h-2 bg-red-400 rounded-full mr-3 mt-1.5 flex-shrink-0"></span><span><strong>Duración:</strong> 30-40 minutos directos</span></li>
-                      <li className="flex items-start"><span className="w-2 h-2 bg-yellow-400 rounded-full mr-3 mt-1.5 flex-shrink-0"></span><span><strong>Destino:</strong> Paddington, Bond Street, Tottenham Court Road</span></li>
-                    </ul>
-                  </div>
+                  <p><strong>Precio:</strong> £12.80 (zona 1)</p>
+                  <p><strong>Horario:</strong> 05:12-23:48 (cada 5-10 min)</p>
+                  <p><strong>Duración:</strong> 30-40 minutos directos</p>
                 </div>
-
                 <div>
-                  <h5 className="font-semibold text-gray-900 mb-3">Ventajas:</h5>
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                    <ul className="text-sm text-gray-700 space-y-2 list-none">
-                      <li className="flex items-start"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3 mt-1.5 flex-shrink-0"></span><span>Tren moderno inaugurado 2022</span></li>
-                      <li className="flex items-start"><span className="w-2 h-2 bg-pink-400 rounded-full mr-3 mt-1.5 flex-shrink-0"></span><span>Sin cambios al centro</span></li>
-                    </ul>
-                    <ul className="text-sm text-gray-700 space-y-2 list-none">
-                      <li className="flex items-start"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3 mt-1.5 flex-shrink-0"></span><span>Asientos cómodos, WiFi</span></li>
-                      <li className="flex items-start"><span className="w-2 h-2 bg-emerald-400 rounded-full mr-3 mt-1.5 flex-shrink-0"></span><span>Maletas sin restricción</span></li>
-                    </ul>
-                  </div>
+                  <p><strong>Destino:</strong> Paddington, Bond Street, Tottenham Court Road</p>
+                  <p><strong>Ventajas:</strong> Tren moderno, sin cambios, WiFi, asientos cómodos</p>
                 </div>
               </div>
             </div>
