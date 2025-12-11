@@ -103,28 +103,23 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
 
           <div className="mb-6">
             <div className="bg-gradient-to-r from-blue-50 to-indigo-50 border border-blue-200 rounded-xl p-4 shadow-sm hover:shadow-md transition-all duration-300">
-              <h4 className="font-bold text-gray-900 mb-3">🚄 Heathrow Express - La Opción Moderna (Recomendada)</h4>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-gray-700">
+              <h4 className="font-bold text-gray-900 mb-3">🚄 Heathrow Express - El Tren Más Rápido (Recomendado)</h4>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-gray-700 mb-3">
                 <div>
-                  <p><strong>Precio:</strong> £13.30 (zona 1)</p>
-                  <p><strong>Horario:</strong> 05:12-23:48 (cada 5-10 min)</p>
-                  <p><strong>Duración:</strong> 30-40 minutos directos</p>
+                  <p><strong>Precio:</strong> Desde 29 € (online)</p>
+                  <p><strong>Horario:</strong> 05:00-23:30 (cada 15 min)</p>
+                  <p><strong>Duración:</strong> 15 minutos (T2/T3), 21 min (T5)</p>
                 </div>
                 <div>
-                  <p><strong>Destino:</strong> Paddington, Bond Street, Tottenham Court Road</p>
-                  <p><strong>Ventajas:</strong> Tren moderno, sin cambios, WiFi, asientos cómodos</p>
+                  <p><strong>Destino:</strong> London Paddington (directo sin paradas)</p>
+                  <p><strong>Ventajas:</strong> WiFi gratis, mucho espacio para equipaje, enchufes</p>
+                  <p><strong>✨ Niños -15 años:</strong> ¡GRATIS con adulto!</p>
                 </div>
               </div>
-              <div className="flex justify-center mt-4">
-                <a
-                  href="https://gyg.me/JSudzJeY"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-semibold px-6 py-3 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300"
-                >
-                  Comprar Billete Heathrow Express
-                  <ExternalLink className="h-4 w-4 ml-2" />
-                </a>
+              <div className="bg-green-50 border border-green-200 rounded-lg p-2">
+                <p className="text-xs text-green-800">
+                  <strong>💡 Ahorra hasta 75%:</strong> Reserva con 45+ días de antelación y paga solo £10. ¡Ideal para familias!
+                </p>
               </div>
             </div>
           </div>
