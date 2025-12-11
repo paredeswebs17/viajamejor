@@ -182,6 +182,38 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
             </div>
           </div>
         </div>
+
+        <div className="mb-8">
+          <h3 className="text-lg font-bold text-gray-900 mb-4">📍 Desde Aeropuerto de Luton (LTN)</h3>
+
+          <div className="bg-gradient-to-r from-orange-50 to-amber-50 border border-orange-200 rounded-xl p-4 mb-4">
+            <h4 className="font-bold text-gray-900 mb-3">🚄 Luton Airport Express + Thameslink</h4>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-gray-700">
+              <div>
+                <p><strong>Precio:</strong> £17-20 (online adelantado)</p>
+                <p><strong>Duración:</strong> 40-50 minutos total</p>
+              </div>
+              <div>
+                <p><strong>Destino:</strong> St Pancras, Farringdon, Blackfriars</p>
+                <p><strong>Cómo:</strong> Shuttle bus gratuito 5 min + tren</p>
+              </div>
+            </div>
+          </div>
+
+          <div className="bg-gradient-to-r from-green-50 to-emerald-50 border border-green-200 rounded-xl p-4">
+            <h4 className="font-bold text-gray-900 mb-3">🚌 National Express / easyBus - Económico</h4>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-gray-700">
+              <div>
+                <p><strong>Precio:</strong> Desde £8-12 (online)</p>
+                <p><strong>Duración:</strong> 60-90 minutos</p>
+              </div>
+              <div>
+                <p><strong>Destino:</strong> Victoria Coach Station</p>
+                <p><strong>Ventaja:</strong> Muy económico pero más lento</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
       {/* SECCIÓN 3: DÓNDE ALOJARSE */}
