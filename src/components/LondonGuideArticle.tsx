@@ -971,6 +971,70 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
         </div>
       </div>
 
+      {/* MÁS LUGARES QUE VER */}
+      <div className="bg-gradient-to-r from-purple-50 to-pink-50 border border-purple-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
+        <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">🎯 Más Lugares Imprescindibles en Londres</h2>
+        <p className="text-gray-700 mb-6">Si tienes más días o quieres profundizar en la ciudad, estos lugares también merecen tu visita:</p>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="bg-white rounded-xl p-5 shadow-sm hover:shadow-md transition-all duration-300">
+            <h3 className="text-lg font-bold text-purple-800 mb-3">🏰 Castillo de Windsor</h3>
+            <p className="text-sm text-gray-700 mb-2">El castillo habitado más antiguo del mundo. Residencia oficial de la Reina.</p>
+            <div className="text-xs text-gray-600">
+              <p><strong>Precio:</strong> £28-30 | <strong>Duración:</strong> Día completo</p>
+              <p><strong>Cómo llegar:</strong> Tren desde Paddington (50 min)</p>
+            </div>
+          </div>
+
+          <div className="bg-white rounded-xl p-5 shadow-sm hover:shadow-md transition-all duration-300">
+            <h3 className="text-lg font-bold text-purple-800 mb-3">🎭 Teatro del West End</h3>
+            <p className="text-sm text-gray-700 mb-2">El equivalente británico de Broadway. Más de 40 teatros con musicales y obras.</p>
+            <div className="text-xs text-gray-600">
+              <p><strong>Precio:</strong> £25-150 | <strong>Duración:</strong> 2-3 horas</p>
+              <p><strong>Shows populares:</strong> El Rey León, Wicked, Hamilton</p>
+            </div>
+          </div>
+
+          <div className="bg-white rounded-xl p-5 shadow-sm hover:shadow-md transition-all duration-300">
+            <h3 className="text-lg font-bold text-purple-800 mb-3">🏛️ Museos Gratuitos</h3>
+            <p className="text-sm text-gray-700 mb-2">Londres tiene los mejores museos del mundo ¡y son GRATIS!</p>
+            <div className="text-xs text-gray-600">
+              <p>• Natural History Museum (dinosaurios)</p>
+              <p>• Science Museum (interactivo)</p>
+              <p>• V&A Museum (arte y diseño)</p>
+              <p>• Tate Modern (arte contemporáneo)</p>
+            </div>
+          </div>
+
+          <div className="bg-white rounded-xl p-5 shadow-sm hover:shadow-md transition-all duration-300">
+            <h3 className="text-lg font-bold text-purple-800 mb-3">🌳 Kew Gardens</h3>
+            <p className="text-sm text-gray-700 mb-2">Jardín botánico Patrimonio de la UNESCO. 121 hectáreas de belleza natural.</p>
+            <div className="text-xs text-gray-600">
+              <p><strong>Precio:</strong> £18-20 | <strong>Duración:</strong> 3-4 horas</p>
+              <p><strong>Highlights:</strong> Palm House, Treetop Walkway</p>
+            </div>
+          </div>
+
+          <div className="bg-white rounded-xl p-5 shadow-sm hover:shadow-md transition-all duration-300">
+            <h3 className="text-lg font-bold text-purple-800 mb-3">🎨 Camden Market</h3>
+            <p className="text-sm text-gray-700 mb-2">Mercado alternativo con arte urbano, comida internacional y moda vintage.</p>
+            <div className="text-xs text-gray-600">
+              <p><strong>Precio:</strong> Gratis | <strong>Mejor día:</strong> Sábado-Domingo</p>
+              <p><strong>Ambiente:</strong> Punk, rock, alternativo</p>
+            </div>
+          </div>
+
+          <div className="bg-white rounded-xl p-5 shadow-sm hover:shadow-md transition-all duration-300">
+            <h3 className="text-lg font-bold text-purple-800 mb-3">🏟️ Estadio de Wembley</h3>
+            <p className="text-sm text-gray-700 mb-2">El estadio más icónico del fútbol. Tours detrás de escena disponibles.</p>
+            <div className="text-xs text-gray-600">
+              <p><strong>Tour:</strong> £24 | <strong>Duración:</strong> 75 minutos</p>
+              <p>Incluye vestuarios, túnel, Copa FA</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
       {/* HERRAMIENTAS DE VIAJE */}
       <div className="bg-gradient-to-br from-blue-50 via-sky-50 to-cyan-50 border border-blue-200 rounded-2xl p-6 sm:p-8 shadow-lg mb-8">
         <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3">
@@ -1046,249 +1110,6 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
               🛡️ Contratar IATI con 5% Descuento
               <ExternalLink className="h-3 w-3 ml-2" />
             </a>
-          </div>
-        </div>
-      </div>
-
-      {/* TRANSPORTE */}
-      <div className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
-        <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">🚇 Sistema de Transporte Público</h2>
-        <div className="bg-gradient-to-r from-blue-50 to-indigo-50 border border-blue-200 rounded-xl p-6">
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">
-            <div className="bg-white rounded-lg p-4 shadow-sm">
-              <h5 className="font-semibold text-blue-600 mb-2">🚇 Metro ("The Tube")</h5>
-              <ul className="text-sm text-gray-700 space-y-1">
-                <li>• 11 líneas de colores</li>
-                <li>• Frecuencia: 2-5 minutos</li>
-                <li>• Night Tube Vie-Sáb: 24h</li>
-              </ul>
-            </div>
-            <div className="bg-white rounded-lg p-4 shadow-sm">
-              <h5 className="font-semibold text-red-600 mb-2">🚌 Autobuses Rojos</h5>
-              <ul className="text-sm text-gray-700 space-y-1">
-                <li>• 700+ líneas</li>
-                <li>• Horario: 24 horas</li>
-                <li>• Piso superior = vistas</li>
-              </ul>
-            </div>
-            <div className="bg-white rounded-lg p-4 shadow-sm">
-              <h5 className="font-semibold text-green-600 mb-2">💳 Pago</h5>
-              <ul className="text-sm text-gray-700 space-y-1">
-                <li>• Contactless (recomendado)</li>
-                <li>• Tope: £8.50/día</li>
-                <li>• Autobús: £1.75/viaje</li>
-              </ul>
-            </div>
-          </div>
-          <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-3">
-            <p className="text-sm text-yellow-800">
-              <strong>💡 Truco:</strong> Usa autobuses cuando puedas (£5.25 día ilimitado vs £8.50 metro). Evita hora pico (6:30-9:30, 16:00-19:00).
-            </p>
-          </div>
-        </div>
-      </div>
-
-      {/* PRESUPUESTOS */}
-      <div className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
-        <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">💰 Presupuestos Detallados - Noviembre 2025</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
-          <div className="bg-green-50 border border-green-200 rounded-xl p-6 shadow-sm">
-            <h3 className="text-lg font-bold text-green-800 mb-3">🎒 Mochilero</h3>
-            <div className="text-2xl font-bold text-green-600 mb-2">£60-85/día</div>
-            <ul className="text-sm text-green-700 space-y-1">
-              <li>• Hostel: £25-35</li>
-              <li>• Comida: £20-25</li>
-              <li>• Transporte: £5-8</li>
-              <li>• Atracciones: £12-17</li>
-            </ul>
-          </div>
-          <div className="bg-blue-50 border border-blue-200 rounded-xl p-6 shadow-sm">
-            <h3 className="text-lg font-bold text-blue-800 mb-3">🏨 Estándar</h3>
-            <div className="text-2xl font-bold text-blue-600 mb-2">£120-160/día</div>
-            <ul className="text-sm text-blue-700 space-y-1">
-              <li>• Hotel 3*: £70-95</li>
-              <li>• Comida: £35-45</li>
-              <li>• Transporte: £8-10</li>
-              <li>• Atracciones: £15-30</li>
-            </ul>
-          </div>
-          <div className="bg-purple-50 border border-purple-200 rounded-xl p-6 shadow-sm">
-            <h3 className="text-lg font-bold text-purple-800 mb-3">👑 Lujo</h3>
-            <div className="text-2xl font-bold text-purple-600 mb-2">£250-400+/día</div>
-            <ul className="text-sm text-purple-700 space-y-1">
-              <li>• Hotel 5*: £150-250</li>
-              <li>• Comida: £80-130</li>
-              <li>• Transporte: £20-40</li>
-              <li>• Atracciones: £40-80</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      {/* MÁS LUGARES QUE VER */}
-      <div className="bg-gradient-to-r from-purple-50 to-pink-50 border border-purple-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
-        <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">🎯 Más Lugares Imprescindibles en Londres</h2>
-        <p className="text-gray-700 mb-6">Si tienes más días o quieres profundizar en la ciudad, estos lugares también merecen tu visita:</p>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div className="bg-white rounded-xl p-5 shadow-sm hover:shadow-md transition-all duration-300">
-            <h3 className="text-lg font-bold text-purple-800 mb-3">🏰 Castillo de Windsor</h3>
-            <p className="text-sm text-gray-700 mb-2">El castillo habitado más antiguo del mundo. Residencia oficial de la Reina.</p>
-            <div className="text-xs text-gray-600">
-              <p><strong>Precio:</strong> £28-30 | <strong>Duración:</strong> Día completo</p>
-              <p><strong>Cómo llegar:</strong> Tren desde Paddington (50 min)</p>
-            </div>
-          </div>
-
-          <div className="bg-white rounded-xl p-5 shadow-sm hover:shadow-md transition-all duration-300">
-            <h3 className="text-lg font-bold text-purple-800 mb-3">🎭 Teatro del West End</h3>
-            <p className="text-sm text-gray-700 mb-2">El equivalente británico de Broadway. Más de 40 teatros con musicales y obras.</p>
-            <div className="text-xs text-gray-600">
-              <p><strong>Precio:</strong> £25-150 | <strong>Duración:</strong> 2-3 horas</p>
-              <p><strong>Shows populares:</strong> El Rey León, Wicked, Hamilton</p>
-            </div>
-          </div>
-
-          <div className="bg-white rounded-xl p-5 shadow-sm hover:shadow-md transition-all duration-300">
-            <h3 className="text-lg font-bold text-purple-800 mb-3">🏛️ Museos Gratuitos</h3>
-            <p className="text-sm text-gray-700 mb-2">Londres tiene los mejores museos del mundo ¡y son GRATIS!</p>
-            <div className="text-xs text-gray-600">
-              <p>• Natural History Museum (dinosaurios)</p>
-              <p>• Science Museum (interactivo)</p>
-              <p>• V&A Museum (arte y diseño)</p>
-              <p>• Tate Modern (arte contemporáneo)</p>
-            </div>
-          </div>
-
-          <div className="bg-white rounded-xl p-5 shadow-sm hover:shadow-md transition-all duration-300">
-            <h3 className="text-lg font-bold text-purple-800 mb-3">🌳 Kew Gardens</h3>
-            <p className="text-sm text-gray-700 mb-2">Jardín botánico Patrimonio de la UNESCO. 121 hectáreas de belleza natural.</p>
-            <div className="text-xs text-gray-600">
-              <p><strong>Precio:</strong> £18-20 | <strong>Duración:</strong> 3-4 horas</p>
-              <p><strong>Highlights:</strong> Palm House, Treetop Walkway</p>
-            </div>
-          </div>
-
-          <div className="bg-white rounded-xl p-5 shadow-sm hover:shadow-md transition-all duration-300">
-            <h3 className="text-lg font-bold text-purple-800 mb-3">🎨 Camden Market</h3>
-            <p className="text-sm text-gray-700 mb-2">Mercado alternativo con arte urbano, comida internacional y moda vintage.</p>
-            <div className="text-xs text-gray-600">
-              <p><strong>Precio:</strong> Gratis | <strong>Mejor día:</strong> Sábado-Domingo</p>
-              <p><strong>Ambiente:</strong> Punk, rock, alternativo</p>
-            </div>
-          </div>
-
-          <div className="bg-white rounded-xl p-5 shadow-sm hover:shadow-md transition-all duration-300">
-            <h3 className="text-lg font-bold text-purple-800 mb-3">🏟️ Estadio de Wembley</h3>
-            <p className="text-sm text-gray-700 mb-2">El estadio más icónico del fútbol. Tours detrás de escena disponibles.</p>
-            <div className="text-xs text-gray-600">
-              <p><strong>Tour:</strong> £24 | <strong>Duración:</strong> 75 minutos</p>
-              <p>Incluye vestuarios, túnel, Copa FA</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* EXCURSIONES DE UN DÍA */}
-      <div className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
-        <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">🚂 Excursiones de Un Día desde Londres</h2>
-        <p className="text-gray-700 mb-6">Si tienes tiempo extra, estas escapadas cercanas son perfectas para un día:</p>
-
-        <div className="space-y-6">
-          <div className="bg-gradient-to-r from-blue-50 to-sky-50 border border-blue-200 rounded-xl p-6">
-            <div className="flex items-start mb-3">
-              <span className="text-3xl mr-4">🪨</span>
-              <div className="flex-1">
-                <h3 className="text-lg font-bold text-gray-900 mb-2">Stonehenge + Bath</h3>
-                <p className="text-sm text-gray-700 mb-3">El círculo de piedras más misterioso del mundo + ciudad georgiana romana.</p>
-                <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 text-xs">
-                  <div>
-                    <p><strong>Distancia:</strong> 140 km</p>
-                    <p><strong>Transporte:</strong> Tour organizado</p>
-                  </div>
-                  <div>
-                    <p><strong>Precio:</strong> £75-95</p>
-                    <p><strong>Duración:</strong> 11-12 horas</p>
-                  </div>
-                  <div>
-                    <p><strong>Incluye:</strong> Entrada + guía</p>
-                    <p><strong>Mejor:</strong> Verano (hasta 21:00h)</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="bg-gradient-to-r from-emerald-50 to-green-50 border border-emerald-200 rounded-xl p-6">
-            <div className="flex items-start mb-3">
-              <span className="text-3xl mr-4">🏰</span>
-              <div className="flex-1">
-                <h3 className="text-lg font-bold text-gray-900 mb-2">Oxford</h3>
-                <p className="text-sm text-gray-700 mb-3">La ciudad universitaria más famosa del mundo. Escenario de Harry Potter.</p>
-                <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 text-xs">
-                  <div>
-                    <p><strong>Distancia:</strong> 90 km</p>
-                    <p><strong>Transporte:</strong> Tren (1 hora)</p>
-                  </div>
-                  <div>
-                    <p><strong>Precio:</strong> £25-40 ida/vuelta</p>
-                    <p><strong>Duración:</strong> 6-8 horas</p>
-                  </div>
-                  <div>
-                    <p><strong>Ver:</strong> Christ Church, Bodleian</p>
-                    <p><strong>Ambiente:</strong> Académico histórico</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="bg-gradient-to-r from-yellow-50 to-amber-50 border border-yellow-200 rounded-xl p-6">
-            <div className="flex items-start mb-3">
-              <span className="text-3xl mr-4">🎓</span>
-              <div className="flex-1">
-                <h3 className="text-lg font-bold text-gray-900 mb-2">Cambridge</h3>
-                <p className="text-sm text-gray-700 mb-3">Rival histórica de Oxford. Paseos en punt por el río Cam.</p>
-                <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 text-xs">
-                  <div>
-                    <p><strong>Distancia:</strong> 80 km</p>
-                    <p><strong>Transporte:</strong> Tren (50 min)</p>
-                  </div>
-                  <div>
-                    <p><strong>Precio:</strong> £20-35 ida/vuelta</p>
-                    <p><strong>Duración:</strong> 6-8 horas</p>
-                  </div>
-                  <div>
-                    <p><strong>Ver:</strong> King's College Chapel</p>
-                    <p><strong>Actividad:</strong> Punting £15-20</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="bg-gradient-to-r from-purple-50 to-pink-50 border border-purple-200 rounded-xl p-6">
-            <div className="flex items-start mb-3">
-              <span className="text-3xl mr-4">🏖️</span>
-              <div className="flex-1">
-                <h3 className="text-lg font-bold text-gray-900 mb-2">Brighton</h3>
-                <p className="text-sm text-gray-700 mb-3">Ciudad costera bohemia. Playa, muelle victoriano y ambiente LGBT+.</p>
-                <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 text-xs">
-                  <div>
-                    <p><strong>Distancia:</strong> 85 km</p>
-                    <p><strong>Transporte:</strong> Tren (1 hora)</p>
-                  </div>
-                  <div>
-                    <p><strong>Precio:</strong> £15-25 ida/vuelta</p>
-                    <p><strong>Duración:</strong> 6-8 horas</p>
-                  </div>
-                  <div>
-                    <p><strong>Ver:</strong> Royal Pavilion, Pier</p>
-                    <p><strong>Mejor:</strong> Verano (playa)</p>
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </div>
@@ -1396,6 +1217,44 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
         </div>
       </div>
 
+      {/* TRANSPORTE */}
+      <div className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
+        <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">🚇 Sistema de Transporte Público</h2>
+        <div className="bg-gradient-to-r from-blue-50 to-indigo-50 border border-blue-200 rounded-xl p-6">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">
+            <div className="bg-white rounded-lg p-4 shadow-sm">
+              <h5 className="font-semibold text-blue-600 mb-2">🚇 Metro ("The Tube")</h5>
+              <ul className="text-sm text-gray-700 space-y-1">
+                <li>• 11 líneas de colores</li>
+                <li>• Frecuencia: 2-5 minutos</li>
+                <li>• Night Tube Vie-Sáb: 24h</li>
+              </ul>
+            </div>
+            <div className="bg-white rounded-lg p-4 shadow-sm">
+              <h5 className="font-semibold text-red-600 mb-2">🚌 Autobuses Rojos</h5>
+              <ul className="text-sm text-gray-700 space-y-1">
+                <li>• 700+ líneas</li>
+                <li>• Horario: 24 horas</li>
+                <li>• Piso superior = vistas</li>
+              </ul>
+            </div>
+            <div className="bg-white rounded-lg p-4 shadow-sm">
+              <h5 className="font-semibold text-green-600 mb-2">💳 Pago</h5>
+              <ul className="text-sm text-gray-700 space-y-1">
+                <li>• Contactless (recomendado)</li>
+                <li>• Tope: £8.50/día</li>
+                <li>• Autobús: £1.75/viaje</li>
+              </ul>
+            </div>
+          </div>
+          <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-3">
+            <p className="text-sm text-yellow-800">
+              <strong>💡 Truco:</strong> Usa autobuses cuando puedas (£5.25 día ilimitado vs £8.50 metro). Evita hora pico (6:30-9:30, 16:00-19:00).
+            </p>
+          </div>
+        </div>
+      </div>
+
       {/* CONSEJOS FINALES */}
       <div className="bg-gradient-to-r from-sky-50 to-blue-50 border border-sky-200 rounded-2xl p-6 sm:p-8 shadow-md mb-8">
         <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">💡 Consejos Finales para tu Viaje a Londres</h2>
@@ -1474,6 +1333,43 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
               <li>☐ App Citymapper descargada</li>
               <li>☐ Adaptador de enchufe UK (tipo G)</li>
               <li>☐ Lista offline de direcciones importantes</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      {/* PRESUPUESTOS */}
+      <div className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
+        <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">💰 Presupuestos Detallados - Noviembre 2025</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+          <div className="bg-green-50 border border-green-200 rounded-xl p-6 shadow-sm">
+            <h3 className="text-lg font-bold text-green-800 mb-3">🎒 Mochilero</h3>
+            <div className="text-2xl font-bold text-green-600 mb-2">£60-85/día</div>
+            <ul className="text-sm text-green-700 space-y-1">
+              <li>• Hostel: £25-35</li>
+              <li>• Comida: £20-25</li>
+              <li>• Transporte: £5-8</li>
+              <li>• Atracciones: £12-17</li>
+            </ul>
+          </div>
+          <div className="bg-blue-50 border border-blue-200 rounded-xl p-6 shadow-sm">
+            <h3 className="text-lg font-bold text-blue-800 mb-3">🏨 Estándar</h3>
+            <div className="text-2xl font-bold text-blue-600 mb-2">£120-160/día</div>
+            <ul className="text-sm text-blue-700 space-y-1">
+              <li>• Hotel 3*: £70-95</li>
+              <li>• Comida: £35-45</li>
+              <li>• Transporte: £8-10</li>
+              <li>• Atracciones: £15-30</li>
+            </ul>
+          </div>
+          <div className="bg-purple-50 border border-purple-200 rounded-xl p-6 shadow-sm">
+            <h3 className="text-lg font-bold text-purple-800 mb-3">👑 Lujo</h3>
+            <div className="text-2xl font-bold text-purple-600 mb-2">£250-400+/día</div>
+            <ul className="text-sm text-purple-700 space-y-1">
+              <li>• Hotel 5*: £150-250</li>
+              <li>• Comida: £80-130</li>
+              <li>• Transporte: £20-40</li>
+              <li>• Atracciones: £40-80</li>
             </ul>
           </div>
         </div>
