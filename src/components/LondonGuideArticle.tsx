@@ -116,10 +116,16 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
                   <p><strong>✨ Niños -15 años:</strong> ¡GRATIS con adulto!</p>
                 </div>
               </div>
-              <div className="bg-green-50 border border-green-200 rounded-lg p-2">
-                <p className="text-xs text-green-800">
-                  <strong>💡 Ahorra hasta 75%:</strong> Reserva con 45+ días de antelación y paga solo £10. ¡Ideal para familias!
-                </p>
+              <div className="flex justify-center mt-4">
+                <a
+                  href="https://gyg.me/JSudzJeY"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-semibold px-6 py-3 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300"
+                >
+                  Comprar Billete Heathrow Express
+                  <ExternalLink className="h-4 w-4 ml-2" />
+                </a>
               </div>
             </div>
           </div>
