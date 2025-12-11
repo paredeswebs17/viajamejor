@@ -102,12 +102,11 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
           <h3 className="text-lg font-bold text-gray-900 mb-4">📍 Desde Aeropuerto de Heathrow (LHR)</h3>
 
           <div className="mb-6">
-            <h4 className="text-md font-bold text-gray-900 mb-4">🚄 Elizabeth Line - La Opción Moderna (Recomendada)</h4>
-
             <div className="bg-gradient-to-r from-blue-50 to-indigo-50 border border-blue-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
+              <h4 className="text-lg font-bold text-gray-900 mb-6">🚄 Elizabeth Line - La Opción Moderna (Recomendada)</h4>
               <div className="space-y-6">
                 <div>
-                  <h5 className="font-semibold text-gray-900 mb-3">🚄 Información esencial:</h5>
+                  <h5 className="font-semibold text-gray-900 mb-3">Información esencial:</h5>
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <ul className="text-sm text-gray-700 space-y-2 list-none">
                       <li className="flex items-start"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3 mt-1.5 flex-shrink-0"></span><span><strong>Precio:</strong> £12.80 (zona 1)</span></li>
