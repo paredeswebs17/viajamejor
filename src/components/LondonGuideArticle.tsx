@@ -156,6 +156,17 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
                 <p className="text-sm text-gray-700 mb-1"><strong>Ventajas:</strong> Puerta a puerta, sin esperas</p>
               </div>
             </div>
+            <div className="flex justify-center mt-4">
+              <a
+                href="https://gyg.me/tqu0VpSP"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center bg-gradient-to-r from-purple-500 to-purple-600 hover:from-purple-600 hover:to-purple-700 text-white font-semibold px-6 py-3 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300"
+              >
+                Reservar Traslado Privado
+                <ExternalLink className="h-4 w-4 ml-2" />
+              </a>
+            </div>
           </div>
         </div>
 
