@@ -103,7 +103,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
 
           <div className="mb-6">
             <div className="bg-gradient-to-r from-blue-50 to-indigo-50 border border-blue-200 rounded-xl p-4 shadow-sm hover:shadow-md transition-all duration-300">
-              <h4 className="font-bold text-gray-900 mb-3">🚄 Elizabeth Line - La Opción Moderna (Recomendada)</h4>
+              <h4 className="font-bold text-gray-900 mb-3">🚄 Heathrow Express - La Opción Moderna (Recomendada)</h4>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-gray-700">
                 <div>
                   <p><strong>Precio:</strong> £13.30 (zona 1)</p>
@@ -114,6 +114,17 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
                   <p><strong>Destino:</strong> Paddington, Bond Street, Tottenham Court Road</p>
                   <p><strong>Ventajas:</strong> Tren moderno, sin cambios, WiFi, asientos cómodos</p>
                 </div>
+              </div>
+              <div className="flex justify-center mt-4">
+                <a
+                  href="https://gyg.me/JSudzJeY"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-semibold px-6 py-3 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300"
+                >
+                  Comprar Billete Heathrow Express
+                  <ExternalLink className="h-4 w-4 ml-2" />
+                </a>
               </div>
             </div>
           </div>
@@ -167,7 +178,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
 
         <div className="mb-8">
           <h3 className="text-lg font-bold text-gray-900 mb-4">📍 Desde Aeropuerto de Stansted (STN)</h3>
-          
+
           <div className="bg-gradient-to-r from-blue-50 to-sky-50 border border-blue-200 rounded-xl p-4">
             <h4 className="font-bold text-gray-900 mb-3">🚄 Stansted Express</h4>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-gray-700">
@@ -179,6 +190,17 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
                 <p><strong>Destino:</strong> Liverpool Street Station</p>
                 <p><strong>Horario:</strong> 05:30-00:30</p>
               </div>
+            </div>
+            <div className="flex justify-center mt-4">
+              <a
+                href="https://gyg.me/YQaBsBwy"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-semibold px-6 py-3 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300"
+              >
+                Comprar Billete Stansted Express
+                <ExternalLink className="h-4 w-4 ml-2" />
+              </a>
             </div>
           </div>
         </div>
