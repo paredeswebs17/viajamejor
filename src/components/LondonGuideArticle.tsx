@@ -596,8 +596,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
             <h4 className="text-lg font-bold text-gray-900 mb-3">Westminster Abbey - Donde se Corona a los Reyes</h4>
 
             <div className="mb-4">
-              <img
-                src="https://images.pexels.com/photos/31147777/pexels-photo-31147777.jpeg"
+              <img         src="https://images.pexels.com/photos/9825872/pexels-photo-9825872.jpeg"
                 alt="Big Ben y Palacio de Westminster junto al Támesis"
                 className="w-full h-48 sm:h-64 object-cover rounded-xl shadow-lg mb-4"
               />
