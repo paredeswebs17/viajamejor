@@ -637,7 +637,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
           <div className="bg-green-50 border border-green-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
             <h4 className="text-lg font-bold text-gray-900 mb-3">Paseo Real por el Parque + Residencia del Rey Carlos III</h4>
              <div className="mb-4">
-              <img         src="https://images.pexels.com/photos/3921040/pexels-photo-3921040.jpeg"
+              <img         src="https://images.pexels.com/photos/16387002/pexels-photo-16387002.jpeg"
                 alt="Big Ben y Palacio de Westminster junto al Támesis"
                 className="w-full h-48 sm:h-64 object-cover rounded-xl shadow-lg mb-4"
               />
