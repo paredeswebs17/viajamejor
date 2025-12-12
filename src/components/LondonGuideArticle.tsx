@@ -594,6 +594,14 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
           </h3>
           <div className="bg-gradient-to-r from-orange-50 to-red-50 border border-orange-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
             <h4 className="text-lg font-bold text-gray-900 mb-3">Westminster Abbey - Donde se Corona a los Reyes</h4>
+
+            <div className="mb-4">
+              <img
+                src="https://images.pexels.com/photos/31147777/pexels-photo-31147777.jpeg"
+                alt="Big Ben y Palacio de Westminster junto al Támesis"
+                className="w-full h-48 sm:h-64 object-cover rounded-xl shadow-lg mb-4"
+              />
+            </div>
             <p className="text-gray-700 mb-4">
               A solo 5 minutos andando del Big Ben se encuentra una de las iglesias más importantes del mundo. Desde 1066, todas las coronaciones británicas (excepto dos) han tenido lugar aquí. La última fue la del Rey Carlos III en mayo de 2023.
             </p>
