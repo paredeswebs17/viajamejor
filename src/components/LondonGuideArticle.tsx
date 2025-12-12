@@ -67,7 +67,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
 
       <div className="mb-8">
         <img
-          src="https://images.pexels.com/photos/460672/pexels-photo-460672.jpeg"
+          src="https://images.pexels.com/photos/31147777/pexels-photo-31147777.jpeg"
           alt="Big Ben y el Palacio de Westminster iluminados al atardecer junto al río Támesis"
           className="w-full h-48 sm:h-64 lg:h-80 object-cover rounded-2xl shadow-lg"
         />
