@@ -782,7 +782,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
             </div>
 
             <div className="bg-white rounded-xl p-4 border border-gray-200 shadow-sm">
-              <p className="text-xs text-sky-600 mb-2">💡 Mejor momento: Atardecer (16:00-16:30h en noviembre). Ves la ciudad de día y de noche en la misma vuelta.</p>
+              <p className="text-xs text-sky-600 mb-2">💡 Mejor momento: Atardecer, ves la ciudad de día y de noche en la misma vuelta.</p>
             </div>
           </div>
         </div>
