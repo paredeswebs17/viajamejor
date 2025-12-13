@@ -1096,7 +1096,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
       <h4 className="text-lg font-bold text-gray-900 mb-3">🏛️ El Museo Más Visitado del Reino Unido (¡GRATIS!)</h4>
       <div className="mb-4">
         <img
-          src="https://images.pexels.com/photos/6061618/pexels-photo-6061618.jpeg"
+          src="https://images.pexels.com/photos/32835061/pexels-photo-32835061.jpeg"
           alt="British Museum Great Court"
           className="w-full h-48 sm:h-64 object-cover rounded-xl shadow-lg mb-4"
         />
