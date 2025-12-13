@@ -721,7 +721,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
               <div>
-                <h5 className="font-semibold text-gray-900 mb-2">🏛️ Qué Ver en Covent Garden:</h5>
+                <h5 className="font-semibold text-gray-900 mb-2">🏛️ Qué ver en Covent Garden:</h5>
                 <ul className="text-sm text-gray-700 space-y-1 list-none">
                   <li className="flex items-center"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3"></span>Apple Market: Artesanía británica</li>
                   <li className="flex items-center"><span className="w-2 h-2 bg-pink-400 rounded-full mr-3"></span>Artistas callejeros de calidad</li>
