@@ -955,6 +955,13 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
           {/* The Shard */}
           <div className="bg-sky-50 border border-sky-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300 mb-6">
             <h4 className="text-lg font-bold text-gray-900 mb-3">🏙️ The Shard - El Rascacielos Más Alto de Europa Occidental</h4>
+            <div className="mb-4">
+              <img
+                src="https://images.pexels.com/photos/1676718/pexels-photo-1676718.jpeg"
+                alt="The Shard - El Rascacielos Más Alto de Europa Occidental"
+                className="w-full h-48 sm:h-64 object-cover rounded-xl shadow-lg mb-4"
+              />
+            </div>
             <p className="text-gray-700 mb-4">
               Si Sky Garden está lleno o prefieres vistas aún más altas, The Shard te eleva a 310 metros (pisos 68-72). Es el edificio más alto del Reino Unido y ofrece vistas hasta 64 kilómetros en días despejados. Su diseño de cristal piramidal lo hace inconfundible en el skyline londinense.
             </p>
