@@ -915,6 +915,13 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
           {/* Sky Garden */}
           <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300 mb-6">
             <h4 className="text-lg font-bold text-gray-900 mb-3">🌿 Sky Garden - El Jardín del Cielo (¡GRATIS!)</h4>
+            <div className="mb-4">
+              <img
+                src="https://images.pexels.com/photos/914838/pexels-photo-914838.jpeg"
+                alt="Sky Garden - El Jardín del Cielo"
+                className="w-full h-48 sm:h-64 object-cover rounded-xl shadow-lg mb-4"
+              />
+            </div>
             <p className="text-gray-700 mb-4">
               Después de la Torre, subimos al mirador GRATUITO más alto de Londres. El Sky Garden, en el piso 35-37 del rascacielos "Walkie Talkie", ofrece vistas 360° de la ciudad desde 155 metros de altura, rodeado de jardines tropicales exóticos y terrazas al aire libre.
             </p>
