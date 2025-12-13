@@ -1166,10 +1166,10 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
         <div>
           <h5 className="font-semibold text-gray-900 mb-2">🛍️ Zonas de Shopping:</h5>
           <ul className="text-sm text-gray-700 space-y-1 list-none">
-            <li className="flex items-center"><span className="w-2 h-2 bg-pink-400 rounded-full mr-3"></span><strong>Carnaby St:</strong> Tiendas vintage/alternativas</li>
-            <li className="flex items-center"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3"></span><strong>Oxford St:</strong> Selfridges, Primark, H&M</li>
-            <li className="flex items-center"><span className="w-2 h-2 bg-orange-400 rounded-full mr-3"></span><strong>Regent St:</strong> Hamleys (juguetes), Apple</li>
-            <li className="flex items-center"><span className="w-2 h-2 bg-yellow-400 rounded-full mr-3"></span><strong>Liberty London:</strong> Grandes almacenes de lujo</li>
+            <li className="flex items-start"><span className="w-2 h-2 bg-pink-400 rounded-full mr-3 mt-1.5 flex-shrink-0"></span><span>Carnaby St: Tiendas vintage/alternativas</span></li>
+            <li className="flex items-start"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3 mt-1.5 flex-shrink-0"></span><span>Oxford St: Selfridges, Primark, H&M</span></li>
+            <li className="flex items-start"><span className="w-2 h-2 bg-orange-400 rounded-full mr-3 mt-1.5 flex-shrink-0"></span><span>Regent St: Hamleys (juguetes), Apple</span></li>
+            <li className="flex items-start"><span className="w-2 h-2 bg-yellow-400 rounded-full mr-3 mt-1.5 flex-shrink-0"></span><span>Liberty London: Grandes almacenes de lujo</span></li>
           </ul>
         </div>
       </div>
