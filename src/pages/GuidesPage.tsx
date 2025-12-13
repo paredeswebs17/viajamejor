@@ -93,7 +93,7 @@ const GuidesPage = () => {
       id: 'london',
       title: 'Londres en 3 días',
       description: 'Capital británica con historia milenaria y vanguardia global. Big Ben, Tower Bridge, museos gratuitos y multiculturalidad.',
-      image: 'https://images.pexels.com/photos/460672/pexels-photo-460672.jpeg',
+      image: 'https://images.pexels.com/photos/5380087/pexels-photo-5380087.jpeg',
       price: '95€',
       rating: 4.9,
       continent: 'Europa',
