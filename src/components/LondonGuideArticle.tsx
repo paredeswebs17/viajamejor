@@ -1047,6 +1047,13 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
           </h3>
           <div className="bg-cyan-50 border border-cyan-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
             <h4 className="text-lg font-bold text-gray-900 mb-3">Londres desde el Agua - Cierre Perfecto del Día</h4>
+            <div className="mb-4">
+              <img
+                src="https://images.pexels.com/photos/19518923/pexels-photo-19518923.jpeg"
+                alt="Londres desde el Agua - Cierre Perfecto del Día"
+                className="w-full h-48 sm:h-64 object-cover rounded-xl shadow-lg mb-4"
+              />
+            </div>
             <p className="text-gray-700 mb-4">
               Termina el día navegando por el río que ha sido testigo de 2.000 años de historia. Ver la ciudad iluminada desde el agua es inolvidable.
             </p>
