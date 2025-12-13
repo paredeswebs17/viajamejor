@@ -995,6 +995,13 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
           {/* St Paul's Cathedral */}
           <div className="bg-amber-50 border border-amber-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
             <h4 className="text-lg font-bold text-gray-900 mb-3">⛪ Catedral de San Pablo - La Obra Maestra Barroca de Londres</h4>
+             <div className="mb-4">
+              <img
+                src="https://images.pexels.com/photos/14674677/pexels-photo-14674677.jpeg"
+                alt="Catedral de San Pablo - La Obra Maestra Barroca de Londres"
+                className="w-full h-48 sm:h-64 object-cover rounded-xl shadow-lg mb-4"
+              />
+            </div>
             <p className="text-gray-700 mb-4">
               Bajamos del cielo para entrar en la catedral anglicana más importante de Londres. Su icónica cúpula (111 metros) ha dominado el skyline durante más de 300 años. Aquí se celebró la boda del Príncipe Carlos y Lady Diana en 1981, y los funerales de Churchill y Thatcher.
             </p>
