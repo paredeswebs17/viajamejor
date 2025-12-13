@@ -752,7 +752,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
             <h4 className="text-lg font-bold text-gray-900 mb-3">La Noria Más Alta de Europa</h4>
             <div className="mb-4">
               <img
-                src="https://images.pexels.com/photos/672532/pexels-photo-672532.jpeg"
+                src="https://images.pexels.com/photos/269128/pexels-photo-269128.jpeg"
                 alt="London Eye iluminado al atardecer junto al río Támesis"
                 className="w-full h-48 sm:h-64 object-cover rounded-xl shadow-lg mb-4"
               />
