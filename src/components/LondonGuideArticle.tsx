@@ -1090,7 +1090,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
   <div className="mb-8">
     <h3 className="text-lg font-bold text-gray-900 mb-4 flex items-center">
       <div className="w-1 h-6 bg-gradient-to-b from-amber-400 to-yellow-400 rounded-full mr-3"></div>
-      British Museum - Tesoros de la Humanidad (9:00h - 12:30h)
+      British Museum - Tesoros de la Humanidad (10:00h - 12:30h)
     </h3>
     <div className="bg-amber-50 border border-amber-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
       <h4 className="text-lg font-bold text-gray-900 mb-3">🏛️ El Museo Más Visitado del Reino Unido (¡GRATIS!)</h4>
@@ -1141,6 +1141,13 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
     </h3>
     <div className="bg-rose-50 border border-rose-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
       <h4 className="text-lg font-bold text-gray-900 mb-3">🎭 El "Times Square" de Londres</h4>
+      <div className="mb-4">
+        <img
+          src="https://images.pexels.com/photos/4905523/pexels-photo-4905523.jpeg"
+          alt="El Times Square de Londres"
+          className="w-full h-48 sm:h-64 object-cover rounded-xl shadow-lg mb-4"
+        />
+      </div>
 
       <p className="text-gray-700 mb-4">
         La plaza más famosa de Londres con pantallas LED gigantes, estatua de Eros, y el epicentro del West End. Desde aquí accedes a las mejores zonas de compras de la ciudad.
