@@ -905,27 +905,115 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
           </div>
         </div>
 
-        {/* Sky Garden + Shard + St Paul's - Compacto */}
+        {/* Sky Garden + Shard + St Paul's - VERSIÓN COMPLETA DETALLADA */}
         <div className="mb-8">
           <h3 className="text-lg font-bold text-gray-900 mb-4 flex items-center">
             <div className="w-1 h-6 bg-gradient-to-b from-emerald-400 to-amber-400 rounded-full mr-3"></div>
             Vistas Aéreas + Catedral (14:00h - 17:30h)
           </h3>
-          <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
-            <h4 className="text-lg font-bold text-gray-900 mb-3">Sky Garden (GRATIS) → The Shard → St Paul's</h4>
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-              <div className="bg-white rounded-lg p-3 shadow-sm">
-                <h5 className="font-semibold text-gray-900 mb-1">🌿 Sky Garden</h5>
-                <p className="text-xs text-gray-700">Piso 35, 155m altura. ¡GRATIS! (reserva online).</p>
+
+          {/* Sky Garden */}
+          <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300 mb-6">
+            <h4 className="text-lg font-bold text-gray-900 mb-3">🌿 Sky Garden - El Jardín del Cielo (¡GRATIS!)</h4>
+            <p className="text-gray-700 mb-4">
+              Después de la Torre, subimos al mirador GRATUITO más alto de Londres. El Sky Garden, en el piso 35-37 del rascacielos "Walkie Talkie", ofrece vistas 360° de la ciudad desde 155 metros de altura, rodeado de jardines tropicales exóticos y terrazas al aire libre.
+            </p>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+              <div>
+                <h5 className="font-semibold text-gray-900 mb-2">🎫 Información Práctica:</h5>
+                <ul className="text-sm text-gray-700 space-y-1 list-none">
+                  <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Entrada: ¡COMPLETAMENTE GRATIS!</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Altura: 155 metros (piso 35-37)</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>Reserva: Obligatoria online (2-3 semanas antes)</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-yellow-400 rounded-full mr-3"></span>Horario: 10:00-18:00 (Lun-Vie), 11:00-21:00 (Fin de semana)</li>
+                </ul>
               </div>
-              <div className="bg-white rounded-lg p-3 shadow-sm">
-                <h5 className="font-semibold text-gray-900 mb-1">🏙️ The Shard</h5>
-                <p className="text-xs text-gray-700">310m, vistas hasta 64km. 33-37 € online.</p>
+              <div>
+                <h5 className="font-semibold text-gray-900 mb-2">🌟 Qué Ver:</h5>
+                <ul className="text-sm text-gray-700 space-y-1 list-none">
+                  <li className="flex items-center"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3"></span>Vistas 360° de Londres</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-pink-400 rounded-full mr-3"></span>Jardín tropical en el cielo</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-orange-400 rounded-full mr-3"></span>Terrazas al aire libre</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-emerald-400 rounded-full mr-3"></span>Bar y restaurante (opcional)</li>
+                </ul>
               </div>
-              <div className="bg-white rounded-lg p-3 shadow-sm">
-                <h5 className="font-semibold text-gray-900 mb-1">⛪ St Paul's</h5>
-                <p className="text-xs text-gray-700">Cúpula 111m. 27 € entrada. 528 escalones.</p>
+            </div>
+
+            <div className="bg-white rounded-xl p-3 border border-gray-200 shadow-sm">
+              <p className="text-xs text-emerald-600">💡 <strong>Importante:</strong> Sky Garden se llena rápido. Reserva tu slot gratuito con 2-3 semanas de antelación en skygarden.london. Si no hay disponibilidad, ve a The Shard como alternativa de pago.</p>
+            </div>
+          </div>
+
+          {/* The Shard */}
+          <div className="bg-sky-50 border border-sky-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300 mb-6">
+            <h4 className="text-lg font-bold text-gray-900 mb-3">🏙️ The Shard - El Rascacielos Más Alto de Europa Occidental</h4>
+            <p className="text-gray-700 mb-4">
+              Si Sky Garden está lleno o prefieres vistas aún más altas, The Shard te eleva a 310 metros (pisos 68-72). Es el edificio más alto del Reino Unido y ofrece vistas hasta 64 kilómetros en días despejados. Su diseño de cristal piramidal lo hace inconfundible en el skyline londinense.
+            </p>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+              <div>
+                <h5 className="font-semibold text-gray-900 mb-2">🎫 Información Práctica:</h5>
+                <ul className="text-sm text-gray-700 space-y-1 list-none">
+                  <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Entrada: £28-32 (online adelantado)</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Altura: 310 metros (pisos 68-72)</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>Vistas: Hasta 64 km en días claros</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-yellow-400 rounded-full mr-3"></span>Horario: 10:00-22:00 (última entrada 20:00)</li>
+                </ul>
               </div>
+              <div>
+                <h5 className="font-semibold text-gray-900 mb-2">⭐ Experiencia:</h5>
+                <ul className="text-sm text-gray-700 space-y-1 list-none">
+                  <li className="flex items-center"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3"></span>Vistas panorámicas 360°</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-pink-400 rounded-full mr-3"></span>Telescopios interactivos</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-indigo-400 rounded-full mr-3"></span>Bar champagne en piso 72</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-orange-400 rounded-full mr-3"></span>Baños en el cielo (¡literalmente!)</li>
+                </ul>
+              </div>
+            </div>
+
+            <div className="bg-white rounded-xl p-3 border border-gray-200 shadow-sm">
+              <p className="text-xs text-sky-600">💡 <strong>Ahorro:</strong> Compra online con antelación para ahorrar £5-8 vs precio en taquilla. Atardecer (16:00-17:00h en noviembre) es el mejor momento.</p>
+            </div>
+          </div>
+
+          {/* St Paul's Cathedral */}
+          <div className="bg-amber-50 border border-amber-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
+            <h4 className="text-lg font-bold text-gray-900 mb-3">⛪ Catedral de San Pablo - La Obra Maestra Barroca de Londres</h4>
+            <p className="text-gray-700 mb-4">
+              Bajamos del cielo para entrar en la catedral anglicana más importante de Londres. Su icónica cúpula (111 metros) ha dominado el skyline durante más de 300 años. Aquí se celebró la boda del Príncipe Carlos y Lady Diana en 1981, y los funerales de Churchill y Thatcher.
+            </p>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+              <div>
+                <h5 className="font-semibold text-gray-900 mb-2">🎫 Información Práctica:</h5>
+                <ul className="text-sm text-gray-700 space-y-1 list-none">
+                  <li className="flex items-center"><span className="w-2 h-2 bg-gold-400 rounded-full mr-3"></span>Entrada: £23 adultos (online)</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Incluye: Audioguía en español</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Duración: 1.5-2 horas</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>Horario: 08:30-16:30 (Lun-Sáb)</li>
+                </ul>
+              </div>
+              <div>
+                <h5 className="font-semibold text-gray-900 mb-2">⭐ Imprescindibles:</h5>
+                <ul className="text-sm text-gray-700 space-y-1 list-none">
+                  <li className="flex items-center"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3"></span>Whispering Gallery (257 escalones)</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-pink-400 rounded-full mr-3"></span>Golden Gallery (528 escalones, vistas top)</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-orange-400 rounded-full mr-3"></span>Cripta con tumbas de Nelson y Wellington</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-emerald-400 rounded-full mr-3"></span>Mosaicos victorianos espectaculares</li>
+                </ul>
+              </div>
+            </div>
+
+            <div className="bg-white rounded-xl p-3 border border-gray-200 shadow-sm mb-3">
+              <p className="text-xs text-amber-600">💡 <strong>The Whispering Gallery:</strong> Galería circular donde un susurro en un lado se escucha perfectamente en el lado opuesto (42 metros de distancia). Efecto acústico único en el mundo.</p>
+            </div>
+
+            <div className="bg-gradient-to-r from-yellow-100 to-orange-100 border-2 border-yellow-300 rounded-lg p-3">
+              <p className="text-xs text-yellow-900">
+                <strong>🚶‍♂️ Bonus:</strong> Después de St Paul's, cruza el Millennium Bridge peatonal (5 min) hasta Tate Modern (museo de arte contemporáneo GRATIS). Vistas increíbles del puente con St Paul's de fondo.
+              </p>
             </div>
           </div>
         </div>
