@@ -1079,118 +1079,195 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
         </div>
       </div>
 
-      {/* DÍA 3 */}
-      <div className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
-        <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6 flex items-center">
-          <span className="bg-gradient-to-br from-emerald-500 to-green-500 text-white w-14 h-14 rounded-2xl flex items-center justify-center text-xl font-bold mr-4 shadow-lg">3</span>
-          DÍA 3: De los Tesoros del Mundo a los Parques Reales
-        </h2>
+{/* DÍA 3 */}
+<div className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
+  <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6 flex items-center">
+    <span className="bg-gradient-to-br from-emerald-500 to-green-500 text-white w-14 h-14 rounded-2xl flex items-center justify-center text-xl font-bold mr-4 shadow-lg">3</span>
+    DÍA 3: De los Tesoros del Mundo a los Parques Reales
+  </h2>
 
-        {/* British Museum + Piccadilly + Shopping - Compacto */}
-        <div className="mb-8">
-          <h3 className="text-lg font-bold text-gray-900 mb-4 flex items-center">
-            <div className="w-1 h-6 bg-gradient-to-b from-amber-400 to-yellow-400 rounded-full mr-3"></div>
-            British Museum + Piccadilly + Shopping (9:00h - 15:30h)
-          </h3>
-          <div className="bg-amber-50 border border-amber-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
-            <h4 className="text-lg font-bold text-gray-900 mb-3">Tesoros de la Humanidad + Centro Comercial</h4>
-            <div className="mb-4">
-              <img
-                src="https://images.pexels.com/photos/6061618/pexels-photo-6061618.jpeg"
-                alt="British Museum Great Court"
-                className="w-full h-48 sm:h-64 object-cover rounded-xl shadow-lg mb-4"
-              />
-            </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <div>
-                <h5 className="font-semibold text-gray-900 mb-2">🏛️ British Museum (GRATIS):</h5>
-                <ul className="text-sm text-gray-700 space-y-1 list-none">
-                  <li className="flex items-center"><span className="w-2 h-2 bg-gold-400 rounded-full mr-3"></span>Piedra de Rosetta (Room 4)</li>
-                  <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Momias Egipcias (62-63)</li>
-                  <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Horario: 10:00-17:00</li>
-                </ul>
-              </div>
-              <div>
-                <h5 className="font-semibold text-gray-900 mb-2">🛍️ Shopping:</h5>
-                <ul className="text-sm text-gray-700 space-y-1 list-none">
-                  <li className="flex items-center"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3"></span>Carnaby St: Tiendas vintage</li>
-                  <li className="flex items-center"><span className="w-2 h-2 bg-pink-400 rounded-full mr-3"></span>Oxford St: Selfridges, Primark</li>
-                  <li className="flex items-center"><span className="w-2 h-2 bg-orange-400 rounded-full mr-3"></span>Chinatown: Almuerzo 9-18 €</li>
-                </ul>
-              </div>
-            </div>
-          </div>
+  {/* 1. BRITISH MUSEUM */}
+  <div className="mb-8">
+    <h3 className="text-lg font-bold text-gray-900 mb-4 flex items-center">
+      <div className="w-1 h-6 bg-gradient-to-b from-amber-400 to-yellow-400 rounded-full mr-3"></div>
+      British Museum - Tesoros de la Humanidad (9:00h - 12:30h)
+    </h3>
+    <div className="bg-amber-50 border border-amber-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
+      <h4 className="text-lg font-bold text-gray-900 mb-3">🏛️ El Museo Más Visitado del Reino Unido (¡GRATIS!)</h4>
+      <div className="mb-4">
+        <img
+          src="https://images.pexels.com/photos/6061618/pexels-photo-6061618.jpeg"
+          alt="British Museum Great Court"
+          className="w-full h-48 sm:h-64 object-cover rounded-xl shadow-lg mb-4"
+        />
+      </div>
+      <p className="text-gray-700 mb-4">
+        El museo más importante de Londres con 8 millones de objetos que abarcan 2 millones de años de historia humana. La entrada es GRATUITA, solo pagas exposiciones temporales especiales.
+      </p>
+
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+        <div>
+          <h5 className="font-semibold text-gray-900 mb-2">⭐ Top 5 Imprescindibles:</h5>
+          <ul className="text-sm text-gray-700 space-y-1 list-none">
+            <li className="flex items-center"><span className="w-2 h-2 bg-gold-400 rounded-full mr-3"></span>Piedra de Rosetta (Room 4)</li>
+            <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Momias Egipcias (Rooms 62-63)</li>
+            <li className="flex items-center"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3"></span>Esculturas del Partenón (Room 18)</li>
+            <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Samurái Japonés (Rooms 92-94)</li>
+            <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>Great Court (cúpula de cristal)</li>
+          </ul>
         </div>
-
-        {/* Notting Hill */}
-        <div className="mb-8">
-          <h3 className="text-lg font-bold text-gray-900 mb-4 flex items-center">
-            <div className="w-1 h-6 bg-gradient-to-b from-pink-400 to-rose-400 rounded-full mr-3"></div>
-            Notting Hill - Barrio Instagrameable (15:30h)
-          </h3>
-          <div className="bg-pink-50 border border-pink-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
-            <h4 className="text-lg font-bold text-gray-900 mb-3">Casitas de Colores + Portobello Market</h4>
-            <div className="mb-4">
-              <img
-                src="https://images.pexels.com/photos/12705658/pexels-photo-12705658.jpeg"
-                alt="Notting Hill casas coloridas"
-                className="w-full h-48 sm:h-64 object-cover rounded-xl shadow-lg mb-4"
-              />
-            </div>
-            <p className="text-gray-700 mb-4">
-              El barrio residencial más bonito de Londres. Casas victorianas de colores pastel y el mercadillo de antigüedades más famoso del mundo.
-            </p>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <div>
-                <h5 className="font-semibold text-gray-900 mb-2">🛍️ Portobello Market:</h5>
-                <ul className="text-sm text-gray-700 space-y-1 list-none">
-                  <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Sábado: Día completo (8:00-19:00)</li>
-                  <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Antigüedades, vintage, comida</li>
-                </ul>
-              </div>
-              <div>
-                <h5 className="font-semibold text-gray-900 mb-2">📸 Fotos Instagram:</h5>
-                <ul className="text-sm text-gray-700 space-y-1 list-none">
-                  <li className="flex items-center"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3"></span>St Luke's Mews (colores pastel)</li>
-                  <li className="flex items-center"><span className="w-2 h-2 bg-pink-400 rounded-full mr-3"></span>Notting Hill Bookshop (película)</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* Hyde Park */}
-        <div className="mb-8">
-          <h3 className="text-lg font-bold text-gray-900 mb-4 flex items-center">
-            <div className="w-1 h-6 bg-gradient-to-b from-green-400 to-emerald-400 rounded-full mr-3"></div>
-            Hyde Park - Paseo Real al Atardecer (17:30h)
-          </h3>
-          <div className="bg-green-50 border border-green-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
-            <h4 className="text-lg font-bold text-gray-900 mb-3">Los Pulmones Verdes de Londres</h4>
-            <p className="text-gray-700 mb-4">
-              Terminamos el viaje con un paseo relajado por el parque real más famoso. 253 hectáreas de naturaleza en pleno centro.
-            </p>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <div>
-                <h5 className="font-semibold text-gray-900 mb-2">⭐ Puntos Imprescindibles:</h5>
-                <ul className="text-sm text-gray-700 space-y-1 list-none">
-                  <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Serpentine Lake</li>
-                  <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Diana Memorial Fountain</li>
-                  <li className="flex items-center"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3"></span>Estatua Peter Pan</li>
-                </ul>
-              </div>
-              <div>
-                <h5 className="font-semibold text-gray-900 mb-2">🎄 Winter Wonderland:</h5>
-                <ul className="text-sm text-gray-700 space-y-1 list-none">
-                  <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>21 Nov - 5 Ene</li>
-                  <li className="flex items-center"><span className="w-2 h-2 bg-yellow-400 rounded-full mr-3"></span>Entrada gratis (atracciones se pagan)</li>
-                  <li className="flex items-center"><span className="w-2 h-2 bg-pink-400 rounded-full mr-3"></span>Mercado navideño + pista hielo</li>
-                </ul>
-              </div>
-            </div>
-          </div>
+        <div>
+          <h5 className="font-semibold text-gray-900 mb-2">🎫 Info Práctica:</h5>
+          <ul className="text-sm text-gray-700 space-y-1 list-none">
+            <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Entrada: GRATIS</li>
+            <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Horario: 10:00-17:00 (Viernes hasta 20:30)</li>
+            <li className="flex items-center"><span className="w-2 h-2 bg-yellow-400 rounded-full mr-3"></span>Duración: 2.5-3 horas</li>
+            <li className="flex items-center"><span className="w-2 h-2 bg-orange-400 rounded-full mr-3"></span>Metro: Russell Square / Tottenham Court</li>
+          </ul>
         </div>
       </div>
+
+      <div className="bg-white rounded-xl p-3 border border-gray-200 shadow-sm">
+        <p className="text-xs text-amber-600">💡 <strong>Consejo:</strong> Llega a las 10:00 en punto (apertura) para evitar colas. Descarga la app oficial del museo para tour autoguiado gratuito en español.</p>
+      </div>
+    </div>
+  </div>
+
+  {/* 2. PICCADILLY CIRCUS + SHOPPING */}
+  <div className="mb-8">
+    <h3 className="text-lg font-bold text-gray-900 mb-4 flex items-center">
+      <div className="w-1 h-6 bg-gradient-to-b from-rose-400 to-pink-400 rounded-full mr-3"></div>
+      Piccadilly Circus + Shopping (12:30h - 15:30h)
+    </h3>
+    <div className="bg-rose-50 border border-rose-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
+      <h4 className="text-lg font-bold text-gray-900 mb-3">🎭 El "Times Square" de Londres</h4>
+
+      <p className="text-gray-700 mb-4">
+        La plaza más famosa de Londres con pantallas LED gigantes, estatua de Eros, y el epicentro del West End. Desde aquí accedes a las mejores zonas de compras de la ciudad.
+      </p>
+
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+        <div>
+          <h5 className="font-semibold text-gray-900 mb-2">📍 Piccadilly Circus:</h5>
+          <ul className="text-sm text-gray-700 space-y-1 list-none">
+            <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>Pantallas LED icónicas (estilo Times Square)</li>
+            <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Estatua de Eros (punto de encuentro)</li>
+            <li className="flex items-center"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3"></span>Entrada a Soho y West End</li>
+            <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Metro: Piccadilly Circus</li>
+          </ul>
+        </div>
+        <div>
+          <h5 className="font-semibold text-gray-900 mb-2">🛍️ Zonas de Shopping:</h5>
+          <ul className="text-sm text-gray-700 space-y-1 list-none">
+            <li className="flex items-center"><span className="w-2 h-2 bg-pink-400 rounded-full mr-3"></span><strong>Carnaby St:</strong> Tiendas vintage/alternativas</li>
+            <li className="flex items-center"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3"></span><strong>Oxford St:</strong> Selfridges, Primark, H&M</li>
+            <li className="flex items-center"><span className="w-2 h-2 bg-orange-400 rounded-full mr-3"></span><strong>Regent St:</strong> Hamleys (juguetes), Apple</li>
+            <li className="flex items-center"><span className="w-2 h-2 bg-yellow-400 rounded-full mr-3"></span><strong>Liberty London:</strong> Grandes almacenes de lujo</li>
+          </ul>
+        </div>
+      </div>
+
+      <div className="bg-gradient-to-r from-red-100 to-pink-100 border-2 border-red-300 rounded-lg p-3 mb-3">
+        <p className="text-xs text-red-900">
+          <strong>🍜 Almuerzo en Chinatown:</strong> A 5 min a pie de Piccadilly. Menús completos desde 10-20€. Recomendado: Bao buns, dim sum, ramen.
+        </p>
+      </div>
+
+      <div className="bg-white rounded-xl p-3 border border-gray-200 shadow-sm">
+        <p className="text-xs text-rose-600">💡 <strong>Foto imprescindible:</strong> Cruza hacia la estatua de Eros para foto frontal con las pantallas LED de fondo. Mejor de noche, pero durante el día también es icónica.</p>
+      </div>
+    </div>
+  </div>
+
+  {/* 3. NOTTING HILL */}
+  <div className="mb-8">
+    <h3 className="text-lg font-bold text-gray-900 mb-4 flex items-center">
+      <div className="w-1 h-6 bg-gradient-to-b from-pink-400 to-rose-400 rounded-full mr-3"></div>
+      Notting Hill - Barrio Instagrameable (15:30h - 17:30h)
+    </h3>
+    <div className="bg-pink-50 border border-pink-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
+      <h4 className="text-lg font-bold text-gray-900 mb-3">🏡 Casitas de Colores + Portobello Market</h4>
+      <div className="mb-4">
+        <img
+          src="https://images.pexels.com/photos/12705658/pexels-photo-12705658.jpeg"
+          alt="Notting Hill casas coloridas"
+          className="w-full h-48 sm:h-64 object-cover rounded-xl shadow-lg mb-4"
+        />
+      </div>
+      <p className="text-gray-700 mb-4">
+        El barrio residencial más bonito de Londres. Casas victorianas de colores pastel y el mercadillo de antigüedades más famoso del mundo. Popularizado por la película de Hugh Grant y Julia Roberts.
+      </p>
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+        <div>
+          <h5 className="font-semibold text-gray-900 mb-2">🛍️ Portobello Market:</h5>
+          <ul className="text-sm text-gray-700 space-y-1 list-none">
+            <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span><strong>Mejor día:</strong> Sábado (8:00-19:00) completo</li>
+            <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Lunes-Viernes: menos puestos (9:00-18:00)</li>
+            <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Antigüedades, vintage, comida, ropa</li>
+            <li className="flex items-center"><span className="w-2 h-2 bg-yellow-400 rounded-full mr-3"></span>Metro: Notting Hill Gate / Ladbroke Grove</li>
+          </ul>
+        </div>
+        <div>
+          <h5 className="font-semibold text-gray-900 mb-2">📸 Fotos Instagram:</h5>
+          <ul className="text-sm text-gray-700 space-y-1 list-none">
+            <li className="flex items-center"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3"></span>St Luke's Mews (colores pastel)</li>
+            <li className="flex items-center"><span className="w-2 h-2 bg-pink-400 rounded-full mr-3"></span>Notting Hill Bookshop (de la película)</li>
+            <li className="flex items-center"><span className="w-2 h-2 bg-orange-400 rounded-full mr-3"></span>Lancaster Road (casas azules/rosas)</li>
+            <li className="flex items-center"><span className="w-2 h-2 bg-emerald-400 rounded-full mr-3"></span>Llega antes de 11:30 para evitar multitudes</li>
+          </ul>
+        </div>
+      </div>
+
+      <div className="bg-white rounded-xl p-3 border border-gray-200 shadow-sm">
+        <p className="text-xs text-pink-600">💡 <strong>Consejo:</strong> Si NO es sábado, igualmente merece la pena visitar Notting Hill solo por las casas de colores y el ambiente. El mercado entre semana tiene menos puestos pero es más tranquilo.</p>
+      </div>
+    </div>
+  </div>
+
+  {/* 4. HYDE PARK */}
+  <div className="mb-8">
+    <h3 className="text-lg font-bold text-gray-900 mb-4 flex items-center">
+      <div className="w-1 h-6 bg-gradient-to-b from-green-400 to-emerald-400 rounded-full mr-3"></div>
+      Hyde Park - Paseo Real al Atardecer (17:30h - 19:00h)
+    </h3>
+    <div className="bg-green-50 border border-green-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
+      <h4 className="text-lg font-bold text-gray-900 mb-3">🌳 Los Pulmones Verdes de Londres</h4>
+      <p className="text-gray-700 mb-4">
+        Terminamos el viaje con un paseo relajado por el parque real más famoso. 253 hectáreas de naturaleza en pleno centro de Londres. En diciembre, oscurece sobre las 16:00h, así que verás las luces navideñas encendidas.
+      </p>
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+        <div>
+          <h5 className="font-semibold text-gray-900 mb-2">⭐ Puntos Imprescindibles:</h5>
+          <ul className="text-sm text-gray-700 space-y-1 list-none">
+            <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Serpentine Lake</li>
+            <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Diana Memorial Fountain</li>
+            <li className="flex items-center"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3"></span>Estatua Peter Pan</li>
+            <li className="flex items-center"><span className="w-2 h-2 bg-orange-400 rounded-full mr-3"></span>Metro: Hyde Park Corner / Marble Arch</li>
+          </ul>
+        </div>
+        <div>
+          <h5 className="font-semibold text-gray-900 mb-2">🎄 Winter Wonderland 2025:</h5>
+          <ul className="text-sm text-gray-700 space-y-1 list-none">
+            <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span><strong>14 Nov - 1 Ene 2026</strong></li>
+            <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Entrada: Gratis off-peak, 5-7.50€ peak</li>
+            <li className="flex items-center"><span className="w-2 h-2 bg-yellow-400 rounded-full mr-3"></span>Horario: 10:00-22:00</li>
+            <li className="flex items-center"><span className="w-2 h-2 bg-pink-400 rounded-full mr-3"></span>Mercado navideño + pista hielo + atracciones</li>
+          </ul>
+        </div>
+      </div>
+
+      <div className="bg-gradient-to-r from-red-100 to-green-100 border-2 border-red-300 rounded-lg p-3 mb-3">
+        <p className="text-xs text-red-900">
+          <strong>🎅 Winter Wonderland (14 Nov - 1 Ene):</strong> Si viajas en diciembre, Hyde Park se transforma en un enorme mercado navideño con pista de patinaje, atracciones, circo, Ice Kingdom y mercadillos. Entrada al recinto gratis en horarios off-peak. Las atracciones se pagan aparte (11-18€).
+        </p>
+      </div>
+
+      <div className="bg-white rounded-xl p-3 border border-gray-200 shadow-sm">
+        <p className="text-xs text-green-600">💡 <strong>Reserva Winter Wonderland:</strong> Si quieres entrar, RESERVA online con antelación en hydeparkwinterwonderland.com. Los horarios peak (tardes/fines de semana) se agotan rápido.</p>
+      </div>
+    </div>
+  </div>
+</div>
 
       {/* MÁS LUGARES QUE VER */}
       <div className="bg-gradient-to-r from-purple-50 to-pink-50 border border-purple-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
