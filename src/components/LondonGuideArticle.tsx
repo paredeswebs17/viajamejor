@@ -1239,6 +1239,13 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
     </h3>
     <div className="bg-green-50 border border-green-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
       <h4 className="text-lg font-bold text-gray-900 mb-3">🌳 Los Pulmones Verdes de Londres</h4>
+      <div className="mb-4">
+        <img
+          src="https://images.pexels.com/photos/32911277/pexels-photo-32911277.jpeg"
+          alt="Los Pulmones Verdes de Londres"
+          className="w-full h-48 sm:h-64 object-cover rounded-xl shadow-lg mb-4"
+        />
+      </div>
       <p className="text-gray-700 mb-4">
         Terminamos el viaje con un paseo relajado por el parque real más famoso. 253 hectáreas de naturaleza en pleno centro de Londres. En diciembre, oscurece sobre las 16:00h, así que verás las luces navideñas encendidas.
       </p>
