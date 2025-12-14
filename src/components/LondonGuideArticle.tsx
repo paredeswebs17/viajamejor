@@ -561,22 +561,22 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
                 <span className="text-2xl">🚇</span>
               </div>
               <div>
-                <h3 className="text-xl font-bold text-gray-900">King's Cross / St Pancras - Hub de Transporte</h3>
-                <p className="text-sm text-gray-600">Perfecta conexión con todo Londres y Europa</p>
+                <h3 className="text-xl font-bold text-gray-900">King's Cross / St Pancras</h3>
+                <p className="text-sm text-gray-600">Perfecta conexión con todo Londres</p>
               </div>
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-4">
               <div className="bg-gradient-to-br from-emerald-50 to-green-50 rounded-xl p-4 border border-emerald-200 flex flex-col">
                 <div className="flex-grow">
-                  <h4 className="font-bold text-gray-900 mb-2">The Standard London ⭐⭐⭐⭐</h4>
-                  <p className="text-xs text-gray-600 mb-2">📍 King's Cross</p>
-                  <p className="text-sm text-gray-700 mb-3">Diseño moderno espectacular en la estación St Pancras.</p>
+                  <h4 className="font-bold text-gray-900 mb-2">Tavistock Hotel ⭐⭐⭐</h4>
+                  <p className="text-xs text-gray-600 mb-2">📍 Camden</p>
+                  <p className="text-sm text-gray-700 mb-3">Hotel céntrico a 7 min de Euston Station y 10 min del Museo Británico. WiFi gratis, recepción 24h y restaurante.</p>
                 </div>
                 <div className="flex items-center justify-between flex-wrap gap-2 mt-auto">
-                  <span className="text-lg font-bold text-emerald-600">€€€</span>
+                  <span className="text-lg font-bold text-emerald-600">€</span>
                   <a
-                    href="https://booking.tpk.lv/xbg7sSQv"
+                    href="https://booking.tpk.lv/5NxF9hAu"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm"
@@ -630,7 +630,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
 
             <div className="bg-green-50 border border-green-200 rounded-lg p-3">
               <p className="text-sm text-green-800">
-                <strong>✅ Por qué elegir esta zona:</strong> Conexión directa con 6 líneas de metro. Eurostar a París/Bruselas desde aquí. A 10 min del centro en metro. Andén 9¾ de Harry Potter en King's Cross.
+                <strong>✅ Por qué elegir esta zona:</strong> Conexión directa con 6 líneas de metro. A 10 min del centro en metro. Andén 9¾ de Harry Potter en King's Cross.
               </p>
             </div>
           </div>
