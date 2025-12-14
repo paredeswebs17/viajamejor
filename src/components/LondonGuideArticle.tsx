@@ -591,7 +591,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
                 <div className="flex-grow">
                   <h4 className="font-bold text-gray-900 mb-2">Morton Hotel ⭐⭐⭐⭐</h4>
                   <p className="text-xs text-gray-600 mb-2">📍 Camden</p>
-                  <p className="text-sm text-gray-700 mb-3">A 7 min del Museo Británico. Habitaciones con aire acondicionado, nevera y caja fuerte. Recepción 24h.</p>
+                  <p className="text-sm text-gray-700 mb-3">A 7 min andando del Museo Británico. Metro Russell Square a 2 min. Zona tranquila cerca de Covent Garden.</p>
                 </div>
                 <div className="flex items-center justify-between flex-wrap gap-2 mt-auto">
                   <span className="text-lg font-bold text-teal-600">€€</span>
@@ -611,7 +611,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
                 <div className="flex-grow">
                   <h4 className="font-bold text-gray-900 mb-2">Pullman London St Pancras ⭐⭐⭐⭐</h4>
                   <p className="text-xs text-gray-600 mb-2">📍 Camden</p>
-                  <p className="text-sm text-gray-700 mb-3">A 3 min del Eurostar. Centro de fitness, WiFi gratis y servicio 24h. Ubicación ideal en el centro.</p>
+                  <p className="text-sm text-gray-700 mb-3">En St Pancras Station (Eurostar y 6 líneas metro). A 15 min del Museo Británico y King's Cross.</p>
                 </div>
                 <div className="flex items-center justify-between flex-wrap gap-2 mt-auto">
                   <span className="text-lg font-bold text-blue-600">€€€</span>
