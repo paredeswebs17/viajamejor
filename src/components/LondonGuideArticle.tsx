@@ -894,8 +894,6 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
               <div>
                 <h5 className="font-semibold text-gray-900 mb-2">🎭 Cambio de Guardia:</h5>
                 <ul className="text-sm text-gray-700 space-y-1 list-none">
-                  <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>Frecuencia: Lun/Mié/Vie a las 11:00h</li>
-                  <li className="flex items-center"><span className="w-2 h-2 bg-yellow-400 rounded-full mr-3"></span>Domingos: Sunday Parade a las 10:00h</li>
                   <li className="flex items-center"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3"></span>Duración: 45 minutos</li>
                   <li className="flex items-center"><span className="w-2 h-2 bg-orange-400 rounded-full mr-3"></span>⚠️ NO hay todos los días</li>
                   <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>¡Completamente GRATUITO!</li>
