@@ -589,14 +589,14 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
 
               <div className="bg-gradient-to-br from-teal-50 to-cyan-50 rounded-xl p-4 border border-teal-200 flex flex-col">
                 <div className="flex-grow">
-                  <h4 className="font-bold text-gray-900 mb-2">Megaro Hotel ⭐⭐⭐</h4>
-                  <p className="text-xs text-gray-600 mb-2">📍 King's Cross</p>
-                  <p className="text-sm text-gray-700 mb-3">Boutique con carácter. Excelente desayuno incluido.</p>
+                  <h4 className="font-bold text-gray-900 mb-2">Morton Hotel ⭐⭐⭐⭐</h4>
+                  <p className="text-xs text-gray-600 mb-2">📍 Camden</p>
+                  <p className="text-sm text-gray-700 mb-3">A 7 min del Museo Británico. Habitaciones con aire acondicionado, nevera y caja fuerte. Recepción 24h.</p>
                 </div>
                 <div className="flex items-center justify-between flex-wrap gap-2 mt-auto">
                   <span className="text-lg font-bold text-teal-600">€€</span>
                   <a
-                    href="https://booking.tpk.lv/dXJgWO4A"
+                    href="https://booking.tpk.lv/syLZxUWd"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm"
@@ -609,14 +609,14 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
 
               <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl p-4 border border-blue-200 flex flex-col">
                 <div className="flex-grow">
-                  <h4 className="font-bold text-gray-900 mb-2">Travelodge London Kings Cross ⭐⭐</h4>
-                  <p className="text-xs text-gray-600 mb-2">📍 King's Cross</p>
-                  <p className="text-sm text-gray-700 mb-3">Económico y funcional. Perfecto presupuestos ajustados.</p>
+                  <h4 className="font-bold text-gray-900 mb-2">Pullman London St Pancras ⭐⭐⭐⭐</h4>
+                  <p className="text-xs text-gray-600 mb-2">📍 Camden</p>
+                  <p className="text-sm text-gray-700 mb-3">A 3 min del Eurostar. Centro de fitness, WiFi gratis y servicio 24h. Ubicación ideal en el centro.</p>
                 </div>
                 <div className="flex items-center justify-between flex-wrap gap-2 mt-auto">
-                  <span className="text-lg font-bold text-blue-600">€</span>
+                  <span className="text-lg font-bold text-blue-600">€€€</span>
                   <a
-                    href="https://booking.tpk.lv/gn16EI6z"
+                    href="https://booking.tpk.lv/gaF2pTGa"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm"
