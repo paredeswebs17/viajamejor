@@ -491,7 +491,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
                 <div className="flex-grow">
                   <h4 className="font-bold text-gray-900 mb-2">The Z Hotel Strand ⭐⭐⭐</h4>
                   <p className="text-xs text-gray-600 mb-2">📍 Westminster</p>
-                  <p className="text-sm text-gray-700 mb-3">Boutique moderno con ubicación ideal. A 2 min de Teatro Savoy y 5 min de Trafalgar Square.</p>
+                  <p className="text-sm text-gray-700 mb-3">Pequeño hotel con ubicación ideal. A 2 min de Teatro Savoy y 5 min de Trafalgar Square.</p>
                 </div>
                 <div className="flex items-center justify-between flex-wrap gap-2 mt-auto">
                   <span className="text-lg font-bold text-sky-600">€</span>
