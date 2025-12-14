@@ -800,6 +800,15 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
                 </ul>
               </div>
             </div>
+
+            <a
+              href="https://tickets.parliament.uk/timeslot/big-ben-tour"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block w-full text-center py-2 px-4 bg-slate-700 text-white rounded-lg text-sm hover:bg-slate-800 transition"
+            >
+              Reservar tour Big Ben →
+            </a>
           </div>
         </div>
 
