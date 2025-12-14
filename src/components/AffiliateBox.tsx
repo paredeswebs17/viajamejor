@@ -47,14 +47,16 @@ const AffiliateBox: React.FC<AffiliateBoxProps> = ({
   return (
     <div className={`${bgClass} rounded-xl p-6 my-6 shadow-lg hover:shadow-xl transition-all duration-200`}>
       {/* Disclosure + Badge urgencia */}
-      <div className="flex items-center justify-between mb-3">
-        <div className="text-xs text-gray-600">📝 <em>Enlace de afiliado - Sin coste extra</em></div>
-        {discount && (
-          <div className="bg-red-500 text-white px-3 py-1 rounded-full text-xs font-bold animate-pulse">
-            ¡OFERTA LIMITADA!
-          </div>
-        )}
-      </div>
+      {(url || discount) && (
+        <div className="flex items-center justify-between mb-3">
+          {url && <div className="text-xs text-gray-600">📝 <em>Enlace de afiliado - Sin coste extra</em></div>}
+          {discount && (
+            <div className="bg-red-500 text-white px-3 py-1 rounded-full text-xs font-bold animate-pulse">
+              ¡OFERTA LIMITADA!
+            </div>
+          )}
+        </div>
+      )}
       
       <div className="flex items-start space-x-4">
         {image && (
@@ -96,14 +98,16 @@ const AffiliateBox: React.FC<AffiliateBoxProps> = ({
                 </div>
               )}
             </div>
-            
-            <button
-              onClick={handleClick}
-              className="bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white font-bold py-3 px-6 rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200 flex items-center space-x-2"
-            >
-              <span>{ctaText}</span>
-              {url && <ExternalLink className="h-5 w-5" />}
-            </button>
+
+            {(url || onClick) && (
+              <button
+                onClick={handleClick}
+                className="bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white font-bold py-3 px-6 rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200 flex items-center space-x-2"
+              >
+                <span>{ctaText}</span>
+                {url && <ExternalLink className="h-5 w-5" />}
+              </button>
+            )}
           </div>
           
           {platform && (
