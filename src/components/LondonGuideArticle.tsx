@@ -478,11 +478,11 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
           <div className="bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300">
             <div className="flex items-center mb-4">
               <div className="w-12 h-12 bg-gradient-to-br from-sky-500 to-blue-500 rounded-xl flex items-center justify-center mr-4">
-                <span className="text-2xl">🎭</span>
+                <span className="text-2xl">🏛️</span>
               </div>
               <div>
-                <h3 className="text-xl font-bold text-gray-900">Covent Garden - Centro Turístico Premium</h3>
-                <p className="text-sm text-gray-600">La ubicación perfecta para tu primera vez en Londres</p>
+                <h3 className="text-xl font-bold text-gray-900">Westminster / Covent Garden - Centro Histórico y Teatral</h3>
+                <p className="text-sm text-gray-600">El corazón turístico de Londres: monumentos + teatros + restaurantes</p>
               </div>
             </div>
 
@@ -550,7 +550,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
 
             <div className="bg-green-50 border border-green-200 rounded-lg p-3">
               <p className="text-sm text-green-800">
-                <strong>✅ Por qué elegir esta zona:</strong> El corazón absoluto de Londres turístico. A 5-10 minutos andando de: Trafalgar Square, Big Ben, London Eye, West End (teatros), Museo Británico. Zona peatonal llena de restaurantes, cafés, tiendas.
+                <strong>✅ Por qué elegir esta zona:</strong> La ubicación TOP para primera visita. A 5-15 min andando de: Big Ben, Westminster Abbey, Buckingham Palace, Trafalgar Square, London Eye, West End (teatros), National Gallery, Covent Garden Market. Perfecta combinación de monumentos históricos + vida nocturna + restaurantes de clase mundial.
               </p>
             </div>
           </div>
