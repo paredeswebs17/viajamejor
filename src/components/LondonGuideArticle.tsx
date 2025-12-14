@@ -1,6 +1,5 @@
 import React from 'react';
 import { ArrowLeft, Share2, Clock, MapPin, ExternalLink } from 'lucide-react';
-import AffiliateBox from './AffiliateBox';
 
 interface LondonGuideArticleProps {
   onBack: () => void;
@@ -102,124 +101,289 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
         <div className="mb-8">
           <h3 className="text-lg font-bold text-gray-900 mb-4">📍 Desde Aeropuerto de Heathrow (LHR)</h3>
 
-          <AffiliateBox
-            title="🚄 Tren - Heathrow Express - Opción Más Rápida"
-            description="Conexión directa a London Paddington sin paradas"
-            bullets={[
-              "Precio: Desde 29€ (online)",
-              "Duración: 15 minutos (T2/T3), 21 min (T5)",
-              "Horario: 05:00-23:30 (cada 15 min)",
-              "WiFi gratis, espacio para equipaje, enchufes",
-              "Niños menores de 15 años viajan GRATIS con adulto"
-            ]}
-            ctaText="Comprar Billete Heathrow Express"
-            url="https://gyg.me/JSudzJeY"
-            variant="default"
-          />
+          <div className="border-2 border-green-400 bg-green-50 rounded-xl p-4 mb-4">
+            <h4 className="text-lg font-bold text-gray-900 mb-2">
+              🔥 🚂 Heathrow Express - El Tren Más Rápido
+            </h4>
+            <p className="text-sm text-gray-700 mb-3">
+              Conexión directa a London Paddington sin paradas
+            </p>
 
-          <AffiliateBox
-            title="🚇 Metro - Piccadilly Line - Opción Más Económica"
-            description="Opción económica y directa al centro de Londres"
-            bullets={[
-              "Precio: 6,60€ con Oyster/Contactless",
-              "Duración: 50-60 minutos",
-              "Destino: Covent Garden, Leicester Square, Piccadilly Circus",
-              "Económico y directo"
-            ]}
-            variant="ghost"
-          />
+            <div className="space-y-2 mb-4">
+              <div className="flex items-center text-sm text-gray-700">
+                <span className="text-green-500 mr-2">✓</span>
+                <strong>Precio:</strong>&nbsp;Desde 29€ (online, compra anticipada)
+              </div>
+              <div className="flex items-center text-sm text-gray-700">
+                <span className="text-green-500 mr-2">✓</span>
+                Duración: 15 min (T2/T3), 21 min (T5)
+              </div>
+              <div className="flex items-center text-sm text-gray-700">
+                <span className="text-green-500 mr-2">✓</span>
+                Horario: 05:00-23:30 (cada 15 min)
+              </div>
+              <div className="flex items-center text-sm text-gray-700">
+                <span className="text-green-500 mr-2">✓</span>
+                WiFi gratis, espacio equipaje, enchufes
+              </div>
+              <div className="flex items-center text-sm text-gray-700">
+                <span className="text-green-500 mr-2">✓</span>
+                Niños -15 años: GRATIS con adulto
+              </div>
+            </div>
 
-          <AffiliateBox
-            title="🚕 Traslado Privado - Heathrow - Máximo Confort"
-            description="Servicio puerta a puerta desde el aeropuerto a tu hotel"
-            bullets={[
-              "Precio: Desde 46€ por persona",
-              "Duración: 45-90 min según tráfico",
-              "Ideal para familias, grupos o mucho equipaje",
-              "Puerta a puerta, sin esperas",
-              "Conductor profesional esperándote"
-            ]}
-            ctaText="Reservar Traslado Privado"
-            url="https://gyg.me/tqu0VpSP"
-            variant="default"
-          />
+            <a
+              href="https://gyg.me/JSudzJeY"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block w-full text-center py-2 px-4 bg-gray-100 text-gray-700 rounded-lg text-sm hover:bg-gray-200 transition"
+            >
+              Ver horarios y reservar →
+            </a>
+          </div>
+
+          <div className="border-2 border-yellow-400 bg-yellow-50 rounded-xl p-4 mb-4">
+            <h4 className="text-lg font-bold text-gray-900 mb-2">
+              🚇 Piccadilly Line (Metro) - Opción Más Económica
+            </h4>
+            <p className="text-sm text-gray-700 mb-3">
+              Opción económica y directa al centro de Londres
+            </p>
+
+            <div className="space-y-2">
+              <div className="flex items-center text-sm text-gray-700">
+                <span className="text-green-500 mr-2">✓</span>
+                <strong>Precio:</strong>&nbsp;6,60€ con Oyster/Contactless
+              </div>
+              <div className="flex items-center text-sm text-gray-700">
+                <span className="text-green-500 mr-2">✓</span>
+                Duración: 50-60 minutos
+              </div>
+              <div className="flex items-center text-sm text-gray-700">
+                <span className="text-green-500 mr-2">✓</span>
+                Destino: Covent Garden, Leicester Square, Piccadilly Circus
+              </div>
+              <div className="flex items-center text-sm text-gray-700">
+                <span className="text-green-500 mr-2">✓</span>
+                Económico y directo
+              </div>
+            </div>
+          </div>
+
+          <div className="border-2 border-orange-400 bg-orange-50 rounded-xl p-4 mb-4">
+            <h4 className="text-lg font-bold text-gray-900 mb-2">
+              🚖 Traslado Privado - Máximo Confort
+            </h4>
+            <p className="text-sm text-gray-700 mb-3">
+              Servicio puerta a puerta desde el aeropuerto a tu hotel
+            </p>
+
+            <div className="space-y-2 mb-4">
+              <div className="flex items-center text-sm text-gray-700">
+                <span className="text-green-500 mr-2">✓</span>
+                <strong>Precio:</strong>&nbsp;Desde 46€ por persona (tarifa fija)
+              </div>
+              <div className="flex items-center text-sm text-gray-700">
+                <span className="text-green-500 mr-2">✓</span>
+                Duración: 45-90 min según tráfico
+              </div>
+              <div className="flex items-center text-sm text-gray-700">
+                <span className="text-green-500 mr-2">✓</span>
+                Ideal para familias, grupos o mucho equipaje
+              </div>
+              <div className="flex items-center text-sm text-gray-700">
+                <span className="text-green-500 mr-2">✓</span>
+                Puerta a puerta, sin esperas
+              </div>
+              <div className="flex items-center text-sm text-gray-700">
+                <span className="text-green-500 mr-2">✓</span>
+                Conductor profesional esperándote
+              </div>
+            </div>
+
+            <a
+              href="https://gyg.me/tqu0VpSP"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block w-full text-center py-2 px-4 bg-gray-100 text-gray-700 rounded-lg text-sm hover:bg-gray-200 transition"
+            >
+              Ver horarios y reservar →
+            </a>
+          </div>
         </div>
 
         <div className="mb-8">
           <h3 className="text-lg font-bold text-gray-900 mb-4">📍 Desde Aeropuerto de Gatwick (LGW)</h3>
 
-          <AffiliateBox
-            title="🚄 Tren - Gatwick Express - Opción Más Rápida"
-            description="Conexión directa a London Victoria Station sin paradas"
-            bullets={[
-              "Precio: 23€ (online adelantado)",
-              "Duración: 30 minutos sin paradas",
-              "Destino: London Victoria Station",
-              "Frecuencia: Cada 15 minutos"
-            ]}
-            variant="default"
-          />
+          <div className="border-2 border-green-400 bg-green-50 rounded-xl p-4 mb-4">
+            <h4 className="text-lg font-bold text-gray-900 mb-2">
+              🔥 🚂 Gatwick Express - El Tren Más Rápido
+            </h4>
+            <p className="text-sm text-gray-700 mb-3">
+              Conexión directa a London Victoria Station sin paradas
+            </p>
 
-          <AffiliateBox
-            title="🚗 Traslado Privado - Gatwick - Máximo Confort"
-            description="Viaja cómodo desde el aeropuerto a tu hotel sin complicaciones"
-            bullets={[
-              "Precio: Desde 65€",
-              "Conductor esperándote en la terminal",
-              "Sin colas ni esperas",
-              "Vehículo privado y confortable",
-              "Precio fijo sin sorpresas"
-            ]}
-            ctaText="Reservar Traslado"
-            url="https://gyg.me/giqjZdgf"
-            variant="highlight"
-          />
+            <div className="space-y-2">
+              <div className="flex items-center text-sm text-gray-700">
+                <span className="text-green-500 mr-2">✓</span>
+                <strong>Precio:</strong>&nbsp;23€ (online, compra anticipada)
+              </div>
+              <div className="flex items-center text-sm text-gray-700">
+                <span className="text-green-500 mr-2">✓</span>
+                Duración: 30 minutos sin paradas
+              </div>
+              <div className="flex items-center text-sm text-gray-700">
+                <span className="text-green-500 mr-2">✓</span>
+                Destino: London Victoria Station
+              </div>
+              <div className="flex items-center text-sm text-gray-700">
+                <span className="text-green-500 mr-2">✓</span>
+                Frecuencia: Cada 15 minutos
+              </div>
+            </div>
+          </div>
+
+          <div className="border-2 border-orange-400 bg-orange-50 rounded-xl p-4 mb-4">
+            <h4 className="text-lg font-bold text-gray-900 mb-2">
+              🚖 Traslado Privado - Máximo Confort
+            </h4>
+            <p className="text-sm text-gray-700 mb-3">
+              Viaja cómodo desde el aeropuerto a tu hotel sin complicaciones
+            </p>
+
+            <div className="space-y-2 mb-4">
+              <div className="flex items-center text-sm text-gray-700">
+                <span className="text-green-500 mr-2">✓</span>
+                <strong>Precio:</strong>&nbsp;Desde 65€ (tarifa fija)
+              </div>
+              <div className="flex items-center text-sm text-gray-700">
+                <span className="text-green-500 mr-2">✓</span>
+                Conductor esperándote en la terminal
+              </div>
+              <div className="flex items-center text-sm text-gray-700">
+                <span className="text-green-500 mr-2">✓</span>
+                Sin colas ni esperas
+              </div>
+              <div className="flex items-center text-sm text-gray-700">
+                <span className="text-green-500 mr-2">✓</span>
+                Vehículo privado y confortable
+              </div>
+              <div className="flex items-center text-sm text-gray-700">
+                <span className="text-green-500 mr-2">✓</span>
+                Precio fijo sin sorpresas
+              </div>
+            </div>
+
+            <a
+              href="https://gyg.me/giqjZdgf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block w-full text-center py-2 px-4 bg-gray-100 text-gray-700 rounded-lg text-sm hover:bg-gray-200 transition"
+            >
+              Ver horarios y reservar →
+            </a>
+          </div>
         </div>
 
         <div className="mb-8">
           <h3 className="text-lg font-bold text-gray-900 mb-4">📍 Desde Aeropuerto de Stansted (STN)</h3>
 
-          <AffiliateBox
-            title="🚄 Tren - Stansted Express - Opción Más Rápida"
-            description="Conexión rápida a Liverpool Street Station en el centro de Londres"
-            bullets={[
-              "Precio: 22-27€ (online adelantado)",
-              "Duración: 47 minutos",
-              "Destino: Liverpool Street Station",
-              "Horario: 05:30-00:30"
-            ]}
-            ctaText="Comprar Billete Stansted Express"
-            url="https://gyg.me/YQaBsBwy"
-            variant="default"
-          />
+          <div className="border-2 border-green-400 bg-green-50 rounded-xl p-4 mb-4">
+            <h4 className="text-lg font-bold text-gray-900 mb-2">
+              🔥 🚂 Stansted Express - El Tren Más Rápido
+            </h4>
+            <p className="text-sm text-gray-700 mb-3">
+              Conexión rápida a Liverpool Street Station en el centro de Londres
+            </p>
+
+            <div className="space-y-2 mb-4">
+              <div className="flex items-center text-sm text-gray-700">
+                <span className="text-green-500 mr-2">✓</span>
+                <strong>Precio:</strong>&nbsp;22-27€ (online, compra anticipada)
+              </div>
+              <div className="flex items-center text-sm text-gray-700">
+                <span className="text-green-500 mr-2">✓</span>
+                Duración: 47 minutos
+              </div>
+              <div className="flex items-center text-sm text-gray-700">
+                <span className="text-green-500 mr-2">✓</span>
+                Destino: Liverpool Street Station
+              </div>
+              <div className="flex items-center text-sm text-gray-700">
+                <span className="text-green-500 mr-2">✓</span>
+                Horario: 05:30-00:30
+              </div>
+            </div>
+
+            <a
+              href="https://gyg.me/YQaBsBwy"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block w-full text-center py-2 px-4 bg-gray-100 text-gray-700 rounded-lg text-sm hover:bg-gray-200 transition"
+            >
+              Ver horarios y reservar →
+            </a>
+          </div>
         </div>
 
         <div className="mb-8">
           <h3 className="text-lg font-bold text-gray-900 mb-4">📍 Desde Aeropuerto de Luton (LTN)</h3>
 
-          <AffiliateBox
-            title="🚄 Tren - Luton Airport Express - Opción Más Rápida"
-            description="Combinación de shuttle bus gratuito y tren al centro de Londres"
-            bullets={[
-              "Precio: 20-23€ (online adelantado)",
-              "Duración: 40-50 minutos total",
-              "Destino: St Pancras, Farringdon, Blackfriars",
-              "Shuttle bus gratuito (5 min) + tren"
-            ]}
-            variant="default"
-          />
+          <div className="border-2 border-green-400 bg-green-50 rounded-xl p-4 mb-4">
+            <h4 className="text-lg font-bold text-gray-900 mb-2">
+              🔥 🚂 Luton Airport Express - El Tren Más Rápido
+            </h4>
+            <p className="text-sm text-gray-700 mb-3">
+              Combinación de shuttle bus gratuito y tren al centro de Londres
+            </p>
 
-          <AffiliateBox
-            title="🚌 Bus - National Express / easyBus - Opción Más Económica"
-            description="La opción más económica para llegar al centro de Londres"
-            bullets={[
-              "Precio: Desde 9-14€ (online)",
-              "Duración: 60-90 minutos",
-              "Destino: Victoria Coach Station",
-              "Muy económico, ideal si no tienes prisa"
-            ]}
-            variant="ghost"
-          />
+            <div className="space-y-2">
+              <div className="flex items-center text-sm text-gray-700">
+                <span className="text-green-500 mr-2">✓</span>
+                <strong>Precio:</strong>&nbsp;20-23€ (online, compra anticipada)
+              </div>
+              <div className="flex items-center text-sm text-gray-700">
+                <span className="text-green-500 mr-2">✓</span>
+                Duración: 40-50 minutos total
+              </div>
+              <div className="flex items-center text-sm text-gray-700">
+                <span className="text-green-500 mr-2">✓</span>
+                Destino: St Pancras, Farringdon, Blackfriars
+              </div>
+              <div className="flex items-center text-sm text-gray-700">
+                <span className="text-green-500 mr-2">✓</span>
+                Shuttle bus gratuito (5 min) + tren
+              </div>
+            </div>
+          </div>
+
+          <div className="border-2 border-yellow-400 bg-yellow-50 rounded-xl p-4 mb-4">
+            <h4 className="text-lg font-bold text-gray-900 mb-2">
+              🚌 National Express / easyBus - Opción Más Económica
+            </h4>
+            <p className="text-sm text-gray-700 mb-3">
+              La opción más económica para llegar al centro de Londres
+            </p>
+
+            <div className="space-y-2">
+              <div className="flex items-center text-sm text-gray-700">
+                <span className="text-green-500 mr-2">✓</span>
+                <strong>Precio:</strong>&nbsp;Desde 9-14€ (online)
+              </div>
+              <div className="flex items-center text-sm text-gray-700">
+                <span className="text-green-500 mr-2">✓</span>
+                Duración: 60-90 minutos
+              </div>
+              <div className="flex items-center text-sm text-gray-700">
+                <span className="text-green-500 mr-2">✓</span>
+                Destino: Victoria Coach Station
+              </div>
+              <div className="flex items-center text-sm text-gray-700">
+                <span className="text-green-500 mr-2">✓</span>
+                Muy económico, ideal si no tienes prisa
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
