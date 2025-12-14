@@ -112,7 +112,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
             <div className="space-y-2 mb-4">
               <div className="flex items-center text-sm text-gray-700">
                 <span className="text-green-500 mr-2">✓</span>
-                <strong>Precio:</strong>&nbsp;Desde 29€ (online, compra anticipada)
+                Precio: Desde 29€ (online, compra anticipada)
               </div>
               <div className="flex items-center text-sm text-gray-700">
                 <span className="text-green-500 mr-2">✓</span>
@@ -136,7 +136,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
               href="https://gyg.me/JSudzJeY"
               target="_blank"
               rel="noopener noreferrer"
-              className="block w-full text-center py-2 px-4 bg-gray-100 text-gray-700 rounded-lg text-sm hover:bg-gray-200 transition"
+              className="block w-full text-center py-2 px-4 bg-slate-700 text-white rounded-lg text-sm hover:bg-slate-800 transition"
             >
               Ver horarios y reservar →
             </a>
@@ -153,7 +153,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
             <div className="space-y-2">
               <div className="flex items-center text-sm text-gray-700">
                 <span className="text-green-500 mr-2">✓</span>
-                <strong>Precio:</strong>&nbsp;6,60€ con Oyster/Contactless
+                Precio: 6,60€ con Oyster/Contactless
               </div>
               <div className="flex items-center text-sm text-gray-700">
                 <span className="text-green-500 mr-2">✓</span>
@@ -181,7 +181,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
             <div className="space-y-2 mb-4">
               <div className="flex items-center text-sm text-gray-700">
                 <span className="text-green-500 mr-2">✓</span>
-                <strong>Precio:</strong>&nbsp;Desde 46€ por persona (tarifa fija)
+                Precio: Desde 46€ por persona (tarifa fija)
               </div>
               <div className="flex items-center text-sm text-gray-700">
                 <span className="text-green-500 mr-2">✓</span>
@@ -205,7 +205,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
               href="https://gyg.me/tqu0VpSP"
               target="_blank"
               rel="noopener noreferrer"
-              className="block w-full text-center py-2 px-4 bg-gray-100 text-gray-700 rounded-lg text-sm hover:bg-gray-200 transition"
+              className="block w-full text-center py-2 px-4 bg-slate-700 text-white rounded-lg text-sm hover:bg-slate-800 transition"
             >
               Ver horarios y reservar →
             </a>
@@ -226,7 +226,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
             <div className="space-y-2">
               <div className="flex items-center text-sm text-gray-700">
                 <span className="text-green-500 mr-2">✓</span>
-                <strong>Precio:</strong>&nbsp;23€ (online, compra anticipada)
+                Precio: 23€ (online, compra anticipada)
               </div>
               <div className="flex items-center text-sm text-gray-700">
                 <span className="text-green-500 mr-2">✓</span>
@@ -254,7 +254,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
             <div className="space-y-2 mb-4">
               <div className="flex items-center text-sm text-gray-700">
                 <span className="text-green-500 mr-2">✓</span>
-                <strong>Precio:</strong>&nbsp;Desde 65€ (tarifa fija)
+                Precio: Desde 65€ (tarifa fija)
               </div>
               <div className="flex items-center text-sm text-gray-700">
                 <span className="text-green-500 mr-2">✓</span>
@@ -278,7 +278,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
               href="https://gyg.me/giqjZdgf"
               target="_blank"
               rel="noopener noreferrer"
-              className="block w-full text-center py-2 px-4 bg-gray-100 text-gray-700 rounded-lg text-sm hover:bg-gray-200 transition"
+              className="block w-full text-center py-2 px-4 bg-slate-700 text-white rounded-lg text-sm hover:bg-slate-800 transition"
             >
               Ver horarios y reservar →
             </a>
@@ -299,7 +299,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
             <div className="space-y-2 mb-4">
               <div className="flex items-center text-sm text-gray-700">
                 <span className="text-green-500 mr-2">✓</span>
-                <strong>Precio:</strong>&nbsp;22-27€ (online, compra anticipada)
+                Precio: 22-27€ (online, compra anticipada)
               </div>
               <div className="flex items-center text-sm text-gray-700">
                 <span className="text-green-500 mr-2">✓</span>
@@ -319,7 +319,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
               href="https://gyg.me/YQaBsBwy"
               target="_blank"
               rel="noopener noreferrer"
-              className="block w-full text-center py-2 px-4 bg-gray-100 text-gray-700 rounded-lg text-sm hover:bg-gray-200 transition"
+              className="block w-full text-center py-2 px-4 bg-slate-700 text-white rounded-lg text-sm hover:bg-slate-800 transition"
             >
               Ver horarios y reservar →
             </a>
@@ -340,7 +340,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
             <div className="space-y-2">
               <div className="flex items-center text-sm text-gray-700">
                 <span className="text-green-500 mr-2">✓</span>
-                <strong>Precio:</strong>&nbsp;20-23€ (online, compra anticipada)
+                Precio: 20-23€ (online, compra anticipada)
               </div>
               <div className="flex items-center text-sm text-gray-700">
                 <span className="text-green-500 mr-2">✓</span>
@@ -368,7 +368,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
             <div className="space-y-2">
               <div className="flex items-center text-sm text-gray-700">
                 <span className="text-green-500 mr-2">✓</span>
-                <strong>Precio:</strong>&nbsp;Desde 9-14€ (online)
+                Precio: Desde 9-14€ (online)
               </div>
               <div className="flex items-center text-sm text-gray-700">
                 <span className="text-green-500 mr-2">✓</span>
