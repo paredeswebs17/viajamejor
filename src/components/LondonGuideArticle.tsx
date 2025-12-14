@@ -494,7 +494,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
                   <p className="text-sm text-gray-700 mb-3">Boutique moderno con ubicación ideal. A 2 min de Teatro Savoy y 5 min de Trafalgar Square.</p>
                 </div>
                 <div className="flex items-center justify-between flex-wrap gap-2 mt-auto">
-                  <span className="text-lg font-bold text-sky-600">€€</span>
+                  <span className="text-lg font-bold text-sky-600">€</span>
                   <a
                     href="https://booking.tpk.lv/L9dEChO8"
                     target="_blank"
@@ -531,10 +531,10 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
                 <div className="flex-grow">
                   <h4 className="font-bold text-gray-900 mb-2">The Resident Victoria ⭐⭐⭐⭐</h4>
                   <p className="text-xs text-gray-600 mb-2">📍 Westminster</p>
-                  <p className="text-sm text-gray-700 mb-3">Aparthotel con cocina pequeña. A 300m de Buckingham Palace y 1km de Westminster Abbey.</p>
+                  <p className="text-sm text-gray-700 mb-3">Hotel con pequeña cocina con microondas. A 300m de Buckingham Palace y 1km de Westminster Abbey.</p>
                 </div>
                 <div className="flex items-center justify-between flex-wrap gap-2 mt-auto">
-                  <span className="text-lg font-bold text-indigo-600">€€€</span>
+                  <span className="text-lg font-bold text-indigo-600">€€</span>
                   <a
                     href="https://booking.tpk.lv/3TjF71Re"
                     target="_blank"
