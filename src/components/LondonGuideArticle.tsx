@@ -897,11 +897,20 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
                   <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>Frecuencia: Lun/Mié/Vie a las 11:00h</li>
                   <li className="flex items-center"><span className="w-2 h-2 bg-yellow-400 rounded-full mr-3"></span>Domingos: Sunday Parade a las 10:00h</li>
                   <li className="flex items-center"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3"></span>Duración: 45 minutos</li>
-                  <li className="flex items-center"><span className="w-2 h-2 bg-orange-400 rounded-full mr-3"></span>⚠️ NO hay todos los días - <a href="https://www.householddivision.org.uk/changing-the-guard-calendar" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline">ver calendario</a></li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-orange-400 rounded-full mr-3"></span>⚠️ NO hay todos los días</li>
                   <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>¡Completamente GRATUITO!</li>
                 </ul>
               </div>
             </div>
+
+            <a
+              href="https://www.householddivision.org.uk/changing-the-guard-calendar"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block w-full text-center py-2 px-4 bg-slate-700 text-white rounded-lg text-sm hover:bg-slate-800 transition"
+            >
+              Ver calendario del Cambio de Guardia →
+            </a>
           </div>
         </div>
 
