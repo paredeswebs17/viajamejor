@@ -103,7 +103,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
           <h3 className="text-lg font-bold text-gray-900 mb-4">📍 Desde Aeropuerto de Heathrow (LHR)</h3>
 
           <AffiliateBox
-            title="🚄 Heathrow Express - El Tren Más Rápido"
+            title="🚄 Tren - Heathrow Express - Opción Más Rápida"
             description="Conexión directa a London Paddington sin paradas"
             bullets={[
               "Precio: Desde 29€ (online)",
@@ -118,7 +118,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
           />
 
           <AffiliateBox
-            title="🚇 Piccadilly Line (Metro) - La Más Económica"
+            title="🚇 Metro - Piccadilly Line - Opción Más Económica"
             description="Opción económica y directa al centro de Londres"
             bullets={[
               "Precio: 6,60€ con Oyster/Contactless",
@@ -130,7 +130,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
           />
 
           <AffiliateBox
-            title="🚕 Traslado Privado - Máximo Confort"
+            title="🚕 Traslado Privado - Heathrow - Máximo Confort"
             description="Servicio puerta a puerta desde el aeropuerto a tu hotel"
             bullets={[
               "Precio: Desde 46€ por persona",
@@ -149,7 +149,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
           <h3 className="text-lg font-bold text-gray-900 mb-4">📍 Desde Aeropuerto de Gatwick (LGW)</h3>
 
           <AffiliateBox
-            title="🚄 Gatwick Express - Rápido al Centro"
+            title="🚄 Tren - Gatwick Express - Opción Más Rápida"
             description="Conexión directa a London Victoria Station sin paradas"
             bullets={[
               "Precio: 23€ (online adelantado)",
@@ -161,7 +161,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
           />
 
           <AffiliateBox
-            title="🚗 Traslado Privado desde Gatwick"
+            title="🚗 Traslado Privado - Gatwick - Máximo Confort"
             description="Viaja cómodo desde el aeropuerto a tu hotel sin complicaciones"
             bullets={[
               "Precio: Desde 65€",
@@ -180,7 +180,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
           <h3 className="text-lg font-bold text-gray-900 mb-4">📍 Desde Aeropuerto de Stansted (STN)</h3>
 
           <AffiliateBox
-            title="🚄 Stansted Express"
+            title="🚄 Tren - Stansted Express - Opción Más Rápida"
             description="Conexión rápida a Liverpool Street Station en el centro de Londres"
             bullets={[
               "Precio: 22-27€ (online adelantado)",
@@ -198,7 +198,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
           <h3 className="text-lg font-bold text-gray-900 mb-4">📍 Desde Aeropuerto de Luton (LTN)</h3>
 
           <AffiliateBox
-            title="🚄 Luton Airport Express + Thameslink"
+            title="🚄 Tren - Luton Airport Express - Opción Más Rápida"
             description="Combinación de shuttle bus gratuito y tren al centro de Londres"
             bullets={[
               "Precio: 20-23€ (online adelantado)",
@@ -210,7 +210,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
           />
 
           <AffiliateBox
-            title="🚌 National Express / easyBus - Económico"
+            title="🚌 Bus - National Express / easyBus - Opción Más Económica"
             description="La opción más económica para llegar al centro de Londres"
             bullets={[
               "Precio: Desde 9-14€ (online)",
