@@ -308,7 +308,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
             <div className="space-y-2 mb-4">
               <div className="flex items-center text-sm text-gray-700">
                 <span className="text-green-500 mr-2">✓</span>
-                Precio: 22-27€ (online, compra anticipada)
+                Precio: Desde 26€
               </div>
               <div className="flex items-center text-sm text-gray-700">
                 <span className="text-green-500 mr-2">✓</span>
@@ -413,16 +413,16 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
 
           <div className="border-2 border-yellow-400 bg-yellow-50 rounded-xl p-4 mb-4">
             <h4 className="text-lg font-bold text-gray-900 mb-2">
-              🚌 National Express / easyBus - Opción Más Económica
+              🚌 National Express Bus - Opción Económica
             </h4>
             <p className="text-sm text-gray-700 mb-3">
-              La opción más económica para llegar al centro de Londres
+              Traslado en autobús desde Luton hasta London Victoria con paradas en destinos clave
             </p>
 
-            <div className="space-y-2">
+            <div className="space-y-2 mb-4">
               <div className="flex items-center text-sm text-gray-700">
                 <span className="text-green-500 mr-2">✓</span>
-                Precio: Desde 9-14€ (online)
+                Precio: Desde 15€ por trayecto
               </div>
               <div className="flex items-center text-sm text-gray-700">
                 <span className="text-green-500 mr-2">✓</span>
@@ -430,13 +430,30 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
               </div>
               <div className="flex items-center text-sm text-gray-700">
                 <span className="text-green-500 mr-2">✓</span>
-                Destino: Victoria Coach Station
+                Destinos: London Victoria, Golders Green, Baker Street
               </div>
               <div className="flex items-center text-sm text-gray-700">
                 <span className="text-green-500 mr-2">✓</span>
-                Muy económico, ideal si no tienes prisa
+                Menores de 15 años: GRATIS
+              </div>
+              <div className="flex items-center text-sm text-gray-700">
+                <span className="text-green-500 mr-2">✓</span>
+                Asientos de cuero, WiFi, aire acondicionado y tomas de corriente
+              </div>
+              <div className="flex items-center text-sm text-gray-700">
+                <span className="text-green-500 mr-2">✓</span>
+                Salidas cada 30 minutos aprox. (24/7)
               </div>
             </div>
+
+            <a
+              href="https://gyg.me/JbY1XRHh"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block w-full text-center py-2 px-4 bg-slate-700 text-white rounded-lg text-sm hover:bg-slate-800 transition"
+            >
+              Ver horarios y reservar →
+            </a>
           </div>
         </div>
       </div>
