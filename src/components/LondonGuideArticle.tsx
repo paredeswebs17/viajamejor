@@ -223,7 +223,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
               Conexión directa a London Victoria Station sin paradas
             </p>
 
-            <div className="space-y-2">
+            <div className="space-y-2 mb-4">
               <div className="flex items-center text-sm text-gray-700">
                 <span className="text-green-500 mr-2">✓</span>
                 Precio: 23€ (online, compra anticipada)
@@ -241,6 +241,15 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
                 Frecuencia: Cada 15 minutos
               </div>
             </div>
+
+            <a
+              href="https://ticket.gatwickexpress.com/search"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block w-full text-center py-2 px-4 bg-slate-700 text-white rounded-lg text-sm hover:bg-slate-800 transition"
+            >
+              Ver horarios y reservar →
+            </a>
           </div>
 
           <div className="border-2 border-yellow-400 bg-yellow-50 rounded-xl p-4 mb-4">
@@ -262,7 +271,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
               </div>
               <div className="flex items-center text-sm text-gray-700">
                 <span className="text-green-500 mr-2">✓</span>
-                Destino: Victoria Coach Station
+                Destino: London Victoria Station
               </div>
               <div className="flex items-center text-sm text-gray-700">
                 <span className="text-green-500 mr-2">✓</span>
