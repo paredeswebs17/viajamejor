@@ -649,14 +649,14 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-4">
               <div className="bg-gradient-to-br from-orange-50 to-amber-50 rounded-xl p-4 border border-orange-200 flex flex-col">
                 <div className="flex-grow">
-                  <h4 className="font-bold text-gray-900 mb-2">Hilton London Bankside ⭐⭐⭐⭐</h4>
+                  <h4 className="font-bold text-gray-900 mb-2">ibis London Blackfriars ⭐⭐⭐</h4>
                   <p className="text-xs text-gray-600 mb-2">📍 Southwark</p>
-                  <p className="text-sm text-gray-700 mb-3">Moderno con vistas al río. Cerca Borough Market y Tate Modern.</p>
+                  <p className="text-sm text-gray-700 mb-3">A 5 min de estación Waterloo. A 10 min andando del Tate Modern, 20 min del London Eye y Big Ben.</p>
                 </div>
                 <div className="flex items-center justify-between flex-wrap gap-2 mt-auto">
-                  <span className="text-lg font-bold text-orange-600">€€€</span>
+                  <span className="text-lg font-bold text-orange-600">€€</span>
                   <a
-                    href="https://booking.tpk.lv/0u1aLCCU"
+                    href="https://booking.tpk.lv/J6DZf62g"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm"
@@ -669,14 +669,14 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
 
               <div className="bg-gradient-to-br from-pink-50 to-rose-50 rounded-xl p-4 border border-pink-200 flex flex-col">
                 <div className="flex-grow">
-                  <h4 className="font-bold text-gray-900 mb-2">citizenM London Bankside ⭐⭐⭐</h4>
+                  <h4 className="font-bold text-gray-900 mb-2">citizenM London Bankside ⭐⭐⭐⭐</h4>
                   <p className="text-xs text-gray-600 mb-2">📍 Southwark</p>
-                  <p className="text-sm text-gray-700 mb-3">Diseño holandés innovador. Tecnología de última generación.</p>
+                  <p className="text-sm text-gray-700 mb-3">A 2 min del Tate Modern, 600m del Puente del Milenio. Estación Waterloo a 1.6km, Catedral San Pablo a 10 min.</p>
                 </div>
                 <div className="flex items-center justify-between flex-wrap gap-2 mt-auto">
                   <span className="text-lg font-bold text-pink-600">€€</span>
                   <a
-                    href="https://booking.tpk.lv/lD32rUSE"
+                    href="https://booking.tpk.lv/cp2brt0T"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm"
@@ -689,14 +689,14 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
 
               <div className="bg-gradient-to-br from-purple-50 to-violet-50 rounded-xl p-4 border border-purple-200 flex flex-col">
                 <div className="flex-grow">
-                  <h4 className="font-bold text-gray-900 mb-2">Premier Inn London Southwark ⭐⭐⭐</h4>
+                  <h4 className="font-bold text-gray-900 mb-2">H10 London Waterloo ⭐⭐⭐⭐</h4>
                   <p className="text-xs text-gray-600 mb-2">📍 Southwark</p>
-                  <p className="text-sm text-gray-700 mb-3">Cadena confiable británica. Desayuno buffet excelente.</p>
+                  <p className="text-sm text-gray-700 mb-3">Metro Waterloo a 5 min. A 15 min andando del Big Ben y London Eye, 20 min del Shakespeare's Globe.</p>
                 </div>
                 <div className="flex items-center justify-between flex-wrap gap-2 mt-auto">
-                  <span className="text-lg font-bold text-purple-600">€</span>
+                  <span className="text-lg font-bold text-purple-600">€€</span>
                   <a
-                    href="https://booking.tpk.lv/XrBYkB5u"
+                    href="https://booking.tpk.lv/95kgpIh5"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm"
