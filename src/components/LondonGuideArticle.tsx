@@ -243,34 +243,34 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
             </div>
           </div>
 
-          <div className="border-2 border-orange-400 bg-orange-50 rounded-xl p-4 mb-4">
+          <div className="border-2 border-yellow-400 bg-yellow-50 rounded-xl p-4 mb-4">
             <h4 className="text-lg font-bold text-gray-900 mb-2">
-              🚖 Traslado Privado - Máximo Confort
+              🚌 National Express Bus - Opción Económica
             </h4>
             <p className="text-sm text-gray-700 mb-3">
-              Viaja cómodo desde el aeropuerto a tu hotel sin complicaciones
+              Traslado en autobús desde Gatwick al centro de Londres
             </p>
 
             <div className="space-y-2 mb-4">
               <div className="flex items-center text-sm text-gray-700">
                 <span className="text-green-500 mr-2">✓</span>
-                Precio: Desde 65€ (tarifa fija)
+                Precio: Desde 10€ por trayecto
               </div>
               <div className="flex items-center text-sm text-gray-700">
                 <span className="text-green-500 mr-2">✓</span>
-                Conductor esperándote en la terminal
+                Duración: 2.5 horas aproximadamente
               </div>
               <div className="flex items-center text-sm text-gray-700">
                 <span className="text-green-500 mr-2">✓</span>
-                Sin colas ni esperas
+                Destino: Victoria Coach Station
               </div>
               <div className="flex items-center text-sm text-gray-700">
                 <span className="text-green-500 mr-2">✓</span>
-                Vehículo privado y confortable
+                Cancelación gratuita hasta 24 horas antes
               </div>
               <div className="flex items-center text-sm text-gray-700">
                 <span className="text-green-500 mr-2">✓</span>
-                Precio fijo sin sorpresas
+                Menores de 15 años: GRATIS con adulto
               </div>
             </div>
 
