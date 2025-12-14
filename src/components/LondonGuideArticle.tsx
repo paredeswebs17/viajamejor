@@ -1026,18 +1026,26 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
                 </ul>
               </div>
               <div>
-                <h5 className="font-semibold text-gray-900 mb-2">🎫 Tipos de Entradas:</h5>
+                <h5 className="font-semibold text-gray-900 mb-2">🎫 Información de Entradas:</h5>
                 <ul className="text-sm text-gray-700 space-y-1 list-none">
-                  <li className="flex items-center"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3"></span>Standard: 33-41 € (online adelantado)</li>
-                  <li className="flex items-center"><span className="w-2 h-2 bg-pink-400 rounded-full mr-3"></span>Fast Track: 47-56 € (cola prioritaria)</li>
-                  <li className="flex items-center"><span className="w-2 h-2 bg-indigo-400 rounded-full mr-3"></span>Ahorro online: hasta 25%</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3"></span>Precio desde 33€</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-pink-400 rounded-full mr-3"></span>Se recomienda comprar online para evitar grandes colas</li>
                 </ul>
               </div>
             </div>
 
-            <div className="bg-white rounded-xl p-4 border border-gray-200 shadow-sm">
+            <div className="bg-white rounded-xl p-4 border border-gray-200 shadow-sm mb-4">
               <p className="text-xs text-sky-600 mb-2">💡 Mejor momento: Atardecer, ves la ciudad de día y de noche en la misma vuelta.</p>
             </div>
+
+            <a
+              href="https://gyg.me/wJCBE1BZ"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block w-full text-center py-2 px-4 bg-sky-600 text-white rounded-lg text-sm hover:bg-sky-700 transition"
+            >
+              Comprar entrada London Eye →
+            </a>
           </div>
         </div>
 
