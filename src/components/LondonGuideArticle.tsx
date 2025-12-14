@@ -489,14 +489,14 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-4">
               <div className="bg-gradient-to-br from-sky-50 to-blue-50 rounded-xl p-4 border border-sky-200 flex flex-col">
                 <div className="flex-grow">
-                  <h4 className="font-bold text-gray-900 mb-2">The Z Hotel Covent Garden ⭐⭐⭐</h4>
-                  <p className="text-xs text-gray-600 mb-2">📍 Covent Garden</p>
-                  <p className="text-sm text-gray-700 mb-3">Hotel boutique compacto pero perfecto. A pasos de todo lo importante.</p>
+                  <h4 className="font-bold text-gray-900 mb-2">The Z Hotel Strand ⭐⭐⭐</h4>
+                  <p className="text-xs text-gray-600 mb-2">📍 Westminster</p>
+                  <p className="text-sm text-gray-700 mb-3">Boutique moderno con ubicación ideal. A 2 min de Teatro Savoy y 5 min de Trafalgar Square.</p>
                 </div>
                 <div className="flex items-center justify-between flex-wrap gap-2 mt-auto">
                   <span className="text-lg font-bold text-sky-600">€€</span>
                   <a
-                    href="https://booking.tpk.lv/jQQDRGEV"
+                    href="https://booking.tpk.lv/L9dEChO8"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm"
@@ -509,14 +509,14 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
 
               <div className="bg-gradient-to-br from-cyan-50 to-teal-50 rounded-xl p-4 border border-cyan-200 flex flex-col">
                 <div className="flex-grow">
-                  <h4 className="font-bold text-gray-900 mb-2">Hub by Premier Inn Covent Garden ⭐⭐⭐</h4>
-                  <p className="text-xs text-gray-600 mb-2">📍 Covent Garden</p>
-                  <p className="text-sm text-gray-700 mb-3">Moderno, funcional, céntrico. Diseño inteligente en espacios pequeños.</p>
+                  <h4 className="font-bold text-gray-900 mb-2">Park Plaza Victoria London ⭐⭐⭐⭐</h4>
+                  <p className="text-xs text-gray-600 mb-2">📍 Westminster</p>
+                  <p className="text-sm text-gray-700 mb-3">Hotel moderno con restaurante italiano y gimnasio. A 2 min de Victoria Station y 5 min de Buckingham Palace.</p>
                 </div>
                 <div className="flex items-center justify-between flex-wrap gap-2 mt-auto">
                   <span className="text-lg font-bold text-cyan-600">€€</span>
                   <a
-                    href="https://booking.tpk.lv/0H9SyaZT"
+                    href="https://booking.tpk.lv/nIEfXSJO"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm"
@@ -529,14 +529,14 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
 
               <div className="bg-gradient-to-br from-indigo-50 to-blue-50 rounded-xl p-4 border border-indigo-200 flex flex-col">
                 <div className="flex-grow">
-                  <h4 className="font-bold text-gray-900 mb-2">Strand Palace Hotel ⭐⭐⭐</h4>
-                  <p className="text-xs text-gray-600 mb-2">📍 Covent Garden/Strand</p>
-                  <p className="text-sm text-gray-700 mb-3">Hotel histórico renovado. Ubicación inmejorable cerca Trafalgar.</p>
+                  <h4 className="font-bold text-gray-900 mb-2">The Resident Victoria ⭐⭐⭐⭐</h4>
+                  <p className="text-xs text-gray-600 mb-2">📍 Westminster</p>
+                  <p className="text-sm text-gray-700 mb-3">Aparthotel con cocina pequeña. A 300m de Buckingham Palace y 1km de Westminster Abbey.</p>
                 </div>
                 <div className="flex items-center justify-between flex-wrap gap-2 mt-auto">
                   <span className="text-lg font-bold text-indigo-600">€€€</span>
                   <a
-                    href="https://booking.tpk.lv/TWEebJLj"
+                    href="https://booking.tpk.lv/3TjF71Re"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm"
