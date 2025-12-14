@@ -1,5 +1,6 @@
 import React from 'react';
 import { ArrowLeft, Share2, Clock, MapPin, ExternalLink } from 'lucide-react';
+import AffiliateBox from './AffiliateBox';
 
 interface LondonGuideArticleProps {
   onBack: () => void;
@@ -186,6 +187,20 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
               </div>
             </div>
           </div>
+
+          <AffiliateBox
+            title="Traslado Privado desde Gatwick"
+            description="Viaja cómodo desde el aeropuerto a tu hotel sin complicaciones"
+            bullets={[
+              "Conductor esperándote en la terminal",
+              "Sin colas ni esperas",
+              "Vehículo privado y confortable",
+              "Precio fijo sin sorpresas"
+            ]}
+            price="Desde 65€"
+            ctaText="Reservar Traslado"
+            url="https://gyg.me/giqjZdgf"
+          />
         </div>
 
         <div className="mb-8">
