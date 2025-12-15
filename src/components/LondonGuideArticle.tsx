@@ -735,7 +735,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
               </tr>
               <tr className="bg-gray-50">
                 <td className="border border-gray-300 px-4 py-3 font-bold">DÍA 2</td>
-                <td className="border border-gray-300 px-4 py-3">Borough Market + Tower Bridge + Torre de Londres + Sky Garden + The Shard + Catedral San Pablo + Millennium Bridge + Paseo en barco Támesis</td>
+                <td className="border border-gray-300 px-4 py-3">Borough Market + Tower Bridge + Torre de Londres + Sky Garden + The Shard + St Paul's Cathedral</td>
               </tr>
               <tr>
                 <td className="border border-gray-300 px-4 py-3 font-bold">DÍA 3</td>
@@ -1138,32 +1138,99 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
           </div>
         </div>
 
-        {/* Tower Bridge + Torre Londres - Versión Compacta */}
+        {/* Tower Bridge */}
         <div className="mb-8">
           <h3 className="text-lg font-bold text-gray-900 mb-4 flex items-center">
             <div className="w-1 h-6 bg-gradient-to-b from-blue-400 to-cyan-400 rounded-full mr-3"></div>
-            Tower Bridge + Torre de Londres (10:00h - 13:00h)
+            Tower Bridge (10:00h - 10:45h)
           </h3>
           <div className="bg-blue-50 border border-blue-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
-            <h4 className="text-lg font-bold text-gray-900 mb-3">El Puente Más Famoso + 1000 Años de Historia Real</h4>
+            <h4 className="text-lg font-bold text-gray-900 mb-3">🌉 El Puente Más Famoso de Londres</h4>
             <div className="mb-4">
               <img
                 src="https://images.pexels.com/photos/726484/pexels-photo-726484.jpeg"
-                alt="Tower Bridge y Torre de Londres"
+                alt="Tower Bridge - El puente basculante icónico de Londres"
                 className="w-full h-48 sm:h-64 object-cover rounded-xl shadow-lg mb-4"
               />
             </div>
             <p className="text-gray-700 mb-4">
-              El puente basculante más fotografiado de Londres (1894) te lleva a la fortaleza normanda que alberga las Joyas de la Corona Británica.
+              El puente basculante más fotografiado del mundo (1894). Aunque muchos lo confunden con el London Bridge, Tower Bridge es el icónico puente victoriano con sus dos torres góticas y pasarelas elevadas.
+            </p>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+              <div className="bg-white rounded-xl p-4 shadow-sm">
+                <h5 className="font-semibold text-gray-900 mb-2">🎫 Información Práctica:</h5>
+                <ul className="text-sm text-gray-700 space-y-1 list-none">
+                  <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Paseo exterior: GRATIS</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Subir torres: 13 £ (opcional)</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-yellow-400 rounded-full mr-3"></span>Suelo de cristal en pasarela alta</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3"></span>Sala de máquinas victoriana</li>
+                </ul>
+              </div>
+              <div className="bg-white rounded-xl p-4 shadow-sm">
+                <h5 className="font-semibold text-gray-900 mb-2">📸 Mejores Fotos:</h5>
+                <ul className="text-sm text-gray-700 space-y-1 list-none">
+                  <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>Desde South Bank</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-orange-400 rounded-full mr-3"></span>Atardecer desde el río</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-pink-400 rounded-full mr-3"></span>Con Torre de Londres al fondo</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-cyan-400 rounded-full mr-3"></span>Durante elevación (consultar horarios)</li>
+                </ul>
+              </div>
+            </div>
+            <div className="bg-white rounded-xl p-3 border border-gray-200 shadow-sm">
+              <p className="text-xs text-blue-600">💡 <strong>Tip:</strong> No es necesario pagar para subir. Las mejores fotos son desde fuera. Cruza el puente andando y disfruta de las vistas gratuitas del Támesis.</p>
+            </div>
+          </div>
+        </div>
+
+        {/* Torre de Londres */}
+        <div className="mb-8">
+          <h3 className="text-lg font-bold text-gray-900 mb-4 flex items-center">
+            <div className="w-1 h-6 bg-gradient-to-b from-amber-400 to-red-400 rounded-full mr-3"></div>
+            Torre de Londres (11:00h - 13:30h)
+          </h3>
+          <div className="bg-amber-50 border border-amber-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
+            <h4 className="text-lg font-bold text-gray-900 mb-3">👑 1000 Años de Historia Real</h4>
+            <div className="mb-4">
+              <img
+                src="https://images.pexels.com/photos/220887/pexels-photo-220887.jpeg"
+                alt="Torre de Londres - Fortaleza histórica con las Joyas de la Corona"
+                className="w-full h-48 sm:h-64 object-cover rounded-xl shadow-lg mb-4"
+              />
+            </div>
+            <p className="text-gray-700 mb-4">
+              Fortaleza normanda fundada en 1066 que ha sido palacio real, prisión, arsenal y ahora alberga las legendarias Joyas de la Corona Británica. Uno de los monumentos más importantes de Londres.
             </p>
             <div className="bg-white rounded-xl p-4 mb-4 shadow-sm">
-              <h5 className="font-semibold text-gray-900 mb-2">💎 Torre de Londres - Imprescindibles:</h5>
+              <h5 className="font-semibold text-gray-900 mb-2">💎 Imprescindibles:</h5>
               <ul className="text-sm text-gray-700 space-y-1 list-none">
-                <li className="flex items-center"><span className="w-2 h-2 bg-gold-400 rounded-full mr-3"></span>Crown Jewels: Imperial State Crown con 2.868 diamantes</li>
-                <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Precio: 41 € (online adelantado)</li>
-                <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>Duración: 2.5-3 horas MÍNIMO</li>
-                <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Yeoman Tours GRATIS incluidos</li>
+                <li className="flex items-center"><span className="w-2 h-2 bg-yellow-400 rounded-full mr-3"></span>Crown Jewels: Imperial State Crown con 2.868 diamantes</li>
+                <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>White Tower: La torre normanda original</li>
+                <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>Yeoman Warders Tours: Tours guiados GRATIS incluidos</li>
+                <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Los cuervos de la Torre (leyenda real)</li>
               </ul>
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+              <div className="bg-white rounded-xl p-4 shadow-sm">
+                <h5 className="font-semibold text-gray-900 mb-2">🎫 Información Práctica:</h5>
+                <ul className="text-sm text-gray-700 space-y-1 list-none">
+                  <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Precio: 41 € (online adelantado)</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>Duración: 2.5-3 horas MÍNIMO</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Horario: 9:00-17:30</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-yellow-400 rounded-full mr-3"></span>Reserva online para evitar colas</li>
+                </ul>
+              </div>
+              <div className="bg-white rounded-xl p-4 shadow-sm">
+                <h5 className="font-semibold text-gray-900 mb-2">⚡ Consejos de Visita:</h5>
+                <ul className="text-sm text-gray-700 space-y-1 list-none">
+                  <li className="flex items-center"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3"></span>Ve directo a Crown Jewels primero</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-orange-400 rounded-full mr-3"></span>Únete a un Yeoman Tour (cada 30 min)</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-pink-400 rounded-full mr-3"></span>Llegada temprana recomendada</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-cyan-400 rounded-full mr-3"></span>Audioguía incluida en el precio</li>
+                </ul>
+              </div>
+            </div>
+            <div className="bg-white rounded-xl p-3 border border-gray-200 shadow-sm">
+              <p className="text-xs text-amber-600">💡 <strong>Imprescindible:</strong> Compra la entrada online con antelación. Las colas pueden ser de más de 1 hora en temporada alta. El London Pass incluye entrada sin colas.</p>
             </div>
           </div>
         </div>
