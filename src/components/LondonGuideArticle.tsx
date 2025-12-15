@@ -1199,7 +1199,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
             <h4 className="text-lg font-bold text-gray-900 mb-3">👑 1000 Años de Historia Real</h4>
             <div className="mb-4">
               <img
-                src="https://images.pexels.com/photos/220887/pexels-photo-220887.jpeg"
+                src="https://images.pexels.com/photos/248193/pexels-photo-248193.jpeg"
                 alt="Torre de Londres - Fortaleza histórica con las Joyas de la Corona"
                 className="w-full h-48 sm:h-64 object-cover rounded-xl shadow-lg mb-4"
               />
