@@ -1161,9 +1161,10 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
                 <h5 className="font-semibold text-gray-900 mb-2">🎫 Información Práctica:</h5>
                 <ul className="text-sm text-gray-700 space-y-1 list-none">
                   <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Paseo exterior: GRATIS</li>
-                  <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Subir torres: 13 £ (opcional)</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Subir torres: 14.20€ online (15.80€ en taquilla)</li>
                   <li className="flex items-center"><span className="w-2 h-2 bg-yellow-400 rounded-full mr-3"></span>Suelo de cristal en pasarela alta</li>
                   <li className="flex items-center"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3"></span>Sala de máquinas victoriana</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-orange-400 rounded-full mr-3"></span>Horarios de elevación: consultar web oficial</li>
                 </ul>
               </div>
               <div className="bg-white rounded-xl p-4 shadow-sm">
@@ -1213,10 +1214,11 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
               <div className="bg-white rounded-xl p-4 shadow-sm">
                 <h5 className="font-semibold text-gray-900 mb-2">🎫 Información Práctica:</h5>
                 <ul className="text-sm text-gray-700 space-y-1 list-none">
-                  <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Precio: 41 € (online adelantado)</li>
-                  <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>Duración: 2.5-3 horas MÍNIMO</li>
-                  <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Horario: 9:00-17:30</li>
-                  <li className="flex items-center"><span className="w-2 h-2 bg-yellow-400 rounded-full mr-3"></span>Reserva online para evitar colas</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span><strong>Precio:</strong> 44.50€ online | 49.40€ en taquilla</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span><strong>Ahorra 10%:</strong> Compra SIEMPRE online con antelación</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-yellow-400 rounded-full mr-3"></span><strong>Horario diciembre:</strong> 9:00-16:30 (última entrada 15:00)</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span><strong>Duración:</strong> 2.5-3 horas MÍNIMO</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3"></span>Audioguía incluida en el precio</li>
                 </ul>
               </div>
               <div className="bg-white rounded-xl p-4 shadow-sm">
@@ -1230,7 +1232,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
               </div>
             </div>
             <div className="bg-white rounded-xl p-3 border border-gray-200 shadow-sm">
-              <p className="text-xs text-amber-600">💡 <strong>Imprescindible:</strong> Compra la entrada online con antelación. Las colas pueden ser de más de 1 hora en temporada alta. El London Pass incluye entrada sin colas.</p>
+              <p className="text-xs text-amber-600">💡 <strong>Imprescindible:</strong> Compra la entrada online con antelación para ahorrar 10% y evitar colas de más de 1 hora en temporada alta. Reserva online obligatoria para garantizar tu visita.</p>
             </div>
           </div>
         </div>
