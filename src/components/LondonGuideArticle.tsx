@@ -1161,10 +1161,9 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
                 <h5 className="font-semibold text-gray-900 mb-2">🎫 Información Práctica:</h5>
                 <ul className="text-sm text-gray-700 space-y-1 list-none">
                   <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Paseo exterior: GRATIS</li>
-                  <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Subir torres: 14.20€ online (15.80€ en taquilla)</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Subir torres: 18€</li>
                   <li className="flex items-center"><span className="w-2 h-2 bg-yellow-400 rounded-full mr-3"></span>Suelo de cristal en pasarela alta</li>
                   <li className="flex items-center"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3"></span>Sala de máquinas victoriana</li>
-                  <li className="flex items-center"><span className="w-2 h-2 bg-orange-400 rounded-full mr-3"></span>Horarios de elevación: consultar web oficial</li>
                 </ul>
               </div>
               <div className="bg-white rounded-xl p-4 shadow-sm">
@@ -1173,12 +1172,19 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
                   <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>Desde South Bank</li>
                   <li className="flex items-center"><span className="w-2 h-2 bg-orange-400 rounded-full mr-3"></span>Atardecer desde el río</li>
                   <li className="flex items-center"><span className="w-2 h-2 bg-pink-400 rounded-full mr-3"></span>Con Torre de Londres al fondo</li>
-                  <li className="flex items-center"><span className="w-2 h-2 bg-cyan-400 rounded-full mr-3"></span>Durante elevación (consultar horarios)</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-cyan-400 rounded-full mr-3"></span>Vista nocturna iluminado</li>
                 </ul>
               </div>
             </div>
-            <div className="bg-white rounded-xl p-3 border border-gray-200 shadow-sm">
-              <p className="text-xs text-blue-600">💡 <strong>Tip:</strong> No es necesario pagar para subir. Las mejores fotos son desde fuera. Cruza el puente andando y disfruta de las vistas gratuitas del Támesis.</p>
+            <div className="mt-4">
+              <a
+                href="https://gyg.me/tHBzdl4W"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center bg-gradient-to-r from-blue-500 to-cyan-500 text-white font-semibold px-6 py-3 rounded-lg hover:from-blue-600 hover:to-cyan-600 transition-all duration-300 shadow-md hover:shadow-lg"
+              >
+                🎫 Reservar Entrada Tower Bridge
+              </a>
             </div>
           </div>
         </div>
