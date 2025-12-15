@@ -1212,7 +1212,6 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
               <ul className="text-sm text-gray-700 space-y-1 list-none">
                 <li className="flex items-center"><span className="w-2 h-2 bg-yellow-400 rounded-full mr-3"></span>Crown Jewels: Imperial State Crown con 2.868 diamantes</li>
                 <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>White Tower: La torre normanda original</li>
-                <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>Yeoman Warders Tours: Tours guiados GRATIS incluidos</li>
                 <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Los cuervos de la Torre (leyenda real)</li>
               </ul>
             </div>
@@ -1220,25 +1219,31 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
               <div className="bg-white rounded-xl p-4 shadow-sm">
                 <h5 className="font-semibold text-gray-900 mb-2">🎫 Información Práctica:</h5>
                 <ul className="text-sm text-gray-700 space-y-1 list-none">
-                  <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span><strong>Precio:</strong> 44.50€ online | 49.40€ en taquilla</li>
-                  <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span><strong>Ahorra 10%:</strong> Compra SIEMPRE online con antelación</li>
-                  <li className="flex items-center"><span className="w-2 h-2 bg-yellow-400 rounded-full mr-3"></span><strong>Horario diciembre:</strong> 9:00-16:30 (última entrada 15:00)</li>
-                  <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span><strong>Duración:</strong> 2.5-3 horas MÍNIMO</li>
-                  <li className="flex items-center"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3"></span>Audioguía incluida en el precio</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3 flex-shrink-0"></span><span>Precio: 40€ online</span></li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-yellow-400 rounded-full mr-3 flex-shrink-0"></span><span>Horario diciembre: 9:00-16:30 (última entrada 15:00)</span></li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3 flex-shrink-0"></span><span>Duración: 2.5-3 horas mínimo</span></li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3 flex-shrink-0"></span><span>Audioguía incluida en el precio</span></li>
                 </ul>
               </div>
               <div className="bg-white rounded-xl p-4 shadow-sm">
                 <h5 className="font-semibold text-gray-900 mb-2">⚡ Consejos de Visita:</h5>
                 <ul className="text-sm text-gray-700 space-y-1 list-none">
-                  <li className="flex items-center"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3"></span>Ve directo a Crown Jewels primero</li>
-                  <li className="flex items-center"><span className="w-2 h-2 bg-orange-400 rounded-full mr-3"></span>Únete a un Yeoman Tour (cada 30 min)</li>
-                  <li className="flex items-center"><span className="w-2 h-2 bg-pink-400 rounded-full mr-3"></span>Llegada temprana recomendada</li>
-                  <li className="flex items-center"><span className="w-2 h-2 bg-cyan-400 rounded-full mr-3"></span>Audioguía incluida en el precio</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3 flex-shrink-0"></span><span>Ve directo a Crown Jewels primero</span></li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-orange-400 rounded-full mr-3 flex-shrink-0"></span><span>Únete a un Yeoman Tour (cada 30 min)</span></li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-pink-400 rounded-full mr-3 flex-shrink-0"></span><span>Llegada temprana recomendada</span></li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-cyan-400 rounded-full mr-3 flex-shrink-0"></span><span>Tours guiados incluidos</span></li>
                 </ul>
               </div>
             </div>
-            <div className="bg-white rounded-xl p-3 border border-gray-200 shadow-sm">
-              <p className="text-xs text-amber-600">💡 <strong>Imprescindible:</strong> Compra la entrada online con antelación para ahorrar 10% y evitar colas de más de 1 hora en temporada alta. Reserva online obligatoria para garantizar tu visita.</p>
+            <div className="mt-4">
+              <a
+                href="https://gyg.me/ex4u6Ux1"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center bg-gradient-to-r from-amber-500 to-red-500 text-white font-semibold px-6 py-3 rounded-lg hover:from-amber-600 hover:to-red-600 transition-all duration-300 shadow-md hover:shadow-lg"
+              >
+                👑 Reservar Entrada Torre de Londres
+              </a>
             </div>
           </div>
         </div>
