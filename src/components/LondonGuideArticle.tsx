@@ -487,64 +487,73 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-4">
-              <div className="bg-gradient-to-br from-sky-50 to-blue-50 rounded-xl p-4 border border-sky-200 flex flex-col">
-                <div className="flex-grow">
-                  <h4 className="font-bold text-gray-900 mb-2">The Z Hotel Strand ⭐⭐⭐</h4>
-                  <p className="text-xs text-gray-600 mb-2">📍 Westminster</p>
-                  <p className="text-sm text-gray-700 mb-3">Pequeño hotel con ubicación ideal. A 2 min de Teatro Savoy y 5 min de Trafalgar Square.</p>
+              <div className="hotel-card">
+                <div className="hotel-header">
+                  <h3 className="hotel-name">The Z Hotel Strand</h3>
+                  <div className="hotel-stars">⭐⭐⭐</div>
                 </div>
-                <div className="flex items-center justify-between flex-wrap gap-2 mt-auto">
-                  <span className="text-lg font-bold text-sky-600">€</span>
-                  <a
-                    href="https://booking.tpk.lv/L9dEChO8"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm"
-                  >
-                    Ver en Booking
-                    <ExternalLink className="h-3 w-3 ml-2" />
-                  </a>
+
+                <div className="hotel-location">
+                  <span className="location-icon">📍</span>
+                  <span>Westminster</span>
                 </div>
+
+                <p className="hotel-description">
+                  Pequeño hotel con ubicación ideal. A 2 min de Teatro Savoy y 5 min de Trafalgar Square.
+                </p>
+
+                <a href="https://booking.tpk.lv/L9dEChO8" target="_blank" rel="noopener noreferrer" className="btn-hotel">
+                  <span>Ver Disponibilidad en Booking</span>
+                  <svg className="external-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                  </svg>
+                </a>
               </div>
 
-              <div className="bg-gradient-to-br from-cyan-50 to-teal-50 rounded-xl p-4 border border-cyan-200 flex flex-col">
-                <div className="flex-grow">
-                  <h4 className="font-bold text-gray-900 mb-2">Park Plaza Victoria London ⭐⭐⭐⭐</h4>
-                  <p className="text-xs text-gray-600 mb-2">📍 Westminster</p>
-                  <p className="text-sm text-gray-700 mb-3">Hotel moderno con restaurante italiano y gimnasio. A 2 min de Victoria Station y 5 min de Buckingham Palace.</p>
+              <div className="hotel-card">
+                <div className="hotel-header">
+                  <h3 className="hotel-name">Park Plaza Victoria London</h3>
+                  <div className="hotel-stars">⭐⭐⭐⭐</div>
                 </div>
-                <div className="flex items-center justify-between flex-wrap gap-2 mt-auto">
-                  <span className="text-lg font-bold text-cyan-600">€€</span>
-                  <a
-                    href="https://booking.tpk.lv/nIEfXSJO"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm"
-                  >
-                    Ver en Booking
-                    <ExternalLink className="h-3 w-3 ml-2" />
-                  </a>
+
+                <div className="hotel-location">
+                  <span className="location-icon">📍</span>
+                  <span>Westminster</span>
                 </div>
+
+                <p className="hotel-description">
+                  Hotel moderno con restaurante italiano y gimnasio. A 2 min de Victoria Station y 5 min de Buckingham Palace.
+                </p>
+
+                <a href="https://booking.tpk.lv/nIEfXSJO" target="_blank" rel="noopener noreferrer" className="btn-hotel">
+                  <span>Ver Disponibilidad en Booking</span>
+                  <svg className="external-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                  </svg>
+                </a>
               </div>
 
-              <div className="bg-gradient-to-br from-indigo-50 to-blue-50 rounded-xl p-4 border border-indigo-200 flex flex-col">
-                <div className="flex-grow">
-                  <h4 className="font-bold text-gray-900 mb-2">The Resident Victoria ⭐⭐⭐⭐</h4>
-                  <p className="text-xs text-gray-600 mb-2">📍 Westminster</p>
-                  <p className="text-sm text-gray-700 mb-3">Hotel con pequeña cocina con microondas. A 300m de Buckingham Palace y 1km de Abadía de Westminster.</p>
+              <div className="hotel-card">
+                <div className="hotel-header">
+                  <h3 className="hotel-name">The Resident Victoria</h3>
+                  <div className="hotel-stars">⭐⭐⭐⭐</div>
                 </div>
-                <div className="flex items-center justify-between flex-wrap gap-2 mt-auto">
-                  <span className="text-lg font-bold text-indigo-600">€€</span>
-                  <a
-                    href="https://booking.tpk.lv/3TjF71Re"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm"
-                  >
-                    Ver en Booking
-                    <ExternalLink className="h-3 w-3 ml-2" />
-                  </a>
+
+                <div className="hotel-location">
+                  <span className="location-icon">📍</span>
+                  <span>Westminster</span>
                 </div>
+
+                <p className="hotel-description">
+                  Hotel con pequeña cocina con microondas. A 300m de Buckingham Palace y 1km de Abadía de Westminster.
+                </p>
+
+                <a href="https://booking.tpk.lv/3TjF71Re" target="_blank" rel="noopener noreferrer" className="btn-hotel">
+                  <span>Ver Disponibilidad en Booking</span>
+                  <svg className="external-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                  </svg>
+                </a>
               </div>
             </div>
 
@@ -567,64 +576,73 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-4">
-              <div className="bg-gradient-to-br from-emerald-50 to-green-50 rounded-xl p-4 border border-emerald-200 flex flex-col">
-                <div className="flex-grow">
-                  <h4 className="font-bold text-gray-900 mb-2">Tavistock Hotel ⭐⭐⭐</h4>
-                  <p className="text-xs text-gray-600 mb-2">📍 Camden</p>
-                  <p className="text-sm text-gray-700 mb-3">Hotel céntrico a 7 min de Euston Station y 10 min del Museo Británico. WiFi gratis, recepción 24h y restaurante.</p>
+              <div className="hotel-card">
+                <div className="hotel-header">
+                  <h3 className="hotel-name">Tavistock Hotel</h3>
+                  <div className="hotel-stars">⭐⭐⭐</div>
                 </div>
-                <div className="flex items-center justify-between flex-wrap gap-2 mt-auto">
-                  <span className="text-lg font-bold text-emerald-600">€</span>
-                  <a
-                    href="https://booking.tpk.lv/5NxF9hAu"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm"
-                  >
-                    Ver en Booking
-                    <ExternalLink className="h-3 w-3 ml-2" />
-                  </a>
+
+                <div className="hotel-location">
+                  <span className="location-icon">📍</span>
+                  <span>Camden</span>
                 </div>
+
+                <p className="hotel-description">
+                  Hotel céntrico a 7 min de Euston Station y 10 min del Museo Británico. WiFi gratis, recepción 24h y restaurante.
+                </p>
+
+                <a href="https://booking.tpk.lv/5NxF9hAu" target="_blank" rel="noopener noreferrer" className="btn-hotel">
+                  <span>Ver Disponibilidad en Booking</span>
+                  <svg className="external-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                  </svg>
+                </a>
               </div>
 
-              <div className="bg-gradient-to-br from-teal-50 to-cyan-50 rounded-xl p-4 border border-teal-200 flex flex-col">
-                <div className="flex-grow">
-                  <h4 className="font-bold text-gray-900 mb-2">Morton Hotel ⭐⭐⭐⭐</h4>
-                  <p className="text-xs text-gray-600 mb-2">📍 Camden</p>
-                  <p className="text-sm text-gray-700 mb-3">A 7 min andando del Museo Británico. Metro Russell Square a 2 min. Zona tranquila cerca de Covent Garden.</p>
+              <div className="hotel-card">
+                <div className="hotel-header">
+                  <h3 className="hotel-name">Morton Hotel</h3>
+                  <div className="hotel-stars">⭐⭐⭐⭐</div>
                 </div>
-                <div className="flex items-center justify-between flex-wrap gap-2 mt-auto">
-                  <span className="text-lg font-bold text-teal-600">€€</span>
-                  <a
-                    href="https://booking.tpk.lv/syLZxUWd"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm"
-                  >
-                    Ver en Booking
-                    <ExternalLink className="h-3 w-3 ml-2" />
-                  </a>
+
+                <div className="hotel-location">
+                  <span className="location-icon">📍</span>
+                  <span>Camden</span>
                 </div>
+
+                <p className="hotel-description">
+                  A 7 min andando del Museo Británico. Metro Russell Square a 2 min. Zona tranquila cerca de Covent Garden.
+                </p>
+
+                <a href="https://booking.tpk.lv/syLZxUWd" target="_blank" rel="noopener noreferrer" className="btn-hotel">
+                  <span>Ver Disponibilidad en Booking</span>
+                  <svg className="external-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                  </svg>
+                </a>
               </div>
 
-              <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl p-4 border border-blue-200 flex flex-col">
-                <div className="flex-grow">
-                  <h4 className="font-bold text-gray-900 mb-2">Pullman London St Pancras ⭐⭐⭐⭐</h4>
-                  <p className="text-xs text-gray-600 mb-2">📍 Camden</p>
-                  <p className="text-sm text-gray-700 mb-3">En St Pancras Station (Eurostar y 6 líneas metro). A 15 min del Museo Británico y King's Cross.</p>
+              <div className="hotel-card">
+                <div className="hotel-header">
+                  <h3 className="hotel-name">Pullman London St Pancras</h3>
+                  <div className="hotel-stars">⭐⭐⭐⭐</div>
                 </div>
-                <div className="flex items-center justify-between flex-wrap gap-2 mt-auto">
-                  <span className="text-lg font-bold text-blue-600">€€€</span>
-                  <a
-                    href="https://booking.tpk.lv/gaF2pTGa"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm"
-                  >
-                    Ver en Booking
-                    <ExternalLink className="h-3 w-3 ml-2" />
-                  </a>
+
+                <div className="hotel-location">
+                  <span className="location-icon">📍</span>
+                  <span>Camden</span>
                 </div>
+
+                <p className="hotel-description">
+                  En St Pancras Station (Eurostar y 6 líneas metro). A 15 min del Museo Británico y King's Cross.
+                </p>
+
+                <a href="https://booking.tpk.lv/gaF2pTGa" target="_blank" rel="noopener noreferrer" className="btn-hotel">
+                  <span>Ver Disponibilidad en Booking</span>
+                  <svg className="external-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                  </svg>
+                </a>
               </div>
             </div>
 
@@ -647,64 +665,73 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-4">
-              <div className="bg-gradient-to-br from-orange-50 to-amber-50 rounded-xl p-4 border border-orange-200 flex flex-col">
-                <div className="flex-grow">
-                  <h4 className="font-bold text-gray-900 mb-2">ibis London Blackfriars ⭐⭐⭐</h4>
-                  <p className="text-xs text-gray-600 mb-2">📍 Southwark</p>
-                  <p className="text-sm text-gray-700 mb-3">A 5 min de estación Waterloo. A 10 min andando del Tate Modern, 20 min del London Eye y Big Ben.</p>
+              <div className="hotel-card">
+                <div className="hotel-header">
+                  <h3 className="hotel-name">ibis London Blackfriars</h3>
+                  <div className="hotel-stars">⭐⭐⭐</div>
                 </div>
-                <div className="flex items-center justify-between flex-wrap gap-2 mt-auto">
-                  <span className="text-lg font-bold text-orange-600">€€</span>
-                  <a
-                    href="https://booking.tpk.lv/J6DZf62g"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm"
-                  >
-                    Ver en Booking
-                    <ExternalLink className="h-3 w-3 ml-2" />
-                  </a>
+
+                <div className="hotel-location">
+                  <span className="location-icon">📍</span>
+                  <span>Southwark</span>
                 </div>
+
+                <p className="hotel-description">
+                  A 5 min de estación Waterloo. A 10 min andando del Tate Modern, 20 min del London Eye y Big Ben.
+                </p>
+
+                <a href="https://booking.tpk.lv/J6DZf62g" target="_blank" rel="noopener noreferrer" className="btn-hotel">
+                  <span>Ver Disponibilidad en Booking</span>
+                  <svg className="external-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                  </svg>
+                </a>
               </div>
 
-              <div className="bg-gradient-to-br from-pink-50 to-rose-50 rounded-xl p-4 border border-pink-200 flex flex-col">
-                <div className="flex-grow">
-                  <h4 className="font-bold text-gray-900 mb-2">citizenM London Bankside ⭐⭐⭐⭐</h4>
-                  <p className="text-xs text-gray-600 mb-2">📍 Southwark</p>
-                  <p className="text-sm text-gray-700 mb-3">A 2 min del Tate Modern, 600m del Puente del Milenio. Estación Waterloo a 1.6km, Catedral San Pablo a 10 min.</p>
+              <div className="hotel-card">
+                <div className="hotel-header">
+                  <h3 className="hotel-name">citizenM London Bankside</h3>
+                  <div className="hotel-stars">⭐⭐⭐⭐</div>
                 </div>
-                <div className="flex items-center justify-between flex-wrap gap-2 mt-auto">
-                  <span className="text-lg font-bold text-pink-600">€€</span>
-                  <a
-                    href="https://booking.tpk.lv/cp2brt0T"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm"
-                  >
-                    Ver en Booking
-                    <ExternalLink className="h-3 w-3 ml-2" />
-                  </a>
+
+                <div className="hotel-location">
+                  <span className="location-icon">📍</span>
+                  <span>Southwark</span>
                 </div>
+
+                <p className="hotel-description">
+                  A 2 min del Tate Modern, 600m del Puente del Milenio. Estación Waterloo a 1.6km, Catedral San Pablo a 10 min.
+                </p>
+
+                <a href="https://booking.tpk.lv/cp2brt0T" target="_blank" rel="noopener noreferrer" className="btn-hotel">
+                  <span>Ver Disponibilidad en Booking</span>
+                  <svg className="external-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                  </svg>
+                </a>
               </div>
 
-              <div className="bg-gradient-to-br from-purple-50 to-violet-50 rounded-xl p-4 border border-purple-200 flex flex-col">
-                <div className="flex-grow">
-                  <h4 className="font-bold text-gray-900 mb-2">H10 London Waterloo ⭐⭐⭐⭐</h4>
-                  <p className="text-xs text-gray-600 mb-2">📍 Southwark</p>
-                  <p className="text-sm text-gray-700 mb-3">Metro Waterloo a 5 min. A 15 min andando del Big Ben y London Eye, 20 min del Shakespeare's Globe.</p>
+              <div className="hotel-card">
+                <div className="hotel-header">
+                  <h3 className="hotel-name">H10 London Waterloo</h3>
+                  <div className="hotel-stars">⭐⭐⭐⭐</div>
                 </div>
-                <div className="flex items-center justify-between flex-wrap gap-2 mt-auto">
-                  <span className="text-lg font-bold text-purple-600">€€</span>
-                  <a
-                    href="https://booking.tpk.lv/95kgpIh5"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm"
-                  >
-                    Ver en Booking
-                    <ExternalLink className="h-3 w-3 ml-2" />
-                  </a>
+
+                <div className="hotel-location">
+                  <span className="location-icon">📍</span>
+                  <span>Southwark</span>
                 </div>
+
+                <p className="hotel-description">
+                  Metro Waterloo a 5 min. A 15 min andando del Big Ben y London Eye, 20 min del Shakespeare's Globe.
+                </p>
+
+                <a href="https://booking.tpk.lv/95kgpIh5" target="_blank" rel="noopener noreferrer" className="btn-hotel">
+                  <span>Ver Disponibilidad en Booking</span>
+                  <svg className="external-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                  </svg>
+                </a>
               </div>
             </div>
 
