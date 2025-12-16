@@ -317,17 +317,20 @@ button:focus {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    gap: 8px;
+    gap: 6px;
     width: 100%;
-    padding: 12px 24px;
+    padding: 10px 16px;
     background: #003580;
     color: white;
     text-decoration: none;
     border-radius: 10px;
-    font-size: 0.95rem;
+    font-size: 0.875rem;
     font-weight: 600;
     transition: all 0.3s ease;
     margin-top: 4px;
+    white-space: normal;
+    text-align: center;
+    line-height: 1.4;
   }
 
   .btn-hotel:hover {
