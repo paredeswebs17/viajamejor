@@ -531,7 +531,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
                 <div className="flex-grow">
                   <h4 className="font-bold text-gray-900 mb-2">The Resident Victoria ⭐⭐⭐⭐</h4>
                   <p className="text-xs text-gray-600 mb-2">📍 Westminster</p>
-                  <p className="text-sm text-gray-700 mb-3">Hotel con pequeña cocina con microondas. A 300m de Buckingham Palace y 1km de Westminster Abbey.</p>
+                  <p className="text-sm text-gray-700 mb-3">Hotel con pequeña cocina con microondas. A 300m de Buckingham Palace y 1km de Abadía de Westminster.</p>
                 </div>
                 <div className="flex items-center justify-between flex-wrap gap-2 mt-auto">
                   <span className="text-lg font-bold text-indigo-600">€€</span>
@@ -550,7 +550,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
 
             <div className="bg-green-50 border border-green-200 rounded-lg p-3">
               <p className="text-sm text-green-800">
-                <strong>✅ Por qué elegir esta zona:</strong> La ubicación TOP para primera visita. A 5-15 min andando de: Big Ben, Westminster Abbey, Buckingham Palace, Trafalgar Square, London Eye, West End (teatros), National Gallery, Covent Garden Market. Perfecta combinación de monumentos históricos + vida nocturna + restaurantes de clase mundial.
+                <strong>✅ Por qué elegir esta zona:</strong> La ubicación TOP para primera visita. A 5-15 min andando de: Big Ben, Abadía de Westminster, Buckingham Palace, Trafalgar Square, London Eye, West End (teatros), National Gallery, Covent Garden Market. Perfecta combinación de monumentos históricos + vida nocturna + restaurantes de clase mundial.
               </p>
             </div>
           </div>
@@ -731,7 +731,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
             <tbody>
               <tr>
                 <td className="border border-gray-300 px-4 py-3 font-bold">DÍA 1</td>
-                <td className="border border-gray-300 px-4 py-3">Big Ben + Westminster Abbey + St James's Park + Buckingham Palace + Trafalgar Square + Covent Garden + Neal's Yard + London Eye + South Bank nocturno</td>
+                <td className="border border-gray-300 px-4 py-3">Big Ben + Abadía de Westminster + St James's Park + Buckingham Palace + Trafalgar Square + Covent Garden + Neal's Yard + London Eye + South Bank nocturno</td>
               </tr>
               <tr className="bg-gray-50">
                 <td className="border border-gray-300 px-4 py-3 font-bold">DÍA 2</td>
@@ -856,7 +856,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
             Abadía de Westminster (9:45h)
           </h3>
           <div className="bg-gradient-to-r from-orange-50 to-red-50 border border-orange-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
-            <h4 className="text-lg font-bold text-gray-900 mb-3">Westminster Abbey - Donde se Corona a los Reyes</h4>
+            <h4 className="text-lg font-bold text-gray-900 mb-3">Abadía de Westminster - Donde se Corona a los Reyes</h4>
 
             <div className="mb-4">
               <img         src="https://images.pexels.com/photos/9825872/pexels-photo-9825872.jpeg"
@@ -895,7 +895,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
               rel="noopener noreferrer"
               className="btn-attraction"
             >
-              <span>Comprar Entradas Westminster Abbey</span>
+              <span>Comprar Entradas Abadía de Westminster</span>
               <svg
                 className="external-icon"
                 fill="none"
