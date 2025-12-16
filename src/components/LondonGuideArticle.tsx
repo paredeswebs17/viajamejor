@@ -808,28 +808,25 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
               Comenzamos nuestra aventura londinense frente al símbolo más reconocible de la ciudad. El Big Ben (oficialmente Torre Elizabeth desde 2012) no es el reloj, sino la campana de 13 toneladas que repica dentro. La torre data de 1859 y sus 96 metros de altura han dominado el skyline de Westminster durante más de 160 años.
             </p>
 
-            <div className="info-section">
-              <h3>📋 Información Práctica:</h3>
-              <ul>
-                <li><span style={{color: '#60a5fa'}}>●</span> Visita Interior: Reabierta tras restauración</li>
-                <li><span style={{color: '#4ade80'}}>●</span> Tours: Solo con guía en inglés</li>
-                <li><span style={{color: '#f87171'}}>●</span> Precio: 35-41 € por persona</li>
-                <li><span style={{color: '#facc15'}}>●</span> Duración: 90 minutos, 334 escalones</li>
-              </ul>
-            </div>
-
-            <div className="tip-box warning">
-              <div className="tip-box-header">⚠️ Importante:</div>
-              <div className="tip-box-content">Muy difícil conseguir entradas. Reserva con meses de antelación.</div>
-            </div>
-
-            <div className="info-section">
-              <h3>📸 Mejores Fotos:</h3>
-              <ul>
-                <li><span style={{color: '#a78bfa'}}>●</span> Desde Westminster Bridge (vista clásica)</li>
-                <li><span style={{color: '#f472b6'}}>●</span> South Bank (frente, con London Eye)</li>
-                <li><span style={{color: '#818cf8'}}>●</span> Cabina roja en Parliament Street</li>
-              </ul>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+              <div>
+                <h5 className="font-semibold text-gray-900 mb-2">📋 Información Práctica:</h5>
+                <ul className="text-sm text-gray-700 space-y-1 list-none">
+                  <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Visita Interior: Reabierta tras restauración</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Tours: Solo con guía en inglés</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>Precio: 35-41 € por persona</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-yellow-400 rounded-full mr-3"></span>Duración: 90 minutos, 334 escalones</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-orange-400 rounded-full mr-3"></span>⚠️ Muy difícil conseguir entradas (reservar con meses de antelación)</li>
+                </ul>
+              </div>
+              <div>
+                <h5 className="font-semibold text-gray-900 mb-2">📸 Mejores Fotos:</h5>
+                <ul className="text-sm text-gray-700 space-y-1 list-none">
+                  <li className="flex items-center"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3"></span>Desde Westminster Bridge (vista clásica)</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-pink-400 rounded-full mr-3"></span>South Bank (frente, con London Eye)</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-indigo-400 rounded-full mr-3"></span>Cabina roja en Parliament Street</li>
+                </ul>
+              </div>
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
@@ -898,28 +895,25 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
               A solo 5 minutos andando del Big Ben se encuentra una de las iglesias más importantes del mundo. Desde 1066, todas las coronaciones británicas (excepto dos) han tenido lugar aquí. La última fue la del Rey Carlos III en mayo de 2023.
             </p>
 
-            <div className="info-section">
-              <h3>⭐ Imprescindibles que Ver:</h3>
-              <ul>
-                <li><span style={{color: '#eab308'}}>●</span> Coronation Chair (trono desde 1308)</li>
-                <li><span style={{color: '#60a5fa'}}>●</span> Poets' Corner (Chaucer, Dickens)</li>
-                <li><span style={{color: '#4ade80'}}>●</span> Tumba del Guerrero Desconocido</li>
-                <li><span style={{color: '#a78bfa'}}>●</span> Capilla de Enrique VII</li>
-              </ul>
-            </div>
-
-            <div className="info-section">
-              <h3>🎫 Información Práctica:</h3>
-              <ul>
-                <li><span style={{color: '#10b981'}}>●</span> Entrada: 36 € adultos (online)</li>
-                <li><span style={{color: '#fb923c'}}>●</span> Incluye: Audioguía en español</li>
-                <li><span style={{color: '#f87171'}}>●</span> Duración: 1.5-2 horas</li>
-              </ul>
-            </div>
-
-            <div className="tip-box warning">
-              <div className="tip-box-header">⚠️ Importante:</div>
-              <div className="tip-box-content">No se permiten fotos en el interior.</div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+              <div>
+                <h5 className="font-semibold text-gray-900 mb-2">⭐ Imprescindibles que Ver:</h5>
+                <ul className="text-sm text-gray-700 space-y-1 list-none">
+                  <li className="flex items-center"><span className="w-2 h-2 bg-gold-400 rounded-full mr-3"></span>Coronation Chair (trono desde 1308)</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Poets' Corner (Chaucer, Dickens)</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Tumba del Guerrero Desconocido</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3"></span>Capilla de Enrique VII</li>
+                </ul>
+              </div>
+              <div>
+                <h5 className="font-semibold text-gray-900 mb-2">🎫 Información Práctica:</h5>
+                <ul className="text-sm text-gray-700 space-y-1 list-none">
+                  <li className="flex items-center"><span className="w-2 h-2 bg-emerald-400 rounded-full mr-3"></span>Entrada: 36 € adultos (online)</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-orange-400 rounded-full mr-3"></span>Incluye: Audioguía en español</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>Duración: 1.5-2 horas</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-yellow-400 rounded-full mr-3"></span>⚠️ No se permiten fotos interior</li>
+                </ul>
+              </div>
             </div>
 
             <a
@@ -964,26 +958,23 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
               Dejamos la Abadía y cruzamos hacia el parque real más antiguo de Londres (1532). Este oasis verde de 23 hectáreas fue jardín privado de Enrique VIII y hoy conecta Westminster con Buckingham Palace. Al final del parque emerge la fachada más fotografiada de Londres, con 775 habitaciones.
             </p>
 
-            <div className="info-section">
-              <h3>🦆 Highlights del Parque:</h3>
-              <ul>
-                <li><span style={{color: '#4ade80'}}>●</span> Lago con pelícanos desde 1664</li>
-                <li><span style={{color: '#60a5fa'}}>●</span> Blue Bridge con vistas simultáneas</li>
-                <li><span style={{color: '#f472b6'}}>●</span> 60.000 flores en primavera/verano</li>
-              </ul>
-            </div>
-
-            <div className="info-section">
-              <h3>🎭 Cambio de Guardia:</h3>
-              <ul>
-                <li><span style={{color: '#a78bfa'}}>●</span> Duración: 45 minutos</li>
-                <li><span style={{color: '#4ade80'}}>●</span> ¡Completamente GRATUITO!</li>
-              </ul>
-            </div>
-
-            <div className="tip-box warning">
-              <div className="tip-box-header">⚠️ Importante:</div>
-              <div className="tip-box-content">NO hay Cambio de Guardia todos los días. Consulta el calendario oficial antes de ir.</div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+              <div>
+                <h5 className="font-semibold text-gray-900 mb-2">🦆 Highlights del Parque:</h5>
+                <ul className="text-sm text-gray-700 space-y-1 list-none">
+                  <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Lago con pelícanos desde 1664</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Blue Bridge con vistas simultáneas</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-pink-400 rounded-full mr-3"></span>60.000 flores en primavera/verano</li>
+                </ul>
+              </div>
+              <div>
+                <h5 className="font-semibold text-gray-900 mb-2">🎭 Cambio de Guardia:</h5>
+                <ul className="text-sm text-gray-700 space-y-1 list-none">
+                  <li className="flex items-center"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3"></span>Duración: 45 minutos</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-orange-400 rounded-full mr-3"></span>⚠️ NO hay todos los días</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>¡Completamente GRATUITO!</li>
+                </ul>
+              </div>
             </div>
 
             <a
@@ -1015,15 +1006,17 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
               Considerada el "centro" de Londres, desde aquí se miden todas las distancias oficiales del Reino Unido. Esta plaza monumental fue diseñada en 1830 para conmemorar la victoria del Almirante Nelson en la Batalla de Trafalgar (1805).
             </p>
 
-            <div className="info-section">
-              <h3>🎨 National Gallery - Galería Nacional:</h3>
-              <p>Uno de los museos de arte más importantes del mundo, ¡con entrada GRATUITA!</p>
-              <ul>
-                <li><span style={{color: '#60a5fa'}}>●</span> Más de 2.300 pinturas (1250-1900)</li>
-                <li><span style={{color: '#4ade80'}}>●</span> Van Gogh, Da Vinci, Velázquez, Monet</li>
-                <li><span style={{color: '#f87171'}}>●</span> Horario: 10:00-18:00 (viernes hasta 21:00)</li>
-                <li><span style={{color: '#facc15'}}>●</span> Entrada: GRATIS</li>
-              </ul>
+            <div className="bg-white rounded-xl p-4 mb-4 shadow-sm border border-gray-100">
+              <h5 className="font-semibold text-gray-900 mb-2">🎨 National Gallery - Galería Nacional:</h5>
+              <div className="text-sm text-gray-700 space-y-2">
+                <p>Uno de los museos de arte más importantes del mundo, ¡con entrada GRATUITA!</p>
+                <ul className="space-y-1 list-none">
+                  <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Más de 2.300 pinturas (1250-1900)</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Van Gogh, Da Vinci, Velázquez, Monet</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>Horario: 10:00-18:00 (viernes hasta 21:00)</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-yellow-400 rounded-full mr-3"></span>Entrada: GRATIS</li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
@@ -1046,28 +1039,25 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
               Desde 1654 este fue el mercado de frutas y verduras más importante de Londres. Hoy es un vibrante centro de tiendas, restaurantes, artistas callejeros y el Apple Market con artesanía británica. A solo 2 minutos andando se esconde Neal's Yard: un pequeño callejón de edificios pintados en colores vibrantes.
             </p>
 
-            <div className="info-section">
-              <h3>🏛️ Qué ver en Covent Garden:</h3>
-              <ul>
-                <li><span style={{color: '#a78bfa'}}>●</span> Apple Market: Artesanía británica</li>
-                <li><span style={{color: '#f472b6'}}>●</span> Artistas callejeros de calidad</li>
-                <li><span style={{color: '#60a5fa'}}>●</span> Royal Opera House</li>
-                <li><span style={{color: '#4ade80'}}>●</span> Arquitectura victoriana impresionante</li>
-              </ul>
-            </div>
-
-            <div className="info-section">
-              <h3>🌈 Neal's Yard:</h3>
-              <ul>
-                <li><span style={{color: '#facc15'}}>●</span> Fachadas de colores Instagram-friendly</li>
-                <li><span style={{color: '#fb923c'}}>●</span> Neal's Yard Remedies (cosmética)</li>
-                <li><span style={{color: '#10b981'}}>●</span> Cafés orgánicos</li>
-              </ul>
-            </div>
-
-            <div className="tip-box pro-tip">
-              <div className="tip-box-header">📸 Pro Tip:</div>
-              <div className="tip-box-content">Mejor hora para fotos en Neal's Yard: 14:00-16:00h, cuando la luz natural ilumina las fachadas de colores.</div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+              <div>
+                <h5 className="font-semibold text-gray-900 mb-2">🏛️ Qué ver en Covent Garden:</h5>
+                <ul className="text-sm text-gray-700 space-y-1 list-none">
+                  <li className="flex items-center"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3"></span>Apple Market: Artesanía británica</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-pink-400 rounded-full mr-3"></span>Artistas callejeros de calidad</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Royal Opera House</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Arquitectura victoriana impresionante</li>
+                </ul>
+              </div>
+              <div>
+                <h5 className="font-semibold text-gray-900 mb-2">🌈 Neal's Yard:</h5>
+                <ul className="text-sm text-gray-700 space-y-1 list-none">
+                  <li className="flex items-center"><span className="w-2 h-2 bg-yellow-400 rounded-full mr-3"></span>Fachadas de colores Instagram-friendly</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-orange-400 rounded-full mr-3"></span>Neal's Yard Remedies (cosmética)</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-emerald-400 rounded-full mr-3"></span>Cafés orgánicos</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>📸 Mejor hora: 14:00-16:00h</li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
@@ -1091,27 +1081,27 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
               Cerramos el día subiendo a 135 metros de altura en la noria de observación más icónica del mundo. Inaugurada en el año 2000, el London Eye se ha convertido en el monumento de pago más visitado del Reino Unido.
             </p>
 
-            <div className="info-section">
-              <h3>🎡 Datos Fascinantes:</h3>
-              <ul>
-                <li><span style={{color: '#60a5fa'}}>●</span> Altura: 135 metros</li>
-                <li><span style={{color: '#4ade80'}}>●</span> 32 cápsulas (25 personas cada una)</li>
-                <li><span style={{color: '#f87171'}}>●</span> Duración: 30 minutos rotación</li>
-                <li><span style={{color: '#facc15'}}>●</span> Pasajeros/año: 3.75 millones</li>
-              </ul>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+              <div>
+                <h5 className="font-semibold text-gray-900 mb-2">🎡 Datos Fascinantes:</h5>
+                <ul className="text-sm text-gray-700 space-y-1 list-none">
+                  <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Altura: 135 metros</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>32 cápsulas (25 personas cada una)</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>Duración: 30 minutos rotación</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-yellow-400 rounded-full mr-3"></span>Pasajeros/año: 3.75 millones</li>
+                </ul>
+              </div>
+              <div>
+                <h5 className="font-semibold text-gray-900 mb-2">🎫 Información de Entradas:</h5>
+                <ul className="text-sm text-gray-700 space-y-1 list-none">
+                  <li className="flex items-center"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3"></span>Precio desde 33€</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-pink-400 rounded-full mr-3"></span>Se recomienda comprar online para evitar grandes colas</li>
+                </ul>
+              </div>
             </div>
 
-            <div className="info-section">
-              <h3>🎫 Información de Entradas:</h3>
-              <ul>
-                <li><span style={{color: '#a78bfa'}}>●</span> Precio desde 33€</li>
-                <li><span style={{color: '#f472b6'}}>●</span> Se recomienda comprar online para evitar grandes colas</li>
-              </ul>
-            </div>
-
-            <div className="tip-box info">
-              <div className="tip-box-header">💡 Mejor Momento:</div>
-              <div className="tip-box-content">Atardecer, ves la ciudad de día y de noche en la misma vuelta.</div>
+            <div className="bg-white rounded-xl p-4 border border-gray-200 shadow-sm mb-4">
+              <p className="text-xs text-sky-600 mb-2">💡 Mejor momento: Atardecer, ves la ciudad de día y de noche en la misma vuelta.</p>
             </div>
 
             <a
@@ -1157,23 +1147,24 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
               Desde el London Eye hasta el Puente de Westminster se extiende el paseo peatonal más vibrante de Londres. De noche, con todo iluminado, es simplemente mágico.
             </p>
 
-            <div className="info-section">
-              <h3>🌉 Qué Verás:</h3>
-              <ul>
-                <li><span style={{color: '#60a5fa'}}>●</span> Golden Jubilee Bridges iluminados</li>
-                <li><span style={{color: '#4ade80'}}>●</span> Southbank Centre (conciertos gratis)</li>
-                <li><span style={{color: '#a78bfa'}}>●</span> Street performers y artistas</li>
-                <li><span style={{color: '#f472b6'}}>●</span> Skate park bajo el puente</li>
-              </ul>
-            </div>
-
-            <div className="info-section">
-              <h3>📸 Fotos Nocturnas:</h3>
-              <ul>
-                <li><span style={{color: '#facc15'}}>●</span> London Eye reflejado en el Támesis</li>
-                <li><span style={{color: '#fb923c'}}>●</span> Big Ben iluminado desde South Bank</li>
-                <li><span style={{color: '#f87171'}}>●</span> Westminster Bridge con luces doradas</li>
-              </ul>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+              <div>
+                <h5 className="font-semibold text-gray-900 mb-2">🌉 Qué Verás:</h5>
+                <ul className="text-sm text-gray-700 space-y-1 list-none">
+                  <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Golden Jubilee Bridges iluminados</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Southbank Centre (conciertos gratis)</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3"></span>Street performers y artistas</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-pink-400 rounded-full mr-3"></span>Skate park bajo el puente</li>
+                </ul>
+              </div>
+              <div>
+                <h5 className="font-semibold text-gray-900 mb-2">📸 Fotos Nocturnas:</h5>
+                <ul className="text-sm text-gray-700 space-y-1 list-none">
+                  <li className="flex items-center"><span className="w-2 h-2 bg-yellow-400 rounded-full mr-3"></span>London Eye reflejado en el Támesis</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-orange-400 rounded-full mr-3"></span>Big Ben iluminado desde South Bank</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>Westminster Bridge con luces doradas</li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
@@ -1204,22 +1195,23 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
             <p className="text-gray-700 mb-4">
               Comenzamos el día en el mercado de comida más antiguo de Londres (1014 d.C.). Hoy es el epicentro de la gastronomía gourmet, orgánica y artesanal de la ciudad.
             </p>
-            <div className="info-section">
-              <h3>🧀 Qué Encontrarás:</h3>
-              <ul>
-                <li><span style={{color: '#4ade80'}}>●</span> Más de 100 puestos de comida</li>
-                <li><span style={{color: '#60a5fa'}}>●</span> Bread Ahead (donuts 4,70 €)</li>
-                <li><span style={{color: '#f87171'}}>●</span> Ostras frescas desde 1,80 €</li>
-              </ul>
-            </div>
-
-            <div className="info-section">
-              <h3>📅 Horarios:</h3>
-              <ul>
-                <li><span style={{color: '#a78bfa'}}>●</span> Lun-Jue: 10:00-17:00</li>
-                <li><span style={{color: '#f472b6'}}>●</span> Sáb: 8:00-17:00 (más ambiente)</li>
-                <li><span style={{color: '#fb923c'}}>●</span> Dom: Cerrado</li>
-              </ul>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <h5 className="font-semibold text-gray-900 mb-2">🧀 Qué Encontrarás:</h5>
+                <ul className="text-sm text-gray-700 space-y-1 list-none">
+                  <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Más de 100 puestos de comida</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Bread Ahead (donuts 4,70 €)</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>Ostras frescas desde 1,80 €</li>
+                </ul>
+              </div>
+              <div>
+                <h5 className="font-semibold text-gray-900 mb-2">📅 Horarios:</h5>
+                <ul className="text-sm text-gray-700 space-y-1 list-none">
+                  <li className="flex items-center"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3"></span>Lun-Jue: 10:00-17:00</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-pink-400 rounded-full mr-3"></span>Sáb: 8:00-17:00 (más ambiente)</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-orange-400 rounded-full mr-3"></span>Dom: Cerrado</li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
@@ -1242,24 +1234,25 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
             <p className="text-gray-700 mb-4">
               El puente basculante más fotografiado del mundo (1894). Aunque muchos lo confunden con el London Bridge, Tower Bridge es el icónico puente victoriano con sus dos torres góticas y pasarelas elevadas.
             </p>
-            <div className="info-section">
-              <h3>🎫 Información Práctica:</h3>
-              <ul>
-                <li><span style={{color: '#60a5fa'}}>●</span> Paseo exterior: GRATIS</li>
-                <li><span style={{color: '#4ade80'}}>●</span> Subir torres: 18€</li>
-                <li><span style={{color: '#facc15'}}>●</span> Suelo de cristal en pasarela alta</li>
-                <li><span style={{color: '#a78bfa'}}>●</span> Sala de máquinas victoriana</li>
-              </ul>
-            </div>
-
-            <div className="info-section">
-              <h3>📸 Mejores Fotos:</h3>
-              <ul>
-                <li><span style={{color: '#f87171'}}>●</span> Desde South Bank</li>
-                <li><span style={{color: '#fb923c'}}>●</span> Atardecer desde el río</li>
-                <li><span style={{color: '#f472b6'}}>●</span> Con Torre de Londres al fondo</li>
-                <li><span style={{color: '#06b6d4'}}>●</span> Vista nocturna iluminado</li>
-              </ul>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+              <div className="bg-white rounded-xl p-4 shadow-sm">
+                <h5 className="font-semibold text-gray-900 mb-2">🎫 Información Práctica:</h5>
+                <ul className="text-sm text-gray-700 space-y-1 list-none">
+                  <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Paseo exterior: GRATIS</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Subir torres: 18€</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-yellow-400 rounded-full mr-3"></span>Suelo de cristal en pasarela alta</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3"></span>Sala de máquinas victoriana</li>
+                </ul>
+              </div>
+              <div className="bg-white rounded-xl p-4 shadow-sm">
+                <h5 className="font-semibold text-gray-900 mb-2">📸 Mejores Fotos:</h5>
+                <ul className="text-sm text-gray-700 space-y-1 list-none">
+                  <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>Desde South Bank</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-orange-400 rounded-full mr-3"></span>Atardecer desde el río</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-pink-400 rounded-full mr-3"></span>Con Torre de Londres al fondo</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-cyan-400 rounded-full mr-3"></span>Vista nocturna iluminado</li>
+                </ul>
+              </div>
             </div>
             <div className="mt-4">
               <a
@@ -1305,33 +1298,31 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
             <p className="text-gray-700 mb-4">
               Fortaleza normanda fundada en 1066 que ha sido palacio real, prisión, arsenal y ahora alberga las legendarias Joyas de la Corona Británica. Uno de los monumentos más importantes de Londres.
             </p>
-            <div className="info-section">
-              <h3>💎 Imprescindibles:</h3>
-              <ul>
-                <li><span style={{color: '#facc15'}}>●</span> Crown Jewels: Imperial State Crown con 2.868 diamantes</li>
-                <li><span style={{color: '#60a5fa'}}>●</span> White Tower: La torre normanda original</li>
-                <li><span style={{color: '#4ade80'}}>●</span> Los cuervos de la Torre (leyenda real)</li>
+            <div className="bg-white rounded-xl p-4 mb-4 shadow-sm">
+              <h5 className="font-semibold text-gray-900 mb-2">💎 Imprescindibles:</h5>
+              <ul className="text-sm text-gray-700 space-y-1 list-none">
+                <li className="flex items-center"><span className="w-2 h-2 bg-yellow-400 rounded-full mr-3"></span>Crown Jewels: Imperial State Crown con 2.868 diamantes</li>
+                <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>White Tower: La torre normanda original</li>
+                <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Los cuervos de la Torre (leyenda real)</li>
               </ul>
             </div>
-
-            <div className="info-section">
-              <h3>🎫 Información Práctica:</h3>
-              <ul>
-                <li><span style={{color: '#60a5fa'}}>●</span> Precio: 40€ online</li>
-                <li><span style={{color: '#facc15'}}>●</span> Horario diciembre: 9:00-16:30 (última entrada 15:00)</li>
-                <li><span style={{color: '#f87171'}}>●</span> Duración: 2.5-3 horas mínimo</li>
-                <li><span style={{color: '#a78bfa'}}>●</span> Audioguía incluida en el precio</li>
-              </ul>
-            </div>
-
-            <div className="tip-box">
-              <div className="tip-box-header">💡 Consejos de Visita:</div>
-              <div className="tip-box-content">
-                <ul style={{listStyle: 'none', padding: 0}}>
-                  <li style={{color: '#a78bfa', marginBottom: '0.5rem'}}>Ve directo a Crown Jewels primero</li>
-                  <li style={{color: '#fb923c', marginBottom: '0.5rem'}}>Únete a un Yeoman Tour (cada 30 min)</li>
-                  <li style={{color: '#f472b6', marginBottom: '0.5rem'}}>Llegada temprana recomendada</li>
-                  <li style={{color: '#06b6d4'}}>Tours guiados incluidos</li>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+              <div className="bg-white rounded-xl p-4 shadow-sm">
+                <h5 className="font-semibold text-gray-900 mb-2">🎫 Información Práctica:</h5>
+                <ul className="text-sm text-gray-700 space-y-1 list-none">
+                  <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3 flex-shrink-0"></span><span>Precio: 40€ online</span></li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-yellow-400 rounded-full mr-3 flex-shrink-0"></span><span>Horario diciembre: 9:00-16:30 (última entrada 15:00)</span></li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3 flex-shrink-0"></span><span>Duración: 2.5-3 horas mínimo</span></li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3 flex-shrink-0"></span><span>Audioguía incluida en el precio</span></li>
+                </ul>
+              </div>
+              <div className="bg-white rounded-xl p-4 shadow-sm">
+                <h5 className="font-semibold text-gray-900 mb-2">⚡ Consejos de Visita:</h5>
+                <ul className="text-sm text-gray-700 space-y-1 list-none">
+                  <li className="flex items-center"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3 flex-shrink-0"></span><span>Ve directo a Crown Jewels primero</span></li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-orange-400 rounded-full mr-3 flex-shrink-0"></span><span>Únete a un Yeoman Tour (cada 30 min)</span></li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-pink-400 rounded-full mr-3 flex-shrink-0"></span><span>Llegada temprana recomendada</span></li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-cyan-400 rounded-full mr-3 flex-shrink-0"></span><span>Tours guiados incluidos</span></li>
                 </ul>
               </div>
             </div>
@@ -1382,29 +1373,29 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
               Después de la Torre, subimos al mirador GRATUITO más alto de Londres. El Sky Garden, en el piso 35-37 del rascacielos "Walkie Talkie", ofrece vistas 360° de la ciudad desde 155 metros de altura, rodeado de jardines tropicales exóticos y terrazas al aire libre.
             </p>
 
-            <div className="info-section">
-              <h3>🎫 Información Práctica:</h3>
-              <ul>
-                <li><span style={{color: '#4ade80'}}>●</span> Entrada: ¡COMPLETAMENTE GRATIS!</li>
-                <li><span style={{color: '#60a5fa'}}>●</span> Altura: 155 metros (piso 35-37)</li>
-                <li><span style={{color: '#f87171'}}>●</span> Reserva: Obligatoria online (2-3 semanas antes)</li>
-                <li><span style={{color: '#facc15'}}>●</span> Horario: 10:00-18:00 (Lun-Vie), 11:00-21:00 (Fin de semana)</li>
-              </ul>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+              <div>
+                <h5 className="font-semibold text-gray-900 mb-2">🎫 Información Práctica:</h5>
+                <ul className="text-sm text-gray-700 space-y-1 list-none">
+                  <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Entrada: ¡COMPLETAMENTE GRATIS!</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Altura: 155 metros (piso 35-37)</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>Reserva: Obligatoria online (2-3 semanas antes)</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-yellow-400 rounded-full mr-3"></span>Horario: 10:00-18:00 (Lun-Vie), 11:00-21:00 (Fin de semana)</li>
+                </ul>
+              </div>
+              <div>
+                <h5 className="font-semibold text-gray-900 mb-2">🌟 Qué Ver:</h5>
+                <ul className="text-sm text-gray-700 space-y-1 list-none">
+                  <li className="flex items-center"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3"></span>Vistas 360° de Londres</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-pink-400 rounded-full mr-3"></span>Jardín tropical en el cielo</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-orange-400 rounded-full mr-3"></span>Terrazas al aire libre</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-emerald-400 rounded-full mr-3"></span>Bar y restaurante (opcional)</li>
+                </ul>
+              </div>
             </div>
 
-            <div className="info-section">
-              <h3>🌟 Qué Ver:</h3>
-              <ul>
-                <li><span style={{color: '#a78bfa'}}>●</span> Vistas 360° de Londres</li>
-                <li><span style={{color: '#f472b6'}}>●</span> Jardín tropical en el cielo</li>
-                <li><span style={{color: '#fb923c'}}>●</span> Terrazas al aire libre</li>
-                <li><span style={{color: '#10b981'}}>●</span> Bar y restaurante (opcional)</li>
-              </ul>
-            </div>
-
-            <div className="tip-box warning">
-              <div className="tip-box-header">⚠️ Importante:</div>
-              <div className="tip-box-content">Sky Garden se llena rápido. Reserva tu slot gratuito con 2-3 semanas de antelación en skygarden.london. Si no hay disponibilidad, ve a The Shard como alternativa de pago.</div>
+            <div className="bg-white rounded-xl p-3 border border-gray-200 shadow-sm">
+              <p className="text-xs text-emerald-600">💡 <strong>Importante:</strong> Sky Garden se llena rápido. Reserva tu slot gratuito con 2-3 semanas de antelación en skygarden.london. Si no hay disponibilidad, ve a The Shard como alternativa de pago.</p>
             </div>
           </div>
 
@@ -1422,29 +1413,29 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
               Si Sky Garden está lleno o prefieres vistas aún más altas, The Shard te eleva a 310 metros (pisos 68-72). Es el edificio más alto del Reino Unido y ofrece vistas hasta 64 kilómetros en días despejados. Su diseño de cristal piramidal lo hace inconfundible en el skyline londinense.
             </p>
 
-            <div className="info-section">
-              <h3>🎫 Información Práctica:</h3>
-              <ul>
-                <li><span style={{color: '#60a5fa'}}>●</span> Entrada: 33-37€ (online adelantado)</li>
-                <li><span style={{color: '#4ade80'}}>●</span> Altura: 310 metros (pisos 68-72)</li>
-                <li><span style={{color: '#f87171'}}>●</span> Vistas: Hasta 64 km en días claros</li>
-                <li><span style={{color: '#facc15'}}>●</span> Horario: 10:00-22:00 (última entrada 20:00)</li>
-              </ul>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+              <div>
+                <h5 className="font-semibold text-gray-900 mb-2">🎫 Información Práctica:</h5>
+                <ul className="text-sm text-gray-700 space-y-1 list-none">
+                  <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Entrada: 33-37€ (online adelantado)</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Altura: 310 metros (pisos 68-72)</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>Vistas: Hasta 64 km en días claros</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-yellow-400 rounded-full mr-3"></span>Horario: 10:00-22:00 (última entrada 20:00)</li>
+                </ul>
+              </div>
+              <div>
+                <h5 className="font-semibold text-gray-900 mb-2">⭐ Experiencia:</h5>
+                <ul className="text-sm text-gray-700 space-y-1 list-none">
+                  <li className="flex items-center"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3"></span>Vistas panorámicas 360°</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-pink-400 rounded-full mr-3"></span>Telescopios interactivos</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-indigo-400 rounded-full mr-3"></span>Bar champagne en piso 72</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-orange-400 rounded-full mr-3"></span>Baños en el cielo (¡literalmente!)</li>
+                </ul>
+              </div>
             </div>
 
-            <div className="info-section">
-              <h3>⭐ Experiencia:</h3>
-              <ul>
-                <li><span style={{color: '#a78bfa'}}>●</span> Vistas panorámicas 360°</li>
-                <li><span style={{color: '#f472b6'}}>●</span> Telescopios interactivos</li>
-                <li><span style={{color: '#818cf8'}}>●</span> Bar champagne en piso 72</li>
-                <li><span style={{color: '#fb923c'}}>●</span> Baños en el cielo (¡literalmente!)</li>
-              </ul>
-            </div>
-
-            <div className="tip-box pro-tip">
-              <div className="tip-box-header">💡 Ahorro:</div>
-              <div className="tip-box-content">Compra online con antelación para ahorrar 6-9€ vs precio en taquilla. Atardecer (16:00-17:00h en diciembre) es el mejor momento.</div>
+            <div className="bg-white rounded-xl p-3 border border-gray-200 shadow-sm">
+              <p className="text-xs text-sky-600">💡 <strong>Ahorro:</strong> Compra online con antelación para ahorrar 6-9€ vs precio en taquilla. Atardecer (16:00-17:00h en diciembre) es el mejor momento.</p>
             </div>
           </div>
 
@@ -1462,34 +1453,35 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
               Bajamos del cielo para entrar en la catedral anglicana más importante de Londres. Su icónica cúpula (111 metros) ha dominado el skyline durante más de 300 años. Aquí se celebró la boda del Príncipe Carlos y Lady Diana en 1981, y los funerales de Churchill y Thatcher.
             </p>
 
-            <div className="info-section">
-              <h3>🎫 Información Práctica:</h3>
-              <ul>
-                <li><span style={{color: '#eab308'}}>●</span> Entrada: 27€ adultos (online)</li>
-                <li><span style={{color: '#60a5fa'}}>●</span> Incluye: Audioguía en español</li>
-                <li><span style={{color: '#4ade80'}}>●</span> Duración: 1.5-2 horas</li>
-                <li><span style={{color: '#f87171'}}>●</span> Horario: 08:30-16:30 (Lun-Sáb), Miér 10:00-16:30</li>
-              </ul>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+              <div>
+                <h5 className="font-semibold text-gray-900 mb-2">🎫 Información Práctica:</h5>
+                <ul className="text-sm text-gray-700 space-y-1 list-none">
+                  <li className="flex items-center"><span className="w-2 h-2 bg-gold-400 rounded-full mr-3"></span>Entrada: 27€ adultos (online)</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Incluye: Audioguía en español</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Duración: 1.5-2 horas</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>Horario: 08:30-16:30 (Lun-Sáb), Miér 10:00-16:30</li>
+                </ul>
+              </div>
+              <div>
+                <h5 className="font-semibold text-gray-900 mb-2">⭐ Imprescindibles:</h5>
+                <ul className="text-sm text-gray-700 space-y-1 list-none">
+                  <li className="flex items-center"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3"></span>Whispering Gallery (257 escalones)</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-pink-400 rounded-full mr-3"></span>Golden Gallery (528 escalones, vistas top)</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-orange-400 rounded-full mr-3"></span>Cripta con tumbas de Nelson y Wellington</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-emerald-400 rounded-full mr-3"></span>Mosaicos victorianos espectaculares</li>
+                </ul>
+              </div>
             </div>
 
-            <div className="info-section">
-              <h3>⭐ Imprescindibles:</h3>
-              <ul>
-                <li><span style={{color: '#a78bfa'}}>●</span> Whispering Gallery (257 escalones)</li>
-                <li><span style={{color: '#f472b6'}}>●</span> Golden Gallery (528 escalones, vistas top)</li>
-                <li><span style={{color: '#fb923c'}}>●</span> Cripta con tumbas de Nelson y Wellington</li>
-                <li><span style={{color: '#10b981'}}>●</span> Mosaicos victorianos espectaculares</li>
-              </ul>
+            <div className="bg-white rounded-xl p-3 border border-gray-200 shadow-sm mb-3">
+              <p className="text-xs text-amber-600">💡 <strong>The Whispering Gallery:</strong> Galería circular donde un susurro en un lado se escucha perfectamente en el lado opuesto (42 metros de distancia). Efecto acústico único en el mundo.</p>
             </div>
 
-            <div className="tip-box info">
-              <div className="tip-box-header">💡 The Whispering Gallery:</div>
-              <div className="tip-box-content">Galería circular donde un susurro en un lado se escucha perfectamente en el lado opuesto (42 metros de distancia). Efecto acústico único en el mundo.</div>
-            </div>
-
-            <div className="tip-box pro-tip">
-              <div className="tip-box-header">🚶 Bonus:</div>
-              <div className="tip-box-content">Después de St Paul's, cruza el Millennium Bridge peatonal (5 min) hasta Tate Modern (museo de arte contemporáneo GRATIS). Vistas increíbles del puente con St Paul's de fondo.</div>
+            <div className="bg-gradient-to-r from-yellow-100 to-orange-100 border-2 border-yellow-300 rounded-lg p-3">
+              <p className="text-xs text-yellow-900">
+                <strong>🚶‍♂️ Bonus:</strong> Después de St Paul's, cruza el Millennium Bridge peatonal (5 min) hasta Tate Modern (museo de arte contemporáneo GRATIS). Vistas increíbles del puente con St Paul's de fondo.
+              </p>
             </div>
           </div>
         </div>
@@ -1512,22 +1504,23 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
             <p className="text-gray-700 mb-4">
               Termina el día navegando por el río que ha sido testigo de 2.000 años de historia. Ver la ciudad iluminada desde el agua es inolvidable.
             </p>
-            <div className="info-section">
-              <h3>🚤 City Cruises:</h3>
-              <ul>
-                <li><span style={{color: '#60a5fa'}}>●</span> Precio: 22 € (online)</li>
-                <li><span style={{color: '#4ade80'}}>●</span> Duración: 40-50 minutos</li>
-                <li><span style={{color: '#facc15'}}>●</span> Audio guía español incluida</li>
-              </ul>
-            </div>
-
-            <div className="info-section">
-              <h3>🌉 Qué Verás:</h3>
-              <ul>
-                <li><span style={{color: '#a78bfa'}}>●</span> Tower Bridge iluminado</li>
-                <li><span style={{color: '#f472b6'}}>●</span> The Shard rascacielos</li>
-                <li><span style={{color: '#fb923c'}}>●</span> Big Ben + Westminster</li>
-              </ul>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <h5 className="font-semibold text-gray-900 mb-2">🚤 City Cruises:</h5>
+                <ul className="text-sm text-gray-700 space-y-1 list-none">
+                  <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Precio: 22 € (online)</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Duración: 40-50 minutos</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-yellow-400 rounded-full mr-3"></span>Audio guía español incluida</li>
+                </ul>
+              </div>
+              <div>
+                <h5 className="font-semibold text-gray-900 mb-2">🌉 Qué Verás:</h5>
+                <ul className="text-sm text-gray-700 space-y-1 list-none">
+                  <li className="flex items-center"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3"></span>Tower Bridge iluminado</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-pink-400 rounded-full mr-3"></span>The Shard rascacielos</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-orange-400 rounded-full mr-3"></span>Big Ben + Westminster</li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
@@ -1559,30 +1552,30 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
         El museo más importante de Londres con 8 millones de objetos que abarcan 2 millones de años de historia humana. La entrada es GRATUITA, solo pagas exposiciones temporales especiales.
       </p>
 
-      <div className="info-section">
-        <h3>⭐ Top 5 Imprescindibles:</h3>
-        <ul>
-          <li><span style={{color: '#eab308'}}>●</span> Piedra de Rosetta (Room 4)</li>
-          <li><span style={{color: '#60a5fa'}}>●</span> Momias Egipcias (Rooms 62-63)</li>
-          <li><span style={{color: '#a78bfa'}}>●</span> Esculturas del Partenón (Room 18)</li>
-          <li><span style={{color: '#4ade80'}}>●</span> Samurái Japonés (Rooms 92-94)</li>
-          <li><span style={{color: '#f87171'}}>●</span> Great Court (cúpula de cristal)</li>
-        </ul>
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+        <div>
+          <h5 className="font-semibold text-gray-900 mb-2">⭐ Top 5 Imprescindibles:</h5>
+          <ul className="text-sm text-gray-700 space-y-1 list-none">
+            <li className="flex items-center"><span className="w-2 h-2 bg-gold-400 rounded-full mr-3"></span>Piedra de Rosetta (Room 4)</li>
+            <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Momias Egipcias (Rooms 62-63)</li>
+            <li className="flex items-center"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3"></span>Esculturas del Partenón (Room 18)</li>
+            <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Samurái Japonés (Rooms 92-94)</li>
+            <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>Great Court (cúpula de cristal)</li>
+          </ul>
+        </div>
+        <div>
+          <h5 className="font-semibold text-gray-900 mb-2">🎫 Info Práctica:</h5>
+          <ul className="text-sm text-gray-700 space-y-1 list-none">
+            <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Entrada: GRATIS</li>
+            <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Horario: 10:00-17:00 (Viernes hasta 20:30)</li>
+            <li className="flex items-center"><span className="w-2 h-2 bg-yellow-400 rounded-full mr-3"></span>Duración: 2.5-3 horas</li>
+            <li className="flex items-center"><span className="w-2 h-2 bg-orange-400 rounded-full mr-3"></span>Metro: Russell Square / Tottenham Court</li>
+          </ul>
+        </div>
       </div>
 
-      <div className="info-section">
-        <h3>🎫 Info Práctica:</h3>
-        <ul>
-          <li><span style={{color: '#4ade80'}}>●</span> Entrada: GRATIS</li>
-          <li><span style={{color: '#60a5fa'}}>●</span> Horario: 10:00-17:00 (Viernes hasta 20:30)</li>
-          <li><span style={{color: '#facc15'}}>●</span> Duración: 2.5-3 horas</li>
-          <li><span style={{color: '#fb923c'}}>●</span> Metro: Russell Square / Tottenham Court</li>
-        </ul>
-      </div>
-
-      <div className="tip-box">
-        <div className="tip-box-header">💡 Consejo:</div>
-        <div className="tip-box-content">Llega a las 10:00 en punto (apertura) para evitar colas. Descarga la app oficial del museo para tour autoguiado gratuito en español.</div>
+      <div className="bg-white rounded-xl p-3 border border-gray-200 shadow-sm">
+        <p className="text-xs text-amber-600">💡 <strong>Consejo:</strong> Llega a las 10:00 en punto (apertura) para evitar colas. Descarga la app oficial del museo para tour autoguiado gratuito en español.</p>
       </div>
     </div>
   </div>
@@ -1607,34 +1600,35 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
         La plaza más famosa de Londres con pantallas LED gigantes, estatua de Eros, y el epicentro del West End. Desde aquí accedes a las mejores zonas de compras de la ciudad.
       </p>
 
-      <div className="info-section">
-        <h3>📍 Piccadilly Circus:</h3>
-        <ul>
-          <li><span style={{color: '#f87171'}}>●</span> Pantallas LED icónicas (estilo Times Square)</li>
-          <li><span style={{color: '#60a5fa'}}>●</span> Estatua de Eros (punto de encuentro)</li>
-          <li><span style={{color: '#a78bfa'}}>●</span> Entrada a Soho y West End</li>
-          <li><span style={{color: '#4ade80'}}>●</span> Metro: Piccadilly Circus</li>
-        </ul>
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+        <div>
+          <h5 className="font-semibold text-gray-900 mb-2">📍 Piccadilly Circus:</h5>
+          <ul className="text-sm text-gray-700 space-y-1 list-none">
+            <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>Pantallas LED icónicas (estilo Times Square)</li>
+            <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Estatua de Eros (punto de encuentro)</li>
+            <li className="flex items-center"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3"></span>Entrada a Soho y West End</li>
+            <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Metro: Piccadilly Circus</li>
+          </ul>
+        </div>
+        <div>
+          <h5 className="font-semibold text-gray-900 mb-2">🛍️ Zonas de Shopping:</h5>
+          <ul className="text-sm text-gray-700 space-y-1 list-none">
+            <li className="flex items-start"><span className="w-2 h-2 bg-pink-400 rounded-full mr-3 mt-1.5 flex-shrink-0"></span><span>Carnaby St: Tiendas vintage/alternativas</span></li>
+            <li className="flex items-start"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3 mt-1.5 flex-shrink-0"></span><span>Oxford St: Selfridges, Primark, H&M</span></li>
+            <li className="flex items-start"><span className="w-2 h-2 bg-orange-400 rounded-full mr-3 mt-1.5 flex-shrink-0"></span><span>Regent St: Hamleys (juguetes), Apple</span></li>
+            <li className="flex items-start"><span className="w-2 h-2 bg-yellow-400 rounded-full mr-3 mt-1.5 flex-shrink-0"></span><span>Liberty London: Grandes almacenes de lujo</span></li>
+          </ul>
+        </div>
       </div>
 
-      <div className="info-section">
-        <h3>🛍️ Zonas de Shopping:</h3>
-        <ul>
-          <li><span style={{color: '#f472b6'}}>●</span> Carnaby St: Tiendas vintage/alternativas</li>
-          <li><span style={{color: '#a78bfa'}}>●</span> Oxford St: Selfridges, Primark, H&M</li>
-          <li><span style={{color: '#fb923c'}}>●</span> Regent St: Hamleys (juguetes), Apple</li>
-          <li><span style={{color: '#facc15'}}>●</span> Liberty London: Grandes almacenes de lujo</li>
-        </ul>
+      <div className="bg-gradient-to-r from-red-100 to-pink-100 border-2 border-red-300 rounded-lg p-3 mb-3">
+        <p className="text-xs text-red-900">
+          <strong>🍜 Almuerzo en Chinatown:</strong> A 5 min a pie de Piccadilly. Menús completos desde 10-20€. Recomendado: Bao buns, dim sum, ramen.
+        </p>
       </div>
 
-      <div className="tip-box">
-        <div className="tip-box-header">🍜 Almuerzo en Chinatown:</div>
-        <div className="tip-box-content">A 5 min a pie de Piccadilly. Menús completos desde 10-20€. Recomendado: Bao buns, dim sum, ramen.</div>
-      </div>
-
-      <div className="tip-box pro-tip">
-        <div className="tip-box-header">📸 Foto imprescindible:</div>
-        <div className="tip-box-content">Cruza hacia la estatua de Eros para foto frontal con las pantallas LED de fondo. Mejor de noche, pero durante el día también es icónica.</div>
+      <div className="bg-white rounded-xl p-3 border border-gray-200 shadow-sm">
+        <p className="text-xs text-rose-600">💡 <strong>Foto imprescindible:</strong> Cruza hacia la estatua de Eros para foto frontal con las pantallas LED de fondo. Mejor de noche, pero durante el día también es icónica.</p>
       </div>
     </div>
   </div>
@@ -1657,33 +1651,29 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
       <p className="text-gray-700 mb-4">
         El barrio residencial más bonito de Londres. Casas victorianas de colores pastel y el mercadillo de antigüedades más famoso del mundo. Popularizado por la película de Hugh Grant y Julia Roberts.
       </p>
-      <div className="info-section">
-        <h3>🛍️ Portobello Market:</h3>
-        <ul>
-          <li><span style={{color: '#f87171'}}>●</span> <strong>Mejor día:</strong> Sábado (8:00-19:00) completo</li>
-          <li><span style={{color: '#60a5fa'}}>●</span> Lunes-Viernes: menos puestos (9:00-18:00)</li>
-          <li><span style={{color: '#4ade80'}}>●</span> Antigüedades, vintage, comida, ropa</li>
-          <li><span style={{color: '#facc15'}}>●</span> Metro: Notting Hill Gate / Ladbroke Grove</li>
-        </ul>
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+        <div>
+          <h5 className="font-semibold text-gray-900 mb-2">🛍️ Portobello Market:</h5>
+          <ul className="text-sm text-gray-700 space-y-1 list-none">
+            <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span><strong>Mejor día:</strong> Sábado (8:00-19:00) completo</li>
+            <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Lunes-Viernes: menos puestos (9:00-18:00)</li>
+            <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Antigüedades, vintage, comida, ropa</li>
+            <li className="flex items-center"><span className="w-2 h-2 bg-yellow-400 rounded-full mr-3"></span>Metro: Notting Hill Gate / Ladbroke Grove</li>
+          </ul>
+        </div>
+        <div>
+          <h5 className="font-semibold text-gray-900 mb-2">📸 Fotos Instagram:</h5>
+          <ul className="text-sm text-gray-700 space-y-1 list-none">
+            <li className="flex items-center"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3"></span>St Luke's Mews (colores pastel)</li>
+            <li className="flex items-center"><span className="w-2 h-2 bg-pink-400 rounded-full mr-3"></span>Notting Hill Bookshop (de la película)</li>
+            <li className="flex items-center"><span className="w-2 h-2 bg-orange-400 rounded-full mr-3"></span>Lancaster Road (casas azules/rosas)</li>
+            <li className="flex items-center"><span className="w-2 h-2 bg-emerald-400 rounded-full mr-3"></span>Llega antes de 11:30 para evitar multitudes</li>
+          </ul>
+        </div>
       </div>
 
-      <div className="info-section">
-        <h3>📸 Fotos Instagram:</h3>
-        <ul>
-          <li><span style={{color: '#a78bfa'}}>●</span> St Luke's Mews (colores pastel)</li>
-          <li><span style={{color: '#f472b6'}}>●</span> Notting Hill Bookshop (de la película)</li>
-          <li><span style={{color: '#fb923c'}}>●</span> Lancaster Road (casas azules/rosas)</li>
-        </ul>
-      </div>
-
-      <div className="tip-box pro-tip">
-        <div className="tip-box-header">⏰ Timing:</div>
-        <div className="tip-box-content">Llega antes de 11:30 para evitar multitudes y mejores fotos.</div>
-      </div>
-
-      <div className="tip-box">
-        <div className="tip-box-header">💡 Consejo:</div>
-        <div className="tip-box-content">Si NO es sábado, igualmente merece la pena visitar Notting Hill solo por las casas de colores y el ambiente. El mercado entre semana tiene menos puestos pero es más tranquilo.</div>
+      <div className="bg-white rounded-xl p-3 border border-gray-200 shadow-sm">
+        <p className="text-xs text-pink-600">💡 <strong>Consejo:</strong> Si NO es sábado, igualmente merece la pena visitar Notting Hill solo por las casas de colores y el ambiente. El mercado entre semana tiene menos puestos pero es más tranquilo.</p>
       </div>
     </div>
   </div>
@@ -1706,34 +1696,35 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
       <p className="text-gray-700 mb-4">
         Terminamos el viaje con un paseo relajado por el parque real más famoso. 253 hectáreas de naturaleza en pleno centro de Londres. En diciembre, oscurece sobre las 16:00h, así que verás las luces navideñas encendidas.
       </p>
-      <div className="info-section">
-        <h3>⭐ Puntos Imprescindibles:</h3>
-        <ul>
-          <li><span style={{color: '#60a5fa'}}>●</span> Serpentine Lake</li>
-          <li><span style={{color: '#4ade80'}}>●</span> Diana Memorial Fountain</li>
-          <li><span style={{color: '#a78bfa'}}>●</span> Estatua Peter Pan</li>
-          <li><span style={{color: '#fb923c'}}>●</span> Metro: Hyde Park Corner / Marble Arch</li>
-        </ul>
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+        <div>
+          <h5 className="font-semibold text-gray-900 mb-2">⭐ Puntos Imprescindibles:</h5>
+          <ul className="text-sm text-gray-700 space-y-1 list-none">
+            <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Serpentine Lake</li>
+            <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Diana Memorial Fountain</li>
+            <li className="flex items-center"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3"></span>Estatua Peter Pan</li>
+            <li className="flex items-center"><span className="w-2 h-2 bg-orange-400 rounded-full mr-3"></span>Metro: Hyde Park Corner / Marble Arch</li>
+          </ul>
+        </div>
+        <div>
+          <h5 className="font-semibold text-gray-900 mb-2">🎄 Winter Wonderland 2025:</h5>
+          <ul className="text-sm text-gray-700 space-y-1 list-none">
+            <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span><strong>14 Nov - 1 Ene 2026</strong></li>
+            <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Entrada: Gratis off-peak, 5-7.50€ peak</li>
+            <li className="flex items-center"><span className="w-2 h-2 bg-yellow-400 rounded-full mr-3"></span>Horario: 10:00-22:00</li>
+            <li className="flex items-center"><span className="w-2 h-2 bg-pink-400 rounded-full mr-3"></span>Mercado navideño + pista hielo + atracciones</li>
+          </ul>
+        </div>
       </div>
 
-      <div className="info-section">
-        <h3>🎄 Winter Wonderland 2025:</h3>
-        <ul>
-          <li><span style={{color: '#f87171'}}>●</span> <strong>14 Nov - 1 Ene 2026</strong></li>
-          <li><span style={{color: '#4ade80'}}>●</span> Entrada: Gratis off-peak, 5-7.50€ peak</li>
-          <li><span style={{color: '#facc15'}}>●</span> Horario: 10:00-22:00</li>
-          <li><span style={{color: '#f472b6'}}>●</span> Mercado navideño + pista hielo + atracciones</li>
-        </ul>
+      <div className="bg-gradient-to-r from-red-100 to-green-100 border-2 border-red-300 rounded-lg p-3 mb-3">
+        <p className="text-xs text-red-900">
+          <strong>🎅 Winter Wonderland (14 Nov - 1 Ene):</strong> Si viajas en diciembre, Hyde Park se transforma en un enorme mercado navideño con pista de patinaje, atracciones, circo, Ice Kingdom y mercadillos. Entrada al recinto gratis en horarios off-peak. Las atracciones se pagan aparte (11-18€).
+        </p>
       </div>
 
-      <div className="tip-box info">
-        <div className="tip-box-header">🎅 Winter Wonderland (14 Nov - 1 Ene):</div>
-        <div className="tip-box-content">Si viajas en diciembre, Hyde Park se transforma en un enorme mercado navideño con pista de patinaje, atracciones, circo, Ice Kingdom y mercadillos. Entrada al recinto gratis en horarios off-peak. Las atracciones se pagan aparte (11-18€).</div>
-      </div>
-
-      <div className="tip-box warning">
-        <div className="tip-box-header">⚠️ Reserva Winter Wonderland:</div>
-        <div className="tip-box-content">Si quieres entrar, RESERVA online con antelación en hydeparkwinterwonderland.com. Los horarios peak (tardes/fines de semana) se agotan rápido.</div>
+      <div className="bg-white rounded-xl p-3 border border-gray-200 shadow-sm">
+        <p className="text-xs text-green-600">💡 <strong>Reserva Winter Wonderland:</strong> Si quieres entrar, RESERVA online con antelación en hydeparkwinterwonderland.com. Los horarios peak (tardes/fines de semana) se agotan rápido.</p>
       </div>
     </div>
   </div>
