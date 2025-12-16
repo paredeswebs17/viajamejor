@@ -807,17 +807,43 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
                 href="https://tickets.parliament.uk/timeslot/big-ben-tour"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block w-full text-center py-2 px-4 bg-slate-700 text-white rounded-lg text-sm hover:bg-slate-800 transition"
+                className="btn-attraction mb-3"
               >
-                Reservar tour Big Ben →
+                <span>Comprar Entradas Big Ben</span>
+                <svg
+                  className="external-icon"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                  />
+                </svg>
               </a>
               <a
                 href="https://www.parliament.uk/visiting/visiting-and-tours/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block w-full text-center py-2 px-4 bg-slate-700 text-white rounded-lg text-sm hover:bg-slate-800 transition"
+                className="btn-attraction"
               >
-                Reservar tour Westminster →
+                <span>Comprar Entradas Westminster</span>
+                <svg
+                  className="external-icon"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                  />
+                </svg>
               </a>
             </div>
           </div>
@@ -867,9 +893,22 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
               href="https://gyg.me/S9Iuw1Z2"
               target="_blank"
               rel="noopener noreferrer"
-              className="block w-full text-center py-2 px-4 bg-slate-700 text-white rounded-lg text-sm hover:bg-slate-800 transition"
+              className="btn-attraction"
             >
-              Ver horarios y reservar →
+              <span>Comprar Entradas Westminster Abbey</span>
+              <svg
+                className="external-icon"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                />
+              </svg>
             </a>
           </div>
         </div>
@@ -1042,10 +1081,22 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
               href="https://gyg.me/wJCBE1BZ"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center bg-gradient-to-r from-gray-600 to-gray-800 hover:from-gray-700 hover:to-gray-900 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm"
+              className="btn-attraction"
             >
-              Entradas London Eye
-              <ExternalLink className="h-3 w-3 ml-2" />
+              <span>Comprar Entradas London Eye</span>
+              <svg
+                className="external-icon"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                />
+              </svg>
             </a>
           </div>
         </div>
@@ -1181,9 +1232,22 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
                 href="https://gyg.me/tHBzdl4W"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center bg-gradient-to-r from-blue-500 to-cyan-500 text-white font-semibold px-6 py-3 rounded-lg hover:from-blue-600 hover:to-cyan-600 transition-all duration-300 shadow-md hover:shadow-lg"
+                className="btn-attraction"
               >
-                🎫 Reservar Entrada Tower Bridge
+                <span>Comprar Entradas Tower Bridge</span>
+                <svg
+                  className="external-icon"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                  />
+                </svg>
               </a>
             </div>
           </div>
@@ -1240,9 +1304,22 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
                 href="https://gyg.me/ex4u6Ux1"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center bg-gradient-to-r from-amber-500 to-red-500 text-white font-semibold px-6 py-3 rounded-lg hover:from-amber-600 hover:to-red-600 transition-all duration-300 shadow-md hover:shadow-lg"
+                className="btn-attraction"
               >
-                👑 Reservar Entrada Torre de Londres
+                <span>Comprar Entradas Torre de Londres</span>
+                <svg
+                  className="external-icon"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                  />
+                </svg>
               </a>
             </div>
           </div>

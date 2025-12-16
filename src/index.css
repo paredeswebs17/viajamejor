@@ -200,4 +200,57 @@ button:focus {
       @apply border-2 border-white;
     }
   }
+
+  /* Botones de atracciones */
+  .btn-attraction {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 16px 32px;
+    background: #374151;
+    color: white;
+    text-decoration: none;
+    border-radius: 12px;
+    font-size: 1.05rem;
+    font-weight: 600;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    border: none;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .btn-attraction::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 0;
+  }
+
+  .btn-attraction:hover::before {
+    opacity: 1;
+  }
+
+  .btn-attraction span,
+  .btn-attraction .external-icon {
+    position: relative;
+    z-index: 1;
+  }
+
+  .btn-attraction:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+  }
+
+  .external-icon {
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+  }
 }
