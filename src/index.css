@@ -314,10 +314,6 @@ button:focus {
     line-height: 1.5;
     margin-bottom: 16px;
     flex-grow: 1;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 4;
-    overflow: hidden;
   }
 
   .btn-hotel {
