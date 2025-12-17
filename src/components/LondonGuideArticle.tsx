@@ -1251,7 +1251,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
               El puente basculante más fotografiado del mundo (1894). Aunque muchos lo confunden con el London Bridge, Tower Bridge es el icónico puente victoriano con sus dos torres góticas y pasarelas elevadas.
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
-              <div className="rounded-xl p-4 shadow-sm">
+              <div className="p-4">
                 <h5 className="font-semibold text-gray-900 mb-2">🎫 Información Práctica:</h5>
                 <ul className="text-sm text-gray-700 space-y-1 list-none">
                   <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Paseo exterior: GRATIS</li>
@@ -1260,7 +1260,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
                   <li className="flex items-center"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3"></span>Sala de máquinas victoriana</li>
                 </ul>
               </div>
-              <div className="rounded-xl p-4 shadow-sm">
+              <div className="p-4">
                 <h5 className="font-semibold text-gray-900 mb-2">📸 Mejores Fotos:</h5>
                 <ul className="text-sm text-gray-700 space-y-1 list-none">
                   <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>Desde South Bank</li>
@@ -1314,7 +1314,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
             <p className="text-gray-700 mb-4">
               Fortaleza normanda fundada en 1066 que ha sido palacio real, prisión, arsenal y ahora alberga las legendarias Joyas de la Corona Británica. Uno de los monumentos más importantes de Londres.
             </p>
-            <div className="rounded-xl p-4 mb-4 shadow-sm">
+            <div className="p-4 mb-4">
               <h5 className="font-semibold text-gray-900 mb-2">💎 Imprescindibles:</h5>
               <ul className="text-sm text-gray-700 space-y-1 list-none">
                 <li className="flex items-center"><span className="w-2 h-2 bg-yellow-400 rounded-full mr-3"></span>Crown Jewels: Imperial State Crown con 2.868 diamantes</li>
@@ -1323,7 +1323,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
               </ul>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
-              <div className="rounded-xl p-4 shadow-sm">
+              <div className="p-4">
                 <h5 className="font-semibold text-gray-900 mb-2">🎫 Información Práctica:</h5>
                 <ul className="text-sm text-gray-700 space-y-1 list-none">
                   <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3 flex-shrink-0"></span><span>Precio: 40€ online</span></li>
@@ -1332,7 +1332,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
                   <li className="flex items-center"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3 flex-shrink-0"></span><span>Audioguía incluida en el precio</span></li>
                 </ul>
               </div>
-              <div className="rounded-xl p-4 shadow-sm">
+              <div className="p-4">
                 <h5 className="font-semibold text-gray-900 mb-2">⚡ Consejos de Visita:</h5>
                 <ul className="text-sm text-gray-700 space-y-1 list-none">
                   <li className="flex items-center"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3 flex-shrink-0"></span><span>Ve directo a Crown Jewels primero</span></li>
