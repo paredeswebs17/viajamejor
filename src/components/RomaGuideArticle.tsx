@@ -592,6 +592,15 @@ Volver a guías
     </div>
   </div>
 
+  {/* Separador decorativo */}
+  <div className="flex items-center justify-center mb-8">
+    <div className="flex space-x-2">
+      <div className="w-3 h-3 bg-gradient-to-r from-red-400 to-orange-400 rounded-full"></div>
+      <div className="w-3 h-3 bg-gradient-to-r from-amber-400 to-yellow-400 rounded-full"></div>
+      <div className="w-3 h-3 bg-gradient-to-r from-emerald-400 to-green-400 rounded-full"></div>
+    </div>
+  </div>
+
   {/* DÍA 2 */}
   <div className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
     <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6 flex items-center">
@@ -814,6 +823,15 @@ Volver a guías
           </a>
         </div>
       </div>
+    </div>
+  </div>
+
+  {/* Separador decorativo */}
+  <div className="flex items-center justify-center mb-8">
+    <div className="flex space-x-2">
+      <div className="w-3 h-3 bg-gradient-to-r from-red-400 to-orange-400 rounded-full"></div>
+      <div className="w-3 h-3 bg-gradient-to-r from-amber-400 to-yellow-400 rounded-full"></div>
+      <div className="w-3 h-3 bg-gradient-to-r from-emerald-400 to-green-400 rounded-full"></div>
     </div>
   </div>
 
