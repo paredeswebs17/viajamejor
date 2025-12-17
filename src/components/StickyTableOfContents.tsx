@@ -62,30 +62,29 @@ const StickyTableOfContents: React.FC<StickyTableOfContentsProps> = ({ sections 
 
   return (
     <>
-      {/* Botón flotante para móvil */}
+      {/* Botón flotante */}
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="lg:hidden fixed bottom-6 right-6 z-40 bg-gradient-to-r from-sky-500 to-blue-600 text-white p-4 rounded-full shadow-2xl hover:shadow-3xl transition-all duration-300 hover:scale-110 border-2 border-white"
+        className="fixed bottom-20 right-6 z-40 bg-gradient-to-r from-sky-500 to-blue-600 text-white p-4 rounded-full shadow-2xl hover:shadow-3xl transition-all duration-300 hover:scale-110 border-2 border-white"
         aria-label="Abrir índice"
       >
         {isOpen ? <X className="h-6 w-6" /> : <List className="h-6 w-6" />}
       </button>
 
-      {/* Overlay para móvil */}
+      {/* Overlay */}
       {isOpen && (
         <div
-          className="lg:hidden fixed inset-0 bg-black/50 z-40 backdrop-blur-sm"
+          className="fixed inset-0 bg-black/50 z-40 backdrop-blur-sm"
           onClick={() => setIsOpen(false)}
         />
       )}
 
-      {/* Índice sticky */}
+      {/* Índice modal */}
       <div
         className={`
           fixed z-50 bg-white rounded-2xl shadow-2xl border border-gray-200
           transition-all duration-300 ease-in-out
           ${isOpen ? 'translate-x-0' : 'translate-x-full'}
-          lg:translate-x-0
           top-24 right-6 w-80 max-h-[calc(100vh-120px)] overflow-hidden
         `}
       >
