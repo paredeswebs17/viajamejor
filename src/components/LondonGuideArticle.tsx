@@ -505,7 +505,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-4">
-              <div className="hotel-card">
+              <div className="hotel-card border-l-4 border-sky-400 bg-sky-50/30">
                 <div className="hotel-header">
                   <h3 className="hotel-name">The Z Hotel Strand</h3>
                   <div className="hotel-stars">⭐⭐⭐</div>
@@ -528,7 +528,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
                 </a>
               </div>
 
-              <div className="hotel-card">
+              <div className="hotel-card border-l-4 border-teal-400 bg-teal-50/30">
                 <div className="hotel-header">
                   <h3 className="hotel-name">Park Plaza Victoria London</h3>
                   <div className="hotel-stars">⭐⭐⭐⭐</div>
@@ -551,7 +551,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
                 </a>
               </div>
 
-              <div className="hotel-card">
+              <div className="hotel-card border-l-4 border-violet-400 bg-violet-50/30">
                 <div className="hotel-header">
                   <h3 className="hotel-name">The Resident Victoria</h3>
                   <div className="hotel-stars">⭐⭐⭐⭐</div>
@@ -594,7 +594,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-4">
-              <div className="hotel-card">
+              <div className="hotel-card border-l-4 border-orange-400 bg-orange-50/30">
                 <div className="hotel-header">
                   <h3 className="hotel-name">Tavistock Hotel</h3>
                   <div className="hotel-stars">⭐⭐⭐</div>
@@ -617,7 +617,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
                 </a>
               </div>
 
-              <div className="hotel-card">
+              <div className="hotel-card border-l-4 border-pink-400 bg-pink-50/30">
                 <div className="hotel-header">
                   <h3 className="hotel-name">Morton Hotel</h3>
                   <div className="hotel-stars">⭐⭐⭐⭐</div>
@@ -640,7 +640,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
                 </a>
               </div>
 
-              <div className="hotel-card">
+              <div className="hotel-card border-l-4 border-amber-400 bg-amber-50/30">
                 <div className="hotel-header">
                   <h3 className="hotel-name">Pullman London St Pancras</h3>
                   <div className="hotel-stars">⭐⭐⭐⭐</div>
@@ -683,7 +683,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-4">
-              <div className="hotel-card">
+              <div className="hotel-card border-l-4 border-rose-400 bg-rose-50/30">
                 <div className="hotel-header">
                   <h3 className="hotel-name">ibis London Blackfriars</h3>
                   <div className="hotel-stars">⭐⭐⭐</div>
@@ -706,7 +706,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
                 </a>
               </div>
 
-              <div className="hotel-card">
+              <div className="hotel-card border-l-4 border-cyan-400 bg-cyan-50/30">
                 <div className="hotel-header">
                   <h3 className="hotel-name">citizenM London Bankside</h3>
                   <div className="hotel-stars">⭐⭐⭐⭐</div>
@@ -729,7 +729,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
                 </a>
               </div>
 
-              <div className="hotel-card">
+              <div className="hotel-card border-l-4 border-emerald-400 bg-emerald-50/30">
                 <div className="hotel-header">
                   <h3 className="hotel-name">H10 London Waterloo</h3>
                   <div className="hotel-stars">⭐⭐⭐⭐</div>
