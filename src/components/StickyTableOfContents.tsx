@@ -84,8 +84,8 @@ const StickyTableOfContents: React.FC<StickyTableOfContentsProps> = ({ sections 
         className={`
           fixed z-50 bg-white rounded-2xl shadow-2xl border border-gray-200
           transition-all duration-300 ease-in-out
-          ${isOpen ? 'translate-x-0' : 'translate-x-full'}
           top-24 right-6 w-80 max-h-[calc(100vh-120px)] overflow-hidden
+          ${isOpen ? 'translate-x-0 opacity-100' : 'translate-x-full opacity-0 pointer-events-none'}
         `}
       >
         {/* Barra de progreso */}
