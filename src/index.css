@@ -276,11 +276,10 @@ button:focus {
 
   .hotel-header {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
     margin-bottom: 12px;
-    gap: 12px;
-    min-height: 32px;
+    gap: 8px;
   }
 
   .hotel-name {
@@ -288,32 +287,25 @@ button:focus {
     font-weight: 700;
     color: #1d1d1f;
     margin: 0;
-    flex: 1;
     line-height: 1.3;
+    width: 100%;
   }
 
   .hotel-stars {
     font-size: 0.85rem;
     white-space: nowrap;
-    flex-shrink: 0;
     line-height: 1;
     display: flex;
     align-items: center;
+    height: 20px;
   }
 
   .hotel-location {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    color: #666;
-    font-size: 0.9rem;
-    margin-bottom: 12px;
-    min-height: 24px;
+    display: none;
   }
 
   .location-icon {
-    font-size: 1rem;
-    line-height: 1;
+    display: none;
   }
 
   .hotel-description {
