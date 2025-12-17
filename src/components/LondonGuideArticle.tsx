@@ -26,7 +26,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
   return (
     <>
       <StickyTableOfContents sections={sections} />
-      <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 pt-24 lg:pr-96">
+      <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 pt-24">
       <div className="mb-8">
         <button 
           onClick={onBack}
