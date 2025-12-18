@@ -1542,7 +1542,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
                 <ul className="text-sm text-gray-700 space-y-1 list-none">
                   <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Precio: desde 24€ (ida y vuelta)</li>
                   <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Salida: Westminster Pier</li>
-                  <li className="flex items-center"><span className="w-2 h-2 bg-yellow-400 rounded-full mr-3"></span>Duración: 1 hora (solo ida)</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-yellow-400 rounded-full mr-3"></span>Duración: 1-2 horas</li>
                   <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>Audio guía en español incluida</li>
                 </ul>
               </div>
