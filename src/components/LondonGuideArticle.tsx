@@ -1432,7 +1432,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
               <div>
                 <h5 className="font-semibold text-gray-900 mb-2">🎫 Información Práctica:</h5>
                 <ul className="text-sm text-gray-700 space-y-1 list-none">
-                  <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Entrada: 33-37€ (online adelantado)</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Entrada: desde 38€</li>
                   <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Altura: 310 metros (pisos 68-72)</li>
                   <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>Vistas: Hasta 64 km en días claros</li>
                   <li className="flex items-center"><span className="w-2 h-2 bg-yellow-400 rounded-full mr-3"></span>Horario: 10:00-22:00 (última entrada 20:00)</li>
@@ -1449,9 +1449,15 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
               </div>
             </div>
 
-            <div className="bg-white rounded-xl p-3 border border-gray-200 shadow-sm">
-              <p className="text-xs text-sky-600">💡 <strong>Ahorro:</strong> Compra online con antelación para ahorrar 6-9€ vs precio en taquilla. Atardecer (16:00-17:00h en diciembre) es el mejor momento.</p>
-            </div>
+            <a
+              href="https://gyg.me/SS9ccWAt"
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+              className="inline-flex items-center justify-center w-full sm:w-auto px-6 py-3 bg-gradient-to-r from-sky-500 to-blue-600 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl hover:from-sky-600 hover:to-blue-700 transition-all duration-300 transform hover:scale-105"
+            >
+              <span className="mr-2">🎫</span>
+              Reservar The Shard
+            </a>
           </div>
         </div>
 
