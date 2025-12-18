@@ -1361,7 +1361,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
         <div className="mb-8">
           <h3 className="text-lg font-bold text-gray-900 mb-4 flex items-center">
             <div className="w-1 h-6 bg-gradient-to-b from-emerald-400 to-sky-400 rounded-full mr-3"></div>
-            Vistas Aéreas (15:30h - 17:00h)
+            Vistas Aéreas (14:00h - 15:30h)
           </h3>
 
           {/* Sky Garden */}
