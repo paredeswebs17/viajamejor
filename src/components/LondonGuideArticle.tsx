@@ -1699,7 +1699,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
         <div>
           <h5 className="font-semibold text-gray-900 mb-2">🛍️ Portobello Market:</h5>
           <ul className="text-sm text-gray-700 space-y-1 list-none">
-            <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span><strong>Mejor día:</strong> Sábado (8:00-19:00) completo</li>
+            <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>Mejor día: Sábado (8:00-19:00) completo</li>
             <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Lunes-Viernes: menos puestos (9:00-18:00)</li>
             <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Antigüedades, vintage, comida, ropa</li>
             <li className="flex items-center"><span className="w-2 h-2 bg-yellow-400 rounded-full mr-3"></span>Metro: Notting Hill Gate / Ladbroke Grove</li>
