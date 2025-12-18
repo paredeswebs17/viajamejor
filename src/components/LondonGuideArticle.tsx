@@ -1361,7 +1361,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
         <div className="mb-8">
           <h3 className="text-lg font-bold text-gray-900 mb-4 flex items-center">
             <div className="w-1 h-6 bg-gradient-to-b from-emerald-400 to-sky-400 rounded-full mr-3"></div>
-            Vistas Aéreas (14:00h - 16:30h)
+            Vistas Aéreas (15:30h - 17:00h)
           </h3>
 
           {/* Sky Garden */}
@@ -1465,7 +1465,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
         <div className="mb-8">
           <h3 className="text-lg font-bold text-gray-900 mb-4 flex items-center">
             <div className="w-1 h-6 bg-gradient-to-b from-amber-400 to-yellow-400 rounded-full mr-3"></div>
-            Catedral de San Pablo (16:30h - 18:00h)
+            Catedral de San Pablo (15:30h - 17:00h)
           </h3>
 
           <div className="bg-amber-50 border border-amber-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
@@ -1485,7 +1485,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
               <div>
                 <h5 className="font-semibold text-gray-900 mb-2">🎫 Información Práctica:</h5>
                 <ul className="text-sm text-gray-700 space-y-1 list-none">
-                  <li className="flex items-center"><span className="w-2 h-2 bg-gold-400 rounded-full mr-3"></span>Entrada: 27€ adultos (online)</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-gold-400 rounded-full mr-3"></span>Entrada: desde 29€</li>
                   <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Incluye: Audioguía en español</li>
                   <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Duración: 1.5-2 horas</li>
                   <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>Horario: 08:30-16:30 (Lun-Sáb), Miér 10:00-16:30</li>
@@ -1506,11 +1506,15 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
               <p className="text-xs text-amber-600">💡 <strong>The Whispering Gallery:</strong> Galería circular donde un susurro en un lado se escucha perfectamente en el lado opuesto (42 metros de distancia). Efecto acústico único en el mundo.</p>
             </div>
 
-            <div className="bg-gradient-to-r from-yellow-100 to-orange-100 border-2 border-yellow-300 rounded-lg p-3">
-              <p className="text-xs text-yellow-900">
-                <strong>🚶‍♂️ Bonus:</strong> Después de St Paul's, cruza el Millennium Bridge peatonal (5 min) hasta Tate Modern (museo de arte contemporáneo GRATIS). Vistas increíbles del puente con St Paul's de fondo.
-              </p>
-            </div>
+            <a
+              href="https://gyg.me/BhcGPPuJ"
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+              className="inline-flex items-center justify-center w-full sm:w-auto px-6 py-3 bg-gradient-to-r from-amber-500 to-yellow-600 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl hover:from-amber-600 hover:to-yellow-700 transition-all duration-300 transform hover:scale-105"
+            >
+              <span className="mr-2">⛪</span>
+              Reservar San Pablo
+            </a>
           </div>
         </div>
 
