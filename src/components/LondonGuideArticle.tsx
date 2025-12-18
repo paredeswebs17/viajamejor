@@ -129,8 +129,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
 
             <div className="bg-blue-50 border border-blue-200 rounded-lg p-3 mb-3">
               <p className="text-sm text-blue-800">
-                <strong>💡 ¿Cuándo vale la pena?</strong> Si llegas cansado, con equipaje pesado,
-                o tu hotel está en zona Paddington/Hyde Park/Notting Hill. Ahorras 35 minutos vs el metro.
+                <strong>💡 ¿Cuándo vale la pena pagar 29€?</strong> Si llegas cansado de un vuelo largo, con equipaje pesado, o tu hotel está en zona Paddington/Hyde Park/Notting Hill. Ahorras 35 minutos vs el metro y llegas descansado.
               </p>
             </div>
 
@@ -175,6 +174,12 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
               Opción económica y directa al centro de Londres
             </p>
 
+            <div className="bg-yellow-100 border border-yellow-300 rounded-lg p-3 mb-3">
+              <p className="text-sm text-yellow-800">
+                <strong>💡 Elige el metro si:</strong> Viajas con mochila ligera, no tienes prisa, y tu hotel está cerca de alguna parada de Piccadilly Line (Covent Garden, Leicester Square, King's Cross). Ahorras 22€ vs el tren expreso.
+              </p>
+            </div>
+
             <div className="space-y-2">
               <div className="flex items-center text-sm text-gray-700">
                 <span className="text-green-500 mr-2">✓</span>
@@ -204,13 +209,14 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
             </p>
 
             <div className="bg-orange-100 border-l-4 border-orange-500 p-3 mb-3">
-              <p className="text-sm text-orange-900">
-                <strong>🎯 Ideal si:</strong>
+              <p className="text-sm text-orange-900 mb-2">
+                <strong>🎯 Vale la pena si viajas en grupo:</strong>
               </p>
-              <ul className="text-sm text-orange-800 space-y-1 mt-2">
-                <li>✓ Llegas de madrugada o muy tarde (sin metro disponible)</li>
-                <li>✓ Llevas equipaje pesado o cochecito de bebé</li>
-                <li>✓ Tu hotel no está cerca de estaciones principales</li>
+              <ul className="text-sm text-orange-800 space-y-1">
+                <li>✓ 2 personas: 23€/persona (vs 29€ Heathrow Express)</li>
+                <li>✓ 3 personas: 15€/persona</li>
+                <li>✓ 4 personas: 11,50€/persona</li>
+                <li>✓ También ideal si llegas de madrugada o con mucho equipaje</li>
               </ul>
             </div>
 
@@ -535,12 +541,12 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
                 </div>
 
                 <p className="hotel-description">
-                  <strong>Perfecto si buscas ubicación TOP sin gastar en lujo.</strong> Habitaciones pequeñas pero modernas. A 2 min de Teatro Savoy y 5 min de Trafalgar Square.
+                  <strong>Perfecto si buscas ubicación TOP sin gastar en lujo.</strong> Habitaciones pequeñas pero modernas (estilo japonés). A 2 min de Teatro Savoy y 5 min de Trafalgar Square.
                 </p>
 
-                <div className="bg-sky-50 border border-sky-200 rounded p-2 mb-3">
+                <div className="bg-sky-50 border border-sky-200 rounded p-2 mb-3 mt-3">
                   <p className="text-xs text-sky-700">
-                    💡 Las habitaciones son compactas (estilo japonés) pero la ubicación compensa. Ideal para dormir poco y explorar mucho.
+                    💡 Las habitaciones son compactas pero la ubicación lo compensa. Ideal para dormir poco y explorar mucho.
                   </p>
                 </div>
 
@@ -564,12 +570,12 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
                 </div>
 
                 <p className="hotel-description">
-                  <strong>Opción premium con servicios completos.</strong> Hotel moderno con restaurante italiano y gimnasio. A 2 min de Victoria Station y 5 min de Buckingham Palace.
+                  <strong>Ideal si buscas un estándar internacional conocido.</strong> Hotel moderno con restaurante italiano y gimnasio. A 2 min de Victoria Station y 5 min de Buckingham Palace.
                 </p>
 
-                <div className="bg-sky-50 border border-sky-200 rounded p-2 mb-3">
-                  <p className="text-xs text-sky-700">
-                    💡 Victoria Station conecta con Heathrow Express y Gatwick Express. Ubicación estratégica para moverse por toda la ciudad.
+                <div className="bg-teal-50 border border-teal-200 rounded p-2 mb-3 mt-3">
+                  <p className="text-xs text-teal-700">
+                    💡 Perfecto para familias. Habitaciones amplias y muy cerca del cambio de guardia en Buckingham.
                   </p>
                 </div>
 
@@ -593,12 +599,12 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
                 </div>
 
                 <p className="hotel-description">
-                  <strong>Ideal para estancias largas o quienes cocinan.</strong> Hotel con pequeña cocina con microondas. A 300m de Buckingham Palace y 1km de Abadía de Westminster.
+                  <strong>Perfecto para estancias largas o si cocinas.</strong> Hotel con pequeña cocina con microondas. A 300m de Buckingham Palace y 1km de Abadía de Westminster.
                 </p>
 
-                <div className="bg-sky-50 border border-sky-200 rounded p-2 mb-3">
-                  <p className="text-xs text-sky-700">
-                    💡 La cocina te permite ahorrar en desayunos y cenas. Supermercados cerca. Perfecto para familias o estancias +3 días.
+                <div className="bg-violet-50 border border-violet-200 rounded p-2 mb-3 mt-3">
+                  <p className="text-xs text-violet-700">
+                    💡 Ahorra en desayunos y cenas preparándote algo rápido. La cocina es básica pero funcional.
                   </p>
                 </div>
 
@@ -1006,9 +1012,12 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
               </div>
             </div>
 
-            <div className="bg-orange-100 border-l-4 border-orange-500 p-3 mb-4">
-              <p className="text-sm text-orange-900">
-                <strong>⚠️ Las entradas se agotan con antelación</strong> en temporada alta. Reserva online para asegurar tu horario y evitar colas de hasta 1 hora.
+            <div className="bg-orange-100 border-l-4 border-orange-500 p-4 mb-4">
+              <p className="text-sm text-orange-900 mb-2">
+                <strong>⚠️ Las entradas se agotan</strong> con 2-3 días de antelación en temporada alta (abril-septiembre).
+              </p>
+              <p className="text-sm text-orange-800">
+                Si compras en taquilla, puedes esperar colas de hasta 90 minutos. Reservando online aseguras tu horario y entras directamente.
               </p>
             </div>
 
