@@ -1480,6 +1480,16 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
                 <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Los cuervos de la Torre (leyenda real)</li>
               </ul>
             </div>
+
+            <div className="bg-amber-100 border-l-4 border-amber-600 p-4 mb-4">
+              <p className="text-sm text-amber-900 mb-2">
+                <strong>⚠️ IMPORTANTE:</strong> La Torre de Londres es la segunda atracción de pago más visitada del Reino Unido (después del Windsor).
+              </p>
+              <p className="text-sm text-amber-800">
+                En temporada alta, las entradas para las Crown Jewels se agotan días antes. Reserva online para asegurar tu visita y evitar colas de hasta 2 horas.
+              </p>
+            </div>
+
             <div className="mb-4">
               <h5 className="font-semibold text-gray-900 mb-2">🎫 Información Práctica:</h5>
               <ul className="text-sm text-gray-700 space-y-1 list-none">
@@ -1496,20 +1506,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
                 rel="noopener noreferrer"
                 className="btn-attraction"
               >
-                <span>Comprar Entradas Torre de Londres</span>
-                <svg
-                  className="external-icon"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
-                  />
-                </svg>
+                <span>Reservar entrada con audioguía incluida →</span>
               </a>
             </div>
           </div>
@@ -1616,6 +1613,38 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
               <span className="mr-2">🎫</span>
               Reservar The Shard
             </a>
+          </div>
+
+          <div className="bg-gradient-to-r from-emerald-50 to-sky-50 border-2 border-gray-300 rounded-xl p-5 mb-6">
+            <h4 className="text-lg font-bold text-gray-900 mb-3">
+              🤔 ¿Cuál elegir: Sky Garden o The Shard?
+            </h4>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div className="bg-emerald-100 rounded-lg p-4">
+                <h5 className="font-bold text-emerald-800 mb-2">✅ Elige Sky Garden si:</h5>
+                <ul className="text-sm text-emerald-900 space-y-1">
+                  <li>✓ Quieres ahorrar (¡GRATIS!)</li>
+                  <li>✓ Planificas con 2-3 semanas de antelación</li>
+                  <li>✓ Te gusta la naturaleza (jardín tropical)</li>
+                  <li>✓ Prefieres ambiente más relajado</li>
+                </ul>
+              </div>
+
+              <div className="bg-sky-100 rounded-lg p-4">
+                <h5 className="font-bold text-sky-800 mb-2">✅ Elige The Shard si:</h5>
+                <ul className="text-sm text-sky-900 space-y-1">
+                  <li>✓ Reservas de última hora</li>
+                  <li>✓ Quieres las vistas MÁS ALTAS</li>
+                  <li>✓ Vas en grupo (todos entran seguro)</li>
+                  <li>✓ Prefieres bar champagne en lo alto</li>
+                </ul>
+              </div>
+            </div>
+
+            <p className="text-sm text-gray-600 mt-3 text-center">
+              <strong>Mi recomendación:</strong> Intenta Sky Garden primero. Si no hay disponibilidad, The Shard es tu mejor alternativa (y vale cada euro).
+            </p>
           </div>
         </div>
 
