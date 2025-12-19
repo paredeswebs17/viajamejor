@@ -1239,6 +1239,92 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
           </div>
         </div>
 
+        {/* NUEVO - Tour Guiado OPCIONAL */}
+        <div className="mb-8">
+          <h3 className="text-lg font-bold text-gray-900 mb-4 flex items-center">
+            <div className="w-1 h-6 bg-gradient-to-b from-indigo-400 to-purple-400 rounded-full mr-3"></div>
+            Tour Guiado Westminster - OPCIONAL (Si prefieres guía en español)
+          </h3>
+          <div className="bg-indigo-50 border border-indigo-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
+            <h4 className="text-lg font-bold text-gray-900 mb-3">
+              👥 Free Tour Westminster en Español (Propinas)
+            </h4>
+
+            <div className="mb-4">
+              <img
+                src="https://images.pexels.com/photos/672532/pexels-photo-672532.jpeg"
+                alt="Grupo de turistas en tour guiado por Westminster"
+                className="w-full h-48 sm:h-64 object-cover rounded-xl shadow-lg mb-4"
+              />
+            </div>
+
+            <p className="text-gray-700 mb-4">
+              Si prefieres entender la historia de Westminster, el Parlamento y Buckingham con las anécdotas que no aparecen en las audioguías, este tour gratuito (funciona con propinas) es perfecto. Guías locales apasionados que hacen la historia británica entretenida.
+            </p>
+
+            <div className="bg-indigo-100 border-l-4 border-indigo-500 p-4 mb-4">
+              <p className="text-sm text-indigo-900 mb-2">
+                <strong>🎯 Recomendado si:</strong>
+              </p>
+              <ul className="text-sm text-indigo-800 space-y-1">
+                <li>✓ Es tu primera vez en Londres y quieres contexto histórico</li>
+                <li>✓ Prefieres explicaciones en español de un guía local</li>
+                <li>✓ Quieres conocer curiosidades que no están en las guías turísticas</li>
+                <li>✓ Viajas en grupo y buscáis una actividad social</li>
+              </ul>
+            </div>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+              <div>
+                <h5 className="font-semibold text-gray-900 mb-2">📋 Info Práctica:</h5>
+                <ul className="text-sm text-gray-700 space-y-1 list-none">
+                  <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Precio: GRATIS (propinas 10-15€)</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Duración: 2.5 horas</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3"></span>En español</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-yellow-400 rounded-full mr-3"></span>Reserva recomendada (grupos limitados)</li>
+                </ul>
+              </div>
+              <div>
+                <h5 className="font-semibold text-gray-900 mb-2">🗺️ Qué Verás:</h5>
+                <ul className="text-sm text-gray-700 space-y-1 list-none">
+                  <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>Big Ben y Parlamento</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-orange-400 rounded-full mr-3"></span>Abadía de Westminster (exterior)</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-pink-400 rounded-full mr-3"></span>Buckingham Palace</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-emerald-400 rounded-full mr-3"></span>Trafalgar Square</li>
+                </ul>
+              </div>
+            </div>
+
+            <div className="bg-white rounded-xl p-3 border border-gray-200 shadow-sm mb-4">
+              <p className="text-xs text-indigo-600">
+                💡 <strong>Tip:</strong> Este tour NO entra en los monumentos (solo los ve por fuera). Es perfecto como introducción antes de visitarlos por dentro con tus entradas individuales.
+              </p>
+            </div>
+
+            <a
+              href="https://gyg.me/1g2D8kNs"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-attraction"
+            >
+              <span>Reservar plaza en el tour gratuito →</span>
+              <svg
+                className="external-icon"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+
         {/* London Eye */}
         <div className="mb-8">
           <h3 className="text-lg font-bold text-gray-900 mb-4 flex items-center">
@@ -1278,12 +1364,15 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
             </div>
 
             <div className="bg-white rounded-xl p-4 border border-gray-200 shadow-sm mb-4">
-              <p className="text-xs text-sky-600 mb-2">💡 Mejor momento: Atardecer, ves la ciudad de día y de noche en la misma vuelta.</p>
+              <p className="text-xs text-sky-600 mb-2">💡 <strong>Mejor momento:</strong> Atardecer (17:00-18:00h), ves la ciudad de día y de noche en la misma vuelta.</p>
             </div>
 
-            <div className="bg-sky-100 border-l-4 border-sky-500 p-3 mb-4">
-              <p className="text-sm text-sky-900">
-                <strong>💡 Truco de local:</strong> Los slots de 17:00-18:00 son los más solicitados. Si reservas online con antelación, pagas menos y evitas hasta 90 min de cola.
+            <div className="bg-sky-100 border-l-4 border-sky-500 p-4 mb-4">
+              <p className="text-sm text-sky-900 mb-2">
+                <strong>⚠️ Los slots de atardecer (17:00-18:30) se agotan rápido</strong>
+              </p>
+              <p className="text-sm text-sky-800">
+                Si compras en taquilla, puedes esperar hasta 90 minutos de cola + no garantizas tu horario preferido. Reservando online con 2-3 días de antelación, pagas menos y entras sin esperas.
               </p>
             </div>
 
@@ -1481,6 +1570,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
             <p className="text-gray-700 mb-4">
               Fortaleza normanda fundada en 1066 que ha sido palacio real, prisión, arsenal y ahora alberga las legendarias Joyas de la Corona Británica. Uno de los monumentos más importantes de Londres.
             </p>
+
             <div className="mb-4">
               <h5 className="font-semibold text-gray-900 mb-2">💎 Imprescindibles:</h5>
               <ul className="text-sm text-gray-700 space-y-1 list-none">
@@ -1492,22 +1582,26 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
 
             <div className="bg-amber-100 border-l-4 border-amber-600 p-4 mb-4">
               <p className="text-sm text-amber-900 mb-2">
-                <strong>⚠️ IMPORTANTE:</strong> La Torre de Londres es la segunda atracción de pago más visitada del Reino Unido (después del Windsor).
+                <strong>⚠️ ATENCIÓN:</strong> La Torre de Londres es el segundo monumento de pago más visitado del Reino Unido (solo superado por Windsor).
+              </p>
+              <p className="text-sm text-amber-800 mb-2">
+                <strong>Las entradas se agotan días antes</strong>, especialmente en verano y fines de semana. La cola para comprar en taquilla puede superar las 2 horas.
               </p>
               <p className="text-sm text-amber-800">
-                En temporada alta, las entradas para las Crown Jewels se agotan días antes. Reserva online para asegurar tu visita y evitar colas de hasta 2 horas.
+                💡 Reserva online para asegurar tu visita + audioguía incluida + acceso sin colas.
               </p>
             </div>
 
             <div className="mb-4">
               <h5 className="font-semibold text-gray-900 mb-2">🎫 Información Práctica:</h5>
               <ul className="text-sm text-gray-700 space-y-1 list-none">
-                <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3 flex-shrink-0"></span><span>Precio: 40€ online</span></li>
+                <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3 flex-shrink-0"></span><span>Precio: 40€ online (audioguía incluida)</span></li>
                 <li className="flex items-center"><span className="w-2 h-2 bg-yellow-400 rounded-full mr-3 flex-shrink-0"></span><span>Horario diciembre: 9:00-16:30 (última entrada 15:00)</span></li>
                 <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3 flex-shrink-0"></span><span>Duración: 2.5-3 horas mínimo</span></li>
-                <li className="flex items-center"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3 flex-shrink-0"></span><span>Audioguía incluida en el precio</span></li>
+                <li className="flex items-center"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3 flex-shrink-0"></span><span>Audioguía en español incluida</span></li>
               </ul>
             </div>
+
             <div className="mt-4">
               <a
                 href="https://gyg.me/ex4u6Ux1"
@@ -1516,6 +1610,19 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
                 className="btn-attraction"
               >
                 <span>Reservar entrada con audioguía incluida →</span>
+                <svg
+                  className="external-icon"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                  />
+                </svg>
               </a>
             </div>
           </div>
