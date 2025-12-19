@@ -1363,16 +1363,12 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
               </div>
             </div>
 
-            <div className="bg-white rounded-xl p-4 border border-gray-200 shadow-sm mb-4">
-              <p className="text-xs text-sky-600 mb-2">💡 <strong>Mejor momento:</strong> Atardecer (17:00-18:00h), ves la ciudad de día y de noche en la misma vuelta.</p>
-            </div>
-
             <div className="bg-sky-100 border-l-4 border-sky-500 p-4 mb-4">
               <p className="text-sm text-sky-900 mb-2">
                 <strong>⚠️ Los slots de atardecer (17:00-18:30) se agotan rápido</strong>
               </p>
               <p className="text-sm text-sky-800">
-                Si compras en taquilla, puedes esperar hasta 90 minutos de cola + no garantizas tu horario preferido. Reservando online con 2-3 días de antelación, pagas menos y entras sin esperas.
+                Si compras en taquilla, puedes esperar hasta 90 minutos de cola + no garantizas tu horario preferido. Reservando online con antelación, pagas menos y entras sin esperas.
               </p>
             </div>
 
