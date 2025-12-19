@@ -8,9 +8,14 @@ interface LondonGuideArticleProps {
 
 const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
   const [expandedAirport, setExpandedAirport] = useState<string | null>(null);
+  const [expandedZone, setExpandedZone] = useState<string | null>(null);
 
   const toggleAirport = (airportId: string) => {
     setExpandedAirport(expandedAirport === airportId ? null : airportId);
+  };
+
+  const toggleZone = (zoneId: string) => {
+    setExpandedZone(expandedZone === zoneId ? null : zoneId);
   };
   const sections = [
     { id: 'por-que-visitar', title: '¿Por qué visitar Londres?' },
@@ -792,13 +797,31 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
               <div className="w-12 h-12 bg-gradient-to-br from-sky-500 to-blue-500 rounded-xl flex items-center justify-center mr-4">
                 <span className="text-2xl">🏛️</span>
               </div>
-              <div>
+              <div className="flex-1">
                 <h3 className="text-xl font-bold text-gray-900">Westminster / Covent Garden - Centro Histórico y Teatral</h3>
-                <p className="text-sm text-gray-600">El corazón turístico de Londres: monumentos + teatros + restaurantes</p>
+                <p className="text-sm text-gray-600 mb-2">El corazón turístico de Londres: monumentos + teatros + restaurantes</p>
+                <p className="font-semibold text-lg text-blue-600">
+                  💰 Precio medio: 120-180€/noche
+                </p>
               </div>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-4">
+            <button
+              onClick={() => toggleZone('westminster')}
+              className="flex items-center gap-2 text-blue-600 hover:text-blue-800 transition-colors font-medium mb-4"
+            >
+              {expandedZone === 'westminster' ?
+                <ChevronUp className="w-5 h-5" /> :
+                <ChevronDown className="w-5 h-5" />
+              }
+              <span>
+                {expandedZone === 'westminster' ? 'Ocultar' : 'Ver'} hoteles recomendados
+              </span>
+            </button>
+
+            {expandedZone === 'westminster' && (
+              <div className="animate-fadeIn border-t border-gray-200 pt-4">
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-4">
               <div className="hotel-card border-l-4 border-sky-400 bg-sky-100/60">
                 <div className="hotel-header">
                   <h3 className="hotel-name">The Z Hotel Strand</h3>
@@ -887,11 +910,13 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
               </div>
             </div>
 
-            <div className="bg-green-50 border border-green-200 rounded-lg p-3">
-              <p className="text-sm text-green-800">
-                <strong>✅ Por qué elegir esta zona:</strong> La ubicación TOP para primera visita. A 5-15 min andando de: Big Ben, Abadía de Westminster, Buckingham Palace, Trafalgar Square, London Eye, West End (teatros), National Gallery, Covent Garden Market. Perfecta combinación de monumentos históricos + vida nocturna + restaurantes de clase mundial.
-              </p>
-            </div>
+                <div className="bg-green-50 border border-green-200 rounded-lg p-3 mt-4">
+                  <p className="text-sm text-green-800">
+                    <strong>✅ Por qué elegir esta zona:</strong> La ubicación TOP para primera visita. A 5-15 min andando de: Big Ben, Abadía de Westminster, Buckingham Palace, Trafalgar Square, London Eye, West End (teatros), National Gallery, Covent Garden Market. Perfecta combinación de monumentos históricos + vida nocturna + restaurantes de clase mundial.
+                  </p>
+                </div>
+              </div>
+            )}
           </div>
 
           <div className="bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300">
@@ -899,11 +924,30 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
               <div className="w-12 h-12 bg-gradient-to-br from-red-500 to-orange-500 rounded-xl flex items-center justify-center mr-4">
                 <span className="text-2xl">🚂</span>
               </div>
-              <div>
+              <div className="flex-1">
                 <h3 className="text-xl font-bold text-gray-900">King's Cross / St Pancras - Hub de Transporte Internacional</h3>
-                <p className="text-sm text-gray-600">Conexión perfecta con aeropuertos + Eurostar + Harry Potter</p>
+                <p className="text-sm text-gray-600 mb-2">Conexión perfecta con aeropuertos + Eurostar + Harry Potter</p>
+                <p className="font-semibold text-lg text-blue-600">
+                  💰 Precio medio: 100-160€/noche
+                </p>
               </div>
             </div>
+
+            <button
+              onClick={() => toggleZone('kings-cross')}
+              className="flex items-center gap-2 text-blue-600 hover:text-blue-800 transition-colors font-medium mb-4"
+            >
+              {expandedZone === 'kings-cross' ?
+                <ChevronUp className="w-5 h-5" /> :
+                <ChevronDown className="w-5 h-5" />
+              }
+              <span>
+                {expandedZone === 'kings-cross' ? 'Ocultar' : 'Ver'} hoteles recomendados
+              </span>
+            </button>
+
+            {expandedZone === 'kings-cross' && (
+              <div className="animate-fadeIn border-t border-gray-200 pt-4">
 
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-4">
               <div className="hotel-card border-l-4 border-red-400 bg-red-100/60">
@@ -994,11 +1038,13 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
               </div>
             </div>
 
-            <div className="bg-green-50 border border-green-200 rounded-lg p-3">
-              <p className="text-sm text-green-800">
-                <strong>✅ Por qué elegir esta zona:</strong> LA mejor zona si priorizas transporte. Tienes 6 líneas de metro, tren directo a Stansted/Luton, Eurostar a París/Bruselas, y estás a 15 min andando del British Museum. También está el Andén 9¾ de Harry Potter en King's Cross. Zona más "local" y menos turística que Westminster.
-              </p>
-            </div>
+                <div className="bg-green-50 border border-green-200 rounded-lg p-3 mt-4">
+                  <p className="text-sm text-green-800">
+                    <strong>✅ Por qué elegir esta zona:</strong> LA mejor zona si priorizas transporte. Tienes 6 líneas de metro, tren directo a Stansted/Luton, Eurostar a París/Bruselas, y estás a 15 min andando del British Museum. También está el Andén 9¾ de Harry Potter en King's Cross. Zona más "local" y menos turística que Westminster.
+                  </p>
+                </div>
+              </div>
+            )}
           </div>
 
           <div className="bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300">
@@ -1006,11 +1052,30 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
               <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-pink-500 rounded-xl flex items-center justify-center mr-4">
                 <span className="text-2xl">🎨</span>
               </div>
-              <div>
+              <div className="flex-1">
                 <h3 className="text-xl font-bold text-gray-900">Southwark / South Bank - Zona Cultural y Moderna</h3>
-                <p className="text-sm text-gray-600">Arte, gastronomía y vistas al Támesis</p>
+                <p className="text-sm text-gray-600 mb-2">Arte, gastronomía y vistas al Támesis</p>
+                <p className="font-semibold text-lg text-blue-600">
+                  💰 Precio medio: 90-200€/noche
+                </p>
               </div>
             </div>
+
+            <button
+              onClick={() => toggleZone('southwark')}
+              className="flex items-center gap-2 text-blue-600 hover:text-blue-800 transition-colors font-medium mb-4"
+            >
+              {expandedZone === 'southwark' ?
+                <ChevronUp className="w-5 h-5" /> :
+                <ChevronDown className="w-5 h-5" />
+              }
+              <span>
+                {expandedZone === 'southwark' ? 'Ocultar' : 'Ver'} hoteles recomendados
+              </span>
+            </button>
+
+            {expandedZone === 'southwark' && (
+              <div className="animate-fadeIn border-t border-gray-200 pt-4">
 
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-4">
               <div className="hotel-card border-l-4 border-purple-400 bg-purple-100/60">
@@ -1101,11 +1166,13 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
               </div>
             </div>
 
-            <div className="bg-green-50 border border-green-200 rounded-lg p-3">
-              <p className="text-sm text-green-800">
-                <strong>✅ Por qué elegir esta zona:</strong> South Bank es el corazón cultural moderno de Londres. Tienes en 10 min andando: Tate Modern (arte contemporáneo gratis), Shakespeare's Globe, Borough Market (comida top), London Eye, Tower Bridge. Zona con los mejores restaurantes y pubs junto al río. Vistas increíbles del skyline. Perfecta si buscas ambiente más alternativo y gastronómico que Westminster.
-              </p>
-            </div>
+                <div className="bg-green-50 border border-green-200 rounded-lg p-3 mt-4">
+                  <p className="text-sm text-green-800">
+                    <strong>✅ Por qué elegir esta zona:</strong> South Bank es el corazón cultural moderno de Londres. Tienes en 10 min andando: Tate Modern (arte contemporáneo gratis), Shakespeare's Globe, Borough Market (comida top), London Eye, Tower Bridge. Zona con los mejores restaurantes y pubs junto al río. Vistas increíbles del skyline. Perfecta si buscas ambiente más alternativo y gastronómico que Westminster.
+                  </p>
+                </div>
+              </div>
+            )}
           </div>
         </div>
       </div>
