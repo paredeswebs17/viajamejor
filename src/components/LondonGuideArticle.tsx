@@ -1010,7 +1010,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
 
               <div className="hotel-card border-l-4 border-yellow-400 bg-yellow-100/60">
                 <div className="hotel-header">
-                  <h3 className="hotel-name">Great Northern Hotel</h3>
+                  <h3 className="hotel-name">Pullman London St Pancras</h3>
                   <div className="hotel-stars">⭐⭐⭐⭐</div>
                 </div>
 
@@ -1029,7 +1029,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
                   </p>
                 </div>
 
-                <a href="https://www.booking.com/hotel/gb/great-northern-london.html?aid=7956858" target="_blank" rel="noopener noreferrer" className="btn-hotel">
+                <a href="https://booking.tpk.lv/gaF2pTGa" target="_blank" rel="noopener noreferrer" className="btn-hotel">
                   <span>Ver disponibilidad y precios</span>
                   <svg className="external-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
@@ -1080,7 +1080,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-4">
               <div className="hotel-card border-l-4 border-purple-400 bg-purple-100/60">
                 <div className="hotel-header">
-                  <h3 className="hotel-name">Travelodge London Southwark</h3>
+                  <h3 className="hotel-name">ibis London Blackfriars</h3>
                   <div className="hotel-stars">⭐⭐⭐</div>
                 </div>
 
@@ -1099,7 +1099,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
                   </p>
                 </div>
 
-                <a href="https://www.booking.com/hotel/gb/travelodge-london-southwark.html?aid=7956858" target="_blank" rel="noopener noreferrer" className="btn-hotel">
+                <a href="https://booking.tpk.lv/J6DZf62g" target="_blank" rel="noopener noreferrer" className="btn-hotel">
                   <span>Ver disponibilidad y precios</span>
                   <svg className="external-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
@@ -1128,7 +1128,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
                   </p>
                 </div>
 
-                <a href="https://www.booking.com/hotel/gb/citizenm-london-bankside.html?aid=7956858" target="_blank" rel="noopener noreferrer" className="btn-hotel">
+                <a href="https://booking.tpk.lv/cp2brt0T" target="_blank" rel="noopener noreferrer" className="btn-hotel">
                   <span>Ver disponibilidad y precios</span>
                   <svg className="external-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
@@ -1138,7 +1138,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
 
               <div className="hotel-card border-l-4 border-blue-400 bg-blue-100/60">
                 <div className="hotel-header">
-                  <h3 className="hotel-name">Shangri-La The Shard</h3>
+                  <h3 className="hotel-name">H10 London Waterloo</h3>
                   <div className="hotel-stars">⭐⭐⭐⭐⭐</div>
                 </div>
 
@@ -1157,7 +1157,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
                   </p>
                 </div>
 
-                <a href="https://www.booking.com/hotel/gb/shangri-la-london.html?aid=7956858" target="_blank" rel="noopener noreferrer" className="btn-hotel">
+                <a href="https://booking.tpk.lv/95kgpIh5" target="_blank" rel="noopener noreferrer" className="btn-hotel">
                   <span>Ver disponibilidad y precios</span>
                   <svg className="external-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
