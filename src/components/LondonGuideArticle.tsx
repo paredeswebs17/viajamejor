@@ -1090,13 +1090,12 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
                 </div>
 
                 <p className="hotel-description">
-                  <strong>Hotel moderno con servicio completo 24 horas.</strong> Habitaciones con WiFi gratuita, TV de pantalla planta, baño privado y vistas a la ciudad. Incluyen utensilios de planchado y artículos de aseo gratuitos. Dispone de recepción 24 horas y menú de comida y bebida disponible todo el día. El restaurante Charlie's Corner ofrece bar con cerveza artesanal, café y aperitivos en ambiente moderno con buena música.<br/><br/>
-                  Está a solo 5 minutos a pie de la estación de Waterloo y a menos de 10 minutos del Tate Modern. A menos de 20 minutos a pie encontrarás el London Eye y el Big Ben. Desde Waterloo puedes tomar la línea Jubilee del metro y llegar en 10 minutos a Bond Street para acceder a las tiendas de Oxford Street.
+                  <strong>Hotel moderno con servicio completo 24 horas.</strong> Habitaciones con WiFi gratuita, TV de pantalla plana, baño privado y vistas a la ciudad. Incluyen utensilios de planchado y artículos de aseo gratuitos. Dispone de recepción 24 horas y menú de comida y bebida disponible todo el día. El restaurante Charlie's Corner ofrece bar con cerveza artesanal, café y aperitivos en ambiente moderno con buena música.
                 </p>
 
                 <div className="bg-purple-50 border border-purple-200 rounded p-2 mb-3 mt-3">
                   <p className="text-xs text-purple-700">
-                    Parte de la cadena Ibis, ofrece calidad consistente con recepción y menú de comida disponibles las 24 horas. Excelente relación calidad-precio en zona céntrica.
+                    📍 <strong>Qué hay cerca:</strong> Estación Waterloo (5 min), Tate Modern (10 min), London Eye y Big Ben (20 min andando). Desde Waterloo tomas línea Jubilee y en 10 min llegas a Bond Street para Oxford Street. Aeropuerto London City a 13 km.
                   </p>
                 </div>
 
