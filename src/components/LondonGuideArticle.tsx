@@ -834,12 +834,12 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
                 </div>
 
                 <p className="hotel-description">
-                  <strong>Perfecto si buscas ubicación TOP sin gastar en lujo.</strong> Habitaciones pequeñas pero modernas (estilo japonés). A 2 min de Teatro Savoy y 5 min de Trafalgar Square.
+                  <strong>Ubicación inmejorable en pleno corazón de Londres.</strong> Hotel moderno con habitaciones compactas pero inteligentemente diseñadas, equipadas con aire acondicionado, TV satélite y baño privado completo. Incluye bar, WiFi gratis y desayuno buffet con opciones sin gluten.
                 </p>
 
                 <div className="bg-sky-50 border border-sky-200 rounded p-2 mb-3 mt-3">
                   <p className="text-xs text-sky-700">
-                    💡 Las habitaciones son compactas pero la ubicación lo compensa. Ideal para dormir poco y explorar mucho.
+                    📍 <strong>Qué hay cerca:</strong> Teatro Savoy (2 min), Teatro Lyceum (4 min), Trafalgar Square (5 min), Ópera Real y Galería Nacional a poca distancia. Metro Charing Cross a 400m.
                   </p>
                 </div>
 
