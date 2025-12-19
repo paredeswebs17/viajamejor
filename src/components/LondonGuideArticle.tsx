@@ -1119,12 +1119,12 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
                 </div>
 
                 <p className="hotel-description">
-                  <strong>Ideal para viajeros modernos y millennials.</strong> Hotel de diseño con check-in automático, habitaciones tech con iPad control, bar 24h. A 2 min de Tate Modern y Shakespeare's Globe.
+                  <strong>Hotel moderno y elegante con tecnología de última generación.</strong> WiFi alta velocidad gratis en todas las instalaciones. Habitaciones con iPad control para iluminación ambiental, persianas, temperatura y TV. Chromecast gratuito para Netflix, Prime, Disney+. Baño privado con ducha efecto lluvia. Recepción 24h, zonas de estar estilo moderno con ordenadores iMac gratis e impresión gratuita. CanteenM 24h con bocadillos y platos calientes. Bar con cerveza de barril, champán y cócteles. Desayuno buffet disponible.
                 </p>
 
                 <div className="bg-pink-50 border border-pink-200 rounded p-2 mb-3 mt-3">
                   <p className="text-xs text-pink-700">
-                    CitizenM es la cadena "cool" europea. Diseño Instagram-worthy, tecnología punta, ambiente joven.
+                    📍 <strong>Qué hay cerca:</strong> Tate Modern (2 min), Borough Market, Puente del Milenio (600m), Puente de Londres (500m), Catedral San Pablo (10 min), Estación Waterloo (1.6 km). Aeropuerto London City a 12 km.
                   </p>
                 </div>
 
