@@ -1851,17 +1851,6 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
       </div>
     </div>
 
-    <div className="bg-white rounded-xl p-3 border border-gray-200 shadow-sm mb-4">
-      <p className="text-xs text-amber-600">💡 <strong>The Whispering Gallery:</strong> Galería circular donde un susurro en un lado se escucha perfectamente en el lado opuesto (42 metros de distancia). Efecto acústico único en el mundo.</p>
-    </div>
-
-    {/* NUEVO - Warning de reserva */}
-    <div className="bg-yellow-50 border border-yellow-300 rounded-lg p-3 mb-4">
-      <p className="text-sm text-yellow-800">
-        <strong>📅 Tip:</strong> Aunque es menos concurrida que Westminster Abbey, en verano y fines de semana puede haber colas de 30-45 minutos. Reserva online para entrar directamente.
-      </p>
-    </div>
-
     <a
       href="https://gyg.me/BhcGPPuJ"
       target="_blank"
