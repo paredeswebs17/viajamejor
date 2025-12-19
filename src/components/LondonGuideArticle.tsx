@@ -1090,12 +1090,12 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
                 </div>
 
                 <p className="hotel-description">
-                  <strong>Perfecto si buscas precio bajo cerca del río.</strong> Hotel básico pero limpio a 5 min de Tate Modern y Borough Market. Habitaciones sencillas sin lujos pero ubicación estratégica.
+                  <strong>Hotel moderno en el centro con servicio 24 horas.</strong> Ofrece habitaciones con WiFi gratuita, TV de pantalla plana, baño privado y vistas a la ciudad. A 5 min a pie de Waterloo y menos de 10 min del Tate Modern. Incluye el restaurante y bar Charlie's Corner con cerveza artesanal y música. A menos de 20 min a pie del London Eye y Big Ben, y 10 min en metro a Oxford Street.
                 </p>
 
                 <div className="bg-purple-50 border border-purple-200 rounded p-2 mb-3 mt-3">
                   <p className="text-xs text-purple-700">
-                    Travelodge es cadena económica británica. No esperes amenities pero la ubicación es TOP.
+                    Parte de la cadena Ibis, ofrece calidad consistente con recepción y menú de comida disponibles las 24 horas. Excelente relación calidad-precio en zona céntrica.
                   </p>
                 </div>
 
