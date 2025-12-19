@@ -1039,11 +1039,8 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
             </div>
 
                 <div className="bg-green-50 border border-green-200 rounded-lg p-3 mt-4">
-                  <p className="text-sm text-green-800 mb-3">
-                    <strong>✅ Por qué elegir esta zona:</strong> Combinas lo MEJOR de dos mundos: el ambiente auténtico y alternativo de Camden (mercados, música, street art) con la conexión de transporte INSUPERABLE de King's Cross/St Pancras. Tienes 6 líneas de metro, tren directo a Stansted/Luton, Eurostar a París/Bruselas, y estás a 15 min del British Museum. También puedes visitar el Andén 9¾ de Harry Potter. Zona más "local" y económica que Westminster, perfecta si buscas autenticidad sin renunciar a comodidad.
-                  </p>
                   <p className="text-sm text-green-800">
-                    <strong>💡 Ideal para:</strong> Viajeros que llegan/salen por Eurostar, fans de Harry Potter, quienes buscan ambiente menos turístico pero con excelente transporte.
+                    <strong>✅ Por qué elegir esta zona:</strong> Combinas lo MEJOR de dos mundos: el ambiente auténtico y alternativo de Camden (mercados, música, street art) con la conexión de transporte INSUPERABLE de King's Cross/St Pancras. Tienes 6 líneas de metro, tren directo a Stansted/Luton, Eurostar a París/Bruselas, y estás a 15 min del British Museum. También puedes visitar el Andén 9¾ de Harry Potter. Zona más "local" y económica que Westminster, perfecta si buscas autenticidad sin renunciar a comodidad.
                   </p>
                 </div>
               </div>
