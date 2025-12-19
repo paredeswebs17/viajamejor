@@ -413,30 +413,40 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
               🔥 🚂 Stansted Express - El Tren Más Rápido
             </h4>
             <p className="text-sm text-gray-700 mb-3">
-              Conexión rápida a Liverpool Street Station en el centro de Londres
+              Conexión directa sin paradas a London Liverpool Street
             </p>
+
+            <div className="bg-blue-50 border border-blue-200 rounded-lg p-3 mb-3">
+              <p className="text-sm text-blue-800">
+                <strong>¿Cuándo vale la pena pagar 23€?</strong> Si tu hotel está en zona City/Shoreditch o necesitas llegar rápido al centro. Ahorras 90 minutos vs el bus. Perfecto para vuelos que llegan temprano o tarde cuando no quieres perder tiempo.
+              </p>
+            </div>
 
             <div className="space-y-2 mb-4">
               <div className="flex items-center text-sm text-gray-700">
                 <span className="text-green-500 mr-2">✓</span>
-                Precio: Desde 26€
+                Precio: Desde 23€ (online, compra anticipada)
               </div>
               <div className="flex items-center text-sm text-gray-700">
                 <span className="text-green-500 mr-2">✓</span>
-                Duración: 47 minutos
+                Duración: 47 minutos sin paradas
               </div>
               <div className="flex items-center text-sm text-gray-700">
                 <span className="text-green-500 mr-2">✓</span>
-                Destino: Liverpool Street Station
+                Horario: 05:30-00:30 (cada 15 min)
               </div>
               <div className="flex items-center text-sm text-gray-700">
                 <span className="text-green-500 mr-2">✓</span>
-                Horario: 05:30-00:30
+                WiFi gratis, espacio equipaje, enchufes
+              </div>
+              <div className="flex items-center text-sm text-gray-700">
+                <span className="text-green-500 mr-2">✓</span>
+                Destino: Liverpool Street (conexión con metro)
               </div>
             </div>
 
             <a
-              href="https://gyg.me/YQaBsBwy"
+              href="https://gyg.me/jcKyAaQi"
               target="_blank"
               rel="noopener noreferrer"
               className="block w-full text-center py-2 px-4 bg-slate-700 text-white rounded-lg text-sm hover:bg-slate-800 transition"
@@ -447,46 +457,101 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
 
           <div className="border-2 border-yellow-400 bg-yellow-50 rounded-xl p-4 mb-4">
             <h4 className="text-lg font-bold text-gray-900 mb-2">
-              🚌 National Express Bus - Opción Económica
+              🚌 National Express Bus - Opción Más Económica
             </h4>
             <p className="text-sm text-gray-700 mb-3">
-              Traslado en autobús desde Stansted hasta London Victoria con paradas en destinos clave
+              Traslado en autobús desde Stansted al centro de Londres
             </p>
+
+            <div className="bg-yellow-100 border border-yellow-300 rounded-lg p-3 mb-3">
+              <p className="text-sm text-yellow-800">
+                <strong>Elige el bus si:</strong> Vuelas con Ryanair/easyJet y quieres ahorrar (12€ vs 23€ del tren). Ideal si llegas de día, no tienes prisa, y tu hotel está cerca de Victoria o Liverpool Street. Tarda casi el doble (90 min vs 47 min).
+              </p>
+            </div>
 
             <div className="space-y-2 mb-4">
               <div className="flex items-center text-sm text-gray-700">
                 <span className="text-green-500 mr-2">✓</span>
-                Precio: Desde 19€ por trayecto
+                Precio: Desde 12€ por trayecto
               </div>
               <div className="flex items-center text-sm text-gray-700">
                 <span className="text-green-500 mr-2">✓</span>
-                Duración: 45 minutos - 2 horas según destino
+                Duración: 90 minutos aproximadamente
               </div>
               <div className="flex items-center text-sm text-gray-700">
                 <span className="text-green-500 mr-2">✓</span>
-                Destinos: London Victoria, Golders Green, Baker Street, Liverpool Street, Stratford
+                Destino: Victoria o Liverpool Street
               </div>
               <div className="flex items-center text-sm text-gray-700">
                 <span className="text-green-500 mr-2">✓</span>
-                Menores de 15 años: GRATIS
+                Salidas cada 15-20 minutos
               </div>
               <div className="flex items-center text-sm text-gray-700">
                 <span className="text-green-500 mr-2">✓</span>
-                Asientos de cuero, WiFi, aire acondicionado y tomas de corriente
-              </div>
-              <div className="flex items-center text-sm text-gray-700">
-                <span className="text-green-500 mr-2">✓</span>
-                Salidas frecuentes día y noche
+                La opción más económica disponible
               </div>
             </div>
 
             <a
-              href="https://gyg.me/cHSEHroI"
+              href="https://gyg.me/YyKAe4W3"
               target="_blank"
               rel="noopener noreferrer"
               className="block w-full text-center py-2 px-4 bg-slate-700 text-white rounded-lg text-sm hover:bg-slate-800 transition"
             >
-              Ver horarios y reservar →
+              Reservar bus Stansted-Londres →
+            </a>
+          </div>
+
+          <div className="border-2 border-orange-400 bg-orange-50 rounded-xl p-4 mb-4">
+            <h4 className="text-lg font-bold text-gray-900 mb-2">
+              🚖 Traslado Privado - Máximo Confort
+            </h4>
+            <p className="text-sm text-gray-700 mb-3">
+              Servicio puerta a puerta desde el aeropuerto a tu hotel
+            </p>
+
+            <div className="bg-orange-100 border-l-4 border-orange-500 p-3 mb-3">
+              <p className="text-sm text-orange-900 mb-2">
+                <strong>Vale la pena si viajas en grupo:</strong>
+              </p>
+              <ul className="text-sm text-orange-800 space-y-1">
+                <li>✓ 2 personas: 33€/persona (similar al tren pero más cómodo)</li>
+                <li>✓ 3 personas: 22€/persona</li>
+                <li>✓ 4 personas: 16,50€/persona (¡más barato que el tren!)</li>
+                <li>✓ Perfecto si llegas de madrugada cuando no hay tren/bus</li>
+              </ul>
+            </div>
+
+            <div className="space-y-2 mb-4">
+              <div className="flex items-center text-sm text-gray-700">
+                <span className="text-green-500 mr-2">✓</span>
+                Precio: Desde 66€ (tarifa fija para hasta 4 personas)
+              </div>
+              <div className="flex items-center text-sm text-gray-700">
+                <span className="text-green-500 mr-2">✓</span>
+                Duración: 60-80 min según tráfico
+              </div>
+              <div className="flex items-center text-sm text-gray-700">
+                <span className="text-green-500 mr-2">✓</span>
+                Disponible 24/7 (incluye madrugada)
+              </div>
+              <div className="flex items-center text-sm text-gray-700">
+                <span className="text-green-500 mr-2">✓</span>
+                Puerta a puerta, sin esperas ni conexiones
+              </div>
+              <div className="flex items-center text-sm text-gray-700">
+                <span className="text-green-500 mr-2">✓</span>
+                Conductor profesional con cartel con tu nombre
+              </div>
+            </div>
+
+            <a
+              href="https://gyg.me/kzGcMFzQ"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block w-full text-center py-2 px-4 bg-slate-700 text-white rounded-lg text-sm hover:bg-slate-800 transition"
+            >
+              Reservar transfer con precio fijo →
             </a>
           </div>
         </div>
@@ -496,83 +561,148 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
 
           <div className="border-2 border-green-400 bg-green-50 rounded-xl p-4 mb-4">
             <h4 className="text-lg font-bold text-gray-900 mb-2">
-              🔥 🚂 Luton Airport Express - El Tren Más Rápido
+              🔥 🚂 Luton Airport Express + Tren - Opción Rápida
             </h4>
             <p className="text-sm text-gray-700 mb-3">
-              Combinación de shuttle bus gratuito y tren al centro de Londres
+              Bus shuttle al Luton Airport Parkway + tren a London St Pancras
             </p>
+
+            <div className="bg-blue-50 border border-blue-200 rounded-lg p-3 mb-3">
+              <p className="text-sm text-blue-800">
+                <strong>¿Cuándo vale la pena?</strong> Si tu hotel está en zona King's Cross/St Pancras o necesitas conexión rápida con Eurostar. Es la opción más rápida (55 min total) pero requiere cambio de bus a tren. Ideal si viajas ligero.
+              </p>
+            </div>
 
             <div className="space-y-2 mb-4">
               <div className="flex items-center text-sm text-gray-700">
                 <span className="text-green-500 mr-2">✓</span>
-                Precio: 20-23€ (online, compra anticipada)
+                Precio: Bus (3€) + Tren (desde 17€) = 20€ total
               </div>
               <div className="flex items-center text-sm text-gray-700">
                 <span className="text-green-500 mr-2">✓</span>
-                Duración: 40-50 minutos total
+                Duración: 55 minutos (10 min bus + 45 min tren)
               </div>
               <div className="flex items-center text-sm text-gray-700">
                 <span className="text-green-500 mr-2">✓</span>
-                Destino: St Pancras, Farringdon, Blackfriars
+                Horario tren: 05:00-00:00 (cada 10-15 min)
               </div>
               <div className="flex items-center text-sm text-gray-700">
                 <span className="text-green-500 mr-2">✓</span>
-                Shuttle bus gratuito (5 min) + tren
+                Destino: St Pancras International
+              </div>
+              <div className="flex items-center text-sm text-gray-700">
+                <span className="text-yellow-500 mr-2">⚠</span>
+                Requiere transbordo bus → tren
               </div>
             </div>
 
             <a
-              href="https://www.lutonairportexpress.co.uk/"
+              href="https://www.thetrainline.com"
               target="_blank"
-              rel="noopener noreferrer"
+              rel="noopener noreferrer nofollow"
               className="block w-full text-center py-2 px-4 bg-slate-700 text-white rounded-lg text-sm hover:bg-slate-800 transition"
             >
-              Ver horarios y reservar →
+              Ver horarios de tren →
             </a>
           </div>
 
           <div className="border-2 border-yellow-400 bg-yellow-50 rounded-xl p-4 mb-4">
             <h4 className="text-lg font-bold text-gray-900 mb-2">
-              🚌 National Express Bus - Opción Económica
+              🚌 National Express Bus - Sin Transbordos
             </h4>
             <p className="text-sm text-gray-700 mb-3">
-              Traslado en autobús desde Luton hasta London Victoria con paradas en destinos clave
+              Traslado directo en autobús desde Luton al centro de Londres
             </p>
+
+            <div className="bg-yellow-100 border border-yellow-300 rounded-lg p-3 mb-3">
+              <p className="text-sm text-yellow-800">
+                <strong>Elige el bus si:</strong> Prefieres no hacer transbordos (directo desde terminal hasta Victoria) o viajas con equipaje pesado. Es la opción más cómoda sin cambios, aunque tarda un poco más (90 min vs 55 min). Precio similar al tren.
+              </p>
+            </div>
 
             <div className="space-y-2 mb-4">
               <div className="flex items-center text-sm text-gray-700">
                 <span className="text-green-500 mr-2">✓</span>
-                Precio: Desde 15€ por trayecto
+                Precio: Desde 18€ por trayecto
               </div>
               <div className="flex items-center text-sm text-gray-700">
                 <span className="text-green-500 mr-2">✓</span>
-                Duración: 60-90 minutos
+                Duración: 90 minutos aproximadamente
               </div>
               <div className="flex items-center text-sm text-gray-700">
                 <span className="text-green-500 mr-2">✓</span>
-                Destinos: London Victoria, Golders Green, Baker Street
+                Destino: Victoria Station (directo)
               </div>
               <div className="flex items-center text-sm text-gray-700">
                 <span className="text-green-500 mr-2">✓</span>
-                Menores de 15 años: GRATIS
+                Salidas cada 20-30 minutos
               </div>
               <div className="flex items-center text-sm text-gray-700">
                 <span className="text-green-500 mr-2">✓</span>
-                Asientos de cuero, WiFi, aire acondicionado y tomas de corriente
-              </div>
-              <div className="flex items-center text-sm text-gray-700">
-                <span className="text-green-500 mr-2">✓</span>
-                Salidas cada 30 minutos aprox. (24/7)
+                Sin transbordos, más cómodo con equipaje
               </div>
             </div>
 
             <a
-              href="https://gyg.me/JbY1XRHh"
+              href="https://www.nationalexpress.com"
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+              className="block w-full text-center py-2 px-4 bg-slate-700 text-white rounded-lg text-sm hover:bg-slate-800 transition"
+            >
+              Reservar bus Luton-Victoria →
+            </a>
+          </div>
+
+          <div className="border-2 border-orange-400 bg-orange-50 rounded-xl p-4 mb-4">
+            <h4 className="text-lg font-bold text-gray-900 mb-2">
+              🚖 Traslado Privado - Máximo Confort
+            </h4>
+            <p className="text-sm text-gray-700 mb-3">
+              Servicio puerta a puerta desde el aeropuerto a tu hotel
+            </p>
+
+            <div className="bg-orange-100 border-l-4 border-orange-500 p-3 mb-3">
+              <p className="text-sm text-orange-900 mb-2">
+                <strong>Vale la pena si viajas en grupo:</strong>
+              </p>
+              <ul className="text-sm text-orange-800 space-y-1">
+                <li>✓ 2 personas: 30€/persona (vs 20€ tren pero sin transbordos)</li>
+                <li>✓ 3 personas: 20€/persona (igual que transporte público)</li>
+                <li>✓ 4 personas: 15€/persona (¡más barato que tren/bus!)</li>
+                <li>✓ Luton está lejos (50km) - transfer compensa en grupos</li>
+              </ul>
+            </div>
+
+            <div className="space-y-2 mb-4">
+              <div className="flex items-center text-sm text-gray-700">
+                <span className="text-green-500 mr-2">✓</span>
+                Precio: Desde 60€ (tarifa fija para hasta 4 personas)
+              </div>
+              <div className="flex items-center text-sm text-gray-700">
+                <span className="text-green-500 mr-2">✓</span>
+                Duración: 60-80 min según tráfico
+              </div>
+              <div className="flex items-center text-sm text-gray-700">
+                <span className="text-green-500 mr-2">✓</span>
+                Disponible 24/7 (Luton opera vuelos nocturnos)
+              </div>
+              <div className="flex items-center text-sm text-gray-700">
+                <span className="text-green-500 mr-2">✓</span>
+                Puerta a puerta, sin transbordos ni esperas
+              </div>
+              <div className="flex items-center text-sm text-gray-700">
+                <span className="text-green-500 mr-2">✓</span>
+                Conductor con cartel esperándote en terminal
+              </div>
+            </div>
+
+            <a
+              href="https://gyg.me/FYRCdNP8"
               target="_blank"
               rel="noopener noreferrer"
               className="block w-full text-center py-2 px-4 bg-slate-700 text-white rounded-lg text-sm hover:bg-slate-800 transition"
             >
-              Ver horarios y reservar →
+              Reservar transfer con precio fijo →
             </a>
           </div>
         </div>
@@ -695,38 +825,38 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
 
           <div className="bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300">
             <div className="flex items-center mb-4">
-              <div className="w-12 h-12 bg-gradient-to-br from-emerald-500 to-green-500 rounded-xl flex items-center justify-center mr-4">
-                <span className="text-2xl">🚇</span>
+              <div className="w-12 h-12 bg-gradient-to-br from-red-500 to-orange-500 rounded-xl flex items-center justify-center mr-4">
+                <span className="text-2xl">🚂</span>
               </div>
               <div>
-                <h3 className="text-xl font-bold text-gray-900">King's Cross / St Pancras</h3>
-                <p className="text-sm text-gray-600">Perfecta conexión con todo Londres</p>
+                <h3 className="text-xl font-bold text-gray-900">King's Cross / St Pancras - Hub de Transporte Internacional</h3>
+                <p className="text-sm text-gray-600">Conexión perfecta con aeropuertos + Eurostar + Harry Potter</p>
               </div>
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-4">
-              <div className="hotel-card border-l-4 border-orange-400 bg-orange-100/60">
+              <div className="hotel-card border-l-4 border-red-400 bg-red-100/60">
                 <div className="hotel-header">
-                  <h3 className="hotel-name">Tavistock Hotel</h3>
+                  <h3 className="hotel-name">The Z Hotel King's Cross</h3>
                   <div className="hotel-stars">⭐⭐⭐</div>
                 </div>
 
                 <div className="hotel-location">
                   <span className="location-icon">📍</span>
-                  <span>Camden</span>
+                  <span>King's Cross</span>
                 </div>
 
                 <p className="hotel-description">
-                  <strong>Gran relación calidad-precio en zona cultural.</strong> Hotel céntrico a 7 min de Euston Station y 10 min del Museo Británico. WiFi gratis, recepción 24h y restaurante.
+                  <strong>Perfecto si llegas/sales desde aeropuertos Stansted/Luton.</strong> A 5 min de St Pancras (Eurostar) y 10 min de British Museum. Habitaciones pequeñas pero funcionales estilo japonés.
                 </p>
 
-                <div className="bg-sky-50 border border-sky-200 rounded p-2 mb-3">
-                  <p className="text-xs text-sky-700">
-                    💡 Base perfecta para explorar museos gratis (British Museum, National Gallery). Zona segura con muchos restaurantes.
+                <div className="bg-red-50 border border-red-200 rounded p-2 mb-3 mt-3">
+                  <p className="text-xs text-red-700">
+                    La ubicación compensa el tamaño. Ideal si llegas tarde o sales temprano desde Stansted/Luton.
                   </p>
                 </div>
 
-                <a href="https://booking.tpk.lv/5NxF9hAu" target="_blank" rel="noopener noreferrer" className="btn-hotel">
+                <a href="https://booking.tpk.lv/m7P0NkgF" target="_blank" rel="noopener noreferrer" className="btn-hotel">
                   <span>Ver disponibilidad y precios</span>
                   <svg className="external-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
@@ -734,28 +864,28 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
                 </a>
               </div>
 
-              <div className="hotel-card border-l-4 border-pink-400 bg-pink-100/60">
+              <div className="hotel-card border-l-4 border-orange-400 bg-orange-100/60">
                 <div className="hotel-header">
-                  <h3 className="hotel-name">Morton Hotel</h3>
-                  <div className="hotel-stars">⭐⭐⭐⭐</div>
+                  <h3 className="hotel-name">Premier Inn King's Cross</h3>
+                  <div className="hotel-stars">⭐⭐⭐</div>
                 </div>
 
                 <div className="hotel-location">
                   <span className="location-icon">📍</span>
-                  <span>Camden</span>
+                  <span>King's Cross</span>
                 </div>
 
                 <p className="hotel-description">
-                  <strong>Tranquilidad en pleno centro cultural.</strong> A 7 min andando del Museo Británico. Metro Russell Square a 2 min. Zona tranquila cerca de Covent Garden.
+                  <strong>Ideal para familias que buscan cadena fiable.</strong> Habitaciones más amplias que The Z, desayuno buffet incluido. A 3 min de estación King's Cross y 8 min de British Museum.
                 </p>
 
-                <div className="bg-sky-50 border border-sky-200 rounded p-2 mb-3">
-                  <p className="text-xs text-sky-700">
-                    💡 Russell Square es una de las zonas más bonitas de Londres. Barrio residencial, sin ruido nocturno pero con todo cerca.
+                <div className="bg-orange-50 border border-orange-200 rounded p-2 mb-3 mt-3">
+                  <p className="text-xs text-orange-700">
+                    Premier Inn es como el "Ibis británico": calidad consistente, habitaciones funcionales, perfecto con niños.
                   </p>
                 </div>
 
-                <a href="https://booking.tpk.lv/syLZxUWd" target="_blank" rel="noopener noreferrer" className="btn-hotel">
+                <a href="https://booking.tpk.lv/JN2Pxwba" target="_blank" rel="noopener noreferrer" className="btn-hotel">
                   <span>Ver disponibilidad y precios</span>
                   <svg className="external-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
@@ -763,28 +893,28 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
                 </a>
               </div>
 
-              <div className="hotel-card border-l-4 border-amber-400 bg-amber-100/60">
+              <div className="hotel-card border-l-4 border-yellow-400 bg-yellow-100/60">
                 <div className="hotel-header">
-                  <h3 className="hotel-name">Pullman London St Pancras</h3>
+                  <h3 className="hotel-name">Great Northern Hotel</h3>
                   <div className="hotel-stars">⭐⭐⭐⭐</div>
                 </div>
 
                 <div className="hotel-location">
                   <span className="location-icon">📍</span>
-                  <span>Camden</span>
+                  <span>King's Cross</span>
                 </div>
 
                 <p className="hotel-description">
-                  <strong>Conectividad absoluta desde la estación.</strong> En St Pancras Station (Eurostar y 6 líneas metro). A 15 min del Museo Británico y King's Cross.
+                  <strong>Lujo histórico junto a King's Cross.</strong> Hotel victoriano de 1854 renovado. Bar cocktail y restaurante gourmet. Para quienes buscan experiencia premium con historia.
                 </p>
 
-                <div className="bg-sky-50 border border-sky-200 rounded p-2 mb-3">
-                  <p className="text-xs text-sky-700">
-                    💡 Perfecto para llegadas tarde o salidas temprano. Si vas a París o Bruselas en Eurostar, duermes sobre la estación.
+                <div className="bg-yellow-50 border border-yellow-200 rounded p-2 mb-3 mt-3">
+                  <p className="text-xs text-yellow-700">
+                    Literalmente DENTRO de la estación King's Cross. No puedes estar más céntrico para transporte.
                   </p>
                 </div>
 
-                <a href="https://booking.tpk.lv/gaF2pTGa" target="_blank" rel="noopener noreferrer" className="btn-hotel">
+                <a href="https://booking.tpk.lv/6tNr0CgW" target="_blank" rel="noopener noreferrer" className="btn-hotel">
                   <span>Ver disponibilidad y precios</span>
                   <svg className="external-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
@@ -795,26 +925,26 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
 
             <div className="bg-green-50 border border-green-200 rounded-lg p-3">
               <p className="text-sm text-green-800">
-                <strong>✅ Por qué elegir esta zona:</strong> Conexión directa con 6 líneas de metro. A 10 min del centro en metro. Andén 9¾ de Harry Potter en King's Cross.
+                <strong>✅ Por qué elegir esta zona:</strong> LA mejor zona si priorizas transporte. Tienes 6 líneas de metro, tren directo a Stansted/Luton, Eurostar a París/Bruselas, y estás a 15 min andando del British Museum. También está el Andén 9¾ de Harry Potter en King's Cross. Zona más "local" y menos turística que Westminster.
               </p>
             </div>
           </div>
 
           <div className="bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300">
             <div className="flex items-center mb-4">
-              <div className="w-12 h-12 bg-gradient-to-br from-orange-500 to-red-500 rounded-xl flex items-center justify-center mr-4">
-                <span className="text-2xl">🌉</span>
+              <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-pink-500 rounded-xl flex items-center justify-center mr-4">
+                <span className="text-2xl">🎨</span>
               </div>
               <div>
-                <h3 className="text-xl font-bold text-gray-900">Southwark / London Bridge - Orilla Sur Moderna</h3>
-                <p className="text-sm text-gray-600">Vistas al Támesis y ambiente auténtico</p>
+                <h3 className="text-xl font-bold text-gray-900">Southwark / South Bank - Zona Cultural y Moderna</h3>
+                <p className="text-sm text-gray-600">Arte, gastronomía y vistas al Támesis</p>
               </div>
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-4">
-              <div className="hotel-card border-l-4 border-rose-400 bg-rose-100/60">
+              <div className="hotel-card border-l-4 border-purple-400 bg-purple-100/60">
                 <div className="hotel-header">
-                  <h3 className="hotel-name">ibis London Blackfriars</h3>
+                  <h3 className="hotel-name">Travelodge London Southwark</h3>
                   <div className="hotel-stars">⭐⭐⭐</div>
                 </div>
 
@@ -824,16 +954,16 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
                 </div>
 
                 <p className="hotel-description">
-                  <strong>Económico y bien ubicado en la orilla sur.</strong> A 5 min de estación Waterloo. A 10 min andando del Tate Modern, 20 min del London Eye y Big Ben.
+                  <strong>Perfecto si buscas precio bajo cerca del río.</strong> Hotel básico pero limpio a 5 min de Tate Modern y Borough Market. Habitaciones sencillas sin lujos pero ubicación estratégica.
                 </p>
 
-                <div className="bg-sky-50 border border-sky-200 rounded p-2 mb-3">
-                  <p className="text-xs text-sky-700">
-                    💡 Waterloo es uno de los mayores hubs de transporte. Desde aquí llegas rápido a todo Londres. Zona con mucha vida local.
+                <div className="bg-purple-50 border border-purple-200 rounded p-2 mb-3 mt-3">
+                  <p className="text-xs text-purple-700">
+                    Travelodge es cadena económica británica. No esperes amenities pero la ubicación es TOP.
                   </p>
                 </div>
 
-                <a href="https://booking.tpk.lv/J6DZf62g" target="_blank" rel="noopener noreferrer" className="btn-hotel">
+                <a href="https://booking.tpk.lv/7DFtl0IE" target="_blank" rel="noopener noreferrer" className="btn-hotel">
                   <span>Ver disponibilidad y precios</span>
                   <svg className="external-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
@@ -841,7 +971,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
                 </a>
               </div>
 
-              <div className="hotel-card border-l-4 border-cyan-400 bg-cyan-100/60">
+              <div className="hotel-card border-l-4 border-pink-400 bg-pink-100/60">
                 <div className="hotel-header">
                   <h3 className="hotel-name">citizenM London Bankside</h3>
                   <div className="hotel-stars">⭐⭐⭐⭐</div>
@@ -853,16 +983,16 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
                 </div>
 
                 <p className="hotel-description">
-                  <strong>Hotel diseño y tecnológico en zona trendy.</strong> A 2 min del Tate Modern, 600m del Puente del Milenio. Estación Waterloo a 1.6km, Catedral San Pablo a 10 min.
+                  <strong>Ideal para viajeros modernos y millennials.</strong> Hotel de diseño con check-in automático, habitaciones tech con iPad control, bar 24h. A 2 min de Tate Modern y Shakespeare's Globe.
                 </p>
 
-                <div className="bg-sky-50 border border-sky-200 rounded p-2 mb-3">
-                  <p className="text-xs text-sky-700">
-                    💡 citizenM es famoso por su diseño moderno y tecnología (iPad en habitación). Terraza con vistas espectaculares del Támesis.
+                <div className="bg-pink-50 border border-pink-200 rounded p-2 mb-3 mt-3">
+                  <p className="text-xs text-pink-700">
+                    CitizenM es la cadena "cool" europea. Diseño Instagram-worthy, tecnología punta, ambiente joven.
                   </p>
                 </div>
 
-                <a href="https://booking.tpk.lv/cp2brt0T" target="_blank" rel="noopener noreferrer" className="btn-hotel">
+                <a href="https://booking.tpk.lv/m2TG41RN" target="_blank" rel="noopener noreferrer" className="btn-hotel">
                   <span>Ver disponibilidad y precios</span>
                   <svg className="external-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
@@ -870,10 +1000,10 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
                 </a>
               </div>
 
-              <div className="hotel-card border-l-4 border-emerald-400 bg-emerald-100/60">
+              <div className="hotel-card border-l-4 border-blue-400 bg-blue-100/60">
                 <div className="hotel-header">
-                  <h3 className="hotel-name">H10 London Waterloo</h3>
-                  <div className="hotel-stars">⭐⭐⭐⭐</div>
+                  <h3 className="hotel-name">Shangri-La The Shard</h3>
+                  <div className="hotel-stars">⭐⭐⭐⭐⭐</div>
                 </div>
 
                 <div className="hotel-location">
@@ -882,16 +1012,16 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
                 </div>
 
                 <p className="hotel-description">
-                  <strong>Cadena española de confianza con buena relación calidad-precio.</strong> Metro Waterloo a 5 min. A 15 min andando del Big Ben y London Eye, 20 min del Shakespeare's Globe.
+                  <strong>Lujo absoluto en el edificio más alto de Londres.</strong> Habitaciones en pisos 34-52 del Shard con vistas espectaculares, spa infinity pool, restaurante con estrella Michelin.
                 </p>
 
-                <div className="bg-sky-50 border border-sky-200 rounded p-2 mb-3">
-                  <p className="text-xs text-sky-700">
-                    💡 H10 combina estándares españoles con precios competitivos. Terraza rooftop con bar. Perfecto para explorar a pie la zona del Támesis.
+                <div className="bg-blue-50 border border-blue-200 rounded p-2 mb-3 mt-3">
+                  <p className="text-xs text-blue-700">
+                    Despertar en las nubes del Shard es una experiencia única. Para ocasiones especiales.
                   </p>
                 </div>
 
-                <a href="https://booking.tpk.lv/95kgpIh5" target="_blank" rel="noopener noreferrer" className="btn-hotel">
+                <a href="https://booking.tpk.lv/6pQG4Mbe" target="_blank" rel="noopener noreferrer" className="btn-hotel">
                   <span>Ver disponibilidad y precios</span>
                   <svg className="external-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
@@ -902,7 +1032,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
 
             <div className="bg-green-50 border border-green-200 rounded-lg p-3">
               <p className="text-sm text-green-800">
-                <strong>✅ Por qué elegir esta zona:</strong> A pasos de Borough Market, Tate Modern, Shakespeare's Globe. Vistas increíbles del Támesis y skyline. Más local y menos turístico que Westminster.
+                <strong>✅ Por qué elegir esta zona:</strong> South Bank es el corazón cultural moderno de Londres. Tienes en 10 min andando: Tate Modern (arte contemporáneo gratis), Shakespeare's Globe, Borough Market (comida top), London Eye, Tower Bridge. Zona con los mejores restaurantes y pubs junto al río. Vistas increíbles del skyline. Perfecta si buscas ambiente más alternativo y gastronómico que Westminster.
               </p>
             </div>
           </div>
