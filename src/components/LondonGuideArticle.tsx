@@ -1090,7 +1090,8 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
                 </div>
 
                 <p className="hotel-description">
-                  <strong>Hotel moderno en el centro con servicio 24 horas.</strong> Ofrece habitaciones con WiFi gratuita, TV de pantalla plana, baño privado y vistas a la ciudad. A 5 min a pie de Waterloo y menos de 10 min del Tate Modern. Incluye el restaurante y bar Charlie's Corner con cerveza artesanal y música. A menos de 20 min a pie del London Eye y Big Ben, y 10 min en metro a Oxford Street.
+                  <strong>Hotel moderno con servicio completo 24 horas.</strong> Habitaciones con WiFi gratuita, TV de pantalla planta, baño privado y vistas a la ciudad. Incluyen utensilios de planchado y artículos de aseo gratuitos. Dispone de recepción 24 horas y menú de comida y bebida disponible todo el día. El restaurante Charlie's Corner ofrece bar con cerveza artesanal, café y aperitivos en ambiente moderno con buena música.<br/><br/>
+                  Está a solo 5 minutos a pie de la estación de Waterloo y a menos de 10 minutos del Tate Modern. A menos de 20 minutos a pie encontrarás el London Eye y el Big Ben. Desde Waterloo puedes tomar la línea Jubilee del metro y llegar en 10 minutos a Bond Street para acceder a las tiendas de Oxford Street.
                 </p>
 
                 <div className="bg-purple-50 border border-purple-200 rounded p-2 mb-3 mt-3">
