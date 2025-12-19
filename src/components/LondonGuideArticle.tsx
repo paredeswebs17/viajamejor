@@ -892,12 +892,12 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
                 </div>
 
                 <p className="hotel-description">
-                  <strong>Perfecto para estancias largas o si cocinas.</strong> Hotel con pequeña cocina con microondas. A 300m de Buckingham Palace y 1km de Abadía de Westminster.
+                  <strong>Perfecto para estancias largas o viajeros independientes.</strong> Habitaciones con WiFi gratis y cocina pequeña completamente equipada (nevera, microondas, fregadero con filtro Brita, cafetera Nespresso). Incluye escritorio, caja fuerte para portátil y recepción 24h.
                 </p>
 
                 <div className="bg-violet-50 border border-violet-200 rounded p-2 mb-3 mt-3">
                   <p className="text-xs text-violet-700">
-                    💡 Ahorra en desayunos y cenas preparándote algo rápido. La cocina es básica pero funcional.
+                    📍 <strong>Qué hay cerca:</strong> Palacio de Buckingham (300m), Parque St James (700m), Westminster Abbey (1 km). Aeropuerto London City a 13 km. Ideal para ahorrar en comidas preparándote algo rápido.
                   </p>
                 </div>
 
