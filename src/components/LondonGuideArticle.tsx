@@ -962,12 +962,12 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
                 </div>
 
                 <p className="hotel-description">
-                  <strong>Perfecto si llegas/sales desde aeropuertos Stansted/Luton.</strong> A 5 min de St Pancras (Eurostar) y 10 min de British Museum. Habitaciones pequeñas pero funcionales estilo japonés.
+                  <strong>Hotel completo con terraza, restaurante y bar.</strong> WiFi gratis, recepción 24h y conserjería. Habitaciones con escritorio, TV, caja fuerte, hervidor y baño privado. Algunas con vistas al jardín. Desayuno buffet, continental o inglés/irlandés disponible.
                 </p>
 
                 <div className="bg-red-50 border border-red-200 rounded p-2 mb-3 mt-3">
                   <p className="text-xs text-red-700">
-                    La ubicación compensa el tamaño. Ideal si llegas tarde o sales temprano desde Stansted/Luton.
+                    📍 <strong>Qué hay cerca:</strong> Euston Station (7 min), Museo Británico (10 min), King's Cross St. Pancras (Eurostar), Ópera Real. Aeropuerto London City a 14 km. Perfecto si llegas/sales de Stansted/Luton.
                   </p>
                 </div>
 
