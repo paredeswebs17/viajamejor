@@ -1020,12 +1020,12 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
                 </div>
 
                 <p className="hotel-description">
-                  <strong>Lujo histórico junto a King's Cross.</strong> Hotel victoriano de 1854 renovado. Bar cocktail y restaurante gourmet. Para quienes buscan experiencia premium con historia.
+                  <strong>Hotel premium junto a la Biblioteca Británica.</strong> WiFi gratuita, centro de fitness y servicio de habitaciones 24h. Cuenta con el GA KingsX - Bar & Kitchen y 17 salas de reuniones. Ubicación ideal para conexiones internacionales.
                 </p>
 
                 <div className="bg-yellow-50 border border-yellow-200 rounded p-2 mb-3 mt-3">
                   <p className="text-xs text-yellow-700">
-                    Literalmente DENTRO de la estación King's Cross. No puedes estar más céntrico para transporte.
+                    📍 <strong>Qué hay cerca:</strong> Terminal Eurostar (3 min), St Pancras (10 min), Kings Cross y Euston (5 min). Museo Británico, Covent Garden, Oxford Street, West End y The City a 10 min en metro. Perfecto para Eurostar.
                   </p>
                 </div>
 
