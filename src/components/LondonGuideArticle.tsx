@@ -478,14 +478,14 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
 
             <div className="bg-blue-50 border border-blue-200 rounded-lg p-3 mb-3">
               <p className="text-sm text-blue-800">
-                <strong>¿Cuándo vale la pena pagar 23€?</strong> Si tu hotel está en zona City/Shoreditch o necesitas llegar rápido al centro. Ahorras 90 minutos vs el bus. Perfecto para vuelos que llegan temprano o tarde cuando no quieres perder tiempo.
+                <strong>¿Cuándo vale la pena pagar 26€?</strong> Si tu hotel está en zona City/Shoreditch o necesitas llegar rápido al centro. Ahorras 90 minutos vs el bus. Perfecto para vuelos que llegan temprano o tarde cuando no quieres perder tiempo.
               </p>
             </div>
 
             <div className="space-y-2 mb-4">
               <div className="flex items-center text-sm text-gray-700">
                 <span className="text-green-500 mr-2">✓</span>
-                Precio: Desde 23€ (online, compra anticipada)
+                Precio: Desde 26€ (online, compra anticipada)
               </div>
               <div className="flex items-center text-sm text-gray-700">
                 <span className="text-green-500 mr-2">✓</span>
@@ -506,7 +506,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
             </div>
 
             <a
-              href="https://gyg.me/jcKyAaQi"
+              href="https://gyg.me/YQaBsBwy"
               target="_blank"
               rel="noopener noreferrer"
               className="block w-full text-center py-2 px-4 bg-slate-700 text-white rounded-lg text-sm hover:bg-slate-800 transition"
@@ -525,14 +525,14 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
 
             <div className="bg-yellow-100 border border-yellow-300 rounded-lg p-3 mb-3">
               <p className="text-sm text-yellow-800">
-                <strong>Elige el bus si:</strong> Vuelas con Ryanair/easyJet y quieres ahorrar (12€ vs 23€ del tren). Ideal si llegas de día, no tienes prisa, y tu hotel está cerca de Victoria o Liverpool Street. Tarda casi el doble (90 min vs 47 min).
+                <strong>Elige el bus si:</strong> Vuelas con Ryanair/easyJet y quieres ahorrar (19€ vs 26€ del tren). Ideal si llegas de día, no tienes prisa, y tu hotel está cerca de Victoria o Liverpool Street. Tarda casi el doble (90 min vs 47 min).
               </p>
             </div>
 
             <div className="space-y-2 mb-4">
               <div className="flex items-center text-sm text-gray-700">
                 <span className="text-green-500 mr-2">✓</span>
-                Precio: Desde 12€ por trayecto
+                Precio: Desde 19€ por trayecto
               </div>
               <div className="flex items-center text-sm text-gray-700">
                 <span className="text-green-500 mr-2">✓</span>
@@ -553,65 +553,12 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
             </div>
 
             <a
-              href="https://gyg.me/YyKAe4W3"
+              href="https://gyg.me/cHSEHroI"
               target="_blank"
               rel="noopener noreferrer"
               className="block w-full text-center py-2 px-4 bg-slate-700 text-white rounded-lg text-sm hover:bg-slate-800 transition"
             >
               Reservar bus Stansted-Londres →
-            </a>
-          </div>
-
-          <div className="border-2 border-orange-400 bg-orange-50 rounded-xl p-4 mb-4">
-            <h4 className="text-lg font-bold text-gray-900 mb-2">
-              🚖 Traslado Privado - Máximo Confort
-            </h4>
-            <p className="text-sm text-gray-700 mb-3">
-              Servicio puerta a puerta desde el aeropuerto a tu hotel
-            </p>
-
-            <div className="bg-orange-100 border-l-4 border-orange-500 p-3 mb-3">
-              <p className="text-sm text-orange-900 mb-2">
-                <strong>Vale la pena si viajas en grupo:</strong>
-              </p>
-              <ul className="text-sm text-orange-800 space-y-1">
-                <li>✓ 2 personas: 33€/persona (similar al tren pero más cómodo)</li>
-                <li>✓ 3 personas: 22€/persona</li>
-                <li>✓ 4 personas: 16,50€/persona (¡más barato que el tren!)</li>
-                <li>✓ Perfecto si llegas de madrugada cuando no hay tren/bus</li>
-              </ul>
-            </div>
-
-            <div className="space-y-2 mb-4">
-              <div className="flex items-center text-sm text-gray-700">
-                <span className="text-green-500 mr-2">✓</span>
-                Precio: Desde 66€ (tarifa fija para hasta 4 personas)
-              </div>
-              <div className="flex items-center text-sm text-gray-700">
-                <span className="text-green-500 mr-2">✓</span>
-                Duración: 60-80 min según tráfico
-              </div>
-              <div className="flex items-center text-sm text-gray-700">
-                <span className="text-green-500 mr-2">✓</span>
-                Disponible 24/7 (incluye madrugada)
-              </div>
-              <div className="flex items-center text-sm text-gray-700">
-                <span className="text-green-500 mr-2">✓</span>
-                Puerta a puerta, sin esperas ni conexiones
-              </div>
-              <div className="flex items-center text-sm text-gray-700">
-                <span className="text-green-500 mr-2">✓</span>
-                Conductor profesional con cartel con tu nombre
-              </div>
-            </div>
-
-            <a
-              href="https://gyg.me/kzGcMFzQ"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="block w-full text-center py-2 px-4 bg-slate-700 text-white rounded-lg text-sm hover:bg-slate-800 transition"
-            >
-              Reservar transfer con precio fijo →
             </a>
           </div>
           </div>
