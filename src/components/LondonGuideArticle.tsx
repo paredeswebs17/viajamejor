@@ -1285,7 +1285,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
               rel="noopener noreferrer"
               className="btn-attraction"
             >
-              <span>Reservar entrada con audioguía en español →</span>
+              <span>Reservar entrada con audioguía en español</span>
               <svg
                 className="external-icon"
                 fill="none"
@@ -1344,9 +1344,12 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
               href="https://www.householddivision.org.uk/changing-the-guard-calendar"
               target="_blank"
               rel="noopener noreferrer"
-              className="block w-full text-center py-2 px-4 bg-slate-700 text-white rounded-lg text-sm hover:bg-slate-800 transition"
+              className="btn-hotel"
             >
-              Ver calendario del Cambio de Guardia →
+              <span>Ver calendario del Cambio de Guardia</span>
+              <svg className="external-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+              </svg>
             </a>
 
             <div className="bg-amber-50 border border-amber-200 rounded-lg p-3 mt-2">
@@ -1444,7 +1447,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
               rel="noopener noreferrer"
               className="btn-attraction"
             >
-              <span>Ver tour y reservar →</span>
+              <span>Ver tour y reservar</span>
               <svg
                 className="external-icon"
                 fill="none"
@@ -1571,7 +1574,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
               rel="noopener noreferrer"
               className="btn-attraction"
             >
-              <span>Reservar plaza en el tour gratuito →</span>
+              <span>Reservar plaza en el tour gratuito</span>
               <svg
                 className="external-icon"
                 fill="none"
@@ -1642,7 +1645,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
               rel="noopener noreferrer"
               className="btn-attraction"
             >
-              <span>Reservar entrada sin colas →</span>
+              <span>Reservar entrada sin colas</span>
               <svg
                 className="external-icon"
                 fill="none"
@@ -1870,7 +1873,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
                 rel="noopener noreferrer"
                 className="btn-attraction"
               >
-                <span>Reservar entrada con audioguía incluida →</span>
+                <span>Reservar entrada con audioguía incluida</span>
                 <svg
                   className="external-icon"
                   fill="none"
