@@ -243,9 +243,9 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
                 <strong>🎯 Vale la pena si viajas en grupo:</strong>
               </p>
               <ul className="text-sm text-orange-800 space-y-1">
-                <li>✓ 2 personas: 23€/persona (vs 29€ Heathrow Express)</li>
-                <li>✓ 3 personas: 15€/persona</li>
-                <li>✓ 4 personas: 11,50€/persona</li>
+                <li>✓ 2 personas: 46€/persona (vs 29€ Heathrow Express)</li>
+                <li>✓ 3 personas: 32€/persona</li>
+                <li>✓ 4 personas: 28€/persona</li>
                 <li>✓ También ideal si llegas de madrugada o con mucho equipaje</li>
               </ul>
             </div>
