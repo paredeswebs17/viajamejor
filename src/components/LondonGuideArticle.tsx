@@ -1188,7 +1188,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
                 href="https://tickets.parliament.uk/timeslot/big-ben-tour"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn-attraction mb-3"
+                className="btn-hotel mb-3"
               >
                 <span>Comprar Entradas Big Ben</span>
                 <svg
@@ -1209,7 +1209,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
                 href="https://www.parliament.uk/visiting/visiting-and-tours/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn-attraction"
+                className="btn-hotel"
               >
                 <span>Comprar Entradas Westminster</span>
                 <svg
@@ -1283,7 +1283,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
               href="https://gyg.me/S9Iuw1Z2"
               target="_blank"
               rel="noopener noreferrer"
-              className="btn-attraction"
+              className="btn-hotel"
             >
               <span>Reservar entrada con audioguía en español</span>
               <svg
@@ -1445,7 +1445,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
               href="https://gyg.me/jZ8VoE9q"
               target="_blank"
               rel="noopener noreferrer"
-              className="btn-attraction"
+              className="btn-hotel"
             >
               <span>Ver tour y reservar</span>
               <svg
@@ -1572,7 +1572,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
               href="https://gyg.me/1g2D8kNs"
               target="_blank"
               rel="noopener noreferrer"
-              className="btn-attraction"
+              className="btn-hotel"
             >
               <span>Reservar plaza en el tour gratuito</span>
               <svg
@@ -1643,7 +1643,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
               href="https://gyg.me/wJCBE1BZ"
               target="_blank"
               rel="noopener noreferrer"
-              className="btn-attraction"
+              className="btn-hotel"
             >
               <span>Reservar entrada sin colas</span>
               <svg
@@ -1795,7 +1795,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
                 href="https://gyg.me/tHBzdl4W"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn-attraction"
+                className="btn-hotel"
               >
                 <span>Comprar Entradas Tower Bridge</span>
                 <svg
@@ -1871,7 +1871,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
                 href="https://gyg.me/ex4u6Ux1"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn-attraction"
+                className="btn-hotel"
               >
                 <span>Reservar entrada con audioguía incluida</span>
                 <svg
