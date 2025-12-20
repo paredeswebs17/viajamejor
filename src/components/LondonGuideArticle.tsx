@@ -695,7 +695,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
                 <h3 className="text-xl font-bold text-gray-900">Westminster / Covent Garden - Centro Histórico y Teatral</h3>
                 <p className="text-sm text-gray-600 mb-2">El corazón turístico de Londres: monumentos + teatros + restaurantes</p>
                 <p className="font-semibold text-lg text-blue-600">
-                  💰 Precio medio: 120-180€/noche
+                  💰 Precio medio: 90-180€/noche
                 </p>
               </div>
             </div>
