@@ -340,7 +340,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
             </div>
 
             <a
-              href="https://gyg.me/yzCKh2fB"
+              href="https://ticket.gatwickexpress.com/search"
               target="_blank"
               rel="noopener noreferrer"
               className="block w-full text-center py-2 px-4 bg-slate-700 text-white rounded-lg text-sm hover:bg-slate-800 transition"
@@ -359,14 +359,14 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
 
             <div className="bg-yellow-100 border border-yellow-300 rounded-lg p-3 mb-3">
               <p className="text-sm text-yellow-800">
-                <strong>Elige el bus si:</strong> Tu prioridad es ahorrar dinero (10€ vs 23€ del tren). Ideal si no tienes prisa, llegas de día, y tu hotel está cerca de Victoria Station. Eso sí, tarda el doble que el tren (90 min vs 30 min).
+                <strong>Elige el bus si:</strong> Tu prioridad es ahorrar dinero (12€ vs 23€ del tren). Ideal si no tienes prisa, llegas de día, y tu hotel está cerca de Victoria Station. Eso sí, tarda el doble que el tren (90 min vs 30 min).
               </p>
             </div>
 
             <div className="space-y-2 mb-4">
               <div className="flex items-center text-sm text-gray-700">
                 <span className="text-green-500 mr-2">✓</span>
-                Precio: Desde 10€ por trayecto
+                Precio: Desde 12€ por trayecto
               </div>
               <div className="flex items-center text-sm text-gray-700">
                 <span className="text-green-500 mr-2">✓</span>
@@ -409,9 +409,9 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
                 <strong>Vale la pena si viajas en grupo:</strong>
               </p>
               <ul className="text-sm text-orange-800 space-y-1">
-                <li>✓ 2 personas: 29€/persona (vs 23€ Gatwick Express)</li>
-                <li>✓ 3 personas: 19€/persona</li>
-                <li>✓ 4 personas: 14,50€/persona (¡más barato que el tren!)</li>
+                <li>✓ 2 personas: 61€/persona (vs 23€ Gatwick Express)</li>
+                <li>✓ 3 personas: 41€/persona</li>
+                <li>✓ 4 personas: 34€/persona</li>
                 <li>✓ También ideal si llegas de madrugada/noche o con mucho equipaje</li>
               </ul>
             </div>
@@ -440,7 +440,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
             </div>
 
             <a
-              href="https://gyg.me/9O0YOEcS"
+              href="https://gyg.me/TklPCVj6"
               target="_blank"
               rel="noopener noreferrer"
               className="block w-full text-center py-2 px-4 bg-slate-700 text-white rounded-lg text-sm hover:bg-slate-800 transition"
