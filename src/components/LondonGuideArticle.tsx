@@ -729,7 +729,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
 
             <button
               onClick={() => toggleZone('westminster')}
-              className="flex items-center gap-2 text-blue-600 hover:text-blue-800 transition-colors font-medium mb-4"
+              className="flex items-center gap-2 text-black hover:text-gray-800 transition-colors font-medium mb-4"
             >
               {expandedZone === 'westminster' ?
                 <ChevronUp className="w-5 h-5" /> :
@@ -856,7 +856,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
 
             <button
               onClick={() => toggleZone('kings-cross')}
-              className="flex items-center gap-2 text-blue-600 hover:text-blue-800 transition-colors font-medium mb-4"
+              className="flex items-center gap-2 text-black hover:text-gray-800 transition-colors font-medium mb-4"
             >
               {expandedZone === 'kings-cross' ?
                 <ChevronUp className="w-5 h-5" /> :
@@ -984,7 +984,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
 
             <button
               onClick={() => toggleZone('southwark')}
-              className="flex items-center gap-2 text-blue-600 hover:text-blue-800 transition-colors font-medium mb-4"
+              className="flex items-center gap-2 text-black hover:text-gray-800 transition-colors font-medium mb-4"
             >
               {expandedZone === 'southwark' ?
                 <ChevronUp className="w-5 h-5" /> :
