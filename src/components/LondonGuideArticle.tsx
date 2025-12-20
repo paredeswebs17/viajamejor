@@ -190,9 +190,12 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
               href="https://gyg.me/JSudzJeY"
               target="_blank"
               rel="noopener noreferrer"
-              className="block w-full text-center py-2 px-4 bg-slate-700 text-white rounded-lg text-sm hover:bg-slate-800 transition"
+              className="btn-hotel"
             >
-              Ver horarios y reservar →
+              <span>Ver horarios y reservar</span>
+              <svg className="external-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+              </svg>
             </a>
           </div>
 
@@ -277,9 +280,12 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
               href="https://gyg.me/tqu0VpSP"
               target="_blank"
               rel="noopener noreferrer"
-              className="block w-full text-center py-2 px-4 bg-slate-700 text-white rounded-lg text-sm hover:bg-slate-800 transition"
+              className="btn-hotel"
             >
-              Reservar transfer con precio fijo →
+              <span>Reservar transfer con precio fijo</span>
+              <svg className="external-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+              </svg>
             </a>
           </div>
           </div>
@@ -343,9 +349,12 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
               href="https://ticket.gatwickexpress.com/search"
               target="_blank"
               rel="noopener noreferrer"
-              className="block w-full text-center py-2 px-4 bg-slate-700 text-white rounded-lg text-sm hover:bg-slate-800 transition"
+              className="btn-hotel"
             >
-              Ver horarios y reservar →
+              <span>Ver horarios y reservar</span>
+              <svg className="external-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+              </svg>
             </a>
           </div>
 
@@ -390,9 +399,12 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
               href="https://gyg.me/giqjZdgf"
               target="_blank"
               rel="noopener noreferrer"
-              className="block w-full text-center py-2 px-4 bg-slate-700 text-white rounded-lg text-sm hover:bg-slate-800 transition"
+              className="btn-hotel"
             >
-              Reservar bus Gatwick-Victoria →
+              <span>Reservar bus Gatwick-Victoria</span>
+              <svg className="external-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+              </svg>
             </a>
           </div>
 
@@ -443,9 +455,12 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
               href="https://gyg.me/TklPCVj6"
               target="_blank"
               rel="noopener noreferrer"
-              className="block w-full text-center py-2 px-4 bg-slate-700 text-white rounded-lg text-sm hover:bg-slate-800 transition"
+              className="btn-hotel"
             >
-              Reservar transfer con precio fijo →
+              <span>Reservar transfer con precio fijo</span>
+              <svg className="external-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+              </svg>
             </a>
           </div>
           </div>
@@ -509,9 +524,12 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
               href="https://gyg.me/YQaBsBwy"
               target="_blank"
               rel="noopener noreferrer"
-              className="block w-full text-center py-2 px-4 bg-slate-700 text-white rounded-lg text-sm hover:bg-slate-800 transition"
+              className="btn-hotel"
             >
-              Ver horarios y reservar →
+              <span>Ver horarios y reservar</span>
+              <svg className="external-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+              </svg>
             </a>
           </div>
 
@@ -556,9 +574,12 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
               href="https://gyg.me/cHSEHroI"
               target="_blank"
               rel="noopener noreferrer"
-              className="block w-full text-center py-2 px-4 bg-slate-700 text-white rounded-lg text-sm hover:bg-slate-800 transition"
+              className="btn-hotel"
             >
-              Reservar bus Stansted-Londres →
+              <span>Reservar bus Stansted-Londres</span>
+              <svg className="external-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+              </svg>
             </a>
           </div>
           </div>
@@ -622,9 +643,12 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
               href="https://www.thetrainline.com/es/aeropuertos/reino-unido/londres-luton?phcode=1011l44887.&utm_campaign=viviendodeviaje&utm_medium=affiliate&utm_source=network&cm=0a1e.1011l44887&phcam=1100l229&~campaign_id=1100l229&~click_id=1100lBMGj2me&pztracking=true&app_clickref=1100lBMGj2me"
               target="_blank"
               rel="noopener noreferrer nofollow"
-              className="block w-full text-center py-2 px-4 bg-slate-700 text-white rounded-lg text-sm hover:bg-slate-800 transition"
+              className="btn-hotel"
             >
-              Ver horarios de tren →
+              <span>Ver horarios de tren</span>
+              <svg className="external-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+              </svg>
             </a>
           </div>
 
@@ -669,9 +693,12 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
               href="https://gyg.me/JbY1XRHh"
               target="_blank"
               rel="noopener noreferrer nofollow"
-              className="block w-full text-center py-2 px-4 bg-slate-700 text-white rounded-lg text-sm hover:bg-slate-800 transition"
+              className="btn-hotel"
             >
-              Reservar bus Luton-Victoria →
+              <span>Reservar bus Luton-Victoria</span>
+              <svg className="external-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+              </svg>
             </a>
           </div>
           </div>
