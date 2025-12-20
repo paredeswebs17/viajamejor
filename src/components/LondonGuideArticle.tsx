@@ -619,7 +619,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
             </div>
 
             <a
-              href="https://www.thetrainline.com"
+              href="https://www.thetrainline.com/es/aeropuertos/reino-unido/londres-luton?phcode=1011l44887.&utm_campaign=viviendodeviaje&utm_medium=affiliate&utm_source=network&cm=0a1e.1011l44887&phcam=1100l229&~campaign_id=1100l229&~click_id=1100lBMGj2me&pztracking=true&app_clickref=1100lBMGj2me"
               target="_blank"
               rel="noopener noreferrer nofollow"
               className="block w-full text-center py-2 px-4 bg-slate-700 text-white rounded-lg text-sm hover:bg-slate-800 transition"
@@ -645,7 +645,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
             <div className="space-y-2 mb-4">
               <div className="flex items-center text-sm text-gray-700">
                 <span className="text-green-500 mr-2">✓</span>
-                Precio: Desde 18€ por trayecto
+                Precio: Desde 16€ por trayecto
               </div>
               <div className="flex items-center text-sm text-gray-700">
                 <span className="text-green-500 mr-2">✓</span>
@@ -666,65 +666,12 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
             </div>
 
             <a
-              href="https://www.nationalexpress.com"
+              href="https://gyg.me/JbY1XRHh"
               target="_blank"
               rel="noopener noreferrer nofollow"
               className="block w-full text-center py-2 px-4 bg-slate-700 text-white rounded-lg text-sm hover:bg-slate-800 transition"
             >
               Reservar bus Luton-Victoria →
-            </a>
-          </div>
-
-          <div className="border-2 border-orange-400 bg-orange-50 rounded-xl p-4 mb-4">
-            <h4 className="text-lg font-bold text-gray-900 mb-2">
-              🚖 Traslado Privado - Máximo Confort
-            </h4>
-            <p className="text-sm text-gray-700 mb-3">
-              Servicio puerta a puerta desde el aeropuerto a tu hotel
-            </p>
-
-            <div className="bg-orange-100 border-l-4 border-orange-500 p-3 mb-3">
-              <p className="text-sm text-orange-900 mb-2">
-                <strong>Vale la pena si viajas en grupo:</strong>
-              </p>
-              <ul className="text-sm text-orange-800 space-y-1">
-                <li>✓ 2 personas: 30€/persona (vs 20€ tren pero sin transbordos)</li>
-                <li>✓ 3 personas: 20€/persona (igual que transporte público)</li>
-                <li>✓ 4 personas: 15€/persona (¡más barato que tren/bus!)</li>
-                <li>✓ Luton está lejos (50km) - transfer compensa en grupos</li>
-              </ul>
-            </div>
-
-            <div className="space-y-2 mb-4">
-              <div className="flex items-center text-sm text-gray-700">
-                <span className="text-green-500 mr-2">✓</span>
-                Precio: Desde 60€ (tarifa fija para hasta 4 personas)
-              </div>
-              <div className="flex items-center text-sm text-gray-700">
-                <span className="text-green-500 mr-2">✓</span>
-                Duración: 60-80 min según tráfico
-              </div>
-              <div className="flex items-center text-sm text-gray-700">
-                <span className="text-green-500 mr-2">✓</span>
-                Disponible 24/7 (Luton opera vuelos nocturnos)
-              </div>
-              <div className="flex items-center text-sm text-gray-700">
-                <span className="text-green-500 mr-2">✓</span>
-                Puerta a puerta, sin transbordos ni esperas
-              </div>
-              <div className="flex items-center text-sm text-gray-700">
-                <span className="text-green-500 mr-2">✓</span>
-                Conductor con cartel esperándote en terminal
-              </div>
-            </div>
-
-            <a
-              href="https://gyg.me/FYRCdNP8"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="block w-full text-center py-2 px-4 bg-slate-700 text-white rounded-lg text-sm hover:bg-slate-800 transition"
-            >
-              Reservar transfer con precio fijo →
             </a>
           </div>
           </div>
