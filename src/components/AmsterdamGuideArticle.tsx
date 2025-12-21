@@ -1,14 +1,33 @@
 import React from 'react';
 import { ArrowLeft, Share2, Clock, MapPin, ExternalLink } from 'lucide-react';
+import StickyTableOfContents from './StickyTableOfContents';
 
 interface AmsterdamGuideArticleProps {
 onBack: () => void;
 }
 
 const AmsterdamGuideArticle: React.FC<AmsterdamGuideArticleProps> = ({ onBack }) => {
+  const sections = [
+    { id: 'por-que-visitar', title: '¿Por qué visitar Ámsterdam?' },
+    { id: 'llegada-aeropuerto', title: 'Llegada y Conexiones' },
+    { id: 'donde-dormir', title: 'Dónde Alojarse' },
+    { id: 'itinerario', title: 'Itinerario Holandés' },
+    { id: 'dia-1', title: 'Día 1: Entrada a la Venecia del Norte', level: 2 },
+    { id: 'dia-2', title: 'Día 2: Pueblos con Encanto Holandés + Canales', level: 2 },
+    { id: 'dia-3', title: 'Día 3: Arte Holandés, Cerveza y Vida Nocturna', level: 2 },
+    { id: 'mas-lugares', title: 'Más Lugares en Ámsterdam' },
+    { id: 'recomendaciones', title: 'Tarjeta y Seguro de Viaje' },
+    { id: 'gastronomia', title: 'Gastronomía' },
+    { id: 'transporte', title: 'Sistema de Transporte' },
+    { id: 'tarjetas-turisticas', title: 'Tarjetas Turísticas' },
+    { id: 'consejos', title: 'Consejos Finales' },
+    { id: 'presupuestos', title: 'Presupuestos Detallados' }
+  ];
 
 return (
-<article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 pt-24">
+<>
+  <StickyTableOfContents sections={sections} />
+  <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 pt-24">
 <div className="mb-8">
 <button 
 onClick={onBack}
@@ -74,7 +93,7 @@ Volver a guías
   </div>
 
   {/* SECCIÓN: ¿POR QUÉ VISITAR ÁMSTERDAM? */}
-  <div className="bg-gradient-to-r from-orange-50 to-red-50 border border-orange-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
+  <div id="por-que-visitar" className="bg-gradient-to-r from-orange-50 to-red-50 border border-orange-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
     <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">¿Por qué visitar Ámsterdam?</h2>
 
     <div className="space-y-4 text-gray-700">
@@ -93,7 +112,7 @@ Volver a guías
   </div>
 
 
-  <div className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
+  <div id="llegada-aeropuerto" className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
     <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">🚗 Llegada y Conexiones Eficientes</h2>
 
     <div className="mb-8">
@@ -219,7 +238,7 @@ Volver a guías
   </div>
 
   {/* SECCIÓN: ALOJAMIENTO */}
-  <div className="bg-gradient-to-br from-emerald-50 via-teal-50 to-cyan-50 border border-emerald-200 rounded-2xl p-6 sm:p-8 shadow-lg mb-8">
+  <div id="donde-dormir" className="bg-gradient-to-br from-emerald-50 via-teal-50 to-cyan-50 border border-emerald-200 rounded-2xl p-6 sm:p-8 shadow-lg mb-8">
     <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3 flex items-center">
       🏨 Dónde Alojarse en Ámsterdam
     </h2>
@@ -375,7 +394,7 @@ Volver a guías
     </div>
   </div>
 
-  <div className="bg-gradient-to-r from-orange-50 to-red-50 rounded-2xl p-6 sm:p-8 mb-8 shadow-md">
+  <div id="itinerario" className="bg-gradient-to-r from-orange-50 to-red-50 rounded-2xl p-6 sm:p-8 mb-8 shadow-md">
     <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">Itinerario Holandés</h2>
     <div className="overflow-x-auto">
       <table className="w-full border-collapse bg-white rounded-xl shadow-sm">
@@ -404,7 +423,7 @@ Volver a guías
   </div>
 
   {/* DÍA 1 */}
-  <div className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
+  <div id="dia-1" className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
     <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6 flex items-center">
       <span className="bg-gradient-to-br from-orange-500 to-red-500 text-white w-14 h-14 rounded-2xl flex items-center justify-center text-xl font-bold mr-4 shadow-lg">1</span>
       DÍA 1: Entrada a la Venecia del Norte
@@ -615,7 +634,7 @@ Volver a guías
   </div>
 
   {/* DÍA 2 */}
-  <div className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
+  <div id="dia-2" className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
     <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6 flex items-center">
       <span className="bg-gradient-to-br from-blue-500 to-indigo-500 text-white w-14 h-14 rounded-2xl flex items-center justify-center text-xl font-bold mr-4 shadow-lg">2</span>
       DÍA 2: Pueblos con Encanto Holandés + Canales
@@ -795,7 +814,7 @@ Volver a guías
   </div>
 
   {/* DÍA 3 */}
-  <div className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
+  <div id="dia-3" className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
     <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6 flex items-center">
       <span className="bg-gradient-to-br from-emerald-500 to-green-500 text-white w-14 h-14 rounded-2xl flex items-center justify-center text-xl font-bold mr-4 shadow-lg">3</span>
       DÍA 3: Arte Holandés, Cerveza y Vida Nocturna
@@ -1062,7 +1081,7 @@ Volver a guías
   </div>
 
   {/* MÁS LUGARES */}
-  <div className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
+  <div id="mas-lugares" className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
     <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">➕ Más Lugares que Ver en Ámsterdam</h2>
     
     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -1126,7 +1145,7 @@ Volver a guías
   </div>
 
   {/* SECCIÓN: HERRAMIENTAS DE VIAJE */}
-  <div className="bg-gradient-to-br from-blue-50 via-sky-50 to-cyan-50 border border-blue-200 rounded-2xl p-6 sm:p-8 shadow-lg mb-8">
+  <div id="recomendaciones" className="bg-gradient-to-br from-blue-50 via-sky-50 to-cyan-50 border border-blue-200 rounded-2xl p-6 sm:p-8 shadow-lg mb-8">
     <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3 flex items-center">
       💳 Herramientas de Viaje
     </h2>
@@ -1225,7 +1244,7 @@ Volver a guías
   </div>
 
   {/* RESTAURANTES */}
-  <div className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
+  <div id="gastronomia" className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
     <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">🍽️ Guía Gastronómica - Probado y Recomendado</h2>
     
     <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-6">
@@ -1300,7 +1319,7 @@ Volver a guías
   </div>
 
   {/* TRANSPORTE PÚBLICO */}
-  <div className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
+  <div id="transporte" className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
     <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">🚇 Sistema de Transporte Público de Ámsterdam</h2>
     
     <div className="bg-gradient-to-r from-blue-50 to-indigo-50 border border-blue-200 rounded-xl p-6">
@@ -1372,7 +1391,7 @@ Volver a guías
     </div>
   </div>
 
-  <div className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
+  <div id="tarjetas-turisticas" className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
     <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">🎫 Tarjetas Turísticas - ¿Merece la Pena?</h2>
     
     <div className="bg-gradient-to-r from-blue-50 to-indigo-50 border border-blue-200 rounded-xl p-6">
@@ -1426,7 +1445,7 @@ Volver a guías
   </div>
 
   {/* CONSEJOS FINALES */}
-  <div className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
+  <div id="consejos" className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
     <div className="bg-gradient-to-r from-orange-50 to-red-50 rounded-2xl p-6 sm:p-8 shadow-md mb-8">
       <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">🎯 Consejos Finales para tu Viaje a Ámsterdam</h2>
       
@@ -1459,7 +1478,7 @@ Volver a guías
   </div>
 
   {/* PRESUPUESTOS */}
-  <div className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
+  <div id="presupuestos" className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
     <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">💰 Presupuestos Detallados por Estilo</h2>
 
     <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-6">
@@ -1509,7 +1528,7 @@ Volver a guías
     </p>
   </div>
 </article>
-
+</>
 );
 };
 
