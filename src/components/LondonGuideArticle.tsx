@@ -2614,7 +2614,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
               <div className="bg-red-50 rounded-lg p-3">
                 <h4 className="font-semibold text-gray-900 mb-1">🥙 Medio Oriente</h4>
                 <p className="text-xs text-gray-700 mb-2">
-                  <a href="https://www.google.com/maps/search/?api=1&query=Maroush+Restaurant&query_place_id=ChIJEaEJMTUFdkgR61oY1dvtq54" target="_blank" rel="noopener noreferrer" className="underline hover:text-red-900">Maroush</a>, <a href="https://www.google.com/maps/place/Ranoush+Juice/@51.5148255,-0.1654777,17z/data=!3m1!4b1!4m6!3m5!1s0x487605353109a111:0xa2d5e279c8e0e693!8m2!3d51.5148222!4d-0.1629028!16s%2Fg%2F1tgkgs4p" target="_blank" rel="noopener noreferrer" className="underline hover:text-red-900">Ranoush Juice</a> (Edgware Rd)
+                  <a href="https://www.google.com/maps/place/Ranoush+Juice/@51.5148255,-0.1654777,17z/data=!3m1!4b1!4m6!3m5!1s0x487605353109a111:0xa2d5e279c8e0e693!8m2!3d51.5148222!4d-0.1629028!16s%2Fg%2F1tgkgs4p" target="_blank" rel="noopener noreferrer" className="underline hover:text-red-900">Ranoush Juice</a> (Edgware Rd)
                 </p>
                 <p className="text-xs text-red-700"><strong>7-14 €</strong></p>
               </div>
