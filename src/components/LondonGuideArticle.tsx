@@ -2449,11 +2449,11 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
       {/* HERRAMIENTAS DE VIAJE */}
       <div id="recomendaciones" className="bg-gradient-to-br from-blue-50 via-sky-50 to-cyan-50 border border-blue-200 rounded-2xl p-6 sm:p-8 shadow-lg mb-8">
         <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3">
-          💳 Tarjeta y Seguro de Viaje
+          💳 Herramientas Esenciales para Londres
         </h2>
         <p className="text-gray-600 mb-6">Servicios esenciales para viajar sin preocupaciones</p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           <div className="bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300">
             <div className="flex items-center mb-4">
               <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-xl flex items-center justify-center mr-4">
@@ -2519,6 +2519,43 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
               className="inline-flex items-center bg-gradient-to-r from-green-500 to-emerald-500 hover:from-green-600 hover:to-emerald-600 text-white font-semibold px-5 py-3 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm w-full justify-center"
             >
               🛡️ Contratar IATI con 5% Descuento
+              <ExternalLink className="h-3 w-3 ml-2" />
+            </a>
+          </div>
+
+          <div className="bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300">
+            <div className="flex items-center mb-4">
+              <div className="w-12 h-12 bg-gradient-to-br from-amber-500 to-yellow-500 rounded-xl flex items-center justify-center mr-4">
+                <span className="text-2xl">🎟️</span>
+              </div>
+              <div>
+                <h3 className="text-xl font-bold text-gray-900">London Pass</h3>
+                <p className="text-sm text-gray-600">Pase turístico todo incluido</p>
+              </div>
+            </div>
+            <p className="text-gray-700 mb-4">
+              Acceso a más de 90 atracciones icónicas de Londres. Incluye Tower of London, Westminster Abbey, Tower Bridge y mucho más.
+            </p>
+            <div className="bg-amber-50 rounded-lg p-4 mb-4">
+              <h4 className="font-semibold text-gray-900 mb-2">✅ Incluye:</h4>
+              <ul className="text-sm text-gray-700 space-y-1">
+                <li>• +90 atracciones y monumentos</li>
+                <li>• Entrada rápida en muchos sitios</li>
+                <li>• Guía digital incluida</li>
+              </ul>
+            </div>
+            <div className="bg-gradient-to-r from-yellow-100 to-amber-100 border-2 border-amber-300 rounded-lg p-3 mb-4">
+              <p className="text-center font-bold text-amber-800 text-sm">
+                💰 ¡Ahorra hasta 50% en atracciones!
+              </p>
+            </div>
+            <a
+              href="https://gyg.me/ZhlZvYap"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center bg-gradient-to-r from-amber-500 to-yellow-500 hover:from-amber-600 hover:to-yellow-600 text-white font-semibold px-5 py-3 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm w-full justify-center"
+            >
+              🎟️ Consigue tu London Pass
               <ExternalLink className="h-3 w-3 ml-2" />
             </a>
           </div>
