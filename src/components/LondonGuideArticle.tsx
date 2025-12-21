@@ -2304,7 +2304,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
             <div className="text-xs text-gray-600 mb-3">
               <p><strong>Precio:</strong> Desde 104€</p>
               <p><strong>Duración:</strong> Medio día (incluye transporte desde Londres)</p>
-              <p><strong>Incluye:</strong> Autobús oficial de Harry Potter + entrada + guía</p>
+              <p><strong>Incluye:</strong> Autobús oficial de Harry Potter + entrada</p>
             </div>
 
             <a
