@@ -2425,11 +2425,23 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
 
           <div className="bg-white rounded-xl p-5 shadow-sm hover:shadow-md transition-all duration-300">
             <h3 className="text-lg font-bold text-purple-800 mb-3">🏟️ Estadio de Wembley</h3>
-            <p className="text-sm text-gray-700 mb-2">El estadio más icónico del fútbol. Tours detrás de escena disponibles.</p>
-            <div className="text-xs text-gray-600">
+            <p className="text-sm text-gray-700 mb-3">El estadio más icónico del fútbol. Tours detrás de escena disponibles.</p>
+            <div className="text-xs text-gray-600 mb-3">
               <p><strong>Tour:</strong> 28 € | <strong>Duración:</strong> 75 minutos</p>
               <p>Incluye vestuarios, túnel, Copa FA</p>
             </div>
+
+            <a
+              href="https://gyg.me/0y2ZQ7ee"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-hotel"
+            >
+              <span>Reservar tour al Estadio de Wembley</span>
+              <svg className="external-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+              </svg>
+            </a>
           </div>
         </div>
       </div>
