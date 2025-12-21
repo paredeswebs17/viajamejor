@@ -2363,11 +2363,23 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
 
           <div className="bg-white rounded-xl p-5 shadow-sm hover:shadow-md transition-all duration-300">
             <h3 className="text-lg font-bold text-purple-800 mb-3">🎭 Teatro del West End</h3>
-            <p className="text-sm text-gray-700 mb-2">El equivalente británico de Broadway. Más de 40 teatros con musicales y obras.</p>
-            <div className="text-xs text-gray-600">
+            <p className="text-sm text-gray-700 mb-3">El equivalente británico de Broadway. Más de 40 teatros con musicales y obras.</p>
+            <div className="text-xs text-gray-600 mb-3">
               <p><strong>Precio:</strong> 29-176 € | <strong>Duración:</strong> 2-3 horas</p>
               <p><strong>Shows populares:</strong> El Rey León, Wicked, Hamilton</p>
             </div>
+
+            <a
+              href="https://www.getyourguide.es/londres-l57?partner_id=87T0WPE&cmp=short-url&interestFilters=tc-128&partner_id=87T0WPE&utm_medium=online_publisher"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-hotel"
+            >
+              <span>Ver entradas y tours del West End</span>
+              <svg className="external-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+              </svg>
+            </a>
           </div>
 
           <div className="bg-white rounded-xl p-5 shadow-sm hover:shadow-md transition-all duration-300">
