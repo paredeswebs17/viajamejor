@@ -2531,99 +2531,140 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
         <p className="text-gray-600 mb-6">Londres es una de las capitales gastronómicas del mundo. Aquí encontrarás de todo:</p>
 
         <div className="space-y-6">
+          {/* COMIDA BRITÁNICA */}
           <div className="bg-white rounded-2xl p-6 shadow-md">
             <h3 className="text-xl font-bold text-orange-800 mb-4">🇬🇧 Comida Británica Tradicional</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div className="bg-orange-50 rounded-lg p-4">
                 <h4 className="font-bold text-gray-900 mb-2">Fish & Chips</h4>
                 <p className="text-sm text-gray-700 mb-2">El plato nacional británico. Pescado rebozado + patatas fritas.</p>
-                <p className="text-xs text-orange-700"><strong>Dónde:</strong> Poppies (Spitalfields) | <strong>Precio:</strong> 14-19 €</p>
+                <p className="text-xs text-orange-700 mb-1">
+                  <strong>Dónde:</strong> <a href="https://www.google.com/maps/place/Poppies+Fish+&+Chips,+Spitalfields/@51.5202235,-0.0740232,15z/data=!4m2!3m1!1s0x0:0x5765082b2389d926" target="_blank" rel="noopener noreferrer" className="underline hover:text-orange-900">Poppies</a> (Spitalfields)
+                </p>
+                <p className="text-xs text-orange-700"><strong>Precio:</strong> 14-19 €</p>
               </div>
               <div className="bg-orange-50 rounded-lg p-4">
                 <h4 className="font-bold text-gray-900 mb-2">Sunday Roast</h4>
                 <p className="text-sm text-gray-700 mb-2">Carne asada + Yorkshire pudding + verduras + gravy. Solo domingos.</p>
-                <p className="text-xs text-orange-700"><strong>Dónde:</strong> The Harwood Arms | <strong>Precio:</strong> 23-35 €</p>
+                <p className="text-xs text-orange-700 mb-1">
+                  <strong>Dónde:</strong> <a href="https://www.google.com/maps?cid=1697893083040979884" target="_blank" rel="noopener noreferrer" className="underline hover:text-orange-900">The Harwood Arms</a> o <a href="https://www.google.com/maps/search/?api=1&query=Blacklock+Shoreditch&query_place_id=ChIJ44hFhjgddkgRdPaKatX_eGY" target="_blank" rel="noopener noreferrer" className="underline hover:text-orange-900">Blacklock</a>
+                </p>
+                <p className="text-xs text-orange-700"><strong>Precio:</strong> 18-35 €</p>
               </div>
               <div className="bg-orange-50 rounded-lg p-4">
                 <h4 className="font-bold text-gray-900 mb-2">Afternoon Tea</h4>
                 <p className="text-sm text-gray-700 mb-2">Té + sándwiches + scones + pasteles. Experiencia muy británica.</p>
-                <p className="text-xs text-orange-700"><strong>Dónde:</strong> Sketch | <strong>Precio:</strong> 41-88 €</p>
+                <p className="text-xs text-orange-700 mb-1">
+                  <strong>Dónde:</strong> <a href="https://www.google.com/maps/place/sketch+london/data=!4m2!3m1!1s0x4876052a8fed866b:0xb07500db019d0324" target="_blank" rel="noopener noreferrer" className="underline hover:text-orange-900">Sketch</a> (premium) o <a href="https://www.google.com/maps?cid=6003543345049875234" target="_blank" rel="noopener noreferrer" className="underline hover:text-orange-900">The Wolseley</a>
+                </p>
+                <p className="text-xs text-orange-700"><strong>Precio:</strong> 28-88 €</p>
               </div>
               <div className="bg-orange-50 rounded-lg p-4">
-                <h4 className="font-bold text-gray-900 mb-2">Pub Food</h4>
-                <p className="text-sm text-gray-700 mb-2">Bangers & mash, pies, ploughman's lunch en ambiente de pub.</p>
-                <p className="text-xs text-orange-700"><strong>Dónde:</strong> The Churchill Arms | <strong>Precio:</strong> 14-21 €</p>
+                <h4 className="font-bold text-gray-900 mb-2">English Breakfast</h4>
+                <p className="text-sm text-gray-700 mb-2">Huevos, bacon, salchichas, judías, champiñones, tomate. Contundente.</p>
+                <p className="text-xs text-orange-700 mb-1">
+                  <strong>Dónde:</strong> <a href="https://www.google.com/maps?cid=9434034666759318914" target="_blank" rel="noopener noreferrer" className="underline hover:text-orange-900">The Breakfast Club</a> o <a href="https://www.google.com/maps?cid=11256896404490944630" target="_blank" rel="noopener noreferrer" className="underline hover:text-orange-900">Dishoom</a>
+                </p>
+                <p className="text-xs text-orange-700"><strong>Precio:</strong> 9-16 €</p>
               </div>
             </div>
           </div>
 
+          {/* COMIDA INTERNACIONAL */}
           <div className="bg-white rounded-2xl p-6 shadow-md">
             <h3 className="text-xl font-bold text-red-800 mb-4">🌍 Comida Internacional</h3>
-            <p className="text-sm text-gray-700 mb-4">Londres es una de las ciudades más multiculturales. Gastronomía de 180+ países:</p>
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            <p className="text-sm text-gray-700 mb-4">Londres tiene gastronomía de 180+ países. Las mejores zonas:</p>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
               <div className="bg-red-50 rounded-lg p-3">
-                <h4 className="font-semibold text-gray-900 mb-1">🍛 India</h4>
-                <p className="text-xs text-gray-700">Brick Lane: La mejor comida india fuera de India.</p>
-                <p className="text-xs text-red-700"><strong>9-18 €</strong></p>
+                <h4 className="font-semibold text-gray-900 mb-1">🍛 India (Brick Lane)</h4>
+                <p className="text-xs text-gray-700 mb-2">
+                  <a href="https://www.google.com/maps?cid=11256896404490944630" target="_blank" rel="noopener noreferrer" className="underline hover:text-red-900">Dishoom</a>, <a href="https://www.google.com/maps/place/Tayyabs/@51.5172755,-0.0660612,17z/data=!3m1!4b1!4m6!3m5!1s0x48761ccb72da71b1:0x187b9124f0a57a52!8m2!3d51.5172755!4d-0.0634863!16s%2Fg%2F1hd_71hn7" target="_blank" rel="noopener noreferrer" className="underline hover:text-red-900">Tayyabs</a>
+                </p>
+                <p className="text-xs text-red-700"><strong>9-23 €</strong></p>
               </div>
               <div className="bg-red-50 rounded-lg p-3">
-                <h4 className="font-semibold text-gray-900 mb-1">🍜 China</h4>
-                <p className="text-xs text-gray-700">Chinatown: Dim sum, pato pequinés, hot pot auténtico.</p>
+                <h4 className="font-semibold text-gray-900 mb-1">🍜 China (Chinatown)</h4>
+                <p className="text-xs text-gray-700 mb-2">
+                  Dim sum, pato pequinés. <a href="https://www.google.com/maps/search/?api=1&query=Four+Seasons&query_place_id=ChIJ38EZXNIEdkgRyF8HpbgisDY" target="_blank" rel="noopener noreferrer" className="underline hover:text-red-900">Four Seasons</a>
+                </p>
                 <p className="text-xs text-red-700"><strong>12-29 €</strong></p>
               </div>
               <div className="bg-red-50 rounded-lg p-3">
-                <h4 className="font-semibold text-gray-900 mb-1">🍕 Italia</h4>
-                <p className="text-xs text-gray-700">Soho: Pizzas napolitanas y pasta fresca.</p>
-                <p className="text-xs text-red-700"><strong>14-23 €</strong></p>
+                <h4 className="font-semibold text-gray-900 mb-1">🍕 Italia (Soho)</h4>
+                <p className="text-xs text-gray-700 mb-2">
+                  <a href="https://www.google.com/maps?cid=196478056344732283" target="_blank" rel="noopener noreferrer" className="underline hover:text-red-900">Bancone</a> (pasta fresca), <a href="https://www.google.com/maps?cid=12972146974105785916" target="_blank" rel="noopener noreferrer" className="underline hover:text-red-900">Lina Stores</a>
+                </p>
+                <p className="text-xs text-red-700"><strong>14-28 €</strong></p>
               </div>
               <div className="bg-red-50 rounded-lg p-3">
                 <h4 className="font-semibold text-gray-900 mb-1">🌮 México</h4>
-                <p className="text-xs text-gray-700">Wahaca, Chilango: Tacos y burritos auténticos.</p>
+                <p className="text-xs text-gray-700 mb-2">
+                  <a href="https://www.google.com/maps?cid=14338869259752875139" target="_blank" rel="noopener noreferrer" className="underline hover:text-red-900">Wahaca</a>, <a href="https://www.google.com/maps?cid=613574514351542124" target="_blank" rel="noopener noreferrer" className="underline hover:text-red-900">Chilango</a>
+                </p>
                 <p className="text-xs text-red-700"><strong>9-18 €</strong></p>
               </div>
               <div className="bg-red-50 rounded-lg p-3">
                 <h4 className="font-semibold text-gray-900 mb-1">🍱 Japón</h4>
-                <p className="text-xs text-gray-700">Ramen, sushi, katsu curry de alta calidad.</p>
+                <p className="text-xs text-gray-700 mb-2">Ramen, sushi, katsu curry de calidad.</p>
                 <p className="text-xs text-red-700"><strong>14-35 €</strong></p>
               </div>
               <div className="bg-red-50 rounded-lg p-3">
                 <h4 className="font-semibold text-gray-900 mb-1">🥙 Medio Oriente</h4>
-                <p className="text-xs text-gray-700">Edgware Road: Shawarma, falafel, mezze libanés.</p>
+                <p className="text-xs text-gray-700 mb-2">Edgware Road: Shawarma, falafel, mezze.</p>
                 <p className="text-xs text-red-700"><strong>7-14 €</strong></p>
               </div>
             </div>
           </div>
 
+          {/* MERCADOS */}
           <div className="bg-white rounded-2xl p-6 shadow-md">
             <h3 className="text-xl font-bold text-pink-800 mb-4">🏪 Mercados Gastronómicos</h3>
             <div className="space-y-3">
               <div className="bg-pink-50 rounded-lg p-4">
-                <h4 className="font-bold text-gray-900 mb-2">Borough Market</h4>
+                <h4 className="font-bold text-gray-900 mb-2">
+                  <a href="https://www.google.com/maps/place/Borough+Market/@51.50544,-0.0932493,17z/data=!3m1!4b1!4m5!3m4!1s0x4876035775cf660f:0x3128e7e59ca044b9!8m2!3d51.50544!4d-0.0910606" target="_blank" rel="noopener noreferrer" className="underline hover:text-pink-900">Borough Market</a>
+                </h4>
                 <p className="text-sm text-gray-700">El mercado gourmet por excelencia. Ostras, quesos, panes artesanales.</p>
-                <p className="text-xs text-gray-600">Lun-Jue 10:00-17:00 | Sáb 8:00-17:00 | Dom 10:00-16:00 | Presupuesto: 12-23 €</p>
+                <p className="text-xs text-gray-600">Lun-Jue 10:00-17:00 | Sáb 8:00-17:00 | Dom 10:00-16:00 | 12-23 €</p>
               </div>
               <div className="bg-pink-50 rounded-lg p-4">
-                <h4 className="font-bold text-gray-900 mb-2">Camden Market</h4>
+                <h4 className="font-bold text-gray-900 mb-2">
+                  <a href="https://www.google.com/maps/place/Camden+Market/data=!4m2!3m1!1s0x0:0x47659eff1785ef08" target="_blank" rel="noopener noreferrer" className="underline hover:text-pink-900">Camden Market</a>
+                </h4>
                 <p className="text-sm text-gray-700">Street food internacional. Thai, indio, mexicano, vegano.</p>
-                <p className="text-xs text-gray-600">Todos los días 10:00-18:00 | Presupuesto: 9-18 €</p>
+                <p className="text-xs text-gray-600">Todos los días 10:00-18:00 | 9-18 €</p>
               </div>
               <div className="bg-pink-50 rounded-lg p-4">
-                <h4 className="font-bold text-gray-900 mb-2">Old Spitalfields Market</h4>
+                <h4 className="font-bold text-gray-900 mb-2">
+                  <a href="https://www.google.com/maps/place/Old+Spitalfields+Market/data=!4m2!3m1!1s0x0:0xa2f23eab2602d4bc" target="_blank" rel="noopener noreferrer" className="underline hover:text-pink-900">Old Spitalfields Market</a>
+                </h4>
                 <p className="text-sm text-gray-700">Mix de comida y moda. Los jueves mercado de antigüedades.</p>
-                <p className="text-xs text-gray-600">Lun-Vie 10:00-20:00 | Presupuesto: 9-18 €</p>
+                <p className="text-xs text-gray-600">Lun-Vie 10:00-20:00 | 9-18 €</p>
               </div>
             </div>
           </div>
 
+          {/* CONSEJOS */}
           <div className="bg-gradient-to-r from-yellow-100 to-orange-100 border-2 border-orange-300 rounded-xl p-4">
-            <h4 className="font-bold text-gray-900 mb-2">💡 Consejos para Comer Barato en Londres:</h4>
-            <ul className="text-sm text-gray-800 space-y-1">
-              <li>• Pret A Manger: 5-7 € (calidad-precio excelente)</li>
-              <li>• Greggs: 2,50-3 € (bakery británica económica)</li>
-              <li>• Tesco Meal Deal: 4-5 € (sándwich + bebida + snack)</li>
-              <li>• Mercados: Siempre más barato que restaurantes</li>
-              <li>• Lunch deals: Muchos restaurantes ofrecen menú 12:00-15:00 (50% off)</li>
-            </ul>
+            <h4 className="font-bold text-gray-900 mb-3">💡 Consejos para Comer Barato:</h4>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-gray-800">
+              <div>
+                <p className="font-semibold mb-1">✅ Cadenas económicas:</p>
+                <ul className="space-y-1 text-xs">
+                  <li>• Pret A Manger: 5-7 €</li>
+                  <li>• Greggs: 2,50-3 €</li>
+                  <li>• Leon: 6-9 € (comida sana)</li>
+                </ul>
+              </div>
+              <div>
+                <p className="font-semibold mb-1">✅ Trucos:</p>
+                <ul className="space-y-1 text-xs">
+                  <li>• Tesco Meal Deal: 4-5 €</li>
+                  <li>• Lunch deals: 12:00-15:00 (50% off)</li>
+                  <li>• App "Too Good To Go": comida a 1/3</li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </div>
