@@ -2281,7 +2281,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
 
             <div className="mb-3 rounded-lg overflow-hidden">
               <img
-                src="https://images.pexels.com/photos/8828474/pexels-photo-8828474.jpeg"
+                src="https://images.pexels.com/photos/7978845/pexels-photo-7978845.jpeg"
                 alt="Warner Bros Studio Tour Harry Potter"
                 className="w-full h-32 object-cover"
               />
