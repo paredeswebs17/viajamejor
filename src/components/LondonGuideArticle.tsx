@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { ArrowLeft, Share2, Clock, MapPin, ExternalLink, ChevronDown, ChevronUp } from 'lucide-react';
 import StickyTableOfContents from './StickyTableOfContents';
 
@@ -10,12 +10,32 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
   const [expandedAirport, setExpandedAirport] = useState<string | null>(null);
   const [expandedZone, setExpandedZone] = useState<string | null>(null);
 
+  const westminsterRef = useRef<HTMLDivElement>(null);
+  const kingsCrossRef = useRef<HTMLDivElement>(null);
+  const southwarkRef = useRef<HTMLDivElement>(null);
+
   const toggleAirport = (airportId: string) => {
     setExpandedAirport(expandedAirport === airportId ? null : airportId);
   };
 
   const toggleZone = (zoneId: string) => {
-    setExpandedZone(expandedZone === zoneId ? null : zoneId);
+    const newExpandedZone = expandedZone === zoneId ? null : zoneId;
+    setExpandedZone(newExpandedZone);
+
+    if (newExpandedZone === zoneId) {
+      setTimeout(() => {
+        const refMap: { [key: string]: React.RefObject<HTMLDivElement> } = {
+          'westminster': westminsterRef,
+          'kings-cross': kingsCrossRef,
+          'southwark': southwarkRef
+        };
+
+        const ref = refMap[zoneId];
+        if (ref?.current) {
+          ref.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      }, 100);
+    }
   };
   const sections = [
     { id: 'por-que-visitar', title: '¿Por qué visitar Londres?' },
@@ -713,7 +733,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
         <p className="text-gray-600 mb-6">Las mejores zonas y hoteles recomendados para tu estancia</p>
 
         <div className="space-y-6">
-          <div className="bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300">
+          <div ref={westminsterRef} className="bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300">
             <div className="flex items-center mb-4">
               <div className="w-12 h-12 bg-gradient-to-br from-sky-500 to-blue-500 rounded-xl flex items-center justify-center mr-4">
                 <span className="text-2xl">🏛️</span>
@@ -840,7 +860,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
             )}
           </div>
 
-          <div className="bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300">
+          <div ref={kingsCrossRef} className="bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300">
             <div className="flex items-center mb-4">
               <div className="w-12 h-12 bg-gradient-to-br from-red-500 to-orange-500 rounded-xl flex items-center justify-center mr-4">
                 <span className="text-2xl">🎨</span>
@@ -968,7 +988,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
             )}
           </div>
 
-          <div className="bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300">
+          <div ref={southwarkRef} className="bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300">
             <div className="flex items-center mb-4">
               <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-pink-500 rounded-xl flex items-center justify-center mr-4">
                 <span className="text-2xl">🎨</span>
