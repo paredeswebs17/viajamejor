@@ -2238,7 +2238,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
           <h5 className="font-semibold text-gray-900 mb-2">🎄 Winter Wonderland 2025:</h5>
           <ul className="text-sm text-gray-700 space-y-1 list-none">
             <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span><strong>14 Nov - 1 Ene 2026</strong></li>
-            <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Entrada: Gratis off-peak, 5-7.50€ peak</li>
+            <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Entrada: Gratis off-peak (mañanas entre semana), 5-7.50€ peak (tardes/fines de semana)</li>
             <li className="flex items-center"><span className="w-2 h-2 bg-yellow-400 rounded-full mr-3"></span>Horario: 10:00-22:00</li>
             <li className="flex items-center"><span className="w-2 h-2 bg-pink-400 rounded-full mr-3"></span>Mercado navideño + pista hielo + atracciones</li>
           </ul>
@@ -2247,13 +2247,25 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
 
       <div className="bg-gradient-to-r from-red-100 to-green-100 border-2 border-red-300 rounded-lg p-3 mb-3">
         <p className="text-xs text-red-900">
-          <strong>🎅 Winter Wonderland (14 Nov - 1 Ene):</strong> Si viajas en diciembre, Hyde Park se transforma en un enorme mercado navideño con pista de patinaje, atracciones, circo, Ice Kingdom y mercadillos. Entrada al recinto gratis en horarios off-peak. Las atracciones se pagan aparte (11-18€).
+          <strong>🎅 Winter Wonderland (14 Nov - 1 Ene):</strong> Si viajas en diciembre, Hyde Park se transforma en un enorme mercado navideño con pista de patinaje, atracciones, circo, Ice Kingdom y mercadillos. Entrada al recinto gratis en horarios off-peak (mañanas entre semana). Las atracciones se pagan aparte (11-18€).
         </p>
       </div>
 
-      <div className="bg-white rounded-xl p-3 border border-gray-200 shadow-sm">
-        <p className="text-xs text-green-600">💡 <strong>Reserva Winter Wonderland:</strong> Si quieres entrar, RESERVA online con antelación en hydeparkwinterwonderland.com. Los horarios peak (tardes/fines de semana) se agotan rápido.</p>
+      <div className="bg-white rounded-xl p-3 border border-gray-200 shadow-sm mb-4">
+        <p className="text-xs text-green-600">💡 <strong>Reserva Winter Wonderland:</strong> Si quieres entrar, RESERVA online con antelación. Los horarios peak (tardes/fines de semana) se agotan rápido.</p>
       </div>
+
+      <a
+        href="http://hydeparkwinterwonderland.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="btn-hotel"
+      >
+        <span>Reservar Winter Wonderland</span>
+        <svg className="external-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+        </svg>
+      </a>
     </div>
   </div>
 </div>
