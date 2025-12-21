@@ -1,14 +1,32 @@
 import React from 'react';
 import { ArrowLeft, Share2, Clock, MapPin, ExternalLink } from 'lucide-react';
+import StickyTableOfContents from './StickyTableOfContents';
 
 interface RomaGuideArticleProps {
 onBack: () => void;
 }
 
 const RomaGuideArticle: React.FC<RomaGuideArticleProps> = ({ onBack }) => {
+  const sections = [
+    { id: 'por-que-visitar', title: '¿Por qué visitar Roma?' },
+    { id: 'llegada-aeropuerto', title: 'Llegada y Conexiones' },
+    { id: 'donde-dormir', title: 'Dónde Alojarse' },
+    { id: 'itinerario', title: 'Itinerario Romano' },
+    { id: 'dia-1', title: 'Día 1: Centro Histórico y Plazas Icónicas', level: 2 },
+    { id: 'dia-2', title: 'Día 2: Roma Antigua - Coliseo y Foro Romano', level: 2 },
+    { id: 'dia-3', title: 'Día 3: El Vaticano - Arte, Fe y Poder', level: 2 },
+    { id: 'mas-lugares', title: 'Más Lugares en Roma' },
+    { id: 'recomendaciones', title: 'Tarjeta y Seguro de Viaje' },
+    { id: 'gastronomia', title: 'Gastronomía' },
+    { id: 'transporte', title: 'Sistema de Transporte' },
+    { id: 'consejos', title: 'Consejos Finales' },
+    { id: 'presupuestos', title: 'Presupuestos Detallados' }
+  ];
 
 return (
-<article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 pt-24">
+<>
+  <StickyTableOfContents sections={sections} />
+  <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 pt-24">
 <div className="mb-8">
 <button 
 onClick={onBack}
@@ -73,7 +91,7 @@ Volver a guías
     />
   </div>
 
-  <div className="bg-gradient-to-r from-amber-50 to-red-50 border border-amber-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
+  <div id="por-que-visitar" className="bg-gradient-to-r from-amber-50 to-red-50 border border-amber-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
     <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">¿Por qué visitar Roma?</h2>
 
     <div className="space-y-4 text-gray-700">
@@ -95,7 +113,7 @@ Volver a guías
     </div>
   </div>
 
-  <div className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
+  <div id="llegada-aeropuerto" className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
     <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">✈️ Llegada y Conexiones desde el Aeropuerto</h2>
 
     <div className="mb-8">
@@ -186,7 +204,7 @@ Volver a guías
   </div>
 
 
-  <div className="bg-gradient-to-br from-amber-50 via-red-50 to-orange-50 border border-amber-200 rounded-2xl p-6 sm:p-8 shadow-lg mb-8">
+  <div id="donde-dormir" className="bg-gradient-to-br from-amber-50 via-red-50 to-orange-50 border border-amber-200 rounded-2xl p-6 sm:p-8 shadow-lg mb-8">
     <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3 flex items-center">
       🏨 Dónde Alojarse en Roma
     </h2>
@@ -356,7 +374,7 @@ Volver a guías
 
   </div>
 
-  <div className="bg-gradient-to-r from-red-50 to-amber-50 rounded-2xl p-6 sm:p-8 mb-8 shadow-md">
+  <div id="itinerario" className="bg-gradient-to-r from-red-50 to-amber-50 rounded-2xl p-6 sm:p-8 mb-8 shadow-md">
     <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">Itinerario Romano</h2>
     <div className="overflow-x-auto">
       <table className="w-full border-collapse bg-white rounded-xl shadow-sm">
@@ -393,7 +411,7 @@ Volver a guías
   </div>
 
   {/* DÍA 1 */}
-  <div className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
+  <div id="dia-1" className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
     <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6 flex items-center">
       <span className="bg-gradient-to-br from-red-500 to-amber-500 text-white w-14 h-14 rounded-2xl flex items-center justify-center text-xl font-bold mr-4 shadow-lg">1</span>
       DÍA 1: Centro Histórico y Plazas Icónicas
@@ -602,7 +620,7 @@ Volver a guías
   </div>
 
   {/* DÍA 2 */}
-  <div className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
+  <div id="dia-2" className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
     <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6 flex items-center">
       <span className="bg-gradient-to-br from-amber-500 to-red-500 text-white w-14 h-14 rounded-2xl flex items-center justify-center text-xl font-bold mr-4 shadow-lg">2</span>
       DÍA 2: Roma Antigua - Coliseo y Foro Romano
@@ -836,7 +854,7 @@ Volver a guías
   </div>
 
   {/* DÍA 3 */}
-  <div className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
+  <div id="dia-3" className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
     <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6 flex items-center">
       <span className="bg-gradient-to-br from-indigo-500 to-purple-500 text-white w-14 h-14 rounded-2xl flex items-center justify-center text-xl font-bold mr-4 shadow-lg">3</span>
       DÍA 3: El Vaticano - Arte, Fe y Poder
@@ -1079,7 +1097,7 @@ Volver a guías
     </div>
   </div>
 
-  <div className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
+  <div id="mas-lugares" className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
     <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">➕ Más Lugares que Ver en Roma</h2>
     
     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -1153,7 +1171,7 @@ Volver a guías
     </div>
   </div>
 
-  <div className="bg-gradient-to-br from-blue-50 via-purple-50 to-indigo-50 border border-blue-200 rounded-2xl p-6 sm:p-8 shadow-lg mb-8">
+  <div id="recomendaciones" className="bg-gradient-to-br from-blue-50 via-purple-50 to-indigo-50 border border-blue-200 rounded-2xl p-6 sm:p-8 shadow-lg mb-8">
     <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3 flex items-center">
       💳 Herramientas de Viaje
     </h2>
@@ -1251,7 +1269,7 @@ Volver a guías
     </div>
   </div>
 
-  <div className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
+  <div id="gastronomia" className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
     <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">🍝 Guía Gastronómica - Probado y Recomendado</h2>
 
     <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-6">
@@ -1339,7 +1357,7 @@ Volver a guías
     </div>
   </div>
 
-  <div className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
+  <div id="transporte" className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
     <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">🚇 Sistema de Transporte Público de Roma</h2>
     
     <div className="bg-gradient-to-r from-red-50 to-amber-50 border border-red-200 rounded-xl p-6">
@@ -1413,7 +1431,7 @@ Volver a guías
     </div>
   </div>
 
-  <div className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
+  <div id="consejos" className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
     <div className="bg-gradient-to-r from-red-50 to-amber-50 rounded-2xl p-6 sm:p-8 shadow-md mb-8">
       <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">🎯 Consejos Finales para tu Viaje a Roma</h2>
       
@@ -1458,7 +1476,7 @@ Volver a guías
     </div>
   </div>
 
-  <div className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
+  <div id="presupuestos" className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
     <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">💰 Presupuestos Detallados por Estilo</h2>
 
     <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
@@ -1507,6 +1525,7 @@ Volver a guías
     </p>
   </div>
 </article>
+</>
 );
 };
 
