@@ -20,9 +20,9 @@ const ExploreDestinations = () => {
     },
     {
       id: 'london',
-      title: 'Londres en 4 días',
+      title: 'Londres en 3 días',
       image: 'https://images.pexels.com/photos/5380087/pexels-photo-5380087.jpeg',
-      url: '/londres-guia',
+      url: '/londres-3-dias',
       badge: '🎡'
     },
     {
