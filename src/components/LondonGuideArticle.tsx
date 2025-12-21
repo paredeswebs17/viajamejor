@@ -2395,11 +2395,23 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
 
           <div className="bg-white rounded-xl p-5 shadow-sm hover:shadow-md transition-all duration-300">
             <h3 className="text-lg font-bold text-purple-800 mb-3">🌳 Kew Gardens</h3>
-            <p className="text-sm text-gray-700 mb-2">Jardín botánico Patrimonio de la UNESCO. 121 hectáreas de belleza natural.</p>
-            <div className="text-xs text-gray-600">
-              <p><strong>Precio:</strong> 21-23 € | <strong>Duración:</strong> 3-4 horas</p>
+            <p className="text-sm text-gray-700 mb-3">Jardín botánico Patrimonio de la UNESCO. 121 hectáreas de belleza natural.</p>
+            <div className="text-xs text-gray-600 mb-3">
+              <p><strong>Precio:</strong> desde 15 € | <strong>Duración:</strong> 3-4 horas</p>
               <p><strong>Highlights:</strong> Palm House, Treetop Walkway</p>
             </div>
+
+            <a
+              href="https://gyg.me/dpxxmHiq"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-hotel"
+            >
+              <span>Reservar entradas a Kew Gardens</span>
+              <svg className="external-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+              </svg>
+            </a>
           </div>
 
           <div className="bg-white rounded-xl p-5 shadow-sm hover:shadow-md transition-all duration-300">
