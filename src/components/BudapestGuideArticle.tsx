@@ -1,16 +1,33 @@
 import React from 'react';
 import { ArrowLeft, Share2, Clock, MapPin, ExternalLink } from 'lucide-react';
+import StickyTableOfContents from './StickyTableOfContents';
 
 interface BudapestGuideArticleProps {
   onBack: () => void;
 }
 
 const BudapestGuideArticle: React.FC<BudapestGuideArticleProps> = ({ onBack }) => {
-
-  
+  const sections = [
+    { id: 'por-que-visitar', title: '¿Por qué visitar Budapest?' },
+    { id: 'llegada-aeropuerto', title: 'Llegada y Aeropuerto' },
+    { id: 'donde-dormir', title: 'Dónde Alojarse' },
+    { id: 'itinerario', title: 'Itinerario de 4 Días' },
+    { id: 'dia-1', title: 'Día 1: Poder Imperial y Herencia Cultural', level: 2 },
+    { id: 'dia-2', title: 'Día 2: Realeza Medieval y Romance Danubiano', level: 2 },
+    { id: 'dia-3', title: 'Día 3: Aguas Milenarias y Esplendor Imperial', level: 2 },
+    { id: 'dia-4', title: 'Día 4: Autenticidad Local y Despedida Panorámica', level: 2 },
+    { id: 'excursiones', title: 'Excursiones desde Budapest' },
+    { id: 'recomendaciones', title: 'Tarjeta y Seguro de Viaje' },
+    { id: 'gastronomia', title: 'Gastronomía Húngara' },
+    { id: 'transporte', title: 'Sistema de Transporte' },
+    { id: 'consejos', title: 'Consejos Finales' },
+    { id: 'presupuestos', title: 'Presupuestos Detallados' }
+  ];
 
 return (
-<article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 pt-24">
+<>
+  <StickyTableOfContents sections={sections} />
+  <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 pt-24">
 
   <div className="mb-8">
     <button 
@@ -77,7 +94,7 @@ return (
   </div>
 
   {/* SECCIÓN 1: ¿POR QUÉ VISITAR BUDAPEST? */}
-  <div className="bg-gradient-to-r from-sky-50 to-blue-50 border border-sky-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
+  <div id="por-que-visitar" className="bg-gradient-to-r from-sky-50 to-blue-50 border border-sky-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
     <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">¿Por qué visitar Budapest?</h2>
 
     <div className="space-y-4 text-gray-700">
@@ -96,7 +113,7 @@ return (
   </div>
 
   {/* SECCIÓN 2: LLEGADA Y CONEXIONES */}
-  <div className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
+  <div id="llegada-aeropuerto" className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
     <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">✈️ Llegada y Conexiones desde el Aeropuerto</h2>
 
     <div className="mb-8">
@@ -147,7 +164,7 @@ return (
   </div>
 
   {/* SECCIÓN 3: DÓNDE ALOJARSE - NUEVA */}
-  <div className="bg-gradient-to-br from-emerald-50 via-teal-50 to-cyan-50 border border-emerald-200 rounded-2xl p-6 sm:p-8 shadow-lg mb-8">
+  <div id="donde-dormir" className="bg-gradient-to-br from-emerald-50 via-teal-50 to-cyan-50 border border-emerald-200 rounded-2xl p-6 sm:p-8 shadow-lg mb-8">
     <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3 flex items-center">
       🏨 Dónde Alojarse en Budapest
     </h2>
@@ -297,7 +314,7 @@ return (
   </div>
 
   {/* SECCIÓN 4: ITINERARIO - Planning Estratégico */}
-  <div className="bg-gradient-to-r from-sky-50 to-emerald-50 rounded-2xl p-6 sm:p-8 mb-8 shadow-md">
+  <div id="itinerario" className="bg-gradient-to-r from-sky-50 to-emerald-50 rounded-2xl p-6 sm:p-8 mb-8 shadow-md">
     <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">Itinerario de Budapest</h2>
     <div className="overflow-x-auto">
       <table className="w-full border-collapse bg-white rounded-xl shadow-sm">
@@ -339,7 +356,7 @@ return (
   </div>
 
   {/* DÍAS 1-4: Itinerarios detallados */}
-  <div className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
+  <div id="dia-1" className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
     <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6 flex items-center">
       <span className="bg-gradient-to-br from-sky-500 to-emerald-500 text-white w-14 h-14 rounded-2xl flex items-center justify-center text-xl font-bold mr-4 shadow-lg">1</span>
       DÍA 1: Poder Imperial y Herencia Cultural
@@ -636,7 +653,7 @@ return (
     </div>
   </div>
 
-  <div className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
+  <div id="dia-2" className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
     <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6 flex items-center">
       <span className="bg-gradient-to-br from-emerald-500 to-sky-500 text-white w-14 h-14 rounded-2xl flex items-center justify-center text-xl font-bold mr-4 shadow-lg">2</span>
       DÍA 2: Realeza Medieval y Romance Danubiano
@@ -772,7 +789,7 @@ return (
     </div>
   </div>
 
-  <div className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
+  <div id="dia-3" className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
     <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6 flex items-center">
       <span className="bg-gradient-to-br from-purple-500 to-pink-500 text-white w-14 h-14 rounded-2xl flex items-center justify-center text-xl font-bold mr-4 shadow-lg">3</span>
       DÍA 3: Aguas Milenarias y Esplendor Imperial
@@ -938,7 +955,7 @@ src="https://images.pexels.com/photos/20763018/pexels-photo-20763018.jpeg"
     </div>
   </div>
 
-  <div className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
+  <div id="dia-4" className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
     <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6 flex items-center">
       <span className="bg-gradient-to-br from-orange-500 to-red-500 text-white w-14 h-14 rounded-2xl flex items-center justify-center text-xl font-bold mr-4 shadow-lg">4</span>
       DÍA 4: Autenticidad Local y Despedida Panorámica
@@ -1033,7 +1050,7 @@ src="https://images.pexels.com/photos/30734949/pexels-photo-30734949.jpeg"
   </div>
 
   {/* SECCIÓN: EXCURSIONES DESDE BUDAPEST */}
-  <div className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
+  <div id="excursiones" className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
     <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">🚌 Excursiones desde Budapest</h2>
     <p className="text-gray-600 mb-6">Descubre los alrededores de Budapest con estas excursiones guiadas en español</p>
 
@@ -1107,7 +1124,7 @@ src="https://images.pexels.com/photos/30734949/pexels-photo-30734949.jpeg"
   </div>
 
   {/* SECCIÓN: HERRAMIENTAS DE VIAJE */}
-  <div className="bg-gradient-to-br from-blue-50 via-sky-50 to-cyan-50 border border-blue-200 rounded-2xl p-6 sm:p-8 shadow-lg mb-8">
+  <div id="recomendaciones" className="bg-gradient-to-br from-blue-50 via-sky-50 to-cyan-50 border border-blue-200 rounded-2xl p-6 sm:p-8 shadow-lg mb-8">
     <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3 flex items-center">
       💳 Herramientas de Viaje
     </h2>
@@ -1206,7 +1223,7 @@ src="https://images.pexels.com/photos/30734949/pexels-photo-30734949.jpeg"
   </div>
 
   {/* SECCIÓN: GASTRONOMÍA HÚNGARA */}
-  <div className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
+  <div id="gastronomia" className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
     <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">🍝 Gastronomía Húngara - Sabores Auténticos</h2>
 
     <div className="mb-6">
@@ -1290,7 +1307,7 @@ src="https://images.pexels.com/photos/30734949/pexels-photo-30734949.jpeg"
   </div>
 
   {/* SECCIÓN: SISTEMA DE TRANSPORTE PÚBLICO */}
-  <div className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
+  <div id="transporte" className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
     <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">🚇 Sistema de Transporte Público de Budapest</h2>
 
     <div className="mb-6">
@@ -1356,7 +1373,7 @@ src="https://images.pexels.com/photos/30734949/pexels-photo-30734949.jpeg"
   </div>
 
   {/* SECCIÓN: CONSEJOS FINALES */}
-  <div className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
+  <div id="consejos" className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
     <div className="bg-gradient-to-r from-blue-50 to-cyan-50 rounded-2xl p-6 sm:p-8 shadow-md mb-8">
       <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">🎯 Consejos Finales para tu Viaje a Budapest</h2>
 
@@ -1406,7 +1423,7 @@ src="https://images.pexels.com/photos/30734949/pexels-photo-30734949.jpeg"
     </div>
   </div>
 
-    <div className="bg-gray-50 rounded-2xl p-6 sm:p-8 mb-8 shadow-md">
+    <div id="presupuestos" className="bg-gray-50 rounded-2xl p-6 sm:p-8 mb-8 shadow-md">
   <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6 text-center">Presupuestos Reales y Detallados</h2>
   
   <div className="mb-6">
@@ -1521,7 +1538,7 @@ src="https://images.pexels.com/photos/30734949/pexels-photo-30734949.jpeg"
     </p>
   </div>
 </article>
-
+</>
 );
 
 
