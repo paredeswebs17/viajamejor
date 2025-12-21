@@ -2325,7 +2325,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
 
             <div className="mb-3 rounded-lg overflow-hidden">
               <img
-                src="https://images.pexels.com/photos/4550388/pexels-photo-4550388.jpeg"
+                src="https://images.pexels.com/photos/18271653/pexels-photo-18271653.jpeg"
                 alt="Castillo de Windsor"
                 className="w-full h-32 object-cover"
               />
