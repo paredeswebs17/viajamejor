@@ -2563,7 +2563,8 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
                 <h4 className="font-bold text-gray-900 mb-2">English Breakfast</h4>
                 <p className="text-sm text-gray-700 mb-2">Huevos, bacon, salchichas, judías, champiñones, tomate. Contundente.</p>
                 <p className="text-xs text-orange-700 mb-1">
-                  <strong>Dónde:</strong> <a href="https://www.google.com/maps?cid=9434034666759318914" target="_blank" rel="noopener noreferrer" className="underline hover:text-orange-900">The Breakfast Club</a> o <a href="https://www.google.com/maps?cid=11256896404490944630" target="_blank" rel="noopener noreferrer" className="underline hover:text-orange-900">Dishoom</a>
+                  <strong>Dónde:</strong> <a href="https://www.google.com/maps?cid=9434034666759318914" target="_blank" rel="noopener noreferrer" className="underline hover:text-orange-900">The Breakfast Club</a> 
+                
                 </p>
                 <p className="text-xs text-orange-700"><strong>Precio:</strong> 9-16 €</p>
               </div>
