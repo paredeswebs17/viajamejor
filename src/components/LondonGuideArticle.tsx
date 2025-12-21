@@ -2761,7 +2761,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
               <li>• <strong>Paraguas:</strong> IMPRESCINDIBLE todo el año. Llueve sin previo aviso</li>
               <li>• <strong>Capas:</strong> El tiempo cambia cada hora. Lleva chaqueta ligera incluso en verano</li>
               <li>• <strong>Calzado:</strong> Zapatillas cómodas. Caminarás 15-20km diarios</li>
-              <li>• <strong>Noviembre:</strong> 8-12°C. Frío pero no extremo. Abrigo medio + bufanda</li>
+              <li>• <strong>Temperaturas:</strong> Verano 20-25°C (fresco), Invierno 5-10°C (húmedo pero no extremo)</li>
             </ul>
           </div>
 
