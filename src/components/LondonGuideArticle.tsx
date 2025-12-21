@@ -2105,17 +2105,6 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
         </div>
       </div>
 
-      <div className="bg-white rounded-xl p-4 border border-gray-200 shadow-sm mb-4">
-        <p className="text-sm text-amber-800 mb-2">
-          <strong>Estrategia para aprovechar el museo:</strong>
-        </p>
-        <ul className="text-xs text-amber-700 space-y-1">
-          <li>✓ Llega a las 10:00 en punto (apertura) para evitar multitudes</li>
-          <li>✓ Descarga la app oficial del museo (tour autoguiado GRATIS en español)</li>
-          <li>✓ Si tienes poco tiempo, ve directo a: Piedra Rosetta → Momias → Partenón (1h)</li>
-          <li>✓ La Great Court tiene cafetería si necesitas descansar</li>
-        </ul>
-      </div>
     </div>
   </div>
 
