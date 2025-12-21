@@ -19,6 +19,13 @@ const ExploreDestinations = () => {
       badge: '🎄'
     },
     {
+      id: 'london',
+      title: 'Londres en 4 días',
+      image: 'https://images.pexels.com/photos/460672/pexels-photo-460672.jpeg',
+      url: '/londres-guia',
+      badge: '🎡'
+    },
+    {
       id: 'budapest',
       title: 'Budapest en 4 Días',
       image: 'https://images.pexels.com/photos/73796/budapest-hungary-parliament-building-73796.jpeg',
