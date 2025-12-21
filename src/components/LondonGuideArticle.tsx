@@ -2321,12 +2321,44 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
           </div>
 
           <div className="bg-white rounded-xl p-5 shadow-sm hover:shadow-md transition-all duration-300">
-            <h3 className="text-lg font-bold text-purple-800 mb-3">🏰 Castillo de Windsor</h3>
-            <p className="text-sm text-gray-700 mb-2">El castillo habitado más antiguo del mundo. Residencia oficial de la Reina.</p>
-            <div className="text-xs text-gray-600">
-              <p><strong>Precio:</strong> 33-35 € | <strong>Duración:</strong> Día completo</p>
-              <p><strong>Cómo llegar:</strong> Tren desde Paddington (50 min)</p>
+            <h3 className="text-lg font-bold text-purple-800 mb-3">🏰 Tour Windsor, Stonehenge y Oxford</h3>
+
+            <div className="mb-3 rounded-lg overflow-hidden">
+              <img
+                src="https://images.pexels.com/photos/4550388/pexels-photo-4550388.jpeg"
+                alt="Castillo de Windsor"
+                className="w-full h-32 object-cover"
+              />
             </div>
+
+            <p className="text-sm text-gray-700 mb-3">Tour de día completo que combina tres de los lugares más emblemáticos cerca de Londres: el Castillo de Windsor (residencia oficial de la Familia Real), Stonehenge (el monumento prehistórico más famoso) y Oxford (la ciudad universitaria más antigua de Inglaterra).</p>
+
+            <div className="bg-purple-50 border border-purple-200 rounded-lg p-3 mb-3">
+              <p className="text-xs text-purple-900 mb-2">
+                <strong>¿Vale la pena?</strong>
+              </p>
+              <p className="text-xs text-purple-800">
+                Perfecto si quieres ver lo mejor de los alrededores de Londres en un solo día. Tres lugares icónicos con transporte incluido y guía experto. Ideal para optimizar tiempo si tienes pocos días en la ciudad.
+              </p>
+            </div>
+
+            <div className="text-xs text-gray-600 mb-3">
+              <p><strong>Duración:</strong> Día completo (aprox. 11 horas)</p>
+              <p><strong>Incluye:</strong> Transporte + guía + entradas</p>
+              <p><strong>Visitas:</strong> Castillo de Windsor, Stonehenge, Oxford</p>
+            </div>
+
+            <a
+              href="https://gyg.me/r6Q7PP0g"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-hotel"
+            >
+              <span>Reservar tour Windsor, Stonehenge y Oxford</span>
+              <svg className="external-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+              </svg>
+            </a>
           </div>
 
           <div className="bg-white rounded-xl p-5 shadow-sm hover:shadow-md transition-all duration-300">
