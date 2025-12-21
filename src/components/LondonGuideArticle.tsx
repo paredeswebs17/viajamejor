@@ -2287,14 +2287,14 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
               />
             </div>
 
-            <p className="text-sm text-gray-700 mb-3">Visita los estudios donde se filmaron las películas de Harry Potter. Una experiencia mágica imprescindible para los fans.</p>
+            <p className="text-sm text-gray-700 mb-3">Visita los estudios donde se filmaron las películas de Harry Potter. Una experiencia mágica imprescindible para los fans. Viaja en el autobús oficial de Harry Potter para hacer la experiencia aún más mágica.</p>
 
             <div className="bg-purple-50 border border-purple-200 rounded-lg p-3 mb-3">
               <p className="text-xs text-purple-900 mb-2">
                 <strong>¿Vale la pena?</strong>
               </p>
               <p className="text-xs text-purple-800 mb-2">
-                SI eres fan de Harry Potter, este es uno de los mejores tours del mundo. Ves los sets REALES (Gran Comedor, Callejón Diagon, Bosque Prohibido), los decorados originales, y cómo se hicieron los efectos especiales.
+                SI eres fan de Harry Potter, este es uno de los mejores tours del mundo. Ves los sets REALES (Gran Comedor, Callejón Diagon, Bosque Prohibido), los decorados originales, y cómo se hicieron los efectos especiales. El autobús oficial temático de Harry Potter hace que la experiencia empiece desde el momento en que subes.
               </p>
               <p className="text-xs text-purple-800">
                 <strong>SE AGOTA con semanas de antelación.</strong> No dejes la reserva para última hora.
@@ -2302,13 +2302,13 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
             </div>
 
             <div className="text-xs text-gray-600 mb-3">
-              <p><strong>Precio:</strong> Desde 96 €</p>
+              <p><strong>Precio:</strong> Desde 104€</p>
               <p><strong>Duración:</strong> Medio día (incluye transporte desde Londres)</p>
-              <p><strong>Incluye:</strong> Transporte + entrada + guía</p>
+              <p><strong>Incluye:</strong> Autobús oficial de Harry Potter + entrada + guía</p>
             </div>
 
             <a
-              href="https://gyg.me/EpCNOHAg"
+              href="https://gyg.me/xkkGcCEI"
               target="_blank"
               rel="noopener noreferrer"
               className="btn-hotel"
