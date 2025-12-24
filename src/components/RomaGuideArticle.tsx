@@ -1507,20 +1507,6 @@ Volver a guías
           </div>
 
           <div className="bg-white rounded-lg p-4 border border-pink-100">
-            <h4 className="font-bold text-gray-900 mb-1">San Crispino</h4>
-            <p className="text-sm text-gray-700 mb-2">Gelato artesanal de alta calidad</p>
-            <a
-              href="https://www.google.com/maps/place/Il+Gelato+di+San+Crispino/@41.9015931,12.4825173,17z/data=!3m1!4b1!4m5!3m4!1s0x132f61acc7ec152b:0x3dfb93fcc7e280c5!8m2!3d41.9015891!4d12.484706"
-              target="_blank"
-              rel="noopener noreferrer nofollow"
-              className="inline-flex items-center text-red-600 hover:text-red-700 text-sm font-medium"
-            >
-              Ver en Google Maps
-              <ExternalLink className="ml-1 h-3 w-3" />
-            </a>
-          </div>
-
-          <div className="bg-white rounded-lg p-4 border border-pink-100">
             <h4 className="font-bold text-gray-900 mb-1">Venchi</h4>
             <p className="text-sm text-gray-700 mb-2">Chocolate y gelato (cadena de calidad, en Via del Corso)</p>
             <a
