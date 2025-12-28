@@ -1,5 +1,5 @@
-import React from 'react';
-import { ArrowLeft, Share2, Clock, MapPin, ExternalLink } from 'lucide-react';
+import React, { useState, useRef } from 'react';
+import { ArrowLeft, Share2, Clock, MapPin, ExternalLink, ChevronDown, ChevronUp } from 'lucide-react';
 import StickyTableOfContents from './StickyTableOfContents';
 
 interface BudapestGuideArticleProps {
@@ -7,6 +7,30 @@ interface BudapestGuideArticleProps {
 }
 
 const BudapestGuideArticle: React.FC<BudapestGuideArticleProps> = ({ onBack }) => {
+  const [expandedZone, setExpandedZone] = useState<string | null>(null);
+
+  const centroPestRef = useRef<HTMLDivElement>(null);
+  const castilloBudaRef = useRef<HTMLDivElement>(null);
+
+  const toggleZone = (zoneId: string) => {
+    const newExpandedZone = expandedZone === zoneId ? null : zoneId;
+    setExpandedZone(newExpandedZone);
+
+    if (newExpandedZone === zoneId) {
+      setTimeout(() => {
+        const refMap: { [key: string]: React.RefObject<HTMLDivElement> } = {
+          'centro-pest': centroPestRef,
+          'castillo-buda': castilloBudaRef
+        };
+
+        const ref = refMap[zoneId];
+        if (ref?.current) {
+          ref.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      }, 100);
+    }
+  };
+
   const sections = [
     { id: 'por-que-visitar', title: '¿Por qué visitar Budapest?' },
     { id: 'llegada-aeropuerto', title: 'Llegada y Aeropuerto' },
@@ -171,7 +195,7 @@ return (
     <p className="text-gray-600 mb-6">Las mejores zonas y hoteles recomendados para tu estancia</p>
 
     <div className="space-y-6">
-      <div className="bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300">
+      <div ref={centroPestRef} className="bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300">
         <div className="flex items-center mb-4">
           <div className="w-12 h-12 bg-gradient-to-br from-sky-500 to-blue-500 rounded-xl flex items-center justify-center mr-4">
             <span className="text-2xl">🏛️</span>
@@ -185,7 +209,22 @@ return (
           </div>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-4">
+        <button
+          onClick={() => toggleZone('centro-pest')}
+          className="flex items-center gap-2 text-black hover:text-gray-800 transition-colors font-medium mb-4"
+        >
+          {expandedZone === 'centro-pest' ?
+            <ChevronUp className="w-5 h-5" /> :
+            <ChevronDown className="w-5 h-5" />
+          }
+          <span>
+            {expandedZone === 'centro-pest' ? 'Ocultar' : 'Ver'} hoteles recomendados
+          </span>
+        </button>
+
+        {expandedZone === 'centro-pest' && (
+          <div className="animate-fadeIn border-t border-gray-200 pt-4">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-4">
           <div className="hotel-card border-l-4 border-sky-400 bg-sky-100/60">
             <div className="hotel-header">
               <h3 className="hotel-name">Callas House</h3>
@@ -274,14 +313,16 @@ return (
           </div>
         </div>
 
-        <div className="bg-green-50 border border-green-200 rounded-lg p-3">
-          <p className="text-sm text-green-800">
-            <strong>✅ Por qué elegir esta zona:</strong> El corazón de Budapest, cerca del Parlamento, Basílica de San Esteban y la Avenida Andrássy. Todo a pie o metro cercano, muchos restaurantes y cafés, zona segura y animada.
-          </p>
-        </div>
+            <div className="bg-green-50 border border-green-200 rounded-lg p-3 mt-4">
+              <p className="text-sm text-green-800">
+                <strong>✅ Por qué elegir esta zona:</strong> El corazón de Budapest, cerca del Parlamento, Basílica de San Esteban y la Avenida Andrássy. Todo a pie o metro cercano, muchos restaurantes y cafés, zona segura y animada.
+              </p>
+            </div>
+          </div>
+        )}
       </div>
 
-      <div className="bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300">
+      <div ref={castilloBudaRef} className="bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300">
         <div className="flex items-center mb-4">
           <div className="w-12 h-12 bg-gradient-to-br from-emerald-500 to-green-500 rounded-xl flex items-center justify-center mr-4">
             <span className="text-2xl">🏰</span>
@@ -295,7 +336,22 @@ return (
           </div>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+        <button
+          onClick={() => toggleZone('castillo-buda')}
+          className="flex items-center gap-2 text-black hover:text-gray-800 transition-colors font-medium mb-4"
+        >
+          {expandedZone === 'castillo-buda' ?
+            <ChevronUp className="w-5 h-5" /> :
+            <ChevronDown className="w-5 h-5" />
+          }
+          <span>
+            {expandedZone === 'castillo-buda' ? 'Ocultar' : 'Ver'} hoteles recomendados
+          </span>
+        </button>
+
+        {expandedZone === 'castillo-buda' && (
+          <div className="animate-fadeIn border-t border-gray-200 pt-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
           <div className="hotel-card border-l-4 border-emerald-400 bg-emerald-100/60">
             <div className="hotel-header">
               <h3 className="hotel-name">Leon Hotel & Lounge</h3>
@@ -355,11 +411,13 @@ return (
           </div>
         </div>
 
-        <div className="bg-green-50 border border-green-200 rounded-lg p-3">
-          <p className="text-sm text-green-800">
-            <strong>✅ Por qué elegir esta zona:</strong> Zona tranquila y pintoresca en la colina de Buda, con el Castillo, Bastión de los Pescadores y vistas espectaculares del Danubio. Ideal para ambiente más relajado y romántico.
-          </p>
-        </div>
+            <div className="bg-green-50 border border-green-200 rounded-lg p-3 mt-4">
+              <p className="text-sm text-green-800">
+                <strong>✅ Por qué elegir esta zona:</strong> Zona tranquila y pintoresca en la colina de Buda, con el Castillo, Bastión de los Pescadores y vistas espectaculares del Danubio. Ideal para ambiente más relajado y romántico.
+              </p>
+            </div>
+          </div>
+        )}
       </div>
     </div>
   </div>
