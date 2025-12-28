@@ -570,7 +570,7 @@ return (
           </div>
         </div>
         <a href="https://gyg.me/RzYQ9OzH" target="_blank" rel="noopener noreferrer"
-           className="btn-hotel mt-6">
+           className="btn-hotel mt-8">
           <span>🚶‍♂️ Reservar tour con guía local</span>
           <ExternalLink className="external-icon" />
         </a>
@@ -619,7 +619,7 @@ return (
           <ExternalLink className="external-icon" />
         </a>
         <a href="https://gyg.me/vbht7C3s" target="_blank" rel="noopener noreferrer"
-           className="btn-hotel mt-3">
+           className="btn-hotel mt-4">
           <span>🎯 Tour Patrimonio Judío completo</span>
           <ExternalLink className="external-icon" />
         </a>
