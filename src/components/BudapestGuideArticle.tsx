@@ -569,11 +569,13 @@ return (
             </ul>
           </div>
         </div>
-        <a href="https://gyg.me/RzYQ9OzH" target="_blank" rel="noopener noreferrer"
-           className="btn-hotel mt-8">
-          <span>🚶‍♂️ Reservar tour con guía local</span>
-          <ExternalLink className="external-icon" />
-        </a>
+        <div className="mt-6">
+          <a href="https://gyg.me/RzYQ9OzH" target="_blank" rel="noopener noreferrer"
+             className="btn-hotel">
+            <span>🚶‍♂️ Reservar tour con guía local</span>
+            <ExternalLink className="external-icon" />
+          </a>
+        </div>
       </div>
     </div>
 
