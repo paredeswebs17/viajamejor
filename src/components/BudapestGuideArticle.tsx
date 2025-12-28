@@ -534,9 +534,9 @@ return (
         </div>
         <div className="bg-white rounded-xl p-4 border border-gray-200 shadow-sm">
           <a href="https://gyg.me/gMPSGtKr" target="_blank" rel="noopener noreferrer"
-             className="inline-flex items-center bg-gradient-to-r from-sky-500 to-blue-500 hover:from-sky-600 hover:to-blue-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm">
-            🏛️ Reservar entradas oficiales del Parlamento
-            <ExternalLink className="h-3 w-3 ml-2" />
+             className="btn-hotel">
+            <span>🏛️ Reservar entradas oficiales del Parlamento</span>
+            <ExternalLink className="external-icon" />
           </a>
         </div>
       </div>
@@ -573,9 +573,9 @@ return (
         </div>
         <div className="bg-white rounded-xl p-4 border border-gray-200 shadow-sm mt-4">
           <a href="https://gyg.me/RzYQ9OzH" target="_blank" rel="noopener noreferrer"
-             className="inline-flex items-center bg-gradient-to-r from-emerald-500 to-green-500 hover:from-emerald-600 hover:to-green-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm">
-            🚶‍♂️ Reservar tour con guía local
-            <ExternalLink className="h-3 w-3 ml-2" />
+             className="btn-hotel">
+            <span>🚶‍♂️ Reservar tour con guía local</span>
+            <ExternalLink className="external-icon" />
           </a>
         </div>
       </div>
@@ -619,16 +619,16 @@ return (
         </div>
         <div className="bg-white rounded-xl p-4 border border-gray-200 shadow-sm">
           <a href="https://jewishtourhungary.com/es/cart" target="_blank" rel="noopener noreferrer"
-             className="inline-flex items-center bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm">
-            🕍 Entradas oficiales Gran Sinagoga
-            <ExternalLink className="h-3 w-3 ml-2" />
+             className="btn-hotel">
+            <span>🕍 Entradas oficiales Gran Sinagoga</span>
+            <ExternalLink className="external-icon" />
           </a>
         </div>
         <div className="bg-white rounded-xl p-4 border border-gray-200 shadow-sm mt-4">
           <a href="https://gyg.me/vbht7C3s" target="_blank" rel="noopener noreferrer"
-             className="inline-flex items-center bg-gradient-to-r from-indigo-500 to-purple-500 hover:from-indigo-600 hover:to-purple-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm">
-            🎯 Tour Patrimonio Judío completo
-            <ExternalLink className="h-3 w-3 ml-2" />
+             className="btn-hotel">
+            <span>🎯 Tour Patrimonio Judío completo</span>
+            <ExternalLink className="external-icon" />
           </a>
         </div>
       </div>
@@ -671,9 +671,9 @@ return (
         </div>
        <div className="bg-white rounded-xl p-4 border border-gray-200 shadow-sm">
           <a href="https://gyg.me/BQZi7YH9" target="_blank" rel="noopener noreferrer"
-             className="inline-flex items-center bg-gradient-to-r from-blue-500 to-indigo-500 hover:from-blue-600 hover:to-indigo-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm">
-            ⛪ Reservar entradas Basílica San Esteban
-            <ExternalLink className="h-3 w-3 ml-2" />
+             className="btn-hotel">
+            <span>⛪ Reservar entradas Basílica San Esteban</span>
+            <ExternalLink className="external-icon" />
           </a>
         </div>
 
@@ -723,9 +723,9 @@ return (
         </div>
         <div className="bg-white rounded-xl p-4 border border-gray-200 shadow-sm">
           <a href="https://szimpla.hu/" target="_blank" rel="noopener noreferrer"
-             className="inline-flex items-center bg-gradient-to-r from-red-500 to-pink-500 hover:from-red-600 hover:to-pink-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm">
-            🍺 Szimpla Kert oficial
-            <ExternalLink className="h-3 w-3 ml-2" />
+             className="btn-hotel">
+            <span>🍺 Szimpla Kert oficial</span>
+            <ExternalLink className="external-icon" />
           </a>
           <p className="text-xs text-emerald-600 mt-1">Mercadillo dominical 9:00-14:00h</p>
         </div>
@@ -855,9 +855,9 @@ return (
         </div>
         <div className="bg-white rounded-xl p-4 border border-gray-200 shadow-sm mt-4">
           <a href="https://gyg.me/YnvSUuzy" target="_blank" rel="noopener noreferrer"
-             className="inline-flex items-center bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm">
-            🛥️ Reservar Crucero Nocturno por el Danubio
-            <ExternalLink className="h-3 w-3 ml-2" />
+             className="btn-hotel">
+            <span>🛥️ Reservar Crucero Nocturno por el Danubio</span>
+            <ExternalLink className="external-icon" />
           </a>
         </div>
         <div className="bg-orange-100 border border-orange-300 rounded-xl p-4 mt-4">
@@ -932,9 +932,9 @@ return (
         
         <div className="bg-white rounded-xl p-4 border border-gray-200 shadow-sm mb-4">
           <a href="https://gyg.me/cTU7N3tH" target="_blank" rel="noopener noreferrer"
-             className="inline-flex items-center bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-600 hover:to-teal-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm">
-            🏊‍♂️ Entradas oficiales Széchenyi
-            <ExternalLink className="h-3 w-3 ml-2" />
+             className="btn-hotel">
+            <span>🏊‍♂️ Entradas oficiales Széchenyi</span>
+            <ExternalLink className="external-icon" />
           </a>
           <p className="text-xs text-gray-600 mt-1">Horario: 6:00-22:00 todos los días</p>
         </div>
@@ -1025,9 +1025,9 @@ src="https://images.pexels.com/photos/20763018/pexels-photo-20763018.jpeg"
         </div>
         <div className="bg-white rounded-xl p-4 border border-gray-200 shadow-sm">
           <a href="https://newyorkcafe.hu/en/" target="_blank" rel="noopener noreferrer"
-             className="inline-flex items-center bg-gradient-to-r from-yellow-500 to-orange-500 hover:from-yellow-600 hover:to-orange-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm">
-            ☕ Reservas New York Café
-            <ExternalLink className="h-3 w-3 ml-2" />
+             className="btn-hotel">
+            <span>☕ Reservas New York Café</span>
+            <ExternalLink className="external-icon" />
           </a>
           <p className="text-xs text-gray-600 mt-1">Horario: 8:00-24:00 (lun-mié), 8:00-01:00 (jue-dom)</p>
         </div>
