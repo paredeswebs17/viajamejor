@@ -115,6 +115,12 @@ Volver a guías
   <div id="llegada-aeropuerto" className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
     <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">🚗 Llegada y Conexiones Eficientes</h2>
 
+    <div className="bg-blue-50 border border-blue-200 rounded-xl p-4 mb-6">
+      <p className="text-sm text-blue-900">
+        <strong>Haz clic en el aeropuerto de llegada</strong> para ver todas las opciones de transporte disponibles con precios actualizados.
+      </p>
+    </div>
+
     <div className="mb-8">
       <h3 className="text-lg font-bold text-gray-900 mb-4">✈️ Desde Aeropuerto de Schiphol (AMS)</h3>
       
