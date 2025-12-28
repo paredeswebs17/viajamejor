@@ -176,71 +176,101 @@ return (
           <div className="w-12 h-12 bg-gradient-to-br from-sky-500 to-blue-500 rounded-xl flex items-center justify-center mr-4">
             <span className="text-2xl">🏛️</span>
           </div>
-          <div>
+          <div className="flex-1">
             <h3 className="text-xl font-bold text-gray-900">Centro de Pest</h3>
-            <p className="text-sm text-gray-600">La ubicación más cómoda para visitar Budapest</p>
+            <p className="text-sm text-gray-600 mb-2">La ubicación más cómoda para visitar Budapest</p>
+            <p className="font-semibold text-lg text-blue-600">
+              💰 Precio medio: 70-140€/noche
+            </p>
           </div>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-4">
-          <div className="bg-gradient-to-br from-sky-50 to-blue-50 rounded-xl p-4 border border-sky-200 flex flex-col">
-            <div className="flex-grow">
-              <h4 className="font-bold text-gray-900 mb-2">Callas House ⭐⭐⭐⭐</h4>
-              <p className="text-xs text-gray-600 mb-2">📍 Centro de Pest</p>
-              <p className="text-sm text-gray-700 mb-3">Hotel moderno en pleno corazón de Budapest. Perfecto para explorar la ciudad a pie.</p>
+          <div className="hotel-card border-l-4 border-sky-400 bg-sky-100/60">
+            <div className="hotel-header">
+              <h3 className="hotel-name">Callas House</h3>
+              <div className="hotel-stars">⭐⭐⭐⭐</div>
             </div>
-            <div className="flex items-center justify-between flex-wrap gap-2 mt-auto">
-              <span className="text-lg font-bold text-sky-600">€€</span>
-              <a
-                href="https://booking.tpk.lv/wmbhJqcN"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm"
-              >
-                Ver en Booking
-                <ExternalLink className="h-3 w-3 ml-2" />
-              </a>
+
+            <div className="hotel-location">
+              <span className="location-icon">📍</span>
+              <span>Centro de Pest</span>
             </div>
+
+            <p className="hotel-description">
+              <strong>Hotel moderno en pleno corazón de Budapest.</strong> Perfecto para explorar la ciudad a pie. Ubicación privilegiada cerca de las principales atracciones turísticas y zonas comerciales.
+            </p>
+
+            <div className="bg-sky-50 border border-sky-200 rounded p-2 mb-3 mt-3">
+              <p className="text-xs text-sky-700">
+                📍 <strong>Qué hay cerca:</strong> Parlamento Húngaro, Basílica de San Esteban, Avenida Andrássy. Metro cercano para conexiones rápidas. Zona segura con muchos restaurantes y cafés.
+              </p>
+            </div>
+
+            <a href="https://booking.tpk.lv/wmbhJqcN" target="_blank" rel="noopener noreferrer" className="btn-hotel">
+              <span>Ver disponibilidad y precios</span>
+              <svg className="external-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+              </svg>
+            </a>
           </div>
 
-          <div className="bg-gradient-to-br from-cyan-50 to-teal-50 rounded-xl p-4 border border-cyan-200 flex flex-col">
-            <div className="flex-grow">
-              <h4 className="font-bold text-gray-900 mb-2">Barceló Budapest ⭐⭐⭐⭐</h4>
-              <p className="text-xs text-gray-600 mb-2">📍 Centro de Pest</p>
-              <p className="text-sm text-gray-700 mb-3">Hotel de cadena internacional con todas las comodidades. Excelente ubicación céntrica.</p>
+          <div className="hotel-card border-l-4 border-teal-400 bg-teal-100/60">
+            <div className="hotel-header">
+              <h3 className="hotel-name">Barceló Budapest</h3>
+              <div className="hotel-stars">⭐⭐⭐⭐</div>
             </div>
-            <div className="flex items-center justify-between flex-wrap gap-2 mt-auto">
-              <span className="text-lg font-bold text-cyan-600">€€</span>
-              <a
-                href="https://booking.tpk.lv/qi1gAX1t"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm"
-              >
-                Ver en Booking
-                <ExternalLink className="h-3 w-3 ml-2" />
-              </a>
+
+            <div className="hotel-location">
+              <span className="location-icon">📍</span>
+              <span>Centro de Pest</span>
             </div>
+
+            <p className="hotel-description">
+              <strong>Hotel de cadena internacional con todas las comodidades.</strong> Excelente ubicación céntrica con servicios de alta calidad. Ideal para quienes buscan confort y profesionalidad garantizada.
+            </p>
+
+            <div className="bg-teal-50 border border-teal-200 rounded p-2 mb-3 mt-3">
+              <p className="text-xs text-teal-700">
+                📍 <strong>Qué hay cerca:</strong> Centro histórico de Budapest, excelente acceso a transporte público. Rodeado de restaurantes, tiendas y atracciones turísticas principales.
+              </p>
+            </div>
+
+            <a href="https://booking.tpk.lv/qi1gAX1t" target="_blank" rel="noopener noreferrer" className="btn-hotel">
+              <span>Ver disponibilidad y precios</span>
+              <svg className="external-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+              </svg>
+            </a>
           </div>
 
-          <div className="bg-gradient-to-br from-indigo-50 to-blue-50 rounded-xl p-4 border border-indigo-200 flex flex-col">
-            <div className="flex-grow">
-              <h4 className="font-bold text-gray-900 mb-2">Hotel Oktogon Haggenmacher ⭐⭐⭐⭐</h4>
-              <p className="text-xs text-gray-600 mb-2">📍 Oktogon, Centro de Pest</p>
-              <p className="text-sm text-gray-700 mb-3">Hotel elegante junto a la Avenida Andrássy. Ubicación premium con excelente transporte.</p>
+          <div className="hotel-card border-l-4 border-violet-400 bg-violet-100/60">
+            <div className="hotel-header">
+              <h3 className="hotel-name">Hotel Oktogon Haggenmacher</h3>
+              <div className="hotel-stars">⭐⭐⭐⭐</div>
             </div>
-            <div className="flex items-center justify-between flex-wrap gap-2 mt-auto">
-              <span className="text-lg font-bold text-indigo-600">€€</span>
-              <a
-                href="https://booking.tpk.lv/hTegcgZC"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm"
-              >
-                Ver en Booking
-                <ExternalLink className="h-3 w-3 ml-2" />
-              </a>
+
+            <div className="hotel-location">
+              <span className="location-icon">📍</span>
+              <span>Oktogon, Centro de Pest</span>
             </div>
+
+            <p className="hotel-description">
+              <strong>Hotel elegante junto a la Avenida Andrássy.</strong> Ubicación premium con excelente transporte. Perfecto para explorar tanto el centro como las zonas más elegantes de la ciudad.
+            </p>
+
+            <div className="bg-violet-50 border border-violet-200 rounded p-2 mb-3 mt-3">
+              <p className="text-xs text-violet-700">
+                📍 <strong>Qué hay cerca:</strong> Plaza Oktogon, Avenida Andrássy (Patrimonio UNESCO), Teatro de la Ópera. Acceso directo al metro M1 (línea histórica).
+              </p>
+            </div>
+
+            <a href="https://booking.tpk.lv/hTegcgZC" target="_blank" rel="noopener noreferrer" className="btn-hotel">
+              <span>Ver disponibilidad y precios</span>
+              <svg className="external-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+              </svg>
+            </a>
           </div>
         </div>
 
@@ -256,51 +286,72 @@ return (
           <div className="w-12 h-12 bg-gradient-to-br from-emerald-500 to-green-500 rounded-xl flex items-center justify-center mr-4">
             <span className="text-2xl">🏰</span>
           </div>
-          <div>
+          <div className="flex-1">
             <h3 className="text-xl font-bold text-gray-900">Castillo de Buda</h3>
-            <p className="text-sm text-gray-600">Zona histórica con encanto y vistas panorámicas</p>
+            <p className="text-sm text-gray-600 mb-2">Zona histórica con encanto y vistas panorámicas</p>
+            <p className="font-semibold text-lg text-blue-600">
+              💰 Precio medio: 80-160€/noche
+            </p>
           </div>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
-          <div className="bg-gradient-to-br from-emerald-50 to-green-50 rounded-xl p-4 border border-emerald-200 flex flex-col">
-            <div className="flex-grow">
-              <h4 className="font-bold text-gray-900 mb-2">Leon Hotel & Lounge ⭐⭐⭐⭐</h4>
-              <p className="text-xs text-gray-600 mb-2">📍 Castillo de Buda</p>
-              <p className="text-sm text-gray-700 mb-3">Hotel boutique en zona histórica de Buda. Ambiente elegante y tranquilo con vistas al Danubio.</p>
+          <div className="hotel-card border-l-4 border-emerald-400 bg-emerald-100/60">
+            <div className="hotel-header">
+              <h3 className="hotel-name">Leon Hotel & Lounge</h3>
+              <div className="hotel-stars">⭐⭐⭐⭐</div>
             </div>
-            <div className="flex items-center justify-between flex-wrap gap-2 mt-auto">
-              <span className="text-lg font-bold text-emerald-600">€€</span>
-              <a
-                href="https://booking.tpk.lv/qZFhW1kp"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm"
-              >
-                Ver en Booking
-                <ExternalLink className="h-3 w-3 ml-2" />
-              </a>
+
+            <div className="hotel-location">
+              <span className="location-icon">📍</span>
+              <span>Castillo de Buda</span>
             </div>
+
+            <p className="hotel-description">
+              <strong>Hotel boutique en zona histórica de Buda.</strong> Ambiente elegante y tranquilo con vistas al Danubio. Ideal para quienes buscan una experiencia más exclusiva y relajante en la parte alta de la ciudad.
+            </p>
+
+            <div className="bg-emerald-50 border border-emerald-200 rounded p-2 mb-3 mt-3">
+              <p className="text-xs text-emerald-700">
+                📍 <strong>Qué hay cerca:</strong> Castillo de Buda, Bastión de los Pescadores, Iglesia de Matías. Vistas panorámicas del Danubio y Pest. Zona tranquila y romántica.
+              </p>
+            </div>
+
+            <a href="https://booking.tpk.lv/qZFhW1kp" target="_blank" rel="noopener noreferrer" className="btn-hotel">
+              <span>Ver disponibilidad y precios</span>
+              <svg className="external-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+              </svg>
+            </a>
           </div>
 
-          <div className="bg-gradient-to-br from-teal-50 to-cyan-50 rounded-xl p-4 border border-teal-200 flex flex-col">
-            <div className="flex-grow">
-              <h4 className="font-bold text-gray-900 mb-2">Monastery Boutique Hotel ⭐⭐⭐⭐</h4>
-              <p className="text-xs text-gray-600 mb-2">📍 Castillo de Buda</p>
-              <p className="text-sm text-gray-700 mb-3">Hotel boutique único en edificio histórico. Diseño exclusivo en la zona del Castillo de Buda.</p>
+          <div className="hotel-card border-l-4 border-cyan-400 bg-cyan-100/60">
+            <div className="hotel-header">
+              <h3 className="hotel-name">Monastery Boutique Hotel</h3>
+              <div className="hotel-stars">⭐⭐⭐⭐</div>
             </div>
-            <div className="flex items-center justify-between flex-wrap gap-2 mt-auto">
-              <span className="text-lg font-bold text-teal-600">€€</span>
-              <a
-                href="https://booking.tpk.lv/q3Q85yF6"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm"
-              >
-                Ver en Booking
-                <ExternalLink className="h-3 w-3 ml-2" />
-              </a>
+
+            <div className="hotel-location">
+              <span className="location-icon">📍</span>
+              <span>Castillo de Buda</span>
             </div>
+
+            <p className="hotel-description">
+              <strong>Hotel boutique único en edificio histórico.</strong> Diseño exclusivo en la zona del Castillo de Buda. Combina arquitectura histórica con comodidades modernas para una experiencia memorable.
+            </p>
+
+            <div className="bg-cyan-50 border border-cyan-200 rounded p-2 mb-3 mt-3">
+              <p className="text-xs text-cyan-700">
+                📍 <strong>Qué hay cerca:</strong> Distrito del Castillo, calles adoquinadas históricas. Ambiente auténtico con galerías, museos y miradores. Perfecto para amantes de la historia.
+              </p>
+            </div>
+
+            <a href="https://booking.tpk.lv/q3Q85yF6" target="_blank" rel="noopener noreferrer" className="btn-hotel">
+              <span>Ver disponibilidad y precios</span>
+              <svg className="external-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+              </svg>
+            </a>
           </div>
         </div>
 
