@@ -613,16 +613,18 @@ return (
             </ul>
           </div>
         </div>
-        <a href="https://jewishtourhungary.com/es/cart" target="_blank" rel="noopener noreferrer"
-           className="btn-hotel mt-4">
-          <span>🕍 Entradas oficiales Gran Sinagoga</span>
-          <ExternalLink className="external-icon" />
-        </a>
-        <a href="https://gyg.me/vbht7C3s" target="_blank" rel="noopener noreferrer"
-           className="btn-hotel mt-4">
-          <span>🎯 Tour Patrimonio Judío completo</span>
-          <ExternalLink className="external-icon" />
-        </a>
+        <div className="flex flex-col gap-4 mt-4">
+          <a href="https://jewishtourhungary.com/es/cart" target="_blank" rel="noopener noreferrer"
+             className="btn-hotel">
+            <span>🕍 Entradas oficiales Gran Sinagoga</span>
+            <ExternalLink className="external-icon" />
+          </a>
+          <a href="https://gyg.me/vbht7C3s" target="_blank" rel="noopener noreferrer"
+             className="btn-hotel">
+            <span>🎯 Tour Patrimonio Judío completo</span>
+            <ExternalLink className="external-icon" />
+          </a>
+        </div>
       </div>
     </div>
 
