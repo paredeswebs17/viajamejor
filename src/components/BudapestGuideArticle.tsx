@@ -543,36 +543,36 @@ return (
     <div className="mb-8">
       <h3 className="text-lg font-bold text-gray-900 mb-4 flex items-center">
         <div className="w-1 h-6 bg-gradient-to-b from-emerald-400 to-green-400 rounded-full mr-3"></div>
-        Inmersión Local (11:00h)
+        Free tour Budapest (11:00h)
       </h3>
       <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
         <h4 className="text-lg font-bold text-gray-900 mb-3">Recorrido Histórico</h4>
         <p className="text-gray-700 mb-4">
-          Conecta con la auténtica Budapest a través de guías locales apasionados.
+          Descubre la auténtica Budapest con guías locales apasionados. Tour premiado como el más popular a nivel global.
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <div>
             <h5 className="font-semibold text-gray-900 mb-2">Detalles del tour:</h5>
             <ul className="text-sm text-gray-700 space-y-1 list-none">
-              <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Costo: Según recorrido</li>
+              <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Costo: En forma de propinas</li>
               <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Duración: 2h 30min aprox.</li>
-              <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>Inicio: Plaza Vörösmarty (punto céntrico)</li>
+              <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>Inicio: Plaza Madách Imre</li>
             </ul>
           </div>
           <div>
             <h5 className="font-semibold text-gray-900 mb-2">Descubrirás:</h5>
             <ul className="text-sm text-gray-700 space-y-1 list-none">
-              <li className="flex items-center"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3"></span>Secretos históricos</li>
-              <li className="flex items-center"><span className="w-2 h-2 bg-pink-400 rounded-full mr-3"></span>Mejores rincones fotogénicos</li>
-              <li className="flex items-center"><span className="w-2 h-2 bg-indigo-400 rounded-full mr-3"></span>Final: Entrada de la Sinagoga Central</li>
+              <li className="flex items-center"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3"></span>Basílica de San Esteban</li>
+              <li className="flex items-center"><span className="w-2 h-2 bg-pink-400 rounded-full mr-3"></span>Castillo de Buda</li>
+              <li className="flex items-center"><span className="w-2 h-2 bg-indigo-400 rounded-full mr-3"></span>Edificio del Parlamento</li>
               <li className="flex items-center"><span className="w-2 h-2 bg-emerald-400 rounded-full mr-3"></span>Idioma: Español disponible</li>
             </ul>
           </div>
         </div>
         <div className="mt-6">
-          <a href="https://gyg.me/RzYQ9OzH" target="_blank" rel="noopener noreferrer"
+          <a href="https://www.freetour.com/es/budapest/free-tour-of-budapest?referralID=rFW5gyO0D7w7JOqo&campaign=FreetourBudapestCiudad" target="_blank" rel="noopener noreferrer"
              className="btn-hotel">
-            <span>🚶‍♂️ Reservar tour con guía local</span>
+            <span>🚶‍♂️ Reservar free tour gratis</span>
             <ExternalLink className="external-icon" />
           </a>
         </div>
