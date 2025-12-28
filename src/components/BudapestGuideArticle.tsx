@@ -8,6 +8,7 @@ interface BudapestGuideArticleProps {
 
 const BudapestGuideArticle: React.FC<BudapestGuideArticleProps> = ({ onBack }) => {
   const [expandedZone, setExpandedZone] = useState<string | null>(null);
+  const [expandedAirport, setExpandedAirport] = useState<string | null>(null);
 
   const centroPestRef = useRef<HTMLDivElement>(null);
   const castilloBudaRef = useRef<HTMLDivElement>(null);
@@ -29,6 +30,10 @@ const BudapestGuideArticle: React.FC<BudapestGuideArticleProps> = ({ onBack }) =
         }
       }, 100);
     }
+  };
+
+  const toggleAirport = (airportId: string) => {
+    setExpandedAirport(expandedAirport === airportId ? null : airportId);
   };
 
   const sections = [
@@ -140,10 +145,22 @@ return (
   <div id="llegada-aeropuerto" className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
     <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">✈️ Llegada y Conexiones desde el Aeropuerto</h2>
 
-    <div className="mb-8">
-      <h3 className="text-lg font-bold text-gray-900 mb-4">Desde Aeropuerto Ferenc Liszt</h3>
+    <button
+      onClick={() => toggleAirport('ferenc-liszt')}
+      className="w-full bg-gradient-to-r from-blue-500 to-sky-500 hover:from-blue-600 hover:to-sky-600 text-white rounded-xl p-4 mb-3 flex items-center justify-between transition-all duration-300 shadow-md hover:shadow-lg"
+    >
+      <div className="flex items-center gap-3">
+        <span className="text-2xl">✈️</span>
+        <span className="font-bold text-lg">Aeropuerto Ferenc Liszt (BUD)</span>
+      </div>
+      {expandedAirport === 'ferenc-liszt' ? <ChevronUp className="w-6 h-6" /> : <ChevronDown className="w-6 h-6" />}
+    </button>
 
-      <div className="bg-blue-50 border border-blue-200 rounded-xl p-6 mb-4">
+    {expandedAirport === 'ferenc-liszt' && (
+      <div className="mb-8 animate-fadeIn">
+        <h3 className="text-lg font-bold text-gray-900 mb-4 mt-4">📍 Desde Aeropuerto Ferenc Liszt</h3>
+
+        <div className="bg-blue-50 border border-blue-200 rounded-xl p-6 mb-4">
         <h4 className="font-bold text-gray-900 mb-3">🚌 Bus 100E Airport Express - La Opción Más Práctica</h4>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <div>
@@ -184,7 +201,8 @@ return (
           <ExternalLink className="h-4 w-4 ml-2" />
         </a>
       </div>
-    </div>
+      </div>
+    )}
   </div>
 
   {/* SECCIÓN 3: DÓNDE ALOJARSE - NUEVA */}
