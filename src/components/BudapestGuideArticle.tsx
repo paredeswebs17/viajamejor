@@ -1370,7 +1370,7 @@ src="https://images.pexels.com/photos/30734949/pexels-photo-30734949.jpeg"
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
         <div className="bg-orange-50 border border-orange-200 rounded-xl p-4 shadow-sm hover:shadow-md transition-all duration-300">
           <h4 className="font-semibold text-gray-900 mb-2">
-            <a href="https://www.google.com/maps/place/Budapest,+Mazel+Tov,+Ak%C3%A1cfa+u.+47,+1073+Hungr%C3%ADa/@47.5002778,19.0655242,17z/data=!4m6!3m5!1s0x4741dc68eb5c0b91:0xf5991cd91e93b8f8!8m2!3d47.5002778!4d19.0655242!16s%2Fg%2F11b6qhjx3q" target="_blank" rel="noopener noreferrer" className="underline hover:text-orange-900">Mazel Tov</a> ⭐ 4.6
+            <a href="https://www.google.com/maps/place/Budapest,+Mazel+Tov,+Ak%C3%A1cfa+u.+47,+1073+Hungr%C3%ADa/@47.5002778,19.0655242,17z/data=!4m6!3m5!1s0x4741dc68eb5c0b91:0xf5991cd91e93b8f8!8m2!3d47.5002778!4d19.0655242!16s%2Fg%2F11b6qhjx3q" target="_blank" rel="noopener noreferrer" className="underline hover:text-orange-900 inline-flex items-center gap-1">Mazel Tov <ExternalLink className="w-3 h-3" /></a> ⭐ 4.6
           </h4>
           <p className="text-sm text-gray-700 mb-2">Gastronomía mediterránea y de Oriente Medio en un patio cubierto con vegetación. Hummus, mezze y shawarma excepcionales.</p>
           <p className="text-xs text-orange-700 mb-1"><strong>Dónde:</strong> Akácfa u. 47, District VII (Barrio Judío)</p>
@@ -1379,7 +1379,7 @@ src="https://images.pexels.com/photos/30734949/pexels-photo-30734949.jpeg"
 
         <div className="bg-orange-50 border border-orange-200 rounded-xl p-4 shadow-sm hover:shadow-md transition-all duration-300">
           <h4 className="font-semibold text-gray-900 mb-2">
-            <a href="https://www.google.com/maps/place/Budapest,+Restaurant+Menza,+Liszt+Ferenc+t%C3%A9r+2,+1061+Hungr%C3%ADa/@47.5039639,19.0628165,17z/data=!4m6!3m5!1s0x4741dc6e9b62d4d5:0x361daa1bec9740fe!8m2!3d47.5039639!4d19.0628165!16s%2Fg%2F1v6p31kz" target="_blank" rel="noopener noreferrer" className="underline hover:text-orange-900">Menza</a> ⭐ 4.4
+            <a href="https://www.google.com/maps/place/Budapest,+Restaurant+Menza,+Liszt+Ferenc+t%C3%A9r+2,+1061+Hungr%C3%ADa/@47.5039639,19.0628165,17z/data=!4m6!3m5!1s0x4741dc6e9b62d4d5:0x361daa1bec9740fe!8m2!3d47.5039639!4d19.0628165!16s%2Fg%2F1v6p31kz" target="_blank" rel="noopener noreferrer" className="underline hover:text-orange-900 inline-flex items-center gap-1">Menza <ExternalLink className="w-3 h-3" /></a> ⭐ 4.4
           </h4>
           <p className="text-sm text-gray-700 mb-2">Cocina húngara moderna con diseño retro de los años 70. Goulash, pancakes Hortobágyi y ambiente animado.</p>
           <p className="text-xs text-orange-700 mb-1"><strong>Dónde:</strong> Liszt Ferenc tér 2, District VI</p>
@@ -1388,7 +1388,7 @@ src="https://images.pexels.com/photos/30734949/pexels-photo-30734949.jpeg"
 
         <div className="bg-orange-50 border border-orange-200 rounded-xl p-4 shadow-sm hover:shadow-md transition-all duration-300">
           <h4 className="font-semibold text-gray-900 mb-2">
-            <a href="https://www.google.com/maps/place/Budapest,+Bistro+hungaro,+Steindl+Imre+u.+13,+1051+Hungr%C3%ADa/@47.5034835,19.0479192,17z/data=!4m6!3m5!1s0x4741dc14183e4511:0x2356a71b716602c5!8m2!3d47.5034835!4d19.0479192!16s%2Fg%2F1hhmyj4hm" target="_blank" rel="noopener noreferrer" className="underline hover:text-orange-900">Hungarikum Bisztró</a> ⭐ 4.7
+            <a href="https://www.google.com/maps/place/Budapest,+Bistro+hungaro,+Steindl+Imre+u.+13,+1051+Hungr%C3%ADa/@47.5034835,19.0479192,17z/data=!4m6!3m5!1s0x4741dc14183e4511:0x2356a71b716602c5!8m2!3d47.5034835!4d19.0479192!16s%2Fg%2F1hhmyj4hm" target="_blank" rel="noopener noreferrer" className="underline hover:text-orange-900 inline-flex items-center gap-1">Hungarikum Bisztró <ExternalLink className="w-3 h-3" /></a> ⭐ 4.7
           </h4>
           <p className="text-sm text-gray-700 mb-2">Alta cocina húngara cerca del Parlamento. Música tradicional en vivo, goulash excepcional y servicio atento.</p>
           <p className="text-xs text-orange-700 mb-1"><strong>Dónde:</strong> Steindl Imre u. 13, District V</p>
@@ -1397,7 +1397,7 @@ src="https://images.pexels.com/photos/30734949/pexels-photo-30734949.jpeg"
 
         <div className="bg-orange-50 border border-orange-200 rounded-xl p-4 shadow-sm hover:shadow-md transition-all duration-300">
           <h4 className="font-semibold text-gray-900 mb-2">
-            <a href="https://www.google.com/maps/place/Budapest,+Parisi+6,+P%C3%A1rizsi+u.+6b,+1052+Hungr%C3%ADa/@47.4941428,19.0536826,17z/data=!4m6!3m5!1s0x4741dc41484216ab:0x2d967a7684dbcc83!8m2!3d47.4941428!4d19.0536826!16s%2Fg%2F11cjg959zf" target="_blank" rel="noopener noreferrer" className="underline hover:text-orange-900">Parisi 6</a> ⭐ 4.7
+            <a href="https://www.google.com/maps/place/Budapest,+Parisi+6,+P%C3%A1rizsi+u.+6b,+1052+Hungr%C3%ADa/@47.4941428,19.0536826,17z/data=!4m6!3m5!1s0x4741dc41484216ab:0x2d967a7684dbcc83!8m2!3d47.4941428!4d19.0536826!16s%2Fg%2F11cjg959zf" target="_blank" rel="noopener noreferrer" className="underline hover:text-orange-900 inline-flex items-center gap-1">Parisi 6 <ExternalLink className="w-3 h-3" /></a> ⭐ 4.7
           </h4>
           <p className="text-sm text-gray-700 mb-2">Cocina húngara sofisticada con toque moderno. Pato crujiente, beef stew de la abuela y postres tradicionales.</p>
           <p className="text-xs text-orange-700 mb-1"><strong>Dónde:</strong> Párizsi u. 6b, District V (Centro)</p>
@@ -1406,7 +1406,7 @@ src="https://images.pexels.com/photos/30734949/pexels-photo-30734949.jpeg"
 
         <div className="bg-orange-50 border border-orange-200 rounded-xl p-4 shadow-sm hover:shadow-md transition-all duration-300">
           <h4 className="font-semibold text-gray-900 mb-2">
-            <a href="https://www.google.com/maps/place/Budapest,+The+Magic+Budapest,+Haj%C3%B3s+u.+25,+1065+Hungr%C3%ADa/@47.5040676,19.0574011,17z/data=!4m6!3m5!1s0x4741dd2111cfa28f:0xa4fa6fc46f2e2e90!8m2!3d47.5040676!4d19.0574011!16s%2Fg%2F11h7_nnxp3" target="_blank" rel="noopener noreferrer" className="underline hover:text-orange-900">The Magic Budapest</a> ⭐ 4.4
+            <a href="https://www.google.com/maps/place/Budapest,+The+Magic+Budapest,+Haj%C3%B3s+u.+25,+1065+Hungr%C3%ADa/@47.5040676,19.0574011,17z/data=!4m6!3m5!1s0x4741dd2111cfa28f:0xa4fa6fc46f2e2e90!8m2!3d47.5040676!4d19.0574011!16s%2Fg%2F11h7_nnxp3" target="_blank" rel="noopener noreferrer" className="underline hover:text-orange-900 inline-flex items-center gap-1">The Magic Budapest <ExternalLink className="w-3 h-3" /></a> ⭐ 4.4
           </h4>
           <p className="text-sm text-gray-700 mb-2">Restaurante temático de Harry Potter con ambiente mágico. Ideal para familias. Waffles, burgers y decoración encantada.</p>
           <p className="text-xs text-orange-700 mb-1"><strong>Dónde:</strong> Hajós u. 25, District VI</p>
@@ -1415,7 +1415,7 @@ src="https://images.pexels.com/photos/30734949/pexels-photo-30734949.jpeg"
 
         <div className="bg-orange-50 border border-orange-200 rounded-xl p-4 shadow-sm hover:shadow-md transition-all duration-300">
           <h4 className="font-semibold text-gray-900 mb-2">
-            <a href="https://www.google.com/maps/place/Budapest,+Frici+papa,+Kir%C3%A1ly+u.+55,+1077+Hungr%C3%ADa/@47.5023394,19.0637114,17z/data=!4m6!3m5!1s0x4741dc6ecddec10b:0xab18bc439df2bad4!8m2!3d47.5023394!4d19.0637114!16s%2Fg%2F11r96t66s" target="_blank" rel="noopener noreferrer" className="underline hover:text-orange-900">Frici Papa</a> ⭐ 4.3
+            <a href="https://www.google.com/maps/place/Budapest,+Frici+papa,+Kir%C3%A1ly+u.+55,+1077+Hungr%C3%ADa/@47.5023394,19.0637114,17z/data=!4m6!3m5!1s0x4741dc6ecddec10b:0xab18bc439df2bad4!8m2!3d47.5023394!4d19.0637114!16s%2Fg%2F11r96t66s" target="_blank" rel="noopener noreferrer" className="underline hover:text-orange-900 inline-flex items-center gap-1">Frici Papa <ExternalLink className="w-3 h-3" /></a> ⭐ 4.3
           </h4>
           <p className="text-sm text-gray-700 mb-2">Comida casera tradicional húngara como la de la abuela. Goulash auténtico, porciones enormes y precios económicos.</p>
           <p className="text-xs text-orange-700 mb-1"><strong>Dónde:</strong> Király u. 55, District VII</p>
@@ -1424,7 +1424,7 @@ src="https://images.pexels.com/photos/30734949/pexels-photo-30734949.jpeg"
 
         <div className="bg-orange-50 border border-orange-200 rounded-xl p-4 shadow-sm hover:shadow-md transition-all duration-300">
           <h4 className="font-semibold text-gray-900 mb-2">
-            <a href="https://www.google.com/maps/place/Budapest,+Trofea+Grill+Restaurant,+Kir%C3%A1ly+u.+30-32,+1061+Hungr%C3%ADa/@47.4999491,19.0593719,17z/data=!4m6!3m5!1s0x4741dc6980a21f35:0xba72d6dc4d9e4947!8m2!3d47.4999491!4d19.0593719!16s%2Fg%2F11r9pzrkc" target="_blank" rel="noopener noreferrer" className="underline hover:text-orange-900">Trofea Grill Restaurant</a> ⭐ 4.6
+            <a href="https://www.google.com/maps/place/Budapest,+Trofea+Grill+Restaurant,+Kir%C3%A1ly+u.+30-32,+1061+Hungr%C3%ADa/@47.4999491,19.0593719,17z/data=!4m6!3m5!1s0x4741dc6980a21f35:0xba72d6dc4d9e4947!8m2!3d47.4999491!4d19.0593719!16s%2Fg%2F11r9pzrkc" target="_blank" rel="noopener noreferrer" className="underline hover:text-orange-900 inline-flex items-center gap-1">Trofea Grill Restaurant <ExternalLink className="w-3 h-3" /></a> ⭐ 4.6
           </h4>
           <p className="text-sm text-gray-700 mb-2">Buffet libre ilimitado con +100 platos. Incluye bebidas (champagne, cerveza, vino). Gambas, salmón, atún y ternera premium.</p>
           <p className="text-xs text-orange-700 mb-1"><strong>Dónde:</strong> Király u. 30-32, District VI</p>
