@@ -1,5 +1,5 @@
-import React from 'react';
-import { ArrowLeft, Share2, Clock, MapPin, ExternalLink } from 'lucide-react';
+import React, { useState } from 'react';
+import { ArrowLeft, Share2, Clock, MapPin, ExternalLink, ChevronDown, ChevronUp } from 'lucide-react';
 import StickyTableOfContents from './StickyTableOfContents';
 
 interface AmsterdamGuideArticleProps {
@@ -7,6 +7,12 @@ onBack: () => void;
 }
 
 const AmsterdamGuideArticle: React.FC<AmsterdamGuideArticleProps> = ({ onBack }) => {
+  const [expandedAirport, setExpandedAirport] = useState<string | null>(null);
+
+  const toggleAirport = (airportId: string) => {
+    setExpandedAirport(expandedAirport === airportId ? null : airportId);
+  };
+
   const sections = [
     { id: 'por-que-visitar', title: '¿Por qué visitar Ámsterdam?' },
     { id: 'llegada-aeropuerto', title: 'Llegada y Conexiones' },
@@ -121,10 +127,22 @@ Volver a guías
       </p>
     </div>
 
-    <div className="mb-8">
-      <h3 className="text-lg font-bold text-gray-900 mb-4">✈️ Desde Aeropuerto de Schiphol (AMS)</h3>
-      
-      <div className="bg-blue-50 border border-blue-200 rounded-xl p-6 mb-4">
+    <button
+      onClick={() => toggleAirport('schiphol')}
+      className="w-full bg-gradient-to-r from-blue-500 to-sky-500 hover:from-blue-600 hover:to-sky-600 text-white rounded-xl p-4 mb-3 flex items-center justify-between transition-all duration-300 shadow-md hover:shadow-lg"
+    >
+      <div className="flex items-center gap-3">
+        <span className="text-2xl">✈️</span>
+        <span className="font-bold text-lg">Aeropuerto de Schiphol (AMS)</span>
+      </div>
+      {expandedAirport === 'schiphol' ? <ChevronUp className="w-6 h-6" /> : <ChevronDown className="w-6 h-6" />}
+    </button>
+
+    {expandedAirport === 'schiphol' && (
+      <div className="mb-8 animate-fadeIn">
+        <h3 className="text-lg font-bold text-gray-900 mb-4 mt-4">✈️ Desde Aeropuerto de Schiphol (AMS)</h3>
+
+        <div className="bg-blue-50 border border-blue-200 rounded-xl p-6 mb-4">
         <h4 className="font-bold text-gray-900 mb-3">🚄 Tren Directo a Estación Central - La Opción Más Rápida</h4>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <div>
@@ -240,7 +258,8 @@ Volver a guías
           </a>
         </div>
       </div>
-    </div>
+      </div>
+    )}
   </div>
 
   {/* SECCIÓN: ALOJAMIENTO */}
