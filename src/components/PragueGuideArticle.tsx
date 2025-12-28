@@ -1,5 +1,5 @@
-import React from 'react';
-import { ArrowLeft, Share2, Clock, MapPin, ExternalLink } from 'lucide-react';
+import React, { useState } from 'react';
+import { ArrowLeft, Share2, Clock, MapPin, ExternalLink, ChevronDown, ChevronUp } from 'lucide-react';
 import StickyTableOfContents from './StickyTableOfContents';
 
 interface PragueGuideArticleProps {
@@ -7,6 +7,12 @@ onBack: () => void;
 }
 
 const PragueGuideArticle: React.FC<PragueGuideArticleProps> = ({ onBack }) => {
+  const [expandedAirport, setExpandedAirport] = useState<string | null>(null);
+
+  const toggleAirport = (airportId: string) => {
+    setExpandedAirport(expandedAirport === airportId ? null : airportId);
+  };
+
   const sections = [
     { id: 'por-que-visitar', title: '¿Por qué visitar Praga?' },
     { id: 'llegada-aeropuerto', title: 'Llegada y Aeropuerto' },
@@ -122,10 +128,22 @@ Volver a guías
       </p>
     </div>
 
-    <div className="mb-8">
-      <h3 className="text-lg font-bold text-gray-900 mb-4">Desde Aeropuerto Václav Havel</h3>
+    <button
+      onClick={() => toggleAirport('vaclav-havel')}
+      className="w-full bg-gradient-to-r from-blue-500 to-sky-500 hover:from-blue-600 hover:to-sky-600 text-white rounded-xl p-4 mb-3 flex items-center justify-between transition-all duration-300 shadow-md hover:shadow-lg"
+    >
+      <div className="flex items-center gap-3">
+        <span className="text-2xl">✈️</span>
+        <span className="font-bold text-lg">Aeropuerto Václav Havel (PRG)</span>
+      </div>
+      {expandedAirport === 'vaclav-havel' ? <ChevronUp className="w-6 h-6" /> : <ChevronDown className="w-6 h-6" />}
+    </button>
 
-      <div className="mb-6">
+    {expandedAirport === 'vaclav-havel' && (
+      <div className="mb-8 animate-fadeIn">
+        <h3 className="text-lg font-bold text-gray-900 mb-4 mt-4">📍 Desde Aeropuerto Václav Havel</h3>
+
+        <div className="mb-6">
         <h4 className="text-md font-bold text-gray-900 mb-4">🚌 Airport Express - La Conexión Más Directa</h4>
 
         <div className="bg-gradient-to-r from-green-50 to-emerald-50 border border-green-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
@@ -172,7 +190,8 @@ Volver a guías
           </div>
         </div>
       </div>
-    </div>
+      </div>
+    )}
   </div>
 
   {/* SECCIÓN 3: DÓNDE ALOJARSE EN PRAGA */}
