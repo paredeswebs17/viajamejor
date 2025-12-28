@@ -1358,177 +1358,85 @@ src="https://images.pexels.com/photos/30734949/pexels-photo-30734949.jpeg"
 
     <div>
       <h3 className="text-lg font-bold text-gray-900 mb-4">Restaurantes Verificados:</h3>
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+        <div className="bg-orange-50 border border-orange-200 rounded-xl p-4 shadow-sm hover:shadow-md transition-all duration-300">
+          <h4 className="font-semibold text-gray-900 mb-2">
+            <a href="https://www.google.com/maps/place/Budapest,+Mazel+Tov,+Ak%C3%A1cfa+u.+47,+1073+Hungr%C3%ADa/@47.5002778,19.0655242,17z/data=!4m6!3m5!1s0x4741dc68eb5c0b91:0xf5991cd91e93b8f8!8m2!3d47.5002778!4d19.0655242!16s%2Fg%2F11b6qhjx3q" target="_blank" rel="noopener noreferrer" className="underline hover:text-orange-900">Mazel Tov</a> ⭐ 4.6
+          </h4>
+          <p className="text-sm text-gray-700 mb-2">Gastronomía mediterránea y de Oriente Medio en un patio cubierto con vegetación. Hummus, mezze y shawarma excepcionales.</p>
+          <p className="text-xs text-orange-700 mb-1"><strong>Dónde:</strong> Akácfa u. 47, District VII (Barrio Judío)</p>
+          <p className="text-xs text-orange-700"><strong>Precio:</strong> 12-25 €</p>
+        </div>
 
-      {/* Para Goulash Tradicional */}
-      <div className="mb-6">
-        <h4 className="font-semibold text-gray-900 mb-3 flex items-center">
-          <span className="text-xl mr-2">🍲</span>
-          GOULASH AUTÉNTICO
-        </h4>
+        <div className="bg-orange-50 border border-orange-200 rounded-xl p-4 shadow-sm hover:shadow-md transition-all duration-300">
+          <h4 className="font-semibold text-gray-900 mb-2">
+            <a href="https://www.google.com/maps/place/Budapest,+Restaurant+Menza,+Liszt+Ferenc+t%C3%A9r+2,+1061+Hungr%C3%ADa/@47.5039639,19.0628165,17z/data=!4m6!3m5!1s0x4741dc6e9b62d4d5:0x361daa1bec9740fe!8m2!3d47.5039639!4d19.0628165!16s%2Fg%2F1v6p31kz" target="_blank" rel="noopener noreferrer" className="underline hover:text-orange-900">Menza</a> ⭐ 4.4
+          </h4>
+          <p className="text-sm text-gray-700 mb-2">Cocina húngara moderna con diseño retro de los años 70. Goulash, pancakes Hortobágyi y ambiente animado.</p>
+          <p className="text-xs text-orange-700 mb-1"><strong>Dónde:</strong> Liszt Ferenc tér 2, District VI</p>
+          <p className="text-xs text-orange-700"><strong>Precio:</strong> 12-20 €</p>
+        </div>
 
-        <div className="space-y-4">
-          {/* Frici Papa */}
-          <div className="bg-gradient-to-br from-orange-50 to-red-50 border border-orange-200 rounded-xl p-5 shadow-sm hover:shadow-lg transition-all duration-300">
-            <div className="flex items-start justify-between mb-3">
-              <div className="flex-1">
-                <h5 className="font-bold text-gray-900 text-base mb-1">Frici Papa Kifőzdéje</h5>
-                <div className="flex items-center gap-2 mb-2">
-                  <span className="text-yellow-500 text-sm font-semibold">★★★★☆ 4.3</span>
-                  <span className="text-xs text-gray-500">(Google Reviews)</span>
-                </div>
-                <p className="text-sm text-gray-700 mb-2">Comida casera tradicional húngara como la de la abuela. Famoso por su goulash auténtico y porciones generosas.</p>
-                <p className="text-xs text-gray-600 mb-1"><span className="font-semibold">Dirección:</span> Király utca, District VII</p>
-                <p className="text-xs text-gray-600 mb-1"><span className="font-semibold">Precio medio:</span> 8-12 €</p>
-                <p className="text-xs text-gray-600 mb-3"><span className="font-semibold">Horario:</span> 11:00-23:00 | Solo efectivo</p>
-              </div>
-            </div>
-            <a href="https://www.fricipapa.hu/" target="_blank" rel="noopener noreferrer"
-               className="inline-flex items-center bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-200 text-sm">
-              Ver web oficial
-              <ExternalLink className="h-4 w-4 ml-2" />
-            </a>
-          </div>
+        <div className="bg-orange-50 border border-orange-200 rounded-xl p-4 shadow-sm hover:shadow-md transition-all duration-300">
+          <h4 className="font-semibold text-gray-900 mb-2">
+            <a href="https://www.google.com/maps/place/Budapest,+Bistro+hungaro,+Steindl+Imre+u.+13,+1051+Hungr%C3%ADa/@47.5034835,19.0479192,17z/data=!4m6!3m5!1s0x4741dc14183e4511:0x2356a71b716602c5!8m2!3d47.5034835!4d19.0479192!16s%2Fg%2F1hhmyj4hm" target="_blank" rel="noopener noreferrer" className="underline hover:text-orange-900">Hungarikum Bisztró</a> ⭐ 4.7
+          </h4>
+          <p className="text-sm text-gray-700 mb-2">Alta cocina húngara cerca del Parlamento. Música tradicional en vivo, goulash excepcional y servicio atento.</p>
+          <p className="text-xs text-orange-700 mb-1"><strong>Dónde:</strong> Steindl Imre u. 13, District V</p>
+          <p className="text-xs text-orange-700"><strong>Precio:</strong> 15-25 € | Reserva obligatoria</p>
+        </div>
 
-          {/* Gettó Gulyás */}
-          <div className="bg-gradient-to-br from-red-50 to-orange-50 border border-red-200 rounded-xl p-5 shadow-sm hover:shadow-lg transition-all duration-300">
-            <div className="flex items-start justify-between mb-3">
-              <div className="flex-1">
-                <h5 className="font-bold text-gray-900 text-base mb-1">Gettó Gulyás</h5>
-                <div className="flex items-center gap-2 mb-2">
-                  <span className="text-yellow-500 text-sm font-semibold">★★★★☆ 4.2</span>
-                  <span className="text-xs text-gray-500">(2,217 reviews TripAdvisor)</span>
-                </div>
-                <p className="text-sm text-gray-700 mb-2">Restaurante popular en el Barrio Judío especializado en goulash y platos tradicionales húngaros a precios razonables.</p>
-                <p className="text-xs text-gray-600 mb-1"><span className="font-semibold">Dirección:</span> Wesselényi u. 18, 1077 Budapest</p>
-                <p className="text-xs text-gray-600 mb-1"><span className="font-semibold">Precio medio:</span> 10-15 €</p>
-                <p className="text-xs text-gray-600 mb-3"><span className="font-semibold">Horario:</span> 12:00-23:00 | Reserva recomendada</p>
-              </div>
-            </div>
-            <a href="https://www.facebook.com/gettogulyas" target="_blank" rel="noopener noreferrer"
-               className="inline-flex items-center bg-gradient-to-r from-red-500 to-orange-500 hover:from-red-600 hover:to-orange-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-200 text-sm">
-              Ver página oficial
-              <ExternalLink className="h-4 w-4 ml-2" />
-            </a>
-          </div>
+        <div className="bg-orange-50 border border-orange-200 rounded-xl p-4 shadow-sm hover:shadow-md transition-all duration-300">
+          <h4 className="font-semibold text-gray-900 mb-2">
+            <a href="https://www.google.com/maps/place/Budapest,+Parisi+6,+P%C3%A1rizsi+u.+6b,+1052+Hungr%C3%ADa/@47.4941428,19.0536826,17z/data=!4m6!3m5!1s0x4741dc41484216ab:0x2d967a7684dbcc83!8m2!3d47.4941428!4d19.0536826!16s%2Fg%2F11cjg959zf" target="_blank" rel="noopener noreferrer" className="underline hover:text-orange-900">Parisi 6</a> ⭐ 4.7
+          </h4>
+          <p className="text-sm text-gray-700 mb-2">Cocina húngara sofisticada con toque moderno. Pato crujiente, beef stew de la abuela y postres tradicionales.</p>
+          <p className="text-xs text-orange-700 mb-1"><strong>Dónde:</strong> Párizsi u. 6b, District V (Centro)</p>
+          <p className="text-xs text-orange-700"><strong>Precio:</strong> 14-22 €</p>
+        </div>
 
-          {/* Hungarikum Bisztró */}
-          <div className="bg-gradient-to-br from-amber-50 to-yellow-50 border border-amber-200 rounded-xl p-5 shadow-sm hover:shadow-lg transition-all duration-300">
-            <div className="flex items-start justify-between mb-3">
-              <div className="flex-1">
-                <h5 className="font-bold text-gray-900 text-base mb-1">Hungarikum Bisztró</h5>
-                <div className="flex items-center gap-2 mb-2">
-                  <span className="text-yellow-500 text-sm font-semibold">★★★★★ 4.7</span>
-                  <span className="text-xs text-gray-500">(9,405 reviews Google)</span>
-                </div>
-                <p className="text-sm text-gray-700 mb-2">Restaurante de alta calidad cerca del Parlamento con música tradicional en vivo. Goulash excepcional y ambiente auténtico húngaro.</p>
-                <p className="text-xs text-gray-600 mb-1"><span className="font-semibold">Dirección:</span> Steindl Imre u. 13, 1051 Budapest</p>
-                <p className="text-xs text-gray-600 mb-1"><span className="font-semibold">Precio medio:</span> 15-25 €</p>
-                <p className="text-xs text-gray-600 mb-3"><span className="font-semibold">Horario:</span> Consultar web | Reserva online obligatoria</p>
-              </div>
-            </div>
-            <a href="https://hungarikumbisztro.hu/" target="_blank" rel="noopener noreferrer"
-               className="inline-flex items-center bg-gradient-to-r from-amber-500 to-yellow-500 hover:from-amber-600 hover:to-yellow-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-200 text-sm">
-              Reservar mesa
-              <ExternalLink className="h-4 w-4 ml-2" />
-            </a>
-          </div>
+        <div className="bg-orange-50 border border-orange-200 rounded-xl p-4 shadow-sm hover:shadow-md transition-all duration-300">
+          <h4 className="font-semibold text-gray-900 mb-2">
+            <a href="https://www.google.com/maps/place/Budapest,+The+Magic+Budapest,+Haj%C3%B3s+u.+25,+1065+Hungr%C3%ADa/@47.5040676,19.0574011,17z/data=!4m6!3m5!1s0x4741dd2111cfa28f:0xa4fa6fc46f2e2e90!8m2!3d47.5040676!4d19.0574011!16s%2Fg%2F11h7_nnxp3" target="_blank" rel="noopener noreferrer" className="underline hover:text-orange-900">The Magic Budapest</a> ⭐ 4.4
+          </h4>
+          <p className="text-sm text-gray-700 mb-2">Restaurante temático de Harry Potter con ambiente mágico. Ideal para familias. Waffles, burgers y decoración encantada.</p>
+          <p className="text-xs text-orange-700 mb-1"><strong>Dónde:</strong> Hajós u. 25, District VI</p>
+          <p className="text-xs text-orange-700"><strong>Precio:</strong> 12-18 € | Reserva recomendada</p>
+        </div>
+
+        <div className="bg-orange-50 border border-orange-200 rounded-xl p-4 shadow-sm hover:shadow-md transition-all duration-300">
+          <h4 className="font-semibold text-gray-900 mb-2">
+            <a href="https://www.google.com/maps/place/Budapest,+Frici+papa,+Kir%C3%A1ly+u.+55,+1077+Hungr%C3%ADa/@47.5023394,19.0637114,17z/data=!4m6!3m5!1s0x4741dc6ecddec10b:0xab18bc439df2bad4!8m2!3d47.5023394!4d19.0637114!16s%2Fg%2F11r96t66s" target="_blank" rel="noopener noreferrer" className="underline hover:text-orange-900">Frici Papa</a> ⭐ 4.3
+          </h4>
+          <p className="text-sm text-gray-700 mb-2">Comida casera tradicional húngara como la de la abuela. Goulash auténtico, porciones enormes y precios económicos.</p>
+          <p className="text-xs text-orange-700 mb-1"><strong>Dónde:</strong> Király u. 55, District VII</p>
+          <p className="text-xs text-orange-700"><strong>Precio:</strong> 8-12 € | Solo efectivo</p>
+        </div>
+
+        <div className="bg-orange-50 border border-orange-200 rounded-xl p-4 shadow-sm hover:shadow-md transition-all duration-300">
+          <h4 className="font-semibold text-gray-900 mb-2">
+            <a href="https://www.google.com/maps/place/Budapest,+Trofea+Grill+Restaurant,+Kir%C3%A1ly+u.+30-32,+1061+Hungr%C3%ADa/@47.4999491,19.0593719,17z/data=!4m6!3m5!1s0x4741dc6980a21f35:0xba72d6dc4d9e4947!8m2!3d47.4999491!4d19.0593719!16s%2Fg%2F11r9pzrkc" target="_blank" rel="noopener noreferrer" className="underline hover:text-orange-900">Trofea Grill Restaurant</a> ⭐ 4.6
+          </h4>
+          <p className="text-sm text-gray-700 mb-2">Buffet libre ilimitado con +100 platos. Incluye bebidas (champagne, cerveza, vino). Gambas, salmón, atún y ternera premium.</p>
+          <p className="text-xs text-orange-700 mb-1"><strong>Dónde:</strong> Király u. 30-32, District VI</p>
+          <p className="text-xs text-orange-700"><strong>Precio:</strong> 26€ almuerzo | 39€ cena (todo incluido)</p>
+        </div>
+
+        <div className="bg-yellow-50 border border-yellow-200 rounded-xl p-4 shadow-sm hover:shadow-md transition-all duration-300">
+          <h4 className="font-semibold text-gray-900 mb-2">Lángos en Mercado Central</h4>
+          <p className="text-sm text-gray-700 mb-2">Pan frito húngaro tradicional con crema agria y queso. Auténtico y económico en la planta superior del mercado.</p>
+          <p className="text-xs text-yellow-700 mb-1"><strong>Dónde:</strong> Nagy Vásárcsarnok (planta superior)</p>
+          <p className="text-xs text-yellow-700"><strong>Precio:</strong> 3-5 €</p>
         </div>
       </div>
 
-      {/* Para Lángos */}
-      <div className="mb-6">
-        <h4 className="font-semibold text-gray-900 mb-3 flex items-center">
-          <span className="text-xl mr-2">🥖</span>
-          LÁNGOS AUTÉNTICO
-        </h4>
-
-        <div className="space-y-4">
-          {/* Rétró Lángos */}
-          <div className="bg-gradient-to-br from-yellow-50 to-amber-50 border border-yellow-200 rounded-xl p-5 shadow-sm hover:shadow-lg transition-all duration-300">
-            <div className="flex items-start justify-between mb-3">
-              <div className="flex-1">
-                <h5 className="font-bold text-gray-900 text-base mb-1">Rétró Lángos Budapest</h5>
-                <div className="flex items-center gap-2 mb-2">
-                  <span className="text-yellow-500 text-sm font-semibold">★★★★★ 5.0</span>
-                  <span className="text-xs text-gray-500">(16,000+ reviews Google)</span>
-                  <span className="bg-green-100 text-green-800 text-xs font-semibold px-2 py-0.5 rounded">Travelers' Choice 2025</span>
-                </div>
-                <p className="text-sm text-gray-700 mb-2">El lángos más famoso de Budapest con más de 30 variedades: tradicional, vegetariano, vegano, sin gluten y sin lactosa.</p>
-                <p className="text-xs text-gray-600 mb-1"><span className="font-semibold">Direcciones:</span> Bajcsy-Zsilinszky út 25 + Vécsey utca 3</p>
-                <p className="text-xs text-gray-600 mb-1"><span className="font-semibold">Precio medio:</span> 3-6 €</p>
-                <p className="text-xs text-gray-600 mb-3"><span className="font-semibold">Especialidad:</span> Lángos con crema agria y queso rallado</p>
-              </div>
-            </div>
-            <a href="https://retrolangos.hu/en/" target="_blank" rel="noopener noreferrer"
-               className="inline-flex items-center bg-gradient-to-r from-yellow-500 to-amber-500 hover:from-yellow-600 hover:to-amber-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-200 text-sm">
-              Ver menú completo
-              <ExternalLink className="h-4 w-4 ml-2" />
-            </a>
-          </div>
-        </div>
-      </div>
-
-      {/* Cocina Húngara Moderna */}
-      <div className="mb-6">
-        <h4 className="font-semibold text-gray-900 mb-3 flex items-center">
-          <span className="text-xl mr-2">🍽️</span>
-          COCINA HÚNGARA MODERNA
-        </h4>
-
-        <div className="space-y-4">
-          {/* Menza */}
-          <div className="bg-gradient-to-br from-teal-50 to-blue-50 border border-teal-200 rounded-xl p-5 shadow-sm hover:shadow-lg transition-all duration-300">
-            <div className="flex items-start justify-between mb-3">
-              <div className="flex-1">
-                <h5 className="font-bold text-gray-900 text-base mb-1">Menza Étterem és Kávéház</h5>
-                <div className="flex items-center gap-2 mb-2">
-                  <span className="text-yellow-500 text-sm font-semibold">★★★★☆ 4.4</span>
-                  <span className="text-xs text-gray-500">(18,642 reviews Google)</span>
-                </div>
-                <p className="text-sm text-gray-700 mb-2">Restaurante retro con platos tradicionales húngaros en versión moderna. Diseño vintage de los años 70 en la animada plaza Liszt Ferenc.</p>
-                <p className="text-xs text-gray-600 mb-1"><span className="font-semibold">Dirección:</span> Liszt Ferenc tér 2, 1061 Budapest</p>
-                <p className="text-xs text-gray-600 mb-1"><span className="font-semibold">Precio medio:</span> 12-20 €</p>
-                <p className="text-xs text-gray-600 mb-3"><span className="font-semibold">Especialidades:</span> Pancakes Hortobágyi, goulash, beef stew con gnocchi húngaros</p>
-              </div>
-            </div>
-            <a href="https://www.menzaetterem.hu/en/" target="_blank" rel="noopener noreferrer"
-               className="inline-flex items-center bg-gradient-to-r from-teal-500 to-blue-500 hover:from-teal-600 hover:to-blue-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-200 text-sm">
-              Ver web y reservar
-              <ExternalLink className="h-4 w-4 ml-2" />
-            </a>
-          </div>
-
-          {/* Bors GasztroBar */}
-          <div className="bg-gradient-to-br from-green-50 to-emerald-50 border border-green-200 rounded-xl p-5 shadow-sm hover:shadow-lg transition-all duration-300">
-            <div className="flex items-start justify-between mb-3">
-              <div className="flex-1">
-                <h5 className="font-bold text-gray-900 text-base mb-1">Bors GasztroBar</h5>
-                <div className="flex items-center gap-2 mb-2">
-                  <span className="text-yellow-500 text-sm font-semibold">★★★★★ 4.8</span>
-                  <span className="text-xs text-gray-500">(15,967 reviews)</span>
-                </div>
-                <p className="text-sm text-gray-700 mb-2">Street food húngaro de calidad. Famoso por sus sopas gourmet y baguettes creativos. Siempre hay cola pero vale la pena.</p>
-                <p className="text-xs text-gray-600 mb-1"><span className="font-semibold">Dirección:</span> Kazinczy utca 10, 1075 Budapest (Barrio Judío)</p>
-                <p className="text-xs text-gray-600 mb-1"><span className="font-semibold">Precio medio:</span> 5-8 €</p>
-                <p className="text-xs text-gray-600 mb-3"><span className="font-semibold">Tipo:</span> Takeaway | Menú cambiante diario</p>
-              </div>
-            </div>
-            <div className="text-sm text-gray-600 bg-white rounded-lg p-3 border border-gray-200">
-              <p className="font-semibold mb-1">Disponible en Wolt para delivery</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Consejo adicional */}
-      <div className="bg-gradient-to-r from-blue-50 to-indigo-50 border border-blue-200 rounded-xl p-5 shadow-sm">
-        <div className="flex items-start">
-          <span className="text-2xl mr-3">💡</span>
-          <div>
-            <h5 className="font-semibold text-gray-900 mb-2">Consejo Local</h5>
-            <p className="text-sm text-gray-700">Los húngaros almuerzan entre las 13:00-14:00, una hora antes que en España. Para evitar las multitudes, llega a las 12:30 o después de las 14:30. El Mercado Central (planta superior) también ofrece goulash y lángos auténticos a precios económicos.</p>
-          </div>
-        </div>
+      <div className="bg-gradient-to-r from-blue-50 to-sky-50 border border-blue-200 rounded-xl p-4 shadow-sm">
+        <p className="text-sm text-gray-700 mb-2">
+          <strong>💡 Consejo Local:</strong> Los húngaros almuerzan entre 13:00-14:00, una hora antes que en España. Para evitar multitudes, ve a las 12:30 o después de las 14:30.
+        </p>
+        <p className="text-sm text-gray-700">
+          <strong>🥘 Platos imprescindibles:</strong> Goulash (sopa de carne + páprika), Lángos (pan frito), Pörkölt (guiso), Kürtőskalács (chimney cake de postre).
+        </p>
       </div>
     </div>
   </div>
