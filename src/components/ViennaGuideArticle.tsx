@@ -313,15 +313,23 @@ Volver a guías
 
         <button
           onClick={() => toggleZone('centro-historico')}
-          className="flex items-center gap-2 text-black hover:text-gray-800 transition-colors font-medium mb-4"
+          className="w-full bg-gradient-to-r from-sky-500 to-blue-500 hover:from-sky-600 hover:to-blue-600 text-white rounded-xl p-4 mb-3 flex items-center justify-between transition-all duration-300 shadow-md hover:shadow-lg group"
         >
+          <div className="flex items-center gap-3">
+            <span className="text-2xl">🏨</span>
+            <div className="text-left">
+              <span className="font-bold text-lg block">
+                {expandedZone === 'centro-historico' ? 'Ocultar hoteles' : 'Ver 3 hoteles recomendados'}
+              </span>
+              <span className="text-sm text-sky-100 block">
+                Hoteles 4⭐ en el corazón de Viena
+              </span>
+            </div>
+          </div>
           {expandedZone === 'centro-historico' ?
-            <ChevronUp className="w-5 h-5" /> :
-            <ChevronDown className="w-5 h-5" />
+            <ChevronUp className="w-6 h-6 group-hover:transform group-hover:-translate-y-1 transition-transform" /> :
+            <ChevronDown className="w-6 h-6 group-hover:transform group-hover:translate-y-1 transition-transform" />
           }
-          <span>
-            {expandedZone === 'centro-historico' ? 'Ocultar' : 'Ver'} hoteles recomendados
-          </span>
         </button>
 
         {expandedZone === 'centro-historico' && (
@@ -420,15 +428,23 @@ Volver a guías
 
         <button
           onClick={() => toggleZone('leopoldstadt-landstrasse')}
-          className="flex items-center gap-2 text-black hover:text-gray-800 transition-colors font-medium mb-4"
+          className="w-full bg-gradient-to-r from-emerald-500 to-green-500 hover:from-emerald-600 hover:to-green-600 text-white rounded-xl p-4 mb-3 flex items-center justify-between transition-all duration-300 shadow-md hover:shadow-lg group"
         >
+          <div className="flex items-center gap-3">
+            <span className="text-2xl">🏨</span>
+            <div className="text-left">
+              <span className="font-bold text-lg block">
+                {expandedZone === 'leopoldstadt-landstrasse' ? 'Ocultar hoteles' : 'Ver 3 hoteles recomendados'}
+              </span>
+              <span className="text-sm text-emerald-100 block">
+                Mejor relación calidad-precio
+              </span>
+            </div>
+          </div>
           {expandedZone === 'leopoldstadt-landstrasse' ?
-            <ChevronUp className="w-5 h-5" /> :
-            <ChevronDown className="w-5 h-5" />
+            <ChevronUp className="w-6 h-6 group-hover:transform group-hover:-translate-y-1 transition-transform" /> :
+            <ChevronDown className="w-6 h-6 group-hover:transform group-hover:translate-y-1 transition-transform" />
           }
-          <span>
-            {expandedZone === 'leopoldstadt-landstrasse' ? 'Ocultar' : 'Ver'} hoteles recomendados
-          </span>
         </button>
 
         {expandedZone === 'leopoldstadt-landstrasse' && (
