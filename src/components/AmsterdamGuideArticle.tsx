@@ -623,9 +623,9 @@ Volver a guías
         <div className="bg-white rounded-xl p-4 border border-gray-200 shadow-sm">
           <p className="text-xs text-orange-600 mb-3">💡 Tip: El tour suele durar 2-3 horas y es la mejor forma de conocer la historia y curiosidades de Ámsterdam con un guía local.</p>
           <a href="https://gyg.me/9muAs4RI" target="_blank" rel="noopener noreferrer"
-             className="inline-flex items-center bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm">
-            🚶 Reservar Tour en español
-            <ExternalLink className="h-3 w-3 ml-2" />
+             className="btn-hotel">
+            <span>🚶 Reservar Tour en español</span>
+            <ExternalLink className="external-icon" />
           </a>
         </div>
       </div>
@@ -715,9 +715,9 @@ Volver a guías
             los martes a las 10:00h (hora de Ámsterdam). Pon alarma y prepara tu tarjeta de crédito. ¡NO se venden entradas en taquilla!
           </p>
           <a href="https://www.annefrank.org/es/museo/entradas/" target="_blank" rel="noopener noreferrer"
-             className="inline-flex items-center bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm">
-            🏠 Reservar Casa de Ana Frank (Web Oficial)
-            <ExternalLink className="h-3 w-3 ml-2" />
+             className="btn-hotel">
+            <span>🏠 Reservar Casa de Ana Frank (Web Oficial)</span>
+            <ExternalLink className="external-icon" />
           </a>
         </div>
       </div>
@@ -767,9 +767,9 @@ Volver a guías
         <div className="bg-white rounded-xl p-4 border border-gray-200 shadow-sm">
           <p className="text-xs text-green-600 mb-3">💡 Tip: El atardecer desde el Mirador A'Dam es espectacular. Llega 30 minutos antes del sunset para conseguir el mejor sitio.</p>
           <a href="https://gyg.me/5kVkwY4g" target="_blank" rel="noopener noreferrer"
-             className="inline-flex items-center bg-gradient-to-r from-green-500 to-emerald-500 hover:from-green-600 hover:to-emerald-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm">
-            🌅 Entradas Mirador A'Dam Tower
-            <ExternalLink className="h-3 w-3 ml-2" />
+             className="btn-hotel">
+            <span>🌅 Entradas Mirador A'Dam Tower</span>
+            <ExternalLink className="external-icon" />
           </a>
         </div>
       </div>
@@ -841,9 +841,9 @@ Volver a guías
             <p><strong>Coche de alquiler:</strong> Máxima flexibilidad pero parking puede ser complicado en algunos pueblos.</p>
           </div>
           <a href="https://gyg.me/k0fpVtxB" target="_blank" rel="noopener noreferrer"
-             className="inline-flex items-center bg-gradient-to-r from-green-500 to-emerald-500 hover:from-green-600 hover:to-emerald-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm">
-            🏘️ Tour guiado Zaanse Schans + Pueblos
-            <ExternalLink className="h-3 w-3 ml-2" />
+             className="btn-hotel">
+            <span>🏘️ Tour guiado Zaanse Schans + Pueblos</span>
+            <ExternalLink className="external-icon" />
           </a>
         </div>
       </div>
@@ -898,14 +898,14 @@ Volver a guías
           </p>
           <div className="flex flex-wrap gap-2">
             <a href="https://gyg.me/LFQhpJql" target="_blank" rel="noopener noreferrer"
-               className="inline-flex items-center bg-gradient-to-r from-blue-500 to-indigo-500 hover:from-blue-600 hover:to-indigo-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm">
-              ⛵ Crucero Clásico por Canales
-              <ExternalLink className="h-3 w-3 ml-2" />
+               className="btn-hotel">
+              <span>⛵ Crucero Clásico por Canales</span>
+              <ExternalLink className="external-icon" />
             </a>
             <a href="https://gyg.me/TLcpWrxH" target="_blank" rel="noopener noreferrer"
-               className="inline-flex items-center bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm">
-              🕯️ Crucero Romántico con Vino
-              <ExternalLink className="h-3 w-3 ml-2" />
+               className="btn-hotel">
+              <span>🕯️ Crucero Romántico con Vino</span>
+              <ExternalLink className="external-icon" />
             </a>
           </div>
         </div>
@@ -1017,9 +1017,9 @@ Volver a guías
         <div className="bg-white rounded-xl p-4 border border-gray-200 shadow-sm">
           <p className="text-xs text-red-600 mb-3">💡 Tip: Llega cuando abren (9:00) para evitar multitudes. La "Galería de Honor" con las obras maestras se llena mucho a partir de las 11:00.</p>
           <a href="https://gyg.me/qMlozUdI" target="_blank" rel="noopener noreferrer"
-             className="inline-flex items-center bg-gradient-to-r from-red-500 to-amber-500 hover:from-red-600 hover:to-amber-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm">
-            🎨 Entradas Rijksmuseum
-            <ExternalLink className="h-3 w-3 ml-2" />
+             className="btn-hotel">
+            <span>🎨 Entradas Rijksmuseum</span>
+            <ExternalLink className="external-icon" />
           </a>
         </div>
       </div>
@@ -1074,9 +1074,9 @@ Volver a guías
             está en el Museo Kröller-Müller en Otterlo. Pero las obras de Ámsterdam son igual de impresionantes.
           </p>
           <a href="https://gyg.me/kgd4hkJI" target="_blank" rel="noopener noreferrer"
-             className="inline-flex items-center bg-gradient-to-r from-yellow-500 to-orange-500 hover:from-yellow-600 hover:to-orange-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm">
-            🌻 Entradas Van Gogh Museum
-            <ExternalLink className="h-3 w-3 ml-2" />
+             className="btn-hotel">
+            <span>🌻 Entradas Van Gogh Museum</span>
+            <ExternalLink className="external-icon" />
           </a>
         </div>
       </div>
@@ -1165,9 +1165,9 @@ Volver a guías
         <div className="bg-white rounded-xl p-4 border border-gray-200 shadow-sm">
           <p className="text-xs text-green-600 mb-3">💡 Tip: Si reservas online con antelación ahorras dinero y te saltas las colas</p>
           <a href="https://gyg.me/3m6llUkk" target="_blank" rel="noopener noreferrer"
-             className="inline-flex items-center bg-gradient-to-r from-green-500 to-emerald-500 hover:from-green-600 hover:to-emerald-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm">
-            🍺 Entradas Heineken Experience
-            <ExternalLink className="h-3 w-3 ml-2" />
+             className="btn-hotel">
+            <span>🍺 Entradas Heineken Experience</span>
+            <ExternalLink className="external-icon" />
           </a>
         </div>
       </div>
@@ -1224,9 +1224,9 @@ Volver a guías
         </div>
 
         <a href="https://gyg.me/qQaHQWHy" target="_blank" rel="noopener noreferrer"
-           className="inline-flex items-center bg-gradient-to-r from-red-500 to-pink-500 hover:from-red-600 hover:to-pink-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm">
-          🚶 Tour por el Barrio Rojo
-          <ExternalLink className="h-3 w-3 ml-2" />
+           className="btn-hotel">
+          <span>🚶 Tour por el Barrio Rojo</span>
+          <ExternalLink className="external-icon" />
         </a>
       </div>
     </div>
@@ -1284,14 +1284,14 @@ Volver a guías
 
     <div className="mt-6 flex flex-col sm:flex-row gap-3 justify-center items-center">
       <a href="https://gyg.me/EMjp5KUQ" target="_blank" rel="noopener noreferrer"
-         className="inline-flex items-center bg-gradient-to-r from-purple-500 to-indigo-500 hover:from-purple-600 hover:to-indigo-600 text-white font-semibold px-6 py-3 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm">
-        🎟️ Ver Entradas a Museos
-        <ExternalLink className="h-4 w-4 ml-2" />
+         className="btn-hotel">
+        <span>🎟️ Ver Entradas a Museos</span>
+        <ExternalLink className="external-icon" />
       </a>
       <a href="https://gyg.me/NsnWg5zb" target="_blank" rel="noopener noreferrer"
-         className="inline-flex items-center bg-gradient-to-r from-orange-500 to-amber-500 hover:from-orange-600 hover:to-amber-600 text-white font-semibold px-6 py-3 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm">
-        🏰 Excursión a Brujas
-        <ExternalLink className="h-4 w-4 ml-2" />
+         className="btn-hotel">
+        <span>🏰 Excursión a Brujas</span>
+        <ExternalLink className="external-icon" />
       </a>
     </div>
   </div>
