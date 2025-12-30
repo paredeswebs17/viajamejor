@@ -8,9 +8,14 @@ onBack: () => void;
 
 const RomaGuideArticle: React.FC<RomaGuideArticleProps> = ({ onBack }) => {
   const [expandedAirport, setExpandedAirport] = useState<string | null>(null);
+  const [expandedZone, setExpandedZone] = useState<string | null>(null);
 
   const toggleAirport = (airportId: string) => {
     setExpandedAirport(expandedAirport === airportId ? null : airportId);
+  };
+
+  const toggleZone = (zoneId: string) => {
+    setExpandedZone(expandedZone === zoneId ? null : zoneId);
   };
 
   const sections = [
@@ -240,56 +245,81 @@ Volver a guías
           <div className="w-12 h-12 bg-gradient-to-br from-red-500 to-amber-500 rounded-xl flex items-center justify-center mr-4">
             <span className="text-2xl">🏛️</span>
           </div>
-          <div>
+          <div className="flex-1">
             <h3 className="text-xl font-bold text-gray-900">Centro Histórico</h3>
             <p className="text-sm text-gray-600">La ubicación más cómoda para visitar Roma a pie</p>
           </div>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
-          <div className="bg-gradient-to-br from-red-50 to-amber-50 rounded-xl p-4 border border-red-200">
-            <h4 className="font-bold text-gray-900 mb-2">Hotel Smeraldo ⭐⭐⭐</h4>
-            <p className="text-xs text-gray-600 mb-2">📍 Cerca de Plaza Campo de' Fiori</p>
-            <p className="text-sm text-gray-700 mb-3">Hotel encantador en pleno centro, puedes recorrer Roma andando desde aquí. Excelente relación calidad-precio.</p>
-            <div className="flex items-center justify-between flex-wrap gap-2">
-              <span className="text-lg font-bold text-red-600">€€</span>
-              <a
-                href="https://booking.tpk.lv/IHfFpFIB"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm"
-              >
-                Ver en Booking
-                <ExternalLink className="h-3 w-3 ml-2" />
-              </a>
+        <button
+          onClick={() => toggleZone('centro-historico')}
+          className="w-full bg-gradient-to-r from-red-500 to-amber-500 hover:from-red-600 hover:to-amber-600 text-white rounded-xl p-4 mb-3 flex items-center justify-between transition-all duration-300 shadow-md hover:shadow-lg group"
+        >
+          <div className="flex items-center gap-3">
+            <span className="text-2xl">🏨</span>
+            <div className="text-left">
+              <span className="font-bold text-lg block">
+                {expandedZone === 'centro-historico' ? 'Ocultar hoteles' : 'Ver 2 hoteles recomendados'}
+              </span>
+              <span className="text-sm text-red-100 block">
+                Hoteles en el corazón de Roma
+              </span>
             </div>
           </div>
+          {expandedZone === 'centro-historico' ?
+            <ChevronUp className="w-6 h-6 group-hover:transform group-hover:-translate-y-1 transition-transform" /> :
+            <ChevronDown className="w-6 h-6 group-hover:transform group-hover:translate-y-1 transition-transform" />
+          }
+        </button>
 
-          <div className="bg-gradient-to-br from-amber-50 to-yellow-50 rounded-xl p-4 border border-amber-200">
-            <h4 className="font-bold text-gray-900 mb-2">Terrace Pantheon Relais ⭐⭐⭐⭐</h4>
-            <p className="text-xs text-gray-600 mb-2">📍 Centro histórico, junto al Panteón</p>
-            <p className="text-sm text-gray-700 mb-3">Ubicación premium en el corazón de Roma. Perfecto para disfrutar la ciudad sin usar transporte.</p>
-            <div className="flex items-center justify-between flex-wrap gap-2">
-              <span className="text-lg font-bold text-amber-600">€€€</span>
-              <a
-                href="https://booking.tpk.lv/AD5vS3Hf"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm"
-              >
-                Ver en Booking
-                <ExternalLink className="h-3 w-3 ml-2" />
-              </a>
+        {expandedZone === 'centro-historico' && (
+          <div className="animate-fadeIn border-t border-gray-200 pt-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+              <div className="bg-gradient-to-br from-red-50 to-amber-50 rounded-xl p-4 border border-red-200">
+                <h4 className="font-bold text-gray-900 mb-2">Hotel Smeraldo ⭐⭐⭐</h4>
+                <p className="text-xs text-gray-600 mb-2">📍 Cerca de Plaza Campo de' Fiori</p>
+                <p className="text-sm text-gray-700 mb-3">Hotel encantador en pleno centro, puedes recorrer Roma andando desde aquí. Excelente relación calidad-precio.</p>
+                <div className="flex items-center justify-between flex-wrap gap-2">
+                  <span className="text-lg font-bold text-red-600">€€</span>
+                  <a
+                    href="https://booking.tpk.lv/IHfFpFIB"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm"
+                  >
+                    Ver en Booking
+                    <ExternalLink className="h-3 w-3 ml-2" />
+                  </a>
+                </div>
+              </div>
+
+              <div className="bg-gradient-to-br from-amber-50 to-yellow-50 rounded-xl p-4 border border-amber-200">
+                <h4 className="font-bold text-gray-900 mb-2">Terrace Pantheon Relais ⭐⭐⭐⭐</h4>
+                <p className="text-xs text-gray-600 mb-2">📍 Centro histórico, junto al Panteón</p>
+                <p className="text-sm text-gray-700 mb-3">Ubicación premium en el corazón de Roma. Perfecto para disfrutar la ciudad sin usar transporte.</p>
+                <div className="flex items-center justify-between flex-wrap gap-2">
+                  <span className="text-lg font-bold text-amber-600">€€€</span>
+                  <a
+                    href="https://booking.tpk.lv/AD5vS3Hf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm"
+                  >
+                    Ver en Booking
+                    <ExternalLink className="h-3 w-3 ml-2" />
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-green-50 border border-green-200 rounded-lg p-3">
+              <p className="text-sm text-green-800">
+                <strong>✅ Por qué elegir esta zona:</strong> Camina a todos los monumentos principales (Trevi, Panteón, Navona).
+                Calles llenas de vida, restaurantes auténticos y ambiente romano genuino.
+              </p>
             </div>
           </div>
-        </div>
-
-        <div className="bg-green-50 border border-green-200 rounded-lg p-3">
-          <p className="text-sm text-green-800">
-            <strong>✅ Por qué elegir esta zona:</strong> Camina a todos los monumentos principales (Trevi, Panteón, Navona).
-            Calles llenas de vida, restaurantes auténticos y ambiente romano genuino.
-          </p>
-        </div>
+        )}
       </div>
 
       <div className="bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300">
@@ -297,56 +327,81 @@ Volver a guías
           <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-pink-500 rounded-xl flex items-center justify-center mr-4">
             <span className="text-2xl">⛪</span>
           </div>
-          <div>
+          <div className="flex-1">
             <h3 className="text-xl font-bold text-gray-900">Vaticano / Prati</h3>
             <p className="text-sm text-gray-600">Zona tranquila y elegante, cerca del Vaticano</p>
           </div>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
-          <div className="bg-gradient-to-br from-purple-50 to-pink-50 rounded-xl p-4 border border-purple-200">
-            <h4 className="font-bold text-gray-900 mb-2">Donna Laura Palace ⭐⭐⭐⭐</h4>
-            <p className="text-xs text-gray-600 mb-2">📍 Lungotevere Delle Armi 21</p>
-            <p className="text-sm text-gray-700 mb-3">Elegante hotel cerca del Vaticano. Barrio residencial con ambiente local y tranquilo.</p>
-            <div className="flex items-center justify-between flex-wrap gap-2">
-              <span className="text-lg font-bold text-purple-600">€€€</span>
-              <a
-                href="https://booking.tpk.lv/jd418WFK"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm"
-              >
-                Ver en Booking
-                <ExternalLink className="h-3 w-3 ml-2" />
-              </a>
+        <button
+          onClick={() => toggleZone('vaticano-prati')}
+          className="w-full bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white rounded-xl p-4 mb-3 flex items-center justify-between transition-all duration-300 shadow-md hover:shadow-lg group"
+        >
+          <div className="flex items-center gap-3">
+            <span className="text-2xl">🏨</span>
+            <div className="text-left">
+              <span className="font-bold text-lg block">
+                {expandedZone === 'vaticano-prati' ? 'Ocultar hoteles' : 'Ver 2 hoteles recomendados'}
+              </span>
+              <span className="text-sm text-purple-100 block">
+                Hoteles cerca del Vaticano
+              </span>
             </div>
           </div>
+          {expandedZone === 'vaticano-prati' ?
+            <ChevronUp className="w-6 h-6 group-hover:transform group-hover:-translate-y-1 transition-transform" /> :
+            <ChevronDown className="w-6 h-6 group-hover:transform group-hover:translate-y-1 transition-transform" />
+          }
+        </button>
 
-          <div className="bg-gradient-to-br from-indigo-50 to-blue-50 rounded-xl p-4 border border-indigo-200">
-            <h4 className="font-bold text-gray-900 mb-2">Hotel Isa Design ⭐⭐⭐⭐</h4>
-            <p className="text-xs text-gray-600 mb-2">📍 Via Cicerone 39</p>
-            <p className="text-sm text-gray-700 mb-3">Excelente ubicación cerca del Vaticano. Diseño moderno y muy buena relación calidad-precio.</p>
-            <div className="flex items-center justify-between flex-wrap gap-2">
-              <span className="text-lg font-bold text-indigo-600">€€€</span>
-              <a
-                href="https://booking.tpk.lv/58AldYai"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm"
-              >
-                Ver en Booking
-                <ExternalLink className="h-3 w-3 ml-2" />
-              </a>
+        {expandedZone === 'vaticano-prati' && (
+          <div className="animate-fadeIn border-t border-gray-200 pt-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+              <div className="bg-gradient-to-br from-purple-50 to-pink-50 rounded-xl p-4 border border-purple-200">
+                <h4 className="font-bold text-gray-900 mb-2">Donna Laura Palace ⭐⭐⭐⭐</h4>
+                <p className="text-xs text-gray-600 mb-2">📍 Lungotevere Delle Armi 21</p>
+                <p className="text-sm text-gray-700 mb-3">Elegante hotel cerca del Vaticano. Barrio residencial con ambiente local y tranquilo.</p>
+                <div className="flex items-center justify-between flex-wrap gap-2">
+                  <span className="text-lg font-bold text-purple-600">€€€</span>
+                  <a
+                    href="https://booking.tpk.lv/jd418WFK"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm"
+                  >
+                    Ver en Booking
+                    <ExternalLink className="h-3 w-3 ml-2" />
+                  </a>
+                </div>
+              </div>
+
+              <div className="bg-gradient-to-br from-indigo-50 to-blue-50 rounded-xl p-4 border border-indigo-200">
+                <h4 className="font-bold text-gray-900 mb-2">Hotel Isa Design ⭐⭐⭐⭐</h4>
+                <p className="text-xs text-gray-600 mb-2">📍 Via Cicerone 39</p>
+                <p className="text-sm text-gray-700 mb-3">Excelente ubicación cerca del Vaticano. Diseño moderno y muy buena relación calidad-precio.</p>
+                <div className="flex items-center justify-between flex-wrap gap-2">
+                  <span className="text-lg font-bold text-indigo-600">€€€</span>
+                  <a
+                    href="https://booking.tpk.lv/58AldYai"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm"
+                  >
+                    Ver en Booking
+                    <ExternalLink className="h-3 w-3 ml-2" />
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-blue-50 border border-blue-200 rounded-lg p-3">
+              <p className="text-sm text-blue-800">
+                <strong>✅ Por qué elegir esta zona:</strong> Barrio elegante y auténtico con restaurantes locales.
+                Metro directo al centro. Perfecto para visitar el Vaticano.
+              </p>
             </div>
           </div>
-        </div>
-
-        <div className="bg-blue-50 border border-blue-200 rounded-lg p-3">
-          <p className="text-sm text-blue-800">
-            <strong>✅ Por qué elegir esta zona:</strong> Barrio elegante y auténtico con restaurantes locales.
-            Metro directo al centro. Perfecto para visitar el Vaticano.
-          </p>
-        </div>
+        )}
       </div>
 
       <div className="bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300">
