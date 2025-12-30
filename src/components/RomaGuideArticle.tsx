@@ -282,11 +282,11 @@ Volver a guías
                 </div>
                 <div className="flex-grow">
                   <h4 className="font-bold text-gray-900 mb-3 text-lg leading-tight">Hotel Smeraldo</h4>
-                  <p className="text-sm text-gray-700 mb-4 leading-relaxed">Hotel encantador en pleno centro, puedes recorrer Roma andando desde aquí. Excelente relación calidad-precio.</p>
+                  <p className="text-sm text-gray-700 mb-4 leading-relaxed">Hotel en el centro de Roma con habitaciones con aire acondicionado, WiFi gratuita y terraza en la azotea con vistas al centro histórico. Incluye TV de pantalla plana y baño privado con secador de pelo.</p>
                   <div className="bg-red-50 border-l-4 border-red-400 rounded-r-lg p-3 mb-4">
                     <p className="text-xs text-red-800 leading-relaxed">
                       <span className="text-base mr-1">📍</span>
-                      <strong>Qué hay cerca:</strong> Cerca de Plaza Campo de' Fiori
+                      <strong>Qué hay cerca:</strong> Plaza Campo de' Fiori (200 m), Panteón (5 min a pie), Piazza Navona (5 min a pie), Fontana di Trevi (10 min a pie), mercado diario y vida nocturna animada.
                     </p>
                   </div>
                 </div>
@@ -310,11 +310,11 @@ Volver a guías
                 </div>
                 <div className="flex-grow">
                   <h4 className="font-bold text-gray-900 mb-3 text-lg leading-tight">Terrace Pantheon Relais</h4>
-                  <p className="text-sm text-gray-700 mb-4 leading-relaxed">Ubicación premium en el corazón de Roma. Perfecto para disfrutar la ciudad sin usar transporte.</p>
+                  <p className="text-sm text-gray-700 mb-4 leading-relaxed">Hotel elegante con terraza panorámica y habitaciones con aire acondicionado, TV de pantalla plana, hervidor eléctrico y baño privado moderno. Desayuno buffet con productos dulces y salados.</p>
                   <div className="bg-amber-50 border-l-4 border-amber-400 rounded-r-lg p-3 mb-4">
                     <p className="text-xs text-amber-800 leading-relaxed">
                       <span className="text-base mr-1">📍</span>
-                      <strong>Qué hay cerca:</strong> Centro histórico, junto al Panteón
+                      <strong>Qué hay cerca:</strong> Panteón (200 m), Piazza Navona (5 min a pie), Plaza Campo de' Fiori (450 m), Fontana di Trevi (8 min a pie), centro histórico.
                     </p>
                   </div>
                 </div>
@@ -384,11 +384,11 @@ Volver a guías
                 </div>
                 <div className="flex-grow">
                   <h4 className="font-bold text-gray-900 mb-3 text-lg leading-tight">Donna Laura Palace</h4>
-                  <p className="text-sm text-gray-700 mb-4 leading-relaxed">Elegante hotel cerca del Vaticano. Barrio residencial con ambiente local y tranquilo.</p>
+                  <p className="text-sm text-gray-700 mb-4 leading-relaxed">Hotel con vistas al río Tíber que ofrece centro de fitness, sauna, bañera de hidromasaje y bar. Habitaciones estilo clásico con aire acondicionado, TV de pantalla plana y minibar. Restaurante con cocina italiana tradicional y terraza en la azotea.</p>
                   <div className="bg-purple-50 border-l-4 border-purple-400 rounded-r-lg p-3 mb-4">
                     <p className="text-xs text-purple-800 leading-relaxed">
                       <span className="text-base mr-1">📍</span>
-                      <strong>Qué hay cerca:</strong> Lungotevere Delle Armi 21
+                      <strong>Qué hay cerca:</strong> Vaticano (2 km), Piazza del Popolo (1 km), metro Lepanto (10 min a pie), barrio elegante de Prati, vistas al río Tíber.
                     </p>
                   </div>
                 </div>
@@ -412,11 +412,11 @@ Volver a guías
                 </div>
                 <div className="flex-grow">
                   <h4 className="font-bold text-gray-900 mb-3 text-lg leading-tight">Hotel Isa Design</h4>
-                  <p className="text-sm text-gray-700 mb-4 leading-relaxed">Excelente ubicación cerca del Vaticano. Diseño moderno y muy buena relación calidad-precio.</p>
+                  <p className="text-sm text-gray-700 mb-4 leading-relaxed">Hotel boutique moderno en el exclusivo barrio de Prati. Zonas de estar elegantes con terraza panorámica en la azotea. Habitaciones con aire acondicionado, WiFi gratuita, zapatillas y secador de pelo. Diseño único en cada habitación.</p>
                   <div className="bg-indigo-50 border-l-4 border-indigo-400 rounded-r-lg p-3 mb-4">
                     <p className="text-xs text-indigo-800 leading-relaxed">
                       <span className="text-base mr-1">📍</span>
-                      <strong>Qué hay cerca:</strong> Via Cicerone 39
+                      <strong>Qué hay cerca:</strong> Vaticano (15 min a pie por el Tíber), Panteón y Piazza Navona (al otro lado del río), barrio elegante de Prati, restaurantes y tiendas locales.
                     </p>
                   </div>
                 </div>
