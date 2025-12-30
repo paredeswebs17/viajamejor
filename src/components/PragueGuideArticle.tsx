@@ -428,7 +428,7 @@ Volver a guías
             </ul>
           </div>
         </div>
-        <div className="bg-white rounded-xl p-4 border border-gray-200 shadow-sm mt-4">
+        <div className="mt-4">
           <a href="https://gyg.me/a770HnSE" target="_blank" rel="noopener noreferrer"
              className="btn-hotel">
             <span>🗼 Reservar entradas Torre del Ayuntamiento</span>
@@ -469,7 +469,7 @@ Volver a guías
           </div>
         </div>
         
-        <div className="bg-white rounded-xl p-4 border border-gray-200 shadow-sm mt-4">
+        <div className="mt-4">
           <a href="https://gyg.me/RaU4n6Wm" target="_blank" rel="noopener noreferrer"
              className="btn-hotel">
             <span>🚶‍♂️ Tour guiado Barrio Judío completo</span>
@@ -549,7 +549,7 @@ src="https://images.pexels.com/photos/5426128/pexels-photo-5426128.jpeg"
             </ul>
           </div>
         </div>
-        <div className="bg-white rounded-xl p-4 border border-gray-200 shadow-sm mt-4">
+        <div className="mt-4">
           <a href="https://gyg.me/Epi0atVq" target="_blank" rel="noopener noreferrer"
              className="btn-hotel">
             <span>📚 Reservar tour Clementinum</span>
@@ -690,7 +690,7 @@ src="https://images.pexels.com/photos/2930357/pexels-photo-2930357.jpeg"
           </p>
         </div>
         
-        <div className="bg-white rounded-xl p-4 border border-gray-200 shadow-sm mt-4">
+        <div className="mt-4">
           <a href="https://gyg.me/Mszm1WAX" target="_blank" rel="noopener noreferrer"
              className="btn-hotel">
             <span>🏰 Entradas oficiales Castillo de Praga</span>
@@ -698,7 +698,7 @@ src="https://images.pexels.com/photos/2930357/pexels-photo-2930357.jpeg"
           </a>
         </div>
 
-        <div className="bg-white rounded-xl p-4 border border-gray-200 shadow-sm mt-4">
+        <div className="mt-4">
           <a href="https://gyg.me/rQRkcmJj" target="_blank" rel="noopener noreferrer"
              className="btn-hotel">
             <span>👑 Tour guiado Castillo completo</span>
@@ -868,7 +868,7 @@ src="https://images.pexels.com/photos/2930357/pexels-photo-2930357.jpeg"
           </div>
         </div>
         
-        <div className="bg-white rounded-xl p-4 border border-gray-200 shadow-sm mt-4">
+        <div className="mt-4">
           <a href="https://gyg.me/OIy3uAsC" target="_blank" rel="noopener noreferrer"
              className="btn-hotel">
             <span>🛥️ Reservar Crucero por el Moldava</span>
@@ -941,7 +941,7 @@ src="https://images.pexels.com/photos/2930357/pexels-photo-2930357.jpeg"
           <p className="text-sm text-gray-600 italic">
             Una experiencia educativa profunda sobre la historia del Holocausto.
           </p>
-          <div className="bg-white rounded-xl p-4 border border-gray-200 shadow-sm mt-4">
+          <div className="mt-4">
             <a href="https://gyg.me/se34ncsA" target="_blank" rel="noopener noreferrer"
                className="btn-hotel">
               <span>🕯️ Reservar excursión a Terezín</span>
@@ -986,7 +986,7 @@ src="https://images.pexels.com/photos/32795906/pexels-photo-32795906.jpeg"
           <p className="text-sm text-gray-600 italic">
             Perfecta para relajarse y conocer la Bohemia termal histórica.
           </p>
-          <div className="bg-white rounded-xl p-4 border border-gray-200 shadow-sm mt-4">
+          <div className="mt-4">
             <a href="https://gyg.me/D4FukqaH" target="_blank" rel="noopener noreferrer"
                className="btn-hotel">
               <span>💎 Reservar excursión a Karlovy Vary</span>
