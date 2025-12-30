@@ -213,64 +213,94 @@ Volver a guías
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-4">
-        <div className="bg-gradient-to-br from-emerald-50 to-green-50 rounded-xl p-4 border border-emerald-200 flex flex-col">
-          <div className="flex-grow">
-            <h4 className="font-bold text-gray-900 mb-2">THE MANES Boutique Hotel Prague ⭐⭐⭐⭐</h4>
-            <p className="text-xs text-gray-600 mb-2">📍 Centro Ciudad</p>
-            <p className="text-sm text-gray-700 mb-3">Hotel boutique de lujo junto al río Moldava.</p>
+        <div className="hotel-card border-l-4 border-emerald-400 bg-emerald-100/60">
+          <div className="hotel-header">
+            <h3 className="hotel-name">THE MANES Boutique Hotel Prague</h3>
+            <div className="hotel-stars">⭐⭐⭐⭐</div>
           </div>
-          <div className="flex items-center justify-between flex-wrap gap-2 mt-auto">
-            <span className="text-lg font-bold text-emerald-600">€€</span>
-            <a
-              href="https://booking.tpk.lv/rx4UJa7s"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center bg-gradient-to-r from-emerald-500 to-green-600 hover:from-emerald-600 hover:to-green-700 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm"
-            >
-              Ver en Booking
-              <ExternalLink className="h-3 w-3 ml-2" />
-            </a>
+
+          <div className="hotel-location">
+            <span className="location-icon">📍</span>
+            <span>Centro Ciudad</span>
           </div>
+
+          <p className="hotel-description">
+            <strong>Hotel boutique de lujo junto al río Moldava.</strong> Ubicación privilegiada cerca de las principales atracciones turísticas y el corazón histórico de Praga.
+          </p>
+
+          <div className="bg-emerald-50 border border-emerald-200 rounded p-2 mb-3 mt-3">
+            <p className="text-emerald-800 text-xs font-medium">💰 Rango de precio: €€</p>
+          </div>
+
+          <a
+            href="https://booking.tpk.lv/rx4UJa7s"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-hotel mt-auto"
+          >
+            <span>Ver en Booking</span>
+            <ExternalLink className="external-icon" />
+          </a>
         </div>
 
-        <div className="bg-gradient-to-br from-cyan-50 to-teal-50 rounded-xl p-4 border border-cyan-200 flex flex-col">
-          <div className="flex-grow">
-            <h4 className="font-bold text-gray-900 mb-2">Allure Hotel & Residence Prague ⭐⭐⭐⭐</h4>
-            <p className="text-xs text-gray-600 mb-2">📍 Centro Ciudad</p>
-            <p className="text-sm text-gray-700 mb-3">Hotel elegante con apartamentos y ubicación perfecta para explorar Praga.</p>
+        <div className="hotel-card border-l-4 border-cyan-400 bg-cyan-100/60">
+          <div className="hotel-header">
+            <h3 className="hotel-name">Allure Hotel & Residence Prague</h3>
+            <div className="hotel-stars">⭐⭐⭐⭐</div>
           </div>
-          <div className="flex items-center justify-between flex-wrap gap-2 mt-auto">
-            <span className="text-lg font-bold text-cyan-600">€€</span>
-            <a
-              href="https://booking.tpk.lv/Sykxeva1"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center bg-gradient-to-r from-emerald-500 to-green-600 hover:from-emerald-600 hover:to-green-700 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm"
-            >
-              Ver en Booking
-              <ExternalLink className="h-3 w-3 ml-2" />
-            </a>
+
+          <div className="hotel-location">
+            <span className="location-icon">📍</span>
+            <span>Centro Ciudad</span>
           </div>
+
+          <p className="hotel-description">
+            <strong>Hotel elegante con apartamentos.</strong> Ubicación perfecta para explorar Praga con todas las comodidades para una estancia confortable.
+          </p>
+
+          <div className="bg-cyan-50 border border-cyan-200 rounded p-2 mb-3 mt-3">
+            <p className="text-cyan-800 text-xs font-medium">💰 Rango de precio: €€</p>
+          </div>
+
+          <a
+            href="https://booking.tpk.lv/Sykxeva1"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-hotel mt-auto"
+          >
+            <span>Ver en Booking</span>
+            <ExternalLink className="external-icon" />
+          </a>
         </div>
 
-        <div className="bg-gradient-to-br from-blue-50 to-sky-50 rounded-xl p-4 border border-blue-200 flex flex-col">
-          <div className="flex-grow">
-            <h4 className="font-bold text-gray-900 mb-2">Hotel Karlova Prague ⭐⭐⭐⭐</h4>
-            <p className="text-xs text-gray-600 mb-2">📍 Centro Ciudad</p>
-            <p className="text-sm text-gray-700 mb-3">Hotel céntrico a pocos pasos de la Plaza de la Ciudad Vieja y el Puente de Carlos.</p>
+        <div className="hotel-card border-l-4 border-blue-400 bg-blue-100/60">
+          <div className="hotel-header">
+            <h3 className="hotel-name">Hotel Karlova Prague</h3>
+            <div className="hotel-stars">⭐⭐⭐⭐</div>
           </div>
-          <div className="flex items-center justify-between flex-wrap gap-2 mt-auto">
-            <span className="text-lg font-bold text-blue-600">€</span>
-            <a
-              href="https://booking.tpk.lv/uT7oiUGu"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center bg-gradient-to-r from-emerald-500 to-green-600 hover:from-emerald-600 hover:to-green-700 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm"
-            >
-              Ver en Booking
-              <ExternalLink className="h-3 w-3 ml-2" />
-            </a>
+
+          <div className="hotel-location">
+            <span className="location-icon">📍</span>
+            <span>Centro Ciudad</span>
           </div>
+
+          <p className="hotel-description">
+            <strong>Hotel céntrico a pocos pasos de la Plaza de la Ciudad Vieja y el Puente de Carlos.</strong> Excelente relación calidad-precio en el corazón de Praga.
+          </p>
+
+          <div className="bg-blue-50 border border-blue-200 rounded p-2 mb-3 mt-3">
+            <p className="text-blue-800 text-xs font-medium">💰 Rango de precio: €</p>
+          </div>
+
+          <a
+            href="https://booking.tpk.lv/uT7oiUGu"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-hotel mt-auto"
+          >
+            <span>Ver en Booking</span>
+            <ExternalLink className="external-icon" />
+          </a>
         </div>
       </div>
     </div>
