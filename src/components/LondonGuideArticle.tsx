@@ -749,105 +749,110 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
 
             <button
               onClick={() => toggleZone('westminster')}
-              className="flex items-center gap-2 text-black hover:text-gray-800 transition-colors font-medium mb-4"
+              className="w-full bg-gradient-to-r from-sky-500 to-blue-500 hover:from-sky-600 hover:to-blue-600 text-white rounded-xl p-4 mb-3 flex items-center justify-between transition-all duration-300 shadow-md hover:shadow-lg group"
             >
+              <div className="flex items-center gap-3">
+                <span className="text-2xl">🏨</span>
+                <div className="text-left">
+                  <span className="font-bold text-lg block">
+                    {expandedZone === 'westminster' ? 'Ocultar hoteles' : 'Ver 3 hoteles recomendados'}
+                  </span>
+                  <span className="text-sm text-sky-100 block">
+                    Hoteles en el corazón de Londres
+                  </span>
+                </div>
+              </div>
               {expandedZone === 'westminster' ?
-                <ChevronUp className="w-5 h-5" /> :
-                <ChevronDown className="w-5 h-5" />
+                <ChevronUp className="w-6 h-6 group-hover:transform group-hover:-translate-y-1 transition-transform" /> :
+                <ChevronDown className="w-6 h-6 group-hover:transform group-hover:translate-y-1 transition-transform" />
               }
-              <span>
-                {expandedZone === 'westminster' ? 'Ocultar' : 'Ver'} hoteles recomendados
-              </span>
             </button>
 
             {expandedZone === 'westminster' && (
               <div className="animate-fadeIn border-t border-gray-200 pt-4">
-                <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-4">
-              <div className="hotel-card border-l-4 border-sky-400 bg-sky-100/60">
-                <div className="hotel-header">
-                  <h3 className="hotel-name">The Z Hotel Strand</h3>
-                  <div className="hotel-stars">⭐⭐⭐</div>
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-4">
+              <div className="bg-white rounded-2xl p-5 border-2 border-sky-200 flex flex-col shadow-lg hover:shadow-xl hover:border-sky-300 transition-all duration-300 hover:-translate-y-1">
+                <div className="flex items-start justify-between mb-3">
+                  <span className="text-3xl">🏨</span>
+                  <span className="bg-amber-400 text-amber-900 px-3 py-1 rounded-full text-xs font-bold">⭐⭐⭐</span>
                 </div>
-
-                <div className="hotel-location">
-                  <span className="location-icon">📍</span>
-                  <span>Westminster</span>
+                <div className="flex-grow">
+                  <h4 className="font-bold text-gray-900 mb-3 text-lg leading-tight">The Z Hotel Strand</h4>
+                  <p className="text-sm text-gray-700 mb-4 leading-relaxed"><strong>Ubicación inmejorable en pleno corazón de Londres.</strong> Hotel moderno con habitaciones compactas pero inteligentemente diseñadas, equipadas con aire acondicionado, TV satélite y baño privado completo. Incluye bar, WiFi gratis y desayuno buffet con opciones sin gluten.</p>
+                  <div className="bg-sky-50 border-l-4 border-sky-400 rounded-r-lg p-3 mb-4">
+                    <p className="text-xs text-sky-800 leading-relaxed">
+                      <span className="text-base mr-1">📍</span>
+                      <strong>Qué hay cerca:</strong> Teatro Savoy (2 min), Teatro Lyceum (4 min), Trafalgar Square (5 min), Ópera Real y Galería Nacional a poca distancia. Metro Charing Cross a 400m.
+                    </p>
+                  </div>
                 </div>
-
-                <p className="hotel-description">
-                  <strong>Ubicación inmejorable en pleno corazón de Londres.</strong> Hotel moderno con habitaciones compactas pero inteligentemente diseñadas, equipadas con aire acondicionado, TV satélite y baño privado completo. Incluye bar, WiFi gratis y desayuno buffet con opciones sin gluten.
-                </p>
-
-                <div className="bg-sky-50 border border-sky-200 rounded p-2 mb-3 mt-3">
-                  <p className="text-xs text-sky-700">
-                    📍 <strong>Qué hay cerca:</strong> Teatro Savoy (2 min), Teatro Lyceum (4 min), Trafalgar Square (5 min), Ópera Real y Galería Nacional a poca distancia. Metro Charing Cross a 400m.
-                  </p>
+                <div className="mt-auto">
+                  <a
+                    href="https://booking.tpk.lv/L9dEChO8"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-bold px-6 py-3.5 rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 text-base w-full group"
+                  >
+                    <span className="mr-2">Ver disponibilidad</span>
+                    <ExternalLink className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
+                  </a>
                 </div>
-
-                <a href="https://booking.tpk.lv/L9dEChO8" target="_blank" rel="noopener noreferrer" className="btn-hotel">
-                  <span>Ver disponibilidad y precios</span>
-                  <svg className="external-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
-                  </svg>
-                </a>
               </div>
 
-              <div className="hotel-card border-l-4 border-teal-400 bg-teal-100/60">
-                <div className="hotel-header">
-                  <h3 className="hotel-name">Park Plaza Victoria London</h3>
-                  <div className="hotel-stars">⭐⭐⭐⭐</div>
+              <div className="bg-white rounded-2xl p-5 border-2 border-cyan-200 flex flex-col shadow-lg hover:shadow-xl hover:border-cyan-300 transition-all duration-300 hover:-translate-y-1">
+                <div className="flex items-start justify-between mb-3">
+                  <span className="text-3xl">🏨</span>
+                  <span className="bg-amber-400 text-amber-900 px-3 py-1 rounded-full text-xs font-bold">⭐⭐⭐⭐</span>
                 </div>
-
-                <div className="hotel-location">
-                  <span className="location-icon">📍</span>
-                  <span>Westminster</span>
+                <div className="flex-grow">
+                  <h4 className="font-bold text-gray-900 mb-3 text-lg leading-tight">Park Plaza Victoria London</h4>
+                  <p className="text-sm text-gray-700 mb-4 leading-relaxed"><strong>Hotel moderno ideal para familias y viajeros que buscan comodidad.</strong> Habitaciones amplias con aire acondicionado, TV de pantalla plana y WiFi gratis. Incluye restaurante italiano TOZI, bar de cócteles elegante y Leisure Club completo con gimnasio, sauna y sala de vapor.</p>
+                  <div className="bg-cyan-50 border-l-4 border-cyan-400 rounded-r-lg p-3 mb-4">
+                    <p className="text-xs text-cyan-800 leading-relaxed">
+                      <span className="text-base mr-1">📍</span>
+                      <strong>Qué hay cerca:</strong> Victoria Station (2 min), Palacio de Buckingham (5 min), Westminster Abbey y Big Ben (1.6 km), Parliament Square. Ubicación perfecta para el cambio de guardia.
+                    </p>
+                  </div>
                 </div>
-
-                <p className="hotel-description">
-                  <strong>Hotel moderno ideal para familias y viajeros que buscan comodidad.</strong> Habitaciones amplias con aire acondicionado, TV de pantalla plana y WiFi gratis. Incluye restaurante italiano TOZI, bar de cócteles elegante y Leisure Club completo con gimnasio, sauna y sala de vapor.
-                </p>
-
-                <div className="bg-teal-50 border border-teal-200 rounded p-2 mb-3 mt-3">
-                  <p className="text-xs text-teal-700">
-                    📍 <strong>Qué hay cerca:</strong> Victoria Station (2 min), Palacio de Buckingham (5 min), Westminster Abbey y Big Ben (1.6 km), Parliament Square. Ubicación perfecta para el cambio de guardia.
-                  </p>
+                <div className="mt-auto">
+                  <a
+                    href="https://booking.tpk.lv/nIEfXSJO"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-bold px-6 py-3.5 rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 text-base w-full group"
+                  >
+                    <span className="mr-2">Ver disponibilidad</span>
+                    <ExternalLink className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
+                  </a>
                 </div>
-
-                <a href="https://booking.tpk.lv/nIEfXSJO" target="_blank" rel="noopener noreferrer" className="btn-hotel">
-                  <span>Ver disponibilidad y precios</span>
-                  <svg className="external-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
-                  </svg>
-                </a>
               </div>
 
-              <div className="hotel-card border-l-4 border-violet-400 bg-violet-100/60">
-                <div className="hotel-header">
-                  <h3 className="hotel-name">The Resident Victoria</h3>
-                  <div className="hotel-stars">⭐⭐⭐⭐</div>
+              <div className="bg-white rounded-2xl p-5 border-2 border-blue-200 flex flex-col shadow-lg hover:shadow-xl hover:border-blue-300 transition-all duration-300 hover:-translate-y-1">
+                <div className="flex items-start justify-between mb-3">
+                  <span className="text-3xl">🏨</span>
+                  <span className="bg-amber-400 text-amber-900 px-3 py-1 rounded-full text-xs font-bold">⭐⭐⭐⭐</span>
                 </div>
-
-                <div className="hotel-location">
-                  <span className="location-icon">📍</span>
-                  <span>Westminster</span>
+                <div className="flex-grow">
+                  <h4 className="font-bold text-gray-900 mb-3 text-lg leading-tight">The Resident Victoria</h4>
+                  <p className="text-sm text-gray-700 mb-4 leading-relaxed"><strong>Perfecto para estancias largas o viajeros independientes.</strong> Habitaciones con WiFi gratis y cocina pequeña completamente equipada (nevera, microondas, fregadero con filtro Brita, cafetera Nespresso). Incluye escritorio, caja fuerte para portátil y recepción 24h.</p>
+                  <div className="bg-blue-50 border-l-4 border-blue-400 rounded-r-lg p-3 mb-4">
+                    <p className="text-xs text-blue-800 leading-relaxed">
+                      <span className="text-base mr-1">📍</span>
+                      <strong>Qué hay cerca:</strong> Palacio de Buckingham (300m), Parque St James (700m), Westminster Abbey (1 km). Aeropuerto London City a 13 km. Ideal para ahorrar en comidas preparándote algo rápido.
+                    </p>
+                  </div>
                 </div>
-
-                <p className="hotel-description">
-                  <strong>Perfecto para estancias largas o viajeros independientes.</strong> Habitaciones con WiFi gratis y cocina pequeña completamente equipada (nevera, microondas, fregadero con filtro Brita, cafetera Nespresso). Incluye escritorio, caja fuerte para portátil y recepción 24h.
-                </p>
-
-                <div className="bg-violet-50 border border-violet-200 rounded p-2 mb-3 mt-3">
-                  <p className="text-xs text-violet-700">
-                    📍 <strong>Qué hay cerca:</strong> Palacio de Buckingham (300m), Parque St James (700m), Westminster Abbey (1 km). Aeropuerto London City a 13 km. Ideal para ahorrar en comidas preparándote algo rápido.
-                  </p>
+                <div className="mt-auto">
+                  <a
+                    href="https://booking.tpk.lv/3TjF71Re"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-bold px-6 py-3.5 rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 text-base w-full group"
+                  >
+                    <span className="mr-2">Ver disponibilidad</span>
+                    <ExternalLink className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
+                  </a>
                 </div>
-
-                <a href="https://booking.tpk.lv/3TjF71Re" target="_blank" rel="noopener noreferrer" className="btn-hotel">
-                  <span>Ver disponibilidad y precios</span>
-                  <svg className="external-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
-                  </svg>
-                </a>
               </div>
             </div>
 
@@ -876,106 +881,111 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
 
             <button
               onClick={() => toggleZone('kings-cross')}
-              className="flex items-center gap-2 text-black hover:text-gray-800 transition-colors font-medium mb-4"
+              className="w-full bg-gradient-to-r from-red-500 to-orange-500 hover:from-red-600 hover:to-orange-600 text-white rounded-xl p-4 mb-3 flex items-center justify-between transition-all duration-300 shadow-md hover:shadow-lg group"
             >
+              <div className="flex items-center gap-3">
+                <span className="text-2xl">🏨</span>
+                <div className="text-left">
+                  <span className="font-bold text-lg block">
+                    {expandedZone === 'kings-cross' ? 'Ocultar hoteles' : 'Ver 3 hoteles recomendados'}
+                  </span>
+                  <span className="text-sm text-red-100 block">
+                    Hoteles en Camden & King's Cross
+                  </span>
+                </div>
+              </div>
               {expandedZone === 'kings-cross' ?
-                <ChevronUp className="w-5 h-5" /> :
-                <ChevronDown className="w-5 h-5" />
+                <ChevronUp className="w-6 h-6 group-hover:transform group-hover:-translate-y-1 transition-transform" /> :
+                <ChevronDown className="w-6 h-6 group-hover:transform group-hover:translate-y-1 transition-transform" />
               }
-              <span>
-                {expandedZone === 'kings-cross' ? 'Ocultar' : 'Ver'} hoteles recomendados
-              </span>
             </button>
 
             {expandedZone === 'kings-cross' && (
               <div className="animate-fadeIn border-t border-gray-200 pt-4">
 
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-4">
-              <div className="hotel-card border-l-4 border-red-400 bg-red-100/60">
-                <div className="hotel-header">
-                  <h3 className="hotel-name">Tavistock Hotel</h3>
-                  <div className="hotel-stars">⭐⭐⭐</div>
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-4">
+              <div className="bg-white rounded-2xl p-5 border-2 border-sky-200 flex flex-col shadow-lg hover:shadow-xl hover:border-sky-300 transition-all duration-300 hover:-translate-y-1">
+                <div className="flex items-start justify-between mb-3">
+                  <span className="text-3xl">🏨</span>
+                  <span className="bg-amber-400 text-amber-900 px-3 py-1 rounded-full text-xs font-bold">⭐⭐⭐</span>
                 </div>
-
-                <div className="hotel-location">
-                  <span className="location-icon">📍</span>
-                  <span>King's Cross</span>
+                <div className="flex-grow">
+                  <h4 className="font-bold text-gray-900 mb-3 text-lg leading-tight">Tavistock Hotel</h4>
+                  <p className="text-sm text-gray-700 mb-4 leading-relaxed"><strong>Hotel completo con terraza, restaurante y bar.</strong> WiFi gratis, recepción 24h y conserjería. Habitaciones con escritorio, TV, caja fuerte, hervidor y baño privado. Algunas con vistas al jardín. Desayuno buffet, continental o inglés/irlandés disponible.</p>
+                  <div className="bg-sky-50 border-l-4 border-sky-400 rounded-r-lg p-3 mb-4">
+                    <p className="text-xs text-sky-800 leading-relaxed">
+                      <span className="text-base mr-1">📍</span>
+                      <strong>Qué hay cerca:</strong> Euston Station (7 min), Museo Británico (10 min), King's Cross St. Pancras (Eurostar), Ópera Real. Aeropuerto London City a 14 km. Perfecto si llegas/sales de Stansted/Luton.
+                    </p>
+                  </div>
                 </div>
-
-                <p className="hotel-description">
-                  <strong>Hotel completo con terraza, restaurante y bar.</strong> WiFi gratis, recepción 24h y conserjería. Habitaciones con escritorio, TV, caja fuerte, hervidor y baño privado. Algunas con vistas al jardín. Desayuno buffet, continental o inglés/irlandés disponible.
-                </p>
-
-                <div className="bg-red-50 border border-red-200 rounded p-2 mb-3 mt-3">
-                  <p className="text-xs text-red-700">
-                    📍 <strong>Qué hay cerca:</strong> Euston Station (7 min), Museo Británico (10 min), King's Cross St. Pancras (Eurostar), Ópera Real. Aeropuerto London City a 14 km. Perfecto si llegas/sales de Stansted/Luton.
-                  </p>
+                <div className="mt-auto">
+                  <a
+                    href="https://booking.tpk.lv/5NxF9hAu"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-bold px-6 py-3.5 rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 text-base w-full group"
+                  >
+                    <span className="mr-2">Ver disponibilidad</span>
+                    <ExternalLink className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
+                  </a>
                 </div>
-
-                <a href="https://booking.tpk.lv/5NxF9hAu" target="_blank" rel="noopener noreferrer" className="btn-hotel">
-                  <span>Ver disponibilidad y precios</span>
-                  <svg className="external-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
-                  </svg>
-                </a>
               </div>
 
-              <div className="hotel-card border-l-4 border-orange-400 bg-orange-100/60">
-                <div className="hotel-header">
-                  <h3 className="hotel-name">Morton Hotel</h3>
-                  <div className="hotel-stars">⭐⭐⭐⭐</div>
+              <div className="bg-white rounded-2xl p-5 border-2 border-cyan-200 flex flex-col shadow-lg hover:shadow-xl hover:border-cyan-300 transition-all duration-300 hover:-translate-y-1">
+                <div className="flex items-start justify-between mb-3">
+                  <span className="text-3xl">🏨</span>
+                  <span className="bg-amber-400 text-amber-900 px-3 py-1 rounded-full text-xs font-bold">⭐⭐⭐⭐</span>
                 </div>
-
-                <div className="hotel-location">
-                  <span className="location-icon">📍</span>
-                  <span>King's Cross</span>
+                <div className="flex-grow">
+                  <h4 className="font-bold text-gray-900 mb-3 text-lg leading-tight">Morton Hotel</h4>
+                  <p className="text-sm text-gray-700 mb-4 leading-relaxed"><strong>Hotel con restaurante, bar y conserjería.</strong> WiFi gratis en todo el alojamiento. Habitaciones con aire acondicionado, escritorio, cafetera, nevera, caja fuerte, TV y baño privado con bañera o ducha. Recepción 24h (personal habla inglés y ruso). Parking privado disponible por un suplemento.</p>
+                  <div className="bg-cyan-50 border-l-4 border-cyan-400 rounded-r-lg p-3 mb-4">
+                    <p className="text-xs text-cyan-800 leading-relaxed">
+                      <span className="text-base mr-1">📍</span>
+                      <strong>Qué hay cerca:</strong> Museo Británico (7 min), Euston Station (10 min), Ópera Real, Teatro Dominion, Tottenham Court Road. Aeropuerto London City a 14 km. A 1,9 km del centro.
+                    </p>
+                  </div>
                 </div>
-
-                <p className="hotel-description">
-                  <strong>Hotel con restaurante, bar y conserjería.</strong> WiFi gratis en todo el alojamiento. Habitaciones con aire acondicionado, escritorio, cafetera, nevera, caja fuerte, TV y baño privado con bañera o ducha. Recepción 24h (personal habla inglés y ruso). Parking privado disponible por un suplemento.
-                </p>
-
-                <div className="bg-orange-50 border border-orange-200 rounded p-2 mb-3 mt-3">
-                  <p className="text-xs text-orange-700">
-                    📍 <strong>Qué hay cerca:</strong> Museo Británico (7 min), Euston Station (10 min), Ópera Real, Teatro Dominion, Tottenham Court Road. Aeropuerto London City a 14 km. A 1,9 km del centro.
-                  </p>
+                <div className="mt-auto">
+                  <a
+                    href="https://booking.tpk.lv/syLZxUWd"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-bold px-6 py-3.5 rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 text-base w-full group"
+                  >
+                    <span className="mr-2">Ver disponibilidad</span>
+                    <ExternalLink className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
+                  </a>
                 </div>
-
-                <a href="https://booking.tpk.lv/syLZxUWd" target="_blank" rel="noopener noreferrer" className="btn-hotel">
-                  <span>Ver disponibilidad y precios</span>
-                  <svg className="external-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
-                  </svg>
-                </a>
               </div>
 
-              <div className="hotel-card border-l-4 border-yellow-400 bg-yellow-100/60">
-                <div className="hotel-header">
-                  <h3 className="hotel-name">Pullman London St Pancras</h3>
-                  <div className="hotel-stars">⭐⭐⭐⭐</div>
+              <div className="bg-white rounded-2xl p-5 border-2 border-blue-200 flex flex-col shadow-lg hover:shadow-xl hover:border-blue-300 transition-all duration-300 hover:-translate-y-1">
+                <div className="flex items-start justify-between mb-3">
+                  <span className="text-3xl">🏨</span>
+                  <span className="bg-amber-400 text-amber-900 px-3 py-1 rounded-full text-xs font-bold">⭐⭐⭐⭐</span>
                 </div>
-
-                <div className="hotel-location">
-                  <span className="location-icon">📍</span>
-                  <span>King's Cross</span>
+                <div className="flex-grow">
+                  <h4 className="font-bold text-gray-900 mb-3 text-lg leading-tight">Pullman London St Pancras</h4>
+                  <p className="text-sm text-gray-700 mb-4 leading-relaxed"><strong>Hotel premium junto a la Biblioteca Británica.</strong> WiFi gratuita, centro de fitness y servicio de habitaciones 24h. Cuenta con el GA KingsX - Bar & Kitchen y 17 salas de reuniones. Ubicación ideal para conexiones internacionales.</p>
+                  <div className="bg-blue-50 border-l-4 border-blue-400 rounded-r-lg p-3 mb-4">
+                    <p className="text-xs text-blue-800 leading-relaxed">
+                      <span className="text-base mr-1">📍</span>
+                      <strong>Qué hay cerca:</strong> Terminal Eurostar (3 min), St Pancras (10 min), Kings Cross y Euston (5 min). Museo Británico, Covent Garden, Oxford Street, West End y The City a 10 min en metro. Perfecto para Eurostar.
+                    </p>
+                  </div>
                 </div>
-
-                <p className="hotel-description">
-                  <strong>Hotel premium junto a la Biblioteca Británica.</strong> WiFi gratuita, centro de fitness y servicio de habitaciones 24h. Cuenta con el GA KingsX - Bar & Kitchen y 17 salas de reuniones. Ubicación ideal para conexiones internacionales.
-                </p>
-
-                <div className="bg-yellow-50 border border-yellow-200 rounded p-2 mb-3 mt-3">
-                  <p className="text-xs text-yellow-700">
-                    📍 <strong>Qué hay cerca:</strong> Terminal Eurostar (3 min), St Pancras (10 min), Kings Cross y Euston (5 min). Museo Británico, Covent Garden, Oxford Street, West End y The City a 10 min en metro. Perfecto para Eurostar.
-                  </p>
+                <div className="mt-auto">
+                  <a
+                    href="https://booking.tpk.lv/gaF2pTGa"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-bold px-6 py-3.5 rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 text-base w-full group"
+                  >
+                    <span className="mr-2">Ver disponibilidad</span>
+                    <ExternalLink className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
+                  </a>
                 </div>
-
-                <a href="https://booking.tpk.lv/gaF2pTGa" target="_blank" rel="noopener noreferrer" className="btn-hotel">
-                  <span>Ver disponibilidad y precios</span>
-                  <svg className="external-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
-                  </svg>
-                </a>
               </div>
             </div>
 
@@ -1004,106 +1014,111 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
 
             <button
               onClick={() => toggleZone('southwark')}
-              className="flex items-center gap-2 text-black hover:text-gray-800 transition-colors font-medium mb-4"
+              className="w-full bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white rounded-xl p-4 mb-3 flex items-center justify-between transition-all duration-300 shadow-md hover:shadow-lg group"
             >
+              <div className="flex items-center gap-3">
+                <span className="text-2xl">🏨</span>
+                <div className="text-left">
+                  <span className="font-bold text-lg block">
+                    {expandedZone === 'southwark' ? 'Ocultar hoteles' : 'Ver 3 hoteles recomendados'}
+                  </span>
+                  <span className="text-sm text-purple-100 block">
+                    Hoteles en Southwark / South Bank
+                  </span>
+                </div>
+              </div>
               {expandedZone === 'southwark' ?
-                <ChevronUp className="w-5 h-5" /> :
-                <ChevronDown className="w-5 h-5" />
+                <ChevronUp className="w-6 h-6 group-hover:transform group-hover:-translate-y-1 transition-transform" /> :
+                <ChevronDown className="w-6 h-6 group-hover:transform group-hover:translate-y-1 transition-transform" />
               }
-              <span>
-                {expandedZone === 'southwark' ? 'Ocultar' : 'Ver'} hoteles recomendados
-              </span>
             </button>
 
             {expandedZone === 'southwark' && (
               <div className="animate-fadeIn border-t border-gray-200 pt-4">
 
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-4">
-              <div className="hotel-card border-l-4 border-purple-400 bg-purple-100/60">
-                <div className="hotel-header">
-                  <h3 className="hotel-name">ibis London Blackfriars</h3>
-                  <div className="hotel-stars">⭐⭐⭐</div>
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-4">
+              <div className="bg-white rounded-2xl p-5 border-2 border-sky-200 flex flex-col shadow-lg hover:shadow-xl hover:border-sky-300 transition-all duration-300 hover:-translate-y-1">
+                <div className="flex items-start justify-between mb-3">
+                  <span className="text-3xl">🏨</span>
+                  <span className="bg-amber-400 text-amber-900 px-3 py-1 rounded-full text-xs font-bold">⭐⭐⭐</span>
                 </div>
-
-                <div className="hotel-location">
-                  <span className="location-icon">📍</span>
-                  <span>Southwark</span>
+                <div className="flex-grow">
+                  <h4 className="font-bold text-gray-900 mb-3 text-lg leading-tight">ibis London Blackfriars</h4>
+                  <p className="text-sm text-gray-700 mb-4 leading-relaxed"><strong>Hotel moderno con servicio completo 24 horas.</strong> Habitaciones con WiFi gratuita, TV de pantalla plana, baño privado y vistas a la ciudad. Incluyen utensilios de planchado y artículos de aseo gratuitos. Dispone de recepción 24 horas y menú de comida y bebida disponible todo el día. El restaurante Charlie's Corner ofrece bar con cerveza artesanal, café y aperitivos en ambiente moderno con buena música.</p>
+                  <div className="bg-sky-50 border-l-4 border-sky-400 rounded-r-lg p-3 mb-4">
+                    <p className="text-xs text-sky-800 leading-relaxed">
+                      <span className="text-base mr-1">📍</span>
+                      <strong>Qué hay cerca:</strong> Estación Waterloo (5 min), Tate Modern (10 min), London Eye y Big Ben (20 min andando). Desde Waterloo tomas línea Jubilee y en 10 min llegas a Bond Street para Oxford Street. Aeropuerto London City a 13 km.
+                    </p>
+                  </div>
                 </div>
-
-                <p className="hotel-description">
-                  <strong>Hotel moderno con servicio completo 24 horas.</strong> Habitaciones con WiFi gratuita, TV de pantalla plana, baño privado y vistas a la ciudad. Incluyen utensilios de planchado y artículos de aseo gratuitos. Dispone de recepción 24 horas y menú de comida y bebida disponible todo el día. El restaurante Charlie's Corner ofrece bar con cerveza artesanal, café y aperitivos en ambiente moderno con buena música.
-                </p>
-
-                <div className="bg-purple-50 border border-purple-200 rounded p-2 mb-3 mt-3">
-                  <p className="text-xs text-purple-700">
-                    📍 <strong>Qué hay cerca:</strong> Estación Waterloo (5 min), Tate Modern (10 min), London Eye y Big Ben (20 min andando). Desde Waterloo tomas línea Jubilee y en 10 min llegas a Bond Street para Oxford Street. Aeropuerto London City a 13 km.
-                  </p>
+                <div className="mt-auto">
+                  <a
+                    href="https://booking.tpk.lv/J6DZf62g"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-bold px-6 py-3.5 rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 text-base w-full group"
+                  >
+                    <span className="mr-2">Ver disponibilidad</span>
+                    <ExternalLink className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
+                  </a>
                 </div>
-
-                <a href="https://booking.tpk.lv/J6DZf62g" target="_blank" rel="noopener noreferrer" className="btn-hotel">
-                  <span>Ver disponibilidad y precios</span>
-                  <svg className="external-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
-                  </svg>
-                </a>
               </div>
 
-              <div className="hotel-card border-l-4 border-pink-400 bg-pink-100/60">
-                <div className="hotel-header">
-                  <h3 className="hotel-name">citizenM London Bankside</h3>
-                  <div className="hotel-stars">⭐⭐⭐⭐</div>
+              <div className="bg-white rounded-2xl p-5 border-2 border-cyan-200 flex flex-col shadow-lg hover:shadow-xl hover:border-cyan-300 transition-all duration-300 hover:-translate-y-1">
+                <div className="flex items-start justify-between mb-3">
+                  <span className="text-3xl">🏨</span>
+                  <span className="bg-amber-400 text-amber-900 px-3 py-1 rounded-full text-xs font-bold">⭐⭐⭐⭐</span>
                 </div>
-
-                <div className="hotel-location">
-                  <span className="location-icon">📍</span>
-                  <span>Southwark</span>
+                <div className="flex-grow">
+                  <h4 className="font-bold text-gray-900 mb-3 text-lg leading-tight">citizenM London Bankside</h4>
+                  <p className="text-sm text-gray-700 mb-4 leading-relaxed"><strong>Hotel moderno y elegante con tecnología de última generación.</strong> WiFi alta velocidad gratis en todas las instalaciones. Habitaciones con iPad control para iluminación ambiental, persianas, temperatura y TV. Chromecast gratuito para Netflix, Prime, Disney+. Baño privado con ducha efecto lluvia. Recepción 24h, zonas de estar estilo moderno con ordenadores iMac gratis e impresión gratuita. CanteenM 24h con bocadillos y platos calientes. Bar con cerveza de barril, champán y cócteles. Desayuno buffet disponible.</p>
+                  <div className="bg-cyan-50 border-l-4 border-cyan-400 rounded-r-lg p-3 mb-4">
+                    <p className="text-xs text-cyan-800 leading-relaxed">
+                      <span className="text-base mr-1">📍</span>
+                      <strong>Qué hay cerca:</strong> Tate Modern (2 min), Borough Market, Puente del Milenio (600m), Puente de Londres (500m), Catedral San Pablo (10 min), Estación Waterloo (1.6 km). Aeropuerto London City a 12 km.
+                    </p>
+                  </div>
                 </div>
-
-                <p className="hotel-description">
-                  <strong>Hotel moderno y elegante con tecnología de última generación.</strong> WiFi alta velocidad gratis en todas las instalaciones. Habitaciones con iPad control para iluminación ambiental, persianas, temperatura y TV. Chromecast gratuito para Netflix, Prime, Disney+. Baño privado con ducha efecto lluvia. Recepción 24h, zonas de estar estilo moderno con ordenadores iMac gratis e impresión gratuita. CanteenM 24h con bocadillos y platos calientes. Bar con cerveza de barril, champán y cócteles. Desayuno buffet disponible.
-                </p>
-
-                <div className="bg-pink-50 border border-pink-200 rounded p-2 mb-3 mt-3">
-                  <p className="text-xs text-pink-700">
-                    📍 <strong>Qué hay cerca:</strong> Tate Modern (2 min), Borough Market, Puente del Milenio (600m), Puente de Londres (500m), Catedral San Pablo (10 min), Estación Waterloo (1.6 km). Aeropuerto London City a 12 km.
-                  </p>
+                <div className="mt-auto">
+                  <a
+                    href="https://booking.tpk.lv/cp2brt0T"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-bold px-6 py-3.5 rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 text-base w-full group"
+                  >
+                    <span className="mr-2">Ver disponibilidad</span>
+                    <ExternalLink className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
+                  </a>
                 </div>
-
-                <a href="https://booking.tpk.lv/cp2brt0T" target="_blank" rel="noopener noreferrer" className="btn-hotel">
-                  <span>Ver disponibilidad y precios</span>
-                  <svg className="external-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
-                  </svg>
-                </a>
               </div>
 
-              <div className="hotel-card border-l-4 border-blue-400 bg-blue-100/60">
-                <div className="hotel-header">
-                  <h3 className="hotel-name">H10 London Waterloo</h3>
-                  <div className="hotel-stars">⭐⭐⭐⭐</div>
+              <div className="bg-white rounded-2xl p-5 border-2 border-blue-200 flex flex-col shadow-lg hover:shadow-xl hover:border-blue-300 transition-all duration-300 hover:-translate-y-1">
+                <div className="flex items-start justify-between mb-3">
+                  <span className="text-3xl">🏨</span>
+                  <span className="bg-amber-400 text-amber-900 px-3 py-1 rounded-full text-xs font-bold">⭐⭐⭐⭐</span>
                 </div>
-
-                <div className="hotel-location">
-                  <span className="location-icon">📍</span>
-                  <span>Southwark</span>
+                <div className="flex-grow">
+                  <h4 className="font-bold text-gray-900 mb-3 text-lg leading-tight">H10 London Waterloo</h4>
+                  <p className="text-sm text-gray-700 mb-4 leading-relaxed"><strong>Edificio elegante de nueva construcción con restaurante de vanguardia.</strong> WiFi gratis. Habitaciones con decoración elegante, ventanales con vistas al barrio de Lambeth, aire acondicionado, TV LCD, caja fuerte para portátil y minibar. Restaurante Three O Two con cocina mediterránea. Bar Circus con vinos selectos y aperitivos ligeros. Desayuno buffet diario con platos calientes y continentales.</p>
+                  <div className="bg-blue-50 border-l-4 border-blue-400 rounded-r-lg p-3 mb-4">
+                    <p className="text-xs text-blue-800 leading-relaxed">
+                      <span className="text-base mr-1">📍</span>
+                      <strong>Qué hay cerca:</strong> Estación de metro Waterloo (5 min), Parliament Square y Big Ben (15 min), London Eye (15 min), Shakespeare's Globe (20 min).
+                    </p>
+                  </div>
                 </div>
-
-                <p className="hotel-description">
-                  <strong>Edificio elegante de nueva construcción con restaurante de vanguardia.</strong> WiFi gratis. Habitaciones con decoración elegante, ventanales con vistas al barrio de Lambeth, aire acondicionado, TV LCD, caja fuerte para portátil y minibar. Restaurante Three O Two con cocina mediterránea. Bar Circus con vinos selectos y aperitivos ligeros. Desayuno buffet diario con platos calientes y continentales.
-                </p>
-
-                <div className="bg-blue-50 border border-blue-200 rounded p-2 mb-3 mt-3">
-                  <p className="text-xs text-blue-700">
-                    📍 <strong>Qué hay cerca:</strong> Estación de metro Waterloo (5 min), Parliament Square y Big Ben (15 min), London Eye (15 min), Shakespeare's Globe (20 min).
-                  </p>
+                <div className="mt-auto">
+                  <a
+                    href="https://booking.tpk.lv/95kgpIh5"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-bold px-6 py-3.5 rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 text-base w-full group"
+                  >
+                    <span className="mr-2">Ver disponibilidad</span>
+                    <ExternalLink className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
+                  </a>
                 </div>
-
-                <a href="https://booking.tpk.lv/95kgpIh5" target="_blank" rel="noopener noreferrer" className="btn-hotel">
-                  <span>Ver disponibilidad y precios</span>
-                  <svg className="external-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
-                  </svg>
-                </a>
               </div>
             </div>
 

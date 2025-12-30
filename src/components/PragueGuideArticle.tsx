@@ -212,101 +212,89 @@ Volver a guías
         </div>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-4">
-        <div className="hotel-card border-l-4 border-emerald-400 bg-emerald-100/60">
-          <div className="hotel-header">
-            <h3 className="hotel-name">THE MANES Boutique Hotel Prague</h3>
-            <div className="hotel-stars">⭐⭐⭐⭐</div>
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-4">
+        <div className="bg-white rounded-2xl p-5 border-2 border-sky-200 flex flex-col shadow-lg hover:shadow-xl hover:border-sky-300 transition-all duration-300 hover:-translate-y-1">
+          <div className="flex items-start justify-between mb-3">
+            <span className="text-3xl">🏨</span>
+            <span className="bg-amber-400 text-amber-900 px-3 py-1 rounded-full text-xs font-bold">⭐⭐⭐⭐</span>
           </div>
-
-          <div className="hotel-location">
-            <span className="location-icon">📍</span>
-            <span>Centro Ciudad</span>
+          <div className="flex-grow">
+            <h4 className="font-bold text-gray-900 mb-3 text-lg leading-tight">THE MANES Boutique Hotel Prague</h4>
+            <p className="text-sm text-gray-700 mb-4 leading-relaxed"><strong>Hotel boutique situado junto al dique del río Moldava.</strong> Ofrece interiores modernos y habitaciones amplias con TV vía satélite, minibar y caja fuerte. Wifi gratuita y bien comunicado con todos los medios de transporte.</p>
+            <div className="bg-sky-50 border-l-4 border-sky-400 rounded-r-lg p-3 mb-4">
+              <p className="text-xs text-sky-800 leading-relaxed">
+                <span className="text-base mr-1">📍</span>
+                <strong>Qué hay cerca:</strong> Plaza de Wenceslao (1 km), Plaza de la Ciudad Vieja (1 km), principales lugares de interés a poca distancia a pie.
+              </p>
+            </div>
           </div>
-
-          <p className="hotel-description">
-            <strong>Hotel boutique situado junto al dique del río Moldava.</strong> Ofrece interiores modernos y habitaciones amplias con TV vía satélite, minibar y caja fuerte. Wifi gratuita y bien comunicado con todos los medios de transporte.
-          </p>
-
-          <div className="bg-emerald-50 border border-emerald-200 rounded p-2 mb-3 mt-3">
-            <p className="text-xs text-emerald-700">
-              📍 <strong>Qué hay cerca:</strong> Plaza de Wenceslao (1 km), Plaza de la Ciudad Vieja (1 km), principales lugares de interés a poca distancia a pie.
-            </p>
+          <div className="mt-auto">
+            <a
+              href="https://booking.tpk.lv/rx4UJa7s"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-bold px-6 py-3.5 rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 text-base w-full group"
+            >
+              <span className="mr-2">Ver disponibilidad</span>
+              <ExternalLink className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
+            </a>
           </div>
-
-          <a
-            href="https://booking.tpk.lv/rx4UJa7s"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn-hotel"
-          >
-            <span>Ver disponibilidad y precios</span>
-            <ExternalLink className="external-icon" />
-          </a>
         </div>
 
-        <div className="hotel-card border-l-4 border-cyan-400 bg-cyan-100/60">
-          <div className="hotel-header">
-            <h3 className="hotel-name">Allure Hotel & Residence Prague</h3>
-            <div className="hotel-stars">⭐⭐⭐⭐</div>
+        <div className="bg-white rounded-2xl p-5 border-2 border-cyan-200 flex flex-col shadow-lg hover:shadow-xl hover:border-cyan-300 transition-all duration-300 hover:-translate-y-1">
+          <div className="flex items-start justify-between mb-3">
+            <span className="text-3xl">🏨</span>
+            <span className="bg-amber-400 text-amber-900 px-3 py-1 rounded-full text-xs font-bold">⭐⭐⭐⭐</span>
           </div>
-
-          <div className="hotel-location">
-            <span className="location-icon">📍</span>
-            <span>Centro Ciudad</span>
+          <div className="flex-grow">
+            <h4 className="font-bold text-gray-900 mb-3 text-lg leading-tight">Allure Hotel & Residence Prague</h4>
+            <p className="text-sm text-gray-700 mb-4 leading-relaxed"><strong>Hotel de 4 estrellas bien situado en el centro de Praga.</strong> Habitaciones con aire acondicionado, terraza y bar. Ofrece recepción 24h, servicio de conserjería y traslado al aeropuerto. Algunas unidades disponen de balcón.</p>
+            <div className="bg-cyan-50 border-l-4 border-cyan-400 rounded-r-lg p-3 mb-4">
+              <p className="text-xs text-cyan-800 leading-relaxed">
+                <span className="text-base mr-1">📍</span>
+                <strong>Qué hay cerca:</strong> Reloj Astronómico de Praga, Plaza de la Ciudad Vieja, Casa Municipal de Praga. Aeropuerto a 12 km.
+              </p>
+            </div>
           </div>
-
-          <p className="hotel-description">
-            <strong>Hotel de 4 estrellas bien situado en el centro de Praga.</strong> Habitaciones con aire acondicionado, terraza y bar. Ofrece recepción 24h, servicio de conserjería y traslado al aeropuerto. Algunas unidades disponen de balcón.
-          </p>
-
-          <div className="bg-cyan-50 border border-cyan-200 rounded p-2 mb-3 mt-3">
-            <p className="text-xs text-cyan-700">
-              📍 <strong>Qué hay cerca:</strong> Reloj Astronómico de Praga, Plaza de la Ciudad Vieja, Casa Municipal de Praga. Aeropuerto a 12 km.
-            </p>
+          <div className="mt-auto">
+            <a
+              href="https://booking.tpk.lv/Sykxeva1"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-bold px-6 py-3.5 rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 text-base w-full group"
+            >
+              <span className="mr-2">Ver disponibilidad</span>
+              <ExternalLink className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
+            </a>
           </div>
-
-          <a
-            href="https://booking.tpk.lv/Sykxeva1"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn-hotel"
-          >
-            <span>Ver disponibilidad y precios</span>
-            <ExternalLink className="external-icon" />
-          </a>
         </div>
 
-        <div className="hotel-card border-l-4 border-blue-400 bg-blue-100/60">
-          <div className="hotel-header">
-            <h3 className="hotel-name">Hotel Karlova Prague</h3>
-            <div className="hotel-stars">⭐⭐⭐⭐</div>
+        <div className="bg-white rounded-2xl p-5 border-2 border-blue-200 flex flex-col shadow-lg hover:shadow-xl hover:border-blue-300 transition-all duration-300 hover:-translate-y-1">
+          <div className="flex items-start justify-between mb-3">
+            <span className="text-3xl">🏨</span>
+            <span className="bg-amber-400 text-amber-900 px-3 py-1 rounded-full text-xs font-bold">⭐⭐⭐⭐</span>
           </div>
-
-          <div className="hotel-location">
-            <span className="location-icon">📍</span>
-            <span>Centro Ciudad</span>
+          <div className="flex-grow">
+            <h4 className="font-bold text-gray-900 mb-3 text-lg leading-tight">Hotel Karlova Prague</h4>
+            <p className="text-sm text-gray-700 mb-4 leading-relaxed"><strong>Hotel de 4 estrellas a 3 min a pie del Reloj Astronómico.</strong> Situado a 200 metros del centro y a 5 min del Puente de Carlos. Habitaciones con aire acondicionado, TV, caja fuerte y cafetera. Ofrece servicio de traslado al aeropuerto.</p>
+            <div className="bg-blue-50 border-l-4 border-blue-400 rounded-r-lg p-3 mb-4">
+              <p className="text-xs text-blue-800 leading-relaxed">
+                <span className="text-base mr-1">📍</span>
+                <strong>Qué hay cerca:</strong> Plaza de la Ciudad Vieja, Puente de Carlos (5 min), Catedral de San Vito, Castillo de Praga.
+              </p>
+            </div>
           </div>
-
-          <p className="hotel-description">
-            <strong>Hotel de 4 estrellas a 3 min a pie del Reloj Astronómico.</strong> Situado a 200 metros del centro y a 5 min del Puente de Carlos. Habitaciones con aire acondicionado, TV, caja fuerte y cafetera. Ofrece servicio de traslado al aeropuerto.
-          </p>
-
-          <div className="bg-blue-50 border border-blue-200 rounded p-2 mb-3 mt-3">
-            <p className="text-xs text-blue-700">
-              📍 <strong>Qué hay cerca:</strong> Plaza de la Ciudad Vieja, Puente de Carlos (5 min), Catedral de San Vito, Castillo de Praga.
-            </p>
+          <div className="mt-auto">
+            <a
+              href="https://booking.tpk.lv/uT7oiUGu"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-bold px-6 py-3.5 rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 text-base w-full group"
+            >
+              <span className="mr-2">Ver disponibilidad</span>
+              <ExternalLink className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
+            </a>
           </div>
-
-          <a
-            href="https://booking.tpk.lv/uT7oiUGu"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn-hotel"
-          >
-            <span>Ver disponibilidad y precios</span>
-            <ExternalLink className="external-icon" />
-          </a>
         </div>
       </div>
     </div>
