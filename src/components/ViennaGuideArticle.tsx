@@ -292,10 +292,10 @@ Volver a guías
           <div className="bg-gradient-to-br from-sky-50 to-blue-50 rounded-xl p-4 border border-sky-200 flex flex-col">
             <div className="flex-grow">
               <h4 className="font-bold text-gray-900 mb-2">Buxbaum Beletage Design & Boutique Hotel ⭐⭐⭐⭐</h4>
-              <p className="text-sm text-gray-700 mb-3">Hotel boutique con aire acondicionado y sauna, rodeado de edificios históricos del centro de Viena. Ubicación ideal para explorar la ciudad.</p>
+              <p className="text-sm text-gray-700 mb-3">Rodeado de los edificios históricos del centro de Viena, es un hotel boutique que ofrece aire acondicionado y sauna.</p>
               <div className="bg-sky-50 border border-sky-200 rounded p-2 mb-2">
                 <p className="text-xs text-sky-700">
-                  📍 <strong>Qué hay cerca:</strong> Catedral San Esteban (2 min), Kärntner Strasse y Graben (3 min), Ópera Estatal (10 min). Metro Schwedenplatz (4 min), Stephansplatz (7 min). Aeropuerto (20 min).
+                  📍 <strong>Qué hay cerca:</strong> Catedral de San Esteban (2 min a pie), calles comerciales Kärntner Strasse y Graben (3 min), Ópera Estatal (10 min). Metro Schwedenplatz (4 min) y Stephansplatz (7 min). Aeropuerto (20 min en coche).
                 </p>
               </div>
             </div>
@@ -315,10 +315,10 @@ Volver a guías
           <div className="bg-gradient-to-br from-cyan-50 to-teal-50 rounded-xl p-4 border border-cyan-200 flex flex-col">
             <div className="flex-grow">
               <h4 className="font-bold text-gray-900 mb-2">Hotel Royal ⭐⭐⭐⭐</h4>
-              <p className="text-sm text-gray-700 mb-3">Muy cerca de la catedral de San Esteban, al inicio de las calles comerciales Graben y Kärntner Straße. Incluye 2 excelentes restaurantes italianos y WiFi gratuita.</p>
+              <p className="text-sm text-gray-700 mb-3">Muy cerca de la catedral de San Esteban, se encuentra al principio de las calles comerciales de Graben y de Kärntner Straße, en el centro histórico de Viena. Ofrece WiFi gratuita e incluye 2 excelentes restaurantes italianos.</p>
               <div className="bg-cyan-50 border border-cyan-200 rounded p-2 mb-2">
                 <p className="text-xs text-cyan-700">
-                  📍 <strong>Qué hay cerca:</strong> Catedral San Esteban, Graben y Kärntner Straße (inicio). Metro Stephansplatz a pocos pasos.
+                  📍 <strong>Qué hay cerca:</strong> Catedral de San Esteban (muy cerca), calles comerciales Graben y Kärntner Straße (al inicio). Metro Stephansplatz a pocos pasos.
                 </p>
               </div>
             </div>
@@ -338,10 +338,10 @@ Volver a guías
           <div className="bg-gradient-to-br from-indigo-50 to-blue-50 rounded-xl p-4 border border-indigo-200 flex flex-col">
             <div className="flex-grow">
               <h4 className="font-bold text-gray-900 mb-2">Hotel Capricorno ⭐⭐⭐⭐</h4>
-              <p className="text-sm text-gray-700 mb-3">Elegante hotel en el intercambiador de metro Schwedenplatz, a 8 minutos de la catedral. Habitaciones insonorizadas con WiFi gratuita, aire acondicionado y TV vía satélite.</p>
+              <p className="text-sm text-gray-700 mb-3">Este elegante hotel goza de una ubicación privilegiada en el centro de Viena, en el intercambiador de metro de Schwedenplatz y a 8 minutos a pie de la catedral de San Esteban. Ofrece habitaciones insonorizadas con WiFi gratuita.</p>
               <div className="bg-indigo-50 border border-indigo-200 rounded p-2 mb-2">
                 <p className="text-xs text-indigo-700">
-                  📍 <strong>Qué hay cerca:</strong> Catedral San Esteban (8 min), metro Schwedenplatz (intercambiador U1/U4 a 100 m), tranvía turístico Ring.
+                  📍 <strong>Qué hay cerca:</strong> Catedral de San Esteban (8 min a pie), metro Schwedenplatz (intercambiador U1/U4 a 100 m), tranvía turístico amarillo que recorre el Ring. Diversos pubs y restaurantes en las inmediaciones.
                 </p>
               </div>
             </div>
@@ -381,16 +381,19 @@ Volver a guías
           <div className="bg-gradient-to-br from-emerald-50 to-green-50 rounded-xl p-4 border border-emerald-200 flex flex-col">
             <div className="flex-grow">
               <h4 className="font-bold text-gray-900 mb-2">Henriette Stadthotel Vienna ⭐⭐⭐⭐</h4>
-              <p className="text-xs text-gray-600 mb-2">📍 Leopoldstadt</p>
-              <p className="text-sm text-gray-700 mb-3">Hotel urbano con estilo contemporáneo. Excelente conexión con el centro y ambiente local auténtico.</p>
+              <p className="text-sm text-gray-700 mb-3">Se encuentra a pocos pasos de la estación de metro Nestroyplatz y a 2 paradas de la catedral de San Esteban. Las habitaciones son amplias y luminosas, con aire acondicionado, TV de pantalla plana y WiFi gratuita.</p>
+              <div className="bg-emerald-50 border border-emerald-200 rounded p-2 mb-2">
+                <p className="text-xs text-emerald-700">
+                  📍 <strong>Qué hay cerca:</strong> Metro Nestroyplatz (a pocos pasos), catedral de San Esteban (2 paradas de metro), parque de atracciones Prater (10 min a pie), centro internacional de Viena y centro de exposiciones Messe Wien (poca distancia en metro).
+                </p>
+              </div>
             </div>
-            <div className="flex items-center justify-between flex-wrap gap-2 mt-auto">
-              <span className="text-lg font-bold text-emerald-600">€€</span>
+            <div className="mt-auto">
               <a
                 href="https://booking.tpk.lv/is1dcdUr"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm"
+                className="inline-flex items-center justify-center bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm w-full"
               >
                 Ver en Booking
                 <ExternalLink className="h-3 w-3 ml-2" />
@@ -401,16 +404,19 @@ Volver a guías
           <div className="bg-gradient-to-br from-teal-50 to-cyan-50 rounded-xl p-4 border border-teal-200 flex flex-col">
             <div className="flex-grow">
               <h4 className="font-bold text-gray-900 mb-2">Hotel Spiess & Spiess ⭐⭐⭐⭐</h4>
-              <p className="text-xs text-gray-600 mb-2">📍 Landstraße</p>
-              <p className="text-sm text-gray-700 mb-3">Hotel familiar con encanto vienés. Zona tranquila con fácil acceso al centro y al Palacio Belvedere.</p>
+              <p className="text-sm text-gray-700 mb-3">Hotel ecológico en una calle lateral tranquila, a solo 5 minutos en metro de la plaza Stephansplatz. Ofrece habitaciones y suites elegantes e hipoalergénicas, con aire acondicionado, suelo radiante y sauna gratuita.</p>
+              <div className="bg-teal-50 border border-teal-200 rounded p-2 mb-2">
+                <p className="text-xs text-teal-700">
+                  📍 <strong>Qué hay cerca:</strong> Metro Rochusgasse línea U3 (100 m), plaza Stephansplatz (5 min en metro), estación de trenes al aeropuerto (1 parada de metro), aparcamiento Erdberg (3 paradas).
+                </p>
+              </div>
             </div>
-            <div className="flex items-center justify-between flex-wrap gap-2 mt-auto">
-              <span className="text-lg font-bold text-teal-600">€€</span>
+            <div className="mt-auto">
               <a
                 href="https://booking.tpk.lv/JHRNWZHd"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm"
+                className="inline-flex items-center justify-center bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm w-full"
               >
                 Ver en Booking
                 <ExternalLink className="h-3 w-3 ml-2" />
@@ -418,19 +424,22 @@ Volver a guías
             </div>
           </div>
 
-          <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl p-4 border border-blue-200 flex flex-col">
+          <div className="bg-gradient-to-br from-blue-50 to-sky-50 rounded-xl p-4 border border-blue-200 flex flex-col">
             <div className="flex-grow">
               <h4 className="font-bold text-gray-900 mb-2">ibis Styles Wien Messe Prater ⭐⭐⭐</h4>
-              <p className="text-xs text-gray-600 mb-2">📍 Leopoldstadt</p>
-              <p className="text-sm text-gray-700 mb-3">Hotel moderno y económico junto al Prater. Perfecto para presupuestos ajustados sin renunciar a la calidad.</p>
+              <p className="text-sm text-gray-700 mb-3">Hotel junto al canal del Danubio, a pocos cientos de metros del parque Prater y del centro de la ciudad. Las habitaciones tienen aire acondicionado, escritorio y TV de pantalla plana.</p>
+              <div className="bg-blue-50 border border-blue-200 rounded p-2 mb-2">
+                <p className="text-xs text-blue-700">
+                  📍 <strong>Qué hay cerca:</strong> Parque Prater y noria gigante (400 m), Messe Wien y estadio Ernst Happel (cerca), centro de la ciudad (10 min a pie), Donauinsel (pocos minutos en metro). Aeropuerto internacional de Viena (16 km).
+                </p>
+              </div>
             </div>
-            <div className="flex items-center justify-between flex-wrap gap-2 mt-auto">
-              <span className="text-lg font-bold text-blue-600">€</span>
+            <div className="mt-auto">
               <a
                 href="https://booking.tpk.lv/mNvXHjff"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm"
+                className="inline-flex items-center justify-center bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm w-full"
               >
                 Ver en Booking
                 <ExternalLink className="h-3 w-3 ml-2" />
