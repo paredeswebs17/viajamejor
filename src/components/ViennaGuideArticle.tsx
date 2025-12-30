@@ -292,10 +292,10 @@ Volver a guías
           <div className="bg-gradient-to-br from-sky-50 to-blue-50 rounded-xl p-4 border border-sky-200 flex flex-col">
             <div className="flex-grow">
               <h4 className="font-bold text-gray-900 mb-2">Buxbaum Beletage Design & Boutique Hotel ⭐⭐⭐⭐</h4>
-              <p className="text-sm text-gray-700 mb-3">Rodeado de los edificios históricos del centro de Viena, es un hotel boutique que ofrece aire acondicionado y sauna.</p>
+              <p className="text-sm text-gray-700 mb-3">Hotel boutique rodeado de edificios históricos que ofrece aire acondicionado y sauna.</p>
               <div className="bg-sky-50 border border-sky-200 rounded p-2 mb-2">
                 <p className="text-xs text-sky-700">
-                  📍 <strong>Qué hay cerca:</strong> Catedral de San Esteban (2 min a pie), calles comerciales Kärntner Strasse y Graben (3 min), Ópera Estatal (10 min). Metro Schwedenplatz (4 min) y Stephansplatz (7 min). Aeropuerto (20 min en coche).
+                  📍 <strong>Qué hay cerca:</strong> Catedral de San Esteban (2 min a pie), calles comerciales Kärntner Strasse y Graben (3 min), Ópera Estatal (10 min), metro Schwedenplatz (4 min) y Stephansplatz (7 min), aeropuerto (20 min en coche).
                 </p>
               </div>
             </div>
@@ -315,10 +315,10 @@ Volver a guías
           <div className="bg-gradient-to-br from-cyan-50 to-teal-50 rounded-xl p-4 border border-cyan-200 flex flex-col">
             <div className="flex-grow">
               <h4 className="font-bold text-gray-900 mb-2">Hotel Royal ⭐⭐⭐⭐</h4>
-              <p className="text-sm text-gray-700 mb-3">Muy cerca de la catedral de San Esteban, se encuentra al principio de las calles comerciales de Graben y de Kärntner Straße, en el centro histórico de Viena. Ofrece WiFi gratuita e incluye 2 excelentes restaurantes italianos.</p>
+              <p className="text-sm text-gray-700 mb-3">Hotel que ofrece WiFi gratuita e incluye 2 excelentes restaurantes italianos. Las habitaciones están insonorizadas y tienen aire acondicionado, TV por cable, zona de estar, minibar y baño.</p>
               <div className="bg-cyan-50 border border-cyan-200 rounded p-2 mb-2">
                 <p className="text-xs text-cyan-700">
-                  📍 <strong>Qué hay cerca:</strong> Catedral de San Esteban (muy cerca), calles comerciales Graben y Kärntner Straße (al inicio). Metro Stephansplatz a pocos pasos.
+                  📍 <strong>Qué hay cerca:</strong> Catedral de San Esteban (muy cerca), calles comerciales Graben y Kärntner Straße (al inicio), metro Stephansplatz (a pocos pasos).
                 </p>
               </div>
             </div>
@@ -338,10 +338,10 @@ Volver a guías
           <div className="bg-gradient-to-br from-indigo-50 to-blue-50 rounded-xl p-4 border border-indigo-200 flex flex-col">
             <div className="flex-grow">
               <h4 className="font-bold text-gray-900 mb-2">Hotel Capricorno ⭐⭐⭐⭐</h4>
-              <p className="text-sm text-gray-700 mb-3">Este elegante hotel goza de una ubicación privilegiada en el centro de Viena, en el intercambiador de metro de Schwedenplatz y a 8 minutos a pie de la catedral de San Esteban. Ofrece habitaciones insonorizadas con WiFi gratuita.</p>
+              <p className="text-sm text-gray-700 mb-3">Elegante hotel que ofrece habitaciones insonorizadas con aire acondicionado, TV vía satélite con canales Sky, tableta con WiFi gratuita, minibar y caja fuerte.</p>
               <div className="bg-indigo-50 border border-indigo-200 rounded p-2 mb-2">
                 <p className="text-xs text-indigo-700">
-                  📍 <strong>Qué hay cerca:</strong> Catedral de San Esteban (8 min a pie), metro Schwedenplatz (intercambiador U1/U4 a 100 m), tranvía turístico amarillo que recorre el Ring. Diversos pubs y restaurantes en las inmediaciones.
+                  📍 <strong>Qué hay cerca:</strong> Catedral de San Esteban (8 min a pie), metro Schwedenplatz (intercambiador U1/U4 a 100 m), tranvía turístico amarillo que recorre el Ring, diversos pubs y restaurantes en las inmediaciones.
                 </p>
               </div>
             </div>
@@ -381,7 +381,7 @@ Volver a guías
           <div className="bg-gradient-to-br from-emerald-50 to-green-50 rounded-xl p-4 border border-emerald-200 flex flex-col">
             <div className="flex-grow">
               <h4 className="font-bold text-gray-900 mb-2">Henriette Stadthotel Vienna ⭐⭐⭐⭐</h4>
-              <p className="text-sm text-gray-700 mb-3">Se encuentra a pocos pasos de la estación de metro Nestroyplatz y a 2 paradas de la catedral de San Esteban. Las habitaciones son amplias y luminosas, con aire acondicionado, TV de pantalla plana y WiFi gratuita.</p>
+              <p className="text-sm text-gray-700 mb-3">Hotel que ofrece WiFi gratuita y habitaciones amplias y luminosas con aire acondicionado, TV de pantalla plana y baño con secador de pelo. Sirve un desayuno buffet abundante y cuenta con recepción 24 horas.</p>
               <div className="bg-emerald-50 border border-emerald-200 rounded p-2 mb-2">
                 <p className="text-xs text-emerald-700">
                   📍 <strong>Qué hay cerca:</strong> Metro Nestroyplatz (a pocos pasos), catedral de San Esteban (2 paradas de metro), parque de atracciones Prater (10 min a pie), centro internacional de Viena y centro de exposiciones Messe Wien (poca distancia en metro).
@@ -404,7 +404,7 @@ Volver a guías
           <div className="bg-gradient-to-br from-teal-50 to-cyan-50 rounded-xl p-4 border border-teal-200 flex flex-col">
             <div className="flex-grow">
               <h4 className="font-bold text-gray-900 mb-2">Hotel Spiess & Spiess ⭐⭐⭐⭐</h4>
-              <p className="text-sm text-gray-700 mb-3">Hotel ecológico en una calle lateral tranquila, a solo 5 minutos en metro de la plaza Stephansplatz. Ofrece habitaciones y suites elegantes e hipoalergénicas, con aire acondicionado, suelo radiante y sauna gratuita.</p>
+              <p className="text-sm text-gray-700 mb-3">Hotel ecológico que ofrece habitaciones y suites elegantes e hipoalergénicas con aire acondicionado, suelo radiante, TV de pantalla plana y baño de lujo. Cuenta con sauna y zona de relajación gratuita. Desayuno premium con productos ecológicos de la zona.</p>
               <div className="bg-teal-50 border border-teal-200 rounded p-2 mb-2">
                 <p className="text-xs text-teal-700">
                   📍 <strong>Qué hay cerca:</strong> Metro Rochusgasse línea U3 (100 m), plaza Stephansplatz (5 min en metro), estación de trenes al aeropuerto (1 parada de metro), aparcamiento Erdberg (3 paradas).
@@ -427,10 +427,10 @@ Volver a guías
           <div className="bg-gradient-to-br from-blue-50 to-sky-50 rounded-xl p-4 border border-blue-200 flex flex-col">
             <div className="flex-grow">
               <h4 className="font-bold text-gray-900 mb-2">ibis Styles Wien Messe Prater ⭐⭐⭐</h4>
-              <p className="text-sm text-gray-700 mb-3">Hotel junto al canal del Danubio, a pocos cientos de metros del parque Prater y del centro de la ciudad. Las habitaciones tienen aire acondicionado, escritorio y TV de pantalla plana.</p>
+              <p className="text-sm text-gray-700 mb-3">Hotel con habitaciones con aire acondicionado, escritorio y TV de pantalla plana. Sirve desayuno buffet o continental a diario. Ofrece servicio de alquiler de coche.</p>
               <div className="bg-blue-50 border border-blue-200 rounded p-2 mb-2">
                 <p className="text-xs text-blue-700">
-                  📍 <strong>Qué hay cerca:</strong> Parque Prater y noria gigante (400 m), Messe Wien y estadio Ernst Happel (cerca), centro de la ciudad (10 min a pie), Donauinsel (pocos minutos en metro). Aeropuerto internacional de Viena (16 km).
+                  📍 <strong>Qué hay cerca:</strong> Canal del Danubio (junto), parque Prater y noria gigante (400 m), Messe Wien y estadio Ernst Happel (cerca), centro de la ciudad (10 min a pie), Donauinsel (pocos minutos en metro), aeropuerto internacional de Viena (16 km).
                 </p>
               </div>
             </div>
