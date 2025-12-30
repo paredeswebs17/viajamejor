@@ -449,7 +449,7 @@ Volver a guías
           <div className="w-12 h-12 bg-gradient-to-br from-green-500 to-emerald-500 rounded-xl flex items-center justify-center mr-4">
             <span className="text-2xl">🌿</span>
           </div>
-          <div>
+          <div className="flex-1">
             <h3 className="text-xl font-bold text-gray-900">Trastevere</h3>
             <p className="text-sm text-gray-600">Barrio bohemio con encanto auténtico y vida nocturna</p>
           </div>
@@ -479,15 +479,94 @@ Volver a guías
           </div>
         </div>
 
-        <a
-          href="https://booking.tpk.lv/91nRuLrC"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center bg-gradient-to-r from-green-500 to-emerald-500 hover:from-green-600 hover:to-emerald-600 text-white font-semibold px-5 py-3 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm"
+        <button
+          onClick={() => toggleZone('trastevere')}
+          className="w-full bg-gradient-to-r from-green-500 to-emerald-500 hover:from-green-600 hover:to-emerald-600 text-white rounded-xl p-4 mb-3 flex items-center justify-between transition-all duration-300 shadow-md hover:shadow-lg group"
         >
-          🏨 Ver Hoteles en Trastevere
-          <ExternalLink className="h-3 w-3 ml-2" />
-        </a>
+          <div className="flex items-center gap-3">
+            <span className="text-2xl">🏨</span>
+            <div className="text-left">
+              <span className="font-bold text-lg block">
+                {expandedZone === 'trastevere' ? 'Ocultar hoteles' : 'Ver 2 hoteles recomendados'}
+              </span>
+              <span className="text-sm text-green-100 block">
+                Hoteles en Trastevere
+              </span>
+            </div>
+          </div>
+          {expandedZone === 'trastevere' ?
+            <ChevronUp className="w-6 h-6 group-hover:transform group-hover:-translate-y-1 transition-transform" /> :
+            <ChevronDown className="w-6 h-6 group-hover:transform group-hover:translate-y-1 transition-transform" />
+          }
+        </button>
+
+        {expandedZone === 'trastevere' && (
+          <div className="animate-fadeIn border-t border-gray-200 pt-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-4">
+              <div className="bg-white rounded-2xl p-5 border-2 border-green-200 flex flex-col shadow-lg hover:shadow-xl hover:border-green-300 transition-all duration-300 hover:-translate-y-1">
+                <div className="flex items-start justify-between mb-3">
+                  <span className="text-3xl">🏨</span>
+                  <span className="bg-amber-400 text-amber-900 px-3 py-1 rounded-full text-xs font-bold">⭐⭐⭐⭐</span>
+                </div>
+                <div className="flex-grow">
+                  <h4 className="font-bold text-gray-900 mb-3 text-lg leading-tight">Hotel Santa Maria</h4>
+                  <p className="text-sm text-gray-700 mb-4 leading-relaxed">Hotel boutique en el corazón de Trastevere. Edificio histórico restaurado con encanto, cerca de las mejores trattorias.</p>
+                  <div className="bg-green-50 border-l-4 border-green-400 rounded-r-lg p-3 mb-4">
+                    <p className="text-xs text-green-800 leading-relaxed">
+                      <span className="text-base mr-1">📍</span>
+                      <strong>Qué hay cerca:</strong> Plaza Santa Maria in Trastevere, restaurantes tradicionales, ambiente bohemio auténtico
+                    </p>
+                  </div>
+                </div>
+                <div className="mt-auto">
+                  <a
+                    href="https://booking.tpk.lv/91nRuLrC"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center bg-[#003580] hover:bg-[#00254d] text-white font-bold px-6 py-3.5 rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 text-base w-full group"
+                  >
+                    <span className="mr-2">Ver disponibilidad</span>
+                    <ExternalLink className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
+                  </a>
+                </div>
+              </div>
+
+              <div className="bg-white rounded-2xl p-5 border-2 border-emerald-200 flex flex-col shadow-lg hover:shadow-xl hover:border-emerald-300 transition-all duration-300 hover:-translate-y-1">
+                <div className="flex items-start justify-between mb-3">
+                  <span className="text-3xl">🏨</span>
+                  <span className="bg-amber-400 text-amber-900 px-3 py-1 rounded-full text-xs font-bold">⭐⭐⭐</span>
+                </div>
+                <div className="flex-grow">
+                  <h4 className="font-bold text-gray-900 mb-3 text-lg leading-tight">Residenza di Ripetta</h4>
+                  <p className="text-sm text-gray-700 mb-4 leading-relaxed">Hotel acogedor con excelente ubicación para disfrutar la vida nocturna y gastronómica de Trastevere.</p>
+                  <div className="bg-emerald-50 border-l-4 border-emerald-400 rounded-r-lg p-3 mb-4">
+                    <p className="text-xs text-emerald-800 leading-relaxed">
+                      <span className="text-base mr-1">📍</span>
+                      <strong>Qué hay cerca:</strong> Restaurantes locales, bares con encanto, Isola Tiberina
+                    </p>
+                  </div>
+                </div>
+                <div className="mt-auto">
+                  <a
+                    href="https://booking.tpk.lv/91nRuLrC"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center bg-[#003580] hover:bg-[#00254d] text-white font-bold px-6 py-3.5 rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 text-base w-full group"
+                  >
+                    <span className="mr-2">Ver disponibilidad</span>
+                    <ExternalLink className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-green-50 border border-green-200 rounded-lg p-3">
+              <p className="text-sm text-green-800">
+                <strong>✅ Por qué elegir esta zona:</strong> Barrio auténtico y pintoresco. Los mejores restaurantes y trattorias tradicionales de Roma. Vida nocturna animada con terrazas y bares con encanto. Ambiente bohemio único.
+              </p>
+            </div>
+          </div>
+        )}
       </div>
     </div>
 
