@@ -430,9 +430,9 @@ Volver a guías
         </div>
         <div className="bg-white rounded-xl p-4 border border-gray-200 shadow-sm mt-4">
           <a href="https://gyg.me/a770HnSE" target="_blank" rel="noopener noreferrer"
-             className="inline-flex items-center bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm">
-            🗼 Reservar entradas Torre del Ayuntamiento
-            <ExternalLink className="h-3 w-3 ml-2" />
+             className="btn-hotel">
+            <span>🗼 Reservar entradas Torre del Ayuntamiento</span>
+            <ExternalLink className="external-icon" />
           </a>
         </div>
       </div>
@@ -471,9 +471,9 @@ Volver a guías
         
         <div className="bg-white rounded-xl p-4 border border-gray-200 shadow-sm mt-4">
           <a href="https://gyg.me/RaU4n6Wm" target="_blank" rel="noopener noreferrer"
-             className="inline-flex items-center bg-gradient-to-r from-indigo-500 to-purple-500 hover:from-indigo-600 hover:to-purple-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm">
-            🚶‍♂️ Tour guiado Barrio Judío completo
-            <ExternalLink className="h-3 w-3 ml-2" />
+             className="btn-hotel">
+            <span>🚶‍♂️ Tour guiado Barrio Judío completo</span>
+            <ExternalLink className="external-icon" />
           </a>
         </div>
         
@@ -551,9 +551,9 @@ src="https://images.pexels.com/photos/5426128/pexels-photo-5426128.jpeg"
         </div>
         <div className="bg-white rounded-xl p-4 border border-gray-200 shadow-sm mt-4">
           <a href="https://gyg.me/Epi0atVq" target="_blank" rel="noopener noreferrer"
-             className="inline-flex items-center bg-gradient-to-r from-yellow-500 to-orange-500 hover:from-yellow-600 hover:to-orange-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm">
-            📚 Reservar tour Clementinum
-            <ExternalLink className="h-3 w-3 ml-2" />
+             className="btn-hotel">
+            <span>📚 Reservar tour Clementinum</span>
+            <ExternalLink className="external-icon" />
           </a>
         </div>
       </div>
@@ -692,17 +692,17 @@ src="https://images.pexels.com/photos/2930357/pexels-photo-2930357.jpeg"
         
         <div className="bg-white rounded-xl p-4 border border-gray-200 shadow-sm mt-4">
           <a href="https://gyg.me/Mszm1WAX" target="_blank" rel="noopener noreferrer"
-             className="inline-flex items-center bg-gradient-to-r from-red-500 to-pink-500 hover:from-red-600 hover:to-pink-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm">
-            🏰 Entradas oficiales Castillo de Praga
-            <ExternalLink className="h-3 w-3 ml-2" />
+             className="btn-hotel">
+            <span>🏰 Entradas oficiales Castillo de Praga</span>
+            <ExternalLink className="external-icon" />
           </a>
         </div>
-        
+
         <div className="bg-white rounded-xl p-4 border border-gray-200 shadow-sm mt-4">
           <a href="https://gyg.me/rQRkcmJj" target="_blank" rel="noopener noreferrer"
-             className="inline-flex items-center bg-gradient-to-r from-blue-500 to-indigo-500 hover:from-blue-600 hover:to-indigo-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm">
-            👑 Tour guiado Castillo completo
-            <ExternalLink className="h-3 w-3 ml-2" />
+             className="btn-hotel">
+            <span>👑 Tour guiado Castillo completo</span>
+            <ExternalLink className="external-icon" />
           </a>
         </div>
       </div>
@@ -870,9 +870,9 @@ src="https://images.pexels.com/photos/2930357/pexels-photo-2930357.jpeg"
         
         <div className="bg-white rounded-xl p-4 border border-gray-200 shadow-sm mt-4">
           <a href="https://gyg.me/OIy3uAsC" target="_blank" rel="noopener noreferrer"
-             className="inline-flex items-center bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm">
-            🛥️ Reservar Crucero por el Moldava
-            <ExternalLink className="h-3 w-3 ml-2" />
+             className="btn-hotel">
+            <span>🛥️ Reservar Crucero por el Moldava</span>
+            <ExternalLink className="external-icon" />
           </a>
         </div>
         
@@ -943,9 +943,9 @@ src="https://images.pexels.com/photos/2930357/pexels-photo-2930357.jpeg"
           </p>
           <div className="bg-white rounded-xl p-4 border border-gray-200 shadow-sm mt-4">
             <a href="https://gyg.me/se34ncsA" target="_blank" rel="noopener noreferrer"
-               className="inline-flex items-center bg-gradient-to-r from-gray-600 to-slate-600 hover:from-gray-700 hover:to-slate-700 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm">
-              🕯️ Reservar excursión a Terezín
-              <ExternalLink className="h-3 w-3 ml-2" />
+               className="btn-hotel">
+              <span>🕯️ Reservar excursión a Terezín</span>
+              <ExternalLink className="external-icon" />
             </a>
           </div>
         </div>
@@ -988,9 +988,9 @@ src="https://images.pexels.com/photos/32795906/pexels-photo-32795906.jpeg"
           </p>
           <div className="bg-white rounded-xl p-4 border border-gray-200 shadow-sm mt-4">
             <a href="https://gyg.me/D4FukqaH" target="_blank" rel="noopener noreferrer"
-               className="inline-flex items-center bg-gradient-to-r from-yellow-500 to-orange-500 hover:from-yellow-600 hover:to-orange-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm">
-              💎 Reservar excursión a Karlovy Vary
-              <ExternalLink className="h-3 w-3 ml-2" />
+               className="btn-hotel">
+              <span>💎 Reservar excursión a Karlovy Vary</span>
+              <ExternalLink className="external-icon" />
             </a>
           </div>
         </div>
@@ -1102,10 +1102,10 @@ src="https://images.pexels.com/photos/32795906/pexels-photo-32795906.jpeg"
               href="https://gyg.me/6riRFPCy"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm w-full justify-center"
+              className="btn-hotel"
             >
-              Ver Tour Suiza Bohemia
-              <ExternalLink className="h-3 w-3 ml-2" />
+              <span>Ver Tour Suiza Bohemia</span>
+              <ExternalLink className="external-icon" />
             </a>
           </div>
 
@@ -1116,10 +1116,10 @@ src="https://images.pexels.com/photos/32795906/pexels-photo-32795906.jpeg"
               href="https://gyg.me/pdXWAUmz"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center bg-gradient-to-r from-pink-500 to-rose-500 hover:from-pink-600 hover:to-rose-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm w-full justify-center"
+              className="btn-hotel"
             >
-              Ver Tour Český Krumlov
-              <ExternalLink className="h-3 w-3 ml-2" />
+              <span>Ver Tour Český Krumlov</span>
+              <ExternalLink className="external-icon" />
             </a>
           </div>
         </div>
