@@ -274,39 +274,59 @@ Volver a guías
 
         {expandedZone === 'centro-historico' && (
           <div className="animate-fadeIn border-t border-gray-200 pt-4">
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
-              <div className="bg-gradient-to-br from-red-50 to-amber-50 rounded-xl p-4 border border-red-200">
-                <h4 className="font-bold text-gray-900 mb-2">Hotel Smeraldo ⭐⭐⭐</h4>
-                <p className="text-xs text-gray-600 mb-2">📍 Cerca de Plaza Campo de' Fiori</p>
-                <p className="text-sm text-gray-700 mb-3">Hotel encantador en pleno centro, puedes recorrer Roma andando desde aquí. Excelente relación calidad-precio.</p>
-                <div className="flex items-center justify-between flex-wrap gap-2">
-                  <span className="text-lg font-bold text-red-600">€€</span>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-4">
+              <div className="bg-white rounded-2xl p-5 border-2 border-red-200 flex flex-col shadow-lg hover:shadow-xl hover:border-red-300 transition-all duration-300 hover:-translate-y-1">
+                <div className="flex items-start justify-between mb-3">
+                  <span className="text-3xl">🏨</span>
+                  <span className="bg-amber-400 text-amber-900 px-3 py-1 rounded-full text-xs font-bold">⭐⭐⭐</span>
+                </div>
+                <div className="flex-grow">
+                  <h4 className="font-bold text-gray-900 mb-3 text-lg leading-tight">Hotel Smeraldo</h4>
+                  <p className="text-sm text-gray-700 mb-4 leading-relaxed">Hotel encantador en pleno centro, puedes recorrer Roma andando desde aquí. Excelente relación calidad-precio.</p>
+                  <div className="bg-red-50 border-l-4 border-red-400 rounded-r-lg p-3 mb-4">
+                    <p className="text-xs text-red-800 leading-relaxed">
+                      <span className="text-base mr-1">📍</span>
+                      <strong>Qué hay cerca:</strong> Cerca de Plaza Campo de' Fiori
+                    </p>
+                  </div>
+                </div>
+                <div className="mt-auto">
                   <a
                     href="https://booking.tpk.lv/IHfFpFIB"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm"
+                    className="inline-flex items-center justify-center bg-[#003580] hover:bg-[#00254d] text-white font-bold px-6 py-3.5 rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 text-base w-full group"
                   >
-                    Ver en Booking
-                    <ExternalLink className="h-3 w-3 ml-2" />
+                    <span className="mr-2">Ver disponibilidad</span>
+                    <ExternalLink className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
                   </a>
                 </div>
               </div>
 
-              <div className="bg-gradient-to-br from-amber-50 to-yellow-50 rounded-xl p-4 border border-amber-200">
-                <h4 className="font-bold text-gray-900 mb-2">Terrace Pantheon Relais ⭐⭐⭐⭐</h4>
-                <p className="text-xs text-gray-600 mb-2">📍 Centro histórico, junto al Panteón</p>
-                <p className="text-sm text-gray-700 mb-3">Ubicación premium en el corazón de Roma. Perfecto para disfrutar la ciudad sin usar transporte.</p>
-                <div className="flex items-center justify-between flex-wrap gap-2">
-                  <span className="text-lg font-bold text-amber-600">€€€</span>
+              <div className="bg-white rounded-2xl p-5 border-2 border-amber-200 flex flex-col shadow-lg hover:shadow-xl hover:border-amber-300 transition-all duration-300 hover:-translate-y-1">
+                <div className="flex items-start justify-between mb-3">
+                  <span className="text-3xl">🏨</span>
+                  <span className="bg-amber-400 text-amber-900 px-3 py-1 rounded-full text-xs font-bold">⭐⭐⭐⭐</span>
+                </div>
+                <div className="flex-grow">
+                  <h4 className="font-bold text-gray-900 mb-3 text-lg leading-tight">Terrace Pantheon Relais</h4>
+                  <p className="text-sm text-gray-700 mb-4 leading-relaxed">Ubicación premium en el corazón de Roma. Perfecto para disfrutar la ciudad sin usar transporte.</p>
+                  <div className="bg-amber-50 border-l-4 border-amber-400 rounded-r-lg p-3 mb-4">
+                    <p className="text-xs text-amber-800 leading-relaxed">
+                      <span className="text-base mr-1">📍</span>
+                      <strong>Qué hay cerca:</strong> Centro histórico, junto al Panteón
+                    </p>
+                  </div>
+                </div>
+                <div className="mt-auto">
                   <a
                     href="https://booking.tpk.lv/AD5vS3Hf"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm"
+                    className="inline-flex items-center justify-center bg-[#003580] hover:bg-[#00254d] text-white font-bold px-6 py-3.5 rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 text-base w-full group"
                   >
-                    Ver en Booking
-                    <ExternalLink className="h-3 w-3 ml-2" />
+                    <span className="mr-2">Ver disponibilidad</span>
+                    <ExternalLink className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
                   </a>
                 </div>
               </div>
@@ -356,39 +376,59 @@ Volver a guías
 
         {expandedZone === 'vaticano-prati' && (
           <div className="animate-fadeIn border-t border-gray-200 pt-4">
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
-              <div className="bg-gradient-to-br from-purple-50 to-pink-50 rounded-xl p-4 border border-purple-200">
-                <h4 className="font-bold text-gray-900 mb-2">Donna Laura Palace ⭐⭐⭐⭐</h4>
-                <p className="text-xs text-gray-600 mb-2">📍 Lungotevere Delle Armi 21</p>
-                <p className="text-sm text-gray-700 mb-3">Elegante hotel cerca del Vaticano. Barrio residencial con ambiente local y tranquilo.</p>
-                <div className="flex items-center justify-between flex-wrap gap-2">
-                  <span className="text-lg font-bold text-purple-600">€€€</span>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-4">
+              <div className="bg-white rounded-2xl p-5 border-2 border-purple-200 flex flex-col shadow-lg hover:shadow-xl hover:border-purple-300 transition-all duration-300 hover:-translate-y-1">
+                <div className="flex items-start justify-between mb-3">
+                  <span className="text-3xl">🏨</span>
+                  <span className="bg-amber-400 text-amber-900 px-3 py-1 rounded-full text-xs font-bold">⭐⭐⭐⭐</span>
+                </div>
+                <div className="flex-grow">
+                  <h4 className="font-bold text-gray-900 mb-3 text-lg leading-tight">Donna Laura Palace</h4>
+                  <p className="text-sm text-gray-700 mb-4 leading-relaxed">Elegante hotel cerca del Vaticano. Barrio residencial con ambiente local y tranquilo.</p>
+                  <div className="bg-purple-50 border-l-4 border-purple-400 rounded-r-lg p-3 mb-4">
+                    <p className="text-xs text-purple-800 leading-relaxed">
+                      <span className="text-base mr-1">📍</span>
+                      <strong>Qué hay cerca:</strong> Lungotevere Delle Armi 21
+                    </p>
+                  </div>
+                </div>
+                <div className="mt-auto">
                   <a
                     href="https://booking.tpk.lv/jd418WFK"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm"
+                    className="inline-flex items-center justify-center bg-[#003580] hover:bg-[#00254d] text-white font-bold px-6 py-3.5 rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 text-base w-full group"
                   >
-                    Ver en Booking
-                    <ExternalLink className="h-3 w-3 ml-2" />
+                    <span className="mr-2">Ver disponibilidad</span>
+                    <ExternalLink className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
                   </a>
                 </div>
               </div>
 
-              <div className="bg-gradient-to-br from-indigo-50 to-blue-50 rounded-xl p-4 border border-indigo-200">
-                <h4 className="font-bold text-gray-900 mb-2">Hotel Isa Design ⭐⭐⭐⭐</h4>
-                <p className="text-xs text-gray-600 mb-2">📍 Via Cicerone 39</p>
-                <p className="text-sm text-gray-700 mb-3">Excelente ubicación cerca del Vaticano. Diseño moderno y muy buena relación calidad-precio.</p>
-                <div className="flex items-center justify-between flex-wrap gap-2">
-                  <span className="text-lg font-bold text-indigo-600">€€€</span>
+              <div className="bg-white rounded-2xl p-5 border-2 border-indigo-200 flex flex-col shadow-lg hover:shadow-xl hover:border-indigo-300 transition-all duration-300 hover:-translate-y-1">
+                <div className="flex items-start justify-between mb-3">
+                  <span className="text-3xl">🏨</span>
+                  <span className="bg-amber-400 text-amber-900 px-3 py-1 rounded-full text-xs font-bold">⭐⭐⭐⭐</span>
+                </div>
+                <div className="flex-grow">
+                  <h4 className="font-bold text-gray-900 mb-3 text-lg leading-tight">Hotel Isa Design</h4>
+                  <p className="text-sm text-gray-700 mb-4 leading-relaxed">Excelente ubicación cerca del Vaticano. Diseño moderno y muy buena relación calidad-precio.</p>
+                  <div className="bg-indigo-50 border-l-4 border-indigo-400 rounded-r-lg p-3 mb-4">
+                    <p className="text-xs text-indigo-800 leading-relaxed">
+                      <span className="text-base mr-1">📍</span>
+                      <strong>Qué hay cerca:</strong> Via Cicerone 39
+                    </p>
+                  </div>
+                </div>
+                <div className="mt-auto">
                   <a
                     href="https://booking.tpk.lv/58AldYai"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm"
+                    className="inline-flex items-center justify-center bg-[#003580] hover:bg-[#00254d] text-white font-bold px-6 py-3.5 rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 text-base w-full group"
                   >
-                    Ver en Booking
-                    <ExternalLink className="h-3 w-3 ml-2" />
+                    <span className="mr-2">Ver disponibilidad</span>
+                    <ExternalLink className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
                   </a>
                 </div>
               </div>
