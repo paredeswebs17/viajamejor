@@ -310,55 +310,91 @@ Volver a guías
 
         {expandedZone === 'centro-historico' && (
           <div className="animate-fadeIn border-t border-gray-200 pt-4">
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-4">
-          <div className="bg-gradient-to-br from-orange-50 to-red-50 rounded-xl p-4 border border-orange-200 flex flex-col">
-            <div className="flex-grow">
-              <h4 className="font-bold text-gray-900 mb-2">Monet Garden Hotel Amsterdam ⭐⭐⭐⭐</h4>
-              <p className="text-xs text-gray-600 mb-2">📍 Canales Centro</p>
-              <p className="text-sm text-gray-700 mb-3">Hotel boutique en el corazón de los canales. Ubicación excepcional cerca de las 9 calles y la Casa de Ana Frank.</p>
-            </div>
-            <div className="flex items-center justify-between flex-wrap gap-2 mt-auto">
-              <span className="text-lg font-bold text-orange-600">€€</span>
-              <a href="https://booking.tpk.lv/UTD9cvgv" target="_blank" rel="noopener noreferrer"
-                 className="inline-flex items-center bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm">
-                Ver en Booking
-                <ExternalLink className="h-3 w-3 ml-2" />
-              </a>
-            </div>
-          </div>
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-4">
+              <div className="bg-white rounded-2xl p-5 border-2 border-orange-200 flex flex-col shadow-lg hover:shadow-xl hover:border-orange-300 transition-all duration-300 hover:-translate-y-1">
+                <div className="flex items-start justify-between mb-3">
+                  <span className="text-3xl">🏨</span>
+                  <span className="bg-amber-400 text-amber-900 px-3 py-1 rounded-full text-xs font-bold">⭐⭐⭐⭐</span>
+                </div>
+                <div className="flex-grow">
+                  <h4 className="font-bold text-gray-900 mb-3 text-lg leading-tight">Monet Garden Hotel Amsterdam</h4>
+                  <p className="text-sm text-gray-700 mb-4 leading-relaxed">Hotel boutique en el corazón de los canales. Ubicación excepcional cerca de las 9 calles y la Casa de Ana Frank.</p>
+                  <div className="bg-orange-50 border-l-4 border-orange-400 rounded-r-lg p-3 mb-4">
+                    <p className="text-xs text-orange-800 leading-relaxed">
+                      <span className="text-base mr-1">📍</span>
+                      <strong>Qué hay cerca:</strong> Canales Centro
+                    </p>
+                  </div>
+                </div>
+                <div className="mt-auto">
+                  <a
+                    href="https://booking.tpk.lv/UTD9cvgv"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center bg-[#003580] hover:bg-[#00254d] text-white font-bold px-6 py-3.5 rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 text-base w-full group"
+                  >
+                    <span className="mr-2">Ver disponibilidad</span>
+                    <ExternalLink className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
+                  </a>
+                </div>
+              </div>
 
-          <div className="bg-gradient-to-br from-cyan-50 to-blue-50 rounded-xl p-4 border border-cyan-200 flex flex-col">
-            <div className="flex-grow">
-              <h4 className="font-bold text-gray-900 mb-2">Ambassade Hotel ⭐⭐⭐⭐</h4>
-              <p className="text-xs text-gray-600 mb-2">📍 Plaza Dam</p>
-              <p className="text-sm text-gray-700 mb-3">Hotel moderno con diseño único en pleno centro histórico. A pasos del Palacio Real y Damrak.</p>
-            </div>
-            <div className="flex items-center justify-between flex-wrap gap-2 mt-auto">
-              <span className="text-lg font-bold text-cyan-600">€€€</span>
-              <a href="https://booking.tpk.lv/lJeCjGwX" target="_blank" rel="noopener noreferrer"
-                 className="inline-flex items-center bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm">
-                Ver en Booking
-                <ExternalLink className="h-3 w-3 ml-2" />
-              </a>
-            </div>
-          </div>
+              <div className="bg-white rounded-2xl p-5 border-2 border-cyan-200 flex flex-col shadow-lg hover:shadow-xl hover:border-cyan-300 transition-all duration-300 hover:-translate-y-1">
+                <div className="flex items-start justify-between mb-3">
+                  <span className="text-3xl">🏨</span>
+                  <span className="bg-amber-400 text-amber-900 px-3 py-1 rounded-full text-xs font-bold">⭐⭐⭐⭐</span>
+                </div>
+                <div className="flex-grow">
+                  <h4 className="font-bold text-gray-900 mb-3 text-lg leading-tight">Ambassade Hotel</h4>
+                  <p className="text-sm text-gray-700 mb-4 leading-relaxed">Hotel moderno con diseño único en pleno centro histórico. A pasos del Palacio Real y Damrak.</p>
+                  <div className="bg-cyan-50 border-l-4 border-cyan-400 rounded-r-lg p-3 mb-4">
+                    <p className="text-xs text-cyan-800 leading-relaxed">
+                      <span className="text-base mr-1">📍</span>
+                      <strong>Qué hay cerca:</strong> Plaza Dam
+                    </p>
+                  </div>
+                </div>
+                <div className="mt-auto">
+                  <a
+                    href="https://booking.tpk.lv/lJeCjGwX"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center bg-[#003580] hover:bg-[#00254d] text-white font-bold px-6 py-3.5 rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 text-base w-full group"
+                  >
+                    <span className="mr-2">Ver disponibilidad</span>
+                    <ExternalLink className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
+                  </a>
+                </div>
+              </div>
 
-          <div className="bg-gradient-to-br from-indigo-50 to-purple-50 rounded-xl p-4 border border-indigo-200 flex flex-col">
-            <div className="flex-grow">
-              <h4 className="font-bold text-gray-900 mb-2">Tourist Inn Hotel Amsterdam ⭐⭐⭐</h4>
-              <p className="text-xs text-gray-600 mb-2">📍 Herengracht Canal</p>
-              <p className="text-sm text-gray-700 mb-3">Hotel con encanto en edificio histórico de los canales. Perfecto para una experiencia auténtica.</p>
+              <div className="bg-white rounded-2xl p-5 border-2 border-indigo-200 flex flex-col shadow-lg hover:shadow-xl hover:border-indigo-300 transition-all duration-300 hover:-translate-y-1">
+                <div className="flex items-start justify-between mb-3">
+                  <span className="text-3xl">🏨</span>
+                  <span className="bg-amber-400 text-amber-900 px-3 py-1 rounded-full text-xs font-bold">⭐⭐⭐</span>
+                </div>
+                <div className="flex-grow">
+                  <h4 className="font-bold text-gray-900 mb-3 text-lg leading-tight">Tourist Inn Hotel Amsterdam</h4>
+                  <p className="text-sm text-gray-700 mb-4 leading-relaxed">Hotel con encanto en edificio histórico de los canales. Perfecto para una experiencia auténtica.</p>
+                  <div className="bg-indigo-50 border-l-4 border-indigo-400 rounded-r-lg p-3 mb-4">
+                    <p className="text-xs text-indigo-800 leading-relaxed">
+                      <span className="text-base mr-1">📍</span>
+                      <strong>Qué hay cerca:</strong> Herengracht Canal
+                    </p>
+                  </div>
+                </div>
+                <div className="mt-auto">
+                  <a
+                    href="https://booking.tpk.lv/gB3tgW13"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center bg-[#003580] hover:bg-[#00254d] text-white font-bold px-6 py-3.5 rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 text-base w-full group"
+                  >
+                    <span className="mr-2">Ver disponibilidad</span>
+                    <ExternalLink className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
+                  </a>
+                </div>
+              </div>
             </div>
-            <div className="flex items-center justify-between flex-wrap gap-2 mt-auto">
-              <span className="text-lg font-bold text-indigo-600">€€</span>
-              <a href="https://booking.tpk.lv/gB3tgW13" target="_blank" rel="noopener noreferrer"
-                 className="inline-flex items-center bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm">
-                Ver en Booking
-                <ExternalLink className="h-3 w-3 ml-2" />
-              </a>
-            </div>
-          </div>
-        </div>
 
             <div className="bg-green-50 border border-green-200 rounded-lg p-3">
               <p className="text-sm text-green-800">
@@ -404,55 +440,91 @@ Volver a guías
 
         {expandedZone === 'museumplein' && (
           <div className="animate-fadeIn border-t border-gray-200 pt-4">
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-4">
-          <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl p-4 border border-blue-200 flex flex-col">
-            <div className="flex-grow">
-              <h4 className="font-bold text-gray-900 mb-2">Catalonia Vondel Amsterdam ⭐⭐⭐⭐</h4>
-              <p className="text-xs text-gray-600 mb-2">📍 Cerca Museumplein</p>
-              <p className="text-sm text-gray-700 mb-3">Hotel práctico cerca de museos principales. Excelente relación calidad-precio para explorar la zona cultural.</p>
-            </div>
-            <div className="flex items-center justify-between flex-wrap gap-2 mt-auto">
-              <span className="text-lg font-bold text-blue-600">€€</span>
-              <a href="https://booking.tpk.lv/NoRMV4F4" target="_blank" rel="noopener noreferrer"
-                 className="inline-flex items-center bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm">
-                Ver en Booking
-                <ExternalLink className="h-3 w-3 ml-2" />
-              </a>
-            </div>
-          </div>
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-4">
+              <div className="bg-white rounded-2xl p-5 border-2 border-blue-200 flex flex-col shadow-lg hover:shadow-xl hover:border-blue-300 transition-all duration-300 hover:-translate-y-1">
+                <div className="flex items-start justify-between mb-3">
+                  <span className="text-3xl">🏨</span>
+                  <span className="bg-amber-400 text-amber-900 px-3 py-1 rounded-full text-xs font-bold">⭐⭐⭐⭐</span>
+                </div>
+                <div className="flex-grow">
+                  <h4 className="font-bold text-gray-900 mb-3 text-lg leading-tight">Catalonia Vondel Amsterdam</h4>
+                  <p className="text-sm text-gray-700 mb-4 leading-relaxed">Hotel práctico cerca de museos principales. Excelente relación calidad-precio para explorar la zona cultural.</p>
+                  <div className="bg-blue-50 border-l-4 border-blue-400 rounded-r-lg p-3 mb-4">
+                    <p className="text-xs text-blue-800 leading-relaxed">
+                      <span className="text-base mr-1">📍</span>
+                      <strong>Qué hay cerca:</strong> Cerca Museumplein
+                    </p>
+                  </div>
+                </div>
+                <div className="mt-auto">
+                  <a
+                    href="https://booking.tpk.lv/NoRMV4F4"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center bg-[#003580] hover:bg-[#00254d] text-white font-bold px-6 py-3.5 rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 text-base w-full group"
+                  >
+                    <span className="mr-2">Ver disponibilidad</span>
+                    <ExternalLink className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
+                  </a>
+                </div>
+              </div>
 
-          <div className="bg-gradient-to-br from-emerald-50 to-teal-50 rounded-xl p-4 border border-emerald-200 flex flex-col">
-            <div className="flex-grow">
-              <h4 className="font-bold text-gray-900 mb-2">NH Amsterdam Leidseplein ⭐⭐⭐⭐</h4>
-              <p className="text-xs text-gray-600 mb-2">📍 De Pijp</p>
-              <p className="text-sm text-gray-700 mb-3">Hotel de lujo con restaurantes michelin. Para quienes buscan máximo confort cerca de los museos.</p>
-            </div>
-            <div className="flex items-center justify-between flex-wrap gap-2 mt-auto">
-              <span className="text-lg font-bold text-emerald-600">€€</span>
-              <a href="https://booking.tpk.lv/iTSAwLd4" target="_blank" rel="noopener noreferrer"
-                 className="inline-flex items-center bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm">
-                Ver en Booking
-                <ExternalLink className="h-3 w-3 ml-2" />
-              </a>
-            </div>
-          </div>
+              <div className="bg-white rounded-2xl p-5 border-2 border-emerald-200 flex flex-col shadow-lg hover:shadow-xl hover:border-emerald-300 transition-all duration-300 hover:-translate-y-1">
+                <div className="flex items-start justify-between mb-3">
+                  <span className="text-3xl">🏨</span>
+                  <span className="bg-amber-400 text-amber-900 px-3 py-1 rounded-full text-xs font-bold">⭐⭐⭐⭐</span>
+                </div>
+                <div className="flex-grow">
+                  <h4 className="font-bold text-gray-900 mb-3 text-lg leading-tight">NH Amsterdam Leidseplein</h4>
+                  <p className="text-sm text-gray-700 mb-4 leading-relaxed">Hotel de lujo con restaurantes michelin. Para quienes buscan máximo confort cerca de los museos.</p>
+                  <div className="bg-emerald-50 border-l-4 border-emerald-400 rounded-r-lg p-3 mb-4">
+                    <p className="text-xs text-emerald-800 leading-relaxed">
+                      <span className="text-base mr-1">📍</span>
+                      <strong>Qué hay cerca:</strong> De Pijp
+                    </p>
+                  </div>
+                </div>
+                <div className="mt-auto">
+                  <a
+                    href="https://booking.tpk.lv/iTSAwLd4"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center bg-[#003580] hover:bg-[#00254d] text-white font-bold px-6 py-3.5 rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 text-base w-full group"
+                  >
+                    <span className="mr-2">Ver disponibilidad</span>
+                    <ExternalLink className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
+                  </a>
+                </div>
+              </div>
 
-          <div className="bg-gradient-to-br from-purple-50 to-pink-50 rounded-xl p-4 border border-purple-200 flex flex-col">
-            <div className="flex-grow">
-              <h4 className="font-bold text-gray-900 mb-2">Huygens Place Amsterdam ⭐⭐⭐⭐</h4>
-              <p className="text-xs text-gray-600 mb-2">📍 Museumplein</p>
-              <p className="text-sm text-gray-700 mb-3">Hotel familiar a pocos minutos del Rijksmuseum y Van Gogh. Zona tranquila y bien conectada.</p>
+              <div className="bg-white rounded-2xl p-5 border-2 border-purple-200 flex flex-col shadow-lg hover:shadow-xl hover:border-purple-300 transition-all duration-300 hover:-translate-y-1">
+                <div className="flex items-start justify-between mb-3">
+                  <span className="text-3xl">🏨</span>
+                  <span className="bg-amber-400 text-amber-900 px-3 py-1 rounded-full text-xs font-bold">⭐⭐⭐⭐</span>
+                </div>
+                <div className="flex-grow">
+                  <h4 className="font-bold text-gray-900 mb-3 text-lg leading-tight">Huygens Place Amsterdam</h4>
+                  <p className="text-sm text-gray-700 mb-4 leading-relaxed">Hotel familiar a pocos minutos del Rijksmuseum y Van Gogh. Zona tranquila y bien conectada.</p>
+                  <div className="bg-purple-50 border-l-4 border-purple-400 rounded-r-lg p-3 mb-4">
+                    <p className="text-xs text-purple-800 leading-relaxed">
+                      <span className="text-base mr-1">📍</span>
+                      <strong>Qué hay cerca:</strong> Museumplein
+                    </p>
+                  </div>
+                </div>
+                <div className="mt-auto">
+                  <a
+                    href="https://booking.tpk.lv/oGcSGvNP"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center bg-[#003580] hover:bg-[#00254d] text-white font-bold px-6 py-3.5 rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 text-base w-full group"
+                  >
+                    <span className="mr-2">Ver disponibilidad</span>
+                    <ExternalLink className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
+                  </a>
+                </div>
+              </div>
             </div>
-            <div className="flex items-center justify-between flex-wrap gap-2 mt-auto">
-              <span className="text-lg font-bold text-purple-600">€</span>
-              <a href="https://booking.tpk.lv/oGcSGvNP" target="_blank" rel="noopener noreferrer"
-                 className="inline-flex items-center bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm">
-                Ver en Booking
-                <ExternalLink className="h-3 w-3 ml-2" />
-              </a>
-            </div>
-          </div>
-        </div>
 
             <div className="bg-blue-50 border border-blue-200 rounded-lg p-3">
               <p className="text-sm text-blue-800">
