@@ -335,14 +335,19 @@ Volver a guías
         {expandedZone === 'centro-historico' && (
           <div className="animate-fadeIn border-t border-gray-200 pt-4">
 
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-4">
-          <div className="bg-gradient-to-br from-sky-50 to-blue-50 rounded-xl p-4 border border-sky-200 flex flex-col">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-4">
+          <div className="bg-white rounded-2xl p-5 border-2 border-sky-200 flex flex-col shadow-lg hover:shadow-xl hover:border-sky-300 transition-all duration-300 hover:-translate-y-1">
+            <div className="flex items-start justify-between mb-3">
+              <span className="text-3xl">🏨</span>
+              <span className="bg-amber-400 text-amber-900 px-3 py-1 rounded-full text-xs font-bold">⭐⭐⭐⭐</span>
+            </div>
             <div className="flex-grow">
-              <h4 className="font-bold text-gray-900 mb-2">Buxbaum Beletage Design & Boutique Hotel ⭐⭐⭐⭐</h4>
-              <p className="text-sm text-gray-700 mb-3">Hotel boutique rodeado de edificios históricos que ofrece aire acondicionado y sauna.</p>
-              <div className="bg-sky-50 border border-sky-200 rounded p-2 mb-2">
-                <p className="text-xs text-sky-700">
-                  📍 <strong>Qué hay cerca:</strong> Catedral de San Esteban (2 min a pie), calles comerciales Kärntner Strasse y Graben (3 min), Ópera Estatal (10 min), metro Schwedenplatz (4 min) y Stephansplatz (7 min), aeropuerto (20 min en coche).
+              <h4 className="font-bold text-gray-900 mb-3 text-lg leading-tight">Buxbaum Beletage Design & Boutique Hotel</h4>
+              <p className="text-sm text-gray-700 mb-4 leading-relaxed">Hotel boutique rodeado de edificios históricos que ofrece aire acondicionado y sauna.</p>
+              <div className="bg-sky-50 border-l-4 border-sky-400 rounded-r-lg p-3 mb-4">
+                <p className="text-xs text-sky-800 leading-relaxed">
+                  <span className="text-base mr-1">📍</span>
+                  <strong>Qué hay cerca:</strong> Catedral de San Esteban (2 min a pie), calles comerciales Kärntner Strasse y Graben (3 min), Ópera Estatal (10 min), metro Schwedenplatz (4 min) y Stephansplatz (7 min), aeropuerto (20 min en coche).
                 </p>
               </div>
             </div>
@@ -351,21 +356,26 @@ Volver a guías
                 href="https://booking.tpk.lv/02HJo6CR"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm w-full"
+                className="inline-flex items-center justify-center bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-bold px-6 py-3.5 rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 text-base w-full group"
               >
-                Ver en Booking
-                <ExternalLink className="h-3 w-3 ml-2" />
+                <span className="mr-2">Ver disponibilidad</span>
+                <ExternalLink className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
               </a>
             </div>
           </div>
 
-          <div className="bg-gradient-to-br from-cyan-50 to-teal-50 rounded-xl p-4 border border-cyan-200 flex flex-col">
+          <div className="bg-white rounded-2xl p-5 border-2 border-cyan-200 flex flex-col shadow-lg hover:shadow-xl hover:border-cyan-300 transition-all duration-300 hover:-translate-y-1">
+            <div className="flex items-start justify-between mb-3">
+              <span className="text-3xl">🏨</span>
+              <span className="bg-amber-400 text-amber-900 px-3 py-1 rounded-full text-xs font-bold">⭐⭐⭐⭐</span>
+            </div>
             <div className="flex-grow">
-              <h4 className="font-bold text-gray-900 mb-2">Hotel Royal ⭐⭐⭐⭐</h4>
-              <p className="text-sm text-gray-700 mb-3">Hotel que ofrece WiFi gratuita e incluye 2 excelentes restaurantes italianos. Las habitaciones están insonorizadas y tienen aire acondicionado, TV por cable, zona de estar, minibar y baño.</p>
-              <div className="bg-cyan-50 border border-cyan-200 rounded p-2 mb-2">
-                <p className="text-xs text-cyan-700">
-                  📍 <strong>Qué hay cerca:</strong> Catedral de San Esteban (muy cerca), calles comerciales Graben y Kärntner Straße (al inicio), metro Stephansplatz (a pocos pasos).
+              <h4 className="font-bold text-gray-900 mb-3 text-lg leading-tight">Hotel Royal</h4>
+              <p className="text-sm text-gray-700 mb-4 leading-relaxed">Hotel que ofrece WiFi gratuita e incluye 2 excelentes restaurantes italianos. Las habitaciones están insonorizadas y tienen aire acondicionado, TV por cable, zona de estar, minibar y baño.</p>
+              <div className="bg-cyan-50 border-l-4 border-cyan-400 rounded-r-lg p-3 mb-4">
+                <p className="text-xs text-cyan-800 leading-relaxed">
+                  <span className="text-base mr-1">📍</span>
+                  <strong>Qué hay cerca:</strong> Catedral de San Esteban (muy cerca), calles comerciales Graben y Kärntner Straße (al inicio), metro Stephansplatz (a pocos pasos).
                 </p>
               </div>
             </div>
@@ -374,21 +384,26 @@ Volver a guías
                 href="https://booking.tpk.lv/E1u4RhD6"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm w-full"
+                className="inline-flex items-center justify-center bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-bold px-6 py-3.5 rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 text-base w-full group"
               >
-                Ver en Booking
-                <ExternalLink className="h-3 w-3 ml-2" />
+                <span className="mr-2">Ver disponibilidad</span>
+                <ExternalLink className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
               </a>
             </div>
           </div>
 
-          <div className="bg-gradient-to-br from-indigo-50 to-blue-50 rounded-xl p-4 border border-indigo-200 flex flex-col">
+          <div className="bg-white rounded-2xl p-5 border-2 border-blue-200 flex flex-col shadow-lg hover:shadow-xl hover:border-blue-300 transition-all duration-300 hover:-translate-y-1">
+            <div className="flex items-start justify-between mb-3">
+              <span className="text-3xl">🏨</span>
+              <span className="bg-amber-400 text-amber-900 px-3 py-1 rounded-full text-xs font-bold">⭐⭐⭐⭐</span>
+            </div>
             <div className="flex-grow">
-              <h4 className="font-bold text-gray-900 mb-2">Hotel Capricorno ⭐⭐⭐⭐</h4>
-              <p className="text-sm text-gray-700 mb-3">Elegante hotel que ofrece habitaciones insonorizadas con aire acondicionado, TV vía satélite con canales Sky, tableta con WiFi gratuita, minibar y caja fuerte.</p>
-              <div className="bg-indigo-50 border border-indigo-200 rounded p-2 mb-2">
-                <p className="text-xs text-indigo-700">
-                  📍 <strong>Qué hay cerca:</strong> Catedral de San Esteban (8 min a pie), metro Schwedenplatz (intercambiador U1/U4 a 100 m), tranvía turístico amarillo que recorre el Ring, diversos pubs y restaurantes en las inmediaciones.
+              <h4 className="font-bold text-gray-900 mb-3 text-lg leading-tight">Hotel Capricorno</h4>
+              <p className="text-sm text-gray-700 mb-4 leading-relaxed">Elegante hotel que ofrece habitaciones insonorizadas con aire acondicionado, TV vía satélite con canales Sky, tableta con WiFi gratuita, minibar y caja fuerte.</p>
+              <div className="bg-blue-50 border-l-4 border-blue-400 rounded-r-lg p-3 mb-4">
+                <p className="text-xs text-blue-800 leading-relaxed">
+                  <span className="text-base mr-1">📍</span>
+                  <strong>Qué hay cerca:</strong> Catedral de San Esteban (8 min a pie), metro Schwedenplatz (intercambiador U1/U4 a 100 m), tranvía turístico amarillo que recorre el Ring, diversos pubs y restaurantes en las inmediaciones.
                 </p>
               </div>
             </div>
@@ -397,10 +412,10 @@ Volver a guías
                 href="https://booking.tpk.lv/RVD7nB3P"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm w-full"
+                className="inline-flex items-center justify-center bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-bold px-6 py-3.5 rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 text-base w-full group"
               >
-                Ver en Booking
-                <ExternalLink className="h-3 w-3 ml-2" />
+                <span className="mr-2">Ver disponibilidad</span>
+                <ExternalLink className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
               </a>
             </div>
           </div>
@@ -450,14 +465,19 @@ Volver a guías
         {expandedZone === 'leopoldstadt-landstrasse' && (
           <div className="animate-fadeIn border-t border-gray-200 pt-4">
 
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-4">
-          <div className="bg-gradient-to-br from-emerald-50 to-green-50 rounded-xl p-4 border border-emerald-200 flex flex-col">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-4">
+          <div className="bg-white rounded-2xl p-5 border-2 border-emerald-200 flex flex-col shadow-lg hover:shadow-xl hover:border-emerald-300 transition-all duration-300 hover:-translate-y-1">
+            <div className="flex items-start justify-between mb-3">
+              <span className="text-3xl">🏨</span>
+              <span className="bg-amber-400 text-amber-900 px-3 py-1 rounded-full text-xs font-bold">⭐⭐⭐⭐</span>
+            </div>
             <div className="flex-grow">
-              <h4 className="font-bold text-gray-900 mb-2">Henriette Stadthotel Vienna ⭐⭐⭐⭐</h4>
-              <p className="text-sm text-gray-700 mb-3">Hotel que ofrece WiFi gratuita y habitaciones amplias y luminosas con aire acondicionado, TV de pantalla plana y baño con secador de pelo. Sirve un desayuno buffet abundante y cuenta con recepción 24 horas.</p>
-              <div className="bg-emerald-50 border border-emerald-200 rounded p-2 mb-2">
-                <p className="text-xs text-emerald-700">
-                  📍 <strong>Qué hay cerca:</strong> Metro Nestroyplatz (a pocos pasos), catedral de San Esteban (2 paradas de metro), parque de atracciones Prater (10 min a pie), centro internacional de Viena y centro de exposiciones Messe Wien (poca distancia en metro).
+              <h4 className="font-bold text-gray-900 mb-3 text-lg leading-tight">Henriette Stadthotel Vienna</h4>
+              <p className="text-sm text-gray-700 mb-4 leading-relaxed">Hotel que ofrece WiFi gratuita y habitaciones amplias y luminosas con aire acondicionado, TV de pantalla plana y baño con secador de pelo. Sirve un desayuno buffet abundante y cuenta con recepción 24 horas.</p>
+              <div className="bg-emerald-50 border-l-4 border-emerald-400 rounded-r-lg p-3 mb-4">
+                <p className="text-xs text-emerald-800 leading-relaxed">
+                  <span className="text-base mr-1">📍</span>
+                  <strong>Qué hay cerca:</strong> Metro Nestroyplatz (a pocos pasos), catedral de San Esteban (2 paradas de metro), parque de atracciones Prater (10 min a pie), centro internacional de Viena y centro de exposiciones Messe Wien (poca distancia en metro).
                 </p>
               </div>
             </div>
@@ -466,21 +486,26 @@ Volver a guías
                 href="https://booking.tpk.lv/is1dcdUr"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm w-full"
+                className="inline-flex items-center justify-center bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-bold px-6 py-3.5 rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 text-base w-full group"
               >
-                Ver en Booking
-                <ExternalLink className="h-3 w-3 ml-2" />
+                <span className="mr-2">Ver disponibilidad</span>
+                <ExternalLink className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
               </a>
             </div>
           </div>
 
-          <div className="bg-gradient-to-br from-teal-50 to-cyan-50 rounded-xl p-4 border border-teal-200 flex flex-col">
+          <div className="bg-white rounded-2xl p-5 border-2 border-teal-200 flex flex-col shadow-lg hover:shadow-xl hover:border-teal-300 transition-all duration-300 hover:-translate-y-1">
+            <div className="flex items-start justify-between mb-3">
+              <span className="text-3xl">🏨</span>
+              <span className="bg-amber-400 text-amber-900 px-3 py-1 rounded-full text-xs font-bold">⭐⭐⭐⭐</span>
+            </div>
             <div className="flex-grow">
-              <h4 className="font-bold text-gray-900 mb-2">Hotel Spiess & Spiess ⭐⭐⭐⭐</h4>
-              <p className="text-sm text-gray-700 mb-3">Hotel ecológico que ofrece habitaciones y suites elegantes e hipoalergénicas con aire acondicionado, suelo radiante, TV de pantalla plana y baño de lujo. Cuenta con sauna y zona de relajación gratuita. Desayuno premium con productos ecológicos de la zona.</p>
-              <div className="bg-teal-50 border border-teal-200 rounded p-2 mb-2">
-                <p className="text-xs text-teal-700">
-                  📍 <strong>Qué hay cerca:</strong> Metro Rochusgasse línea U3 (100 m), plaza Stephansplatz (5 min en metro), estación de trenes al aeropuerto (1 parada de metro), aparcamiento Erdberg (3 paradas).
+              <h4 className="font-bold text-gray-900 mb-3 text-lg leading-tight">Hotel Spiess & Spiess</h4>
+              <p className="text-sm text-gray-700 mb-4 leading-relaxed">Hotel ecológico que ofrece habitaciones y suites elegantes e hipoalergénicas con aire acondicionado, suelo radiante, TV de pantalla plana y baño de lujo. Cuenta con sauna y zona de relajación gratuita. Desayuno premium con productos ecológicos de la zona.</p>
+              <div className="bg-teal-50 border-l-4 border-teal-400 rounded-r-lg p-3 mb-4">
+                <p className="text-xs text-teal-800 leading-relaxed">
+                  <span className="text-base mr-1">📍</span>
+                  <strong>Qué hay cerca:</strong> Metro Rochusgasse línea U3 (100 m), plaza Stephansplatz (5 min en metro), estación de trenes al aeropuerto (1 parada de metro), aparcamiento Erdberg (3 paradas).
                 </p>
               </div>
             </div>
@@ -489,21 +514,26 @@ Volver a guías
                 href="https://booking.tpk.lv/JHRNWZHd"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm w-full"
+                className="inline-flex items-center justify-center bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-bold px-6 py-3.5 rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 text-base w-full group"
               >
-                Ver en Booking
-                <ExternalLink className="h-3 w-3 ml-2" />
+                <span className="mr-2">Ver disponibilidad</span>
+                <ExternalLink className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
               </a>
             </div>
           </div>
 
-          <div className="bg-gradient-to-br from-blue-50 to-sky-50 rounded-xl p-4 border border-blue-200 flex flex-col">
+          <div className="bg-white rounded-2xl p-5 border-2 border-blue-200 flex flex-col shadow-lg hover:shadow-xl hover:border-blue-300 transition-all duration-300 hover:-translate-y-1">
+            <div className="flex items-start justify-between mb-3">
+              <span className="text-3xl">🏨</span>
+              <span className="bg-amber-400 text-amber-900 px-3 py-1 rounded-full text-xs font-bold">⭐⭐⭐</span>
+            </div>
             <div className="flex-grow">
-              <h4 className="font-bold text-gray-900 mb-2">ibis Styles Wien Messe Prater ⭐⭐⭐</h4>
-              <p className="text-sm text-gray-700 mb-3">Hotel con habitaciones con aire acondicionado, escritorio y TV de pantalla plana. Sirve desayuno buffet o continental a diario. Ofrece servicio de alquiler de coche.</p>
-              <div className="bg-blue-50 border border-blue-200 rounded p-2 mb-2">
-                <p className="text-xs text-blue-700">
-                  📍 <strong>Qué hay cerca:</strong> Canal del Danubio (junto), parque Prater y noria gigante (400 m), Messe Wien y estadio Ernst Happel (cerca), centro de la ciudad (10 min a pie), Donauinsel (pocos minutos en metro), aeropuerto internacional de Viena (16 km).
+              <h4 className="font-bold text-gray-900 mb-3 text-lg leading-tight">ibis Styles Wien Messe Prater</h4>
+              <p className="text-sm text-gray-700 mb-4 leading-relaxed">Hotel con habitaciones con aire acondicionado, escritorio y TV de pantalla plana. Sirve desayuno buffet o continental a diario. Ofrece servicio de alquiler de coche.</p>
+              <div className="bg-blue-50 border-l-4 border-blue-400 rounded-r-lg p-3 mb-4">
+                <p className="text-xs text-blue-800 leading-relaxed">
+                  <span className="text-base mr-1">📍</span>
+                  <strong>Qué hay cerca:</strong> Canal del Danubio (junto), parque Prater y noria gigante (400 m), Messe Wien y estadio Ernst Happel (cerca), centro de la ciudad (10 min a pie), Donauinsel (pocos minutos en metro), aeropuerto internacional de Viena (16 km).
                 </p>
               </div>
             </div>
@@ -512,10 +542,10 @@ Volver a guías
                 href="https://booking.tpk.lv/mNvXHjff"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm w-full"
+                className="inline-flex items-center justify-center bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-bold px-6 py-3.5 rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 text-base w-full group"
               >
-                Ver en Booking
-                <ExternalLink className="h-3 w-3 ml-2" />
+                <span className="mr-2">Ver disponibilidad</span>
+                <ExternalLink className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
               </a>
             </div>
           </div>
