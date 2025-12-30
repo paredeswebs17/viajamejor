@@ -667,9 +667,9 @@ Volver a guías
         <div className="bg-white rounded-xl p-4 border border-gray-200 shadow-sm">
           <div className="flex flex-col sm:flex-row gap-2">
             <a href="https://www.wien.info/es/ver-y-experimentar/monumentos-a-z/ayuntamiento-de-viena-343218" target="_blank" rel="noopener noreferrer"
-               className="inline-flex items-center bg-gradient-to-r from-red-500 to-pink-500 hover:from-red-600 hover:to-pink-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm">
-              🏛️ Reservar visita guiada Ayuntamiento
-              <ExternalLink className="h-3 w-3 ml-2" />
+               className="btn-hotel">
+              <span>🏛️ Reservar visita guiada Ayuntamiento</span>
+              <ExternalLink className="external-icon" />
             </a>
           </div>
           <p className="text-xs text-red-600 mt-2">💡 Tip: Llega temprano para evitar grupos turísticos y conseguir las mejores fotos de la plaza vacía.</p>
@@ -826,9 +826,9 @@ Volver a guías
         <div className="bg-white rounded-xl p-4 border border-gray-200 shadow-sm">
           <div className="flex flex-col sm:flex-row gap-2">
             <a href="https://gyg.me/EH2OPBYr" target="_blank" rel="noopener noreferrer"
-               className="inline-flex items-center bg-gradient-to-r from-blue-500 to-indigo-500 hover:from-blue-600 hover:to-indigo-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm">
-              🎫 Tour guiado con subida a torres y museo Dom
-              <ExternalLink className="h-3 w-3 ml-2" />
+               className="btn-hotel">
+              <span>🎫 Tour guiado con subida a torres y museo Dom</span>
+              <ExternalLink className="external-icon" />
             </a>
           </div>
         </div>
@@ -869,9 +869,9 @@ Volver a guías
 
         <div className="bg-white rounded-xl p-4 border border-gray-200 shadow-sm">
             <a href="https://gyg.me/E0OqaGOy" target="_blank" rel="noopener noreferrer"
-               className="inline-flex items-center bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm">
-              🏰 Tour con guía a Palacio y Jardines
-              <ExternalLink className="h-3 w-3 ml-2" />
+               className="btn-hotel">
+              <span>🏰 Tour con guía a Palacio y Jardines</span>
+              <ExternalLink className="external-icon" />
             </a>
         </div>
       </div>
@@ -917,14 +917,14 @@ Volver a guías
         <div className="bg-white rounded-xl p-4 border border-gray-200 shadow-sm">
           <div className="flex flex-col sm:flex-row gap-2">
           <a href="https://gyg.me/WsBGbqro" target="_blank" rel="noopener noreferrer"
-             className="inline-flex items-center bg-gradient-to-r from-yellow-500 to-orange-500 hover:from-yellow-600 hover:to-orange-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm">
-            🎼 Entradas Casa de Mozart
-            <ExternalLink className="h-3 w-3 ml-2" />
+             className="btn-hotel">
+            <span>🎼 Entradas Casa de Mozart</span>
+            <ExternalLink className="external-icon" />
           </a>
            <a href="https://gyg.me/dVkRMS4u" target="_blank" rel="noopener noreferrer"
-               className="inline-flex items-center bg-gradient-to-r from-blue-500 to-indigo-500 hover:from-blue-600 hover:to-indigo-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm">
-              👑 Concierto clásico en la casa de Mozart
-              <ExternalLink className="h-3 w-3 ml-2" />
+               className="btn-hotel">
+              <span>👑 Concierto clásico en la casa de Mozart</span>
+              <ExternalLink className="external-icon" />
             </a>
           </div>
         </div>
@@ -994,14 +994,14 @@ Volver a guías
         <div className="bg-white rounded-xl p-4 border border-gray-200 shadow-sm">
           <div className="flex flex-col sm:flex-row gap-2">
             <a href="https://gyg.me/iCPMo7F4" target="_blank" rel="noopener noreferrer"
-               className="inline-flex items-center bg-gradient-to-r from-green-500 to-emerald-500 hover:from-green-600 hover:to-emerald-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm">
-              🎡 Entradas Noria Gigante
-              <ExternalLink className="h-3 w-3 ml-2" />
+               className="btn-hotel">
+              <span>🎡 Entradas Noria Gigante</span>
+              <ExternalLink className="external-icon" />
             </a>
             <a href="https://www.prater.at/" target="_blank" rel="noopener noreferrer"
-               className="inline-flex items-center bg-gradient-to-r from-blue-500 to-indigo-500 hover:from-blue-600 hover:to-indigo-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm">
-              🎠 Información Prater completo
-              <ExternalLink className="h-3 w-3 ml-2" />
+               className="btn-hotel">
+              <span>🎠 Información Prater completo</span>
+              <ExternalLink className="external-icon" />
             </a>
           </div>
         </div>
@@ -1097,9 +1097,9 @@ Volver a guías
 
         <div className="bg-white rounded-xl p-4 border border-gray-200 shadow-sm">
             <a href="https://gyg.me/ghHUAcrV" target="_blank" rel="noopener noreferrer"
-               className="inline-flex items-center bg-gradient-to-r from-emerald-500 to-green-500 hover:from-emerald-600 hover:to-green-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm">
-              ⛪ Concierto las Cuatro Estaciones de Vivaldi en Karlskirche
-              <ExternalLink className="h-3 w-3 ml-2" />
+               className="btn-hotel">
+              <span>⛪ Concierto las Cuatro Estaciones de Vivaldi en Karlskirche</span>
+              <ExternalLink className="external-icon" />
             </a>
         </div>
       </div>
@@ -1150,14 +1150,14 @@ Volver a guías
         <div className="bg-white rounded-xl p-4 border border-gray-200 shadow-sm">
           <div className="flex flex-col sm:flex-row gap-2">
             <a href="https://gyg.me/pvL78q94" target="_blank" rel="noopener noreferrer"
-               className="inline-flex items-center bg-gradient-to-r from-yellow-500 to-orange-500 hover:from-yellow-600 hover:to-orange-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm">
-              🎨 Entradas al Belvedere Superior
-              <ExternalLink className="h-3 w-3 ml-2" />
+               className="btn-hotel">
+              <span>🎨 Entradas al Belvedere Superior</span>
+              <ExternalLink className="external-icon" />
             </a>
             <a href="https://gyg.me/7y5TyzcF" target="_blank" rel="noopener noreferrer"
-               className="inline-flex items-center bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm">
-              👨‍🎨 Tour con guía al Palacio Belvedere
-              <ExternalLink className="h-3 w-3 ml-2" />
+               className="btn-hotel">
+              <span>👨‍🎨 Tour con guía al Palacio Belvedere</span>
+              <ExternalLink className="external-icon" />
             </a>
           </div>
         </div>
@@ -1235,14 +1235,14 @@ Volver a guías
         <div className="bg-white rounded-xl p-4 border border-gray-200 shadow-sm">
           <div className="flex flex-col sm:flex-row gap-2">
             <a href="https://gyg.me/dzn5QZh5" target="_blank" rel="noopener noreferrer"
-               className="inline-flex items-center bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm">
-              👑 Entradas Museo Sisí, Hofburg y Jardines
-              <ExternalLink className="h-3 w-3 ml-2" />
+               className="btn-hotel">
+              <span>👑 Entradas Museo Sisí, Hofburg y Jardines</span>
+              <ExternalLink className="external-icon" />
             </a>
             <a href="https://gyg.me/SQGXoIHF" target="_blank" rel="noopener noreferrer"
-               className="inline-flex items-center bg-gradient-to-r from-amber-600 to-orange-600 hover:from-amber-700 hover:to-orange-700 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm">
-              🐎 Escuela Española Equitación
-              <ExternalLink className="h-3 w-3 ml-2" />
+               className="btn-hotel">
+              <span>🐎 Escuela Española Equitación</span>
+              <ExternalLink className="external-icon" />
             </a>
           </div>
         </div>
@@ -1362,19 +1362,19 @@ Volver a guías
         <div className="bg-white rounded-xl p-4 border border-gray-200 shadow-sm">
           <div className="flex flex-col sm:flex-row gap-2">
             <a href="https://gyg.me/ghHUAcrV" target="_blank" rel="noopener noreferrer"
-               className="inline-flex items-center bg-gradient-to-r from-red-500 to-pink-500 hover:from-red-600 hover:to-pink-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm">
-              🎭 Concierto en Karlskirche
-              <ExternalLink className="h-3 w-3 ml-2" />
+               className="btn-hotel">
+              <span>🎭 Concierto en Karlskirche</span>
+              <ExternalLink className="external-icon" />
             </a>
             <a href="https://gyg.me/bbOpdWgB" target="_blank" rel="noopener noreferrer"
-               className="inline-flex items-center bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm">
-              🎼 Musikverein (Sala Dorada)
-              <ExternalLink className="h-3 w-3 ml-2" />
+               className="btn-hotel">
+              <span>🎼 Musikverein (Sala Dorada)</span>
+              <ExternalLink className="external-icon" />
             </a>
             <a href="https://www.wiener-staatsoper.at/en/" target="_blank" rel="noopener noreferrer"
-               className="inline-flex items-center bg-gradient-to-r from-purple-500 to-indigo-500 hover:from-purple-600 hover:to-indigo-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm">
-              🎵 Todos los conciertos disponibles
-              <ExternalLink className="h-3 w-3 ml-2" />
+               className="btn-hotel">
+              <span>🎵 Todos los conciertos disponibles</span>
+              <ExternalLink className="external-icon" />
             </a>
           </div>
         </div>
@@ -1415,10 +1415,10 @@ Volver a guías
               href="https://gyg.me/oyQziOhd"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center bg-gradient-to-r from-indigo-500 to-purple-500 hover:from-indigo-600 hover:to-purple-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm w-full justify-center"
+              className="btn-hotel"
             >
-              Ver Espectáculo de Luz
-              <ExternalLink className="h-3 w-3 ml-2" />
+              <span>Ver Espectáculo de Luz</span>
+              <ExternalLink className="external-icon" />
             </a>
           </div>
 
@@ -1435,10 +1435,10 @@ Volver a guías
               href="https://gyg.me/R9CKgxH7"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm w-full justify-center"
+              className="btn-hotel"
             >
-              Ver Tour a Hallstatt y Salzburgo
-              <ExternalLink className="h-3 w-3 ml-2" />
+              <span>Ver Tour a Hallstatt y Salzburgo</span>
+              <ExternalLink className="external-icon" />
             </a>
           </div>
 
@@ -1449,10 +1449,10 @@ Volver a guías
               href="https://gyg.me/E6a2Ta7o"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center bg-gradient-to-r from-pink-500 to-rose-500 hover:from-pink-600 hover:to-rose-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm w-full justify-center"
+              className="btn-hotel"
             >
-              Ver Tour Completo
-              <ExternalLink className="h-3 w-3 ml-2" />
+              <span>Ver Tour Completo</span>
+              <ExternalLink className="external-icon" />
             </a>
           </div>
 
@@ -1463,10 +1463,10 @@ Volver a guías
               href="https://gyg.me/UYIdvdFi"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center bg-gradient-to-r from-teal-500 to-cyan-500 hover:from-teal-600 hover:to-cyan-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm w-full justify-center"
+              className="btn-hotel"
             >
-              Ver Tour a Bratislava y Budapest
-              <ExternalLink className="h-3 w-3 ml-2" />
+              <span>Ver Tour a Bratislava y Budapest</span>
+              <ExternalLink className="external-icon" />
             </a>
           </div>
 
@@ -1477,10 +1477,10 @@ Volver a guías
               href="https://gyg.me/qVUeP4MV"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center bg-gradient-to-r from-blue-500 to-sky-500 hover:from-blue-600 hover:to-sky-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm w-full justify-center"
+              className="btn-hotel"
             >
-              Ver Tour a Praga
-              <ExternalLink className="h-3 w-3 ml-2" />
+              <span>Ver Tour a Praga</span>
+              <ExternalLink className="external-icon" />
             </a>
           </div>
         </div>
