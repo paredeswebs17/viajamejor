@@ -12,18 +12,18 @@ interface Guide {
 const ExploreDestinations = () => {
   const guides: Guide[] = [
     {
-      id: 'london',
-      title: 'Londres en 3 días',
-      image: 'https://images.pexels.com/photos/5380087/pexels-photo-5380087.jpeg',
-      url: '/londres-3-dias',
-      badge: '🎡'
-    },
-    {
       id: 'budapest',
       title: 'Budapest en 4 Días',
       image: 'https://images.pexels.com/photos/73796/budapest-hungary-parliament-building-73796.jpeg',
       url: '/budapest-4-dias',
       badge: '🔥'
+    },
+    {
+      id: 'london',
+      title: 'Londres en 3 días',
+      image: 'https://images.pexels.com/photos/5380087/pexels-photo-5380087.jpeg',
+      url: '/londres-3-dias',
+      badge: '🎡'
     },
     {
       id: 'prague',
