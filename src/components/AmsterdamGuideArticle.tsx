@@ -620,11 +620,25 @@ Volver a guías
           </div>
         </div>
 
-        <div className="bg-white rounded-xl p-4 border border-gray-200 shadow-sm">
-          <p className="text-xs text-orange-600 mb-3">💡 Tip: El tour suele durar 2-3 horas y es la mejor forma de conocer la historia y curiosidades de Ámsterdam con un guía local.</p>
-          <a href="https://gyg.me/9muAs4RI" target="_blank" rel="noopener noreferrer"
+        <div className="bg-white border-l-4 border-orange-500 rounded-lg p-4">
+          <h5 className="font-semibold text-gray-900 mb-2 flex items-center">
+            <span className="mr-2">🎯</span>
+            Free Tour de Ámsterdam en Español
+          </h5>
+          <p className="text-sm text-gray-700 mb-3">
+            Un viaje cautivador a través de la capital holandesa. Desde el Palacio Real, conoce la transformación de Ámsterdam de pueblo pesquero a centro del comercio marítimo. Pasea por sus canales, maravíllate con su arquitectura y descubre joyas ocultas.
+          </p>
+          <ul className="text-sm text-gray-700 space-y-1 mb-4 list-none">
+            <li className="flex items-center"><span className="w-2 h-2 bg-orange-400 rounded-full mr-3"></span>Duración: 2h 30min</li>
+            <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Inicio: Plaza Dam</li>
+            <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Incluye: Palacio Real, Canales históricos, arquitectura holandesa...</li>
+            <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>Pago: En forma de propinas</li>
+          </ul>
+          <a href="https://www.freetour.com/es/amsterdam/free-tour-amsterdam-en-espanol?referralID=rFW5gyO0D7w7JOqo&campaign=CentroAmsterdam"
+             target="_blank"
+             rel="noopener noreferrer"
              className="btn-hotel">
-            <span>🚶 Reservar Tour en español</span>
+            <span>🚶 Reservar free tour en español</span>
             <ExternalLink className="external-icon" />
           </a>
         </div>
