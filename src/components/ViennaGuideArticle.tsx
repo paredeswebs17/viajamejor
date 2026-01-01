@@ -779,8 +779,9 @@ Volver a guías
           </div>
         </div>
 
-        <div className="bg-white border border-gray-200 rounded-xl p-4 mt-4 shadow-sm">
-          <h5 className="font-semibold text-gray-900 mb-3">
+        <div className="bg-white border-l-4 border-emerald-500 rounded-lg p-4 mb-4 mt-4">
+          <h5 className="font-semibold text-gray-900 mb-2 flex items-center">
+            <span className="mr-2">🎯</span>
             Free Tour por el Centro Histórico de Viena en Español
           </h5>
           <p className="text-sm text-gray-700 mb-3">
