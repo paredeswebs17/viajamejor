@@ -1237,11 +1237,29 @@ Volver a guías
           </p>
         </div>
 
-        <a href="https://gyg.me/qQaHQWHy" target="_blank" rel="noopener noreferrer"
-           className="btn-hotel">
-          <span>🚶 Tour por el Barrio Rojo</span>
-          <ExternalLink className="external-icon" />
-        </a>
+        <div className="bg-white border-l-4 border-red-500 rounded-lg p-4">
+          <h5 className="font-semibold text-gray-900 mb-2 flex items-center">
+            <span className="mr-2">🎯</span>
+            Free Tour del Barrio Rojo en Español
+          </h5>
+          <p className="text-sm text-gray-700 mb-3">
+            Descubre la historia y legislación de la prostitución en Ámsterdam, el surgimiento de tiendas de piercings, tatuajes, sex shops, museos peculiares y Coffee Shops. Aprende sobre la cultura de las drogas y cómo son tratadas en la sociedad holandesa. Lugares emblemáticos como la Condomerie en Warmoesstraat.
+          </p>
+          <ul className="text-sm text-gray-700 space-y-1 mb-4 list-none">
+            <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>Duración: 2 horas</li>
+            <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Inicio: Beursplein</li>
+            <li className="flex items-center"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3"></span>Incluye: Historia, legislación, coffee shops, cultura de drogas...</li>
+            <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Pago: En forma de propinas</li>
+            <li className="flex items-center"><span className="w-2 h-2 bg-yellow-400 rounded-full mr-3"></span>Nota: Por respeto, no incluye calles con ventanas de trabajadoras sexuales</li>
+          </ul>
+          <a href="https://www.freetour.com/es/amsterdam/tour-del-barrio-rojo-en-espanol?referralID=rFW5gyO0D7w7JOqo&campaign=BarrioRojoAmsterdam"
+             target="_blank"
+             rel="noopener noreferrer"
+             className="btn-hotel">
+            <span>🚶 Reservar free tour del Barrio Rojo</span>
+            <ExternalLink className="external-icon" />
+          </a>
+        </div>
       </div>
     </div>
   </div>
