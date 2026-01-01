@@ -781,22 +781,22 @@ Volver a guías
 
         <div className="bg-white border border-gray-200 rounded-xl p-4 mt-4 shadow-sm">
           <h5 className="font-semibold text-gray-900 mb-3">
-            Free Tour por la Ciudad Vieja y Barrio Judío en Español
+            Free Tour por el Centro Histórico de Viena en Español
           </h5>
           <p className="text-sm text-gray-700 mb-3">
-            Descubre la Plaza de la Ciudad Vieja, el Reloj Astronómico y el fascinante Barrio Judío con un guía local experto. Conoce la historia medieval de Praga y las leyendas que rodean estos lugares emblemáticos.
+            Explora los rincones más monumentales de Viena con un guía local experto. Descubre la historia de Austria y la dinastía de los Habsburgo, la importancia de Viena en la música clásica y ópera, y la cultura gastronómica austriaca con sus famosas cafeterías, punto de encuentro de filósofos y artistas.
           </p>
           <ul className="text-sm text-gray-700 space-y-1 mb-4 list-none">
-            <li className="flex items-center"><span className="w-2 h-2 bg-emerald-400 rounded-full mr-3"></span>Duración: 2h 30min</li>
-            <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Inicio: Plaza de la Ciudad Vieja</li>
-            <li className="flex items-center"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3"></span>Incluye: Reloj Astronómico y Barrio Judío</li>
+            <li className="flex items-center"><span className="w-2 h-2 bg-emerald-400 rounded-full mr-3"></span>Duración: 2h 15min</li>
+            <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Inicio: Plaza de María Teresa (Maria-Theresien-Platz)</li>
+            <li className="flex items-center"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3"></span>Incluye: Ópera, Hofburg, Catedral de San Esteban y más</li>
             <li className="flex items-center"><span className="w-2 h-2 bg-pink-400 rounded-full mr-3"></span>Pago: En forma de propinas</li>
           </ul>
           <a href="https://www.freetour.com/es/vienna/free-tour-paseo-por-el-centro-de-viena?referralID=rFW5gyO0D7w7JOqo&campaign=CentroViena"
              target="_blank"
              rel="noopener noreferrer"
              className="btn-hotel">
-            <span>🏰 Reservar free tour de la Ciudad Vieja</span>
+            <span>🏰 Reservar free tour del Centro Histórico</span>
             <ExternalLink className="external-icon" />
           </a>
         </div>
