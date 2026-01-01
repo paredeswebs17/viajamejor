@@ -603,20 +603,27 @@ Volver a guías
           </div>
         </div>
 
-        <div className="bg-white rounded-xl p-4 border border-gray-200 shadow-sm">
-          <p className="text-xs text-red-600 mb-3">💡 Tip: Comienza el día con un tour en carrito de golf por el centro histórico, para conocer la historia y curiosidades de Roma con guía local en español que os recogerá en el hotel.</p>
-          <div className="flex flex-wrap gap-3">
-            <a href="https://gyg.me/S6R141kJ" target="_blank" rel="noopener noreferrer"
-               className="btn-hotel">
-              <span>🚎 Reservar Tour Centro Histórico en carrito de golf</span>
-              <ExternalLink className="external-icon" />
-            </a>
-            <a href="https://gyg.me/cUNjsEYp" target="_blank" rel="noopener noreferrer"
-               className="btn-hotel">
-              <span>🚶 Tour a Pie con Guía</span>
-              <ExternalLink className="external-icon" />
-            </a>
-          </div>
+        <div className="bg-white border-l-4 border-emerald-500 rounded-lg p-4">
+          <h5 className="font-semibold text-gray-900 mb-2 flex items-center">
+            <span className="mr-2">🎯</span>
+            Free Tour por Roma - Los Monumentos Más Icónicos
+          </h5>
+          <p className="text-sm text-gray-700 mb-3">
+            Te hemos diseñado el tour más completo para ver lo más importante en un único recorrido. Visitaremos los lugares más importantes del centro histórico de Roma como el Moisés de Miguel Ángel, El Coliseo, Foros Imperiales, La Columna de Trajano, La Fontana di Trevi y El Panteón. Sorpréndete descubriendo la gran ciudad que es Roma, una capital del arte que resulta inabarcable por el inmenso patrimonio que contiene. Disfrutaremos de esta preciosa ciudad mientras contamos cómo llegó a ser la "capital del mundo", hablaremos de su evolución a lo largo de los siglos y veremos las maravillas que ofrece.
+          </p>
+          <ul className="text-sm text-gray-700 space-y-1 mb-4 list-none">
+            <li className="flex items-center"><span className="w-2 h-2 bg-emerald-400 rounded-full mr-3"></span>Duración: 2h 45min</li>
+            <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Inicio: Piazza di San Pietro in Vincoli</li>
+            <li className="flex items-center"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3"></span>Incluye: Moisés de Miguel Ángel, Coliseo, Foros Imperiales, Columna de Trajano, Fontana di Trevi, Panteón</li>
+            <li className="flex items-center"><span className="w-2 h-2 bg-pink-400 rounded-full mr-3"></span>Pago: En forma de propinas</li>
+          </ul>
+          <a href="https://www.freetour.com/es/rome/free-tour-por-roma-los-monumentos-mas-iconicos?referralID=rFW5gyO0D7w7JOqo&campaign=CentroRoma"
+             target="_blank"
+             rel="noopener noreferrer"
+             className="btn-hotel">
+            <span>🏛️ Reservar free tour del Centro Histórico</span>
+            <ExternalLink className="external-icon" />
+          </a>
         </div>
       </div>
     </div>
