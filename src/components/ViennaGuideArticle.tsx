@@ -789,7 +789,7 @@ Volver a guías
           </p>
           <ul className="text-sm text-gray-700 space-y-1 mb-4 list-none">
             <li className="flex items-center"><span className="w-2 h-2 bg-emerald-400 rounded-full mr-3"></span>Duración: 2h 15min</li>
-            <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Inicio: Plaza de María Teresa (Maria-Theresien-Platz)</li>
+            <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Inicio: Maria-Theresien-Platz</li>
             <li className="flex items-center"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3"></span>Incluye: Ópera, Hofburg, Catedral de San Esteban y más</li>
             <li className="flex items-center"><span className="w-2 h-2 bg-pink-400 rounded-full mr-3"></span>Pago: En forma de propinas</li>
           </ul>
