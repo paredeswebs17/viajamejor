@@ -9,17 +9,6 @@ const GuidesPage = () => {
 
   const guides = [
     {
-      id: 'christmas',
-      title: 'Mercados Navideños de Europa 2025-2026',
-      description: 'Descubre los mejores mercados navideños de Budapest, Praga, Viena y Roma. Fechas, horarios, precios y consejos prácticos.',
-      image: 'https://images.pexels.com/photos/19361199/pexels-photo-19361199.jpeg',
-      continent: 'Europa',
-      featured: true,
-      available: true,
-      badge: '🎄 Navidad',
-      url: '/mercados-navidenos-europa'
-    },
-    {
       id: 'budapest',
       title: 'Budapest en 4 Días',
       description: 'La perla del Danubio te espera. Descubre castillos, balnearios termales únicos y la vibrante vida nocturna de la capital húngara.',
@@ -175,6 +164,17 @@ const GuidesPage = () => {
       continent: 'Asia',
       available: false,
       url: '#'
+    },
+    {
+      id: 'christmas',
+      title: 'Mercados Navideños de Europa 2025-2026',
+      description: 'Descubre los mejores mercados navideños de Budapest, Praga, Viena y Roma. Fechas, horarios, precios y consejos prácticos.',
+      image: 'https://images.pexels.com/photos/19361199/pexels-photo-19361199.jpeg',
+      continent: 'Europa',
+      featured: true,
+      available: true,
+      badge: '🎄 Navidad',
+      url: '/mercados-navidenos-europa'
     }
   ];
 
