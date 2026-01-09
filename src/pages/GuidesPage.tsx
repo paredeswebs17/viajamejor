@@ -93,6 +93,20 @@ const GuidesPage = () => {
       url: '/londres-3-dias'
     },
     {
+      id: 'athens',
+      title: 'Atenas en 3 días',
+      description: 'Cuna de la civilización occidental. Acrópolis, Partenón, Ágora Antigua y gastronomía griega auténtica.',
+      image: 'https://images.pexels.com/photos/1285625/pexels-photo-1285625.jpeg',
+      price: '65€',
+      rating: 4.8,
+      continent: 'Europa',
+      budget: '€€',
+      featured: true,
+      available: true,
+      badge: '🏛️ Clásica',
+      url: '/atenas-3-dias'
+    },
+    {
       id: 'berlin',
       title: 'Berlín en 4 días',
       description: 'Historia, arte urbano y vida nocturna en la capital alemana',
