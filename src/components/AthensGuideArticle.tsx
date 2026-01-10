@@ -118,201 +118,95 @@ const AthensGuideArticle: React.FC<AthensGuideArticleProps> = ({ onBack }) => {
 
         {/* SECCIÓN 2: LLEGADA DESDE EL AEROPUERTO */}
         <div id="llegada-aeropuerto" className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
-          <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">✈️ Llegada desde el Aeropuerto de Atenas</h2>
-
-          <p className="text-gray-700 mb-6">El Aeropuerto Internacional Eleftherios Venizelos (ATH) se encuentra a 33 km del centro de Atenas. Estas son tus opciones de transporte:</p>
+          <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">✈️ Llegada y Conexiones desde el Aeropuerto</h2>
 
           <div className="bg-blue-50 border border-blue-200 rounded-xl p-4 mb-6">
             <p className="text-sm text-blue-900">
-              <strong>Haz clic en tu método de transporte preferido</strong> para ver detalles completos con precios actualizados y horarios.
+              <strong>Haz clic en el aeropuerto de llegada</strong> para ver todas las opciones de transporte disponibles con precios actualizados.
             </p>
           </div>
 
-          {/* Metro Accordion */}
           <button
-            onClick={() => toggleAirport('metro')}
-            className="w-full bg-gradient-to-r from-blue-500 to-indigo-500 hover:from-blue-600 hover:to-indigo-600 text-white rounded-xl p-4 mb-3 flex items-center justify-between transition-all duration-300 shadow-md hover:shadow-lg"
+            onClick={() => toggleAirport('eleftherios-venizelos')}
+            className="w-full bg-gradient-to-r from-blue-500 to-sky-500 hover:from-blue-600 hover:to-sky-600 text-white rounded-xl p-4 mb-3 flex items-center justify-between transition-all duration-300 shadow-md hover:shadow-lg"
           >
             <div className="flex items-center gap-3">
-              <span className="text-2xl">🚇</span>
-              <span className="font-bold text-lg">Metro Línea 3 (Azul) - Opción Más Popular</span>
+              <span className="text-2xl">✈️</span>
+              <span className="font-bold text-lg">Aeropuerto Eleftherios Venizelos (ATH)</span>
             </div>
-            {expandedAirport === 'metro' ? <ChevronUp className="w-6 h-6" /> : <ChevronDown className="w-6 h-6" />}
+            {expandedAirport === 'eleftherios-venizelos' ? <ChevronUp className="w-6 h-6" /> : <ChevronDown className="w-6 h-6" />}
           </button>
 
-          {expandedAirport === 'metro' && (
+          {expandedAirport === 'eleftherios-venizelos' && (
             <div className="mb-8 animate-fadeIn">
-              <div className="border-2 border-green-400 bg-green-50 rounded-xl p-4 mb-4">
-                <h4 className="text-lg font-bold text-gray-900 mb-2">
-                  🔥 🚇 Metro Línea 3 - La Forma Más Económica y Directa
-                </h4>
-                <p className="text-sm text-gray-700 mb-3">
-                  Conexión directa al centro de Atenas con paradas en Monastiraki, Syntagma y más
-                </p>
+              <h3 className="text-lg font-bold text-gray-900 mb-4 mt-4">📍 Desde Aeropuerto Eleftherios Venizelos (33 km del centro)</h3>
 
-                <div className="bg-blue-50 border border-blue-200 rounded-lg p-3 mb-3">
-                  <p className="text-sm text-blue-800">
-                    <strong>💡 ¿Cuándo elegir el metro?</strong> Si tu hotel está cerca de cualquier parada de la Línea 3 (Monastiraki, Syntagma, Plaka). Es la opción MÁS barata (10€) y muy eficiente. El único inconveniente es que con equipaje pesado puede ser incómodo en hora punta.
-                  </p>
-                </div>
-
-                <div className="space-y-2 mb-4">
-                  <div className="flex items-center text-sm text-gray-700">
-                    <span className="text-green-500 mr-2">✓</span>
-                    Precio: 10€ por persona (ida)
+              <div className="bg-green-50 border border-green-200 rounded-xl p-6 mb-4">
+                <h4 className="font-bold text-gray-900 mb-3">🚇 Metro Línea 3 (Azul) - La Opción Más Práctica</h4>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div>
+                    <p className="text-sm text-gray-700 mb-2"><strong>Precio:</strong> 10€ por persona</p>
+                    <p className="text-sm text-gray-700 mb-2"><strong>Horario:</strong> 6:30-23:30</p>
+                    <p className="text-sm text-gray-700 mb-2"><strong>Duración:</strong> 40 minutos hasta Syntagma</p>
+                    <p className="text-sm text-gray-700"><strong>Frecuencia:</strong> Cada 30 minutos</p>
                   </div>
-                  <div className="flex items-center text-sm text-gray-700">
-                    <span className="text-green-500 mr-2">✓</span>
-                    Duración: 40 minutos hasta Syntagma
-                  </div>
-                  <div className="flex items-center text-sm text-gray-700">
-                    <span className="text-green-500 mr-2">✓</span>
-                    Horario: 6:30-23:30 (cada 30 min)
-                  </div>
-                  <div className="flex items-center text-sm text-gray-700">
-                    <span className="text-green-500 mr-2">✓</span>
-                    Paradas útiles: Monastiraki, Syntagma, Akropoli
-                  </div>
-                  <div className="flex items-center text-sm text-gray-700">
-                    <span className="text-yellow-500 mr-2">⚠</span>
-                    Puede estar lleno en hora punta con equipaje
+                  <div>
+                    <p className="text-sm text-gray-700 mb-2"><strong>Paradas principales:</strong> Syntagma, Monastiraki, Akropoli</p>
+                    <p className="text-sm text-gray-700"><strong>Compra:</strong> Máquinas en el aeropuerto (tarjeta o efectivo)</p>
                   </div>
                 </div>
-
-                <div className="bg-green-100 border-l-4 border-green-500 p-3">
-                  <p className="text-sm text-green-900">
-                    <strong>💡 Compra el billete en las máquinas del aeropuerto.</strong> Acepta tarjeta y efectivo. El ticket de 10€ es válido solo para el trayecto aeropuerto-centro.
-                  </p>
+                <div className="bg-blue-100 rounded-lg p-3 mt-4">
+                  <p className="text-blue-800 text-sm font-medium">💡 La opción más económica y directa. Perfecto si tu hotel está cerca de las paradas centrales. Puede estar lleno con equipaje en hora punta.</p>
                 </div>
               </div>
-            </div>
-          )}
 
-          {/* Bus X95 Accordion */}
-          <button
-            onClick={() => toggleAirport('bus')}
-            className="w-full bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white rounded-xl p-4 mb-3 flex items-center justify-between transition-all duration-300 shadow-md hover:shadow-lg"
-          >
-            <div className="flex items-center gap-3">
-              <span className="text-2xl">🚌</span>
-              <span className="font-bold text-lg">Bus Expreso X95 - Servicio 24 Horas</span>
-            </div>
-            {expandedAirport === 'bus' ? <ChevronUp className="w-6 h-6" /> : <ChevronDown className="w-6 h-6" />}
-          </button>
-
-          {expandedAirport === 'bus' && (
-            <div className="mb-8 animate-fadeIn">
-              <div className="border-2 border-orange-400 bg-orange-50 rounded-xl p-4 mb-4">
-                <h4 className="text-lg font-bold text-gray-900 mb-2">
-                  🚌 Bus Expreso X95 - Opción 24 Horas
-                </h4>
-                <p className="text-sm text-gray-700 mb-3">
-                  Autobús directo desde el aeropuerto a Plaza Syntagma
-                </p>
-
-                <div className="bg-orange-100 border border-orange-300 rounded-lg p-3 mb-3">
-                  <p className="text-sm text-orange-800">
-                    <strong>💡 Elige el bus si:</strong> Llegas fuera del horario del metro (antes 6:30 o después 23:30), o prefieres no cargar equipaje por escaleras. Es más lento (60-90 min vs 40 min del metro) pero funciona 24/7 y cuesta lo mismo.
-                  </p>
-                </div>
-
-                <div className="space-y-2 mb-4">
-                  <div className="flex items-center text-sm text-gray-700">
-                    <span className="text-orange-500 mr-2">✓</span>
-                    Precio: 5,50€ por persona
+              <div className="bg-orange-50 border border-orange-200 rounded-xl p-6 mb-4">
+                <h4 className="font-bold text-gray-900 mb-3">🚌 Bus Expreso X95 - Servicio 24 Horas</h4>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div>
+                    <p className="text-sm text-gray-700 mb-2"><strong>Precio:</strong> 5,50€ por persona</p>
+                    <p className="text-sm text-gray-700 mb-2"><strong>Horario:</strong> 24 horas / 7 días</p>
+                    <p className="text-sm text-gray-700 mb-2"><strong>Duración:</strong> 60-90 minutos</p>
+                    <p className="text-sm text-gray-700"><strong>Frecuencia:</strong> Cada 20-40 minutos</p>
                   </div>
-                  <div className="flex items-center text-sm text-gray-700">
-                    <span className="text-orange-500 mr-2">✓</span>
-                    Duración: 60-90 min (depende del tráfico)
-                  </div>
-                  <div className="flex items-center text-sm text-gray-700">
-                    <span className="text-orange-500 mr-2">✓</span>
-                    Horario: 24 horas (cada 20-40 min)
-                  </div>
-                  <div className="flex items-center text-sm text-gray-700">
-                    <span className="text-orange-500 mr-2">✓</span>
-                    Destino: Plaza Syntagma
-                  </div>
-                  <div className="flex items-center text-sm text-gray-700">
-                    <span className="text-orange-500 mr-2">✓</span>
-                    Espacio para equipaje
+                  <div>
+                    <p className="text-sm text-gray-700 mb-2"><strong>Destino:</strong> Plaza Syntagma (centro)</p>
+                    <p className="text-sm text-gray-700"><strong>Compra:</strong> Paradas o máquinas (NO a bordo)</p>
                   </div>
                 </div>
-
-                <div className="bg-white rounded-xl p-3 border border-gray-200 shadow-sm">
-                  <p className="text-xs text-orange-600">💡 <strong>Importante:</strong> Compra el billete en la parada del bus o en las máquinas. No se vende a bordo.</p>
+                <div className="bg-orange-100 rounded-lg p-3 mt-4">
+                  <p className="text-orange-800 text-sm font-medium">💡 Elige esta opción si llegas fuera del horario del metro (antes 6:30 o después 23:30). Más lento pero funciona 24/7 y tiene espacio para equipaje.</p>
                 </div>
               </div>
-            </div>
-          )}
 
-          {/* Transfer Privado Accordion */}
-          <button
-            onClick={() => toggleAirport('transfer')}
-            className="w-full bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white rounded-xl p-4 mb-3 flex items-center justify-between transition-all duration-300 shadow-md hover:shadow-lg"
-          >
-            <div className="flex items-center gap-3">
-              <span className="text-2xl">🚖</span>
-              <span className="font-bold text-lg">Transfer Privado - Máximo Confort</span>
-            </div>
-            {expandedAirport === 'transfer' ? <ChevronUp className="w-6 h-6" /> : <ChevronDown className="w-6 h-6" />}
-          </button>
-
-          {expandedAirport === 'transfer' && (
-            <div className="mb-8 animate-fadeIn">
-              <div className="border-2 border-purple-400 bg-purple-50 rounded-xl p-4 mb-4">
-                <h4 className="text-lg font-bold text-gray-900 mb-2">
-                  🚖 Transfer Privado - Puerta a Puerta
-                </h4>
-                <p className="text-sm text-gray-700 mb-3">
-                  Servicio exclusivo desde el aeropuerto directamente a tu hotel
-                </p>
-
-                <div className="bg-purple-100 border-l-4 border-purple-500 p-3 mb-3">
-                  <p className="text-sm text-purple-900 mb-2">
-                    <strong>🎯 Vale la pena si viajas en grupo:</strong>
-                  </p>
+              <div className="bg-purple-50 border border-purple-200 rounded-xl p-6 mb-4 shadow-sm hover:shadow-md transition-all duration-300">
+                <h4 className="font-bold text-gray-900 mb-3">🚗 Transfer Privado - Máximo Confort</h4>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+                  <div>
+                    <p className="text-sm text-gray-700 mb-2"><strong>Precio:</strong> Desde 54€ (hasta 4 personas)</p>
+                    <p className="text-sm text-gray-700"><strong>Duración:</strong> 35-50 minutos</p>
+                  </div>
+                  <div>
+                    <p className="text-sm text-gray-700 mb-2"><strong>Ideal para:</strong> Grupos, familias, equipaje</p>
+                    <p className="text-sm text-gray-700"><strong>Ventajas:</strong> Puerta a puerta, sin esperas</p>
+                  </div>
+                </div>
+                <div className="bg-purple-100 rounded-lg p-3 mb-4">
+                  <p className="text-purple-800 text-sm mb-2"><strong>🎯 Vale la pena si viajas en grupo:</strong></p>
                   <ul className="text-sm text-purple-800 space-y-1">
                     <li>✓ 2 personas: 27€/persona (vs 10€ metro)</li>
                     <li>✓ 3 personas: 18€/persona</li>
                     <li>✓ 4+ personas: 14€/persona</li>
-                    <li>✓ También perfecto si llegas de madrugada o con mucho equipaje</li>
                   </ul>
                 </div>
-
-                <div className="space-y-2 mb-4">
-                  <div className="flex items-center text-sm text-gray-700">
-                    <span className="text-purple-500 mr-2">✓</span>
-                    Precio: Desde 54€ (hasta 4 personas)
-                  </div>
-                  <div className="flex items-center text-sm text-gray-700">
-                    <span className="text-purple-500 mr-2">✓</span>
-                    Duración: 35-50 min según tráfico
-                  </div>
-                  <div className="flex items-center text-sm text-gray-700">
-                    <span className="text-purple-500 mr-2">✓</span>
-                    Conductor esperándote con cartel
-                  </div>
-                  <div className="flex items-center text-sm text-gray-700">
-                    <span className="text-purple-500 mr-2">✓</span>
-                    Puerta a puerta, sin paradas
-                  </div>
-                  <div className="flex items-center text-sm text-gray-700">
-                    <span className="text-purple-500 mr-2">✓</span>
-                    Tarifa fija sin sorpresas
-                  </div>
-                </div>
-
                 <a
                   href="https://gyg.me/AyvHieCl"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn-hotel"
                 >
-                  <span>Reservar transfer privado</span>
-                  <svg className="external-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
-                  </svg>
+                  <span>🚗 Reservar Transfer Privado</span>
+                  <ExternalLink className="external-icon" />
                 </a>
               </div>
             </div>
