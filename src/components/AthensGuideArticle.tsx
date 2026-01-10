@@ -319,10 +319,75 @@ const AthensGuideArticle: React.FC<AthensGuideArticleProps> = ({ onBack }) => {
           )}
         </div>
 
-        {/* CONTENIDO ADICIONAL - El usuario continuará añadiendo más secciones */}
+        {/* SECCIÓN 3: DÓNDE DORMIR */}
+        <div id="donde-dormir" className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
+          <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">🏨 Dónde Dormir en Atenas</h2>
+
+          <p className="text-gray-700 mb-6">
+            La ubicación de tu hotel en Atenas es clave para aprovechar el viaje. Te recomiendo alojarte en el centro histórico para estar cerca de todos los monumentos principales:
+          </p>
+
+          <div className="bg-blue-50 border border-blue-200 rounded-xl p-4 mb-6">
+            <h3 className="font-bold text-blue-900 mb-3">🎯 Mejores Barrios para Alojarse:</h3>
+            <div className="space-y-2 text-sm text-blue-800">
+              <p>• <strong>Plaka:</strong> El barrio más encantador, a los pies de la Acrópolis. Caro pero merece la pena.</p>
+              <p>• <strong>Monastiraki:</strong> Céntrico, animado, con buen transporte. Zona comercial y turística.</p>
+              <p>• <strong>Syntagma:</strong> Corazón de Atenas moderna. Perfecto para transporte público.</p>
+              <p>• <strong>Kolonaki:</strong> Barrio elegante y residencial. Más tranquilo y sofisticado.</p>
+            </div>
+          </div>
+
+          <div className="bg-gradient-to-r from-amber-50 to-orange-50 border-2 border-amber-300 rounded-xl p-4">
+            <h4 className="font-bold text-gray-900 mb-2">💡 Mi Recomendación:</h4>
+            <p className="text-sm text-gray-800">
+              Busca hotel en <strong>Plaka o Monastiraki</strong> para estar a 5-10 minutos andando de la Acrópolis. Reserva con 2-3 meses de antelación para mejores precios. Usa <strong>Booking.com</strong> para comparar opciones con cancelación gratuita.
+            </p>
+          </div>
+        </div>
+
+        {/* SECCIÓN 4: ITINERARIO */}
+        <div id="itinerario" className="bg-gradient-to-r from-blue-50 to-cyan-50 rounded-2xl p-6 sm:p-8 mb-8 shadow-md">
+          <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">📅 Itinerario de 3 Días por Atenas</h2>
+          <div className="overflow-x-auto">
+            <table className="w-full border-collapse bg-white rounded-xl shadow-sm">
+              <thead>
+                <tr className="bg-gradient-to-r from-blue-500 to-cyan-500 text-white">
+                  <th className="border border-gray-300 px-4 py-3 text-left font-semibold">DÍA</th>
+                  <th className="border border-gray-300 px-4 py-3 text-left font-semibold">EXPERIENCIAS ATENIENSES</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td className="border border-gray-300 px-4 py-3 font-bold">DÍA 1</td>
+                  <td className="border border-gray-300 px-4 py-3">Acrópolis + Partenón + Colina del Areópago + Ágora Romana + Biblioteca de Adriano + Barrio de Monastiraki + Ágora de Atenas + Templo de Hefesto</td>
+                </tr>
+                <tr className="bg-gray-50">
+                  <td className="border border-gray-300 px-4 py-3 font-bold">DÍA 2</td>
+                  <td className="border border-gray-300 px-4 py-3">Templo de Zeus Olímpico + Estadio Panatenaico + Plaza Syntagma + Cambio de Guardia + Barrio de Plaka + Museo de la Acrópolis + Monte Licabeto al atardecer</td>
+                </tr>
+                <tr>
+                  <td className="border border-gray-300 px-4 py-3 font-bold">DÍA 3</td>
+                  <td className="border border-gray-300 px-4 py-3">Excursión a Delfos / Meteora / Corinto-Micenas-Epidauro (día completo fuera de Atenas)</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        {/* Separador decorativo */}
+        <div className="flex items-center justify-center mb-8">
+          <div className="flex space-x-2">
+            <div className="w-3 h-3 bg-gradient-to-r from-blue-400 to-cyan-400 rounded-full"></div>
+            <div className="w-3 h-3 bg-gradient-to-r from-indigo-400 to-blue-400 rounded-full"></div>
+            <div className="w-3 h-3 bg-gradient-to-r from-sky-400 to-cyan-400 rounded-full"></div>
+          </div>
+        </div>
+
+        {/* TODO EL CONTENIDO DEL DÍA 1, 2, 3, MÁS LUGARES, RECOMENDACIONES, GASTRONOMÍA, TRANSPORTE, CONSEJOS Y PRESUPUESTOS IRÁ AQUÍ */}
+
         <div className="bg-yellow-50 border border-yellow-300 rounded-xl p-6 text-center">
           <p className="text-gray-700 font-medium">
-            📝 Contenido en construcción - Continuará con más secciones...
+            📝 Continúa añadiendo el contenido completo aquí...
           </p>
         </div>
       </article>
