@@ -200,7 +200,7 @@ const AthensGuideArticle: React.FC<AthensGuideArticleProps> = ({ onBack }) => {
                   </ul>
                 </div>
                 <a
-                  href="https://gyg.me/AyvHieCl"
+                  href="https://gyg.me/cNL3U6Qt"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn-hotel"
