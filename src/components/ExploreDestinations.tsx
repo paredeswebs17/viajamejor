@@ -74,7 +74,7 @@ const ExploreDestinations = () => {
     {
       id: 'morocco-organizado',
       title: 'Marruecos Organizado',
-      image: 'https://images.pexels.com/photos/4388164/pexels-photo-4388164.jpeg',
+      image: 'https://images.pexels.com/photos/3889843/pexels-photo-3889843.jpeg',
       url: '/marruecos-organizado',
       badge: '🇲🇦',
       organized: true,
