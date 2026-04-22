@@ -91,108 +91,6 @@ const notIncluded = [
   'Propinas',
 ];
 
-const RouteMap = () => {
-  const [activeDay, setActiveDay] = useState(0);
-
-  const mapDays = [
-    { num:1, title:'Llegada a Marrakech', sub:'Aeropuerto · Riad · Jemaa El Fna', lodging:'Riad · desayuno incluido', detail:'Recogida en el aeropuerto y traslado al Riad. Tarde libre en la famosa plaza Jemaa El Fna, el corazón de la medina: zocos, encantadores de serpientes, puestos de especias y música en vivo al caer la noche.', tags:['Traslado privado','Riad con alma','Jemaa El Fna'] },
-    { num:2, title:'Atlas → Ait Ben Haddou', sub:"Tizi N'Tichka 2.260m · Ouarzazate · Dades", lodging:'Valle de Dades · cena y desayuno', detail:"Cruzamos el Gran Atlas por el puerto de Tizi N'Tichka (2.260m). Visitamos la kasbah de Ait Ben Haddou, escenario de Gladiator. Continuamos a Ouarzazate y bajamos al Valle de Dades.", tags:["Tizi N'Tichka 2.260m",'Ait Ben Haddou','Ouarzazate','Valle de Dades'] },
-    { num:3, title:'Todra → Sahara', sub:'Gargantas Todra · Erfoud · Merzouga · Dunas', lodging:'Campamento lujo · cena y desayuno', detail:'Las Gargantas del Todra, cañón de más de 200m de altura. Continuamos a Merzouga: dromedarios al atardecer, noche en campamento de lujo en las dunas bajo el cielo estrellado del Sahara.', tags:['Gargantas Todra','Dromedarios','Campamento lujo','Cielo estrellado'] },
-    { num:4, title:'Rissani → Valle del Draa', sub:'Amanecer dunas · Mercado Rissani · Ouarzazate', lodging:'Ouarzazate · cena y desayuno', detail:'Amanecer sobre las dunas. Visita al mercado de Rissani, el más grande del sur de Marruecos. Cruzamos el Valle del Draa con sus millones de palmeras. Llegada a Ouarzazate.', tags:['Amanecer sahara','Mercado Rissani','Valle del Draa'] },
-    { num:5, title:'Regreso a Marrakech', sub:"Tizi N'Tichka · pueblos bereberes · atardecer", lodging:'Riad Marrakech · desayuno', detail:'Regresamos a Marrakech atravesando el Atlas. El trayecto desvela pueblos bereberes colgados de las laderas de la montaña, paisajes que no olvidarás fácilmente.', tags:['Alto Atlas','Pueblos bereberes','Atardecer'] },
-    { num:6, title:'Marrakech con guía local', sub:'Koutoubia · Medina · Jemaa El Fna · Bahía', lodging:'Riad Medina · desayuno', detail:'Visita guiada de la ciudad: Minarete de la Koutoubia, Tumbas Saadíes, Palacio de la Bahía, Jardines de Menara y la Medina. Tarde libre para perderse por las callejuelas.', tags:['Koutoubia','Tumbas Saadíes','Palacio Bahía','Medina libre'] },
-    { num:7, title:'Hasta pronto', sub:'Desayuno · tiempo libre · aeropuerto', lodging:'Fin del tour', detail:'Desayuno tranquilo y tiempo libre hasta el traslado al aeropuerto. Fin de los servicios. Marruecos de verdad, vivido desde dentro. ¡Hasta pronto!', tags:['Traslado aeropuerto','Fin del tour'] },
-  ];
-
-  const stops = [
-    { cx:185, cy:55,  label:'Marrakech',      labelX:185, labelY:40  },
-    { cx:155, cy:105, label:'Ait Ben Haddou', labelX:105, labelY:102 },
-    { cx:130, cy:155, label:'Merzouga',       labelX:75,  labelY:152, highlight:true },
-    { cx:200, cy:200, label:'Rissani',        labelX:248, labelY:197 },
-    { cx:245, cy:235, label:'Ouarzazate',     labelX:295, labelY:232 },
-    { cx:230, cy:285, label:'Marrakech',      labelX:278, labelY:282 },
-    { cx:185, cy:55,  label:'',              labelX:0,   labelY:0,   isReturn:true },
-  ];
-
-  const rTERRA = '#C25430';
-  const rGOLD  = '#D4A838';
-  const rINK   = '#1C1710';
-  const rSOFT  = '#8A7F70';
-
-  return (
-    <div style={{ background:'#FAF4EA', borderRadius:16, border:'1px solid #E8DAC8', overflow:'hidden', marginBottom:48 }}>
-      <div style={{ padding:'20px 24px 16px', borderBottom:'1px solid #E8DAC8', display:'flex', alignItems:'center', justifyContent:'space-between' }}>
-        <div>
-          <p style={{ fontFamily:"'Georgia',serif", fontSize:20, fontWeight:400, fontStyle:'italic', color:rINK, margin:0 }}>Mapa de la ruta</p>
-          <p style={{ fontFamily:'Arial,sans-serif', fontSize:11, fontWeight:500, letterSpacing:'.16em', textTransform:'uppercase', color:rTERRA, marginTop:3, marginBottom:0 }}>7 días · haz clic en cada parada</p>
-        </div>
-        <span style={{ fontFamily:'Arial,sans-serif', fontSize:10, fontWeight:600, letterSpacing:'.12em', textTransform:'uppercase', background:rTERRA, color:'white', padding:'5px 14px', borderRadius:100 }}>Ruta especial</span>
-      </div>
-
-      <div style={{ display:'grid', gridTemplateColumns:'1fr 260px', minHeight:400 }}>
-        <div style={{ padding:24, background:'#FAF4EA' }}>
-          <svg viewBox="0 0 380 370" style={{ width:'100%', minHeight:370 }} xmlns="http://www.w3.org/2000/svg">
-            <defs>
-              <marker id="arr" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
-                <path d="M0,0 L0,6 L6,3 z" fill={rTERRA} opacity=".5"/>
-              </marker>
-            </defs>
-            <rect width="380" height="370" fill="#EDE8DE" rx="8"/>
-            <path d="M 50 30 Q 100 20 200 40 Q 300 55 350 30" stroke="#D4CAB8" strokeWidth="1" fill="none" opacity=".4"/>
-            <path d="M 0 100 Q 80 90 150 110 Q 220 125 300 105 Q 350 95 380 110" stroke="#D4CAB8" strokeWidth="1" fill="none" opacity=".4"/>
-            <path d="M 0 200 Q 100 185 200 205 Q 300 215 380 195" stroke="#D4CAB8" strokeWidth="1" fill="none" opacity=".4"/>
-            <ellipse cx="65" cy="260" rx="45" ry="28" fill="#D4C49A" opacity=".35"/>
-            <ellipse cx="200" cy="300" rx="70" ry="35" fill="#C8B888" opacity=".4"/>
-            <ellipse cx="310" cy="285" rx="50" ry="30" fill="#C0AA78" opacity=".45"/>
-            <polyline points="185,55 155,105 130,155 200,200 245,235 230,285 185,55" fill="none" stroke={rTERRA} strokeWidth="2" strokeDasharray="6,4" opacity=".7"/>
-            {stops.map((s, i) => (
-              <g key={i} onClick={() => setActiveDay(i)} style={{ cursor:'pointer' }}>
-                <circle
-                  cx={s.cx} cy={s.cy}
-                  r={s.isReturn ? 8 : i===2 ? 14 : activeDay===i ? 14 : 12}
-                  fill={s.isReturn ? rGOLD : activeDay===i || i===2 ? rTERRA : 'white'}
-                  stroke={s.isReturn ? rGOLD : activeDay===i || i===2 ? rTERRA : '#8A7F70'}
-                  strokeWidth={activeDay===i ? 2.5 : 1.5}
-                />
-                <text x={s.cx} y={s.cy+4} textAnchor="middle" fontFamily="Georgia,serif" fontSize={s.isReturn ? 9 : 12} fontWeight="600" fill={activeDay===i || i===2 || s.isReturn ? 'white' : '#4A4235'}>{s.isReturn ? '7' : i+1}</text>
-                {s.label && <text x={s.labelX} y={s.labelY} textAnchor="middle" fontFamily="Arial,sans-serif" fontSize="9.5" fill={activeDay===i ? rTERRA : rINK} fontWeight={activeDay===i ? '600' : '400'}>{s.label}</text>}
-              </g>
-            ))}
-            <text x="10" y="358" fontFamily="Arial,sans-serif" fontSize="9" fill={rSOFT} opacity=".7">Haz clic en cada parada para ver los detalles</text>
-          </svg>
-        </div>
-
-        <div style={{ background:'white', borderLeft:'1px solid #E8DAC8', overflowY:'auto', maxHeight:400 }}>
-          {mapDays.map((d, i) => (
-            <div
-              key={i}
-              onClick={() => setActiveDay(i)}
-              style={{ padding:'14px 18px', borderBottom:'1px solid #F0E8D8', cursor:'pointer', display:'flex', gap:12, alignItems:'flex-start', background: activeDay===i ? '#FEF3EE' : 'white', borderLeft: activeDay===i ? `3px solid ${rTERRA}` : '3px solid transparent', transition:'all .2s' }}
-            >
-              <div style={{ fontFamily:"'Georgia',serif", fontSize:18, color: activeDay===i ? rTERRA : rSOFT, flexShrink:0, width:20, lineHeight:1 }}>{d.num}</div>
-              <div style={{ flex:1 }}>
-                <p style={{ fontFamily:'Arial,sans-serif', fontSize:12, fontWeight:600, color:rINK, lineHeight:1.3, marginBottom:3 }}>{d.title}</p>
-                <p style={{ fontFamily:'Arial,sans-serif', fontSize:11, color:rSOFT, lineHeight:1.4, marginBottom:0 }}>{d.sub}</p>
-                <p style={{ fontFamily:'Arial,sans-serif', fontSize:10, color:rTERRA, marginTop:4, fontStyle:'italic', marginBottom:0 }}>{d.lodging}</p>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
-
-      <div style={{ padding:'16px 24px', background:'white', borderTop:'1px solid #E8DAC8' }}>
-        <p style={{ fontFamily:"'Georgia',serif", fontSize:15, fontWeight:500, fontStyle:'italic', color:rINK, marginBottom:6 }}>Día {mapDays[activeDay].num} — {mapDays[activeDay].title}</p>
-        <p style={{ fontFamily:'Arial,sans-serif', fontSize:13, color:'#4A4235', lineHeight:1.65, marginBottom:10 }}>{mapDays[activeDay].detail}</p>
-        <div style={{ display:'flex', flexWrap:'wrap', gap:6 }}>
-          {mapDays[activeDay].tags.map(t => (
-            <span key={t} style={{ fontFamily:'Arial,sans-serif', fontSize:10, fontWeight:500, background:'#FAF4EA', border:'1px solid #E8DAC8', color:'#4A4235', padding:'3px 10px', borderRadius:100 }}>{t}</span>
-          ))}
-        </div>
-      </div>
-    </div>
-  );
-};
-
 export default function MarrakechDesiertoPage() {
   const [openDay, setOpenDay] = useState<number | null>(0);
 
@@ -317,13 +215,6 @@ export default function MarrakechDesiertoPage() {
               );
             })}
           </div>
-        </div>
-      </section>
-
-      {/* ─── MAPA DE RUTA ─── */}
-      <section style={{ background:CREAM, padding:'0 24px 80px' }}>
-        <div style={{ maxWidth:960, margin:'0 auto' }}>
-          <RouteMap />
         </div>
       </section>
 
