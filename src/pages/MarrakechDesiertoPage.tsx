@@ -96,10 +96,7 @@ const RouteMap = () => {
 
   useEffect(() => {
     if (!mapInstanceRef.current) return;
-    const { map } = mapInstanceRef.current;
-    const d = mapDays[activeDay];
-    map.flyTo([d.lat, d.lng], d.zoom, { duration: 1.2 });
-    setTimeout(() => markersRef.current[activeDay]?.openPopup(), 700);
+    markersRef.current[activeDay]?.openPopup();
   }, [activeDay]);
 
   return (
