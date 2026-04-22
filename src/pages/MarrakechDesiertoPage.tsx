@@ -1,6 +1,7 @@
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { MessageCircle, ChevronRight, ChevronDown, ChevronUp, Check, X } from 'lucide-react';
+import 'leaflet/dist/leaflet.css';
 
 const TERRA = '#C25430';
 const GOLD  = '#D4A838';
@@ -13,6 +14,132 @@ const WA    = '34660611668';
 
 const wa = (msg: string) =>
   window.open(`https://wa.me/${WA}?text=${encodeURIComponent(msg)}`, '_blank');
+
+const RouteMap = () => {
+  const mapRef = useRef<HTMLDivElement>(null);
+  const mapInstanceRef = useRef<any>(null);
+  const markersRef = useRef<any[]>([]);
+  const [activeDay, setActiveDay] = useState(0);
+
+  const mapDays = [
+    { num:1, name:'Llegada a Marrakech', places:'Aeropuerto · Riad · Jemaa El Fna', lodging:'Riad · desayuno incluido', detail:'Recogida en el aeropuerto y traslado al Riad. Tarde libre en la famosa plaza Jemaa El Fna: zocos, encantadores de serpientes, puestos de especias y música en vivo al caer la noche.', tags:['Traslado privado','Riad con alma','Jemaa El Fna'], lat:31.6295, lng:-7.9811, zoom:12 },
+    { num:2, name:'Atlas → Ait Ben Haddou', places:"Tizi N'Tichka 2.260m · Ouarzazate · Dades", lodging:'Valle de Dades · cena y desayuno', detail:"Cruzamos el Gran Atlas por Tizi N'Tichka (2.260m). Visitamos la kasbah de Ait Ben Haddou, escenario de Gladiator. Continuamos a Ouarzazate y bajamos al Valle de Dades.", tags:["Tizi N'Tichka 2.260m",'Ait Ben Haddou','Ouarzazate'], lat:31.0478, lng:-7.1291, zoom:10 },
+    { num:3, name:'Todra → Sahara', places:'Gargantas Todra · Erfoud · Merzouga', lodging:'Campamento lujo en dunas · cena y desayuno', detail:'Las Gargantas del Todra, cañón de más de 200m de altura. Continuamos a Merzouga: dromedarios al atardecer y noche en campamento de lujo bajo el cielo estrellado del Sahara.', tags:['Gargantas Todra 200m','Dromedarios','Campamento lujo'], lat:31.0998, lng:-4.0139, zoom:10, highlight:true },
+    { num:4, name:'Rissani → Valle del Draa', places:'Amanecer dunas · Mercado Rissani · Ouarzazate', lodging:'Ouarzazate · cena y desayuno', detail:'Amanecer sobre las dunas. Visita al mercado de Rissani, el más grande del sur. Cruzamos el Valle del Draa con sus millones de palmeras. Llegada a Ouarzazate.', tags:['Amanecer sahara','Mercado Rissani','Valle del Draa'], lat:31.2803, lng:-5.5297, zoom:9 },
+    { num:5, name:'Regreso a Marrakech', places:"Tizi N'Tichka · pueblos bereberes · atardecer", lodging:'Riad Marrakech · desayuno', detail:'Regresamos a Marrakech atravesando el Atlas. El trayecto desvela pueblos bereberes colgados de las laderas de la montaña, paisajes que no olvidarás fácilmente.', tags:['Alto Atlas','Pueblos bereberes','Atardecer'], lat:31.5671, lng:-7.4098, zoom:9 },
+    { num:6, name:'Marrakech con guía local', places:'Koutoubia · Medina · Jemaa El Fna · Bahía', lodging:'Riad Medina · desayuno', detail:'Visita guiada: Minarete de la Koutoubia, Tumbas Saadíes, Palacio de la Bahía, Jardines de Menara y la Medina. Tarde libre para perderse por las callejuelas.', tags:['Koutoubia','Tumbas Saadíes','Palacio Bahía'], lat:31.6295, lng:-7.9811, zoom:13 },
+    { num:7, name:'Traslado aeropuerto', places:'Desayuno · tiempo libre · ¡Hasta pronto!', lodging:'Fin del tour', detail:'Desayuno tranquilo y tiempo libre hasta el traslado al aeropuerto. Fin de los servicios. Marruecos de verdad, vivido desde dentro. ¡Hasta pronto!', tags:['Traslado aeropuerto','Fin del tour'], lat:31.6068, lng:-8.0363, zoom:12, isReturn:true },
+  ];
+
+  const routeCoords: [number, number][] = [
+    [31.6295, -7.9811],
+    [31.0478, -7.1291],
+    [31.0998, -4.0139],
+    [31.2803, -5.5297],
+    [30.9200, -6.8935],
+    [31.6295, -7.9811],
+  ];
+
+  useEffect(() => {
+    if (!mapRef.current || mapInstanceRef.current) return;
+    import('leaflet').then((L) => {
+      const map = L.default.map(mapRef.current!, {
+        center: [31.2, -6.5],
+        zoom: 7,
+        zoomControl: true,
+        attributionControl: false,
+      });
+
+      L.default.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+        subdomains: 'abcd',
+        maxZoom: 19,
+      }).addTo(map);
+
+      L.default.polyline(routeCoords, {
+        color: TERRA,
+        weight: 3,
+        opacity: 0.7,
+        dashArray: '8, 6',
+      }).addTo(map);
+
+      mapDays.forEach((d, i) => {
+        const size = d.highlight ? 38 : 32;
+        const bg = d.isReturn ? GOLD : d.highlight ? TERRA : 'white';
+        const color = d.isReturn || d.highlight ? 'white' : TERRA;
+        const border = d.isReturn ? GOLD : TERRA;
+
+        const icon = L.default.divIcon({
+          html: `<div style="width:${size}px;height:${size}px;border-radius:50%;background:${bg};border:2.5px solid ${border};display:flex;align-items:center;justify-content:center;font-family:Georgia,serif;font-size:${d.highlight?15:13}px;font-weight:600;color:${color};box-shadow:0 3px 12px rgba(194,84,48,0.3);cursor:pointer;">${d.num}</div>`,
+          className: '',
+          iconSize: [size, size],
+          iconAnchor: [size/2, size/2],
+          popupAnchor: [0, -size/2-4],
+        });
+
+        const marker = L.default.marker([d.lat, d.lng], { icon }).addTo(map);
+        marker.bindPopup(`<div style="padding:12px 14px;min-width:170px;font-family:Arial,sans-serif"><div style="font-size:10px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:#C25430;margin-bottom:3px">Día ${d.num}</div><div style="font-family:Georgia,serif;font-size:15px;font-style:italic;color:#1C1710;margin-bottom:3px">${d.name}</div><div style="font-size:11px;color:#8A7F70">${d.places}</div></div>`, { className: '' });
+        marker.on('click', () => setActiveDay(i));
+        markersRef.current.push(marker);
+      });
+
+      map.fitBounds(L.default.latLngBounds(routeCoords), { padding: [40, 40] });
+      mapInstanceRef.current = { map, L: L.default };
+    });
+
+    return () => {
+      if (mapInstanceRef.current?.map) {
+        mapInstanceRef.current.map.remove();
+        mapInstanceRef.current = null;
+      }
+    };
+  }, []);
+
+  useEffect(() => {
+    if (!mapInstanceRef.current) return;
+    const { map } = mapInstanceRef.current;
+    const d = mapDays[activeDay];
+    map.flyTo([d.lat, d.lng], d.zoom, { duration: 1.2 });
+    setTimeout(() => markersRef.current[activeDay]?.openPopup(), 700);
+  }, [activeDay]);
+
+  return (
+    <div style={{ background:CREAM, borderRadius:16, border:`1px solid ${SAND}`, overflow:'hidden', marginBottom:48 }}>
+      <div style={{ padding:'18px 24px', borderBottom:`1px solid ${SAND}`, display:'flex', alignItems:'center', justifyContent:'space-between', background:CREAM }}>
+        <div>
+          <p style={{ fontFamily:"'Georgia',serif", fontSize:20, fontWeight:400, fontStyle:'italic', color:INK }}>Mapa de la ruta</p>
+          <p style={{ fontFamily:'Arial,sans-serif', fontSize:10, fontWeight:500, letterSpacing:'.18em', textTransform:'uppercase', color:TERRA, marginTop:3 }}>7 días · haz clic en cada parada para explorar</p>
+        </div>
+        <span style={{ fontFamily:'Arial,sans-serif', fontSize:10, fontWeight:600, letterSpacing:'.12em', textTransform:'uppercase', background:TERRA, color:'white', padding:'5px 14px', borderRadius:100 }}>Ruta especial</span>
+      </div>
+
+      <div style={{ display:'grid', gridTemplateColumns:'1fr 270px' }}>
+        <div ref={mapRef} style={{ height:420 }} />
+        <div style={{ borderLeft:`1px solid ${SAND}`, overflowY:'auto', maxHeight:420, background:'white' }}>
+          {mapDays.map((d, i) => (
+            <div key={i} onClick={() => setActiveDay(i)} style={{ padding:'13px 16px', borderBottom:`1px solid #F8F0E4`, cursor:'pointer', display:'flex', gap:11, alignItems:'flex-start', background: activeDay===i ? '#FEF3EE' : 'white', borderLeft: activeDay===i ? `3px solid ${TERRA}` : '3px solid transparent', transition:'all .2s' }}>
+              <div style={{ fontFamily:"'Georgia',serif", fontSize:20, color: activeDay===i ? TERRA : SOFT, flexShrink:0, width:22, lineHeight:1 }}>{d.num}</div>
+              <div>
+                <p style={{ fontFamily:'Arial,sans-serif', fontSize:12, fontWeight:500, color:INK, lineHeight:1.3, marginBottom:2 }}>{d.name}</p>
+                <p style={{ fontFamily:'Arial,sans-serif', fontSize:10.5, color:SOFT, lineHeight:1.4 }}>{d.places}</p>
+                <p style={{ fontFamily:'Arial,sans-serif', fontSize:10, color:TERRA, fontStyle:'italic', marginTop:3 }}>{d.lodging}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <div style={{ padding:'16px 22px', background:'white', borderTop:`1px solid ${SAND}` }}>
+        <p style={{ fontFamily:"'Georgia',serif", fontSize:15, fontWeight:500, fontStyle:'italic', color:INK, marginBottom:6 }}>Día {mapDays[activeDay].num} — {mapDays[activeDay].name}</p>
+        <p style={{ fontFamily:'Arial,sans-serif', fontSize:12.5, color:MID, lineHeight:1.7, marginBottom:10 }}>{mapDays[activeDay].detail}</p>
+        <div style={{ display:'flex', flexWrap:'wrap', gap:6 }}>
+          {mapDays[activeDay].tags.map(t => (
+            <span key={t} style={{ fontFamily:'Arial,sans-serif', fontSize:10, fontWeight:500, background:CREAM, border:`1px solid ${SAND}`, color:MID, padding:'3px 10px', borderRadius:100 }}>{t}</span>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+};
 
 const days = [
   {
@@ -215,6 +342,13 @@ export default function MarrakechDesiertoPage() {
               );
             })}
           </div>
+        </div>
+      </section>
+
+      {/* ─── MAPA DE RUTA ─── */}
+      <section style={{ background:CREAM, padding:'0 24px 80px' }}>
+        <div style={{ maxWidth:960, margin:'0 auto' }}>
+          <RouteMap />
         </div>
       </section>
 
