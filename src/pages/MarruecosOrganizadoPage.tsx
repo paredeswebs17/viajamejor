@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { MessageCircle, ChevronRight, Star, Shield, Users, Globe } from 'lucide-react';
 
@@ -11,7 +12,7 @@ const MID   = '#4A4235';
 const SOFT  = '#8A7F70';
 const WA    = '34660611668';
 
-type Tour = { days: number; title: string; sub: string; img: string };
+type Tour = { days: number; title: string; sub: string; img: string; url?: string };
 type City = { id: string; label: string; tours: Tour[] };
 
 const cities: City[] = [
@@ -19,7 +20,7 @@ const cities: City[] = [
     id: 'marrakech', label: 'Marrakech',
     tours: [
       { days:5, title:'Marrakech esencial',   sub:'Medina · Atlas · Valle Ourika · Jardines Majorelle',           img:'https://images.pexels.com/photos/3889843/pexels-photo-3889843.jpeg' },
-      { days:7, title:'Marrakech al Desierto', sub:'Ait Ben Haddou · Ouarzazate · Gargantas Todra · Merzouga',    img:'https://images.pexels.com/photos/3889843/pexels-photo-3889843.jpeg' },
+      { days:7, title:'Marrakech al Desierto', sub:'Ait Ben Haddou · Ouarzazate · Gargantas Todra · Merzouga',    img:'https://images.pexels.com/photos/3889843/pexels-photo-3889843.jpeg', url:'/marrakech-al-desierto-7-dias' },
       { days:9, title:'Gran ruta del sur',     sub:'Desierto · Kasbahs · Valle del Draa · Skoura · Zagora',      img:'https://images.pexels.com/photos/3889843/pexels-photo-3889843.jpeg' },
     ],
   },
@@ -192,12 +193,21 @@ export default function MarruecosOrganizadoPage() {
                         <span key={b} style={{ background:CREAM, border:`1px solid ${SAND}`, color:MID, fontSize:10, fontWeight:500, padding:'3px 10px', borderRadius:100, fontFamily:'Arial,sans-serif' }}>{b}</span>
                       ))}
                     </div>
+                    {tour.url ? (
+                      <Link
+                        to={tour.url}
+                        style={{ width:'100%', display:'inline-flex', alignItems:'center', justifyContent:'center', gap:8, background:TERRA, color:'white', borderRadius:12, padding:'13px 20px', fontSize:12, fontWeight:600, fontFamily:'Arial,sans-serif', textDecoration:'none', boxShadow:'0 4px 16px rgba(194,84,48,.25)', transition:'all .2s ease', letterSpacing:'.04em' }}
+                      >
+                        Ver itinerario completo <ChevronRight size={14} />
+                      </Link>
+                    ) : (
                     <button
                       onClick={() => wa(`Hola Antonio! Me interesa la ruta "${tour.title}" de ${tour.days} días desde ${city.label} en Viaja Mejor. ¿Puedes darme más información?`)}
                       style={{ width:'100%', display:'inline-flex', alignItems:'center', justifyContent:'center', gap:8, background:'#25D366', color:'white', border:'none', borderRadius:12, padding:'13px 20px', fontSize:12, fontWeight:600, fontFamily:'Arial,sans-serif', cursor:'pointer', boxShadow:'0 4px 16px rgba(37,211,102,.25)', transition:'all .2s ease', letterSpacing:'.04em' }}
                     >
                       <MessageCircle size={14} /> Consultar por WhatsApp
                     </button>
+                    )}
                   </div>
                 </div>
               ))}
