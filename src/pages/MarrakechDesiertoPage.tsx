@@ -22,13 +22,13 @@ const RouteMap = () => {
   const [activeDay, setActiveDay] = useState(0);
 
   const mapDays = [
-    { num:1, name:'Llegada a Marrakech', places:'Aeropuerto · Riad · Jemaa El Fna', lodging:'Riad · desayuno incluido', detail:'Recogida en el aeropuerto y traslado al Riad. Tarde libre en la famosa plaza Jemaa El Fna: zocos, encantadores de serpientes, puestos de especias y música en vivo al caer la noche.', tags:['Traslado privado','Riad con alma','Jemaa El Fna'], lat:31.6295, lng:-7.9811, zoom:12 },
-    { num:2, name:'Atlas → Ait Ben Haddou', places:"Tizi N'Tichka 2.260m · Ouarzazate · Dades", lodging:'Valle de Dades · cena y desayuno', detail:"Cruzamos el Gran Atlas por Tizi N'Tichka (2.260m). Visitamos la kasbah de Ait Ben Haddou, escenario de Gladiator. Continuamos a Ouarzazate y bajamos al Valle de Dades.", tags:["Tizi N'Tichka 2.260m",'Ait Ben Haddou','Ouarzazate'], lat:31.0478, lng:-7.1291, zoom:10 },
-    { num:3, name:'Todra → Sahara', places:'Gargantas Todra · Erfoud · Merzouga', lodging:'Campamento lujo en dunas · cena y desayuno', detail:'Las Gargantas del Todra, cañón de más de 200m de altura. Continuamos a Merzouga: dromedarios al atardecer y noche en campamento de lujo bajo el cielo estrellado del Sahara.', tags:['Gargantas Todra 200m','Dromedarios','Campamento lujo'], lat:31.0998, lng:-4.0139, zoom:10, highlight:true },
-    { num:4, name:'Rissani → Valle del Draa', places:'Amanecer dunas · Mercado Rissani · Ouarzazate', lodging:'Ouarzazate · cena y desayuno', detail:'Amanecer sobre las dunas. Visita al mercado de Rissani, el más grande del sur. Cruzamos el Valle del Draa con sus millones de palmeras. Llegada a Ouarzazate.', tags:['Amanecer sahara','Mercado Rissani','Valle del Draa'], lat:31.2803, lng:-5.5297, zoom:9 },
-    { num:5, name:'Regreso a Marrakech', places:"Tizi N'Tichka · pueblos bereberes · atardecer", lodging:'Riad Marrakech · desayuno', detail:'Regresamos a Marrakech atravesando el Atlas. El trayecto desvela pueblos bereberes colgados de las laderas de la montaña, paisajes que no olvidarás fácilmente.', tags:['Alto Atlas','Pueblos bereberes','Atardecer'], lat:31.5671, lng:-7.4098, zoom:9 },
-    { num:6, name:'Marrakech con guía local', places:'Koutoubia · Medina · Jemaa El Fna · Bahía', lodging:'Riad Medina · desayuno', detail:'Visita guiada: Minarete de la Koutoubia, Tumbas Saadíes, Palacio de la Bahía, Jardines de Menara y la Medina. Tarde libre para perderse por las callejuelas.', tags:['Koutoubia','Tumbas Saadíes','Palacio Bahía'], lat:31.6295, lng:-7.9811, zoom:13 },
-    { num:7, name:'Traslado aeropuerto', places:'Desayuno · tiempo libre · ¡Hasta pronto!', lodging:'Fin del tour', detail:'Desayuno tranquilo y tiempo libre hasta el traslado al aeropuerto. Fin de los servicios. Marruecos de verdad, vivido desde dentro. ¡Hasta pronto!', tags:['Traslado aeropuerto','Fin del tour'], lat:31.6068, lng:-8.0363, zoom:12, isReturn:true },
+    { num:1, name:'Llegada a Marrakech', places:'Aeropuerto · Riad · Jemaa El Fna', lodging:'Riad · desayuno incluido', detail:'Recogida en el aeropuerto y traslado al Riad. Tarde libre en la famosa plaza Jemaa El Fna: zocos, encantadores de serpientes, puestos de especias y música en vivo al caer la noche.', tags:['Traslado privado','Riad con alma','Jemaa El Fna'], lat:31.6450, lng:-7.9950 },
+    { num:2, name:'Atlas → Ait Ben Haddou', places:"Tizi N'Tichka 2.260m · Ouarzazate · Dades", lodging:'Valle de Dades · cena y desayuno', detail:"Cruzamos el Gran Atlas por Tizi N'Tichka (2.260m). Visitamos la kasbah de Ait Ben Haddou, escenario de Gladiator. Continuamos a Ouarzazate y bajamos al Valle de Dades.", tags:["Tizi N'Tichka 2.260m",'Ait Ben Haddou','Ouarzazate'], lat:31.0478, lng:-7.1291 },
+    { num:3, name:'Todra → Sahara', places:'Gargantas Todra · Erfoud · Merzouga', lodging:'Campamento lujo en dunas · cena y desayuno', detail:'Las Gargantas del Todra, cañón de más de 200m de altura. Continuamos a Merzouga: dromedarios al atardecer y noche en campamento de lujo bajo el cielo estrellado del Sahara.', tags:['Gargantas Todra 200m','Dromedarios','Campamento lujo'], lat:31.0998, lng:-4.0139 },
+    { num:4, name:'Rissani → Valle del Draa', places:'Amanecer dunas · Mercado Rissani · Ouarzazate', lodging:'Ouarzazate · cena y desayuno', detail:'Amanecer sobre las dunas. Visita al mercado de Rissani, el más grande del sur. Cruzamos el Valle del Draa con sus millones de palmeras. Llegada a Ouarzazate.', tags:['Amanecer sahara','Mercado Rissani','Valle del Draa'], lat:31.2803, lng:-5.5297 },
+    { num:5, name:'Regreso a Marrakech', places:"Tizi N'Tichka · pueblos bereberes · atardecer", lodging:'Riad Marrakech · desayuno', detail:'Regresamos a Marrakech atravesando el Atlas. El trayecto desvela pueblos bereberes colgados de las laderas de la montaña, paisajes que no olvidarás fácilmente.', tags:['Alto Atlas','Pueblos bereberes','Atardecer'], lat:31.5671, lng:-7.4098 },
+    { num:6, name:'Marrakech con guía local', places:'Koutoubia · Medina · Jemaa El Fna · Bahía', lodging:'Riad Medina · desayuno', detail:'Visita guiada: Minarete de la Koutoubia, Tumbas Saadíes, Palacio de la Bahía, Jardines de Menara y la Medina. Tarde libre para perderse por las callejuelas.', tags:['Koutoubia','Tumbas Saadíes','Palacio Bahía'], lat:31.6220, lng:-7.9700 },
+    { num:7, name:'Traslado aeropuerto', places:'Desayuno · tiempo libre · ¡Hasta pronto!', lodging:'Fin del tour', detail:'Desayuno tranquilo y tiempo libre hasta el traslado al aeropuerto. Fin de los servicios. Marruecos de verdad, vivido desde dentro. ¡Hasta pronto!', tags:['Traslado aeropuerto','Fin del tour'], lat:31.6068, lng:-8.0363 },
   ];
 
   const routeCoords: [number, number][] = [
@@ -63,13 +63,10 @@ const RouteMap = () => {
       }).addTo(map);
 
       mapDays.forEach((d, i) => {
-        const size = d.highlight ? 38 : 32;
-        const bg = d.isReturn ? GOLD : d.highlight ? TERRA : 'white';
-        const color = d.isReturn || d.highlight ? 'white' : TERRA;
-        const border = d.isReturn ? GOLD : TERRA;
+        const size = 32;
 
         const icon = L.default.divIcon({
-          html: `<div style="width:${size}px;height:${size}px;border-radius:50%;background:${bg};border:2.5px solid ${border};display:flex;align-items:center;justify-content:center;font-family:Georgia,serif;font-size:${d.highlight?15:13}px;font-weight:600;color:${color};box-shadow:0 3px 12px rgba(194,84,48,0.3);cursor:pointer;">${d.num}</div>`,
+          html: `<div style="width:${size}px;height:${size}px;border-radius:50%;background:white;border:2.5px solid #C25430;display:flex;align-items:center;justify-content:center;font-family:Georgia,serif;font-size:13px;font-weight:600;color:#C25430;box-shadow:0 3px 12px rgba(194,84,48,0.25);cursor:pointer;">${d.num}</div>`,
           className: '',
           iconSize: [size, size],
           iconAnchor: [size/2, size/2],
