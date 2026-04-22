@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { ChevronRight } from 'lucide-react';
 
@@ -7,9 +8,12 @@ interface Guide {
   image: string;
   url: string;
   badge?: string;
+  organized?: boolean;
 }
 
 const ExploreDestinations = () => {
+  const [hoveredId, setHoveredId] = useState<string | null>(null);
+
   const guides: Guide[] = [
     {
       id: 'budapest',
@@ -66,6 +70,14 @@ const ExploreDestinations = () => {
       image: 'https://images.pexels.com/photos/19361199/pexels-photo-19361199.jpeg',
       url: '/mercados-navidenos-europa',
       badge: '🎄'
+    },
+    {
+      id: 'morocco-organizado',
+      title: 'Marruecos Organizado',
+      image: 'https://images.pexels.com/photos/4388164/pexels-photo-4388164.jpeg',
+      url: '/marruecos-organizado',
+      badge: '🇲🇦',
+      organized: true,
     }
   ];
 
@@ -93,8 +105,13 @@ const ExploreDestinations = () => {
                 key={guide.id}
                 to={guide.url}
                 className={`flex-shrink-0 w-64 sm:w-96 group snap-start ${index === guides.length - 1 ? 'pr-4 sm:pr-0' : ''}`}
+                onMouseEnter={() => setHoveredId(guide.id)}
+                onMouseLeave={() => setHoveredId(null)}
               >
-                <div className="relative rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                <div
+                  className="relative rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2"
+                  style={guide.organized && hoveredId === guide.id ? { borderBottom: '3px solid #C25430' } : {}}
+                >
                   <div className="relative h-56 sm:h-64 overflow-hidden">
                     <img
                       src={guide.image}
@@ -112,13 +129,28 @@ const ExploreDestinations = () => {
                       </div>
                     )}
 
+                    {guide.organized && (
+                      <div className="absolute top-4 right-4">
+                        <span style={{ background: '#C25430', color: 'white', fontSize: '9px', fontWeight: 700, padding: '4px 10px', borderRadius: '100px', letterSpacing: '.14em', textTransform: 'uppercase', fontFamily: 'Arial, sans-serif' }}>
+                          ORGANIZADO
+                        </span>
+                      </div>
+                    )}
+
                     <div className="absolute bottom-0 left-0 right-0 p-4 sm:p-6">
-                      <h3 className="text-xl sm:text-2xl font-bold text-white mb-2 group-hover:text-sky-200 transition-colors">
+                      <h3
+                        className="text-xl sm:text-2xl font-bold text-white mb-2 transition-colors"
+                        style={guide.organized && hoveredId === guide.id ? { color: '#C25430' } : {}}
+                      >
                         {guide.title}
                       </h3>
                       <div className="flex items-center text-white/90">
-                        <span className="text-xs sm:text-sm font-medium">Ver guía completa</span>
-                        <ChevronRight className="h-3 w-3 sm:h-4 sm:w-4 ml-1 transform group-hover:translate-x-1 transition-transform" />
+                        <span className="text-xs sm:text-sm font-medium">
+                          {guide.organized ? 'Ver rutas →' : 'Ver guía completa'}
+                        </span>
+                        {!guide.organized && (
+                          <ChevronRight className="h-3 w-3 sm:h-4 sm:w-4 ml-1 transform group-hover:translate-x-1 transition-transform" />
+                        )}
                       </div>
                     </div>
                   </div>
