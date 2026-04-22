@@ -1,6 +1,7 @@
 import { Helmet } from 'react-helmet-async';
 import Hero from '../components/Hero';
 import ExploreDestinations from '../components/ExploreDestinations';
+import OrganizedDestinations from '../components/OrganizedDestinations';
 import BlogSection from '../components/BlogSection';
 import Recommendations from '../components/Recommendations';
 import FAQ from '../components/FAQ';
@@ -46,6 +47,7 @@ const HomePage = () => {
 
       <Hero />
       <ExploreDestinations />
+      <OrganizedDestinations />
       <BlogSection onArticleSelect={() => {}} />
       <Recommendations />
       <FAQ />
