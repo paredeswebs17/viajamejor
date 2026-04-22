@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Helmet } from 'react-helmet-async';
-import { MessageCircle, ChevronRight, Star, Shield, Users, Globe, ChevronDown, ChevronUp } from 'lucide-react';
+import { MessageCircle, ChevronRight, Star, Shield, Users, Globe } from 'lucide-react';
 
 const TERRA = '#C25430';
 const GOLD  = '#D4A838';
@@ -9,13 +9,44 @@ const SAND  = '#E8DAC8';
 const INK   = '#1C1710';
 const MID   = '#4A4235';
 const SOFT  = '#8A7F70';
-const WA    = '34660611668'; // ← Cambia por tu número real
+const WA    = '34660611668';
 
-const routes = [
-  { days:7, from:'Marrakech', title:'Marrakech al Desierto',  sub:'Ait Ben Haddou · Sahara · Gargantas Todra',  icon:'🏜️', img:'https://images.pexels.com/photos/3889843/pexels-photo-3889843.jpeg' },
-  { days:8, from:'Tánger',    title:'Tánger a Marrakech',     sub:'Chefchaouen · Fez · Desierto · Kasbahs',     icon:'🔵', img:'https://images.pexels.com/photos/16834923/pexels-photo-16834923.jpeg' },
-  { days:5, from:'Marrakech', title:'Marruecos esencial',     sub:'Marrakech · Atlas · Valle Ourika',           icon:'⭐', img:'https://images.pexels.com/photos/3889843/pexels-photo-3889843.jpeg' },
-  { days:6, from:'Tánger',    title:'Norte de Marruecos',     sub:'Tánger · Chefchaouen · Fez · Volubilis',    icon:'🕌', img:'https://images.pexels.com/photos/2549018/pexels-photo-2549018.jpeg' },
+type Tour = { days: number; title: string; sub: string; img: string };
+type City = { id: string; label: string; tours: Tour[] };
+
+const cities: City[] = [
+  {
+    id: 'marrakech', label: 'Marrakech',
+    tours: [
+      { days:5, title:'Marrakech esencial',   sub:'Medina · Atlas · Valle Ourika · Jardines Majorelle',           img:'https://images.pexels.com/photos/3889843/pexels-photo-3889843.jpeg' },
+      { days:7, title:'Marrakech al Desierto', sub:'Ait Ben Haddou · Ouarzazate · Gargantas Todra · Merzouga',    img:'https://images.pexels.com/photos/3889843/pexels-photo-3889843.jpeg' },
+      { days:9, title:'Gran ruta del sur',     sub:'Desierto · Kasbahs · Valle del Draa · Skoura · Zagora',      img:'https://images.pexels.com/photos/3889843/pexels-photo-3889843.jpeg' },
+    ],
+  },
+  {
+    id: 'tanger', label: 'Tánger',
+    tours: [
+      { days:5, title:'Norte de Marruecos',   sub:'Tánger · Chefchaouen · Tetuán · Asilah',                      img:'https://images.pexels.com/photos/16834923/pexels-photo-16834923.jpeg' },
+      { days:7, title:'Tánger a Fez',          sub:'Chefchaouen · Volubilis · Meknès · Fez imperial',             img:'https://images.pexels.com/photos/16834923/pexels-photo-16834923.jpeg' },
+      { days:9, title:'Tánger a Marrakech',    sub:'Norte · Fez · Bosque monos · Sahara · Sur',                  img:'https://images.pexels.com/photos/16834923/pexels-photo-16834923.jpeg' },
+    ],
+  },
+  {
+    id: 'fez', label: 'Fez',
+    tours: [
+      { days:5, title:'Fez imperial',          sub:'Medina medieval · Curtidurías · Volubilis · Meknès',          img:'https://images.pexels.com/photos/2549018/pexels-photo-2549018.jpeg' },
+      { days:7, title:'Fez al Sahara',          sub:'Ifrane · Bosque de monos · Midelt · Merzouga',               img:'https://images.pexels.com/photos/2549018/pexels-photo-2549018.jpeg' },
+      { days:9, title:'Fez y el gran sur',      sub:'Ciudades imperiales · Desierto · Kasbahs · Marrakech',       img:'https://images.pexels.com/photos/2549018/pexels-photo-2549018.jpeg' },
+    ],
+  },
+  {
+    id: 'casablanca', label: 'Casablanca',
+    tours: [
+      { days:5, title:'Casablanca y Rabat',    sub:'Mezquita Hassan II · Rabat · Essaouira · Costa atlántica',    img:'https://images.pexels.com/photos/3889843/pexels-photo-3889843.jpeg' },
+      { days:7, title:'Costa y desierto',       sub:'Rabat · Marrakech · Ouzoud · Essaouira',                     img:'https://images.pexels.com/photos/3889843/pexels-photo-3889843.jpeg' },
+      { days:9, title:'Marruecos completo',     sub:'Costa atlántica · Imperial · Desierto · Norte',              img:'https://images.pexels.com/photos/3889843/pexels-photo-3889843.jpeg' },
+    ],
+  },
 ];
 
 const testimonials = [
@@ -28,7 +59,7 @@ const wa = (msg: string) =>
   window.open(`https://wa.me/${WA}?text=${encodeURIComponent(msg)}`, '_blank');
 
 export default function MarruecosOrganizadoPage() {
-  const [openRoute, setOpenRoute] = useState<number|null>(null);
+  const [activeCity, setActiveCity] = useState<string>('marrakech');
 
   return (
     <>
@@ -85,7 +116,7 @@ export default function MarruecosOrganizadoPage() {
       {/* ─── RUTAS ─── */}
       <section id="rutas" style={{ background:CREAM, padding:'96px 24px' }}>
         <div style={{ maxWidth:1100, margin:'0 auto' }}>
-          <div style={{ textAlign:'center', marginBottom:72 }}>
+          <div style={{ textAlign:'center', marginBottom:56 }}>
             <p style={{ fontSize:10, fontWeight:600, letterSpacing:'.28em', textTransform:'uppercase', color:TERRA, fontFamily:'Arial,sans-serif', marginBottom:16, display:'flex', alignItems:'center', justifyContent:'center', gap:12 }}>
               <span style={{ width:24, height:1, background:TERRA, display:'block' }} /> Rutas disponibles <span style={{ width:24, height:1, background:TERRA, display:'block' }} />
             </p>
@@ -97,60 +128,81 @@ export default function MarruecosOrganizadoPage() {
             </p>
           </div>
 
-          <div style={{ display:'flex', flexDirection:'column', gap:16 }}>
-            {routes.map((r, i) => (
-              <div
-                key={i}
-                style={{ background:'white', borderRadius:16, border:`1px solid ${openRoute===i ? TERRA : SAND}`, overflow:'hidden', transition:'all .4s ease', boxShadow: openRoute===i ? '0 8px 32px rgba(194,84,48,.12)' : '0 2px 12px rgba(26,22,18,.04)' }}
-              >
-                <div onClick={() => setOpenRoute(openRoute===i ? null : i)} style={{ display:'flex', alignItems:'center', gap:16, padding:'20px 24px', cursor:'pointer' }}>
-                  <div style={{ flexShrink:0, width:72, height:72, borderRadius:12, overflow:'hidden' }}>
-                    <img src={r.img} alt={r.title} style={{ width:'100%', height:'100%', objectFit:'cover' }} loading="lazy" />
-                  </div>
-                  <div style={{ flex:1, minWidth:0 }}>
-                    <div style={{ display:'flex', alignItems:'center', gap:8, marginBottom:6 }}>
-                      <span style={{ background:CREAM, border:`1px solid ${SAND}`, borderRadius:100, padding:'2px 10px', fontSize:10, fontWeight:600, color:TERRA, fontFamily:'Arial,sans-serif', letterSpacing:'.06em' }}>
-                        Desde {r.from}
-                      </span>
-                      <span style={{ fontSize:10, color:SOFT, fontFamily:'Arial,sans-serif' }}>{r.days} días</span>
+          {/* Tabs ciudad */}
+          <div style={{ display:'flex', justifyContent:'center', gap:0, marginBottom:48, borderBottom:`1px solid ${SAND}` }}>
+            {cities.map(city => {
+              const active = activeCity === city.id;
+              return (
+                <button
+                  key={city.id}
+                  onClick={() => setActiveCity(city.id)}
+                  style={{
+                    background:'none', border:'none', cursor:'pointer',
+                    padding:'14px 24px',
+                    fontFamily:"'Georgia',serif",
+                    fontSize:'clamp(14px,1.8vw,18px)',
+                    fontWeight: active ? 500 : 300,
+                    color: active ? TERRA : SOFT,
+                    borderBottom: active ? `2px solid ${TERRA}` : '2px solid transparent',
+                    marginBottom:-1,
+                    transition:'all .25s ease',
+                    letterSpacing:'-.01em',
+                  }}
+                >
+                  {city.label}
+                </button>
+              );
+            })}
+          </div>
+
+          {/* Cards de tours */}
+          {cities.filter(c => c.id === activeCity).map(city => (
+            <div key={city.id} style={{ display:'grid', gridTemplateColumns:'repeat(auto-fit,minmax(280px,1fr))', gap:24 }}>
+              {city.tours.map((tour, i) => (
+                <div
+                  key={i}
+                  style={{ borderRadius:20, overflow:'hidden', position:'relative', boxShadow:'0 8px 32px rgba(26,22,18,.12)', transition:'transform .3s ease, box-shadow .3s ease', cursor:'default' }}
+                  onMouseEnter={e => { (e.currentTarget as HTMLDivElement).style.transform='translateY(-6px)'; (e.currentTarget as HTMLDivElement).style.boxShadow='0 16px 48px rgba(26,22,18,.18)'; }}
+                  onMouseLeave={e => { (e.currentTarget as HTMLDivElement).style.transform='translateY(0)'; (e.currentTarget as HTMLDivElement).style.boxShadow='0 8px 32px rgba(26,22,18,.12)'; }}
+                >
+                  {/* imagen */}
+                  <div style={{ position:'relative', height:220, overflow:'hidden' }}>
+                    <img src={tour.img} alt={tour.title} loading="lazy" style={{ width:'100%', height:'100%', objectFit:'cover' }} />
+                    <div style={{ position:'absolute', inset:0, background:'linear-gradient(to top,rgba(26,22,18,.7) 0%,transparent 55%)' }} />
+                    {/* días badge */}
+                    <div style={{ position:'absolute', top:16, left:16, display:'flex', flexDirection:'column', alignItems:'center', justifyContent:'center', width:56, height:56, borderRadius:'50%', background:'rgba(255,255,255,.92)', backdropFilter:'blur(4px)' }}>
+                      <span style={{ fontFamily:"'Georgia',serif", fontSize:22, fontWeight:700, color:TERRA, lineHeight:1 }}>{tour.days}</span>
+                      <span style={{ fontSize:8, color:SOFT, letterSpacing:'.1em', textTransform:'uppercase', fontFamily:'Arial,sans-serif' }}>días</span>
                     </div>
-                    <h3 style={{ fontFamily:"'Georgia',serif", fontSize:'clamp(15px,2vw,21px)', fontWeight:500, color:INK, margin:0, lineHeight:1.2 }}>
-                      {r.icon} {r.title}
-                    </h3>
-                    <p style={{ fontSize:12, color:SOFT, margin:'4px 0 0', fontFamily:'Arial,sans-serif' }}>{r.sub}</p>
-                  </div>
-                  <div style={{ flexShrink:0, display:'flex', flexDirection:'column', alignItems:'center', gap:10 }}>
-                    <div style={{ width:52, height:52, borderRadius:'50%', background:CREAM, border:`1px solid rgba(194,84,48,.2)`, display:'flex', flexDirection:'column', alignItems:'center', justifyContent:'center' }}>
-                      <span style={{ fontFamily:"'Georgia',serif", fontSize:20, fontWeight:700, color:TERRA, lineHeight:1 }}>{r.days}</span>
-                      <span style={{ fontSize:8, color:SOFT, letterSpacing:'.1em', textTransform:'uppercase' }}>días</span>
+                    {/* title over image */}
+                    <div style={{ position:'absolute', bottom:16, left:20, right:20 }}>
+                      <h3 style={{ fontFamily:"'Georgia',serif", fontSize:'clamp(16px,2vw,20px)', fontWeight:400, fontStyle:'italic', color:'white', margin:0, lineHeight:1.2 }}>
+                        {tour.title}
+                      </h3>
                     </div>
-                    {openRoute===i ? <ChevronUp size={16} color={TERRA} /> : <ChevronDown size={16} color={SOFT} />}
+                  </div>
+
+                  {/* body */}
+                  <div style={{ background:'white', padding:'20px 20px 24px' }}>
+                    <p style={{ fontSize:12, color:SOFT, fontFamily:'Arial,sans-serif', lineHeight:1.7, margin:'0 0 16px' }}>
+                      {tour.sub}
+                    </p>
+                    <div style={{ display:'flex', flexWrap:'wrap', gap:6, marginBottom:20 }}>
+                      {['Guía en español','Transporte privado','Grupos reducidos'].map(b => (
+                        <span key={b} style={{ background:CREAM, border:`1px solid ${SAND}`, color:MID, fontSize:10, fontWeight:500, padding:'3px 10px', borderRadius:100, fontFamily:'Arial,sans-serif' }}>{b}</span>
+                      ))}
+                    </div>
+                    <button
+                      onClick={() => wa(`Hola Antonio! Me interesa la ruta "${tour.title}" de ${tour.days} días desde ${city.label} en Viaja Mejor. ¿Puedes darme más información?`)}
+                      style={{ width:'100%', display:'inline-flex', alignItems:'center', justifyContent:'center', gap:8, background:'#25D366', color:'white', border:'none', borderRadius:12, padding:'13px 20px', fontSize:12, fontWeight:600, fontFamily:'Arial,sans-serif', cursor:'pointer', boxShadow:'0 4px 16px rgba(37,211,102,.25)', transition:'all .2s ease', letterSpacing:'.04em' }}
+                    >
+                      <MessageCircle size={14} /> Consultar por WhatsApp
+                    </button>
                   </div>
                 </div>
-
-                {openRoute===i && (
-                  <div style={{ padding:'0 24px 24px', borderTop:`1px solid ${SAND}` }}>
-                    <div style={{ paddingTop:20, display:'flex', flexDirection:'column', gap:12 }}>
-                      <p style={{ fontSize:14, color:MID, lineHeight:1.8, fontFamily:'Arial,sans-serif' }}>
-                        Ruta de <strong style={{ color:INK }}>{r.days} días</strong> desde <strong style={{ color:INK }}>{r.from}</strong> con guía local bereber en español. Alojamientos seleccionados con alma, transporte privado y experiencias auténticas.
-                      </p>
-                      <div style={{ display:'flex', flexWrap:'wrap', gap:8 }}>
-                        {['Guía en español','Transporte privado','Alojamiento incluido','Grupos reducidos'].map(b => (
-                          <span key={b} style={{ background:CREAM, border:`1px solid ${SAND}`, color:MID, fontSize:11, fontWeight:500, padding:'4px 12px', borderRadius:100, fontFamily:'Arial,sans-serif' }}>{b}</span>
-                        ))}
-                      </div>
-                      <button
-                        onClick={() => wa(`Hola Antonio! Me interesa la ruta "${r.title}" de ${r.days} días desde ${r.from} en Viaja Mejor. ¿Puedes darme más información?`)}
-                        style={{ alignSelf:'flex-start', display:'inline-flex', alignItems:'center', gap:8, background:'#25D366', color:'white', border:'none', borderRadius:12, padding:'14px 24px', fontSize:13, fontWeight:600, fontFamily:'Arial,sans-serif', cursor:'pointer', boxShadow:'0 4px 16px rgba(37,211,102,.3)', transition:'all .2s ease' }}
-                      >
-                        <MessageCircle size={15} /> Consultar esta ruta
-                      </button>
-                    </div>
-                  </div>
-                )}
-              </div>
-            ))}
-          </div>
+              ))}
+            </div>
+          ))}
         </div>
       </section>
 
