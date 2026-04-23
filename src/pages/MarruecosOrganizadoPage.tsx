@@ -201,12 +201,12 @@ export default function MarruecosOrganizadoPage() {
                         Ver itinerario completo <ChevronRight size={14} />
                       </Link>
                     ) : (
-                    <button
-                      onClick={() => wa(`Hola Antonio! Me interesa la ruta "${tour.title}" de ${tour.days} días desde ${city.label} en Viaja Mejor. ¿Puedes darme más información?`)}
-                      style={{ width:'100%', display:'inline-flex', alignItems:'center', justifyContent:'center', gap:8, background:'#25D366', color:'white', border:'none', borderRadius:12, padding:'13px 20px', fontSize:12, fontWeight:600, fontFamily:'Arial,sans-serif', cursor:'pointer', boxShadow:'0 4px 16px rgba(37,211,102,.25)', transition:'all .2s ease', letterSpacing:'.04em' }}
-                    >
-                      <MessageCircle size={14} /> Consultar por WhatsApp
-                    </button>
+                      <button
+                        onClick={() => wa(`Hola Antonio! Me interesa la ruta "${tour.title}" de ${tour.days} días desde ${city.label} en Viaja Mejor. ¿Puedes darme más información?`)}
+                        style={{ width:'100%', display:'inline-flex', alignItems:'center', justifyContent:'center', gap:8, background:TERRA, color:'white', border:'none', borderRadius:12, padding:'13px 20px', fontSize:12, fontWeight:600, fontFamily:'Arial,sans-serif', cursor:'pointer', boxShadow:'0 4px 16px rgba(194,84,48,.25)', transition:'all .2s ease', letterSpacing:'.04em' }}
+                      >
+                        Ver itinerario completo <ChevronRight size={14} />
+                      </button>
                     )}
                   </div>
                 </div>
