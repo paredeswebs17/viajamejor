@@ -319,7 +319,7 @@ export default function MarrakechDesiertoPage() {
                   {open && (
                     <div style={{ paddingBottom:32, paddingLeft:68 }}>
                       <div style={{ borderRadius:16, overflow:'hidden', marginBottom:24, maxHeight:280 }}>
-                        <img src={day.img} alt={day.title} loading="lazy" style={{ width:'100%', height:280, objectFit:'contain', background:'#f5efe6' }} />
+                        <img src={day.img} alt={day.title} loading="lazy" style={{ width:'100%', height:280, objectFit:'cover' }} />
                       </div>
                       <p style={{ fontSize:15, color:MID, lineHeight:1.85, fontFamily:'Arial,sans-serif', fontWeight:300, margin:'0 0 20px' }}>
                         {day.text}
