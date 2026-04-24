@@ -369,14 +369,15 @@ export default function MarrakechDesiertoPage() {
         *:focus-visible { outline: 2px solid ${TERRA}; outline-offset: 3px; border-radius: 4px; }
         button:focus-visible, a:focus-visible { outline-offset: 4px; }
 
+        .gallery-scroll::-webkit-scrollbar { height: 6px; }
+        .gallery-scroll::-webkit-scrollbar-track { background: ${SAND}; border-radius: 100px; }
+        .gallery-scroll::-webkit-scrollbar-thumb { background: ${TERRA}; border-radius: 100px; }
+        .gallery-scroll { scrollbar-width: thin; scrollbar-color: ${TERRA} ${SAND}; }
+
         @media (max-width: 767px) {
           .itinerario-grid { grid-template-columns: 1fr !important; }
           .price-col { position: static !important; }
-          .gallery-grid { grid-template-columns: repeat(2, 1fr) !important; }
           .hero-content { margin-left: 20px !important; }
-        }
-        @media (max-width: 480px) {
-          .gallery-grid { grid-template-columns: 1fr !important; }
         }
         @media (min-width: 768px) {
           .sticky-cta-mobile { display: none !important; }
@@ -485,21 +486,23 @@ export default function MarrakechDesiertoPage() {
             </div>
           </Reveal>
           <Reveal delay={120}>
-            <div className="gallery-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 12 }}>
+            <div className="gallery-scroll" style={{ display: 'flex', gap: 14, overflowX: 'auto', scrollSnapType: 'x mandatory', WebkitOverflowScrolling: 'touch', paddingBottom: 16, margin: '0 -24px', padding: '0 24px 16px' }}>
               {gallery.map((src, i) => (
                 <div
                   key={i}
                   className="gallery-item"
                   onClick={() => setGalleryIdx(i)}
                   style={{
-                    borderRadius: 14,
-                    aspectRatio: i === 0 ? '1 / 1.3' : '1 / 1',
-                    gridRow: i === 0 ? 'span 2' : 'auto',
-                    gridColumn: i === 0 ? 'span 2' : 'auto',
+                    borderRadius: 16,
+                    flexShrink: 0,
+                    width: 'clamp(240px, 32vw, 360px)',
+                    aspectRatio: '4 / 5',
+                    scrollSnapAlign: 'start',
+                    boxShadow: '0 10px 30px -12px rgba(28,23,16,.2)',
                   }}
                 >
                   <img
-                    src={`${src}?auto=compress&cs=tinysrgb&w=${i === 0 ? 1200 : 600}`}
+                    src={`${src}?auto=compress&cs=tinysrgb&w=720`}
                     alt={`Marrakech al Desierto foto ${i + 1}`}
                     loading="lazy"
                     style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
@@ -508,6 +511,9 @@ export default function MarrakechDesiertoPage() {
               ))}
             </div>
           </Reveal>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginTop: 16, fontSize: 11, color: SOFT, fontFamily: 'Arial,sans-serif', letterSpacing: '.1em', textTransform: 'uppercase' }}>
+            <ChevronLeft size={12} /> Desliza para ver más <ChevronRight size={12} />
+          </div>
         </div>
       </section>
 
