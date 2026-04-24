@@ -97,89 +97,6 @@ const notIncluded = [
   'Propinas',
 ];
 
-// ─── COMPONENTE MAPA ESTÁTICO ─────────────────────────────────────────────────
-const StaticRouteMap = () => (
-  <div style={{ background: CREAM, borderRadius: 16, border: `1px solid ${SAND}`, overflow: 'hidden', marginBottom: 48 }}>
-    <div style={{ padding: '18px 24px', borderBottom: `1px solid ${SAND}`, display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-      <div>
-        <p style={{ fontFamily: "'Georgia',serif", fontSize: 20, fontStyle: 'italic', color: INK }}>Recorrido de la ruta</p>
-        <p style={{ fontFamily: 'Arial,sans-serif', fontSize: 10, fontWeight: 600, letterSpacing: '.18em', textTransform: 'uppercase', color: TERRA, marginTop: 3 }}>
-          Marrakech → Sahara → Marrakech
-        </p>
-      </div>
-      <span style={{ fontFamily: 'Arial,sans-serif', fontSize: 10, fontWeight: 600, letterSpacing: '.12em', textTransform: 'uppercase', background: TERRA, color: 'white', padding: '5px 14px', borderRadius: 100 }}>
-        7 días · ~1.400 km
-      </span>
-    </div>
-
-    {/* Mapa SVG inline */}
-    <div style={{ position: 'relative', height: 360, background: '#EDE8E0' }}>
-      <svg
-        viewBox="0 0 960 360"
-        xmlns="http://www.w3.org/2000/svg"
-        style={{ width: '100%', height: '100%' }}
-        aria-label="Mapa esquemático de la ruta"
-      >
-        {/* Fondo tierra */}
-        <rect width="960" height="360" fill="#EDE8E0" />
-        {/* Textura sutil */}
-        <rect width="960" height="360" fill="url(#grain)" opacity=".3" />
-        <defs>
-          <pattern id="grain" x="0" y="0" width="4" height="4" patternUnits="userSpaceOnUse">
-            <circle cx="1" cy="1" r=".5" fill="#C4B89A" opacity=".5"/>
-          </pattern>
-        </defs>
-
-        {/* Silueta aproximada de Marruecos */}
-        <path
-          d="M180,60 L320,40 L480,55 L600,80 L720,70 L820,110 L860,180 L840,260 L760,310 L640,330 L520,320 L380,340 L260,320 L160,280 L120,200 L130,130 Z"
-          fill="#D4C9B0" stroke="#C4B89A" strokeWidth="1.5" opacity=".6"
-        />
-
-        {/* Línea de ruta */}
-        <polyline
-          points="212,140 365,212 690,195 403,232 288,168 212,140"
-          fill="none"
-          stroke={TERRA}
-          strokeWidth="2.5"
-          strokeDasharray="8,5"
-          opacity=".85"
-        />
-
-        {/* Paradas */}
-        {[
-          { n:1, label:'Marrakech',      cx:212, cy:140 },
-          { n:2, label:'Ait Ben Haddou', cx:365, cy:212 },
-          { n:3, label:'Merzouga',       cx:690, cy:195 },
-          { n:4, label:'Ouarzazate',     cx:403, cy:232 },
-          { n:5, label:'Alto Atlas',     cx:288, cy:168 },
-        ].map(s => (
-          <g key={s.n}>
-            <circle cx={s.cx} cy={s.cy} r="18" fill="white" stroke={TERRA} strokeWidth="2"/>
-            <text x={s.cx} y={s.cy + 5} textAnchor="middle" fontFamily="Georgia,serif" fontSize="13" fontWeight="600" fill={TERRA}>{s.n}</text>
-            <text x={s.cx} y={s.cy + 30} textAnchor="middle" fontFamily="Arial,sans-serif" fontSize="9.5" fontWeight="500" fill={INK} opacity=".8">{s.label}</text>
-          </g>
-        ))}
-
-        {/* Leyenda */}
-        <text x="24" y="344" fontFamily="Arial,sans-serif" fontSize="9" fill={SOFT} letterSpacing=".1em">ESQUEMA ORIENTATIVO DE RUTA</text>
-      </svg>
-    </div>
-
-    {/* Paradas en lista horizontal */}
-    <div style={{ display: 'flex', overflowX: 'auto', gap: 0, borderTop: `1px solid ${SAND}`, background: 'white' }}>
-      {days.slice(0, 6).map((d, i) => (
-        <div key={i} style={{ flexShrink: 0, padding: '14px 18px', borderRight: `1px solid ${SAND}`, minWidth: 140 }}>
-          <div style={{ fontFamily: "'Georgia',serif", fontSize: 18, color: TERRA, lineHeight: 1 }}>{d.n}</div>
-          <div style={{ fontFamily: 'Arial,sans-serif', fontSize: 11, fontWeight: 500, color: INK, marginTop: 4, lineHeight: 1.3 }}>
-            {d.title.split('·')[0].split(' ').slice(0, 3).join(' ')}
-          </div>
-        </div>
-      ))}
-    </div>
-  </div>
-);
-
 // ─── COMPONENTE PRECIO ────────────────────────────────────────────────────────
 const PriceBlock = () => (
   <div style={{
@@ -330,9 +247,16 @@ export default function MarrakechDesiertoPage() {
         </div>
       </section>
 
+      <style>{`
+        @media (max-width: 767px) {
+          .itinerario-grid { grid-template-columns: 1fr !important; }
+          .price-col { position: static !important; }
+        }
+      `}</style>
+
       {/* ─── ITINERARIO + PRECIO ─── */}
       <section id="itinerario" style={{ background: CREAM, padding: '80px 24px' }}>
-        <div style={{ maxWidth: 1080, margin: '0 auto', display: 'grid', gridTemplateColumns: 'minmax(0,1fr) 340px', gap: 48, alignItems: 'start' }}>
+        <div className="itinerario-grid" style={{ maxWidth: 1080, margin: '0 auto', display: 'grid', gridTemplateColumns: 'minmax(0,1fr) 340px', gap: 48, alignItems: 'start' }}>
 
           {/* Columna izquierda — itinerario */}
           <div>
@@ -389,16 +313,9 @@ export default function MarrakechDesiertoPage() {
           </div>
 
           {/* Columna derecha — precio sticky */}
-          <div style={{ position: 'sticky', top: 24 }}>
+          <div className="price-col" style={{ position: 'sticky', top: 24 }}>
             <PriceBlock />
           </div>
-        </div>
-      </section>
-
-      {/* ─── MAPA ESTÁTICO ─── */}
-      <section style={{ background: CREAM, padding: '0 24px 80px' }}>
-        <div style={{ maxWidth: 960, margin: '0 auto' }}>
-          <StaticRouteMap />
         </div>
       </section>
 
