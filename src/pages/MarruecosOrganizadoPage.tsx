@@ -1,7 +1,7 @@
-import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
-import { MessageCircle, ChevronRight, Star, Shield, Users, Globe } from 'lucide-react';
+import { MessageCircle, ChevronRight, Star, Shield, Users, Globe, Clock, MapPin } from 'lucide-react';
+import { moroccoRoutes } from '../data/moroccoRoutes';
 
 const TERRA = '#C25430';
 const GOLD  = '#D4A838';
@@ -12,43 +12,6 @@ const MID   = '#4A4235';
 const SOFT  = '#8A7F70';
 const WA    = '34660611668';
 
-type Tour = { days: number; title: string; sub: string; img: string; url?: string };
-type City = { id: string; label: string; tours: Tour[] };
-
-const cities: City[] = [
-  {
-    id: 'marrakech', label: 'Marrakech',
-    tours: [
-      { days:5, title:'Marrakech esencial',   sub:'Medina · Atlas · Valle Ourika · Jardines Majorelle',           img:'https://images.pexels.com/photos/3889843/pexels-photo-3889843.jpeg' },
-      { days:7, title:'Marrakech al Desierto', sub:'Ait Ben Haddou · Ouarzazate · Gargantas Todra · Merzouga',    img:'https://images.pexels.com/photos/3889843/pexels-photo-3889843.jpeg', url:'/marrakech-al-desierto-7-dias' },
-      { days:9, title:'Gran ruta del sur',     sub:'Desierto · Kasbahs · Valle del Draa · Skoura · Zagora',      img:'https://images.pexels.com/photos/3889843/pexels-photo-3889843.jpeg' },
-    ],
-  },
-  {
-    id: 'tanger', label: 'Tánger',
-    tours: [
-      { days:5, title:'Norte de Marruecos',   sub:'Tánger · Chefchaouen · Tetuán · Asilah',                      img:'https://images.pexels.com/photos/16834923/pexels-photo-16834923.jpeg' },
-      { days:7, title:'Tánger a Fez',          sub:'Chefchaouen · Volubilis · Meknès · Fez imperial',             img:'https://images.pexels.com/photos/16834923/pexels-photo-16834923.jpeg' },
-      { days:9, title:'Tánger a Marrakech',    sub:'Norte · Fez · Bosque monos · Sahara · Sur',                  img:'https://images.pexels.com/photos/16834923/pexels-photo-16834923.jpeg' },
-    ],
-  },
-  {
-    id: 'fez', label: 'Fez',
-    tours: [
-      { days:5, title:'Fez imperial',          sub:'Medina medieval · Curtidurías · Volubilis · Meknès',          img:'https://images.pexels.com/photos/2549018/pexels-photo-2549018.jpeg' },
-      { days:7, title:'Fez al Sahara',          sub:'Ifrane · Bosque de monos · Midelt · Merzouga',               img:'https://images.pexels.com/photos/2549018/pexels-photo-2549018.jpeg' },
-      { days:9, title:'Fez y el gran sur',      sub:'Ciudades imperiales · Desierto · Kasbahs · Marrakech',       img:'https://images.pexels.com/photos/2549018/pexels-photo-2549018.jpeg' },
-    ],
-  },
-  {
-    id: 'casablanca', label: 'Casablanca',
-    tours: [
-      { days:5, title:'Casablanca y Rabat',    sub:'Mezquita Hassan II · Rabat · Essaouira · Costa atlántica',    img:'https://images.pexels.com/photos/3889843/pexels-photo-3889843.jpeg' },
-      { days:7, title:'Costa y desierto',       sub:'Rabat · Marrakech · Ouzoud · Essaouira',                     img:'https://images.pexels.com/photos/3889843/pexels-photo-3889843.jpeg' },
-      { days:9, title:'Marruecos completo',     sub:'Costa atlántica · Imperial · Desierto · Norte',              img:'https://images.pexels.com/photos/3889843/pexels-photo-3889843.jpeg' },
-    ],
-  },
-];
 
 const testimonials = [
   { name:'Trinidad R.', text:'Nos llevaron a lugares que nos dejaron sin aliento. Desde los zocos hasta una noche en el desierto con puestas de sol doradas. Una experiencia inolvidable.', source:'TripAdvisor', initial:'T', color:'linear-gradient(135deg,#C25430,#D4A838)' },
@@ -60,7 +23,6 @@ const wa = (msg: string) =>
   window.open(`https://wa.me/${WA}?text=${encodeURIComponent(msg)}`, '_blank');
 
 export default function MarruecosOrganizadoPage() {
-  const [activeCity, setActiveCity] = useState<string>('marrakech');
 
   return (
     <>
@@ -129,90 +91,78 @@ export default function MarruecosOrganizadoPage() {
             </p>
           </div>
 
-          {/* Tabs ciudad */}
-          <div style={{ display:'flex', justifyContent:'center', gap:0, marginBottom:48, borderBottom:`1px solid ${SAND}` }}>
-            {cities.map(city => {
-              const active = activeCity === city.id;
-              return (
-                <button
-                  key={city.id}
-                  onClick={() => setActiveCity(city.id)}
-                  style={{
-                    background:'none', border:'none', cursor:'pointer',
-                    padding:'14px 24px',
-                    fontFamily:"'Georgia',serif",
-                    fontSize:'clamp(14px,1.8vw,18px)',
-                    fontWeight: active ? 500 : 300,
-                    color: active ? TERRA : SOFT,
-                    borderBottom: active ? `2px solid ${TERRA}` : '2px solid transparent',
-                    marginBottom:-1,
-                    transition:'all .25s ease',
-                    letterSpacing:'-.01em',
-                  }}
-                >
-                  {city.label}
-                </button>
-              );
-            })}
-          </div>
-
-          {/* Cards de tours */}
-          {cities.filter(c => c.id === activeCity).map(city => (
-            <div key={city.id} style={{ display:'grid', gridTemplateColumns:'repeat(auto-fit,minmax(280px,1fr))', gap:24 }}>
-              {city.tours.map((tour, i) => (
-                <div
-                  key={i}
-                  style={{ borderRadius:20, overflow:'hidden', position:'relative', boxShadow:'0 8px 32px rgba(26,22,18,.12)', transition:'transform .3s ease, box-shadow .3s ease', cursor:'default' }}
-                  onMouseEnter={e => { (e.currentTarget as HTMLDivElement).style.transform='translateY(-6px)'; (e.currentTarget as HTMLDivElement).style.boxShadow='0 16px 48px rgba(26,22,18,.18)'; }}
-                  onMouseLeave={e => { (e.currentTarget as HTMLDivElement).style.transform='translateY(0)'; (e.currentTarget as HTMLDivElement).style.boxShadow='0 8px 32px rgba(26,22,18,.12)'; }}
-                >
-                  {/* imagen */}
-                  <div style={{ position:'relative', height:220, overflow:'hidden' }}>
-                    <img src={tour.img} alt={tour.title} loading="lazy" style={{ width:'100%', height:'100%', objectFit:'cover' }} />
-                    <div style={{ position:'absolute', inset:0, background:'linear-gradient(to top,rgba(26,22,18,.7) 0%,transparent 55%)' }} />
-                    {/* días badge */}
-                    <div style={{ position:'absolute', top:16, left:16, display:'flex', flexDirection:'column', alignItems:'center', justifyContent:'center', width:56, height:56, borderRadius:'50%', background:'rgba(255,255,255,.92)', backdropFilter:'blur(4px)' }}>
-                      <span style={{ fontFamily:"'Georgia',serif", fontSize:22, fontWeight:700, color:TERRA, lineHeight:1 }}>{tour.days}</span>
-                      <span style={{ fontSize:8, color:SOFT, letterSpacing:'.1em', textTransform:'uppercase', fontFamily:'Arial,sans-serif' }}>días</span>
-                    </div>
-                    {/* title over image */}
-                    <div style={{ position:'absolute', bottom:16, left:20, right:20 }}>
-                      <h3 style={{ fontFamily:"'Georgia',serif", fontSize:'clamp(16px,2vw,20px)', fontWeight:400, fontStyle:'italic', color:'white', margin:0, lineHeight:1.2 }}>
-                        {tour.title}
-                      </h3>
-                    </div>
+          {/* Grid de rutas */}
+          <div style={{ display:'grid', gridTemplateColumns:'repeat(auto-fit,minmax(310px,1fr))', gap:24 }}>
+            {moroccoRoutes.map((route) => (
+              <Link
+                key={route.slug}
+                to={`/marruecos/${route.slug}`}
+                style={{ borderRadius:20, overflow:'hidden', textDecoration:'none', boxShadow:'0 8px 32px rgba(26,22,18,.12)', transition:'transform .3s ease, box-shadow .3s ease', display:'block' }}
+                onMouseEnter={e => { (e.currentTarget as HTMLAnchorElement).style.transform='translateY(-6px)'; (e.currentTarget as HTMLAnchorElement).style.boxShadow='0 16px 48px rgba(26,22,18,.18)'; }}
+                onMouseLeave={e => { (e.currentTarget as HTMLAnchorElement).style.transform='translateY(0)'; (e.currentTarget as HTMLAnchorElement).style.boxShadow='0 8px 32px rgba(26,22,18,.12)'; }}
+              >
+                {/* imagen */}
+                <div style={{ position:'relative', height:220, overflow:'hidden' }}>
+                  <img src={route.image} alt={route.title} loading="lazy" style={{ width:'100%', height:'100%', objectFit:'cover', transition:'transform .6s ease' }} />
+                  <div style={{ position:'absolute', inset:0, background:'linear-gradient(to top,rgba(26,22,18,.7) 0%,transparent 55%)' }} />
+                  {/* duration badge */}
+                  <div style={{ position:'absolute', top:16, left:16, display:'inline-flex', alignItems:'center', gap:6, background:'rgba(255,255,255,.92)', backdropFilter:'blur(4px)', borderRadius:100, padding:'6px 14px' }}>
+                    <Clock size={12} color={TERRA} />
+                    <span style={{ fontSize:11, fontWeight:600, color:INK, fontFamily:'Arial,sans-serif' }}>{route.duration}</span>
                   </div>
-
-                  {/* body */}
-                  <div style={{ background:'white', padding:'20px 20px 24px' }}>
-                    <p style={{ fontSize:12, color:SOFT, fontFamily:'Arial,sans-serif', lineHeight:1.7, margin:'0 0 16px' }}>
-                      {tour.sub}
-                    </p>
-                    <div style={{ display:'flex', flexWrap:'wrap', gap:6, marginBottom:20 }}>
-                      {['Guía en español','Transporte privado','Grupos reducidos'].map(b => (
-                        <span key={b} style={{ background:CREAM, border:`1px solid ${SAND}`, color:MID, fontSize:10, fontWeight:500, padding:'3px 10px', borderRadius:100, fontFamily:'Arial,sans-serif' }}>{b}</span>
-                      ))}
-                    </div>
-                    {tour.url ? (
-                      <Link
-                        to={tour.url}
-                        style={{ width:'100%', display:'inline-flex', alignItems:'center', justifyContent:'center', gap:8, background:TERRA, color:'white', borderRadius:12, padding:'13px 20px', fontSize:12, fontWeight:600, fontFamily:'Arial,sans-serif', textDecoration:'none', boxShadow:'0 4px 16px rgba(194,84,48,.25)', transition:'all .2s ease', letterSpacing:'.04em' }}
-                      >
-                        Ver itinerario completo <ChevronRight size={14} />
-                      </Link>
-                    ) : (
-                      <button
-                        onClick={() => wa(`Hola Antonio! Me interesa la ruta "${tour.title}" de ${tour.days} días desde ${city.label} en Viaja Mejor. ¿Puedes darme más información?`)}
-                        style={{ width:'100%', display:'inline-flex', alignItems:'center', justifyContent:'center', gap:8, background:TERRA, color:'white', border:'none', borderRadius:12, padding:'13px 20px', fontSize:12, fontWeight:600, fontFamily:'Arial,sans-serif', cursor:'pointer', boxShadow:'0 4px 16px rgba(194,84,48,.25)', transition:'all .2s ease', letterSpacing:'.04em' }}
-                      >
-                        Ver itinerario completo <ChevronRight size={14} />
-                      </button>
-                    )}
+                  {/* price badge */}
+                  <div style={{ position:'absolute', bottom:16, right:16, background:'rgba(26,22,18,.85)', backdropFilter:'blur(4px)', borderRadius:100, padding:'6px 14px' }}>
+                    <span style={{ fontSize:10, fontWeight:300, color:'rgba(248,241,228,.7)', fontFamily:'Arial,sans-serif' }}>Desde </span>
+                    <span style={{ fontSize:14, fontWeight:700, color:'white', fontFamily:"'Georgia',serif" }}>{route.price}</span>
+                  </div>
+                  {/* title over image */}
+                  <div style={{ position:'absolute', bottom:16, left:20, right:100 }}>
+                    <h3 style={{ fontFamily:"'Georgia',serif", fontSize:'clamp(16px,2vw,20px)', fontWeight:400, fontStyle:'italic', color:'white', margin:0, lineHeight:1.2 }}>
+                      {route.title}
+                    </h3>
                   </div>
                 </div>
-              ))}
-            </div>
-          ))}
+
+                {/* body */}
+                <div style={{ background:'white', padding:'20px 20px 24px' }}>
+                  <p style={{ fontSize:13, color:SOFT, fontFamily:'Arial,sans-serif', lineHeight:1.7, margin:'0 0 14px', display:'-webkit-box', WebkitLineClamp:2, WebkitBoxOrient:'vertical', overflow:'hidden' }}>
+                    {route.description}
+                  </p>
+                  <div style={{ display:'flex', flexWrap:'wrap', gap:6, marginBottom:18 }}>
+                    {route.places.slice(0, 4).map(place => (
+                      <span key={place} style={{ display:'inline-flex', alignItems:'center', gap:4, background:CREAM, border:`1px solid ${SAND}`, color:MID, fontSize:10, fontWeight:500, padding:'3px 10px', borderRadius:100, fontFamily:'Arial,sans-serif' }}>
+                        <MapPin size={8} />{place}
+                      </span>
+                    ))}
+                    {route.places.length > 4 && (
+                      <span style={{ fontSize:10, color:SOFT, padding:'3px 6px' }}>+{route.places.length - 4}</span>
+                    )}
+                  </div>
+                  <div style={{ display:'flex', alignItems:'center', justifyContent:'space-between', paddingTop:14, borderTop:`1px solid ${SAND}` }}>
+                    <span style={{ fontSize:10, color:SOFT, letterSpacing:'.12em', textTransform:'uppercase', fontFamily:'Arial,sans-serif', display:'flex', alignItems:'center', gap:6 }}>
+                      <Users size={10} /> Privado · Español
+                    </span>
+                    <span style={{ display:'inline-flex', alignItems:'center', gap:4, fontSize:12, fontWeight:600, color:TERRA, fontFamily:'Arial,sans-serif' }}>
+                      Ver ruta <ChevronRight size={13} />
+                    </span>
+                  </div>
+                </div>
+              </Link>
+            ))}
+          </div>
+
+          {/* CTA ruta a medida */}
+          <div style={{ textAlign:'center', marginTop:48 }}>
+            <p style={{ fontSize:13, color:SOFT, fontFamily:'Arial,sans-serif', fontWeight:300, marginBottom:16 }}>
+              ¿No ves lo que buscas? Te preparamos una ruta a medida sin compromiso.
+            </p>
+            <button
+              onClick={() => wa('Hola Antonio! Me gustaría una ruta a medida por Marruecos. ¿Puedes ayudarme?')}
+              style={{ display:'inline-flex', alignItems:'center', gap:8, background:INK, color:'white', border:'none', borderRadius:100, padding:'15px 32px', fontSize:12, fontWeight:600, letterSpacing:'.12em', textTransform:'uppercase', fontFamily:'Arial,sans-serif', cursor:'pointer', transition:'all .3s ease' }}
+            >
+              <MessageCircle size={14} /> Consultar por WhatsApp
+            </button>
+          </div>
         </div>
       </section>
 

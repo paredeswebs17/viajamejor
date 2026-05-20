@@ -25,6 +25,7 @@ const AthensGuidePage = lazy(() => import('./pages/AthensGuidePage'));
 const ChristmasMarketsPage = lazy(() => import('./pages/ChristmasMarketsPage'));
 const MarruecosOrganizadoPage = lazy(() => import('./pages/MarruecosOrganizadoPage'));
 const MarrakechDesiertoPage = lazy(() => import('./pages/MarrakechDesiertoPage'));
+const MoroccoRoutePage = lazy(() => import('./pages/MoroccoRoutePage'));
 
 // Loading component
 const Loading = () => (
@@ -78,6 +79,7 @@ function App() {
                 <Route path="/mercados-navidenos-europa" element={<ChristmasMarketsPage />} />
                 <Route path="/marruecos-organizado" element={<MarruecosOrganizadoPage />} />
                 <Route path="/marrakech-al-desierto-7-dias" element={<MarrakechDesiertoPage />} />
+                <Route path="/marruecos/:slug" element={<MoroccoRoutePage />} />
 
                 {/* 404 - Redirige a home */}
                 <Route path="*" element={<HomePage />} />
