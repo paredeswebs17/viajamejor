@@ -104,70 +104,69 @@ const BlogSection: React.FC<BlogSectionProps> = ({ showTitle = true }) => {
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
 
         {showTitle && (
-          <div className="reveal mb-12">
+          <div className="reveal mb-10">
             <span className="text-[10px] uppercase tracking-[.25em] text-teal-600 font-medium">
               Recursos esenciales
             </span>
             <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl text-gray-900 mt-3 tracking-tight">
               Empieza por aquí
             </h2>
-            <p className="text-gray-500 text-sm md:text-base font-light mt-4 max-w-lg">
+            <p className="text-gray-500 text-sm md:text-base font-light mt-3 max-w-lg">
               Artículos probados para ahorrar en cada aspecto del viaje
             </p>
           </div>
         )}
 
-        <div className="reveal grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {articles.map((article) => (
-            <Link
-              key={article.id}
-              to={article.url}
-              className="group relative"
-            >
-              <div className="relative aspect-[4/5] overflow-hidden rounded-sm">
-                <img
-                  src={article.image}
-                  alt={`${article.title} - ${article.category}`}
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                  loading="lazy"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/25 to-transparent" />
+        <div className="reveal">
+          <div className="flex overflow-x-auto gap-5 pb-4 scrollbar-hide snap-x snap-mandatory -mx-6 px-6">
+            {articles.map((article) => (
+              <Link
+                key={article.id}
+                to={article.url}
+                className="flex-shrink-0 w-64 sm:w-72 group snap-start"
+              >
+                <div className="relative aspect-[3/4] overflow-hidden rounded-sm">
+                  <img
+                    src={article.image}
+                    alt={`${article.title} - ${article.category}`}
+                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                    loading="lazy"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/25 to-transparent" />
 
-                {article.featured && (
-                  <div className="absolute top-4 left-4">
-                    <span className="inline-flex items-center gap-1 bg-white/90 backdrop-blur-sm text-gray-900 px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider">
-                      <Star size={10} className="text-amber-500" />
-                      Destacado
+                  {article.featured && (
+                    <div className="absolute top-4 left-4">
+                      <span className="inline-flex items-center gap-1 bg-white/90 backdrop-blur-sm text-gray-900 px-2.5 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider">
+                        <Star size={10} className="text-amber-500" />
+                        Destacado
+                      </span>
+                    </div>
+                  )}
+
+                  <div className="absolute top-4 right-4">
+                    <span className="bg-white/90 backdrop-blur-sm text-gray-900 px-2.5 py-1 rounded-full text-[10px] font-medium uppercase tracking-wider">
+                      {article.category}
                     </span>
                   </div>
-                )}
 
-                <div className="absolute top-4 right-4">
-                  <span className="bg-white/90 backdrop-blur-sm text-gray-900 px-3 py-1 rounded-full text-[10px] font-medium uppercase tracking-wider">
-                    {article.category}
-                  </span>
-                </div>
-
-                <div className="absolute bottom-0 left-0 right-0 p-6">
-                  <h3 className="font-serif text-xl md:text-2xl text-white leading-tight mb-2">
-                    {article.title}
-                  </h3>
-                  <p className="text-white/60 text-sm font-light line-clamp-2 mb-3">
-                    {article.excerpt}
-                  </p>
-                  <div className="flex items-center justify-between">
-                    <span className="text-teal-300 text-xs font-semibold">
-                      {article.savings}
-                    </span>
-                    <div className="flex items-center text-white/70 group-hover:text-teal-300 transition-colors">
-                      <span className="text-xs font-medium uppercase tracking-wider">Leer</span>
-                      <ArrowRight size={12} className="ml-1 transform group-hover:translate-x-1 transition-transform" />
+                  <div className="absolute bottom-0 left-0 right-0 p-5">
+                    <h3 className="font-serif text-lg md:text-xl text-white leading-tight mb-2">
+                      {article.title}
+                    </h3>
+                    <div className="flex items-center justify-between">
+                      <span className="text-teal-300 text-xs font-semibold">
+                        {article.savings}
+                      </span>
+                      <div className="flex items-center text-white/70 group-hover:text-teal-300 transition-colors">
+                        <span className="text-xs font-medium uppercase tracking-wider">Leer</span>
+                        <ArrowRight size={12} className="ml-1 transform group-hover:translate-x-1 transition-transform" />
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            </Link>
-          ))}
+              </Link>
+            ))}
+          </div>
         </div>
       </div>
     </section>

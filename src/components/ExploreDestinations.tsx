@@ -102,17 +102,19 @@ const ExploreDestinations = () => {
   return (
     <section ref={sectionRef} className="relative py-20 md:py-28 bg-white">
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
-        <div className="reveal mb-12">
-          <span className="text-[10px] uppercase tracking-[.25em] text-teal-600 font-medium">
-            Guías de viaje
-          </span>
-          <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl text-gray-900 mt-3 tracking-tight">
-            Explora destinos
-          </h2>
-          <div className="flex items-center justify-between mt-4">
-            <p className="text-gray-500 text-sm md:text-base font-light">
-              Itinerarios completos día a día
-            </p>
+        <div className="reveal mb-10">
+          <div className="flex items-end justify-between">
+            <div>
+              <span className="text-[10px] uppercase tracking-[.25em] text-teal-600 font-medium">
+                Guías de viaje
+              </span>
+              <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl text-gray-900 mt-3 tracking-tight">
+                Explora destinos
+              </h2>
+              <p className="text-gray-500 text-sm md:text-base font-light mt-3">
+                Itinerarios completos día a día
+              </p>
+            </div>
             <Link
               to="/guias"
               className="hidden sm:inline-flex items-center gap-1.5 text-teal-600 hover:text-teal-700 text-xs font-semibold uppercase tracking-[.12em] transition-colors"
@@ -124,14 +126,14 @@ const ExploreDestinations = () => {
         </div>
 
         <div className="reveal">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="flex overflow-x-auto gap-5 pb-4 scrollbar-hide snap-x snap-mandatory -mx-6 px-6">
             {guides.map((guide) => (
               <Link
                 key={guide.id}
                 to={guide.url}
-                className="group relative"
+                className="flex-shrink-0 w-64 sm:w-72 group snap-start"
               >
-                <div className="relative aspect-[4/5] overflow-hidden rounded-sm">
+                <div className="relative aspect-[3/4] overflow-hidden rounded-sm">
                   <img
                     src={guide.image}
                     alt={guide.title}
@@ -154,8 +156,8 @@ const ExploreDestinations = () => {
                     </div>
                   )}
 
-                  <div className="absolute bottom-0 left-0 right-0 p-6">
-                    <h3 className="font-serif text-xl md:text-2xl text-white leading-tight mb-2">
+                  <div className="absolute bottom-0 left-0 right-0 p-5">
+                    <h3 className="font-serif text-lg md:text-xl text-white leading-tight mb-2">
                       {guide.title}
                     </h3>
                     <div className="flex items-center text-white/80 group-hover:text-teal-300 transition-colors">
@@ -173,7 +175,7 @@ const ExploreDestinations = () => {
 
         <Link
           to="/guias"
-          className="flex sm:hidden items-center justify-center gap-1.5 text-teal-600 hover:text-teal-700 font-semibold transition-colors mt-10 text-sm uppercase tracking-wider"
+          className="flex sm:hidden items-center justify-center gap-1.5 text-teal-600 hover:text-teal-700 font-semibold transition-colors mt-8 text-sm uppercase tracking-wider"
         >
           Ver todas las guías
           <ArrowRight size={16} />
