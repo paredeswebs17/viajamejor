@@ -1,6 +1,6 @@
-import React from 'react';
+import { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
-import { Star, ChevronLeft, ChevronRight } from 'lucide-react';
+import { Star, ArrowRight } from 'lucide-react';
 
 interface BlogSectionProps {
   showTitle?: boolean;
@@ -8,7 +8,25 @@ interface BlogSectionProps {
 }
 
 const BlogSection: React.FC<BlogSectionProps> = ({ showTitle = true }) => {
-  const scrollRef = React.useRef<HTMLDivElement>(null);
+  const sectionRef = useRef<HTMLElement>(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
+
+    const revealElements = sectionRef.current?.querySelectorAll('.reveal');
+    revealElements?.forEach((el) => observer.observe(el));
+
+    return () => observer.disconnect();
+  }, []);
 
   const articles = [
     {
@@ -82,103 +100,75 @@ const BlogSection: React.FC<BlogSectionProps> = ({ showTitle = true }) => {
   ];
 
   return (
-    <section id="consejos" className="relative py-6 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
+    <section ref={sectionRef} id="consejos" className="relative py-20 md:py-28 bg-slate-50">
+      <div className="max-w-7xl mx-auto px-6 lg:px-10">
+
         {showTitle && (
-          <div className="mb-4">
-            <h2 className="text-lg sm:text-xl font-bold text-gray-900 mb-2">Empieza por aquí</h2>
-            <div className="flex items-center justify-between">
-              <p className="text-sm text-gray-600">Desliza para ver más →</p>
-              <div className="hidden lg:flex items-center space-x-2">
-                <button
-                  onClick={() => {
-                    if (scrollRef.current) {
-                      scrollRef.current.scrollBy({ left: -400, behavior: 'smooth' });
-                    }
-                  }}
-                  className="p-2 rounded-full bg-white border border-gray-200 hover:bg-gray-50 transition-colors"
-                  aria-label="Scroll left"
-                >
-                  <ChevronLeft className="h-4 w-4 text-gray-600" />
-                </button>
-                <button
-                  onClick={() => {
-                    if (scrollRef.current) {
-                      scrollRef.current.scrollBy({ left: 400, behavior: 'smooth' });
-                    }
-                  }}
-                  className="p-2 rounded-full bg-white border border-gray-200 hover:bg-gray-50 transition-colors"
-                  aria-label="Scroll right"
-                >
-                  <ChevronRight className="h-4 w-4 text-gray-600" />
-                </button>
-              </div>
-            </div>
+          <div className="reveal mb-12">
+            <span className="text-[10px] uppercase tracking-[.25em] text-teal-600 font-medium">
+              Recursos esenciales
+            </span>
+            <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl text-gray-900 mt-3 tracking-tight">
+              Empieza por aquí
+            </h2>
+            <p className="text-gray-500 text-sm md:text-base font-light mt-4 max-w-lg">
+              Artículos probados para ahorrar en cada aspecto del viaje
+            </p>
           </div>
         )}
 
-        {/* Scroll horizontal optimizado */}
-        <div className="relative">
-          <div className="flex overflow-x-auto gap-4 pl-4 sm:pl-0 pb-4 scrollbar-hide snap-x snap-mandatory" ref={scrollRef}>
-            {articles.map((article, index) => (
-              <Link
-                key={article.id}
-                to={article.url}
-                className={`flex-shrink-0 w-64 sm:w-96 group snap-start ${index === articles.length - 1 ? 'pr-4 sm:pr-0' : ''}`}
-              >
-                <div className="relative rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
-                  <div className="relative h-56 sm:h-64 overflow-hidden">
-                    <img
-                      src={article.image.includes('?') ? article.image + '&auto=compress&cs=tinysrgb&w=600' : article.image + '?auto=compress&cs=tinysrgb&w=600'}
-                      alt={`${article.title} - ${article.category} - Viaja Mejor`}
-                      className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
-                      loading="lazy"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent"></div>
+        <div className="reveal grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {articles.map((article) => (
+            <Link
+              key={article.id}
+              to={article.url}
+              className="group relative"
+            >
+              <div className="relative aspect-[4/5] overflow-hidden rounded-sm">
+                <img
+                  src={article.image}
+                  alt={`${article.title} - ${article.category}`}
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  loading="lazy"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/25 to-transparent" />
 
-                    {/* Badge destacado */}
-                    {article.featured && (
-                      <div className="absolute top-4 left-4">
-                        <span className="bg-gradient-to-r from-orange-500 to-red-500 text-white px-3 py-1 rounded-full text-xs font-bold flex items-center shadow-lg">
-                          <Star className="h-3 w-3 mr-1" />
-                          DESTACADO
-                        </span>
-                      </div>
-                    )}
+                {article.featured && (
+                  <div className="absolute top-4 left-4">
+                    <span className="inline-flex items-center gap-1 bg-white/90 backdrop-blur-sm text-gray-900 px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider">
+                      <Star size={10} className="text-amber-500" />
+                      Destacado
+                    </span>
+                  </div>
+                )}
 
-                    <div className="absolute top-4 right-4">
-                      <span className="bg-white/90 backdrop-blur-sm text-gray-900 px-3 py-1 rounded-full text-xs font-medium shadow-lg">
-                        {article.category}
-                      </span>
-                    </div>
+                <div className="absolute top-4 right-4">
+                  <span className="bg-white/90 backdrop-blur-sm text-gray-900 px-3 py-1 rounded-full text-[10px] font-medium uppercase tracking-wider">
+                    {article.category}
+                  </span>
+                </div>
 
-                    <div className="absolute bottom-0 left-0 right-0 p-4 sm:p-6">
-                      <h3 className="text-xl sm:text-2xl font-bold text-white mb-2 group-hover:text-sky-200 transition-colors">
-                        {article.title}
-                      </h3>
-                      <div className="flex items-center text-white/90">
-                        <span className="text-xs sm:text-sm font-medium">Leer artículo</span>
-                        <ChevronRight className="h-3 w-3 sm:h-4 sm:w-4 ml-1 transform group-hover:translate-x-1 transition-transform" />
-                      </div>
+                <div className="absolute bottom-0 left-0 right-0 p-6">
+                  <h3 className="font-serif text-xl md:text-2xl text-white leading-tight mb-2">
+                    {article.title}
+                  </h3>
+                  <p className="text-white/60 text-sm font-light line-clamp-2 mb-3">
+                    {article.excerpt}
+                  </p>
+                  <div className="flex items-center justify-between">
+                    <span className="text-teal-300 text-xs font-semibold">
+                      {article.savings}
+                    </span>
+                    <div className="flex items-center text-white/70 group-hover:text-teal-300 transition-colors">
+                      <span className="text-xs font-medium uppercase tracking-wider">Leer</span>
+                      <ArrowRight size={12} className="ml-1 transform group-hover:translate-x-1 transition-transform" />
                     </div>
                   </div>
                 </div>
-              </Link>
-            ))}
-          </div>
+              </div>
+            </Link>
+          ))}
         </div>
-
-        <style>{`
-          .scrollbar-hide::-webkit-scrollbar {
-            display: none;
-          }
-          .scrollbar-hide {
-            -ms-overflow-style: none;
-            scrollbar-width: none;
-          }
-        `}</style>
-
       </div>
     </section>
   );

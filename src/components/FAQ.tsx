@@ -1,12 +1,31 @@
-import { ChevronDown, ChevronUp } from 'lucide-react';
-import { useState } from 'react';
+import { ChevronDown } from 'lucide-react';
+import { useState, useEffect, useRef } from 'react';
 
 const FAQ = () => {
   const [openItems, setOpenItems] = useState<number[]>([]);
+  const sectionRef = useRef<HTMLElement>(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
+
+    const revealElements = sectionRef.current?.querySelectorAll('.reveal');
+    revealElements?.forEach((el) => observer.observe(el));
+
+    return () => observer.disconnect();
+  }, []);
 
   const toggleItem = (index: number) => {
-    setOpenItems(prev => 
-      prev.includes(index) 
+    setOpenItems(prev =>
+      prev.includes(index)
         ? prev.filter(i => i !== index)
         : [...prev, index]
     );
@@ -40,50 +59,58 @@ const FAQ = () => {
   ];
 
   return (
-    <section id="preguntas-frecuentes" className="py-8 sm:py-10 bg-gray-50">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="mb-4">
-          <h2 className="text-lg sm:text-xl font-bold text-gray-900 mb-2">
-            Preguntas Frecuentes
+    <section ref={sectionRef} id="preguntas-frecuentes" className="py-20 md:py-28 bg-slate-50">
+      <div className="max-w-3xl mx-auto px-6 lg:px-10">
+        <div className="reveal text-center mb-14">
+          <span className="text-[10px] uppercase tracking-[.25em] text-teal-600 font-medium">
+            Resolvemos tus dudas
+          </span>
+          <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl text-gray-900 mt-3 tracking-tight">
+            Preguntas frecuentes
           </h2>
         </div>
 
-        <div className="space-y-2">
+        <div className="reveal space-y-3">
           {faqs.map((faq, index) => (
-            <div 
+            <div
               key={index}
-              className="bg-white rounded-lg border border-gray-200 overflow-hidden"
+              className="border border-gray-200 bg-white rounded-sm overflow-hidden"
             >
               <button
                 onClick={() => toggleItem(index)}
-                className="w-full px-4 py-3 text-left flex items-center justify-between hover:bg-gray-50 focus:outline-none"
+                className="w-full px-6 py-5 text-left flex items-center justify-between hover:bg-gray-50/50 transition-colors"
                 aria-expanded={openItems.includes(index)}
               >
-                <h3 className="text-sm font-semibold text-gray-900 pr-3">
+                <h3 className="text-sm md:text-base font-medium text-gray-900 pr-4">
                   {faq.question}
                 </h3>
-                {openItems.includes(index) ? (
-                  <ChevronUp className="h-4 w-4 text-gray-500 flex-shrink-0" />
-                ) : (
-                  <ChevronDown className="h-4 w-4 text-gray-500 flex-shrink-0" />
-                )}
+                <ChevronDown
+                  size={18}
+                  className={`text-gray-400 flex-shrink-0 transition-transform duration-300 ${
+                    openItems.includes(index) ? 'rotate-180' : ''
+                  }`}
+                />
               </button>
-              
-              {openItems.includes(index) && (
-                <div className="px-4 pb-3">
-                  <p className="text-sm text-gray-700 leading-relaxed">
+
+              <div
+                className={`grid transition-all duration-300 ${
+                  openItems.includes(index) ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'
+                }`}
+              >
+                <div className="overflow-hidden">
+                  <p className="px-6 pb-5 text-sm text-gray-600 leading-relaxed">
                     {faq.answer}
                   </p>
                 </div>
-              )}
+              </div>
             </div>
           ))}
         </div>
 
-        <div className="mt-4 text-center">
+        <div className="reveal mt-10 text-center">
           <button
             onClick={() => document.getElementById('contacto')?.scrollIntoView({ behavior: 'smooth' })}
-            className="text-sky-600 font-medium text-sm hover:text-sky-700 transition-colors"
+            className="text-teal-600 font-medium text-sm hover:text-teal-700 transition-colors"
           >
             ¿Más preguntas? Escríbenos →
           </button>

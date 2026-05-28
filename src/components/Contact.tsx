@@ -1,5 +1,5 @@
-import { useState } from 'react';
-import { MessageCircle, Send } from 'lucide-react';
+import { useState, useEffect, useRef } from 'react';
+import { Send } from 'lucide-react';
 import { trackContactFormSubmit } from '../utils/analytics';
 
 const Contact = () => {
@@ -9,6 +9,25 @@ const Contact = () => {
     message: ''
   });
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const sectionRef = useRef<HTMLElement>(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
+
+    const revealElements = sectionRef.current?.querySelectorAll('.reveal');
+    revealElements?.forEach((el) => observer.observe(el));
+
+    return () => observer.disconnect();
+  }, []);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -41,38 +60,41 @@ const Contact = () => {
   };
 
   return (
-    <section id="contacto" className="relative py-8 sm:py-10 bg-white">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-4">
-          <h2 className="text-lg sm:text-xl font-bold text-gray-900 mb-2">
+    <section ref={sectionRef} id="contacto" className="relative py-20 md:py-28 bg-white">
+      <div className="max-w-2xl mx-auto px-6 lg:px-10">
+        <div className="reveal text-center mb-14">
+          <span className="text-[10px] uppercase tracking-[.25em] text-teal-600 font-medium">
+            Contacto
+          </span>
+          <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl text-gray-900 mt-3 tracking-tight">
             ¿Tienes alguna pregunta?
           </h2>
-          <p className="text-sm text-gray-600">
+          <p className="text-gray-500 text-sm md:text-base font-light mt-4">
             Escríbeme y te responderé en 24h
           </p>
         </div>
 
-        <div className="bg-gray-50 rounded-lg p-4">
+        <div className="reveal">
           {isSubmitted ? (
-            <div className="text-center py-4">
-              <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-3">
-                <Send className="h-6 w-6 text-green-600" />
+            <div className="text-center py-12">
+              <div className="w-14 h-14 border-2 border-teal-200 rounded-full flex items-center justify-center mx-auto mb-5">
+                <Send size={20} className="text-teal-600" />
               </div>
-              <h3 className="text-lg font-bold text-gray-900 mb-2">¡Mensaje enviado!</h3>
-              <p className="text-sm text-gray-600">
+              <h3 className="font-serif text-2xl text-gray-900 mb-2">Mensaje enviado</h3>
+              <p className="text-sm text-gray-500">
                 Te responderé en las próximas 24 horas.
               </p>
             </div>
           ) : (
-            <form 
-              onSubmit={handleSubmit} 
-              method="POST" 
+            <form
+              onSubmit={handleSubmit}
+              method="POST"
               action="https://formspree.io/f/mwpqebpb"
-              className="space-y-3"
+              className="space-y-5"
             >
-              <div className="grid md:grid-cols-2 gap-3">
+              <div className="grid md:grid-cols-2 gap-5">
                 <div>
-                  <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
+                  <label htmlFor="name" className="block text-xs font-medium text-gray-600 mb-2 uppercase tracking-wider">
                     Nombre
                   </label>
                   <input
@@ -81,13 +103,13 @@ const Contact = () => {
                     name="name"
                     value={formData.name}
                     onChange={handleChange}
-                    className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-sky-500 focus:border-transparent outline-none transition-all text-sm"
-                    placeholder="¿Cómo te llamas?"
+                    className="w-full px-4 py-3 border border-gray-200 rounded-sm focus:ring-1 focus:ring-teal-500 focus:border-teal-500 outline-none transition-all text-sm bg-slate-50"
+                    placeholder="Tu nombre"
                     required
                   />
                 </div>
                 <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
+                  <label htmlFor="email" className="block text-xs font-medium text-gray-600 mb-2 uppercase tracking-wider">
                     Email
                   </label>
                   <input
@@ -96,15 +118,15 @@ const Contact = () => {
                     name="email"
                     value={formData.email}
                     onChange={handleChange}
-                    className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-sky-500 focus:border-transparent outline-none transition-all text-sm"
+                    className="w-full px-4 py-3 border border-gray-200 rounded-sm focus:ring-1 focus:ring-teal-500 focus:border-teal-500 outline-none transition-all text-sm bg-slate-50"
                     placeholder="tu@email.com"
                     required
                   />
                 </div>
               </div>
-              
+
               <div>
-                <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">
+                <label htmlFor="message" className="block text-xs font-medium text-gray-600 mb-2 uppercase tracking-wider">
                   Mensaje
                 </label>
                 <textarea
@@ -112,8 +134,8 @@ const Contact = () => {
                   name="message"
                   value={formData.message}
                   onChange={handleChange}
-                  rows={3}
-                  className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-sky-500 focus:border-transparent outline-none transition-all resize-none text-sm"
+                  rows={5}
+                  className="w-full px-4 py-3 border border-gray-200 rounded-sm focus:ring-1 focus:ring-teal-500 focus:border-teal-500 outline-none transition-all resize-none text-sm bg-slate-50"
                   placeholder="Cuéntame sobre tu próximo viaje..."
                   required
                 ></textarea>
@@ -121,20 +143,13 @@ const Contact = () => {
 
               <button
                 type="submit"
-                className="w-full bg-gradient-to-r from-sky-500 to-emerald-500 hover:from-sky-600 hover:to-emerald-600 text-white font-medium py-3 px-4 rounded-lg transition-all duration-200 flex items-center justify-center space-x-2 text-sm shadow-lg hover:shadow-xl transform hover:scale-105"
+                className="w-full bg-slate-900 hover:bg-slate-800 text-white font-medium py-4 px-6 rounded-sm transition-colors duration-300 flex items-center justify-center gap-2 text-xs uppercase tracking-[.12em]"
               >
-                <Send className="h-4 w-4" />
+                <Send size={14} />
                 <span>Enviar mensaje</span>
               </button>
             </form>
           )}
-
-          <div className="mt-3 pt-3 border-t border-gray-200">
-            <div className="flex items-center justify-center">
-              <MessageCircle className="h-4 w-4 text-sky-500 mr-1" />
-              <span className="text-xs text-gray-600">Respuesta en 24h</span>
-            </div>
-          </div>
         </div>
       </div>
     </section>

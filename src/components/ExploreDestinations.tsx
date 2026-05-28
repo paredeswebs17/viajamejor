@@ -1,6 +1,6 @@
-import { useState } from 'react';
+import { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
-import { ChevronRight } from 'lucide-react';
+import { ChevronRight, ArrowRight } from 'lucide-react';
 
 interface Guide {
   id: string;
@@ -12,7 +12,25 @@ interface Guide {
 }
 
 const ExploreDestinations = () => {
-  const [hoveredId, setHoveredId] = useState<string | null>(null);
+  const sectionRef = useRef<HTMLElement>(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
+
+    const revealElements = sectionRef.current?.querySelectorAll('.reveal');
+    revealElements?.forEach((el) => observer.observe(el));
+
+    return () => observer.disconnect();
+  }, []);
 
   const guides: Guide[] = [
     {
@@ -82,76 +100,69 @@ const ExploreDestinations = () => {
   ];
 
   return (
-    <section className="relative py-6 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="mb-4">
-          <h2 className="text-lg sm:text-xl font-bold text-gray-900 mb-2">Explora Destinos</h2>
-          <div className="flex items-center justify-between">
-            <p className="text-sm text-gray-600">Desliza para ver más →</p>
+    <section ref={sectionRef} className="relative py-20 md:py-28 bg-white">
+      <div className="max-w-7xl mx-auto px-6 lg:px-10">
+        <div className="reveal mb-12">
+          <span className="text-[10px] uppercase tracking-[.25em] text-teal-600 font-medium">
+            Guías de viaje
+          </span>
+          <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl text-gray-900 mt-3 tracking-tight">
+            Explora destinos
+          </h2>
+          <div className="flex items-center justify-between mt-4">
+            <p className="text-gray-500 text-sm md:text-base font-light">
+              Itinerarios completos día a día
+            </p>
             <Link
               to="/guias"
-              className="hidden sm:flex items-center text-sky-600 hover:text-sky-700 font-semibold transition-colors group text-sm"
+              className="hidden sm:inline-flex items-center gap-1.5 text-teal-600 hover:text-teal-700 text-xs font-semibold uppercase tracking-[.12em] transition-colors"
             >
               Ver todas
-              <ChevronRight className="h-4 w-4 ml-1 transform group-hover:translate-x-1 transition-transform" />
+              <ArrowRight size={14} />
             </Link>
           </div>
         </div>
 
-        <div className="relative">
-          <div className="flex overflow-x-auto gap-4 pl-4 sm:pl-0 pb-4 scrollbar-hide snap-x snap-mandatory">
-            {guides.map((guide, index) => (
+        <div className="reveal">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {guides.map((guide) => (
               <Link
                 key={guide.id}
                 to={guide.url}
-                className={`flex-shrink-0 w-64 sm:w-96 group snap-start ${index === guides.length - 1 ? 'pr-4 sm:pr-0' : ''}`}
-                onMouseEnter={() => setHoveredId(guide.id)}
-                onMouseLeave={() => setHoveredId(null)}
+                className="group relative"
               >
-                <div
-                  className="relative rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2"
-                  style={guide.organized && hoveredId === guide.id ? { borderBottom: '3px solid #C25430' } : {}}
-                >
-                  <div className="relative h-56 sm:h-64 overflow-hidden">
-                    <img
-                      src={guide.image}
-                      alt={guide.title}
-                      className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
-                      loading="lazy"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent"></div>
+                <div className="relative aspect-[4/5] overflow-hidden rounded-sm">
+                  <img
+                    src={guide.image}
+                    alt={guide.title}
+                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                    loading="lazy"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
 
-                    {guide.badge && (
-                      <div className="absolute top-4 left-4">
-                        <span className="bg-white/90 backdrop-blur-sm text-gray-900 px-3 py-1 rounded-full text-2xl shadow-lg">
-                          {guide.badge}
-                        </span>
-                      </div>
-                    )}
+                  {guide.badge && (
+                    <div className="absolute top-4 left-4">
+                      <span className="text-2xl">{guide.badge}</span>
+                    </div>
+                  )}
 
-                    {guide.organized && (
-                      <div className="absolute top-4 right-4">
-                        <span style={{ background: '#C25430', color: 'white', fontSize: '9px', fontWeight: 700, padding: '4px 10px', borderRadius: '100px', letterSpacing: '.14em', textTransform: 'uppercase', fontFamily: 'Arial, sans-serif' }}>
-                          ORGANIZADO
-                        </span>
-                      </div>
-                    )}
+                  {guide.organized && (
+                    <div className="absolute top-4 right-4">
+                      <span className="bg-teal-600 text-white text-[9px] font-bold px-3 py-1 rounded-full uppercase tracking-[.14em]">
+                        Organizado
+                      </span>
+                    </div>
+                  )}
 
-                    <div className="absolute bottom-0 left-0 right-0 p-4 sm:p-6">
-                      <h3
-                        className="text-xl sm:text-2xl font-bold text-white mb-2 transition-colors"
-                        style={guide.organized && hoveredId === guide.id ? { color: '#C25430' } : {}}
-                      >
-                        {guide.title}
-                      </h3>
-                      <div className="flex items-center text-white/90">
-                        <span className="text-xs sm:text-sm font-medium">
-                          {guide.organized ? 'Ver rutas →' : 'Ver guía completa'}
-                        </span>
-                        {!guide.organized && (
-                          <ChevronRight className="h-3 w-3 sm:h-4 sm:w-4 ml-1 transform group-hover:translate-x-1 transition-transform" />
-                        )}
-                      </div>
+                  <div className="absolute bottom-0 left-0 right-0 p-6">
+                    <h3 className="font-serif text-xl md:text-2xl text-white leading-tight mb-2">
+                      {guide.title}
+                    </h3>
+                    <div className="flex items-center text-white/80 group-hover:text-teal-300 transition-colors">
+                      <span className="text-xs font-medium uppercase tracking-wider">
+                        {guide.organized ? 'Ver rutas' : 'Ver guía'}
+                      </span>
+                      <ChevronRight size={14} className="ml-1 transform group-hover:translate-x-1 transition-transform" />
                     </div>
                   </div>
                 </div>
@@ -162,22 +173,12 @@ const ExploreDestinations = () => {
 
         <Link
           to="/guias"
-          className="flex sm:hidden items-center justify-center text-sky-600 hover:text-sky-700 font-semibold transition-colors group mt-6"
+          className="flex sm:hidden items-center justify-center gap-1.5 text-teal-600 hover:text-teal-700 font-semibold transition-colors mt-10 text-sm uppercase tracking-wider"
         >
           Ver todas las guías
-          <ChevronRight className="h-5 w-5 ml-1 transform group-hover:translate-x-1 transition-transform" />
+          <ArrowRight size={16} />
         </Link>
       </div>
-
-      <style>{`
-        .scrollbar-hide::-webkit-scrollbar {
-          display: none;
-        }
-        .scrollbar-hide {
-          -ms-overflow-style: none;
-          scrollbar-width: none;
-        }
-      `}</style>
     </section>
   );
 };

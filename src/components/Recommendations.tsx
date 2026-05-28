@@ -1,36 +1,49 @@
+import { useEffect, useRef } from 'react';
 import { ExternalLink, Plane, Shield, Backpack, Hotel } from 'lucide-react';
 
 const Recommendations = () => {
+  const sectionRef = useRef<HTMLElement>(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
+
+    const revealElements = sectionRef.current?.querySelectorAll('.reveal');
+    revealElements?.forEach((el) => observer.observe(el));
+
+    return () => observer.disconnect();
+  }, []);
+
   const quickCategories = [
     {
       title: "Vuelos",
-      icon: <Plane className="h-8 w-8" />,
-      color: "bg-green-500",
-      textColor: "text-white",
+      icon: <Plane className="h-6 w-6" />,
       description: "Encuentra ofertas",
       url: "https://kiwi.tpk.lv/z2gZyZ3E"
     },
     {
-      title: "Alojamiento", 
-      icon: <Hotel className="h-8 w-8" />,
-      color: "bg-pink-500",
-      textColor: "text-white",
+      title: "Alojamiento",
+      icon: <Hotel className="h-6 w-6" />,
       description: "Hoteles baratos",
       url: "https://booking.tpk.lv/UianlEEu"
     },
     {
       title: "Seguros",
-      icon: <Shield className="h-8 w-8" />,
-      color: "bg-purple-500", 
-      textColor: "text-white",
+      icon: <Shield className="h-6 w-6" />,
       description: "IATI 5% dto",
       url: "https://www.iatiseguros.com?r=37344279073491"
     },
     {
       title: "Equipaje",
-      icon: <Backpack className="h-8 w-8" />,
-      color: "bg-blue-500",
-      textColor: "text-white", 
+      icon: <Backpack className="h-6 w-6" />,
       description: "Productos útiles",
       url: "/equipaje/8-objetos-imprescindibles"
     }
@@ -64,59 +77,69 @@ const Recommendations = () => {
   ];
 
   return (
-    <section id="recomendaciones" className="relative py-6 sm:py-8 bg-gray-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Quick categories - 2x2 grid on mobile */}
-        <div className="mb-6">
-          <h2 className="text-lg sm:text-xl font-bold text-gray-900 mb-3">
-            Ofertas y recomendaciones
+    <section ref={sectionRef} id="recomendaciones" className="relative py-20 md:py-28 bg-white">
+      <div className="max-w-7xl mx-auto px-6 lg:px-10">
+
+        <div className="reveal mb-12">
+          <span className="text-[10px] uppercase tracking-[.25em] text-teal-600 font-medium">
+            Herramientas y ofertas
+          </span>
+          <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl text-gray-900 mt-3 tracking-tight">
+            Recomendaciones
           </h2>
-          <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
-            {quickCategories.map((category, index) => (
-              <a
-                key={index}
-                href={category.url}
-                target={category.url.startsWith('http') ? "_blank" : undefined}
-                rel={category.url.startsWith('http') ? "noopener noreferrer" : undefined}
-                className={`${category.color} ${category.textColor} rounded-lg p-4 text-center hover:opacity-90 transition-opacity h-28 flex flex-col justify-center items-center`}
-              >
-                {category.icon}
-                <span className="font-semibold text-sm mt-1">{category.title}</span>
-                <span className="text-xs opacity-90">{category.description}</span>
-              </a>
-            ))}
-          </div>
+          <p className="text-gray-500 text-sm md:text-base font-light mt-4 max-w-lg">
+            Productos y servicios que uso en cada viaje
+          </p>
         </div>
 
-        {/* Top products - Compact list */}
-        <div>
-          <h3 className="text-lg font-bold text-gray-900 mb-3">
-            Productos que uso y recomiendo
+        {/* Quick categories */}
+        <div className="reveal grid grid-cols-2 md:grid-cols-4 gap-4 mb-16">
+          {quickCategories.map((category, index) => (
+            <a
+              key={index}
+              href={category.url}
+              target={category.url.startsWith('http') ? "_blank" : undefined}
+              rel={category.url.startsWith('http') ? "noopener noreferrer" : undefined}
+              className="group flex flex-col items-center justify-center p-8 border border-gray-200 rounded-sm hover:border-teal-300 hover:bg-teal-50/30 transition-all duration-300"
+            >
+              <div className="text-gray-400 group-hover:text-teal-600 transition-colors mb-3">
+                {category.icon}
+              </div>
+              <span className="font-semibold text-sm text-gray-900">{category.title}</span>
+              <span className="text-xs text-gray-500 mt-1">{category.description}</span>
+            </a>
+          ))}
+        </div>
+
+        {/* Top products */}
+        <div className="reveal">
+          <h3 className="font-serif text-2xl md:text-3xl text-gray-900 mb-8">
+            Lo que llevo en la mochila
           </h3>
-          <div className="space-y-2">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {topProducts.map((product, index) => (
-              <div key={index} className="bg-white rounded-lg p-3 shadow-sm border border-gray-100 flex items-center justify-between">
-                <div className="flex-1">
-                  <div className="flex items-center space-x-2">
-                    <h4 className="font-semibold text-gray-900 text-sm">{product.name}</h4>
-                  </div>
-                  <p className="text-xs text-gray-600 mt-0.5">{product.description}</p>
-                  <span className="text-sm font-semibold text-emerald-600">{product.price}</span>
+              <div
+                key={index}
+                className="flex items-center justify-between p-5 border border-gray-100 rounded-sm hover:border-gray-200 transition-colors"
+              >
+                <div className="flex-1 mr-4">
+                  <h4 className="font-semibold text-gray-900 text-sm">{product.name}</h4>
+                  <p className="text-xs text-gray-500 mt-1">{product.description}</p>
+                  <span className="text-sm font-semibold text-teal-600 mt-1 inline-block">{product.price}</span>
                 </div>
                 <a
                   href={product.affiliate}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white font-bold py-2 px-5 rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200 flex items-center space-x-1 text-sm ml-4"
+                  className="inline-flex items-center gap-1.5 bg-slate-900 hover:bg-slate-800 text-white text-xs font-semibold px-5 py-3 rounded-sm transition-colors flex-shrink-0"
                 >
-                  <span>🚀 VER OFERTA</span>
-                  <ExternalLink className="h-3 w-3" />
+                  <span>Ver oferta</span>
+                  <ExternalLink size={12} />
                 </a>
               </div>
             ))}
           </div>
         </div>
-
       </div>
     </section>
   );
