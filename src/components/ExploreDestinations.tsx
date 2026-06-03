@@ -76,13 +76,6 @@ const ExploreDestinations = () => {
       badge: '🏛️'
     },
     {
-      id: 'athens',
-      title: 'Atenas en 3 días',
-      image: 'https://images.pexels.com/photos/1285625/pexels-photo-1285625.jpeg',
-      url: '/atenas-3-dias',
-      badge: '🏛️'
-    },
-    {
       id: 'christmas',
       title: 'Mercados Navideños de Europa',
       image: 'https://images.pexels.com/photos/19361199/pexels-photo-19361199.jpeg',

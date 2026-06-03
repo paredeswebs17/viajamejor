@@ -81,18 +81,6 @@ const GuidesPage = () => {
       url: '/londres-3-dias'
     },
     {
-      id: 'athens',
-      title: 'Atenas en 3 Días',
-      subtitle: 'Cuna de la civilización',
-      description: 'Acrópolis, Partenón, Ágora Antigua y gastronomía griega auténtica.',
-      image: 'https://images.pexels.com/photos/1285625/pexels-photo-1285625.jpeg',
-      days: '3 días',
-      budget: '65€/día',
-      tag: 'Clásica',
-      tagColor: 'bg-teal-600',
-      url: '/atenas-3-dias'
-    },
-    {
       id: 'christmas',
       title: 'Mercados Navideños',
       subtitle: 'Europa 2025-2026',
