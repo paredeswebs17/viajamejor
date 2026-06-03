@@ -69,6 +69,17 @@ const PragueGuidePage = () => {
             ]
           })}
         </script>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://viajamejor.net/" },
+              { "@type": "ListItem", "position": 2, "name": "Guías", "item": "https://viajamejor.net/guias" },
+              { "@type": "ListItem", "position": 3, "name": "Praga en 3 Días" }
+            ]
+          })}
+        </script>
       </Helmet>
 
       <PragueGuideArticle onBack={handleBack} />

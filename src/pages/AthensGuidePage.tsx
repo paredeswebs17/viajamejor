@@ -13,7 +13,7 @@ const AthensGuidePage = () => {
   return (
     <>
       <Helmet>
-        <title>Atenas en 3 Días: Guía Completa 2026 | Itinerario con Acrópolis y Partenón</title>
+        <title>Atenas en 3 Días: Guía Completa 2026 | Itinerario con Acrópolis y Partenón | Viaja Mejor</title>
         <meta
           name="description"
           content="Guía completa para visitar Atenas en 3 días. Itinerario detallado con la Acrópolis, Partenón, Ágora, barrio de Plaka y los mejores consejos para tu viaje a Grecia."
@@ -22,12 +22,12 @@ const AthensGuidePage = () => {
           name="keywords"
           content="atenas 3 dias, guia atenas, acropolis atenas, partenon, grecia, itinerario atenas, que ver atenas, viaje atenas"
         />
-        <link rel="canonical" href="https://www.consejosviaje.com/atenas-3-dias" />
+        <link rel="canonical" href="https://viajamejor.net/atenas-3-dias" />
 
         <meta property="og:title" content="Atenas en 3 Días: Guía Completa 2026 | Acrópolis y Partenón" />
         <meta property="og:description" content="Descubre Atenas con nuestro itinerario optimizado de 3 días. Incluye Acrópolis, Partenón, mejores barrios y consejos prácticos." />
         <meta property="og:type" content="article" />
-        <meta property="og:url" content="https://www.consejosviaje.com/atenas-3-dias" />
+        <meta property="og:url" content="https://viajamejor.net/atenas-3-dias" />
         <meta property="og:image" content="https://images.pexels.com/photos/5380087/pexels-photo-5380087.jpeg" />
 
         <meta name="twitter:card" content="summary_large_image" />
@@ -39,15 +39,58 @@ const AthensGuidePage = () => {
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "TravelGuide",
-            "name": "Atenas en 3 Días: Guía Completa",
+            "name": "Atenas en 3 Días - Guía Completa",
             "description": "Guía detallada para visitar Atenas en 3 días con itinerario optimizado",
-            "image": "https://images.pexels.com/photos/5380087/pexels-photo-5380087.jpeg",
             "author": {
-              "@type": "Organization",
-              "name": "Consejos Viaje"
+              "@type": "Person",
+              "name": "Viaja Mejor"
             },
-            "datePublished": "2026-01-09",
-            "inLanguage": "es"
+            "publisher": {
+              "@type": "Organization",
+              "name": "Viaja Mejor",
+              "logo": {
+                "@type": "ImageObject",
+                "url": "https://viajamejor.net/apple-touch-icon.png"
+              }
+            },
+            "datePublished": "2025-01-09",
+            "dateModified": "2026-06-01",
+            "image": "https://images.pexels.com/photos/5380087/pexels-photo-5380087.jpeg",
+            "url": "https://viajamejor.net/atenas-3-dias",
+            "inLanguage": "es",
+            "about": {
+              "@type": "Place",
+              "name": "Atenas",
+              "@id": "https://www.wikidata.org/wiki/Q1524"
+            },
+            "itinerary": [
+              {
+                "@type": "TouristTrip",
+                "name": "Día 1: Acrópolis y Centro Histórico",
+                "description": "Acrópolis, Partenón, Ágora Antigua y barrio de Plaka"
+              },
+              {
+                "@type": "TouristTrip",
+                "name": "Día 2: Museos y Vida Local",
+                "description": "Museo Arqueológico, Monastiraki, Psyrri y gastronomía griega"
+              },
+              {
+                "@type": "TouristTrip",
+                "name": "Día 3: Costa y Despedida",
+                "description": "Riviera ateniense, Cabo Sunión o barrios alternativos"
+              }
+            ]
+          })}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://viajamejor.net/" },
+              { "@type": "ListItem", "position": 2, "name": "Guías", "item": "https://viajamejor.net/guias" },
+              { "@type": "ListItem", "position": 3, "name": "Atenas en 3 Días" }
+            ]
           })}
         </script>
       </Helmet>
