@@ -98,9 +98,9 @@ const CheapDestinationsArticle: React.FC<CheapDestinationsArticleProps> = ({ onB
           <div className="space-y-8">
             {destinations.map((dest, index) => (
               <section key={dest.num} className="bg-white border border-stone-200 rounded-sm p-7 md:p-9">
-                <div className="flex items-start justify-between gap-4 mb-3">
+                <div className="flex items-baseline gap-3 mb-3">
+                  <span className="text-3xl md:text-4xl font-serif text-teal-300 leading-none">{index + 1}.</span>
                   <h2 className="font-serif text-xl md:text-2xl text-gray-900">{dest.name}</h2>
-                  <span className="text-3xl md:text-4xl font-serif text-teal-200 leading-none flex-shrink-0">{index + 1}</span>
                 </div>
                 <p className="text-xs text-gray-500 font-medium uppercase tracking-wider mb-5">{dest.subtitle}</p>
 

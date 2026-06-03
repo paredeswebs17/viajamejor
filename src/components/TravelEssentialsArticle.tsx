@@ -149,9 +149,9 @@ const TravelEssentialsArticle: React.FC<TravelEssentialsArticleProps> = ({ onBac
           <div className="space-y-8">
             {products.map((product, index) => (
               <section key={product.num} className="bg-white border border-stone-200 rounded-sm p-7 md:p-9">
-                <div className="flex items-start justify-between gap-4 mb-4">
+                <div className="flex items-baseline gap-3 mb-4">
+                  <span className="text-3xl md:text-4xl font-serif text-teal-300 leading-none">{index + 1}.</span>
                   <h2 className="font-serif text-xl md:text-2xl text-gray-900">{product.title}</h2>
-                  <span className="text-3xl md:text-4xl font-serif text-teal-200 leading-none flex-shrink-0">{index + 1}</span>
                 </div>
                 <p className="text-gray-600 leading-relaxed mb-6">
                   {product.description}

@@ -81,9 +81,9 @@ const AccommodationArticle: React.FC<AccommodationArticleProps> = ({ onBack }) =
 
             {/* Booking */}
             <section className="bg-white border border-stone-200 rounded-sm p-7 md:p-9">
-              <div className="flex items-start justify-between gap-4 mb-4">
+              <div className="flex items-baseline gap-3 mb-4">
+                <span className="text-3xl md:text-4xl font-serif text-teal-300 leading-none">1.</span>
                 <h2 className="font-serif text-xl md:text-2xl text-gray-900">Booking: comodidad y cancelacion flexible</h2>
-                <span className="text-3xl md:text-4xl font-serif text-teal-200 leading-none flex-shrink-0">1</span>
               </div>
               <p className="text-gray-600 leading-relaxed mb-4">
                 <strong>Uso Booking sobre todo cuando quiero algo rapido, seguro y con posibilidad de cancelacion gratuita.</strong> Es mi primera opcion para viajes de trabajo, escapadas de fin de semana o cuando llego tarde a un destino y necesito algo garantizado.
@@ -112,9 +112,9 @@ const AccommodationArticle: React.FC<AccommodationArticleProps> = ({ onBack }) =
 
             {/* Airbnb */}
             <section className="bg-white border border-stone-200 rounded-sm p-7 md:p-9">
-              <div className="flex items-start justify-between gap-4 mb-4">
+              <div className="flex items-baseline gap-3 mb-4">
+                <span className="text-3xl md:text-4xl font-serif text-teal-300 leading-none">2.</span>
                 <h2 className="font-serif text-xl md:text-2xl text-gray-900">Airbnb: ideal para estancias largas o en grupo</h2>
-                <span className="text-3xl md:text-4xl font-serif text-teal-200 leading-none flex-shrink-0">2</span>
               </div>
               <p className="text-gray-600 leading-relaxed mb-4">
                 <strong>Me gusta Airbnb cuando viajo en pareja o con amigos y quiero algo mas "hogareno".</strong> Especialmente para estancias de una semana o mas, donde tener cocina y lavadora marca la diferencia.
@@ -151,9 +151,9 @@ const AccommodationArticle: React.FC<AccommodationArticleProps> = ({ onBack }) =
 
             {/* Hostelworld */}
             <section className="bg-white border border-stone-200 rounded-sm p-7 md:p-9">
-              <div className="flex items-start justify-between gap-4 mb-4">
+              <div className="flex items-baseline gap-3 mb-4">
+                <span className="text-3xl md:text-4xl font-serif text-teal-300 leading-none">3.</span>
                 <h2 className="font-serif text-xl md:text-2xl text-gray-900">Hostelworld: para mochileros y viajeros low-cost</h2>
-                <span className="text-3xl md:text-4xl font-serif text-teal-200 leading-none flex-shrink-0">3</span>
               </div>
               <p className="text-gray-600 leading-relaxed mb-4">
                 <strong>Cuando viajo solo o busco ahorrar al maximo, Hostelworld me ha salvado muchas veces.</strong> No solo por los precios, sino porque es la mejor forma de conocer otros viajeros.

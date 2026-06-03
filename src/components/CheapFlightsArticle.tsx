@@ -88,9 +88,9 @@ const CheapFlightsArticle: React.FC<CheapFlightsArticleProps> = ({ onBack }) => 
 
             {/* Trick 1 */}
             <section className="bg-white border border-stone-200 rounded-sm p-7 md:p-9">
-              <div className="flex items-start justify-between gap-4 mb-4">
+              <div className="flex items-baseline gap-3 mb-4">
+                <span className="text-3xl md:text-4xl font-serif text-teal-300 leading-none">1.</span>
                 <h2 className="font-serif text-xl md:text-2xl text-gray-900">Usa Kiwi.com para buscar vuelos baratos</h2>
-                <span className="text-3xl md:text-4xl font-serif text-teal-200 leading-none flex-shrink-0">1</span>
               </div>
               <p className="text-gray-600 leading-relaxed mb-4">
                 Mi rutina siempre empieza aqui. <strong>Kiwi.com es mi herramienta favorita para buscar vuelos porque te permite encontrar rutas poco habituales, conexiones raras y vuelos con escalas multiples a buen precio.</strong> Ademas, tiene funciones muy utiles para ver fechas flexibles y detectar combinaciones que otros buscadores no muestran.
@@ -110,9 +110,9 @@ const CheapFlightsArticle: React.FC<CheapFlightsArticleProps> = ({ onBack }) => 
 
             {/* Trick 2 */}
             <section className="bg-white border border-stone-200 rounded-sm p-7 md:p-9">
-              <div className="flex items-start justify-between gap-4 mb-4">
+              <div className="flex items-baseline gap-3 mb-4">
+                <span className="text-3xl md:text-4xl font-serif text-teal-300 leading-none">2.</span>
                 <h2 className="font-serif text-xl md:text-2xl text-gray-900">Se flexible con fechas y aeropuertos</h2>
-                <span className="text-3xl md:text-4xl font-serif text-teal-200 leading-none flex-shrink-0">2</span>
               </div>
               <p className="text-gray-600 leading-relaxed mb-4">
                 <strong>La flexibilidad es tu mejor amiga.</strong> Si puedes moverte 3 dias en tus fechas,
@@ -133,9 +133,9 @@ const CheapFlightsArticle: React.FC<CheapFlightsArticleProps> = ({ onBack }) => 
 
             {/* Trick 3 */}
             <section className="bg-white border border-stone-200 rounded-sm p-7 md:p-9">
-              <div className="flex items-start justify-between gap-4 mb-4">
+              <div className="flex items-baseline gap-3 mb-4">
+                <span className="text-3xl md:text-4xl font-serif text-teal-300 leading-none">3.</span>
                 <h2 className="font-serif text-xl md:text-2xl text-gray-900">Busca en modo incognito (y mejor aun: usa una VPN)</h2>
-                <span className="text-3xl md:text-4xl font-serif text-teal-200 leading-none flex-shrink-0">3</span>
               </div>
               <p className="text-gray-600 leading-relaxed mb-4">
                 <strong>Este truco me ha ahorrado cientos de euros.</strong> Las webs de vuelos rastrean tus busquedas
@@ -158,9 +158,9 @@ const CheapFlightsArticle: React.FC<CheapFlightsArticleProps> = ({ onBack }) => 
 
             {/* Trick 4 */}
             <section className="bg-white border border-stone-200 rounded-sm p-7 md:p-9">
-              <div className="flex items-start justify-between gap-4 mb-4">
+              <div className="flex items-baseline gap-3 mb-4">
+                <span className="text-3xl md:text-4xl font-serif text-teal-300 leading-none">4.</span>
                 <h2 className="font-serif text-xl md:text-2xl text-gray-900">Reserva con antelacion (pero no demasiado)</h2>
-                <span className="text-3xl md:text-4xl font-serif text-teal-200 leading-none flex-shrink-0">4</span>
               </div>
               <p className="text-gray-600 leading-relaxed mb-4">
                 <strong>El timing es crucial.</strong> Despues de analizar mis compras de vuelos durante anos,
@@ -188,9 +188,9 @@ const CheapFlightsArticle: React.FC<CheapFlightsArticleProps> = ({ onBack }) => 
 
             {/* Trick 5 */}
             <section className="bg-white border border-stone-200 rounded-sm p-7 md:p-9">
-              <div className="flex items-start justify-between gap-4 mb-4">
+              <div className="flex items-baseline gap-3 mb-4">
+                <span className="text-3xl md:text-4xl font-serif text-teal-300 leading-none">5.</span>
                 <h2 className="font-serif text-xl md:text-2xl text-gray-900">Aprovecha alertas de precios y apps</h2>
-                <span className="text-3xl md:text-4xl font-serif text-teal-200 leading-none flex-shrink-0">5</span>
               </div>
               <p className="text-gray-600 leading-relaxed mb-4">
                 <strong>Deja que la tecnologia trabaje por ti.</strong> Configuro alertas de precios en Skyscanner
@@ -209,9 +209,9 @@ const CheapFlightsArticle: React.FC<CheapFlightsArticleProps> = ({ onBack }) => 
 
             {/* Trick 6 */}
             <section className="bg-white border border-stone-200 rounded-sm p-7 md:p-9">
-              <div className="flex items-start justify-between gap-4 mb-4">
+              <div className="flex items-baseline gap-3 mb-4">
+                <span className="text-3xl md:text-4xl font-serif text-teal-300 leading-none">6.</span>
                 <h2 className="font-serif text-xl md:text-2xl text-gray-900">Vuela entre semana si puedes</h2>
-                <span className="text-3xl md:text-4xl font-serif text-teal-200 leading-none flex-shrink-0">6</span>
               </div>
               <p className="text-gray-600 leading-relaxed mb-4">
                 <strong>Los fines de semana son caros, punto.</strong> Si tienes flexibilidad laboral, volar martes,
@@ -225,9 +225,9 @@ const CheapFlightsArticle: React.FC<CheapFlightsArticleProps> = ({ onBack }) => 
 
             {/* Trick 7 */}
             <section className="bg-white border border-stone-200 rounded-sm p-7 md:p-9">
-              <div className="flex items-start justify-between gap-4 mb-4">
+              <div className="flex items-baseline gap-3 mb-4">
+                <span className="text-3xl md:text-4xl font-serif text-teal-300 leading-none">7.</span>
                 <h2 className="font-serif text-xl md:text-2xl text-gray-900">Usa tarjetas de puntos o millas</h2>
-                <span className="text-3xl md:text-4xl font-serif text-teal-200 leading-none flex-shrink-0">7</span>
               </div>
               <p className="text-gray-600 leading-relaxed mb-4">
                 <strong>Las millas no son solo para viajeros de negocios.</strong> Tengo una tarjeta que me da millas
@@ -242,9 +242,9 @@ const CheapFlightsArticle: React.FC<CheapFlightsArticleProps> = ({ onBack }) => 
 
             {/* Trick 8 */}
             <section className="bg-white border border-stone-200 rounded-sm p-7 md:p-9">
-              <div className="flex items-start justify-between gap-4 mb-4">
+              <div className="flex items-baseline gap-3 mb-4">
+                <span className="text-3xl md:text-4xl font-serif text-teal-300 leading-none">8.</span>
                 <h2 className="font-serif text-xl md:text-2xl text-gray-900">Considera aerolineas low-cost (pero revisa extras)</h2>
-                <span className="text-3xl md:text-4xl font-serif text-teal-200 leading-none flex-shrink-0">8</span>
               </div>
               <p className="text-gray-600 leading-relaxed mb-4">
                 <strong>Ryanair, Vueling, EasyJet... pueden ser geniales si sabes usarlas.</strong> El truco esta en
@@ -263,9 +263,9 @@ const CheapFlightsArticle: React.FC<CheapFlightsArticleProps> = ({ onBack }) => 
 
             {/* Trick 9 */}
             <section className="bg-white border border-stone-200 rounded-sm p-7 md:p-9">
-              <div className="flex items-start justify-between gap-4 mb-4">
+              <div className="flex items-baseline gap-3 mb-4">
+                <span className="text-3xl md:text-4xl font-serif text-teal-300 leading-none">9.</span>
                 <h2 className="font-serif text-xl md:text-2xl text-gray-900">Evita fechas de alta demanda</h2>
-                <span className="text-3xl md:text-4xl font-serif text-teal-200 leading-none flex-shrink-0">9</span>
               </div>
               <p className="text-gray-600 leading-relaxed mb-4">
                 <strong>Esto parece obvio, pero mucha gente no lo tiene en cuenta.</strong> Navidad, Semana Santa,
@@ -284,9 +284,9 @@ const CheapFlightsArticle: React.FC<CheapFlightsArticleProps> = ({ onBack }) => 
 
             {/* Trick 10 */}
             <section className="bg-white border border-stone-200 rounded-sm p-7 md:p-9">
-              <div className="flex items-start justify-between gap-4 mb-4">
+              <div className="flex items-baseline gap-3 mb-4">
+                <span className="text-3xl md:text-4xl font-serif text-teal-300 leading-none">10.</span>
                 <h2 className="font-serif text-xl md:text-2xl text-gray-900">Borra cookies o cambia de pais con VPN</h2>
-                <span className="text-3xl md:text-4xl font-serif text-teal-200 leading-none flex-shrink-0">10</span>
               </div>
               <p className="text-gray-600 leading-relaxed mb-4">
                 <strong>Este es mi truco secreto favorito.</strong> Las webs de vuelos usan cookies para rastrear
