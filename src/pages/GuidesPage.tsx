@@ -95,7 +95,7 @@ const GuidesPage = () => {
     {
       id: 'christmas',
       title: 'Mercados Navideños',
-      subtitle: 'Europa 2026-2027',
+      subtitle: 'Europa 2025-2026',
       description: 'Los mejores mercados navideños de Budapest, Praga, Viena y Roma.',
       image: 'https://images.pexels.com/photos/19361199/pexels-photo-19361199.jpeg',
       days: 'Temporada',

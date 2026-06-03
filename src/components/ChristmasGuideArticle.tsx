@@ -25,7 +25,7 @@ Volver a guías
     </div>
 
     <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-4 leading-tight">
-      Mercados Navideños de Europa 2026-2027: Budapest, Praga, Viena y Roma
+      Mercados Navideños de Europa 2025-2026: Budapest, Praga, Viena y Roma
     </h1>
 
     <div className="flex flex-col gap-4 mb-6 items-start">
@@ -40,7 +40,7 @@ Volver a guías
         </span>
         <span className="flex items-center bg-gray-100 px-3 py-2 rounded-full shadow-sm">
           <Calendar className="h-3 w-3 mr-1" />
-          Navidad 2026-2027
+          Navidad 2025-2026
         </span>
       </div>
       
@@ -48,7 +48,7 @@ Volver a guías
         onClick={() => {
           if (navigator.share) {
             navigator.share({
-              title: 'Mercados Navideños Europa 2026-2027 | Guía Completa',
+              title: 'Mercados Navideños Europa 2025-2026 | Guía Completa',
               text: 'Descubre los mejores mercados navideños de Budapest, Praga, Viena y Roma',
               url: window.location.href,
             })
@@ -57,7 +57,7 @@ Volver a guías
             navigator.clipboard.writeText(window.location.href).then(() => {
               alert('Enlace copiado al portapapeles');
             }).catch(() => {
-              window.open(`https://twitter.com/intent/tweet?text=Mercados Navideños Europa 2026-2027&url=${encodeURIComponent(window.location.href)}`, '_blank');
+              window.open(`https://twitter.com/intent/tweet?text=Mercados Navideños Europa 2025-2026&url=${encodeURIComponent(window.location.href)}`, '_blank');
             });
           }
         }}
@@ -86,7 +86,7 @@ Volver a guías
     </p>
     <p className="text-gray-700 mb-4">
       En esta guía encontrarás información actualizada y contrastada sobre los mejores mercados navideños de 
-      <strong> Budapest, Praga, Viena y Roma</strong> para la temporada 2026-2027, con fechas oficiales, 
+      <strong> Budapest, Praga, Viena y Roma</strong> para la temporada 2025-2026, con fechas oficiales, 
       horarios, ubicaciones y consejos para disfrutar al máximo de esta experiencia única.
     </p>
     <div className="bg-white rounded-xl p-4 border border-green-200">
@@ -128,9 +128,9 @@ Volver a guías
     </p>
 
     <div className="bg-red-50 border border-red-200 rounded-xl p-6 mb-6">
-      <h3 className="text-lg font-bold text-gray-900 mb-4">📅 Fechas Oficiales 2026-2027</h3>
+      <h3 className="text-lg font-bold text-gray-900 mb-4">📅 Fechas Oficiales 2025-2026</h3>
       <p className="text-gray-700 mb-2">
-        Los principales mercados navideños de Budapest abren <strong>del 14 de noviembre de 2026 al 1 de enero de 2026</strong>.
+        Los principales mercados navideños de Budapest abren <strong>del 14 de noviembre de 2025 al 1 de enero de 2026</strong>.
       </p>
     </div>
 
@@ -147,7 +147,7 @@ Volver a guías
         <div>
           <h4 className="font-semibold text-gray-900 mb-2">📍 Info Práctica:</h4>
           <ul className="text-sm text-gray-700 space-y-1 list-none">
-            <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>Fechas: 14 nov 2026 - 1 ene 2026</li>
+            <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>Fechas: 14 nov 2025 - 1 ene 2026</li>
             <li className="flex items-center"><span className="w-2 h-2 bg-amber-400 rounded-full mr-3"></span>Horario: D-J 11:00-21:00 / V-S 11:00-23:00</li>
             <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Ubicación: Vörösmarty tér</li>
             <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Pago: Solo tarjeta (no efectivo)</li>
@@ -176,7 +176,7 @@ Volver a guías
         <div>
           <h4 className="font-semibold text-gray-900 mb-2">📍 Info Práctica:</h4>
           <ul className="text-sm text-gray-700 space-y-1 list-none">
-            <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Fechas: 14 nov 2026 - 1 ene 2026</li>
+            <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Fechas: 14 nov 2025 - 1 ene 2026</li>
             <li className="flex items-center"><span className="w-2 h-2 bg-indigo-400 rounded-full mr-3"></span>Horario: 10:00-22:00 diario</li>
             <li className="flex items-center"><span className="w-2 h-2 bg-cyan-400 rounded-full mr-3"></span>Ubicación: Szent István tér</li>
           </ul>
@@ -209,7 +209,7 @@ Volver a guías
           <p className="text-sm text-gray-700 mb-2">
             El mercado más pequeño pero más bello de Budapest, con vistas espectaculares de la ciudad desde este lugar neogótico. Se celebra solo los domingos de diciembre.
           </p>
-          <p className="text-xs text-gray-600">Fechas: Domingos de diciembre 2026 (1, 8, 15, 22)</p>
+          <p className="text-xs text-gray-600">Fechas: Domingos de diciembre 2025 (1, 8, 15, 22)</p>
         </div>
 
         <div className="bg-white rounded-lg p-4 shadow-sm">
@@ -217,7 +217,7 @@ Volver a guías
           <p className="text-sm text-gray-700 mb-2">
             Junto al Castillo Vajdahunyad en el Parque de la Ciudad. Ideal para familias con niños: talleres de magia, carrusel, noria gigante y tren mágico. Entrada gratis (atracciones de pago).
           </p>
-          <p className="text-xs text-gray-600">Fechas: 6 dic 2026 - 1 ene 2026</p>
+          <p className="text-xs text-gray-600">Fechas: 6 dic 2025 - 1 ene 2026</p>
         </div>
 
         <div className="bg-white rounded-lg p-4 shadow-sm">
@@ -225,7 +225,7 @@ Volver a guías
           <p className="text-sm text-gray-700 mb-2">
             La pista de patinaje sobre hielo más grande de Europa. Abierta desde 1870. Ubicada entre la Plaza de los Héroes y el Castillo de Vajdahunyad.
           </p>
-          <p className="text-xs text-gray-600">Fechas estimadas: Med. nov 2026 - Feb 2026 (por confirmar)</p>
+          <p className="text-xs text-gray-600">Fechas estimadas: Med. nov 2025 - Feb 2026 (por confirmar)</p>
         </div>
       </div>
     </div>
@@ -306,9 +306,9 @@ Volver a guías
     </p>
 
     <div className="bg-blue-50 border border-blue-200 rounded-xl p-6 mb-6">
-      <h3 className="text-lg font-bold text-gray-900 mb-4">📅 Fechas Oficiales 2026-2027</h3>
+      <h3 className="text-lg font-bold text-gray-900 mb-4">📅 Fechas Oficiales 2025-2026</h3>
       <p className="text-gray-700 mb-2">
-        Los principales mercados navideños de Praga abren <strong>del 29 de noviembre de 2026 al 6 de enero de 2026</strong>. Algunos mercados más pequeños abren desde el 20 de noviembre.
+        Los principales mercados navideños de Praga abren <strong>del 29 de noviembre de 2025 al 6 de enero de 2026</strong>. Algunos mercados más pequeños abren desde el 20 de noviembre.
       </p>
     </div>
 
@@ -323,7 +323,7 @@ Volver a guías
         <div>
           <h4 className="font-semibold text-gray-900 mb-2">📍 Info Práctica:</h4>
           <ul className="text-sm text-gray-700 space-y-1 list-none">
-            <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>Fechas: 29 nov 2026 - 6 ene 2026</li>
+            <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>Fechas: 29 nov 2025 - 6 ene 2026</li>
             <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Horario: 10:00-22:00 diario</li>
             <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Puestos de comida: Hasta 00:00</li>
             <li className="flex items-center"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3"></span>Ubicación: Staroměstské náměstí</li>
@@ -363,7 +363,7 @@ Volver a guías
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         <div>
           <ul className="text-sm text-gray-700 space-y-1 list-none">
-            <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Fechas: 29 nov 2026 - 6 ene 2026</li>
+            <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Fechas: 29 nov 2025 - 6 ene 2026</li>
             <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Horario: 10:00-20:00 diario</li>
             <li className="flex items-center"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3"></span>Pista de patinaje sobre hielo</li>
           </ul>
@@ -388,7 +388,7 @@ Volver a guías
           <p className="text-sm text-gray-700 mb-2">
             Pequeño mercado detrás de la Catedral de San Vito. Ambiente más íntimo y menos concurrido. Perfecto para calentarse mientras visitas el castillo.
           </p>
-          <p className="text-xs text-gray-600">Fechas: 2 dic 2026 - 6 ene 2026 | Horario: L-J 9:00-18:00, V-D 9:00-19:00</p>
+          <p className="text-xs text-gray-600">Fechas: 2 dic 2025 - 6 ene 2026 | Horario: L-J 9:00-18:00, V-D 9:00-19:00</p>
         </div>
 
         <div className="bg-white rounded-lg p-4 shadow-sm">
@@ -396,7 +396,7 @@ Volver a guías
           <p className="text-sm text-gray-700 mb-2">
             Mercado con ambiente más local frente a la Iglesia de Santa Ludmila. El primero en abrir cada año. Artesanía auténtica y productos locales.
           </p>
-          <p className="text-xs text-gray-600">Fechas: 20 nov - 24 dic 2026 | Horario: 10:00-20:00</p>
+          <p className="text-xs text-gray-600">Fechas: 20 nov - 24 dic 2025 | Horario: 10:00-20:00</p>
         </div>
 
         <div className="bg-white rounded-lg p-4 shadow-sm">
@@ -404,7 +404,7 @@ Volver a guías
           <p className="text-sm text-gray-700 mb-2">
             El mercado más antiguo de Praga, con raíces desde el siglo XIII (1232). Abierto todo el año, se decora especialmente para Navidad. Menos llamativo pero con tradición centenaria.
           </p>
-          <p className="text-xs text-gray-600">Fechas: 2 dic 2026 - 6 ene 2026 | Horario: 10:00-19:00 diario</p>
+          <p className="text-xs text-gray-600">Fechas: 2 dic 2025 - 6 ene 2026 | Horario: 10:00-19:00 diario</p>
         </div>
       </div>
     </div>
@@ -488,9 +488,9 @@ Volver a guías
     </p>
 
     <div className="bg-red-50 border border-red-200 rounded-xl p-6 mb-6">
-      <h3 className="text-lg font-bold text-gray-900 mb-4">📅 Fechas Oficiales 2026-2027</h3>
+      <h3 className="text-lg font-bold text-gray-900 mb-4">📅 Fechas Oficiales 2025-2026</h3>
       <p className="text-gray-700 mb-2">
-        Los mercados navideños de Viena abren <strong>del 14 de noviembre de 2026</strong>. La mayoría cierran el <strong>23-26 de diciembre</strong>, aunque algunos se prolongan hasta el <strong>6 de enero de 2026</strong>.
+        Los mercados navideños de Viena abren <strong>del 14 de noviembre de 2025</strong>. La mayoría cierran el <strong>23-26 de diciembre</strong>, aunque algunos se prolongan hasta el <strong>6 de enero de 2026</strong>.
       </p>
     </div>
 
@@ -505,7 +505,7 @@ Volver a guías
         <div>
           <h4 className="font-semibold text-gray-900 mb-2">📍 Info Práctica:</h4>
           <ul className="text-sm text-gray-700 space-y-1 list-none">
-            <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>Fechas: 14 nov - 26 dic 2026</li>
+            <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>Fechas: 14 nov - 26 dic 2025</li>
             <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Horario: 10:00-22:00 diario</li>
             <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>24 dic: 10:00-18:30</li>
             <li className="flex items-center"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3"></span>Metro: U2 estación Rathaus</li>
@@ -539,7 +539,7 @@ Volver a guías
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
         <div>
           <ul className="text-sm text-gray-700 space-y-1 list-none">
-            <li className="flex items-center"><span className="w-2 h-2 bg-amber-400 rounded-full mr-3"></span>Fechas: 6 nov 2026 - 6 ene 2026</li>
+            <li className="flex items-center"><span className="w-2 h-2 bg-amber-400 rounded-full mr-3"></span>Fechas: 6 nov 2025 - 6 ene 2026</li>
             <li className="flex items-center"><span className="w-2 h-2 bg-orange-400 rounded-full mr-3"></span>6 nov-23 dic: 10:00-21:00</li>
             <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>24 dic: 10:00-16:00</li>
             <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>25 dic-6 ene: 10:00-19:00</li>
@@ -565,7 +565,7 @@ Volver a guías
           <p className="text-sm text-gray-700 mb-2">
             Más de 40 puestos decorados frente al palacio barroco con vistas espectaculares. Ambiente elegante y romántico, ideal para parejas. Abierto hasta Nochevieja.
           </p>
-          <p className="text-xs text-gray-600">Fechas: 14 nov - 31 dic 2026 | Horario: L-V 11:00-21:00, S-D 10:00-21:00</p>
+          <p className="text-xs text-gray-600">Fechas: 14 nov - 31 dic 2025 | Horario: L-V 11:00-21:00, S-D 10:00-21:00</p>
         </div>
 
         <div className="bg-white rounded-lg p-4 shadow-sm">
@@ -573,7 +573,7 @@ Volver a guías
           <p className="text-sm text-gray-700 mb-2">
             En el barrio bohemio de Spittelberg. Callejuelas históricas del periodo Biedermeier con productos artesanales únicos: cerámicas, joyas, diseño. Ambiente más alternativo y relajado.
           </p>
-          <p className="text-xs text-gray-600">Fechas: 14 nov - 23 dic 2026</p>
+          <p className="text-xs text-gray-600">Fechas: 14 nov - 23 dic 2025</p>
         </div>
 
         <div className="bg-white rounded-lg p-4 shadow-sm">
@@ -581,7 +581,7 @@ Volver a guías
           <p className="text-sm text-gray-700 mb-2">
             Frente a la Iglesia de San Carlos Borromeo. Enfocado en artesanías auténticas y productos hechos a mano. Ambiente artístico y alternativo.
           </p>
-          <p className="text-xs text-gray-600">Fechas: 21 nov - 23 dic 2026</p>
+          <p className="text-xs text-gray-600">Fechas: 21 nov - 23 dic 2025</p>
         </div>
 
         <div className="bg-white rounded-lg p-4 shadow-sm">
@@ -589,7 +589,7 @@ Volver a guías
           <p className="text-sm text-gray-700 mb-2">
             En el parque de atracciones junto a la famosa noria. Mercado con ambiente familiar, actuaciones en vivo y desfile de Perchten. Se extiende hasta después de Reyes.
           </p>
-          <p className="text-xs text-gray-600">Fechas: 21 nov 2026 - 6 ene 2026</p>
+          <p className="text-xs text-gray-600">Fechas: 21 nov 2025 - 6 ene 2026</p>
         </div>
       </div>
     </div>
@@ -678,7 +678,7 @@ Volver a guías
     </p>
 
     <div className="bg-green-50 border border-green-200 rounded-xl p-6 mb-6">
-      <h3 className="text-lg font-bold text-gray-900 mb-4">📅 Fechas Temporada Navideña 2026-2027</h3>
+      <h3 className="text-lg font-bold text-gray-900 mb-4">📅 Fechas Temporada Navideña 2025-2026</h3>
       <p className="text-gray-700 mb-2">
         La Navidad en Roma comienza oficialmente el <strong>8 de diciembre</strong> (Inmaculada Concepción) y se extiende hasta el <strong>6 de enero de 2026</strong> (Epifanía/día de la Befana). Los mercados principales abren <strong>desde principios de diciembre</strong>.
       </p>
@@ -695,7 +695,7 @@ Volver a guías
         <div>
           <h4 className="font-semibold text-gray-900 mb-2">📍 Info Práctica:</h4>
           <ul className="text-sm text-gray-700 space-y-1 list-none">
-            <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>Fechas: Principios dic 2026 - 6 ene 2026</li>
+            <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>Fechas: Principios dic 2025 - 6 ene 2026</li>
             <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Horario: 10:00-22:00 (orientativo)</li>
             <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Ubicación: Piazza Navona</li>
             <li className="flex items-center"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3"></span>Entrada: Gratuita</li>
@@ -729,7 +729,7 @@ Volver a guías
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
         <div>
           <ul className="text-sm text-gray-700 space-y-1 list-none">
-            <li className="flex items-center"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3"></span>Fechas: 30 nov 2026 - 6 ene 2026</li>
+            <li className="flex items-center"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3"></span>Fechas: 30 nov 2025 - 6 ene 2026</li>
             <li className="flex items-center"><span className="w-2 h-2 bg-pink-400 rounded-full mr-3"></span>Ubicación: Villa Borghese</li>
             <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Entrada: ≈12-15€ por persona</li>
           </ul>
@@ -768,13 +768,13 @@ Volver a guías
           <p className="text-sm text-gray-700 mb-2">
             Exposición de belenes artesanales de todo el mundo en el Vaticano, bajo los arcos de Plaza San Pedro. Tradición italiana desde 1976 para reafirmar la importancia del belén.
           </p>
-          <p className="text-xs text-gray-600">Fechas: Diciembre 2026 - 6 enero 2026 | Entrada gratuita</p>
+          <p className="text-xs text-gray-600">Fechas: Diciembre 2025 - 6 enero 2026 | Entrada gratuita</p>
         </div>
 
         <div className="bg-white rounded-lg p-4 shadow-sm">
           <h4 className="font-semibold text-gray-900 mb-2">🎡 Parques Temáticos Navideños</h4>
           <p className="text-sm text-gray-700 mb-2">
-            Cinecittà World: Pueblo navideño con nieve artificial, pista de patinaje, Christmas Street (8 nov 2026 - 6 ene 2026). Luneur Park: Primer parque de atracciones de Italia con decoración mágica y bosque encantado.
+            Cinecittà World: Pueblo navideño con nieve artificial, pista de patinaje, Christmas Street (8 nov 2025 - 6 ene 2026). Luneur Park: Primer parque de atracciones de Italia con decoración mágica y bosque encantado.
           </p>
         </div>
 
@@ -921,10 +921,10 @@ Volver a guías
   {/* Footer */}
   <div className="text-center text-gray-600 text-sm mt-8 mb-4">
     <p className="mb-2">
-      Guía actualizada en Octubre 2026 | Información verificada con fuentes oficiales
+      Guía actualizada en Octubre 2025 | Información verificada con fuentes oficiales
     </p>
     <p className="mb-2">
-      Fechas contrastadas de los mercados navideños 2026-2027
+      Fechas contrastadas de los mercados navideños 2025-2026
     </p>
     <p>
       ¡Que disfrutes de una Navidad mágica en Europa! 🎄✨
