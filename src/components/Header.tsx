@@ -1,12 +1,26 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Compass } from 'lucide-react';
+import { Compass, ChevronRight } from 'lucide-react';
 import { trackMenuClick } from '../utils/analytics';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
   const location = useLocation();
   const isHomePage = location.pathname === '/';
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 20);
+    };
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    handleScroll();
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  useEffect(() => {
+    setIsMenuOpen(false);
+  }, [location.pathname]);
 
   const navigationItems = [
     { id: 'inicio', label: 'Inicio', href: '/' },
@@ -19,13 +33,10 @@ const Header = () => {
   const handleMenuClick = (itemId: string, href: string) => {
     trackMenuClick(itemId);
     setIsMenuOpen(false);
-    
-    // Si es inicio, ir arriba del todo
+
     if (itemId === 'inicio') {
       window.scrollTo({ top: 0, behavior: 'smooth' });
-    }
-    // Si es un enlace con ancla y estamos en home, hacer scroll
-    else if (href.startsWith('/#') && isHomePage) {
+    } else if (href.startsWith('/#') && isHomePage) {
       const sectionId = href.substring(2);
       setTimeout(() => {
         document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' });
@@ -33,145 +44,200 @@ const Header = () => {
     }
   };
 
-  const renderNavItem = (item: { id: string, label: string, href: string }) => {
-    if (item.id === 'guias') {
-      // Para guías, siempre usar Link
+  const isActiveRoute = (item: { id: string; href: string }) => {
+    if (item.id === 'guias') return location.pathname === '/guias';
+    if (item.id === 'inicio') return location.pathname === '/';
+    return false;
+  };
+
+  const renderNavItem = (item: { id: string; label: string; href: string }) => {
+    const active = isActiveRoute(item);
+    const baseClasses = `relative py-2 px-1 text-sm font-medium tracking-wide uppercase transition-all duration-300 ${
+      active
+        ? 'text-sky-600'
+        : scrolled
+          ? 'text-gray-700 hover:text-sky-600'
+          : 'text-gray-700 hover:text-sky-600'
+    }`;
+
+    const underline = (
+      <span
+        className={`absolute bottom-0 left-0 h-0.5 bg-gradient-to-r from-sky-500 to-emerald-500 transition-all duration-300 rounded-full ${
+          active ? 'w-full' : 'w-0 group-hover:w-full'
+        }`}
+      />
+    );
+
+    if (item.id === 'guias' || item.id === 'inicio' || (item.href.startsWith('/#') && !isHomePage)) {
       return (
         <Link
           key={item.id}
           to={item.href}
-          className="text-gray-700 hover:text-sky-500 transition-colors font-medium"
+          className={`${baseClasses} group`}
           onClick={() => handleMenuClick(item.id, item.href)}
         >
           {item.label}
+          {underline}
         </Link>
-      );
-    } else if (item.href.startsWith('/#') && !isHomePage) {
-      // Si no estamos en home y es un enlace con ancla, usar Link
-      return (
-        <Link
-          key={item.id}
-          to={item.href}
-          className="text-gray-700 hover:text-sky-500 transition-colors font-medium"
-          onClick={() => handleMenuClick(item.id, item.href)}
-        >
-          {item.label}
-        </Link>
-      );
-    } else if (item.id === 'inicio') {
-      // Para el enlace de inicio, siempre usar Link
-      return (
-        <Link
-          key={item.id}
-          to={item.href}
-          className="text-gray-700 hover:text-sky-500 transition-colors font-medium"
-          onClick={() => handleMenuClick(item.id, item.href)}
-        >
-          {item.label}
-        </Link>
-      );
-    } else {
-      // Para enlaces con ancla en la misma página, usar button
-      return (
-        <button
-          key={item.id}
-          onClick={() => handleMenuClick(item.id, item.href)}
-          className="text-gray-700 hover:text-sky-500 transition-colors font-medium"
-        >
-          {item.label}
-        </button>
       );
     }
+
+    return (
+      <button
+        key={item.id}
+        onClick={() => handleMenuClick(item.id, item.href)}
+        className={`${baseClasses} group`}
+      >
+        {item.label}
+        {underline}
+      </button>
+    );
   };
 
   return (
-    <header className="bg-white shadow-sm fixed top-0 w-full z-50" role="banner">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
-          <Link 
-            to="/"
-            className="flex items-center group"
-            onClick={() => trackMenuClick('logo')}
-          >
-            <div className="relative">
-              <div className="w-10 h-10 bg-gradient-to-br from-sky-500 to-emerald-500 rounded-xl flex items-center justify-center shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105">
-                <Compass className="h-6 w-6 text-white" />
+    <>
+      <header
+        className={`fixed top-0 w-full z-50 transition-all duration-500 ${
+          scrolled
+            ? 'bg-white/90 backdrop-blur-xl shadow-[0_1px_3px_rgba(0,0,0,0.05),0_8px_24px_rgba(0,0,0,0.04)]'
+            : 'bg-white/70 backdrop-blur-md'
+        }`}
+        role="banner"
+      >
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex justify-between items-center h-16 lg:h-18">
+            {/* Logo */}
+            <Link
+              to="/"
+              className="flex items-center group"
+              onClick={() => trackMenuClick('logo')}
+            >
+              <div className="relative">
+                <div className={`w-9 h-9 bg-gradient-to-br from-sky-500 to-emerald-500 rounded-lg flex items-center justify-center transition-all duration-300 group-hover:scale-110 group-hover:rotate-3 ${scrolled ? 'shadow-md' : 'shadow-sm'}`}>
+                  <Compass className="h-5 w-5 text-white" strokeWidth={2.5} />
+                </div>
               </div>
-              <div className="absolute -top-1 -right-1 w-3 h-3 bg-orange-400 rounded-full animate-pulse"></div>
-            </div>
-            <div className="ml-3">
-              <span className="text-2xl font-bold bg-gradient-to-r from-sky-600 to-emerald-600 bg-clip-text text-transparent">
-                Viaja
-              </span>
-              <span className="text-2xl font-bold text-gray-800 ml-1">
-                Mejor
-              </span>
-              <div className="text-xs text-gray-500 font-medium tracking-wide -mt-1">
-                TU COMPAÑERO DE VIAJES
+              <div className="ml-2.5">
+                <div className="flex items-baseline">
+                  <span className="text-xl font-bold bg-gradient-to-r from-sky-600 to-emerald-600 bg-clip-text text-transparent">
+                    Viaja
+                  </span>
+                  <span className="text-xl font-bold text-gray-800 ml-0.5">
+                    Mejor
+                  </span>
+                </div>
               </div>
-            </div>
-          </Link>
-          
-          <nav className="hidden md:flex space-x-8" role="navigation">
-            {navigationItems.map(renderNavItem)}
-          </nav>
+            </Link>
 
-          <button
-            className="md:hidden"
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-            aria-expanded={isMenuOpen}
-            aria-label={isMenuOpen ? "Cerrar menú" : "Abrir menú"}
-          >
-            {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-          </button>
+            {/* Desktop nav */}
+            <nav className="hidden md:flex items-center gap-6 lg:gap-8" role="navigation">
+              {navigationItems.map(renderNavItem)}
+            </nav>
+
+            {/* Mobile toggle */}
+            <button
+              className={`md:hidden relative w-10 h-10 flex items-center justify-center rounded-lg transition-all duration-300 ${
+                isMenuOpen
+                  ? 'bg-gray-100 text-gray-900'
+                  : 'text-gray-600 hover:bg-gray-50 hover:text-gray-900'
+              }`}
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+              aria-expanded={isMenuOpen}
+              aria-label={isMenuOpen ? 'Cerrar menu' : 'Abrir menu'}
+            >
+              <span className="sr-only">{isMenuOpen ? 'Cerrar' : 'Menu'}</span>
+              <div className="relative w-5 h-5">
+                <span
+                  className={`absolute left-0 block w-5 h-0.5 bg-current transform transition-all duration-300 ${
+                    isMenuOpen ? 'top-2.5 rotate-45' : 'top-1'
+                  }`}
+                />
+                <span
+                  className={`absolute left-0 top-2.5 block w-5 h-0.5 bg-current transition-all duration-300 ${
+                    isMenuOpen ? 'opacity-0 scale-x-0' : 'opacity-100'
+                  }`}
+                />
+                <span
+                  className={`absolute left-0 block w-5 h-0.5 bg-current transform transition-all duration-300 ${
+                    isMenuOpen ? 'top-2.5 -rotate-45' : 'top-4'
+                  }`}
+                />
+              </div>
+            </button>
+          </div>
         </div>
 
-        {isMenuOpen && (  
-          <div className="md:hidden">
-            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t shadow-lg" style={{ backgroundColor: 'rgba(245, 250, 255, 0.95)', backdropFilter: 'blur(4px)' }}>
-              {navigationItems.map((item) => (
-                item.id === 'guias' ? (
+        {/* Subtle border */}
+        <div className={`absolute bottom-0 left-0 right-0 h-px transition-opacity duration-500 ${scrolled ? 'opacity-100' : 'opacity-0'}`}>
+          <div className="h-full bg-gradient-to-r from-transparent via-gray-200 to-transparent" />
+        </div>
+      </header>
+
+      {/* Mobile menu overlay */}
+      <div
+        className={`fixed inset-0 z-40 md:hidden transition-all duration-300 ${
+          isMenuOpen ? 'visible' : 'invisible'
+        }`}
+      >
+        {/* Backdrop */}
+        <div
+          className={`absolute inset-0 bg-black/20 backdrop-blur-sm transition-opacity duration-300 ${
+            isMenuOpen ? 'opacity-100' : 'opacity-0'
+          }`}
+          onClick={() => setIsMenuOpen(false)}
+        />
+
+        {/* Panel */}
+        <div
+          className={`absolute top-16 left-0 right-0 bg-white/95 backdrop-blur-xl shadow-xl border-t border-gray-100 transform transition-all duration-300 ease-out ${
+            isMenuOpen ? 'translate-y-0 opacity-100' : '-translate-y-4 opacity-0'
+          }`}
+        >
+          <nav className="max-w-7xl mx-auto px-4 py-4 space-y-1">
+            {navigationItems.map((item) => {
+              const active = isActiveRoute(item);
+              const content = (
+                <div className="flex items-center justify-between">
+                  <span className={`font-medium ${active ? 'text-sky-600' : 'text-gray-800'}`}>
+                    {item.label}
+                  </span>
+                  <ChevronRight className={`w-4 h-4 transition-transform duration-200 ${active ? 'text-sky-500' : 'text-gray-400'}`} />
+                </div>
+              );
+
+              const classes = `block w-full text-left px-4 py-3.5 rounded-xl transition-all duration-200 ${
+                active
+                  ? 'bg-sky-50/80 border border-sky-100'
+                  : 'hover:bg-gray-50 border border-transparent'
+              }`;
+
+              if (item.id === 'guias' || item.id === 'inicio' || (item.href.startsWith('/#') && !isHomePage)) {
+                return (
                   <Link
                     key={item.id}
                     to={item.href}
-                    className="block px-3 py-2 text-gray-700 hover:text-sky-500 hover:bg-sky-50 font-medium rounded-lg transition-colors"
+                    className={classes}
                     onClick={() => handleMenuClick(item.id, item.href)}
                   >
-                    {item.label}
+                    {content}
                   </Link>
-                ) : item.href.startsWith('/#') && !isHomePage ? (
-                  <Link
-                    key={item.id}
-                    to={item.href}
-                    className="block px-3 py-2 text-gray-700 hover:text-sky-500 hover:bg-sky-50 font-medium rounded-lg transition-colors"
-                    onClick={() => handleMenuClick(item.id, item.href)}
-                  >
-                    {item.label}
-                  </Link>
-                ) : item.id === 'inicio' ? (
-                  <Link
-                    key={item.id}
-                    to={item.href}
-                    className="block px-3 py-2 text-gray-700 hover:text-sky-500 hover:bg-sky-50 font-medium rounded-lg transition-colors"
-                    onClick={() => handleMenuClick(item.id, item.href)}
-                  >
-                    {item.label}
-                  </Link>
-                ) : (
-                  <button
-                    key={item.id}
-                    onClick={() => handleMenuClick(item.id, item.href)}
-                    className="block w-full text-left px-3 py-2 text-gray-700 hover:text-sky-500 hover:bg-sky-50 font-medium rounded-lg transition-colors"
-                  >
-                    {item.label}
-                  </button>
-                )
-              ))}
-            </div>
-          </div>
-        )}
+                );
+              }
+
+              return (
+                <button
+                  key={item.id}
+                  onClick={() => handleMenuClick(item.id, item.href)}
+                  className={classes}
+                >
+                  {content}
+                </button>
+              );
+            })}
+          </nav>
+        </div>
       </div>
-    </header>
+    </>
   );
 };
 
