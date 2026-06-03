@@ -5,7 +5,8 @@
   "version": "1.0.0",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "tsc && vite build && node prerender.js",
+    "build:no-prerender": "tsc && vite build",
     "preview": "vite preview"
   },
   "dependencies": {
@@ -30,6 +31,7 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.5",
     "postcss": "^8.4.32",
+    "puppeteer": "^25.1.0",
     "tailwindcss": "^3.3.6",
     "terser": "^5.43.1",
     "typescript": "^5.3.3",
