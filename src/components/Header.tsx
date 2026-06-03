@@ -1,23 +1,12 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, Compass } from 'lucide-react';
 import { trackMenuClick } from '../utils/analytics';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
   const location = useLocation();
   const isHomePage = location.pathname === '/';
-
-  useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 20);
-    window.addEventListener('scroll', onScroll, { passive: true });
-    return () => window.removeEventListener('scroll', onScroll);
-  }, []);
-
-  useEffect(() => {
-    setIsMenuOpen(false);
-  }, [location.pathname]);
 
   const navigationItems = [
     { id: 'inicio', label: 'Inicio', href: '/' },
@@ -30,10 +19,13 @@ const Header = () => {
   const handleMenuClick = (itemId: string, href: string) => {
     trackMenuClick(itemId);
     setIsMenuOpen(false);
-
+    
+    // Si es inicio, ir arriba del todo
     if (itemId === 'inicio') {
       window.scrollTo({ top: 0, behavior: 'smooth' });
-    } else if (href.startsWith('/#') && isHomePage) {
+    }
+    // Si es un enlace con ancla y estamos en home, hacer scroll
+    else if (href.startsWith('/#') && isHomePage) {
       const sectionId = href.substring(2);
       setTimeout(() => {
         document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' });
@@ -41,135 +33,143 @@ const Header = () => {
     }
   };
 
-  const renderNavLink = (item: { id: string; label: string; href: string }) => {
-    const isActive = item.href === '/'
-      ? location.pathname === '/'
-      : location.pathname.startsWith(item.href.replace('/#', '/'));
-
-    const className = `relative py-1 text-[13px] tracking-wide uppercase font-medium transition-colors duration-200 ${
-      isActive ? 'text-gray-900' : 'text-gray-500 hover:text-gray-900'
-    }`;
-
-    const underline = isActive ? (
-      <span className="absolute -bottom-0.5 left-0 w-full h-[1.5px] bg-gray-900 rounded-full" />
-    ) : (
-      <span className="absolute -bottom-0.5 left-0 w-0 h-[1.5px] bg-gray-900 rounded-full transition-all duration-300 group-hover:w-full" />
-    );
-
-    if (item.id === 'guias' || item.id === 'inicio' || (item.href.startsWith('/#') && !isHomePage)) {
+  const renderNavItem = (item: { id: string, label: string, href: string }) => {
+    if (item.id === 'guias') {
+      // Para guías, siempre usar Link
       return (
         <Link
           key={item.id}
           to={item.href}
-          className={`group ${className}`}
+          className="text-gray-700 hover:text-sky-500 transition-colors font-medium"
           onClick={() => handleMenuClick(item.id, item.href)}
         >
           {item.label}
-          {underline}
         </Link>
       );
+    } else if (item.href.startsWith('/#') && !isHomePage) {
+      // Si no estamos en home y es un enlace con ancla, usar Link
+      return (
+        <Link
+          key={item.id}
+          to={item.href}
+          className="text-gray-700 hover:text-sky-500 transition-colors font-medium"
+          onClick={() => handleMenuClick(item.id, item.href)}
+        >
+          {item.label}
+        </Link>
+      );
+    } else if (item.id === 'inicio') {
+      // Para el enlace de inicio, siempre usar Link
+      return (
+        <Link
+          key={item.id}
+          to={item.href}
+          className="text-gray-700 hover:text-sky-500 transition-colors font-medium"
+          onClick={() => handleMenuClick(item.id, item.href)}
+        >
+          {item.label}
+        </Link>
+      );
+    } else {
+      // Para enlaces con ancla en la misma página, usar button
+      return (
+        <button
+          key={item.id}
+          onClick={() => handleMenuClick(item.id, item.href)}
+          className="text-gray-700 hover:text-sky-500 transition-colors font-medium"
+        >
+          {item.label}
+        </button>
+      );
     }
-
-    return (
-      <button
-        key={item.id}
-        onClick={() => handleMenuClick(item.id, item.href)}
-        className={`group ${className}`}
-      >
-        {item.label}
-        {underline}
-      </button>
-    );
   };
 
   return (
-    <header
-      className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-        scrolled
-          ? 'bg-white/90 backdrop-blur-md shadow-[0_1px_0_0_rgba(0,0,0,0.04)]'
-          : 'bg-white/70 backdrop-blur-sm'
-      }`}
-      role="banner"
-    >
-      <div className="max-w-6xl mx-auto px-5 sm:px-8">
-        <div className="flex justify-between items-center h-[60px]">
-          {/* Logo */}
-          <Link
+    <header className="bg-white shadow-sm fixed top-0 w-full z-50" role="banner">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex justify-between items-center h-16">
+          <Link 
             to="/"
-            className="flex items-center gap-3 group"
+            className="flex items-center group"
             onClick={() => trackMenuClick('logo')}
           >
-            <div className="w-9 h-9 bg-slate-900 rounded-lg flex items-center justify-center transition-transform duration-200 group-hover:scale-105">
-              <Compass className="h-[18px] w-[18px] text-teal-400" strokeWidth={1.8} />
+            <div className="relative">
+              <div className="w-10 h-10 bg-gradient-to-br from-sky-500 to-emerald-500 rounded-xl flex items-center justify-center shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105">
+                <Compass className="h-6 w-6 text-white" />
+              </div>
+              <div className="absolute -top-1 -right-1 w-3 h-3 bg-orange-400 rounded-full animate-pulse"></div>
             </div>
-            <div className="flex flex-col -space-y-0.5">
-              <span className="text-[17px] font-semibold tracking-tight text-gray-900 leading-tight">
-                Viaja Mejor
+            <div className="ml-3">
+              <span className="text-2xl font-bold bg-gradient-to-r from-sky-600 to-emerald-600 bg-clip-text text-transparent">
+                Viaja
               </span>
-              <span className="text-[10px] uppercase tracking-[.15em] text-gray-400 font-medium">
-                Tu guía de viajes
+              <span className="text-2xl font-bold text-gray-800 ml-1">
+                Mejor
               </span>
+              <div className="text-xs text-gray-500 font-medium tracking-wide -mt-1">
+                TU COMPAÑERO DE VIAJES
+              </div>
             </div>
           </Link>
-
-          {/* Desktop nav */}
-          <nav className="hidden md:flex items-center gap-7" role="navigation">
-            {navigationItems.map(renderNavLink)}
+          
+          <nav className="hidden md:flex space-x-8" role="navigation">
+            {navigationItems.map(renderNavItem)}
           </nav>
 
-          {/* Mobile toggle */}
           <button
-            className="md:hidden relative w-9 h-9 flex items-center justify-center rounded-full hover:bg-gray-100 transition-colors"
+            className="md:hidden"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             aria-expanded={isMenuOpen}
-            aria-label={isMenuOpen ? 'Cerrar menú' : 'Abrir menú'}
+            aria-label={isMenuOpen ? "Cerrar menú" : "Abrir menú"}
           >
-            <span className={`absolute transition-all duration-200 ${isMenuOpen ? 'opacity-0 rotate-90 scale-75' : 'opacity-100 rotate-0 scale-100'}`}>
-              <Menu size={18} strokeWidth={1.8} />
-            </span>
-            <span className={`absolute transition-all duration-200 ${isMenuOpen ? 'opacity-100 rotate-0 scale-100' : 'opacity-0 -rotate-90 scale-75'}`}>
-              <X size={18} strokeWidth={1.8} />
-            </span>
+            {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
           </button>
         </div>
-      </div>
 
-      {/* Mobile menu */}
-      <div
-        className={`md:hidden overflow-hidden transition-all duration-300 ease-in-out ${
-          isMenuOpen ? 'max-h-80 opacity-100' : 'max-h-0 opacity-0'
-        }`}
-      >
-        <nav className="px-5 pb-6 pt-2 bg-white/95 backdrop-blur-md border-t border-gray-100/80">
-          <div className="flex flex-col gap-1">
-            {navigationItems.map((item) => {
-              const isLink = item.id === 'guias' || item.id === 'inicio' || (item.href.startsWith('/#') && !isHomePage);
-
-              if (isLink) {
-                return (
+        {isMenuOpen && (  
+          <div className="md:hidden">
+            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t shadow-lg" style={{ backgroundColor: 'rgba(245, 250, 255, 0.95)', backdropFilter: 'blur(4px)' }}>
+              {navigationItems.map((item) => (
+                item.id === 'guias' ? (
                   <Link
                     key={item.id}
                     to={item.href}
-                    className="px-3 py-2.5 text-[14px] text-gray-600 hover:text-gray-900 font-medium rounded-lg hover:bg-gray-50 transition-colors"
+                    className="block px-3 py-2 text-gray-700 hover:text-sky-500 hover:bg-sky-50 font-medium rounded-lg transition-colors"
                     onClick={() => handleMenuClick(item.id, item.href)}
                   >
                     {item.label}
                   </Link>
-                );
-              }
-
-              return (
-                <button
-                  key={item.id}
-                  onClick={() => handleMenuClick(item.id, item.href)}
-                  className="text-left px-3 py-2.5 text-[14px] text-gray-600 hover:text-gray-900 font-medium rounded-lg hover:bg-gray-50 transition-colors"
-                >
-                  {item.label}
-                </button>
-              );
-            })}
+                ) : item.href.startsWith('/#') && !isHomePage ? (
+                  <Link
+                    key={item.id}
+                    to={item.href}
+                    className="block px-3 py-2 text-gray-700 hover:text-sky-500 hover:bg-sky-50 font-medium rounded-lg transition-colors"
+                    onClick={() => handleMenuClick(item.id, item.href)}
+                  >
+                    {item.label}
+                  </Link>
+                ) : item.id === 'inicio' ? (
+                  <Link
+                    key={item.id}
+                    to={item.href}
+                    className="block px-3 py-2 text-gray-700 hover:text-sky-500 hover:bg-sky-50 font-medium rounded-lg transition-colors"
+                    onClick={() => handleMenuClick(item.id, item.href)}
+                  >
+                    {item.label}
+                  </Link>
+                ) : (
+                  <button
+                    key={item.id}
+                    onClick={() => handleMenuClick(item.id, item.href)}
+                    className="block w-full text-left px-3 py-2 text-gray-700 hover:text-sky-500 hover:bg-sky-50 font-medium rounded-lg transition-colors"
+                  >
+                    {item.label}
+                  </button>
+                )
+              ))}
+            </div>
           </div>
-        </nav>
+        )}
       </div>
     </header>
   );
