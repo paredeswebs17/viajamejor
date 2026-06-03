@@ -118,54 +118,58 @@ const BlogSection: React.FC<BlogSectionProps> = ({ showTitle = true }) => {
         )}
 
         <div className="reveal">
-          <div className="flex overflow-x-auto gap-5 pb-4 scrollbar-hide snap-x snap-mandatory -mx-6 px-6">
-            {articles.map((article) => (
-              <Link
-                key={article.id}
-                to={article.url}
-                className="flex-shrink-0 w-64 sm:w-72 group snap-start"
-              >
-                <div className="relative aspect-[3/4] overflow-hidden rounded-sm">
-                  <img
-                    src={article.image}
-                    alt={`${article.title} - ${article.category}`}
-                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                    loading="lazy"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/25 to-transparent" />
+          <div className="relative -mx-6 lg:-mx-10">
+            <div className="flex overflow-x-auto gap-5 pb-4 scrollbar-hide snap-x snap-mandatory scroll-pl-6 lg:scroll-pl-10">
+              <div className="flex-shrink-0" style={{ minWidth: '4px' }} aria-hidden="true" />
+              {articles.map((article) => (
+                <Link
+                  key={article.id}
+                  to={article.url}
+                  className="flex-shrink-0 w-64 sm:w-72 group snap-start"
+                >
+                  <div className="relative aspect-[3/4] overflow-hidden rounded-sm">
+                    <img
+                      src={article.image}
+                      alt={`${article.title} - ${article.category}`}
+                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                      loading="lazy"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/25 to-transparent" />
 
-                  {article.featured && (
-                    <div className="absolute top-4 left-4">
-                      <span className="inline-flex items-center gap-1 bg-white/90 backdrop-blur-sm text-gray-900 px-2.5 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider">
-                        <Star size={10} className="text-amber-500" />
-                        Destacado
+                    {article.featured && (
+                      <div className="absolute top-4 left-4">
+                        <span className="inline-flex items-center gap-1 bg-white/90 backdrop-blur-sm text-gray-900 px-2.5 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider">
+                          <Star size={10} className="text-amber-500" />
+                          Destacado
+                        </span>
+                      </div>
+                    )}
+
+                    <div className="absolute top-4 right-4">
+                      <span className="bg-white/90 backdrop-blur-sm text-gray-900 px-2.5 py-1 rounded-full text-[10px] font-medium uppercase tracking-wider">
+                        {article.category}
                       </span>
                     </div>
-                  )}
 
-                  <div className="absolute top-4 right-4">
-                    <span className="bg-white/90 backdrop-blur-sm text-gray-900 px-2.5 py-1 rounded-full text-[10px] font-medium uppercase tracking-wider">
-                      {article.category}
-                    </span>
-                  </div>
-
-                  <div className="absolute bottom-0 left-0 right-0 p-5">
-                    <h3 className="font-serif text-lg md:text-xl text-white leading-tight mb-2">
-                      {article.title}
-                    </h3>
-                    <div className="flex items-center justify-between">
-                      <span className="text-teal-300 text-xs font-semibold">
-                        {article.savings}
-                      </span>
-                      <div className="flex items-center text-white/70 group-hover:text-teal-300 transition-colors">
-                        <span className="text-xs font-medium uppercase tracking-wider">Leer</span>
-                        <ArrowRight size={12} className="ml-1 transform group-hover:translate-x-1 transition-transform" />
+                    <div className="absolute bottom-0 left-0 right-0 p-5">
+                      <h3 className="font-serif text-lg md:text-xl text-white leading-tight mb-2">
+                        {article.title}
+                      </h3>
+                      <div className="flex items-center justify-between">
+                        <span className="text-teal-300 text-xs font-semibold">
+                          {article.savings}
+                        </span>
+                        <div className="flex items-center text-white/70 group-hover:text-teal-300 transition-colors">
+                          <span className="text-xs font-medium uppercase tracking-wider">Leer</span>
+                          <ArrowRight size={12} className="ml-1 transform group-hover:translate-x-1 transition-transform" />
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-              </Link>
-            ))}
+                </Link>
+              ))}
+              <div className="flex-shrink-0" style={{ minWidth: '4px' }} aria-hidden="true" />
+            </div>
           </div>
         </div>
       </div>
