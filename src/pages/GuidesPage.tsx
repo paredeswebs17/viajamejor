@@ -181,10 +181,6 @@ const GuidesPage = () => {
             <span className="text-[9px] uppercase tracking-[.2em] text-white/40">guías completas</span>
           </div>
           <div>
-            <span className="block text-2xl font-serif text-teal-400">10+</span>
-            <span className="text-[9px] uppercase tracking-[.2em] text-white/40">ciudades</span>
-          </div>
-          <div>
             <span className="block text-2xl font-serif text-teal-400">100%</span>
             <span className="text-[9px] uppercase tracking-[.2em] text-white/40">gratuitas</span>
           </div>
