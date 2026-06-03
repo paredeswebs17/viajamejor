@@ -1542,7 +1542,7 @@ Volver a guías
       </div>
 
       <div className="bg-white rounded-lg p-4 shadow-sm mb-4">
-        <h5 className="font-semibold text-gray-900 mb-3">Billetes y Tarifas (2025):</h5>
+        <h5 className="font-semibold text-gray-900 mb-3">Billetes y Tarifas (2026):</h5>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm text-gray-700">
           <div>
             <p className="mb-2"><strong>Billete sencillo:</strong> 3,40 € (1 hora)</p>
@@ -1594,7 +1594,7 @@ Volver a guías
           </ul>
         </div>
         <div>
-          <h4 className="font-semibold text-gray-900 mb-2">💰 Precios 2025:</h4>
+          <h4 className="font-semibold text-gray-900 mb-2">💰 Precios 2026:</h4>
           <ul className="text-sm text-gray-700 space-y-1">
             <li>• 24 horas: 65 €</li>
             <li>• 48 horas: 85 €</li>
@@ -1705,7 +1705,7 @@ Volver a guías
   {/* Footer */}
   <div className="text-center text-gray-600 text-sm mt-8">
     <p className="mb-2">
-      Guía actualizada en Septiembre 2025 | Información verificada y precios actuales
+      Guía actualizada en Septiembre 2026 | Información verificada y precios actuales
     </p>
     <p>
       ¡Que disfrutes Ámsterdam al máximo!

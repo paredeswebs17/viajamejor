@@ -1577,7 +1577,7 @@ src="https://images.pexels.com/photos/32795906/pexels-photo-32795906.jpeg"
     {/* Footer */}
     <div className="text-center text-gray-600 text-sm mt-8">
       <p className="mb-2">
-        Guía actualizada en Septiembre 2025 | Información verificada y precios actuales
+        Guía actualizada en Septiembre 2026 | Información verificada y precios actuales
       </p>
       <p>
         ¡Que disfrutes Praga al máximo!

@@ -12,23 +12,23 @@ const CheapDestinationsPage = () => {
   return (
     <>
       <Helmet>
-        <title>Destinos Baratos 2025: 15 Países Donde Gasté Menos de 30€/día | Viaja Mejor</title>
-        <meta name="description" content="Descubre los 15 destinos más baratos para 2025. Albania, Vietnam, Georgia... Países increíbles con presupuestos detallados y consejos reales." />
-        <meta name="keywords" content="destinos baratos 2025, países baratos, viajar barato, destinos económicos, albania barata, vietnam barato" />
-        <link rel="canonical" href="https://viajamejor.net/destinos/paises-baratos-2025" />
+        <title>Destinos Baratos 2026: 15 Países Donde Gasté Menos de 30€/día | Viaja Mejor</title>
+        <meta name="description" content="Descubre los 15 destinos más baratos para 2026. Albania, Vietnam, Georgia... Países increíbles con presupuestos detallados y consejos reales." />
+        <meta name="keywords" content="destinos baratos 2026, países baratos, viajar barato, destinos económicos, albania barata, vietnam barato" />
+        <link rel="canonical" href="https://viajamejor.net/destinos/paises-baratos-2026" />
         
-        <meta property="og:title" content="Destinos Baratos 2025: 15 Países Donde Gasté Menos de 30€/día" />
-        <meta property="og:description" content="Los destinos más económicos para 2025 con presupuestos reales y consejos probados." />
+        <meta property="og:title" content="Destinos Baratos 2026: 15 Países Donde Gasté Menos de 30€/día" />
+        <meta property="og:description" content="Los destinos más económicos para 2026 con presupuestos reales y consejos probados." />
         <meta property="og:type" content="article" />
-        <meta property="og:url" content="https://viajamejor.net/destinos/paises-baratos-2025" />
+        <meta property="og:url" content="https://viajamejor.net/destinos/paises-baratos-2026" />
         <meta property="og:image" content="https://images.pexels.com/photos/1371360/pexels-photo-1371360.jpeg?auto=compress&cs=tinysrgb&w=1200" />
         
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Article",
-            "headline": "Destinos baratos para 2025: mis 15 favoritos donde gasté menos de 30€/día",
-            "description": "Guía completa de los destinos más económicos para viajar en 2025 con presupuestos detallados",
+            "headline": "Destinos baratos para 2026: mis 15 favoritos donde gasté menos de 30€/día",
+            "description": "Guía completa de los destinos más económicos para viajar en 2026 con presupuestos detallados",
             "author": {
               "@type": "Person",
               "name": "Viaja Mejor"
@@ -44,7 +44,7 @@ const CheapDestinationsPage = () => {
             "datePublished": "2024-02-10",
             "dateModified": "2024-12-01",
             "image": "https://images.pexels.com/photos/1371360/pexels-photo-1371360.jpeg?auto=compress&cs=tinysrgb&w=1200",
-            "url": "https://viajamejor.net/destinos/paises-baratos-2025"
+            "url": "https://viajamejor.net/destinos/paises-baratos-2026"
           })}
         </script>
       </Helmet>

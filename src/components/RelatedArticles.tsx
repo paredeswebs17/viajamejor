@@ -41,8 +41,8 @@ const RelatedArticles: React.FC<RelatedArticlesProps> = ({
       description: 'Cuándo usar cada plataforma'
     },
     {
-      title: 'Destinos baratos para 2025: 15 favoritos',
-      url: '/destinos/paises-baratos-2025',
+      title: 'Destinos baratos para 2026: 15 favoritos',
+      url: '/destinos/paises-baratos-2026',
       category: 'Destinos',
       readTime: '10 min',
       description: 'Países donde gasté menos de 30€/día'

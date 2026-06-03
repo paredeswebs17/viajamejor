@@ -1708,7 +1708,7 @@ Volver a guías
         <h5 className="font-semibold text-gray-900 mb-3">Información Práctica del Sistema:</h5>
 
         <div className="mb-4">
-          <h6 className="font-semibold text-blue-700 mb-2">Billetes disponibles hasta 31 dic 2025:</h6>
+          <h6 className="font-semibold text-blue-700 mb-2">Billetes disponibles hasta 31 dic 2026:</h6>
           <div className="text-sm text-gray-700 space-y-1 ml-3">
             <p>• Billete sencillo: 2,40€ (válido 80 min)</p>
             <p>• Billete 24h: 8,00€</p>
@@ -1793,7 +1793,7 @@ Volver a guías
 
   {/* PRESUPUESTOS */}
   <div id="presupuestos" className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
-    <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">💰 Presupuestos Detallados por Estilo - Septiembre 2025</h2>
+    <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">💰 Presupuestos Detallados por Estilo - Septiembre 2026</h2>
 
     <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-6">
       <div className="bg-green-50 border border-green-200 rounded-xl p-6 shadow-sm">
@@ -1835,7 +1835,7 @@ Volver a guías
   {/* Footer */}
   <div className="text-center text-gray-600 text-sm mt-8">
     <p className="mb-2">
-      Guía actualizada en Septiembre 2025 | Información verificada y precios actuales
+      Guía actualizada en Septiembre 2026 | Información verificada y precios actuales
     </p>
     <p>
       Que disfrutes Viena al máximo!

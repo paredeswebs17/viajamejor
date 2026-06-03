@@ -2270,7 +2270,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
           </ul>
         </div>
         <div>
-          <h5 className="font-semibold text-gray-900 mb-2">🎄 Winter Wonderland 2025:</h5>
+          <h5 className="font-semibold text-gray-900 mb-2">🎄 Winter Wonderland 2026:</h5>
           <ul className="text-sm text-gray-700 space-y-1 list-none">
             <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span><strong>14 Nov - 1 Ene 2026</strong></li>
             <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Entrada: Gratis off-peak (mañanas entre semana), 5-7.50€ peak (tardes/fines de semana)</li>
@@ -2870,7 +2870,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
 
       {/* PRESUPUESTOS */}
       <div id="presupuestos" className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
-        <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">💰 Presupuestos Detallados - Noviembre 2025</h2>
+        <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">💰 Presupuestos Detallados - Noviembre 2026</h2>
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
           <div className="bg-green-50 border border-green-200 rounded-xl p-6 shadow-sm">
             <h3 className="text-lg font-bold text-green-800 mb-3">🎒 Mochilero</h3>
@@ -2908,7 +2908,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
       {/* Footer */}
       <div className="text-center text-gray-600 text-sm mt-8">
         <p className="mb-2">
-          Guía actualizada diciembre 2025 | Precios y horarios verificados
+          Guía actualizada diciembre 2026 | Precios y horarios verificados
         </p>
         <p className="text-xs text-gray-500">
           Recomendamos verificar horarios y precios en páginas oficiales antes de tu visita, ya que pueden sufrir cambios.

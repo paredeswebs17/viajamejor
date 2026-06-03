@@ -10,13 +10,13 @@ const RomaGuidePage: React.FC = () => {
   return (
     <>
       <Helmet>
-        <title>Roma en 3 Días: Guía Completa 2025 con Coliseo y Vaticano | Consejos de Viaje</title>
-        <meta name="description" content="Guía completa para visitar Roma en 3 días: Coliseo, Vaticano, Fontana di Trevi, Trastevere. Itinerario optimizado, precios actualizados 2025 y consejos probados." />
+        <title>Roma en 3 Días: Guía Completa 2026 con Coliseo y Vaticano | Consejos de Viaje</title>
+        <meta name="description" content="Guía completa para visitar Roma en 3 días: Coliseo, Vaticano, Fontana di Trevi, Trastevere. Itinerario optimizado, precios actualizados 2026 y consejos probados." />
         <meta name="keywords" content="Roma 3 días, guía Roma, Coliseo entradas, Museos Vaticanos, Capilla Sixtina, qué ver en Roma, itinerario Roma, Trastevere, Fontana di Trevi, transporte Roma" />
         <link rel="canonical" href="https://consejosdeviaje.com/guias/roma" />
 
         <meta property="og:title" content="Roma en 3 Días: Coliseo, Vaticano, Trastevere y más" />
-        <meta property="og:description" content="Descubre Roma con nuestro itinerario de 3 días: Coliseo + Foro + Vaticano + mejores barrios. Precios, horarios y consejos actualizados 2025." />
+        <meta property="og:description" content="Descubre Roma con nuestro itinerario de 3 días: Coliseo + Foro + Vaticano + mejores barrios. Precios, horarios y consejos actualizados 2026." />
         <meta property="og:type" content="article" />
         <meta property="og:url" content="https://consejosdeviaje.com/guias/roma" />
 

@@ -950,7 +950,7 @@ return (
         <div className="bg-orange-50 border border-orange-200 rounded-xl p-4 mb-4">
           <h3 className="font-semibold text-orange-800 mb-2">IMPORTANTE - Nueva restricción</h3>
           <p className="text-orange-700 text-sm">
-            Desde agosto 2025, solo se permite entrada a mayores de 14 años en los balnearios Széchenyi.
+            Desde agosto 2026, solo se permite entrada a mayores de 14 años en los balnearios Széchenyi.
           </p>
         </div>
 
@@ -1686,7 +1686,7 @@ src="https://images.pexels.com/photos/30734949/pexels-photo-30734949.jpeg"
 
   <div className="text-center text-gray-600 text-sm mt-8">
     <p className="mb-2">
-      Guía actualizada en Septiembre 2025 | Información verificada y precios actuales
+      Guía actualizada en Septiembre 2026 | Información verificada y precios actuales
     </p>
     <p>
       Que disfrutes Budapest al máximo!

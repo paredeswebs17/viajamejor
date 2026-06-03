@@ -70,9 +70,9 @@ const gallery = [
 
 // Testimonios
 const testimonials = [
-  { name: 'Laura & Javier', date: 'Marzo 2025', rating: 5, text: 'El viaje de nuestra vida. Antonio nos cuidó en cada detalle. El atardecer en las dunas y la noche en el campamento son inolvidables.', origin: 'Madrid' },
-  { name: 'Marta G.', date: 'Febrero 2025', rating: 5, text: 'Organización impecable. Todo salió perfecto, los riads preciosos y el guía encantador. Volveremos seguro.', origin: 'Barcelona' },
-  { name: 'Familia Ruiz', date: 'Enero 2025', rating: 5, text: 'Viajamos con dos niños y fue una experiencia mágica. El trato personalizado marca la diferencia. 100% recomendado.', origin: 'Valencia' },
+  { name: 'Laura & Javier', date: 'Marzo 2026', rating: 5, text: 'El viaje de nuestra vida. Antonio nos cuidó en cada detalle. El atardecer en las dunas y la noche en el campamento son inolvidables.', origin: 'Madrid' },
+  { name: 'Marta G.', date: 'Febrero 2026', rating: 5, text: 'Organización impecable. Todo salió perfecto, los riads preciosos y el guía encantador. Volveremos seguro.', origin: 'Barcelona' },
+  { name: 'Familia Ruiz', date: 'Enero 2026', rating: 5, text: 'Viajamos con dos niños y fue una experiencia mágica. El trato personalizado marca la diferencia. 100% recomendado.', origin: 'Valencia' },
 ];
 
 // FAQ

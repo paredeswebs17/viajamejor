@@ -365,7 +365,7 @@ export default function MoroccoRoutePage() {
                       </label>
                       <label className="block">
                         <span className="text-[10px] uppercase tracking-wider text-gray-500 font-medium">Fechas aprox.</span>
-                        <input placeholder="Octubre 2025" className="mt-1 w-full bg-white border border-gray-200 rounded-lg px-3.5 py-3 text-sm text-gray-900 placeholder:text-gray-400 focus:outline-none focus:border-amber-400 transition-colors" />
+                        <input placeholder="Octubre 2026" className="mt-1 w-full bg-white border border-gray-200 rounded-lg px-3.5 py-3 text-sm text-gray-900 placeholder:text-gray-400 focus:outline-none focus:border-amber-400 transition-colors" />
                       </label>
                     </div>
                     <textarea rows={3} value={formData.message} onChange={e => setFormData({ ...formData, message: e.target.value })} placeholder="¿Algo que quieras contarnos?" className="w-full bg-white border border-gray-200 rounded-lg px-3.5 py-3 text-sm text-gray-900 placeholder:text-gray-400 focus:outline-none focus:border-amber-400 transition-colors resize-none" />

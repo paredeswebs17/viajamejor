@@ -95,7 +95,7 @@ const GuidesPage = () => {
     {
       id: 'christmas',
       title: 'Mercados Navideños',
-      subtitle: 'Europa 2025-2026',
+      subtitle: 'Europa 2026-2027',
       description: 'Los mejores mercados navideños de Budapest, Praga, Viena y Roma.',
       image: 'https://images.pexels.com/photos/19361199/pexels-photo-19361199.jpeg',
       days: 'Temporada',
@@ -201,7 +201,7 @@ const GuidesPage = () => {
             <span className="text-[9px] uppercase tracking-[.2em] text-white/40">gratuitas</span>
           </div>
           <div>
-            <span className="block text-2xl font-serif text-teal-400">2025</span>
+            <span className="block text-2xl font-serif text-teal-400">2026</span>
             <span className="text-[9px] uppercase tracking-[.2em] text-white/40">actualizadas</span>
           </div>
         </div>
@@ -353,7 +353,7 @@ const GuidesPage = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {[
               { icon: <MapPin size={20} />, title: 'Itinerario día a día', desc: 'Hora por hora, optimizado para no perder tiempo' },
-              { icon: <span className="text-lg">💰</span>, title: 'Presupuesto real', desc: 'Desglosado con precios actualizados 2025' },
+              { icon: <span className="text-lg">💰</span>, title: 'Presupuesto real', desc: 'Desglosado con precios actualizados 2026' },
               { icon: <span className="text-lg">🍽️</span>, title: 'Restaurantes probados', desc: 'Recomendaciones locales con precios' },
               { icon: <span className="text-lg">💡</span>, title: 'Trucos y tips', desc: 'Consejos que solo un local conoce' },
             ].map((item, i) => (

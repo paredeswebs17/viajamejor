@@ -13,7 +13,7 @@ const LondonGuidePage: React.FC = () => {
   return (
     <>
       <Helmet>
-        <title>Londres en 3 Días: Guía Completa con Itinerario Optimizado 2025</title>
+        <title>Londres en 3 Días: Guía Completa con Itinerario Optimizado 2026</title>
         <meta
           name="description"
           content="Guía completa de Londres en 3 días con itinerario detallado. Big Ben, Tower Bridge, Museo Británico, Notting Hill. Incluye transporte, alojamiento, restaurantes y consejos prácticos para tu viaje a Londres."
@@ -24,7 +24,7 @@ const LondonGuidePage: React.FC = () => {
         />
         <link rel="canonical" href="https://consejosviaje.com/guias/londres" />
 
-        <meta property="og:title" content="Londres en 3 Días: Guía Completa 2025" />
+        <meta property="og:title" content="Londres en 3 Días: Guía Completa 2026" />
         <meta property="og:description" content="Descubre Londres con nuestro itinerario optimizado de 3 días. Big Ben, Tower Bridge, Museo Británico, Notting Hill y mucho más." />
         <meta property="og:type" content="article" />
         <meta property="og:url" content="https://consejosviaje.com/guias/londres" />
@@ -33,14 +33,14 @@ const LondonGuidePage: React.FC = () => {
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Article",
-            "headline": "Londres en 3 Días: Guía Completa con Itinerario Optimizado 2025",
+            "headline": "Londres en 3 Días: Guía Completa con Itinerario Optimizado 2026",
             "description": "Guía completa de Londres en 3 días con itinerario detallado, transporte, alojamiento y restaurantes",
             "author": {
               "@type": "Organization",
               "name": "Consejos de Viaje"
             },
-            "datePublished": "2025-01-01",
-            "dateModified": "2025-01-01"
+            "datePublished": "2026-01-01",
+            "dateModified": "2026-01-01"
           })}
         </script>
       </Helmet>

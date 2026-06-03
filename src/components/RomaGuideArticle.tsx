@@ -799,7 +799,7 @@ Volver a guías
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
           <div>
-            <h5 className="font-semibold text-gray-900 mb-2">🎫 Precios 2025 (Web Oficial):</h5>
+            <h5 className="font-semibold text-gray-900 mb-2">🎫 Precios 2026 (Web Oficial):</h5>
             <ul className="text-sm text-gray-700 space-y-1 list-none">
               <li className="flex items-center"><span className="w-2 h-2 bg-amber-400 rounded-full mr-3"></span>Entrada básica (24h): 18€</li>
               <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>Con Arena (48h): 24€</li>
@@ -819,7 +819,7 @@ Volver a guías
         </div>
 
         <div className="bg-red-100 border border-red-300 rounded-lg p-3 mb-4">
-          <p className="font-medium text-red-800 mb-1">🚨 IMPORTANTE - Sistema de Reservas 2025</p>
+          <p className="font-medium text-red-800 mb-1">🚨 IMPORTANTE - Sistema de Reservas 2026</p>
           <p className="text-red-700 text-xs mb-3">
             ⚠️ Nueva web oficial: ticketing.colosseo.it • Las entradas se abren SOLO 30 días antes de tu visita • 
             Se agotan en pocas horas tras abrirse • Hay cola virtual online antes de poder comprar • 
@@ -1728,7 +1728,7 @@ Volver a guías
       </div>
 
       <div className="bg-white rounded-lg p-4 shadow-sm mb-4">
-        <h5 className="font-semibold text-gray-900 mb-3">Billetes y Tarifas (2025):</h5>
+        <h5 className="font-semibold text-gray-900 mb-3">Billetes y Tarifas (2026):</h5>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm text-gray-700">
           <div>
             <p className="mb-2"><strong>Billete sencillo (BIT):</strong> 1,50€ (100 min)</p>
@@ -1850,7 +1850,7 @@ Volver a guías
   {/* Footer */}
   <div className="text-center text-gray-600 text-sm mt-8">
     <p className="mb-2">
-      Guía actualizada en Octubre 2025 | Información verificada y precios actuales
+      Guía actualizada en Octubre 2026 | Información verificada y precios actuales
     </p>
     <p>
       ¡Que disfrutes Roma al máximo! 🇮🇹

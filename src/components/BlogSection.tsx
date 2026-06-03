@@ -77,13 +77,13 @@ const BlogSection: React.FC<BlogSectionProps> = ({ showTitle = true }) => {
     },
     {
       id: 'cheap-destinations',
-      title: 'Destinos baratos para 2025: 15 favoritos',
+      title: 'Destinos baratos para 2026: 15 favoritos',
       excerpt: 'Países increíbles con presupuestos detallados. Albania, Vietnam, Georgia...',
       image: 'https://images.pexels.com/photos/1371360/pexels-photo-1371360.jpeg?auto=compress&cs=tinysrgb&w=800',
       readTime: '10 min',
       category: 'Destinos',
       savings: '20-30€/día',
-      url: '/destinos/paises-baratos-2025',
+      url: '/destinos/paises-baratos-2026',
       views: '51.8k'
     },
     {

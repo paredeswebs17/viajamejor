@@ -39,7 +39,7 @@ const CheapDestinationsArticle: React.FC<CheapDestinationsArticleProps> = ({ onB
             Destinos
           </span>
           <h1 className="font-serif text-3xl md:text-4xl lg:text-5xl text-white leading-[1.1] tracking-tight mb-4">
-            Destinos baratos para 2025: mis 15 favoritos
+            Destinos baratos para 2026: mis 15 favoritos
           </h1>
           <div className="flex items-center gap-4 text-white/50 text-xs">
             <span className="flex items-center gap-1.5">
@@ -67,7 +67,7 @@ const CheapDestinationsArticle: React.FC<CheapDestinationsArticleProps> = ({ onB
           <button
             onClick={() => {
               if (navigator.share) {
-                navigator.share({ title: 'Destinos baratos para 2025', url: window.location.href }).catch(() => {});
+                navigator.share({ title: 'Destinos baratos para 2026', url: window.location.href }).catch(() => {});
               } else {
                 navigator.clipboard.writeText(window.location.href).then(() => alert('Enlace copiado al portapapeles')).catch(() => {});
               }
@@ -87,7 +87,7 @@ const CheapDestinationsArticle: React.FC<CheapDestinationsArticleProps> = ({ onB
           {/* Intro */}
           <div className="mb-16">
             <p className="text-lg md:text-xl text-gray-700 leading-relaxed font-light">
-              <strong className="font-medium">Si quieres viajar en 2025 sin gastar una fortuna, esta lista te va a encantar.</strong> Aquí te comparto mis 15 destinos favoritos donde el dinero realmente rinde. He estado en todos y puedo contarte exactamente cuánto gasté y qué esperar.
+              <strong className="font-medium">Si quieres viajar en 2026 sin gastar una fortuna, esta lista te va a encantar.</strong> Aquí te comparto mis 15 destinos favoritos donde el dinero realmente rinde. He estado en todos y puedo contarte exactamente cuánto gasté y qué esperar.
             </p>
             <p className="text-lg md:text-xl text-gray-700 leading-relaxed font-light mt-5">
               Todos tienen algo en común: puedes vivir experiencias increíbles gastando menos de 30EUR al día.
@@ -152,7 +152,7 @@ const CheapDestinationsArticle: React.FC<CheapDestinationsArticleProps> = ({ onB
 
           {/* Related */}
           <div className="mt-16">
-            <RelatedArticles currentCategory="Destinos" currentArticleId="paises-baratos-2025" />
+            <RelatedArticles currentCategory="Destinos" currentArticleId="paises-baratos-2026" />
           </div>
         </div>
       </div>

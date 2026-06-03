@@ -65,7 +65,7 @@ function App() {
                 <Route path="/vuelos/vuelos-baratos" element={<CheapFlightsPage />} />
                 <Route path="/alojamiento/booking-vs-airbnb" element={<AccommodationPage />} />
                 <Route path="/finanzas/tarjetas-sin-comisiones" element={<TravelCardsPage />} />
-                <Route path="/destinos/paises-baratos-2025" element={<CheapDestinationsPage />} />
+                <Route path="/destinos/paises-baratos-2026" element={<CheapDestinationsPage />} />
                 <Route path="/seguros/iati-experiencia" element={<TravelInsurancePage />} />
                 
                 {/* GUÍAS ESPECÍFICAS */}
