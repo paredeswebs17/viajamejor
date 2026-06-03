@@ -126,12 +126,12 @@ const ExploreDestinations = () => {
         </div>
 
         <div className="reveal">
-          <div className="flex overflow-x-auto gap-5 pb-4 scrollbar-hide snap-x snap-mandatory -mx-6 px-6 lg:-mx-10 lg:px-10">
-            {guides.map((guide) => (
+          <div className="flex overflow-x-auto gap-5 pb-4 scrollbar-hide snap-x snap-mandatory -mx-6 lg:-mx-10">
+            {guides.map((guide, index) => (
               <Link
                 key={guide.id}
                 to={guide.url}
-                className="flex-shrink-0 w-64 sm:w-72 group snap-start"
+                className={`flex-shrink-0 w-64 sm:w-72 group snap-start ${index === 0 ? 'ml-6 lg:ml-10' : ''} ${index === guides.length - 1 ? 'mr-6 lg:mr-10' : ''}`}
               >
                 <div className="relative aspect-[3/4] overflow-hidden rounded-sm">
                   <img
