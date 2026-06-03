@@ -927,7 +927,7 @@ Volver a guías
       Fechas contrastadas de los mercados navideños 2025-2026
     </p>
     <p>
-      ¡Que disfrutes de una Navidad Mágica en Europa! 🎄✨
+      ¡Que disfrutes de una Navidad mágica en Europa! 🎄✨
     </p>
   </div>
 </article>

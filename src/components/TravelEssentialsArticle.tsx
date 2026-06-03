@@ -9,7 +9,7 @@ const products = [
   {
     num: '01',
     title: 'Mochila Cabina 40x20x25 (Ryanair)',
-    description: 'Viajar ligero es un arte, y esta mochila es tu mejor aliada si quieres evitar cargos extra y colas de facturacion. Es perfecta para aerolineas como Ryanair porque cumple exactamente las medidas de equipaje de mano permitido. Sus compartimentos estan pensados para aprovechar cada centimetro, y detalles como el puerto USB o el bolsillo antirrobo me han resultado comodisimos en viajes urbanos.',
+    description: 'Viajar ligero es un arte, y esta mochila es tu mejor aliada si quieres evitar cargos extra y colas de facturación. Es perfecta para aerolíneas como Ryanair porque cumple exactamente las medidas de equipaje de mano permitido. Sus compartimentos están pensados para aprovechar cada centímetro, y detalles como el puerto USB o el bolsillo antirrobo me han resultado comodísimos en viajes urbanos.',
     price: 'Desde 35EUR',
     badge: 'Certificada cabina',
     url: 'https://www.amazon.es/Hayayu-40x20x25-Mochilas-Senderismo-Impermeable/dp/B0CBVFL64Z?tag=viajamejor-21',
@@ -17,31 +17,31 @@ const products = [
   {
     num: '02',
     title: 'Adaptador Universal TESSAN',
-    description: 'No hay peor sensacion que llegar a tu destino y darte cuenta de que tu enchufe no encaja. Este adaptador te cubre en mas de 150 paises. Es ligero, compacto y me ha sacado de mas de un apuro, sobre todo por sus puertos USB y su velocidad de carga.',
+    description: 'No hay peor sensación que llegar a tu destino y darte cuenta de que tu enchufe no encaja. Este adaptador te cubre en más de 150 países. Es ligero, compacto y me ha sacado de más de un apuro, sobre todo por sus puertos USB y su velocidad de carga.',
     price: 'Desde 15EUR',
-    badge: '+150 paises',
+    badge: '+150 países',
     url: 'https://www.amazon.es/TESSAN-Adaptador-Universal-Internacional-Americano/dp/B0B2DRC76L?tag=viajamejor-21',
   },
   {
     num: '03',
-    title: 'Bateria Externa INIU 10000mAh',
-    description: 'Nada te arruina mas un viaje que quedarte sin bateria cuando mas lo necesitas. Esta powerbank es pequena y ligera, pero potente. Me permite recargar el movil un par de veces sin problemas. Ademas, es rapida y cabe en cualquier bolsillo de la mochila o pantalon.',
+    title: 'Batería Externa INIU 10000mAh',
+    description: 'Nada te arruina más un viaje que quedarte sin batería cuando más lo necesitas. Esta powerbank es pequeña y ligera, pero potente. Me permite recargar el móvil un par de veces sin problemas. Además, es rápida y cabe en cualquier bolsillo de la mochila o pantalón.',
     price: 'Desde 20EUR',
-    badge: 'Carga rapida',
+    badge: 'Carga rápida',
     url: 'https://www.amazon.es/INIU-10000mAh-Cargador-Portatil-Tel%C3%A9fono/dp/B08VD632WJ?tag=viajamejor-21',
   },
   {
     num: '04',
-    title: 'Bascula Digital MYCARBON',
-    description: 'Si eres de los que siempre duda en el aeropuerto si tu maleta pasara el control de peso, esta bascula es imprescindible. Compacta, ligera y precisa, me ha ahorrado pagar sobrecostes mas veces de las que puedo contar.',
+    title: 'Báscula Digital MYCARBON',
+    description: 'Si eres de los que siempre duda en el aeropuerto si tu maleta pasará el control de peso, esta báscula es imprescindible. Compacta, ligera y precisa, me ha ahorrado pagar sobrecostes más veces de las que puedo contar.',
     price: 'Desde 10EUR',
     badge: 'Ahorra sobrecostes',
     url: 'https://www.amazon.es/MYCARBON-Equipaje-Port%C3%A1til-Electr%C3%B3nica-Retroiluminada/dp/B01IDJM8OA?tag=viajamejor-21',
   },
   {
     num: '05',
-    title: 'Almohada Viscoelastica de Viaje',
-    description: 'El descanso en ruta es vital, y esta almohada ha sido un descubrimiento. Nada que ver con las hinchables. Es viscoelastica, se adapta perfectamente y viene con antifaz y tapones para crear tu pequeno oasis incluso en el asiento mas incomodo del mundo.',
+    title: 'Almohada Viscoelástica de Viaje',
+    description: 'El descanso en ruta es vital, y esta almohada ha sido un descubrimiento. Nada que ver con las hinchables. Es viscoelástica, se adapta perfectamente y viene con antifaz y tapones para crear tu pequeño oasis incluso en el asiento más incómodo del mundo.',
     price: 'Desde 25EUR',
     badge: 'Incluye antifaz',
     url: 'https://www.amazon.es/SOMLAW-Almohada-Viscoel%C3%A1stica-Memoria-Viajando/dp/B0B96TP1WX?tag=viajamejor-21',
@@ -49,7 +49,7 @@ const products = [
   {
     num: '06',
     title: 'Maleta Amazon Basics Mediana',
-    description: 'Ligera, robusta y con ruedas que giran 360, es perfecta para viajes de una o dos semanas. No es la mas cara ni la mas llamativa, pero su relacion calidad-precio es dificil de superar. Llevo anos usandola y aguanta el trote sin problema.',
+    description: 'Ligera, robusta y con ruedas que giran 360, es perfecta para viajes de una o dos semanas. No es la más cara ni la más llamativa, pero su relación calidad-precio es difícil de superar. Llevo años usándola y aguanta el trote sin problema.',
     price: 'Desde 50EUR',
     badge: 'Ruedas 360',
     url: 'https://www.amazon.es/Amazon-Basics-Expandible-Equipaje-Giratorias/dp/B071VG5N9D?tag=viajamejor-21',
@@ -64,10 +64,10 @@ const products = [
   },
   {
     num: '08',
-    title: 'Auriculares Cancelacion de Ruido',
-    description: 'No se como viajaba antes sin ellos. Elimina ese ruido de motor de avion, ninos llorando o charlas ajenas. Ademas, son ligeros, comodos y la bateria dura lo suficiente para un vuelo largo. Un pequeno lujo que mejora mucho la experiencia viajera.',
+    title: 'Auriculares Cancelación de Ruido',
+    description: 'No sé cómo viajaba antes sin ellos. Elimina ese ruido de motor de avión, niños llorando o charlas ajenas. Además, son ligeros, cómodos y la batería dura lo suficiente para un vuelo largo. Un pequeño lujo que mejora mucho la experiencia viajera.',
     price: 'Desde 30EUR',
-    badge: 'Cancelacion activa',
+    badge: 'Cancelación activa',
     url: 'https://www.amazon.es/Auriculares-Inal%C3%A1mbricos-Controlador-Impermeable-Inalambricos/dp/B0BCKHQGJN?tag=viajamejor-21',
   },
 ];
@@ -88,7 +88,7 @@ const TravelEssentialsArticle: React.FC<TravelEssentialsArticleProps> = ({ onBac
             Equipaje
           </span>
           <h1 className="font-serif text-3xl md:text-4xl lg:text-5xl text-white leading-[1.1] tracking-tight mb-4">
-            8 objetos imprescindibles para tu proximo viaje
+            8 objetos imprescindibles para tu próximo viaje
           </h1>
           <div className="flex items-center gap-4 text-white/50 text-xs">
             <span className="flex items-center gap-1.5">
@@ -117,7 +117,7 @@ const TravelEssentialsArticle: React.FC<TravelEssentialsArticleProps> = ({ onBac
             onClick={() => {
               if (navigator.share) {
                 navigator.share({
-                  title: '8 objetos imprescindibles para tu proximo viaje',
+                  title: '8 objetos imprescindibles para tu próximo viaje',
                   url: window.location.href,
                 }).catch(() => {});
               } else {
@@ -141,7 +141,7 @@ const TravelEssentialsArticle: React.FC<TravelEssentialsArticleProps> = ({ onBac
           {/* Intro */}
           <div className="mb-16">
             <p className="text-lg md:text-xl text-gray-700 leading-relaxed font-light">
-              <strong className="font-medium">Despues de muchos viajes, he compilado la lista definitiva de objetos que siempre llevo conmigo.</strong> Son cosas que me han ahorrado dinero, problemas y disgustos. Nada de listas genericas: esto es lo que realmente uso y recomiendo.
+              <strong className="font-medium">Después de muchos viajes, he compilado la lista definitiva de objetos que siempre llevo conmigo.</strong> Son cosas que me han ahorrado dinero, problemas y disgustos. Nada de listas genéricas: esto es lo que realmente uso y recomiendo.
             </p>
           </div>
 

@@ -87,10 +87,10 @@ const TravelAppsArticle: React.FC<TravelAppsArticleProps> = ({ onBack }) => {
               Usa Kiwi.com para buscar vuelos baratos
             </h2>
             <p className="text-gray-700 mb-4">
-             Mi rutina siempre empieza aquí <strong>Kiwi.com es mi herramienta favorita para buscar vuelos porque te permite encontrar rutas poco habituales, conexiones               raras y vuelos con escalas múltiples a buen precio. </strong> Además, tiene funciones muy útiles para ver fechas flexibles y detectar combinaciones que                   otros buscadores no muestran
+             Mi rutina siempre empieza aquí. <strong>Kiwi.com es mi herramienta favorita para buscar vuelos porque te permite encontrar rutas poco habituales, conexiones raras y vuelos con escalas múltiples a buen precio.</strong> Además, tiene funciones muy útiles para ver fechas flexibles y detectar combinaciones que otros buscadores no muestran.
             </p>
             <p className="text-gray-700 mb-4">
-             Lo que hago: <strong>busco directamente en Kiwi.com para comparar precios, explorar rutas alternativas y, si es necesario, añadir escalas.</strong> A veces                 la diferencia puede ser de 100-200€ respecto a buscar solo vuelos directos.
+             Lo que hago: <strong>busco directamente en Kiwi.com para comparar precios, explorar rutas alternativas y, si es necesario, añadir escalas.</strong> A veces la diferencia puede ser de 100-200€ respecto a buscar solo vuelos directos.
             </p>
             <div className="bg-sky-50 border border-sky-200 rounded-lg p-4">
               <p className="text-sky-800 text-sm mb-2">
@@ -219,8 +219,8 @@ const TravelAppsArticle: React.FC<TravelAppsArticleProps> = ({ onBack }) => {
               XE Currency – Convertidor de divisas
             </h2>
             <p className="text-gray-700 mb-4">
-              <strong>Para no hacer el ridículo regateando o pagando de más.</strong> XE Currency funciona offline 
-              una vez que descargas las tasas de cambio. Es súper rápida y tiene un widget que puedes poner en 
+              <strong>Para no hacer el ridículo regateando o pagando de más.</strong> XE Currency funciona offline
+              una vez que descargas las tasas de cambio. Es súper rápida y tiene un widget que puedes poner en
               la pantalla principal del móvil.
             </p>
             <p className="text-gray-700 mb-4">
@@ -241,8 +241,8 @@ const TravelAppsArticle: React.FC<TravelAppsArticleProps> = ({ onBack }) => {
             es Revolut + N26. Revolut para el día a día y N26 por si Revolut me da algún problema.
             </p>
             <p className="text-gray-700 mb-4">
-              Lo mejor: puedes cambiar dinero al tipo de cambio real desde la app, bloquear y desbloquear las 
-              tarjetas al instante, y ver todos los gastos categorizados automáticamente. <strong>Mi consejo:</strong> Empieza con Revolut, que es la más fácil de                       conseguir y usar. Cuando veas lo que ahorras en comisiones, ya no querrás volver a tu banco tradicional para viajar.
+              Lo mejor: puedes cambiar dinero al tipo de cambio real desde la app, bloquear y desbloquear las
+              tarjetas al instante, y ver todos los gastos categorizados automáticamente. <strong>Mi consejo:</strong> Empieza con Revolut, que es la más fácil de conseguir y usar. Cuando veas lo que ahorras en comisiones, ya no querrás volver a tu banco tradicional para viajar.
             </p>
             <div className="bg-indigo-50 border border-indigo-200 rounded-lg p-4">
               <p className="text-indigo-800 text-sm mb-2">
@@ -295,7 +295,7 @@ const TravelAppsArticle: React.FC<TravelAppsArticleProps> = ({ onBack }) => {
                GetYourGuide – Reservar excursiones
             </h2>
             <p className="text-gray-700 mb-4">
-              Para encontrar y reservar actividades sobre la marcha.me gusta porque ofrece una enorme variedad de excursiones, visitas guiadas y experiencias                   únicas que muchas veces no encuentras en otros sitios.
+              Para encontrar y reservar actividades sobre la marcha, me gusta porque ofrece una enorme variedad de excursiones, visitas guiadas y experiencias únicas que muchas veces no encuentras en otros sitios.
             </p>
             <p className="text-gray-700 mb-4">
               La uso cuando llego a un destino y veo que hay algo interesante que no había planificado. 

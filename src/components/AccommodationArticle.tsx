@@ -21,7 +21,7 @@ const AccommodationArticle: React.FC<AccommodationArticleProps> = ({ onBack }) =
             Alojamiento
           </span>
           <h1 className="font-serif text-3xl md:text-4xl lg:text-5xl text-white leading-[1.1] tracking-tight mb-4">
-            Donde reservo mis hoteles: Booking vs Airbnb vs Hostelworld
+            ¿Dónde reservo mis hoteles: Booking vs Airbnb vs Hostelworld?
           </h1>
           <div className="flex items-center gap-4 text-white/50 text-xs">
             <span className="flex items-center gap-1.5">
@@ -69,10 +69,10 @@ const AccommodationArticle: React.FC<AccommodationArticleProps> = ({ onBack }) =
           {/* Intro */}
           <div className="mb-16">
             <p className="text-lg md:text-xl text-gray-700 leading-relaxed font-light">
-              <strong className="font-medium">A la hora de viajar, el alojamiento es una de las decisiones mas importantes.</strong> Despues de muchos viajes y algunas experiencias que prefiero olvidar, tengo claras mis opciones favoritas.
+              <strong className="font-medium">A la hora de viajar, el alojamiento es una de las decisiones más importantes.</strong> Después de muchos viajes y algunas experiencias que prefiero olvidar, tengo claras mis opciones favoritas.
             </p>
             <p className="text-lg md:text-xl text-gray-700 leading-relaxed font-light mt-5">
-              Aqui te cuento como elijo entre Booking, Airbnb y Hostelworld segun el tipo de viaje, presupuesto y lo que busco en cada momento.
+              Aquí te cuento cómo elijo entre Booking, Airbnb y Hostelworld según el tipo de viaje, presupuesto y lo que busco en cada momento.
             </p>
           </div>
 
@@ -83,20 +83,20 @@ const AccommodationArticle: React.FC<AccommodationArticleProps> = ({ onBack }) =
             <section className="bg-white border border-stone-200 rounded-sm p-7 md:p-9">
               <div className="flex items-baseline gap-3 mb-4">
                 <span className="text-3xl md:text-4xl font-serif text-teal-300 leading-none">1.</span>
-                <h2 className="font-serif text-xl md:text-2xl text-gray-900">Booking: comodidad y cancelacion flexible</h2>
+                <h2 className="font-serif text-xl md:text-2xl text-gray-900">Booking: comodidad y cancelación flexible</h2>
               </div>
               <p className="text-gray-600 leading-relaxed mb-4">
-                <strong>Uso Booking sobre todo cuando quiero algo rapido, seguro y con posibilidad de cancelacion gratuita.</strong> Es mi primera opcion para viajes de trabajo, escapadas de fin de semana o cuando llego tarde a un destino y necesito algo garantizado.
+                <strong>Uso Booking sobre todo cuando quiero algo rápido, seguro y con posibilidad de cancelación gratuita.</strong> Es mi primera opción para viajes de trabajo, escapadas de fin de semana o cuando llego tarde a un destino y necesito algo garantizado.
               </p>
               <p className="text-gray-600 leading-relaxed mb-5">
-                Lo que mas me gusta es que puedes filtrar por puntuacion, ubicacion y servicios de forma super intuitiva. Ademas, su programa Genius me da descuentos extra y upgrades gratis en muchos hoteles.
+                Lo que más me gusta es que puedes filtrar por puntuación, ubicación y servicios de forma super intuitiva. Además, su programa Genius me da descuentos extra y upgrades gratis en muchos hoteles.
               </p>
               <div className="bg-teal-50 border border-teal-100 rounded-sm p-4 mb-6">
                 <p className="text-teal-800 text-sm font-medium mb-2">Cuando uso Booking:</p>
                 <ul className="text-teal-700 text-sm space-y-1">
                   <li>- Viajes de negocios o cuando necesito algo seguro</li>
                   <li>- Estancias cortas (1-3 noches)</li>
-                  <li>- Cuando quiero cancelacion gratuita</li>
+                  <li>- Cuando quiero cancelación gratuita</li>
                   <li>- Destinos donde no conozco la zona</li>
                 </ul>
               </div>
@@ -117,25 +117,25 @@ const AccommodationArticle: React.FC<AccommodationArticleProps> = ({ onBack }) =
                 <h2 className="font-serif text-xl md:text-2xl text-gray-900">Airbnb: ideal para estancias largas o en grupo</h2>
               </div>
               <p className="text-gray-600 leading-relaxed mb-4">
-                <strong>Me gusta Airbnb cuando viajo en pareja o con amigos y quiero algo mas "hogareno".</strong> Especialmente para estancias de una semana o mas, donde tener cocina y lavadora marca la diferencia.
+                <strong>Me gusta Airbnb cuando viajo en pareja o con amigos y quiero algo más "hogareño".</strong> Especialmente para estancias de una semana o más, donde tener cocina y lavadora marca la diferencia.
               </p>
               <p className="text-gray-600 leading-relaxed mb-5">
-                Eso si, hay que leer bien las condiciones. Algunas veces las tasas de limpieza y servicios pueden hacer que el precio final sea mucho mas alto del que aparece inicialmente.
+                Eso sí, hay que leer bien las condiciones. Algunas veces las tasas de limpieza y servicios pueden hacer que el precio final sea mucho más alto del que aparece inicialmente.
               </p>
               <div className="bg-teal-50 border border-teal-100 rounded-sm p-4 mb-4">
                 <p className="text-teal-800 text-sm font-medium mb-2">Cuando uso Airbnb:</p>
                 <ul className="text-teal-700 text-sm space-y-1">
-                  <li>- Estancias largas (una semana o mas)</li>
+                  <li>- Estancias largas (una semana o más)</li>
                   <li>- Viajes en grupo o en familia</li>
                   <li>- Cuando quiero cocinar y ahorrar en comidas</li>
-                  <li>- Lugares unicos (casas rurales, apartamentos con vistas)</li>
+                  <li>- Lugares únicos (casas rurales, apartamentos con vistas)</li>
                 </ul>
               </div>
               <div className="bg-amber-50 border border-amber-100 rounded-sm p-4 mb-6">
                 <p className="text-amber-800 text-sm font-medium mb-2">Cuidado con:</p>
                 <ul className="text-amber-700 text-sm space-y-1">
                   <li>- Tasas de limpieza que pueden duplicar el precio</li>
-                  <li>- Politicas de cancelacion mas estrictas</li>
+                  <li>- Políticas de cancelación más estrictas</li>
                   <li>- Ubicaciones que pueden estar lejos del centro</li>
                 </ul>
               </div>
@@ -166,7 +166,7 @@ const AccommodationArticle: React.FC<AccommodationArticleProps> = ({ onBack }) =
                 <ul className="text-teal-700 text-sm space-y-1">
                   <li>- Viajes en solitario donde quiero conocer gente</li>
                   <li>- Presupuesto muy ajustado</li>
-                  <li>- Destinos mochileros (Sudeste Asiatico, Sudamerica)</li>
+                  <li>- Destinos mochileros (Sudeste Asiático, Sudamérica)</li>
                   <li>- Estancias cortas en ciudades caras</li>
                 </ul>
               </div>
@@ -175,7 +175,7 @@ const AccommodationArticle: React.FC<AccommodationArticleProps> = ({ onBack }) =
                 <ul className="text-amber-700 text-sm space-y-1">
                   <li>- Menos privacidad (habitaciones compartidas)</li>
                   <li>- Puede haber ruido los fines de semana</li>
-                  <li>- Banos y cocinas compartidos</li>
+                  <li>- Baños y cocinas compartidos</li>
                 </ul>
               </div>
               <a
@@ -192,7 +192,7 @@ const AccommodationArticle: React.FC<AccommodationArticleProps> = ({ onBack }) =
           {/* Comparison table */}
           <div className="mt-16 mb-16">
             <span className="text-[10px] uppercase tracking-[.25em] text-gray-400 font-semibold mb-3 block">Resumen</span>
-            <h2 className="font-serif text-2xl md:text-3xl text-gray-900 mb-8">Comparativa rapida</h2>
+            <h2 className="font-serif text-2xl md:text-3xl text-gray-900 mb-8">Comparativa rápida</h2>
             <div className="overflow-x-auto">
               <table className="w-full text-sm">
                 <thead>
@@ -207,8 +207,8 @@ const AccommodationArticle: React.FC<AccommodationArticleProps> = ({ onBack }) =
                   <tr className="border-b border-stone-100">
                     <td className="py-3 pr-4 font-medium text-gray-900">Booking</td>
                     <td className="py-3 pr-4">Viajes cortos, hoteles</td>
-                    <td className="py-3 pr-4">Cancelacion facil, Genius</td>
-                    <td className="py-3">A veces mas caro</td>
+                    <td className="py-3 pr-4">Cancelación fácil, Genius</td>
+                    <td className="py-3">A veces más caro</td>
                   </tr>
                   <tr className="border-b border-stone-100">
                     <td className="py-3 pr-4 font-medium text-gray-900">Airbnb</td>
@@ -231,7 +231,7 @@ const AccommodationArticle: React.FC<AccommodationArticleProps> = ({ onBack }) =
           <div className="border-t border-stone-200 pt-12 mb-16">
             <h2 className="font-serif text-2xl md:text-3xl text-gray-900 mb-5">Mi estrategia personal</h2>
             <p className="text-gray-600 leading-relaxed mb-4">
-              <strong>En la practica, suelo combinar las tres plataformas en un mismo viaje.</strong> Por ejemplo, en mi ultimo viaje a Tailandia use Hostelworld para Bangkok, Airbnb para una semana en Chiang Mai, y Booking para las ultimas noches cerca del aeropuerto.
+              <strong>En la práctica, suelo combinar las tres plataformas en un mismo viaje.</strong> Por ejemplo, en mi último viaje a Tailandia use Hostelworld para Bangkok, Airbnb para una semana en Chiang Mai, y Booking para las últimas noches cerca del aeropuerto.
             </p>
             <p className="text-gray-600 leading-relaxed">
               Mi consejo es que no te cases con una sola plataforma. Cada una tiene su momento perfecto, y a veces vale la pena comparar precios entre las tres antes de decidir.

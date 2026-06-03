@@ -69,26 +69,26 @@ const TravelCardsArticle: React.FC<TravelCardsArticleProps> = ({ onBack }) => {
           {/* Intro */}
           <div className="mb-16">
             <p className="text-lg md:text-xl text-gray-700 leading-relaxed font-light">
-              <strong className="font-medium">Una de las formas mas tontas de perder dinero viajando es con comisiones bancarias.</strong> Por eso, desde hace anos viajo con tarjetas que no me cobran por pagar ni por sacar dinero. He probado varias y tengo claras mis favoritas.
+              <strong className="font-medium">Una de las formas más tontas de perder dinero viajando es con comisiones bancarias.</strong> Por eso, desde hace años viajo con tarjetas que no me cobran por pagar ni por sacar dinero. He probado varias y tengo claras mis favoritas.
             </p>
             <p className="text-lg md:text-xl text-gray-700 leading-relaxed font-light mt-5">
-              Aqui te cuento cuales uso, que me gusta de cada una, y como puedes conseguirlas tu tambien. Desde que las uso, he ahorrado cientos de euros en comisiones absurdas.
+              Aquí te cuento cuáles uso, qué me gusta de cada una, y cómo puedes conseguirlas tú también. Desde que las uso, he ahorrado cientos de euros en comisiones absurdas.
             </p>
           </div>
 
           {/* Problem section */}
           <section className="bg-white border border-stone-200 rounded-sm p-7 md:p-9 mb-10">
-            <h2 className="font-serif text-xl md:text-2xl text-gray-900 mb-5">Por que necesitas una tarjeta sin comisiones</h2>
+            <h2 className="font-serif text-xl md:text-2xl text-gray-900 mb-5">¿Por qué necesitas una tarjeta sin comisiones?</h2>
             <p className="text-gray-600 leading-relaxed mb-5">
-              <strong>Los bancos tradicionales te cobran por todo cuando viajas.</strong> En un viaje de dos semanas puedes gastarte facilmente 50-100EUR solo en comisiones:
+              <strong>Los bancos tradicionales te cobran por todo cuando viajas.</strong> En un viaje de dos semanas puedes gastarte fácilmente 50-100EUR solo en comisiones:
             </p>
             <div className="grid md:grid-cols-2 gap-4 mb-5">
               <div className="bg-amber-50 border border-amber-100 rounded-sm p-4">
                 <p className="text-amber-800 text-sm font-medium mb-2">Comisiones por cambio de divisa</p>
                 <ul className="text-amber-700 text-xs space-y-1">
                   <li>- Entre 3-4% por cada pago</li>
-                  <li>- Se aplica automaticamente</li>
-                  <li>- Se acumula rapidamente</li>
+                  <li>- Se aplica automáticamente</li>
+                  <li>- Se acumula rápidamente</li>
                 </ul>
               </div>
               <div className="bg-amber-50 border border-amber-100 rounded-sm p-4">
@@ -102,7 +102,7 @@ const TravelCardsArticle: React.FC<TravelCardsArticleProps> = ({ onBack }) => {
             </div>
             <div className="bg-teal-50 border border-teal-100 rounded-sm p-4">
               <p className="text-teal-800 text-sm">
-                <strong>Ejemplo real:</strong> En mi ultimo viaje a Japon, mi banco me habria cobrado 4EUR por cada retirada + 3.5% por cada pago. En 10 dias habria pagado mas de 80EUR en comisiones. Con Revolut: 0EUR.
+                <strong>Ejemplo real:</strong> En mi último viaje a Japón, mi banco me habría cobrado 4EUR por cada retirada + 3.5% por cada pago. En 10 días habría pagado más de 80EUR en comisiones. Con Revolut: 0EUR.
               </p>
             </div>
           </section>
@@ -122,22 +122,22 @@ const TravelCardsArticle: React.FC<TravelCardsArticleProps> = ({ onBack }) => {
               </div>
               <p className="text-xs text-teal-600 font-semibold uppercase tracking-wider mb-5">Mi favorita para viajar</p>
               <p className="text-gray-600 leading-relaxed mb-4">
-                <strong>Revolut es la tarjeta que mas uso cuando viajo.</strong> La tengo desde hace 4 anos y me ha ahorrado una fortuna en comisiones. Lo que mas me gusta es que puedes cambiar dinero a mas de 30 divisas desde la app, al tipo de cambio real.
+                <strong>Revolut es la tarjeta que más uso cuando viajo.</strong> La tengo desde hace 4 años y me ha ahorrado una fortuna en comisiones. Lo que más me gusta es que puedes cambiar dinero a más de 30 divisas desde la app, al tipo de cambio real.
               </p>
               <p className="text-gray-600 leading-relaxed mb-4">
-                <strong>Lo mejor:</strong> Retiros gratis hasta 200EUR al mes, pagos sin comisiones en cualquier divisa, app super intuitiva, tarjeta fisica gratis. Puedes bloquearla y desbloquearla desde el movil si la pierdes.
+                <strong>Lo mejor:</strong> Retiros gratis hasta 200EUR al mes, pagos sin comisiones en cualquier divisa, app súper intuitiva, tarjeta física gratis. Puedes bloquearla y desbloquearla desde el móvil si la pierdes.
               </p>
               <p className="text-gray-600 leading-relaxed mb-5">
-                <strong>Lo unico malo:</strong> A partir de 200EUR de retiradas al mes, cobra una pequena comision (2%). Pero para la mayoria de viajes es mas que suficiente.
+                <strong>Lo único malo:</strong> A partir de 200EUR de retiradas al mes, cobra una pequeña comisión (2%). Pero para la mayoría de viajes es más que suficiente.
               </p>
               <div className="bg-teal-50 border border-teal-100 rounded-sm p-4 mb-6">
-                <p className="text-teal-800 text-sm font-medium mb-2">Version gratuita incluye:</p>
+                <p className="text-teal-800 text-sm font-medium mb-2">Versión gratuita incluye:</p>
                 <ul className="text-teal-700 text-xs space-y-1">
-                  <li>- Tarjeta fisica gratuita</li>
+                  <li>- Tarjeta física gratuita</li>
                   <li>- Retiros gratis hasta 200EUR/mes</li>
                   <li>- Pagos sin comisiones en cualquier divisa</li>
                   <li>- Cambio de divisa al tipo real (entre semana)</li>
-                  <li>- App movil completa</li>
+                  <li>- App móvil completa</li>
                 </ul>
               </div>
               <a
@@ -156,20 +156,20 @@ const TravelCardsArticle: React.FC<TravelCardsArticleProps> = ({ onBack }) => {
                 <span className="text-3xl md:text-4xl font-serif text-teal-300 leading-none">2.</span>
                 <h2 className="font-serif text-xl md:text-2xl text-gray-900">N26</h2>
               </div>
-              <p className="text-xs text-gray-500 font-medium uppercase tracking-wider mb-5">Banco online aleman con IBAN europeo</p>
+              <p className="text-xs text-gray-500 font-medium uppercase tracking-wider mb-5">Banco online alemán con IBAN europeo</p>
               <p className="text-gray-600 leading-relaxed mb-4">
-                <strong>N26 es un banco 100% digital aleman que funciona muy bien para viajar por Europa.</strong> Lo que mas me gusta es que tienes un IBAN aleman real, lo que facilita muchas gestiones en Europa.
+                <strong>N26 es un banco 100% digital alemán que funciona muy bien para viajar por Europa.</strong> Lo que más me gusta es que tienes un IBAN alemán real, lo que facilita muchas gestiones en Europa.
               </p>
               <p className="text-gray-600 leading-relaxed mb-4">
-                <strong>Lo mejor:</strong> IBAN aleman real, retiros gratis en toda la eurozona, app muy intuitiva, notificaciones instantaneas.
+                <strong>Lo mejor:</strong> IBAN alemán real, retiros gratis en toda la eurozona, app muy intuitiva, notificaciones instantáneas.
               </p>
               <p className="text-gray-600 leading-relaxed mb-5">
                 <strong>Limitaciones:</strong> Fuera de Europa las condiciones no son tan buenas como Revolut. Es mas una opcion complementaria.
               </p>
               <div className="bg-stone-100 border border-stone-200 rounded-sm p-4 mb-6">
-                <p className="text-gray-700 text-sm font-medium mb-2">Version gratuita incluye:</p>
+                <p className="text-gray-700 text-sm font-medium mb-2">Versión gratuita incluye:</p>
                 <ul className="text-gray-600 text-xs space-y-1">
-                  <li>- Cuenta corriente con IBAN aleman</li>
+                  <li>- Cuenta corriente con IBAN alemán</li>
                   <li>- Tarjeta Mastercard gratuita</li>
                   <li>- 3 retiradas gratis al mes en eurozona</li>
                   <li>- Pagos sin comisiones en euros</li>
@@ -189,7 +189,7 @@ const TravelCardsArticle: React.FC<TravelCardsArticleProps> = ({ onBack }) => {
           {/* Comparison */}
           <div className="mt-16 mb-16">
             <span className="text-[10px] uppercase tracking-[.25em] text-gray-400 font-semibold mb-3 block">Resumen</span>
-            <h2 className="font-serif text-2xl text-gray-900 mb-8">Comparativa rapida</h2>
+            <h2 className="font-serif text-2xl text-gray-900 mb-8">Comparativa rápida</h2>
             <div className="overflow-x-auto">
               <table className="w-full text-sm">
                 <thead>
@@ -222,13 +222,13 @@ const TravelCardsArticle: React.FC<TravelCardsArticleProps> = ({ onBack }) => {
           <div className="border-t border-stone-200 pt-12 mb-16">
             <h2 className="font-serif text-2xl md:text-3xl text-gray-900 mb-5">Mi estrategia personal</h2>
             <p className="text-gray-600 leading-relaxed mb-4">
-              <strong>Yo no viajo solo con una tarjeta, siempre llevo al menos dos.</strong> Mi combinacion favorita es Revolut + N26. Revolut para el dia a dia y N26 por si Revolut me da algun problema.
+              <strong>Yo no viajo solo con una tarjeta, siempre llevo al menos dos.</strong> Mi combinación favorita es Revolut + N26. Revolut para el día a día y N26 por si Revolut me da algún problema.
             </p>
             <p className="text-gray-600 leading-relaxed mb-4">
-              Tambien llevo algo de efectivo en euros (por si acaso) y mi tarjeta del banco espanol como ultima opcion de emergencia.
+              También llevo algo de efectivo en euros (por si acaso) y mi tarjeta del banco español como última opción de emergencia.
             </p>
             <p className="text-gray-600 leading-relaxed">
-              <strong>Mi consejo:</strong> Empieza con Revolut, que es la mas facil de conseguir y usar. Cuando veas lo que ahorras en comisiones, ya no querras volver a tu banco tradicional para viajar.
+              <strong>Mi consejo:</strong> Empieza con Revolut, que es la más fácil de conseguir y usar. Cuando veas lo que ahorras en comisiones, ya no querrás volver a tu banco tradicional para viajar.
             </p>
           </div>
 

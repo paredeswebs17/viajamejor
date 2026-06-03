@@ -68,7 +68,7 @@ const PremiumDestinationsArticle: React.FC<PremiumDestinationsArticleProps> = ({
           <p className="text-lg text-gray-700 leading-relaxed mb-0">
             <strong>Viajar barato está genial, pero a veces hay lugares que merecen cada euro invertido.</strong> Después de años 
             viajando con presupuestos ajustados, he aprendido que algunos destinos simplemente no se pueden hacer "low-cost" 
-            sin perder su esencia. Y sabes qué? Está bien.
+            sin perder su esencia. ¿Y sabes qué? Está bien.
           </p>
           <p className="text-lg text-gray-700 leading-relaxed mt-4 mb-0">
             Estos son mis 10 destinos favoritos donde gastar más tiene mucho sentido: por su belleza única, cultura 

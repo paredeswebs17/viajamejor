@@ -74,12 +74,12 @@ const CheapFlightsArticle: React.FC<CheapFlightsArticleProps> = ({ onBack }) => 
           {/* Intro */}
           <div className="mb-16">
             <p className="text-lg md:text-xl text-gray-700 leading-relaxed font-light">
-              <strong className="font-medium">Despues de muchos viajes, he probado de todo para conseguir vuelos baratos.</strong> He perdido
-              horas comparando precios, he usado trucos raros que encontre en foros, y si, tambien he cometido errores
+              <strong className="font-medium">Después de muchos viajes, he probado de todo para conseguir vuelos baratos.</strong> He perdido
+              horas comparando precios, he usado trucos raros que encontré en foros, y sí, también he cometido errores
               que me costaron dinero extra.
             </p>
             <p className="text-lg md:text-xl text-gray-700 leading-relaxed font-light mt-5">
-              Aqui te dejo mis 10 trucos favoritos que realmente me funcionan. Con estos consejos he conseguido vuelos a Tailandia por 350EUR, a Japon por 420EUR y a Nueva York por 280EUR.
+              Aquí te dejo mis 10 trucos favoritos que realmente me funcionan. Con estos consejos he conseguido vuelos a Tailandia por 350EUR, a Japón por 420EUR y a Nueva York por 280EUR.
             </p>
           </div>
 
@@ -93,10 +93,10 @@ const CheapFlightsArticle: React.FC<CheapFlightsArticleProps> = ({ onBack }) => 
                 <h2 className="font-serif text-xl md:text-2xl text-gray-900">Usa Kiwi.com para buscar vuelos baratos</h2>
               </div>
               <p className="text-gray-600 leading-relaxed mb-4">
-                Mi rutina siempre empieza aqui. <strong>Kiwi.com es mi herramienta favorita para buscar vuelos porque te permite encontrar rutas poco habituales, conexiones raras y vuelos con escalas multiples a buen precio.</strong> Ademas, tiene funciones muy utiles para ver fechas flexibles y detectar combinaciones que otros buscadores no muestran.
+                Mi rutina siempre empieza aquí. <strong>Kiwi.com es mi herramienta favorita para buscar vuelos porque te permite encontrar rutas poco habituales, conexiones raras y vuelos con escalas múltiples a buen precio.</strong> Además, tiene funciones muy útiles para ver fechas flexibles y detectar combinaciones que otros buscadores no muestran.
               </p>
               <p className="text-gray-600 leading-relaxed mb-6">
-                Lo que hago: busco directamente en Kiwi.com para comparar precios, explorar rutas alternativas y, si es necesario, anadir escalas. A veces la diferencia puede ser de 100-200EUR respecto a buscar solo vuelos directos.
+                Lo que hago: busco directamente en Kiwi.com para comparar precios, explorar rutas alternativas y, si es necesario, añadir escalas. A veces la diferencia puede ser de 100-200EUR respecto a buscar solo vuelos directos.
               </p>
               <a
                 href="https://kiwi.tpk.lv/z2gZyZ3E"
@@ -112,21 +112,21 @@ const CheapFlightsArticle: React.FC<CheapFlightsArticleProps> = ({ onBack }) => 
             <section className="bg-white border border-stone-200 rounded-sm p-7 md:p-9">
               <div className="flex items-baseline gap-3 mb-4">
                 <span className="text-3xl md:text-4xl font-serif text-teal-300 leading-none">2.</span>
-                <h2 className="font-serif text-xl md:text-2xl text-gray-900">Se flexible con fechas y aeropuertos</h2>
+                <h2 className="font-serif text-xl md:text-2xl text-gray-900">Sé flexible con fechas y aeropuertos</h2>
               </div>
               <p className="text-gray-600 leading-relaxed mb-4">
-                <strong>La flexibilidad es tu mejor amiga.</strong> Si puedes moverte 3 dias en tus fechas,
-                activa siempre la opcion de "fechas flexibles". He ahorrado hasta 300EUR simplemente cambiando
+                <strong>La flexibilidad es tu mejor amiga.</strong> Si puedes moverte 3 días en tus fechas,
+                activa siempre la opción de "fechas flexibles". He ahorrado hasta 300EUR simplemente cambiando
                 el vuelo del viernes al martes.
               </p>
               <p className="text-gray-600 leading-relaxed mb-5">
-                Con los aeropuertos pasa igual. En lugar de buscar solo Madrid-Bangkok, prueba tambien
-                Barcelona-Bangkok o incluso Paris-Bangkok. A veces un tren o bus barato hasta otro aeropuerto
+                Con los aeropuertos pasa igual. En lugar de buscar solo Madrid-Bangkok, prueba también
+                Barcelona-Bangkok o incluso París-Bangkok. A veces un tren o bus barato hasta otro aeropuerto
                 te puede ahorrar una fortuna.
               </p>
               <div className="bg-teal-50 border border-teal-100 rounded-sm p-4">
                 <p className="text-teal-800 text-sm">
-                  <strong>Tip:</strong> Los martes y miercoles suelen ser los dias mas baratos para volar.
+                  <strong>Tip:</strong> Los martes y miércoles suelen ser los días más baratos para volar.
                 </p>
               </div>
             </section>
@@ -135,16 +135,16 @@ const CheapFlightsArticle: React.FC<CheapFlightsArticleProps> = ({ onBack }) => 
             <section className="bg-white border border-stone-200 rounded-sm p-7 md:p-9">
               <div className="flex items-baseline gap-3 mb-4">
                 <span className="text-3xl md:text-4xl font-serif text-teal-300 leading-none">3.</span>
-                <h2 className="font-serif text-xl md:text-2xl text-gray-900">Busca en modo incognito (y mejor aun: usa una VPN)</h2>
+                <h2 className="font-serif text-xl md:text-2xl text-gray-900">Busca en modo incógnito (y mejor aún: usa una VPN)</h2>
               </div>
               <p className="text-gray-600 leading-relaxed mb-4">
-                <strong>Este truco me ha ahorrado cientos de euros.</strong> Las webs de vuelos rastrean tus busquedas
-                y pueden subir los precios si ven que estas muy interesado en una ruta especifica. Siempre busco en
-                modo incognito para evitar esto.
+                <strong>Este truco me ha ahorrado cientos de euros.</strong> Las webs de vuelos rastrean tus búsquedas
+                y pueden subir los precios si ven que estás muy interesado en una ruta específica. Siempre busco en
+                modo incógnito para evitar esto.
               </p>
               <p className="text-gray-600 leading-relaxed mb-6">
-                Pero el truco definitivo es usar una VPN para cambiar tu ubicacion. Los precios pueden variar segun
-                el pais desde donde busques. He encontrado vuelos 200EUR mas baratos buscando desde Argentina que desde Espana.
+                Pero el truco definitivo es usar una VPN para cambiar tu ubicación. Los precios pueden variar según
+                el país desde donde busques. He encontrado vuelos 200EUR más baratos buscando desde Argentina que desde España.
               </p>
               <a
                 href="https://nordvpn.com/es/?ref=viajamejor"
@@ -160,20 +160,20 @@ const CheapFlightsArticle: React.FC<CheapFlightsArticleProps> = ({ onBack }) => 
             <section className="bg-white border border-stone-200 rounded-sm p-7 md:p-9">
               <div className="flex items-baseline gap-3 mb-4">
                 <span className="text-3xl md:text-4xl font-serif text-teal-300 leading-none">4.</span>
-                <h2 className="font-serif text-xl md:text-2xl text-gray-900">Reserva con antelacion (pero no demasiado)</h2>
+                <h2 className="font-serif text-xl md:text-2xl text-gray-900">Reserva con antelación (pero no demasiado)</h2>
               </div>
               <p className="text-gray-600 leading-relaxed mb-4">
-                <strong>El timing es crucial.</strong> Despues de analizar mis compras de vuelos durante anos,
-                he descubierto que el punto dulce esta entre 6-8 semanas antes del viaje para vuelos europeos,
+                <strong>El timing es crucial.</strong> Después de analizar mis compras de vuelos durante años,
+                he descubierto que el punto dulce está entre 6-8 semanas antes del viaje para vuelos europeos,
                 y 8-12 semanas para vuelos intercontinentales.
               </p>
               <p className="text-gray-600 leading-relaxed mb-5">
-                Reservar con 6 meses de antelacion no siempre es mas barato. Las aerolineas suelen lanzar sus
+                Reservar con 6 meses de antelación no siempre es más barato. Las aerolíneas suelen lanzar sus
                 mejores ofertas cuando quedan 2-3 meses, porque ya tienen una idea clara de la demanda.
               </p>
               <div className="bg-amber-50 border border-amber-100 rounded-sm p-4">
                 <p className="text-amber-800 text-sm">
-                  <strong>Excepcion:</strong> En temporada alta (Navidad, verano) si que conviene reservar antes.
+                  <strong>Excepción:</strong> En temporada alta (Navidad, verano) sí que conviene reservar antes.
                 </p>
               </div>
               <a
@@ -193,16 +193,16 @@ const CheapFlightsArticle: React.FC<CheapFlightsArticleProps> = ({ onBack }) => 
                 <h2 className="font-serif text-xl md:text-2xl text-gray-900">Aprovecha alertas de precios y apps</h2>
               </div>
               <p className="text-gray-600 leading-relaxed mb-4">
-                <strong>Deja que la tecnologia trabaje por ti.</strong> Configuro alertas de precios en Skyscanner
-                y Google Flights para rutas que me interesan. Cuando baja el precio, me llega un email automaticamente.
+                <strong>Deja que la tecnología trabaje por ti.</strong> Configuro alertas de precios en Skyscanner
+                y Google Flights para rutas que me interesan. Cuando baja el precio, me llega un email automáticamente.
               </p>
               <p className="text-gray-600 leading-relaxed mb-5">
-                Tambien uso apps como Hopper, que predice si los precios van a subir o bajar en los proximos dias.
-                No es 100% exacta, pero me ha ayudado a decidir si comprar ya o esperar un poco mas.
+                También uso apps como Hopper, que predice si los precios van a subir o bajar en los próximos días.
+                No es 100% exacta, pero me ha ayudado a decidir si comprar ya o esperar un poco más.
               </p>
               <div className="bg-teal-50 border border-teal-100 rounded-sm p-4">
                 <p className="text-teal-800 text-sm">
-                  <strong>Tip:</strong> Configura alertas para varias fechas, no solo una especifica.
+                  <strong>Tip:</strong> Configura alertas para varias fechas, no solo una específica.
                 </p>
               </div>
             </section>
@@ -215,11 +215,11 @@ const CheapFlightsArticle: React.FC<CheapFlightsArticleProps> = ({ onBack }) => 
               </div>
               <p className="text-gray-600 leading-relaxed mb-4">
                 <strong>Los fines de semana son caros, punto.</strong> Si tienes flexibilidad laboral, volar martes,
-                miercoles o jueves puede ahorrarte entre 50-150EUR por trayecto. Los viernes y domingos son los peores dias.
+                miércoles o jueves puede ahorrarte entre 50-150EUR por trayecto. Los viernes y domingos son los peores días.
               </p>
               <p className="text-gray-600 leading-relaxed">
-                Tambien evita los lunes por la manana (vuelos de negocios) y los viernes por la tarde (vuelos de ocio).
-                Los vuelos nocturnos o muy temprano por la manana tambien suelen ser mas baratos.
+                También evita los lunes por la mañana (vuelos de negocios) y los viernes por la tarde (vuelos de ocio).
+                Los vuelos nocturnos o muy temprano por la mañana también suelen ser más baratos.
               </p>
             </section>
 
@@ -231,12 +231,12 @@ const CheapFlightsArticle: React.FC<CheapFlightsArticleProps> = ({ onBack }) => 
               </div>
               <p className="text-gray-600 leading-relaxed mb-4">
                 <strong>Las millas no son solo para viajeros de negocios.</strong> Tengo una tarjeta que me da millas
-                por cada compra normal (supermercado, gasolina, etc.). En un ano junto suficientes para un vuelo
-                domestico gratis.
+                por cada compra normal (supermercado, gasolina, etc.). En un año junto suficientes para un vuelo
+                doméstico gratis.
               </p>
               <p className="text-gray-600 leading-relaxed">
-                Tambien aprovecho las promociones de "millas dobles" que hacen las aerolineas. A veces vale la pena
-                pagar un poco mas por un vuelo si te da muchas mas millas para futuros viajes.
+                También aprovecho las promociones de "millas dobles" que hacen las aerolíneas. A veces vale la pena
+                pagar un poco más por un vuelo si te da muchas más millas para futuros viajes.
               </p>
             </section>
 
@@ -244,19 +244,19 @@ const CheapFlightsArticle: React.FC<CheapFlightsArticleProps> = ({ onBack }) => 
             <section className="bg-white border border-stone-200 rounded-sm p-7 md:p-9">
               <div className="flex items-baseline gap-3 mb-4">
                 <span className="text-3xl md:text-4xl font-serif text-teal-300 leading-none">8.</span>
-                <h2 className="font-serif text-xl md:text-2xl text-gray-900">Considera aerolineas low-cost (pero revisa extras)</h2>
+                <h2 className="font-serif text-xl md:text-2xl text-gray-900">Considera aerolíneas low-cost (pero revisa extras)</h2>
               </div>
               <p className="text-gray-600 leading-relaxed mb-4">
-                <strong>Ryanair, Vueling, EasyJet... pueden ser geniales si sabes usarlas.</strong> El truco esta en
-                leer la letra pequena. Un vuelo de 30EUR puede convertirse en 80EUR si anades equipaje, asiento y comida.
+                <strong>Ryanair, Vueling, EasyJet... pueden ser geniales si sabes usarlas.</strong> El truco está en
+                leer la letra pequeña. Un vuelo de 30EUR puede convertirse en 80EUR si añades equipaje, asiento y comida.
               </p>
               <p className="text-gray-600 leading-relaxed mb-5">
                 Mi estrategia: viajo solo con equipaje de mano, llevo mi propia comida, y no me importa el asiento
-                que me toque. Asi el precio inicial es el precio final.
+                que me toque. Así el precio inicial es el precio final.
               </p>
               <div className="bg-amber-50 border border-amber-100 rounded-sm p-4">
                 <p className="text-amber-800 text-sm">
-                  <strong>Cuidado:</strong> Revisa las politicas de equipaje antes de comprar.
+                  <strong>Cuidado:</strong> Revisa las políticas de equipaje antes de comprar.
                 </p>
               </div>
             </section>
@@ -272,8 +272,8 @@ const CheapFlightsArticle: React.FC<CheapFlightsArticleProps> = ({ onBack }) => 
                 puentes largos, festivales famosos... en esas fechas los precios se disparan.
               </p>
               <p className="text-gray-600 leading-relaxed mb-5">
-                Si quieres ir a Oktoberfest, no busques vuelos para esas fechas exactas. Ve una semana antes o despues.
-                Lo mismo para Tailandia en ano nuevo chino, o Japon durante la floracion de los cerezos.
+                Si quieres ir a Oktoberfest, no busques vuelos para esas fechas exactas. Ve una semana antes o después.
+                Lo mismo para Tailandia en año nuevo chino, o Japón durante la floración de los cerezos.
               </p>
               <div className="bg-teal-50 border border-teal-100 rounded-sm p-4">
                 <p className="text-teal-800 text-sm">
@@ -286,15 +286,15 @@ const CheapFlightsArticle: React.FC<CheapFlightsArticleProps> = ({ onBack }) => 
             <section className="bg-white border border-stone-200 rounded-sm p-7 md:p-9">
               <div className="flex items-baseline gap-3 mb-4">
                 <span className="text-3xl md:text-4xl font-serif text-teal-300 leading-none">10.</span>
-                <h2 className="font-serif text-xl md:text-2xl text-gray-900">Borra cookies o cambia de pais con VPN</h2>
+                <h2 className="font-serif text-xl md:text-2xl text-gray-900">Borra cookies o cambia de país con VPN</h2>
               </div>
               <p className="text-gray-600 leading-relaxed mb-4">
                 <strong>Este es mi truco secreto favorito.</strong> Las webs de vuelos usan cookies para rastrear
-                tus busquedas y pueden subir los precios si ven que vuelves varias veces a la misma ruta.
+                tus búsquedas y pueden subir los precios si ven que vuelves varias veces a la misma ruta.
               </p>
               <p className="text-gray-600 leading-relaxed mb-6">
-                Cada vez que busco vuelos, lo hago en modo incognito. Y si veo un precio que me gusta pero no estoy
-                seguro, borro las cookies antes de volver a buscar. Tambien uso VPN para buscar desde diferentes paises.
+                Cada vez que busco vuelos, lo hago en modo incógnito. Y si veo un precio que me gusta pero no estoy
+                seguro, borro las cookies antes de volver a buscar. También uso VPN para buscar desde diferentes países.
               </p>
               <a
                 href="https://nordvpn.com/es/?ref=viajamejor"
@@ -311,16 +311,16 @@ const CheapFlightsArticle: React.FC<CheapFlightsArticleProps> = ({ onBack }) => 
           <div className="mt-16 border-t border-stone-200 pt-12">
             <h2 className="font-serif text-2xl md:text-3xl text-gray-900 mb-5">Mi consejo final</h2>
             <p className="text-gray-600 leading-relaxed mb-4">
-              <strong>No hay una formula magica, pero si combinas varios de estos trucos seguro que consigues vuelos
-              mucho mas baratos.</strong> Yo suelo usar 4-5 de estos consejos en cada busqueda, y rara vez pago el
+              <strong>No hay una fórmula mágica, pero si combinas varios de estos trucos seguro que consigues vuelos
+              mucho más baratos.</strong> Yo suelo usar 4-5 de estos consejos en cada búsqueda, y rara vez pago el
               precio "normal" de un vuelo.
             </p>
             <p className="text-gray-600 leading-relaxed mb-4">
-              Lo mas importante es ser paciente y flexible. A veces encontrar el vuelo perfecto lleva tiempo, pero
-              cuando ahorras 300-400EUR, ese tiempo esta muy bien invertido.
+              Lo más importante es ser paciente y flexible. A veces encontrar el vuelo perfecto lleva tiempo, pero
+              cuando ahorras 300-400EUR, ese tiempo está muy bien invertido.
             </p>
             <p className="text-gray-600 leading-relaxed">
-              <strong>Tienes algun truco extra que funcione?</strong> Escribeme y lo anado en proximos posts.
+              <strong>¿Tienes algún truco extra que funcione?</strong> Escríbeme y lo añado en próximos posts.
             </p>
           </div>
 
