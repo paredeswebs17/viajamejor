@@ -126,7 +126,7 @@ const ExploreDestinations = () => {
         </div>
 
         <div className="reveal">
-          <div className="flex overflow-x-auto gap-5 pb-4 scrollbar-hide snap-x snap-mandatory -mx-6 px-6">
+          <div className="flex overflow-x-auto gap-5 pb-4 scrollbar-hide snap-x snap-mandatory -mx-6 px-6 lg:-mx-10 lg:px-10">
             {guides.map((guide) => (
               <Link
                 key={guide.id}
