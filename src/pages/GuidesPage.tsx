@@ -109,7 +109,7 @@ const GuidesPage = () => {
   const comingSoon = [
     { title: 'Berlín en 4 días', image: 'https://images.pexels.com/photos/1128408/pexels-photo-1128408.jpeg', continent: 'Europa' },
     { title: 'Santorini en 5 días', image: 'https://images.pexels.com/photos/1010657/pexels-photo-1010657.jpeg', continent: 'Europa' },
-    { title: 'Estambul en 4 días', image: 'https://images.pexels.com/photos/2042032/pexels-photo-2042032.jpeg', continent: 'Europa/Asia' },
+    { title: 'Estambul en 4 días', image: 'https://images.pexels.com/photos/3889843/pexels-photo-3889843.jpeg', continent: 'Europa/Asia' },
     { title: 'Lisboa en 3 días', image: 'https://images.pexels.com/photos/1534560/pexels-photo-1534560.jpeg', continent: 'Europa' },
     { title: 'Cerdeña en 7 días', image: 'https://images.pexels.com/photos/3225531/pexels-photo-3225531.jpeg', continent: 'Europa' },
     { title: 'Croacia en 8 días', image: 'https://images.pexels.com/photos/2104152/pexels-photo-2104152.jpeg', continent: 'Europa' },
