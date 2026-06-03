@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, Compass } from 'lucide-react';
 import { trackMenuClick } from '../utils/analytics';
 
 const Header = () => {
@@ -96,13 +96,20 @@ const Header = () => {
           {/* Logo */}
           <Link
             to="/"
-            className="flex items-center gap-2.5 group"
+            className="flex items-center gap-3 group"
             onClick={() => trackMenuClick('logo')}
           >
-            <span className="font-serif text-[22px] tracking-tight text-gray-900 transition-opacity group-hover:opacity-70">
-              viaja<span className="font-semibold">mejor</span>
-            </span>
-            <span className="w-1.5 h-1.5 rounded-full bg-teal-400 mt-0.5" />
+            <div className="w-9 h-9 bg-slate-900 rounded-lg flex items-center justify-center transition-transform duration-200 group-hover:scale-105">
+              <Compass className="h-[18px] w-[18px] text-teal-400" strokeWidth={1.8} />
+            </div>
+            <div className="flex flex-col -space-y-0.5">
+              <span className="text-[17px] font-semibold tracking-tight text-gray-900 leading-tight">
+                Viaja Mejor
+              </span>
+              <span className="text-[10px] uppercase tracking-[.15em] text-gray-400 font-medium">
+                Tu guía de viajes
+              </span>
+            </div>
           </Link>
 
           {/* Desktop nav */}
