@@ -80,9 +80,9 @@ const AccommodationArticle: React.FC<AccommodationArticleProps> = ({ onBack }) =
           <div className="space-y-10">
 
             {/* Booking */}
-            <section className="bg-white border border-stone-200 rounded-sm p-7 md:p-9">
-              <div className="flex items-baseline gap-4 mb-4">
-                <span className="text-[10px] text-teal-600 font-bold uppercase tracking-[.2em]">01</span>
+            <section className="bg-white border border-stone-200 rounded-sm p-7 md:p-9 relative overflow-hidden">
+              <span className="absolute -top-2 -left-1 text-[5rem] md:text-[6rem] font-serif text-stone-100 leading-none select-none pointer-events-none">1</span>
+              <div className="relative mb-4 pt-6">
                 <h2 className="font-serif text-xl md:text-2xl text-gray-900">Booking: comodidad y cancelacion flexible</h2>
               </div>
               <p className="text-gray-600 leading-relaxed mb-4">
@@ -111,9 +111,9 @@ const AccommodationArticle: React.FC<AccommodationArticleProps> = ({ onBack }) =
             </section>
 
             {/* Airbnb */}
-            <section className="bg-white border border-stone-200 rounded-sm p-7 md:p-9">
-              <div className="flex items-baseline gap-4 mb-4">
-                <span className="text-[10px] text-teal-600 font-bold uppercase tracking-[.2em]">02</span>
+            <section className="bg-white border border-stone-200 rounded-sm p-7 md:p-9 relative overflow-hidden">
+              <span className="absolute -top-2 -left-1 text-[5rem] md:text-[6rem] font-serif text-stone-100 leading-none select-none pointer-events-none">2</span>
+              <div className="relative mb-4 pt-6">
                 <h2 className="font-serif text-xl md:text-2xl text-gray-900">Airbnb: ideal para estancias largas o en grupo</h2>
               </div>
               <p className="text-gray-600 leading-relaxed mb-4">
@@ -150,9 +150,9 @@ const AccommodationArticle: React.FC<AccommodationArticleProps> = ({ onBack }) =
             </section>
 
             {/* Hostelworld */}
-            <section className="bg-white border border-stone-200 rounded-sm p-7 md:p-9">
-              <div className="flex items-baseline gap-4 mb-4">
-                <span className="text-[10px] text-teal-600 font-bold uppercase tracking-[.2em]">03</span>
+            <section className="bg-white border border-stone-200 rounded-sm p-7 md:p-9 relative overflow-hidden">
+              <span className="absolute -top-2 -left-1 text-[5rem] md:text-[6rem] font-serif text-stone-100 leading-none select-none pointer-events-none">3</span>
+              <div className="relative mb-4 pt-6">
                 <h2 className="font-serif text-xl md:text-2xl text-gray-900">Hostelworld: para mochileros y viajeros low-cost</h2>
               </div>
               <p className="text-gray-600 leading-relaxed mb-4">

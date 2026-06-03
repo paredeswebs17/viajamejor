@@ -115,9 +115,9 @@ const TravelCardsArticle: React.FC<TravelCardsArticleProps> = ({ onBack }) => {
             </div>
 
             {/* Revolut */}
-            <section className="bg-white border border-stone-200 rounded-sm p-7 md:p-9">
-              <div className="flex items-baseline gap-4 mb-2">
-                <span className="text-[10px] text-teal-600 font-bold uppercase tracking-[.2em]">01</span>
+            <section className="bg-white border border-stone-200 rounded-sm p-7 md:p-9 relative overflow-hidden">
+              <span className="absolute -top-2 -left-1 text-[5rem] md:text-[6rem] font-serif text-stone-100 leading-none select-none pointer-events-none">1</span>
+              <div className="relative mb-2 pt-6">
                 <h2 className="font-serif text-xl md:text-2xl text-gray-900">Revolut</h2>
               </div>
               <p className="text-xs text-teal-600 font-semibold uppercase tracking-wider mb-5">Mi favorita para viajar</p>
@@ -151,9 +151,9 @@ const TravelCardsArticle: React.FC<TravelCardsArticleProps> = ({ onBack }) => {
             </section>
 
             {/* N26 */}
-            <section className="bg-white border border-stone-200 rounded-sm p-7 md:p-9">
-              <div className="flex items-baseline gap-4 mb-2">
-                <span className="text-[10px] text-teal-600 font-bold uppercase tracking-[.2em]">02</span>
+            <section className="bg-white border border-stone-200 rounded-sm p-7 md:p-9 relative overflow-hidden">
+              <span className="absolute -top-2 -left-1 text-[5rem] md:text-[6rem] font-serif text-stone-100 leading-none select-none pointer-events-none">2</span>
+              <div className="relative mb-2 pt-6">
                 <h2 className="font-serif text-xl md:text-2xl text-gray-900">N26</h2>
               </div>
               <p className="text-xs text-gray-500 font-medium uppercase tracking-wider mb-5">Banco online aleman con IBAN europeo</p>

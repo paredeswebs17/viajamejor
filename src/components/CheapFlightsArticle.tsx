@@ -87,9 +87,9 @@ const CheapFlightsArticle: React.FC<CheapFlightsArticleProps> = ({ onBack }) => 
           <div className="space-y-10">
 
             {/* Trick 1 */}
-            <section className="bg-white border border-stone-200 rounded-sm p-7 md:p-9">
-              <div className="flex items-baseline gap-4 mb-4">
-                <span className="text-[10px] text-teal-600 font-bold uppercase tracking-[.2em]">01</span>
+            <section className="bg-white border border-stone-200 rounded-sm p-7 md:p-9 relative overflow-hidden">
+              <span className="absolute -top-2 -left-1 text-[5rem] md:text-[6rem] font-serif text-stone-100 leading-none select-none pointer-events-none">1</span>
+              <div className="relative mb-4 pt-6">
                 <h2 className="font-serif text-xl md:text-2xl text-gray-900">Usa Kiwi.com para buscar vuelos baratos</h2>
               </div>
               <p className="text-gray-600 leading-relaxed mb-4">
@@ -109,9 +109,9 @@ const CheapFlightsArticle: React.FC<CheapFlightsArticleProps> = ({ onBack }) => 
             </section>
 
             {/* Trick 2 */}
-            <section className="bg-white border border-stone-200 rounded-sm p-7 md:p-9">
-              <div className="flex items-baseline gap-4 mb-4">
-                <span className="text-[10px] text-teal-600 font-bold uppercase tracking-[.2em]">02</span>
+            <section className="bg-white border border-stone-200 rounded-sm p-7 md:p-9 relative overflow-hidden">
+              <span className="absolute -top-2 -left-1 text-[5rem] md:text-[6rem] font-serif text-stone-100 leading-none select-none pointer-events-none">2</span>
+              <div className="relative mb-4 pt-6">
                 <h2 className="font-serif text-xl md:text-2xl text-gray-900">Se flexible con fechas y aeropuertos</h2>
               </div>
               <p className="text-gray-600 leading-relaxed mb-4">
@@ -132,9 +132,9 @@ const CheapFlightsArticle: React.FC<CheapFlightsArticleProps> = ({ onBack }) => 
             </section>
 
             {/* Trick 3 */}
-            <section className="bg-white border border-stone-200 rounded-sm p-7 md:p-9">
-              <div className="flex items-baseline gap-4 mb-4">
-                <span className="text-[10px] text-teal-600 font-bold uppercase tracking-[.2em]">03</span>
+            <section className="bg-white border border-stone-200 rounded-sm p-7 md:p-9 relative overflow-hidden">
+              <span className="absolute -top-2 -left-1 text-[5rem] md:text-[6rem] font-serif text-stone-100 leading-none select-none pointer-events-none">3</span>
+              <div className="relative mb-4 pt-6">
                 <h2 className="font-serif text-xl md:text-2xl text-gray-900">Busca en modo incognito (y mejor aun: usa una VPN)</h2>
               </div>
               <p className="text-gray-600 leading-relaxed mb-4">
@@ -157,9 +157,9 @@ const CheapFlightsArticle: React.FC<CheapFlightsArticleProps> = ({ onBack }) => 
             </section>
 
             {/* Trick 4 */}
-            <section className="bg-white border border-stone-200 rounded-sm p-7 md:p-9">
-              <div className="flex items-baseline gap-4 mb-4">
-                <span className="text-[10px] text-teal-600 font-bold uppercase tracking-[.2em]">04</span>
+            <section className="bg-white border border-stone-200 rounded-sm p-7 md:p-9 relative overflow-hidden">
+              <span className="absolute -top-2 -left-1 text-[5rem] md:text-[6rem] font-serif text-stone-100 leading-none select-none pointer-events-none">4</span>
+              <div className="relative mb-4 pt-6">
                 <h2 className="font-serif text-xl md:text-2xl text-gray-900">Reserva con antelacion (pero no demasiado)</h2>
               </div>
               <p className="text-gray-600 leading-relaxed mb-4">
@@ -187,9 +187,9 @@ const CheapFlightsArticle: React.FC<CheapFlightsArticleProps> = ({ onBack }) => 
             </section>
 
             {/* Trick 5 */}
-            <section className="bg-white border border-stone-200 rounded-sm p-7 md:p-9">
-              <div className="flex items-baseline gap-4 mb-4">
-                <span className="text-[10px] text-teal-600 font-bold uppercase tracking-[.2em]">05</span>
+            <section className="bg-white border border-stone-200 rounded-sm p-7 md:p-9 relative overflow-hidden">
+              <span className="absolute -top-2 -left-1 text-[5rem] md:text-[6rem] font-serif text-stone-100 leading-none select-none pointer-events-none">5</span>
+              <div className="relative mb-4 pt-6">
                 <h2 className="font-serif text-xl md:text-2xl text-gray-900">Aprovecha alertas de precios y apps</h2>
               </div>
               <p className="text-gray-600 leading-relaxed mb-4">
@@ -208,9 +208,9 @@ const CheapFlightsArticle: React.FC<CheapFlightsArticleProps> = ({ onBack }) => 
             </section>
 
             {/* Trick 6 */}
-            <section className="bg-white border border-stone-200 rounded-sm p-7 md:p-9">
-              <div className="flex items-baseline gap-4 mb-4">
-                <span className="text-[10px] text-teal-600 font-bold uppercase tracking-[.2em]">06</span>
+            <section className="bg-white border border-stone-200 rounded-sm p-7 md:p-9 relative overflow-hidden">
+              <span className="absolute -top-2 -left-1 text-[5rem] md:text-[6rem] font-serif text-stone-100 leading-none select-none pointer-events-none">6</span>
+              <div className="relative mb-4 pt-6">
                 <h2 className="font-serif text-xl md:text-2xl text-gray-900">Vuela entre semana si puedes</h2>
               </div>
               <p className="text-gray-600 leading-relaxed mb-4">
@@ -224,9 +224,9 @@ const CheapFlightsArticle: React.FC<CheapFlightsArticleProps> = ({ onBack }) => 
             </section>
 
             {/* Trick 7 */}
-            <section className="bg-white border border-stone-200 rounded-sm p-7 md:p-9">
-              <div className="flex items-baseline gap-4 mb-4">
-                <span className="text-[10px] text-teal-600 font-bold uppercase tracking-[.2em]">07</span>
+            <section className="bg-white border border-stone-200 rounded-sm p-7 md:p-9 relative overflow-hidden">
+              <span className="absolute -top-2 -left-1 text-[5rem] md:text-[6rem] font-serif text-stone-100 leading-none select-none pointer-events-none">7</span>
+              <div className="relative mb-4 pt-6">
                 <h2 className="font-serif text-xl md:text-2xl text-gray-900">Usa tarjetas de puntos o millas</h2>
               </div>
               <p className="text-gray-600 leading-relaxed mb-4">
@@ -241,9 +241,9 @@ const CheapFlightsArticle: React.FC<CheapFlightsArticleProps> = ({ onBack }) => 
             </section>
 
             {/* Trick 8 */}
-            <section className="bg-white border border-stone-200 rounded-sm p-7 md:p-9">
-              <div className="flex items-baseline gap-4 mb-4">
-                <span className="text-[10px] text-teal-600 font-bold uppercase tracking-[.2em]">08</span>
+            <section className="bg-white border border-stone-200 rounded-sm p-7 md:p-9 relative overflow-hidden">
+              <span className="absolute -top-2 -left-1 text-[5rem] md:text-[6rem] font-serif text-stone-100 leading-none select-none pointer-events-none">8</span>
+              <div className="relative mb-4 pt-6">
                 <h2 className="font-serif text-xl md:text-2xl text-gray-900">Considera aerolineas low-cost (pero revisa extras)</h2>
               </div>
               <p className="text-gray-600 leading-relaxed mb-4">
@@ -262,9 +262,9 @@ const CheapFlightsArticle: React.FC<CheapFlightsArticleProps> = ({ onBack }) => 
             </section>
 
             {/* Trick 9 */}
-            <section className="bg-white border border-stone-200 rounded-sm p-7 md:p-9">
-              <div className="flex items-baseline gap-4 mb-4">
-                <span className="text-[10px] text-teal-600 font-bold uppercase tracking-[.2em]">09</span>
+            <section className="bg-white border border-stone-200 rounded-sm p-7 md:p-9 relative overflow-hidden">
+              <span className="absolute -top-2 -left-1 text-[5rem] md:text-[6rem] font-serif text-stone-100 leading-none select-none pointer-events-none">9</span>
+              <div className="relative mb-4 pt-6">
                 <h2 className="font-serif text-xl md:text-2xl text-gray-900">Evita fechas de alta demanda</h2>
               </div>
               <p className="text-gray-600 leading-relaxed mb-4">
@@ -283,9 +283,9 @@ const CheapFlightsArticle: React.FC<CheapFlightsArticleProps> = ({ onBack }) => 
             </section>
 
             {/* Trick 10 */}
-            <section className="bg-white border border-stone-200 rounded-sm p-7 md:p-9">
-              <div className="flex items-baseline gap-4 mb-4">
-                <span className="text-[10px] text-teal-600 font-bold uppercase tracking-[.2em]">10</span>
+            <section className="bg-white border border-stone-200 rounded-sm p-7 md:p-9 relative overflow-hidden">
+              <span className="absolute -top-2 -left-1 text-[5rem] md:text-[6rem] font-serif text-stone-100 leading-none select-none pointer-events-none">10</span>
+              <div className="relative mb-4 pt-6">
                 <h2 className="font-serif text-xl md:text-2xl text-gray-900">Borra cookies o cambia de pais con VPN</h2>
               </div>
               <p className="text-gray-600 leading-relaxed mb-4">

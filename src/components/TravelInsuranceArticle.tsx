@@ -111,8 +111,8 @@ const TravelInsuranceArticle: React.FC<TravelInsuranceArticleProps> = ({ onBack 
 
           {/* Real experience */}
           <section className="bg-white border border-stone-200 rounded-sm p-7 md:p-9 mb-10">
-            <div className="flex items-baseline gap-4 mb-4">
-              <span className="text-[10px] text-teal-600 font-bold uppercase tracking-[.2em]">Experiencia real</span>
+            <div className="mb-4">
+              <span className="text-[10px] text-teal-600 font-bold uppercase tracking-[.2em] block mb-2">Experiencia real</span>
               <h2 className="font-serif text-xl md:text-2xl text-gray-900">Cuando IATI me salvo en Tailandia</h2>
             </div>
             <p className="text-gray-600 leading-relaxed mb-4">
