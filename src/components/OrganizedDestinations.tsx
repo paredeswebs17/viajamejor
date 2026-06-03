@@ -1,5 +1,4 @@
 import { useEffect, useRef } from 'react';
-import { Link } from 'react-router-dom';
 import { ChevronRight } from 'lucide-react';
 
 const OrganizedDestinations = () => {
@@ -29,9 +28,8 @@ const OrganizedDestinations = () => {
       title: 'Marruecos Organizado',
       subtitle: 'Guía local · Todo en español',
       image: 'https://images.pexels.com/photos/3889843/pexels-photo-3889843.jpeg',
-      url: '/marruecos-organizado',
       badge: '🇲🇦',
-      rating: '★ 5.0',
+      comingSoon: true,
     }
   ];
 
@@ -52,47 +50,43 @@ const OrganizedDestinations = () => {
 
         <div className="reveal grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {destinations.map((dest) => (
-            <Link
+            <div
               key={dest.id}
-              to={dest.url}
-              className="group relative"
+              className="relative cursor-default"
             >
               <div className="relative aspect-[4/5] overflow-hidden rounded-sm">
                 <img
                   src={dest.image}
                   alt={dest.title}
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  className="w-full h-full object-cover grayscale"
                   loading="lazy"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
+                <div className="absolute inset-0 bg-gray-800/60" />
 
                 <div className="absolute top-4 left-4">
                   <span className="text-2xl">{dest.badge}</span>
                 </div>
 
                 <div className="absolute top-4 right-4 flex flex-col gap-2 items-end">
-                  <span className="bg-teal-600 text-white text-[9px] font-bold px-3 py-1 rounded-full uppercase tracking-[.14em]">
-                    Organizado
-                  </span>
-                  <span className="bg-white/90 backdrop-blur-sm text-amber-700 text-[10px] font-semibold px-2.5 py-1 rounded-full">
-                    {dest.rating} TripAdvisor
+                  <span className="bg-gray-500 text-white text-[9px] font-bold px-3 py-1 rounded-full uppercase tracking-[.14em]">
+                    Próximamente
                   </span>
                 </div>
 
                 <div className="absolute bottom-0 left-0 right-0 p-6">
-                  <h3 className="font-serif text-xl md:text-2xl text-white leading-tight mb-1">
+                  <h3 className="font-serif text-xl md:text-2xl text-white/70 leading-tight mb-1">
                     {dest.title}
                   </h3>
-                  <p className="text-white/60 text-xs mb-3">
+                  <p className="text-white/40 text-xs mb-3">
                     {dest.subtitle}
                   </p>
-                  <div className="flex items-center text-white/80 group-hover:text-teal-300 transition-colors">
-                    <span className="text-xs font-medium uppercase tracking-wider">Ver rutas</span>
-                    <ChevronRight size={14} className="ml-1 transform group-hover:translate-x-1 transition-transform" />
+                  <div className="flex items-center text-white/40">
+                    <span className="text-xs font-medium uppercase tracking-wider">Próximamente</span>
+                    <ChevronRight size={14} className="ml-1" />
                   </div>
                 </div>
               </div>
-            </Link>
+            </div>
           ))}
         </div>
       </div>

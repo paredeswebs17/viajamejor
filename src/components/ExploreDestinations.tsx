@@ -81,14 +81,6 @@ const ExploreDestinations = () => {
       image: 'https://images.pexels.com/photos/19361199/pexels-photo-19361199.jpeg',
       url: '/mercados-navidenos-europa',
       badge: '🎄'
-    },
-    {
-      id: 'morocco-organizado',
-      title: 'Marruecos Organizado',
-      image: 'https://images.pexels.com/photos/3889843/pexels-photo-3889843.jpeg',
-      url: '/marruecos-organizado',
-      badge: '🇲🇦',
-      organized: true,
     }
   ];
 
