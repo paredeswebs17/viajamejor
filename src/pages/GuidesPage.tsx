@@ -1,6 +1,6 @@
 import { Helmet } from 'react-helmet-async';
 import { useState } from 'react';
-import { MapPin, Euro, Star, CheckCircle, Mail } from 'lucide-react';
+import { MapPin, CheckCircle, Mail, ChevronDown, ArrowRight } from 'lucide-react';
 
 const GuidesPage = () => {
   const [email, setEmail] = useState('');
@@ -11,204 +11,124 @@ const GuidesPage = () => {
     {
       id: 'budapest',
       title: 'Budapest en 4 Días',
-      description: 'La perla del Danubio te espera. Descubre castillos, balnearios termales únicos y la vibrante vida nocturna de la capital húngara.',
+      subtitle: 'La perla del Danubio',
+      description: 'Castillos, balnearios termales únicos y la vibrante vida nocturna de la capital húngara.',
       image: 'https://images.pexels.com/photos/73796/budapest-hungary-parliament-building-73796.jpeg',
-      price: '70€',
-      rating: 4.9,
-      continent: 'Europa',
-      budget: '€€',
-      featured: true,
-      available: true,
-      badge: '🔥 Popular',
+      days: '4 días',
+      budget: '70€/día',
+      tag: 'Popular',
+      tagColor: 'bg-rose-500',
       url: '/budapest-4-dias'
     },
     {
       id: 'prague',
-      title: 'Praga en 3 días',
-      description: 'Ciudad de cuento con arquitectura medieval y cerveza increíble',
-      image:'https://images.pexels.com/photos/3046347/pexels-photo-3046347.jpeg',
-      price: '60€',
-      rating: 4.8,
-      continent: 'Europa',
-      budget: '€€',
-      featured: true,
-      available: true,
-      badge: '🏰 Medieval',
+      title: 'Praga en 3 Días',
+      subtitle: 'Ciudad de cuento',
+      description: 'Arquitectura medieval, cerveza artesanal y puentes mágicos sobre el Moldava.',
+      image: 'https://images.pexels.com/photos/3046347/pexels-photo-3046347.jpeg',
+      days: '3 días',
+      budget: '60€/día',
+      tag: 'Medieval',
+      tagColor: 'bg-amber-500',
       url: '/praga-3-dias'
     },
     {
       id: 'vienna',
-      title: 'Viena en 3 días',
-      description: 'Capital imperial de la música clásica, palacios Habsburgo y cultura cafetera',
+      title: 'Viena en 3 Días',
+      subtitle: 'Capital imperial',
+      description: 'Música clásica, palacios Habsburgo y la mejor cultura cafetera del mundo.',
       image: 'https://images.pexels.com/photos/8568542/pexels-photo-8568542.jpeg',
-      price: '85€',
-      rating: 4.9,
-      continent: 'Europa',
-      budget: '€€€',
-      featured: true,
-      available: true,
-      badge: '🎼 Musical',
+      days: '3 días',
+      budget: '85€/día',
+      tag: 'Elegante',
+      tagColor: 'bg-slate-700',
       url: '/viena-3-dias'
     },
     {
       id: 'amsterdam',
-      title: 'Ámsterdam en 3 días',
-      description: 'Canales UNESCO, arte holandés y cultura única. Descubre los museos más importantes y pueblos con molinos.',
+      title: 'Ámsterdam en 3 Días',
+      subtitle: 'Canales y cultura',
+      description: 'Canales UNESCO, arte holandés y pueblos con molinos de viento.',
       image: 'https://images.pexels.com/photos/2031706/pexels-photo-2031706.jpeg',
-      price: '90€',
-      rating: 4.8,
-      continent: 'Europa',
-      budget: '€€€',
-      featured: true,
-      available: true,
-      badge: '🚲 Bici',
+      days: '3 días',
+      budget: '90€/día',
+      tag: 'UNESCO',
+      tagColor: 'bg-blue-500',
       url: '/amsterdam-3-dias'
     },
     {
       id: 'roma',
-      title: 'Roma en 3 días',
-      description: 'Ciudad Eterna con Coliseo, Vaticano, Fontana di Trevi y Trastevere. Historia milenaria y gastronomía italiana.',
+      title: 'Roma en 3 Días',
+      subtitle: 'La Ciudad Eterna',
+      description: 'Coliseo, Vaticano, Fontana di Trevi y la mejor gastronomía italiana.',
       image: 'https://images.pexels.com/photos/6199223/pexels-photo-6199223.jpeg',
-      price: '80€',
-      rating: 4.9,
-      continent: 'Europa',
-      budget: '€€€',
-      featured: true,
-      available: true,
-      badge: '🏛️ Histórica',
+      days: '3 días',
+      budget: '80€/día',
+      tag: 'Histórica',
+      tagColor: 'bg-amber-600',
       url: '/roma-3-dias'
     },
     {
       id: 'london',
-      title: 'Londres en 3 días',
-      description: 'Capital británica con historia milenaria y vanguardia global. Big Ben, Tower Bridge, museos gratuitos y multiculturalidad.',
+      title: 'Londres en 3 Días',
+      subtitle: 'Historia y vanguardia',
+      description: 'Big Ben, Tower Bridge, museos gratuitos y multiculturalidad vibrante.',
       image: 'https://images.pexels.com/photos/5380087/pexels-photo-5380087.jpeg',
-      price: '95€',
-      rating: 4.9,
-      continent: 'Europa',
-      budget: '€€€',
-      featured: true,
-      available: true,
-      badge: '🇬🇧 Reino Unido',
+      days: '3 días',
+      budget: '95€/día',
+      tag: 'Cosmopolita',
+      tagColor: 'bg-slate-800',
       url: '/londres-3-dias'
     },
     {
       id: 'athens',
-      title: 'Atenas en 3 días',
-      description: 'Cuna de la civilización occidental. Acrópolis, Partenón, Ágora Antigua y gastronomía griega auténtica.',
+      title: 'Atenas en 3 Días',
+      subtitle: 'Cuna de la civilización',
+      description: 'Acrópolis, Partenón, Ágora Antigua y gastronomía griega auténtica.',
       image: 'https://images.pexels.com/photos/1285625/pexels-photo-1285625.jpeg',
-      price: '65€',
-      rating: 4.8,
-      continent: 'Europa',
-      budget: '€€',
-      featured: true,
-      available: true,
-      badge: '🏛️ Clásica',
+      days: '3 días',
+      budget: '65€/día',
+      tag: 'Clásica',
+      tagColor: 'bg-teal-600',
       url: '/atenas-3-dias'
     },
     {
-      id: 'berlin',
-      title: 'Berlín en 4 días',
-      description: 'Historia, arte urbano y vida nocturna en la capital alemana',
-      image: 'https://images.unsplash.com/photo-1560969184-10fe8719e047?auto=format&fit=crop&w=600&q=80',
-      continent: 'Europa',
-      available: false,
-      badge: '🆕 Nuevo',
-      url: '#'
-    },
-    {
-      id: 'santorini',
-      title: 'Santorini en 5 días',
-      description: 'Atardeceres únicos, pueblos blancos y vinos volcánicos en las Cícladas',
-      image: 'https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?auto=format&fit=crop&w=600&q=80',
-      continent: 'Europa',
-      available: false,
-      url: '#'
-    },
-    {
-      id: 'istanbul',
-      title: 'Estambul en 4 días',
-      description: 'Puente entre Europa y Asia, mezquitas históricas y bazares milenarios',
-      image: 'https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?auto=format&fit=crop&w=600&q=80',
-      continent: 'Europa/Asia',
-      available: false,
-      url: '#'
-    },
-    {
-      id: 'azores',
-      title: 'Azores en 6 días',
-      description: 'Islas volcánicas, lagos de cráter y aguas termales en el Atlántico',
-      image: 'https://images.pexels.com/photos/4825701/pexels-photo-4825701.jpeg?auto=compress&cs=tinysrgb&w=600',
-      continent: 'Europa',
-      available: false,
-      url: '#'
-    },
-    {
-      id: 'lisboa',
-      title: 'Lisboa en 3 días',
-      description: 'Tranvías históricos, fado auténtico y pastéis de nata irresistibles',
-      image: 'https://images.unsplash.com/photo-1555881400-74d7acaacd8b?auto=format&fit=crop&w=600&q=80',
-      continent: 'Europa',
-      available: false,
-      url: '#'
-    },
-    {
-      id: 'sardinia',
-      title: 'Cerdeña en 7 días',
-      description: 'Playas paradisíacas, cultura nuraghi y gastronomía mediterránea auténtica',
-      image: 'https://images.pexels.com/photos/3225531/pexels-photo-3225531.jpeg?auto=compress&cs=tinysrgb&w=600',
-      continent: 'Europa',
-      available: false,
-      url: '#'
-    },
-    {
-      id: 'croatia',
-      title: 'Croacia en 8 días',
-      description: 'Costa dálmata, parques nacionales y ciudades medievales junto al Adriático',
-      image: 'https://images.pexels.com/photos/2104152/pexels-photo-2104152.jpeg?auto=compress&cs=tinysrgb&w=600',
-      continent: 'Europa',
-      available: false,
-      url: '#'
-    },
-    {
-      id: 'sri-lanka',
-      title: 'Sri Lanka en 10 días',
-      description: 'Templos budistas, plantaciones de té, safaris y playas vírgenes',
-      image: 'https://images.unsplash.com/photo-1566552881560-0be862a7c445?auto=format&fit=crop&w=600&q=80',
-      continent: 'Asia',
-      available: false,
-      url: '#'
-    },
-    {
       id: 'christmas',
-      title: 'Mercados Navideños de Europa 2025-2026',
-      description: 'Descubre los mejores mercados navideños de Budapest, Praga, Viena y Roma. Fechas, horarios, precios y consejos prácticos.',
+      title: 'Mercados Navideños',
+      subtitle: 'Europa 2025-2026',
+      description: 'Los mejores mercados navideños de Budapest, Praga, Viena y Roma.',
       image: 'https://images.pexels.com/photos/19361199/pexels-photo-19361199.jpeg',
-      continent: 'Europa',
-      featured: true,
-      available: true,
-      badge: '🎄 Navidad',
+      days: 'Temporada',
+      budget: 'Variable',
+      tag: 'Navidad',
+      tagColor: 'bg-red-600',
       url: '/mercados-navidenos-europa'
-    }
+    },
+  ];
+
+  const comingSoon = [
+    { title: 'Berlín en 4 días', image: 'https://images.pexels.com/photos/1128408/pexels-photo-1128408.jpeg', continent: 'Europa' },
+    { title: 'Santorini en 5 días', image: 'https://images.pexels.com/photos/1010657/pexels-photo-1010657.jpeg', continent: 'Europa' },
+    { title: 'Estambul en 4 días', image: 'https://images.pexels.com/photos/2042032/pexels-photo-2042032.jpeg', continent: 'Europa/Asia' },
+    { title: 'Lisboa en 3 días', image: 'https://images.pexels.com/photos/1534560/pexels-photo-1534560.jpeg', continent: 'Europa' },
+    { title: 'Cerdeña en 7 días', image: 'https://images.pexels.com/photos/3225531/pexels-photo-3225531.jpeg', continent: 'Europa' },
+    { title: 'Croacia en 8 días', image: 'https://images.pexels.com/photos/2104152/pexels-photo-2104152.jpeg', continent: 'Europa' },
   ];
 
   const faqs = [
     {
       question: "¿Qué incluyen las guías de viaje?",
-      answer: "Cada guía incluye itinerario detallado día por día, presupuesto real desglosado, mapa interactivo con ubicaciones marcadas, enlaces directos para reservas, consejos de transporte local, recomendaciones de restaurantes probados y trucos para ahorrar dinero."
+      answer: "Cada guía incluye itinerario detallado día por día, presupuesto real desglosado, enlaces directos para reservas, consejos de transporte local, recomendaciones de restaurantes probados y trucos para ahorrar dinero."
     },
     {
       question: "¿Las guías se actualizan regularmente?",
-      answer: "Sí, actualizamos nuestras guías cada 6 meses con nuevos precios, restaurantes, atracciones y consejos basados en feedback de otros viajeros. Los suscriptores reciben las actualizaciones automáticamente."
+      answer: "Sí, actualizamos nuestras guías cada 6 meses con nuevos precios, restaurantes, atracciones y consejos basados en feedback de otros viajeros."
     },
     {
       question: "¿Puedo usar las guías sin conexión a internet?",
       answer: "Absolutamente. Todas nuestras guías están disponibles en formato PDF descargable para que puedas acceder a toda la información sin necesidad de internet durante tu viaje."
     }
   ];
-
-  const featuredGuides = guides.filter(guide => guide.featured);
-  const otherGuides = guides.filter(guide => !guide.featured);
 
   const handleNewsletterSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -236,332 +156,245 @@ const GuidesPage = () => {
         <meta name="description" content="Guías de viaje completas con itinerarios detallados, presupuestos reales y mapas interactivos. Budapest, Berlín, Praga y más destinos." />
         <meta name="keywords" content="guías de viaje, itinerarios detallados, presupuesto viaje, guía budapest, guía berlín, mapas de viaje" />
         <link rel="canonical" href="https://viajamejor.net/guias" />
-        
         <meta property="og:title" content="Guías de Viaje Detalladas - Itinerarios y Presupuestos Reales" />
         <meta property="og:description" content="Descubre nuestras guías completas con itinerarios día por día y presupuestos reales para viajar mejor." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://viajamejor.net/guias" />
-        <meta property="og:image" content="https://images.unsplash.com/photo-1541849546-216549ae216d?auto=format&fit=crop&w=1200&q=80" />
+        <meta property="og:image" content="https://images.pexels.com/photos/3490665/pexels-photo-3490665.jpeg" />
       </Helmet>
 
-      {/* Hero Section */}
-      <section className="relative overflow-hidden text-white pt-20 md:pt-36 lg:pt-48 pb-10 md:pb-14 lg:pb-16 min-h-[350px] md:min-h-[450px] lg:min-h-[550px] flex items-center">
-        {/* Background Image with Overlay */}
-        <div className="absolute inset-0 z-0">
-          <img
-            src="https://images.pexels.com/photos/3490665/pexels-photo-3490665.jpeg"
-            alt="Guías de viaje"
-            className="absolute inset-0 w-full h-full object-cover object-center"
-          />
-          <div className="absolute inset-0 bg-gradient-to-br from-[#14B8A6]/60 to-[#0d9488]/65"></div>
-        </div>
-
-        {/* Floating Circles */}
-        <div className="absolute top-10 left-20 w-64 h-64 bg-white/20 rounded-full blur-3xl animate-float z-10"></div>
-        <div className="absolute bottom-10 right-20 w-80 h-80 bg-white/15 rounded-full blur-3xl animate-float z-10" style={{ animationDelay: '2s' }}></div>
-
-        <div className="relative z-20 max-w-6xl mx-auto text-center px-4 w-full">
-          <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-2 leading-tight">
+      {/* Hero */}
+      <div className="relative h-[50vh] min-h-[400px] overflow-hidden flex items-end">
+        <img
+          src="https://images.pexels.com/photos/3490665/pexels-photo-3490665.jpeg"
+          alt="Guías de viaje"
+          className="absolute inset-0 w-full h-full object-cover"
+          fetchPriority="high"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-black/10" />
+        <div className="relative z-10 max-w-6xl mx-auto px-6 lg:px-10 pb-12 md:pb-16 w-full">
+          <span className="inline-block bg-teal-400 text-slate-900 text-[9px] uppercase tracking-[.2em] font-bold px-3 py-1.5 rounded-full mb-5">
+            {guides.length} guías disponibles
+          </span>
+          <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl text-white leading-[1.05] tracking-tight mb-4">
             Guías de Viaje
           </h1>
-
-          <p className="text-base text-white/90 mb-6">
-            Itinerarios detallados para que viajes más y gastes menos
+          <p className="text-white/60 text-lg font-light max-w-lg">
+            Itinerarios detallados, presupuestos reales y consejos locales para que viajes más y mejor
           </p>
+        </div>
+      </div>
 
-          <div className="flex flex-wrap justify-center gap-4 text-sm">
-            <div className="flex items-center bg-white/10 backdrop-blur-sm rounded-lg px-4 py-2">
-              <MapPin className="h-4 w-4 mr-2" />
-              <span>📍 20+ Destinos</span>
-            </div>
-            <div className="flex items-center bg-white/10 backdrop-blur-sm rounded-lg px-4 py-2">
-              <Euro className="h-4 w-4 mr-2" />
-              <span>💰 Presupuestos Reales</span>
-            </div>
+      {/* Stats bar */}
+      <div className="bg-slate-900 text-white border-b border-white/5">
+        <div className="max-w-6xl mx-auto px-6 py-5 flex flex-wrap justify-center gap-10 md:gap-16 text-center">
+          <div>
+            <span className="block text-2xl font-serif text-teal-400">{guides.length}</span>
+            <span className="text-[9px] uppercase tracking-[.2em] text-white/40">guías completas</span>
+          </div>
+          <div>
+            <span className="block text-2xl font-serif text-teal-400">10+</span>
+            <span className="text-[9px] uppercase tracking-[.2em] text-white/40">ciudades</span>
+          </div>
+          <div>
+            <span className="block text-2xl font-serif text-teal-400">100%</span>
+            <span className="text-[9px] uppercase tracking-[.2em] text-white/40">gratuitas</span>
+          </div>
+          <div>
+            <span className="block text-2xl font-serif text-teal-400">2025</span>
+            <span className="text-[9px] uppercase tracking-[.2em] text-white/40">actualizadas</span>
           </div>
         </div>
+      </div>
 
-        <style>{`
-          @keyframes float {
-            0%, 100% {
-              transform: translateY(0px);
-            }
-            50% {
-              transform: translateY(-20px);
-            }
-          }
-          .animate-float {
-            animation: float 6s ease-in-out infinite;
-          }
-        `}</style>
-      </section>
-
-      {/* Featured Guides */}
-      {featuredGuides.length > 0 && (
-        <section className="py-12 bg-gray-50">
-          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-2xl font-bold text-gray-900 mb-8 text-center">
-              Guías Completas Disponibles
-            </h2>
-            <div className="grid md:grid-cols-2 gap-8">
-              {featuredGuides.map((guide) => (
-                <div key={guide.id} className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 flex flex-col">
-                  <div className="relative">
-                    <img
-                      src={guide.image}
-                      alt={guide.title}
-                      className="w-full h-64 object-cover"
-                    />
-                    <div className="absolute top-4 left-4">
-                      <span className="bg-gradient-to-r from-orange-500 to-red-500 text-white px-3 py-1 rounded-full text-sm font-bold">
-                        {guide.badge}
-                      </span>
-                    </div>
-                  </div>
-
-                  <div className="p-6 flex flex-col flex-1">
-                    <h3 className="text-2xl font-bold text-gray-900 mb-3">
-                      {guide.title}
-                    </h3>
-
-                    <p className="text-gray-600 mb-4 leading-relaxed">
-                      {guide.description}
-                    </p>
-
-                    <div className="flex-1">
-                      {guide.id === 'christmas' ? (
-                        <div className="space-y-2 mb-6">
-                          <div className="flex items-center text-sm text-gray-700">
-                            <CheckCircle className="h-4 w-4 text-emerald-500 mr-2" />
-                            <span>✓ 4 ciudades europeas</span>
-                          </div>
-                          <div className="flex items-center text-sm text-gray-700">
-                            <CheckCircle className="h-4 w-4 text-emerald-500 mr-2" />
-                            <span>✓ Fechas y horarios 2025-2026</span>
-                          </div>
-                          <div className="flex items-center text-sm text-gray-700">
-                            <CheckCircle className="h-4 w-4 text-emerald-500 mr-2" />
-                            <span>✓ Mejores mercados y especialidades</span>
-                          </div>
-                        </div>
-                      ) : (
-                        <>
-                          <div className="flex items-center gap-6 mb-4">
-                            <div className="flex items-center">
-                              <Euro className="h-5 w-5 text-emerald-500 mr-2" />
-                              <span className="text-xl font-bold text-emerald-600">{guide.price?.replace('€', '') || 'N/A'}</span>
-                              <span className="text-gray-500 ml-1 text-sm">aprox./día</span>
-                            </div>
-
-                            <div className="flex items-center">
-                              <Star className="h-5 w-5 text-orange-500 mr-1" />
-                              <span className="font-semibold text-gray-900">{guide.rating}</span>
-                              <span className="text-orange-500 ml-1">★★★★★</span>
-                            </div>
-                          </div>
-
-                          <div className="space-y-2 mb-6">
-                            <div className="flex items-center text-sm text-gray-700">
-                              <CheckCircle className="h-4 w-4 text-emerald-500 mr-2" />
-                              <span>✓ Itinerario hora por hora</span>
-                            </div>
-                            <div className="flex items-center text-sm text-gray-700">
-                              <CheckCircle className="h-4 w-4 text-emerald-500 mr-2" />
-                              <span>✓ Enlaces de reservas</span>
-                            </div>
-                            <div className="flex items-center text-sm text-gray-700">
-                              <CheckCircle className="h-4 w-4 text-emerald-500 mr-2" />
-                              <span>✓ Consejos locales</span>
-                            </div>
-                          </div>
-                        </>
-                      )}
-                    </div>
-
-                    <a
-                      href={guide.url}
-                      className="block w-full bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white font-bold py-3 px-6 rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200 text-center"
-                    >
-                      📖 Ver Guía
-                    </a>
-                  </div>
-                </div>
-              ))}
-            </div>
+      {/* Available Guides Grid */}
+      <div className="bg-stone-50">
+        <section className="max-w-6xl mx-auto px-6 lg:px-10 py-20 md:py-28">
+          <div className="mb-14">
+            <span className="text-[10px] uppercase tracking-[.25em] text-gray-400 font-semibold mb-3 block">Explora</span>
+            <h2 className="font-serif text-3xl md:text-4xl text-gray-900">Guías disponibles</h2>
           </div>
-        </section>
-      )}
 
-      {/* Other Guides Grid */}
-      <section className="py-12 bg-white">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-2xl font-bold text-gray-900 mb-8 text-center">
-            Más destinos increíbles
-          </h2>
-          
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {otherGuides.map((guide) => (
-              <div
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+            {guides.map((guide) => (
+              <a
                 key={guide.id}
-                className="bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden hover:shadow-lg hover:-translate-y-1 transition-all duration-300 group"
+                href={guide.url}
+                className="group bg-white rounded-sm overflow-hidden border border-stone-200 hover:border-stone-300 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex flex-col"
               >
-                <div className="relative">
+                <div className="relative overflow-hidden">
                   <img
                     src={guide.image}
                     alt={guide.title}
-                    className="w-full h-48 object-cover"
+                    className="w-full h-52 object-cover group-hover:scale-105 transition-transform duration-500"
+                    loading="lazy"
                   />
-                  {guide.badge && (
-                    <div className="absolute top-3 left-3">
-                      <span className="bg-gradient-to-r from-emerald-500 to-green-500 text-white px-2 py-1 rounded-full text-xs font-bold">
-                        {guide.badge}
-                      </span>
-                    </div>
-                  )}
-                  <div className="absolute top-3 right-3">
-                    <span className="bg-sky-500 text-white px-2 py-1 rounded-full text-xs font-medium">
-                      {guide.continent}
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+                  <div className="absolute top-3 left-3">
+                    <span className={`${guide.tagColor} text-white text-[8px] uppercase tracking-wider font-bold px-2.5 py-1 rounded-full`}>
+                      {guide.tag}
                     </span>
                   </div>
                 </div>
-                
-                <div className="p-6">
-                  <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-sky-600 transition-colors">
+
+                <div className="p-6 flex flex-col flex-1">
+                  <div className="flex items-center gap-3 mb-2">
+                    <span className="text-[9px] text-gray-400 uppercase tracking-wider font-medium">{guide.days}</span>
+                    <span className="w-1 h-1 bg-gray-300 rounded-full"></span>
+                    <span className="text-[9px] text-teal-600 uppercase tracking-wider font-semibold">{guide.budget}</span>
+                  </div>
+
+                  <h3 className="font-serif text-xl text-gray-900 mb-1 group-hover:text-teal-700 transition-colors">
                     {guide.title}
                   </h3>
-                  
-                  <p className="text-gray-600 mb-4 text-sm leading-relaxed">
+                  <p className="text-xs text-gray-400 mb-3">{guide.subtitle}</p>
+
+                  <p className="text-sm text-gray-600 leading-relaxed flex-1">
                     {guide.description}
                   </p>
-                  
-                  {guide.available && (
-                    <div className="flex items-center justify-between mb-4">
-                      {guide.price && (
-                        <div className="flex items-center">
-                          <Euro className="h-4 w-4 text-emerald-500 mr-1" />
-                          <span className="font-bold text-emerald-600">{guide.price.replace('€', '')}</span>
-                          <span className="text-gray-500 text-sm ml-1">aprox./día</span>
-                        </div>
-                      )}
-                      
-                      {guide.rating && (
-                        <div className="flex items-center">
-                          <Star className="h-4 w-4 text-orange-500 mr-1" />
-                          <span className="font-semibold text-gray-900 text-sm">{guide.rating}</span>
-                        </div>
-                      )}
-                    </div>
-                  )}
-                  
-                  <button
-                    onClick={() => guide.available && guide.url ? window.location.href = guide.url : null}
-                    disabled={!guide.available}
-                    className={`w-full font-semibold py-3 px-4 rounded-lg transition-all duration-200 ${
-                      guide.available
-                        ? 'bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white transform hover:scale-105 shadow-lg hover:shadow-xl cursor-pointer'
-                        : 'bg-gray-300 text-gray-500 cursor-not-allowed'
-                    }`}
-                  >
-                    {guide.available ? '📖 Ver Guía' : 'Próximamente'}
-                  </button>
+
+                  <div className="mt-5 flex items-center text-teal-600 text-xs font-semibold group-hover:text-teal-700 transition-colors">
+                    Ver guía completa
+                    <ArrowRight size={12} className="ml-1.5 group-hover:translate-x-1 transition-transform" />
+                  </div>
+                </div>
+              </a>
+            ))}
+          </div>
+        </section>
+      </div>
+
+      {/* Coming Soon */}
+      <div className="bg-white">
+        <section className="max-w-6xl mx-auto px-6 lg:px-10 py-20 md:py-28">
+          <div className="mb-14">
+            <span className="text-[10px] uppercase tracking-[.25em] text-gray-400 font-semibold mb-3 block">Próximamente</span>
+            <h2 className="font-serif text-3xl md:text-4xl text-gray-900">Más destinos en camino</h2>
+          </div>
+
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+            {comingSoon.map((guide, i) => (
+              <div key={i} className="relative rounded-sm overflow-hidden group aspect-[4/3]">
+                <img
+                  src={guide.image}
+                  alt={guide.title}
+                  className="absolute inset-0 w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
+                  loading="lazy"
+                />
+                <div className="absolute inset-0 bg-black/50 group-hover:bg-black/30 transition-colors" />
+                <div className="absolute inset-0 flex flex-col items-center justify-center text-center p-4">
+                  <h3 className="font-serif text-lg md:text-xl text-white mb-1">{guide.title}</h3>
+                  <span className="text-[9px] uppercase tracking-wider text-white/50">{guide.continent}</span>
+                  <span className="mt-3 bg-white/10 backdrop-blur-sm text-white text-[9px] uppercase tracking-wider font-medium px-3 py-1 rounded-full border border-white/20">
+                    Próximamente
+                  </span>
                 </div>
               </div>
             ))}
           </div>
-        </div>
-      </section>
+        </section>
+      </div>
 
-      {/* Newsletter Section */}
-      <section className="py-16 bg-gradient-to-r from-sky-500 to-emerald-500">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="bg-white rounded-2xl p-8 shadow-2xl">
-            {isSubscribed ? (
-              <div className="py-8">
-                <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <CheckCircle className="h-8 w-8 text-green-600" />
-                </div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-2">¡Gracias por suscribirte!</h3>
-                <p className="text-gray-600">
-                  Serás el primero en conocer nuestras nuevas guías de viaje.
-                </p>
+      {/* Newsletter */}
+      <div className="bg-teal-700">
+        <section className="max-w-4xl mx-auto px-6 lg:px-10 py-20 md:py-28 text-center">
+          {isSubscribed ? (
+            <div>
+              <div className="w-16 h-16 bg-white/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                <CheckCircle className="h-8 w-8 text-teal-200" />
               </div>
-            ) : (
-              <>
-                <div className="mb-6">
-                  <div className="w-16 h-16 bg-gradient-to-r from-sky-500 to-emerald-500 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <Mail className="h-8 w-8 text-white" />
-                  </div>
-                  <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">
-                    ¿Quieres ser el primero en conocer nuestras nuevas guías?
-                  </h2>
-                  <p className="text-gray-600 mb-6">
-                    Únete a nuestra lista y recibe notificaciones cuando publiquemos nuevas guías detalladas.
-                  </p>
-                </div>
+              <h3 className="font-serif text-2xl text-white mb-2">Gracias por suscribirte</h3>
+              <p className="text-teal-100/60">Serás el primero en conocer nuestras nuevas guías.</p>
+            </div>
+          ) : (
+            <>
+              <div className="w-14 h-14 bg-white/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                <Mail className="h-6 w-6 text-teal-200" />
+              </div>
+              <h2 className="font-serif text-2xl md:text-3xl text-white mb-3">
+                No te pierdas las nuevas guías
+              </h2>
+              <p className="text-teal-100/60 mb-8 max-w-md mx-auto">
+                Recibe notificaciones cuando publiquemos nuevas guías detalladas con itinerarios y presupuestos.
+              </p>
 
-                <form onSubmit={handleNewsletterSubmit} className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
-                  <input
-                    type="email"
-                    name="email"
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                    placeholder="tu@email.com"
-                    className="flex-1 px-6 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-sky-500 focus:border-transparent outline-none"
-                    required
-                  />
-                  <input type="hidden" name="subject" value="Suscripción Newsletter - Guías de Viaje" />
-                  <input type="hidden" name="message" value="Nueva suscripción al newsletter desde la página de guías" />
-                  <button
-                    type="submit"
-                    className="bg-gradient-to-r from-sky-500 to-emerald-500 hover:from-sky-600 hover:to-emerald-600 text-white font-bold py-3 px-6 rounded-lg transition-all duration-200 transform hover:scale-105 shadow-lg hover:shadow-xl"
-                  >
-                    Suscribirme
-                  </button>
-                </form>
-              </>
-            )}
+              <form onSubmit={handleNewsletterSubmit} className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
+                <input
+                  type="email"
+                  name="email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  placeholder="tu@email.com"
+                  className="flex-1 px-5 py-3.5 bg-white/10 border border-white/20 rounded-sm text-white placeholder-white/40 focus:outline-none focus:border-white/40 transition-colors text-sm"
+                  required
+                />
+                <input type="hidden" name="subject" value="Suscripción Newsletter - Guías de Viaje" />
+                <input type="hidden" name="message" value="Nueva suscripción al newsletter desde la página de guías" />
+                <button
+                  type="submit"
+                  className="bg-white text-teal-800 hover:bg-teal-50 font-semibold py-3.5 px-6 rounded-sm transition-colors text-sm shadow-lg"
+                >
+                  Suscribirme
+                </button>
+              </form>
+            </>
+          )}
+        </section>
+      </div>
+
+      {/* What's included */}
+      <div className="bg-slate-900">
+        <section className="max-w-6xl mx-auto px-6 lg:px-10 py-20 md:py-28">
+          <div className="text-center mb-14">
+            <span className="text-[10px] uppercase tracking-[.25em] text-teal-400 font-semibold mb-3 block">Incluido</span>
+            <h2 className="font-serif text-3xl md:text-4xl text-white">¿Qué incluye cada guía?</h2>
           </div>
-        </div>
-      </section>
 
-      {/* FAQ Section */}
-      <section className="py-12 bg-gray-50">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-2xl font-bold text-gray-900 mb-8 text-center">
-            Preguntas frecuentes sobre nuestras guías
-          </h2>
-          
-          <div className="space-y-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            {[
+              { icon: <MapPin size={20} />, title: 'Itinerario día a día', desc: 'Hora por hora, optimizado para no perder tiempo' },
+              { icon: <span className="text-lg">💰</span>, title: 'Presupuesto real', desc: 'Desglosado con precios actualizados 2025' },
+              { icon: <span className="text-lg">🍽️</span>, title: 'Restaurantes probados', desc: 'Recomendaciones locales con precios' },
+              { icon: <span className="text-lg">💡</span>, title: 'Trucos y tips', desc: 'Consejos que solo un local conoce' },
+            ].map((item, i) => (
+              <div key={i} className="p-6 bg-white/5 border border-white/10 rounded-sm text-center hover:bg-white/[0.07] transition-colors">
+                <div className="flex items-center justify-center mb-4 text-teal-400">{item.icon}</div>
+                <h4 className="font-semibold text-white text-sm mb-2">{item.title}</h4>
+                <p className="text-xs text-white/50 leading-relaxed">{item.desc}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+      </div>
+
+      {/* FAQ */}
+      <div className="bg-white">
+        <section className="max-w-3xl mx-auto px-6 lg:px-10 py-20 md:py-28">
+          <div className="text-center mb-12">
+            <span className="text-[10px] uppercase tracking-[.25em] text-gray-400 font-semibold mb-3 block">FAQ</span>
+            <h2 className="font-serif text-3xl md:text-4xl text-gray-900">Preguntas frecuentes</h2>
+          </div>
+
+          <div className="space-y-2">
             {faqs.map((faq, index) => (
-              <div key={index} className="bg-white rounded-lg border border-gray-200 overflow-hidden">
+              <div key={index} className="border border-gray-100 rounded-sm overflow-hidden hover:border-gray-200 transition-colors">
                 <button
                   onClick={() => setExpandedFaq(expandedFaq === index ? null : index)}
-                  className="w-full px-6 py-4 text-left flex items-center justify-between hover:bg-gray-50 focus:outline-none transition-colors"
+                  className="w-full px-6 py-5 text-left flex items-center justify-between hover:bg-gray-50 transition-colors"
                 >
-                  <h3 className="font-semibold text-gray-900 pr-4">
-                    {faq.question}
-                  </h3>
-                  <div className="flex-shrink-0">
-                    {expandedFaq === index ? (
-                      <div className="w-5 h-5 text-gray-500">−</div>
-                    ) : (
-                      <div className="w-5 h-5 text-gray-500">+</div>
-                    )}
-                  </div>
+                  <h3 className="font-medium text-gray-900 text-sm">{faq.question}</h3>
+                  <ChevronDown size={16} className={`text-gray-400 transition-transform duration-300 flex-shrink-0 ml-4 ${expandedFaq === index ? 'rotate-180' : ''}`} />
                 </button>
-                
                 {expandedFaq === index && (
-                  <div className="px-6 pb-4">
-                    <p className="text-gray-700 leading-relaxed">
-                      {faq.answer}
-                    </p>
+                  <div className="px-6 pb-5">
+                    <p className="text-sm text-gray-600 leading-relaxed">{faq.answer}</p>
                   </div>
                 )}
               </div>
             ))}
           </div>
-        </div>
-      </section>
+        </section>
+      </div>
     </>
   );
 };
