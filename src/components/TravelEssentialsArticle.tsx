@@ -1,211 +1,187 @@
-import { ArrowLeft, Share2 } from 'lucide-react';
+import { ArrowLeft, Share2, Clock, Eye } from 'lucide-react';
 import RelatedArticles from './RelatedArticles';
 
 interface TravelEssentialsArticleProps {
   onBack: () => void;
 }
 
-interface TravelEssentialsArticleProps {
-  onBack: () => void;
-}
+const products = [
+  {
+    num: '01',
+    title: 'Mochila Cabina 40x20x25 (Ryanair)',
+    description: 'Viajar ligero es un arte, y esta mochila es tu mejor aliada si quieres evitar cargos extra y colas de facturacion. Es perfecta para aerolineas como Ryanair porque cumple exactamente las medidas de equipaje de mano permitido. Sus compartimentos estan pensados para aprovechar cada centimetro, y detalles como el puerto USB o el bolsillo antirrobo me han resultado comodisimos en viajes urbanos.',
+    price: 'Desde 35EUR',
+    badge: 'Certificada cabina',
+    url: 'https://www.amazon.es/Hayayu-40x20x25-Mochilas-Senderismo-Impermeable/dp/B0CBVFL64Z?tag=viajamejor-21',
+  },
+  {
+    num: '02',
+    title: 'Adaptador Universal TESSAN',
+    description: 'No hay peor sensacion que llegar a tu destino y darte cuenta de que tu enchufe no encaja. Este adaptador te cubre en mas de 150 paises. Es ligero, compacto y me ha sacado de mas de un apuro, sobre todo por sus puertos USB y su velocidad de carga.',
+    price: 'Desde 15EUR',
+    badge: '+150 paises',
+    url: 'https://www.amazon.es/TESSAN-Adaptador-Universal-Internacional-Americano/dp/B0B2DRC76L?tag=viajamejor-21',
+  },
+  {
+    num: '03',
+    title: 'Bateria Externa INIU 10000mAh',
+    description: 'Nada te arruina mas un viaje que quedarte sin bateria cuando mas lo necesitas. Esta powerbank es pequena y ligera, pero potente. Me permite recargar el movil un par de veces sin problemas. Ademas, es rapida y cabe en cualquier bolsillo de la mochila o pantalon.',
+    price: 'Desde 20EUR',
+    badge: 'Carga rapida',
+    url: 'https://www.amazon.es/INIU-10000mAh-Cargador-Portatil-Tel%C3%A9fono/dp/B08VD632WJ?tag=viajamejor-21',
+  },
+  {
+    num: '04',
+    title: 'Bascula Digital MYCARBON',
+    description: 'Si eres de los que siempre duda en el aeropuerto si tu maleta pasara el control de peso, esta bascula es imprescindible. Compacta, ligera y precisa, me ha ahorrado pagar sobrecostes mas veces de las que puedo contar.',
+    price: 'Desde 10EUR',
+    badge: 'Ahorra sobrecostes',
+    url: 'https://www.amazon.es/MYCARBON-Equipaje-Port%C3%A1til-Electr%C3%B3nica-Retroiluminada/dp/B01IDJM8OA?tag=viajamejor-21',
+  },
+  {
+    num: '05',
+    title: 'Almohada Viscoelastica de Viaje',
+    description: 'El descanso en ruta es vital, y esta almohada ha sido un descubrimiento. Nada que ver con las hinchables. Es viscoelastica, se adapta perfectamente y viene con antifaz y tapones para crear tu pequeno oasis incluso en el asiento mas incomodo del mundo.',
+    price: 'Desde 25EUR',
+    badge: 'Incluye antifaz',
+    url: 'https://www.amazon.es/SOMLAW-Almohada-Viscoel%C3%A1stica-Memoria-Viajando/dp/B0B96TP1WX?tag=viajamejor-21',
+  },
+  {
+    num: '06',
+    title: 'Maleta Amazon Basics Mediana',
+    description: 'Ligera, robusta y con ruedas que giran 360, es perfecta para viajes de una o dos semanas. No es la mas cara ni la mas llamativa, pero su relacion calidad-precio es dificil de superar. Llevo anos usandola y aguanta el trote sin problema.',
+    price: 'Desde 50EUR',
+    badge: 'Ruedas 360',
+    url: 'https://www.amazon.es/Amazon-Basics-Expandible-Equipaje-Giratorias/dp/B071VG5N9D?tag=viajamejor-21',
+  },
+  {
+    num: '07',
+    title: 'Maleta Amazon Basics Grande',
+    description: 'Si necesitas espacio para viajes largos o para compartir maleta, esta es una apuesta segura. Carcasa dura, ruedas que facilitan el traslado y un interior muy bien pensado para mantener todo en orden.',
+    price: 'Desde 70EUR',
+    badge: 'Carcasa dura',
+    url: 'https://www.amazon.es/AmazonBasics-Maleta-r%C3%ADgida-giratoria-Negro/dp/B071HHX6VF?tag=viajamejor-21',
+  },
+  {
+    num: '08',
+    title: 'Auriculares Cancelacion de Ruido',
+    description: 'No se como viajaba antes sin ellos. Elimina ese ruido de motor de avion, ninos llorando o charlas ajenas. Ademas, son ligeros, comodos y la bateria dura lo suficiente para un vuelo largo. Un pequeno lujo que mejora mucho la experiencia viajera.',
+    price: 'Desde 30EUR',
+    badge: 'Cancelacion activa',
+    url: 'https://www.amazon.es/Auriculares-Inal%C3%A1mbricos-Controlador-Impermeable-Inalambricos/dp/B0BCKHQGJN?tag=viajamejor-21',
+  },
+];
 
 const TravelEssentialsArticle: React.FC<TravelEssentialsArticleProps> = ({ onBack }) => {
   return (
-    <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 pt-24">
-      <div className="mb-8">
-        <button 
-          onClick={onBack}
-          className="inline-flex items-center text-sky-600 hover:text-sky-700 hover:bg-sky-50 px-3 py-2 rounded-lg transition-all duration-200 font-medium border border-sky-200 hover:border-sky-300 mb-6"
-        >
-          <ArrowLeft className="h-4 w-4 mr-2" />
-          Volver al blog
-        </button>
-
-        <div className="mb-6">
-          <span className="bg-sky-500 text-white px-3 py-1 rounded-full text-sm font-medium">
+    <article>
+      {/* Hero */}
+      <div className="relative h-[45vh] min-h-[340px] overflow-hidden flex items-end">
+        <img
+          src="https://images.pexels.com/photos/1008155/pexels-photo-1008155.jpeg?auto=compress&cs=tinysrgb&w=1200"
+          alt="Mochila de viaje con objetos esenciales organizados"
+          className="absolute inset-0 w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-black/10" />
+        <div className="relative z-10 max-w-3xl mx-auto px-6 lg:px-10 pb-12 md:pb-16 w-full">
+          <span className="inline-block bg-teal-400 text-slate-900 text-[9px] uppercase tracking-[.2em] font-bold px-3 py-1.5 rounded-full mb-5">
             Equipaje
           </span>
+          <h1 className="font-serif text-3xl md:text-4xl lg:text-5xl text-white leading-[1.1] tracking-tight mb-4">
+            8 objetos imprescindibles para tu proximo viaje
+          </h1>
+          <div className="flex items-center gap-4 text-white/50 text-xs">
+            <span className="flex items-center gap-1.5">
+              <Clock size={12} />
+              12 min lectura
+            </span>
+            <span className="flex items-center gap-1.5">
+              <Eye size={12} />
+              45.2k lecturas
+            </span>
+          </div>
         </div>
+      </div>
 
-        <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight">
-          8 objetos imprescindibles para tu próximo viaje (y dónde comprarlos baratos)
-        </h1>
-        
-        <div className="flex items-center justify-end text-gray-600 text-sm space-x-6 mb-8">
-          <button 
+      {/* Action bar */}
+      <div className="bg-slate-900 border-b border-white/5">
+        <div className="max-w-3xl mx-auto px-6 lg:px-10 py-4 flex items-center justify-between">
+          <button
+            onClick={onBack}
+            className="inline-flex items-center gap-2 text-white/60 hover:text-white text-xs font-medium transition-colors"
+          >
+            <ArrowLeft size={14} />
+            Volver
+          </button>
+          <button
             onClick={() => {
               if (navigator.share) {
                 navigator.share({
-                  title: '8 objetos imprescindibles para tu próximo viaje',
-                  text: 'Descubre los objetos esenciales para viajar mejor',
+                  title: '8 objetos imprescindibles para tu proximo viaje',
                   url: window.location.href,
-                })
-                .catch((error) => console.log('Error sharing', error));
+                }).catch(() => {});
               } else {
-               navigator.clipboard.writeText(window.location.href).then(() => {
-                 alert('¡Enlace copiado al portapapeles!');
-               }).catch(() => {
-                 window.open(`https://twitter.com/intent/tweet?text=8 objetos imprescindibles para tu próximo viaje&url=${encodeURIComponent(window.location.href)}`, '_blank');
-               });
+                navigator.clipboard.writeText(window.location.href).then(() => {
+                  alert('Enlace copiado al portapapeles');
+                }).catch(() => {});
               }
             }}
-           className="inline-flex items-center text-gray-600 hover:text-sky-600 bg-gray-50 hover:bg-sky-50 px-4 py-2 rounded-lg transition-all duration-200 font-medium border border-gray-200 hover:border-sky-300"
+            className="inline-flex items-center gap-2 text-white/60 hover:text-white text-xs font-medium transition-colors"
           >
-            <Share2 className="h-4 w-4 mr-2" />
-            <span>Compartir</span>
+            <Share2 size={14} />
+            Compartir
           </button>
         </div>
       </div>
 
-      <div className="mb-12">
-        <img
-          src="https://images.pexels.com/photos/1008155/pexels-photo-1008155.jpeg?auto=compress&cs=tinysrgb&w=800"
-          alt="Mochila de viaje abierta mostrando objetos esenciales organizados"
-          className="w-full h-64 sm:h-80 object-cover rounded-2xl shadow-lg"
-        />
-      </div>
+      {/* Content */}
+      <div className="bg-stone-50">
+        <div className="max-w-3xl mx-auto px-6 lg:px-10 py-16 md:py-20">
 
-      <div className="prose prose-lg max-w-none">
-        <div className="space-y-12">
-          <div className="bg-white border border-gray-200 rounded-2xl p-8 shadow-sm">
-            <h2 className="text-2xl font-bold text-gray-900 mb-4 flex items-center">
-              <span className="bg-sky-500 text-white w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold mr-3">1</span>
-              🎒 Mochila Cabina 40x20x25 (Ryanair)
-            </h2>
-            <p className="text-gray-700 mb-4">Viajar ligero es un arte, y esta mochila es tu mejor aliada si quieres evitar cargos extra y colas de facturación. Es perfecta para aerolíneas como Ryanair porque cumple exactamente las medidas de equipaje de mano permitido. Sus compartimentos están pensados para aprovechar cada centímetro, y detalles como el puerto USB o el bolsillo antirrobo me han resultado comodísimos en viajes urbanos.</p>
-            <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between space-y-3 sm:space-y-0 mb-4">
-              <div className="flex items-center space-x-3">
-                <span className="text-emerald-600 font-bold text-lg">Desde 35€</span>
-                <span className="text-xs bg-green-100 text-green-700 px-2 py-1 rounded-full font-semibold">
-                  ✅ Certificada cabina
-                </span>
-              </div>
-              <a href="https://www.amazon.es/Hayayu-40x20x25-Mochilas-Senderismo-Impermeable/dp/B0CBVFL64Z?tag=viajamejor-21" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white font-bold py-4 px-8 rounded-xl shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-200 text-lg inline-flex items-center justify-center">🚀 VER EN AMAZON</a>
-            </div>
+          {/* Intro */}
+          <div className="mb-16">
+            <p className="text-lg md:text-xl text-gray-700 leading-relaxed font-light">
+              <strong className="font-medium">Despues de muchos viajes, he compilado la lista definitiva de objetos que siempre llevo conmigo.</strong> Son cosas que me han ahorrado dinero, problemas y disgustos. Nada de listas genericas: esto es lo que realmente uso y recomiendo.
+            </p>
           </div>
 
-          <div className="bg-white border border-gray-200 rounded-2xl p-8 shadow-sm">
-            <h2 className="text-2xl font-bold text-gray-900 mb-4 flex items-center">
-              <span className="bg-sky-500 text-white w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold mr-3">2</span>
-              🔌 Adaptador Universal TESSAN
-            </h2>
-            <p className="text-gray-700 mb-4">No hay peor sensación que llegar a tu destino y darte cuenta de que tu enchufe no encaja. Este adaptador te cubre en más de 150 países. Es ligero, compacto y me ha sacado de más de un apuro, sobre todo por sus puertos USB y su velocidad de carga. Viajar sin este gadget ya no es una opción para mí.</p>
-            <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between space-y-3 sm:space-y-0 mb-4">
-              <div className="flex items-center space-x-3">
-                <span className="text-emerald-600 font-bold text-lg">Desde 15€</span>
-                <span className="text-xs bg-green-100 text-green-700 px-2 py-1 rounded-full font-semibold">
-                  🌍 +150 países
-                </span>
-              </div>
-              <a href="https://www.amazon.es/TESSAN-Adaptador-Universal-Internacional-Americano/dp/B0B2DRC76L?tag=viajamejor-21" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white font-bold py-4 px-8 rounded-xl shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-200 text-lg inline-flex items-center justify-center">🚀 VER EN AMAZON</a>
-            </div>
+          {/* Products */}
+          <div className="space-y-8">
+            {products.map((product) => (
+              <section key={product.num} className="bg-white border border-stone-200 rounded-sm p-7 md:p-9">
+                <div className="flex items-baseline gap-4 mb-4">
+                  <span className="text-[10px] text-teal-600 font-bold uppercase tracking-[.2em]">{product.num}</span>
+                  <h2 className="font-serif text-xl md:text-2xl text-gray-900">{product.title}</h2>
+                </div>
+                <p className="text-gray-600 leading-relaxed mb-6">
+                  {product.description}
+                </p>
+                <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+                  <div className="flex items-center gap-3">
+                    <span className="text-teal-700 font-semibold">{product.price}</span>
+                    <span className="text-[9px] uppercase tracking-wider text-gray-500 bg-stone-100 px-2.5 py-1 rounded-full font-medium">
+                      {product.badge}
+                    </span>
+                  </div>
+                  <a
+                    href={product.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 bg-slate-900 hover:bg-slate-800 text-white text-xs font-semibold uppercase tracking-wider px-6 py-3.5 rounded-sm transition-colors"
+                  >
+                    Ver en Amazon
+                  </a>
+                </div>
+              </section>
+            ))}
           </div>
 
-          <div className="bg-white border border-gray-200 rounded-2xl p-8 shadow-sm">
-            <h2 className="text-2xl font-bold text-gray-900 mb-4 flex items-center">
-              <span className="bg-sky-500 text-white w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold mr-3">3</span>
-              🔋 Batería Externa INIU 10000mAh
-            </h2>
-            <p className="text-gray-700 mb-4">Nada te arruina más un viaje que quedarte sin batería cuando más lo necesitas. Esta powerbank es pequeña y ligera, pero potente. Me permite recargar el móvil un par de veces sin problemas. Además, es rápida y cabe en cualquier bolsillo de la mochila o pantalón.</p>
-            <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between space-y-3 sm:space-y-0 mb-4">
-              <div className="flex items-center space-x-3">
-                <span className="text-emerald-600 font-bold text-lg">Desde 20€</span>
-                <span className="text-xs bg-green-100 text-green-700 px-2 py-1 rounded-full font-semibold">
-                  ⚡ Carga rápida
-                </span>
-              </div>
-              <a href="https://www.amazon.es/INIU-10000mAh-Cargador-Portatil-Tel%C3%A9fono/dp/B08VD632WJ?tag=viajamejor-21" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white font-bold py-4 px-8 rounded-xl shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-200 text-lg inline-flex items-center justify-center">🚀 VER EN AMAZON</a>
-            </div>
-          </div>
-
-          <div className="bg-white border border-gray-200 rounded-2xl p-8 shadow-sm">
-            <h2 className="text-2xl font-bold text-gray-900 mb-4 flex items-center">
-              <span className="bg-sky-500 text-white w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold mr-3">4</span>
-              ⚖️ Báscula Digital MYCARBON
-            </h2>
-            <p className="text-gray-700 mb-4">Si eres de los que siempre duda en el aeropuerto si tu maleta pasará el control de peso, esta báscula es imprescindible. Compacta, ligera y precisa, me ha ahorrado pagar sobrecostes más veces de las que puedo contar. Su pantalla iluminada es especialmente útil si pesas de noche o en habitaciones poco iluminadas.</p>
-            <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between space-y-3 sm:space-y-0 mb-4">
-              <div className="flex items-center space-x-3">
-                <span className="text-emerald-600 font-bold text-lg">Desde 10€</span>
-                <span className="text-xs bg-green-100 text-green-700 px-2 py-1 rounded-full font-semibold">
-                  💰 Ahorra sobrecostes
-                </span>
-              </div>
-              <a href="https://www.amazon.es/MYCARBON-Equipaje-Port%C3%A1til-Electr%C3%B3nica-Retroiluminada/dp/B01IDJM8OA?tag=viajamejor-21" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white font-bold py-4 px-8 rounded-xl shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-200 text-lg inline-flex items-center justify-center">🚀 VER EN AMAZON</a>
-            </div>
-          </div>
-
-          <div className="bg-white border border-gray-200 rounded-2xl p-8 shadow-sm">
-            <h2 className="text-2xl font-bold text-gray-900 mb-4 flex items-center">
-              <span className="bg-sky-500 text-white w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold mr-3">5</span>
-              💤 Almohada Viscoelástica de Viaje
-            </h2>
-            <p className="text-gray-700 mb-4">El descanso en ruta es vital, y esta almohada ha sido un descubrimiento. Nada que ver con las hinchables. Es viscoelástica, se adapta perfectamente y viene con antifaz y tapones para crear tu pequeño oasis incluso en el asiento más incómodo del mundo. Tras probar varias, esta es la que repito en cada viaje.</p>
-            <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between space-y-3 sm:space-y-0 mb-4">
-              <div className="flex items-center space-x-3">
-                <span className="text-emerald-600 font-bold text-lg">Desde 25€</span>
-                <span className="text-xs bg-green-100 text-green-700 px-2 py-1 rounded-full font-semibold">
-                  😴 Incluye antifaz
-                </span>
-              </div>
-              <a href="https://www.amazon.es/SOMLAW-Almohada-Viscoel%C3%A1stica-Memoria-Viajando/dp/B0B96TP1WX?tag=viajamejor-21" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white font-bold py-4 px-8 rounded-xl shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-200 text-lg inline-flex items-center justify-center">🚀 VER EN AMAZON</a>
-            </div>
-          </div>
-
-          <div className="bg-white border border-gray-200 rounded-2xl p-8 shadow-sm">
-            <h2 className="text-2xl font-bold text-gray-900 mb-4 flex items-center">
-              <span className="bg-sky-500 text-white w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold mr-3">6</span>
-              🧳 Maleta Amazon Basics Mediana
-            </h2>
-            <p className="text-gray-700 mb-4">Ligera, robusta y con ruedas que giran 360º, es perfecta para viajes de una o dos semanas. No es la más cara ni la más llamativa, pero su relación calidad-precio es difícil de superar. Llevo años usándola y aguanta el trote sin problema.</p>
-            <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between space-y-3 sm:space-y-0 mb-4">
-              <div className="flex items-center space-x-3">
-                <span className="text-emerald-600 font-bold text-lg">Desde 50€</span>
-                <span className="text-xs bg-green-100 text-green-700 px-2 py-1 rounded-full font-semibold">
-                  🔄 Ruedas 360º
-                </span>
-              </div>
-              <a href="https://www.amazon.es/Amazon-Basics-Expandible-Equipaje-Giratorias/dp/B071VG5N9D?tag=viajamejor-21" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white font-bold py-4 px-8 rounded-xl shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-200 text-lg inline-flex items-center justify-center">🚀 VER EN AMAZON</a>
-            </div>
-          </div>
-
-          <div className="bg-white border border-gray-200 rounded-2xl p-8 shadow-sm">
-            <h2 className="text-2xl font-bold text-gray-900 mb-4 flex items-center">
-              <span className="bg-sky-500 text-white w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold mr-3">7</span>
-              🧳 Maleta Amazon Basics Grande
-            </h2>
-            <p className="text-gray-700 mb-4">Si necesitas espacio para viajes largos o para compartir maleta, esta es una apuesta segura. Carcasa dura, ruedas que facilitan el traslado y un interior muy bien pensado para mantener todo en orden. Para el precio que tiene, pocas pegas se le pueden poner.</p>
-            <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between space-y-3 sm:space-y-0 mb-4">
-              <div className="flex items-center space-x-3">
-                <span className="text-emerald-600 font-bold text-lg">Desde 70€</span>
-                <span className="text-xs bg-green-100 text-green-700 px-2 py-1 rounded-full font-semibold">
-                  🛡️ Carcasa dura
-                </span>
-              </div>
-              <a href="https://www.amazon.es/AmazonBasics-Maleta-r%C3%ADgida-giratoria-Negro/dp/B071HHX6VF?tag=viajamejor-21" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white font-bold py-4 px-8 rounded-xl shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-200 text-lg inline-flex items-center justify-center">🚀 VER EN AMAZON</a>
-            </div>
-          </div>
-
-          <div className="bg-white border border-gray-200 rounded-2xl p-8 shadow-sm">
-            <h2 className="text-2xl font-bold text-gray-900 mb-4 flex items-center">
-              <span className="bg-sky-500 text-white w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold mr-3">8</span>
-              🎧 Auriculares Cancelación de Ruido
-            </h2>
-            <p className="text-gray-700 mb-4">No sé cómo viajaba antes sin ellos. Elimina ese ruido de motor de avión, niños llorando o charlas ajenas. Además, son ligeros, cómodos y la batería dura lo suficiente para un vuelo largo. Un pequeño lujo que mejora mucho la experiencia viajera.</p>
-            <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between space-y-3 sm:space-y-0 mb-4">
-              <div className="flex items-center space-x-3">
-                <span className="text-emerald-600 font-bold text-lg">Desde 30€</span>
-                <span className="text-xs bg-green-100 text-green-700 px-2 py-1 rounded-full font-semibold">
-                  🔇 Cancelación activa
-                </span>
-              </div>
-              <a href="https://www.amazon.es/Auriculares-Inal%C3%A1mbricos-Controlador-Impermeable-Inalambricos/dp/B0BCKHQGJN?tag=viajamejor-21" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white font-bold py-4 px-8 rounded-xl shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-200 text-lg inline-flex items-center justify-center">🚀 VER EN AMAZON</a>
-            </div>
+          {/* Related Articles */}
+          <div className="mt-16">
+            <RelatedArticles currentCategory="Equipaje" currentArticleId="8-objetos-imprescindibles" />
           </div>
         </div>
       </div>
-
-      <RelatedArticles currentCategory="Equipaje" currentArticleId="8-objetos-imprescindibles" />
     </article>
   );
 };
