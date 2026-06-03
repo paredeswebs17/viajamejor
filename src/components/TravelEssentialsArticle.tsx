@@ -148,10 +148,10 @@ const TravelEssentialsArticle: React.FC<TravelEssentialsArticleProps> = ({ onBac
           {/* Products */}
           <div className="space-y-8">
             {products.map((product, index) => (
-              <section key={product.num} className="bg-white border border-stone-200 rounded-sm p-7 md:p-9 relative overflow-hidden">
-                <span className="absolute -top-2 -left-1 text-[5rem] md:text-[6rem] font-serif text-stone-100 leading-none select-none pointer-events-none">{index + 1}</span>
-                <div className="relative mb-4 pt-6">
+              <section key={product.num} className="bg-white border border-stone-200 rounded-sm p-7 md:p-9">
+                <div className="flex items-start justify-between gap-4 mb-4">
                   <h2 className="font-serif text-xl md:text-2xl text-gray-900">{product.title}</h2>
+                  <span className="text-3xl md:text-4xl font-serif text-teal-200 leading-none flex-shrink-0">{index + 1}</span>
                 </div>
                 <p className="text-gray-600 leading-relaxed mb-6">
                   {product.description}

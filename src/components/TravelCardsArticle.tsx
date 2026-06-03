@@ -115,10 +115,10 @@ const TravelCardsArticle: React.FC<TravelCardsArticleProps> = ({ onBack }) => {
             </div>
 
             {/* Revolut */}
-            <section className="bg-white border border-stone-200 rounded-sm p-7 md:p-9 relative overflow-hidden">
-              <span className="absolute -top-2 -left-1 text-[5rem] md:text-[6rem] font-serif text-stone-100 leading-none select-none pointer-events-none">1</span>
-              <div className="relative mb-2 pt-6">
+            <section className="bg-white border border-stone-200 rounded-sm p-7 md:p-9">
+              <div className="flex items-start justify-between gap-4 mb-2">
                 <h2 className="font-serif text-xl md:text-2xl text-gray-900">Revolut</h2>
+                <span className="text-3xl md:text-4xl font-serif text-teal-200 leading-none flex-shrink-0">1</span>
               </div>
               <p className="text-xs text-teal-600 font-semibold uppercase tracking-wider mb-5">Mi favorita para viajar</p>
               <p className="text-gray-600 leading-relaxed mb-4">
@@ -151,10 +151,10 @@ const TravelCardsArticle: React.FC<TravelCardsArticleProps> = ({ onBack }) => {
             </section>
 
             {/* N26 */}
-            <section className="bg-white border border-stone-200 rounded-sm p-7 md:p-9 relative overflow-hidden">
-              <span className="absolute -top-2 -left-1 text-[5rem] md:text-[6rem] font-serif text-stone-100 leading-none select-none pointer-events-none">2</span>
-              <div className="relative mb-2 pt-6">
+            <section className="bg-white border border-stone-200 rounded-sm p-7 md:p-9">
+              <div className="flex items-start justify-between gap-4 mb-2">
                 <h2 className="font-serif text-xl md:text-2xl text-gray-900">N26</h2>
+                <span className="text-3xl md:text-4xl font-serif text-teal-200 leading-none flex-shrink-0">2</span>
               </div>
               <p className="text-xs text-gray-500 font-medium uppercase tracking-wider mb-5">Banco online aleman con IBAN europeo</p>
               <p className="text-gray-600 leading-relaxed mb-4">
