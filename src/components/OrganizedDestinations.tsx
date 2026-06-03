@@ -1,5 +1,4 @@
 import { useEffect, useRef } from 'react';
-import { ChevronRight } from 'lucide-react';
 
 const OrganizedDestinations = () => {
   const sectionRef = useRef<HTMLElement>(null);
@@ -67,8 +66,8 @@ const OrganizedDestinations = () => {
                   <span className="text-2xl">{dest.badge}</span>
                 </div>
 
-                <div className="absolute top-4 right-4 flex flex-col gap-2 items-end">
-                  <span className="bg-gray-500 text-white text-[9px] font-bold px-3 py-1 rounded-full uppercase tracking-[.14em]">
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <span className="bg-gray-700/90 text-white text-sm md:text-base font-bold px-6 py-3 rounded-full uppercase tracking-[.15em]">
                     Próximamente
                   </span>
                 </div>
@@ -77,13 +76,9 @@ const OrganizedDestinations = () => {
                   <h3 className="font-serif text-xl md:text-2xl text-white/70 leading-tight mb-1">
                     {dest.title}
                   </h3>
-                  <p className="text-white/40 text-xs mb-3">
+                  <p className="text-white/40 text-xs">
                     {dest.subtitle}
                   </p>
-                  <div className="flex items-center text-white/40">
-                    <span className="text-xs font-medium uppercase tracking-wider">Próximamente</span>
-                    <ChevronRight size={14} className="ml-1" />
-                  </div>
                 </div>
               </div>
             </div>
