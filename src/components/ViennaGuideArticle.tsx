@@ -502,9 +502,15 @@ const ViennaGuideArticle: React.FC<ViennaGuideArticleProps> = ({ onBack }) => {
                 href="https://gyg.me/MTSmqRRG"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-6 inline-flex items-center gap-2 text-sm text-amber-700 hover:text-amber-600 font-medium"
+                className="mt-6 flex items-center justify-between border-2 border-amber-200 bg-gradient-to-r from-amber-50 to-white p-4 hover:border-amber-400 hover:shadow-lg transition-all group"
               >
-                Vienna PASS (1-6 días, transporte + atracciones incluidas) <ExternalLink size={14} />
+                <div>
+                  <span className="text-sm font-semibold text-stone-900 group-hover:text-amber-800 transition-colors">Vienna PASS</span>
+                  <p className="text-xs text-stone-500 mt-0.5">1-6 días, transporte + atracciones incluidas</p>
+                </div>
+                <span className="shrink-0 bg-stone-900 group-hover:bg-amber-700 text-white text-[10px] uppercase tracking-wider px-4 py-2.5 transition-colors flex items-center gap-1.5">
+                  Ver precios <ExternalLink size={11} />
+                </span>
               </a>
             </div>
           </div>
@@ -1065,9 +1071,14 @@ function BookingCard({ url, label, price, badge }: { url: string; label: string;
 
 function ConcertOption({ title, desc, link }: { title: string; desc: string; link?: string }) {
   const content = (
-    <div className="border border-stone-700 p-5 hover:border-amber-400 transition-colors group">
+    <div className={`border p-5 transition-all group ${link ? 'border-amber-500/40 hover:border-amber-400 hover:shadow-lg bg-stone-800' : 'border-stone-700 hover:border-stone-500'}`}>
       <h4 className="text-lg text-stone-50 group-hover:text-amber-400 transition-colors" style={{ fontFamily: 'Georgia, serif' }}>{title}</h4>
       <p className="mt-2 text-sm text-stone-400">{desc}</p>
+      {link && (
+        <span className="mt-4 inline-flex items-center gap-2 bg-amber-600 text-white text-[10px] uppercase tracking-wider px-3.5 py-2 group-hover:bg-amber-500 transition-colors">
+          Reservar entradas <ExternalLink size={10} />
+        </span>
+      )}
     </div>
   );
   if (link) return <a href={link} target="_blank" rel="noopener noreferrer">{content}</a>;
@@ -1076,12 +1087,18 @@ function ConcertOption({ title, desc, link }: { title: string; desc: string; lin
 
 function ExtraCard({ title, desc, link }: { title: string; desc: string; link?: string }) {
   return (
-    <div className="border border-stone-200 p-6 hover:border-amber-500/50 hover:shadow-lg transition-all">
+    <div className={`border p-6 transition-all ${link ? 'border-amber-200 bg-gradient-to-b from-amber-50/50 to-white hover:shadow-xl hover:border-amber-400' : 'border-stone-200 hover:border-stone-300 hover:shadow-lg'}`}>
       <h3 className="text-xl text-stone-900 mb-3" style={{ fontFamily: 'Georgia, serif' }}>{title}</h3>
       <p className="text-sm text-stone-600 leading-relaxed">{desc}</p>
       {link && (
-        <a href={link} target="_blank" rel="noopener noreferrer" className="mt-4 inline-flex items-center gap-2 text-sm text-amber-700 hover:text-amber-600 font-medium">
-          Reservar <ExternalLink size={13} />
+        <a
+          href={link}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-5 flex items-center justify-between bg-stone-900 hover:bg-amber-700 text-white px-4 py-3 transition-colors group"
+        >
+          <span className="text-xs uppercase tracking-wider font-medium">Reservar experiencia</span>
+          <ExternalLink size={13} className="group-hover:translate-x-0.5 transition-transform" />
         </a>
       )}
     </div>
@@ -1090,23 +1107,42 @@ function ExtraCard({ title, desc, link }: { title: string; desc: string; link?: 
 
 function DayTripCard({ title, link }: { title: string; link: string }) {
   return (
-    <a href={link} target="_blank" rel="noopener noreferrer" className="flex items-center justify-between border border-stone-200 p-4 hover:border-amber-500/50 hover:shadow-md transition-all group">
-      <span className="text-stone-900 font-medium">{title}</span>
-      <ExternalLink size={14} className="text-stone-400 group-hover:text-amber-600 transition-colors" />
+    <a href={link} target="_blank" rel="noopener noreferrer" className="flex items-center justify-between border-2 border-amber-100 bg-gradient-to-r from-amber-50/60 to-white p-5 hover:border-amber-400 hover:shadow-lg transition-all group">
+      <div>
+        <span className="text-stone-900 font-semibold group-hover:text-amber-800 transition-colors">{title}</span>
+        <div className="flex items-center gap-2 mt-1.5">
+          <span className="flex items-center gap-0.5">
+            <Star size={9} className="fill-amber-500 text-amber-500" />
+            <Star size={9} className="fill-amber-500 text-amber-500" />
+            <Star size={9} className="fill-amber-500 text-amber-500" />
+            <Star size={9} className="fill-amber-500 text-amber-500" />
+            <Star size={9} className="fill-amber-500 text-amber-500" />
+          </span>
+          <span className="text-[10px] text-stone-500">Tour completo</span>
+        </div>
+      </div>
+      <span className="shrink-0 bg-stone-900 group-hover:bg-amber-700 text-white text-[10px] uppercase tracking-wider px-4 py-2.5 transition-colors flex items-center gap-1.5">
+        Ver tour <ExternalLink size={11} />
+      </span>
     </a>
   );
 }
 
 function TransportOption({ name, price, time, desc, link }: { name: string; price: string; time: string; desc: string; link: string }) {
   return (
-    <a href={link} target="_blank" rel="noopener noreferrer" className="flex items-center justify-between border border-stone-200 p-4 hover:border-amber-500/40 transition-colors group">
-      <div>
-        <div className="font-medium text-stone-900 group-hover:text-amber-700 transition-colors">{name}</div>
+    <a href={link} target="_blank" rel="noopener noreferrer" className="flex items-center justify-between border-2 border-stone-100 bg-white p-4 hover:border-amber-300 hover:shadow-md transition-all group">
+      <div className="flex-1">
+        <div className="font-semibold text-stone-900 group-hover:text-amber-700 transition-colors">{name}</div>
         <div className="text-xs text-stone-500 mt-0.5">{desc}</div>
       </div>
-      <div className="text-right">
-        <div className="font-semibold text-amber-700">{price}</div>
-        <div className="text-xs text-stone-500">{time}</div>
+      <div className="flex items-center gap-3">
+        <div className="text-right">
+          <div className="text-lg font-bold text-amber-700">{price}</div>
+          <div className="text-[10px] text-stone-500">{time}</div>
+        </div>
+        <span className="shrink-0 w-8 h-8 bg-stone-900 group-hover:bg-amber-700 rounded-full flex items-center justify-center transition-colors">
+          <ExternalLink size={12} className="text-white" />
+        </span>
       </div>
     </a>
   );
@@ -1134,13 +1170,38 @@ function HotelZone({ zone, description, hotels }: { zone: string; description: s
       <h3 className="text-xl font-semibold text-stone-900 mb-2">{zone}</h3>
       <p className="text-sm text-stone-600 mb-6">{description}</p>
       <div className="space-y-4">
-        {hotels.map((h) => (
-          <a key={h.name} href={h.link} target="_blank" rel="noopener noreferrer" className="block border border-stone-200 p-5 hover:border-amber-500/50 hover:shadow-md transition-all group">
-            <div className="flex items-center gap-2 mb-1">
-              <span className="font-medium text-stone-900 group-hover:text-amber-700 transition-colors">{h.name}</span>
-              <span className="text-xs text-amber-600">{Array(h.stars).fill('★').join('')}</span>
+        {hotels.map((h, i) => (
+          <a
+            key={h.name}
+            href={h.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={`block border-2 p-5 transition-all group relative overflow-hidden ${
+              i === 0
+                ? 'border-amber-300 bg-gradient-to-br from-amber-50 to-white hover:shadow-xl hover:border-amber-500'
+                : 'border-stone-100 bg-white hover:border-amber-300 hover:shadow-lg'
+            }`}
+          >
+            {i === 0 && (
+              <span className="absolute top-0 right-0 bg-amber-600 text-white text-[9px] uppercase tracking-wider px-2.5 py-1 font-semibold">
+                Nuestra elección
+              </span>
+            )}
+            <div className="flex items-center justify-between gap-4">
+              <div className="flex-1">
+                <div className="flex items-center gap-2 mb-1">
+                  <span className="font-semibold text-stone-900 group-hover:text-amber-800 transition-colors">{h.name}</span>
+                </div>
+                <div className="flex items-center gap-2 mt-1">
+                  <span className="text-xs text-amber-600">{Array(h.stars).fill('★').join('')}</span>
+                  <span className="text-xs text-stone-400">|</span>
+                  <span className="text-xs text-stone-500">{h.highlight}</span>
+                </div>
+              </div>
+              <span className="shrink-0 bg-stone-900 group-hover:bg-amber-700 text-white text-[10px] uppercase tracking-wider px-4 py-2.5 transition-colors flex items-center gap-1.5">
+                Ver hotel <ExternalLink size={11} />
+              </span>
             </div>
-            <p className="text-sm text-stone-500">{h.highlight}</p>
           </a>
         ))}
       </div>
@@ -1149,25 +1210,36 @@ function HotelZone({ zone, description, hotels }: { zone: string; description: s
 }
 
 function Restaurant({ name, address, price, desc, link }: { name: string; address: string; price: string; desc: string; link?: string }) {
-  const content = (
-    <div className="border-t border-stone-200 pt-4">
+  return (
+    <div className={`border-2 p-4 transition-all ${link ? 'border-amber-100 bg-amber-50/30 hover:border-amber-300 hover:shadow-md' : 'border-stone-100'}`}>
       <div className="flex items-baseline justify-between">
-        <span className="font-medium text-stone-900">{name}</span>
-        <span className="text-xs text-amber-700 font-semibold">{price}</span>
+        <span className="font-semibold text-stone-900">{name}</span>
+        <span className="text-xs text-amber-700 font-bold bg-amber-100 px-2 py-0.5 rounded-sm">{price}</span>
       </div>
       <p className="text-xs text-stone-500 mt-0.5">{address}</p>
       <p className="text-sm text-stone-600 mt-2">{desc}</p>
+      {link && (
+        <a
+          href={link}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-3 inline-flex items-center gap-2 bg-stone-900 hover:bg-amber-700 text-white text-[10px] uppercase tracking-wider px-3.5 py-2 transition-colors"
+        >
+          Ver restaurante <ExternalLink size={10} />
+        </a>
+      )}
     </div>
   );
-  if (link) return <a href={link} target="_blank" rel="noopener noreferrer" className="block hover:opacity-80 transition-opacity">{content}</a>;
-  return content;
 }
 
 function TravelTool({ icon: Icon, title, benefits, link, cta }: { icon: any; title: string; benefits: string[]; link: string; cta: string }) {
   return (
-    <div className="border border-stone-200 p-6 md:p-8">
+    <div className="border-2 border-amber-200 bg-gradient-to-b from-amber-50/50 to-white p-6 md:p-8 hover:shadow-xl hover:border-amber-400 transition-all relative overflow-hidden group">
+      <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-amber-500 to-amber-300" />
       <div className="flex items-center gap-3 mb-5">
-        <Icon size={20} className="text-amber-600" />
+        <div className="w-10 h-10 rounded-full bg-amber-100 flex items-center justify-center">
+          <Icon size={20} className="text-amber-700" />
+        </div>
         <h3 className="text-xl font-semibold text-stone-900">{title}</h3>
       </div>
       <ul className="space-y-2.5 mb-6">
@@ -1182,10 +1254,11 @@ function TravelTool({ icon: Icon, title, benefits, link, cta }: { icon: any; tit
         href={link}
         target="_blank"
         rel="noopener noreferrer"
-        className="inline-flex items-center gap-2 bg-stone-900 text-stone-50 px-5 py-3 text-xs uppercase tracking-[.12em] hover:bg-amber-700 transition-colors"
+        className="w-full flex items-center justify-center gap-2 bg-stone-900 group-hover:bg-amber-700 text-stone-50 px-6 py-4 text-sm uppercase tracking-[.1em] font-medium transition-colors"
       >
-        {cta} <ExternalLink size={13} />
+        {cta} <ExternalLink size={14} />
       </a>
+      <p className="mt-3 text-center text-[10px] text-stone-400 uppercase tracking-wider">Enlace exclusivo con descuento</p>
     </div>
   );
 }
