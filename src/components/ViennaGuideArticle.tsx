@@ -1,14 +1,39 @@
 import { useState, useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { ArrowLeft, Calendar, Clock, Euro, Music, Brain as Train, Bed, UtensilsCrossed, CreditCard, Shield, ExternalLink, Compass } from 'lucide-react';
+import { ArrowLeft, Calendar, Clock, Euro, Music, Brain as Train, Bed, UtensilsCrossed, CreditCard, Shield, ExternalLink, Compass, List, X } from 'lucide-react';
 
 interface ViennaGuideArticleProps {
   onBack: () => void;
 }
 
+const NAV_SECTIONS = [
+  { id: 'dia-1', label: 'Día 1' },
+  { id: 'dia-2', label: 'Día 2' },
+  { id: 'dia-3', label: 'Día 3' },
+  { id: 'extras', label: 'Más experiencias' },
+  { id: 'info-practica', label: 'Info práctica' },
+  { id: 'alojamiento', label: 'Alojamiento' },
+  { id: 'comer', label: 'Dónde comer' },
+  { id: 'herramientas', label: 'Tarjeta y seguro' },
+  { id: 'consejos', label: 'Consejos' },
+];
+
 
 const ViennaGuideArticle: React.FC<ViennaGuideArticleProps> = ({ onBack }) => {
   const navigate = useNavigate();
+  const [navOpen, setNavOpen] = useState(false);
+  const [showNav, setShowNav] = useState(false);
+
+  useEffect(() => {
+    const toggle = () => setShowNav(window.scrollY > 500);
+    window.addEventListener('scroll', toggle, { passive: true });
+    return () => window.removeEventListener('scroll', toggle);
+  }, []);
+
+  const scrollTo = (id: string) => {
+    document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
+    setNavOpen(false);
+  };
 
   return (
     <article className="bg-stone-50">
@@ -338,7 +363,7 @@ const ViennaGuideArticle: React.FC<ViennaGuideArticleProps> = ({ onBack }) => {
       </section>
 
       {/* MORE PLACES */}
-      <section className="py-24 md:py-32 bg-stone-50">
+      <section id="extras" className="py-24 md:py-32 bg-stone-50 scroll-mt-20">
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
           <div className="flex items-center gap-3 mb-5">
             <span className="h-px w-8 bg-amber-600" />
@@ -367,7 +392,7 @@ const ViennaGuideArticle: React.FC<ViennaGuideArticleProps> = ({ onBack }) => {
       </section>
 
       {/* PRACTICAL INFO */}
-      <section className="py-24 md:py-32 bg-white">
+      <section id="info-practica" className="py-24 md:py-32 bg-white scroll-mt-20">
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
           <div className="flex items-center gap-3 mb-5">
             <span className="h-px w-8 bg-amber-600" />
@@ -438,7 +463,7 @@ const ViennaGuideArticle: React.FC<ViennaGuideArticleProps> = ({ onBack }) => {
       </section>
 
       {/* HOTELS */}
-      <section className="py-24 md:py-32 bg-stone-50">
+      <section id="alojamiento" className="py-24 md:py-32 bg-stone-50 scroll-mt-20">
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
           <div className="flex items-center gap-3 mb-5">
             <span className="h-px w-8 bg-amber-600" />
@@ -474,7 +499,7 @@ const ViennaGuideArticle: React.FC<ViennaGuideArticleProps> = ({ onBack }) => {
       </section>
 
       {/* DINING */}
-      <section className="py-24 md:py-32 bg-white">
+      <section id="comer" className="py-24 md:py-32 bg-white scroll-mt-20">
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
           <div className="flex items-center gap-3 mb-5">
             <span className="h-px w-8 bg-amber-600" />
@@ -507,7 +532,7 @@ const ViennaGuideArticle: React.FC<ViennaGuideArticleProps> = ({ onBack }) => {
       </section>
 
       {/* TRAVEL TOOLS */}
-      <section className="py-24 md:py-32 bg-stone-50">
+      <section id="herramientas" className="py-24 md:py-32 bg-stone-50 scroll-mt-20">
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
           <div className="flex items-center gap-3 mb-5">
             <span className="h-px w-8 bg-amber-600" />
@@ -537,7 +562,7 @@ const ViennaGuideArticle: React.FC<ViennaGuideArticleProps> = ({ onBack }) => {
       </section>
 
       {/* TIPS */}
-      <section className="py-24 md:py-32 bg-white">
+      <section id="consejos" className="py-24 md:py-32 bg-white scroll-mt-20">
         <div className="max-w-5xl mx-auto px-6 lg:px-10">
           <div className="flex items-center gap-3 mb-5">
             <span className="h-px w-8 bg-amber-600" />
@@ -588,6 +613,37 @@ const ViennaGuideArticle: React.FC<ViennaGuideArticleProps> = ({ onBack }) => {
           </button>
         </div>
       </section>
+
+      {/* Floating Section Navigator */}
+      {showNav && (
+        <div className="fixed bottom-6 right-6 z-50">
+          {navOpen && (
+            <div className="absolute bottom-14 right-0 w-56 bg-white rounded-xl shadow-2xl border border-stone-200 overflow-hidden mb-2 animate-in">
+              <div className="px-4 py-3 border-b border-stone-100 bg-stone-50">
+                <span className="text-[10px] uppercase tracking-[.15em] text-stone-500 font-medium">Ir a sección</span>
+              </div>
+              <nav className="py-1 max-h-72 overflow-y-auto">
+                {NAV_SECTIONS.map((s) => (
+                  <button
+                    key={s.id}
+                    onClick={() => scrollTo(s.id)}
+                    className="w-full text-left px-4 py-2.5 text-sm text-stone-700 hover:bg-amber-50 hover:text-amber-800 transition-colors"
+                  >
+                    {s.label}
+                  </button>
+                ))}
+              </nav>
+            </div>
+          )}
+          <button
+            onClick={() => setNavOpen(!navOpen)}
+            className="p-3.5 bg-teal-600 text-white rounded-full shadow-lg hover:bg-teal-500 transition-all hover:scale-105"
+            aria-label="Navegar secciones"
+          >
+            {navOpen ? <X className="h-5 w-5" /> : <List className="h-5 w-5" />}
+          </button>
+        </div>
+      )}
     </article>
   );
 };
