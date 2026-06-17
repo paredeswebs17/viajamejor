@@ -13,7 +13,7 @@ const ViennaGuidePage = () => {
     <>
       <Helmet>
         <title>Viena en 3 Días: Guía Imperial Completa con Música Clásica | Viaja Mejor</title>
-        <meta name="description" content="Guía completa de Viena en 3 días. Itinerario imperial hora por hora, palacios Schönbrunn y Hofburg, conciertos clásicos, presupuestos reales desde 75€/día." />
+        <meta name="description" content="Guía completa de Viena en 3 días (2026). Itinerario imperial hora por hora, palacios Schönbrunn y Hofburg, conciertos clásicos, presupuestos reales desde 75€/día." />
         <meta name="keywords" content="viena 3 dias, guia viena, palacio schonbrunn, musikverein, opera viena, que ver viena, presupuesto viena, itinerario viena, conciertos viena, cafe sacher" />
         <link rel="canonical" href="https://viajamejor.net/viena-3-dias" />
         
@@ -90,7 +90,7 @@ const ViennaGuidePage = () => {
                 "name": "¿Merece la pena la Vienna Pass para 3 días?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Sí, si visitas al menos 5 atracciones principales. La Vienna Pass de 3 días cuesta 89€ e incluye más de 70 atracciones + transporte público. Comprando las entradas por separado gastarías unos 133€, así que ahorras un 33%."
+                  "text": "Depende de cuánto visites. La Vienna Pass de 3 días cuesta unos 149€ e incluye más de 90 atracciones + bus turístico sin colas. Comprando solo las entradas principales por separado (Schönbrunn 38€, Belvedere 23€, Hofburg 19,50€...) gastarías unos 162€. El verdadero ahorro es el acceso sin colas y el bus hop-on hop-off incluido."
                 }
               },
               {
@@ -98,7 +98,7 @@ const ViennaGuidePage = () => {
                 "name": "¿Cuánto cuesta viajar a Viena 3 días?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Un viaje de 3 días a Viena cuesta entre 65-85€/día para mochileros (hostel + comida básica), 120-160€/día estándar (hotel 3★ + restaurantes), o 250-400€/día premium (hotel 5★ + experiencias VIP)."
+                  "text": "Un viaje de 3 días a Viena cuesta entre 75-100€/día para mochileros (hostel + comida básica), 140-190€/día estándar (hotel 3★ + restaurantes), o 280-450€/día premium (hotel 5★ + experiencias VIP). Precios actualizados a 2026."
                 }
               },
               {

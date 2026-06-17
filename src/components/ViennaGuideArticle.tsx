@@ -453,7 +453,7 @@ const ViennaGuideArticle: React.FC<ViennaGuideArticleProps> = ({ onBack }) => {
             ¿Merece la pena la <span className="italic">Vienna Pass</span>?
           </h2>
           <p className="text-stone-600 mb-12 max-w-2xl">
-            Hemos calculado cuánto gastarías comprando las entradas por separado vs. con la Vienna Pass de 3 días. Spoiler: ahorras entre 30-50% si visitas al menos 5 atracciones.
+            Hemos calculado cuánto gastarías comprando las entradas por separado vs. con la Vienna Pass de 3 días (precios actualizados a 2026). Spoiler: ahorras más de 40% si visitas al menos 5 atracciones.
           </p>
 
           <div className="border-2 border-stone-200 overflow-hidden">
@@ -463,14 +463,14 @@ const ViennaGuideArticle: React.FC<ViennaGuideArticleProps> = ({ onBack }) => {
               <div className="p-4 font-medium text-center bg-amber-700">Con Vienna Pass</div>
             </div>
             {[
-              { name: 'Schönbrunn (Grand Tour)', price: '29€' },
-              { name: 'Belvedere Superior', price: '18€' },
-              { name: 'Hofburg (Apartamentos Imperiales)', price: '19€' },
-              { name: 'Riesenrad (Noria Prater)', price: '15€' },
-              { name: 'Catedral San Esteban (Torre)', price: '7€' },
-              { name: 'Mozarthaus', price: '14€' },
+              { name: 'Schönbrunn (Palace Ticket)', price: '38€' },
+              { name: 'Belvedere Superior', price: '23€' },
+              { name: 'Hofburg (Sisi Museum + Apartamentos)', price: '19,50€' },
+              { name: 'Riesenrad (Noria Prater)', price: '14,50€' },
+              { name: 'Catedral San Esteban (Torre Sur)', price: '7€' },
+              { name: 'Mozarthaus Vienna', price: '14€' },
               { name: 'Museo Hundertwasser', price: '14€' },
-              { name: 'Transporte público (72h)', price: '17€' },
+              { name: 'Hop-on Hop-off Bus (1 día)', price: '32€' },
             ].map((item, i) => (
               <div key={item.name} className={`grid grid-cols-3 text-sm ${i % 2 === 0 ? 'bg-white' : 'bg-stone-50'} border-t border-stone-100`}>
                 <div className="p-4 text-stone-700 font-medium">{item.name}</div>
@@ -483,10 +483,10 @@ const ViennaGuideArticle: React.FC<ViennaGuideArticleProps> = ({ onBack }) => {
             <div className="grid grid-cols-3 border-t-2 border-stone-900 bg-stone-900 text-white">
               <div className="p-5 font-bold text-sm">TOTAL</div>
               <div className="p-5 text-center">
-                <span className="text-xl font-bold line-through text-stone-400">133€</span>
+                <span className="text-xl font-bold line-through text-stone-400">162€</span>
               </div>
               <div className="p-5 text-center bg-amber-700">
-                <span className="text-xl font-bold">89€</span>
+                <span className="text-xl font-bold">149€</span>
                 <span className="block text-[10px] mt-0.5 text-amber-200 uppercase tracking-wider">Vienna Pass 3 días</span>
               </div>
             </div>
@@ -494,8 +494,8 @@ const ViennaGuideArticle: React.FC<ViennaGuideArticleProps> = ({ onBack }) => {
 
           <div className="mt-6 flex items-center justify-between bg-gradient-to-r from-green-50 to-emerald-50 border-2 border-green-200 p-5">
             <div>
-              <span className="text-2xl font-bold text-green-700" style={{ fontFamily: 'Georgia, serif' }}>Ahorras 44€</span>
-              <p className="text-sm text-green-600 mt-0.5">33% menos que comprando por separado</p>
+              <span className="text-2xl font-bold text-green-700" style={{ fontFamily: 'Georgia, serif' }}>Ahorras ~13€ en entradas</span>
+              <p className="text-sm text-green-600 mt-0.5">Pero el verdadero valor es el acceso sin colas + bus turístico + más de 90 atracciones incluidas</p>
             </div>
             <a
               href="https://gyg.me/MTSmqRRG"
@@ -508,7 +508,7 @@ const ViennaGuideArticle: React.FC<ViennaGuideArticleProps> = ({ onBack }) => {
           </div>
 
           <p className="mt-4 text-xs text-stone-400 text-center">
-            * Precios orientativos. Consulta la web oficial para tarifas actualizadas. La Vienna Pass incluye entrada sin cola a más de 70 atracciones.
+            * Precios orientativos a junio 2026. Consulta la web oficial para tarifas actualizadas. La Vienna Pass NO incluye transporte público (se compra aparte). Incluye entrada sin cola a más de 90 atracciones + bus turístico hop-on hop-off.
           </p>
         </div>
       </section>
@@ -534,8 +534,9 @@ const ViennaGuideArticle: React.FC<ViennaGuideArticleProps> = ({ onBack }) => {
               <div className="space-y-4 text-stone-700 text-sm leading-relaxed">
                 <p><strong>U-Bahn (Metro):</strong> 5 líneas, frecuencia 2-5 min, horario 05:00-00:30 (24h viernes y sábados).</p>
                 <p><strong>Tranvías:</strong> Red histórica de 225 km que cubre toda la ciudad.</p>
-                <p><strong>Abonos:</strong> Billete sencillo 2,40€ (80 min) · 24h: 8€ · 48h: 14,10€ · 72h: 17,10€</p>
-                <p><strong>App:</strong> WienMobil (compra digital) · Validación obligatoria · Multa sin billete: 105€</p>
+                <p><strong>Abonos (2026):</strong> Billete sencillo 3€ digital / 3,20€ físico · 24h: 9,70€ digital · 7 días: 25,20€ digital</p>
+                <p><strong>Importante:</strong> Desde enero 2026 ya NO existen los abonos de 48h ni 72h. La mejor opción para 3 días: comprar 3 billetes de 24h (29,10€) o el de 7 días (25,20€).</p>
+                <p><strong>App:</strong> WienMobil (compra digital, 5% más barato) · Validación obligatoria · Multa sin billete: 135€</p>
               </div>
 
               <div className="mt-8">
@@ -557,18 +558,18 @@ const ViennaGuideArticle: React.FC<ViennaGuideArticleProps> = ({ onBack }) => {
               <div className="space-y-6">
                 <BudgetTier
                   level="Mochilero"
-                  range="65-85€/día"
-                  items={['Hostel: 25-35€', 'Comida: 20-25€', 'Transporte: 8€ (abono 72h)', 'Atracciones: 12-17€']}
+                  range="75-100€/día"
+                  items={['Hostel: 30-40€', 'Comida: 25-30€', 'Transporte: 8€ (abono 7 días / 3)', 'Atracciones: 12-20€']}
                 />
                 <BudgetTier
                   level="Estándar"
-                  range="120-160€/día"
-                  items={['Hotel 3★: 70-90€', 'Comida: 35-45€', 'Transporte: 8€', 'Atracciones: 15-25€']}
+                  range="140-190€/día"
+                  items={['Hotel 3★: 80-110€', 'Comida: 40-50€', 'Transporte: 10€ (24h digital)', 'Atracciones: 20-30€']}
                 />
                 <BudgetTier
                   level="Premium"
-                  range="250-400€/día"
-                  items={['Hotel 5★: 150-250€', 'Comida: 80-120€', 'Transporte: 20€', 'Atracciones: 30-50€']}
+                  range="280-450€/día"
+                  items={['Hotel 5★: 170-280€', 'Comida: 80-130€', 'Transporte: 20€', 'Atracciones: 30-50€']}
                 />
               </div>
               <button
@@ -576,7 +577,7 @@ const ViennaGuideArticle: React.FC<ViennaGuideArticleProps> = ({ onBack }) => {
                 className="mt-6 w-full flex items-center justify-center gap-2 border-2 border-dashed border-amber-300 bg-amber-50/50 p-3 text-xs text-amber-800 font-medium hover:bg-amber-50 transition-colors"
               >
                 <CheckCircle size={13} />
-                Ver tabla comparativa Vienna Pass (ahorra 44€)
+                Ver tabla comparativa Vienna Pass (149€ vs 162€ por separado)
               </button>
             </div>
           </div>
@@ -812,7 +813,7 @@ const ViennaGuideArticle: React.FC<ViennaGuideArticleProps> = ({ onBack }) => {
           <div className="space-y-0">
             <FAQItem
               question="¿Merece la pena la Vienna Pass para 3 días?"
-              answer="Sí, si visitas al menos 5 atracciones principales. La Vienna Pass de 3 días cuesta 89€ e incluye más de 70 atracciones + transporte público. Comprando entradas por separado gastarías unos 133€, así que ahorras un 33%."
+              answer="La Vienna Pass de 3 días cuesta unos 149€ e incluye más de 90 atracciones + bus turístico sin colas. Comprando las entradas principales por separado gastarías unos 162€. El mayor valor real es saltarte las colas (Schönbrunn tiene colas de 30-60 min) y el hop-on hop-off incluido."
             />
             <FAQItem
               question="¿Se puede ver la Ópera de Viena por 3€?"
