@@ -1,12 +1,13 @@
 import { useState, useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { ArrowLeft, Calendar, Clock, Euro, Music, Brain as Train, Bed, UtensilsCrossed, CreditCard, Shield, ExternalLink, Compass, List, X } from 'lucide-react';
+import { ArrowLeft, Calendar, Clock, Euro, Music, Brain as Train, Bed, UtensilsCrossed, CreditCard, Shield, ExternalLink, Compass, List, X, MapPin, Star, Users } from 'lucide-react';
 
 interface ViennaGuideArticleProps {
   onBack: () => void;
 }
 
 const NAV_SECTIONS = [
+  { id: 'mapa', label: 'Mapa' },
   { id: 'dia-1', label: 'Día 1' },
   { id: 'dia-2', label: 'Día 2' },
   { id: 'dia-3', label: 'Día 3' },
@@ -99,10 +100,38 @@ const ViennaGuideArticle: React.FC<ViennaGuideArticleProps> = ({ onBack }) => {
       {/* JOURNEY MAP */}
       <JourneyMap />
 
+      {/* INTERACTIVE MAP */}
+      <section id="mapa" className="py-16 md:py-24 bg-white scroll-mt-20">
+        <div className="max-w-7xl mx-auto px-6 lg:px-10">
+          <div className="flex items-center gap-3 mb-5">
+            <span className="h-px w-8 bg-amber-600" />
+            <MapPin size={14} className="text-amber-700" />
+            <span className="text-[10px] uppercase tracking-[.2em] text-amber-700">Mapa interactivo</span>
+          </div>
+          <h2 className="text-4xl md:text-5xl text-stone-900 leading-tight mb-4" style={{ fontFamily: 'Georgia, serif' }}>
+            Tu ruta en <span className="italic">el mapa</span>
+          </h2>
+          <p className="text-stone-600 mb-8 max-w-2xl text-sm">Pulsa en cada marcador para ver la atracción. Los colores indican el día del itinerario.</p>
+          <ViennaMap />
+        </div>
+      </section>
+
       {/* DAY 1 */}
       <section id="dia-1" className="py-24 md:py-36 bg-white scroll-mt-20">
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
           <DaySectionHeader number={1} title="Entrada Triunfal a la Capital Musical" />
+
+          <DayTimeline
+            stops={[
+              { time: '9:00', place: 'Rathausplatz' },
+              { time: '10:30', place: 'Café Central' },
+              { time: '11:30', place: 'Graben y Reloj Anker' },
+              { time: '13:00', place: 'Catedral San Esteban' },
+              { time: '14:30', place: 'Palacio Schönbrunn' },
+              { time: '17:30', place: 'Casa de Mozart' },
+            ]}
+            color="amber"
+          />
 
           <div className="mt-16 space-y-24 md:space-y-32">
             <Attraction
@@ -146,7 +175,7 @@ const ViennaGuideArticle: React.FC<ViennaGuideArticleProps> = ({ onBack }) => {
                 'Incluye Ópera, Hofburg y Catedral',
               ]}
               tip="Llega 5 minutos antes de las 12:00 al Hoher Markt para ver el espectáculo completo del Reloj Anker."
-              link={{ url: 'https://www.freetour.com/es/vienna/free-tour-paseo-por-el-centro-de-viena', label: 'Reservar Free Tour' }}
+              link={{ url: 'https://www.freetour.com/es/vienna/free-tour-paseo-por-el-centro-de-viena', label: 'Reservar Free Tour', price: 'Gratis (propina)', badge: 'Gratis' }}
               index={2}
             />
 
@@ -161,7 +190,7 @@ const ViennaGuideArticle: React.FC<ViennaGuideArticleProps> = ({ onBack }) => {
                 'Subida a la torre: vistas 360° de Viena',
                 '343 escalones hasta la cima de la Torre Sur',
               ]}
-              link={{ url: 'https://gyg.me/EH2OPBYr', label: 'Tour con subida a la torre' }}
+              link={{ url: 'https://gyg.me/EH2OPBYr', label: 'Tour con subida a la torre', price: '18€', badge: 'Popular' }}
               index={3}
             />
 
@@ -177,7 +206,7 @@ const ViennaGuideArticle: React.FC<ViennaGuideArticleProps> = ({ onBack }) => {
                 'Jardines: entrada gratuita y espectaculares al atardecer',
                 'Tour Imperial: 22 habitaciones + audioguía',
               ]}
-              link={{ url: 'https://gyg.me/E0OqaGOy', label: 'Reservar entrada sin colas' }}
+              link={{ url: 'https://gyg.me/E0OqaGOy', label: 'Reservar entrada sin colas', price: '29€', badge: 'Se agota' }}
               tip="Los jardines son gratuitos y al atardecer son mágicos. Si solo puedes ver una cosa, sube a la Glorieta."
               index={4}
             />
@@ -193,7 +222,7 @@ const ViennaGuideArticle: React.FC<ViennaGuideArticleProps> = ({ onBack }) => {
                 'Duración: 45-60 minutos',
                 'Obras compuestas aquí: Las Bodas de Fígaro, Conciertos de piano K.482 y K.488',
               ]}
-              link={{ url: 'https://gyg.me/dVkRMS4u', label: 'Concierto de música clásica' }}
+              link={{ url: 'https://gyg.me/dVkRMS4u', label: 'Concierto de música clásica', price: '35€', badge: 'Top' }}
               index={5}
             />
           </div>
@@ -204,6 +233,16 @@ const ViennaGuideArticle: React.FC<ViennaGuideArticleProps> = ({ onBack }) => {
       <section id="dia-2" className="py-24 md:py-36 bg-stone-50 scroll-mt-20">
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
           <DaySectionHeader number={2} title="Arte, Diversión y Arquitectura Única" />
+
+          <DayTimeline
+            stops={[
+              { time: '9:30', place: 'Wiener Prater' },
+              { time: '11:30', place: 'Hundertwasserhaus' },
+              { time: '12:30', place: 'Stadtpark y Karlskirche' },
+              { time: '14:00', place: 'Palacio Belvedere' },
+            ]}
+            color="rose"
+          />
 
           <div className="mt-16 space-y-24 md:space-y-32">
             <Attraction
@@ -217,7 +256,7 @@ const ViennaGuideArticle: React.FC<ViennaGuideArticleProps> = ({ onBack }) => {
                 'También: Madame Tussauds, Planetarium',
                 'Restaurantes tradicionales dentro del parque',
               ]}
-              link={{ url: 'https://gyg.me/iCPMo7F4', label: 'Entradas para la noria' }}
+              link={{ url: 'https://gyg.me/iCPMo7F4', label: 'Entradas para la noria', price: '15€' }}
               index={0}
             />
 
@@ -248,7 +287,7 @@ const ViennaGuideArticle: React.FC<ViennaGuideArticleProps> = ({ onBack }) => {
                 'Vistas panorámicas desde la cúpula',
                 'Conciertos de Vivaldi varias noches por semana',
               ]}
-              link={{ url: 'https://gyg.me/ghHUAcrV', label: 'Concierto Vivaldi en Karlskirche' }}
+              link={{ url: 'https://gyg.me/ghHUAcrV', label: 'Concierto Vivaldi en Karlskirche', price: '32€', badge: 'Popular' }}
               index={2}
             />
 
@@ -264,7 +303,7 @@ const ViennaGuideArticle: React.FC<ViennaGuideArticleProps> = ({ onBack }) => {
                 'Jardines: entrada gratuita (barrocos, espectaculares)',
                 'Obras imprescindibles: El Beso, Judith I, colección Schiele',
               ]}
-              link={{ url: 'https://gyg.me/pvL78q94', label: 'Entradas sin colas' }}
+              link={{ url: 'https://gyg.me/pvL78q94', label: 'Entradas sin colas', price: '20€', badge: 'Se agota' }}
               tip="'El Beso' de Klimt es la Mona Lisa de Viena. Ve directo a la sala donde se expone para verlo sin mucha gente."
               index={3}
             />
@@ -276,6 +315,16 @@ const ViennaGuideArticle: React.FC<ViennaGuideArticleProps> = ({ onBack }) => {
       <section id="dia-3" className="py-24 md:py-36 bg-white scroll-mt-20">
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
           <DaySectionHeader number={3} title="Hofburg, Sacher y Gran Final Musical" />
+
+          <DayTimeline
+            stops={[
+              { time: '9:00', place: 'Palacio Hofburg' },
+              { time: '13:00', place: 'Café Sacher' },
+              { time: '15:00', place: 'Kärntner Straße' },
+              { time: '19:30', place: 'Wiener Staatsoper' },
+            ]}
+            color="teal"
+          />
 
           <div className="mt-16 space-y-24 md:space-y-32">
             <Attraction
@@ -290,7 +339,7 @@ const ViennaGuideArticle: React.FC<ViennaGuideArticleProps> = ({ onBack }) => {
                 'Escuela Española: 24€ (visita guiada), caballos Lipizzaner desde 1572',
                 'Duración total: 2-3 horas mínimo',
               ]}
-              link={{ url: 'https://gyg.me/dzn5QZh5', label: 'Tour Sisí, Hofburg y Jardines' }}
+              link={{ url: 'https://gyg.me/dzn5QZh5', label: 'Tour Sisí, Hofburg y Jardines', price: '49€', badge: 'Top' }}
               index={0}
             />
 
@@ -338,7 +387,7 @@ const ViennaGuideArticle: React.FC<ViennaGuideArticleProps> = ({ onBack }) => {
                 'Temporada: septiembre a junio',
               ]}
               tip="Las Stehplätze (entradas de pie) son el gran secreto de Viena. Por 3-4€ disfrutas de acústica de clase mundial. Se venden 80 minutos antes del espectáculo."
-              link={{ url: 'https://www.wiener-staatsoper.at/en/', label: 'Programación y entradas' }}
+              link={{ url: 'https://www.wiener-staatsoper.at/en/', label: 'Programación y entradas', price: '3€' }}
               index={3}
             />
           </div>
@@ -751,6 +800,38 @@ function DaySectionHeader({ number, title }: { number: number; title: string }) 
   );
 }
 
+function DayTimeline({ stops, color }: { stops: { time: string; place: string }[]; color: 'amber' | 'rose' | 'teal' }) {
+  const colorMap = {
+    amber: { dot: 'bg-amber-500', line: 'bg-amber-300', text: 'text-amber-700', bg: 'bg-amber-50' },
+    rose: { dot: 'bg-rose-500', line: 'bg-rose-300', text: 'text-rose-700', bg: 'bg-rose-50' },
+    teal: { dot: 'bg-teal-500', line: 'bg-teal-300', text: 'text-teal-700', bg: 'bg-teal-50' },
+  };
+  const c = colorMap[color];
+
+  return (
+    <div className={`${c.bg} border border-stone-200/60 p-5 md:p-6 rounded-sm`}>
+      <div className="flex items-center gap-2 mb-4">
+        <Clock size={12} className={c.text} />
+        <span className={`text-[10px] uppercase tracking-[.15em] ${c.text} font-medium`}>Recorrido del día</span>
+      </div>
+      <div className="relative flex items-center gap-0 overflow-x-auto pb-2">
+        {stops.map((stop, i) => (
+          <div key={i} className="flex items-center shrink-0">
+            <div className="flex flex-col items-center">
+              <span className={`w-3 h-3 rounded-full ${c.dot} shadow-sm`} />
+              <span className={`mt-1.5 text-[10px] font-semibold ${c.text}`}>{stop.time}</span>
+              <span className="mt-0.5 text-[11px] text-stone-600 whitespace-nowrap">{stop.place}</span>
+            </div>
+            {i < stops.length - 1 && (
+              <div className={`w-8 md:w-14 h-0.5 ${c.line} mx-1 mt-[-18px]`} />
+            )}
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
 function Attraction({
   time,
   title,
@@ -767,7 +848,7 @@ function Attraction({
   description: string;
   details: string[];
   tip?: string;
-  link?: { url: string; label: string };
+  link?: { url: string; label: string; price?: string; badge?: string };
   index: number;
 }) {
   const ref = useRef<HTMLDivElement>(null);
@@ -836,17 +917,149 @@ function Attraction({
         )}
 
         {link && (
-          <a
-            href={link.url}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="mt-6 inline-flex items-center gap-2 bg-stone-900 text-stone-50 px-5 py-3 text-xs uppercase tracking-[.12em] hover:bg-amber-700 transition-colors"
-          >
-            {link.label} <ExternalLink size={13} />
-          </a>
+          <BookingCard url={link.url} label={link.label} price={link.price} badge={link.badge} />
         )}
       </div>
     </div>
+  );
+}
+
+const MAP_MARKERS = [
+  // Day 1 - amber
+  { lat: 48.2107, lng: 16.3568, title: 'Rathausplatz', day: 1 },
+  { lat: 48.2108, lng: 16.3652, title: 'Café Central', day: 1 },
+  { lat: 48.2086, lng: 16.3697, title: 'Graben & Reloj Anker', day: 1 },
+  { lat: 48.2085, lng: 16.3731, title: 'Catedral San Esteban', day: 1 },
+  { lat: 48.1845, lng: 16.3122, title: 'Palacio Schönbrunn', day: 1 },
+  { lat: 48.2072, lng: 16.3748, title: 'Mozarthaus', day: 1 },
+  // Day 2 - rose
+  { lat: 48.2166, lng: 16.3964, title: 'Wiener Prater', day: 2 },
+  { lat: 48.2074, lng: 16.3942, title: 'Hundertwasserhaus', day: 2 },
+  { lat: 48.2040, lng: 16.3796, title: 'Stadtpark', day: 2 },
+  { lat: 48.1913, lng: 16.3808, title: 'Palacio Belvedere', day: 2 },
+  // Day 3 - teal
+  { lat: 48.2066, lng: 16.3656, title: 'Palacio Hofburg', day: 3 },
+  { lat: 48.2031, lng: 16.3694, title: 'Café Sacher', day: 3 },
+  { lat: 48.2050, lng: 16.3722, title: 'Kärntner Straße', day: 3 },
+  { lat: 48.2029, lng: 16.3690, title: 'Wiener Staatsoper', day: 3 },
+];
+
+function ViennaMap() {
+  const mapRef = useRef<HTMLDivElement>(null);
+  const mapInstance = useRef<any>(null);
+
+  useEffect(() => {
+    if (!mapRef.current || mapInstance.current) return;
+
+    import('leaflet').then((L) => {
+      if (!mapRef.current) return;
+
+      const link = document.createElement('link');
+      link.rel = 'stylesheet';
+      link.href = 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.css';
+      document.head.appendChild(link);
+
+      const map = L.map(mapRef.current, {
+        center: [48.2082, 16.3738],
+        zoom: 13,
+        scrollWheelZoom: false,
+      });
+
+      L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OSM</a> &copy; <a href="https://carto.com/">CARTO</a>',
+        maxZoom: 19,
+      }).addTo(map);
+
+      const dayColors: Record<number, string> = { 1: '#d97706', 2: '#e11d48', 3: '#0d9488' };
+      const dayLabels: Record<number, string> = { 1: 'Día 1', 2: 'Día 2', 3: 'Día 3' };
+
+      MAP_MARKERS.forEach((m) => {
+        const color = dayColors[m.day];
+        const icon = L.divIcon({
+          className: 'custom-marker',
+          html: `<div style="width:28px;height:28px;background:${color};border:3px solid white;border-radius:50%;box-shadow:0 2px 6px rgba(0,0,0,0.3);display:flex;align-items:center;justify-content:center;">
+            <span style="color:white;font-size:10px;font-weight:700;">${m.day}</span>
+          </div>`,
+          iconSize: [28, 28],
+          iconAnchor: [14, 14],
+        });
+
+        L.marker([m.lat, m.lng], { icon })
+          .addTo(map)
+          .bindPopup(`<div style="font-family:Georgia,serif;"><strong>${m.title}</strong><br/><span style="font-size:11px;color:#78716c;">${dayLabels[m.day]}</span></div>`);
+      });
+
+      mapInstance.current = map;
+
+      setTimeout(() => map.invalidateSize(), 200);
+    });
+
+    return () => {
+      if (mapInstance.current) {
+        mapInstance.current.remove();
+        mapInstance.current = null;
+      }
+    };
+  }, []);
+
+  return (
+    <div className="relative">
+      <div ref={mapRef} className="w-full h-[400px] md:h-[500px] rounded-sm border border-stone-200 z-0" />
+      <div className="mt-4 flex flex-wrap gap-4">
+        <span className="flex items-center gap-2 text-xs text-stone-600">
+          <span className="w-3 h-3 rounded-full bg-amber-600" /> Día 1: Centro + Schönbrunn
+        </span>
+        <span className="flex items-center gap-2 text-xs text-stone-600">
+          <span className="w-3 h-3 rounded-full bg-rose-600" /> Día 2: Belvedere + Prater
+        </span>
+        <span className="flex items-center gap-2 text-xs text-stone-600">
+          <span className="w-3 h-3 rounded-full bg-teal-600" /> Día 3: Hofburg + Ópera
+        </span>
+      </div>
+    </div>
+  );
+}
+
+function BookingCard({ url, label, price, badge }: { url: string; label: string; price?: string; badge?: string }) {
+  return (
+    <a
+      href={url}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="mt-6 block border-2 border-amber-200 bg-gradient-to-br from-amber-50 to-white p-4 hover:border-amber-400 hover:shadow-lg transition-all group relative overflow-hidden"
+    >
+      {badge && (
+        <span className="absolute top-0 right-0 bg-red-600 text-white text-[9px] uppercase tracking-wider px-2.5 py-1 font-semibold">
+          {badge}
+        </span>
+      )}
+      <div className="flex items-center justify-between gap-4">
+        <div className="flex-1">
+          <div className="flex items-center gap-2 mb-1">
+            <span className="text-sm font-semibold text-stone-900 group-hover:text-amber-800 transition-colors">{label}</span>
+          </div>
+          {price && (
+            <span className="text-xs text-stone-500">Desde {price}</span>
+          )}
+          <div className="flex items-center gap-3 mt-2">
+            <span className="flex items-center gap-1 text-[10px] text-stone-500">
+              <Users size={10} />
+              <span>+500 reservas</span>
+            </span>
+            <span className="flex items-center gap-0.5 text-[10px] text-amber-600">
+              <Star size={9} className="fill-amber-500" />
+              <Star size={9} className="fill-amber-500" />
+              <Star size={9} className="fill-amber-500" />
+              <Star size={9} className="fill-amber-500" />
+              <Star size={9} className="fill-amber-500" />
+            </span>
+          </div>
+        </div>
+        <div className="shrink-0 bg-stone-900 group-hover:bg-amber-700 text-white text-[10px] uppercase tracking-wider px-4 py-2.5 transition-colors flex items-center gap-1.5">
+          Reservar <ExternalLink size={11} />
+        </div>
+      </div>
+    </a>
   );
 }
 
