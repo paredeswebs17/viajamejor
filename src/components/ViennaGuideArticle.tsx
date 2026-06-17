@@ -153,10 +153,10 @@ const ViennaGuideArticle: React.FC<ViennaGuideArticleProps> = ({ onBack }) => {
               time="10:30h"
               title="Café Central"
               image="https://images.pexels.com/photos/19599495/pexels-photo-19599495.jpeg?auto=compress&cs=tinysrgb&w=1200"
-              description="Fundado en 1876, este templo del café vienés fue declarado Patrimonio Cultural de la UNESCO en 2011. Bajo sus bóvedas decimonónicas se sentaron Freud, Trotsky, Stalin y Peter Altenberg. El interior mantiene las sillas originales de Thonet, techos altísimos y más de 200 periódicos internacionales."
+              description="Fundado en 1876 en el Palais Ferstel, este templo del café vienés es Patrimonio Cultural Inmaterial de Austria (la cultura del café vienés fue reconocida en 2011). Bajo sus bóvedas decimonónicas se sentaron Freud, Trotsky, Stalin y Peter Altenberg. El interior mantiene las sillas originales de Thonet, techos altísimos con arcos de crucería y columnas de mármol."
               details={[
-                'Patrimonio UNESCO desde 2011',
-                'Interior diseñado por Adolf Loos',
+                'Cultura del café vienés: Patrimonio Inmaterial de Austria (2011)',
+                'Edificio: Palais Ferstel (Heinrich von Ferstel, 1860)',
                 'Imprescindible: Apfelstrudel y Wiener Melange',
                 'Reservar mesa o ir temprano (cola frecuente)',
               ]}
@@ -167,7 +167,7 @@ const ViennaGuideArticle: React.FC<ViennaGuideArticleProps> = ({ onBack }) => {
               time="11:30h"
               title="Graben, Pestsäule y Reloj Anker"
               image="https://images.pexels.com/photos/24355655/pexels-photo-24355655.jpeg?auto=compress&cs=tinysrgb&w=1200"
-              description="La Pestsäule (Columna de la Peste) fue erigida en 1693 por el emperador Leopoldo I. Monumento barroco espectacular en pleno Graben. Después, el Reloj Anker (Ankeruhr): obra maestra del Art Nouveau creada por Franz von Matsch (1911-1914). Cada hora pasa una figura histórica, y a mediodía desfilan las 12 figuras durante 15 minutos con música especial."
+              description="La Pestsäule (Columna de la Peste) fue encargada por el emperador Leopoldo I y completada en 1694. Monumento barroco espectacular en pleno Graben. Después, el Reloj Anker (Ankeruhr): obra maestra del Art Nouveau creada por Franz von Matsch (1911-1914). Cada hora pasa una figura histórica, y a mediodía desfilan las 12 figuras durante 15 minutos con música especial."
               details={[
                 'Reloj Anker: A las 12:00 desfile completo (15 min)',
                 'Ubicación: Hoher Markt (plaza más antigua de Viena)',
@@ -183,7 +183,7 @@ const ViennaGuideArticle: React.FC<ViennaGuideArticleProps> = ({ onBack }) => {
               time="13:00h"
               title="Catedral de San Esteban"
               image="https://images.pexels.com/photos/10621005/pexels-photo-10621005.jpeg?auto=compress&cs=tinysrgb&w=1200"
-              description="Más de 800 años de historia en el corazón de Viena. Su Torre Sur alcanza los 136,44 metros, la nave mide 107 metros de largo y el tejado está cubierto por 250.000 tejas de colores formando el escudo imperial. Estilo gótico y románico con construcción entre 1137 y 1511."
+              description="Más de 800 años de historia en el corazón de Viena. Su Torre Sur alcanza los 136,7 metros, la nave mide 107 metros de largo y el tejado está cubierto por 250.000 tejas de colores formando el escudo imperial. Estilo gótico y románico con construcción entre 1147 y 1511."
               details={[
                 'Entrada gratuita: Lun-Sáb 6:00-22:00, Dom 7:00-22:00',
                 'Visita interior: Lun-Sáb 9:00-11:30 y 13:00-16:30',
@@ -279,7 +279,7 @@ const ViennaGuideArticle: React.FC<ViennaGuideArticleProps> = ({ onBack }) => {
               time="12:30h"
               title="Stadtpark y Karlskirche"
               image="https://images.pexels.com/photos/27442550/pexels-photo-27442550.jpeg?auto=compress&cs=tinysrgb&w=1200"
-              description="El Stadtpark alberga la famosa estatua dorada de Johann Strauss II (1921), además de estatuas de Schubert, Bruckner y Lehár. Después, la Karlskirche (Iglesia de San Carlos): obra maestra barroca de 1737 con columnas inspiradas en la Columna de Trajano y frescos espectaculares en la cúpula."
+              description="El Stadtpark alberga la famosa estatua dorada de Johann Strauss II (1921), además de estatuas de Schubert, Bruckner y Lehár. Después, la Karlskirche (Iglesia de San Carlos): obra maestra barroca finalizada en 1739 con columnas inspiradas en la Columna de Trajano y frescos espectaculares en la cúpula."
               details={[
                 'Stadtpark: entrada gratuita 24/7',
                 'Kursalon: sala de conciertos histórica dentro del parque',
