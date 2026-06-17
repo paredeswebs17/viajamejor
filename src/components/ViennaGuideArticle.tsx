@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { ArrowLeft, Calendar, Clock, Euro, Music, Brain as Train, Bed, UtensilsCrossed, CreditCard, Shield, ExternalLink, Compass, List, X, MapPin, Star, Users } from 'lucide-react';
+import { ArrowLeft, Calendar, Clock, Euro, Music, Brain as Train, Bed, UtensilsCrossed, CreditCard, Shield, ExternalLink, Compass, List, X, MapPin, Star, Users, Sun, Snowflake, Leaf, Download, CheckCircle } from 'lucide-react';
 
 interface ViennaGuideArticleProps {
   onBack: () => void;
@@ -12,7 +12,9 @@ const NAV_SECTIONS = [
   { id: 'dia-2', label: 'Día 2' },
   { id: 'dia-3', label: 'Día 3' },
   { id: 'extras', label: 'Más experiencias' },
+  { id: 'vienna-pass', label: 'Vienna Pass' },
   { id: 'info-practica', label: 'Info práctica' },
+  { id: 'cuando-ir', label: 'Cuándo ir' },
   { id: 'alojamiento', label: 'Alojamiento' },
   { id: 'comer', label: 'Dónde comer' },
   { id: 'herramientas', label: 'Tarjeta y seguro' },
@@ -440,8 +442,79 @@ const ViennaGuideArticle: React.FC<ViennaGuideArticleProps> = ({ onBack }) => {
         </div>
       </section>
 
+      {/* VIENNA PASS COMPARISON TABLE */}
+      <section id="vienna-pass" className="py-24 md:py-32 bg-white scroll-mt-20">
+        <div className="max-w-5xl mx-auto px-6 lg:px-10">
+          <div className="flex items-center gap-3 mb-5">
+            <span className="h-px w-8 bg-amber-600" />
+            <span className="text-[10px] uppercase tracking-[.2em] text-amber-700">Ahorra dinero</span>
+          </div>
+          <h2 className="text-4xl md:text-5xl text-stone-900 leading-tight mb-6" style={{ fontFamily: 'Georgia, serif' }}>
+            ¿Merece la pena la <span className="italic">Vienna Pass</span>?
+          </h2>
+          <p className="text-stone-600 mb-12 max-w-2xl">
+            Hemos calculado cuánto gastarías comprando las entradas por separado vs. con la Vienna Pass de 3 días. Spoiler: ahorras entre 30-50% si visitas al menos 5 atracciones.
+          </p>
+
+          <div className="border-2 border-stone-200 overflow-hidden">
+            <div className="grid grid-cols-3 bg-stone-900 text-stone-50 text-xs uppercase tracking-wider">
+              <div className="p-4 font-medium">Atracción</div>
+              <div className="p-4 font-medium text-center">Entrada individual</div>
+              <div className="p-4 font-medium text-center bg-amber-700">Con Vienna Pass</div>
+            </div>
+            {[
+              { name: 'Schönbrunn (Grand Tour)', price: '29€' },
+              { name: 'Belvedere Superior', price: '18€' },
+              { name: 'Hofburg (Apartamentos Imperiales)', price: '19€' },
+              { name: 'Riesenrad (Noria Prater)', price: '15€' },
+              { name: 'Catedral San Esteban (Torre)', price: '7€' },
+              { name: 'Mozarthaus', price: '14€' },
+              { name: 'Museo Hundertwasser', price: '14€' },
+              { name: 'Transporte público (72h)', price: '17€' },
+            ].map((item, i) => (
+              <div key={item.name} className={`grid grid-cols-3 text-sm ${i % 2 === 0 ? 'bg-white' : 'bg-stone-50'} border-t border-stone-100`}>
+                <div className="p-4 text-stone-700 font-medium">{item.name}</div>
+                <div className="p-4 text-center text-stone-600">{item.price}</div>
+                <div className="p-4 text-center bg-amber-50 text-amber-700 font-semibold">
+                  <CheckCircle size={14} className="inline mr-1 -mt-0.5" />Incluido
+                </div>
+              </div>
+            ))}
+            <div className="grid grid-cols-3 border-t-2 border-stone-900 bg-stone-900 text-white">
+              <div className="p-5 font-bold text-sm">TOTAL</div>
+              <div className="p-5 text-center">
+                <span className="text-xl font-bold line-through text-stone-400">133€</span>
+              </div>
+              <div className="p-5 text-center bg-amber-700">
+                <span className="text-xl font-bold">89€</span>
+                <span className="block text-[10px] mt-0.5 text-amber-200 uppercase tracking-wider">Vienna Pass 3 días</span>
+              </div>
+            </div>
+          </div>
+
+          <div className="mt-6 flex items-center justify-between bg-gradient-to-r from-green-50 to-emerald-50 border-2 border-green-200 p-5">
+            <div>
+              <span className="text-2xl font-bold text-green-700" style={{ fontFamily: 'Georgia, serif' }}>Ahorras 44€</span>
+              <p className="text-sm text-green-600 mt-0.5">33% menos que comprando por separado</p>
+            </div>
+            <a
+              href="https://gyg.me/MTSmqRRG"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="shrink-0 bg-stone-900 hover:bg-amber-700 text-white text-xs uppercase tracking-wider px-6 py-4 transition-colors flex items-center gap-2 font-medium"
+            >
+              Comprar Vienna Pass <ExternalLink size={12} />
+            </a>
+          </div>
+
+          <p className="mt-4 text-xs text-stone-400 text-center">
+            * Precios orientativos. Consulta la web oficial para tarifas actualizadas. La Vienna Pass incluye entrada sin cola a más de 70 atracciones.
+          </p>
+        </div>
+      </section>
+
       {/* PRACTICAL INFO */}
-      <section id="info-practica" className="py-24 md:py-32 bg-white scroll-mt-20">
+      <section id="info-practica" className="py-24 md:py-32 bg-stone-50 scroll-mt-20">
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
           <div className="flex items-center gap-3 mb-5">
             <span className="h-px w-8 bg-amber-600" />
@@ -498,27 +571,86 @@ const ViennaGuideArticle: React.FC<ViennaGuideArticleProps> = ({ onBack }) => {
                   items={['Hotel 5★: 150-250€', 'Comida: 80-120€', 'Transporte: 20€', 'Atracciones: 30-50€']}
                 />
               </div>
-              <a
-                href="https://gyg.me/MTSmqRRG"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-6 flex items-center justify-between border-2 border-amber-200 bg-gradient-to-r from-amber-50 to-white p-4 hover:border-amber-400 hover:shadow-lg transition-all group"
+              <button
+                onClick={() => document.getElementById('vienna-pass')?.scrollIntoView({ behavior: 'smooth' })}
+                className="mt-6 w-full flex items-center justify-center gap-2 border-2 border-dashed border-amber-300 bg-amber-50/50 p-3 text-xs text-amber-800 font-medium hover:bg-amber-50 transition-colors"
               >
-                <div>
-                  <span className="text-sm font-semibold text-stone-900 group-hover:text-amber-800 transition-colors">Vienna PASS</span>
-                  <p className="text-xs text-stone-500 mt-0.5">1-6 días, transporte + atracciones incluidas</p>
-                </div>
-                <span className="shrink-0 bg-stone-900 group-hover:bg-amber-700 text-white text-[10px] uppercase tracking-wider px-4 py-2.5 transition-colors flex items-center gap-1.5">
-                  Ver precios <ExternalLink size={11} />
-                </span>
-              </a>
+                <CheckCircle size={13} />
+                Ver tabla comparativa Vienna Pass (ahorra 44€)
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* WHEN TO VISIT */}
+      <section id="cuando-ir" className="py-24 md:py-32 bg-stone-50 scroll-mt-20">
+        <div className="max-w-5xl mx-auto px-6 lg:px-10">
+          <div className="flex items-center gap-3 mb-5">
+            <span className="h-px w-8 bg-amber-600" />
+            <span className="text-[10px] uppercase tracking-[.2em] text-amber-700">Planifica</span>
+          </div>
+          <h2 className="text-4xl md:text-5xl text-stone-900 leading-tight mb-12" style={{ fontFamily: 'Georgia, serif' }}>
+            Cuándo <span className="italic">visitar Viena</span>
+          </h2>
+
+          <div className="grid md:grid-cols-2 gap-6">
+            <SeasonCard
+              icon={Sun}
+              season="Primavera (Abr-May)"
+              temp="12-20°C"
+              description="La mejor época calidad-precio. Jardines en flor en Schönbrunn, terrazas abiertas en el Danubio, pocos turistas y precios moderados. Festival de Pascua en el Prater."
+              tag="Recomendada"
+              color="green"
+            />
+            <SeasonCard
+              icon={Sun}
+              season="Verano (Jun-Ago)"
+              temp="20-30°C"
+              description="Temporada alta con festivales al aire libre (Film Festival en Rathausplatz). Cines al aire libre, noches largas. Hoteles 30-40% más caros. Mucho turismo."
+              tag="Alta demanda"
+              color="amber"
+            />
+            <SeasonCard
+              icon={Leaf}
+              season="Otoño (Sep-Oct)"
+              temp="10-18°C"
+              description="Temporada de ópera y conciertos en pleno apogeo. Colores otoñales en Stadtpark, vino nuevo (Heuriger), menos masificación. Nuestra favorita junto a primavera."
+              tag="Recomendada"
+              color="green"
+            />
+            <SeasonCard
+              icon={Snowflake}
+              season="Invierno (Nov-Mar)"
+              temp="-2-5°C"
+              description="Mercados navideños espectaculares (Nov-Dic), bailes imperiales (Ene-Feb), ópera en su momento álgido. Frío intenso pero ambiente mágico. Hoteles accesibles en enero."
+              tag="Mercados navideños"
+              color="rose"
+            />
+          </div>
+
+          <div className="mt-10 bg-white border border-stone-200 p-6">
+            <h3 className="text-lg font-semibold text-stone-900 mb-3">Resumen rápido</h3>
+            <div className="grid sm:grid-cols-3 gap-4 text-sm">
+              <div>
+                <span className="font-medium text-green-700">Mejor momento:</span>
+                <p className="text-stone-600 mt-0.5">Abril-mayo y septiembre-octubre</p>
+              </div>
+              <div>
+                <span className="font-medium text-amber-700">Más barato:</span>
+                <p className="text-stone-600 mt-0.5">Enero-febrero (sin Navidad)</p>
+              </div>
+              <div>
+                <span className="font-medium text-rose-700">Evitar:</span>
+                <p className="text-stone-600 mt-0.5">Agosto (calor + turismo masivo)</p>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
       {/* HOTELS */}
-      <section id="alojamiento" className="py-24 md:py-32 bg-stone-50 scroll-mt-20">
+      <section id="alojamiento" className="py-24 md:py-32 bg-white scroll-mt-20">
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
           <div className="flex items-center gap-3 mb-5">
             <span className="h-px w-8 bg-amber-600" />
@@ -554,7 +686,7 @@ const ViennaGuideArticle: React.FC<ViennaGuideArticleProps> = ({ onBack }) => {
       </section>
 
       {/* DINING */}
-      <section id="comer" className="py-24 md:py-32 bg-white scroll-mt-20">
+      <section id="comer" className="py-24 md:py-32 bg-stone-50 scroll-mt-20">
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
           <div className="flex items-center gap-3 mb-5">
             <span className="h-px w-8 bg-amber-600" />
@@ -587,7 +719,7 @@ const ViennaGuideArticle: React.FC<ViennaGuideArticleProps> = ({ onBack }) => {
       </section>
 
       {/* TRAVEL TOOLS */}
-      <section id="herramientas" className="py-24 md:py-32 bg-stone-50 scroll-mt-20">
+      <section id="herramientas" className="py-24 md:py-32 bg-white scroll-mt-20">
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
           <div className="flex items-center gap-3 mb-5">
             <span className="h-px w-8 bg-amber-600" />
@@ -616,25 +748,93 @@ const ViennaGuideArticle: React.FC<ViennaGuideArticleProps> = ({ onBack }) => {
         </div>
       </section>
 
-      {/* TIPS */}
+      {/* LEAD MAGNET */}
+      <section className="py-16 md:py-20 bg-gradient-to-br from-stone-900 via-stone-800 to-stone-900 scroll-mt-20 relative overflow-hidden">
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute top-0 right-0 w-96 h-96 bg-amber-500 rounded-full blur-[120px]" />
+          <div className="absolute bottom-0 left-0 w-64 h-64 bg-amber-300 rounded-full blur-[80px]" />
+        </div>
+        <div className="relative max-w-4xl mx-auto px-6 lg:px-10">
+          <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12">
+            <div className="flex-1 text-center md:text-left">
+              <div className="inline-flex items-center gap-2 bg-amber-600/20 border border-amber-500/30 px-3 py-1.5 mb-4">
+                <Download size={12} className="text-amber-400" />
+                <span className="text-[10px] uppercase tracking-wider text-amber-300 font-medium">Recurso gratuito</span>
+              </div>
+              <h3 className="text-2xl md:text-3xl text-white leading-tight" style={{ fontFamily: 'Georgia, serif' }}>
+                Descarga el itinerario <span className="italic text-amber-400">completo en PDF</span>
+              </h3>
+              <p className="mt-3 text-stone-300 text-sm leading-relaxed">
+                Los 3 días hora por hora, mapa imprimible, presupuestos y todos los enlaces. Llévalo en el móvil sin conexión.
+              </p>
+              <ul className="mt-4 space-y-2">
+                {['Itinerario día a día con horarios', 'Mapa con marcadores de cada punto', 'Presupuesto detallado + trucos de ahorro', 'Enlaces directos a reservas'].map((item) => (
+                  <li key={item} className="flex items-center gap-2 text-xs text-stone-300">
+                    <CheckCircle size={12} className="text-amber-500 shrink-0" />
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div className="shrink-0 w-full md:w-auto">
+              <div className="bg-white/5 backdrop-blur-sm border border-white/10 p-6 md:p-8 max-w-sm mx-auto">
+                <div className="space-y-3">
+                  <input
+                    type="email"
+                    placeholder="Tu email para recibir el PDF"
+                    className="w-full bg-white/10 border border-white/20 text-white placeholder:text-stone-400 px-4 py-3 text-sm focus:outline-none focus:border-amber-400 transition-colors"
+                  />
+                  <button className="w-full bg-amber-600 hover:bg-amber-500 text-white px-6 py-3.5 text-xs uppercase tracking-wider font-medium transition-colors flex items-center justify-center gap-2">
+                    <Download size={14} />
+                    Enviar itinerario gratis
+                  </button>
+                </div>
+                <p className="mt-3 text-[10px] text-stone-500 text-center">
+                  Sin spam. Solo la guía + ofertas exclusivas de viaje.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ / TIPS */}
       <section id="consejos" className="py-24 md:py-32 bg-white scroll-mt-20">
         <div className="max-w-5xl mx-auto px-6 lg:px-10">
           <div className="flex items-center gap-3 mb-5">
             <span className="h-px w-8 bg-amber-600" />
-            <span className="text-[10px] uppercase tracking-[.2em] text-amber-700">Antes de ir</span>
+            <span className="text-[10px] uppercase tracking-[.2em] text-amber-700">Preguntas frecuentes</span>
           </div>
           <h2 className="text-4xl md:text-5xl text-stone-900 leading-tight mb-12" style={{ fontFamily: 'Georgia, serif' }}>
-            Consejos <span className="italic">que importan</span>
+            Preguntas <span className="italic">que todos se hacen</span>
           </h2>
 
-          <dl className="grid md:grid-cols-2 gap-x-12 gap-y-8">
-            <TipItem q="Reloj Anker a las 12:00" a="El desfile completo de las 12 figuras dura 15 minutos con música. Llega 5 min antes al Hoher Markt." />
-            <TipItem q="Ópera por 3€" a="Las Stehplätze (de pie) se venden 80 min antes. Acústica de clase mundial al precio de un café." />
-            <TipItem q="Lleva efectivo" a="Muchos sitios tradicionales no aceptan tarjeta. Cajeros sin comisión con Revolut en cualquier banco." />
-            <TipItem q="Domingos: tiendas cerradas" a="Todo cerrado excepto museos y restaurantes. Perfecto para parques y Prater." />
-            <TipItem q="Propinas" a="5-10% en restaurantes. En cafés, redondear al euro. Se deja en la mesa al salir." />
-            <TipItem q="Reserva restaurantes" a="Figlmüller y Plachutta requieren reserva con 1-2 días de antelación." />
-          </dl>
+          <div className="space-y-0">
+            <FAQItem
+              question="¿Merece la pena la Vienna Pass para 3 días?"
+              answer="Sí, si visitas al menos 5 atracciones principales. La Vienna Pass de 3 días cuesta 89€ e incluye más de 70 atracciones + transporte público. Comprando entradas por separado gastarías unos 133€, así que ahorras un 33%."
+            />
+            <FAQItem
+              question="¿Se puede ver la Ópera de Viena por 3€?"
+              answer="Sí. Las Stehplätze (entradas de pie) se venden 80 minutos antes de cada función por 3-4€. La acústica es de clase mundial. Se forman colas 1-2 horas antes para las funciones populares."
+            />
+            <FAQItem
+              question="¿Es necesario llevar efectivo en Viena?"
+              answer="Sí, es muy recomendable. Muchos cafés tradicionales y Heurigers (tabernas de vino) no aceptan tarjeta. Una tarjeta sin comisiones como Revolut permite retirar efectivo gratis en cualquier cajero austríaco."
+            />
+            <FAQItem
+              question="¿Cuál es la mejor época para visitar Viena?"
+              answer="Primavera (abril-mayo) y otoño (septiembre-octubre): clima agradable, menos turistas y precios moderados. En invierno los mercados navideños son espectaculares. Agosto es el más masificado y caro."
+            />
+            <FAQItem
+              question="¿Qué hacer en Viena en domingo?"
+              answer="Las tiendas están cerradas pero los museos, restaurantes, cafés y parques están abiertos. Es el día perfecto para el Prater, Stadtpark o una excursión a Wachau."
+            />
+            <FAQItem
+              question="¿Cómo funciona el Reloj Anker a mediodía?"
+              answer="El desfile completo de las 12 figuras históricas dura 15 minutos con música. Ocurre todos los días a las 12:00 en el Hoher Markt. Llega 5 minutos antes para pillar buen sitio."
+            />
+          </div>
         </div>
       </section>
 
@@ -1263,11 +1463,50 @@ function TravelTool({ icon: Icon, title, benefits, link, cta }: { icon: any; tit
   );
 }
 
-function TipItem({ q, a }: { q: string; a: string }) {
+function SeasonCard({ icon: Icon, season, temp, description, tag, color }: { icon: any; season: string; temp: string; description: string; tag: string; color: 'green' | 'amber' | 'rose' }) {
+  const colorMap = {
+    green: 'bg-green-50 border-green-200 text-green-700',
+    amber: 'bg-amber-50 border-amber-200 text-amber-700',
+    rose: 'bg-rose-50 border-rose-200 text-rose-700',
+  };
+  const tagColors = {
+    green: 'bg-green-100 text-green-800',
+    amber: 'bg-amber-100 text-amber-800',
+    rose: 'bg-rose-100 text-rose-800',
+  };
   return (
-    <div className="border-t border-stone-800/15 pt-5">
-      <dt className="text-lg text-stone-900" style={{ fontFamily: 'Georgia, serif' }}>{q}</dt>
-      <dd className="mt-2 text-sm text-stone-600 leading-relaxed">{a}</dd>
+    <div className={`border-2 p-6 ${colorMap[color]}`}>
+      <div className="flex items-center justify-between mb-3">
+        <div className="flex items-center gap-2.5">
+          <Icon size={18} />
+          <h3 className="font-semibold text-stone-900">{season}</h3>
+        </div>
+        <span className={`text-[10px] uppercase tracking-wider font-semibold px-2.5 py-1 ${tagColors[color]}`}>{tag}</span>
+      </div>
+      <p className="text-xs font-medium text-stone-500 mb-2">{temp}</p>
+      <p className="text-sm text-stone-600 leading-relaxed">{description}</p>
+    </div>
+  );
+}
+
+function FAQItem({ question, answer }: { question: string; answer: string }) {
+  const [open, setOpen] = useState(false);
+  return (
+    <div className="border-b border-stone-200">
+      <button
+        onClick={() => setOpen(!open)}
+        className="w-full flex items-center justify-between py-5 text-left group"
+      >
+        <span className="text-base font-medium text-stone-900 group-hover:text-amber-700 transition-colors pr-4">{question}</span>
+        <span className={`shrink-0 w-6 h-6 border border-stone-300 flex items-center justify-center text-stone-500 transition-transform ${open ? 'rotate-45 border-amber-400 text-amber-600' : ''}`}>
+          <span className="text-lg leading-none">+</span>
+        </span>
+      </button>
+      {open && (
+        <div className="pb-5 pr-10">
+          <p className="text-sm text-stone-600 leading-relaxed">{answer}</p>
+        </div>
+      )}
     </div>
   );
 }

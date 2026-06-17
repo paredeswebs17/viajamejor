@@ -80,6 +80,62 @@ const ViennaGuidePage = () => {
             ]
           })}
         </script>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "¿Merece la pena la Vienna Pass para 3 días?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Sí, si visitas al menos 5 atracciones principales. La Vienna Pass de 3 días cuesta 89€ e incluye más de 70 atracciones + transporte público. Comprando las entradas por separado gastarías unos 133€, así que ahorras un 33%."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "¿Cuánto cuesta viajar a Viena 3 días?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Un viaje de 3 días a Viena cuesta entre 65-85€/día para mochileros (hostel + comida básica), 120-160€/día estándar (hotel 3★ + restaurantes), o 250-400€/día premium (hotel 5★ + experiencias VIP)."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "¿Cuál es la mejor época para visitar Viena?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "La mejor época es primavera (abril-mayo) y otoño (septiembre-octubre): clima agradable, menos turistas y precios moderados. En invierno los mercados navideños son espectaculares (noviembre-diciembre). Agosto es el más masificado y caro."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "¿Se puede ver la Ópera de Viena por 3€?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Sí. Las Stehplätze (entradas de pie) se venden 80 minutos antes de cada función por 3-4€. La acústica es de clase mundial. Se forman colas 1-2 horas antes para las funciones populares."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "¿Cómo llegar del aeropuerto de Viena al centro?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Las mejores opciones son: CAT (City Airport Train) por 14€ en 16 minutos sin paradas hasta Wien-Mitte, autobús Vienna Airport Lines por 11€ en 20-30 minutos, o transfer privado por 75€ (puerta a puerta, hasta 3 personas)."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "¿Es necesario llevar efectivo en Viena?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Sí, es recomendable. Muchos cafés tradicionales y Heurigers (tabernas de vino) no aceptan tarjeta. Una tarjeta sin comisiones como Revolut permite retirar efectivo gratis en cualquier cajero."
+                }
+              }
+            ]
+          })}
+        </script>
       </Helmet>
 
       <ViennaGuideArticle onBack={handleBack} />
