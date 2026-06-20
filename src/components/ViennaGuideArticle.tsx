@@ -12,11 +12,10 @@ const NAV_SECTIONS = [
   { id: 'dia-2', label: 'Día 2' },
   { id: 'dia-3', label: 'Día 3' },
   { id: 'extras', label: 'Más experiencias' },
-  { id: 'vienna-pass', label: 'Vienna Pass' },
-  { id: 'info-practica', label: 'Info práctica' },
-  { id: 'cuando-ir', label: 'Cuándo ir' },
   { id: 'alojamiento', label: 'Alojamiento' },
   { id: 'comer', label: 'Dónde comer' },
+  { id: 'info-practica', label: 'Info práctica' },
+  { id: 'cuando-ir', label: 'Cuándo ir' },
   { id: 'herramientas', label: 'Tarjeta y seguro' },
   { id: 'consejos', label: 'Consejos' },
 ];
@@ -439,213 +438,16 @@ const ViennaGuideArticle: React.FC<ViennaGuideArticleProps> = ({ onBack }) => {
               <DayTripCard title="Praga (tour guiado)" link="https://gyg.me/qVUeP4MV" />
             </div>
           </div>
-        </div>
-      </section>
 
-      {/* VIENNA PASS COMPARISON TABLE */}
-      <section id="vienna-pass" className="py-24 md:py-32 bg-white scroll-mt-20">
-        <div className="max-w-5xl mx-auto px-6 lg:px-10">
-          <div className="flex items-center gap-3 mb-5">
-            <span className="h-px w-8 bg-amber-600" />
-            <span className="text-[10px] uppercase tracking-[.2em] text-amber-700">Ahorra dinero</span>
-          </div>
-          <h2 className="text-4xl md:text-5xl text-stone-900 leading-tight mb-6" style={{ fontFamily: 'Georgia, serif' }}>
-            ¿Merece la pena la <span className="italic">Vienna Pass</span>?
-          </h2>
-          <p className="text-stone-600 mb-12 max-w-2xl">
-            Hemos calculado cuánto gastarías comprando las entradas por separado vs. con la Vienna Pass de 3 días (precios actualizados a 2026). Spoiler: ahorras más de 40% si visitas al menos 5 atracciones.
-          </p>
-
-          <div className="border-2 border-stone-200 overflow-hidden">
-            <div className="grid grid-cols-3 bg-stone-900 text-stone-50 text-xs uppercase tracking-wider">
-              <div className="p-4 font-medium">Atracción</div>
-              <div className="p-4 font-medium text-center">Entrada individual</div>
-              <div className="p-4 font-medium text-center bg-amber-700">Con Vienna Pass</div>
-            </div>
-            {[
-              { name: 'Schönbrunn (Palace Ticket)', price: '38€' },
-              { name: 'Belvedere Superior', price: '23€' },
-              { name: 'Hofburg (Sisi Museum + Apartamentos)', price: '19,50€' },
-              { name: 'Riesenrad (Noria Prater)', price: '14,50€' },
-              { name: 'Catedral San Esteban (Torre Sur)', price: '7€' },
-              { name: 'Mozarthaus Vienna', price: '14€' },
-              { name: 'Museo Hundertwasser', price: '14€' },
-              { name: 'Hop-on Hop-off Bus (1 día)', price: '32€' },
-            ].map((item, i) => (
-              <div key={item.name} className={`grid grid-cols-3 text-sm ${i % 2 === 0 ? 'bg-white' : 'bg-stone-50'} border-t border-stone-100`}>
-                <div className="p-4 text-stone-700 font-medium">{item.name}</div>
-                <div className="p-4 text-center text-stone-600">{item.price}</div>
-                <div className="p-4 text-center bg-amber-50 text-amber-700 font-semibold">
-                  <CheckCircle size={14} className="inline mr-1 -mt-0.5" />Incluido
-                </div>
-              </div>
-            ))}
-            <div className="grid grid-cols-3 border-t-2 border-stone-900 bg-stone-900 text-white">
-              <div className="p-5 font-bold text-sm">TOTAL</div>
-              <div className="p-5 text-center">
-                <span className="text-xl font-bold line-through text-stone-400">162€</span>
-              </div>
-              <div className="p-5 text-center bg-amber-700">
-                <span className="text-xl font-bold">149€</span>
-                <span className="block text-[10px] mt-0.5 text-amber-200 uppercase tracking-wider">Vienna Pass 3 días</span>
-              </div>
-            </div>
-          </div>
-
-          <div className="mt-6 flex items-center justify-between bg-gradient-to-r from-green-50 to-emerald-50 border-2 border-green-200 p-5">
-            <div>
-              <span className="text-2xl font-bold text-green-700" style={{ fontFamily: 'Georgia, serif' }}>Ahorras ~13€ en entradas</span>
-              <p className="text-sm text-green-600 mt-0.5">Pero el verdadero valor es el acceso sin colas + bus turístico + más de 90 atracciones incluidas</p>
-            </div>
+          <div className="mt-10">
             <a
               href="https://gyg.me/MTSmqRRG"
               target="_blank"
               rel="noopener noreferrer"
-              className="shrink-0 bg-stone-900 hover:bg-amber-700 text-white text-xs uppercase tracking-wider px-6 py-4 transition-colors flex items-center gap-2 font-medium"
+              className="inline-flex items-center gap-2 bg-stone-900 hover:bg-amber-700 text-white text-xs uppercase tracking-wider px-6 py-4 transition-colors font-medium"
             >
-              Comprar Vienna Pass <ExternalLink size={12} />
+              Comprar Vienna Pass (acceso sin colas a +90 atracciones) <ExternalLink size={12} />
             </a>
-          </div>
-
-          <p className="mt-4 text-xs text-stone-400 text-center">
-            * Precios orientativos a junio 2026. Consulta la web oficial para tarifas actualizadas. La Vienna Pass NO incluye transporte público (se compra aparte). Incluye entrada sin cola a más de 90 atracciones + bus turístico hop-on hop-off.
-          </p>
-        </div>
-      </section>
-
-      {/* PRACTICAL INFO */}
-      <section id="info-practica" className="py-24 md:py-32 bg-stone-50 scroll-mt-20">
-        <div className="max-w-7xl mx-auto px-6 lg:px-10">
-          <div className="flex items-center gap-3 mb-5">
-            <span className="h-px w-8 bg-amber-600" />
-            <span className="text-[10px] uppercase tracking-[.2em] text-amber-700">Info práctica</span>
-          </div>
-          <h2 className="text-4xl md:text-5xl text-stone-900 leading-tight mb-16" style={{ fontFamily: 'Georgia, serif' }}>
-            Todo lo que <span className="italic">necesitas saber</span>
-          </h2>
-
-          <div className="grid lg:grid-cols-2 gap-12 lg:gap-20">
-            {/* TRANSPORT */}
-            <div>
-              <div className="flex items-center gap-3 mb-6">
-                <Train size={16} className="text-amber-600" />
-                <h3 className="text-xl font-semibold text-stone-900">Transporte público</h3>
-              </div>
-              <div className="space-y-4 text-stone-700 text-sm leading-relaxed">
-                <p><strong>U-Bahn (Metro):</strong> 5 líneas, frecuencia 2-5 min, horario 05:00-00:30 (24h viernes y sábados).</p>
-                <p><strong>Tranvías:</strong> Red histórica de 225 km que cubre toda la ciudad.</p>
-                <p><strong>Abonos (2026):</strong> Billete sencillo 3€ digital / 3,20€ físico · 24h: 9,70€ digital · 7 días: 25,20€ digital</p>
-                <p><strong>Importante:</strong> Desde enero 2026 ya NO existen los abonos de 48h ni 72h. La mejor opción para 3 días: comprar 3 billetes de 24h (29,10€) o el de 7 días (25,20€).</p>
-                <p><strong>App:</strong> WienMobil (compra digital, 5% más barato) · Validación obligatoria · Multa sin billete: 135€</p>
-              </div>
-
-              <div className="mt-8">
-                <h4 className="font-semibold text-stone-900 mb-4">Desde el aeropuerto (VIE)</h4>
-                <div className="space-y-3">
-                  <TransportOption name="CAT (City Airport Train)" price="14€" time="16 min" desc="No-stop a Wien-Mitte" link="https://gyg.me/fLZy1uTy" />
-                  <TransportOption name="Vienna Airport Lines (Bus)" price="11€" time="20-30 min" desc="Varias líneas al centro" link="https://www.viennaairportlines.at/en/informationen/unser-streckennetz" />
-                  <TransportOption name="Transfer privado" price="75€" time="30-50 min" desc="Puerta a puerta (hasta 3 personas)" link="https://gyg.me/8wpM6c41" />
-                </div>
-              </div>
-            </div>
-
-            {/* BUDGET */}
-            <div>
-              <div className="flex items-center gap-3 mb-6">
-                <Euro size={16} className="text-amber-600" />
-                <h3 className="text-xl font-semibold text-stone-900">Presupuesto por día</h3>
-              </div>
-              <div className="space-y-6">
-                <BudgetTier
-                  level="Mochilero"
-                  range="75-100€/día"
-                  items={['Hostel: 30-40€', 'Comida: 25-30€', 'Transporte: 8€ (abono 7 días / 3)', 'Atracciones: 12-20€']}
-                />
-                <BudgetTier
-                  level="Estándar"
-                  range="140-190€/día"
-                  items={['Hotel 3★: 80-110€', 'Comida: 40-50€', 'Transporte: 10€ (24h digital)', 'Atracciones: 20-30€']}
-                />
-                <BudgetTier
-                  level="Premium"
-                  range="280-450€/día"
-                  items={['Hotel 5★: 170-280€', 'Comida: 80-130€', 'Transporte: 20€', 'Atracciones: 30-50€']}
-                />
-              </div>
-              <button
-                onClick={() => document.getElementById('vienna-pass')?.scrollIntoView({ behavior: 'smooth' })}
-                className="mt-6 w-full flex items-center justify-center gap-2 border-2 border-dashed border-amber-300 bg-amber-50/50 p-3 text-xs text-amber-800 font-medium hover:bg-amber-50 transition-colors"
-              >
-                <CheckCircle size={13} />
-                Ver tabla comparativa Vienna Pass (149€ vs 162€ por separado)
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* WHEN TO VISIT */}
-      <section id="cuando-ir" className="py-24 md:py-32 bg-stone-50 scroll-mt-20">
-        <div className="max-w-5xl mx-auto px-6 lg:px-10">
-          <div className="flex items-center gap-3 mb-5">
-            <span className="h-px w-8 bg-amber-600" />
-            <span className="text-[10px] uppercase tracking-[.2em] text-amber-700">Planifica</span>
-          </div>
-          <h2 className="text-4xl md:text-5xl text-stone-900 leading-tight mb-12" style={{ fontFamily: 'Georgia, serif' }}>
-            Cuándo <span className="italic">visitar Viena</span>
-          </h2>
-
-          <div className="grid md:grid-cols-2 gap-6">
-            <SeasonCard
-              icon={Sun}
-              season="Primavera (Abr-May)"
-              temp="12-20°C"
-              description="La mejor época calidad-precio. Jardines en flor en Schönbrunn, terrazas abiertas en el Danubio, pocos turistas y precios moderados. Festival de Pascua en el Prater."
-              tag="Recomendada"
-              color="green"
-            />
-            <SeasonCard
-              icon={Sun}
-              season="Verano (Jun-Ago)"
-              temp="20-30°C"
-              description="Temporada alta con festivales al aire libre (Film Festival en Rathausplatz). Cines al aire libre, noches largas. Hoteles 30-40% más caros. Mucho turismo."
-              tag="Alta demanda"
-              color="amber"
-            />
-            <SeasonCard
-              icon={Leaf}
-              season="Otoño (Sep-Oct)"
-              temp="10-18°C"
-              description="Temporada de ópera y conciertos en pleno apogeo. Colores otoñales en Stadtpark, vino nuevo (Heuriger), menos masificación. Nuestra favorita junto a primavera."
-              tag="Recomendada"
-              color="green"
-            />
-            <SeasonCard
-              icon={Snowflake}
-              season="Invierno (Nov-Mar)"
-              temp="-2-5°C"
-              description="Mercados navideños espectaculares (Nov-Dic), bailes imperiales (Ene-Feb), ópera en su momento álgido. Frío intenso pero ambiente mágico. Hoteles accesibles en enero."
-              tag="Mercados navideños"
-              color="rose"
-            />
-          </div>
-
-          <div className="mt-10 bg-white border border-stone-200 p-6">
-            <h3 className="text-lg font-semibold text-stone-900 mb-3">Resumen rápido</h3>
-            <div className="grid sm:grid-cols-3 gap-4 text-sm">
-              <div>
-                <span className="font-medium text-green-700">Mejor momento:</span>
-                <p className="text-stone-600 mt-0.5">Abril-mayo y septiembre-octubre</p>
-              </div>
-              <div>
-                <span className="font-medium text-amber-700">Más barato:</span>
-                <p className="text-stone-600 mt-0.5">Enero-febrero (sin Navidad)</p>
-              </div>
-              <div>
-                <span className="font-medium text-rose-700">Evitar:</span>
-                <p className="text-stone-600 mt-0.5">Agosto (calor + turismo masivo)</p>
-              </div>
-            </div>
           </div>
         </div>
       </section>
@@ -713,6 +515,111 @@ const ViennaGuideArticle: React.FC<ViennaGuideArticleProps> = ({ onBack }) => {
                 <Restaurant name="Motto am Fluss" address="Franz-Josefs-Kai 2" price="€€€" desc="Vistas al Danubio. Romántico e innovador." />
                 <Restaurant name="Labstelle Wien" address="Lugeck 6" price="€€" desc="Fusión austriaco-asiática. Ambiente joven y creativo." />
                 <Restaurant name="Naschmarkt" address="Wienzeile" price="€" desc="Mercado con puestos de comida internacional. Variado y económico." />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* PRACTICAL INFO */}
+      <section id="info-practica" className="py-24 md:py-32 bg-stone-50 scroll-mt-20">
+        <div className="max-w-7xl mx-auto px-6 lg:px-10">
+          <div className="flex items-center gap-3 mb-5">
+            <span className="h-px w-8 bg-amber-600" />
+            <span className="text-[10px] uppercase tracking-[.2em] text-amber-700">Info práctica</span>
+          </div>
+          <h2 className="text-4xl md:text-5xl text-stone-900 leading-tight mb-16" style={{ fontFamily: 'Georgia, serif' }}>
+            Todo lo que <span className="italic">necesitas saber</span>
+          </h2>
+
+          <div className="max-w-3xl">
+            {/* TRANSPORT */}
+            <div>
+              <div className="flex items-center gap-3 mb-6">
+                <Train size={16} className="text-amber-600" />
+                <h3 className="text-xl font-semibold text-stone-900">Transporte público</h3>
+              </div>
+              <div className="space-y-4 text-stone-700 text-sm leading-relaxed">
+                <p><strong>U-Bahn (Metro):</strong> 5 líneas, frecuencia 2-5 min, horario 05:00-00:30 (24h viernes y sábados).</p>
+                <p><strong>Tranvías:</strong> Red histórica de 225 km que cubre toda la ciudad.</p>
+                <p><strong>Abonos (2026):</strong> Billete sencillo 3€ digital / 3,20€ físico · 24h: 9,70€ digital · 7 días: 25,20€ digital</p>
+                <p><strong>Importante:</strong> Desde enero 2026 ya NO existen los abonos de 48h ni 72h. La mejor opción para 3 días: comprar 3 billetes de 24h (29,10€) o el de 7 días (25,20€).</p>
+                <p><strong>App:</strong> WienMobil (compra digital, 5% más barato) · Validación obligatoria · Multa sin billete: 135€</p>
+              </div>
+
+              <div className="mt-8">
+                <h4 className="font-semibold text-stone-900 mb-4">Desde el aeropuerto (VIE)</h4>
+                <div className="space-y-3">
+                  <TransportOption name="CAT (City Airport Train)" price="14€" time="16 min" desc="No-stop a Wien-Mitte" link="https://gyg.me/fLZy1uTy" />
+                  <TransportOption name="Vienna Airport Lines (Bus)" price="11€" time="20-30 min" desc="Varias líneas al centro" link="https://www.viennaairportlines.at/en/informationen/unser-streckennetz" />
+                  <TransportOption name="Transfer privado" price="75€" time="30-50 min" desc="Puerta a puerta (hasta 3 personas)" link="https://gyg.me/8wpM6c41" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* WHEN TO VISIT */}
+      <section id="cuando-ir" className="py-24 md:py-32 bg-stone-50 scroll-mt-20">
+        <div className="max-w-5xl mx-auto px-6 lg:px-10">
+          <div className="flex items-center gap-3 mb-5">
+            <span className="h-px w-8 bg-amber-600" />
+            <span className="text-[10px] uppercase tracking-[.2em] text-amber-700">Planifica</span>
+          </div>
+          <h2 className="text-4xl md:text-5xl text-stone-900 leading-tight mb-12" style={{ fontFamily: 'Georgia, serif' }}>
+            Cuándo <span className="italic">visitar Viena</span>
+          </h2>
+
+          <div className="grid md:grid-cols-2 gap-6">
+            <SeasonCard
+              icon={Sun}
+              season="Primavera (Abr-May)"
+              temp="12-20°C"
+              description="La mejor época calidad-precio. Jardines en flor en Schönbrunn, terrazas abiertas en el Danubio, pocos turistas y precios moderados. Festival de Pascua en el Prater."
+              tag="Recomendada"
+              color="green"
+            />
+            <SeasonCard
+              icon={Sun}
+              season="Verano (Jun-Ago)"
+              temp="20-30°C"
+              description="Temporada alta con festivales al aire libre (Film Festival en Rathausplatz). Cines al aire libre, noches largas. Hoteles 30-40% más caros. Mucho turismo."
+              tag="Alta demanda"
+              color="amber"
+            />
+            <SeasonCard
+              icon={Leaf}
+              season="Otoño (Sep-Oct)"
+              temp="10-18°C"
+              description="Temporada de ópera y conciertos en pleno apogeo. Colores otoñales en Stadtpark, vino nuevo (Heuriger), menos masificación. Nuestra favorita junto a primavera."
+              tag="Recomendada"
+              color="green"
+            />
+            <SeasonCard
+              icon={Snowflake}
+              season="Invierno (Nov-Mar)"
+              temp="-2-5°C"
+              description="Mercados navideños espectaculares (Nov-Dic), bailes imperiales (Ene-Feb), ópera en su momento álgido. Frío intenso pero ambiente mágico. Hoteles accesibles en enero."
+              tag="Mercados navideños"
+              color="rose"
+            />
+          </div>
+
+          <div className="mt-10 bg-white border border-stone-200 p-6">
+            <h3 className="text-lg font-semibold text-stone-900 mb-3">Resumen rápido</h3>
+            <div className="grid sm:grid-cols-3 gap-4 text-sm">
+              <div>
+                <span className="font-medium text-green-700">Mejor momento:</span>
+                <p className="text-stone-600 mt-0.5">Abril-mayo y septiembre-octubre</p>
+              </div>
+              <div>
+                <span className="font-medium text-amber-700">Más barato:</span>
+                <p className="text-stone-600 mt-0.5">Enero-febrero (sin Navidad)</p>
+              </div>
+              <div>
+                <span className="font-medium text-rose-700">Evitar:</span>
+                <p className="text-stone-600 mt-0.5">Agosto (calor + turismo masivo)</p>
               </div>
             </div>
           </div>
@@ -1346,22 +1253,6 @@ function TransportOption({ name, price, time, desc, link }: { name: string; pric
         </span>
       </div>
     </a>
-  );
-}
-
-function BudgetTier({ level, range, items }: { level: string; range: string; items: string[] }) {
-  return (
-    <div className="border-t border-stone-200 pt-5">
-      <div className="flex items-baseline justify-between mb-3">
-        <span className="font-medium text-stone-900">{level}</span>
-        <span className="text-amber-700 font-semibold" style={{ fontFamily: 'Georgia, serif' }}>{range}</span>
-      </div>
-      <ul className="space-y-1">
-        {items.map((item) => (
-          <li key={item} className="text-sm text-stone-600">{item}</li>
-        ))}
-      </ul>
-    </div>
   );
 }
 
