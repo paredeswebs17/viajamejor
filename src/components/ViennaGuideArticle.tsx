@@ -12,12 +12,11 @@ const NAV_SECTIONS = [
   { id: 'dia-2', label: 'Día 2' },
   { id: 'dia-3', label: 'Día 3' },
   { id: 'extras', label: 'Más experiencias' },
-  { id: 'alojamiento', label: 'Alojamiento' },
+  { id: 'excursiones', label: 'Excursiones de 1 día' },
+  { id: 'alojamiento', label: 'Dónde dormir' },
   { id: 'comer', label: 'Dónde comer' },
-  { id: 'info-practica', label: 'Info práctica' },
-  { id: 'cuando-ir', label: 'Cuándo ir' },
+  { id: 'info-practica', label: 'Transporte público' },
   { id: 'herramientas', label: 'Tarjeta y seguro' },
-  { id: 'consejos', label: 'Consejos' },
 ];
 
 
@@ -429,7 +428,7 @@ const ViennaGuideArticle: React.FC<ViennaGuideArticleProps> = ({ onBack }) => {
             <ExtraCard title="Light of Creation" desc="Espectáculo inmersivo de luces en la Votivkirche. Una experiencia multisensorial única." link="https://gyg.me/oyQziOhd" />
           </div>
 
-          <div className="mt-12">
+          <div id="excursiones" className="mt-12 scroll-mt-20">
             <h3 className="text-xl font-semibold text-stone-900 mb-6">Excursiones de un día</h3>
             <div className="grid md:grid-cols-2 gap-4">
               <DayTripCard title="Hallstatt y Salzburgo" link="https://gyg.me/R9CKgxH7" />
