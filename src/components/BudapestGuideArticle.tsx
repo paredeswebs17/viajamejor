@@ -153,7 +153,7 @@ const BudapestGuideArticle: React.FC<BudapestGuideArticleProps> = ({ onBack }) =
             <Attraction
               time="11:00h"
               title="Free Tour Budapest en Español"
-              image="https://images.pexels.com/photos/12165534/pexels-photo-12165534.jpeg"
+              image="https://images.pexels.com/photos/5612377/pexels-photo-5612377.jpeg"
               description="Descubre la auténtica Budapest con guías locales apasionados. Tour premiado como el más popular a nivel global. Recorrerás la Basílica de San Esteban, el Castillo de Buda, el Parlamento y mucho más durante 2h 30min."
               details={[
                 'Precio: Gratis (propina voluntaria)',
