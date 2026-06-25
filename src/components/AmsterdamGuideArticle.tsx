@@ -1,1719 +1,1191 @@
-import React, { useState } from 'react';
-import { ArrowLeft, Share2, Clock, MapPin, ExternalLink, ChevronDown, ChevronUp } from 'lucide-react';
-import StickyTableOfContents from './StickyTableOfContents';
+import { useState, useEffect, useRef } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { ArrowLeft, Calendar, Clock, Euro, Bike, Bed, UtensilsCrossed, CreditCard, Shield, ExternalLink, Compass, List, X, MapPin, Star, Users } from 'lucide-react';
 
 interface AmsterdamGuideArticleProps {
-onBack: () => void;
+  onBack: () => void;
 }
 
+const NAV_SECTIONS = [
+  { id: 'mapa', label: 'Mapa' },
+  { id: 'dia-1', label: 'Día 1' },
+  { id: 'dia-2', label: 'Día 2' },
+  { id: 'dia-3', label: 'Día 3' },
+  { id: 'extras', label: 'Más experiencias' },
+  { id: 'alojamiento', label: 'Dónde dormir' },
+  { id: 'comer', label: 'Dónde comer' },
+  { id: 'info-practica', label: 'Transporte público' },
+  { id: 'herramientas', label: 'Tarjeta y seguro' },
+];
+
 const AmsterdamGuideArticle: React.FC<AmsterdamGuideArticleProps> = ({ onBack }) => {
-  const [expandedAirport, setExpandedAirport] = useState<string | null>(null);
-  const [expandedZone, setExpandedZone] = useState<string | null>(null);
+  const navigate = useNavigate();
+  const [navOpen, setNavOpen] = useState(false);
+  const [showNav, setShowNav] = useState(false);
 
-  const toggleAirport = (airportId: string) => {
-    setExpandedAirport(expandedAirport === airportId ? null : airportId);
+  useEffect(() => {
+    const toggle = () => setShowNav(window.scrollY > 500);
+    window.addEventListener('scroll', toggle, { passive: true });
+    return () => window.removeEventListener('scroll', toggle);
+  }, []);
+
+  const scrollTo = (id: string) => {
+    document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
+    setNavOpen(false);
   };
 
-  const toggleZone = (zoneId: string) => {
-    setExpandedZone(expandedZone === zoneId ? null : zoneId);
-  };
-
-  const sections = [
-    { id: 'por-que-visitar', title: '¿Por qué visitar Ámsterdam?' },
-    { id: 'llegada-aeropuerto', title: 'Llegada y Conexiones' },
-    { id: 'donde-dormir', title: 'Dónde Alojarse' },
-    { id: 'itinerario', title: 'Itinerario Holandés' },
-    { id: 'dia-1', title: 'Día 1: Entrada a la Venecia del Norte', level: 2 },
-    { id: 'dia-2', title: 'Día 2: Pueblos con Encanto Holandés + Canales', level: 2 },
-    { id: 'dia-3', title: 'Día 3: Arte Holandés, Cerveza y Vida Nocturna', level: 2 },
-    { id: 'mas-lugares', title: 'Más Lugares en Ámsterdam' },
-    { id: 'recomendaciones', title: 'Tarjeta y Seguro de Viaje' },
-    { id: 'gastronomia', title: 'Gastronomía' },
-    { id: 'transporte', title: 'Sistema de Transporte' },
-    { id: 'tarjetas-turisticas', title: 'Tarjetas Turísticas' },
-    { id: 'consejos', title: 'Consejos Finales' },
-    { id: 'presupuestos', title: 'Presupuestos Detallados' }
-  ];
-
-return (
-<>
-  <StickyTableOfContents sections={sections} />
-  <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 pt-24">
-<div className="mb-8">
-<button 
-onClick={onBack}
-className="inline-flex items-center text-sky-600 hover:text-sky-700 hover:bg-sky-50 px-3 py-2 rounded-xl transition-all duration-200 font-medium border border-sky-200 hover:border-sky-300 mb-6 shadow-sm hover:shadow-md"
->
-<ArrowLeft className="h-4 w-4 mr-2" />
-Volver a guías
-</button>
-
-    <div className="mb-6">
-      <span className="bg-gradient-to-r from-orange-500 to-red-500 text-white px-4 py-2 rounded-full text-sm font-medium shadow-md">
-        Guía Completa
-      </span>
-    </div>
-
-    <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-4 leading-tight">
-      Ámsterdam en 3 Días: Canales, Arte y Cultura Holandesa
-    </h1>
-
-    <div className="flex flex-col gap-4 mb-6 items-start">
-      <div className="flex flex-wrap items-center gap-2 text-gray-600 text-xs">
-        <span className="flex items-center bg-gray-100 px-3 py-2 rounded-full shadow-sm">
-          <Clock className="h-3 w-3 mr-1" />
-          16 min
-        </span>
-        <span className="flex items-center bg-gray-100 px-3 py-2 rounded-full shadow-sm">
-          <MapPin className="h-3 w-3 mr-1" />
-          Ámsterdam
-        </span>
-      </div>
-      
-      <button
-        onClick={() => {
-          if (navigator.share) {
-            navigator.share({
-              title: 'Ámsterdam en 3 Días: Guía Completa con Canales, Museos y Cultura',
-              text: 'Descubre la Venecia del Norte con nuestro itinerario optimizado',
-              url: window.location.href,
-            })
-            .catch((error) => console.log('Error sharing', error));
-          } else {
-            navigator.clipboard.writeText(window.location.href).then(() => {
-              alert('Enlace copiado al portapapeles');
-            }).catch(() => {
-              window.open(`https://twitter.com/intent/tweet?text=Ámsterdam en 3 Días: Guía Completa&url=${encodeURIComponent(window.location.href)}`, '_blank');
-            });
-          }
-        }}
-        className="inline-flex items-center text-gray-600 hover:text-orange-600 bg-gray-100 hover:bg-orange-50 px-3 py-2 rounded-full transition-all duration-200 text-xs border border-gray-200 hover:border-orange-300 self-start shadow-sm hover:shadow-md"
-      >
-        <Share2 className="h-3 w-3 mr-1" />
-        <span>Compartir</span>
-      </button>
-    </div>
-  </div>
-
-  <div className="mb-8">
-    <img
-      src="https://images.pexels.com/photos/2031706/pexels-photo-2031706.jpeg"
-      alt="Canales de Ámsterdam con casas tradicionales holandesas y bicicletas"
-      className="w-full h-48 sm:h-64 lg:h-80 object-cover rounded-2xl shadow-lg"
-    />
-  </div>
-
-  {/* SECCIÓN: ¿POR QUÉ VISITAR ÁMSTERDAM? */}
-  <div id="por-que-visitar" className="bg-gradient-to-r from-orange-50 to-red-50 border border-orange-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
-    <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">¿Por qué visitar Ámsterdam?</h2>
-
-    <div className="space-y-4 text-gray-700">
-      <p className="text-base leading-relaxed">
-        Imagina una ciudad donde más de 100 kilómetros de canales se entrelazan formando un laberinto acuático del siglo XVII, donde hay más bicicletas que habitantes, y donde las casas inclinadas del Siglo de Oro cuentan historias de comerciantes y artistas. Ámsterdam es todo esto y mucho más: museos de talla mundial, una cultura liberal única y una atmósfera cosmopolita que enamora desde el primer momento.
-      </p>
-
-      <p className="text-base leading-relaxed">
-        Pero Ámsterdam va más allá de sus icónicos canales y su fama internacional. Aquí disfrutarás de un stroopwafel recién hecho en el mercado de las flores mientras observas las coloridas casas flotantes. Recorrerás en bicicleta calles empedradas como un auténtico local, contemplarás obras maestras de Van Gogh y Rembrandt, y te perderás en las nueve callejuelas del barrio Jordaan descubriendo cafés acogedores y boutiques vintage que pocos turistas conocen.
-      </p>
-
-      <p className="text-base leading-relaxed font-medium text-gray-900">
-        Una ciudad compacta y perfecta para explorar a pie o en bici, donde cada rincón esconde una sorpresa.
-      </p>
-    </div>
-  </div>
-
-
-  <div id="llegada-aeropuerto" className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
-    <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">🚗 Llegada y Conexiones Eficientes</h2>
-
-    <div className="bg-blue-50 border border-blue-200 rounded-xl p-4 mb-6">
-      <p className="text-sm text-blue-900">
-        <strong>Haz clic en el aeropuerto de llegada</strong> para ver todas las opciones de transporte disponibles con precios actualizados.
-      </p>
-    </div>
-
-    <button
-      onClick={() => toggleAirport('schiphol')}
-      className="w-full bg-gradient-to-r from-blue-500 to-sky-500 hover:from-blue-600 hover:to-sky-600 text-white rounded-xl p-4 mb-3 flex items-center justify-between transition-all duration-300 shadow-md hover:shadow-lg"
-    >
-      <div className="flex items-center gap-3">
-        <span className="text-2xl">✈️</span>
-        <span className="font-bold text-lg">Aeropuerto de Schiphol (AMS)</span>
-      </div>
-      {expandedAirport === 'schiphol' ? <ChevronUp className="w-6 h-6" /> : <ChevronDown className="w-6 h-6" />}
-    </button>
-
-    {expandedAirport === 'schiphol' && (
-      <div className="mb-8 animate-fadeIn">
-        <h3 className="text-lg font-bold text-gray-900 mb-4 mt-4">✈️ Desde Aeropuerto de Schiphol (AMS)</h3>
-
-        <div className="bg-blue-50 border border-blue-200 rounded-xl p-6 mb-4">
-        <h4 className="font-bold text-gray-900 mb-3">🚄 Tren Directo a Estación Central - La Opción Más Rápida</h4>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          <div>
-            <p className="text-sm text-gray-700 mb-2"><strong>Precio:</strong> desde 6 €</p>
-            <p className="text-sm text-gray-700 mb-2"><strong>Horario:</strong> Cada 10-15 minutos</p>
-            <p className="text-sm text-gray-700 mb-2"><strong>Duración:</strong> 16-18 minutos sin paradas</p>
-            <p className="text-sm text-gray-700"><strong>Frecuencia:</strong> Servicio continuo todo el día</p>
-          </div>
-          <div>
-            <p className="text-sm text-gray-700 mb-2"><strong>Destino:</strong> Amsterdam Centraal (centro ciudad)</p>
-            <p className="text-sm text-gray-700 mb-2"><strong>Compra:</strong> Máquinas amarillas o online</p>
-            <p className="text-sm text-gray-700 mb-2"><strong>Comodidad:</strong> Directo sin trasbordos</p>
-            <p className="text-sm text-gray-700"><strong>Equipaje:</strong> Espacio amplio para maletas</p>
-          </div>
-        </div>
-        <div className="bg-green-100 rounded-lg p-3 mt-4">
-          <p className="text-green-800 text-sm font-medium">💡 La opción más eficiente para llegar al centro. Los trenes salen cada 10-15 minutos y son muy puntuales.</p>
-        </div>
-        <div className="mt-4">
-          <a
-            href="https://gyg.me/a32mXL4w"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center bg-gradient-to-r from-blue-500 to-indigo-500 hover:from-blue-600 hover:to-indigo-600 text-white font-semibold px-6 py-3 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300"
-          >
-            🚄 Comprar billetes de tren
-            <ExternalLink className="h-4 w-4 ml-2" />
-          </a>
-        </div>
-      </div>
-      
-      <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-4 mb-4">
-        <h4 className="font-bold text-gray-900 mb-3">🚌 Amsterdam Airport Express Bus 397</h4>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          <div>
-            <p className="text-sm text-gray-700 mb-1"><strong>Precio:</strong> desde 6 €</p>
-            <p className="text-sm text-gray-700 mb-1"><strong>Duración:</strong> 30-40 minutos</p>
-            <p className="text-sm text-gray-700 mb-1"><strong>Frecuencia:</strong> Cada 10-15 minutos</p>
-          </div>
-          <div>
-            <p className="text-sm text-gray-700 mb-1"><strong>Paradas:</strong> Museumplein, Leidseplein</p>
-            <p className="text-sm text-gray-700 mb-1"><strong>Ideal para:</strong> Hoteles cerca de museos</p>
-            <p className="text-sm text-gray-700 mb-1"><strong>Horario:</strong> 05:00-00:30</p>
-          </div>
-        </div>
-        <div className="mt-4">
-          <a
-            href="https://gyg.me/nHnMYLIe"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-600 hover:to-teal-600 text-white font-semibold px-6 py-3 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300"
-          >
-            🚌 Comprar billetes de bus
-            <ExternalLink className="h-4 w-4 ml-2" />
-          </a>
-        </div>
-      </div>
-
-      <div className="bg-yellow-50 border border-yellow-200 rounded-xl p-4 mb-4">
-        <h4 className="font-bold text-gray-900 mb-3">🎫 Amsterdam Travel Ticket - Para Turistas</h4>
-        <div className="space-y-3">
-          <div className="bg-white rounded-lg p-3 shadow-sm">
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-gray-700">
-              <div>
-                <p><strong>1 día:</strong> 18 € (transporte ilimitado)</p>
-                <p><strong>2 días:</strong> 24 € (muy popular)</p>
-                <p><strong>3 días:</strong> 30 € (ideal para este planning)</p>
-              </div>
-              <div>
-                <p><strong>Incluye:</strong> Tren aeropuerto + todo transporte</p>
-                <p><strong>Validez:</strong> Desde medianoche a 04:00</p>
-                <p><strong>Ideal:</strong> Si usas mucho transporte público</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="mt-4">
-          <a
-            href="https://gyg.me/bftVdMgA"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center bg-gradient-to-r from-yellow-500 to-orange-500 hover:from-yellow-600 hover:to-orange-600 text-white font-semibold px-6 py-3 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300"
-          >
-            🎫 Comprar Amsterdam Travel Ticket
-            <ExternalLink className="h-4 w-4 ml-2" />
-          </a>
-        </div>
-      </div>
-
-      <div className="bg-purple-50 border border-purple-200 rounded-xl p-4">
-        <h4 className="font-bold text-gray-900 mb-3">🚕 Traslado Privado - Máximo Confort</h4>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          <div>
-            <p className="text-sm text-gray-700 mb-1"><strong>Precio:</strong> desde 56 €</p>
-            <p className="text-sm text-gray-700 mb-1"><strong>Duración:</strong> 20-30 min (según tráfico)</p>
-            <p className="text-sm text-gray-700 mb-1"><strong>Ventajas:</strong> Puerta a puerta</p>
-          </div>
-          <div>
-            <p className="text-sm text-gray-700 mb-1"><strong>Ideal para:</strong> Grupos, familias, equipaje</p>
-            <p className="text-sm text-gray-700 mb-1"><strong>Reserva:</strong> Online con antelación</p>
-            <p className="text-sm text-gray-700 mb-1"><strong>Incluye:</strong> Espera + ayuda equipaje</p>
-          </div>
-        </div>
-        <div className="mt-4">
-          <a
-            href="https://gyg.me/5ZYfAmX8"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white font-semibold px-6 py-3 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300"
-          >
-            🚕 Reservar traslado privado
-            <ExternalLink className="h-4 w-4 ml-2" />
-          </a>
-        </div>
-      </div>
-      </div>
-    )}
-  </div>
-
-  {/* SECCIÓN: ALOJAMIENTO */}
-  <div id="donde-dormir" className="bg-gradient-to-br from-emerald-50 via-teal-50 to-cyan-50 border border-emerald-200 rounded-2xl p-6 sm:p-8 shadow-lg mb-8">
-    <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3 flex items-center">
-      🏨 Dónde Alojarse en Ámsterdam
-    </h2>
-    <p className="text-gray-600 mb-6">Las mejores zonas y hoteles recomendados para tu estancia</p>
-
-    <div className="space-y-6">
-      {/* Centro Histórico */}
-      <div className="bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300">
-        <div className="flex items-center mb-4">
-          <div className="w-12 h-12 bg-gradient-to-br from-orange-500 to-red-500 rounded-xl flex items-center justify-center mr-4">
-            <span className="text-2xl">🏛️</span>
-          </div>
-          <div className="flex-1">
-            <h3 className="text-xl font-bold text-gray-900">Centro Histórico (Grachtengordel)</h3>
-            <p className="text-sm text-gray-600">La ubicación perfecta junto a los canales</p>
-          </div>
-        </div>
-
-        <button
-          onClick={() => toggleZone('centro-historico')}
-          className="w-full bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white rounded-xl p-4 mb-3 flex items-center justify-between transition-all duration-300 shadow-md hover:shadow-lg group"
-        >
-          <div className="flex items-center gap-3">
-            <span className="text-2xl">🏨</span>
-            <div className="text-left">
-              <span className="font-bold text-lg block">
-                {expandedZone === 'centro-historico' ? 'Ocultar hoteles' : 'Ver 3 hoteles recomendados'}
-              </span>
-              <span className="text-sm text-orange-100 block">
-                Hoteles en el centro de Ámsterdam
-              </span>
-            </div>
-          </div>
-          {expandedZone === 'centro-historico' ?
-            <ChevronUp className="w-6 h-6 group-hover:transform group-hover:-translate-y-1 transition-transform" /> :
-            <ChevronDown className="w-6 h-6 group-hover:transform group-hover:translate-y-1 transition-transform" />
-          }
-        </button>
-
-        {expandedZone === 'centro-historico' && (
-          <div className="animate-fadeIn border-t border-gray-200 pt-4">
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-4">
-              <div className="bg-white rounded-2xl p-5 border-2 border-orange-200 flex flex-col shadow-lg hover:shadow-xl hover:border-orange-300 transition-all duration-300 hover:-translate-y-1">
-                <div className="flex items-start justify-between mb-3">
-                  <span className="text-3xl">🏨</span>
-                  <span className="bg-amber-400 text-amber-900 px-3 py-1 rounded-full text-xs font-bold">⭐⭐⭐⭐</span>
-                </div>
-                <div className="flex-grow">
-                  <h4 className="font-bold text-gray-900 mb-3 text-lg leading-tight">Monet Garden Hotel Amsterdam</h4>
-                  <p className="text-sm text-gray-700 mb-4 leading-relaxed">Hotel boutique junto a los canales con habitaciones modernas con aire acondicionado, WiFi gratuita y vistas al canal y jardín. TV de pantalla plana, cafetera Nespresso y albornoces. Centro de fitness gratuito y bar con cervezas locales.</p>
-                  <div className="bg-orange-50 border-l-4 border-orange-400 rounded-r-lg p-3 mb-4">
-                    <p className="text-xs text-orange-800 leading-relaxed">
-                      <span className="text-base mr-1">📍</span>
-                      <strong>Qué hay cerca:</strong> Rembrandtplein (800 m), Teatro Carré (900 m), Ballet y Ópera Nacional (400 m), aeropuerto de Schiphol (12 km).
-                    </p>
-                  </div>
-                </div>
-                <div className="mt-auto">
-                  <a
-                    href="https://booking.tpk.lv/UTD9cvgv"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center justify-center bg-[#003580] hover:bg-[#00254d] text-white font-bold px-6 py-3.5 rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 text-base w-full group"
-                  >
-                    <span className="mr-2">Ver disponibilidad</span>
-                    <ExternalLink className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
-                  </a>
-                </div>
-              </div>
-
-              <div className="bg-white rounded-2xl p-5 border-2 border-cyan-200 flex flex-col shadow-lg hover:shadow-xl hover:border-cyan-300 transition-all duration-300 hover:-translate-y-1">
-                <div className="flex items-start justify-between mb-3">
-                  <span className="text-3xl">🏨</span>
-                  <span className="bg-amber-400 text-amber-900 px-3 py-1 rounded-full text-xs font-bold">⭐⭐⭐⭐</span>
-                </div>
-                <div className="flex-grow">
-                  <h4 className="font-bold text-gray-900 mb-3 text-lg leading-tight">Ambassade Hotel</h4>
-                  <p className="text-sm text-gray-700 mb-4 leading-relaxed">Hotel con servicio de conserjería, restaurante y bar. Habitaciones con aire acondicionado, TV de pantalla plana con canales vía satélite, caja fuerte y baño privado. Desayuno buffet, continental o americano. Alquiler de bicicletas disponible.</p>
-                  <div className="bg-cyan-50 border-l-4 border-cyan-400 rounded-r-lg p-3 mb-4">
-                    <p className="text-xs text-cyan-800 leading-relaxed">
-                      <span className="text-base mr-1">📍</span>
-                      <strong>Qué hay cerca:</strong> Casa de Ana Frank (9 min a pie), Plaza Rembrandtplein, Rijksmuseum, Plaza Leidseplein, zona ideal para ciclismo.
-                    </p>
-                  </div>
-                </div>
-                <div className="mt-auto">
-                  <a
-                    href="https://booking.tpk.lv/lJeCjGwX"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center justify-center bg-[#003580] hover:bg-[#00254d] text-white font-bold px-6 py-3.5 rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 text-base w-full group"
-                  >
-                    <span className="mr-2">Ver disponibilidad</span>
-                    <ExternalLink className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
-                  </a>
-                </div>
-              </div>
-
-              <div className="bg-white rounded-2xl p-5 border-2 border-indigo-200 flex flex-col shadow-lg hover:shadow-xl hover:border-indigo-300 transition-all duration-300 hover:-translate-y-1">
-                <div className="flex items-start justify-between mb-3">
-                  <span className="text-3xl">🏨</span>
-                  <span className="bg-amber-400 text-amber-900 px-3 py-1 rounded-full text-xs font-bold">⭐⭐⭐</span>
-                </div>
-                <div className="flex-grow">
-                  <h4 className="font-bold text-gray-900 mb-3 text-lg leading-tight">Tourist Inn Hotel Amsterdam</h4>
-                  <p className="text-sm text-gray-700 mb-4 leading-relaxed">Hotel bien ubicado con salón de uso común, WiFi gratuita y bar. Habitaciones con aire acondicionado, TV de pantalla plana con canales por cable. Desayuno buffet o continental. Personal que habla árabe, alemán, inglés y español.</p>
-                  <div className="bg-indigo-50 border-l-4 border-indigo-400 rounded-r-lg p-3 mb-4">
-                    <p className="text-xs text-indigo-800 leading-relaxed">
-                      <span className="text-base mr-1">📍</span>
-                      <strong>Qué hay cerca:</strong> Casa de Ana Frank (8 min a pie), Estación Central de Ámsterdam, Ballet y Ópera Nacional, Casa museo de Rembrandt.
-                    </p>
-                  </div>
-                </div>
-                <div className="mt-auto">
-                  <a
-                    href="https://booking.tpk.lv/gB3tgW13"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center justify-center bg-[#003580] hover:bg-[#00254d] text-white font-bold px-6 py-3.5 rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 text-base w-full group"
-                  >
-                    <span className="mr-2">Ver disponibilidad</span>
-                    <ExternalLink className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <div className="bg-green-50 border border-green-200 rounded-lg p-3">
-              <p className="text-sm text-green-800">
-                <strong>✅ Por qué elegir esta zona:</strong> Ubicación ideal entre canales, cerca de la Casa de Ana Frank, el Jordaan y las 9 calles. Todo accesible a pie, restaurantes y cafés en cada esquina, zona segura y pintoresca.
-              </p>
-            </div>
-          </div>
-        )}
-      </div>
-
-      {/* Museumplein */}
-      <div className="bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300">
-        <div className="flex items-center mb-4">
-          <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-indigo-500 rounded-xl flex items-center justify-center mr-4">
-            <span className="text-2xl">🎨</span>
-          </div>
-          <div className="flex-1">
-            <h3 className="text-xl font-bold text-gray-900">Museumplein (Zona de Museos)</h3>
-            <p className="text-sm text-gray-600">Ideal para amantes del arte y la cultura</p>
-          </div>
-        </div>
-
-        <button
-          onClick={() => toggleZone('museumplein')}
-          className="w-full bg-gradient-to-r from-blue-500 to-indigo-500 hover:from-blue-600 hover:to-indigo-600 text-white rounded-xl p-4 mb-3 flex items-center justify-between transition-all duration-300 shadow-md hover:shadow-lg group"
-        >
-          <div className="flex items-center gap-3">
-            <span className="text-2xl">🏨</span>
-            <div className="text-left">
-              <span className="font-bold text-lg block">
-                {expandedZone === 'museumplein' ? 'Ocultar hoteles' : 'Ver 3 hoteles recomendados'}
-              </span>
-              <span className="text-sm text-blue-100 block">
-                Hoteles en la zona de museos
-              </span>
-            </div>
-          </div>
-          {expandedZone === 'museumplein' ?
-            <ChevronUp className="w-6 h-6 group-hover:transform group-hover:-translate-y-1 transition-transform" /> :
-            <ChevronDown className="w-6 h-6 group-hover:transform group-hover:translate-y-1 transition-transform" />
-          }
-        </button>
-
-        {expandedZone === 'museumplein' && (
-          <div className="animate-fadeIn border-t border-gray-200 pt-4">
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-4">
-              <div className="bg-white rounded-2xl p-5 border-2 border-blue-200 flex flex-col shadow-lg hover:shadow-xl hover:border-blue-300 transition-all duration-300 hover:-translate-y-1">
-                <div className="flex items-start justify-between mb-3">
-                  <span className="text-3xl">🏨</span>
-                  <span className="bg-amber-400 text-amber-900 px-3 py-1 rounded-full text-xs font-bold">⭐⭐⭐⭐</span>
-                </div>
-                <div className="flex-grow">
-                  <h4 className="font-bold text-gray-900 mb-3 text-lg leading-tight">Catalonia Vondel Amsterdam</h4>
-                  <p className="text-sm text-gray-700 mb-4 leading-relaxed">Hotel boutique 4 estrellas en el centro. Habitaciones con baño privado, minibar y set de té/café. Restaurante brasserie JOOST con platos internacionales y especialidades holandesas. WiFi gratuito y alquiler de bicicletas disponible.</p>
-                  <div className="bg-blue-50 border-l-4 border-blue-400 rounded-r-lg p-3 mb-4">
-                    <p className="text-xs text-blue-800 leading-relaxed">
-                      <span className="text-base mr-1">📍</span>
-                      <strong>Qué hay cerca:</strong> Rijksmuseum (500 m), parque Vondelpark (300 m), plaza Leidseplein (300 m), calle comercial P.C. Hooftstaat (5 min a pie).
-                    </p>
-                  </div>
-                </div>
-                <div className="mt-auto">
-                  <a
-                    href="https://booking.tpk.lv/NoRMV4F4"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center justify-center bg-[#003580] hover:bg-[#00254d] text-white font-bold px-6 py-3.5 rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 text-base w-full group"
-                  >
-                    <span className="mr-2">Ver disponibilidad</span>
-                    <ExternalLink className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
-                  </a>
-                </div>
-              </div>
-
-              <div className="bg-white rounded-2xl p-5 border-2 border-emerald-200 flex flex-col shadow-lg hover:shadow-xl hover:border-emerald-300 transition-all duration-300 hover:-translate-y-1">
-                <div className="flex items-start justify-between mb-3">
-                  <span className="text-3xl">🏨</span>
-                  <span className="bg-amber-400 text-amber-900 px-3 py-1 rounded-full text-xs font-bold">⭐⭐⭐⭐</span>
-                </div>
-                <div className="flex-grow">
-                  <h4 className="font-bold text-gray-900 mb-3 text-lg leading-tight">NH Amsterdam Leidseplein</h4>
-                  <p className="text-sm text-gray-700 mb-4 leading-relaxed">Hotel elegante con habitaciones con aire acondicionado, set de té/café gratis, minibar, TV vía satélite y cama extralarga. Bar & Kitchen Copper para disfrutar. WiFi gratuita en todas las instalaciones.</p>
-                  <div className="bg-emerald-50 border-l-4 border-emerald-400 rounded-r-lg p-3 mb-4">
-                    <p className="text-xs text-emerald-800 leading-relaxed">
-                      <span className="text-base mr-1">📍</span>
-                      <strong>Qué hay cerca:</strong> Plaza Leidseplein (250 m), Stadsschouwburg (3 min a pie), plaza de los Museos (5 min a pie), P.C. Hooftstraat, tranvía a Estación Central.
-                    </p>
-                  </div>
-                </div>
-                <div className="mt-auto">
-                  <a
-                    href="https://booking.tpk.lv/iTSAwLd4"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center justify-center bg-[#003580] hover:bg-[#00254d] text-white font-bold px-6 py-3.5 rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 text-base w-full group"
-                  >
-                    <span className="mr-2">Ver disponibilidad</span>
-                    <ExternalLink className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
-                  </a>
-                </div>
-              </div>
-
-              <div className="bg-white rounded-2xl p-5 border-2 border-purple-200 flex flex-col shadow-lg hover:shadow-xl hover:border-purple-300 transition-all duration-300 hover:-translate-y-1">
-                <div className="flex items-start justify-between mb-3">
-                  <span className="text-3xl">🏨</span>
-                  <span className="bg-amber-400 text-amber-900 px-3 py-1 rounded-full text-xs font-bold">⭐⭐⭐⭐</span>
-                </div>
-                <div className="flex-grow">
-                  <h4 className="font-bold text-gray-900 mb-3 text-lg leading-tight">Huygens Place Amsterdam</h4>
-                  <p className="text-sm text-gray-700 mb-4 leading-relaxed">Hotel con jardín y salón de uso común. Habitaciones familiares con aire acondicionado, TV de pantalla plana, nevera, cafetera y baño privado con secador de pelo. Desayuno buffet, continental o inglés completo. Terraza solárium disponible.</p>
-                  <div className="bg-purple-50 border-l-4 border-purple-400 rounded-r-lg p-3 mb-4">
-                    <p className="text-xs text-purple-800 leading-relaxed">
-                      <span className="text-base mr-1">📍</span>
-                      <strong>Qué hay cerca:</strong> Museo Van Gogh (8 min a pie), Museo Moco, Rijksmuseum, Heineken Experience, aeropuerto de Schiphol (13 km).
-                    </p>
-                  </div>
-                </div>
-                <div className="mt-auto">
-                  <a
-                    href="https://booking.tpk.lv/oGcSGvNP"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center justify-center bg-[#003580] hover:bg-[#00254d] text-white font-bold px-6 py-3.5 rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 text-base w-full group"
-                  >
-                    <span className="mr-2">Ver disponibilidad</span>
-                    <ExternalLink className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <div className="bg-blue-50 border border-blue-200 rounded-lg p-3">
-              <p className="text-sm text-blue-800">
-                <strong>✅ Por qué elegir esta zona:</strong> Acceso directo al Rijksmuseum, Van Gogh y Stedelijk. Vondelpark cerca para paseos, zona tranquila, tram directo al centro, ambiente residencial elegante.
-              </p>
-            </div>
-          </div>
-        )}
-      </div>
-    </div>
-  </div>
-
-  {/* Separador decorativo */}
-  <div className="flex items-center justify-center mb-8">
-    <div className="flex space-x-2">
-      <div className="w-3 h-3 bg-gradient-to-r from-orange-400 to-red-400 rounded-full"></div>
-      <div className="w-3 h-3 bg-gradient-to-r from-blue-400 to-indigo-400 rounded-full"></div>
-      <div className="w-3 h-3 bg-gradient-to-r from-emerald-400 to-green-400 rounded-full"></div>
-    </div>
-  </div>
-
-  <div id="itinerario" className="bg-gradient-to-r from-orange-50 to-red-50 rounded-2xl p-6 sm:p-8 mb-8 shadow-md">
-    <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">Itinerario Holandés</h2>
-    <div className="overflow-x-auto">
-      <table className="w-full border-collapse bg-white rounded-xl shadow-sm">
-        <thead>
-          <tr className="bg-gradient-to-r from-orange-500 to-red-500 text-white">
-            <th className="border border-gray-300 px-4 py-3 text-left font-semibold">JORNADA</th>
-            <th className="border border-gray-300 px-4 py-3 text-left font-semibold">EXPERIENCIAS HOLANDESAS</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td className="border border-gray-300 px-4 py-3 font-bold">DÍA 1</td>
-            <td className="border border-gray-300 px-4 py-3">Estación Central + Plaza Dam + Canales + Mercado de las Flores + Casa de Ana Frank + 9 Calles + Mirador A'Dam</td>
-          </tr>
-          <tr className="bg-gray-50">
-            <td className="border border-gray-300 px-4 py-3 font-bold">DÍA 2</td>
-            <td className="border border-gray-300 px-4 py-3">Excursión a Zaanse Schans, Edam, Volendam y Marken + Tour en barco por canales + Rembrandtplein</td>
-          </tr>
-          <tr>
-            <td className="border border-gray-300 px-4 py-3 font-bold">DÍA 3</td>
-            <td className="border border-gray-300 px-4 py-3">Rijksmuseum + Museo Van Gogh + Heineken Experience + Barrio Rojo</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
-
-  {/* DÍA 1 */}
-  <div id="dia-1" className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
-    <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6 flex items-center">
-      <span className="bg-gradient-to-br from-orange-500 to-red-500 text-white w-14 h-14 rounded-2xl flex items-center justify-center text-xl font-bold mr-4 shadow-lg">1</span>
-      DÍA 1: Entrada a la Venecia del Norte
-    </h2>
-
-    {/* Estación Central y Plaza Dam */}
-    <div className="mb-8">
-      <h3 className="text-lg font-bold text-gray-900 mb-4 flex items-center">
-        <div className="w-1 h-6 bg-gradient-to-b from-red-400 to-orange-400 rounded-full mr-3"></div>
-        Despertar Holandés - Tour (9:00h)
-      </h3>
-      <div className="bg-gradient-to-r from-red-50 to-orange-50 border border-red-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
-        <h4 className="text-lg font-bold text-gray-900 mb-3">Estación Central y Plaza Dam</h4>
-        <div className="mb-4">
+  return (
+    <article className="bg-stone-50">
+      {/* HERO */}
+      <section className="relative min-h-[85vh] bg-stone-900 overflow-hidden">
+        <div className="absolute inset-0">
           <img
-            src="https://images.pexels.com/photos/12705132/pexels-photo-12705132.jpeg"
-            alt="Estación Central de Ámsterdam con su arquitectura renacentista holandesa"
-            className="w-full h-48 sm:h-64 object-cover rounded-xl shadow-lg mb-4"
+            src="https://images.pexels.com/photos/2031706/pexels-photo-2031706.jpeg?auto=compress&cs=tinysrgb&w=1920"
+            alt="Canales de Ámsterdam con casas tradicionales holandesas"
+            className="w-full h-full object-cover"
           />
+          <div className="absolute inset-0 bg-gradient-to-b from-stone-900/80 via-stone-900/60 to-stone-900/90" />
         </div>
-        <p className="text-gray-700 mb-4">
-          Comenzamos en la Estación Central, un edificio del mismo arquitecto que diseñó el Rijksmuseum (1882). 
-          La plaza Dam es el epicentro de Ámsterdam, donde se encuentra el Palacio Real (1808), la Iglesia Nueva y el Monumento Nacional.
-        </p>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
-          <div>
-            <h5 className="font-semibold text-gray-900 mb-2">🏛️ Plaza Dam - Corazón de la Ciudad:</h5>
-            <ul className="text-sm text-gray-700 space-y-1 list-none">
-              <li className="flex items-center"><span className="w-2 h-2 bg-orange-400 rounded-full mr-3"></span>Palacio Real: Visitable por dentro (12 €)</li>
-              <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>Iglesia Nueva: Exposiciones y eventos</li>
-              <li className="flex items-center"><span className="w-2 h-2 bg-yellow-400 rounded-full mr-3"></span>Monumento Nacional: Conmemoración WWII</li>
-              <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Madame Tussauds: Museo de cera</li>
-            </ul>
-          </div>
-          <div>
-            <h5 className="font-semibold text-gray-900 mb-2">📸 Foto Icónica en Damrak:</h5>
-            <p className="text-sm text-gray-700 mb-2">
-              Antes del tour, ve a Damrak Waterkant para conseguir una de las fotos más bonitas de Ámsterdam: 
-              los canales con las casas tradicionales de fondo. ¡Es un spot fotogénico imprescindible!
+        <div className="relative max-w-7xl mx-auto px-6 lg:px-10 pt-32 pb-20 md:pt-44 md:pb-28 min-h-[85vh] flex flex-col justify-between">
+          <button
+            onClick={onBack}
+            className="inline-flex items-center gap-2 text-[10px] uppercase tracking-[.15em] text-stone-100 hover:text-amber-300 transition w-fit"
+          >
+            <ArrowLeft size={14} /> Todas las guías
+          </button>
+
+          <div className="max-w-4xl mt-16">
+            <div className="mb-6">
+              <span className="text-[10px] uppercase tracking-[.2em] text-amber-300">
+                Guía Holandesa · 3 Días
+              </span>
+            </div>
+            <h1 className="text-stone-50 text-balance font-light leading-[0.98]" style={{ fontSize: 'clamp(2.5rem, 7vw, 5.5rem)', fontFamily: 'Georgia, serif' }}>
+              Ámsterdam en 3 Días
+            </h1>
+            <p className="mt-6 italic text-2xl md:text-3xl text-amber-300" style={{ fontFamily: 'Georgia, serif' }}>
+              Canales, Arte y Cultura Holandesa
             </p>
           </div>
-        </div>
 
-        <div className="bg-white border-l-4 border-orange-500 rounded-lg p-4">
-          <h5 className="font-semibold text-gray-900 mb-2 flex items-center">
-            <span className="mr-2">🎯</span>
-            Free Tour de Ámsterdam en Español
-          </h5>
-          <p className="text-sm text-gray-700 mb-3">
-            Un viaje cautivador a través de la capital holandesa. Desde el Palacio Real, conoce la transformación de Ámsterdam de pueblo pesquero a centro del comercio marítimo. Pasea por sus canales, maravíllate con su arquitectura y descubre joyas ocultas.
-          </p>
-          <ul className="text-sm text-gray-700 space-y-1 mb-4 list-none">
-            <li className="flex items-center"><span className="w-2 h-2 bg-orange-400 rounded-full mr-3"></span>Duración: 2h 30min</li>
-            <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Inicio: Plaza Dam</li>
-            <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Incluye: Palacio Real, Canales históricos, arquitectura holandesa...</li>
-            <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>Pago: En forma de propinas</li>
-          </ul>
-          <a href="https://www.freetour.com/es/amsterdam/free-tour-amsterdam-en-espanol?referralID=rFW5gyO0D7w7JOqo&campaign=CentroAmsterdam"
-             target="_blank"
-             rel="noopener noreferrer"
-             className="btn-hotel">
-            <span>🚶 Reservar free tour en español</span>
-            <ExternalLink className="external-icon" />
-          </a>
-        </div>
-      </div>
-    </div>
-
-    {/* Canales y Mercado de las Flores */}
-    <div className="mb-8">
-      <h3 className="text-lg font-bold text-gray-900 mb-4 flex items-center">
-        <div className="w-1 h-6 bg-gradient-to-b from-blue-400 to-indigo-400 rounded-full mr-3"></div>
-        Canales y Mercado de las Flores (11:30h)
-      </h3>
-      <div className="bg-blue-50 border border-blue-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
-        <h4 className="text-lg font-bold text-gray-900 mb-3">Canales Históricos y el Mercado Flotante</h4>
-        <div className="mb-4">
-          <img
-            src="https://images.pexels.com/photos/17345883/pexels-photo-17345883.jpeg"
-            alt="Mercado de las Flores de Ámsterdam con tulipanes de colores"
-            className="w-full h-48 sm:h-64 object-cover rounded-xl shadow-lg mb-4"
-          />
-        </div>
-        <p className="text-gray-700 mb-4">
-          Pasea por la calle Damstraat hasta llegar a los canales, Patrimonio de la Humanidad UNESCO desde 2010. 
-          El Mercado de las Flores (Bloemenmarkt) es el mercado flotante más grande del mundo, con tulipanes, bulbos y souvenirs.
-        </p>
-
-        <div className="bg-yellow-50 border border-yellow-200 rounded-xl p-4 mb-4">
-          <h5 className="font-semibold text-gray-900 mb-3">🌷 Mercado de las Flores - Bloemenmarkt:</h5>
-          <div className="space-y-2 text-sm text-gray-700">
-            <p>Fundado en 1862, es el único mercado de flores flotante que queda en el mundo. Los vendedores venden sus productos desde barcazas permanentemente amarradas.</p>
-            <ul className="space-y-1">
-              <li>• <strong>Tulipanes frescos:</strong> De todos los colores imaginables</li>
-              <li>• <strong>Bulbos:</strong> Perfectos como souvenir (certificados para exportar)</li>
-              <li>• <strong>Semillas:</strong> Variedades holandesas únicas</li>
-              <li>• <strong>Souvenirs:</strong> Zuecos de madera y productos típicos</li>
-            </ul>
+          <div className="mt-14 grid grid-cols-3 gap-6 md:gap-10 text-stone-100 border-t border-stone-100/20 pt-8">
+            <HeroStat icon={Calendar} label="Duración" value="3 días" />
+            <HeroStat icon={Euro} label="Desde" value="90€/día" />
+            <HeroStat icon={Bike} label="Experiencia" value="Canales" />
           </div>
         </div>
+      </section>
 
-        <div className="bg-white rounded-xl p-4 mb-4 shadow-sm border border-gray-100">
-          <h5 className="font-semibold text-gray-900 mb-2">🧇 Prueba los Stroopwafels:</h5>
-          <p className="text-sm text-gray-700">
-            El dulce típico holandés que no puedes perderte. En <strong>Van Wonderen Stroopwafel</strong> los preparan recién hechos 
-            con todo tipo de toppings: chocolate, caramelo, frutas... ¡Están buenísimos y calentitos!
+      {/* INTRO */}
+      <section className="py-24 md:py-32">
+        <div className="max-w-4xl mx-auto px-6 lg:px-10">
+          <div className="flex items-center gap-3 mb-6">
+            <span className="h-px w-8 bg-amber-600" />
+            <span className="text-[10px] uppercase tracking-[.2em] text-amber-700">
+              El viaje en una página
+            </span>
+          </div>
+          <p className="text-3xl md:text-4xl text-stone-900 leading-[1.3] text-balance" style={{ fontFamily: 'Georgia, serif' }}>
+            Imagina una ciudad donde más de 100 kilómetros de canales se entrelazan formando un laberinto acuático del siglo XVII, donde hay más bicicletas que habitantes, y donde las casas inclinadas del Siglo de Oro cuentan historias de comerciantes y artistas.
+          </p>
+          <p className="mt-8 text-lg text-stone-600 leading-relaxed max-w-3xl">
+            Pero Ámsterdam va más allá de sus icónicos canales y su fama internacional. Aquí disfrutarás de un stroopwafel recién hecho en el mercado de las flores mientras observas las coloridas casas flotantes. Recorrerás en bicicleta calles empedradas como un auténtico local, contemplarás obras maestras de Van Gogh y Rembrandt, y te perderás en las nueve callejuelas del barrio Jordaan descubriendo cafés acogedores y boutiques vintage que pocos turistas conocen.
           </p>
         </div>
-      </div>
-    </div>
+      </section>
 
-    {/* Casa de Ana Frank */}
-    <div className="mb-8">
-      <h3 className="text-lg font-bold text-gray-900 mb-4 flex items-center">
-        <div className="w-1 h-6 bg-gradient-to-b from-purple-400 to-pink-400 rounded-full mr-3"></div>
-        Casa de Ana Frank - Historia Impactante (15:00h)
-      </h3>
-      <div className="bg-purple-50 border border-purple-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
-        <h4 className="text-lg font-bold text-gray-900 mb-3">Casa Museo de Ana Frank - Patrimonio de la Humanidad</h4>
-        <p className="text-gray-700 mb-4">
-          Visita imprescindible en Ámsterdam. Aquí Ana Frank y su familia se ocultaron durante más de 2 años (1942-1944) de la invasión nazi. 
-          El museo conserva el escondite tras la estantería giratoria y expone su famoso diario original.
-        </p>
+      {/* JOURNEY MAP */}
+      <JourneyMap />
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
-          <div>
-            <h5 className="font-semibold text-gray-900 mb-2">🎫 Información de Visita:</h5>
-            <ul className="text-sm text-gray-700 space-y-1 list-none">
-              <li className="flex items-center"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3"></span>Precio: 16 € adultos / 7 € (10-17 años)</li>
-              <li className="flex items-center"><span className="w-2 h-2 bg-pink-400 rounded-full mr-3"></span>Duración: 60-75 minutos</li>
-              <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>Audioguía: Incluida y gratuita (9 idiomas)</li>
-              <li className="flex items-center"><span className="w-2 h-2 bg-orange-400 rounded-full mr-3"></span>Reserva: OBLIGATORIA con mucha antelación</li>
-            </ul>
+      {/* INTERACTIVE MAP */}
+      <section id="mapa" className="py-16 md:py-24 bg-white scroll-mt-20">
+        <div className="max-w-7xl mx-auto px-6 lg:px-10">
+          <div className="flex items-center gap-3 mb-5">
+            <span className="h-px w-8 bg-amber-600" />
+            <MapPin size={14} className="text-amber-700" />
+            <span className="text-[10px] uppercase tracking-[.2em] text-amber-700">Mapa interactivo</span>
           </div>
-          <div>
-            <h5 className="font-semibold text-gray-900 mb-2">⏰ Sistema de Reservas:</h5>
-            <ul className="text-sm text-gray-700 space-y-1 list-none">
-              <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Entradas: Cada martes a las 10:00h CET</li>
-              <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Para visita: 6 semanas después</li>
-              <li className="flex items-center"><span className="w-2 h-2 bg-yellow-400 rounded-full mr-3"></span>Se agotan: En pocas horas (¡muy demandado!)</li>
-              <li className="flex items-center"><span className="w-2 h-2 bg-indigo-400 rounded-full mr-3"></span>Web oficial: annefrank.org</li>
-            </ul>
-          </div>
+          <h2 className="text-4xl md:text-5xl text-stone-900 leading-tight mb-4" style={{ fontFamily: 'Georgia, serif' }}>
+            Tu ruta en <span className="italic">el mapa</span>
+          </h2>
+          <p className="text-stone-600 mb-8 max-w-2xl text-sm">Pulsa en cada marcador para ver la atracción. Los colores indican el día del itinerario.</p>
+          <AmsterdamMap />
         </div>
+      </section>
 
-        <div className="bg-red-100 border border-red-300 rounded-lg p-3 mb-4">
-          <p className="font-medium text-red-800 mb-1">🚨 IMPORTANTE - Compra con Antelación</p>
-          <p className="text-red-700 text-xs mb-3">
-            Las entradas se agotan rapidísimo. Debes reservar EXACTAMENTE 6 semanas antes de tu visita,
-            los martes a las 10:00h (hora de Ámsterdam). Pon alarma y prepara tu tarjeta de crédito. ¡NO se venden entradas en taquilla!
-          </p>
-          <a href="https://www.annefrank.org/es/museo/entradas/" target="_blank" rel="noopener noreferrer"
-             className="btn-hotel">
-            <span>🏠 Reservar Casa de Ana Frank (Web Oficial)</span>
-            <ExternalLink className="external-icon" />
-          </a>
-        </div>
-      </div>
-    </div>
+      {/* DAY 1 */}
+      <section id="dia-1" className="py-24 md:py-36 bg-white scroll-mt-20">
+        <div className="max-w-7xl mx-auto px-6 lg:px-10">
+          <DaySectionHeader number={1} title="Entrada a la Venecia del Norte" />
 
-    {/* 9 Calles y Mirador A'Dam */}
-    <div className="mb-8">
-      <h3 className="text-lg font-bold text-gray-900 mb-4 flex items-center">
-        <div className="w-1 h-6 bg-gradient-to-b from-green-400 to-emerald-400 rounded-full mr-3"></div>
-        Las 9 Calles + Mirador A'Dam (17:00h)
-      </h3>
-      <div className="bg-green-50 border border-green-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
-        <h4 className="text-lg font-bold text-gray-900 mb-3">Shopping en las 9 Straatjes y Atardecer con Vistas</h4>
-         <div className="mb-4">
-          <img
-            src="https://images.pexels.com/photos/2366108/pexels-photo-2366108.jpeg"
-            alt="Las 9 calles de Straatjes"
-            className="w-full h-48 sm:h-64 object-cover rounded-xl shadow-lg mb-4"
+          <DayTimeline
+            stops={[
+              { time: '9:00', place: 'Plaza Dam' },
+              { time: '11:30', place: 'Canales y Mercado' },
+              { time: '15:00', place: 'Casa de Ana Frank' },
+              { time: '17:00', place: '9 Calles + Mirador' },
+            ]}
+            color="amber"
           />
-        </div>
-        <p className="text-gray-700 mb-4">
-          Las "9 Straatjes" (9 calles) son un barrio pintoresco con boutiques vintage, galerías de arte, cafés acogedores y tiendas únicas. 
-          Perfecto para pasear y comprar souvenirs especiales. Después, ferry gratuito al Mirador A'Dam.
-        </p>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
-          <div>
-            <h5 className="font-semibold text-gray-900 mb-2">🛍️ Las 9 Calles (De 9 Straatjes):</h5>
-            <ul className="text-sm text-gray-700 space-y-1 list-none">
-              <li className="flex items-center"><span className="w-2 h-2 bg-pink-400 rounded-full mr-3"></span>Boutiques de moda vintage únicas</li>
-              <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Galerías de arte local</li>
-              <li className="flex items-center"><span className="w-2 h-2 bg-orange-400 rounded-full mr-3"></span>Cafés y pastelerías encantadoras</li>
-              <li className="flex items-center"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3"></span>Tiendas de diseño holandés</li>
-            </ul>
+          <div className="mt-16 space-y-24 md:space-y-32">
+            <Attraction
+              time="9:00h"
+              title="Estación Central y Plaza Dam"
+              image="https://images.pexels.com/photos/12705132/pexels-photo-12705132.jpeg?auto=compress&cs=tinysrgb&w=1200"
+              description="Comenzamos en la Estación Central, un edificio del mismo arquitecto que diseñó el Rijksmuseum (1882). La plaza Dam es el epicentro de Ámsterdam, donde se encuentra el Palacio Real (1808), la Iglesia Nueva y el Monumento Nacional."
+              details={[
+                'Palacio Real: Visitable por dentro (12€)',
+                'Iglesia Nueva: Exposiciones y eventos',
+                'Monumento Nacional: Conmemoración WWII',
+                'Foto icónica en Damrak Waterkant: canales con casas de fondo',
+                'Free Tour: 2h 30min desde Plaza Dam',
+              ]}
+              tip="Ve a Damrak Waterkant para conseguir una de las fotos más bonitas de Ámsterdam: los canales con las casas tradicionales de fondo."
+              link={{ url: 'https://www.freetour.com/es/amsterdam/free-tour-amsterdam-en-espanol?referralID=rFW5gyO0D7w7JOqo&campaign=CentroAmsterdam', label: 'Reservar Free Tour en español', price: 'Gratis (propina)', badge: 'Gratis' }}
+              index={0}
+            />
+
+            <Attraction
+              time="11:30h"
+              title="Canales Históricos y Mercado de las Flores"
+              image="https://images.pexels.com/photos/17345883/pexels-photo-17345883.jpeg?auto=compress&cs=tinysrgb&w=1200"
+              description="Pasea por la calle Damstraat hasta llegar a los canales, Patrimonio de la Humanidad UNESCO desde 2010. El Mercado de las Flores (Bloemenmarkt) es el mercado flotante más grande del mundo, con tulipanes, bulbos y souvenirs."
+              details={[
+                'Bloemenmarkt: fundado en 1862, único mercado flotante del mundo',
+                'Tulipanes frescos de todos los colores imaginables',
+                'Bulbos certificados para exportar (souvenir perfecto)',
+                'Souvenirs: zuecos de madera y productos típicos',
+                'Prueba los Stroopwafels en Van Wonderen (recién hechos con toppings)',
+              ]}
+              index={1}
+            />
+
+            <Attraction
+              time="15:00h"
+              title="Casa de Ana Frank"
+              image="https://images.pexels.com/photos/2031706/pexels-photo-2031706.jpeg?auto=compress&cs=tinysrgb&w=1200"
+              description="Visita imprescindible en Ámsterdam. Aquí Ana Frank y su familia se ocultaron durante más de 2 años (1942-1944) de la invasión nazi. El museo conserva el escondite tras la estantería giratoria y expone su famoso diario original."
+              details={[
+                'Precio: 16€ adultos / 7€ (10-17 años)',
+                'Duración: 60-75 minutos',
+                'Audioguía incluida y gratuita (9 idiomas)',
+                'Reserva OBLIGATORIA con mucha antelación',
+                'Entradas: cada martes a las 10:00h CET para 6 semanas después',
+              ]}
+              tip="Las entradas se agotan rapidísimo. Pon alarma los martes a las 10:00h (hora de Ámsterdam) exactamente 6 semanas antes de tu visita. NO se venden entradas en taquilla."
+              link={{ url: 'https://www.annefrank.org/es/museo/entradas/', label: 'Reservar Casa de Ana Frank (Web Oficial)', price: '16€', badge: 'Se agota' }}
+              index={2}
+            />
+
+            <Attraction
+              time="17:00h"
+              title="Las 9 Calles y Mirador A'Dam Tower"
+              image="https://images.pexels.com/photos/2366108/pexels-photo-2366108.jpeg?auto=compress&cs=tinysrgb&w=1200"
+              description="Las '9 Straatjes' (9 calles) son un barrio pintoresco con boutiques vintage, galerías de arte, cafés acogedores y tiendas únicas. Perfecto para pasear y comprar souvenirs especiales. Después, ferry gratuito al Mirador A'Dam."
+              details={[
+                'Boutiques de moda vintage únicas',
+                'Galerías de arte local y tiendas de diseño holandés',
+                'Mirador A\'Dam Tower: 20€ (100 metros de altura)',
+                'Columpio más alto de Europa en la azotea',
+                'Ferry gratuito desde Estación Central',
+              ]}
+              tip="El atardecer desde el Mirador A'Dam es espectacular. Llega 30 minutos antes del sunset para conseguir el mejor sitio."
+              link={{ url: 'https://gyg.me/5kVkwY4g', label: 'Entradas Mirador A\'Dam Tower', price: '20€', badge: 'Popular' }}
+              index={3}
+            />
           </div>
-          <div>
-            <h5 className="font-semibold text-gray-900 mb-2">🌅 Mirador A'Dam Tower:</h5>
-            <ul className="text-sm text-gray-700 space-y-1 list-none">
-              <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>Precio: 20€ (compra online)</li>
-              <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Altura: 100 metros de altura</li>
-              <li className="flex items-center"><span className="w-2 h-2 bg-yellow-400 rounded-full mr-3"></span>Columpio: El más alto de Europa</li>
-              <li className="flex items-center"><span className="w-2 h-2 bg-indigo-400 rounded-full mr-3"></span>Ferry: Gratis desde Estación Central</li>
-            </ul>
-          </div>
         </div>
+      </section>
 
-        <div className="bg-white rounded-xl p-4 border border-gray-200 shadow-sm">
-          <p className="text-xs text-green-600 mb-3">💡 Tip: El atardecer desde el Mirador A'Dam es espectacular. Llega 30 minutos antes del sunset para conseguir el mejor sitio.</p>
-          <a href="https://gyg.me/5kVkwY4g" target="_blank" rel="noopener noreferrer"
-             className="btn-hotel">
-            <span>🌅 Entradas Mirador A'Dam Tower</span>
-            <ExternalLink className="external-icon" />
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
+      {/* DAY 2 */}
+      <section id="dia-2" className="py-24 md:py-36 bg-stone-50 scroll-mt-20">
+        <div className="max-w-7xl mx-auto px-6 lg:px-10">
+          <DaySectionHeader number={2} title="Pueblos con Encanto + Canales" />
 
-  {/* Separador decorativo */}
-  <div className="flex items-center justify-center mb-8">
-    <div className="flex space-x-2">
-      <div className="w-3 h-3 bg-gradient-to-r from-red-400 to-orange-400 rounded-full"></div>
-      <div className="w-3 h-3 bg-gradient-to-r from-blue-400 to-indigo-400 rounded-full"></div>
-      <div className="w-3 h-3 bg-gradient-to-r from-emerald-400 to-green-400 rounded-full"></div>
-    </div>
-  </div>
-
-  {/* DÍA 2 */}
-  <div id="dia-2" className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
-    <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6 flex items-center">
-      <span className="bg-gradient-to-br from-blue-500 to-indigo-500 text-white w-14 h-14 rounded-2xl flex items-center justify-center text-xl font-bold mr-4 shadow-lg">2</span>
-      DÍA 2: Pueblos con Encanto Holandés + Canales
-    </h2>
-
-    {/* Excursión a Pueblos */}
-    <div className="mb-8">
-      <h3 className="text-lg font-bold text-gray-900 mb-4 flex items-center">
-        <div className="w-1 h-6 bg-gradient-to-b from-green-400 to-emerald-400 rounded-full mr-3"></div>
-        Excursión a Pueblos Tradicionales (9:00h-16:00h)
-      </h3>
-      <div className="bg-green-50 border border-green-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
-        <h4 className="text-lg font-bold text-gray-900 mb-3">Zaanse Schans, Edam, Volendam y Marken</h4>
-        <div className="mb-4">
-          <img
-            src="https://images.pexels.com/photos/13059436/pexels-photo-13059436.jpeg"
-            alt="Molinos de viento tradicionales en Zaanse Schans"
-            className="w-full h-48 sm:h-64 object-cover rounded-xl shadow-lg mb-4"
+          <DayTimeline
+            stops={[
+              { time: '9:00', place: 'Zaanse Schans' },
+              { time: '12:00', place: 'Edam y Volendam' },
+              { time: '17:00', place: 'Crucero Canales' },
+              { time: '19:30', place: 'Rembrandtplein' },
+            ]}
+            color="rose"
           />
-        </div>
-        <p className="text-gray-700 mb-4">
-          Excursión imprescindible para ver la Holanda auténtica: molinos de viento, casas de madera de colores, 
-          fabricación de quesos tradicionales y zuecos. Una experiencia que te transporta al siglo XVII.
-        </p>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
-          <div>
-            <h5 className="font-semibold text-gray-900 mb-2">🏘️ Pueblos que Visitarás:</h5>
-            <ul className="text-sm text-gray-700 space-y-1 list-none">
-              <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Zaanse Schans: Molinos de viento históricos</li>
-              <li className="flex items-center"><span className="w-2 h-2 bg-yellow-400 rounded-full mr-3"></span>Edam: Famoso por su queso redondo</li>
-              <li className="flex items-center"><span className="w-2 h-2 bg-orange-400 rounded-full mr-3"></span>Volendam: Puerto pesquero tradicional</li>
-              <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Marken: Isla con casas de madera pintadas</li>
-            </ul>
-          </div>
-          <div>
-            <h5 className="font-semibold text-gray-900 mb-2">🎯 Experiencias Incluidas:</h5>
-            <ul className="text-sm text-gray-700 space-y-1 list-none">
-              <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>Demostración fabricación de quesos</li>
-              <li className="flex items-center"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3"></span>Taller de zuecos de madera (klompen)</li>
-              <li className="flex items-center"><span className="w-2 h-2 bg-pink-400 rounded-full mr-3"></span>Visita interior de molinos funcionando</li>
-              <li className="flex items-center"><span className="w-2 h-2 bg-indigo-400 rounded-full mr-3"></span>Paisajes fotogénicos holandeses</li>
-            </ul>
+          <div className="mt-16 space-y-24 md:space-y-32">
+            <Attraction
+              time="9:00h"
+              title="Zaanse Schans, Edam, Volendam y Marken"
+              image="https://images.pexels.com/photos/13059436/pexels-photo-13059436.jpeg?auto=compress&cs=tinysrgb&w=1200"
+              description="Excursión imprescindible para ver la Holanda auténtica: molinos de viento, casas de madera de colores, fabricación de quesos tradicionales y zuecos. Una experiencia que te transporta al siglo XVII."
+              details={[
+                'Zaanse Schans: Molinos de viento históricos',
+                'Edam: Famoso por su queso redondo',
+                'Volendam: Puerto pesquero tradicional',
+                'Marken: Isla con casas de madera pintadas',
+                'Incluye: demostración de quesos, taller de zuecos, visita a molinos',
+              ]}
+              tip="El tour guiado en español es la opción más cómoda y completa (34-50€). También puedes ir por libre en autobús con el Amsterdam & Region Travel Ticket (~18€/día)."
+              link={{ url: 'https://gyg.me/k0fpVtxB', label: 'Tour guiado Zaanse Schans + Pueblos', price: '34€', badge: 'Top' }}
+              index={0}
+            />
+
+            <Attraction
+              time="17:00h"
+              title="Tour en Barco por los Canales UNESCO"
+              image="https://images.pexels.com/photos/3884476/pexels-photo-3884476.jpeg?auto=compress&cs=tinysrgb&w=1200"
+              description="Ver Ámsterdam desde sus canales es una experiencia única. Los cruceros pasan bajo más de 1.500 puentes y muestran las fachadas históricas que hacen de Ámsterdam la 'Venecia del Norte'."
+              details={[
+                'Precio: 15-18€ por persona',
+                'Duración: 60-75 minutos',
+                'Salida: Cerca Estación Central',
+                'Audioguía en 19 idiomas incluido español',
+                'Opción romántica: crucero a la luz de las velas con vino y quesos (desde 20€)',
+              ]}
+              link={{ url: 'https://gyg.me/LFQhpJql', label: 'Crucero Clásico por Canales', price: '15€' }}
+              secondaryLink={{ url: 'https://gyg.me/TLcpWrxH', label: 'Crucero Romántico con Vino', price: '20€' }}
+              index={1}
+            />
+
+            <Attraction
+              time="19:30h"
+              title="Rembrandtplein y Puente Magere Brug"
+              image="https://images.pexels.com/photos/34217700/pexels-photo-34217700.jpeg?auto=compress&cs=tinysrgb&w=1200"
+              description="La plaza más animada de Ámsterdam. Repleta de terrazas, restaurantes, coffeeshops y bares. Perfecta para cenar y tomar algo mientras ves el ambiente nocturno holandés. Cerca está el famoso puente Magere Brug iluminado."
+              details={[
+                'Estatua de Rembrandt y "La Ronda de Noche" en 3D',
+                'Decenas de terrazas y restaurantes',
+                'Puente Magere Brug: puente levadizo de madera blanca (1691)',
+                'Iluminación especial por la noche',
+                'A 5 minutos andando entre plaza y puente',
+              ]}
+              index={2}
+            />
           </div>
         </div>
+      </section>
 
-        <div className="bg-yellow-50 border border-yellow-200 rounded-xl p-4 mb-4">
-          <h5 className="font-semibold text-yellow-800 mb-2">🚌 Opciones para hacer la Excursión:</h5>
-          <div className="space-y-2 text-sm text-gray-700 mb-3">
-            <p><strong>Tour guiado en español:</strong> La opción más cómoda y completa (34-50€). Incluye transporte, guía experto y todas las visitas.</p>
-            <p><strong>Por libre en autobús:</strong> Buses desde Estación Noord. Compra Amsterdam & Region Travel Ticket (día completo ~18 €).</p>
-            <p><strong>Coche de alquiler:</strong> Máxima flexibilidad pero parking puede ser complicado en algunos pueblos.</p>
-          </div>
-          <a href="https://gyg.me/k0fpVtxB" target="_blank" rel="noopener noreferrer"
-             className="btn-hotel">
-            <span>🏘️ Tour guiado Zaanse Schans + Pueblos</span>
-            <ExternalLink className="external-icon" />
-          </a>
-        </div>
-      </div>
-    </div>
+      {/* DAY 3 */}
+      <section id="dia-3" className="py-24 md:py-36 bg-white scroll-mt-20">
+        <div className="max-w-7xl mx-auto px-6 lg:px-10">
+          <DaySectionHeader number={3} title="Arte Holandés, Cerveza y Vida Nocturna" />
 
-    {/* Paseo en Barco */}
-    <div className="mb-8">
-      <h3 className="text-lg font-bold text-gray-900 mb-4 flex items-center">
-        <div className="w-1 h-6 bg-gradient-to-b from-blue-400 to-indigo-400 rounded-full mr-3"></div>
-        Paseo en Barco por los Canales (17:00h)
-      </h3>
-      <div className="bg-blue-50 border border-blue-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
-        <h4 className="text-lg font-bold text-gray-900 mb-3">Tour en Barco por los Canales UNESCO</h4>
-        <div className="mb-4">
-          <img
-            src="https://images.pexels.com/photos/3884476/pexels-photo-3884476.jpeg"
-            alt="Paseo en barco por los canales de Ámsterdam"
-            className="w-full h-48 sm:h-64 object-cover rounded-xl shadow-lg mb-4"
+          <DayTimeline
+            stops={[
+              { time: '9:00', place: 'Rijksmuseum' },
+              { time: '12:00', place: 'Museo Van Gogh' },
+              { time: '16:00', place: 'Heineken Experience' },
+              { time: '19:00', place: 'Barrio Rojo' },
+            ]}
+            color="teal"
           />
-        </div>
-        <p className="text-gray-700 mb-4">
-          Ver Ámsterdam desde sus canales es una experiencia única. Los cruceros pasan bajo más de 1.500 puentes 
-          y muestran las fachadas históricas que hacen de Ámsterdam la "Venecia del Norte".
-        </p>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
-          <div>
-            <h5 className="font-semibold text-gray-900 mb-2">⛵ Información del Tour:</h5>
-            <ul className="text-sm text-gray-700 space-y-1 list-none">
-              <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Precio: 15-18 € por persona</li>
-              <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Duración: 60-75 minutos</li>
-              <li className="flex items-center"><span className="w-2 h-2 bg-orange-400 rounded-full mr-3"></span>Salida: Cerca Estación Central</li>
-              <li className="flex items-center"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3"></span>Audioguía: En 19 idiomas incluido español</li>
-            </ul>
-          </div>
-          <div>
-            <h5 className="font-semibold text-gray-900 mb-2">🌟 Qué Verás:</h5>
-            <ul className="text-sm text-gray-700 space-y-1 list-none">
-              <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>Casas flotantes históricas (houseboats)</li>
-              <li className="flex items-center"><span className="w-2 h-2 bg-yellow-400 rounded-full mr-3"></span>Puentes del Siglo de Oro (s. XVII)</li>
-              <li className="flex items-center"><span className="w-2 h-2 bg-pink-400 rounded-full mr-3"></span>Arquitectura tradicional holandesa</li>
-              <li className="flex items-center"><span className="w-2 h-2 bg-indigo-400 rounded-full mr-3"></span>Siete puentes en una vista (Reguliersgracht)</li>
-            </ul>
+          <div className="mt-16 space-y-24 md:space-y-32">
+            <Attraction
+              time="9:00h"
+              title="Rijksmuseum — La Ronda de Noche"
+              image="https://images.pexels.com/photos/208733/pexels-photo-208733.jpeg?auto=compress&cs=tinysrgb&w=1200"
+              description="El museo más importante de Holanda, con más de 8.000 obras de arte y 800 años de historia holandesa. Aquí se encuentra 'La Ronda de Noche' de Rembrandt y 'La Lechera' de Vermeer."
+              details={[
+                'Precio: 27€ adultos',
+                'Horario: 9:00-17:00 diario',
+                'Duración recomendada: 2-3 horas',
+                'Obras: La Ronda de Noche (Rembrandt), La Lechera (Vermeer)',
+                'Reserva obligatoria con hora de entrada',
+              ]}
+              tip="Llega cuando abren (9:00) para evitar multitudes. La 'Galería de Honor' con las obras maestras se llena mucho a partir de las 11:00."
+              link={{ url: 'https://gyg.me/qMlozUdI', label: 'Entradas Rijksmuseum', price: '27€', badge: 'Se agota' }}
+              index={0}
+            />
+
+            <Attraction
+              time="12:00h"
+              title="Museo Van Gogh — Los Girasoles"
+              image="https://images.pexels.com/photos/11951240/pexels-photo-11951240.jpeg?auto=compress&cs=tinysrgb&w=1200"
+              description="El museo alberga 200 pinturas, 500 dibujos y 750 cartas de Van Gogh. Un recorrido cronológico por la vida del genio holandés, desde sus primeras obras oscuras hasta los brillantes girasoles y paisajes del sur de Francia."
+              details={[
+                'Precio: 26€ adultos',
+                'Horario: 9:00-18:00 (viernes hasta 21:00)',
+                'Duración: 2-3 horas',
+                'Obras: Los Girasoles, Almendro en Flor, El Dormitorio en Arlés',
+                'Reserva obligatoria online',
+              ]}
+              tip="'La Noche Estrellada' NO está aquí (está en el MoMA de Nueva York). Pero las obras de Ámsterdam son igual de impresionantes."
+              link={{ url: 'https://gyg.me/kgd4hkJI', label: 'Entradas Van Gogh Museum', price: '26€', badge: 'Popular' }}
+              index={1}
+            />
+
+            <Attraction
+              time="16:00h"
+              title="Heineken Experience"
+              image="https://images.pexels.com/photos/18999312/pexels-photo-18999312.jpeg?auto=compress&cs=tinysrgb&w=1200"
+              description="Visita interactiva en la antigua fábrica de Heineken (1863-1988). Aprende sobre la historia de la marca, el proceso de elaboración de cerveza y degusta cervezas frescas. Incluye experiencias multimedia y juegos."
+              details={[
+                'Precio: 25€ (compra online más barato)',
+                'Duración: 1,5-2 horas',
+                'Incluye: 2-3 cervezas Heineken',
+                'Simulador: "Conviértete en cerveza"',
+                'Edad mínima: 18 años (se pide ID)',
+              ]}
+              tip="Si reservas online con antelación ahorras dinero y te saltas las colas."
+              link={{ url: 'https://gyg.me/3m6llUkk', label: 'Entradas Heineken Experience', price: '25€' }}
+              index={2}
+            />
+
+            <Attraction
+              time="19:00h"
+              title="Barrio Rojo — De Wallen"
+              image="https://images.pexels.com/photos/9320/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1200"
+              description="El barrio más conocido y controvertido de Ámsterdam. A pesar de su fama, es un barrio histórico muy animado, repleto de restaurantes, bares y cafés. La zona es completamente segura y está llena de gente a todas horas."
+              details={[
+                'Oude Kerk: Edificio más antiguo de Ámsterdam (1306)',
+                'Canales históricos iluminados por la noche',
+                'Arquitectura del Siglo de Oro holandés',
+                'Restaurante Ramen Ya: ramen japonés excelente',
+                'Free Tour del Barrio Rojo: 2 horas, en español',
+              ]}
+              tip="El Barrio Rojo es completamente seguro y legal. No está permitido tomar fotos en las zonas con escaparates. Respeta a las trabajadoras y la zona."
+              link={{ url: 'https://www.freetour.com/es/amsterdam/tour-del-barrio-rojo-en-espanol?referralID=rFW5gyO0D7w7JOqo&campaign=BarrioRojoAmsterdam', label: 'Reservar Free Tour del Barrio Rojo', price: 'Gratis (propina)', badge: 'Gratis' }}
+              index={3}
+            />
           </div>
         </div>
+      </section>
 
-        <div className="bg-white rounded-xl p-4 mb-4 shadow-sm border border-gray-100">
-          <h5 className="font-semibold text-gray-900 mb-2">🕯️ Opción Romántica:</h5>
-          <p className="text-sm text-gray-700 mb-3">
-            <strong>Crucero a la luz de las velas:</strong> Por la noche, con velas, vino y quesos holandeses.
-            Una experiencia mágica para parejas, selecciona la opción que quieres con o sin aperitivos (desde 20 € por persona).
-          </p>
-          <div className="flex flex-wrap gap-2">
-            <a href="https://gyg.me/LFQhpJql" target="_blank" rel="noopener noreferrer"
-               className="btn-hotel">
-              <span>⛵ Crucero Clásico por Canales</span>
-              <ExternalLink className="external-icon" />
+      {/* MORE PLACES */}
+      <section id="extras" className="py-24 md:py-32 bg-stone-50 scroll-mt-20">
+        <div className="max-w-7xl mx-auto px-6 lg:px-10">
+          <div className="flex items-center gap-3 mb-5">
+            <span className="h-px w-8 bg-amber-600" />
+            <span className="text-[10px] uppercase tracking-[.2em] text-amber-700">Si te sobra tiempo</span>
+          </div>
+          <h2 className="text-4xl md:text-5xl text-stone-900 leading-tight mb-12" style={{ fontFamily: 'Georgia, serif' }}>
+            Más <span className="italic">experiencias</span> en Ámsterdam
+          </h2>
+
+          <div className="grid md:grid-cols-3 gap-6">
+            <ExtraCard title="Moco Museum" desc="Arte moderno y contemporáneo: Banksy, Warhol, Kaws. Perfecto para amantes del arte urbano." link="https://gyg.me/EMjp5KUQ" />
+            <ExtraCard title="Vondelpark" desc="El Central Park de Ámsterdam (47 hectáreas). Perfecto para un paseo en bici o un picnic." />
+            <ExtraCard title="NEMO Science Museum" desc="Ciencia interactiva ideal para familias. Terraza gratuita con vistas panorámicas." />
+          </div>
+
+          <div className="mt-12">
+            <h3 className="text-xl font-semibold text-stone-900 mb-6">Excursiones de un día</h3>
+            <div className="grid md:grid-cols-2 gap-4">
+              <DayTripCard title="Brujas (Bélgica) — Ciudad medieval" link="https://gyg.me/NsnWg5zb" />
+              <DayTripCard title="Keukenhof — Jardín de tulipanes (marzo-mayo)" link="https://gyg.me/EMjp5KUQ" />
+              <DayTripCard title="Róterdam + La Haya — Arquitectura moderna" link="https://gyg.me/EMjp5KUQ" />
+              <DayTripCard title="Giethoorn — Pueblo sin carreteras, solo canales" link="https://gyg.me/EMjp5KUQ" />
+            </div>
+          </div>
+
+          <div className="mt-10">
+            <a
+              href="https://gyg.me/hhPSPkwx"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 bg-stone-900 hover:bg-amber-700 text-white text-xs uppercase tracking-wider px-6 py-4 transition-colors font-medium"
+            >
+              Comprar I Amsterdam City Card (+70 museos + transporte) <ExternalLink size={12} />
             </a>
-            <a href="https://gyg.me/TLcpWrxH" target="_blank" rel="noopener noreferrer"
-               className="btn-hotel">
-              <span>🕯️ Crucero Romántico con Vino</span>
-              <ExternalLink className="external-icon" />
-            </a>
           </div>
         </div>
-      </div>
-    </div>
+      </section>
 
-    {/* Rembrandtplein */}
-    <div className="mb-8">
-      <h3 className="text-lg font-bold text-gray-900 mb-4 flex items-center">
-        <div className="w-1 h-6 bg-gradient-to-b from-purple-400 to-pink-400 rounded-full mr-3"></div>
-        Plaza Rembrandt y Puente Magere Brug (19:30h)
-      </h3>
-      <div className="bg-purple-50 border border-purple-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
-        <h4 className="text-lg font-bold text-gray-900 mb-3">Rembrandtplein - Vida Nocturna de Ámsterdam</h4>
-        <div className="mb-4">
-          <img
-            src="https://images.pexels.com/photos/34217700/pexels-photo-34217700.jpeg"
-            alt="Puente Magere Brug"
-            className="w-full h-48 sm:h-64 object-cover rounded-xl shadow-lg mb-4"
-          />
-        </div>
-        <p className="text-gray-700 mb-4">
-          La plaza más animada de Ámsterdam. Repleta de terrazas, restaurantes, coffeeshops y bares. 
-          Perfecta para cenar y tomar algo mientras ves el ambiente nocturno holandés. Cerca está el famoso puente Magere Brug iluminado.
-        </p>
-
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
-          <div>
-            <h5 className="font-semibold text-gray-900 mb-2">🎭 Plaza Rembrandt:</h5>
-            <ul className="text-sm text-gray-700 space-y-1 list-none">
-              <li className="flex items-center"><span className="w-2 h-2 bg-orange-400 rounded-full mr-3"></span>Estatua de Rembrandt y "La Ronda de Noche" en 3D</li>
-              <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Decenas de terrazas y restaurantes</li>
-              <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Ambiente nocturno muy animado</li>
-              <li className="flex items-center"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3"></span>Música en vivo frecuente</li>
-            </ul>
+      {/* HOTELS */}
+      <section id="alojamiento" className="py-24 md:py-32 bg-white scroll-mt-20">
+        <div className="max-w-7xl mx-auto px-6 lg:px-10">
+          <div className="flex items-center gap-3 mb-5">
+            <span className="h-px w-8 bg-amber-600" />
+            <Bed size={14} className="text-amber-700" />
+            <span className="text-[10px] uppercase tracking-[.2em] text-amber-700">Alojamiento</span>
           </div>
-          <div>
-            <h5 className="font-semibold text-gray-900 mb-2">🌉 Puente Magere Brug:</h5>
-            <ul className="text-sm text-gray-700 space-y-1 list-none">
-              <li className="flex items-center"><span className="w-2 h-2 bg-yellow-400 rounded-full mr-3"></span>Puente levadizo de madera blanca (1691)</li>
-              <li className="flex items-center"><span className="w-2 h-2 bg-pink-400 rounded-full mr-3"></span>Iluminación especial por la noche</li>
-              <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>Uno de los puentes más fotografiados</li>
-              <li className="flex items-center"><span className="w-2 h-2 bg-indigo-400 rounded-full mr-3"></span>A 5 minutos andando de Rembrandtplein</li>
-            </ul>
+          <h2 className="text-4xl md:text-5xl text-stone-900 leading-tight mb-4" style={{ fontFamily: 'Georgia, serif' }}>
+            Dónde <span className="italic">dormir</span>
+          </h2>
+          <p className="text-stone-600 mb-12 max-w-2xl">Hoteles probados personalmente en las dos mejores zonas para moverse a pie o en transporte público.</p>
+
+          <div className="grid lg:grid-cols-2 gap-10">
+            <HotelZone
+              zone="Centro Histórico (Grachtengordel)"
+              description="La ubicación perfecta junto a los canales"
+              hotels={[
+                { name: 'Monet Garden Hotel Amsterdam', stars: 4, link: 'https://booking.tpk.lv/UTD9cvgv', highlight: 'Junto a canales, vistas al jardín' },
+                { name: 'Ambassade Hotel', stars: 4, link: 'https://booking.tpk.lv/lJeCjGwX', highlight: '9 min a Casa Ana Frank, restaurante' },
+                { name: 'Tourist Inn Hotel Amsterdam', stars: 3, link: 'https://booking.tpk.lv/gB3tgW13', highlight: '8 min a Casa Ana Frank, personal español' },
+              ]}
+            />
+            <HotelZone
+              zone="Museumplein (Zona de Museos)"
+              description="Acceso directo a Rijksmuseum, Van Gogh y Vondelpark"
+              hotels={[
+                { name: 'Catalonia Vondel Amsterdam', stars: 4, link: 'https://booking.tpk.lv/NoRMV4F4', highlight: 'Rijksmuseum 500m, Vondelpark 300m' },
+                { name: 'NH Amsterdam Leidseplein', stars: 4, link: 'https://booking.tpk.lv/iTSAwLd4', highlight: 'Plaza Leidseplein 250m, tram al centro' },
+                { name: 'Huygens Place Amsterdam', stars: 4, link: 'https://booking.tpk.lv/oGcSGvNP', highlight: 'Van Gogh 8 min, terraza solárium' },
+              ]}
+            />
           </div>
         </div>
-      </div>
-    </div>
-  </div>
+      </section>
 
-  {/* Separador decorativo */}
-  <div className="flex items-center justify-center mb-8">
-    <div className="flex space-x-2">
-      <div className="w-3 h-3 bg-gradient-to-r from-red-400 to-orange-400 rounded-full"></div>
-      <div className="w-3 h-3 bg-gradient-to-r from-blue-400 to-indigo-400 rounded-full"></div>
-      <div className="w-3 h-3 bg-gradient-to-r from-emerald-400 to-green-400 rounded-full"></div>
-    </div>
-  </div>
-
-  {/* DÍA 3 */}
-  <div id="dia-3" className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
-    <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6 flex items-center">
-      <span className="bg-gradient-to-br from-emerald-500 to-green-500 text-white w-14 h-14 rounded-2xl flex items-center justify-center text-xl font-bold mr-4 shadow-lg">3</span>
-      DÍA 3: Arte Holandés, Cerveza y Vida Nocturna
-    </h2>
-
-    {/* Rilkesmuseum */}
-    <div className="mb-8">
-      <h3 className="text-lg font-bold text-gray-900 mb-4 flex items-center">
-        <div className="w-1 h-6 bg-gradient-to-b from-red-400 to-amber-400 rounded-full mr-3"></div>
-        Rijksmuseum - Arte Holandés (9:00h)
-      </h3>
-      <div className="bg-red-50 border border-red-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
-        <h4 className="text-lg font-bold text-gray-900 mb-3">Rijksmuseum - El Museo Nacional de los Países Bajos</h4>
-        <div className="mb-4">
-          <img
-            src="https://images.pexels.com/photos/208733/pexels-photo-208733.jpeg"
-            alt="Fachada del Rijksmuseum en Museumplein"
-            className="w-full h-48 sm:h-64 object-cover rounded-xl shadow-lg mb-4"
-          />
-        </div>
-        <p className="text-gray-700 mb-4">
-          El museo más importante de Holanda, con más de 8.000 obras de arte y 800 años de historia holandesa. 
-          Aquí se encuentra "La Ronda de Noche" de Rembrandt y "La Lechera" de Vermeer.
-        </p>
-
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
-          <div>
-            <h5 className="font-semibold text-gray-900 mb-2">🎨 Obras Maestras Imprescindibles:</h5>
-            <ul className="text-sm text-gray-700 space-y-1 list-none">
-              <li className="flex items-center"><span className="w-2 h-2 bg-yellow-400 rounded-full mr-3"></span>"La Ronda de Noche" - Rembrandt (1642)</li>
-              <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>"La Lechera" - Johannes Vermeer (1660)</li>
-              <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Autorretratos de Rembrandt</li>
-              <li className="flex items-center"><span className="w-2 h-2 bg-orange-400 rounded-full mr-3"></span>Colección de arte asiático</li>
-              <li className="flex items-center"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3"></span>Cerámica de Delft histórica</li>
-            </ul>
+      {/* DINING */}
+      <section id="comer" className="py-24 md:py-32 bg-stone-50 scroll-mt-20">
+        <div className="max-w-7xl mx-auto px-6 lg:px-10">
+          <div className="flex items-center gap-3 mb-5">
+            <span className="h-px w-8 bg-amber-600" />
+            <UtensilsCrossed size={14} className="text-amber-700" />
+            <span className="text-[10px] uppercase tracking-[.2em] text-amber-700">Gastronomía</span>
           </div>
-          <div>
-            <h5 className="font-semibold text-gray-900 mb-2">🏛️ Información Práctica:</h5>
-            <ul className="text-sm text-gray-700 space-y-1 list-none">
-              <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>Precio: 27 € adultos</li>
-              <li className="flex items-center"><span className="w-2 h-2 bg-pink-400 rounded-full mr-3"></span>Horario: 9:00-17:00 diario</li>
-              <li className="flex items-center"><span className="w-2 h-2 bg-indigo-400 rounded-full mr-3"></span>Duración: 2-3 horas recomendado</li>
-              <li className="flex items-center"><span className="w-2 h-2 bg-emerald-400 rounded-full mr-3"></span>Reserva: Obligatoria con hora de entrada</li>
-            </ul>
-          </div>
-        </div>
+          <h2 className="text-4xl md:text-5xl text-stone-900 leading-tight mb-12" style={{ fontFamily: 'Georgia, serif' }}>
+            Dónde <span className="italic">comer</span>
+          </h2>
 
-        <div className="bg-white rounded-xl p-4 border border-gray-200 shadow-sm">
-          <p className="text-xs text-red-600 mb-3">💡 Tip: Llega cuando abren (9:00) para evitar multitudes. La "Galería de Honor" con las obras maestras se llena mucho a partir de las 11:00.</p>
-          <a href="https://gyg.me/qMlozUdI" target="_blank" rel="noopener noreferrer"
-             className="btn-hotel">
-            <span>🎨 Entradas Rijksmuseum</span>
-            <ExternalLink className="external-icon" />
-          </a>
-        </div>
-      </div>
-    </div>
-
-    {/* Museo Van Gogh */}
-    <div className="mb-8">
-      <h3 className="text-lg font-bold text-gray-900 mb-4 flex items-center">
-        <div className="w-1 h-6 bg-gradient-to-b from-yellow-400 to-orange-400 rounded-full mr-3"></div>
-        Museo Van Gogh (12:00h)
-      </h3>
-      <div className="bg-yellow-50 border border-yellow-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
-        <h4 className="text-lg font-bold text-gray-900 mb-3">Van Gogh Museum - La Mayor Colección del Mundo</h4>
-        <div className="mb-4">
-          <img
-            src="https://images.pexels.com/photos/11951240/pexels-photo-11951240.jpeg"
-            alt="Museo Van Gogh en Museumplein Ámsterdam"
-            className="w-full h-48 sm:h-64 object-cover rounded-xl shadow-lg mb-4"
-          />
-        </div>
-        <p className="text-gray-700 mb-4">
-          El museo alberga 200 pinturas, 500 dibujos y 750 cartas de Van Gogh. Un recorrido cronológico 
-          por la vida del genio holandés, desde sus primeras obras oscuras hasta los brillantes girasoles y paisajes del sur de Francia.
-        </p>
-
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
-          <div>
-            <h5 className="font-semibold text-gray-900 mb-2">🌻 Obras Icónicas:</h5>
-            <ul className="text-sm text-gray-700 space-y-1 list-none">
-              <li className="flex items-center"><span className="w-2 h-2 bg-yellow-400 rounded-full mr-3"></span>"Los Girasoles" (1889)</li>
-              <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>"Los Comedores de Patatas" (1885)</li>
-              <li className="flex items-center"><span className="w-2 h-2 bg-pink-400 rounded-full mr-3"></span>"Almendro en Flor" (1890)</li>
-              <li className="flex items-center"><span className="w-2 h-2 bg-orange-400 rounded-full mr-3"></span>"El Dormitorio en Arlés" (1888)</li>
-              <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Múltiples autorretratos</li>
-            </ul>
-          </div>
-          <div>
-            <h5 className="font-semibold text-gray-900 mb-2">📋 Info Práctica:</h5>
-            <ul className="text-sm text-gray-700 space-y-1 list-none">
-              <li className="flex items-center"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3"></span>Precio: 26 € adultos</li>
-              <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>Horario: 9:00-18:00 (viernes hasta 21:00)</li>
-              <li className="flex items-center"><span className="w-2 h-2 bg-indigo-400 rounded-full mr-3"></span>Duración: 2-3 horas</li>
-              <li className="flex items-center"><span className="w-2 h-2 bg-emerald-400 rounded-full mr-3"></span>Reserva: Obligatoria online</li>
-            </ul>
-          </div>
-        </div>
-
-        <div className="bg-orange-100 border border-orange-300 rounded-lg p-3">
-          <p className="font-medium text-orange-800 mb-1">⚠️ Nota Importante</p>
-          <p className="text-orange-700 text-xs mb-3">
-            "La Noche Estrellada" NO está aquí (está en el MoMA de Nueva York). "Terraza de Café por la Noche"
-            está en el Museo Kröller-Müller en Otterlo. Pero las obras de Ámsterdam son igual de impresionantes.
-          </p>
-          <a href="https://gyg.me/kgd4hkJI" target="_blank" rel="noopener noreferrer"
-             className="btn-hotel">
-            <span>🌻 Entradas Van Gogh Museum</span>
-            <ExternalLink className="external-icon" />
-          </a>
-        </div>
-      </div>
-    </div>
-
-    {/* Comida Holandesa */}
-    <div className="mb-8">
-      <h3 className="text-lg font-bold text-gray-900 mb-4 flex items-center">
-        <div className="w-1 h-6 bg-gradient-to-b from-orange-400 to-red-400 rounded-full mr-3"></div>
-        Parada para Comida Típica Holandesa (14:30h)
-      </h3>
-      <div className="bg-orange-50 border border-orange-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
-        <h4 className="text-lg font-bold text-gray-900 mb-3">The Pantry - Gastronomía Tradicional</h4>
-        <p className="text-gray-700 mb-4">
-          Restaurante tradicional holandés cerca de Museumplein. Aquí probarás platos típicos como las croquetas (bitterballen), 
-          arenques, estofados y el famoso Stamppot. ¡Una experiencia gastronómica auténtica!
-        </p>
-
-        <div className="bg-white rounded-xl p-4 mb-4 shadow-sm border border-gray-100">
-          <h5 className="font-semibold text-gray-900 mb-2">🍽️ Platos Típicos Holandeses para Probar:</h5>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-gray-700">
+          <div className="grid md:grid-cols-2 gap-10">
             <div>
-              <ul className="space-y-1">
-                <li>• <strong>Bitterballen:</strong> Croquetas de carne fritas</li>
-                <li>• <strong>Stamppot:</strong> Pure de patata con verduras</li>
-                <li>• <strong>Haring:</strong> Arenque crudo marinado</li>
-                <li>• <strong>Erwtensoep:</strong> Sopa de guisantes espesa</li>
-              </ul>
+              <h3 className="font-semibold text-stone-900 mb-6 text-lg">Cocina holandesa tradicional</h3>
+              <div className="space-y-5">
+                <Restaurant name="The Pantry" address="Leidsekruisstraat 21" price="€€" desc="Cocina holandesa auténtica. Stamppot, bitterballen y platos típicos." />
+                <Restaurant name="Cafe Soñéveld" address="Egelantiersgracht 72" price="€€" desc="Bar tradicional holandés. Cervezas locales y bocadillos típicos." />
+                <Restaurant name="Moeders" address="Rozengracht 251" price="€€" desc="Restaurante familiar. Paredes llenas de fotos de madres de clientes." />
+              </div>
             </div>
             <div>
-              <ul className="space-y-1">
-                <li>• <strong>Poffertjes:</strong> Mini tortitas dulces</li>
-                <li>• <strong>Stroopwafels:</strong> Galletas de caramelo</li>
-                <li>• <strong>Kaas:</strong> Quesos Gouda y Edam</li>
-                <li>• <strong>Patat:</strong> Patatas fritas con salsas</li>
-              </ul>
+              <h3 className="font-semibold text-stone-900 mb-6 text-lg">Internacional y cafeterías</h3>
+              <div className="space-y-5">
+                <Restaurant name="Ramen Ya" address="Oudezijds Voorburgwal 236" price="€€" desc="Ramen japonés auténtico en el Barrio Rojo. Siempre hay cola." />
+                <Restaurant name="Blue Amsterdam" address="Singel 457" price="€€€" desc="Cocina moderna con vistas panorámicas a la ciudad." />
+                <Restaurant name="Winkel 43" address="Noordermarkt 43" price="€" desc="Famosa por su apple pie (tarta de manzana). Imprescindible." />
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
+      </section>
 
-    {/* Heineken Experience */}
-    <div className="mb-8">
-      <h3 className="text-lg font-bold text-gray-900 mb-4 flex items-center">
-        <div className="w-1 h-6 bg-gradient-to-b from-green-400 to-emerald-400 rounded-full mr-3"></div>
-        Heineken Experience (16:00h)
-      </h3>
-      <div className="bg-green-50 border border-green-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
-        <h4 className="text-lg font-bold text-gray-900 mb-3">Heineken Experience - La Fábrica Histórica</h4>
-        <div className="mb-4">
+      {/* PRACTICAL INFO */}
+      <section id="info-practica" className="py-24 md:py-32 bg-stone-50 scroll-mt-20">
+        <div className="max-w-7xl mx-auto px-6 lg:px-10">
+          <div className="flex items-center gap-3 mb-5">
+            <span className="h-px w-8 bg-amber-600" />
+            <span className="text-[10px] uppercase tracking-[.2em] text-amber-700">Info práctica</span>
+          </div>
+          <h2 className="text-4xl md:text-5xl text-stone-900 leading-tight mb-16" style={{ fontFamily: 'Georgia, serif' }}>
+            Todo lo que <span className="italic">necesitas saber</span>
+          </h2>
+
+          <div className="max-w-3xl">
+            <div>
+              <div className="flex items-center gap-3 mb-6">
+                <Bike size={16} className="text-amber-600" />
+                <h3 className="text-xl font-semibold text-stone-900">Transporte público</h3>
+              </div>
+              <div className="space-y-4 text-stone-700 text-sm leading-relaxed">
+                <p><strong>Metro:</strong> 4 líneas principales, frecuencia 4-10 min, horario 06:00-00:30.</p>
+                <p><strong>Tranvías:</strong> 15 líneas, red más extensa. Llegan a todas las atracciones principales.</p>
+                <p><strong>Tarifas (2026):</strong> Billete sencillo 3,40€ (1 hora) · Amsterdam Travel Ticket: 18€/día, 24€/2 días, 30€/3 días (incluye aeropuerto).</p>
+                <p><strong>Importante:</strong> Desde 2023 puedes usar tu tarjeta bancaria contactless directamente en los lectores (check-in y check-out). Es la forma más sencilla si estás pocos días.</p>
+                <p><strong>App:</strong> GVB o 9292 (planificador) · Check-in/out obligatorio · Multa sin billete: 60€</p>
+              </div>
+
+              <div className="mt-8">
+                <h4 className="font-semibold text-stone-900 mb-4">Desde el aeropuerto (Schiphol)</h4>
+                <div className="space-y-3">
+                  <TransportOption name="Tren Directo a Centraal" price="6€" time="16-18 min" desc="Cada 10-15 min, sin paradas" link="https://gyg.me/a32mXL4w" />
+                  <TransportOption name="Airport Express Bus 397" price="6€" time="30-40 min" desc="Paradas en Museumplein y Leidseplein" link="https://gyg.me/nHnMYLIe" />
+                  <TransportOption name="Traslado privado" price="56€" time="20-30 min" desc="Puerta a puerta, ideal para familias" link="https://gyg.me/5ZYfAmX8" />
+                </div>
+              </div>
+
+              <div className="mt-8">
+                <a
+                  href="https://gyg.me/bftVdMgA"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 bg-stone-900 hover:bg-amber-700 text-white text-xs uppercase tracking-wider px-6 py-4 transition-colors font-medium"
+                >
+                  Comprar Amsterdam Travel Ticket <ExternalLink size={12} />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* TRAVEL TOOLS */}
+      <section id="herramientas" className="py-24 md:py-32 bg-white scroll-mt-20">
+        <div className="max-w-7xl mx-auto px-6 lg:px-10">
+          <div className="flex items-center gap-3 mb-5">
+            <span className="h-px w-8 bg-amber-600" />
+            <span className="text-[10px] uppercase tracking-[.2em] text-amber-700">Herramientas de viaje</span>
+          </div>
+          <h2 className="text-4xl md:text-5xl text-stone-900 leading-tight mb-12" style={{ fontFamily: 'Georgia, serif' }}>
+            Tarjeta y <span className="italic">seguro</span>
+          </h2>
+
+          <div className="grid md:grid-cols-2 gap-8">
+            <TravelTool
+              icon={CreditCard}
+              title="Tarjeta Revolut"
+              benefits={['Sin comisiones en pagos en el extranjero', 'Tipo de cambio real (sin margen)', 'Retiradas gratis en cajeros hasta 200€/mes', 'Control total desde la app', 'Tarjetas virtuales desechables']}
+              link="https://revolut.com/referral/?referral-code=antoni22jf!DEC1-25-AR-CH1H-CRY&geo-redirect"
+              cta="Pedir Revolut gratis"
+            />
+            <TravelTool
+              icon={Shield}
+              title="Seguro IATI"
+              benefits={['Asistencia médica 24/7', 'Cobertura de cancelación de viaje', 'Pérdida y robo de equipaje', 'Atención en español siempre', 'Repatriación incluida', '5% de descuento exclusivo ya aplicado']}
+              link="https://www.iatiseguros.com/?r=37344279073491"
+              cta="Contratar con 5% dto."
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section id="consejos" className="py-24 md:py-32 bg-white scroll-mt-20">
+        <div className="max-w-5xl mx-auto px-6 lg:px-10">
+          <div className="flex items-center gap-3 mb-5">
+            <span className="h-px w-8 bg-amber-600" />
+            <span className="text-[10px] uppercase tracking-[.2em] text-amber-700">Preguntas frecuentes</span>
+          </div>
+          <h2 className="text-4xl md:text-5xl text-stone-900 leading-tight mb-12" style={{ fontFamily: 'Georgia, serif' }}>
+            Preguntas <span className="italic">que todos se hacen</span>
+          </h2>
+
+          <div className="space-y-0">
+            <FAQItem
+              question="¿Merece la pena la I Amsterdam City Card?"
+              answer="La I Amsterdam City Card de 72h cuesta 100€ e incluye +70 museos, transporte ilimitado, crucero por canales y alquiler de bici. Si visitas 3-4 museos + usas mucho transporte + haces el crucero, se amortiza. Pero OJO: desde 2022 NO incluye el Museo Van Gogh (26€ aparte)."
+            />
+            <FAQItem
+              question="¿Cómo consigo entradas para la Casa de Ana Frank?"
+              answer="Las entradas se liberan cada martes a las 10:00h CET para 6 semanas después. Se agotan en pocas horas. Pon alarma y prepara tu tarjeta de crédito. NO se venden entradas en taquilla. Web oficial: annefrank.org"
+            />
+            <FAQItem
+              question="¿Es necesario llevar efectivo en Ámsterdam?"
+              answer="Casi todo se paga con tarjeta contactless. Ámsterdam es una ciudad muy digitalizada. Con una tarjeta sin comisiones como Revolut puedes pagar en todas partes y retirar efectivo si lo necesitas."
+            />
+            <FAQItem
+              question="¿Cómo me muevo en bicicleta por Ámsterdam?"
+              answer="Puedes alquilar bicis en muchos puntos (9-15€/día). Las bicicletas tienen prioridad SIEMPRE en la ciudad. No camines por los carriles bici (líneas rojas). Es la forma más local y divertida de moverse."
+            />
+            <FAQItem
+              question="¿Cuál es la mejor época para visitar Ámsterdam?"
+              answer="Primavera (abril-mayo): tulipanes en flor, Keukenhof abierto, temperaturas agradables. Verano: días largos pero muy turístico. Otoño: menos gente, colores bonitos. Invierno: mercados navideños, precios bajos pero frío intenso."
+            />
+            <FAQItem
+              question="¿Es seguro el Barrio Rojo?"
+              answer="Sí, completamente seguro. Es un barrio histórico muy transitado a todas horas, lleno de restaurantes y cafés. La única precaución: no tomar fotos en las zonas con escaparates (está prohibido por respeto a las trabajadoras)."
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section className="relative py-24 md:py-32 bg-stone-900 text-stone-50 overflow-hidden">
+        <div className="absolute inset-0 opacity-20">
           <img
-            src="https://images.pexels.com/photos/18999312/pexels-photo-18999312.jpeg"
-            alt="Entrada a Heineken Experience en Ámsterdam"
-            className="w-full h-48 sm:h-64 object-cover rounded-xl shadow-lg mb-4"
+            src="https://images.pexels.com/photos/2031706/pexels-photo-2031706.jpeg?auto=compress&cs=tinysrgb&w=1920"
+            alt=""
+            className="w-full h-full object-cover"
           />
+          <div className="absolute inset-0 bg-stone-900/70" />
         </div>
-        <p className="text-gray-700 mb-4">
-          Visita interactiva en la antigua fábrica de Heineken (1863-1988). Aprende sobre la historia de la marca, 
-          el proceso de elaboración de cerveza y degusta cervezas frescas. Incluye experiencias multimedia y juegos.
-        </p>
-
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
-          <div>
-            <h5 className="font-semibold text-gray-900 mb-2">🍺 La Experiencia Incluye:</h5>
-            <ul className="text-sm text-gray-700 space-y-1 list-none">
-              <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>2-3 cervezas Heineken incluidas</li>
-              <li className="flex items-center"><span className="w-2 h-2 bg-yellow-400 rounded-full mr-3"></span>Tour por la fábrica histórica</li>
-              <li className="flex items-center"><span className="w-2 h-2 bg-orange-400 rounded-full mr-3"></span>Experiencia interactiva de elaboración</li>
-              <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Simulador: "Conviértete en cerveza"</li>
-              <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>Exposición de historia de la marca</li>
-            </ul>
+        <div className="relative max-w-4xl mx-auto px-6 lg:px-10 text-center">
+          <div className="flex items-center justify-center gap-3 mb-6">
+            <span className="h-px w-8 bg-amber-400" />
+            <span className="text-[10px] uppercase tracking-[.2em] text-amber-400">Más guías</span>
+            <span className="h-px w-8 bg-amber-400" />
           </div>
-          <div>
-            <h5 className="font-semibold text-gray-900 mb-2">📋 Info Práctica:</h5>
-            <ul className="text-sm text-gray-700 space-y-1 list-none">
-              <li className="flex items-center"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3"></span>Precio: 25 € (compra online)</li>
-              <li className="flex items-center"><span className="w-2 h-2 bg-pink-400 rounded-full mr-3"></span>Duración: 1,5-2 horas</li>
-              <li className="flex items-center"><span className="w-2 h-2 bg-indigo-400 rounded-full mr-3"></span>Horario: 10:30-19:30</li>
-              <li className="flex items-center"><span className="w-2 h-2 bg-emerald-400 rounded-full mr-3"></span>Edad mínima: 18 años (se pide ID)</li>
-              <li className="flex items-center"><span className="w-2 h-2 bg-cyan-400 rounded-full mr-3"></span>Reserva: Obligatoria online</li>
-            </ul>
-          </div>
-        </div>
-
-        <div className="bg-white rounded-xl p-4 border border-gray-200 shadow-sm">
-          <p className="text-xs text-green-600 mb-3">💡 Tip: Si reservas online con antelación ahorras dinero y te saltas las colas</p>
-          <a href="https://gyg.me/3m6llUkk" target="_blank" rel="noopener noreferrer"
-             className="btn-hotel">
-            <span>🍺 Entradas Heineken Experience</span>
-            <ExternalLink className="external-icon" />
-          </a>
-        </div>
-      </div>
-    </div>
-
-    {/* Barrio Rojo */}
-    <div className="mb-8">
-      <h3 className="text-lg font-bold text-gray-900 mb-4 flex items-center">
-        <div className="w-1 h-6 bg-gradient-to-b from-red-400 to-pink-400 rounded-full mr-3"></div>
-        Barrio Rojo - De Wallen (19:00h)
-      </h3>
-      <div className="bg-red-50 border border-red-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
-        <h4 className="text-lg font-bold text-gray-900 mb-3">Red Light District - El Barrio Más Famoso</h4>
-        <div className="mb-4">
-          <img
-            src="https://images.pexels.com/photos/9320/pexels-photo.jpg"
-            alt="Barrio rojo de Ámsterdam"
-            className="w-full h-48 sm:h-64 object-cover rounded-xl shadow-lg mb-4"
-          />
-        </div>
-        <p className="text-gray-700 mb-4">
-          El barrio más conocido y controvertido de Ámsterdam. A pesar de su fama, es un barrio histórico muy animado, 
-          repleto de restaurantes, bares y cafés. La zona es completamente segura y está llena de gente a todas horas.
-        </p>
-
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
-          <div>
-            <h5 className="font-semibold text-gray-900 mb-2">🏛️ Qué Ver en el Barrio:</h5>
-            <ul className="text-sm text-gray-700 space-y-1 list-none">
-              <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>Oude Kerk: Edificio más antiguo (1306)</li>
-              <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Canales históricos iluminados</li>
-              <li className="flex items-center"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3"></span>Arquitectura del Siglo de Oro</li>
-              <li className="flex items-center"><span className="w-2 h-2 bg-orange-400 rounded-full mr-3"></span>Restaurantes y cafés tradicionales</li>
-              <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Ambiente multicultural único</li>
-            </ul>
-          </div>
-          <div>
-            <h5 className="font-semibold text-gray-900 mb-2">🍜 Restaurantes Recomendados:</h5>
-            <ul className="text-sm text-gray-700 space-y-1 list-none">
-              <li className="flex items-center"><span className="w-2 h-2 bg-yellow-400 rounded-full mr-3"></span>Ramen Ya: Ramen japonés excelente</li>
-              <li className="flex items-center"><span className="w-2 h-2 bg-pink-400 rounded-full mr-3"></span>Numerosos restaurantes asiáticos</li>
-              <li className="flex items-center"><span className="w-2 h-2 bg-indigo-400 rounded-full mr-3"></span>Pubs tradicionales holandeses</li>
-              <li className="flex items-center"><span className="w-2 h-2 bg-emerald-400 rounded-full mr-3"></span>Cafés con terraza junto al canal</li>
-            </ul>
-          </div>
-        </div>
-
-        <div className="bg-yellow-100 border border-yellow-300 rounded-lg p-3 mb-4">
-          <p className="font-medium text-yellow-800 mb-1">ℹ️ Información Importante</p>
-          <p className="text-yellow-700 text-xs">
-            El Barrio Rojo es completamente seguro y legal. No está permitido tomar fotos en las zonas con escaparates.
-            Respeta a las trabajadoras y la zona. Puedes hacer un tour guiado para conocer la historia del barrio de forma educativa y respetuosa.
+          <h2 className="text-5xl md:text-6xl leading-[1.05] text-balance" style={{ fontFamily: 'Georgia, serif' }}>
+            ¿Te ha gustado <span className="italic text-amber-400">esta guía</span>?
+          </h2>
+          <p className="mt-6 max-w-xl mx-auto text-stone-100/75 text-lg">
+            Tenemos guías similares para Viena, Praga, Budapest, Roma y Londres. Todas con itinerarios optimizados y presupuestos reales.
           </p>
+          <button
+            onClick={() => navigate('/guias')}
+            className="mt-10 inline-flex items-center justify-center px-8 py-4 bg-stone-50 text-stone-900 text-xs uppercase tracking-[.15em] hover:bg-amber-400 transition-colors"
+          >
+            Ver todas las guías
+          </button>
         </div>
+      </section>
 
-        <div className="bg-white border-l-4 border-red-500 rounded-lg p-4">
-          <h5 className="font-semibold text-gray-900 mb-2 flex items-center">
-            <span className="mr-2">🎯</span>
-            Free Tour del Barrio Rojo en Español
-          </h5>
-          <p className="text-sm text-gray-700 mb-3">
-            Descubre la historia y legislación de la prostitución en Ámsterdam, el surgimiento de tiendas de piercings, tatuajes, sex shops, museos peculiares y Coffee Shops. Aprende sobre la cultura de las drogas y cómo son tratadas en la sociedad holandesa. Lugares emblemáticos como la Condomerie en Warmoesstraat.
-          </p>
-          <ul className="text-sm text-gray-700 space-y-1 mb-4 list-none">
-            <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>Duración: 2 horas</li>
-            <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Inicio: Beursplein</li>
-            <li className="flex items-center"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3"></span>Incluye: Historia, legislación, coffee shops, cultura de drogas...</li>
-            <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Pago: En forma de propinas</li>
-            <li className="flex items-center"><span className="w-2 h-2 bg-yellow-400 rounded-full mr-3"></span>Nota: Por respeto, no incluye calles con ventanas de trabajadoras sexuales</li>
-          </ul>
-          <a href="https://www.freetour.com/es/amsterdam/tour-del-barrio-rojo-en-espanol?referralID=rFW5gyO0D7w7JOqo&campaign=BarrioRojoAmsterdam"
-             target="_blank"
-             rel="noopener noreferrer"
-             className="btn-hotel">
-            <span>🚶 Reservar free tour del Barrio Rojo</span>
-            <ExternalLink className="external-icon" />
-          </a>
+      {/* Floating Section Navigator */}
+      {showNav && (
+        <div className="fixed bottom-6 right-6 z-50">
+          {navOpen && (
+            <div className="absolute bottom-14 right-0 w-56 bg-white rounded-xl shadow-2xl border border-stone-200 overflow-hidden mb-2 animate-in">
+              <div className="px-4 py-3 border-b border-stone-100 bg-stone-50">
+                <span className="text-[10px] uppercase tracking-[.15em] text-stone-500 font-medium">Ir a sección</span>
+              </div>
+              <nav className="py-1 max-h-72 overflow-y-auto">
+                {NAV_SECTIONS.map((s) => (
+                  <button
+                    key={s.id}
+                    onClick={() => scrollTo(s.id)}
+                    className="w-full text-left px-4 py-2.5 text-sm text-stone-700 hover:bg-amber-50 hover:text-amber-800 transition-colors"
+                  >
+                    {s.label}
+                  </button>
+                ))}
+              </nav>
+            </div>
+          )}
+          <button
+            onClick={() => setNavOpen(!navOpen)}
+            className="p-3.5 bg-teal-600 text-white rounded-full shadow-lg hover:bg-teal-500 transition-all hover:scale-105"
+            aria-label="Navegar secciones"
+          >
+            {navOpen ? <X className="h-5 w-5" /> : <List className="h-5 w-5" />}
+          </button>
         </div>
-      </div>
-    </div>
-  </div>
-
-  {/* MÁS LUGARES */}
-  <div id="mas-lugares" className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
-    <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">➕ Más Lugares que Ver en Ámsterdam</h2>
-    
-    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-      <div className="bg-purple-50 border border-purple-200 rounded-xl p-4">
-        <h3 className="font-semibold text-gray-900 mb-3">🏛️ Otros Museos Interesantes:</h3>
-        <ul className="text-sm text-gray-700 space-y-2">
-          <li><strong>Moco Museum:</strong> Arte moderno y contemporáneo (Banksy, Warhol)</li>
-          <li><strong>Casa de Rembrandt:</strong> Donde vivió y trabajó el artista</li>
-          <li><strong>Museo de Ámsterdam:</strong> Historia de la ciudad</li>
-          <li><strong>NEMO Science Museum:</strong> Ciencia interactiva (ideal familias)</li>
-          <li><strong>Museo Marítimo:</strong> Historia naval holandesa</li>
-        </ul>
-      </div>
-      
-      <div className="bg-green-50 border border-green-200 rounded-xl p-4">
-        <h3 className="font-semibold text-gray-900 mb-3">🌳 Espacios al Aire Libre:</h3>
-        <ul className="text-sm text-gray-700 space-y-2">
-          <li><strong>Vondelpark:</strong> El Central Park de Ámsterdam (47 hectáreas)</li>
-          <li><strong>Jardín Botánico:</strong> Uno de los más antiguos del mundo (1638)</li>
-          <li><strong>Begijnhof:</strong> Jardín secreto histórico (entrada gratuita)</li>
-          <li><strong>Westerpark:</strong> Parque moderno con mercadillos los fines de semana</li>
-          <li><strong>Terraza NEMO:</strong> Vistas gratuitas desde la terraza del museo</li>
-        </ul>
-      </div>
-      
-      <div className="bg-yellow-50 border border-yellow-200 rounded-xl p-4">
-        <h3 className="font-semibold text-gray-900 mb-3">🎭 Experiencias Únicas:</h3>
-        <ul className="text-sm text-gray-700 space-y-2">
-          <li><strong>ICEBAR:</strong> Bar completamente de hielo a -10°C</li>
-          <li><strong>Wondr Experience:</strong> Museo instagrameable con sets surrealistas</li>
-          <li><strong>Estadio Johan Cruyff Arena:</strong> Tour del estadio del Ajax</li>
-          <li><strong>Mercado Albert Cuyp:</strong> Mayor mercado al aire libre de Europa</li>
-          <li><strong>Biblioteca OBA:</strong> Terraza gratuita con vistas panorámicas</li>
-        </ul>
-      </div>
-      
-      <div className="bg-orange-50 border border-orange-200 rounded-xl p-4">
-        <h3 className="font-semibold text-gray-900 mb-3">🏰 Excursiones de un Día:</h3>
-        <ul className="text-sm text-gray-700 space-y-2">
-          <li><strong>Brujas (Bélgica):</strong> Ciudad medieval (3h en tren)</li>
-          <li><strong>Róterdam + La Haya:</strong> Arquitectura moderna + política</li>
-          <li><strong>Utrecht:</strong> Canales menos turísticos, muy auténtico</li>
-          <li><strong>Keukenhof (primavera):</strong> Jardín de tulipanes (marzo-mayo)</li>
-          <li><strong>Giethoorn:</strong> Pueblo sin carreteras, solo canales</li>
-        </ul>
-      </div>
-    </div>
-
-    <div className="mt-6 flex flex-col sm:flex-row gap-3 justify-center items-center">
-      <a href="https://gyg.me/EMjp5KUQ" target="_blank" rel="noopener noreferrer"
-         className="btn-hotel">
-        <span>🎟️ Ver Entradas a Museos</span>
-        <ExternalLink className="external-icon" />
-      </a>
-      <a href="https://gyg.me/NsnWg5zb" target="_blank" rel="noopener noreferrer"
-         className="btn-hotel">
-        <span>🏰 Excursión a Brujas</span>
-        <ExternalLink className="external-icon" />
-      </a>
-    </div>
-  </div>
-
-  {/* SECCIÓN: HERRAMIENTAS DE VIAJE */}
-  <div id="recomendaciones" className="bg-gradient-to-br from-blue-50 via-sky-50 to-cyan-50 border border-blue-200 rounded-2xl p-6 sm:p-8 shadow-lg mb-8">
-    <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3 flex items-center">
-      💳 Herramientas de Viaje
-    </h2>
-    <p className="text-gray-600 mb-6">Servicios esenciales para viajar sin preocupaciones</p>
-
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-      <div className="bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300">
-        <div className="flex items-center mb-4">
-          <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-xl flex items-center justify-center mr-4">
-            <span className="text-2xl">💳</span>
-          </div>
-          <div>
-            <h3 className="text-xl font-bold text-gray-900">Revolut</h3>
-            <p className="text-sm text-gray-600">Tarjeta sin comisiones para viajar</p>
-          </div>
-        </div>
-
-        <p className="text-gray-700 mb-4">
-          Viaja sin preocuparte por las comisiones bancarias. Revolut te permite pagar en euros sin cargos adicionales,
-          retirar efectivo sin comisiones y cambiar divisas al mejor tipo de cambio.
-        </p>
-
-        <div className="bg-blue-50 rounded-lg p-4 mb-4">
-          <h4 className="font-semibold text-gray-900 mb-2">✅ Ventajas para tu viaje:</h4>
-          <ul className="text-sm text-gray-700 space-y-1">
-            <li>• Sin comisiones por pago en el extranjero</li>
-            <li>• Cambio de divisa al tipo real</li>
-            <li>• Retiros gratuitos en cajeros</li>
-            <li>• Control total desde la app</li>
-            <li>• Tarjetas virtuales desechables</li>
-          </ul>
-        </div>
-
-        <a
-          href="https://revolut.com/referral/?referral-code=antoni22jf!DEC1-25-AR-CH1H-CRY&geo-redirect"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center bg-gradient-to-r from-blue-500 to-cyan-500 hover:from-blue-600 hover:to-cyan-600 text-white font-semibold px-5 py-3 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm w-full justify-center"
-        >
-          💳 Consigue tu Tarjeta Revolut
-          <ExternalLink className="h-3 w-3 ml-2" />
-        </a>
-      </div>
-
-      <div className="bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300">
-        <div className="flex items-center mb-4">
-          <div className="w-12 h-12 bg-gradient-to-br from-green-500 to-emerald-500 rounded-xl flex items-center justify-center mr-4">
-            <span className="text-2xl">🛡️</span>
-          </div>
-          <div>
-            <h3 className="text-xl font-bold text-gray-900">IATI Seguros</h3>
-            <p className="text-sm text-gray-600">Seguro de viaje con cobertura completa</p>
-          </div>
-        </div>
-
-        <p className="text-gray-700 mb-4">
-          Viaja tranquilo con un seguro que te cubre ante cualquier imprevisto. IATI ofrece asistencia médica 24/7,
-          cobertura de cancelación, pérdida de equipaje y mucho más.
-        </p>
-
-        <div className="bg-green-50 rounded-lg p-4 mb-4">
-          <h4 className="font-semibold text-gray-900 mb-2">✅ Por qué contratar seguro:</h4>
-          <ul className="text-sm text-gray-700 space-y-1">
-            <li>• Asistencia médica en el extranjero</li>
-            <li>• Cobertura de cancelación de viaje</li>
-            <li>• Pérdida o robo de equipaje</li>
-            <li>• Asistencia 24/7 en español</li>
-            <li>• Repatriación incluida</li>
-          </ul>
-        </div>
-
-        <div className="bg-gradient-to-r from-orange-100 to-red-100 border-2 border-orange-300 rounded-lg p-3 mb-4">
-          <p className="text-center font-bold text-orange-800 text-sm">
-            🎁 ¡Descuento exclusivo del 5% ya aplicado en el enlace!
-          </p>
-        </div>
-
-        <a
-          href="https://www.iatiseguros.com/?r=37344279073491"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center bg-gradient-to-r from-green-500 to-emerald-500 hover:from-green-600 hover:to-emerald-600 text-white font-semibold px-5 py-3 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm w-full justify-center"
-        >
-          🛡️ Contratar Seguro IATI con 5% Descuento
-          <ExternalLink className="h-3 w-3 ml-2" />
-        </a>
-      </div>
-    </div>
-
-    <div className="bg-amber-50 border border-amber-200 rounded-lg p-4 mt-6">
-      <p className="text-sm text-amber-800">
-        <strong>💡 Consejo:</strong> Prepara estos dos elementos antes de tu viaje. La tarjeta Revolut te ahorrará dinero en cada pago,
-        y el seguro IATI te dará tranquilidad durante todo el viaje.
-      </p>
-    </div>
-  </div>
-
-  {/* RESTAURANTES */}
-  <div id="gastronomia" className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
-    <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">🍽️ Guía Gastronómica - Probado y Recomendado</h2>
-    
-    <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-6">
-      <div className="bg-orange-50 border border-orange-200 rounded-xl p-4">
-        <h3 className="text-lg font-bold text-orange-800 mb-3">🧀 Comida Tradicional Holandesa</h3>
-        <div className="space-y-3">
-          <div className="bg-white rounded-lg p-3 shadow-sm">
-            <h4 className="font-semibold text-gray-900 mb-1">The Pantry</h4>
-            <p className="text-xs text-gray-600 mb-1">Leidsekruisstraat 21 • €€ • Tradicional</p>
-            <p className="text-sm text-gray-700">Cocina holandesa auténtica. Stamppot, bitterballen y platos típicos.</p>
-          </div>
-          
-          <div className="bg-white rounded-lg p-3 shadow-sm">
-            <h4 className="font-semibold text-gray-900 mb-1">Cafe Soñéveld</h4>
-            <p className="text-xs text-gray-600 mb-1">Egelantiersgracht 72 • €€ • Ambiente local</p>
-            <p className="text-sm text-gray-700">Bar tradicional holandés. Cervezas locales y bocadillos típicos.</p>
-          </div>
-          
-          <div className="bg-white rounded-lg p-3 shadow-sm">
-            <h4 className="font-semibold text-gray-900 mb-1">Moeders</h4>
-            <p className="text-xs text-gray-600 mb-1">Rozengracht 251 • €€ • Decoración única</p>
-            <p className="text-sm text-gray-700">Restaurante familiar. Paredes llenas de fotos de madres de clientes.</p>
-          </div>
-        </div>
-      </div>
-      
-      <div className="bg-blue-50 border border-blue-200 rounded-xl p-4">
-        <h3 className="text-lg font-bold text-blue-800 mb-3">🌍 Cocina Internacional</h3>
-        <div className="space-y-3">
-          <div className="bg-white rounded-lg p-3 shadow-sm">
-            <h4 className="font-semibold text-gray-900 mb-1">Ramen Ya</h4>
-            <p className="text-xs text-gray-600 mb-1">Oudezijds Voorburgwal 236 • €€ • Japonés</p>
-            <p className="text-sm text-gray-700">Ramen japonés auténtico en el Barrio Rojo. Siempre hay cola.</p>
-          </div>
-          
-          <div className="bg-white rounded-lg p-3 shadow-sm">
-            <h4 className="font-semibold text-gray-900 mb-1">Blue Amsterdam</h4>
-            <p className="text-xs text-gray-600 mb-1">Winkelcentrum Kalverpassage, Singel 457 • €€€ • Vistas panorámicas</p>
-            <p className="text-sm text-gray-700">Cocina moderna con vistas a la ciudad. Perfecto para ocasiones especiales.</p>
-          </div>
-          
-          <div className="bg-white rounded-lg p-3 shadow-sm">
-            <h4 className="font-semibold text-gray-900 mb-1">Takumi Ramen Kitchen</h4>
-            <p className="text-xs text-gray-600 mb-1">Ferdinand Bolstraat 36 H, • €€ • Asiático</p>
-            <p className="text-sm text-gray-700">Ramen de alta calidad cerca de Museumplein.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div className="bg-green-50 border border-green-200 rounded-xl p-4">
-      <h3 className="text-lg font-bold text-green-800 mb-3">☕ Cafeterías Imprescindibles</h3>
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-        <div>
-          <h4 className="font-semibold text-gray-900 mb-1">Bakers & Roasters</h4>
-          <p className="text-xs text-gray-700">Brunch increíble. Llegada temprana recomendada (cola habitual).</p>
-        </div>
-        <div>
-          <h4 className="font-semibold text-gray-900 mb-1">Van Wonderen Stroopwafel</h4>
-          <p className="text-xs text-gray-700">Stroopwafels recién hechos. El mejor souvenir comestible.</p>
-        </div>
-        <div>
-          <h4 className="font-semibold text-gray-900 mb-1">Winkel 43</h4>
-          <p className="text-xs text-gray-700">Famosa por su apple pie (tarta de manzana). ¡Imprescindible!</p>
-        </div>
-        <div>
-          <h4 className="font-semibold text-gray-900 mb-1">Van Stapele Koekmakerij</h4>
-          <p className="text-xs text-gray-700">Galletas de chocolate rellenas. Dicen que son las mejores del mundo.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  {/* TRANSPORTE PÚBLICO */}
-  <div id="transporte" className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
-    <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">🚇 Sistema de Transporte Público de Ámsterdam</h2>
-    
-    <div className="bg-gradient-to-r from-blue-50 to-indigo-50 border border-blue-200 rounded-xl p-6">
-      <h4 className="font-bold text-gray-900 mb-4">Red Integrada GVB</h4>
-      
-      <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">
-        <div className="bg-white rounded-lg p-4 shadow-sm">
-          <h5 className="font-semibold text-blue-600 mb-2">🚇 Metro</h5>
-          <ul className="text-sm text-gray-700 space-y-1">
-            <li>• 4 líneas principales</li>
-            <li>• Frecuencia: 4-10 minutos</li>
-            <li>• Horario: 06:00-00:30</li>
-            <li>• Conecta aeropuerto y centro</li>
-          </ul>
-        </div>
-        
-        <div className="bg-white rounded-lg p-4 shadow-sm">
-          <h5 className="font-semibold text-red-600 mb-2">🚊 Tranvías</h5>
-          <ul className="text-sm text-gray-700 space-y-1">
-            <li>• 15 líneas de tranvía</li>
-            <li>• Red más extensa</li>
-            <li>• Frecuencia: 5-10 minutos</li>
-            <li>• Llegan a todas las atracciones</li>
-          </ul>
-        </div>
-        
-        <div className="bg-white rounded-lg p-4 shadow-sm">
-          <h5 className="font-semibold text-green-600 mb-2">🚌 Autobuses</h5>
-          <ul className="text-sm text-gray-700 space-y-1">
-            <li>• Red complementaria</li>
-            <li>• Líneas nocturnas disponibles</li>
-            <li>• Mismos billetes que tranvía</li>
-            <li>• Conecta zonas periféricas</li>
-          </ul>
-        </div>
-      </div>
-
-      <div className="bg-white rounded-lg p-4 shadow-sm mb-4">
-        <h5 className="font-semibold text-gray-900 mb-3">Billetes y Tarifas (2026):</h5>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm text-gray-700">
-          <div>
-            <p className="mb-2"><strong>Billete sencillo:</strong> 3,40 € (1 hora)</p>
-            <p className="mb-2"><strong>Amsterdam Travel Ticket 1 día:</strong> 18 €</p>
-            <p className="mb-2"><strong>Amsterdam Travel Ticket 2 días:</strong> 24 €</p>
-            <p className="mb-2"><strong>Amsterdam Travel Ticket 3 días:</strong> 30 € (incluye aeropuerto)</p>
-          </div>
-          <div>
-            <p className="mb-2"><strong>Pago:</strong> Tarjeta contactless o OV-chipkaart</p>
-            <p className="mb-2"><strong>Check-in/out:</strong> Obligatorio en lectores amarillos</p>
-            <p className="mb-2"><strong>Multa sin billete:</strong> 60 € + precio billete</p>
-            <p className="mb-2"><strong>App recomendada:</strong> GVB o 9292 (planificador)</p>
-          </div>
-        </div>
-      </div>
-
-      <div className="bg-yellow-100 border border-yellow-300 rounded-lg p-3 mb-4">
-        <p className="font-medium text-yellow-800 mb-1">💳 Tarjeta Contactless</p>
-        <p className="text-yellow-700 text-xs">
-          Desde 2023 puedes usar tu tarjeta bancaria contactless directamente en los lectores (check-in y check-out).
-          Es la forma más sencilla si estás pocos días en Ámsterdam.
-        </p>
-      </div>
-
-      <a href="https://gyg.me/bftVdMgA" target="_blank" rel="noopener noreferrer"
-         className="inline-flex items-center bg-gradient-to-r from-blue-500 to-indigo-500 hover:from-blue-600 hover:to-indigo-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm">
-        🚇 Comprar Amsterdam Travel Ticket
-        <ExternalLink className="h-3 w-3 ml-2" />
-      </a>
-    </div>
-  </div>
-
-  <div id="tarjetas-turisticas" className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
-    <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">🎫 Tarjetas Turísticas - ¿Merece la Pena?</h2>
-    
-    <div className="bg-gradient-to-r from-blue-50 to-indigo-50 border border-blue-200 rounded-xl p-6">
-      <h3 className="text-lg font-bold text-gray-900 mb-4">I Amsterdam City Card</h3>
-      
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
-        <div>
-          <h4 className="font-semibold text-gray-900 mb-2">✅ Incluye:</h4>
-          <ul className="text-sm text-gray-700 space-y-1">
-            <li>• Transporte público ilimitado</li>
-            <li>• Entrada gratuita a +70 museos</li>
-            <li>• Rijksmuseum incluido</li>
-            <li>• Crucero por canales gratuito</li>
-            <li>• Descuentos en atracciones y restaurantes</li>
-            <li>• Alquiler de bicicleta 24h gratis</li>
-          </ul>
-        </div>
-        <div>
-          <h4 className="font-semibold text-gray-900 mb-2">💰 Precios 2026:</h4>
-          <ul className="text-sm text-gray-700 space-y-1">
-            <li>• 24 horas: 65 €</li>
-            <li>• 48 horas: 85 €</li>
-            <li>• 72 horas: 100 €</li>
-            <li>• 96 horas: 115 €</li>
-          </ul>
-        </div>
-      </div>
-
-      <div className="bg-red-100 border border-red-300 rounded-lg p-3 mb-4">
-        <p className="font-medium text-red-800 mb-1">⚠️ Importante</p>
-        <p className="text-red-700 text-xs">
-          Desde junio 2022, la I Amsterdam City Card NO incluye el Museo Van Gogh. 
-          Tendrás que comprar entrada aparte (26 €). Calcula si te sale rentable según tus planes.
-        </p>
-      </div>
-
-      <div className="bg-green-100 border border-green-300 rounded-lg p-3 mb-4">
-        <p className="font-medium text-green-800 mb-1">💡 ¿Cuándo merece la pena?</p>
-        <p className="text-green-700 text-xs">
-          Si visitas 3-4 museos + usas mucho transporte público + haces el crucero por canales,
-          la tarjeta se amortiza. Si solo vas a ver 1-2 museos, mejor comprar entradas individuales.
-        </p>
-      </div>
-
-      <a href="https://gyg.me/hhPSPkwx" target="_blank" rel="noopener noreferrer"
-         className="inline-flex items-center bg-gradient-to-r from-blue-500 to-indigo-500 hover:from-blue-600 hover:to-indigo-600 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm">
-        🎫 Comprar I Amsterdam City Card
-        <ExternalLink className="h-3 w-3 ml-2" />
-      </a>
-    </div>
-  </div>
-
-  {/* CONSEJOS FINALES */}
-  <div id="consejos" className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
-    <div className="bg-gradient-to-r from-orange-50 to-red-50 rounded-2xl p-6 sm:p-8 shadow-md mb-8">
-      <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">🎯 Consejos Finales para tu Viaje a Ámsterdam</h2>
-      
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-        <div>
-          <h3 className="text-lg font-bold text-gray-900 mb-3">✅ Imprescindibles que NO puedes perderte:</h3>
-          <ul className="text-sm text-gray-700 space-y-2 list-none">
-            <li className="flex items-center"><span className="w-2 h-2 bg-orange-400 rounded-full mr-3"></span>Paseo en barco por los canales al atardecer</li>
-            <li className="flex items-center"><span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>Casa de Ana Frank (reserva con 6 semanas)</li>
-            <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>"La Ronda de Noche" de Rembrandt en Rijksmuseum</li>
-            <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Excursión a molinos de Zaanse Schans</li>
-            <li className="flex items-center"><span className="w-2 h-2 bg-purple-400 rounded-full mr-3"></span>Probar stroopwafels recién hechos</li>
-            <li className="flex items-center"><span className="w-2 h-2 bg-yellow-400 rounded-full mr-3"></span>Alquilar bici al menos medio día (¡es la forma local!)</li>
-          </ul>
-        </div>
-        
-        <div>
-          <h3 className="text-lg font-bold text-gray-900 mb-3">💡 Consejos de Viajero Experimentado:</h3>
-          <ul className="text-sm text-gray-700 space-y-2 list-none">
-            <li className="flex items-center"><span className="w-2 h-2 bg-pink-400 rounded-full mr-3"></span>Compra entradas a museos SIEMPRE online y con antelación</li>
-            <li className="flex items-center"><span className="w-2 h-2 bg-indigo-400 rounded-full mr-3"></span>Las bicicletas tienen prioridad SIEMPRE. ¡Cuidado al cruzar!</li>
-            <li className="flex items-center"><span className="w-2 h-2 bg-emerald-400 rounded-full mr-3"></span>No camines por los carriles bici (líneas rojas)</li>
-            <li className="flex items-center"><span className="w-2 h-2 bg-cyan-400 rounded-full mr-3"></span>Casi todo se paga con tarjeta, lleva poco efectivo</li>
-            <li className="flex items-center"><span className="w-2 h-2 bg-amber-400 rounded-full mr-3"></span>Respeta las normas sobre fotografía (especialmente Barrio Rojo)</li>
-            <li className="flex items-center"><span className="w-2 h-2 bg-rose-400 rounded-full mr-3"></span>Los holandeses hablan inglés perfectamente</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  {/* PRESUPUESTOS */}
-  <div id="presupuestos" className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 mb-8">
-    <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">💰 Presupuestos Detallados por Estilo</h2>
-
-    <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-6">
-      <div className="bg-green-50 border border-green-200 rounded-xl p-6 shadow-sm">
-        <h3 className="text-lg font-bold text-green-800 mb-3">🎒 Mochilero</h3>
-        <div className="text-2xl font-bold text-green-600 mb-2">70-90€/día</div>
-        <ul className="text-sm text-green-700 space-y-1">
-          <li>• Hostel: 30-40€</li>
-          <li>• Comida: 25-30€</li>
-          <li>• Transporte: 8-10€</li>
-          <li>• Atracciones: 10-15€</li>
-        </ul>
-      </div>
-
-      <div className="bg-blue-50 border border-blue-200 rounded-xl p-6 shadow-sm">
-        <h3 className="text-lg font-bold text-blue-800 mb-3">🏨 Estándar</h3>
-        <div className="text-2xl font-bold text-blue-600 mb-2">130-170€/día</div>
-        <ul className="text-sm text-blue-700 space-y-1">
-          <li>• Hotel 3*: 80-100€</li>
-          <li>• Comida: 35-45€</li>
-          <li>• Transporte: 10€</li>
-          <li>• Atracciones: 15-25€</li>
-        </ul>
-      </div>
-
-      <div className="bg-purple-50 border border-purple-200 rounded-xl p-6 shadow-sm">
-        <h3 className="text-lg font-bold text-purple-800 mb-3">👑 Lujo</h3>
-        <div className="text-2xl font-bold text-purple-600 mb-2">280-450€/día</div>
-        <ul className="text-sm text-purple-700 space-y-1">
-          <li>• Hotel 5*: 180-300€</li>
-          <li>• Comida: 80-120€</li>
-          <li>• Transporte: 20€</li>
-          <li>• Atracciones: 30-50€</li>
-        </ul>
-      </div>
-    </div>
-
-  </div>
-
-  {/* Footer */}
-  <div className="text-center text-gray-600 text-sm mt-8">
-    <p className="mb-2">
-      Guía actualizada en Septiembre 2026 | Información verificada y precios actuales
-    </p>
-    <p>
-      ¡Que disfrutes Ámsterdam al máximo!
-    </p>
-  </div>
-</article>
-</>
-);
+      )}
+    </article>
+  );
 };
+
+// --- Sub-components ---
+
+function HeroStat({ icon: Icon, label, value }: { icon: any; label: string; value: string }) {
+  return (
+    <div>
+      <div className="flex items-center gap-2 text-[10px] uppercase tracking-[.15em] text-stone-100/70 mb-2">
+        <Icon size={12} />
+        {label}
+      </div>
+      <div className="text-2xl md:text-3xl text-stone-50" style={{ fontFamily: 'Georgia, serif' }}>
+        {value}
+      </div>
+    </div>
+  );
+}
+
+function JourneyMap() {
+  const [active, setActive] = useState(0);
+
+  useEffect(() => {
+    const id = setInterval(() => setActive((p) => (p + 1) % 3), 3000);
+    return () => clearInterval(id);
+  }, []);
+
+  const stops = [
+    { label: 'Día 1', place: 'Centro + Ana Frank' },
+    { label: 'Día 2', place: 'Pueblos + Canales' },
+    { label: 'Día 3', place: 'Museos + Heineken' },
+  ];
+
+  return (
+    <div className="bg-stone-900 text-stone-50 px-6 md:px-10 py-10 md:py-14 overflow-hidden">
+      <div className="max-w-7xl mx-auto">
+        <div className="flex items-center gap-3 mb-8">
+          <Compass size={14} className="text-amber-400" />
+          <span className="text-[10px] uppercase tracking-[.2em] text-amber-400">La travesía</span>
+        </div>
+
+        <div className="relative">
+          <div className="absolute left-0 right-0 top-[18px] h-px bg-stone-100/15" />
+          <div
+            className="absolute left-0 top-[18px] h-px bg-amber-400 transition-all duration-[1800ms] ease-in-out"
+            style={{ width: `${(active / 2) * 100}%` }}
+          />
+
+          <ol className="relative grid grid-cols-3 gap-2">
+            {stops.map((stop, i) => {
+              const isActive = i === active;
+              const isPast = i < active;
+              return (
+                <li key={i} className="flex flex-col items-center text-center">
+                  <button
+                    onMouseEnter={() => setActive(i)}
+                    onClick={() => {
+                      setActive(i);
+                      document.getElementById(`dia-${i + 1}`)?.scrollIntoView({ behavior: 'smooth' });
+                    }}
+                    className="group flex flex-col items-center cursor-pointer"
+                  >
+                    <span
+                      className={`relative w-[14px] h-[14px] rounded-full border-2 transition-all duration-500 ${
+                        isActive
+                          ? 'bg-amber-400 border-amber-400 scale-125 shadow-[0_0_0_6px_rgba(245,158,11,0.18)]'
+                          : isPast
+                          ? 'bg-amber-400 border-amber-400'
+                          : 'bg-stone-900 border-stone-100/40 group-hover:border-amber-400'
+                      }`}
+                    />
+                    <span className={`mt-3 text-[9px] uppercase tracking-[.15em] transition-colors ${isActive ? 'text-amber-400' : 'text-stone-100/60'}`}>
+                      {stop.label}
+                    </span>
+                    <span className={`mt-1 text-xs transition-colors ${isActive ? 'text-stone-50' : 'text-stone-100/50'}`}>
+                      {stop.place}
+                    </span>
+                  </button>
+                </li>
+              );
+            })}
+          </ol>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function DaySectionHeader({ number, title }: { number: number; title: string }) {
+  return (
+    <div className="mb-12 md:mb-16">
+      <div className="flex items-center gap-3 mb-5">
+        <Compass size={14} className="text-amber-600" strokeWidth={1.5} />
+        <span className="text-[10px] uppercase tracking-[.2em] text-amber-700">
+          Itinerario día {number}
+        </span>
+      </div>
+      <h2 className="text-5xl md:text-7xl text-stone-900 leading-[0.95]" style={{ fontFamily: 'Georgia, serif' }}>
+        Día {number}:
+        <br />
+        <span className="italic text-amber-700">{title}</span>
+      </h2>
+    </div>
+  );
+}
+
+function DayTimeline({ stops, color }: { stops: { time: string; place: string }[]; color: 'amber' | 'rose' | 'teal' }) {
+  const colorMap = {
+    amber: { dot: 'bg-amber-500', line: 'bg-amber-300', text: 'text-amber-700', bg: 'bg-amber-50' },
+    rose: { dot: 'bg-rose-500', line: 'bg-rose-300', text: 'text-rose-700', bg: 'bg-rose-50' },
+    teal: { dot: 'bg-teal-500', line: 'bg-teal-300', text: 'text-teal-700', bg: 'bg-teal-50' },
+  };
+  const c = colorMap[color];
+
+  return (
+    <div className={`${c.bg} border border-stone-200/60 p-5 md:p-6 rounded-sm`}>
+      <div className="flex items-center gap-2 mb-4">
+        <Clock size={12} className={c.text} />
+        <span className={`text-[10px] uppercase tracking-[.15em] ${c.text} font-medium`}>Recorrido del día</span>
+      </div>
+      <div className="relative flex items-center gap-0 overflow-x-auto pb-2">
+        {stops.map((stop, i) => (
+          <div key={i} className="flex items-center shrink-0">
+            <div className="flex flex-col items-center">
+              <span className={`w-3 h-3 rounded-full ${c.dot} shadow-sm`} />
+              <span className={`mt-1.5 text-[10px] font-semibold ${c.text}`}>{stop.time}</span>
+              <span className="mt-0.5 text-[11px] text-stone-600 whitespace-nowrap">{stop.place}</span>
+            </div>
+            {i < stops.length - 1 && (
+              <div className={`w-8 md:w-14 h-0.5 ${c.line} mx-1 mt-[-18px]`} />
+            )}
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+function Attraction({
+  time,
+  title,
+  image,
+  description,
+  details,
+  tip,
+  link,
+  secondaryLink,
+  index,
+}: {
+  time: string;
+  title: string;
+  image: string;
+  description: string;
+  details: string[];
+  tip?: string;
+  link?: { url: string; label: string; price?: string; badge?: string };
+  secondaryLink?: { url: string; label: string; price?: string; badge?: string };
+  index: number;
+}) {
+  const ref = useRef<HTMLDivElement>(null);
+  const [visible, setVisible] = useState(false);
+  const isReverse = index % 2 === 1;
+
+  useEffect(() => {
+    const node = ref.current;
+    if (!node) return;
+    const obs = new IntersectionObserver(
+      ([entry]) => entry.isIntersecting && setVisible(true),
+      { threshold: 0.15 }
+    );
+    obs.observe(node);
+    return () => obs.disconnect();
+  }, []);
+
+  return (
+    <div
+      ref={ref}
+      className={`relative grid md:grid-cols-12 gap-6 md:gap-10 items-center transition-all duration-1000 ${
+        visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'
+      }`}
+    >
+      <div className={`md:col-span-7 relative group ${isReverse ? 'md:order-2 md:col-start-6' : ''}`}>
+        <div className="relative aspect-[4/3] md:aspect-[16/11] overflow-hidden bg-stone-900">
+          <img
+            src={image}
+            alt={title}
+            loading="lazy"
+            className="w-full h-full object-cover transition-transform duration-[1400ms] ease-out group-hover:scale-105"
+          />
+          <div className="absolute inset-0 bg-gradient-to-tr from-stone-900/40 via-transparent to-transparent" />
+          <div className="absolute top-4 left-4 bg-stone-900/70 backdrop-blur-sm text-stone-50 text-[11px] uppercase tracking-wider px-3 py-1.5 flex items-center gap-2">
+            <Clock size={11} />
+            {time}
+          </div>
+        </div>
+      </div>
+
+      <div className={`md:col-span-5 md:px-2 ${isReverse ? 'md:order-1 md:col-start-1' : ''}`}>
+        <div className="flex items-center gap-3 mb-4">
+          <span className="text-[10px] uppercase tracking-[.2em] text-amber-700">{time}</span>
+          <span className="h-px flex-1 bg-stone-800/15" />
+        </div>
+        <h3 className="text-3xl md:text-[2.4rem] text-stone-900 leading-[1.05] text-balance" style={{ fontFamily: 'Georgia, serif' }}>
+          {title}
+        </h3>
+        <p className="mt-5 text-stone-600 leading-relaxed">
+          {description}
+        </p>
+
+        <ul className="mt-6 space-y-2">
+          {details.map((d) => (
+            <li key={d} className="flex items-start gap-3 text-sm text-stone-700">
+              <span className="mt-[7px] w-1.5 h-1.5 rounded-full bg-amber-500 shrink-0" />
+              {d}
+            </li>
+          ))}
+        </ul>
+
+        {tip && (
+          <div className="mt-6 bg-amber-50 border border-amber-200 px-4 py-3 text-sm text-amber-900">
+            <strong className="text-amber-800">Consejo:</strong> {tip}
+          </div>
+        )}
+
+        {link && (
+          <BookingCard url={link.url} label={link.label} price={link.price} badge={link.badge} />
+        )}
+        {secondaryLink && (
+          <BookingCard url={secondaryLink.url} label={secondaryLink.label} price={secondaryLink.price} badge={secondaryLink.badge} />
+        )}
+      </div>
+    </div>
+  );
+}
+
+const MAP_MARKERS = [
+  // Day 1 - amber
+  { lat: 52.3791, lng: 4.8990, title: 'Estación Central & Plaza Dam', day: 1 },
+  { lat: 52.3668, lng: 4.8913, title: 'Bloemenmarkt (Mercado Flores)', day: 1 },
+  { lat: 52.3752, lng: 4.8840, title: 'Casa de Ana Frank', day: 1 },
+  { lat: 52.3740, lng: 4.8850, title: '9 Calles (De 9 Straatjes)', day: 1 },
+  // Day 2 - rose
+  { lat: 52.4735, lng: 4.8175, title: 'Zaanse Schans', day: 2 },
+  { lat: 52.3694, lng: 4.8952, title: 'Crucero por Canales', day: 2 },
+  { lat: 52.3660, lng: 4.8964, title: 'Rembrandtplein', day: 2 },
+  // Day 3 - teal
+  { lat: 52.3600, lng: 4.8852, title: 'Rijksmuseum', day: 3 },
+  { lat: 52.3584, lng: 4.8811, title: 'Museo Van Gogh', day: 3 },
+  { lat: 52.3578, lng: 4.8916, title: 'Heineken Experience', day: 3 },
+  { lat: 52.3740, lng: 4.8987, title: 'Barrio Rojo (De Wallen)', day: 3 },
+];
+
+function AmsterdamMap() {
+  const mapRef = useRef<HTMLDivElement>(null);
+  const mapInstance = useRef<any>(null);
+
+  useEffect(() => {
+    if (!mapRef.current || mapInstance.current) return;
+
+    import('leaflet').then((L) => {
+      if (!mapRef.current) return;
+
+      const link = document.createElement('link');
+      link.rel = 'stylesheet';
+      link.href = 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.css';
+      document.head.appendChild(link);
+
+      const map = L.map(mapRef.current, {
+        center: [52.3676, 4.9041],
+        zoom: 13,
+        scrollWheelZoom: false,
+      });
+
+      L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OSM</a> &copy; <a href="https://carto.com/">CARTO</a>',
+        maxZoom: 19,
+      }).addTo(map);
+
+      const dayColors: Record<number, string> = { 1: '#d97706', 2: '#e11d48', 3: '#0d9488' };
+      const dayLabels: Record<number, string> = { 1: 'Día 1', 2: 'Día 2', 3: 'Día 3' };
+
+      MAP_MARKERS.forEach((m) => {
+        const color = dayColors[m.day];
+        const icon = L.divIcon({
+          className: 'custom-marker',
+          html: `<div style="width:28px;height:28px;background:${color};border:3px solid white;border-radius:50%;box-shadow:0 2px 6px rgba(0,0,0,0.3);display:flex;align-items:center;justify-content:center;">
+            <span style="color:white;font-size:10px;font-weight:700;">${m.day}</span>
+          </div>`,
+          iconSize: [28, 28],
+          iconAnchor: [14, 14],
+        });
+
+        L.marker([m.lat, m.lng], { icon })
+          .addTo(map)
+          .bindPopup(`<div style="font-family:Georgia,serif;"><strong>${m.title}</strong><br/><span style="font-size:11px;color:#78716c;">${dayLabels[m.day]}</span></div>`);
+      });
+
+      mapInstance.current = map;
+      setTimeout(() => map.invalidateSize(), 200);
+    });
+
+    return () => {
+      if (mapInstance.current) {
+        mapInstance.current.remove();
+        mapInstance.current = null;
+      }
+    };
+  }, []);
+
+  return (
+    <div className="relative">
+      <div ref={mapRef} className="w-full h-[400px] md:h-[500px] rounded-sm border border-stone-200 z-0" />
+      <div className="mt-4 flex flex-wrap gap-4">
+        <span className="flex items-center gap-2 text-xs text-stone-600">
+          <span className="w-3 h-3 rounded-full bg-amber-600" /> Día 1: Centro + Ana Frank
+        </span>
+        <span className="flex items-center gap-2 text-xs text-stone-600">
+          <span className="w-3 h-3 rounded-full bg-rose-600" /> Día 2: Pueblos + Canales
+        </span>
+        <span className="flex items-center gap-2 text-xs text-stone-600">
+          <span className="w-3 h-3 rounded-full bg-teal-600" /> Día 3: Museos + Heineken
+        </span>
+      </div>
+    </div>
+  );
+}
+
+function BookingCard({ url, label, price, badge }: { url: string; label: string; price?: string; badge?: string }) {
+  return (
+    <a
+      href={url}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="mt-6 block border-2 border-amber-200 bg-gradient-to-br from-amber-50 to-white p-4 hover:border-amber-400 hover:shadow-lg transition-all group relative overflow-hidden"
+    >
+      {badge && (
+        <span className="absolute top-0 right-0 bg-red-600 text-white text-[9px] uppercase tracking-wider px-2.5 py-1 font-semibold">
+          {badge}
+        </span>
+      )}
+      <div className="flex items-center justify-between gap-4">
+        <div className="flex-1">
+          <div className="flex items-center gap-2 mb-1">
+            <span className="text-sm font-semibold text-stone-900 group-hover:text-amber-800 transition-colors">{label}</span>
+          </div>
+          {price && (
+            <span className="text-xs text-stone-500">Desde {price}</span>
+          )}
+          <div className="flex items-center gap-3 mt-2">
+            <span className="flex items-center gap-1 text-[10px] text-stone-500">
+              <Users size={10} />
+              <span>+500 reservas</span>
+            </span>
+            <span className="flex items-center gap-0.5 text-[10px] text-amber-600">
+              <Star size={9} className="fill-amber-500" />
+              <Star size={9} className="fill-amber-500" />
+              <Star size={9} className="fill-amber-500" />
+              <Star size={9} className="fill-amber-500" />
+              <Star size={9} className="fill-amber-500" />
+            </span>
+          </div>
+        </div>
+        <div className="shrink-0 bg-stone-900 group-hover:bg-amber-700 text-white text-[10px] uppercase tracking-wider px-4 py-2.5 transition-colors flex items-center gap-1.5">
+          Reservar <ExternalLink size={11} />
+        </div>
+      </div>
+    </a>
+  );
+}
+
+function ExtraCard({ title, desc, link }: { title: string; desc: string; link?: string }) {
+  return (
+    <div className={`border p-6 transition-all ${link ? 'border-amber-200 bg-gradient-to-b from-amber-50/50 to-white hover:shadow-xl hover:border-amber-400' : 'border-stone-200 hover:border-stone-300 hover:shadow-lg'}`}>
+      <h3 className="text-xl text-stone-900 mb-3" style={{ fontFamily: 'Georgia, serif' }}>{title}</h3>
+      <p className="text-sm text-stone-600 leading-relaxed">{desc}</p>
+      {link && (
+        <a
+          href={link}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-5 flex items-center justify-between bg-stone-900 hover:bg-amber-700 text-white px-4 py-3 transition-colors group"
+        >
+          <span className="text-xs uppercase tracking-wider font-medium">Reservar experiencia</span>
+          <ExternalLink size={13} className="group-hover:translate-x-0.5 transition-transform" />
+        </a>
+      )}
+    </div>
+  );
+}
+
+function DayTripCard({ title, link }: { title: string; link: string }) {
+  return (
+    <a href={link} target="_blank" rel="noopener noreferrer" className="flex items-center justify-between border-2 border-amber-100 bg-gradient-to-r from-amber-50/60 to-white p-5 hover:border-amber-400 hover:shadow-lg transition-all group">
+      <div>
+        <span className="text-stone-900 font-semibold group-hover:text-amber-800 transition-colors">{title}</span>
+        <div className="flex items-center gap-2 mt-1.5">
+          <span className="flex items-center gap-0.5">
+            <Star size={9} className="fill-amber-500 text-amber-500" />
+            <Star size={9} className="fill-amber-500 text-amber-500" />
+            <Star size={9} className="fill-amber-500 text-amber-500" />
+            <Star size={9} className="fill-amber-500 text-amber-500" />
+            <Star size={9} className="fill-amber-500 text-amber-500" />
+          </span>
+          <span className="text-[10px] text-stone-500">Tour completo</span>
+        </div>
+      </div>
+      <span className="shrink-0 bg-stone-900 group-hover:bg-amber-700 text-white text-[10px] uppercase tracking-wider px-4 py-2.5 transition-colors flex items-center gap-1.5">
+        Ver tour <ExternalLink size={11} />
+      </span>
+    </a>
+  );
+}
+
+function TransportOption({ name, price, time, desc, link }: { name: string; price: string; time: string; desc: string; link: string }) {
+  return (
+    <a href={link} target="_blank" rel="noopener noreferrer" className="flex items-center justify-between border-2 border-stone-100 bg-white p-4 hover:border-amber-300 hover:shadow-md transition-all group">
+      <div className="flex-1">
+        <div className="font-semibold text-stone-900 group-hover:text-amber-700 transition-colors">{name}</div>
+        <div className="text-xs text-stone-500 mt-0.5">{desc}</div>
+      </div>
+      <div className="flex items-center gap-3">
+        <div className="text-right">
+          <div className="text-lg font-bold text-amber-700">{price}</div>
+          <div className="text-[10px] text-stone-500">{time}</div>
+        </div>
+        <span className="shrink-0 w-8 h-8 bg-stone-900 group-hover:bg-amber-700 rounded-full flex items-center justify-center transition-colors">
+          <ExternalLink size={12} className="text-white" />
+        </span>
+      </div>
+    </a>
+  );
+}
+
+function HotelZone({ zone, description, hotels }: { zone: string; description: string; hotels: { name: string; stars: number; link: string; highlight: string }[] }) {
+  return (
+    <div>
+      <h3 className="text-xl font-semibold text-stone-900 mb-2">{zone}</h3>
+      <p className="text-sm text-stone-600 mb-6">{description}</p>
+      <div className="space-y-4">
+        {hotels.map((h, i) => (
+          <a
+            key={h.name}
+            href={h.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={`block border-2 p-5 transition-all group relative overflow-hidden ${
+              i === 0
+                ? 'border-amber-300 bg-gradient-to-br from-amber-50 to-white hover:shadow-xl hover:border-amber-500'
+                : 'border-stone-100 bg-white hover:border-amber-300 hover:shadow-lg'
+            }`}
+          >
+            {i === 0 && (
+              <span className="absolute top-0 right-0 bg-amber-600 text-white text-[9px] uppercase tracking-wider px-2.5 py-1 font-semibold">
+                Nuestra elección
+              </span>
+            )}
+            <div className="flex items-center justify-between gap-4">
+              <div className="flex-1">
+                <div className="flex items-center gap-2 mb-1">
+                  <span className="font-semibold text-stone-900 group-hover:text-amber-800 transition-colors">{h.name}</span>
+                </div>
+                <div className="flex items-center gap-2 mt-1">
+                  <span className="text-xs text-amber-600">{Array(h.stars).fill('★').join('')}</span>
+                  <span className="text-xs text-stone-400">|</span>
+                  <span className="text-xs text-stone-500">{h.highlight}</span>
+                </div>
+              </div>
+              <span className="shrink-0 bg-stone-900 group-hover:bg-amber-700 text-white text-[10px] uppercase tracking-wider px-4 py-2.5 transition-colors flex items-center gap-1.5">
+                Ver hotel <ExternalLink size={11} />
+              </span>
+            </div>
+          </a>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+function Restaurant({ name, address, price, desc }: { name: string; address: string; price: string; desc: string }) {
+  return (
+    <div className="border-2 border-stone-100 p-4 transition-all hover:border-stone-300">
+      <div className="flex items-baseline justify-between">
+        <span className="font-semibold text-stone-900">{name}</span>
+        <span className="text-xs text-amber-700 font-bold bg-amber-100 px-2 py-0.5 rounded-sm">{price}</span>
+      </div>
+      <p className="text-xs text-stone-500 mt-0.5">{address}</p>
+      <p className="text-sm text-stone-600 mt-2">{desc}</p>
+    </div>
+  );
+}
+
+function TravelTool({ icon: Icon, title, benefits, link, cta }: { icon: any; title: string; benefits: string[]; link: string; cta: string }) {
+  return (
+    <div className="border-2 border-amber-200 bg-gradient-to-b from-amber-50/50 to-white p-6 md:p-8 hover:shadow-xl hover:border-amber-400 transition-all relative overflow-hidden group">
+      <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-amber-500 to-amber-300" />
+      <div className="flex items-center gap-3 mb-5">
+        <div className="w-10 h-10 rounded-full bg-amber-100 flex items-center justify-center">
+          <Icon size={20} className="text-amber-700" />
+        </div>
+        <h3 className="text-xl font-semibold text-stone-900">{title}</h3>
+      </div>
+      <ul className="space-y-2.5 mb-6">
+        {benefits.map((b) => (
+          <li key={b} className="flex items-start gap-2.5 text-sm text-stone-700">
+            <span className="mt-[6px] w-1.5 h-1.5 rounded-full bg-amber-500 shrink-0" />
+            {b}
+          </li>
+        ))}
+      </ul>
+      <a
+        href={link}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="w-full flex items-center justify-center gap-2 bg-stone-900 group-hover:bg-amber-700 text-stone-50 px-6 py-4 text-sm uppercase tracking-[.1em] font-medium transition-colors"
+      >
+        {cta} <ExternalLink size={14} />
+      </a>
+      <p className="mt-3 text-center text-[10px] text-stone-400 uppercase tracking-wider">Enlace exclusivo con descuento</p>
+    </div>
+  );
+}
+
+function FAQItem({ question, answer }: { question: string; answer: string }) {
+  const [open, setOpen] = useState(false);
+  return (
+    <div className="border-b border-stone-200">
+      <button
+        onClick={() => setOpen(!open)}
+        className="w-full flex items-center justify-between py-5 text-left group"
+      >
+        <span className="text-base font-medium text-stone-900 group-hover:text-amber-700 transition-colors pr-4">{question}</span>
+        <span className={`shrink-0 w-6 h-6 border border-stone-300 flex items-center justify-center text-stone-500 transition-transform ${open ? 'rotate-45 border-amber-400 text-amber-600' : ''}`}>
+          <span className="text-lg leading-none">+</span>
+        </span>
+      </button>
+      {open && (
+        <div className="pb-5 pr-10">
+          <p className="text-sm text-stone-600 leading-relaxed">{answer}</p>
+        </div>
+      )}
+    </div>
+  );
+}
 
 export default AmsterdamGuideArticle;
