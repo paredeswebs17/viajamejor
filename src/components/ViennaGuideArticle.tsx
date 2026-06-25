@@ -214,7 +214,7 @@ const ViennaGuideArticle: React.FC<ViennaGuideArticleProps> = ({ onBack }) => {
             <Attraction
               time="17:30h"
               title="Casa de Mozart (Mozarthaus)"
-              image="https://images.pexels.com/photos/8568542/pexels-photo-8568542.jpeg?auto=compress&cs=tinysrgb&w=1200"
+              image="https://images.pexels.com/photos/13036786/pexels-photo-13036786.jpeg?auto=compress&cs=tinysrgb&w=1200"
               description="La única residencia conservada de Mozart en Viena, en Domgasse 5 (a 2 minutos de la Catedral). Aquí vivió entre 1784 y 1787 y compuso 'Las Bodas de Fígaro'. Tres plantas de exposiciones con audioguía incluida revelan la vida del genio en la capital imperial."
               details={[
                 'Entrada: 14€ adultos (audioguía incluida)',
@@ -346,7 +346,7 @@ const ViennaGuideArticle: React.FC<ViennaGuideArticleProps> = ({ onBack }) => {
             <Attraction
               time="13:00h"
               title="Café Sacher — La Sachertorte Original"
-              image="https://images.pexels.com/photos/8568542/pexels-photo-8568542.jpeg?auto=compress&cs=tinysrgb&w=1200"
+              image="https://images.pexels.com/photos/36644768/pexels-photo-36644768.jpeg?auto=compress&cs=tinysrgb&w=1200"
               description="Fundado en 1876 frente a la Ópera. El único lugar del mundo donde se sirve la receta original de la Sachertorte, creada por Franz Sacher en 1832. Decoración imperial auténtica, servicio con guantes blancos y clientela de lujo internacional. Una tradición familiar de casi 200 años."
               details={[
                 'Especialidad: Sachertorte original (receta secreta)',
