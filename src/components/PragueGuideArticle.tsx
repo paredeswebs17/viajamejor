@@ -380,7 +380,7 @@ const PragueGuideArticle: React.FC<PragueGuideArticleProps> = ({ onBack }) => {
             <Attraction
               time="17:00h"
               title="Torre Petřín — La Torre Eiffel de Praga"
-              image="https://images.pexels.com/photos/3046347/pexels-photo-3046347.jpeg?auto=compress&cs=tinysrgb&w=1200"
+              image="https://images.pexels.com/photos/37764656/pexels-photo-37764656.jpeg"
               description="Si prefieres quedarte en la ciudad o al regresar de la excursión, sube a la torre de 60 metros con vistas 360° espectaculares. El funicular está incluido en el pase de 24h de transporte. Los Jardines de Petřín son gratuitos y perfectos para un paseo relajado."
               details={[
                 'Precio: 220 CZK (aprox. 9€)',
