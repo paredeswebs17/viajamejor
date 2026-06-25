@@ -168,7 +168,7 @@ const PragueGuideArticle: React.FC<PragueGuideArticleProps> = ({ onBack }) => {
             <Attraction
               time="11:30h"
               title="Barrio Judío (Josefov)"
-              image="https://images.pexels.com/photos/7245230/pexels-photo-7245230.jpeg?auto=compress&cs=tinysrgb&w=1200"
+              image="https://images.pexels.com/photos/33786384/pexels-photo-33786384.jpeg"
               description="Un viaje conmovedor por mil años de historia judía en el corazón de Praga. El Barrio Judío mejor conservado de Europa con 6 sinagogas históricas y el Antiguo Cementerio Judío con 12.000 lápidas. La Sinagoga Española es la más bella, la Vieja-Nueva la más antigua y la Pinkas un memorial del Holocausto."
               details={[
                 'Entrada conjunta: 500 CZK (aprox. 20€), reducida 370 CZK (aprox. 15€)',
