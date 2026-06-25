@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { ArrowLeft, Calendar, Clock, Euro, Bike, Bed, UtensilsCrossed, CreditCard, Shield, ExternalLink, Compass, List, X, MapPin, Star, Users } from 'lucide-react';
+import { ArrowLeft, Calendar, Clock, Euro, Bike, Bed, UtensilsCrossed, CreditCard, Shield, ExternalLink, Compass, List, X, MapPin, Star, Users, Download, CheckCircle } from 'lucide-react';
 
 interface AmsterdamGuideArticleProps {
   onBack: () => void;
@@ -538,6 +538,56 @@ const AmsterdamGuideArticle: React.FC<AmsterdamGuideArticleProps> = ({ onBack })
               link="https://www.iatiseguros.com/?r=37344279073491"
               cta="Contratar con 5% dto."
             />
+          </div>
+        </div>
+      </section>
+
+      {/* LEAD MAGNET */}
+      <section className="py-16 md:py-20 bg-gradient-to-br from-stone-900 via-stone-800 to-stone-900 scroll-mt-20 relative overflow-hidden">
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute top-0 right-0 w-96 h-96 bg-amber-500 rounded-full blur-[120px]" />
+          <div className="absolute bottom-0 left-0 w-64 h-64 bg-amber-300 rounded-full blur-[80px]" />
+        </div>
+        <div className="relative max-w-4xl mx-auto px-6 lg:px-10">
+          <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12">
+            <div className="flex-1 text-center md:text-left">
+              <div className="inline-flex items-center gap-2 bg-amber-600/20 border border-amber-500/30 px-3 py-1.5 mb-4">
+                <Download size={12} className="text-amber-400" />
+                <span className="text-[10px] uppercase tracking-wider text-amber-300 font-medium">Recurso gratuito</span>
+              </div>
+              <h3 className="text-2xl md:text-3xl text-white leading-tight" style={{ fontFamily: 'Georgia, serif' }}>
+                Descarga el itinerario <span className="italic text-amber-400">completo en PDF</span>
+              </h3>
+              <p className="mt-3 text-stone-300 text-sm leading-relaxed">
+                Los 3 días hora por hora, mapa imprimible, presupuestos y todos los enlaces. Llévalo en el móvil sin conexión.
+              </p>
+              <ul className="mt-4 space-y-2">
+                {['Itinerario día a día con horarios', 'Mapa con marcadores de cada punto', 'Presupuesto detallado + trucos de ahorro', 'Enlaces directos a reservas'].map((item) => (
+                  <li key={item} className="flex items-center gap-2 text-xs text-stone-300">
+                    <CheckCircle size={12} className="text-amber-500 shrink-0" />
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div className="shrink-0 w-full md:w-auto">
+              <div className="bg-white/5 backdrop-blur-sm border border-white/10 p-6 md:p-8 max-w-sm mx-auto">
+                <div className="space-y-3">
+                  <input
+                    type="email"
+                    placeholder="Tu email para recibir el PDF"
+                    className="w-full bg-white/10 border border-white/20 text-white placeholder:text-stone-400 px-4 py-3 text-sm focus:outline-none focus:border-amber-400 transition-colors"
+                  />
+                  <button className="w-full bg-amber-600 hover:bg-amber-500 text-white px-6 py-3.5 text-xs uppercase tracking-wider font-medium transition-colors flex items-center justify-center gap-2">
+                    <Download size={14} />
+                    Enviar itinerario gratis
+                  </button>
+                </div>
+                <p className="mt-3 text-[10px] text-stone-500 text-center">
+                  Sin spam. Solo la guía + ofertas exclusivas de viaje.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
