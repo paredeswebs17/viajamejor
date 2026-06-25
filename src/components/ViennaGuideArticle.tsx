@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { ArrowLeft, Calendar, Clock, Euro, Music, Brain as Train, Bed, UtensilsCrossed, CreditCard, Shield, ExternalLink, Compass, List, X, MapPin, Star, Users, Sun, Snowflake, Leaf, Download, CheckCircle } from 'lucide-react';
+import { generateViennaPdf } from '../utils/generateViennaPdf';
 
 interface ViennaGuideArticleProps {
   onBack: () => void;
@@ -686,18 +687,16 @@ const ViennaGuideArticle: React.FC<ViennaGuideArticleProps> = ({ onBack }) => {
             <div className="shrink-0 w-full md:w-auto">
               <div className="bg-white/5 backdrop-blur-sm border border-white/10 p-6 md:p-8 max-w-sm mx-auto">
                 <div className="space-y-3">
-                  <input
-                    type="email"
-                    placeholder="Tu email para recibir el PDF"
-                    className="w-full bg-white/10 border border-white/20 text-white placeholder:text-stone-400 px-4 py-3 text-sm focus:outline-none focus:border-amber-400 transition-colors"
-                  />
-                  <button className="w-full bg-amber-600 hover:bg-amber-500 text-white px-6 py-3.5 text-xs uppercase tracking-wider font-medium transition-colors flex items-center justify-center gap-2">
+                  <button
+                    onClick={() => generateViennaPdf()}
+                    className="w-full bg-amber-600 hover:bg-amber-500 text-white px-6 py-3.5 text-xs uppercase tracking-wider font-medium transition-colors flex items-center justify-center gap-2"
+                  >
                     <Download size={14} />
-                    Enviar itinerario gratis
+                    Descargar PDF gratis
                   </button>
                 </div>
                 <p className="mt-3 text-[10px] text-stone-500 text-center">
-                  Sin spam. Solo la guía + ofertas exclusivas de viaje.
+                  PDF generado al instante. Sin registro.
                 </p>
               </div>
             </div>
