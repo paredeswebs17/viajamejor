@@ -121,7 +121,7 @@ export default function MoroccoRoutePage() {
             <StatBlock icon={Calendar} label="Duración" value={route.duration} />
             <StatBlock icon={MapPin} label="Etapas" value={`${route.days?.length || 0} paradas`} />
             <StatBlock icon={Users} label="Tipo" value="Privado" />
-            <StatBlock icon={Star} label="Desde" value={route.price} highlight />
+            <StatBlock icon={Star} label="Desde" value={route.price || 'Consultar'} highlight />
           </div>
         </div>
       </section>

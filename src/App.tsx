@@ -25,6 +25,8 @@ const ChristmasMarketsPage = lazy(() => import('./pages/ChristmasMarketsPage'));
 const MarruecosOrganizadoPage = lazy(() => import('./pages/MarruecosOrganizadoPage'));
 const MarrakechDesiertoPage = lazy(() => import('./pages/MarrakechDesiertoPage'));
 const MoroccoRoutePage = lazy(() => import('./pages/MoroccoRoutePage'));
+const ViajesMarruecosPage = lazy(() => import('./pages/ViajesMarruecosPage'));
+const ViajesMarruecosDetailPage = lazy(() => import('./pages/ViajesMarruecosDetailPage'));
 const NotFoundPage = lazy(() => import('./pages/NotFoundPage'));
 
 // Loading component
@@ -79,6 +81,8 @@ function App() {
                 <Route path="/marruecos-organizado" element={<MarruecosOrganizadoPage />} />
                 <Route path="/marrakech-al-desierto-7-dias" element={<MarrakechDesiertoPage />} />
                 <Route path="/marruecos/:slug" element={<MoroccoRoutePage />} />
+                <Route path="/viajes-organizados/marruecos" element={<ViajesMarruecosPage />} />
+                <Route path="/viajes-organizados/marruecos/:slug" element={<ViajesMarruecosDetailPage />} />
 
                 {/* 404 */}
                 <Route path="*" element={<NotFoundPage />} />
