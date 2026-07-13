@@ -2,7 +2,7 @@ import { useState, useRef, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import {
-  ArrowRight, ArrowLeft, Clock, ChevronLeft, ChevronRight, MessageCircle,
+  ArrowRight, ArrowLeft, Clock, ChevronLeft, ChevronRight, MessageCircle, MapPin,
 } from 'lucide-react';
 import { routes, Route } from '../data/moroccoRoutes';
 
@@ -11,7 +11,7 @@ const waGeneric = `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent('Hola! H
 
 type City = 'all' | 'marrakech' | 'fez' | 'tanger' | 'casablanca';
 
-const FILTERS: { id: City; label: string }[] = [
+const FILTERS: { id: City; label: string; count?: number }[] = [
   { id: 'all', label: 'Todas' },
   { id: 'marrakech', label: 'Marrakech' },
   { id: 'fez', label: 'Fez' },
@@ -74,6 +74,11 @@ function getDaysNum(route: Route): number {
   return m ? parseInt(m[0], 10) : 0;
 }
 
+function getCityCount(city: City): number {
+  if (city === 'all') return routes.length;
+  return routes.filter((r) => getCity(r) === city).length;
+}
+
 export default function ViajesMarruecosPage() {
   const [cityFilter, setCityFilter] = useState<City>('all');
   const scrollerRef = useRef<HTMLDivElement>(null);
@@ -105,34 +110,36 @@ export default function ViajesMarruecosPage() {
       </Helmet>
 
       {/* HERO */}
-      <section className="relative min-h-[75vh] flex items-end overflow-hidden">
+      <section className="relative min-h-[80vh] flex items-end overflow-hidden">
         <img
           src="https://images.pexels.com/photos/3889843/pexels-photo-3889843.jpeg?auto=compress&cs=tinysrgb&w=1920"
           alt="Marruecos - desierto del Sahara"
           className="absolute inset-0 w-full h-full object-cover duotone anim-slow-pan"
           fetchPriority="high"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-ink-900/90 via-ink-900/40 to-ink-900/20" />
-        <div className="absolute inset-0 bg-gradient-to-r from-ink-900/60 to-transparent" />
+        {/* Triple-layer overlay for guaranteed legibility */}
+        <div className="absolute inset-0 bg-gradient-to-t from-ink-950 via-ink-900/70 to-ink-900/30" />
+        <div className="absolute inset-0 bg-gradient-to-r from-ink-950/80 via-ink-900/30 to-transparent" />
+        <div className="absolute bottom-0 left-0 right-0 h-[45%] bg-gradient-to-t from-ink-950 to-transparent" />
 
-        <div className="relative w-full max-w-7xl mx-auto px-6 lg:px-10 pb-16 md:pb-24 pt-36">
+        <div className="relative w-full max-w-7xl mx-auto px-6 lg:px-10 pb-16 md:pb-24 pt-40">
           <div className="max-w-3xl anim-fade-up">
             <div className="flex items-center gap-3 mb-6">
-              <span className="h-px w-8 bg-gold-300" />
-              <span className="text-[10px] uppercase tracking-wider3 text-gold-300">
+              <span className="h-px w-10 bg-terra-400" />
+              <span className="text-[11px] font-medium uppercase tracking-wider3 text-terra-300">
                 Viajes organizados
               </span>
             </div>
-            <h1 className="font-serif text-cream-50 text-[clamp(2.8rem,7vw,5.5rem)] font-light leading-[0.98] drop-shadow-[0_2px_20px_rgba(0,0,0,0.4)]">
+            <h1 className="font-serif text-white text-[clamp(3rem,8vw,5.5rem)] font-medium leading-[0.95]" style={{ textShadow: '0 2px 4px rgba(0,0,0,0.9), 0 8px 30px rgba(0,0,0,0.5)' }}>
               Marruecos,{' '}
-              <span className="italic text-gold-300">a tu medida</span>
+              <span className="italic text-terra-300">a tu medida</span>
             </h1>
-            <p className="mt-6 text-cream-100/90 font-light text-lg md:text-xl max-w-xl leading-relaxed drop-shadow-[0_1px_8px_rgba(0,0,0,0.5)]">
+            <p className="mt-7 text-white/90 font-light text-lg md:text-xl max-w-xl leading-relaxed" style={{ textShadow: '0 1px 3px rgba(0,0,0,0.8)' }}>
               Rutas privadas con guía local en español. Sin intermediarios, sin turismo de catálogo. El Marruecos de verdad.
             </p>
           </div>
 
-          <div className="mt-14 grid grid-cols-2 sm:grid-cols-4 gap-6 md:gap-10 pt-8 border-t border-cream-100/20">
+          <div className="mt-16 grid grid-cols-2 sm:grid-cols-4 gap-8 md:gap-12 pt-8 border-t border-white/15">
             <StatItem label="Rutas" value={`${routes.length}`} />
             <StatItem label="Tipo" value="Privado" />
             <StatItem label="Idioma" value="Español" />
@@ -141,82 +148,90 @@ export default function ViajesMarruecosPage() {
         </div>
       </section>
 
-      {/* ROUTES CAROUSEL */}
-      <section className="py-20 md:py-36 bg-cream-100">
+      {/* ROUTES CAROUSEL SECTION */}
+      <section className="py-20 md:py-32 bg-cream-100">
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
+          {/* Section header */}
           <div className="text-center mb-12 md:mb-16">
-            <div className="text-[10px] uppercase tracking-wider3 text-terra-600 mb-4">
+            <span className="inline-block text-[11px] font-medium uppercase tracking-wider3 text-terra-600 mb-4">
               Nuestras rutas
-            </div>
-            <h2 className="font-serif text-4xl md:text-6xl text-ink-900 leading-[1.02] text-balance max-w-3xl mx-auto">
-              Elige tu <span className="italic">experiencia</span>
+            </span>
+            <h2 className="font-serif text-4xl md:text-[3.5rem] text-ink-900 leading-[1.05] text-balance max-w-2xl mx-auto">
+              Elige tu <span className="italic text-terra-600">experiencia</span>
             </h2>
-            <p className="mt-5 text-ink-600 font-light text-base md:text-lg max-w-xl mx-auto">
+            <p className="mt-5 text-ink-500 font-light text-base md:text-lg max-w-xl mx-auto leading-relaxed">
               Viajes privados con todo incluido salvo vuelos. Cada itinerario se adapta a tu ritmo y preferencias.
             </p>
           </div>
 
-          {/* Filters + Arrows */}
-          <div className="flex items-center justify-between gap-4 mb-8 md:mb-10 border-b border-ink-800/10 pb-5">
-            <div className="flex flex-wrap gap-2">
-              {FILTERS.map((f) => (
-                <button
-                  key={f.id}
-                  onClick={() => setCityFilter(f.id)}
-                  className={`flex-shrink-0 px-4 py-2 text-[11px] uppercase tracking-wider2 rounded-full border transition-all duration-300 ${
-                    cityFilter === f.id
-                      ? 'bg-ink-900 text-cream-50 border-ink-900 shadow-luxe'
-                      : 'border-ink-800/20 text-ink-700 hover:border-terra-500 hover:text-terra-600'
-                  }`}
-                >
-                  {f.label}
-                </button>
-              ))}
+          {/* Filters + navigation arrows */}
+          <div className="flex items-center justify-between gap-4 mb-8 md:mb-10">
+            <div className="flex flex-wrap gap-2.5">
+              {FILTERS.map((f) => {
+                const count = getCityCount(f.id);
+                const isActive = cityFilter === f.id;
+                return (
+                  <button
+                    key={f.id}
+                    onClick={() => setCityFilter(f.id)}
+                    className={`flex-shrink-0 px-5 py-2.5 text-[11px] uppercase tracking-wider2 rounded-full border-2 transition-all duration-300 ${
+                      isActive
+                        ? 'bg-terra-600 text-white border-terra-600 font-semibold shadow-lg shadow-terra-600/25'
+                        : 'bg-white border-ink-200 text-ink-600 hover:border-terra-400 hover:text-terra-600 hover:bg-terra-600/5 font-medium'
+                    }`}
+                  >
+                    {f.label}
+                    <span className={`ml-1.5 ${isActive ? 'text-white/70' : 'text-ink-400'}`}>
+                      {count}
+                    </span>
+                  </button>
+                );
+              })}
             </div>
             <div className="hidden md:flex items-center gap-2 flex-shrink-0">
               <button
                 onClick={() => scroll(-1)}
-                className="w-10 h-10 border border-ink-800/20 flex items-center justify-center hover:bg-ink-900 hover:text-cream-50 hover:border-ink-900 transition-colors rounded-full"
+                className="w-11 h-11 border-2 border-ink-200 flex items-center justify-center hover:bg-ink-900 hover:text-white hover:border-ink-900 transition-all duration-300 rounded-full"
                 aria-label="Anterior"
               >
-                <ArrowLeft size={14} />
+                <ArrowLeft size={15} />
               </button>
               <button
                 onClick={() => scroll(1)}
-                className="w-10 h-10 border border-ink-800/20 flex items-center justify-center hover:bg-ink-900 hover:text-cream-50 hover:border-ink-900 transition-colors rounded-full"
+                className="w-11 h-11 border-2 border-ink-200 flex items-center justify-center hover:bg-ink-900 hover:text-white hover:border-ink-900 transition-all duration-300 rounded-full"
                 aria-label="Siguiente"
               >
-                <ArrowRight size={14} />
+                <ArrowRight size={15} />
               </button>
             </div>
           </div>
 
           {/* Scrollable cards */}
           <div className="relative">
-            <div className="hidden lg:block pointer-events-none absolute right-0 top-0 bottom-4 w-24 z-10 bg-gradient-to-l from-cream-100 to-transparent" />
+            <div className="hidden lg:block pointer-events-none absolute right-0 top-0 bottom-4 w-28 z-10 bg-gradient-to-l from-cream-100 to-transparent" />
             <div
               ref={scrollerRef}
-              className="overflow-x-auto flex gap-5 snap-x snap-mandatory scrollbar-hide pb-4 mobile-overflow-right"
+              className="overflow-x-auto flex gap-6 snap-x snap-mandatory scrollbar-hide pb-4 mobile-overflow-right"
             >
               {filtered.map((route) => (
                 <RouteCard key={route.slug} route={route} />
               ))}
-              <div className="flex-shrink-0 w-4 lg:w-24" aria-hidden="true" />
+              <div className="flex-shrink-0 w-4 lg:w-28" aria-hidden="true" />
             </div>
           </div>
 
           {/* Bottom CTA */}
-          <div className="mt-14 text-center">
-            <p className="text-ink-600 font-light mb-5">
+          <div className="mt-16 text-center">
+            <p className="text-ink-500 font-light mb-5 text-lg">
               ¿No encuentras lo que buscas? Diseñamos rutas a medida.
             </p>
             <a
               href={waGeneric}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2.5 px-7 py-4 bg-ink-900 text-cream-50 text-xs uppercase tracking-wider2 hover:bg-terra-600 transition-colors"
+              className="inline-flex items-center gap-2.5 px-8 py-4 bg-ink-900 text-white text-xs font-medium uppercase tracking-wider2 rounded-full hover:bg-terra-600 transition-all duration-300 hover:shadow-lg hover:shadow-terra-600/25"
             >
-              <MessageCircle size={14} /> Consultar por WhatsApp
+              <MessageCircle size={15} /> Consultar por WhatsApp
             </a>
           </div>
         </div>
@@ -227,44 +242,55 @@ export default function ViajesMarruecosPage() {
 
 function RouteCard({ route }: { route: Route }) {
   const badge = BADGES[route.slug];
+  const cityLabel = getCity(route);
+  const cityName = cityLabel.charAt(0).toUpperCase() + cityLabel.slice(1);
+
   return (
-    <article className="group flex-shrink-0 w-[75vw] sm:w-[48vw] lg:w-[29%] snap-start bg-cream-50 overflow-hidden flex flex-col border border-ink-800/8 hover:border-terra-400/40 hover:shadow-luxe-lg hover:-translate-y-1.5 transition-all duration-500 ease-out rounded-sm">
-      <div className="relative overflow-hidden">
-        <div className="transition-transform duration-700 ease-out group-hover:scale-[1.04]">
+    <article className="group flex-shrink-0 w-[78vw] sm:w-[48vw] lg:w-[31%] snap-start bg-white overflow-hidden flex flex-col rounded-xl border border-ink-200 shadow-md hover:shadow-luxe-lg hover:-translate-y-2 hover:border-terra-400/60 transition-all duration-500 ease-out">
+      {/* Image carousel */}
+      <div className="relative overflow-hidden rounded-t-xl">
+        <div className="transition-transform duration-700 ease-out group-hover:scale-[1.03]">
           <TourCarousel images={getRouteImages(route)} title={route.title} />
         </div>
         {badge && (
-          <span className="absolute top-3 left-3 bg-terra-600 text-cream-50 text-[10px] uppercase tracking-wider2 px-3 py-1.5 z-10">
+          <span className="absolute top-3.5 left-3.5 bg-terra-600 text-white text-[10px] font-semibold uppercase tracking-wider2 px-3 py-1.5 rounded-full z-10 shadow-lg">
             {badge}
           </span>
         )}
-        <div className="absolute top-3 right-3 z-10 bg-ink-900/70 backdrop-blur-sm text-cream-50 px-2.5 py-1 flex items-center gap-1.5 text-[10px] uppercase tracking-wider2">
-          <Clock size={10} />
+        <div className="absolute top-3.5 right-3.5 z-10 bg-white/95 backdrop-blur-sm text-ink-800 px-3 py-1.5 flex items-center gap-1.5 text-[10px] font-semibold uppercase tracking-wider2 rounded-full shadow-sm">
+          <Clock size={11} />
           {route.duration}
         </div>
         {route.price && (
-          <div className="absolute bottom-3 right-3 z-10 bg-ink-900/70 backdrop-blur-sm px-3 py-1.5">
-            <span className="text-[10px] text-cream-100/70">Desde </span>
-            <span className="text-sm font-serif text-cream-50">{route.price}</span>
+          <div className="absolute bottom-3.5 right-3.5 z-10 bg-white/95 backdrop-blur-sm px-3.5 py-2 rounded-full shadow-sm">
+            <span className="text-[10px] text-ink-500 font-medium">Desde </span>
+            <span className="text-sm font-serif font-semibold text-ink-900">{route.price}</span>
           </div>
         )}
       </div>
 
-      <div className="p-5 md:p-6 flex flex-col flex-1">
-        <h3 className="font-serif text-xl md:text-2xl text-ink-900 leading-tight">
+      {/* Card body */}
+      <div className="p-6 flex flex-col flex-1">
+        <div className="flex items-center gap-1.5 text-ink-400 mb-3">
+          <MapPin size={12} />
+          <span className="text-[11px] uppercase tracking-wider2 font-medium">{cityName}</span>
+        </div>
+
+        <h3 className="font-serif text-xl md:text-[1.4rem] text-ink-900 leading-snug font-medium">
           {route.title}
         </h3>
-        <p className="text-sm text-ink-600 mt-2 leading-relaxed line-clamp-2">
+        <p className="text-sm text-ink-500 mt-2.5 leading-relaxed line-clamp-2">
           {route.description}
         </p>
 
-        <div className="mt-auto pt-5">
+        {/* Separator + CTA */}
+        <div className="mt-auto pt-5 border-t border-ink-100 mt-5">
           <Link
             to={`/viajes-organizados/marruecos/${route.slug}`}
-            className="group/cta inline-flex items-center gap-2 w-full justify-center px-4 h-11 bg-ink-900 text-cream-50 text-xs uppercase tracking-wider2 hover:bg-terra-600 transition-all duration-300 hover:shadow-lg hover:shadow-terra-600/20"
+            className="group/cta inline-flex items-center gap-2 w-full justify-center px-4 h-12 border-2 border-terra-600 text-terra-600 text-xs font-semibold uppercase tracking-wider2 rounded-lg hover:bg-terra-600 hover:text-white transition-all duration-300"
           >
             Ver itinerario
-            <ArrowRight size={13} className="transition-transform duration-300 group-hover/cta:translate-x-1" />
+            <ArrowRight size={14} className="transition-transform duration-300 group-hover/cta:translate-x-1" />
           </Link>
         </div>
       </div>
@@ -320,7 +346,7 @@ function TourCarousel({ images, title }: { images: string[]; title: string }) {
       aria-roledescription="carousel"
       tabIndex={0}
       onKeyDown={(e) => { if (e.key === 'ArrowLeft') goTo(index - 1); else if (e.key === 'ArrowRight') goTo(index + 1); }}
-      className="relative aspect-[4/3] overflow-hidden bg-ink-900/5 select-none touch-pan-y focus:outline-none focus-visible:ring-2 focus-visible:ring-terra-500"
+      className="relative aspect-[4/3] overflow-hidden bg-ink-100 select-none touch-pan-y focus:outline-none focus-visible:ring-2 focus-visible:ring-terra-500"
       onPointerDown={onPointerDown}
       onPointerMove={onPointerMove}
       onPointerUp={onPointerUp}
@@ -351,7 +377,7 @@ function TourCarousel({ images, title }: { images: string[]; title: string }) {
         type="button"
         onClick={(e) => { e.preventDefault(); e.stopPropagation(); goTo(index - 1); }}
         aria-label="Imagen anterior"
-        className="absolute left-3 top-1/2 -translate-y-1/2 w-9 h-9 flex items-center justify-center bg-cream-50/90 hover:bg-cream-50 text-ink-900 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity rounded-full"
+        className="absolute left-3 top-1/2 -translate-y-1/2 w-9 h-9 flex items-center justify-center bg-white/90 hover:bg-white text-ink-800 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-all duration-300 rounded-full shadow-md"
       >
         <ChevronLeft size={16} />
       </button>
@@ -359,19 +385,19 @@ function TourCarousel({ images, title }: { images: string[]; title: string }) {
         type="button"
         onClick={(e) => { e.preventDefault(); e.stopPropagation(); goTo(index + 1); }}
         aria-label="Imagen siguiente"
-        className="absolute right-3 top-1/2 -translate-y-1/2 w-9 h-9 flex items-center justify-center bg-cream-50/90 hover:bg-cream-50 text-ink-900 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity rounded-full"
+        className="absolute right-3 top-1/2 -translate-y-1/2 w-9 h-9 flex items-center justify-center bg-white/90 hover:bg-white text-ink-800 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-all duration-300 rounded-full shadow-md"
       >
         <ChevronRight size={16} />
       </button>
 
-      <div className="absolute bottom-3 left-1/2 -translate-x-1/2 flex items-center gap-1.5 bg-ink-900/30 backdrop-blur-sm px-2.5 py-1.5 rounded-full">
+      <div className="absolute bottom-3 left-1/2 -translate-x-1/2 flex items-center gap-1.5 bg-ink-900/40 backdrop-blur-sm px-2.5 py-1.5 rounded-full">
         {images.map((_, i) => (
           <button
             key={i}
             type="button"
             aria-label={`Ir a imagen ${i + 1}`}
             onClick={(e) => { e.preventDefault(); e.stopPropagation(); goTo(i); }}
-            className={`rounded-full transition-all duration-400 ${i === index ? 'w-6 h-1.5 bg-cream-50' : 'w-2 h-1.5 bg-cream-50/50 hover:bg-cream-50/80'}`}
+            className={`rounded-full transition-all duration-400 ${i === index ? 'w-6 h-1.5 bg-white' : 'w-2 h-1.5 bg-white/50 hover:bg-white/80'}`}
           />
         ))}
       </div>
@@ -382,8 +408,8 @@ function TourCarousel({ images, title }: { images: string[]; title: string }) {
 function StatItem({ label, value }: { label: string; value: string }) {
   return (
     <div>
-      <div className="text-[10px] uppercase tracking-wider2 text-cream-100/60 mb-1.5">{label}</div>
-      <div className="font-serif text-xl md:text-2xl text-cream-50">{value}</div>
+      <div className="text-[11px] uppercase tracking-wider2 text-white/50 font-medium mb-1.5">{label}</div>
+      <div className="font-serif text-2xl md:text-3xl text-white font-medium">{value}</div>
     </div>
   );
 }
