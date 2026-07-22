@@ -123,7 +123,7 @@ const GuidesPage = () => {
     if (!email) return;
 
     try {
-      await fetch('https://formspree.io/f/mwpqebpb', {
+      await fetch('https://formspree.io/f/mgoglwbg', {
         method: 'POST',
         headers: { 'Accept': 'application/json' },
         body: new FormData(e.target as HTMLFormElement),

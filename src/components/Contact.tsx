@@ -33,7 +33,7 @@ const Contact = () => {
     e.preventDefault();
 
     try {
-      await fetch('https://formspree.io/f/mwpqebpb', {
+      await fetch('https://formspree.io/f/mgoglwbg', {
         method: 'POST',
         headers: { 'Accept': 'application/json' },
         body: new FormData(e.target as HTMLFormElement),
@@ -89,7 +89,7 @@ const Contact = () => {
             <form
               onSubmit={handleSubmit}
               method="POST"
-              action="https://formspree.io/f/mwpqebpb"
+              action="https://formspree.io/f/mgoglwbg"
               className="space-y-5"
             >
               <div className="grid md:grid-cols-2 gap-5">
