@@ -14,12 +14,12 @@ function waLink(route: Route) {
 }
 
 const RESERVATION_FAQ = [
-  { q: 'Hay que pagar senal para reservar?', a: 'Si. Bloqueamos plaza con tu solicitud y solo pedimos un 25% una vez confirmamos la propuesta y las fechas.' },
-  { q: 'Puedo cambiar las fechas o cancelar?', a: 'Si. Hasta 7 dias antes la cancelacion es gratuita. Cambiamos fechas siempre que haya disponibilidad.' },
-  { q: 'Los vuelos estan incluidos?', a: 'No. Te recomendamos los aeropuertos mas eficientes segun tu ciudad y, si quieres, te ayudamos a buscar la mejor combinacion.' },
-  { q: 'Y si viajamos con ninos?', a: 'Encantados. Adaptamos jornadas, alojamientos y actividades a peques desde 0 anos. Ninos hasta 5 anos gratis, de 5 a 9 anos pagan la mitad y a partir de 9 anos como un adulto.' },
-  { q: 'Es una ruta privada o en grupo?', a: 'Por defecto, todas nuestras rutas son privadas: vehiculo, guia y alojamientos solo para vosotros.' },
-  { q: 'Quien nos guia sobre el terreno?', a: 'Nuestro equipo de guias locales que hablan espanol, viven en Marruecos y conocen cada parada como su casa.' },
+  { q: '¿Hay que pagar señal para reservar?', a: 'Sí. Bloqueamos plaza con tu solicitud y solo pedimos un 25% una vez confirmamos la propuesta y las fechas.' },
+  { q: '¿Puedo cambiar las fechas o cancelar?', a: 'Sí. Hasta 7 días antes la cancelación es gratuita. Cambiamos fechas siempre que haya disponibilidad.' },
+  { q: '¿Los vuelos están incluidos?', a: 'No. Te recomendamos los aeropuertos más eficientes según tu ciudad y, si quieres, te ayudamos a buscar la mejor combinación.' },
+  { q: '¿Y si viajamos con niños?', a: 'Encantados. Adaptamos jornadas, alojamientos y actividades a peques desde 0 años. Niños hasta 5 años gratis, de 5 a 9 años pagan la mitad y a partir de 9 años como un adulto.' },
+  { q: '¿Es una ruta privada o en grupo?', a: 'Por defecto, todas nuestras rutas son privadas: vehículo, guía y alojamientos solo para vosotros.' },
+  { q: '¿Quién nos guía sobre el terreno?', a: 'Nuestro equipo de guías locales que hablan español, viven en Marruecos y conocen cada parada como su casa.' },
 ];
 
 export default function ViajesMarruecosDetailPage() {
@@ -108,9 +108,9 @@ export default function ViajesMarruecosDetailPage() {
             </div>
 
             <div className="mt-14 grid grid-cols-3 gap-6 md:gap-10 text-cream-100 border-t border-cream-100/20 pt-8">
-              <Stat icon={Calendar} label="Duracion" value={route.duration} />
+              <Stat icon={Calendar} label="Duración" value={route.duration} />
               <Stat icon={Users} label="Grupo" value="Privado" />
-              <Stat icon={MessageCircle} label="Idioma" value="Espanol" />
+              <Stat icon={MessageCircle} label="Idioma" value="Español" />
             </div>
           </div>
         </section>
@@ -223,7 +223,7 @@ export default function ViajesMarruecosDetailPage() {
               <span className="text-[10px] uppercase tracking-wider3 text-terra-600">Antes de reservar</span>
             </div>
             <h2 className="font-serif text-4xl md:text-5xl text-ink-900 leading-[1.05] text-balance max-w-2xl">
-              Lo que viajeros como tu nos preguntan
+              Lo que viajeros como tú nos preguntan
             </h2>
             <dl className="mt-12 grid md:grid-cols-2 gap-x-12 gap-y-8">
               {RESERVATION_FAQ.map((f) => (
@@ -249,10 +249,10 @@ export default function ViajesMarruecosDetailPage() {
               <span className="h-px w-8 bg-gold-300" />
             </div>
             <h2 className="font-serif text-5xl md:text-6xl leading-[1.05] text-balance">
-              Tu viaje <span className="italic text-gold-300">empieza aqui</span>
+              Tu viaje <span className="italic text-gold-300">empieza aquí</span>
             </h2>
             <p className="mt-6 max-w-xl mx-auto text-cream-100/75 font-light text-lg">
-              Te preparamos una propuesta personalizada segun fechas, numero
+              Te preparamos una propuesta personalizada según fechas, número
               de viajeros y tipo de alojamiento. Sin compromiso.
             </p>
             <div className="mt-10">
