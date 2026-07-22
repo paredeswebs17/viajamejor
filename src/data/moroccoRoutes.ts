@@ -14,6 +14,7 @@ export type Route = {
   title: string;
   subtitle: string;
   duration: string;
+  price?: string;
   image: string;
   heroImage?: string;
   places: string[];
