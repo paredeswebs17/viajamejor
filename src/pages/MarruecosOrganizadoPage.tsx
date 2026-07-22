@@ -110,13 +110,7 @@ export default function MarruecosOrganizadoPage() {
                     <Clock size={12} color={TERRA} />
                     <span style={{ fontSize:11, fontWeight:600, color:INK, fontFamily:'Arial,sans-serif' }}>{route.duration}</span>
                   </div>
-                  {/* price badge */}
-                  {route.price && (
-                  <div style={{ position:'absolute', bottom:16, right:16, background:'rgba(26,22,18,.85)', backdropFilter:'blur(4px)', borderRadius:100, padding:'6px 14px' }}>
-                    <span style={{ fontSize:10, fontWeight:300, color:'rgba(248,241,228,.7)', fontFamily:'Arial,sans-serif' }}>Desde </span>
-                    <span style={{ fontSize:14, fontWeight:700, color:'white', fontFamily:"'Georgia',serif" }}>{route.price}</span>
-                  </div>
-                  )}
+
                   {/* title over image */}
                   <div style={{ position:'absolute', bottom:16, left:20, right:100 }}>
                     <h3 style={{ fontFamily:"'Georgia',serif", fontSize:'clamp(16px,2vw,20px)', fontWeight:400, fontStyle:'italic', color:'white', margin:0, lineHeight:1.2 }}>

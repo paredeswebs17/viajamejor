@@ -76,7 +76,7 @@ export default function MoroccoRoutePage() {
     <>
       <Helmet>
         <title>{route.title} · Tour privado · Viaja Mejor</title>
-        <meta name="description" content={`${route.description} Desde ${route.price}/persona. Tour privado con guía en español.`} />
+        <meta name="description" content={`${route.description} Tour privado con guía en español.`} />
         <meta property="og:title" content={`${route.title} · Viaja Mejor`} />
         <meta property="og:image" content={route.heroImage || route.image} />
         <link rel="canonical" href={`https://viajamejor.net/marruecos/${route.slug}`} />
@@ -121,7 +121,7 @@ export default function MoroccoRoutePage() {
             <StatBlock icon={Calendar} label="Duración" value={route.duration} />
             <StatBlock icon={MapPin} label="Etapas" value={`${route.days?.length || 0} paradas`} />
             <StatBlock icon={Users} label="Tipo" value="Privado" />
-            <StatBlock icon={Star} label="Desde" value={route.price || 'Consultar'} highlight />
+            <StatBlock icon={Star} label="Guía" value="Español" highlight />
           </div>
         </div>
       </section>
@@ -348,7 +348,7 @@ export default function MoroccoRoutePage() {
                     <div className="flex items-baseline justify-between gap-2 pb-4 border-b border-gray-200">
                       <div>
                         <p className="text-xs uppercase tracking-wider text-amber-700 font-semibold">Sin compromiso</p>
-                        <p className="text-lg font-bold text-gray-900 mt-1">Desde <span className="text-amber-700">{route.price}</span> <span className="text-sm font-normal text-gray-500">/ persona</span></p>
+                        <p className="text-lg font-bold text-gray-900 mt-1">Tour <span className="text-amber-700">privado</span> <span className="text-sm font-normal text-gray-500">/ personalizado</span></p>
                       </div>
                       <span className="text-xs text-gray-500">{route.duration}</span>
                     </div>
@@ -386,10 +386,10 @@ export default function MoroccoRoutePage() {
         <div className="absolute inset-0 bg-gray-900/70" />
         <div className="relative max-w-2xl mx-auto px-6 text-center">
           <h2 className="text-3xl sm:text-4xl font-bold mb-4 tracking-tight">
-            Desde <span className="text-amber-300">{route.price}</span> por persona
+            Tu viaje a <span className="text-amber-300">medida</span>
           </h2>
           <p className="text-gray-300 mb-8 text-sm leading-relaxed">
-            Precio orientativo en habitación doble. Lo ajustamos a vuestras fechas, viajeros y categoría de alojamiento.
+            Lo ajustamos a vuestras fechas, viajeros y categoría de alojamiento. Pídenos presupuesto sin compromiso.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <button

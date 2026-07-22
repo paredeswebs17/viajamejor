@@ -14,7 +14,6 @@ export type Route = {
   title: string;
   subtitle: string;
   duration: string;
-  price?: string;
   image: string;
   heroImage?: string;
   places: string[];
@@ -35,7 +34,7 @@ export const routes: Route[] = [
     title: 'De Marrakech al Desierto',
     subtitle: 'Atlas, kasbahs y dunas de Merzouga',
     duration: '7 días',
-    price: '890€',
+
     image: 'https://images.pexels.com/photos/5541277/pexels-photo-5541277.jpeg?auto=compress&cs=tinysrgb&w=1600',
     heroImage: 'https://images.pexels.com/photos/30320422/pexels-photo-30320422.jpeg?auto=compress&cs=tinysrgb&w=1920',
     places: ['Marrakech', 'Aït Ben Haddou', 'Dades', 'Merzouga', 'Ouarzazate'],
@@ -60,7 +59,7 @@ export const routes: Route[] = [
     title: 'Marrakech al Desierto · 5 días',
     subtitle: 'Tour privado de confort: Atlas, Dades y Merzouga',
     duration: '5 días',
-    price: '690€',
+
     image: 'https://images.pexels.com/photos/2901215/pexels-photo-2901215.jpeg?auto=compress&cs=tinysrgb&w=1600',
     heroImage: 'https://images.pexels.com/photos/2901215/pexels-photo-2901215.jpeg?auto=compress&cs=tinysrgb&w=1920',
     places: ['Marrakech', 'Aït Ben Haddou', 'Dades', 'Todra', 'Merzouga'],
@@ -83,7 +82,7 @@ export const routes: Route[] = [
     title: 'Marrakech al Desierto · 3 días',
     subtitle: 'Viaje boutique de confort: Atlas, Dades y Merzouga',
     duration: '3 días',
-    price: '420€',
+
     image: 'https://images.pexels.com/photos/36209446/pexels-photo-36209446.jpeg?auto=compress&cs=tinysrgb&w=1600',
     heroImage: 'https://images.pexels.com/photos/36209446/pexels-photo-36209446.jpeg?auto=compress&cs=tinysrgb&w=1920',
     places: ['Marrakech', 'Aït Ben Haddou', 'Dades', 'Todra', 'Merzouga'],
@@ -104,7 +103,7 @@ export const routes: Route[] = [
     title: 'De Fez a Marrakech · 5 días',
     subtitle: 'Tour privado por el Medio Atlas, el desierto y el sur',
     duration: '5 días',
-    price: '780€',
+
     image: 'https://images.pexels.com/photos/30320422/pexels-photo-30320422.jpeg?auto=compress&cs=tinysrgb&w=1600',
     heroImage: 'https://images.pexels.com/photos/30320422/pexels-photo-30320422.jpeg?auto=compress&cs=tinysrgb&w=1920',
     places: ['Fez', 'Ifrane', 'Merzouga', 'Todra', 'Ouarzazate', 'Aït Ben Haddou', 'Marrakech'],
@@ -127,7 +126,7 @@ export const routes: Route[] = [
     title: 'De Marrakech a Fez · 8 días',
     subtitle: 'Las dos ciudades imperiales unidas por el Atlas y el Sahara',
     duration: '8 días',
-    price: '1.290€',
+
     image: 'https://images.pexels.com/photos/13591966/pexels-photo-13591966.jpeg?auto=compress&cs=tinysrgb&w=1600',
     heroImage: 'https://images.pexels.com/photos/13591966/pexels-photo-13591966.jpeg?auto=compress&cs=tinysrgb&w=1920',
     places: ['Marrakech', 'Aït Ben Haddou', 'Dades', 'Merzouga', 'Khamlia', 'Azrou', 'Fez'],
@@ -153,7 +152,7 @@ export const routes: Route[] = [
     title: 'De Tánger a Marrakech · 7 días',
     subtitle: 'Ciudad azul, Fez, Atlas y desierto en una semana',
     duration: '7 días',
-    price: '1.150€',
+
     image: 'https://images.pexels.com/photos/34337962/pexels-photo-34337962.jpeg?auto=compress&cs=tinysrgb&w=1600',
     heroImage: 'https://images.pexels.com/photos/34337962/pexels-photo-34337962.jpeg?auto=compress&cs=tinysrgb&w=1920',
     places: ['Tánger', 'Chefchaouen', 'Fez', 'Merzouga', 'Dades', 'Aït Ben Haddou', 'Marrakech'],
@@ -178,7 +177,7 @@ export const routes: Route[] = [
     title: 'De Tánger a Marrakech · 8 días',
     subtitle: 'Chaouen, Fez, el desierto y la ciudad roja',
     duration: '8 días',
-    price: '1.350€',
+
     image: 'https://images.pexels.com/photos/34337962/pexels-photo-34337962.jpeg?auto=compress&cs=tinysrgb&w=1600',
     heroImage: 'https://images.pexels.com/photos/34337962/pexels-photo-34337962.jpeg?auto=compress&cs=tinysrgb&w=1920',
     places: ['Tánger', 'Chefchaouen', 'Volubilis', 'Meknés', 'Fez', 'Merzouga', 'Dades', 'Aït Ben Haddou', 'Marrakech'],
@@ -204,7 +203,7 @@ export const routes: Route[] = [
     title: 'Gran Tour de Tánger a Marrakech · 12 días',
     subtitle: 'El viaje más completo: norte, imperial, desierto y Atlas',
     duration: '12 días',
-    price: '1.690€',
+
     image: 'https://images.pexels.com/photos/34337962/pexels-photo-34337962.jpeg?auto=compress&cs=tinysrgb&w=1600',
     heroImage: 'https://images.pexels.com/photos/34337962/pexels-photo-34337962.jpeg?auto=compress&cs=tinysrgb&w=1920',
     places: ['Tánger', 'Chefchaouen', 'Volubilis', 'Meknés', 'Fez', 'Ifrane', 'Merzouga', 'Todra', 'Dades', 'Ouarzazate', 'Aït Ben Haddou', 'Marrakech'],
@@ -234,7 +233,7 @@ export const routes: Route[] = [
     title: 'De Tánger a Marrakech · 10 días',
     subtitle: 'Norte azul, ciudades imperiales y Sahara sin prisas',
     duration: '10 días',
-    price: '1.490€',
+
     image: 'https://images.pexels.com/photos/34337962/pexels-photo-34337962.jpeg?auto=compress&cs=tinysrgb&w=1600',
     heroImage: 'https://images.pexels.com/photos/34337962/pexels-photo-34337962.jpeg?auto=compress&cs=tinysrgb&w=1920',
     places: ['Tánger', 'Chefchaouen', 'Volubilis', 'Fez', 'Merzouga', 'Todra', 'Dades', 'Aït Ben Haddou', 'Marrakech'],
@@ -262,7 +261,7 @@ export const routes: Route[] = [
     title: 'De Tánger a Marrakech · 9 días',
     subtitle: 'Chaouen, Fez, desierto y la ciudad roja en nueve días',
     duration: '9 días',
-    price: '1.290€',
+
     image: 'https://images.pexels.com/photos/34337962/pexels-photo-34337962.jpeg?auto=compress&cs=tinysrgb&w=1600',
     heroImage: 'https://images.pexels.com/photos/34337962/pexels-photo-34337962.jpeg?auto=compress&cs=tinysrgb&w=1920',
     places: ['Tánger', 'Chefchaouen', 'Fez', 'Ifrane', 'Merzouga', 'Todra', 'Dades', 'Aït Ben Haddou', 'Marrakech'],
@@ -289,7 +288,7 @@ export const routes: Route[] = [
     title: 'De Fez a Marrakech · 8 días',
     subtitle: 'Ciudades imperiales, Atlas Medio, Sahara y kasbahs del sur',
     duration: '8 días',
-    price: '1.190€',
+
     image: 'https://images.pexels.com/photos/30320422/pexels-photo-30320422.jpeg?auto=compress&cs=tinysrgb&w=1600',
     heroImage: 'https://images.pexels.com/photos/30320422/pexels-photo-30320422.jpeg?auto=compress&cs=tinysrgb&w=1920',
     places: ['Fez', 'Ifrane', 'Azrou', 'Merzouga', 'Todra', 'Dades', 'Ouarzazate', 'Aït Ben Haddou', 'Marrakech'],
@@ -315,7 +314,7 @@ export const routes: Route[] = [
     title: 'De Fez a Marrakech · 7 días',
     subtitle: 'Medio Atlas, desierto de Merzouga y kasbahs en una semana',
     duration: '7 días',
-    price: '1.090€',
+
     image: 'https://images.pexels.com/photos/30320422/pexels-photo-30320422.jpeg?auto=compress&cs=tinysrgb&w=1600',
     heroImage: 'https://images.pexels.com/photos/30320422/pexels-photo-30320422.jpeg?auto=compress&cs=tinysrgb&w=1920',
     places: ['Fez', 'Ifrane', 'Merzouga', 'Todra', 'Dades', 'Ouarzazate', 'Aït Ben Haddou', 'Marrakech'],
@@ -340,7 +339,7 @@ export const routes: Route[] = [
     title: 'De Fez a Marrakech · 4 días',
     subtitle: 'La diagonal exprés: Atlas, desierto y kasbahs',
     duration: '4 días',
-    price: '650€',
+
     image: 'https://images.pexels.com/photos/2901215/pexels-photo-2901215.jpeg?auto=compress&cs=tinysrgb&w=1600',
     heroImage: 'https://images.pexels.com/photos/2901215/pexels-photo-2901215.jpeg?auto=compress&cs=tinysrgb&w=1920',
     places: ['Fez', 'Merzouga', 'Todra', 'Ouarzazate', 'Aït Ben Haddou', 'Marrakech'],
@@ -362,7 +361,7 @@ export const routes: Route[] = [
     title: 'De Fez a Marrakech · 3 días',
     subtitle: 'La conexión rápida por el desierto',
     duration: '3 días',
-    price: '520€',
+
     image: 'https://images.pexels.com/photos/36209446/pexels-photo-36209446.jpeg?auto=compress&cs=tinysrgb&w=1600',
     heroImage: 'https://images.pexels.com/photos/36209446/pexels-photo-36209446.jpeg?auto=compress&cs=tinysrgb&w=1920',
     places: ['Fez', 'Merzouga', 'Ouarzazate', 'Aït Ben Haddou', 'Marrakech'],
@@ -383,7 +382,7 @@ export const routes: Route[] = [
     title: 'Desde Fez al Desierto · 5 días',
     subtitle: 'Ida y vuelta a Fez pasando por Merzouga y el Atlas Medio',
     duration: '5 días',
-    price: '720€',
+
     image: 'https://images.pexels.com/photos/30320422/pexels-photo-30320422.jpeg?auto=compress&cs=tinysrgb&w=1600',
     heroImage: 'https://images.pexels.com/photos/30320422/pexels-photo-30320422.jpeg?auto=compress&cs=tinysrgb&w=1920',
     places: ['Fez', 'Ifrane', 'Azrou', 'Midelt', 'Merzouga', 'Todra', 'Dades'],
@@ -431,7 +430,7 @@ export const routes: Route[] = [
     title: 'Circuito desde Casablanca · 9 días',
     subtitle: 'Ciudades imperiales, Atlas y Sahara en circuito cerrado',
     duration: '9 días',
-    price: '1.490€',
+
     image: 'https://images.pexels.com/photos/5541277/pexels-photo-5541277.jpeg?auto=compress&cs=tinysrgb&w=1600',
     heroImage: 'https://images.pexels.com/photos/5541277/pexels-photo-5541277.jpeg?auto=compress&cs=tinysrgb&w=1920',
     places: ['Casablanca', 'Rabat', 'Meknés', 'Fez', 'Merzouga', 'Todra', 'Dades', 'Ouarzazate', 'Marrakech', 'Casablanca'],
@@ -458,7 +457,7 @@ export const routes: Route[] = [
     title: 'Gran Tour de Marruecos · 15 días',
     subtitle: 'El viaje definitivo: de norte a sur y de costa a desierto',
     duration: '15 días',
-    price: '1.850€',
+
     image: 'https://images.pexels.com/photos/5541277/pexels-photo-5541277.jpeg?auto=compress&cs=tinysrgb&w=1600',
     heroImage: 'https://images.pexels.com/photos/5541277/pexels-photo-5541277.jpeg?auto=compress&cs=tinysrgb&w=1920',
     places: ['Casablanca', 'Rabat', 'Chefchaouen', 'Fez', 'Merzouga', 'Todra', 'Dades', 'Ouarzazate', 'Aït Ben Haddou', 'Marrakech', 'Essaouira', 'Casablanca'],
@@ -491,7 +490,7 @@ export const routes: Route[] = [
     title: 'Marrakech y el Gran Sur · 10 días',
     subtitle: 'Atlas, kasbahs, desierto y costa atlántica sin prisas',
     duration: '10 días',
-    price: '1.390€',
+
     image: 'https://images.pexels.com/photos/2901215/pexels-photo-2901215.jpeg?auto=compress&cs=tinysrgb&w=1600',
     heroImage: 'https://images.pexels.com/photos/2901215/pexels-photo-2901215.jpeg?auto=compress&cs=tinysrgb&w=1920',
     places: ['Marrakech', 'Aït Ben Haddou', 'Dades', 'Todra', 'Merzouga', 'Ouarzazate', 'Taroudant', 'Essaouira'],

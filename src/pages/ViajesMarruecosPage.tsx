@@ -139,11 +139,10 @@ export default function ViajesMarruecosPage() {
             </p>
           </div>
 
-          <div className="mt-16 grid grid-cols-2 sm:grid-cols-4 gap-8 md:gap-12 pt-8 border-t border-white/15">
+          <div className="mt-16 grid grid-cols-3 gap-8 md:gap-12 pt-8 border-t border-white/15">
             <StatItem label="Rutas" value={`${routes.length}`} />
             <StatItem label="Tipo" value="Privado" />
             <StatItem label="Idioma" value="Español" />
-            <StatItem label="Desde" value="420€" />
           </div>
         </div>
       </section>
@@ -261,12 +260,7 @@ function RouteCard({ route }: { route: Route }) {
           <Clock size={11} />
           {route.duration}
         </div>
-        {route.price && (
-          <div className="absolute bottom-3.5 right-3.5 z-10 bg-white/95 backdrop-blur-sm px-3.5 py-2 rounded-full shadow-sm">
-            <span className="text-[10px] text-ink-500 font-medium">Desde </span>
-            <span className="text-sm font-serif font-semibold text-ink-900">{route.price}</span>
-          </div>
-        )}
+
       </div>
 
       {/* Card body */}

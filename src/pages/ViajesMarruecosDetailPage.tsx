@@ -66,7 +66,7 @@ export default function ViajesMarruecosDetailPage() {
     <>
       <Helmet>
         <title>{route.title} - Tour Privado por Marruecos</title>
-        <meta name="description" content={`${route.description} ${route.price ? `Desde ${route.price}/persona.` : ''} Tour privado con guia en espanol.`} />
+        <meta name="description" content={`${route.description} Tour privado con guia en espanol.`} />
         <meta property="og:title" content={`${route.title} - Viaja Mejor`} />
         <meta property="og:image" content={route.heroImage || route.image} />
         <link rel="canonical" href={`https://viajamejor.net/viajes-organizados/marruecos/${route.slug}`} />
