@@ -8,7 +8,7 @@ const FORMSPREE_ID = 'mgoglwbg';
 const ROUTE_OPTIONS: { value: string; label: string }[] = [
   { value: '', label: 'Aún no lo tengo claro' },
   { value: 'a-medida', label: 'A medida, diseñamos tu ruta' },
-  ...routes.map((r) => ({ value: r.slug, label: `${r.title} (${r.duration})` })),
+  ...routes.map((r) => ({ value: r.slug, label: r.title })),
 ];
 
 export default function MoroccoContactForm() {
@@ -67,12 +67,8 @@ export default function MoroccoContactForm() {
               Diseña tu viaje
             </span>
           </div>
-          <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl text-ink-900 leading-[1.05] text-balance">
-            Cuéntanos
-            <br />
-            <span className="italic text-terra-600">tu Marruecos</span>
-            <br />
-            ideal.
+          <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl text-ink-900 leading-[1.05] text-center">
+            Cuéntanos tu Marruecos ideal.
           </h2>
 
           <div className="hidden md:block">
