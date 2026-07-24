@@ -25,6 +25,7 @@ export default function MoroccoContactForm() {
 
   async function submit(e: FormEvent) {
     e.preventDefault();
+    if (!form.name.trim() || !form.email.trim()) return;
     setStatus('sending');
 
     const routeLabel = ROUTE_OPTIONS.find((o) => o.value === form.route)?.label ?? form.route;

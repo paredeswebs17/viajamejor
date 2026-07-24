@@ -49,6 +49,7 @@ export default function RouteInquiryWidget({ route }: { route: Route }) {
 
   async function submit(e: FormEvent) {
     e.preventDefault();
+    if (!form.name.trim() || !form.email.trim()) return;
     setStatus('sending');
 
     try {
