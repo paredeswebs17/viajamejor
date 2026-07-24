@@ -97,12 +97,6 @@ export default function MoroccoContactForm() {
           className="md:col-span-7 bg-white p-8 md:p-12 space-y-6 shadow-lg border border-ink-100"
           noValidate
         >
-          {status === 'ok' && (
-            <div className="flex items-start gap-3 bg-green-50 border border-green-200 px-4 py-3 text-sm text-green-800 rounded-sm">
-              <Check size={16} className="flex-shrink-0 mt-0.5" />
-              <p>Mensaje enviado correctamente. Te escribimos en menos de 24h.</p>
-            </div>
-          )}
           {status === 'error' && (
             <div className="flex items-start gap-3 bg-red-50 border border-red-200 px-4 py-3 text-sm text-red-800 rounded-sm">
               <AlertCircle size={16} className="flex-shrink-0 mt-0.5" />
@@ -225,6 +219,13 @@ export default function MoroccoContactForm() {
               <><Send size={14} /> Enviar solicitud</>
             )}
           </button>
+
+          {status === 'ok' && (
+            <div className="flex items-start gap-3 bg-green-50 border border-green-200 px-4 py-3 text-sm text-green-800 rounded-sm mt-4">
+              <Check size={16} className="flex-shrink-0 mt-0.5" />
+              <p>Mensaje enviado correctamente. Te escribimos en menos de 24h.</p>
+            </div>
+          )}
         </form>
 
 

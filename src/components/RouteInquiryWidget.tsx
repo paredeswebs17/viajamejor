@@ -94,46 +94,6 @@ export default function RouteInquiryWidget({ route }: { route: Route }) {
   const inputError = (field: string, value: string) =>
     touched[field] && !value.trim() ? 'border-red-400 bg-red-50/30' : '';
 
-  if (status === 'ok') {
-    return (
-      <div className="bg-white border border-ink-100 p-7 text-center">
-        <div className="mx-auto w-14 h-14 rounded-full bg-terra-500 text-white flex items-center justify-center">
-          <Check size={24} strokeWidth={2.5} />
-        </div>
-        <h3 className="font-serif text-2xl text-ink-900 mt-5">Solicitud recibida</h3>
-        <p className="text-sm text-ink-500 mt-2 leading-relaxed">
-          Ya estamos trabajando en tu propuesta personalizada.
-        </p>
-
-        <div className="mt-6 text-left space-y-3">
-          <div className="flex items-start gap-3">
-            <span className="flex-shrink-0 w-6 h-6 rounded-full bg-terra-500 text-white text-[10px] font-semibold flex items-center justify-center">1</span>
-            <div>
-              <p className="text-sm text-ink-900 font-medium">Revisamos tu solicitud</p>
-              <p className="text-xs text-ink-400">Hoy mismo</p>
-            </div>
-          </div>
-          <div className="flex items-start gap-3">
-            <span className="flex-shrink-0 w-6 h-6 rounded-full bg-terra-500/20 text-terra-700 text-[10px] font-semibold flex items-center justify-center">2</span>
-            <div>
-              <p className="text-sm text-ink-900 font-medium">Te enviamos propuesta a medida</p>
-              <p className="text-xs text-ink-400">Lo antes posible</p>
-            </div>
-          </div>
-          <div className="flex items-start gap-3">
-            <span className="flex-shrink-0 w-6 h-6 rounded-full bg-terra-500/20 text-terra-700 text-[10px] font-semibold flex items-center justify-center">3</span>
-            <div>
-              <p className="text-sm text-ink-900 font-medium">Conversación personal contigo</p>
-              <p className="text-xs text-ink-400">Para ajustar cada detalle</p>
-            </div>
-          </div>
-        </div>
-
-        <p className="text-[11px] text-ink-400 mt-6">Te responderemos por email en menos de 24h.</p>
-      </div>
-    );
-  }
-
   return (
     <form onSubmit={submit} className="bg-white border border-ink-100 p-6 md:p-7 space-y-4 shadow-sm">
       <div className="pb-4 border-b border-ink-100">
@@ -228,6 +188,13 @@ export default function RouteInquiryWidget({ route }: { route: Route }) {
           <><Send size={13} /> Solicitar propuesta</>
         )}
       </button>
+
+      {status === 'ok' && (
+        <div className="flex items-start gap-3 bg-green-50 border border-green-200 px-4 py-3 text-sm text-green-800 rounded-sm">
+          <Check size={16} className="flex-shrink-0 mt-0.5" />
+          <p>Mensaje enviado correctamente. Te escribimos en menos de 24h.</p>
+        </div>
+      )}
 
       {status === 'error' && (
         <div className="flex items-start gap-2 bg-red-50 border border-red-200 px-4 py-3 text-sm text-red-800 rounded-sm">
