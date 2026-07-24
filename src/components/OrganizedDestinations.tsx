@@ -45,6 +45,12 @@ const OrganizedDestinations = () => {
       image: 'https://images.pexels.com/photos/1682748/pexels-photo-1682748.jpeg',
       flag: '🇹🇭',
     },
+    {
+      id: 'sri-lanka',
+      title: 'Sri Lanka',
+      image: 'https://images.pexels.com/photos/4166853/pexels-photo-4166853.jpeg',
+      flag: '🇱🇰',
+    },
   ];
 
   return (
@@ -62,14 +68,15 @@ const OrganizedDestinations = () => {
           </p>
         </div>
 
-        <div className="reveal grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        {/* Main destination */}
+        <div className="reveal">
           {destinations.map((dest) => (
             <Link
               key={dest.id}
               to={dest.href}
               className="group relative block"
             >
-              <div className="relative aspect-[4/5] overflow-hidden rounded-sm">
+              <div className="relative aspect-[16/9] md:aspect-[21/9] overflow-hidden rounded-sm">
                 <img
                   src={dest.image}
                   alt={dest.title}
@@ -78,11 +85,11 @@ const OrganizedDestinations = () => {
                 />
                 <div className="absolute inset-0 bg-gray-900/40 transition-colors duration-300 group-hover:bg-gray-900/30" />
 
-                <div className="absolute bottom-0 left-0 right-0 p-6 pt-20 bg-gradient-to-t from-black/80 via-black/40 to-transparent">
-                  <h3 className="font-serif text-3xl md:text-4xl text-white leading-tight mb-2 drop-shadow-md">
+                <div className="absolute bottom-0 left-0 right-0 p-6 md:p-10 pt-20 bg-gradient-to-t from-black/80 via-black/40 to-transparent">
+                  <h3 className="font-serif text-3xl md:text-5xl text-white leading-tight mb-2 drop-shadow-md">
                     {dest.title}
                   </h3>
-                  <p className="text-white/90 text-base drop-shadow-sm">
+                  <p className="text-white/90 text-base md:text-lg drop-shadow-sm">
                     {dest.subtitle}
                   </p>
                   <span className="inline-block mt-4 text-sm uppercase tracking-[.15em] text-white font-medium border-b border-white/50 pb-0.5 group-hover:border-white transition-colors drop-shadow-sm">
@@ -92,33 +99,39 @@ const OrganizedDestinations = () => {
               </div>
             </Link>
           ))}
+        </div>
 
-          {comingSoon.map((dest) => (
-            <div
-              key={dest.id}
-              className="relative block"
-            >
-              <div className="relative aspect-[4/5] overflow-hidden rounded-sm">
-                <img
-                  src={dest.image}
-                  alt={dest.title}
-                  className="w-full h-full object-cover grayscale opacity-60"
-                  loading="lazy"
-                />
-                <div className="absolute inset-0 bg-gray-900/50" />
+        {/* Coming soon - horizontal scroll on mobile, grid on desktop */}
+        <div className="reveal mt-6">
+          <p className="text-xs uppercase tracking-[.2em] text-gray-400 mb-4 font-medium">Próximamente</p>
+          <div className="flex gap-4 overflow-x-auto pb-4 snap-x snap-mandatory scrollbar-hide md:grid md:grid-cols-3 md:overflow-visible md:pb-0">
+            {comingSoon.map((dest) => (
+              <div
+                key={dest.id}
+                className="relative flex-shrink-0 w-[70vw] sm:w-[45vw] md:w-auto snap-start"
+              >
+                <div className="relative aspect-[4/3] overflow-hidden rounded-sm">
+                  <img
+                    src={dest.image}
+                    alt={dest.title}
+                    className="w-full h-full object-cover grayscale opacity-60"
+                    loading="lazy"
+                  />
+                  <div className="absolute inset-0 bg-gray-900/50" />
 
-                <div className="absolute inset-0 flex flex-col items-center justify-center text-center p-6">
-                  <span className="text-4xl mb-3">{dest.flag}</span>
-                  <h3 className="font-serif text-2xl md:text-3xl text-white leading-tight mb-3 drop-shadow-md">
-                    {dest.title}
-                  </h3>
-                  <span className="inline-block px-4 py-2 text-[10px] uppercase tracking-[.2em] text-teal-200 font-medium border border-teal-300/40 rounded-full">
-                    Próximamente
-                  </span>
+                  <div className="absolute inset-0 flex flex-col items-center justify-center text-center p-4">
+                    <span className="text-3xl mb-2">{dest.flag}</span>
+                    <h3 className="font-serif text-xl md:text-2xl text-white leading-tight mb-2 drop-shadow-md">
+                      {dest.title}
+                    </h3>
+                    <span className="inline-block px-3 py-1.5 text-[9px] uppercase tracking-[.2em] text-teal-200 font-medium border border-teal-300/40 rounded-full">
+                      Próximamente
+                    </span>
+                  </div>
                 </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
     </section>
