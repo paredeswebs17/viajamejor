@@ -69,13 +69,13 @@ const OrganizedDestinations = () => {
                 </div>
 
                 <div className="absolute bottom-0 left-0 right-0 p-6">
-                  <h3 className="font-serif text-xl md:text-2xl text-white leading-tight mb-1">
+                  <h3 className="font-serif text-2xl md:text-3xl text-white leading-tight mb-2">
                     {dest.title}
                   </h3>
-                  <p className="text-white/70 text-xs">
+                  <p className="text-white/70 text-sm">
                     {dest.subtitle}
                   </p>
-                  <span className="inline-block mt-3 text-[11px] uppercase tracking-[.15em] text-white/90 font-medium border-b border-white/40 pb-0.5 group-hover:border-white transition-colors">
+                  <span className="inline-block mt-4 text-xs uppercase tracking-[.15em] text-white/90 font-medium border-b border-white/40 pb-0.5 group-hover:border-white transition-colors">
                     Ver rutas
                   </span>
                 </div>
