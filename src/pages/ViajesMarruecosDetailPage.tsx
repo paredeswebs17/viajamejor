@@ -2,17 +2,12 @@ import { useState, useEffect, useRef } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import {
-  ArrowLeft, Check, X, MapPin, Calendar, Users, MessageCircle,
+  ArrowLeft, Check, X, MapPin, Calendar, Users, MessageCircle, Send,
   Moon, Compass,
 } from 'lucide-react';
 import { routes, Route } from '../data/moroccoRoutes';
 import RouteInquiryWidget from '../components/RouteInquiryWidget';
 
-const WA_NUMBER = '34660611668';
-function waLink(route: Route) {
-  const msg = `Hola! Me interesa esta ruta: "${route.title}" (${route.duration}). Me gustaria recibir mas informacion.`;
-  return `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(msg)}`;
-}
 
 const RESERVATION_FAQ = [
   { q: '¿Hay que pagar señal para reservar?', a: 'Sí. Bloqueamos plaza con tu solicitud y solo pedimos un 25% una vez confirmamos la propuesta y las fechas.' },
@@ -49,7 +44,7 @@ export default function ViajesMarruecosDetailPage() {
         <div>
           <h1 className="font-serif text-4xl text-ink-900 mb-4">{route.title}</h1>
           <p className="text-ink-600 mb-8 max-w-md">
-            Estamos preparando el detalle de esta ruta. Mientras tanto, escribenos y
+            Estamos preparando el detalle de esta ruta. Mientras tanto, solicita tu propuesta personalizada y
             te enviamos el itinerario completo.
           </p>
           <Link
@@ -237,7 +232,7 @@ export default function ViajesMarruecosDetailPage() {
         </section>
 
         {/* INQUIRY FORM */}
-        <section className="relative py-24 md:py-32 bg-cream-50">
+        <section id="formulario" className="relative py-24 md:py-32 bg-cream-50">
           <div className="max-w-4xl mx-auto px-6 lg:px-10">
             <div className="flex items-center justify-center gap-3 mb-6">
               <span className="h-px w-8 bg-terra-500" />
@@ -259,12 +254,12 @@ export default function ViajesMarruecosDetailPage() {
       </article>
 
       {/* FLOATING CTA */}
-      <FloatingWhatsApp route={route} />
+      <FloatingCTA />
     </>
   );
 }
 
-function FloatingWhatsApp({ route }: { route: Route }) {
+function FloatingCTA() {
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
@@ -282,13 +277,11 @@ function FloatingWhatsApp({ route }: { route: Route }) {
     >
       <div className="mx-4 mb-4 flex gap-3 justify-center">
         <a
-          href={waLink(route)}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="flex-1 max-w-md flex items-center justify-center gap-2.5 py-3.5 rounded-full bg-[#25D366] text-white shadow-lg ring-1 ring-white/20 active:scale-[0.97] transition-transform duration-200"
+          href="#formulario"
+          className="flex-1 max-w-md flex items-center justify-center gap-2.5 py-3.5 rounded-full bg-terra-500 text-white shadow-lg ring-1 ring-white/20 hover:bg-terra-600 active:scale-[0.97] transition-all duration-200"
         >
-          <MessageCircle size={16} />
-          <span className="text-sm font-medium tracking-wide">Me interesa esta ruta</span>
+          <Send size={16} />
+          <span className="text-sm font-medium tracking-wide">Solicitar propuesta</span>
         </a>
       </div>
     </div>

@@ -1,10 +1,9 @@
 import { useState, FormEvent } from 'react';
-import { Check, Loader2, MessageCircle, AlertCircle, Send } from 'lucide-react';
+import { Check, Loader2, AlertCircle, Send } from 'lucide-react';
 import { routes } from '../data/moroccoRoutes';
 
 const FORMSPREE_ID = 'mgoglwbg';
-const WA_NUMBER = '34660611668';
-const waGeneric = `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent('Hola! He visto vuestras rutas por Marruecos y me gustaría más información.')}`;
+
 
 const ROUTE_OPTIONS: { value: string; label: string }[] = [
   { value: '', label: 'Aún no lo tengo claro' },
@@ -79,17 +78,7 @@ export default function MoroccoContactForm() {
           <div className="hidden md:block">
             <p className="mt-8 text-ink-500 font-light leading-relaxed max-w-md">
               Respondemos siempre en menos de 24h con una primera propuesta sin compromiso.
-              Si lo prefieres, háblanos directamente por WhatsApp.
             </p>
-            <a
-              href={waGeneric}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-6 inline-flex items-center gap-3 px-6 py-4 bg-ink-900 text-cream-50 text-xs uppercase tracking-[.12em] font-medium hover:bg-terra-600 transition-colors"
-            >
-              <MessageCircle size={16} />
-              Escríbenos por WhatsApp
-            </a>
           </div>
         </div>
 
@@ -108,7 +97,7 @@ export default function MoroccoContactForm() {
           {status === 'error' && (
             <div className="flex items-start gap-3 bg-red-50 border border-red-200 px-4 py-3 text-sm text-red-800 rounded-sm">
               <AlertCircle size={16} className="flex-shrink-0 mt-0.5" />
-              <p>No hemos podido enviarlo. Prueba de nuevo o escríbenos por WhatsApp.</p>
+              <p>No hemos podido enviarlo. Prueba de nuevo en unos minutos.</p>
             </div>
           )}
 
@@ -227,18 +216,7 @@ export default function MoroccoContactForm() {
           </button>
         </form>
 
-        {/* Mobile WhatsApp */}
-        <div className="md:hidden text-center">
-          <a
-            href={waGeneric}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-3 px-6 py-4 bg-ink-900 text-cream-50 text-xs uppercase tracking-[.12em] font-medium hover:bg-terra-600 transition-colors"
-          >
-            <MessageCircle size={16} />
-            Escríbenos por WhatsApp
-          </a>
-        </div>
+
       </div>
     </section>
   );

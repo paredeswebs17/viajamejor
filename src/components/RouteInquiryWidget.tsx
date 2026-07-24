@@ -1,9 +1,9 @@
 import { FormEvent, useEffect, useState } from 'react';
-import { Check, Loader2, MessageCircle, Clock3, Send, AlertCircle, Users } from 'lucide-react';
+import { Check, Loader2, Clock3, Send, AlertCircle, Users } from 'lucide-react';
 import { Route } from '../data/moroccoRoutes';
 
 const FORMSPREE_ID = 'mgoglwbg';
-const WA_NUMBER = '34660611668';
+
 
 const MONTHS = [
   'Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio',
@@ -29,14 +29,6 @@ const EMPTY: Draft = {
   month: '',
   message: '',
 };
-
-function waLink(route: Route, travelers?: string, month?: string) {
-  const parts = [`Hola! Me interesa la ruta "${route.title}" (${route.duration}).`];
-  if (travelers && travelers !== '2') parts.push(`Somos ${travelers} viajeros.`);
-  if (month) parts.push(`Nos gustaría ir en ${month}.`);
-  parts.push('Me gustaría recibir más información.');
-  return `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(parts.join(' '))}`;
-}
 
 export default function RouteInquiryWidget({ route }: { route: Route }) {
   const [form, setForm] = useState<Draft>(EMPTY);
@@ -128,15 +120,7 @@ export default function RouteInquiryWidget({ route }: { route: Route }) {
           </div>
         </div>
 
-        <a
-          href={waLink(route, form.travelers, form.month)}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="mt-6 inline-flex items-center justify-center gap-2 w-full px-5 py-3 bg-ink-900 text-white text-xs uppercase tracking-[.12em] font-medium hover:bg-terra-600 transition-colors"
-        >
-          <MessageCircle size={14} /> Escríbenos por WhatsApp
-        </a>
-        <p className="text-[11px] text-ink-400 mt-3">O espera nuestro email, te respondemos pronto.</p>
+        <p className="text-[11px] text-ink-400 mt-6">Te responderemos por email en menos de 24h.</p>
       </div>
     );
   }
@@ -233,18 +217,11 @@ export default function RouteInquiryWidget({ route }: { route: Route }) {
       {status === 'error' && (
         <div className="flex items-start gap-2 bg-red-50 border border-red-200 px-4 py-3 text-sm text-red-800 rounded-sm">
           <AlertCircle size={16} className="flex-shrink-0 mt-0.5" />
-          <p>No hemos podido enviarlo. Prueba de nuevo o escríbenos por WhatsApp.</p>
+          <p>No hemos podido enviarlo. Prueba de nuevo en unos minutos.</p>
         </div>
       )}
 
-      <a
-        href={waLink(route, form.travelers, form.month)}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="w-full py-3 border border-ink-200 text-ink-900 text-xs uppercase tracking-[.12em] font-medium hover:bg-ink-900 hover:text-white hover:border-ink-900 transition-colors flex items-center justify-center gap-2"
-      >
-        <MessageCircle size={13} /> Hablar por WhatsApp
-      </a>
+
 
       <div className="pt-3 mt-2 border-t border-ink-100 space-y-2.5">
         <div className="flex items-center gap-2 text-[11px] text-ink-500">

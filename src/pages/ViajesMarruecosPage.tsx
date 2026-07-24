@@ -2,7 +2,7 @@ import { useState, useRef, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import {
-  ArrowRight, ArrowLeft, Clock, ChevronLeft, ChevronRight, MessageCircle, MapPin,
+  ArrowRight, ArrowLeft, Clock, ChevronLeft, ChevronRight, Send, MapPin,
 } from 'lucide-react';
 import { routes, Route } from '../data/moroccoRoutes';
 import MoroccoContactForm from '../components/MoroccoContactForm';
@@ -227,7 +227,7 @@ export default function ViajesMarruecosPage() {
               href="#contacto"
               className="inline-flex items-center gap-2.5 px-8 py-4 bg-ink-900 text-white text-xs font-medium uppercase tracking-wider2 rounded-full hover:bg-terra-600 transition-all duration-300 hover:shadow-lg hover:shadow-terra-600/25"
             >
-              <MessageCircle size={15} /> Pedir presupuesto
+              <Send size={15} /> Pedir presupuesto
             </a>
           </div>
         </div>
