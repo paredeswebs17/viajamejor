@@ -28,9 +28,23 @@ const OrganizedDestinations = () => {
       title: 'Marruecos Organizado',
       subtitle: 'Guía local · Todo en español',
       image: 'https://images.pexels.com/photos/3889843/pexels-photo-3889843.jpeg',
-      badge: '🇲🇦',
       href: '/viajes-organizados/marruecos',
     }
+  ];
+
+  const comingSoon = [
+    {
+      id: 'japan',
+      title: 'Japón',
+      image: 'https://images.pexels.com/photos/1440476/pexels-photo-1440476.jpeg',
+      flag: '🇯🇵',
+    },
+    {
+      id: 'thailand',
+      title: 'Tailandia',
+      image: 'https://images.pexels.com/photos/1682748/pexels-photo-1682748.jpeg',
+      flag: '🇹🇭',
+    },
   ];
 
   return (
@@ -77,6 +91,33 @@ const OrganizedDestinations = () => {
                 </div>
               </div>
             </Link>
+          ))}
+
+          {comingSoon.map((dest) => (
+            <div
+              key={dest.id}
+              className="relative block"
+            >
+              <div className="relative aspect-[4/5] overflow-hidden rounded-sm">
+                <img
+                  src={dest.image}
+                  alt={dest.title}
+                  className="w-full h-full object-cover grayscale opacity-60"
+                  loading="lazy"
+                />
+                <div className="absolute inset-0 bg-gray-900/50" />
+
+                <div className="absolute inset-0 flex flex-col items-center justify-center text-center p-6">
+                  <span className="text-4xl mb-3">{dest.flag}</span>
+                  <h3 className="font-serif text-2xl md:text-3xl text-white leading-tight mb-3 drop-shadow-md">
+                    {dest.title}
+                  </h3>
+                  <span className="inline-block px-4 py-2 text-[10px] uppercase tracking-[.2em] text-teal-200 font-medium border border-teal-300/40 rounded-full">
+                    Próximamente
+                  </span>
+                </div>
+              </div>
+            </div>
           ))}
         </div>
       </div>
