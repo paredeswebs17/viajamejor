@@ -41,10 +41,10 @@ const Hero = () => {
               Explorar guías
             </Link>
             <a
-              href="#consejos"
+              href="#viajes-organizados"
               className="inline-flex items-center gap-2 border border-white/30 text-white/90 px-7 py-4 text-xs font-medium uppercase tracking-[.15em] hover:bg-white/10 hover:border-white/50 transition-all duration-300"
             >
-              Consejos de viaje
+              Viajes organizados
             </a>
           </div>
         </div>

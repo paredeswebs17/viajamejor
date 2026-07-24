@@ -34,7 +34,7 @@ const OrganizedDestinations = () => {
   ];
 
   return (
-    <section ref={sectionRef} className="relative py-20 md:py-28 bg-slate-50">
+    <section id="viajes-organizados" ref={sectionRef} className="relative py-20 md:py-28 bg-slate-50">
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
         <div className="reveal mb-12">
           <span className="text-[10px] uppercase tracking-[.25em] text-teal-600 font-medium">
