@@ -29,7 +29,7 @@ export const routes: Route[] = [
   {
     slug: 'marrakech-sahara',
     number: '01',
-    title: 'De Marrakech al Desierto',
+    title: 'Ruta de 7 días desde Marrakech al Desierto',
     subtitle: 'Atlas, kasbahs y dunas de Merzouga',
     duration: '7 días',
     image: 'https://images.pexels.com/photos/5541277/pexels-photo-5541277.jpeg?auto=compress&cs=tinysrgb&w=1600',
@@ -143,7 +143,7 @@ export const routes: Route[] = [
   {
     slug: 'marrakech-sahara-5d',
     number: '02',
-    title: 'Marrakech al Desierto · 5 días',
+    title: 'Ruta de 5 días desde Marrakech al Desierto',
     subtitle: 'Tour privado de confort: Atlas, Dades y Merzouga',
     duration: '5 días',
     image: 'https://images.pexels.com/photos/2901215/pexels-photo-2901215.jpeg?auto=compress&cs=tinysrgb&w=1600',
@@ -235,7 +235,7 @@ export const routes: Route[] = [
   {
     slug: 'marrakech-sahara-3d',
     number: '03',
-    title: 'Marrakech al Desierto · 3 días',
+    title: 'Ruta de 3 días desde Marrakech al Desierto',
     subtitle: 'Viaje boutique de confort: Atlas, Dades y Merzouga',
     duration: '3 días',
     image: 'https://images.pexels.com/photos/36209446/pexels-photo-36209446.jpeg?auto=compress&cs=tinysrgb&w=1600',
@@ -304,7 +304,7 @@ export const routes: Route[] = [
   {
     slug: 'fez-marrakech-5d',
     number: '04',
-    title: 'De Fez a Marrakech · 5 días',
+    title: 'Ruta de 5 días desde Fez a Marrakech',
     subtitle: 'Tour privado por el Medio Atlas, el desierto y el sur',
     duration: '5 días',
     image: 'https://images.pexels.com/photos/30320422/pexels-photo-30320422.jpeg?auto=compress&cs=tinysrgb&w=1600',
@@ -397,7 +397,7 @@ export const routes: Route[] = [
   {
     slug: 'marrakech-fez-8d',
     number: '05',
-    title: 'De Marrakech a Fez · 8 días',
+    title: 'Ruta de 8 días desde Marrakech a Fez',
     subtitle: 'Las dos ciudades imperiales unidas por el Atlas y el Sahara',
     duration: '8 días',
     image: 'https://images.pexels.com/photos/13591966/pexels-photo-13591966.jpeg?auto=compress&cs=tinysrgb&w=1600',
@@ -521,7 +521,7 @@ export const routes: Route[] = [
   {
     slug: 'tanger-marrakech-7d',
     number: '06',
-    title: 'De Tánger a Marrakech · 7 días',
+    title: 'Ruta de 7 días desde Tánger a Marrakech',
     subtitle: 'Ciudad azul, Fez, Atlas y desierto en una semana',
     duration: '7 días',
     image: 'https://images.pexels.com/photos/34337962/pexels-photo-34337962.jpeg?auto=compress&cs=tinysrgb&w=1600',
@@ -632,7 +632,7 @@ export const routes: Route[] = [
   {
     slug: 'tanger-marrakech-8d',
     number: '07',
-    title: 'De Tánger a Marrakech · 8 días',
+    title: 'Ruta de 8 días desde Tánger a Marrakech',
     subtitle: 'Chaouen, Fez, el desierto y la ciudad roja',
     duration: '8 días',
     image: 'https://images.pexels.com/photos/34337962/pexels-photo-34337962.jpeg?auto=compress&cs=tinysrgb&w=1600',
@@ -756,7 +756,7 @@ export const routes: Route[] = [
   {
     slug: 'tanger-marrakech-12d',
     number: '08',
-    title: 'Gran Tour de Tánger a Marrakech · 12 días',
+    title: 'Ruta de 12 días desde Tánger a Marrakech',
     subtitle: 'El viaje más completo: norte, imperial, desierto y Atlas',
     duration: '12 días',
     image: 'https://images.pexels.com/photos/34337962/pexels-photo-34337962.jpeg?auto=compress&cs=tinysrgb&w=1600',
@@ -922,7 +922,7 @@ export const routes: Route[] = [
   {
     slug: 'tanger-marrakech-10d',
     number: '09',
-    title: 'De Tánger a Marrakech · 10 días',
+    title: 'Ruta de 10 días desde Tánger a Marrakech',
     subtitle: 'Norte azul, ciudades imperiales y Sahara sin prisas',
     duration: '10 días',
     image: 'https://images.pexels.com/photos/34337962/pexels-photo-34337962.jpeg?auto=compress&cs=tinysrgb&w=1600',
@@ -1061,7 +1061,7 @@ export const routes: Route[] = [
   {
     slug: 'tanger-marrakech-9d',
     number: '10',
-    title: 'De Tánger a Marrakech · 9 días',
+    title: 'Ruta de 9 días desde Tánger a Marrakech',
     subtitle: 'Chaouen, Fez, desierto y la ciudad roja en nueve días',
     duration: '9 días',
     image: 'https://images.pexels.com/photos/34337962/pexels-photo-34337962.jpeg?auto=compress&cs=tinysrgb&w=1600',
@@ -1194,7 +1194,7 @@ export const routes: Route[] = [
   {
     slug: 'fez-marrakech-8d',
     number: '11',
-    title: 'De Fez a Marrakech · 8 días',
+    title: 'Ruta de 8 días desde Fez a Marrakech',
     subtitle: 'Ciudades imperiales, Atlas Medio, Sahara y kasbahs del sur',
     duration: '8 días',
     image: 'https://images.pexels.com/photos/30320422/pexels-photo-30320422.jpeg?auto=compress&cs=tinysrgb&w=1600',
@@ -1308,7 +1308,7 @@ export const routes: Route[] = [
   {
     slug: 'fez-marrakech-7d',
     number: '12',
-    title: 'De Fez a Marrakech · 7 días',
+    title: 'Ruta de 7 días desde Fez a Marrakech',
     subtitle: 'Medio Atlas, desierto de Merzouga y kasbahs en una semana',
     duration: '7 días',
     image: 'https://images.pexels.com/photos/30320422/pexels-photo-30320422.jpeg?auto=compress&cs=tinysrgb&w=1600',
@@ -1414,7 +1414,7 @@ export const routes: Route[] = [
   {
     slug: 'fez-marrakech-4d',
     number: '13',
-    title: 'De Fez a Marrakech · 4 días',
+    title: 'Ruta de 4 días desde Fez a Marrakech',
     subtitle: 'La diagonal exprés: Atlas, desierto y kasbahs',
     duration: '4 días',
     image: 'https://images.pexels.com/photos/2901215/pexels-photo-2901215.jpeg?auto=compress&cs=tinysrgb&w=1600',
@@ -1488,7 +1488,7 @@ export const routes: Route[] = [
   {
     slug: 'fez-marrakech-3d',
     number: '14',
-    title: 'De Fez a Marrakech · 3 días',
+    title: 'Ruta de 3 días desde Fez a Marrakech',
     subtitle: 'La conexión rápida por el desierto',
     duration: '3 días',
     image: 'https://images.pexels.com/photos/36209446/pexels-photo-36209446.jpeg?auto=compress&cs=tinysrgb&w=1600',
@@ -1552,7 +1552,7 @@ export const routes: Route[] = [
   {
     slug: 'fez-fez-5d',
     number: '15',
-    title: 'Desde Fez al Desierto · 5 días',
+    title: 'Ruta de 5 días desde Fez al Desierto',
     subtitle: 'Ida y vuelta a Fez pasando por Merzouga y el Atlas Medio',
     duration: '5 días',
     image: 'https://images.pexels.com/photos/30320422/pexels-photo-30320422.jpeg?auto=compress&cs=tinysrgb&w=1600',
@@ -1637,7 +1637,7 @@ export const routes: Route[] = [
   {
     slug: 'casablanca-marrakech-8d',
     number: '16',
-    title: 'De Casablanca a Marrakech · 8 días',
+    title: 'Ruta de 8 días desde Casablanca a Marrakech',
     subtitle: 'Costa atlántica, ciudades imperiales, desierto y Atlas',
     duration: '8 días',
     image: 'https://images.pexels.com/photos/5541277/pexels-photo-5541277.jpeg?auto=compress&cs=tinysrgb&w=1600',
@@ -1745,7 +1745,7 @@ export const routes: Route[] = [
   {
     slug: 'casablanca-casablanca-9d',
     number: '17',
-    title: 'Circuito desde Casablanca · 9 días',
+    title: 'Ruta de 9 días desde Casablanca al Desierto y Marrakech',
     subtitle: 'Ciudades imperiales, Atlas y Sahara en circuito cerrado',
     duration: '9 días',
     image: 'https://images.pexels.com/photos/5541277/pexels-photo-5541277.jpeg?auto=compress&cs=tinysrgb&w=1600',
@@ -1863,7 +1863,7 @@ export const routes: Route[] = [
   {
     slug: 'casablanca-casablanca-15d',
     number: '18',
-    title: 'Gran Tour de Marruecos · 15 días',
+    title: 'Ruta de 15 días desde Casablanca al Desierto',
     subtitle: 'El viaje definitivo: de norte a sur y de costa a desierto',
     duration: '15 días',
     image: 'https://images.pexels.com/photos/30757351/pexels-photo-30757351.jpeg?auto=compress&cs=tinysrgb&w=1600',
@@ -2037,7 +2037,7 @@ export const routes: Route[] = [
   {
     slug: 'marrakech-desierto-10d',
     number: '19',
-    title: 'Marrakech y el Gran Sur · 10 días',
+    title: 'Ruta de 10 días desde Marrakech al Desierto',
     subtitle: 'Atlas, kasbahs, desierto y costa atlántica sin prisas',
     duration: '10 días',
     image: 'https://images.pexels.com/photos/2901215/pexels-photo-2901215.jpeg?auto=compress&cs=tinysrgb&w=1600',
