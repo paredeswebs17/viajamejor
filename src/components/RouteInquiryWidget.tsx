@@ -160,7 +160,7 @@ export default function RouteInquiryWidget({ route }: { route: Route }) {
         type="tel"
         value={form.phone}
         onChange={(e) => setForm({ ...form, phone: e.target.value })}
-        placeholder="WhatsApp (opcional, respondemos antes)"
+        placeholder="WhatsApp (opcional)"
         className={input}
       />
 
