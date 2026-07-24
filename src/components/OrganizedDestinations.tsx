@@ -48,7 +48,7 @@ const OrganizedDestinations = () => {
     {
       id: 'sri-lanka',
       title: 'Sri Lanka',
-      image: 'https://images.pexels.com/photos/4166853/pexels-photo-4166853.jpeg',
+      image: 'https://images.pexels.com/photos/34128247/pexels-photo-34128247.jpeg',
       flag: '🇱🇰',
     },
   ];
