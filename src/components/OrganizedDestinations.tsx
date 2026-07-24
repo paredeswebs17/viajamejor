@@ -76,7 +76,7 @@ const OrganizedDestinations = () => {
               to={dest.href}
               className="group relative block"
             >
-              <div className="relative aspect-[16/9] md:aspect-[21/9] overflow-hidden rounded-sm">
+              <div className="relative aspect-[3/4] sm:aspect-[16/9] md:aspect-[2/1] overflow-hidden rounded-sm">
                 <img
                   src={dest.image}
                   alt={dest.title}
