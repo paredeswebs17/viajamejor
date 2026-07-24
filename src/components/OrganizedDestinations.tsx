@@ -1,4 +1,5 @@
 import { useEffect, useRef } from 'react';
+import { Link } from 'react-router-dom';
 
 const OrganizedDestinations = () => {
   const sectionRef = useRef<HTMLElement>(null);
@@ -28,7 +29,7 @@ const OrganizedDestinations = () => {
       subtitle: 'Guía local · Todo en español',
       image: 'https://images.pexels.com/photos/3889843/pexels-photo-3889843.jpeg',
       badge: '🇲🇦',
-      comingSoon: true,
+      href: '/viajes-organizados/marruecos',
     }
   ];
 
@@ -49,39 +50,37 @@ const OrganizedDestinations = () => {
 
         <div className="reveal grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {destinations.map((dest) => (
-            <div
+            <Link
               key={dest.id}
-              className="relative cursor-default"
+              to={dest.href}
+              className="group relative block"
             >
               <div className="relative aspect-[4/5] overflow-hidden rounded-sm">
                 <img
                   src={dest.image}
                   alt={dest.title}
-                  className="w-full h-full object-cover grayscale"
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                   loading="lazy"
                 />
-                <div className="absolute inset-0 bg-gray-800/60" />
+                <div className="absolute inset-0 bg-gray-900/40 transition-colors duration-300 group-hover:bg-gray-900/30" />
 
                 <div className="absolute top-4 left-4">
                   <span className="text-2xl">{dest.badge}</span>
                 </div>
 
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <span className="bg-gray-700/90 text-white text-sm md:text-base font-bold px-6 py-3 rounded-full uppercase tracking-[.15em]">
-                    Próximamente
-                  </span>
-                </div>
-
                 <div className="absolute bottom-0 left-0 right-0 p-6">
-                  <h3 className="font-serif text-xl md:text-2xl text-white/70 leading-tight mb-1">
+                  <h3 className="font-serif text-xl md:text-2xl text-white leading-tight mb-1">
                     {dest.title}
                   </h3>
-                  <p className="text-white/40 text-xs">
+                  <p className="text-white/70 text-xs">
                     {dest.subtitle}
                   </p>
+                  <span className="inline-block mt-3 text-[11px] uppercase tracking-[.15em] text-white/90 font-medium border-b border-white/40 pb-0.5 group-hover:border-white transition-colors">
+                    Ver rutas
+                  </span>
                 </div>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </div>
