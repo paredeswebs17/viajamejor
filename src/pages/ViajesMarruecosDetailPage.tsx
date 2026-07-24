@@ -150,7 +150,6 @@ export default function ViajesMarruecosDetailPage() {
               </h2>
             </div>
 
-            <JourneyMap days={route.days} />
 
             <ol className="relative mt-20 md:mt-28 space-y-24 md:space-y-36">
               {route.days.map((day, i) => (
@@ -291,89 +290,6 @@ function FloatingWhatsApp({ route }: { route: Route }) {
           <MessageCircle size={16} />
           <span className="text-sm font-medium tracking-wide">Me interesa esta ruta</span>
         </a>
-      </div>
-    </div>
-  );
-}
-
-function JourneyMap({ days }: { days: { number: number; title: string; places: string }[] }) {
-  const [active, setActive] = useState(0);
-  const [paused, setPaused] = useState(false);
-  const stops = days.map((d) => {
-    const first = d.places.split('\u00b7')[0].trim();
-    return first || d.title;
-  });
-
-  useEffect(() => {
-    if (paused) return;
-    const id = setInterval(() => {
-      setActive((prev) => (prev + 1) % stops.length);
-    }, 2800);
-    return () => clearInterval(id);
-  }, [paused, stops.length]);
-
-  return (
-    <div
-      onMouseEnter={() => setPaused(true)}
-      onMouseLeave={() => setPaused(false)}
-      className="relative bg-ink-900 text-cream-50 px-6 md:px-10 py-10 md:py-14 grain overflow-hidden"
-    >
-      <div className="relative flex items-center gap-3 mb-6">
-        <MapPin size={14} className="text-gold-300" strokeWidth={1.5} />
-        <span className="text-[10px] uppercase tracking-wider3 text-gold-300">La travesia</span>
-      </div>
-
-      <div className="relative">
-        <div className="absolute left-0 right-0 top-[18px] h-px bg-cream-100/15" />
-        <div
-          className="absolute left-0 top-[18px] h-px bg-gold-300 transition-all duration-[1800ms] ease-in-out"
-          style={{ width: `${(active / Math.max(stops.length - 1, 1)) * 100}%` }}
-        />
-
-        <ol className="relative grid gap-2" style={{ gridTemplateColumns: `repeat(${stops.length}, minmax(0, 1fr))` }}>
-          {stops.map((stop, i) => {
-            const isActive = i === active;
-            const isPast = i < active;
-            return (
-              <li key={i} className="flex flex-col items-center text-center">
-                <button
-                  onMouseEnter={() => setActive(i)}
-                  onFocus={() => setActive(i)}
-                  onClick={() => {
-                    setActive(i);
-                    document.getElementById(`dia-${i + 1}`)?.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                  }}
-                  aria-label={`Ir al dia ${i + 1}: ${stop}`}
-                  className="group flex flex-col items-center cursor-pointer"
-                >
-                  <span
-                    className={`relative w-[14px] h-[14px] rounded-full border-2 transition-all duration-500 ${
-                      isActive
-                        ? 'bg-gold-300 border-gold-300 scale-125 shadow-[0_0_0_6px_rgba(212,175,55,0.18)]'
-                        : isPast
-                        ? 'bg-gold-300 border-gold-300'
-                        : 'bg-ink-900 border-cream-100/40 group-hover:border-gold-300'
-                    }`}
-                  />
-                  <span
-                    className={`mt-3 text-[9px] uppercase tracking-wider2 transition-colors duration-300 ${
-                      isActive ? 'text-gold-300' : 'text-cream-100/60 group-hover:text-cream-100'
-                    }`}
-                  >
-                    Dia {i + 1}
-                  </span>
-                  <span
-                    className={`hidden sm:block mt-1 text-xs font-light transition-colors duration-300 truncate max-w-[8rem] ${
-                      isActive ? 'text-cream-50' : 'text-cream-100/50 group-hover:text-cream-100'
-                    }`}
-                  >
-                    {stop}
-                  </span>
-                </button>
-              </li>
-            );
-          })}
-        </ol>
       </div>
     </div>
   );
