@@ -34,6 +34,7 @@ export default function RouteInquiryWidget({ route }: { route: Route }) {
   const [form, setForm] = useState<Draft>(EMPTY);
   const [status, setStatus] = useState<'idle' | 'sending' | 'ok' | 'error'>('idle');
   const [touched, setTouched] = useState<Record<string, boolean>>({});
+  const [errors, setErrors] = useState<{ name?: string; email?: string }>({});
 
   useEffect(() => {
     try {
@@ -49,7 +50,14 @@ export default function RouteInquiryWidget({ route }: { route: Route }) {
 
   async function submit(e: FormEvent) {
     e.preventDefault();
-    if (!form.name.trim() || !form.email.trim()) return;
+    const newErrors: { name?: string; email?: string } = {};
+    if (!form.name.trim()) newErrors.name = 'El nombre es obligatorio';
+    if (!form.email.trim()) newErrors.email = 'El email es obligatorio';
+    if (Object.keys(newErrors).length > 0) {
+      setErrors(newErrors);
+      return;
+    }
+    setErrors({});
     setStatus('sending');
 
     try {
@@ -138,23 +146,29 @@ export default function RouteInquiryWidget({ route }: { route: Route }) {
       </div>
 
       <div className="grid grid-cols-2 gap-3">
-        <input
-          required
-          value={form.name}
-          onChange={(e) => setForm({ ...form, name: e.target.value })}
-          onBlur={() => markTouched('name')}
-          placeholder="Nombre"
-          className={`${input} ${inputError('name', form.name)}`}
-        />
-        <input
-          required
-          type="email"
-          value={form.email}
-          onChange={(e) => setForm({ ...form, email: e.target.value })}
-          onBlur={() => markTouched('email')}
-          placeholder="Email"
-          className={`${input} ${inputError('email', form.email)}`}
-        />
+        <div>
+          <input
+            required
+            value={form.name}
+            onChange={(e) => { setForm({ ...form, name: e.target.value }); if (errors.name) setErrors((prev) => ({ ...prev, name: undefined })); }}
+            onBlur={() => markTouched('name')}
+            placeholder="Nombre"
+            className={`${input} ${errors.name ? 'border-red-400' : inputError('name', form.name)}`}
+          />
+          {errors.name && <p className="text-xs text-red-600 mt-1">{errors.name}</p>}
+        </div>
+        <div>
+          <input
+            required
+            type="email"
+            value={form.email}
+            onChange={(e) => { setForm({ ...form, email: e.target.value }); if (errors.email) setErrors((prev) => ({ ...prev, email: undefined })); }}
+            onBlur={() => markTouched('email')}
+            placeholder="Email"
+            className={`${input} ${errors.email ? 'border-red-400' : inputError('email', form.email)}`}
+          />
+          {errors.email && <p className="text-xs text-red-600 mt-1">{errors.email}</p>}
+        </div>
       </div>
 
       <input

@@ -13,6 +13,7 @@ const ROUTE_OPTIONS: { value: string; label: string }[] = [
 
 export default function MoroccoContactForm() {
   const [status, setStatus] = useState<'idle' | 'sending' | 'ok' | 'error'>('idle');
+  const [errors, setErrors] = useState<{ name?: string; email?: string }>({});
   const [form, setForm] = useState({
     name: '',
     email: '',
@@ -25,7 +26,14 @@ export default function MoroccoContactForm() {
 
   async function submit(e: FormEvent) {
     e.preventDefault();
-    if (!form.name.trim() || !form.email.trim()) return;
+    const newErrors: { name?: string; email?: string } = {};
+    if (!form.name.trim()) newErrors.name = 'El nombre es obligatorio';
+    if (!form.email.trim()) newErrors.email = 'El email es obligatorio';
+    if (Object.keys(newErrors).length > 0) {
+      setErrors(newErrors);
+      return;
+    }
+    setErrors({});
     setStatus('sending');
 
     const routeLabel = ROUTE_OPTIONS.find((o) => o.value === form.route)?.label ?? form.route;
@@ -111,10 +119,11 @@ export default function MoroccoContactForm() {
                 id="morocco-name"
                 required
                 value={form.name}
-                onChange={(e) => setForm({ ...form, name: e.target.value })}
+                onChange={(e) => { setForm({ ...form, name: e.target.value }); if (errors.name) setErrors((prev) => ({ ...prev, name: undefined })); }}
                 placeholder="Tu nombre"
-                className={input}
+                className={`${input} ${errors.name ? 'border-red-400' : ''}`}
               />
+              {errors.name && <p className="text-xs text-red-600 mt-1">{errors.name}</p>}
             </div>
             <div>
               <label htmlFor="morocco-email" className="text-[10px] uppercase tracking-[.15em] text-ink-500 font-medium block mb-1">
@@ -125,10 +134,11 @@ export default function MoroccoContactForm() {
                 required
                 type="email"
                 value={form.email}
-                onChange={(e) => setForm({ ...form, email: e.target.value })}
+                onChange={(e) => { setForm({ ...form, email: e.target.value }); if (errors.email) setErrors((prev) => ({ ...prev, email: undefined })); }}
                 placeholder="tu@email.com"
-                className={input}
+                className={`${input} ${errors.email ? 'border-red-400' : ''}`}
               />
+              {errors.email && <p className="text-xs text-red-600 mt-1">{errors.email}</p>}
             </div>
           </div>
 
