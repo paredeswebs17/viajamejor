@@ -5,9 +5,8 @@ import {
   ArrowRight, ArrowLeft, Clock, ChevronLeft, ChevronRight, MessageCircle, MapPin,
 } from 'lucide-react';
 import { routes, Route } from '../data/moroccoRoutes';
+import MoroccoContactForm from '../components/MoroccoContactForm';
 
-const WA_NUMBER = '34660611668';
-const waGeneric = `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent('Hola! He visto vuestras rutas por Marruecos y me gustaría más información.')}`;
 
 type City = 'all' | 'marrakech' | 'fez' | 'tanger' | 'casablanca';
 
@@ -225,16 +224,16 @@ export default function ViajesMarruecosPage() {
               ¿No encuentras lo que buscas? Diseñamos rutas a medida.
             </p>
             <a
-              href={waGeneric}
-              target="_blank"
-              rel="noopener noreferrer"
+              href="#contacto"
               className="inline-flex items-center gap-2.5 px-8 py-4 bg-ink-900 text-white text-xs font-medium uppercase tracking-wider2 rounded-full hover:bg-terra-600 transition-all duration-300 hover:shadow-lg hover:shadow-terra-600/25"
             >
-              <MessageCircle size={15} /> Consultar por WhatsApp
+              <MessageCircle size={15} /> Pedir presupuesto
             </a>
           </div>
         </div>
       </section>
+
+      <MoroccoContactForm />
     </>
   );
 }

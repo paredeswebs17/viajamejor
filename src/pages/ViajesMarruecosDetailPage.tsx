@@ -6,6 +6,7 @@ import {
   Moon, Compass,
 } from 'lucide-react';
 import { routes, Route } from '../data/moroccoRoutes';
+import RouteInquiryWidget from '../components/RouteInquiryWidget';
 
 const WA_NUMBER = '34660611668';
 function waLink(route: Route) {
@@ -236,35 +237,23 @@ export default function ViajesMarruecosDetailPage() {
           </div>
         </section>
 
-        {/* WHATSAPP CTA */}
-        <section className="relative py-24 md:py-32 bg-ink-900 text-cream-50 overflow-hidden grain">
-          <div className="absolute inset-0 opacity-25" aria-hidden="true">
-            <img src={route.image} alt="" loading="lazy" className="w-full h-full object-cover" />
-            <div className="absolute inset-0 bg-ink-900/70" />
-          </div>
-          <div className="relative max-w-4xl mx-auto px-6 lg:px-10 text-center">
+        {/* INQUIRY FORM */}
+        <section className="relative py-24 md:py-32 bg-cream-50">
+          <div className="max-w-4xl mx-auto px-6 lg:px-10">
             <div className="flex items-center justify-center gap-3 mb-6">
-              <span className="h-px w-8 bg-gold-300" />
-              <span className="text-[10px] uppercase tracking-wider3 text-gold-300">Reserva con nosotros</span>
-              <span className="h-px w-8 bg-gold-300" />
+              <span className="h-px w-8 bg-terra-500" />
+              <span className="text-[10px] uppercase tracking-[.2em] text-terra-600 font-medium">Reserva con nosotros</span>
+              <span className="h-px w-8 bg-terra-500" />
             </div>
-            <h2 className="font-serif text-5xl md:text-6xl leading-[1.05] text-balance">
-              Tu viaje <span className="italic text-gold-300">empieza aquí</span>
+            <h2 className="font-serif text-4xl md:text-5xl text-ink-900 text-center leading-[1.1] mb-4">
+              Tu viaje <span className="italic text-terra-600">empieza aquí</span>
             </h2>
-            <p className="mt-6 max-w-xl mx-auto text-cream-100/75 font-light text-lg">
+            <p className="text-center max-w-xl mx-auto text-ink-500 font-light text-lg mb-10">
               Te preparamos una propuesta personalizada según fechas, número
               de viajeros y tipo de alojamiento. Sin compromiso.
             </p>
-            <div className="mt-10">
-              <a
-                href={waLink(route)}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-3 px-10 py-5 bg-[#25D366] text-white text-sm uppercase tracking-wider2 font-medium hover:bg-[#128C7E] transition-colors shadow-lg"
-              >
-                <MessageCircle size={18} />
-                Me interesa esta ruta
-              </a>
+            <div className="max-w-lg mx-auto">
+              <RouteInquiryWidget route={route} />
             </div>
           </div>
         </section>
