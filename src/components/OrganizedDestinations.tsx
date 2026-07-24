@@ -64,18 +64,14 @@ const OrganizedDestinations = () => {
                 />
                 <div className="absolute inset-0 bg-gray-900/40 transition-colors duration-300 group-hover:bg-gray-900/30" />
 
-                <div className="absolute top-4 left-4">
-                  <span className="text-2xl">{dest.badge}</span>
-                </div>
-
-                <div className="absolute bottom-0 left-0 right-0 p-6">
-                  <h3 className="font-serif text-2xl md:text-3xl text-white leading-tight mb-2">
+                <div className="absolute bottom-0 left-0 right-0 p-6 pt-20 bg-gradient-to-t from-black/80 via-black/40 to-transparent">
+                  <h3 className="font-serif text-3xl md:text-4xl text-white leading-tight mb-2 drop-shadow-md">
                     {dest.title}
                   </h3>
-                  <p className="text-white/70 text-sm">
+                  <p className="text-white/90 text-base drop-shadow-sm">
                     {dest.subtitle}
                   </p>
-                  <span className="inline-block mt-4 text-xs uppercase tracking-[.15em] text-white/90 font-medium border-b border-white/40 pb-0.5 group-hover:border-white transition-colors">
+                  <span className="inline-block mt-4 text-sm uppercase tracking-[.15em] text-white font-medium border-b border-white/50 pb-0.5 group-hover:border-white transition-colors drop-shadow-sm">
                     Ver rutas
                   </span>
                 </div>
