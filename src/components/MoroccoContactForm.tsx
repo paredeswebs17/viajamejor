@@ -69,7 +69,9 @@ export default function MoroccoContactForm() {
           </div>
           <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl text-ink-900 leading-[1.05] text-balance">
             Cuéntanos
-            <span className="italic text-terra-600"> tu Marruecos </span>
+            <br />
+            <span className="italic text-terra-600">tu Marruecos</span>
+            <br />
             ideal.
           </h2>
 
