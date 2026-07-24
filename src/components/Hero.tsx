@@ -42,7 +42,7 @@ const Hero = () => {
             </Link>
             <a
               href="#viajes-organizados"
-              className="inline-flex items-center gap-2 border border-white/30 text-white/90 px-7 py-4 text-xs font-medium uppercase tracking-[.15em] hover:bg-white/10 hover:border-white/50 transition-all duration-300"
+              className="inline-flex items-center gap-2 border border-teal-300/40 text-teal-200 px-7 py-4 text-xs font-medium uppercase tracking-[.15em] hover:bg-teal-400/10 hover:border-teal-300/60 transition-all duration-300"
             >
               Viajes organizados
             </a>
