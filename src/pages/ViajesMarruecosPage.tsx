@@ -223,12 +223,12 @@ export default function ViajesMarruecosPage() {
             <p className="text-ink-500 font-light mb-5 text-lg">
               ¿No encuentras lo que buscas? Diseñamos rutas a medida.
             </p>
-            <a
-              href="#contacto"
+            <button
+              onClick={() => document.getElementById('contacto')?.scrollIntoView({ behavior: 'smooth' })}
               className="inline-flex items-center gap-2.5 px-8 py-4 bg-ink-900 text-white text-xs font-medium uppercase tracking-wider2 rounded-full hover:bg-terra-600 transition-all duration-300 hover:shadow-lg hover:shadow-terra-600/25"
             >
               <Send size={15} /> Pedir presupuesto
-            </a>
+            </button>
           </div>
         </div>
       </section>

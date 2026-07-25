@@ -269,6 +269,10 @@ function FloatingCTA() {
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
 
+  const scrollToForm = () => {
+    document.getElementById('formulario')?.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
     <div
       className={`fixed bottom-0 inset-x-0 z-30 transition-all duration-500 ${
@@ -276,13 +280,13 @@ function FloatingCTA() {
       }`}
     >
       <div className="mx-4 mb-4 flex gap-3 justify-center">
-        <a
-          href="#formulario"
+        <button
+          onClick={scrollToForm}
           className="flex-1 max-w-md flex items-center justify-center gap-2.5 py-3.5 rounded-full bg-terra-500 text-white shadow-lg ring-1 ring-white/20 hover:bg-terra-600 active:scale-[0.97] transition-all duration-200"
         >
           <Send size={16} />
           <span className="text-sm font-medium tracking-wide">Solicitar propuesta</span>
-        </a>
+        </button>
       </div>
     </div>
   );

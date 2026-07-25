@@ -398,12 +398,12 @@ export default function MoroccoRoutePage() {
             >
               <MessageCircle size={15} /> Consultar por WhatsApp
             </button>
-            <a
-              href="#contacto"
+            <button
+              onClick={() => document.getElementById('contacto')?.scrollIntoView({ behavior: 'smooth' })}
               className="inline-flex items-center justify-center px-8 py-4 border border-white/30 hover:bg-white/10 text-white text-sm font-medium rounded-full transition-colors"
             >
               Rellenar formulario
-            </a>
+            </button>
           </div>
         </div>
       </section>
