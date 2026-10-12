@@ -54,7 +54,7 @@ const PremiumDestinationsArticle: React.FC<PremiumDestinationsArticleProps> = ({
       {/* Imagen destacada */}
       <div className="mb-12">
         <img
-          src="https://images.pexels.com/photos/1024993/pexels-photo-1024993.jpeg?auto=compress&cs=tinysrgb&w=1200"
+          src="/images/p/1024993-w1200.webp"
           alt="Resort de lujo en Maldivas con villas sobre el agua cristalina"
           className="w-full h-64 sm:h-80 object-cover rounded-2xl shadow-lg"
         />

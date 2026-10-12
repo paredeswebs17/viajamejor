@@ -11,7 +11,7 @@ const CheapFlightsArticle: React.FC<CheapFlightsArticleProps> = ({ onBack }) => 
       {/* Hero */}
       <div className="relative h-[45vh] min-h-[340px] overflow-hidden flex items-end">
         <img
-          src="https://images.pexels.com/photos/2026324/pexels-photo-2026324.jpeg?auto=compress&cs=tinysrgb&w=1200"
+          src="/images/p/2026324-w1200.webp"
           alt="Persona buscando vuelos baratos en laptop"
           className="absolute inset-0 w-full h-full object-cover"
         />

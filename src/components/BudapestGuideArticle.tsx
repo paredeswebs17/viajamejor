@@ -42,7 +42,7 @@ const BudapestGuideArticle: React.FC<BudapestGuideArticleProps> = ({ onBack }) =
       <section className="relative min-h-[85vh] bg-stone-900 overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src="https://images.pexels.com/photos/73796/budapest-hungary-parliament-building-73796.jpeg?auto=compress&cs=tinysrgb&w=1920"
+            src="/images/p/73796-w1920.webp"
             alt="Vista panorámica del Parlamento de Budapest al atardecer con el río Danubio"
             className="w-full h-full object-cover"
           />
@@ -136,7 +136,7 @@ const BudapestGuideArticle: React.FC<BudapestGuideArticleProps> = ({ onBack }) =
             <Attraction
               time="9:00h"
               title="Parlamento Húngaro"
-              image="https://images.pexels.com/photos/12165534/pexels-photo-12165534.jpeg"
+              image="/images/p/12165534-w1600.webp"
               description="Inicia tu aventura húngara en el edificio gubernamental más espectacular de Europa. Sus cúpulas doradas y arquitectura neogótica te transportarán a la época imperial. La visita incluye la Corona de San Esteban, las joyas reales, salas ceremoniales y audioguía en español."
               details={[
                 'Inversión: 10.000 HUF (Aprox. 27€)',
@@ -153,7 +153,7 @@ const BudapestGuideArticle: React.FC<BudapestGuideArticleProps> = ({ onBack }) =
             <Attraction
               time="11:00h"
               title="Free Tour Budapest en Español"
-              image="https://images.pexels.com/photos/5612377/pexels-photo-5612377.jpeg"
+              image="/images/p/5612377-w1600.webp"
               description="Descubre la auténtica Budapest con guías locales apasionados. Tour premiado como el más popular a nivel global. Recorrerás la Basílica de San Esteban, el Castillo de Buda, el Parlamento y mucho más durante 2h 30min."
               details={[
                 'Precio: Gratis (propina voluntaria)',
@@ -169,7 +169,7 @@ const BudapestGuideArticle: React.FC<BudapestGuideArticleProps> = ({ onBack }) =
             <Attraction
               time="13:30h"
               title="Gran Sinagoga - Memoria Viva"
-              image="https://images.pexels.com/photos/7614748/pexels-photo-7614748.jpeg"
+              image="/images/p/7614748-w1600.webp"
               description="La segunda sinagoga más grande del planeta y centro de la comunidad judía europea. Arquitectura morisca-bizantina única que incluye el Templo principal, el Museo Judío y el conmovedor Jardín Memorial."
               details={[
                 'Entrada: 13.000 HUF (Aprox. 33€)',
@@ -186,7 +186,7 @@ const BudapestGuideArticle: React.FC<BudapestGuideArticleProps> = ({ onBack }) =
             <Attraction
               time="16:00h"
               title="Basílica de San Esteban + Mirador Panorámico"
-              image="https://images.pexels.com/photos/2984324/pexels-photo-2984324.jpeg"
+              image="/images/p/2984324-w1600.webp"
               description="Termina el día en las alturas con vistas que quitan el aliento. La Basílica de San Esteban ofrece un mirador a 96 metros de altura con ascensor y vistas 360 grados de todo Budapest y el Danubio."
               details={[
                 'Solo basílica: 600 HUF (Aprox. 2€)',
@@ -203,7 +203,7 @@ const BudapestGuideArticle: React.FC<BudapestGuideArticleProps> = ({ onBack }) =
             <Attraction
               time="21:00h"
               title="Szimpla Kert - Revolución de los Ruin Bars"
-              image="https://images.pexels.com/photos/33980771/pexels-photo-33980771.jpeg"
+              image="/images/p/33980771-w1600.webp"
               description="Experimenta el concepto que Budapest exportó al mundo entero. Edificios en ruinas convertidos en bares con arte urbano ecléctico, decoración surrealista y música en vivo. Entrada gratuita, cervezas 3-5€ y cócteles 6-8€."
               details={[
                 'Concepto: Edificios en ruinas convertidos en bares',
@@ -237,7 +237,7 @@ const BudapestGuideArticle: React.FC<BudapestGuideArticleProps> = ({ onBack }) =
             <Attraction
               time="9:00h"
               title="Funicular Histórico al Castillo de Buda"
-              image="https://images.pexels.com/photos/19310795/pexels-photo-19310795.jpeg"
+              image="/images/p/19310795-w1600.webp"
               description="Comienza como la realeza húngara, ascendiendo en el funicular centenario hasta el impresionante Castillo de Buda. Desde arriba disfrutarás de jardines con vistas panorámicas, la Galería Nacional y el Museo de Historia de Budapest."
               details={[
                 'Funicular: 1.500 HUF (Aprox. 4€) ida/vuelta',
@@ -252,7 +252,7 @@ const BudapestGuideArticle: React.FC<BudapestGuideArticleProps> = ({ onBack }) =
             <Attraction
               time="10:30h"
               title="Bastión de los Pescadores"
-              image="https://images.pexels.com/photos/1750352/pexels-photo-1750352.jpeg"
+              image="/images/p/1750352-w1600.webp"
               description="El lugar más fotografiado de Budapest por una razón poderosa. Sus terrazas neorrománicas ofrecen la mejor vista panorámica del Parlamento dorado reflejado en el Danubio. Incluye acceso al Free Tour del Castillo de Buda en español."
               details={[
                 'Terrazas inferiores: GRATIS',
@@ -269,7 +269,7 @@ const BudapestGuideArticle: React.FC<BudapestGuideArticleProps> = ({ onBack }) =
             <Attraction
               time="18:00h"
               title="Crucero Nocturno por el Danubio"
-              image="https://images.pexels.com/photos/73796/budapest-hungary-parliament-building-73796.jpeg"
+              image="/images/p/73796-w1600.webp"
               description="La experiencia más romántica y fotogénica de Budapest. Navega durante 70 minutos contemplando el Parlamento dorado iluminado, el Castillo de Buda con luces y todos los puentes históricos. Incluye audioguía en español y bebida."
               details={[
                 'Duración: 70 minutos de pura magia',
@@ -304,7 +304,7 @@ const BudapestGuideArticle: React.FC<BudapestGuideArticleProps> = ({ onBack }) =
             <Attraction
               time="9:00h"
               title="Balnearios Széchenyi - Ritual Húngaro Milenario"
-              image="https://images.pexels.com/photos/33980770/pexels-photo-33980770.jpeg"
+              image="/images/p/33980770-w1600.webp"
               description="Sumérgete en la tradición termal más auténtica de Europa. Funciona incluso con nieve! 18 piscinas diferentes con temperaturas entre 18°C y 38°C en un impresionante edificio neobarroco. Desde agosto 2026, solo mayores de 14 años."
               details={[
                 'Días laborables: 15.000 HUF (Aprox. 39€) día completo',
@@ -321,7 +321,7 @@ const BudapestGuideArticle: React.FC<BudapestGuideArticleProps> = ({ onBack }) =
             <Attraction
               time="13:30h"
               title="Plaza de los Héroes - Epicentro Húngaro"
-              image="https://images.pexels.com/photos/5687558/pexels-photo-5687558.jpeg"
+              image="/images/p/5687558-w1600.webp"
               description="El monumento más patriótico de Hungría te cuenta mil años de historia. 7 estatuas de las tribus fundadoras, el Monumento del Milenio y el Castillo Vajdahunyad construido para la Exposición Universal de 1896. Entrada completamente gratuita."
               details={[
                 'Entrada: Completamente GRATIS',
@@ -336,7 +336,7 @@ const BudapestGuideArticle: React.FC<BudapestGuideArticleProps> = ({ onBack }) =
             <Attraction
               time="18:30h"
               title="New York Café - El Más Hermoso del Mundo"
-              image="https://images.pexels.com/photos/20763018/pexels-photo-20763018.jpeg"
+              image="/images/p/20763018-w1600.webp"
               description="Donde se reunía la élite intelectual de Budapest en la Belle Époque. Inaugurado en 1894, con techos dorados, espejos y música live desde las 11:00h. Una experiencia más allá del café."
               details={[
                 'Ambiente: Techos dorados + espejos imperiales',
@@ -369,7 +369,7 @@ const BudapestGuideArticle: React.FC<BudapestGuideArticleProps> = ({ onBack }) =
             <Attraction
               time="9:00h"
               title="Mercado Central - Corazón Gastronómico"
-              image="https://images.pexels.com/photos/28994573/pexels-photo-28994573.jpeg"
+              image="/images/p/28994573-w1600.webp"
               description="El mercado cubierto más espectacular de Europa Central. En la planta baja encontrarás páprika húngara (desde 2€), salami de Szeged, vinos Tokaj y foie gras. En la primera planta, gastronomía: lángos (3-4€), goulash auténtico (6-8€) y kürtőskalács (2-3€)."
               details={[
                 'Planta baja: Páprika, Salami de Szeged, Vinos Tokaj, Foie gras',
@@ -384,7 +384,7 @@ const BudapestGuideArticle: React.FC<BudapestGuideArticleProps> = ({ onBack }) =
             <Attraction
               time="10:30h"
               title="Colina Gellért - Mirador Supremo de Budapest"
-              image="https://images.pexels.com/photos/30734949/pexels-photo-30734949.jpeg"
+              image="/images/p/30734949-w1600.webp"
               description="Las vistas más impresionantes de toda la capital húngara. Sube hasta la Estatua de la Libertad (14 metros) y el Mirador Citadella para una panorámica 360 grados completamente gratuita."
               details={[
                 'Caminata: 35-40 min (gratis)',
@@ -647,7 +647,7 @@ const BudapestGuideArticle: React.FC<BudapestGuideArticleProps> = ({ onBack }) =
       <section className="relative py-24 md:py-32 bg-stone-900 text-stone-50 overflow-hidden">
         <div className="absolute inset-0 opacity-20">
           <img
-            src="https://images.pexels.com/photos/73796/budapest-hungary-parliament-building-73796.jpeg?auto=compress&cs=tinysrgb&w=1920"
+            src="/images/p/73796-w1920.webp"
             alt=""
             className="w-full h-full object-cover"
           />

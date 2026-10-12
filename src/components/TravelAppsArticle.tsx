@@ -54,7 +54,7 @@ const TravelAppsArticle: React.FC<TravelAppsArticleProps> = ({ onBack }) => {
       {/* Imagen destacada */}
       <div className="mb-12">
         <img
-          src="https://images.pexels.com/photos/607812/pexels-photo-607812.jpeg?auto=compress&cs=tinysrgb&w=1200"
+          src="/images/p/607812-w1200.webp"
           alt="Smartphone con múltiples apps de viaje en la pantalla"
           className="w-full h-64 sm:h-80 object-cover rounded-2xl shadow-lg"
         />

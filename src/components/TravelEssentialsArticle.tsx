@@ -78,7 +78,7 @@ const TravelEssentialsArticle: React.FC<TravelEssentialsArticleProps> = ({ onBac
       {/* Hero */}
       <div className="relative h-[45vh] min-h-[340px] overflow-hidden flex items-end">
         <img
-          src="https://images.pexels.com/photos/1008155/pexels-photo-1008155.jpeg?auto=compress&cs=tinysrgb&w=1200"
+          src="/images/p/1008155-w1200.webp"
           alt="Mochila de viaje con objetos esenciales organizados"
           className="absolute inset-0 w-full h-full object-cover"
         />

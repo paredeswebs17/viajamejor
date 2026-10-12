@@ -113,7 +113,7 @@ export default function ViajesMarruecosPage() {
       {/* HERO */}
       <section className="relative min-h-[80vh] flex items-end overflow-hidden">
         <img
-          src="https://images.pexels.com/photos/3889843/pexels-photo-3889843.jpeg?auto=compress&cs=tinysrgb&w=1920"
+          src="/images/p/3889843-w1920.webp"
           alt="Marruecos - desierto del Sahara"
           className="absolute inset-0 w-full h-full object-cover duotone anim-slow-pan"
           fetchPriority="high"

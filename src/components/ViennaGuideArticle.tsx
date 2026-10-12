@@ -42,7 +42,7 @@ const ViennaGuideArticle: React.FC<ViennaGuideArticleProps> = ({ onBack }) => {
       <section className="relative min-h-[85vh] bg-stone-900 overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src="https://images.pexels.com/photos/11932444/pexels-photo-11932444.jpeg?auto=compress&cs=tinysrgb&w=1920"
+            src="/images/p/11932444-w1920.webp"
             alt="Viena imperial al atardecer"
             className="w-full h-full object-cover"
           />
@@ -137,7 +137,7 @@ const ViennaGuideArticle: React.FC<ViennaGuideArticleProps> = ({ onBack }) => {
             <Attraction
               time="9:00h"
               title="Rathausplatz y Ayuntamiento"
-              image="https://images.pexels.com/photos/29982307/pexels-photo-29982307.jpeg?auto=compress&cs=tinysrgb&w=1200"
+              image="/images/p/29982307-w1200.webp"
               description="El Rathaus de Viena es una joya del estilo neogótico construida entre 1872 y 1883. Su torre principal de 98 metros corona la avenida del Ring. El edificio acoge el Festsaal (salón de celebraciones) y el Gemeinderat (sala del consejo municipal), con techos pintados al fresco y vidrieras originales."
               details={[
                 'Entrada gratuita con audioguía en español',
@@ -152,7 +152,7 @@ const ViennaGuideArticle: React.FC<ViennaGuideArticleProps> = ({ onBack }) => {
             <Attraction
               time="10:30h"
               title="Café Central"
-              image="https://images.pexels.com/photos/19599495/pexels-photo-19599495.jpeg?auto=compress&cs=tinysrgb&w=1200"
+              image="/images/p/19599495-w1200.webp"
               description="Fundado en 1876 en el Palais Ferstel, este templo del café vienés es Patrimonio Cultural Inmaterial de Austria (la cultura del café vienés fue reconocida en 2011). Bajo sus bóvedas decimonónicas se sentaron Freud, Trotsky, Stalin y Peter Altenberg. El interior mantiene las sillas originales de Thonet, techos altísimos con arcos de crucería y columnas de mármol."
               details={[
                 'Cultura del café vienés: Patrimonio Inmaterial de Austria (2011)',
@@ -166,7 +166,7 @@ const ViennaGuideArticle: React.FC<ViennaGuideArticleProps> = ({ onBack }) => {
             <Attraction
               time="11:30h"
               title="Graben, Pestsäule y Reloj Anker"
-              image="https://images.pexels.com/photos/24355655/pexels-photo-24355655.jpeg?auto=compress&cs=tinysrgb&w=1200"
+              image="/images/p/24355655-w1200.webp"
               description="La Pestsäule (Columna de la Peste) fue encargada por el emperador Leopoldo I y completada en 1694. Monumento barroco espectacular en pleno Graben. Después, el Reloj Anker (Ankeruhr): obra maestra del Art Nouveau creada por Franz von Matsch (1911-1914). Cada hora pasa una figura histórica, y a mediodía desfilan las 12 figuras durante 15 minutos con música especial."
               details={[
                 'Reloj Anker: A las 12:00 desfile completo (15 min)',
@@ -182,7 +182,7 @@ const ViennaGuideArticle: React.FC<ViennaGuideArticleProps> = ({ onBack }) => {
             <Attraction
               time="13:00h"
               title="Catedral de San Esteban"
-              image="https://images.pexels.com/photos/10621005/pexels-photo-10621005.jpeg?auto=compress&cs=tinysrgb&w=1200"
+              image="/images/p/10621005-w1200.webp"
               description="Más de 800 años de historia en el corazón de Viena. Su Torre Sur alcanza los 136,7 metros, la nave mide 107 metros de largo y el tejado está cubierto por 250.000 tejas de colores formando el escudo imperial. Estilo gótico y románico con construcción entre 1147 y 1511."
               details={[
                 'Entrada gratuita: Lun-Sáb 6:00-22:00, Dom 7:00-22:00',
@@ -197,7 +197,7 @@ const ViennaGuideArticle: React.FC<ViennaGuideArticleProps> = ({ onBack }) => {
             <Attraction
               time="14:30h"
               title="Palacio Schönbrunn"
-              image="https://images.pexels.com/photos/29689489/pexels-photo-29689489.jpeg?auto=compress&cs=tinysrgb&w=1200"
+              image="/images/p/29689489-w1200.webp"
               description="1.441 habitaciones en la residencia de verano de los emperadores austríacos. Aquí vivieron María Teresa y la emperatriz Sisí. Declarado Patrimonio de la Humanidad por la UNESCO, sus jardines barrocos con la Glorieta y el laberinto son tan espectaculares como el palacio mismo."
               details={[
                 'Horario: 8:30-17:00 (invierno), 8:30-17:30 (verano)',
@@ -214,7 +214,7 @@ const ViennaGuideArticle: React.FC<ViennaGuideArticleProps> = ({ onBack }) => {
             <Attraction
               time="17:30h"
               title="Casa de Mozart (Mozarthaus)"
-              image="https://images.pexels.com/photos/13036786/pexels-photo-13036786.jpeg?auto=compress&cs=tinysrgb&w=1200"
+              image="/images/p/13036786-w1200.webp"
               description="La única residencia conservada de Mozart en Viena, en Domgasse 5 (a 2 minutos de la Catedral). Aquí vivió entre 1784 y 1787 y compuso 'Las Bodas de Fígaro'. Tres plantas de exposiciones con audioguía incluida revelan la vida del genio en la capital imperial."
               details={[
                 'Entrada: 14€ adultos (audioguía incluida)',
@@ -248,7 +248,7 @@ const ViennaGuideArticle: React.FC<ViennaGuideArticleProps> = ({ onBack }) => {
             <Attraction
               time="9:30h"
               title="Wiener Prater (Noria Gigante)"
-              image="https://images.pexels.com/photos/5734998/pexels-photo-5734998.jpeg?auto=compress&cs=tinysrgb&w=1200"
+              image="/images/p/5734998-w1200.webp"
               description="La Riesenrad (Noria Gigante) mide 64,75 metros y fue construida en 1897. Desde sus cabinas se contemplan unas vistas 360° de toda Viena. El parque del Prater fue establecido en 1766 y la entrada al recinto es gratuita; solo se paga por las atracciones individuales (2-8€)."
               details={[
                 'Noria: 15€ adultos, duración 15-20 minutos',
@@ -263,7 +263,7 @@ const ViennaGuideArticle: React.FC<ViennaGuideArticleProps> = ({ onBack }) => {
             <Attraction
               time="11:30h"
               title="Hundertwasserhaus"
-              image="https://images.pexels.com/photos/16632436/pexels-photo-16632436.jpeg?auto=compress&cs=tinysrgb&w=1200"
+              image="/images/p/16632436-w1200.webp"
               description="Diseñada por Friedensreich Hundertwasser entre 1983 y 1985, esta vivienda social desafía toda convención arquitectónica: 52 apartamentos, 250 ventanas todas diferentes, terrazas con jardines, suelos ondulantes y una fachada multicolor donde no existe una sola línea recta."
               details={[
                 'Exterior: visita libre y gratuita',
@@ -278,7 +278,7 @@ const ViennaGuideArticle: React.FC<ViennaGuideArticleProps> = ({ onBack }) => {
             <Attraction
               time="12:30h"
               title="Stadtpark y Karlskirche"
-              image="https://images.pexels.com/photos/27442550/pexels-photo-27442550.jpeg?auto=compress&cs=tinysrgb&w=1200"
+              image="/images/p/27442550-w1200.webp"
               description="El Stadtpark alberga la famosa estatua dorada de Johann Strauss II (1921), además de estatuas de Schubert, Bruckner y Lehár. Después, la Karlskirche (Iglesia de San Carlos): obra maestra barroca finalizada en 1739 con columnas inspiradas en la Columna de Trajano y frescos espectaculares en la cúpula."
               details={[
                 'Stadtpark: entrada gratuita 24/7',
@@ -294,7 +294,7 @@ const ViennaGuideArticle: React.FC<ViennaGuideArticleProps> = ({ onBack }) => {
             <Attraction
               time="14:00h"
               title="Palacio Belvedere — El Beso de Klimt"
-              image="https://images.pexels.com/photos/5997778/pexels-photo-5997778.jpeg?auto=compress&cs=tinysrgb&w=1200"
+              image="/images/p/5997778-w1200.webp"
               description="Residencia de verano del Príncipe Eugenio de Saboya y obra maestra del barroco. Hoy alberga la colección de arte austríaco más importante, con 'El Beso' de Gustav Klimt (1907-1908) como joya absoluta. También 'Judith I' de Klimt, obras de Egon Schiele y arte medieval."
               details={[
                 'Entrada: 20€ (Belvedere Superior)',
@@ -330,7 +330,7 @@ const ViennaGuideArticle: React.FC<ViennaGuideArticleProps> = ({ onBack }) => {
             <Attraction
               time="9:00h"
               title="Palacio Hofburg"
-              image="https://images.pexels.com/photos/15488513/pexels-photo-15488513.jpeg?auto=compress&cs=tinysrgb&w=1200"
+              image="/images/p/15488513-w1200.webp"
               description="Residencia principal de los emperadores austríacos durante más de 600 años y centro del Imperio Austro-Húngaro. Hoy alberga los Apartamentos Imperiales, el Museo de Sisí, la Biblioteca Nacional (considerada la más bella del mundo) y la Escuela Española de Equitación."
               details={[
                 'Apartamentos Imperiales + Museo Sisí: 9:00-17:30, 19 salas históricas',
@@ -346,7 +346,7 @@ const ViennaGuideArticle: React.FC<ViennaGuideArticleProps> = ({ onBack }) => {
             <Attraction
               time="13:00h"
               title="Café Sacher — La Sachertorte Original"
-              image="https://images.pexels.com/photos/36644768/pexels-photo-36644768.jpeg?auto=compress&cs=tinysrgb&w=1200"
+              image="/images/p/36644768-w1200.webp"
               description="Fundado en 1876 frente a la Ópera. El único lugar del mundo donde se sirve la receta original de la Sachertorte, creada por Franz Sacher en 1832. Decoración imperial auténtica, servicio con guantes blancos y clientela de lujo internacional. Una tradición familiar de casi 200 años."
               details={[
                 'Especialidad: Sachertorte original (receta secreta)',
@@ -362,7 +362,7 @@ const ViennaGuideArticle: React.FC<ViennaGuideArticleProps> = ({ onBack }) => {
             <Attraction
               time="15:00h"
               title="Kärntner Straße"
-              image="https://images.pexels.com/photos/11932444/pexels-photo-11932444.jpeg?auto=compress&cs=tinysrgb&w=1200"
+              image="/images/p/11932444-w1200.webp"
               description="La calle comercial más famosa de Viena conecta la Ópera con la Catedral de San Esteban. Zona peatonal con arquitectura histórica, músicos callejeros y terrazas para observar el paso de los vieneses. Swarovski, moda internacional, joyerías tradicionales y librerías."
               details={[
                 'Zona peatonal relajada y elegante',
@@ -377,7 +377,7 @@ const ViennaGuideArticle: React.FC<ViennaGuideArticleProps> = ({ onBack }) => {
             <Attraction
               time="19:30h"
               title="Wiener Staatsoper — Gran Final Musical"
-              image="https://images.pexels.com/photos/8568542/pexels-photo-8568542.jpeg?auto=compress&cs=tinysrgb&w=1200"
+              image="/images/p/8568542-w1200.webp"
               description="Inaugurada en 1869, la Ópera Estatal de Viena es una de las más importantes del mundo. El secreto mejor guardado: las entradas de pie (Stehplätze) cuestan solo 3-4€ y ofrecen una experiencia acústica excepcional. Temporada de septiembre a junio."
               details={[
                 'Entradas de pie: 3-4€ (¡increíble relación calidad-precio!)',
@@ -749,7 +749,7 @@ const ViennaGuideArticle: React.FC<ViennaGuideArticleProps> = ({ onBack }) => {
       <section className="relative py-24 md:py-32 bg-stone-900 text-stone-50 overflow-hidden">
         <div className="absolute inset-0 opacity-20">
           <img
-            src="https://images.pexels.com/photos/11932444/pexels-photo-11932444.jpeg?auto=compress&cs=tinysrgb&w=1920"
+            src="/images/p/11932444-w1920.webp"
             alt=""
             className="w-full h-full object-cover"
           />

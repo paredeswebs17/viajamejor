@@ -36,49 +36,49 @@ const ExploreDestinations = () => {
     {
       id: 'budapest',
       title: 'Budapest en 4 Días',
-      image: 'https://images.pexels.com/photos/73796/budapest-hungary-parliament-building-73796.jpeg',
+      image: '/images/p/73796-w1600.webp',
       url: '/budapest-4-dias',
       badge: '🔥'
     },
     {
       id: 'london',
       title: 'Londres en 3 días',
-      image: 'https://images.pexels.com/photos/5380087/pexels-photo-5380087.jpeg',
+      image: '/images/p/5380087-w1600.webp',
       url: '/londres-3-dias',
       badge: '🎡'
     },
     {
       id: 'prague',
       title: 'Praga en 3 días',
-      image: 'https://images.pexels.com/photos/3046347/pexels-photo-3046347.jpeg',
+      image: '/images/p/3046347-w1600.webp',
       url: '/praga-3-dias',
       badge: '🏰'
     },
     {
       id: 'vienna',
       title: 'Viena en 3 días',
-      image: 'https://images.pexels.com/photos/8568542/pexels-photo-8568542.jpeg',
+      image: '/images/p/8568542-w1600.webp',
       url: '/viena-3-dias',
       badge: '🎼'
     },
     {
       id: 'amsterdam',
       title: 'Ámsterdam en 3 días',
-      image: 'https://images.pexels.com/photos/2031706/pexels-photo-2031706.jpeg',
+      image: '/images/p/2031706-w1600.webp',
       url: '/amsterdam-3-dias',
       badge: '🚲'
     },
     {
       id: 'roma',
       title: 'Roma en 3 días',
-      image: 'https://images.pexels.com/photos/6199223/pexels-photo-6199223.jpeg',
+      image: '/images/p/6199223-w1600.webp',
       url: '/roma-3-dias',
       badge: '🏛️'
     },
     {
       id: 'christmas',
       title: 'Mercados Navideños de Europa',
-      image: 'https://images.pexels.com/photos/19361199/pexels-photo-19361199.jpeg',
+      image: '/images/p/19361199-w1600.webp',
       url: '/mercados-navidenos-europa',
       badge: '🎄'
     }

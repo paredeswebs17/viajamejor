@@ -13,7 +13,7 @@ const GuidesPage = () => {
       title: 'Budapest en 4 Días',
       subtitle: 'La perla del Danubio',
       description: 'Castillos, balnearios termales únicos y la vibrante vida nocturna de la capital húngara.',
-      image: 'https://images.pexels.com/photos/73796/budapest-hungary-parliament-building-73796.jpeg',
+      image: '/images/p/73796-w1600.webp',
       days: '4 días',
       budget: '70€/día',
       tag: 'Popular',
@@ -25,7 +25,7 @@ const GuidesPage = () => {
       title: 'Praga en 3 Días',
       subtitle: 'Ciudad de cuento',
       description: 'Arquitectura medieval, cerveza artesanal y puentes mágicos sobre el Moldava.',
-      image: 'https://images.pexels.com/photos/3046347/pexels-photo-3046347.jpeg',
+      image: '/images/p/3046347-w1600.webp',
       days: '3 días',
       budget: '60€/día',
       tag: 'Medieval',
@@ -37,7 +37,7 @@ const GuidesPage = () => {
       title: 'Viena en 3 Días',
       subtitle: 'Capital imperial',
       description: 'Música clásica, palacios Habsburgo y la mejor cultura cafetera del mundo.',
-      image: 'https://images.pexels.com/photos/8568542/pexels-photo-8568542.jpeg',
+      image: '/images/p/8568542-w1600.webp',
       days: '3 días',
       budget: '85€/día',
       tag: 'Elegante',
@@ -49,7 +49,7 @@ const GuidesPage = () => {
       title: 'Ámsterdam en 3 Días',
       subtitle: 'Canales y cultura',
       description: 'Canales UNESCO, arte holandés y pueblos con molinos de viento.',
-      image: 'https://images.pexels.com/photos/2031706/pexels-photo-2031706.jpeg',
+      image: '/images/p/2031706-w1600.webp',
       days: '3 días',
       budget: '90€/día',
       tag: 'UNESCO',
@@ -61,7 +61,7 @@ const GuidesPage = () => {
       title: 'Roma en 3 Días',
       subtitle: 'La Ciudad Eterna',
       description: 'Coliseo, Vaticano, Fontana di Trevi y la mejor gastronomía italiana.',
-      image: 'https://images.pexels.com/photos/6199223/pexels-photo-6199223.jpeg',
+      image: '/images/p/6199223-w1600.webp',
       days: '3 días',
       budget: '80€/día',
       tag: 'Histórica',
@@ -73,7 +73,7 @@ const GuidesPage = () => {
       title: 'Londres en 3 Días',
       subtitle: 'Historia y vanguardia',
       description: 'Big Ben, Tower Bridge, museos gratuitos y multiculturalidad vibrante.',
-      image: 'https://images.pexels.com/photos/5380087/pexels-photo-5380087.jpeg',
+      image: '/images/p/5380087-w1600.webp',
       days: '3 días',
       budget: '95€/día',
       tag: 'Cosmopolita',
@@ -85,7 +85,7 @@ const GuidesPage = () => {
       title: 'Mercados Navideños',
       subtitle: 'Europa 2025-2026',
       description: 'Los mejores mercados navideños de Budapest, Praga, Viena y Roma.',
-      image: 'https://images.pexels.com/photos/19361199/pexels-photo-19361199.jpeg',
+      image: '/images/p/19361199-w1600.webp',
       days: 'Temporada',
       budget: 'Variable',
       tag: 'Navidad',
@@ -95,12 +95,12 @@ const GuidesPage = () => {
   ];
 
   const comingSoon = [
-    { title: 'Berlín en 4 días', image: 'https://images.pexels.com/photos/1128408/pexels-photo-1128408.jpeg', continent: 'Europa' },
-    { title: 'Santorini en 5 días', image: 'https://images.pexels.com/photos/1010657/pexels-photo-1010657.jpeg', continent: 'Europa' },
-    { title: 'Estambul en 4 días', image: 'https://images.pexels.com/photos/3889843/pexels-photo-3889843.jpeg', continent: 'Europa/Asia' },
-    { title: 'Lisboa en 3 días', image: 'https://images.pexels.com/photos/1534560/pexels-photo-1534560.jpeg', continent: 'Europa' },
-    { title: 'Cerdeña en 7 días', image: 'https://images.pexels.com/photos/3225531/pexels-photo-3225531.jpeg', continent: 'Europa' },
-    { title: 'Croacia en 8 días', image: 'https://images.pexels.com/photos/2104152/pexels-photo-2104152.jpeg', continent: 'Europa' },
+    { title: 'Berlín en 4 días', image: '/images/p/1128408-w1600.webp', continent: 'Europa' },
+    { title: 'Santorini en 5 días', image: '/images/p/1010657-w1600.webp', continent: 'Europa' },
+    { title: 'Estambul en 4 días', image: '/images/p/3889843-w1600.webp', continent: 'Europa/Asia' },
+    { title: 'Lisboa en 3 días', image: '/images/p/1534560-w1600.webp', continent: 'Europa' },
+    { title: 'Cerdeña en 7 días', image: '/images/p/3225531-w1600.webp', continent: 'Europa' },
+    { title: 'Croacia en 8 días', image: '/images/p/2104152-w1600.webp', continent: 'Europa' },
   ];
 
   const faqs = [
@@ -154,7 +154,7 @@ const GuidesPage = () => {
       {/* Hero */}
       <div className="relative h-[50vh] min-h-[400px] overflow-hidden flex items-end">
         <img
-          src="https://images.pexels.com/photos/3490665/pexels-photo-3490665.jpeg"
+          src="/images/p/3490665-w1600.webp"
           alt="Guías de viaje"
           className="absolute inset-0 w-full h-full object-cover"
           fetchPriority="high"

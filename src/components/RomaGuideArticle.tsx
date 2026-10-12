@@ -41,7 +41,7 @@ const RomaGuideArticle: React.FC<RomaGuideArticleProps> = ({ onBack }) => {
       <section className="relative min-h-[85vh] bg-stone-900 overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src="https://images.pexels.com/photos/6199223/pexels-photo-6199223.jpeg?auto=compress&cs=tinysrgb&w=1920"
+            src="/images/p/6199223-w1920.webp"
             alt="Coliseo Romano al atardecer"
             className="w-full h-full object-cover"
           />
@@ -133,7 +133,7 @@ const RomaGuideArticle: React.FC<RomaGuideArticleProps> = ({ onBack }) => {
             <Attraction
               time="9:00h"
               title="Plaza de España y Fontana di Trevi"
-              image="https://images.pexels.com/photos/5067076/pexels-photo-5067076.jpeg?auto=compress&cs=tinysrgb&w=1200"
+              image="/images/p/5067076-w1200.webp"
               description="Empieza el día en la elegante Plaza de España, con su escalinata monumental de 135 peldaños construida en 1723. Después, camina hasta la Fontana di Trevi (1762, diseñada por Nicola Salvi): la fuente barroca más espectacular del mundo con 26 metros de altura y 49 de ancho. Lanza tu moneda de espaldas y asegura tu regreso a Roma."
               details={[
                 'Plaza de España: escalinata de 135 peldaños, acceso libre',
@@ -149,7 +149,7 @@ const RomaGuideArticle: React.FC<RomaGuideArticleProps> = ({ onBack }) => {
             <Attraction
               time="11:30h"
               title="Panteón y Piazza Navona"
-              image="https://images.pexels.com/photos/2676602/pexels-photo-2676602.jpeg?auto=compress&cs=tinysrgb&w=1200"
+              image="/images/p/2676602-w1200.webp"
               description="El Panteón de Agripa (125 d.C.) es el edificio mejor conservado de la Roma antigua. Su cúpula de 43,3 metros sigue siendo la mayor cúpula de hormigón no armado del mundo. Después, Piazza Navona: la plaza barroca más elegante de Roma con la Fuente de los Cuatro Ríos de Bernini (1651)."
               details={[
                 'Panteón: entrada gratuita (reserva obligatoria online)',
@@ -165,7 +165,7 @@ const RomaGuideArticle: React.FC<RomaGuideArticleProps> = ({ onBack }) => {
             <Attraction
               time="15:00h"
               title="Museos Capitolinos y Terraza Vittorio Emanuele II"
-              image="https://images.pexels.com/photos/9386106/pexels-photo-9386106.jpeg?auto=compress&cs=tinysrgb&w=1200"
+              image="/images/p/9386106-w1200.webp"
               description="Los Museos Capitolinos son el museo público más antiguo del mundo (1734). Albergan la Loba Capitolina, el Marco Aurelio ecuestre original y una colección impresionante de escultura romana. Después, sube a la terraza del Altare della Patria para las mejores vistas panorámicas de Roma: Foro Romano, Coliseo y toda la ciudad a tus pies."
               details={[
                 'Museos Capitolinos: museo público más antiguo del mundo (1734)',
@@ -199,7 +199,7 @@ const RomaGuideArticle: React.FC<RomaGuideArticleProps> = ({ onBack }) => {
             <Attraction
               time="9:00h"
               title="El Coliseo"
-              image="https://images.pexels.com/photos/2064827/pexels-photo-2064827.jpeg?auto=compress&cs=tinysrgb&w=1200"
+              image="/images/p/2064827-w1200.webp"
               description="El anfiteatro más grande jamás construido (72-80 d.C.), con capacidad para 50.000-80.000 espectadores. Patrimonio de la Humanidad y una de las Nuevas Siete Maravillas del Mundo. Sus 4 pisos de arquerías, el hipogeo subterráneo y la arena donde lucharon gladiadores durante 500 años siguen impresionando hoy como hace dos milenios."
               details={[
                 'Capacidad original: 50.000-80.000 espectadores',
@@ -216,7 +216,7 @@ const RomaGuideArticle: React.FC<RomaGuideArticleProps> = ({ onBack }) => {
             <Attraction
               time="11:30h"
               title="Foro Romano y Monte Palatino"
-              image="https://images.pexels.com/photos/6220444/pexels-photo-6220444.jpeg?auto=compress&cs=tinysrgb&w=1200"
+              image="/images/p/6220444-w1200.webp"
               description="El corazón político, religioso y comercial de la Roma antigua durante más de 1.000 años. Camina entre los restos del Templo de Saturno, el Arco de Tito y la Vía Sacra. Después sube al Monte Palatino, la colina donde nació Roma según la leyenda: palacios imperiales, jardines Farnesio y vistas espectaculares sobre el Foro."
               details={[
                 'Foro Romano: centro neurálgico de la Roma antigua',
@@ -232,7 +232,7 @@ const RomaGuideArticle: React.FC<RomaGuideArticleProps> = ({ onBack }) => {
             <Attraction
               time="17:00h"
               title="Bocca della Verità y Trastevere"
-              image="https://images.pexels.com/photos/34010785/pexels-photo-34010785.jpeg?auto=compress&cs=tinysrgb&w=1200"
+              image="/images/p/34010785-w1200.webp"
               description="La Bocca della Verità (Boca de la Verdad) es un antiguo disco de mármol del siglo I que, según la leyenda, muerde la mano de los mentirosos. Después cruza el Tíber hacia Trastevere: el barrio más auténtico y encantador de Roma con calles empedradas, hiedra en las fachadas, trattorias familiares y la mejor vida nocturna de la ciudad."
               details={[
                 'Bocca della Verità: iglesia Santa María in Cosmedin',
@@ -267,7 +267,7 @@ const RomaGuideArticle: React.FC<RomaGuideArticleProps> = ({ onBack }) => {
             <Attraction
               time="9:00h"
               title="Museos Vaticanos y Capilla Sixtina"
-              image="https://images.pexels.com/photos/28733354/pexels-photo-28733354.jpeg?auto=compress&cs=tinysrgb&w=1200"
+              image="/images/p/28733354-w1200.webp"
               description="Una de las mayores colecciones de arte del mundo reunida por los Papas durante siglos. 54 galerías con obras maestras de Rafael, Caravaggio y Leonardo. El recorrido culmina en la Capilla Sixtina: el techo pintado por Miguel Ángel entre 1508-1512 con la icónica Creación de Adán y el Juicio Final en el altar."
               details={[
                 'Más de 70.000 obras en 54 galerías',
@@ -284,7 +284,7 @@ const RomaGuideArticle: React.FC<RomaGuideArticleProps> = ({ onBack }) => {
             <Attraction
               time="13:00h"
               title="Basílica de San Pedro"
-              image="https://images.pexels.com/photos/12044711/pexels-photo-12044711.jpeg?auto=compress&cs=tinysrgb&w=1200"
+              image="/images/p/12044711-w1200.webp"
               description="La iglesia más grande del mundo y centro espiritual del catolicismo. 218 metros de largo, la cúpula de Miguel Ángel alcanza 136 metros de altura. En su interior: la Piedad de Miguel Ángel (1499), el Baldaquino de Bernini (29m de bronce dorado) y las Grutas Vaticanas con la tumba de San Pedro."
               details={[
                 'Entrada gratuita (control de seguridad)',
@@ -300,7 +300,7 @@ const RomaGuideArticle: React.FC<RomaGuideArticleProps> = ({ onBack }) => {
             <Attraction
               time="16:00h"
               title="Castillo Sant'Angelo"
-              image="https://images.pexels.com/photos/31077446/pexels-photo-31077446.jpeg?auto=compress&cs=tinysrgb&w=1200"
+              image="/images/p/31077446-w1200.webp"
               description="Construido como mausoleo del emperador Adriano en el 139 d.C., posteriormente fue fortaleza papal, prisión y ahora museo. Conectado al Vaticano por el Passetto di Borgo (pasadizo secreto). Su terraza ofrece unas vistas espectaculares del Tíber, la cúpula de San Pedro y toda Roma."
               details={[
                 'Construido en 139 d.C. como mausoleo de Adriano',
@@ -316,7 +316,7 @@ const RomaGuideArticle: React.FC<RomaGuideArticleProps> = ({ onBack }) => {
             <Attraction
               time="18:30h"
               title="Piazza del Popolo y Terrazza del Pincio"
-              image="https://images.pexels.com/photos/28238173/pexels-photo-28238173.jpeg?auto=compress&cs=tinysrgb&w=1200"
+              image="/images/p/28238173-w1200.webp"
               description="Termina tu viaje en la Piazza del Popolo, una de las plazas más amplias y elegantes de Roma con su obelisco egipcio de 3.200 años y las iglesias gemelas. Después sube a la Terrazza del Pincio en los Jardines de Villa Borghese: el mirador más romántico de Roma para ver el atardecer sobre la cúpula de San Pedro."
               details={[
                 'Piazza del Popolo: obelisco egipcio de 3.200 años',
@@ -622,7 +622,7 @@ const RomaGuideArticle: React.FC<RomaGuideArticleProps> = ({ onBack }) => {
       <section className="relative py-24 md:py-32 bg-stone-900 text-stone-50 overflow-hidden">
         <div className="absolute inset-0 opacity-20">
           <img
-            src="https://images.pexels.com/photos/6199223/pexels-photo-6199223.jpeg?auto=compress&cs=tinysrgb&w=1920"
+            src="/images/p/6199223-w1920.webp"
             alt=""
             className="w-full h-full object-cover"
           />

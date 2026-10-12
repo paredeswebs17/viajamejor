@@ -32,7 +32,7 @@ const AmsterdamGuidePage = () => {
         <meta property="og:url" content="https://viajamejor.net/amsterdam-3-dias" />
         <meta
           property="og:image"
-          content="https://images.pexels.com/photos/1853542/pexels-photo-1853542.jpeg"
+          content="/images/p/1853542-w1600.webp"
         />
 
         <meta name="twitter:card" content="summary_large_image" />

@@ -29,7 +29,7 @@ const CheapDestinationsArticle: React.FC<CheapDestinationsArticleProps> = ({ onB
       {/* Hero */}
       <div className="relative h-[45vh] min-h-[340px] overflow-hidden flex items-end">
         <img
-          src="https://images.pexels.com/photos/1371360/pexels-photo-1371360.jpeg?auto=compress&cs=tinysrgb&w=1200"
+          src="/images/p/1371360-w1200.webp"
           alt="Mochilero explorando destino economico"
           className="absolute inset-0 w-full h-full object-cover"
         />

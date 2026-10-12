@@ -11,7 +11,7 @@ const TravelInsuranceArticle: React.FC<TravelInsuranceArticleProps> = ({ onBack 
       {/* Hero */}
       <div className="relative h-[45vh] min-h-[340px] overflow-hidden flex items-end">
         <img
-          src="https://images.pexels.com/photos/1010657/pexels-photo-1010657.jpeg?auto=compress&cs=tinysrgb&w=1200"
+          src="/images/p/1010657-w1200.webp"
           alt="Viajero con seguro de viaje"
           className="absolute inset-0 w-full h-full object-cover"
         />

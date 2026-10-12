@@ -71,7 +71,7 @@ Volver a guías
 
   <div className="mb-8">
     <img
-      src="https://images.pexels.com/photos/19361199/pexels-photo-19361199.jpeg"
+      src="/images/p/19361199-w1600.webp"
       alt="Mercado navideño europeo iluminado"
       className="w-full h-48 sm:h-64 lg:h-80 object-cover rounded-2xl shadow-lg"
     />
@@ -115,7 +115,7 @@ Volver a guías
 
     <div className="mb-6">
       <img
-        src="https://images.pexels.com/photos/6430090/pexels-photo-6430090.jpeg"
+        src="/images/p/6430090-w1600.webp"
         alt="Mercado navideño en Budapest"
         className="w-full h-48 sm:h-64 object-cover rounded-xl shadow-lg mb-4"
       />
@@ -295,7 +295,7 @@ Volver a guías
 
     <div className="mb-6">
       <img
-        src="https://images.pexels.com/photos/19099388/pexels-photo-19099388.jpeg"
+        src="/images/p/19099388-w1600.webp"
         alt="Mercado navideño en Praga"
         className="w-full h-48 sm:h-64 object-cover rounded-xl shadow-lg mb-4"
       />
@@ -477,7 +477,7 @@ Volver a guías
 
     <div className="mb-6">
       <img
-        src="https://images.pexels.com/photos/29925925/pexels-photo-29925925.jpeg"
+        src="/images/p/29925925-w1600.webp"
         alt="Mercado navideño en Viena"
         className="w-full h-48 sm:h-64 object-cover rounded-xl shadow-lg mb-4"
       />
@@ -667,7 +667,7 @@ Volver a guías
 
     <div className="mb-6">
       <img
-        src="https://images.pexels.com/photos/2787074/pexels-photo-2787074.jpeg"
+        src="/images/p/2787074-w1600.webp"
         alt="Roma en Navidad"
         className="w-full h-48 sm:h-64 object-cover rounded-xl shadow-lg mb-4"
       />

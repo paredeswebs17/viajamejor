@@ -115,7 +115,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
 
       <div className="mb-8">
         <img
-          src="https://images.pexels.com/photos/5380087/pexels-photo-5380087.jpeg"
+          src="/images/p/5380087-w1600.webp"
           alt="Big Ben y el Palacio de Westminster iluminados al atardecer junto al río Támesis"
           className="w-full h-48 sm:h-64 lg:h-80 object-cover rounded-2xl shadow-lg"
         />
@@ -1188,7 +1188,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
             <h4 className="text-lg font-bold text-gray-900 mb-3">Big Ben y Palacio de Westminster - El Icono Británico</h4>
             <div className="mb-4">
               <img
-                src="https://images.pexels.com/photos/31147777/pexels-photo-31147777.jpeg"
+                src="/images/p/31147777-w1600.webp"
                 alt="Big Ben y Palacio de Westminster junto al Támesis"
                 className="w-full h-48 sm:h-64 object-cover rounded-xl shadow-lg mb-4"
               />
@@ -1275,7 +1275,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
             <h4 className="text-lg font-bold text-gray-900 mb-3">Abadía de Westminster - Donde se Corona a los Reyes</h4>
 
             <div className="mb-4">
-              <img         src="https://images.pexels.com/photos/9825872/pexels-photo-9825872.jpeg"
+              <img         src="/images/p/9825872-w1600.webp"
                 alt="Big Ben y Palacio de Westminster junto al Támesis"
                 className="w-full h-48 sm:h-64 object-cover rounded-xl shadow-lg mb-4"
               />
@@ -1347,7 +1347,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
           <div className="bg-green-50 border border-green-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
             <h4 className="text-lg font-bold text-gray-900 mb-3">Paseo Real por el Parque + Residencia del Rey Carlos III</h4>
              <div className="mb-4">
-              <img         src="https://images.pexels.com/photos/16387002/pexels-photo-16387002.jpeg"
+              <img         src="/images/p/16387002-w1600.webp"
                 alt="Big Ben y Palacio de Westminster junto al Támesis"
                 className="w-full h-48 sm:h-64 object-cover rounded-xl shadow-lg mb-4"
               />
@@ -1404,7 +1404,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
           <div className="bg-blue-50 border border-blue-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
             <h4 className="text-lg font-bold text-gray-900 mb-3">El Corazón de Londres</h4>
             <div className="mb-4">
-              <img         src="https://images.pexels.com/photos/9596429/pexels-photo-9596429.jpeg"
+              <img         src="/images/p/9596429-w1600.webp"
                 alt="Big Ben y Palacio de Westminster junto al Támesis"
                 className="w-full h-48 sm:h-64 object-cover rounded-xl shadow-lg mb-4"
               />
@@ -1435,7 +1435,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
           <div className="bg-purple-50 border border-purple-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
             <h4 className="text-lg font-bold text-gray-900 mb-3">Mercado Histórico con Encanto + Callejón Mágico de Colores</h4>
             <div className="mb-4">
-              <img         src="https://images.pexels.com/photos/16230677/pexels-photo-16230677.jpeg"
+              <img         src="/images/p/16230677-w1600.webp"
                 alt="Covent Garden-Mercado Histórico con Encanto"
                 className="w-full h-48 sm:h-64 object-cover rounded-xl shadow-lg mb-4"
               />
@@ -1477,7 +1477,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
             <h4 className="text-lg font-bold text-gray-900 mb-3">La Noria Más Alta de Europa</h4>
             <div className="mb-4">
               <img
-                src="https://images.pexels.com/photos/269128/pexels-photo-269128.jpeg"
+                src="/images/p/269128-w1600.webp"
                 alt="London Eye iluminado al atardecer junto al río Támesis"
                 className="w-full h-48 sm:h-64 object-cover rounded-xl shadow-lg mb-4"
               />
@@ -1548,7 +1548,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
             <h4 className="text-lg font-bold text-gray-900 mb-3">La Orilla Cultural del Támesis</h4>
             <div className="mb-4">
               <img
-                src="https://images.pexels.com/photos/415992/pexels-photo-415992.jpeg"
+                src="/images/p/415992-w1600.webp"
                 alt="London Eye iluminado al atardecer junto al río Támesis"
                 className="w-full h-48 sm:h-64 object-cover rounded-xl shadow-lg mb-4"
               />
@@ -1597,7 +1597,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
             <h4 className="text-lg font-bold text-gray-900 mb-3">El Paraíso Gastronómico de Londres</h4>
             <div className="mb-4">
               <img
-                src="https://images.pexels.com/photos/17974028/pexels-photo-17974028.jpeg"
+                src="/images/p/17974028-w1600.webp"
                 alt="Borough Market-El Paraíso Gastronómico de Londres"
                 className="w-full h-48 sm:h-64 object-cover rounded-xl shadow-lg mb-4"
               />
@@ -1637,7 +1637,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
             <h4 className="text-lg font-bold text-gray-900 mb-3">🌉 El Puente Más Famoso de Londres</h4>
             <div className="mb-4">
               <img
-                src="https://images.pexels.com/photos/726484/pexels-photo-726484.jpeg"
+                src="/images/p/726484-w1600.webp"
                 alt="Tower Bridge - El puente basculante icónico de Londres"
                 className="w-full h-48 sm:h-64 object-cover rounded-xl shadow-lg mb-4"
               />
@@ -1701,7 +1701,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
             <h4 className="text-lg font-bold text-gray-900 mb-3">👑 1000 Años de Historia Real</h4>
             <div className="mb-4">
               <img
-                src="https://images.pexels.com/photos/248193/pexels-photo-248193.jpeg"
+                src="/images/p/248193-w1600.webp"
                 alt="Torre de Londres - Fortaleza histórica con las Joyas de la Corona"
                 className="w-full h-48 sm:h-64 object-cover rounded-xl shadow-lg mb-4"
               />
@@ -1779,7 +1779,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
     <h4 className="text-lg font-bold text-gray-900 mb-3">🌿 Sky Garden - El Jardín del Cielo (¡GRATIS!)</h4>
     <div className="mb-4">
       <img
-        src="https://images.pexels.com/photos/914838/pexels-photo-914838.jpeg"
+        src="/images/p/914838-w1600.webp"
         alt="Sky Garden - El Jardín del Cielo"
         className="w-full h-48 sm:h-64 object-cover rounded-xl shadow-lg mb-4"
       />
@@ -1831,7 +1831,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
     <h4 className="text-lg font-bold text-gray-900 mb-3">🏙️ The Shard - El Rascacielos Más Alto de Europa Occidental</h4>
     <div className="mb-4">
       <img
-        src="https://images.pexels.com/photos/1676718/pexels-photo-1676718.jpeg"
+        src="/images/p/1676718-w1600.webp"
         alt="The Shard - El Rascacielos Más Alto de Europa Occidental"
         className="w-full h-48 sm:h-64 object-cover rounded-xl shadow-lg mb-4"
       />
@@ -1958,7 +1958,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
     <h4 className="text-lg font-bold text-gray-900 mb-3">⛪ Catedral de San Pablo - La Obra Maestra Barroca de Londres</h4>
     <div className="mb-4">
       <img
-        src="https://images.pexels.com/photos/14674677/pexels-photo-14674677.jpeg"
+        src="/images/p/14674677-w1600.webp"
         alt="Catedral de San Pablo - La Obra Maestra Barroca de Londres"
         className="w-full h-48 sm:h-64 object-cover rounded-xl shadow-lg mb-4"
       />
@@ -2021,7 +2021,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
     <h4 className="text-lg font-bold text-gray-900 mb-3">🚤 Crucero de Westminster a Greenwich por el Támesis</h4>
     <div className="mb-4">
       <img
-        src="https://images.pexels.com/photos/19518923/pexels-photo-19518923.jpeg"
+        src="/images/p/19518923-w1600.webp"
         alt="Crucero de Westminster a Greenwich por el Támesis"
         className="w-full h-48 sm:h-64 object-cover rounded-xl shadow-lg mb-4"
       />
@@ -2097,7 +2097,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
       <h4 className="text-lg font-bold text-gray-900 mb-3">🏛️ El Museo Más Visitado del Reino Unido (¡GRATIS!)</h4>
       <div className="mb-4">
         <img
-          src="https://images.pexels.com/photos/32835061/pexels-photo-32835061.jpeg"
+          src="/images/p/32835061-w1600.webp"
           alt="British Museum Great Court"
           className="w-full h-48 sm:h-64 object-cover rounded-xl shadow-lg mb-4"
         />
@@ -2153,7 +2153,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
       <h4 className="text-lg font-bold text-gray-900 mb-3">🎭 El "Times Square" de Londres</h4>
       <div className="mb-4">
         <img
-          src="https://images.pexels.com/photos/4905523/pexels-photo-4905523.jpeg"
+          src="/images/p/4905523-w1600.webp"
           alt="El Times Square de Londres"
           className="w-full h-48 sm:h-64 object-cover rounded-xl shadow-lg mb-4"
         />
@@ -2206,7 +2206,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
       <h4 className="text-lg font-bold text-gray-900 mb-3">🏡 Casitas de Colores + Portobello Market</h4>
       <div className="mb-4">
         <img
-          src="https://images.pexels.com/photos/30683430/pexels-photo-30683430.jpeg"
+          src="/images/p/30683430-w1600.webp"
           alt="Notting Hill casas coloridas"
           className="w-full h-48 sm:h-64 object-cover rounded-xl shadow-lg mb-4"
         />
@@ -2251,7 +2251,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
       <h4 className="text-lg font-bold text-gray-900 mb-3">🌳 Los Pulmones Verdes de Londres</h4>
       <div className="mb-4">
         <img
-          src="https://images.pexels.com/photos/32911277/pexels-photo-32911277.jpeg"
+          src="/images/p/32911277-w1600.webp"
           alt="Los Pulmones Verdes de Londres"
           className="w-full h-48 sm:h-64 object-cover rounded-xl shadow-lg mb-4"
         />
@@ -2316,7 +2316,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
 
             <div className="mb-3 rounded-lg overflow-hidden">
               <img
-                src="https://images.pexels.com/photos/7978845/pexels-photo-7978845.jpeg"
+                src="/images/p/7978845-w1600.webp"
                 alt="Warner Bros Studio Tour Harry Potter"
                 className="w-full h-32 object-cover"
               />
@@ -2360,7 +2360,7 @@ const LondonGuideArticle: React.FC<LondonGuideArticleProps> = ({ onBack }) => {
 
             <div className="mb-3 rounded-lg overflow-hidden">
               <img
-                src="https://images.pexels.com/photos/18271653/pexels-photo-18271653.jpeg"
+                src="/images/p/18271653-w1600.webp"
                 alt="Castillo de Windsor"
                 className="w-full h-32 object-cover"
               />

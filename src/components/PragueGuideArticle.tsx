@@ -41,7 +41,7 @@ const PragueGuideArticle: React.FC<PragueGuideArticleProps> = ({ onBack }) => {
       <section className="relative min-h-[85vh] bg-stone-900 overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src="https://images.pexels.com/photos/3046347/pexels-photo-3046347.jpeg?auto=compress&cs=tinysrgb&w=1920"
+            src="/images/p/3046347-w1920.webp"
             alt="Puente de Carlos y Castillo de Praga al amanecer"
             className="w-full h-full object-cover"
           />
@@ -136,7 +136,7 @@ const PragueGuideArticle: React.FC<PragueGuideArticleProps> = ({ onBack }) => {
             <Attraction
               time="9:00h"
               title="Plaza de la Ciudad Vieja"
-              image="https://images.pexels.com/photos/7245230/pexels-photo-7245230.jpeg?auto=compress&cs=tinysrgb&w=1200"
+              image="/images/p/7245230-w1200.webp"
               description="Comienza tu aventura en el corazón histórico de Praga, donde cada edificio cuenta siglos de historia. La Iglesia de Týn con sus torres góticas, la Iglesia de San Nicolás barroca, el Palacio Kinský rococó y el famoso Reloj Astronómico de 1410 que cada hora en punto ofrece su espectáculo de los 12 Apóstoles."
               details={[
                 'Reloj Astronómico: espectáculo cada hora en punto',
@@ -153,7 +153,7 @@ const PragueGuideArticle: React.FC<PragueGuideArticleProps> = ({ onBack }) => {
             <Attraction
               time="10:30h"
               title="Torre del Ayuntamiento"
-              image="https://images.pexels.com/photos/17307596/pexels-photo-17307596.jpeg?auto=compress&cs=tinysrgb&w=1200"
+              image="/images/p/17307596-w1200.webp"
               description="Sube 70 metros para contemplar la Ciudad Dorada desde las alturas. Vista panorámica 360° del Castillo de Praga, el Puente de Carlos serpenteante, los tejados rojos típicos y las torres de la ciudad. Ascensor disponible."
               details={[
                 'Precio: 300 CZK (aprox. 12€), reducida 200 CZK (aprox. 8€)',
@@ -168,7 +168,7 @@ const PragueGuideArticle: React.FC<PragueGuideArticleProps> = ({ onBack }) => {
             <Attraction
               time="11:30h"
               title="Barrio Judío (Josefov)"
-              image="https://images.pexels.com/photos/33786384/pexels-photo-33786384.jpeg"
+              image="/images/p/33786384-w1600.webp"
               description="Un viaje conmovedor por mil años de historia judía en el corazón de Praga. El Barrio Judío mejor conservado de Europa con 6 sinagogas históricas y el Antiguo Cementerio Judío con 12.000 lápidas. La Sinagoga Española es la más bella, la Vieja-Nueva la más antigua y la Pinkas un memorial del Holocausto."
               details={[
                 'Entrada conjunta: 500 CZK (aprox. 20€), reducida 370 CZK (aprox. 15€)',
@@ -185,7 +185,7 @@ const PragueGuideArticle: React.FC<PragueGuideArticleProps> = ({ onBack }) => {
             <Attraction
               time="15:30h"
               title="Clementinum — La Biblioteca Más Bella del Mundo"
-              image="https://images.pexels.com/photos/5426128/pexels-photo-5426128.jpeg?auto=compress&cs=tinysrgb&w=1200"
+              image="/images/p/5426128-w1200.webp"
               description="Descubre la joya barroca que ha permanecido intacta desde el siglo XVIII. La Biblioteca Barroca espectacular, la Sala de los Meridianos y la Torre Astronómica con 170 escalones y vistas panorámicas únicas."
               details={[
                 'Solo visitas guiadas (inglés y checo)',
@@ -201,7 +201,7 @@ const PragueGuideArticle: React.FC<PragueGuideArticleProps> = ({ onBack }) => {
             <Attraction
               time="17:30h"
               title="Casa Danzante"
-              image="https://images.pexels.com/photos/2930357/pexels-photo-2930357.jpeg?auto=compress&cs=tinysrgb&w=1200"
+              image="/images/p/2930357-w1200.webp"
               description="El edificio más controvertido y fotogénico de Praga moderna. Diseñada por Vlado Milunić e inaugurada en 1996, está inspirada en Fred Astaire y Ginger Rogers. Mirador en la azotea con bar y vistas espectaculares."
               details={[
                 'Diseñada por Vlado Milunić (1996)',
@@ -215,7 +215,7 @@ const PragueGuideArticle: React.FC<PragueGuideArticleProps> = ({ onBack }) => {
             <Attraction
               time="20:00h"
               title="Teatro Negro"
-              image="https://images.pexels.com/photos/3046347/pexels-photo-3046347.jpeg?auto=compress&cs=tinysrgb&w=1200"
+              image="/images/p/3046347-w1200.webp"
               description="Termina el día con una experiencia artística que nació en Praga. Teatro mudo con efectos ópticos donde los objetos flotan en el aire. Perfecto para todas las edades y no requiere conocimiento del idioma."
               details={[
                 'Teatro mudo con efectos ópticos únicos',
@@ -250,7 +250,7 @@ const PragueGuideArticle: React.FC<PragueGuideArticleProps> = ({ onBack }) => {
             <Attraction
               time="9:00h"
               title="Castillo de Praga"
-              image="https://images.pexels.com/photos/16285135/pexels-photo-16285135.jpeg?auto=compress&cs=tinysrgb&w=1200"
+              image="/images/p/16285135-w1200.webp"
               description="El castillo más grande del mundo. Comienza temprano en el complejo real que definió la historia de Bohemia. El circuito incluye la Catedral de San Vito (joya gótica), el Antiguo Palacio Real, la Basílica de San Jorge y el Callejón del Oro."
               details={[
                 'Precio: 450 CZK (aprox. 18€) circuito completo',
@@ -268,7 +268,7 @@ const PragueGuideArticle: React.FC<PragueGuideArticleProps> = ({ onBack }) => {
             <Attraction
               time="12:00h"
               title="Callejón del Oro"
-              image="https://images.pexels.com/photos/31687789/pexels-photo-31687789.jpeg?auto=compress&cs=tinysrgb&w=1200"
+              image="/images/p/31687789-w1200.webp"
               description="La calle más famosa del castillo, hogar de orfebres y después de artistas. Casitas coloridas del siglo XVI donde Franz Kafka vivió en el n.22. Casas-museo reconstruidas, talleres de artesanos y tiendas de souvenirs únicos."
               details={[
                 'Casas del siglo XVI de los orfebres del emperador',
@@ -283,7 +283,7 @@ const PragueGuideArticle: React.FC<PragueGuideArticleProps> = ({ onBack }) => {
             <Attraction
               time="14:00h"
               title="Puente de Carlos"
-              image="https://images.pexels.com/photos/126292/pexels-photo-126292.jpeg?auto=compress&cs=tinysrgb&w=1200"
+              image="/images/p/126292-w1200.webp"
               description="Baja del castillo hacia el puente más famoso de Europa Central. Construido en 1357 por Carlos IV, mide 516 metros y cuenta con 30 estatuas barrocas. Solo peatonal desde 1950, con artistas callejeros y vistas al castillo espectaculares."
               details={[
                 'Construido en 1357 por Carlos IV',
@@ -299,7 +299,7 @@ const PragueGuideArticle: React.FC<PragueGuideArticleProps> = ({ onBack }) => {
             <Attraction
               time="16:00h"
               title="Muro de John Lennon"
-              image="https://images.pexels.com/photos/10133414/pexels-photo-10133414.jpeg?auto=compress&cs=tinysrgb&w=1200"
+              image="/images/p/10133414-w1200.webp"
               description="Un símbolo de paz y libertad que resistió al comunismo. Grafitis desde los años 80, renovado constantemente. Cerca del muro: Isla de Kampa (parque romántico), la calle más estrecha de Praga y el Palacio Wallenstein."
               details={[
                 'Símbolo de resistencia pacífica desde los 80',
@@ -314,7 +314,7 @@ const PragueGuideArticle: React.FC<PragueGuideArticleProps> = ({ onBack }) => {
             <Attraction
               time="18:00h"
               title="Crucero por el Moldava"
-              image="https://images.pexels.com/photos/16351151/pexels-photo-16351151.jpeg?auto=compress&cs=tinysrgb&w=1200"
+              image="/images/p/16351151-w1200.webp"
               description="Contempla Praga desde el río mientras el sol se pone sobre la Ciudad Dorada. Vistas únicas del Castillo iluminado, el Puente de Carlos dorado y todos los puentes históricos desde el agua."
               details={[
                 'Duración: 60-90 minutos',
@@ -348,7 +348,7 @@ const PragueGuideArticle: React.FC<PragueGuideArticleProps> = ({ onBack }) => {
             <Attraction
               time="9:00h"
               title="Excursión a Terezín — Memoria Histórica"
-              image="https://images.pexels.com/photos/949081/pexels-photo-949081.jpeg?auto=compress&cs=tinysrgb&w=1200"
+              image="/images/p/949081-w1200.webp"
               description="Una excursión conmovedora al campo de concentración que no debemos olvidar. Experiencia educativa profunda sobre la historia del Holocausto con transporte y guía en español incluido."
               details={[
                 'Duración: Día completo (8h)',
@@ -364,7 +364,7 @@ const PragueGuideArticle: React.FC<PragueGuideArticleProps> = ({ onBack }) => {
             <Attraction
               time="9:00h"
               title="Alternativa: Karlovy Vary — Ciudad Balneario"
-              image="https://images.pexels.com/photos/32795906/pexels-photo-32795906.jpeg?auto=compress&cs=tinysrgb&w=1200"
+              image="/images/p/32795906-w1200.webp"
               description="Descubre la elegante ciudad termal donde la realeza europea tomaba las aguas. Arquitectura señorial, fuentes termales para probar y un ambiente relajado que contrasta con la energía de Praga."
               details={[
                 'Duración: Día completo (8h)',
@@ -380,7 +380,7 @@ const PragueGuideArticle: React.FC<PragueGuideArticleProps> = ({ onBack }) => {
             <Attraction
               time="17:00h"
               title="Torre Petřín — La Torre Eiffel de Praga"
-              image="https://images.pexels.com/photos/37764656/pexels-photo-37764656.jpeg"
+              image="/images/p/37764656-w1600.webp"
               description="Si prefieres quedarte en la ciudad o al regresar de la excursión, sube a la torre de 60 metros con vistas 360° espectaculares. El funicular está incluido en el pase de 24h de transporte. Los Jardines de Petřín son gratuitos y perfectos para un paseo relajado."
               details={[
                 'Precio: 220 CZK (aprox. 9€)',
@@ -496,7 +496,7 @@ const PragueGuideArticle: React.FC<PragueGuideArticleProps> = ({ onBack }) => {
 
           <div className="mt-10">
             <img
-              src="https://images.pexels.com/photos/10875122/pexels-photo-10875122.jpeg?auto=compress&cs=tinysrgb&w=1200"
+              src="/images/p/10875122-w1200.webp"
               alt="Gastronomía checa - Trdelník"
               className="w-full h-64 md:h-80 object-cover"
             />
@@ -664,7 +664,7 @@ const PragueGuideArticle: React.FC<PragueGuideArticleProps> = ({ onBack }) => {
       <section className="relative py-24 md:py-32 bg-stone-900 text-stone-50 overflow-hidden">
         <div className="absolute inset-0 opacity-20">
           <img
-            src="https://images.pexels.com/photos/3046347/pexels-photo-3046347.jpeg?auto=compress&cs=tinysrgb&w=1920"
+            src="/images/p/3046347-w1920.webp"
             alt=""
             className="w-full h-full object-cover"
           />

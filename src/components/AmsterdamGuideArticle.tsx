@@ -40,7 +40,7 @@ const AmsterdamGuideArticle: React.FC<AmsterdamGuideArticleProps> = ({ onBack })
       <section className="relative min-h-[85vh] bg-stone-900 overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src="https://images.pexels.com/photos/2031706/pexels-photo-2031706.jpeg?auto=compress&cs=tinysrgb&w=1920"
+            src="/images/p/2031706-w1920.webp"
             alt="Canales de Ámsterdam con casas tradicionales holandesas"
             className="w-full h-full object-cover"
           />
@@ -133,7 +133,7 @@ const AmsterdamGuideArticle: React.FC<AmsterdamGuideArticleProps> = ({ onBack })
             <Attraction
               time="9:00h"
               title="Estación Central y Plaza Dam"
-              image="https://images.pexels.com/photos/12705132/pexels-photo-12705132.jpeg?auto=compress&cs=tinysrgb&w=1200"
+              image="/images/p/12705132-w1200.webp"
               description="Comenzamos en la Estación Central, un edificio del mismo arquitecto que diseñó el Rijksmuseum (1882). La plaza Dam es el epicentro de Ámsterdam, donde se encuentra el Palacio Real (1808), la Iglesia Nueva y el Monumento Nacional."
               details={[
                 'Palacio Real: Visitable por dentro (12€)',
@@ -150,7 +150,7 @@ const AmsterdamGuideArticle: React.FC<AmsterdamGuideArticleProps> = ({ onBack })
             <Attraction
               time="11:30h"
               title="Canales Históricos y Mercado de las Flores"
-              image="https://images.pexels.com/photos/17345883/pexels-photo-17345883.jpeg?auto=compress&cs=tinysrgb&w=1200"
+              image="/images/p/17345883-w1200.webp"
               description="Pasea por la calle Damstraat hasta llegar a los canales, Patrimonio de la Humanidad UNESCO desde 2010. El Mercado de las Flores (Bloemenmarkt) es el mercado flotante más grande del mundo, con tulipanes, bulbos y souvenirs."
               details={[
                 'Bloemenmarkt: fundado en 1862, único mercado flotante del mundo',
@@ -165,7 +165,7 @@ const AmsterdamGuideArticle: React.FC<AmsterdamGuideArticleProps> = ({ onBack })
             <Attraction
               time="15:00h"
               title="Casa de Ana Frank"
-              image="https://images.pexels.com/photos/2031706/pexels-photo-2031706.jpeg?auto=compress&cs=tinysrgb&w=1200"
+              image="/images/p/2031706-w1200.webp"
               description="Visita imprescindible en Ámsterdam. Aquí Ana Frank y su familia se ocultaron durante más de 2 años (1942-1944) de la invasión nazi. El museo conserva el escondite tras la estantería giratoria y expone su famoso diario original."
               details={[
                 'Precio: 16€ adultos / 7€ (10-17 años)',
@@ -182,7 +182,7 @@ const AmsterdamGuideArticle: React.FC<AmsterdamGuideArticleProps> = ({ onBack })
             <Attraction
               time="17:00h"
               title="Las 9 Calles y Mirador A'Dam Tower"
-              image="https://images.pexels.com/photos/2366108/pexels-photo-2366108.jpeg?auto=compress&cs=tinysrgb&w=1200"
+              image="/images/p/2366108-w1200.webp"
               description="Las '9 Straatjes' (9 calles) son un barrio pintoresco con boutiques vintage, galerías de arte, cafés acogedores y tiendas únicas. Perfecto para pasear y comprar souvenirs especiales. Después, ferry gratuito al Mirador A'Dam."
               details={[
                 'Boutiques de moda vintage únicas',
@@ -218,7 +218,7 @@ const AmsterdamGuideArticle: React.FC<AmsterdamGuideArticleProps> = ({ onBack })
             <Attraction
               time="9:00h"
               title="Zaanse Schans, Edam, Volendam y Marken"
-              image="https://images.pexels.com/photos/13059436/pexels-photo-13059436.jpeg?auto=compress&cs=tinysrgb&w=1200"
+              image="/images/p/13059436-w1200.webp"
               description="Excursión imprescindible para ver la Holanda auténtica: molinos de viento, casas de madera de colores, fabricación de quesos tradicionales y zuecos. Una experiencia que te transporta al siglo XVII."
               details={[
                 'Zaanse Schans: Molinos de viento históricos',
@@ -235,7 +235,7 @@ const AmsterdamGuideArticle: React.FC<AmsterdamGuideArticleProps> = ({ onBack })
             <Attraction
               time="17:00h"
               title="Tour en Barco por los Canales UNESCO"
-              image="https://images.pexels.com/photos/3884476/pexels-photo-3884476.jpeg?auto=compress&cs=tinysrgb&w=1200"
+              image="/images/p/3884476-w1200.webp"
               description="Ver Ámsterdam desde sus canales es una experiencia única. Los cruceros pasan bajo más de 1.500 puentes y muestran las fachadas históricas que hacen de Ámsterdam la 'Venecia del Norte'."
               details={[
                 'Precio: 15-18€ por persona',
@@ -252,7 +252,7 @@ const AmsterdamGuideArticle: React.FC<AmsterdamGuideArticleProps> = ({ onBack })
             <Attraction
               time="19:30h"
               title="Rembrandtplein y Puente Magere Brug"
-              image="https://images.pexels.com/photos/34217700/pexels-photo-34217700.jpeg?auto=compress&cs=tinysrgb&w=1200"
+              image="/images/p/34217700-w1200.webp"
               description="La plaza más animada de Ámsterdam. Repleta de terrazas, restaurantes, coffeeshops y bares. Perfecta para cenar y tomar algo mientras ves el ambiente nocturno holandés. Cerca está el famoso puente Magere Brug iluminado."
               details={[
                 'Estatua de Rembrandt y "La Ronda de Noche" en 3D',
@@ -286,7 +286,7 @@ const AmsterdamGuideArticle: React.FC<AmsterdamGuideArticleProps> = ({ onBack })
             <Attraction
               time="9:00h"
               title="Rijksmuseum — La Ronda de Noche"
-              image="https://images.pexels.com/photos/208733/pexels-photo-208733.jpeg?auto=compress&cs=tinysrgb&w=1200"
+              image="/images/p/208733-w1200.webp"
               description="El museo más importante de Holanda, con más de 8.000 obras de arte y 800 años de historia holandesa. Aquí se encuentra 'La Ronda de Noche' de Rembrandt y 'La Lechera' de Vermeer."
               details={[
                 'Precio: 27€ adultos',
@@ -303,7 +303,7 @@ const AmsterdamGuideArticle: React.FC<AmsterdamGuideArticleProps> = ({ onBack })
             <Attraction
               time="12:00h"
               title="Museo Van Gogh — Los Girasoles"
-              image="https://images.pexels.com/photos/11951240/pexels-photo-11951240.jpeg?auto=compress&cs=tinysrgb&w=1200"
+              image="/images/p/11951240-w1200.webp"
               description="El museo alberga 200 pinturas, 500 dibujos y 750 cartas de Van Gogh. Un recorrido cronológico por la vida del genio holandés, desde sus primeras obras oscuras hasta los brillantes girasoles y paisajes del sur de Francia."
               details={[
                 'Precio: 26€ adultos',
@@ -320,7 +320,7 @@ const AmsterdamGuideArticle: React.FC<AmsterdamGuideArticleProps> = ({ onBack })
             <Attraction
               time="16:00h"
               title="Heineken Experience"
-              image="https://images.pexels.com/photos/18999312/pexels-photo-18999312.jpeg?auto=compress&cs=tinysrgb&w=1200"
+              image="/images/p/18999312-w1200.webp"
               description="Visita interactiva en la antigua fábrica de Heineken (1863-1988). Aprende sobre la historia de la marca, el proceso de elaboración de cerveza y degusta cervezas frescas. Incluye experiencias multimedia y juegos."
               details={[
                 'Precio: 25€ (compra online más barato)',
@@ -337,7 +337,7 @@ const AmsterdamGuideArticle: React.FC<AmsterdamGuideArticleProps> = ({ onBack })
             <Attraction
               time="19:00h"
               title="Barrio Rojo — De Wallen"
-              image="https://images.pexels.com/photos/9320/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1200"
+              image="/images/p/9320-w1200.webp"
               description="El barrio más conocido y controvertido de Ámsterdam. A pesar de su fama, es un barrio histórico muy animado, repleto de restaurantes, bares y cafés. La zona es completamente segura y está llena de gente a todas horas."
               details={[
                 'Oude Kerk: Edificio más antiguo de Ámsterdam (1306)',
@@ -636,7 +636,7 @@ const AmsterdamGuideArticle: React.FC<AmsterdamGuideArticleProps> = ({ onBack })
       <section className="relative py-24 md:py-32 bg-stone-900 text-stone-50 overflow-hidden">
         <div className="absolute inset-0 opacity-20">
           <img
-            src="https://images.pexels.com/photos/2031706/pexels-photo-2031706.jpeg?auto=compress&cs=tinysrgb&w=1920"
+            src="/images/p/2031706-w1920.webp"
             alt=""
             className="w-full h-full object-cover"
           />

@@ -27,7 +27,7 @@ const OrganizedDestinations = () => {
       id: 'morocco',
       title: 'Marruecos Organizado',
       subtitle: 'Guía local · Todo en español',
-      image: 'https://images.pexels.com/photos/3889843/pexels-photo-3889843.jpeg',
+      image: '/images/p/3889843-w1600.webp',
       href: '/viajes-organizados/marruecos',
     }
   ];
@@ -36,19 +36,19 @@ const OrganizedDestinations = () => {
     {
       id: 'japan',
       title: 'Japón',
-      image: 'https://images.pexels.com/photos/1440476/pexels-photo-1440476.jpeg',
+      image: '/images/p/1440476-w1600.webp',
       flag: '🇯🇵',
     },
     {
       id: 'thailand',
       title: 'Tailandia',
-      image: 'https://images.pexels.com/photos/1682748/pexels-photo-1682748.jpeg',
+      image: '/images/p/1682748-w1600.webp',
       flag: '🇹🇭',
     },
     {
       id: 'sri-lanka',
       title: 'Sri Lanka',
-      image: 'https://images.pexels.com/photos/34128247/pexels-photo-34128247.jpeg',
+      image: '/images/p/34128247-w1600.webp',
       flag: '🇱🇰',
     },
   ];

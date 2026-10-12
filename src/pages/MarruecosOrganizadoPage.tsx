@@ -36,7 +36,7 @@ export default function MarruecosOrganizadoPage() {
       {/* ─── HERO ─── */}
       <section style={{ position:'relative', height:'100vh', minHeight:640, overflow:'hidden', display:'flex', alignItems:'center' }}>
         <img
-          src="https://images.pexels.com/photos/3889843/pexels-photo-3889843.jpeg"
+          src="/images/p/3889843-w1600.webp"
           alt="Marruecos"
           style={{ position:'absolute', inset:0, width:'100%', height:'100%', objectFit:'cover', animation:'heroZoom 14s ease-out forwards' }}
         />

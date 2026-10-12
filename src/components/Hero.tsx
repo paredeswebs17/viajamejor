@@ -6,7 +6,7 @@ const Hero = () => {
     <section className="relative min-h-[92vh] flex items-center overflow-hidden bg-slate-900">
       <div className="absolute inset-0 z-0">
         <img
-          src="https://images.pexels.com/photos/1004584/pexels-photo-1004584.jpeg?auto=compress&cs=tinysrgb&w=1920"
+          src="/images/p/1004584-w1920.webp"
           alt="Travel background"
           className="absolute inset-0 w-full h-full object-cover"
           fetchPriority="high"

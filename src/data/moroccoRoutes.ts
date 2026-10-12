@@ -32,7 +32,7 @@ export const routes: Route[] = [
     title: 'Ruta de 7 días desde Marrakech al Desierto',
     subtitle: 'Atlas, kasbahs y dunas de Merzouga',
     duration: '7 días',
-    image: 'https://images.pexels.com/photos/5541277/pexels-photo-5541277.jpeg?auto=compress&cs=tinysrgb&w=1600',
+    image: '/images/p/5541277-w1600.webp',
     heroImage: '/images/image-noche-desierto.png',
     places: ['Marrakech', 'Aït Ben Haddou', 'Dades', 'Merzouga', 'Ouarzazate'],
     description: 'La ruta clásica reinventada. Cruzamos el Alto Atlas, dormimos en kasbahs de barro y terminamos a lomos de dromedario entre las dunas del Erg Chebbi.',
@@ -45,7 +45,7 @@ export const routes: Route[] = [
         description:
           'Os esperamos en el aeropuerto y os trasladamos al riad. La tarde es vuestra: el primer contacto con la plaza Jemaa El Fna, el corazón de la medina. De día, domadores, encantadores de serpientes y puestos de zumo de naranja. Al caer la noche la plaza se transforma: puestos de comida, música improvisada y espectáculos. La mejor forma de empezar.',
         lodging: 'Riad en la medina de Marrakech · alojamiento y desayuno',
-        image: 'https://images.pexels.com/photos/20895317/pexels-photo-20895317.jpeg?auto=compress&cs=tinysrgb&w=1400',
+        image: '/images/p/20895317-w1400.webp',
         highlights: ['Recogida en aeropuerto', 'Riad en la medina', 'Atardecer en Jemaa El Fna'],
       },
       {
@@ -55,7 +55,7 @@ export const routes: Route[] = [
         description:
           'Cruzamos el Alto Atlas por el puerto de Tizi N\'Tichka (2.260 m), la carretera más alta del norte de África, salpicada de aldeas bereberes. Paramos en la kasbah de Aït Ben Haddou, un pueblo fortificado de más de 800 años donde se rodaron Gladiator o Lawrence de Arabia. Seguimos por Ouarzazate y el Valle de las Rosas, con visita a una cooperativa de mujeres, y terminamos recorriendo la Garganta del Dades.',
         lodging: 'Hotel en el Valle del Dades · cena y desayuno',
-        image: 'https://images.pexels.com/photos/6095564/pexels-photo-6095564.jpeg?auto=compress&cs=tinysrgb&w=1400',
+        image: '/images/p/6095564-w1400.webp',
         highlights: ['Puerto del Tizi N\'Tichka', 'Kasbah de Aït Ben Haddou', 'Valle de las Rosas'],
       },
       {
@@ -85,7 +85,7 @@ export const routes: Route[] = [
         description:
           'Regreso a Marrakech cruzando de nuevo el puerto del Tizi N\'Tichka. En el camino os sorprenderán los paisajes del Alto Atlas y las aldeas bereberes con casas construidas de forma caótica, colgando de las laderas. Llegada a Marrakech al atardecer.',
         lodging: 'Riad en la medina de Marrakech · alojamiento y desayuno',
-        image: 'https://images.pexels.com/photos/37684102/pexels-photo-37684102.jpeg?auto=compress&cs=tinysrgb&w=1400',
+        image: '/images/p/37684102-w1400.webp',
         highlights: ['Aldeas colgadas del Atlas', 'Paradas fotográficas', 'Atardecer en Marrakech'],
       },
       {
@@ -95,7 +95,7 @@ export const routes: Route[] = [
         description:
           'Visita de la ciudad con guía local. Recorreremos el minarete de la Koutoubia, símbolo de la ciudad; las Tumbas Saadíes del siglo XVI; el Palacio de la Bahía; los Jardines de la Menara; y la medina, ese laberinto de callejuelas y tiendas. Almuerzo y tarde libre para perderse a gusto por los zocos y volver a la plaza de Jemaa El Fna, que de noche es otra.',
         lodging: 'Riad en la medina de Marrakech · alojamiento y desayuno',
-        image: 'https://images.pexels.com/photos/36871952/pexels-photo-36871952.jpeg?auto=compress&cs=tinysrgb&w=1400',
+        image: '/images/p/36871952-w1400.webp',
         highlights: ['Minarete de la Koutoubia', 'Palacio de la Bahía', 'Zocos y tarde libre'],
       },
       {
@@ -105,7 +105,7 @@ export const routes: Route[] = [
         description:
           'Un último desayuno tranquilo y tiempo libre hasta la hora del traslado al aeropuerto de Marrakech. Gracias por confiar en nosotros. Os esperamos de vuelta.',
         lodging: 'Traslado incluido al aeropuerto',
-        image: 'https://images.pexels.com/photos/34940617/pexels-photo-34940617.jpeg?auto=compress&cs=tinysrgb&w=1400',
+        image: '/images/p/34940617-w1400.webp',
         highlights: ['Desayuno sin prisas', 'Traslado privado', 'Hasta el próximo viaje'],
       },
     ],
@@ -134,10 +134,10 @@ export const routes: Route[] = [
       'Cualquier servicio no especificado en "incluye"',
     ],
     gallery: [
-      'https://images.pexels.com/photos/20700637/pexels-photo-20700637.jpeg?auto=compress&cs=tinysrgb&w=1200',
-      'https://images.pexels.com/photos/13591966/pexels-photo-13591966.jpeg?auto=compress&cs=tinysrgb&w=1200',
-      'https://images.pexels.com/photos/23551283/pexels-photo-23551283.jpeg?auto=compress&cs=tinysrgb&w=1200',
-      'https://images.pexels.com/photos/13811606/pexels-photo-13811606.jpeg?auto=compress&cs=tinysrgb&w=1200',
+      '/images/p/20700637-w1200.webp',
+      '/images/p/13591966-w1200.webp',
+      '/images/p/23551283-w1200.webp',
+      '/images/p/13811606-w1200.webp',
     ],
   },
   {
@@ -146,8 +146,8 @@ export const routes: Route[] = [
     title: 'Ruta de 5 días desde Marrakech al Desierto',
     subtitle: 'Tour privado de confort: Atlas, Dades y Merzouga',
     duration: '5 días',
-    image: 'https://images.pexels.com/photos/2901215/pexels-photo-2901215.jpeg?auto=compress&cs=tinysrgb&w=1600',
-    heroImage: 'https://images.pexels.com/photos/37441764/pexels-photo-37441764.jpeg?auto=compress&cs=tinysrgb&w=1400',
+    image: '/images/p/2901215-w1600.webp',
+    heroImage: '/images/p/37441764-w1400.webp',
     places: ['Marrakech', 'Aït Ben Haddou', 'Dades', 'Todra', 'Merzouga'],
     description: 'La esencia del primer viaje a Marruecos en cinco días: ciudad imperial, kasbahs del Atlas, gargantas y una noche en jaima en las dunas del Erg Chebbi.',
     longDescription: 'Una versión más concentrada de nuestra ruta clásica, pensada para quienes disponen de menos días pero no quieren renunciar a nada. Tour privado con conductor-guía en español, visita guiada de Marrakech el primer día, dos jornadas de carretera escénica por el Alto Atlas, una noche inolvidable en campamento de lujo en Merzouga y regreso por el Valle del Draa.',
@@ -159,7 +159,7 @@ export const routes: Route[] = [
         description:
           'Os recibimos en el aeropuerto y arrancamos con visita guiada de Marrakech: el minarete de la Koutoubia, las Tumbas Saadíes del siglo XVI, el Palacio de la Bahía, los Jardines de la Menara y la medina, ese laberinto de tiendas y oficios. Almuerzo y tarde libre para subir a alguna de las terrazas que rodean la plaza Jemaa El Fna y ver cómo cambia la ciudad cuando se enciende.',
         lodging: 'Riad en la medina de Marrakech · alojamiento y desayuno',
-        image: 'https://images.pexels.com/photos/36871952/pexels-photo-36871952.jpeg?auto=compress&cs=tinysrgb&w=1400',
+        image: '/images/p/36871952-w1400.webp',
         highlights: ['Recogida en aeropuerto', 'Visita guiada de la medina', 'Atardecer en Jemaa El Fna'],
       },
       {
@@ -169,7 +169,7 @@ export const routes: Route[] = [
         description:
           'Salida a las 8:00 hacia el sur cruzando el puerto de Tizi N\'Tichka, salpicado de aldeas bereberes, hasta la kasbah de Aït Ben Haddou: un pueblo fortificado con más de 800 años donde se han rodado Gladiator o Lawrence de Arabia. Pasamos por los estudios de Ouarzazate y, tras el almuerzo, visita a una cooperativa de mujeres en el Valle de las Rosas. Noche en el Valle del Dades.',
         lodging: 'Hotel en el Valle del Dades · alojamiento y desayuno',
-        image: 'https://images.pexels.com/photos/6095564/pexels-photo-6095564.jpeg?auto=compress&cs=tinysrgb&w=1400',
+        image: '/images/p/6095564-w1400.webp',
         highlights: ['Aït Ben Haddou', 'Estudios de Ouarzazate', 'Cooperativa en el Valle de las Rosas'],
       },
       {
@@ -179,7 +179,7 @@ export const routes: Route[] = [
         description:
           'Recorremos la Garganta del Todra, un cañón vertical de cientos de metros, antes de seguir hacia los oasis del Tafilalet. En Merzouga cambiamos el coche por dromedarios para cruzar las dunas del Erg Chebbi, subir a la duna más alta para hacer sandboard y ver la puesta de sol. Cena tradicional bajo las estrellas y música de tambores en jaima bereber.',
         lodging: 'Campamento de lujo en jaimas · cena y desayuno',
-        image: 'https://images.pexels.com/photos/12214734/pexels-photo-12214734.jpeg?auto=compress&cs=tinysrgb&w=1400',
+        image: '/images/p/12214734-w1400.webp',
         highlights: ['Garganta del Todra', 'Dromedarios al atardecer', 'Sandboard y noche bajo las estrellas'],
       },
       {
@@ -189,7 +189,7 @@ export const routes: Route[] = [
         description:
           'Amanecer en las dunas y desayuno tradicional en el campamento. Salida atravesando aldeas bereberes (Alnif, Tazarine, N\'Kob) y almuerzo en el Valle del Draa, el palmeral más largo del país. Por la tarde, regreso a Marrakech cruzando de nuevo el Alto Atlas, con llegada al riad sobre las 18:30.',
         lodging: 'Riad en la medina de Marrakech · alojamiento y desayuno',
-        image: 'https://images.pexels.com/photos/37441764/pexels-photo-37441764.jpeg?auto=compress&cs=tinysrgb&w=1400',
+        image: '/images/p/37441764-w1400.webp',
         highlights: ['Amanecer entre dunas', 'Aldeas del Anti Atlas', 'Palmeral del Draa'],
       },
       {
@@ -199,7 +199,7 @@ export const routes: Route[] = [
         description:
           'Un último desayuno tranquilo y tiempo libre hasta el traslado al aeropuerto de Marrakech a la hora convenida. Gracias por confiar en nosotros. Os esperamos de vuelta.',
         lodging: 'Traslado incluido al aeropuerto',
-        image: 'https://images.pexels.com/photos/34936253/pexels-photo-34936253.jpeg?auto=compress&cs=tinysrgb&w=1400',
+        image: '/images/p/34936253-w1400.webp',
         highlights: ['Desayuno sin prisas', 'Tiempo libre', 'Traslado privado'],
       },
     ],
@@ -226,10 +226,10 @@ export const routes: Route[] = [
       'Cualquier servicio no especificado en "incluye"',
     ],
     gallery: [
-      'https://images.pexels.com/photos/23551283/pexels-photo-23551283.jpeg?auto=compress&cs=tinysrgb&w=1200',
-      'https://images.pexels.com/photos/13591966/pexels-photo-13591966.jpeg?auto=compress&cs=tinysrgb&w=1200',
-      'https://images.pexels.com/photos/30757351/pexels-photo-30757351.jpeg?auto=compress&cs=tinysrgb&w=1200',
-      'https://images.pexels.com/photos/36209446/pexels-photo-36209446.jpeg?auto=compress&cs=tinysrgb&w=1200',
+      '/images/p/23551283-w1200.webp',
+      '/images/p/13591966-w1200.webp',
+      '/images/p/30757351-w1200.webp',
+      '/images/p/36209446-w1200.webp',
     ],
   },
   {
@@ -238,8 +238,8 @@ export const routes: Route[] = [
     title: 'Ruta de 3 días desde Marrakech al Desierto',
     subtitle: 'Viaje boutique de confort: Atlas, Dades y Merzouga',
     duration: '3 días',
-    image: 'https://images.pexels.com/photos/36209446/pexels-photo-36209446.jpeg?auto=compress&cs=tinysrgb&w=1600',
-    heroImage: 'https://images.pexels.com/photos/6095564/pexels-photo-6095564.jpeg?auto=compress&cs=tinysrgb&w=1400',
+    image: '/images/p/36209446-w1600.webp',
+    heroImage: '/images/p/6095564-w1400.webp',
     places: ['Marrakech', 'Aït Ben Haddou', 'Dades', 'Todra', 'Merzouga'],
     description: 'La ruta esencial al desierto en tres días. Cruzamos el Alto Atlas, dormimos en el Valle del Dades y pasamos una noche en jaima entre las dunas del Erg Chebbi.',
     longDescription: 'Una escapada privada de tres días para quienes tienen poco tiempo y quieren tocar lo esencial: la kasbah de Aït Ben Haddou, las gargantas del Atlas y una noche en campamento de lujo bajo las estrellas del Sahara.',
@@ -251,7 +251,7 @@ export const routes: Route[] = [
         description:
           'Recogida en el riad a las 8:00. Salida hacia el sur cruzando el puerto de Tizi N\'Tichka, con paradas en aldeas bereberes hasta la kasbah de Aït Ben Haddou: un pueblo fortificado de más de 800 años, escenario de Gladiator o Lawrence de Arabia. Continuamos por los estudios cinematográficos de Ouarzazate y, tras el almuerzo, visita a una cooperativa de mujeres en el Valle de las Rosas. Noche en el Valle del Dades.',
         lodging: 'Hotel en el Valle del Dades · alojamiento y desayuno',
-        image: 'https://images.pexels.com/photos/6095564/pexels-photo-6095564.jpeg?auto=compress&cs=tinysrgb&w=1400',
+        image: '/images/p/6095564-w1400.webp',
         highlights: ['Aït Ben Haddou', 'Estudios de Ouarzazate', 'Cooperativa del Valle de las Rosas'],
       },
       {
@@ -261,7 +261,7 @@ export const routes: Route[] = [
         description:
           'De camino al Sahara recorremos la Garganta del Todra, un cañón vertical de paredes inmensas, y los oasis del Tafilalet. En Merzouga cambiamos el coche por dromedarios para cruzar las dunas del Erg Chebbi y llegar al campamento. Subida a la duna más alta para hacer sandboard y ver la puesta de sol. Cena tradicional bajo las estrellas con música de tambores.',
         lodging: 'Campamento de lujo en jaimas · cena y desayuno',
-        image: 'https://images.pexels.com/photos/12214734/pexels-photo-12214734.jpeg?auto=compress&cs=tinysrgb&w=1400',
+        image: '/images/p/12214734-w1400.webp',
         highlights: ['Garganta del Todra', 'Dromedarios al atardecer', 'Noche en jaima bereber'],
       },
       {
@@ -271,7 +271,7 @@ export const routes: Route[] = [
         description:
           'Amanecer en las dunas y desayuno en el campamento. Salida hacia Marrakech atravesando aldeas bereberes (Alnif, Tazarine, N\'Kob) y almuerzo en el Valle del Draa, el palmeral más largo del país. Por la tarde cruzamos de nuevo el Alto Atlas, con llegada al riad sobre las 18:30.',
         lodging: 'Traslado al riad en Marrakech',
-        image: 'https://images.pexels.com/photos/10573397/pexels-photo-10573397.jpeg?auto=compress&cs=tinysrgb&w=1400',
+        image: '/images/p/10573397-w1400.webp',
         highlights: ['Amanecer entre dunas', 'Aldeas del Anti Atlas', 'Palmeral del Draa'],
       },
     ],
@@ -295,10 +295,10 @@ export const routes: Route[] = [
       'Cualquier servicio no especificado en "incluye"',
     ],
     gallery: [
-      'https://images.pexels.com/photos/13591966/pexels-photo-13591966.jpeg?auto=compress&cs=tinysrgb&w=1200',
-      'https://images.pexels.com/photos/30757351/pexels-photo-30757351.jpeg?auto=compress&cs=tinysrgb&w=1200',
-      'https://images.pexels.com/photos/36209446/pexels-photo-36209446.jpeg?auto=compress&cs=tinysrgb&w=1200',
-      'https://images.pexels.com/photos/13811606/pexels-photo-13811606.jpeg?auto=compress&cs=tinysrgb&w=1200',
+      '/images/p/13591966-w1200.webp',
+      '/images/p/30757351-w1200.webp',
+      '/images/p/36209446-w1200.webp',
+      '/images/p/13811606-w1200.webp',
     ],
   },
   {
@@ -307,7 +307,7 @@ export const routes: Route[] = [
     title: 'Ruta de 5 días desde Fez a Marrakech',
     subtitle: 'Tour privado por el Medio Atlas, el desierto y el sur',
     duration: '5 días',
-    image: 'https://images.pexels.com/photos/30320422/pexels-photo-30320422.jpeg?auto=compress&cs=tinysrgb&w=1600',
+    image: '/images/p/30320422-w1600.webp',
     heroImage: '/images/image-noche-desierto.png',
     places: ['Fez', 'Ifrane', 'Merzouga', 'Todra', 'Ouarzazate', 'Aït Ben Haddou', 'Marrakech'],
     description: 'De la medina más antigua del mundo árabe a la ciudad roja: cedros del Medio Atlas, dunas del Erg Chebbi y kasbahs del sur en cinco días.',
@@ -320,7 +320,7 @@ export const routes: Route[] = [
         description:
           'Os recibimos en el aeropuerto de Fez y os trasladamos al riad. Por la tarde, visita guiada de la ciudad: las puertas doradas del Palacio Real, un mirador sobre la muralla de la medina y un recorrido a pie por mezquitas, medersas y caravasares hasta el barrio de los curtidores, uno de los rincones más fotografiados de Marruecos.',
         lodging: 'Riad en la medina de Fez · alojamiento y desayuno',
-        image: 'https://images.pexels.com/photos/38112326/pexels-photo-38112326.jpeg?auto=compress&cs=tinysrgb&w=1400',
+        image: '/images/p/38112326-w1400.webp',
         highlights: ['Puertas del Palacio Real', 'Mirador sobre la medina', 'Barrio de los curtidores'],
       },
       {
@@ -350,7 +350,7 @@ export const routes: Route[] = [
         description:
           'Visita a la kasbah de Ouarzazate y a la de Aït Ben Haddou, ambas Patrimonio de la Humanidad y plató de Gladiator, La Joya del Nilo o Babel. Cruzamos el Alto Atlas con paradas en aldeas bereberes y el Valle de Ounila. Llegada a Marrakech por la tarde y visita guiada por el Palacio de la Bahía, las Tumbas Saadíes y la Mezquita de la Koutoubia. Noche libre en Jemaa El Fna.',
         lodging: 'Riad en la medina de Marrakech · alojamiento y desayuno',
-        image: 'https://images.pexels.com/photos/36871952/pexels-photo-36871952.jpeg?auto=compress&cs=tinysrgb&w=1400',
+        image: '/images/p/36871952-w1400.webp',
         highlights: ['Aït Ben Haddou', 'Valle de Ounila', 'Visita guiada de Marrakech'],
       },
       {
@@ -360,7 +360,7 @@ export const routes: Route[] = [
         description:
           'Un último desayuno tranquilo y tiempo libre hasta el traslado al aeropuerto de Marrakech a la hora convenida. Gracias por confiar en nosotros. Os esperamos de vuelta.',
         lodging: 'Traslado incluido al aeropuerto',
-        image: 'https://images.pexels.com/photos/31356126/pexels-photo-31356126.png?auto=compress&cs=tinysrgb&w=1400',
+        image: '/images/p/31356126-w1400.webp',
         highlights: ['Desayuno sin prisas', 'Tiempo libre', 'Traslado privado'],
       },
     ],
@@ -388,10 +388,10 @@ export const routes: Route[] = [
       'Cualquier servicio no especificado en "incluye"',
     ],
     gallery: [
-      'https://images.pexels.com/photos/30320422/pexels-photo-30320422.jpeg?auto=compress&cs=tinysrgb&w=1200',
-      'https://images.pexels.com/photos/30757351/pexels-photo-30757351.jpeg?auto=compress&cs=tinysrgb&w=1200',
-      'https://images.pexels.com/photos/13591966/pexels-photo-13591966.jpeg?auto=compress&cs=tinysrgb&w=1200',
-      'https://images.pexels.com/photos/13811606/pexels-photo-13811606.jpeg?auto=compress&cs=tinysrgb&w=1200',
+      '/images/p/30320422-w1200.webp',
+      '/images/p/30757351-w1200.webp',
+      '/images/p/13591966-w1200.webp',
+      '/images/p/13811606-w1200.webp',
     ],
   },
   {
@@ -400,8 +400,8 @@ export const routes: Route[] = [
     title: 'Ruta de 8 días desde Marrakech a Fez',
     subtitle: 'Las dos ciudades imperiales unidas por el Atlas y el Sahara',
     duration: '8 días',
-    image: 'https://images.pexels.com/photos/13591966/pexels-photo-13591966.jpeg?auto=compress&cs=tinysrgb&w=1600',
-    heroImage: 'https://images.pexels.com/photos/4968848/pexels-photo-4968848.jpeg?auto=compress&cs=tinysrgb&w=1400',
+    image: '/images/p/13591966-w1600.webp',
+    heroImage: '/images/p/4968848-w1400.webp',
     places: ['Marrakech', 'Aït Ben Haddou', 'Dades', 'Merzouga', 'Khamlia', 'Azrou', 'Fez'],
     description: 'Una travesía completa de Marrakech a Fez: Atlas, kasbahs del sur, dos noches en el desierto y la medina más antigua del mundo árabe.',
     longDescription: 'Ocho días para vivir el país de extremo a extremo, conectando las dos grandes ciudades imperiales: el Alto Atlas, Aït Ben Haddou, las gargantas del Dades y del Todra, dos noches en Merzouga con familias nómadas y música Gnawa en Khamlia, los cedros de Azrou e Ifrane, y dos jornadas en Fez con guía local.',
@@ -413,7 +413,7 @@ export const routes: Route[] = [
         description:
           'Os esperamos en el aeropuerto de Marrakech y os trasladamos al riad. La tarde es vuestra: un primer paseo por la medina y el primer contacto con la plaza Jemaa El Fna, el corazón vivo de la ciudad.',
         lodging: 'Riad en la medina de Marrakech · alojamiento y desayuno',
-        image: 'https://images.pexels.com/photos/20895317/pexels-photo-20895317.jpeg?auto=compress&cs=tinysrgb&w=1400',
+        image: '/images/p/20895317-w1400.webp',
         highlights: ['Recogida en aeropuerto', 'Riad en la medina', 'Primer paseo por Jemaa El Fna'],
       },
       {
@@ -423,7 +423,7 @@ export const routes: Route[] = [
         description:
           'Visita guiada de Marrakech: el minarete de la Koutoubia, símbolo almohade de la ciudad; las Tumbas Saadíes del siglo XVI; el Palacio de la Bahía; los Jardines de la Menara; y la medina, ese laberinto de oficios y zocos. Tarde libre para perderse y subir a una de las terrazas que rodean Jemaa El Fna al atardecer.',
         lodging: 'Riad en la medina de Marrakech · alojamiento y desayuno',
-        image: 'https://images.pexels.com/photos/36871952/pexels-photo-36871952.jpeg?auto=compress&cs=tinysrgb&w=1400',
+        image: '/images/p/36871952-w1400.webp',
         highlights: ['Minarete de la Koutoubia', 'Palacio de la Bahía', 'Atardecer en terraza'],
       },
       {
@@ -433,7 +433,7 @@ export const routes: Route[] = [
         description:
           'Cruzamos el Alto Atlas por el puerto de Tizi N\'Tichka (2.260 m), el paso más alto del norte de África. Visita de la kasbah de Aït Ben Haddou, escenario de Gladiator y Lawrence de Arabia. Continuamos hacia Ouarzazate, almuerzo y visita a una cooperativa de mujeres en el Valle de las Rosas. Recorremos la Garganta del Dades por su carretera serpenteante.',
         lodging: 'Hotel en el Valle del Dades · cena y desayuno',
-        image: 'https://images.pexels.com/photos/6095564/pexels-photo-6095564.jpeg?auto=compress&cs=tinysrgb&w=1400',
+        image: '/images/p/6095564-w1400.webp',
         highlights: ['Tizi N\'Tichka', 'Aït Ben Haddou', 'Carretera de la Garganta del Dades'],
       },
       {
@@ -443,7 +443,7 @@ export const routes: Route[] = [
         description:
           'Salida hacia las dunas del Erg Chebbi pasando por la Garganta del Todra, paredes verticales de cientos de metros, y los oasis del Tafilalet. En Merzouga cambiamos el coche por dromedarios para entrar en el desierto al atardecer, subir a la duna más alta para hacer sandboard y ver caer el sol. Cena tradicional, fuego y música de tambores en jaima bereber.',
         lodging: 'Campamento de lujo en jaimas · cena y desayuno',
-        image: 'https://images.pexels.com/photos/12214734/pexels-photo-12214734.jpeg?auto=compress&cs=tinysrgb&w=1400',
+        image: '/images/p/12214734-w1400.webp',
         highlights: ['Garganta del Todra', 'Dromedarios al atardecer', 'Noche bajo las estrellas'],
       },
       {
@@ -453,7 +453,7 @@ export const routes: Route[] = [
         description:
           'Amanecer en las dunas y desayuno en el campamento. Recorremos una de las pistas del Rally París-Dakar y conocemos cómo viven las familias nómadas de la zona, con parada para tomar el té con una de ellas. En Khamlia, pueblo de origen maliense, asistimos a un concierto de música Gnawa. Almuerzo con una familia bereber (con opción de tatuajes de henna).',
         lodging: 'Hotel del desierto · cena y desayuno',
-        image: 'https://images.pexels.com/photos/4968848/pexels-photo-4968848.jpeg?auto=compress&cs=tinysrgb&w=1400',
+        image: '/images/p/4968848-w1400.webp',
         highlights: ['Pista del Dakar en 4x4', 'Té con familia nómada', 'Concierto Gnawa en Khamlia'],
       },
       {
@@ -463,7 +463,7 @@ export const routes: Route[] = [
         description:
           'Subimos al Medio Atlas atravesando los bosques de cedros de Azrou, donde habitan los monos de berbería en libertad. Pasamos por Ifrane, "la Suiza de Marruecos", con sus tejados a dos aguas. Llegada a Fez por la tarde y noche libre para un primer paseo por la ciudad.',
         lodging: 'Riad en la medina de Fez · alojamiento y desayuno',
-        image: 'https://images.pexels.com/photos/26689356/pexels-photo-26689356.jpeg?auto=compress&cs=tinysrgb&w=1400',
+        image: '/images/p/26689356-w1400.webp',
         highlights: ['Cedros milenarios de Azrou', 'Ifrane', 'Llegada a Fez'],
       },
       {
@@ -473,7 +473,7 @@ export const routes: Route[] = [
         description:
           'Día completo con guía local por la más antigua de las ciudades imperiales, fundada en el 808. Empezamos en las puertas doradas del Palacio Real, seguimos por un mirador sobre la muralla y bajamos a recorrer a pie la medina: mezquitas, medersas, caravasares y el barrio de los curtidores. Tarde por el barrio de los artesanos, donde pervive el arte andalusí.',
         lodging: 'Riad en la medina de Fez · alojamiento y desayuno',
-        image: 'https://images.pexels.com/photos/38112326/pexels-photo-38112326.jpeg?auto=compress&cs=tinysrgb&w=1400',
+        image: '/images/p/38112326-w1400.webp',
         highlights: ['Puertas del Palacio Real', 'Barrio de los curtidores', 'Barrio de los artesanos'],
       },
       {
@@ -483,7 +483,7 @@ export const routes: Route[] = [
         description:
           'Un último desayuno tranquilo y tiempo libre hasta el traslado al aeropuerto de Fez a la hora convenida. Gracias por confiar en nosotros. Os esperamos de vuelta.',
         lodging: 'Traslado incluido al aeropuerto',
-        image: 'https://images.pexels.com/photos/7391720/pexels-photo-7391720.jpeg?auto=compress&cs=tinysrgb&w=1400',
+        image: '/images/p/7391720-w1400.webp',
         highlights: ['Desayuno sin prisas', 'Tiempo libre', 'Traslado privado'],
       },
     ],
@@ -512,10 +512,10 @@ export const routes: Route[] = [
       'Cualquier servicio no especificado en "incluye"',
     ],
     gallery: [
-      'https://images.pexels.com/photos/20700637/pexels-photo-20700637.jpeg?auto=compress&cs=tinysrgb&w=1200',
-      'https://images.pexels.com/photos/13591966/pexels-photo-13591966.jpeg?auto=compress&cs=tinysrgb&w=1200',
-      'https://images.pexels.com/photos/30757351/pexels-photo-30757351.jpeg?auto=compress&cs=tinysrgb&w=1200',
-      'https://images.pexels.com/photos/30320422/pexels-photo-30320422.jpeg?auto=compress&cs=tinysrgb&w=1200',
+      '/images/p/20700637-w1200.webp',
+      '/images/p/13591966-w1200.webp',
+      '/images/p/30757351-w1200.webp',
+      '/images/p/30320422-w1200.webp',
     ],
   },
   {
@@ -524,8 +524,8 @@ export const routes: Route[] = [
     title: 'Ruta de 7 días desde Tánger a Marrakech',
     subtitle: 'Ciudad azul, Fez, Atlas y desierto en una semana',
     duration: '7 días',
-    image: 'https://images.pexels.com/photos/34337962/pexels-photo-34337962.jpeg?auto=compress&cs=tinysrgb&w=1600',
-    heroImage: 'https://images.pexels.com/photos/6095564/pexels-photo-6095564.jpeg?auto=compress&cs=tinysrgb&w=1400',
+    image: '/images/p/34337962-w1600.webp',
+    heroImage: '/images/p/6095564-w1400.webp',
     places: ['Tánger', 'Chefchaouen', 'Fez', 'Merzouga', 'Dades', 'Aït Ben Haddou', 'Marrakech'],
     description: 'Una semana de norte a sur: la medina azul de Chefchaouen, la imperial Fez, una noche en jaima en el Sahara y las kasbahs del Alto Atlas.',
     longDescription: 'Siete días para recorrer Marruecos en diagonal, desde el Estrecho hasta la ciudad roja. Dormimos en la medina azul de Chefchaouen, visitamos Fez con guía local, cruzamos el Medio Atlas hasta el desierto de Merzouga y regresamos por las gargantas del Todra, el Valle del Dades y Aït Ben Haddou hasta Marrakech.',
@@ -537,7 +537,7 @@ export const routes: Route[] = [
         description:
           'Recogida en el puerto o aeropuerto de Tánger. Salida hacia Chefchaouen, ubicada en la Reserva de la Biosfera Intercontinental del Mediterráneo, en las montañas del Rif. La Ciudad Azul, ciudad santa del Islam, sorprende con la costumbre de sus habitantes de pintar casas y calles de azul añil. Merece la pena caminarla, recorrer sus plazas, visitar su fortaleza, admirar su mezquita y descubrir sus lavaderos. Para el turista hispanohablante es una ciudad muy cómoda.',
         lodging: 'Riad en Chefchaouen · alojamiento y desayuno',
-        image: 'https://images.pexels.com/photos/13591966/pexels-photo-13591966.jpeg?auto=compress&cs=tinysrgb&w=1400',
+        image: '/images/p/13591966-w1400.webp',
         highlights: ['Llegada a Tánger', 'Calles azules de Chaouen', 'Fortaleza y mezquita'],
       },
       {
@@ -547,7 +547,7 @@ export const routes: Route[] = [
         description:
           'Dejamos Chefchaouen y nos dirigimos hacia Fez. Por el camino visitamos las ruinas romanas de Volubilis, ciudad que ya figuraba en los mapas del siglo IV. Salida hacia Meknés, una de las grandes villas históricas fundada por el Sultán Moulay Ismail: recorremos sus murallas y el mausoleo-mezquita del fundador, uno de los pocos edificios religiosos abiertos a no musulmanes. Continuamos hasta Fez.',
         lodging: 'Riad en la medina de Fez · alojamiento y desayuno',
-        image: 'https://images.pexels.com/photos/18767562/pexels-photo-18767562.jpeg?auto=compress&cs=tinysrgb&w=1400',
+        image: '/images/p/18767562-w1400.webp',
         highlights: ['Ruinas romanas de Volubilis', 'Murallas de Meknés', 'Mausoleo de Moulay Ismail'],
       },
       {
@@ -587,7 +587,7 @@ export const routes: Route[] = [
         description:
           'Visita a la kasbah de Ouarzazate y a Aït Ben Haddou, Patrimonio de la Humanidad UNESCO y escenario de Gladiator, La Joya del Nilo y Babel. Recorremos sus estrechas callejuelas que se remontan a casi mil años. Continuamos hacia Marrakech por el Alto Atlas, con paisajes sorprendentes y pueblos bereberes. Pasamos por el Valle de Ounila, uno de los oasis más bonitos del sur marroquí. Llegada a Marrakech al mediodía. Por la tarde, visita con guía local: Palacio de la Bahía, Tumbas Saadíes y la Koutoubia. Noche libre en Jemaa El Fna.',
         lodging: 'Riad en la medina de Marrakech · alojamiento y desayuno',
-        image: 'https://images.pexels.com/photos/6095564/pexels-photo-6095564.jpeg?auto=compress&cs=tinysrgb&w=1400',
+        image: '/images/p/6095564-w1400.webp',
         highlights: ['Kasbah de Aït Ben Haddou', 'Valle de Ounila', 'Plaza Jemaa El Fna'],
       },
       {
@@ -597,7 +597,7 @@ export const routes: Route[] = [
         description:
           'Traslado al aeropuerto de Marrakech Menara a la hora convenida. Gracias por confiar en nosotros. Os esperamos de vuelta.',
         lodging: 'Traslado incluido al aeropuerto',
-        image: 'https://images.pexels.com/photos/10573397/pexels-photo-10573397.jpeg?auto=compress&cs=tinysrgb&w=1400',
+        image: '/images/p/10573397-w1400.webp',
         highlights: ['Desayuno sin prisas', 'Tiempo libre', 'Traslado privado'],
       },
     ],
@@ -623,10 +623,10 @@ export const routes: Route[] = [
       'Propinas',
     ],
     gallery: [
-      'https://images.pexels.com/photos/34337962/pexels-photo-34337962.jpeg?auto=compress&cs=tinysrgb&w=1200',
-      'https://images.pexels.com/photos/30320422/pexels-photo-30320422.jpeg?auto=compress&cs=tinysrgb&w=1200',
-      'https://images.pexels.com/photos/30757351/pexels-photo-30757351.jpeg?auto=compress&cs=tinysrgb&w=1200',
-      'https://images.pexels.com/photos/13591966/pexels-photo-13591966.jpeg?auto=compress&cs=tinysrgb&w=1200',
+      '/images/p/34337962-w1200.webp',
+      '/images/p/30320422-w1200.webp',
+      '/images/p/30757351-w1200.webp',
+      '/images/p/13591966-w1200.webp',
     ],
   },
   {
@@ -635,8 +635,8 @@ export const routes: Route[] = [
     title: 'Ruta de 8 días desde Tánger a Marrakech',
     subtitle: 'Chaouen, Fez, el desierto y la ciudad roja',
     duration: '8 días',
-    image: 'https://images.pexels.com/photos/34337962/pexels-photo-34337962.jpeg?auto=compress&cs=tinysrgb&w=1600',
-    heroImage: 'https://images.pexels.com/photos/18767562/pexels-photo-18767562.jpeg?auto=compress&cs=tinysrgb&w=1400',
+    image: '/images/p/34337962-w1600.webp',
+    heroImage: '/images/p/18767562-w1400.webp',
     places: ['Tánger', 'Chefchaouen', 'Volubilis', 'Meknés', 'Fez', 'Merzouga', 'Dades', 'Aït Ben Haddou', 'Marrakech'],
     description: 'De norte a sur: el azul del Rif, ruinas romanas de Volubilis, la medina más antigua del mundo árabe y una noche en jaima en el Sahara.',
     longDescription: 'Una travesía completa que arranca en el norte mediterráneo y baja en diagonal hasta Marrakech. Dormimos en Chefchaouen, la ciudad azul del Rif; visitamos Volubilis y Meknés; pasamos dos noches en Fez con guía local; cruzamos el Medio Atlas hasta Merzouga para una noche en campamento bereber; y volvemos por Todra, Dades, Telouet y Aït Ben Haddou hasta Marrakech.',
@@ -648,7 +648,7 @@ export const routes: Route[] = [
         description:
           'Recogida en el puerto o el aeropuerto de Tánger. Salida hacia Chefchaouen, en plena Reserva de la Biosfera Intercontinental del Mediterráneo, en las montañas del Rif. Llamada la Medina Azul por la costumbre de pintar casas y calles de azul añil, es una ciudad cómoda para el viajero hispanohablante. Tarde para perderse por sus plazas, su fortaleza, sus lavaderos y su mezquita.',
         lodging: 'Riad en Chefchaouen · alojamiento y desayuno',
-        image: 'https://images.pexels.com/photos/13591966/pexels-photo-13591966.jpeg?auto=compress&cs=tinysrgb&w=1400',
+        image: '/images/p/13591966-w1400.webp',
         highlights: ['Llegada a Tánger', 'Calles azules de Chaouen', 'Atardecer en el Rif'],
       },
       {
@@ -658,7 +658,7 @@ export const routes: Route[] = [
         description:
           'Bajamos del Rif bordeando el bosque de Mamora. Visita de Volubilis, uno de los yacimientos romanos mejor conservados del país, y de la ciudad santa de Moulay Idriss. Recorrido por Meknés, una de las grandes villas históricas de Marruecos. Llegada a Fez por la tarde y traslado al riad en la medina.',
         lodging: 'Riad en la medina de Fez · alojamiento y desayuno',
-        image: 'https://images.pexels.com/photos/18767562/pexels-photo-18767562.jpeg?auto=compress&cs=tinysrgb&w=1400',
+        image: '/images/p/18767562-w1400.webp',
         highlights: ['Ruinas romanas de Volubilis', 'Moulay Idriss', 'Llegada a Fez'],
       },
       {
@@ -668,7 +668,7 @@ export const routes: Route[] = [
         description:
           'Día completo con visita guiada por la más antigua de las ciudades imperiales, fundada en el 808. Empezamos en las puertas doradas del Palacio Real, seguimos con un mirador sobre la muralla y bajamos a recorrer a pie la medina: mezquitas, medersas, caravasares y el barrio de los curtidores. Tarde por el barrio de los artesanos, donde pervive el arte andalusí traído desde España.',
         lodging: 'Riad en la medina de Fez · alojamiento y desayuno',
-        image: 'https://images.pexels.com/photos/38112326/pexels-photo-38112326.jpeg?auto=compress&cs=tinysrgb&w=1400',
+        image: '/images/p/38112326-w1400.webp',
         highlights: ['Puertas del Palacio Real', 'Barrio de los curtidores', 'Barrio de los artesanos'],
       },
       {
@@ -678,7 +678,7 @@ export const routes: Route[] = [
         description:
           'Salida temprano hacia Merzouga por el Medio Atlas. Paramos en Ifrane, "la Suiza de Marruecos", y en los cedros de Azrou, donde habitan los monos de berbería. Almuerzo en Midelt, "la capital de la manzana". Cruzamos el Tizi N\'Talgamt y descendemos por el Valle del Ziz, con sus inmensos palmerales, hasta las dunas del Erg Chebbi. Allí cambiamos el coche por dromedarios y entramos en el desierto al atardecer. Cena bereber con música en vivo bajo las estrellas.',
         lodging: 'Campamento de jaimas en el Erg Chebbi · cena y desayuno',
-        image: 'https://images.pexels.com/photos/26689356/pexels-photo-26689356.jpeg?auto=compress&cs=tinysrgb&w=1400',
+        image: '/images/p/26689356-w1400.webp',
         highlights: ['Cedros milenarios de Azrou', 'Valle del Ziz', 'Noche en jaima'],
       },
       {
@@ -698,7 +698,7 @@ export const routes: Route[] = [
         description:
           'Camino a Ouarzazate, el Hollywood de Marruecos, con sus estudios de cine y la kasbah de Taourirt, antigua residencia del pachá Glaoui. Continuamos hasta Aït Ben Haddou, pueblo fortificado Patrimonio de la Humanidad y plató de Gladiator, Babel o Sahara. Por la tarde visitamos la kasbah de Telouet, una de las mejor conservadas, y cruzamos el Alto Atlas por una carretera espectacular hasta Marrakech.',
         lodging: 'Riad en la medina de Marrakech · alojamiento y desayuno',
-        image: 'https://images.pexels.com/photos/6095564/pexels-photo-6095564.jpeg?auto=compress&cs=tinysrgb&w=1400',
+        image: '/images/p/6095564-w1400.webp',
         highlights: ['Kasbah de Taourirt', 'Aït Ben Haddou', 'Kasbah de Telouet'],
       },
       {
@@ -708,7 +708,7 @@ export const routes: Route[] = [
         description:
           'Visita guiada de Marrakech, fundada por los almorávides en el siglo XI: el minarete de la Koutoubia, las Tumbas Saadíes del siglo XVI, el Palacio de la Bahía y los Jardines de la Menara. Almuerzo y tarde libre para recorrer la medina y disfrutar del cambio de la plaza Jemaa El Fna entre el día y la noche.',
         lodging: 'Riad en la medina de Marrakech · alojamiento y desayuno',
-        image: 'https://images.pexels.com/photos/20895317/pexels-photo-20895317.jpeg?auto=compress&cs=tinysrgb&w=1400',
+        image: '/images/p/20895317-w1400.webp',
         highlights: ['Minarete de la Koutoubia', 'Palacio de la Bahía', 'Jemaa El Fna'],
       },
       {
@@ -718,7 +718,7 @@ export const routes: Route[] = [
         description:
           'Un último desayuno tranquilo y tiempo libre hasta el traslado al aeropuerto de Marrakech a la hora convenida. Gracias por confiar en nosotros. Os esperamos de vuelta.',
         lodging: 'Traslado incluido al aeropuerto',
-        image: 'https://images.pexels.com/photos/34940617/pexels-photo-34940617.jpeg?auto=compress&cs=tinysrgb&w=1400',
+        image: '/images/p/34940617-w1400.webp',
         highlights: ['Desayuno sin prisas', 'Tiempo libre', 'Traslado privado'],
       },
     ],
@@ -747,10 +747,10 @@ export const routes: Route[] = [
       'Cualquier servicio no especificado en "incluye"',
     ],
     gallery: [
-      'https://images.pexels.com/photos/34337962/pexels-photo-34337962.jpeg?auto=compress&cs=tinysrgb&w=1200',
-      'https://images.pexels.com/photos/30320422/pexels-photo-30320422.jpeg?auto=compress&cs=tinysrgb&w=1200',
-      'https://images.pexels.com/photos/30757351/pexels-photo-30757351.jpeg?auto=compress&cs=tinysrgb&w=1200',
-      'https://images.pexels.com/photos/13811606/pexels-photo-13811606.jpeg?auto=compress&cs=tinysrgb&w=1200',
+      '/images/p/34337962-w1200.webp',
+      '/images/p/30320422-w1200.webp',
+      '/images/p/30757351-w1200.webp',
+      '/images/p/13811606-w1200.webp',
     ],
   },
   {
@@ -759,8 +759,8 @@ export const routes: Route[] = [
     title: 'Ruta de 12 días desde Tánger a Marrakech',
     subtitle: 'El viaje más completo: norte, imperial, desierto y Atlas',
     duration: '12 días',
-    image: 'https://images.pexels.com/photos/34337962/pexels-photo-34337962.jpeg?auto=compress&cs=tinysrgb&w=1600',
-    heroImage: 'https://images.pexels.com/photos/34337962/pexels-photo-34337962.jpeg?auto=compress&cs=tinysrgb&w=1920',
+    image: '/images/p/34337962-w1600.webp',
+    heroImage: '/images/p/34337962-w1920.webp',
     places: ['Tánger', 'Chefchaouen', 'Volubilis', 'Meknés', 'Fez', 'Ifrane', 'Merzouga', 'Todra', 'Dades', 'Ouarzazate', 'Aït Ben Haddou', 'Marrakech'],
     description: 'Doce días sin prisas de norte a sur: Chaouen, ciudades imperiales, cedros del Atlas, dos noches en el Sahara y las kasbahs más espectaculares del país.',
     longDescription: 'El viaje más completo que ofrecemos entre Tánger y Marrakech. Dos semanas a ritmo pausado para empaparse de todo: la medina azul de Chefchaouen, las ruinas de Volubilis, la imperial Meknés, dos días en Fez, cedros del Medio Atlas, dos noches en Merzouga con familias nómadas y música Gnawa, las gargantas del Todra y del Dades, Ouarzazate, Aït Ben Haddou y dos días en Marrakech.',
@@ -772,7 +772,7 @@ export const routes: Route[] = [
         description:
           'Recogida en el puerto o aeropuerto de Tánger. Salida hacia Chefchaouen, ubicada en la Reserva de la Biosfera Intercontinental del Mediterráneo, en las montañas del Rif. Chefchaouen, la Ciudad Azul, ciudad santa del Islam, sorprende con la costumbre de sus habitantes de pintar casas y calles de azul añil. Merece la pena caminarla, recorrer sus plazas, visitar su fortaleza, admirar su mezquita y descubrir sus lavaderos. Para el turista hispanohablante es una ciudad muy cómoda: prácticamente todo el mundo habla español.',
         lodging: 'Riad en Chefchaouen · alojamiento y desayuno',
-        image: 'https://images.pexels.com/photos/13591966/pexels-photo-13591966.jpeg?auto=compress&cs=tinysrgb&w=1400',
+        image: '/images/p/13591966-w1400.webp',
         highlights: ['Llegada a Tánger', 'Calles azules de Chaouen', 'Fortaleza y mezquita'],
       },
       {
@@ -792,7 +792,7 @@ export const routes: Route[] = [
         description:
           'Día completo de visita guiada por Fez. Fez ha sabido mantener sus tradiciones, su artesanía, sus oficios y su universidad, una de las más antiguas del mundo, fundada en el 859 d.C., donde el estudio de la lengua árabe y la religión son su esencia. Visitamos su medina Fez-el-Bali, uno de los mayores emplazamientos medievales del mundo y Patrimonio de la Humanidad UNESCO, con sus zocos y callejuelas, palacios, madrazas y mezquitas.',
         lodging: 'Riad en la medina de Fez · alojamiento y desayuno',
-        image: 'https://images.pexels.com/photos/38112326/pexels-photo-38112326.jpeg?auto=compress&cs=tinysrgb&w=1400',
+        image: '/images/p/38112326-w1400.webp',
         highlights: ['Universidad Al-Qarawiyyin', 'Barrio de los curtidores', 'Zocos de la medina'],
       },
       {
@@ -802,7 +802,7 @@ export const routes: Route[] = [
         description:
           'Salida hacia Midelt vía Ifrane, llamada la "Suiza marroquí" por su estilo arquitectónico, y al bosque de Azrou donde nos detenemos para disfrutar viendo los monos de berbería trepando por los cedros centenarios. Continuamos ruta por las montañas del Medio Atlas hasta llegar a Midelt, a los pies de las montañas.',
         lodging: 'Hotel en Midelt · alojamiento y desayuno',
-        image: 'https://images.pexels.com/photos/26689356/pexels-photo-26689356.jpeg?auto=compress&cs=tinysrgb&w=1400',
+        image: '/images/p/26689356-w1400.webp',
         highlights: ['Ifrane, la Suiza marroquí', 'Monos de berbería en Azrou', 'Montañas del Medio Atlas'],
       },
       {
@@ -842,7 +842,7 @@ export const routes: Route[] = [
         description:
           'Conducimos por el Valle del Dades hacia Kalaat Mgouna, pasando la ruta de las mil kasbahs. Visitamos el Valle de las Rosas y el pueblo de Skoura. Continuamos hacia Ouarzazate, "el Hollywood de Africa", donde visitamos estudios de cine locales y sus impresionantes kasbahs.',
         lodging: 'Hotel en Ouarzazate · alojamiento y desayuno',
-        image: 'https://images.pexels.com/photos/5504565/pexels-photo-5504565.jpeg?auto=compress&cs=tinysrgb&w=1400',
+        image: '/images/p/5504565-w1400.webp',
         highlights: ['Ruta de las Mil Kasbahs', 'Valle de las Rosas', 'Estudios de cine de Ouarzazate'],
       },
       {
@@ -852,7 +852,7 @@ export const routes: Route[] = [
         description:
           'Visitamos la famosa kasbah de Aït Ben Haddou, la más grande de Marruecos y Patrimonio de la Humanidad UNESCO. Nuestro recorrido continúa a través del paso de montaña Tizi N\'Tichka sobre las montañas del Alto Atlas, una carretera espectacular salpicada de aldeas bereberes. Llegada a Marrakech a última hora de la tarde.',
         lodging: 'Riad en la medina de Marrakech · alojamiento y desayuno',
-        image: 'https://images.pexels.com/photos/6095564/pexels-photo-6095564.jpeg?auto=compress&cs=tinysrgb&w=1400',
+        image: '/images/p/6095564-w1400.webp',
         highlights: ['Kasbah de Aït Ben Haddou', 'Puerto del Tizi N\'Tichka', 'Llegada a Marrakech'],
       },
       {
@@ -862,7 +862,7 @@ export const routes: Route[] = [
         description:
           'Visita guiada de Marrakech, fundada por los almorávides en el siglo XI. Destacamos: el minarete de la Koutoubia, símbolo de la ciudad y joya del arte almohade; las Tumbas Saadíes; el Palacio de la Bahía; la medina y la famosa plaza de Jemaa El Fna, donde se reúnen vendedores, acróbatas y narradores de historias. Tarde libre para perderse por los zocos.',
         lodging: 'Riad en la medina de Marrakech · alojamiento y desayuno',
-        image: 'https://images.pexels.com/photos/20895317/pexels-photo-20895317.jpeg?auto=compress&cs=tinysrgb&w=1400',
+        image: '/images/p/20895317-w1400.webp',
         highlights: ['Minarete de la Koutoubia', 'Palacio de la Bahía', 'Plaza Jemaa El Fna'],
       },
       {
@@ -872,7 +872,7 @@ export const routes: Route[] = [
         description:
           'Excursión de un día a la costa atlántica. Essaouira, también conocida como Mogador, es una ciudad portuaria con cerca de 70.000 habitantes cuya medina está declarada Patrimonio de la Humanidad por la UNESCO desde 2001. Su economía gira en torno a la pesca, la artesanía, la marquetería y la joyería. Si te gusta el pescado, disfrutarás de una sabrosa comida en el puerto. Vuelta a Marrakech por la tarde.',
         lodging: 'Riad en la medina de Marrakech · alojamiento y desayuno',
-        image: 'https://images.pexels.com/photos/35846256/pexels-photo-35846256.jpeg?auto=compress&cs=tinysrgb&w=1400',
+        image: '/images/p/35846256-w1400.webp',
         highlights: ['Ciudad costera de Essaouira', 'Puerto y pescado fresco', 'Medina UNESCO'],
       },
       {
@@ -882,7 +882,7 @@ export const routes: Route[] = [
         description:
           'Un último desayuno tranquilo y tiempo libre hasta el traslado al aeropuerto de Marrakech a la hora convenida. Gracias por confiar en nosotros. Os esperamos de vuelta.',
         lodging: 'Traslado incluido al aeropuerto',
-        image: 'https://images.pexels.com/photos/34936253/pexels-photo-34936253.jpeg?auto=compress&cs=tinysrgb&w=1400',
+        image: '/images/p/34936253-w1400.webp',
         highlights: ['Desayuno sin prisas', 'Tiempo libre', 'Traslado privado'],
       },
     ],
@@ -913,10 +913,10 @@ export const routes: Route[] = [
       'Lo que no está indicado en el programa',
     ],
     gallery: [
-      'https://images.pexels.com/photos/34337962/pexels-photo-34337962.jpeg?auto=compress&cs=tinysrgb&w=1200',
-      'https://images.pexels.com/photos/30320422/pexels-photo-30320422.jpeg?auto=compress&cs=tinysrgb&w=1200',
-      'https://images.pexels.com/photos/30757351/pexels-photo-30757351.jpeg?auto=compress&cs=tinysrgb&w=1200',
-      'https://images.pexels.com/photos/13591966/pexels-photo-13591966.jpeg?auto=compress&cs=tinysrgb&w=1200',
+      '/images/p/34337962-w1200.webp',
+      '/images/p/30320422-w1200.webp',
+      '/images/p/30757351-w1200.webp',
+      '/images/p/13591966-w1200.webp',
     ],
   },
   {
@@ -925,8 +925,8 @@ export const routes: Route[] = [
     title: 'Ruta de 10 días desde Tánger a Marrakech',
     subtitle: 'Norte azul, ciudades imperiales y Sahara sin prisas',
     duration: '10 días',
-    image: 'https://images.pexels.com/photos/34337962/pexels-photo-34337962.jpeg?auto=compress&cs=tinysrgb&w=1600',
-    heroImage: 'https://images.pexels.com/photos/30426311/pexels-photo-30426311.jpeg?auto=compress&cs=tinysrgb&w=1200',
+    image: '/images/p/34337962-w1600.webp',
+    heroImage: '/images/p/30426311-w1200.webp',
     places: ['Tánger', 'Chefchaouen', 'Volubilis', 'Fez', 'Merzouga', 'Todra', 'Dades', 'Aït Ben Haddou', 'Marrakech'],
     description: 'Diez días para vivir Marruecos de norte a sur sin prisas: Chaouen, Volubilis, Fez, dos noches en el desierto, gargantas y Marrakech.',
     longDescription: 'Un viaje de diez días que combina lo mejor del norte y el sur: la medina azul de Chefchaouen, las ruinas romanas de Volubilis, dos días en Fez con guía local, los cedros del Medio Atlas, dos noches en Merzouga, las gargantas del Todra y del Dades, Aït Ben Haddou y dos días en Marrakech.',
@@ -938,7 +938,7 @@ export const routes: Route[] = [
         description:
           'Recogida en el aeropuerto de Tánger y traslado a Asilah, una hermosa y tranquila ciudad costera a tan solo 30 kilómetros de Tánger. Tiempo libre para pasear por su medina de casas blancas con murales artísticos y disfrutar de las vistas desde el mirador.',
         lodging: 'Hotel en Asilah · alojamiento y desayuno',
-        image: 'https://images.pexels.com/photos/30426311/pexels-photo-30426311.jpeg?auto=compress&cs=tinysrgb&w=1200',
+        image: '/images/p/30426311-w1200.webp',
         highlights: ['Llegada a Tánger', 'Medina de Asilah', 'Murales artísticos'],
       },
       {
@@ -948,7 +948,7 @@ export const routes: Route[] = [
         description:
           'Continuamos nuestra ruta tras el desayuno. Primero pasaremos por Tetuán, donde tendréis tiempo libre para visitar su medina. Luego seguiremos hacia la ciudad de Chaouen. Tiempo libre para pasear por sus calles y entre sus antiguas casas de color azul y blanco y contemplar sus vistas panorámicas.',
         lodging: 'Hotel en Chefchaouen · alojamiento y desayuno',
-        image: 'https://images.pexels.com/photos/13591966/pexels-photo-13591966.jpeg?auto=compress&cs=tinysrgb&w=1400',
+        image: '/images/p/13591966-w1400.webp',
         highlights: ['Medina de Tetuán', 'Calles azules de Chaouen', 'Vistas panorámicas'],
       },
       {
@@ -958,7 +958,7 @@ export const routes: Route[] = [
         description:
           'Salimos hacia Meknés bordeando el bosque de Mamora. Llegada a Meknés y visita de la ciudad histórica. A 27 km de Meknés se encuentran las ruinas de la ciudad romana de Volubilis (visita), y también se visita la ciudad santa de Moulay Idriss. Continuación hacia Fez.',
         lodging: 'Hotel en Fez · alojamiento y desayuno',
-        image: 'https://images.pexels.com/photos/18767562/pexels-photo-18767562.jpeg?auto=compress&cs=tinysrgb&w=1400',
+        image: '/images/p/18767562-w1400.webp',
         highlights: ['Ruinas romanas de Volubilis', 'Ciudad histórica de Meknés', 'Moulay Idriss'],
       },
       {
@@ -978,7 +978,7 @@ export const routes: Route[] = [
         description:
           'Desde Fez iremos hacia el Atlas Medio, a visitar Ifrane, conocida como la Suiza de Marruecos. El siguiente pueblo será Azrou "la roca", pueblo berberisco conocido por su artesanía, alfombras y escultura en madera. Se sigue el camino por el Tizi Talghemt a 1.907 metros de altitud. El relieve es impresionante, las montañas están completamente desnudas. Llegada a Errachidia y travesía del macizo de Tafilalet hasta el palmeral de Erfoud. Continuaremos hasta llegar a las famosas dunas de arena finísima de Erg Chebbi junto a Merzouga.',
         lodging: 'Hotel cerca de las dunas · alojamiento y desayuno',
-        image: 'https://images.pexels.com/photos/26689356/pexels-photo-26689356.jpeg?auto=compress&cs=tinysrgb&w=1400',
+        image: '/images/p/26689356-w1400.webp',
         highlights: ['Ifrane, la Suiza marroquí', 'Azrou y bosque de monos', 'Llegada al Erg Chebbi'],
       },
       {
@@ -1008,7 +1008,7 @@ export const routes: Route[] = [
         description:
           'Después del desayuno y antes de continuar a Marrakech visitaremos la Kasbah de Aït Ben Haddou donde se han filmado muchas películas como "Lawrence de Arabia", "Babel" y "Gladiator". Luego seguiremos hacia Marrakech sobre las montañas del Alto Atlas vía el paso de Tizi N\'Tichka. En el lado de las montañas veréis pueblos bereberes. Al final del día, llegada a Marrakech.',
         lodging: 'Riad en Marrakech · alojamiento y desayuno',
-        image: 'https://images.pexels.com/photos/6095564/pexels-photo-6095564.jpeg?auto=compress&cs=tinysrgb&w=1400',
+        image: '/images/p/6095564-w1400.webp',
         highlights: ['Kasbah de Aït Ben Haddou', 'Paso del Tizi N\'Tichka', 'Llegada a Marrakech'],
       },
       {
@@ -1018,7 +1018,7 @@ export const routes: Route[] = [
         description:
           'Por la mañana visita de la ciudad en la que destacan los Jardines de Menara, las Tumbas Saadíes, el Palacio de la Bahía, los Jardines de Majorelle y la impresionante Mezquita Koutoubia con su famoso minarete construido por los Almohades. Almuerzo y tarde libre para disfrutar del encanto de la plaza Jemaa El Fna.',
         lodging: 'Riad en Marrakech · alojamiento y desayuno',
-        image: 'https://images.pexels.com/photos/20895317/pexels-photo-20895317.jpeg?auto=compress&cs=tinysrgb&w=1400',
+        image: '/images/p/20895317-w1400.webp',
         highlights: ['Jardines de Menara', 'Palacio de la Bahía', 'Plaza Jemaa El Fna'],
       },
       {
@@ -1028,7 +1028,7 @@ export const routes: Route[] = [
         description:
           'Transporte al aeropuerto de Marrakech a la hora convenida. Fin de nuestros servicios.',
         lodging: 'Traslado incluido al aeropuerto',
-        image: 'https://images.pexels.com/photos/7391720/pexels-photo-7391720.jpeg?auto=compress&cs=tinysrgb&w=1400',
+        image: '/images/p/7391720-w1400.webp',
         highlights: ['Desayuno sin prisas', 'Tiempo libre', 'Traslado privado'],
       },
     ],
@@ -1052,10 +1052,10 @@ export const routes: Route[] = [
       'Entradas a monumentos históricos',
     ],
     gallery: [
-      'https://images.pexels.com/photos/34337962/pexels-photo-34337962.jpeg?auto=compress&cs=tinysrgb&w=1200',
-      'https://images.pexels.com/photos/30320422/pexels-photo-30320422.jpeg?auto=compress&cs=tinysrgb&w=1200',
-      'https://images.pexels.com/photos/30757351/pexels-photo-30757351.jpeg?auto=compress&cs=tinysrgb&w=1200',
-      'https://images.pexels.com/photos/13591966/pexels-photo-13591966.jpeg?auto=compress&cs=tinysrgb&w=1200',
+      '/images/p/34337962-w1200.webp',
+      '/images/p/30320422-w1200.webp',
+      '/images/p/30757351-w1200.webp',
+      '/images/p/13591966-w1200.webp',
     ],
   },
   {
@@ -1064,8 +1064,8 @@ export const routes: Route[] = [
     title: 'Ruta de 9 días desde Tánger a Marrakech',
     subtitle: 'Chaouen, Fez, desierto y la ciudad roja en nueve días',
     duration: '9 días',
-    image: 'https://images.pexels.com/photos/34337962/pexels-photo-34337962.jpeg?auto=compress&cs=tinysrgb&w=1600',
-    heroImage: 'https://images.pexels.com/photos/38112326/pexels-photo-38112326.jpeg?auto=compress&cs=tinysrgb&w=1400',
+    image: '/images/p/34337962-w1600.webp',
+    heroImage: '/images/p/38112326-w1400.webp',
     places: ['Tánger', 'Chefchaouen', 'Fez', 'Ifrane', 'Merzouga', 'Todra', 'Dades', 'Aït Ben Haddou', 'Marrakech'],
     description: 'Nueve días de norte a sur: la medina azul, Fez imperial, cedros del Atlas, noche en el Sahara, gargantas y kasbahs hasta Marrakech.',
     longDescription: 'Un viaje de nueve días que recorre Marruecos en diagonal con el ritmo perfecto. Chefchaouen, la medina más antigua del mundo árabe en Fez, los cedros del Medio Atlas, una noche en jaima bajo las estrellas del Sahara, las gargantas del Todra y del Dades, la kasbah de Aït Ben Haddou y Marrakech con guía local.',
@@ -1077,7 +1077,7 @@ export const routes: Route[] = [
         description:
           'Bienvenidos a Marruecos. Recogida en el aeropuerto de Tánger y traslado al hotel. Tiempo libre para descansar tras el viaje y tomar un primer contacto con la ciudad.',
         lodging: 'Hotel en Tánger · alojamiento y desayuno',
-        image: 'https://images.pexels.com/photos/30426311/pexels-photo-30426311.jpeg?auto=compress&cs=tinysrgb&w=1200',
+        image: '/images/p/30426311-w1200.webp',
         highlights: ['Llegada a Tánger', 'Traslado al hotel', 'Tiempo libre'],
       },
       {
@@ -1087,7 +1087,7 @@ export const routes: Route[] = [
         description:
           'Por la mañana, visita de Tánger. Al mediodía, traslado a Chefchaouen, pequeña ciudad fortificada en las montañas del Rif. Sus casas y calles blancas y azules la convierten en una de las más bellas y fotogénicas de Marruecos. La Ciudad Azul, ciudad santa del Islam, merece la pena caminarla, recorrer sus calles y plazas, visitar su fortaleza, admirar su mezquita y descubrir sus lavaderos.',
         lodging: 'Riad en la medina de Chefchaouen · alojamiento y desayuno',
-        image: 'https://images.pexels.com/photos/13591966/pexels-photo-13591966.jpeg?auto=compress&cs=tinysrgb&w=1400',
+        image: '/images/p/13591966-w1400.webp',
         highlights: ['Visita de Tánger', 'Calles azules de Chaouen', 'Fortaleza y mezquita'],
       },
       {
@@ -1097,7 +1097,7 @@ export const routes: Route[] = [
         description:
           'Salimos hacia Meknés bordeando el bosque de Mamora. Llegada a Meknés, una de las grandes villas históricas de Marruecos, y visita de la ciudad histórica. A continuación, Volubilis, uno de los sitios arqueológicos más importantes del país con las ruinas de la ciudad romana, y la ciudad santa de Moulay Idriss. Continuación hacia Fez.',
         lodging: 'Riad en la medina de Fez · alojamiento y desayuno',
-        image: 'https://images.pexels.com/photos/18767562/pexels-photo-18767562.jpeg?auto=compress&cs=tinysrgb&w=1400',
+        image: '/images/p/18767562-w1400.webp',
         highlights: ['Ruinas romanas de Volubilis', 'Ciudad histórica de Meknés', 'Moulay Idriss'],
       },
       {
@@ -1107,7 +1107,7 @@ export const routes: Route[] = [
         description:
           'Día completo con visita guiada por la más antigua de las ciudades imperiales, fundada en el 808 como primera capital política, religiosa y cultural. Comenzamos por las Puertas Doradas del Palacio Real. Desde un punto elevado observamos la muralla que encierra la impresionante medina, que luego recorremos a pie: mezquitas, medersas, karabansarais y el barrio de los curtidores. Por la tarde, el barrio de los artesanos que trajeron su conocimiento desde España y mantienen el arte andalusí hasta hoy.',
         lodging: 'Riad en la medina de Fez · alojamiento y desayuno',
-        image: 'https://images.pexels.com/photos/38112326/pexels-photo-38112326.jpeg?auto=compress&cs=tinysrgb&w=1400',
+        image: '/images/p/38112326-w1400.webp',
         highlights: ['Puertas del Palacio Real', 'Barrio de los curtidores', 'Artesanos andalusíes'],
       },
       {
@@ -1117,7 +1117,7 @@ export const routes: Route[] = [
         description:
           'Salida temprano hacia Merzouga por las montañas del Medio Atlas. Parada en Ifrane, "la Suiza de Marruecos", y en los bosques de cedros de Azrou donde alimentamos y fotografiamos a los monos en libertad. Seguimos hasta Midelt, "la capital de la manzana". Continuamos por el puerto Tizi N\'Talgamt y el Valle del Ziz con sus extensos palmerales hasta las dunas del Erg Chebbi. Los dromedarios nos adentran en el desierto para una puesta de sol inolvidable. Noche en jaimas con cena bereber, música en vivo y cielo estrellado.',
         lodging: 'Jaima de lujo · cena y desayuno',
-        image: 'https://images.pexels.com/photos/12214734/pexels-photo-12214734.jpeg?auto=compress&cs=tinysrgb&w=1400',
+        image: '/images/p/12214734-w1400.webp',
         highlights: ['Cedros y monos de Azrou', 'Valle del Ziz', 'Noche en jaima bajo las estrellas'],
       },
       {
@@ -1137,7 +1137,7 @@ export const routes: Route[] = [
         description:
           'Tras el desayuno, visita al pueblo fortificado de Aït Ben Haddou, Patrimonio de la Humanidad UNESCO y escenario de Gladiator, La Joya del Nilo y Babel. Recorremos sus estrechas callejuelas que se remontan a casi mil años. Visitamos también la Kasbah de Taourirt, antigua residencia del pachá Glaoui. Continuamos hacia Marrakech cruzando el Alto Atlas por el paso de Tizi N\'Tichka, con pueblos bereberes colgados de las laderas. Llegada al atardecer.',
         lodging: 'Riad en la medina de Marrakech · alojamiento y desayuno',
-        image: 'https://images.pexels.com/photos/6095564/pexels-photo-6095564.jpeg?auto=compress&cs=tinysrgb&w=1400',
+        image: '/images/p/6095564-w1400.webp',
         highlights: ['Kasbah de Aït Ben Haddou', 'Kasbah de Taourirt', 'Puerto del Tizi N\'Tichka'],
       },
       {
@@ -1147,7 +1147,7 @@ export const routes: Route[] = [
         description:
           'Visita guiada de Marrakech "La Ciudad Roja": los Jardines de Menara, las Tumbas Saadíes, el Palacio de la Bahía, los Jardines de Majorelle y la impresionante Mezquita Koutoubia con su famoso minarete almohade. Almuerzo y tarde libre para perderse por las callejuelas de la medina y disfrutar del encanto de la plaza Jemaa El Fna y su transformación por la noche. Imprescindible subir a una terraza con vistas a la plaza.',
         lodging: 'Riad en la medina de Marrakech · alojamiento y desayuno',
-        image: 'https://images.pexels.com/photos/20895317/pexels-photo-20895317.jpeg?auto=compress&cs=tinysrgb&w=1400',
+        image: '/images/p/20895317-w1400.webp',
         highlights: ['Jardines de Majorelle', 'Palacio de la Bahía', 'Terraza sobre Jemaa El Fna'],
       },
       {
@@ -1157,7 +1157,7 @@ export const routes: Route[] = [
         description:
           'Un buen desayuno y tiempo libre hasta el traslado al aeropuerto de Marrakech a la hora convenida. Gracias por confiar en nosotros. Os esperamos de vuelta.',
         lodging: 'Traslado incluido al aeropuerto',
-        image: 'https://images.pexels.com/photos/31356126/pexels-photo-31356126.png?auto=compress&cs=tinysrgb&w=1400',
+        image: '/images/p/31356126-w1400.webp',
         highlights: ['Desayuno sin prisas', 'Tiempo libre', 'Traslado privado'],
       },
     ],
@@ -1185,10 +1185,10 @@ export const routes: Route[] = [
       'Cualquier servicio no especificado en "incluye"',
     ],
     gallery: [
-      'https://images.pexels.com/photos/34337962/pexels-photo-34337962.jpeg?auto=compress&cs=tinysrgb&w=1200',
-      'https://images.pexels.com/photos/30320422/pexels-photo-30320422.jpeg?auto=compress&cs=tinysrgb&w=1200',
-      'https://images.pexels.com/photos/30757351/pexels-photo-30757351.jpeg?auto=compress&cs=tinysrgb&w=1200',
-      'https://images.pexels.com/photos/13591966/pexels-photo-13591966.jpeg?auto=compress&cs=tinysrgb&w=1200',
+      '/images/p/34337962-w1200.webp',
+      '/images/p/30320422-w1200.webp',
+      '/images/p/30757351-w1200.webp',
+      '/images/p/13591966-w1200.webp',
     ],
   },
   {
@@ -1197,8 +1197,8 @@ export const routes: Route[] = [
     title: 'Ruta de 8 días desde Fez a Marrakech',
     subtitle: 'Ciudades imperiales, Atlas Medio, Sahara y kasbahs del sur',
     duration: '8 días',
-    image: 'https://images.pexels.com/photos/30320422/pexels-photo-30320422.jpeg?auto=compress&cs=tinysrgb&w=1600',
-    heroImage: 'https://images.pexels.com/photos/38112326/pexels-photo-38112326.jpeg?auto=compress&cs=tinysrgb&w=1400',
+    image: '/images/p/30320422-w1600.webp',
+    heroImage: '/images/p/38112326-w1400.webp',
     places: ['Fez', 'Ifrane', 'Azrou', 'Merzouga', 'Todra', 'Dades', 'Ouarzazate', 'Aït Ben Haddou', 'Marrakech'],
     description: 'Ocho días de Fez a Marrakech: medina milenaria, cedros del Medio Atlas, dos noches en el desierto, gargantas y kasbahs del sur.',
     longDescription: 'Ocho días para conectar las dos grandes ciudades imperiales por la ruta más completa: dos días en Fez con guía local, cedros del Medio Atlas, dos noches en Merzouga con experiencias nómadas y Gnawa, gargantas del Todra y del Dades, la Ruta de las Mil Kasbahs, Aït Ben Haddou y dos días en Marrakech.',
@@ -1210,7 +1210,7 @@ export const routes: Route[] = [
         description:
           'Recogida en el aeropuerto. Desde el aeropuerto le llevaremos a su hotel en Fez. Noche en el Riad.',
         lodging: 'Riad en la medina de Fez · alojamiento y desayuno',
-        image: 'https://images.pexels.com/photos/38112326/pexels-photo-38112326.jpeg?auto=compress&cs=tinysrgb&w=1400',
+        image: '/images/p/38112326-w1400.webp',
         highlights: ['Recogida privada', 'Llegada al riad', 'Primera noche en la medina'],
       },
       {
@@ -1230,7 +1230,7 @@ export const routes: Route[] = [
         description:
           'Por la mañana, tras el desayuno, salida a Merzouga por las montañas del Medio Atlas. Haremos parada en Ifrane, llamada "La Suiza de Marruecos", y en los bosques de cedros de Azrou, donde tendremos la oportunidad de alimentar y fotografiarnos con los monos en libertad. Seguiremos hasta Midelt, "la capital de la manzana", a los pies de la montaña Ayachi, para el almuerzo. Continuamos por el puerto Tizi N\'Talghemt (el paso más alto del norte de África) y por el Valle del Ziz, conocido por sus extensos palmerales y enormes oasis. Llegamos a Errachidia, inicio del gran desierto, y a Erfoud, famosa por su fábrica de fósiles. Por la tarde llegada a Merzouga y sus impresionantes dunas. Tarde libre.',
         lodging: 'Hotel / Riad en Merzouga · cena y desayuno',
-        image: 'https://images.pexels.com/photos/26689356/pexels-photo-26689356.jpeg?auto=compress&cs=tinysrgb&w=1400',
+        image: '/images/p/26689356-w1400.webp',
         highlights: ['Ifrane, la Suiza marroquí', 'Cedros y monos de Azrou', 'Valle del Ziz'],
       },
       {
@@ -1260,7 +1260,7 @@ export const routes: Route[] = [
         description:
           'Por la mañana, visita a la espectacular Kasbah de Ouarzazate y a la Kasbah de Aït Ben Haddou, declarada Patrimonio de la Humanidad por la UNESCO y escenario de muchas películas como "Gladiator", "La Joya del Nilo" o "Babel". Recorreremos sus particulares y estrechas callejuelas que se remontan a casi mil años atrás. Continuamos hacia Marrakech por el Alto Atlas, descubriendo sorprendentes paisajes y magníficos pueblos bereberes, con paradas para comer y descansar. Pasamos por el Valle de Ounila, oasis del sur marroquí Patrimonio de la Humanidad, donde veremos kasbahs edificadas en cuevas y la Kasbah de Telouet, antigua residencia del Glaoui o pachá de Marrakech, cuya decoración interior recuerda a la Alhambra de Granada. Llegada a Marrakech.',
         lodging: 'Riad en la medina de Marrakech · alojamiento y desayuno',
-        image: 'https://images.pexels.com/photos/6095564/pexels-photo-6095564.jpeg?auto=compress&cs=tinysrgb&w=1400',
+        image: '/images/p/6095564-w1400.webp',
         highlights: ['Aït Ben Haddou', 'Valle de Ounila', 'Kasbah de Telouet'],
       },
       {
@@ -1270,7 +1270,7 @@ export const routes: Route[] = [
         description:
           'Día para conocer la ciudad roja, la vieja y mágica Marrakech, llena de palacios, mezquitas, mercados y jardines. Por la mañana podréis recorrer la medina con el guía local. Entre sus tesoros encontraremos las Tumbas Saadíes, con una decoración de increíble belleza; el Mellah o antiguo barrio judío, cuyo origen se remonta al siglo XVI; el Palacio de la Bahía, palacio del siglo XIX; y la Mezquita de la Koutoubia, la más importante de Marrakech. Y, por supuesto, la famosa plaza Jemaa El Fna, corazón de la medina, que cambia al caer la noche con puestos de comida, músicos, narradores de historias y espectáculos. Por la tarde os recomendamos callejear el zoco y subir a alguno de los miradores que rodean la plaza para disfrutar de las vistas panorámicas.',
         lodging: 'Riad en la medina de Marrakech · alojamiento y desayuno',
-        image: 'https://images.pexels.com/photos/20895317/pexels-photo-20895317.jpeg?auto=compress&cs=tinysrgb&w=1400',
+        image: '/images/p/20895317-w1400.webp',
         highlights: ['Palacio de la Bahía', 'Plaza Jemaa El Fna', 'Zoco y miradores'],
       },
       {
@@ -1280,7 +1280,7 @@ export const routes: Route[] = [
         description:
           'Desayuno y traslado al aeropuerto de Marrakech Menara según horario del vuelo. Fin de nuestros servicios.',
         lodging: 'Traslado incluido al aeropuerto',
-        image: 'https://images.pexels.com/photos/10573397/pexels-photo-10573397.jpeg?auto=compress&cs=tinysrgb&w=1400',
+        image: '/images/p/10573397-w1400.webp',
         highlights: ['Desayuno sin prisas', 'Tiempo libre', 'Traslado privado'],
       },
     ],
@@ -1299,10 +1299,10 @@ export const routes: Route[] = [
       'Vuelos',
     ],
     gallery: [
-      'https://images.pexels.com/photos/30320422/pexels-photo-30320422.jpeg?auto=compress&cs=tinysrgb&w=1200',
-      'https://images.pexels.com/photos/30757351/pexels-photo-30757351.jpeg?auto=compress&cs=tinysrgb&w=1200',
-      'https://images.pexels.com/photos/36209446/pexels-photo-36209446.jpeg?auto=compress&cs=tinysrgb&w=1200',
-      'https://images.pexels.com/photos/13811606/pexels-photo-13811606.jpeg?auto=compress&cs=tinysrgb&w=1200',
+      '/images/p/30320422-w1200.webp',
+      '/images/p/30757351-w1200.webp',
+      '/images/p/36209446-w1200.webp',
+      '/images/p/13811606-w1200.webp',
     ],
   },
   {
@@ -1311,7 +1311,7 @@ export const routes: Route[] = [
     title: 'Ruta de 7 días desde Fez a Marrakech',
     subtitle: 'Medio Atlas, desierto de Merzouga y kasbahs en una semana',
     duration: '7 días',
-    image: 'https://images.pexels.com/photos/30320422/pexels-photo-30320422.jpeg?auto=compress&cs=tinysrgb&w=1600',
+    image: '/images/p/30320422-w1600.webp',
     heroImage: '/images/image-garganta.png',
     places: ['Fez', 'Ifrane', 'Merzouga', 'Todra', 'Dades', 'Ouarzazate', 'Aït Ben Haddou', 'Marrakech'],
     description: 'Una semana para unir Fez y Marrakech: cedros del Medio Atlas, una noche en jaima en Merzouga, gargantas, kasbahs y la ciudad roja.',
@@ -1324,7 +1324,7 @@ export const routes: Route[] = [
         description:
           'Tu Tour de 7 días desde Fez a Marrakech comienza con la recepción en el aeropuerto de Fez-Saïs. Después del traslado a un auténtico riad tradicional, tendrás tiempo para descansar y disfrutar del ambiente cultural de Fez. Dependiendo de tu hora de llegada, podrás realizar una breve visita panorámica por algunos de los lugares más emblemáticos de la ciudad.',
         lodging: 'Riad tradicional en la medina de Fez · alojamiento y desayuno',
-        image: 'https://images.pexels.com/photos/38112326/pexels-photo-38112326.jpeg?auto=compress&cs=tinysrgb&w=1400',
+        image: '/images/p/38112326-w1400.webp',
         highlights: ['Recogida privada en Fez-Saïs', 'Riad tradicional', 'Primera toma de contacto con la medina'],
       },
       {
@@ -1364,7 +1364,7 @@ export const routes: Route[] = [
         description:
           'Después del desayuno, viajarás hacia Marrakech pasando por Ouarzazate, conocida como el Hollywood de Marruecos, y la famosa Kasbah de Aït Ben Haddou, declarada Patrimonio de la Humanidad por la UNESCO. Luego cruzarás el puerto de montaña Tizi n\'Tichka, en el Alto Atlas, antes de llegar a Marrakech.',
         lodging: 'Riad en la medina de Marrakech · alojamiento y desayuno',
-        image: 'https://images.pexels.com/photos/6095564/pexels-photo-6095564.jpeg?auto=compress&cs=tinysrgb&w=1400',
+        image: '/images/p/6095564-w1400.webp',
         highlights: ['Aït Ben Haddou (UNESCO)', 'Puerto de Tizi n\'Tichka', 'Llegada a Marrakech'],
       },
       {
@@ -1374,7 +1374,7 @@ export const routes: Route[] = [
         description:
           'En este día explorarás Marrakech con un guía local. Visitarás la Plaza Jamaa El Fna, la Mezquita Koutoubia, los Jardines Majorelle, el Palacio Bahía, las Tumbas Saadíes y el antiguo barrio judío Mellah, descubriendo la historia, la cultura y el encanto de la ciudad roja.',
         lodging: 'Riad en la medina de Marrakech · alojamiento y desayuno',
-        image: 'https://images.pexels.com/photos/20895317/pexels-photo-20895317.jpeg?auto=compress&cs=tinysrgb&w=1400',
+        image: '/images/p/20895317-w1400.webp',
         highlights: ['Plaza Jamaa El Fna', 'Jardines Majorelle', 'Palacio Bahía y Tumbas Saadíes'],
       },
       {
@@ -1384,7 +1384,7 @@ export const routes: Route[] = [
         description:
           'En el último día de tu Tour de 7 días desde Fez a Marrakech, te trasladaremos al aeropuerto de Marrakech según el horario de tu vuelo. Fin de una experiencia inolvidable por Marruecos, llena de cultura, paisajes, aventura y recuerdos únicos.',
         lodging: 'Traslado privado al aeropuerto incluido',
-        image: 'https://images.pexels.com/photos/34940617/pexels-photo-34940617.jpeg?auto=compress&cs=tinysrgb&w=1400',
+        image: '/images/p/34940617-w1400.webp',
         highlights: ['Desayuno sin prisas', 'Tiempo libre', 'Traslado privado al aeropuerto'],
       },
     ],
@@ -1405,10 +1405,10 @@ export const routes: Route[] = [
       'Todo lo que no esté mencionado como incluido',
     ],
     gallery: [
-      'https://images.pexels.com/photos/30320422/pexels-photo-30320422.jpeg?auto=compress&cs=tinysrgb&w=1200',
-      'https://images.pexels.com/photos/30757351/pexels-photo-30757351.jpeg?auto=compress&cs=tinysrgb&w=1200',
-      'https://images.pexels.com/photos/13591966/pexels-photo-13591966.jpeg?auto=compress&cs=tinysrgb&w=1200',
-      'https://images.pexels.com/photos/13811606/pexels-photo-13811606.jpeg?auto=compress&cs=tinysrgb&w=1200',
+      '/images/p/30320422-w1200.webp',
+      '/images/p/30757351-w1200.webp',
+      '/images/p/13591966-w1200.webp',
+      '/images/p/13811606-w1200.webp',
     ],
   },
   {
@@ -1417,7 +1417,7 @@ export const routes: Route[] = [
     title: 'Ruta de 4 días desde Fez a Marrakech',
     subtitle: 'La diagonal exprés: Atlas, desierto y kasbahs',
     duration: '4 días',
-    image: 'https://images.pexels.com/photos/2901215/pexels-photo-2901215.jpeg?auto=compress&cs=tinysrgb&w=1600',
+    image: '/images/p/2901215-w1600.webp',
     heroImage: '/images/image-ziz.png',
     places: ['Fez', 'Merzouga', 'Todra', 'Ouarzazate', 'Aït Ben Haddou', 'Marrakech'],
     description: 'Cuatro días intensos de Fez a Marrakech: Medio Atlas, una noche en jaima en Merzouga, gargantas del Todra y kasbahs del sur.',
@@ -1460,7 +1460,7 @@ export const routes: Route[] = [
         description:
           'Después del desayuno, visita al fabuloso pueblo fortificado de Aït Ben Haddou, situado en una colina a orillas del río Ouarzazate. Recorremos su espectacular kasbah, declarada Patrimonio de la Humanidad por la UNESCO y escenario de películas como "Gladiator", "La Joya del Nilo" o "Babel", con sus particulares y estrechas callejuelas que se remontan a casi mil años atrás. Parada para almorzar y descanso. Continuamos hacia Marrakech atravesando el puerto de Tizi n\'Tichka del Alto Atlas, descubriendo sorprendentes paisajes y pueblos bereberes con sus casas colgando de las laderas. Por la tarde llegada a Marrakech y traslado al hotel/riad.',
         lodging: 'Riad u hotel en Marrakech · alojamiento incluido',
-        image: 'https://images.pexels.com/photos/6095564/pexels-photo-6095564.jpeg?auto=compress&cs=tinysrgb&w=1400',
+        image: '/images/p/6095564-w1400.webp',
         highlights: ['Kasbah de Aït Ben Haddou', 'Puerto de Tizi n\'Tichka', 'Llegada a Marrakech'],
       },
     ],
@@ -1479,10 +1479,10 @@ export const routes: Route[] = [
       'Vuelos',
     ],
     gallery: [
-      'https://images.pexels.com/photos/36209446/pexels-photo-36209446.jpeg?auto=compress&cs=tinysrgb&w=1200',
-      'https://images.pexels.com/photos/30757351/pexels-photo-30757351.jpeg?auto=compress&cs=tinysrgb&w=1200',
-      'https://images.pexels.com/photos/13591966/pexels-photo-13591966.jpeg?auto=compress&cs=tinysrgb&w=1200',
-      'https://images.pexels.com/photos/13811606/pexels-photo-13811606.jpeg?auto=compress&cs=tinysrgb&w=1200',
+      '/images/p/36209446-w1200.webp',
+      '/images/p/30757351-w1200.webp',
+      '/images/p/13591966-w1200.webp',
+      '/images/p/13811606-w1200.webp',
     ],
   },
   {
@@ -1491,8 +1491,8 @@ export const routes: Route[] = [
     title: 'Ruta de 3 días desde Fez a Marrakech',
     subtitle: 'La conexión rápida por el desierto',
     duration: '3 días',
-    image: 'https://images.pexels.com/photos/36209446/pexels-photo-36209446.jpeg?auto=compress&cs=tinysrgb&w=1600',
-    heroImage: 'https://images.pexels.com/photos/26689356/pexels-photo-26689356.jpeg?auto=compress&cs=tinysrgb&w=1400',
+    image: '/images/p/36209446-w1600.webp',
+    heroImage: '/images/p/26689356-w1400.webp',
     places: ['Fez', 'Merzouga', 'Ouarzazate', 'Aït Ben Haddou', 'Marrakech'],
     description: 'Tres días intensos para conectar Fez y Marrakech por el Sahara: Medio Atlas, noche en jaima y kasbahs del sur.',
     longDescription: 'La forma más rápida de conectar Fez y Marrakech pasando por el desierto: un día de Medio Atlas hasta Merzouga con noche en jaima, y al día siguiente gargantas, kasbahs y Alto Atlas hasta la ciudad roja.',
@@ -1504,7 +1504,7 @@ export const routes: Route[] = [
         description:
           'Después de un buen desayuno marroquí saldremos hacia Ifrane, conocido como la Suiza de Marruecos. Haremos una parada para fotografiar el León de piedra, tallado por un soldado alemán durante la Segunda Guerra Mundial en honor al último león del Atlas. Atravesaremos las montañas del Medio Atlas pasando por Azrou, donde veremos el cedro milenario más grande de la región y daremos de comer a los monos de berbería que habitan en la zona, antes de cruzar el fascinante Valle del Ziz. Continuamos hacia Midelt, en las faldas del monte Ayachi, capital de la provincia de Drâa-Tafilalet, donde almorzaremos. Seguimos hasta Erfoud, nuestra puerta al desierto, y desde aquí tomaremos una pista en 4x4 hasta las dunas de Erg Chebbi en Merzouga. Cambiamos el coche por dromedarios para entrar en el corazón de las dunas y contemplar una puesta de sol inolvidable. Llegada al campamento bereber, donde nos alojaremos en jaimas con ducha y WC. Cena al rededor del fuego con música tradicional bajo un manto de estrellas.',
         lodging: 'Campamento bereber en jaima con baño · cena y desayuno',
-        image: 'https://images.pexels.com/photos/26689356/pexels-photo-26689356.jpeg?auto=compress&cs=tinysrgb&w=1400',
+        image: '/images/p/26689356-w1400.webp',
         highlights: ['León de piedra de Ifrane', 'Cedros y monos de Azrou', 'Caravana de dromedarios al atardecer'],
       },
       {
@@ -1524,7 +1524,7 @@ export const routes: Route[] = [
         description:
           'Después del desayuno y antes de continuar hacia Marrakech, visitaremos los estudios de cine de Ouarzazate. Después saldremos hacia la Kasbah de Aït Ben Haddou, donde se han filmado películas como "Lawrence de Arabia", "Babel" o "Gladiator". Seguimos hacia Marrakech sobre las montañas del Alto Atlas por el paso de Tizi n\'Tichka, descubriendo en el camino pueblos bereberes y granjas colgadas de las laderas. Al final del día llegada a Marrakech, donde finalizan nuestros servicios.',
         lodging: 'Llegada a Marrakech · fin de servicios',
-        image: 'https://images.pexels.com/photos/6095564/pexels-photo-6095564.jpeg?auto=compress&cs=tinysrgb&w=1400',
+        image: '/images/p/6095564-w1400.webp',
         highlights: ['Estudios de cine de Ouarzazate', 'Kasbah de Aït Ben Haddou', 'Puerto de Tizi n\'Tichka'],
       },
     ],
@@ -1543,10 +1543,10 @@ export const routes: Route[] = [
       'Vuelos',
     ],
     gallery: [
-      'https://images.pexels.com/photos/13591966/pexels-photo-13591966.jpeg?auto=compress&cs=tinysrgb&w=1200',
-      'https://images.pexels.com/photos/30757351/pexels-photo-30757351.jpeg?auto=compress&cs=tinysrgb&w=1200',
-      'https://images.pexels.com/photos/36209446/pexels-photo-36209446.jpeg?auto=compress&cs=tinysrgb&w=1200',
-      'https://images.pexels.com/photos/13811606/pexels-photo-13811606.jpeg?auto=compress&cs=tinysrgb&w=1200',
+      '/images/p/13591966-w1200.webp',
+      '/images/p/30757351-w1200.webp',
+      '/images/p/36209446-w1200.webp',
+      '/images/p/13811606-w1200.webp',
     ],
   },
   {
@@ -1555,7 +1555,7 @@ export const routes: Route[] = [
     title: 'Ruta de 5 días desde Fez al Desierto',
     subtitle: 'Ida y vuelta a Fez pasando por Merzouga y el Atlas Medio',
     duration: '5 días',
-    image: 'https://images.pexels.com/photos/30320422/pexels-photo-30320422.jpeg?auto=compress&cs=tinysrgb&w=1600',
+    image: '/images/p/30320422-w1600.webp',
     heroImage: '/images/image-guia-fez.png',
     places: ['Fez', 'Ifrane', 'Azrou', 'Midelt', 'Merzouga', 'Todra', 'Dades'],
     description: 'Circuito de cinco días desde Fez: cedros del Medio Atlas, noche en jaima en Merzouga, gargantas del Todra y regreso por el Dades.',
@@ -1588,7 +1588,7 @@ export const routes: Route[] = [
         description:
           'Despertamos antes del amanecer para fotografiar la salida del sol sobre el Erg Chebbi y volvemos al campamento a desayunar. Salimos en 4x4 a recorrer el desierto profundo: dunas, rocas negras y paisajes que parecen otro planeta. Llegamos a Khamlia, el pueblo de los Gnawa, descendientes de esclavos subsaharianos que han hecho de la música su seña de identidad. Nos invitan a su casa con un té caliente y una sesión de música en directo. Almuerzo reservado en un pequeño restaurante tradicional. Por la tarde, visita a una familia nómada que vive con sus ovejas y cabras en plena hammada. Regreso al hotel.',
         lodging: 'Hotel/Auberge en Merzouga · cena y desayuno',
-        image: 'https://images.pexels.com/photos/4968848/pexels-photo-4968848.jpeg?auto=compress&cs=tinysrgb&w=1400',
+        image: '/images/p/4968848-w1400.webp',
         highlights: ['Amanecer sobre el Erg Chebbi', 'Música Gnawa en Khamlia', 'Té con una familia nómada'],
       },
       {
@@ -1608,7 +1608,7 @@ export const routes: Route[] = [
         description:
           'Un buen desayuno y tiempo libre hasta el traslado al aeropuerto de Fez a la hora convenida. Fin de nuestros servicios. Os damos las gracias por confiar en nosotros y os deseamos un buen viaje de vuelta. ¡Hasta pronto!',
         lodging: 'Fin de servicios en el aeropuerto de Fez',
-        image: 'https://images.pexels.com/photos/7391720/pexels-photo-7391720.jpeg?auto=compress&cs=tinysrgb&w=1400',
+        image: '/images/p/7391720-w1400.webp',
         highlights: ['Desayuno y tiempo libre', 'Traslado privado al aeropuerto', 'Hasta pronto'],
       },
     ],
@@ -1628,10 +1628,10 @@ export const routes: Route[] = [
       'Vuelos',
     ],
     gallery: [
-      'https://images.pexels.com/photos/30320422/pexels-photo-30320422.jpeg?auto=compress&cs=tinysrgb&w=1200',
-      'https://images.pexels.com/photos/30757351/pexels-photo-30757351.jpeg?auto=compress&cs=tinysrgb&w=1200',
-      'https://images.pexels.com/photos/36209446/pexels-photo-36209446.jpeg?auto=compress&cs=tinysrgb&w=1200',
-      'https://images.pexels.com/photos/13591966/pexels-photo-13591966.jpeg?auto=compress&cs=tinysrgb&w=1200',
+      '/images/p/30320422-w1200.webp',
+      '/images/p/30757351-w1200.webp',
+      '/images/p/36209446-w1200.webp',
+      '/images/p/13591966-w1200.webp',
     ],
   },
   {
@@ -1640,8 +1640,8 @@ export const routes: Route[] = [
     title: 'Ruta de 8 días desde Casablanca a Marrakech',
     subtitle: 'Costa atlántica, ciudades imperiales, desierto y Atlas',
     duration: '8 días',
-    image: 'https://images.pexels.com/photos/5541277/pexels-photo-5541277.jpeg?auto=compress&cs=tinysrgb&w=1600',
-    heroImage: 'https://images.pexels.com/photos/30411800/pexels-photo-30411800.jpeg?auto=compress&cs=tinysrgb&w=1400',
+    image: '/images/p/5541277-w1600.webp',
+    heroImage: '/images/p/30411800-w1400.webp',
     places: ['Casablanca', 'Rabat', 'Fez', 'Merzouga', 'Todra', 'Dades', 'Ouarzazate', 'Aït Ben Haddou', 'Marrakech'],
     description: 'De la costa atlántica al corazón del país: Casablanca, Rabat, la imperial Fez, noche en jaima en Merzouga y kasbahs hasta Marrakech.',
     longDescription: 'Ocho días para conocer Marruecos de costa a interior: la modernidad de Casablanca, la capital Rabat, la medina de Fez con guía local, los cedros del Medio Atlas, una noche en campamento de lujo en el Sahara, las gargantas del Todra, la Ruta de las Mil Kasbahs y Marrakech.',
@@ -1652,7 +1652,7 @@ export const routes: Route[] = [
         places: 'Aeropuerto · Mezquita Hassan II · Riad',
         description: 'Os recogemos en el aeropuerto de Casablanca y nos dirigimos a visitar la imponente mezquita Hassan II, una de las más grandes del mundo y la única de Marruecos abierta a no musulmanes, con su minarete de 210 metros asomado al Atlántico. Después, traslado al hotel y noche en un riad con encanto especial.',
         lodging: 'Riad en Casablanca · alojamiento y desayuno',
-        image: 'https://images.pexels.com/photos/30757351/pexels-photo-30757351.jpeg?auto=compress&cs=tinysrgb&w=1400',
+        image: '/images/p/30757351-w1400.webp',
         highlights: ['Recogida en el aeropuerto', 'Mezquita Hassan II', 'Riad con encanto'],
       },
       {
@@ -1661,7 +1661,7 @@ export const routes: Route[] = [
         places: 'Casablanca · Rabat · Mausoleo de Mohammed V · Torre Hassan',
         description: 'Tras el desayuno salimos hacia Rabat, capital del país. Visitamos el Mausoleo de Mohammed V, una joya de arquitectura alauita en mármol blanco, y la Torre Hassan, el minarete inacabado de la que iba a ser la mezquita más grande del mundo en el siglo XII. Pasaremos la noche en un riad muy lindo en el corazón de la ciudad.',
         lodging: 'Riad en Rabat · alojamiento y desayuno',
-        image: 'https://images.pexels.com/photos/30411800/pexels-photo-30411800.jpeg?auto=compress&cs=tinysrgb&w=1400',
+        image: '/images/p/30411800-w1400.webp',
         highlights: ['Mausoleo de Mohammed V', 'Torre Hassan', 'Capital atlántica'],
       },
       {
@@ -1670,7 +1670,7 @@ export const routes: Route[] = [
         places: 'Rabat · Meknes · Volubilis · Fez',
         description: 'Después del desayuno partimos rumbo a Meknes, la ciudad imperial que creció gracias al Sultán Mulay Ismail, con sus murallas y Bab El Mansour. A 27 km se encuentran las ruinas de la ciudad romana de Volubilis, Patrimonio de la Humanidad, con sus mosaicos sobre el suelo y el arco de Caracalla. Después continuamos camino a Fez, donde tendremos la tarde libre y noche en un riad muy lindo de la medina.',
         lodging: 'Riad en la medina de Fez · alojamiento y desayuno',
-        image: 'https://images.pexels.com/photos/18767562/pexels-photo-18767562.jpeg?auto=compress&cs=tinysrgb&w=1400',
+        image: '/images/p/18767562-w1400.webp',
         highlights: ['Meknes y Bab El Mansour', 'Ruinas romanas de Volubilis', 'Llegada a Fez'],
       },
       {
@@ -1679,7 +1679,7 @@ export const routes: Route[] = [
         places: 'Fez · Medersa Bou Inania · Attarin · Karaouine · Fes El-Jedid · Souks',
         description: 'Día entero para descubrir la ciudad imperial de Fez con guía local: las medersas (escuelas coránicas) de Sahrij, Bou Inania y Attarin, los souks de los curtidores, los caldereros y los teñidores, Fes El-Jedid y la Mezquita Karaouine, considerada la primera universidad del mundo. Tarde y noche libres en el riad para perderos por la medina.',
         lodging: 'Riad en la medina de Fez · alojamiento y desayuno',
-        image: 'https://images.pexels.com/photos/38112326/pexels-photo-38112326.jpeg?auto=compress&cs=tinysrgb&w=1400',
+        image: '/images/p/38112326-w1400.webp',
         highlights: ['Medersa Bou Inania', 'Mezquita Karaouine', 'Souks y curtidurías'],
       },
       {
@@ -1688,7 +1688,7 @@ export const routes: Route[] = [
         places: 'Fez · Ifrane · Cedros de Azrou · Valle del Ziz · Erfoud · Merzouga · Erg Chebbi',
         description: 'Salimos de Fez hacia el Medio Atlas con parada en Ifrane, conocida como la "Suiza de África" por sus tejados a dos aguas. Después atravesamos el parque nacional de Azrou para ver el bosque de cedros y a los monos de berbería. Recorremos el Valle del Ziz hasta Erfoud, famosa por sus fósiles, y llegamos a las dunas de Merzouga, donde cambiamos el 4x4 por dromedarios. Cabalgamos hasta el campamento de jaimas en el corazón del Erg Chebbi, donde nos reciben con té bereber. Noche bajo una lluvia de estrellas en el desierto.',
         lodging: 'Campamento de jaimas en el Erg Chebbi · cena y desayuno',
-        image: 'https://images.pexels.com/photos/26689356/pexels-photo-26689356.jpeg?auto=compress&cs=tinysrgb&w=1400',
+        image: '/images/p/26689356-w1400.webp',
         highlights: ['Cedros y monos de Azrou', 'Caravana de dromedarios', 'Noche en jaima bajo las estrellas'],
       },
       {
@@ -1706,7 +1706,7 @@ export const routes: Route[] = [
         places: 'Ouarzazate · Aït Ben Haddou · Telouet · Tizi n\'Tichka · Marrakech',
         description: 'Después del desayuno recorremos la Kasbah Taourirt y, a 25 km, llegamos a la kasbah de Aït Ben Haddou, declarada Patrimonio de la Humanidad por la UNESCO y famosa por películas como "Lawrence de Arabia", "El Cielo Protector" o "Babel". Seguimos hacia Telouet, antigua residencia del Glaoui, y cruzamos el puerto del Tichka que nos conecta con Marrakech, la "Ciudad Roja". Llegada al riad, tarde libre y noche.',
         lodging: 'Riad en la medina de Marrakech · alojamiento y desayuno',
-        image: 'https://images.pexels.com/photos/6095564/pexels-photo-6095564.jpeg?auto=compress&cs=tinysrgb&w=1400',
+        image: '/images/p/6095564-w1400.webp',
         highlights: ['Kasbah de Aït Ben Haddou', 'Kasbah de Telouet', 'Puerto del Tichka'],
       },
       {
@@ -1715,7 +1715,7 @@ export const routes: Route[] = [
         places: 'Marrakech · Aeropuerto',
         description: 'Desayuno y tiempo libre en Marrakech hasta el traslado al aeropuerto a la hora convenida. Fin de nuestros servicios.',
         lodging: 'Fin de servicios en el aeropuerto de Marrakech',
-        image: 'https://images.pexels.com/photos/10573397/pexels-photo-10573397.jpeg?auto=compress&cs=tinysrgb&w=1400',
+        image: '/images/p/10573397-w1400.webp',
         highlights: ['Tiempo libre en Marrakech', 'Traslado privado al aeropuerto'],
       },
     ],
@@ -1736,10 +1736,10 @@ export const routes: Route[] = [
       'Vuelos',
     ],
     gallery: [
-      'https://images.pexels.com/photos/30757351/pexels-photo-30757351.jpeg?auto=compress&cs=tinysrgb&w=1200',
-      'https://images.pexels.com/photos/30320422/pexels-photo-30320422.jpeg?auto=compress&cs=tinysrgb&w=1200',
-      'https://images.pexels.com/photos/36209446/pexels-photo-36209446.jpeg?auto=compress&cs=tinysrgb&w=1200',
-      'https://images.pexels.com/photos/13591966/pexels-photo-13591966.jpeg?auto=compress&cs=tinysrgb&w=1200',
+      '/images/p/30757351-w1200.webp',
+      '/images/p/30320422-w1200.webp',
+      '/images/p/36209446-w1200.webp',
+      '/images/p/13591966-w1200.webp',
     ],
   },
   {
@@ -1748,7 +1748,7 @@ export const routes: Route[] = [
     title: 'Ruta de 9 días desde Casablanca al Desierto y Marrakech',
     subtitle: 'Ciudades imperiales, Atlas y Sahara en circuito cerrado',
     duration: '9 días',
-    image: 'https://images.pexels.com/photos/5541277/pexels-photo-5541277.jpeg?auto=compress&cs=tinysrgb&w=1600',
+    image: '/images/p/5541277-w1600.webp',
     heroImage: '/images/image-rissani.png',
     places: ['Casablanca', 'Rabat', 'Meknés', 'Fez', 'Merzouga', 'Todra', 'Dades', 'Ouarzazate', 'Marrakech', 'Casablanca'],
     description: 'Circuito completo de nueve días desde Casablanca: ciudades imperiales, Medio Atlas, Sahara, kasbahs y Marrakech con regreso a Casablanca.',
@@ -1760,7 +1760,7 @@ export const routes: Route[] = [
         places: 'Aeropuerto · Mezquita Hassan II · Corniche · Riad',
         description: 'Os recogemos en el aeropuerto de Casablanca, la ciudad más grande de Marruecos y su centro económico. Visitamos la mezquita Hassan II, la más grande del país, situada en un promontorio con vistas al océano Atlántico. Después exploramos la Corniche de Casablanca antes de trasladaros al hotel.',
         lodging: 'Hotel en Casablanca · alojamiento y desayuno',
-        image: 'https://images.pexels.com/photos/30757351/pexels-photo-30757351.jpeg?auto=compress&cs=tinysrgb&w=1400',
+        image: '/images/p/30757351-w1400.webp',
         highlights: ['Mezquita Hassan II', 'Corniche atlántica', 'Recogida en aeropuerto'],
       },
       {
@@ -1769,7 +1769,7 @@ export const routes: Route[] = [
         places: 'Casablanca · Rabat · Torre Hassan · Mausoleo Mohammed V · Kasbah Oudaya · Chefchaouen',
         description: 'Después del desayuno nos dirigimos por la costa hasta Rabat, capital del reino y ciudad imperial. Visitamos la Torre Hassan, el Mausoleo de Mohammed V y la Kasbah de los Oudayas con sus vistas al río. Por la tarde subimos al norte a través de Ouazzane para llegar a Chefchaouen, la ciudad azul enclavada en las montañas del Rif, famosa por sus callejones pintados de blanco y azul.',
         lodging: 'Hotel en Chefchaouen · alojamiento y desayuno',
-        image: 'https://images.pexels.com/photos/13591966/pexels-photo-13591966.jpeg?auto=compress&cs=tinysrgb&w=1400',
+        image: '/images/p/13591966-w1400.webp',
         highlights: ['Torre Hassan y Mausoleo', 'Kasbah de los Oudayas', 'Ciudad azul de Chaouen'],
       },
       {
@@ -1778,7 +1778,7 @@ export const routes: Route[] = [
         places: 'Chefchaouen · Volubilis · Moulay Idriss · Meknes · Fez',
         description: 'Salimos de Chaouen bordeando el bosque de Mamora hasta Meknes, ciudad imperial que visitamos con sus grandiosas murallas. A 27 km se encuentran las ruinas romanas de Volubilis, Patrimonio de la Humanidad, con sus mosaicos y columnas. También visitamos la ciudad santa de Moulay Idriss antes de continuar hacia Fez.',
         lodging: 'Riad en la medina de Fez · alojamiento y desayuno',
-        image: 'https://images.pexels.com/photos/18767562/pexels-photo-18767562.jpeg?auto=compress&cs=tinysrgb&w=1400',
+        image: '/images/p/18767562-w1400.webp',
         highlights: ['Ruinas romanas de Volubilis', 'Ciudad santa de Moulay Idriss', 'Meknes imperial'],
       },
       {
@@ -1787,7 +1787,7 @@ export const routes: Route[] = [
         places: 'Fez · Palacio Real · Medina · Curtidurías · Barrio artesano',
         description: 'Día completo con visita guiada por la más antigua de las ciudades imperiales, fundada en el 808 como primera capital política, religiosa y cultural. Comenzamos por las Puertas Doradas del Palacio Real; desde un punto elevado observamos la muralla que encierra la impresionante medina, que luego recorremos a pie. Descubrimos mezquitas, medersas y carabansarais hasta el barrio de los curtidores. Por la tarde visitamos el barrio de los artesanos, que trajeron su arte andalusí desde España.',
         lodging: 'Riad en la medina de Fez · alojamiento y desayuno',
-        image: 'https://images.pexels.com/photos/38112326/pexels-photo-38112326.jpeg?auto=compress&cs=tinysrgb&w=1400',
+        image: '/images/p/38112326-w1400.webp',
         highlights: ['Puertas Doradas del Palacio Real', 'Barrio de curtidores', 'Artesanía andalusí'],
       },
       {
@@ -1796,7 +1796,7 @@ export const routes: Route[] = [
         places: 'Fez · Ifrane · Cedros de Azrou · Midelt · Tizi n\'Atalgamt · Valle del Ziz · Er Rachidia · Erfoud · Merzouga',
         description: 'Salida temprana hacia el Medio Atlas con parada en Ifrane, "la Suiza de Marruecos", y los bosques de cedros de Azrou, donde os fotografiaréis con los monos de berbería en libertad. Seguimos hasta Midelt, "la capital de la manzana", para almorzar a los pies de la montaña Ayachi. Cruzamos el puerto Tizi n\'Atalgamt — el paso más alto del norte de África — y el Valle del Ziz con sus palmerales. Llegamos a Erfoud y después a Merzouga, donde los dromedarios nos adentran en el Erg Chebbi para contemplar una puesta de sol inolvidable. Noche especial en jaimas con cena bereber, música en vivo y el cielo estrellado.',
         lodging: 'Campamento de jaimas en el Erg Chebbi · cena y desayuno',
-        image: 'https://images.pexels.com/photos/26689356/pexels-photo-26689356.jpeg?auto=compress&cs=tinysrgb&w=1400',
+        image: '/images/p/26689356-w1400.webp',
         highlights: ['Monos de Azrou', 'Valle del Ziz', 'Noche en jaima con música bereber'],
       },
       {
@@ -1814,7 +1814,7 @@ export const routes: Route[] = [
         places: 'Valle del Dadés · Ouarzazate · Aït Ben Haddou · Cooperativa de argán · Tizi n\'Tichka · Marrakech',
         description: 'Tras el desayuno visitamos el pueblo fortificado de Aït Ben Haddou, declarado Patrimonio de la Humanidad por la UNESCO y escenario de películas como Gladiator, La Joya del Nilo y Babel. Recorremos sus estrechas callejuelas que se remontan a casi mil años. Seguimos hacia Marrakech cruzando el puerto Tizi n\'Tichka del Alto Atlas, con parada en una cooperativa de aceite de argán. Durante el trayecto descubrimos pueblos bereberes con casas colgando de las laderas de la montaña. Llegada a Marrakech al atardecer.',
         lodging: 'Riad en la medina de Marrakech · alojamiento y desayuno',
-        image: 'https://images.pexels.com/photos/6095564/pexels-photo-6095564.jpeg?auto=compress&cs=tinysrgb&w=1400',
+        image: '/images/p/6095564-w1400.webp',
         highlights: ['Kasbah Aït Ben Haddou', 'Puerto Tizi n\'Tichka', 'Pueblos bereberes del Atlas'],
       },
       {
@@ -1823,7 +1823,7 @@ export const routes: Route[] = [
         places: 'Marrakech · Jardines Menara · Tumbas Saadíes · Palacio Bahía · Jardines Majorelle · Kutubia · Jemaa el-Fna',
         description: 'Después de un buen desayuno, visita guiada de Marrakech "la Ciudad Roja": los Jardines de la Menara, las Tumbas Saadíes, el Palacio de Bahía, los Jardines de Majorelle y la impresionante mezquita Kutubia con su minarete almohade. Tarde libre para perderos por las callejuelas de la medina, disfrutar de la plaza Jemaa el-Fna y su transformación nocturna, y subir a una terraza para contemplar la vista.',
         lodging: 'Riad en la medina de Marrakech · alojamiento y desayuno',
-        image: 'https://images.pexels.com/photos/20895317/pexels-photo-20895317.jpeg?auto=compress&cs=tinysrgb&w=1400',
+        image: '/images/p/20895317-w1400.webp',
         highlights: ['Jardines Majorelle', 'Plaza Jemaa el-Fna', 'Palacio de Bahía'],
       },
       {
@@ -1832,7 +1832,7 @@ export const routes: Route[] = [
         places: 'Marrakech · Aeropuerto de Casablanca',
         description: 'Último día: un pequeño recorrido de despedida por la ciudad roja de Marrakech y nos dirigimos al norte hacia el aeropuerto de Casablanca con paradas para vistas panorámicas del paisaje. Traslado al aeropuerto y fin de nuestros servicios.',
         lodging: 'Fin de servicios en el aeropuerto de Casablanca',
-        image: 'https://images.pexels.com/photos/34940617/pexels-photo-34940617.jpeg?auto=compress&cs=tinysrgb&w=1400',
+        image: '/images/p/34940617-w1400.webp',
         highlights: ['Último paseo por Marrakech', 'Traslado privado a Casablanca'],
       },
     ],
@@ -1854,10 +1854,10 @@ export const routes: Route[] = [
       'Vuelos',
     ],
     gallery: [
-      'https://images.pexels.com/photos/30757351/pexels-photo-30757351.jpeg?auto=compress&cs=tinysrgb&w=1200',
-      'https://images.pexels.com/photos/23551283/pexels-photo-23551283.jpeg?auto=compress&cs=tinysrgb&w=1200',
-      'https://images.pexels.com/photos/30320422/pexels-photo-30320422.jpeg?auto=compress&cs=tinysrgb&w=1200',
-      'https://images.pexels.com/photos/13591966/pexels-photo-13591966.jpeg?auto=compress&cs=tinysrgb&w=1200',
+      '/images/p/30757351-w1200.webp',
+      '/images/p/23551283-w1200.webp',
+      '/images/p/30320422-w1200.webp',
+      '/images/p/13591966-w1200.webp',
     ],
   },
   {
@@ -1866,8 +1866,8 @@ export const routes: Route[] = [
     title: 'Ruta de 15 días desde Casablanca al Desierto',
     subtitle: 'El viaje definitivo: de norte a sur y de costa a desierto',
     duration: '15 días',
-    image: 'https://images.pexels.com/photos/30757351/pexels-photo-30757351.jpeg?auto=compress&cs=tinysrgb&w=1600',
-    heroImage: 'https://images.pexels.com/photos/30757351/pexels-photo-30757351.jpeg?auto=compress&cs=tinysrgb&w=1920',
+    image: '/images/p/30757351-w1600.webp',
+    heroImage: '/images/p/30757351-w1920.webp',
     places: ['Casablanca', 'Rabat', 'Chefchaouen', 'Fez', 'Merzouga', 'Todra', 'Dades', 'Ouarzazate', 'Aït Ben Haddou', 'Marrakech', 'Essaouira', 'Casablanca'],
     description: 'Quince días para ver todo Marruecos: costa atlántica, norte azul, ciudades imperiales, Sahara, gargantas, kasbahs, Marrakech y Essaouira.',
     longDescription: 'El viaje más completo que ofrecemos. Quince días recorriendo el país de punta a punta: Casablanca y Rabat, la medina azul de Chefchaouen, Fez con guía local, los cedros del Medio Atlas, dos noches en Merzouga, las gargantas del Todra y del Dades, Ouarzazate, Aït Ben Haddou, Marrakech, Essaouira en la costa atlántica y regreso a Casablanca.',
@@ -1878,7 +1878,7 @@ export const routes: Route[] = [
         places: 'Aeropuerto · Mezquita Hassan II · Hotel',
         description: 'Recogida en el aeropuerto de Casablanca. Dependiendo de la hora de llegada, visitamos la mezquita Hassan II, la segunda más grande del mundo islámico, construida sobre una península artificial que se eleva imponente sobre el Atlántico. Cena y alojamiento en la ciudad.',
         lodging: 'Hotel en Casablanca · cena y desayuno',
-        image: 'https://images.pexels.com/photos/30757351/pexels-photo-30757351.jpeg?auto=compress&cs=tinysrgb&w=1400',
+        image: '/images/p/30757351-w1400.webp',
         highlights: ['Mezquita Hassan II', 'Recogida en aeropuerto'],
       },
       {
@@ -1887,7 +1887,7 @@ export const routes: Route[] = [
         places: 'Casablanca · El Jadida · Oualidia · Safi · Essaouira',
         description: 'Salimos por la carretera de la costa atlántica admirando las vistas. Pasamos por El Jadida, antigua Mazagán portuguesa (1513), una de las ciudades más bellas de la costa. Continuamos a Oualidia, donde disfrutamos de mariscos frescos en su laguna. Después del almuerzo seguimos por Safi hasta Essaouira, donde llegamos por la tarde.',
         lodging: 'Hotel en Essaouira · cena y desayuno',
-        image: 'https://images.pexels.com/photos/6587473/pexels-photo-6587473.jpeg?auto=compress&cs=tinysrgb&w=1200',
+        image: '/images/p/6587473-w1200.webp',
         highlights: ['Costa atlántica', 'Medina portuguesa de El Jadida', 'Mariscos en Oualidia'],
       },
       {
@@ -1896,7 +1896,7 @@ export const routes: Route[] = [
         places: 'Essaouira · Puerto · Fábrica de argán · Marrakech',
         description: 'Por la mañana exploramos el puerto pesquero de Essaouira, levantada sobre una isla rocosa frente al océano. Visitamos una fábrica de argán dirigida por mujeres y disfrutamos de un almuerzo de mariscos en la medina. Tiempo libre para nadar, relajarse o dar un paseo en camello por la playa. Por la tarde nos dirigimos a Marrakech, la Ciudad Roja.',
         lodging: 'Riad en Marrakech · alojamiento y desayuno',
-        image: 'https://images.pexels.com/photos/35846256/pexels-photo-35846256.jpeg?auto=compress&cs=tinysrgb&w=1400',
+        image: '/images/p/35846256-w1400.webp',
         highlights: ['Puerto de Essaouira', 'Fábrica de argán', 'Playa atlántica'],
       },
       {
@@ -1905,7 +1905,7 @@ export const routes: Route[] = [
         places: 'Marrakech · Kutubia · Majorelle · Tumbas Saadíes · Palacio Bahía · Mellah · Jemaa el-Fna',
         description: 'Día completo con guía local: la mezquita Kutubia, los Jardines de Majorelle, las Tumbas Saadíes del siglo XVI decoradas con mosaicos, el Palacio de Bahía del siglo XIX y el Mellah (antiguo barrio judío). Almuerzo y tarde libre para perderos por la medina, callejear el zoco y disfrutar de la plaza Jemaa el-Fna con sus espectáculos nocturnos. Subid a alguna terraza panorámica.',
         lodging: 'Riad en Marrakech · alojamiento y desayuno',
-        image: 'https://images.pexels.com/photos/20895317/pexels-photo-20895317.jpeg?auto=compress&cs=tinysrgb&w=1400',
+        image: '/images/p/20895317-w1400.webp',
         highlights: ['Jardines de Majorelle', 'Plaza Jemaa el-Fna', 'Palacio de Bahía'],
       },
       {
@@ -1914,7 +1914,7 @@ export const routes: Route[] = [
         places: 'Marrakech · Tizi n\'Tichka · Pueblos bereberes · Telouet · Aït Ben Haddou · Ouarzazate',
         description: 'Cruzamos el Alto Atlas por el puerto de Tizi n\'Tichka (2.260 m), el paso de carreteras más alto del norte de África. Descubrimos pueblos bereberes entre montañas, visitamos la Kasbah de Telouet y el pueblo fortificado de Aït Ben Haddou, Patrimonio UNESCO, escenario de Gladiator y Juego de Tronos. Tiempo libre para recorrer sus callejuelas milenarias. Continuamos hacia Ouarzazate.',
         lodging: 'Hotel en Ouarzazate · cena y desayuno',
-        image: 'https://images.pexels.com/photos/6095564/pexels-photo-6095564.jpeg?auto=compress&cs=tinysrgb&w=1400',
+        image: '/images/p/6095564-w1400.webp',
         highlights: ['Puerto Tizi n\'Tichka', 'Kasbah de Telouet', 'Aït Ben Haddou UNESCO'],
       },
       {
@@ -1923,7 +1923,7 @@ export const routes: Route[] = [
         places: 'Ouarzazate · Atlas Studios · Kasbah Taourirt · Skoura · Kasbah Amerhidil · El Kelaa M\'Gouna · Boumalne · Gargantas del Dadés',
         description: 'Visitamos los Atlas Film Studios y la Kasbah Taourirt en Ouarzazate. Continuamos al oasis de Skoura con la increíble Kasbah de Amerhidil entre palmerales y montañas. Pasamos por el Valle de las Rosas (El Kelaa M\'Gouna), donde almorzamos, y llegamos a Boumalne Dadés para cenar y dormir en las Gargantas del Dadés.',
         lodging: 'Riad en Gargantas del Dadés · cena y desayuno',
-        image: 'https://images.pexels.com/photos/5504565/pexels-photo-5504565.jpeg?auto=compress&cs=tinysrgb&w=1400',
+        image: '/images/p/5504565-w1400.webp',
         highlights: ['Atlas Film Studios', 'Kasbah de Amerhidil', 'Valle de las Rosas'],
       },
       {
@@ -1932,7 +1932,7 @@ export const routes: Route[] = [
         places: 'Boumalne · Tinghir · Gargantas del Todra · Tinjdad · Erfoud · Merzouga · Erg Chebbi',
         description: 'Partimos hacia Tinghir para visitar las impresionantes Gargantas del Todra, un cañón de paredes verticales de enorme altura. Almuerzo allí y paseo con calma. Seguimos por Tinjdad y Erfoud (yacimientos de fósiles) hasta Merzouga. Paseo en dromedario hasta el campamento de jaimas contemplando el atardecer en el desierto. Cena bereber tradicional bajo las estrellas con música en directo.',
         lodging: 'Campamento de jaimas en Erg Chebbi · cena y desayuno',
-        image: 'https://images.pexels.com/photos/12214734/pexels-photo-12214734.jpeg?auto=compress&cs=tinysrgb&w=1400',
+        image: '/images/p/12214734-w1400.webp',
         highlights: ['Gargantas del Todra', 'Caravana de dromedarios', 'Noche en jaima'],
       },
       {
@@ -1941,7 +1941,7 @@ export const routes: Route[] = [
         places: 'Erg Chebbi · Khamlia · Pueblos nómadas · Merzouga',
         description: 'Nos levantamos antes del amanecer para contemplarlo desde las dunas. Desayuno y ducha en el albergue. Gran tour en 4x4 por las dunas pasando por pueblos bereberes del desierto, incluido Khamlia, habitado por gente de origen malí, donde disfrutamos de su música espiritual Gnawa. Visitamos pueblos nómadas para conocer su hospitalidad y forma de vida. Tarde libre con opción de otra noche en el desierto.',
         lodging: 'Albergue/Jaima en Merzouga · cena y desayuno',
-        image: 'https://images.pexels.com/photos/4968848/pexels-photo-4968848.jpeg?auto=compress&cs=tinysrgb&w=1400',
+        image: '/images/p/4968848-w1400.webp',
         highlights: ['Amanecer en las dunas', 'Música Gnawa en Khamlia', 'Tour 4x4 por el desierto'],
       },
       {
@@ -1959,7 +1959,7 @@ export const routes: Route[] = [
         places: 'Midelt · Azrou · Cedre Gouraud · Bosque de cedros · Ifrane · Imouzar Kandar · Fez',
         description: 'Dejamos Midelt hacia Azrou, ciudad bereber donde almorzamos y vemos el Cedre Gouraud (800 años) y los bosques de cedros con monos de berbería en libertad. Nos dirigimos a Ifrane, "la Suiza de Marruecos", con el famoso león de piedra y la Universidad Al-Akhawayn. Continuamos por Imouzar Kandar hasta Fez.',
         lodging: 'Riad en Fez · alojamiento y desayuno',
-        image: 'https://images.pexels.com/photos/26689356/pexels-photo-26689356.jpeg?auto=compress&cs=tinysrgb&w=1400',
+        image: '/images/p/26689356-w1400.webp',
         highlights: ['Cedro milenario de Azrou', 'Monos de berbería', 'Ifrane, la Suiza de Marruecos'],
       },
       {
@@ -1968,7 +1968,7 @@ export const routes: Route[] = [
         places: 'Fez · Medina El Bali · Curtidurías · Universidad Qarawiyyin · Bab Boujloud · Mellah · Palacio Real',
         description: 'Día completo con guía local en Fez, la más antigua ciudad imperial (siglo VIII), capital cultural y espiritual de Marruecos. Descubrimos la medina El Bali con sus 9.000 callejuelas, el barrio judío (Mellah) y el Palacio Real. La Universidad y Mezquita de Qarawiyyin, considerada la más antigua del mundo en funcionamiento. Bab Boujloud (la puerta azul), las curtidurías con sus técnicas centenarias y la organización ancestral de los barrios.',
         lodging: 'Riad en Fez · alojamiento y desayuno',
-        image: 'https://images.pexels.com/photos/38112326/pexels-photo-38112326.jpeg?auto=compress&cs=tinysrgb&w=1400',
+        image: '/images/p/38112326-w1400.webp',
         highlights: ['Medina El Bali', 'Universidad Qarawiyyin', 'Curtidurías tradicionales'],
       },
       {
@@ -1977,7 +1977,7 @@ export const routes: Route[] = [
         places: 'Fez · Meknes · Bab El Mansour · Moulay Ismail · Moulay Idriss Zerhoun · Volubilis · Ouezzane · Chefchaouen',
         description: 'Viajamos a Meknes, "la Versalles de Marruecos": admiramos Bab El Mansour, visitamos el Mausoleo de Moulay Ismail. Nos dirigimos a Moulay Idriss Zerhoun (lugar de peregrinación) y exploramos las ruinas romanas de Volubilis. Seguimos por las montañas del Rif a través de Ouezzane hasta Chefchaouen, preciosa ciudad montañesa.',
         lodging: 'Hotel en Chefchaouen · alojamiento y desayuno',
-        image: 'https://images.pexels.com/photos/18767562/pexels-photo-18767562.jpeg?auto=compress&cs=tinysrgb&w=1400',
+        image: '/images/p/18767562-w1400.webp',
         highlights: ['Bab El Mansour de Meknes', 'Ruinas romanas de Volubilis', 'Llegada a Chaouen'],
       },
       {
@@ -1986,7 +1986,7 @@ export const routes: Route[] = [
         places: 'Chefchaouen · Plaza Uta al-Hammam · Gran Mezquita · Kasbah · Fuente Ras el-Maa',
         description: 'Día completo para descubrir la mágica ciudad azul en las montañas del Rif. Paseamos por sus calles empedradas pintadas de blanco y azul, la plaza Uta al-Hammam con vistas de la Gran Mezquita (siglo XV), la Kasbah con sus antiguas celdas de prisión, la Plaza de Makhzen y la fuente Ras el-Maa, uno de los lugares más bonitos, donde las mujeres hacen la colada junto a los molinos hidráulicos.',
         lodging: 'Hotel en Chefchaouen · alojamiento y desayuno',
-        image: 'https://images.pexels.com/photos/13591966/pexels-photo-13591966.jpeg?auto=compress&cs=tinysrgb&w=1400',
+        image: '/images/p/13591966-w1400.webp',
         highlights: ['Calles azules de la medina', 'Fuente Ras el-Maa', 'Kasbah y Gran Mezquita'],
       },
       {
@@ -1995,7 +1995,7 @@ export const routes: Route[] = [
         places: 'Chefchaouen · Ouezzane · Souk Arbaa · Kenitra · Rabat · Palacio Real · Torre Hassan · Kasbah Oudayas · Casablanca',
         description: 'Salimos hacia Rabat a través de Souk El Arbaa Gharb y Kenitra, junto al Atlántico. En Rabat hacemos visita panorámica: Palacio Real, Mausoleo de Mohamed V, Torre Hassan (minarete almohade incompleto) y la Kasbah des Oudayas con sus casas blancas y azules sobre la costa. Seguimos hasta nuestro destino final: Casablanca.',
         lodging: 'Hotel en Casablanca · cena y desayuno',
-        image: 'https://images.pexels.com/photos/30411800/pexels-photo-30411800.jpeg?auto=compress&cs=tinysrgb&w=1400',
+        image: '/images/p/30411800-w1400.webp',
         highlights: ['Kasbah des Oudayas', 'Torre Hassan', 'Regreso a Casablanca'],
       },
       {
@@ -2004,7 +2004,7 @@ export const routes: Route[] = [
         places: 'Casablanca · Aeropuerto',
         description: 'Después del desayuno, traslado al aeropuerto de Casablanca dependiendo de la hora de vuestro vuelo. Fin de nuestros servicios.',
         lodging: 'Fin de servicios en el aeropuerto de Casablanca',
-        image: 'https://images.pexels.com/photos/34936253/pexels-photo-34936253.jpeg?auto=compress&cs=tinysrgb&w=1400',
+        image: '/images/p/34936253-w1400.webp',
         highlights: ['Traslado privado al aeropuerto'],
       },
     ],
@@ -2028,10 +2028,10 @@ export const routes: Route[] = [
       'Entradas a museos o lugares históricos',
     ],
     gallery: [
-      'https://images.pexels.com/photos/30757351/pexels-photo-30757351.jpeg?auto=compress&cs=tinysrgb&w=1200',
-      'https://images.pexels.com/photos/23551283/pexels-photo-23551283.jpeg?auto=compress&cs=tinysrgb&w=1200',
-      'https://images.pexels.com/photos/13591966/pexels-photo-13591966.jpeg?auto=compress&cs=tinysrgb&w=1200',
-      'https://images.pexels.com/photos/36209446/pexels-photo-36209446.jpeg?auto=compress&cs=tinysrgb&w=1200',
+      '/images/p/30757351-w1200.webp',
+      '/images/p/23551283-w1200.webp',
+      '/images/p/13591966-w1200.webp',
+      '/images/p/36209446-w1200.webp',
     ],
   },
   {
@@ -2040,8 +2040,8 @@ export const routes: Route[] = [
     title: 'Ruta de 10 días desde Marrakech al Desierto',
     subtitle: 'Atlas, kasbahs, desierto y costa atlántica sin prisas',
     duration: '10 días',
-    image: 'https://images.pexels.com/photos/2901215/pexels-photo-2901215.jpeg?auto=compress&cs=tinysrgb&w=1600',
-    heroImage: 'https://images.pexels.com/photos/12214734/pexels-photo-12214734.jpeg?auto=compress&cs=tinysrgb&w=1400',
+    image: '/images/p/2901215-w1600.webp',
+    heroImage: '/images/p/12214734-w1400.webp',
     places: ['Marrakech', 'Aït Ben Haddou', 'Dades', 'Todra', 'Merzouga', 'Ouarzazate', 'Taroudant', 'Essaouira'],
     description: 'Diez días para explorar el sur de Marruecos: Atlas, kasbahs, dos noches en el Sahara, Anti Atlas, Taroudant y la costa de Essaouira.',
     longDescription: 'Un viaje de diez días centrado en el sur del país. Salimos de Marrakech hacia el Alto Atlas y las kasbahs, pasamos dos noches en Merzouga, recorremos las gargantas del Todra y del Dades, cruzamos el Anti Atlas hasta Taroudant, la pequeña Marrakech, y terminamos en Essaouira, la ciudad del viento en la costa atlántica.',
@@ -2053,7 +2053,7 @@ export const routes: Route[] = [
         description:
           'Recogida en el aeropuerto y traslado al hotel, con posibilidad de tomar un primer contacto con la famosa plaza Jemaa El Fna. Es la plaza central de Marrakech, el corazón de la medina dominada por la gran torre de la mezquita Koutoubia. En ella se desarrolla la vida pública de la ciudad. Es extraordinario ver la transformación que va sufriendo a lo largo del día: de día, zumos, encantadores de serpientes y músicos; de noche, puestos de comida y espectáculos.',
         lodging: 'Riad en la medina de Marrakech · alojamiento y desayuno',
-        image: 'https://images.pexels.com/photos/20895317/pexels-photo-20895317.jpeg?auto=compress&cs=tinysrgb&w=1400',
+        image: '/images/p/20895317-w1400.webp',
         highlights: ['Recogida en aeropuerto', 'Plaza Jemaa El Fna', 'Minarete de la Koutoubia'],
       },
       {
@@ -2063,7 +2063,7 @@ export const routes: Route[] = [
         description:
           'Salida temprano tras el desayuno con destino Casablanca, donde visitaremos la espectacular mezquita de Hassan II, majestuosa, que se ha convertido en el símbolo de la ciudad. Se eleva imponente sobre un promontorio frente al Atlántico; es la segunda más grande del mundo islámico, después de la Meca. Desde el exterior parece una isla en medio del mar. Seguimos hacia Rabat, capital del reino, donde conoceremos la mezquita de Hassan, la Kasbah de los Oudayas, la necrópolis meriní de Chellah construida en el siglo XIV sobre ruinas romanas, el mausoleo de Mohammed V y la antigua medina de Rabat.',
         lodging: 'Riad en Rabat · alojamiento y desayuno',
-        image: 'https://images.pexels.com/photos/30411800/pexels-photo-30411800.jpeg?auto=compress&cs=tinysrgb&w=1400',
+        image: '/images/p/30411800-w1400.webp',
         highlights: ['Mezquita Hassan II', 'Kasbah de los Oudayas', 'Mausoleo de Mohammed V'],
       },
       {
@@ -2073,7 +2073,7 @@ export const routes: Route[] = [
         description:
           'Después del desayuno nos dirigimos a Meknes, donde nos recibirán sus kilométricas murallas de 40 km de recorrido. Veremos la puerta de Bab Mansour, la más grande de todo Marruecos y del norte de África. Continuamos hasta Volubilis, antigua ciudad romana con los restos arqueológicos mejor conservados del país. Volubilis formó parte del Imperio Romano hasta finales del siglo III y está declarada Patrimonio de la Humanidad por la UNESCO. Nuestro día terminará en Fez, donde nos alojaremos en un bonito riad dentro de la medina.',
         lodging: 'Riad en la medina de Fez · alojamiento y desayuno',
-        image: 'https://images.pexels.com/photos/18767562/pexels-photo-18767562.jpeg?auto=compress&cs=tinysrgb&w=1400',
+        image: '/images/p/18767562-w1400.webp',
         highlights: ['Murallas de Meknes', 'Puerta de Bab Mansour', 'Ruinas romanas de Volubilis'],
       },
       {
@@ -2083,7 +2083,7 @@ export const routes: Route[] = [
         description:
           'Día completo para descubrir la caótica y vibrante ciudad de Fez, capital cultural y espiritual de Marruecos, y su mítica medina, la más grande del mundo. Acompañados de un guía local que os mostrará cada rincón de sus laberínticas calles mientras intentamos esquivar burros y motos, resultará imposible no sentir que nos hemos trasladado a otra época. Veréis el fascinante barrio de los curtidores, la universidad de Qarawiyyin —una de las más antiguas del mundo—, la mezquita Al Karaouine y el barrio judío. Tiempo libre por la tarde y noche en un riad con encanto.',
         lodging: 'Riad en la medina de Fez · alojamiento y desayuno',
-        image: 'https://images.pexels.com/photos/38112326/pexels-photo-38112326.jpeg?auto=compress&cs=tinysrgb&w=1400',
+        image: '/images/p/38112326-w1400.webp',
         highlights: ['Barrio de los curtidores', 'Universidad Qarawiyyin', 'Medina laberíntica de Fez'],
       },
       {
@@ -2093,7 +2093,7 @@ export const routes: Route[] = [
         description:
           'Dejamos Fez por la mañana y nos dirigimos al sur de Marruecos. Pasaremos por Ifrane, situada en pleno Atlas Medio y conocida como la "Suiza de Marruecos", sumergida en un bosque de cedros milenario, los cedros de Azrou, donde tendremos la oportunidad de observar, alimentar y fotografiarnos con los monos en libertad. Seguidamente recorreremos el Valle del Ziz, inmenso espacio natural rodeado de cañones y el impresionante oasis de Aoufous, que nos conducirá a Erfoud, conocida por sus fósiles. El paisaje pasa de los verdes del Atlas a los amarillos y ocres que presagian la llegada del desierto: las dunas de Merzouga, Erg Chebbi.',
         lodging: 'Hotel cerca de las dunas · alojamiento y desayuno',
-        image: 'https://images.pexels.com/photos/26689356/pexels-photo-26689356.jpeg?auto=compress&cs=tinysrgb&w=1400',
+        image: '/images/p/26689356-w1400.webp',
         highlights: ['Ifrane, la Suiza marroquí', 'Cedros y monos de Azrou', 'Valle del Ziz'],
       },
       {
@@ -2103,7 +2103,7 @@ export const routes: Route[] = [
         description:
           'Por fin el esperado desierto. Pasaremos por el famoso pueblo de Khamlia, habitado por gente de origen maliense, donde nos relajaremos con un rico té mientras disfrutamos de su tradicional y espiritual música folclórica Gnawa. Antes del atardecer, una caravana de dromedarios nos estará esperando para cruzar las gigantescas y doradas dunas del desierto de Merzouga mientras contemplamos la mágica puesta de sol del Sahara, hasta llegar a nuestro campamento de jaimas. Té tradicional de bienvenida y exquisita cena mientras los tambores tocan al ritmo de la música bereber junto al fuego y bajo un increíble cielo repleto de estrellas.',
         lodging: 'Campamento de lujo en jaimas · cena y desayuno',
-        image: 'https://images.pexels.com/photos/12214734/pexels-photo-12214734.jpeg?auto=compress&cs=tinysrgb&w=1400',
+        image: '/images/p/12214734-w1400.webp',
         highlights: ['Música Gnawa en Khamlia', 'Caravana de dromedarios al atardecer', 'Noche en jaima bajo las estrellas'],
       },
       {
@@ -2123,7 +2123,7 @@ export const routes: Route[] = [
         description:
           'Después del desayuno conducimos a través de las montañas del Alto Atlas. Pasaremos por la famosa kasbah de Aït Ben Haddou, donde se filmaron películas como Gladiator, Babel y Lawrence de Arabia, ubicada en Ouarzazate, la puerta del desierto del Sahara. Para llegar a Marrakech cruzaremos la carretera más alta de Marruecos, el puerto de Tizi N\'Tichka, desde donde las vistas son realmente maravillosas. Pueblos bereberes con casas colgadas de las laderas nos acompañan hasta la llegada a Marrakech al atardecer.',
         lodging: 'Riad en la medina de Marrakech · alojamiento y desayuno',
-        image: 'https://images.pexels.com/photos/6095564/pexels-photo-6095564.jpeg?auto=compress&cs=tinysrgb&w=1400',
+        image: '/images/p/6095564-w1400.webp',
         highlights: ['Kasbah de Aït Ben Haddou', 'Puerto de Tizi N\'Tichka', 'Llegada a Marrakech'],
       },
       {
@@ -2143,7 +2143,7 @@ export const routes: Route[] = [
         description:
           'Traslado al aeropuerto de Marrakech a la hora convenida. Fin de nuestros servicios. Gracias por confiar en nosotros. Os esperamos de vuelta.',
         lodging: 'Traslado incluido al aeropuerto',
-        image: 'https://images.pexels.com/photos/34940617/pexels-photo-34940617.jpeg?auto=compress&cs=tinysrgb&w=1400',
+        image: '/images/p/34940617-w1400.webp',
         highlights: ['Desayuno sin prisas', 'Tiempo libre', 'Traslado privado'],
       },
     ],
@@ -2167,10 +2167,10 @@ export const routes: Route[] = [
       'Entradas a museos o lugares históricos',
     ],
     gallery: [
-      'https://images.pexels.com/photos/30757351/pexels-photo-30757351.jpeg?auto=compress&cs=tinysrgb&w=1200',
-      'https://images.pexels.com/photos/30320422/pexels-photo-30320422.jpeg?auto=compress&cs=tinysrgb&w=1200',
-      'https://images.pexels.com/photos/13591966/pexels-photo-13591966.jpeg?auto=compress&cs=tinysrgb&w=1200',
-      'https://images.pexels.com/photos/36209446/pexels-photo-36209446.jpeg?auto=compress&cs=tinysrgb&w=1200',
+      '/images/p/30757351-w1200.webp',
+      '/images/p/30320422-w1200.webp',
+      '/images/p/13591966-w1200.webp',
+      '/images/p/36209446-w1200.webp',
     ],
   },
 ];

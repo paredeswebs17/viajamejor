@@ -11,7 +11,7 @@ const TravelCardsArticle: React.FC<TravelCardsArticleProps> = ({ onBack }) => {
       {/* Hero */}
       <div className="relative h-[45vh] min-h-[340px] overflow-hidden flex items-end">
         <img
-          src="https://images.pexels.com/photos/4386321/pexels-photo-4386321.jpeg?auto=compress&cs=tinysrgb&w=1200"
+          src="/images/p/4386321-w1200.webp"
           alt="Tarjetas de credito para viajar sin comisiones"
           className="absolute inset-0 w-full h-full object-cover"
         />
