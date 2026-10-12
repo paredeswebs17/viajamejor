@@ -34,6 +34,12 @@ const Footer = () => {
             >
               Configurar cookies
             </button>
+            <div className="mt-3 flex flex-wrap justify-center gap-x-4 gap-y-1 text-xs text-gray-500">
+              <a href="/aviso-legal" className="underline">Aviso legal</a>
+              <a href="/privacidad" className="underline">Privacidad</a>
+              <a href="/cookies" className="underline">Cookies</a>
+              <a href="/afiliados" className="underline">Afiliados</a>
+            </div>
           </div>
         </div>
 
@@ -94,14 +100,17 @@ const Footer = () => {
               © {new Date().getFullYear()} Viaja Mejor. Hecho con ❤️ para viajeros como tú.
             </p>
             <div className="flex space-x-6">
-              <a href="#contacto" className="text-gray-400 hover:text-white text-sm transition-colors">
+              <a href="/privacidad" className="text-gray-400 hover:text-white text-sm transition-colors">
                 Política de Privacidad
               </a>
-              <a href="#contacto" className="text-gray-400 hover:text-white text-sm transition-colors">
+              <a href="/afiliados" className="text-gray-400 hover:text-white text-sm transition-colors">
                 Divulgación de Afiliados
               </a>
-              <a href="#contacto" className="text-gray-400 hover:text-white text-sm transition-colors">
-                Términos de Uso
+              <a href="/aviso-legal" className="text-gray-400 hover:text-white text-sm transition-colors">
+                Aviso Legal
+              </a>
+              <a href="/cookies" className="text-gray-400 hover:text-white text-sm transition-colors">
+                Cookies
               </a>
             </div>
           </div>
