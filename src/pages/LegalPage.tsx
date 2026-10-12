@@ -11,7 +11,7 @@ const OWNER = {
   // Rellenar cuando estén decididos (ver con la gestoría). Si están vacíos no se muestran.
   nif: '',
   address: '',
-  email: 'paredeswebs17@gmail.com',
+  email: 'viajamejornet@gmail.com',
   site: 'viajamejor.net',
 };
 const UPDATED = '12 de octubre de 2026';
