@@ -5,5 +5,17 @@ http://viajamejor.net/* https://viajamejor.net/:splat 301!
 http://www.viajamejor.net/* https://viajamejor.net/:splat 301!
 https://www.viajamejor.net/* https://viajamejor.net/:splat 301!
 
-# SPA fallback - redirect all routes to index.html
-/*    /index.html   200
+# Rutas de la app sin HTML propio (las guías y artículos ya existen como .html en dist
+# gracias a prerender.js, y Netlify los sirve antes que estas reglas).
+/viajes-organizados/*          /index.html   200
+/marruecos/*                   /index.html   200
+/marruecos-organizado          /index.html   200
+/marrakech-al-desierto-7-dias  /index.html   200
+/aviso-legal                   /index.html   200
+/privacidad                    /index.html   200
+/cookies                       /index.html   200
+/afiliados                     /index.html   200
+
+# Cualquier otra URL: página 404 de la app con estado HTTP 404 real (evita los "soft 404").
+# Si creas una página nueva SIN canonical en su <Helmet>, añádela arriba con 200.
+/*    /index.html   404
