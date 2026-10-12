@@ -1,166 +1,148 @@
-import puppeteer from 'puppeteer';
-import { createServer } from 'http';
-import { readFileSync, writeFileSync, mkdirSync, existsSync } from 'fs';
+/**
+ * Prerender sin navegador para viajamejor.net
+ *
+ * Genera un HTML estatico por ruta con sus metadatos SEO (title, description,
+ * canonical, Open Graph y Twitter) para que Google y las redes sociales
+ * (WhatsApp, Facebook, Instagram) vean los datos correctos de cada pagina
+ * sin ejecutar JavaScript. Lee los <Helmet> de src/pages/*.tsx, asi que no
+ * necesita Puppeteer ni Chromium y funciona al publicar desde Bolt.
+ *
+ * Uso:  node prerender.js        -> escribe dist/<ruta>/index.html y dist/sitemap.xml
+ *       node prerender.js --dry  -> solo muestra lo que generaria
+ *
+ * Las rutas de Marruecos NO se generan ni van al sitemap: replican el
+ * contenido de secretosdemarruecos.com y llevan noindex.
+ * Para que una pagina nueva entre aqui basta con que su <Helmet> tenga
+ * <link rel="canonical" href="https://viajamejor.net/..." />.
+ */
+import { readFileSync, writeFileSync, mkdirSync, readdirSync, existsSync } from 'fs';
 import { resolve, dirname, join } from 'path';
 import { fileURLToPath } from 'url';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
-const distDir = resolve(__dirname, 'dist');
+const SITE = 'https://viajamejor.net';
+const DIST = resolve(__dirname, 'dist');
+const PAGES = resolve(__dirname, 'src/pages');
+const DRY = process.argv.includes('--dry');
 
-const routes = [
-  '/',
-  '/guias',
-  '/equipaje/8-objetos-imprescindibles',
-  '/vuelos/vuelos-baratos',
-  '/alojamiento/booking-vs-airbnb',
-  '/finanzas/tarjetas-sin-comisiones',
-  '/destinos/paises-baratos-2026',
-  '/seguros/iati-experiencia',
-  '/budapest-4-dias',
-  '/praga-3-dias',
-  '/viena-3-dias',
-  '/amsterdam-3-dias',
-  '/roma-3-dias',
-  '/londres-3-dias',
-  '/mercados-navidenos-europa',
-  '/marruecos-organizado',
-  '/marrakech-al-desierto-7-dias',
-  '/marruecos/marrakech-sahara',
-  '/marruecos/marrakech-sahara-5d',
-  '/marruecos/marrakech-sahara-3d',
-  '/marruecos/fez-marrakech-5d',
-  '/marruecos/marrakech-fez-8d',
-  '/marruecos/tanger-marrakech-8d',
-];
+// Rutas de Marruecos: replican secretosdemarruecos.com, no se indexan
+const isNoindex = (p) =>
+  p.startsWith('/viajes-organizados') || p.startsWith('/marruecos') || p.startsWith('/marrakech');
 
-function createStaticServer(dir, port) {
-  const mimeTypes = {
-    '.html': 'text/html',
-    '.js': 'application/javascript',
-    '.css': 'text/css',
-    '.json': 'application/json',
-    '.png': 'image/png',
-    '.jpg': 'image/jpeg',
-    '.svg': 'image/svg+xml',
-    '.ico': 'image/x-icon',
-    '.webmanifest': 'application/manifest+json',
+const esc = (s) =>
+  String(s)
+    .replace(/&(?!amp;|quot;|lt;|gt;|#)/g, '&amp;')
+    .replace(/"/g, '&quot;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;');
+
+const first = (src, re) => {
+  const m = src.match(re);
+  return m ? m[1].replace(/\s+/g, ' ').trim() : null;
+};
+
+const meta = (h, attr, key) =>
+  first(h, new RegExp('<meta\\s+' + attr + '="' + key + '"\\s+content="([^"]*)"'));
+
+function readPage(file) {
+  const src = readFileSync(join(PAGES, file), 'utf8');
+  const start = src.indexOf('<Helmet');
+  const end = src.indexOf('</Helmet>');
+  if (start === -1 || end === -1) return null;
+  const h = src.slice(start, end);
+  const canonical = first(h, /<link\s+rel="canonical"\s+href="([^"]+)"/);
+  if (!canonical || !canonical.startsWith(SITE)) return null;
+  return {
+    file,
+    path: canonical.slice(SITE.length).replace(/\/$/, '') || '/',
+    title: first(h, /<title>([^<{]+)<\/title>/),
+    description: meta(h, 'name', 'description'),
+    ogTitle: meta(h, 'property', 'og:title'),
+    ogDescription: meta(h, 'property', 'og:description'),
+    ogImage: meta(h, 'property', 'og:image') || meta(h, 'name', 'twitter:image'),
   };
-
-  const server = createServer((req, res) => {
-    let filePath = join(dir, req.url === '/' ? '/index.html' : req.url);
-
-    if (!existsSync(filePath)) {
-      filePath = join(dir, 'index.html');
-    }
-
-    const ext = filePath.substring(filePath.lastIndexOf('.'));
-    const contentType = mimeTypes[ext] || 'application/octet-stream';
-
-    try {
-      const content = readFileSync(filePath);
-      res.writeHead(200, { 'Content-Type': contentType });
-      res.end(content);
-    } catch {
-      res.writeHead(404);
-      res.end('Not found');
-    }
-  });
-
-  return new Promise((resolve) => {
-    server.listen(port, () => resolve(server));
-  });
 }
 
-async function prerender() {
-  const port = 4173;
-  const server = await createStaticServer(distDir, port);
-  console.log(`Static server running on port ${port}`);
-
-  const browser = await puppeteer.launch({
-    headless: true,
-    args: ['--no-sandbox', '--disable-setuid-sandbox'],
-  });
-
-  let rendered = 0;
-
-  for (const route of routes) {
-    const page = await browser.newPage();
-
-    try {
-      await page.goto(`http://localhost:${port}${route}`, {
-        waitUntil: 'networkidle0',
-        timeout: 30000,
-      });
-
-      await page.waitForSelector('main', { timeout: 10000 });
-
-      await page.evaluate(() => {
-        const helmetElements = document.querySelectorAll('[data-rh="true"]');
-        if (helmetElements.length === 0) return;
-
-        const helmetHasTitle = document.querySelector('title[data-rh="true"]');
-        if (helmetHasTitle) {
-          document.querySelectorAll('title:not([data-rh])').forEach(el => el.remove());
-        }
-
-        const helmetHasCanonical = document.querySelector('link[rel="canonical"][data-rh="true"]');
-        if (helmetHasCanonical) {
-          document.querySelectorAll('link[rel="canonical"]:not([data-rh])').forEach(el => el.remove());
-        }
-
-        const helmetMetaNames = new Set();
-        const helmetMetaProperties = new Set();
-        helmetElements.forEach(el => {
-          if (el.tagName === 'META') {
-            const name = el.getAttribute('name');
-            const property = el.getAttribute('property');
-            if (name) helmetMetaNames.add(name);
-            if (property) helmetMetaProperties.add(property);
-          }
-        });
-
-        document.querySelectorAll('meta:not([data-rh])').forEach(el => {
-          const name = el.getAttribute('name');
-          const property = el.getAttribute('property');
-          if ((name && helmetMetaNames.has(name)) || (property && helmetMetaProperties.has(property))) {
-            el.remove();
-          }
-        });
-
-        const helmetHasJsonLd = document.querySelector('script[type="application/ld+json"][data-rh="true"]');
-        if (helmetHasJsonLd) {
-          document.querySelectorAll('script[type="application/ld+json"]:not([data-rh])').forEach(el => el.remove());
-        }
-      });
-
-      const html = await page.content();
-
-      const filePath =
-        route === '/'
-          ? join(distDir, 'index.html')
-          : join(distDir, route, 'index.html');
-
-      const dir = dirname(filePath);
-      if (!existsSync(dir)) {
-        mkdirSync(dir, { recursive: true });
-      }
-
-      writeFileSync(filePath, html);
-      rendered++;
-      console.log(`[${rendered}/${routes.length}] Pre-rendered: ${route}`);
-    } catch (err) {
-      console.error(`Failed to pre-render ${route}: ${err.message}`);
-    } finally {
-      await page.close();
-    }
-  }
-
-  await browser.close();
-  server.close();
-  console.log(`\nPre-rendering complete: ${rendered}/${routes.length} routes`);
+function headTags(r, defaults) {
+  const url = SITE + r.path;
+  const title = r.title || defaults.title;
+  const description = r.description || defaults.description;
+  const ogTitle = r.ogTitle || title;
+  const ogDescription = r.ogDescription || description;
+  const image = r.ogImage || SITE + '/og-image.jpg';
+  const tag = (el, attrs) =>
+    '<' + el + ' ' +
+    Object.entries(attrs).map(([k, val]) => k + '="' + esc(val) + '"').join(' ') +
+    ' data-rh="true" />';
+  return [
+    tag('link', { rel: 'canonical', href: url }),
+    tag('meta', { name: 'description', content: description }),
+    tag('meta', { name: 'robots', content: 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' }),
+    tag('meta', { property: 'og:title', content: ogTitle }),
+    tag('meta', { property: 'og:description', content: ogDescription }),
+    tag('meta', { property: 'og:url', content: url }),
+    tag('meta', { property: 'og:image', content: image }),
+    tag('meta', { name: 'twitter:title', content: ogTitle }),
+    tag('meta', { name: 'twitter:description', content: ogDescription }),
+    tag('meta', { name: 'twitter:image', content: image }),
+  ].join('\n    ');
 }
 
-prerender().catch((err) => {
-  console.error('Pre-rendering failed:', err);
+const indexPath = join(DIST, 'index.html');
+if (!existsSync(indexPath)) {
+  console.error('prerender: no existe dist/index.html. Ejecuta antes "vite build".');
   process.exit(1);
-});
+}
+
+const base = readFileSync(indexPath, 'utf8');
+const defaults = {
+  title: first(base, /<title>([^<]*)<\/title>/) || 'Viaja Mejor',
+  description: first(base, /<meta name="description" content="([^"]*)"/) || '',
+};
+// Quita del HTML base los metadatos de pagina (los marcados con data-rh)
+const stripped = base.replace(/\n?[ \t]*<(?:meta|link)\b[^>]*data-rh="true"[^>]*>/g, '');
+
+const seen = new Set();
+const routes = readdirSync(PAGES)
+  .filter((f) => f.endsWith('.tsx'))
+  .map(readPage)
+  .filter((r) => r && !seen.has(r.path) && seen.add(r.path));
+const pages = routes
+  .filter((r) => !isNoindex(r.path))
+  .sort((a, b) => a.path.localeCompare(b.path));
+
+for (const r of pages) {
+  const html = stripped
+    .replace(/<title>[\s\S]*?<\/title>/, '<title>' + esc(r.title || defaults.title) + '</title>')
+    .replace('</head>', '  ' + headTags(r, defaults) + '\n  </head>');
+  const out = r.path === '/' ? indexPath : join(DIST, r.path.slice(1), 'index.html');
+  if (!DRY) {
+    mkdirSync(dirname(out), { recursive: true });
+    writeFileSync(out, html);
+  }
+  const flags = [
+    r.title ? '' : 'sin title',
+    r.description ? '' : 'sin description',
+    r.ogImage ? '' : 'imagen por defecto',
+  ].filter(Boolean);
+  console.log('  ' + r.path.padEnd(42) + (flags.length ? 'AVISO: ' + flags.join(', ') : 'ok'));
+}
+
+const today = new Date().toISOString().slice(0, 10);
+const priority = (p) => (p === '/' ? '1.0' : /-dias$|^\/guias$/.test(p) ? '0.9' : '0.8');
+const sitemap =
+  '<?xml version="1.0" encoding="UTF-8"?>\n' +
+  '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' +
+  pages
+    .map((r) =>
+      '  <url>\n    <loc>' + SITE + r.path + '</loc>\n    <lastmod>' + today +
+      '</lastmod>\n    <priority>' + priority(r.path) + '</priority>\n  </url>')
+    .join('\n') +
+  '\n</urlset>\n';
+if (!DRY) writeFileSync(join(DIST, 'sitemap.xml'), sitemap);
+
+console.log(
+  '\nprerender: ' + pages.length + ' paginas con metadatos propios, ' +
+  (routes.length - pages.length) + ' rutas noindex omitidas' +
+  (DRY ? ' (simulacion, no se ha escrito nada)' : '') + '.'
+);
