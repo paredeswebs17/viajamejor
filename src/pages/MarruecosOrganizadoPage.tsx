@@ -27,6 +27,8 @@ export default function MarruecosOrganizadoPage() {
   return (
     <>
       <Helmet>
+        {/* No indexar: estas rutas replican las de secretosdemarruecos.com */}
+        <meta name="robots" content="noindex, follow" />
         <title>Marruecos Organizado — Rutas a medida · Viaja Mejor</title>
         <meta name="description" content="Rutas organizadas a Marruecos con guía local en español. Viajes a medida, grupos reducidos, TripAdvisor 5 estrellas." />
       </Helmet>
