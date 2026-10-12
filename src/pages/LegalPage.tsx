@@ -8,8 +8,9 @@ import { Helmet } from 'react-helmet-async';
  */
 const OWNER = {
   name: 'Antonio José Paredes Cabello',
-  nif: 'PENDIENTE',
-  address: 'PENDIENTE',
+  // Rellenar cuando estén decididos (ver con la gestoría). Si están vacíos no se muestran.
+  nif: '',
+  address: '',
   email: 'paredeswebs17@gmail.com',
   site: 'viajamejor.net',
 };
@@ -42,8 +43,8 @@ const Email = () => (
 const OwnerData = () => (
   <ul className="space-y-1">
     <li><strong>Titular:</strong> {OWNER.name}</li>
-    <li><strong>NIF:</strong> {OWNER.nif}</li>
-    <li><strong>Domicilio:</strong> {OWNER.address}</li>
+    {OWNER.nif && <li><strong>NIF:</strong> {OWNER.nif}</li>}
+    {OWNER.address && <li><strong>Domicilio:</strong> {OWNER.address}</li>}
     <li><strong>Email de contacto:</strong> <Email /></li>
     <li><strong>Sitio web:</strong> {OWNER.site}</li>
   </ul>
