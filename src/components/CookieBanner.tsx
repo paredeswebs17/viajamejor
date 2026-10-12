@@ -40,13 +40,20 @@ const loadAnalytics = () => {
 };
 
 const clearAnalyticsCookies = () => {
-  const host = window.location.hostname.replace(/^www\./, '');
+  // Google Analytics guarda sus cookies en el dominio principal (.viajamejor.net),
+  // asi que se borran en el host y en todos sus dominios padre.
+  const parts = window.location.hostname.split('.');
+  const domains = [''];
+  for (let i = 0; i < parts.length - 1; i++) {
+    const domain = parts.slice(i).join('.');
+    domains.push('; domain=' + domain, '; domain=.' + domain);
+  }
   document.cookie
     .split(';')
     .map((c) => c.split('=')[0].trim())
     .filter((name) => name.startsWith('_ga'))
     .forEach((name) => {
-      ['', '; domain=.' + host, '; domain=' + host].forEach((domain) => {
+      domains.forEach((domain) => {
         document.cookie = name + '=; Max-Age=0; path=/' + domain;
       });
     });
