@@ -75,6 +75,8 @@ export default function MoroccoRoutePage() {
   return (
     <>
       <Helmet>
+        {/* No indexar: estas rutas replican las de secretosdemarruecos.com */}
+        <meta name="robots" content="noindex, follow" />
         <title>{route.title} · Tour privado · Viaja Mejor</title>
         <meta name="description" content={`${route.description} Tour privado con guía en español.`} />
         <meta property="og:title" content={`${route.title} · Viaja Mejor`} />
