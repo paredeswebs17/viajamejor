@@ -6,6 +6,7 @@ import Footer from './components/Footer';
 import BackToTop from './components/BackToTop';
 import ScrollToTop from './components/ScrollToTop';
 import CookieBanner from './components/CookieBanner';
+import MoreGuides from './components/MoreGuides';
 
 // Lazy load pages
 const HomePage = lazy(() => import('./pages/HomePage'));
@@ -96,6 +97,7 @@ function App() {
                 <Route path="*" element={<NotFoundPage />} />
               </Routes>
             </Suspense>
+            <MoreGuides />
           </main>
           <Footer />
           <CookieBanner />
