@@ -338,6 +338,8 @@ export default function MarrakechDesiertoPage() {
   return (
     <>
       <Helmet>
+        {/* No indexar: estas rutas replican las de secretosdemarruecos.com */}
+        <meta name="robots" content="noindex, follow" />
         <title>Marrakech al Desierto — 7 días · Tour privado en español · Viaja Mejor</title>
         <meta name="description" content="Ruta organizada de 7 días desde Marrakech al Sahara. Ait Ben Haddou, Gargantas del Todra, desierto de Merzouga y Alto Atlas. Tour privado con guía en español. Desde 660€/persona." />
         <meta property="og:title" content="Marrakech al Desierto — 7 días · Viaja Mejor" />
