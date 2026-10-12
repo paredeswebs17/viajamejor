@@ -112,7 +112,7 @@ const Footer = () => {
               Solo recomiendo productos y servicios que uso personalmente y que realmente me han funcionado bien en mis viajes.
             </p>
             <p className="text-gray-500 text-xs mt-2">
-              <strong>Cookies:</strong> solo usamos cookies de análisis (Google Analytics) si las aceptas.{' '}
+              <strong>Cookies:</strong> solo usamos cookies de análisis y de medición de afiliados si las aceptas.{' '}
                 <button
                   type="button"
                   onClick={() => window.dispatchEvent(new Event('vm:cookie-settings'))}
