@@ -115,7 +115,9 @@ for (const r of pages) {
   const html = stripped
     .replace(/<title>[\s\S]*?<\/title>/, '<title>' + esc(r.title || defaults.title) + '</title>')
     .replace('</head>', '  ' + headTags(r, defaults) + '\n  </head>');
-  const out = r.path === '/' ? indexPath : join(DIST, r.path.slice(1), 'index.html');
+  // Se escribe como <ruta>.html (no <ruta>/index.html): asi Netlify sirve la URL
+  // sin barra final, igual que el canonical, en lugar de redirigir a /ruta/.
+  const out = r.path === '/' ? indexPath : join(DIST, r.path.slice(1) + '.html');
   if (!DRY) {
     mkdirSync(dirname(out), { recursive: true });
     writeFileSync(out, html);
