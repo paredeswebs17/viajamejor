@@ -103,6 +103,8 @@ export default function ViajesMarruecosPage() {
   return (
     <>
       <Helmet>
+        {/* No indexar: estas rutas replican las de secretosdemarruecos.com */}
+        <meta name="robots" content="noindex, follow" />
         <title>Viajes Organizados a Marruecos - Rutas Privadas con Guía en Español</title>
         <meta name="description" content="Rutas privadas organizadas por Marruecos con guía local en español. Desierto del Sahara, ciudades imperiales, Atlas y costa atlántica. Desde 420€ por persona." />
         <link rel="canonical" href="https://viajamejor.net/viajes-organizados/marruecos" />
