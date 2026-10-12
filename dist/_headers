@@ -59,3 +59,13 @@
 # HTTPS redirect
 /*
   X-Forwarded-Proto: https
+
+# Rutas de Marruecos: replican secretosdemarruecos.com, no se indexan
+/viajes-organizados/*
+  X-Robots-Tag: noindex, follow
+/marruecos/*
+  X-Robots-Tag: noindex, follow
+/marruecos-organizado
+  X-Robots-Tag: noindex, follow
+/marrakech-al-desierto-7-dias
+  X-Robots-Tag: noindex, follow
