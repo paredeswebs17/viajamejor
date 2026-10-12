@@ -25,8 +25,15 @@ const Footer = () => {
               </a>
             </div>
             <p className="text-gray-500 text-xs">
-              © 2024 Viaja Mejor. Hecho con ❤️ para viajeros.
+              © {new Date().getFullYear()} Viaja Mejor. Hecho con ❤️ para viajeros.
             </p>
+            <button
+              type="button"
+              onClick={() => window.dispatchEvent(new Event('vm:cookie-settings'))}
+              className="mt-2 text-xs text-gray-500 underline"
+            >
+              Configurar cookies
+            </button>
           </div>
         </div>
 
@@ -84,7 +91,7 @@ const Footer = () => {
         <div className="hidden sm:block border-t border-gray-800 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm mb-4 md:mb-0">
-              © 2024 Viaja Mejor. Hecho con ❤️ para viajeros como tú.
+              © {new Date().getFullYear()} Viaja Mejor. Hecho con ❤️ para viajeros como tú.
             </p>
             <div className="flex space-x-6">
               <a href="#contacto" className="text-gray-400 hover:text-white text-sm transition-colors">
@@ -100,13 +107,19 @@ const Footer = () => {
           </div>
           <div className="hidden sm:block mt-4 text-center">
             <p className="text-gray-500 text-xs">
-              <strong>Disclaimer:</strong> Este sitio contiene enlaces de afiliados a Amazon, Skyscanner, Booking, IATI, NordVPN y otros servicios. 
+              <strong>Disclaimer:</strong> Este sitio contiene enlaces de afiliado (Booking y Kiwi a través de Travelpayouts, GetYourGuide, IATI, Revolut, Amazon y otros). 
               Si compras algo a través de estos enlaces, puedo recibir una pequeña comisión sin costo adicional para ti. 
               Solo recomiendo productos y servicios que uso personalmente y que realmente me han funcionado bien en mis viajes.
             </p>
             <p className="text-gray-500 text-xs mt-2">
-              <strong>Política de cookies:</strong> Este sitio usa cookies para mejorar tu experiencia y analizar el tráfico. 
-              Al continuar navegando, aceptas nuestro uso de cookies.
+              <strong>Cookies:</strong> solo usamos cookies de análisis (Google Analytics) si las aceptas.{' '}
+                <button
+                  type="button"
+                  onClick={() => window.dispatchEvent(new Event('vm:cookie-settings'))}
+                  className="underline hover:text-white transition-colors"
+                >
+                  Configurar cookies
+                </button>
             </p>
           </div>
         </div>
