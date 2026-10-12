@@ -59,26 +59,26 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">Navegación</h3>
             <ul className="space-y-2">
-              <li><a href="#inicio" className="text-gray-400 hover:text-white transition-colors">Inicio</a></li>
-              <li><a href="#consejos" className="text-gray-400 hover:text-white transition-colors">Consejos de Viaje</a></li>
-              <li><a href="#recomendaciones" className="text-gray-400 hover:text-white transition-colors">Recomendaciones</a></li>
-              <li><a href="#sobre-nosotros" className="text-gray-400 hover:text-white transition-colors">Sobre Nosotros</a></li>
-              <li><a href="#contacto" className="text-gray-400 hover:text-white transition-colors">Contacto</a></li>
-              <li><a href="#consejos" className="text-gray-400 hover:text-white transition-colors">Vuelos Baratos</a></li>
-              <li><a href="#consejos" className="text-gray-400 hover:text-white transition-colors">Alojamiento</a></li>
-              <li><a href="#consejos" className="text-gray-400 hover:text-white transition-colors">Equipaje</a></li>
-              <li><a href="#consejos" className="text-gray-400 hover:text-white transition-colors">Destinos</a></li>
-              <li><a href="#consejos" className="text-gray-400 hover:text-white transition-colors">Seguros</a></li>
+              <li><a href="/" className="text-gray-400 hover:text-white transition-colors">Inicio</a></li>
+              <li><a href="/#consejos" className="text-gray-400 hover:text-white transition-colors">Consejos de Viaje</a></li>
+              <li><a href="/#recomendaciones" className="text-gray-400 hover:text-white transition-colors">Recomendaciones</a></li>
+              <li><a href="/viajes-organizados/marruecos" className="text-gray-400 hover:text-white transition-colors">Viajes organizados</a></li>
+              <li><a href="/#contacto" className="text-gray-400 hover:text-white transition-colors">Contacto</a></li>
+              <li><a href="/vuelos/vuelos-baratos" className="text-gray-400 hover:text-white transition-colors">Vuelos Baratos</a></li>
+              <li><a href="/alojamiento/booking-vs-airbnb" className="text-gray-400 hover:text-white transition-colors">Alojamiento</a></li>
+              <li><a href="/equipaje/8-objetos-imprescindibles" className="text-gray-400 hover:text-white transition-colors">Equipaje</a></li>
+              <li><a href="/destinos/paises-baratos-2026" className="text-gray-400 hover:text-white transition-colors">Destinos</a></li>
+              <li><a href="/seguros/iati-experiencia" className="text-gray-400 hover:text-white transition-colors">Seguros</a></li>
             </ul>
           </div>
 
           <div>
             <h3 className="text-lg font-semibold mb-4">Recursos</h3>
             <ul className="space-y-2">
-              <li><a href="#consejos" className="text-gray-400 hover:text-white transition-colors">Checklist de Viaje</a></li>
-              <li><a href="#recomendaciones" className="text-gray-400 hover:text-white transition-colors">Herramientas</a></li>
-              <li><a href="#recomendaciones" className="text-gray-400 hover:text-white transition-colors">Enlaces Útiles</a></li>
-              <li><a href="#consejos" className="text-gray-400 hover:text-white transition-colors">Guías de Destinos</a></li>
+              <li><a href="/equipaje/8-objetos-imprescindibles" className="text-gray-400 hover:text-white transition-colors">Checklist de equipaje</a></li>
+              <li><a href="/#recomendaciones" className="text-gray-400 hover:text-white transition-colors">Herramientas</a></li>
+              <li><a href="/finanzas/tarjetas-sin-comisiones" className="text-gray-400 hover:text-white transition-colors">Tarjetas sin comisiones</a></li>
+              <li><a href="/guias" className="text-gray-400 hover:text-white transition-colors">Guías de Destinos</a></li>
               <li>
                 <a 
                   href="https://instagram.com/viajamejor_net" 
