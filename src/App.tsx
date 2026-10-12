@@ -5,6 +5,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import BackToTop from './components/BackToTop';
 import ScrollToTop from './components/ScrollToTop';
+import CookieBanner from './components/CookieBanner';
 
 // Lazy load pages
 const HomePage = lazy(() => import('./pages/HomePage'));
@@ -90,6 +91,7 @@ function App() {
             </Suspense>
           </main>
           <Footer />
+          <CookieBanner />
         </div>
       </Router>
     </HelmetProvider>
