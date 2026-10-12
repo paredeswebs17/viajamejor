@@ -61,6 +61,8 @@ export default function ViajesMarruecosDetailPage() {
   return (
     <>
       <Helmet>
+        {/* No indexar: estas rutas replican las de secretosdemarruecos.com */}
+        <meta name="robots" content="noindex, follow" />
         <title>{route.title} - Tour Privado por Marruecos</title>
         <meta name="description" content={`${route.description} Tour privado con guia en espanol.`} />
         <meta property="og:title" content={`${route.title} - Viaja Mejor`} />
