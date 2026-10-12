@@ -2,12 +2,14 @@ import { useEffect, useState } from 'react';
 
 /**
  * Banner de consentimiento de cookies.
- * Google Analytics NO se carga hasta que la persona pulsa "Aceptar".
+ * Google Analytics y Travelpayouts NO se cargan hasta que la persona pulsa "Aceptar".
  * La eleccion se guarda en este navegador y se puede cambiar desde el pie de
  * pagina ("Configurar cookies"), que lanza el evento 'vm:cookie-settings'.
  */
 const STORAGE_KEY = 'vm-consent';
 const GA_ID = 'G-L1ZJ6QKGKN';
+// Script de Travelpayouts (seguimiento de afiliados): instala cookies propias
+const TRAVELPAYOUTS_SRC = 'https://emrldco.com/NDM2NjQ4.js' + '?t=436648';
 
 type Choice = 'granted' | 'denied';
 
@@ -37,6 +39,11 @@ const loadAnalytics = () => {
   script.async = true;
   script.src = 'https://www.googletagmanager.com/gtag/js?id=' + GA_ID;
   document.head.appendChild(script);
+
+  const tp = document.createElement('script');
+  tp.async = true;
+  tp.src = TRAVELPAYOUTS_SRC;
+  document.head.appendChild(tp);
 };
 
 const clearAnalyticsCookies = () => {
@@ -51,7 +58,7 @@ const clearAnalyticsCookies = () => {
   document.cookie
     .split(';')
     .map((c) => c.split('=')[0].trim())
-    .filter((name) => name.startsWith('_ga'))
+    .filter((name) => name.startsWith('_ga') || name.startsWith('am_'))
     .forEach((name) => {
       domains.forEach((domain) => {
         document.cookie = name + '=; Max-Age=0; path=/' + domain;
@@ -101,7 +108,7 @@ const CookieBanner = () => {
     >
       <div className="pointer-events-auto mx-auto max-w-3xl rounded-2xl border border-gray-200 bg-white p-5 shadow-2xl sm:flex sm:items-center sm:gap-6 sm:p-6">
         <p className="text-sm leading-relaxed text-gray-700">
-          Usamos cookies de análisis (Google Analytics) para saber qué guías te resultan útiles.
+          Usamos cookies de análisis (Google Analytics) y de medición de afiliados (Travelpayouts) para saber qué guías y recomendaciones te resultan útiles.
           Solo se activan si las aceptas, y puedes cambiar de opinión cuando quieras desde el pie de página.
         </p>
         <div className="mt-4 flex shrink-0 gap-3 sm:mt-0">
